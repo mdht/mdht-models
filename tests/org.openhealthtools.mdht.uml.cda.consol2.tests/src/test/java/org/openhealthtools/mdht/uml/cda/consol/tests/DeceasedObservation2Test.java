@@ -35,11 +35,11 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2#validateDeceasedObservationProblemObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Problem Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2#getConsolProblemObservation2() <em>Get Consol Problem Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2#validateDeceasedObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2#validateDeceasedObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2#validateDeceasedObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2#validateDeceasedObservationProblemObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Deceased Observation Problem Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,43 +47,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  */
 
 public class DeceasedObservation2Test extends CDAValidationTest {
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateDeceasedObservationProblemObservation2() {
-		OperationsTestCase<DeceasedObservation2> validateDeceasedObservationProblemObservation2TestCase = new OperationsTestCase<DeceasedObservation2>(
-			"validateDeceasedObservationProblemObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(DeceasedObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DeceasedObservation2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.CAUS);
-				er.setObservation(ConsolFactory.eINSTANCE.createProblemObservation2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return DeceasedObservation2Operations.validateDeceasedObservationProblemObservation2(
-					(DeceasedObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDeceasedObservationProblemObservation2TestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -206,6 +169,43 @@ public class DeceasedObservation2Test extends CDAValidationTest {
 		};
 
 		validateDeceasedObservationCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateDeceasedObservationProblemObservation() {
+		OperationsTestCase<DeceasedObservation2> validateDeceasedObservationProblemObservationTestCase = new OperationsTestCase<DeceasedObservation2>(
+			"validateDeceasedObservationProblemObservation",
+			operationsForOCL.getOCLValue("VALIDATE_DECEASED_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DeceasedObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeceasedObservation2 target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.CAUS);
+				er.setObservation(ConsolFactory.eINSTANCE.createProblemObservation2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DeceasedObservation2Operations.validateDeceasedObservationProblemObservation(
+					(DeceasedObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeceasedObservationProblemObservationTestCase.doValidationTest();
 	}
 
 	/**

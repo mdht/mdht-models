@@ -42,8 +42,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2HasStartingTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Has Starting Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2HasEndingTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Has Ending Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 IVLTS Low</em>}</li>
@@ -55,19 +53,15 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2VerifierParticipantRoleCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Verifier Participant Role Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2VerifierParticipantRoleAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Verifier Participant Role Addr</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Verifier Participant Role Playing Entity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Advance Directive Observation Verifier Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierParticipantRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Advance Directive Observation Verifier Participant Role</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Custodian Custodian Role Custodian Entity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Custodian Custodian Role Custodian Entity Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2CustodianCustodianRoleAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Custodian Custodian Role Advance Directive Observation Custodian Custodian Role Custodian Entity Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2CustodianCustodianRoleCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Custodian Custodian Role Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2CustodianCustodianRoleCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Custodian Custodian Role Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Custodian Advance Directive Observation Custodian Custodian Role Addr</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Custodian Advance Directive Observation Custodian Custodian Role Telecom</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Custodian Advance Directive Observation Custodian Custodian Role Playing Entity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Advance Directive Observation Custodian Role</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Advance Directive Observation Reference Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Reference Advance Directive Observation Reference External Document Text Media Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Reference Advance Directive Observation Reference External Document Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocument(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Advance Directive Observation Reference External Document</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationHasStartingTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Has Starting Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationHasEndingTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Has Ending Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Code</em>}</li>
@@ -75,10 +69,16 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationVerifier(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Verifier</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationCustodian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference External Document Text Media Type</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference External Document Text Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationVerifierTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Verifier Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationVerifierParticipantRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Verifier Participant Role</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Custodian Role Custodian Entity Name</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationCustodianCustodianRoleAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Custodian Role Addr</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationCustodianCustodianRoleTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Custodian Role Telecom</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Custodian Role Playing Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Advance Directive Observation Custodian Role</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationReferenceExternalDocumentId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference External Document Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationReferenceExternalDocumentText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference External Document Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference Type Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -86,78 +86,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference
  */
 
 public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateAdvanceDirectiveObservation2HasStartingTime() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2HasStartingTimeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2HasStartingTime",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_HAS_STARTING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2HasStartingTime(
-					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectiveObservation2HasStartingTimeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateAdvanceDirectiveObservation2HasEndingTime() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2HasEndingTimeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2HasEndingTime",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_HAS_ENDING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2HasEndingTime(
-					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectiveObservation2HasEndingTimeTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -613,92 +541,6 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierTime() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierTimeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierTime",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
-				par.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(par);
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				IVL_TS value = DatatypesFactory.eINSTANCE.createIVL_TS();
-				for (Participant2 p2 : target.getParticipants()) {
-					p2.setTime(value);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierTime(
-					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierTimeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierParticipantRole() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierParticipantRoleTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierParticipantRole",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().clear();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				pr.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
-				pr.setPlayingEntity(CDAFactory.eINSTANCE.createPlayingEntity());
-
-				p2.setParticipantRole(pr);
-
-				p2.setTypeCode(ParticipationType.VRF);
-				target.getParticipants().add(p2);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierParticipantRole(
-					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectiveObservation2AdvanceDirectiveObservationVerifierParticipantRoleTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidateAdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodePTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP",
@@ -783,48 +625,6 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateAdvanceDirectiveObservation2CustodianCustodianRoleAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2CustodianCustodianRoleAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityNameTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2CustodianCustodianRoleAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_CUSTODIAN_ROLE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
-
-				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
-					CDAFactory.eINSTANCE.createPlayingEntity());
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getPlayingEntity().getNames().add(
-					DatatypesFactory.eINSTANCE.createPN());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2CustodianCustodianRoleAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName(
-					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectiveObservation2CustodianCustodianRoleAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityNameTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidateAdvanceDirectiveObservation2CustodianCustodianRoleCodeP() {
 		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2CustodianCustodianRoleCodePTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
 			"validateAdvanceDirectiveObservation2CustodianCustodianRoleCodeP",
@@ -902,169 +702,10 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleAddr() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleAddrTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleAddr",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getAddrs().add(
-					DatatypesFactory.eINSTANCE.createAD());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleAddr(
-					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleAddrTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleTelecom() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleTelecomTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().getTelecoms().add(
-					DatatypesFactory.eINSTANCE.createTEL());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleTelecom(
-					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRoleTelecomTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRolePlayingEntityTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
-					CDAFactory.eINSTANCE.createPlayingEntity());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity(
-					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectiveObservation2CustodianAdvanceDirectiveObservationCustodianCustodianRolePlayingEntityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianRole() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianRoleTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianRole",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AdvanceDirectiveObservation2 target) {
-				target.init();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
-			}
-
-			@Override
-			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getParticipants().clear();
-				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
-
-				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
-				p2.setTypeCode(ParticipationType.CST);
-				target.getParticipants().add(p2);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianRole(
-					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAdvanceDirectiveObservation2AdvanceDirectiveObservationCustodianRoleTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceTypeCode() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceTypeCodeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextMediaTypeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_REFERENCE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1072,6 +713,10 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 				target.init();
 				Reference ref = CDAFactory.eINSTANCE.createReference();
 				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				text.setMediaType(null);
+				ed.setText(text);
+
 				ref.setExternalDocument(ed);
 				target.getReferences().add(ref);
 			}
@@ -1079,23 +724,72 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
 				target.getReferences().clear();
+
 				Reference ref = CDAFactory.eINSTANCE.createReference();
 				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				text.setMediaType("JPEG");
+				ed.setText(text);
 				ref.setExternalDocument(ed);
-				ref.setTypeCode(x_ActRelationshipExternalReference.REFR);
 				target.getReferences().add(ref);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceTypeCode(
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(
 					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceTypeCodeTestCase.doValidationTest();
+		validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextMediaTypeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextReference() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextReferenceTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextReference",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION2_REFERENCE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectiveObservation2 target) {
+				target.init();
+				Reference ref = CDAFactory.eINSTANCE.createReference();
+				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
+				ed.setText(DatatypesFactory.eINSTANCE.createED());
+				ref.setExternalDocument(ed);
+				target.getReferences().add(ref);
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectiveObservation2 target) {
+				target.getReferences().clear();
+
+				Reference ref = CDAFactory.eINSTANCE.createReference();
+				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				text.setReference(DatatypesFactory.eINSTANCE.createTEL());
+				ed.setText(text);
+				ref.setExternalDocument(ed);
+				target.getReferences().add(ref);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextReference(
+					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectiveObservation2ReferenceAdvanceDirectiveObservationReferenceExternalDocumentTextReferenceTestCase.doValidationTest();
 	}
 
 	/**
@@ -1136,6 +830,78 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 		};
 
 		validateAdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceExternalDocumentTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateAdvanceDirectiveObservationHasStartingTime() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationHasStartingTimeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservationHasStartingTime",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_HAS_STARTING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectiveObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectiveObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationHasStartingTime(
+					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectiveObservationHasStartingTimeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateAdvanceDirectiveObservationHasEndingTime() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationHasEndingTimeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservationHasEndingTime",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_HAS_ENDING_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectiveObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectiveObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationHasEndingTime(
+					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectiveObservationHasEndingTimeTestCase.doValidationTest();
 	}
 
 	/**
@@ -1397,48 +1163,38 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaTypeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAdvanceDirectiveObservationVerifierTime() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationVerifierTimeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservationVerifierTime",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
 				target.init();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				text.setMediaType(null);
-				ed.setText(text);
-
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
+				Participant2 par = CDAFactory.eINSTANCE.createParticipant2();
+				par.setTypeCode(ParticipationType.VRF);
+				target.getParticipants().add(par);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getReferences().clear();
-
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				text.setMediaType("JPEG");
-				ed.setText(text);
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
+				IVL_TS value = DatatypesFactory.eINSTANCE.createIVL_TS();
+				for (Participant2 p2 : target.getParticipants()) {
+					p2.setTime(value);
+				}
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationVerifierTime(
 					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaTypeTestCase.doValidationTest();
+		validateAdvanceDirectiveObservationVerifierTimeTestCase.doValidationTest();
 	}
 
 	/**
@@ -1446,46 +1202,345 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateAdvanceDirectiveObservationReferenceExternalDocumentTextReference() {
-		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationReferenceExternalDocumentTextReferenceTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
-			"validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateAdvanceDirectiveObservationVerifierParticipantRole() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationVerifierParticipantRoleTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservationVerifierParticipantRole",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AdvanceDirectiveObservation2 target) {
 				target.init();
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ed.setText(DatatypesFactory.eINSTANCE.createED());
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
+				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+
+				p2.setTypeCode(ParticipationType.VRF);
+				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected void updateToPass(AdvanceDirectiveObservation2 target) {
-				target.getReferences().clear();
+				target.getParticipants().clear();
+				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
 
-				Reference ref = CDAFactory.eINSTANCE.createReference();
-				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
-				ED text = DatatypesFactory.eINSTANCE.createED();
-				text.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				ed.setText(text);
-				ref.setExternalDocument(ed);
-				target.getReferences().add(ref);
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				pr.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
+				pr.setPlayingEntity(CDAFactory.eINSTANCE.createPlayingEntity());
+
+				p2.setParticipantRole(pr);
+
+				p2.setTypeCode(ParticipationType.VRF);
+				target.getParticipants().add(p2);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference(
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationVerifierParticipantRole(
 					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAdvanceDirectiveObservationReferenceExternalDocumentTextReferenceTestCase.doValidationTest();
+		validateAdvanceDirectiveObservationVerifierParticipantRoleTestCase.doValidationTest();
 	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityNameTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectiveObservation2 target) {
+				target.init();
+				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+
+				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
+				p2.setTypeCode(ParticipationType.CST);
+				target.getParticipants().add(p2);
+
+				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
+					CDAFactory.eINSTANCE.createPlayingEntity());
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectiveObservation2 target) {
+				target.getParticipants().get(0).getParticipantRole().getPlayingEntity().getNames().add(
+					DatatypesFactory.eINSTANCE.createPN());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName(
+					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityNameTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAdvanceDirectiveObservationCustodianCustodianRoleAddr() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationCustodianCustodianRoleAddrTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservationCustodianCustodianRoleAddr",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectiveObservation2 target) {
+				target.init();
+				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+
+				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
+				p2.setTypeCode(ParticipationType.CST);
+				target.getParticipants().add(p2);
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectiveObservation2 target) {
+				target.getParticipants().get(0).getParticipantRole().getAddrs().add(
+					DatatypesFactory.eINSTANCE.createAD());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationCustodianCustodianRoleAddr(
+					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectiveObservationCustodianCustodianRoleAddrTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAdvanceDirectiveObservationCustodianCustodianRoleTelecom() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationCustodianCustodianRoleTelecomTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservationCustodianCustodianRoleTelecom",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectiveObservation2 target) {
+				target.init();
+				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+
+				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
+				p2.setTypeCode(ParticipationType.CST);
+				target.getParticipants().add(p2);
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectiveObservation2 target) {
+				target.getParticipants().get(0).getParticipantRole().getTelecoms().add(
+					DatatypesFactory.eINSTANCE.createTEL());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationCustodianCustodianRoleTelecom(
+					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectiveObservationCustodianCustodianRoleTelecomTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationCustodianCustodianRolePlayingEntityTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectiveObservation2 target) {
+				target.init();
+				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+
+				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
+				p2.setTypeCode(ParticipationType.CST);
+				target.getParticipants().add(p2);
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectiveObservation2 target) {
+				target.getParticipants().get(0).getParticipantRole().setPlayingEntity(
+					CDAFactory.eINSTANCE.createPlayingEntity());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity(
+					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectiveObservationCustodianCustodianRolePlayingEntityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRoleTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectiveObservation2 target) {
+				target.init();
+				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+
+				p2.setTypeCode(ParticipationType.CST);
+				target.getParticipants().add(p2);
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectiveObservation2 target) {
+				target.getParticipants().clear();
+				Participant2 p2 = CDAFactory.eINSTANCE.createParticipant2();
+
+				p2.setParticipantRole(CDAFactory.eINSTANCE.createParticipantRole());
+				p2.setTypeCode(ParticipationType.CST);
+				target.getParticipants().add(p2);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole(
+					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRoleTestCase.doValidationTest();
+	}
+
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType() {
+	// OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaTypeTestCase = new
+	// OperationsTestCase<AdvanceDirectiveObservation2>(
+	// "validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType",
+	// operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(AdvanceDirectiveObservation2 target) {
+	// target.init();
+	// Reference ref = CDAFactory.eINSTANCE.createReference();
+	// ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
+	// ED text = DatatypesFactory.eINSTANCE.createED();
+	// text.setMediaType(null);
+	// ed.setText(text);
+	//
+	// ref.setExternalDocument(ed);
+	// target.getReferences().add(ref);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(AdvanceDirectiveObservation2 target) {
+	// target.getReferences().clear();
+	//
+	// Reference ref = CDAFactory.eINSTANCE.createReference();
+	// ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
+	// ED text = DatatypesFactory.eINSTANCE.createED();
+	// text.setMediaType("JPEG");
+	// ed.setText(text);
+	// ref.setExternalDocument(ed);
+	// target.getReferences().add(ref);
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(
+	// (AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaTypeTestCase.doValidationTest();
+	// }
+
+	// /**
+	// *
+	// * @generated NOT
+	// */
+	// @Test
+	// public void testValidateAdvanceDirectiveObservationReferenceExternalDocumentTextReference() {
+	// OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationReferenceExternalDocumentTextReferenceTestCase = new
+	// OperationsTestCase<AdvanceDirectiveObservation2>(
+	// "validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference",
+	// operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(AdvanceDirectiveObservation2 target) {
+	// target.init();
+	// Reference ref = CDAFactory.eINSTANCE.createReference();
+	// ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
+	// ed.setText(DatatypesFactory.eINSTANCE.createED());
+	// ref.setExternalDocument(ed);
+	// target.getReferences().add(ref);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(AdvanceDirectiveObservation2 target) {
+	// target.getReferences().clear();
+	//
+	// Reference ref = CDAFactory.eINSTANCE.createReference();
+	// ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
+	// ED text = DatatypesFactory.eINSTANCE.createED();
+	// text.setReference(DatatypesFactory.eINSTANCE.createTEL());
+	// ed.setText(text);
+	// ref.setExternalDocument(ed);
+	// target.getReferences().add(ref);
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference(
+	// (AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateAdvanceDirectiveObservationReferenceExternalDocumentTextReferenceTestCase.doValidationTest();
+	// }
 
 	/**
 	*
@@ -1569,6 +1624,48 @@ public class AdvanceDirectiveObservation2Test extends CDAValidationTest {
 		};
 
 		validateAdvanceDirectiveObservationReferenceExternalDocumentTextTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAdvanceDirectiveObservationReferenceTypeCode() {
+		OperationsTestCase<AdvanceDirectiveObservation2> validateAdvanceDirectiveObservationReferenceTypeCodeTestCase = new OperationsTestCase<AdvanceDirectiveObservation2>(
+			"validateAdvanceDirectiveObservationReferenceTypeCode",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectiveObservation2 target) {
+				target.init();
+				Reference ref = CDAFactory.eINSTANCE.createReference();
+				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
+				ref.setExternalDocument(ed);
+				target.getReferences().add(ref);
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectiveObservation2 target) {
+				target.getReferences().clear();
+				Reference ref = CDAFactory.eINSTANCE.createReference();
+				ExternalDocument ed = CDAFactory.eINSTANCE.createExternalDocument();
+				ref.setExternalDocument(ed);
+				ref.setTypeCode(x_ActRelationshipExternalReference.REFR);
+				target.getReferences().add(ref);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationReferenceTypeCode(
+					(AdvanceDirectiveObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectiveObservationReferenceTypeCodeTestCase.doValidationTest();
 	}
 
 	/**

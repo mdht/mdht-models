@@ -31,9 +31,9 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#validateFamilyHistoryOrganizer2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer2 Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#validateFamilyHistoryOrganizerFamilyHistoryObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer Family History Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#getConsolFamilyHistoryObservation2s() <em>Get Consol Family History Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#validateFamilyHistoryOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2#validateFamilyHistoryOrganizerFamilyHistoryObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer Family History Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -75,41 +75,6 @@ public class FamilyHistoryOrganizer2Test extends CDAValidationTest {
 		};
 
 		validateFamilyHistoryOrganizer2IdTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateFamilyHistoryOrganizerFamilyHistoryObservation2() {
-		OperationsTestCase<FamilyHistoryOrganizer2> validateFamilyHistoryOrganizerFamilyHistoryObservation2TestCase = new OperationsTestCase<FamilyHistoryOrganizer2>(
-			"validateFamilyHistoryOrganizerFamilyHistoryObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FamilyHistoryOrganizer2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(FamilyHistoryOrganizer2 target) {
-				target.init();
-				target.addObservation(ConsolFactory.eINSTANCE.createFamilyHistoryObservation2().init());
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FamilyHistoryOrganizer2Operations.validateFamilyHistoryOrganizerFamilyHistoryObservation2(
-					(FamilyHistoryOrganizer2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFamilyHistoryOrganizerFamilyHistoryObservation2TestCase.doValidationTest();
 	}
 
 	/**
@@ -156,6 +121,41 @@ public class FamilyHistoryOrganizer2Test extends CDAValidationTest {
 		};
 
 		validateFamilyHistoryOrganizerTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateFamilyHistoryOrganizerFamilyHistoryObservation() {
+		OperationsTestCase<FamilyHistoryOrganizer2> validateFamilyHistoryOrganizerFamilyHistoryObservationTestCase = new OperationsTestCase<FamilyHistoryOrganizer2>(
+			"validateFamilyHistoryOrganizerFamilyHistoryObservation",
+			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FamilyHistoryOrganizer2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FamilyHistoryOrganizer2 target) {
+				target.init();
+				target.addObservation(ConsolFactory.eINSTANCE.createFamilyHistoryObservation2().init());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FamilyHistoryOrganizer2Operations.validateFamilyHistoryOrganizerFamilyHistoryObservation(
+					(FamilyHistoryOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFamilyHistoryOrganizerFamilyHistoryObservationTestCase.doValidationTest();
 	}
 
 	/**

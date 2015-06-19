@@ -37,7 +37,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivity2CoverageActivityRelationshipSequenceNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Coverage Activity Relationship Sequence Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivity2EntryRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivity2EntryRelationshipINTValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship INT Value</em>}</li>
@@ -45,6 +44,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivity2EntryRelationshipSequenceNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Sequence Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivity2EntryRelationshipPolicyActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Policy Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#getConsolPolicyActivity2s() <em>Get Consol Policy Activity2s</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivityCoverageActivityRelationshipSequenceNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Coverage Activity Relationship Sequence Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code</em>}</li>
  * </ul>
@@ -54,42 +54,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  */
 
 public class CoverageActivity2Test extends CDAValidationTest {
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateCoverageActivity2CoverageActivityRelationshipSequenceNumber() {
-		OperationsTestCase<CoverageActivity2> validateCoverageActivity2CoverageActivityRelationshipSequenceNumberTestCase = new OperationsTestCase<CoverageActivity2>(
-			"validateCoverageActivity2CoverageActivityRelationshipSequenceNumber",
-			operationsForOCL.getOCLValue("VALIDATE_COVERAGE_ACTIVITY2_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(CoverageActivity2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(CoverageActivity2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return CoverageActivity2Operations.validateCoverageActivity2CoverageActivityRelationshipSequenceNumber(
-					(CoverageActivity2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCoverageActivity2CoverageActivityRelationshipSequenceNumberTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -330,6 +294,42 @@ public class CoverageActivity2Test extends CDAValidationTest {
 		CoverageActivity2 target = objectFactory.create();
 		target.getConsolPolicyActivity2s();
 
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateCoverageActivityCoverageActivityRelationshipSequenceNumber() {
+		OperationsTestCase<CoverageActivity2> validateCoverageActivityCoverageActivityRelationshipSequenceNumberTestCase = new OperationsTestCase<CoverageActivity2>(
+			"validateCoverageActivityCoverageActivityRelationshipSequenceNumber",
+			operationsForOCL.getOCLValue("VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CoverageActivity2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CoverageActivity2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CoverageActivity2Operations.validateCoverageActivityCoverageActivityRelationshipSequenceNumber(
+					(CoverageActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCoverageActivityCoverageActivityRelationshipSequenceNumberTestCase.doValidationTest();
 	}
 
 	/**

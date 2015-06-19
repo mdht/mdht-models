@@ -34,13 +34,13 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant2#validatePhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physicianof Record Participant2 Assigned Entity Physicianof Record Participant Assigned Entity Assigned Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant2#validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physicianof Record Participant2 Assigned Entity Represented Organization Name</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant2#validatePhysicianofRecordParticipant2AssignedEntityHasNationalProviderId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physicianof Record Participant2 Assigned Entity Has National Provider Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant2#validatePhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physicianof Record Participant2 Physicianof Record Participant Assigned Entity Assigned Person</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant2#validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physicianof Record Participant2 Assigned Entity Represented Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant2#validatePhysicianofRecordParticipantTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physicianof Record Participant Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant2#validatePhysicianofRecordParticipantAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physicianof Record Participant Assigned Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant2#validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physicianof Record Participant Assigned Entity Assigned Person Name</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant2#validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physicianof Record Participant Assigned Entity Has National Provider Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant2#validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physicianof Record Participant Assigned Entity Assigned Person</em>}</li>
  * </ul>
  * </p>
  *
@@ -90,43 +90,6 @@ public class PhysicianofRecordParticipant2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidatePhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName() {
-		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonNameTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
-			"validatePhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT2_ASSIGNED_ENTITY_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PhysicianofRecordParticipant2 target) {
-				target.init();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				target.setAssignedEntity(ae);
-				Person p = CDAFactory.eINSTANCE.createPerson();
-				ae.setAssignedPerson(p);
-			}
-
-			@Override
-			protected void updateToPass(PhysicianofRecordParticipant2 target) {
-				target.getAssignedEntity().getAssignedPerson().getNames().add(DatatypesFactory.eINSTANCE.createPN());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonName(
-					(PhysicianofRecordParticipant2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePhysicianofRecordParticipant2AssignedEntityPhysicianofRecordParticipantAssignedEntityAssignedPersonNameTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName() {
 		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationNameTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
 			"validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName",
@@ -158,77 +121,6 @@ public class PhysicianofRecordParticipant2Test extends CDAValidationTest {
 		};
 
 		validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationNameTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePhysicianofRecordParticipant2AssignedEntityHasNationalProviderId() {
-		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipant2AssignedEntityHasNationalProviderIdTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
-			"validatePhysicianofRecordParticipant2AssignedEntityHasNationalProviderId",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT2_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PhysicianofRecordParticipant2 target) {
-				target.init();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				target.setAssignedEntity(ae);
-			}
-
-			@Override
-			protected void updateToPass(PhysicianofRecordParticipant2 target) {
-				target.getAssignedEntity().getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.6"));
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2AssignedEntityHasNationalProviderId(
-					(PhysicianofRecordParticipant2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePhysicianofRecordParticipant2AssignedEntityHasNationalProviderIdTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson() {
-		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPersonTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
-			"validatePhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT2_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PhysicianofRecordParticipant2 target) {
-				target.init();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				target.setAssignedEntity(ae);
-			}
-
-			@Override
-			protected void updateToPass(PhysicianofRecordParticipant2 target) {
-				Person ap = CDAFactory.eINSTANCE.createPerson();
-				target.getAssignedEntity().setAssignedPerson(ap);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPerson(
-					(PhysicianofRecordParticipant2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePhysicianofRecordParticipant2PhysicianofRecordParticipantAssignedEntityAssignedPersonTestCase.doValidationTest();
 	}
 
 	/**
@@ -335,6 +227,114 @@ public class PhysicianofRecordParticipant2Test extends CDAValidationTest {
 		};
 
 		validatePhysicianofRecordParticipantAssignedEntityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicianofRecordParticipantAssignedEntityAssignedPersonName() {
+		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipantAssignedEntityAssignedPersonNameTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
+			"validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicianofRecordParticipant2 target) {
+				target.init();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				target.setAssignedEntity(ae);
+				Person p = CDAFactory.eINSTANCE.createPerson();
+				ae.setAssignedPerson(p);
+			}
+
+			@Override
+			protected void updateToPass(PhysicianofRecordParticipant2 target) {
+				target.getAssignedEntity().getAssignedPerson().getNames().add(DatatypesFactory.eINSTANCE.createPN());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName(
+					(PhysicianofRecordParticipant2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicianofRecordParticipantAssignedEntityAssignedPersonNameTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId() {
+		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderIdTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
+			"validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicianofRecordParticipant2 target) {
+				target.init();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				target.setAssignedEntity(ae);
+			}
+
+			@Override
+			protected void updateToPass(PhysicianofRecordParticipant2 target) {
+				target.getAssignedEntity().getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.6"));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId(
+					(PhysicianofRecordParticipant2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePhysicianofRecordParticipantAssignedEntityAssignedPerson() {
+		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipantAssignedEntityAssignedPersonTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
+			"validatePhysicianofRecordParticipantAssignedEntityAssignedPerson",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicianofRecordParticipant2 target) {
+				target.init();
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				target.setAssignedEntity(ae);
+			}
+
+			@Override
+			protected void updateToPass(PhysicianofRecordParticipant2 target) {
+				Person ap = CDAFactory.eINSTANCE.createPerson();
+				target.getAssignedEntity().setAssignedPerson(ap);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicianofRecordParticipant2Operations.validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(
+					(PhysicianofRecordParticipant2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicianofRecordParticipantAssignedEntityAssignedPersonTestCase.doValidationTest();
 	}
 
 	/**

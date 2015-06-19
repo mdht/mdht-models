@@ -66,57 +66,14 @@ import org.openhealthtools.mdht.uml.hl7.vocab.TelecommunicationAddressUse;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient Guardian General Header Constraints Record Target Patient Role Patient Guardian TEL Use</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient Guardian Code From Personal Relationship Or Responsible Party</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient General Header Constraints Record Target Patient Role Patient Guardian Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient General Header Constraints Record Target Patient Role Patient Guardian Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient General Header Constraints Record Target Patient Role Patient Guardian Telecom</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient General Header Constraints Record Target Patient Role Patient Language Communication Language Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient General Header Constraints Record Target Patient Role Patient Language Communication Preference Ind</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToYear(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient TS Birth Time Precise To Year</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient TS Birth Time Precise To Day</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinute(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role Patient TS Birth Time Precise To Minute</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role General Header Constraints Record Target Patient Role Patient Race Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role General Header Constraints Record Target Patient Role Patient Race Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role General Header Constraints Record Target Patient Role Patient Ethnic Group Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role General Header Constraints Record Target Patient Role Patient Ethnic Group Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role General Header Constraints Record Target Patient Role Patient Birth Time</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role General Header Constraints Record Target Patient Role Patient Guardian</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target Patient Role General Header Constraints Record Target Patient Role Patient Language Communication</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2RecordTargetGeneralHeaderConstraintsRecordTargetPatientRolePatient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Record Target General Header Constraints Record Target Patient Role Patient</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 General Header Constraints Record Target Patient Role</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Data Enterer General Header Constraints Data Enterer Assigned Entity Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Data Enterer General Header Constraints Data Enterer Assigned Entity Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2GeneralHeaderConstraintsDataEntererAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 General Header Constraints Data Enterer Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2AuthorAssignedAuthorIfAssignedPersonThenContainsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Author Assigned Author If Assigned Person Then Contains Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2AuthorAssignedAuthorCodeTerminology(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Author Assigned Author Code Terminology</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2GeneralHeaderConstraintsAuthorAssignedAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 General Header Constraints Author Assigned Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformationRecipientIntendedRecipientId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Information Recipient Intended Recipient Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2GeneralHeaderConstraintsInformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 General Header Constraints Information Recipient Intended Recipient</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2LegalAuthenticatorSDTCSignatureText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Legal Authenticator SDTC Signature Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2AuthenticatorSDTCSignatureText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Authenticator SDTC Signature Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address US Realm Address Street</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Use P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Use</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Country</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address State</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address City</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Postal Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Street Address Line</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant General Header Constraints Informant Assigned Entity Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant General Header Constraints Informant Assigned Entity Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant General Header Constraints Informant Assigned Entity Addr</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantHasAssignedEntityOrRelatedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Has Assigned Entity Or Related Entity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2GeneralHeaderConstraintsComponentOfEncompassingEncounter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 General Header Constraints Component Of Encompassing Encounter</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Participant Support Associated Entity Has Associated Person Or Scoping Organization</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Documentation Of Service Event Performer1 General Header Constraints Documentation Of Service Event Performer1 Assigned Entity Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Documentation Of Service Event Performer1 General Header Constraints Documentation Of Service Event Performer1 Assigned Entity Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Documentation Of Service Event General Header Constraints Documentation Of Service Event Performer1 Function Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Documentation Of Service Event General Header Constraints Documentation Of Service Event Performer1 Function Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Documentation Of Service Event General Header Constraints Documentation Of Service Event Performer1 Assigned Entity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2DocumentationOfGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Documentation Of General Header Constraints Documentation Of Service Event Performer</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 General Header Constraints Documentation Of Service Event</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRealmCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Realm Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Title</em>}</li>
@@ -133,6 +90,49 @@ import org.openhealthtools.mdht.uml.hl7.vocab.TelecommunicationAddressUse;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsSupportParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Support Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDocumentationOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsAuthorization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Authorization</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian TEL Use</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code From Personal Relationship Or Responsible Party</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Telecom</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Preference Ind</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient TS Birth Time Precise To Year</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient TS Birth Time Precise To Day</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Race Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Race Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birth Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Data Enterer Assigned Entity Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Data Enterer Assigned Entity Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDataEntererAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Data Enterer Assigned Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsAuthorAssignedAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Author Assigned Author</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Information Recipient Intended Recipient</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Use P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Use</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Country</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressState(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address State</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressCity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address City</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressPostalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Postal Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Street Address Line</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Informant Assigned Entity Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsInformantAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Informant Assigned Entity Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsInformantAssignedEntityAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Informant Assigned Entity Addr</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Informant Has Assigned Entity Or Related Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Component Of Encompassing Encounter</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Participant Support Associated Entity Has Associated Person Or Scoping Organization</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of Service Event Performer1 Assigned Entity Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of Service Event Performer1 Assigned Entity Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of Service Event Performer1 Function Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of Service Event Performer1 Function Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of Service Event Performer1 Assigned Entity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of Service Event Performer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDocumentationOfServiceEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of Service Event</em>}</li>
  * </ul>
  * </p>
  *
@@ -146,94 +146,10 @@ public class USRealmHeader2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUseTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TEL_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(pat);
-				Guardian guardian = CDAFactory.eINSTANCE.createGuardian();
-				pat.getGuardians().add(guardian);
-				guardian.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				for (RecordTarget rt : target.getRecordTargets()) {
-					for (Guardian g : rt.getPatientRole().getPatient().getGuardians()) {
-						for (TEL t : g.getTelecoms()) {
-							t.getUses().add(TelecommunicationAddressUse.AS);
-						}
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUseTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsiblePartyTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_FROM_PERSONAL_RELATIONSHIP_OR_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsiblePartyTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodePTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodePTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -262,342 +178,13 @@ public class USRealmHeader2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(
 					(USRealmHeader2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(pat);
-				Guardian guard = CDAFactory.eINSTANCE.createGuardian();
-				pat.getGuardians().add(guard);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				CE code = DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.5.111");
-				for (RecordTarget rt : target.getRecordTargets()) {
-					for (Guardian guard : rt.getPatientRole().getPatient().getGuardians()) {
-						guard.setCode(code);
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecomTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(pat);
-				Guardian guardian = CDAFactory.eINSTANCE.createGuardian();
-				pat.getGuardians().add(guardian);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				for (RecordTarget rt : target.getRecordTargets()) {
-					for (Guardian g : rt.getPatientRole().getPatient().getGuardians()) {
-						g.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecomTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodePTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(pat);
-				LanguageCommunication lcom = CDAFactory.eINSTANCE.createLanguageCommunication();
-				pat.getLanguageCommunications().add(lcom);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				CS lanCode = DatatypesFactory.eINSTANCE.createCS();
-				for (RecordTarget rt : target.getRecordTargets()) {
-					for (LanguageCommunication lcom : rt.getPatientRole().getPatient().getLanguageCommunications()) {
-						lcom.setLanguageCode(lanCode);
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(pat);
-				LanguageCommunication lcom = CDAFactory.eINSTANCE.createLanguageCommunication();
-				pat.getLanguageCommunications().add(lcom);
-				lcom.setLanguageCode(DatatypesFactory.eINSTANCE.createCS());
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				CS lanCode = DatatypesFactory.eINSTANCE.createCS("mustExistOnly");
-				for (RecordTarget rt : target.getRecordTargets()) {
-					for (LanguageCommunication lcom : rt.getPatientRole().getPatient().getLanguageCommunications()) {
-						lcom.setLanguageCode(lanCode);
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceIndTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PREFERENCE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(pat);
-				LanguageCommunication lcom = CDAFactory.eINSTANCE.createLanguageCommunication();
-				pat.getLanguageCommunications().add(lcom);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				BL prefInd = DatatypesFactory.eINSTANCE.createBL();
-				for (RecordTarget rt : target.getRecordTargets()) {
-					for (LanguageCommunication lcom : rt.getPatientRole().getPatient().getLanguageCommunications()) {
-						lcom.setPreferenceInd(prefInd);
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRolePatientGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceIndTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToYear() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToYearTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToYear",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				// fails if value is less than required number of digits (4)
-				target.init();
-				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				Patient patient = CDAFactory.eINSTANCE.createPatient();
-				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("123")); // fails as intended
-				pr.setPatient(patient);
-				re.setPatientRole(pr);
-				target.getRecordTargets().add(re);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				// passes if value is more than or equal to required number of digits (6)
-				target.getRecordTargets().clear();
-				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				Patient patient = CDAFactory.eINSTANCE.createPatient();
-				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("1234")); // passes as intended
-				pr.setPatient(patient);
-				re.setPatientRole(pr);
-				target.getRecordTargets().add(re);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToYear(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToYearTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToDay() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToDayTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToDay",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				// fails if value is less than required number of digits (8)
-				target.init();
-				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				Patient patient = CDAFactory.eINSTANCE.createPatient();
-				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("1234567")); // fails as intended
-				pr.setPatient(patient);
-				re.setPatientRole(pr);
-				target.getRecordTargets().add(re);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				// passes if value is more than or equal to required number of digits (8)
-				target.getRecordTargets().clear();
-				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				Patient patient = CDAFactory.eINSTANCE.createPatient();
-				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("12345678")); // passes as intended
-				pr.setPatient(patient);
-				re.setPatientRole(pr);
-				target.getRecordTargets().add(re);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToDay(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToDayTestCase.doValidationTest();
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodePTestCase.doValidationTest();
 	}
 
 	/**
@@ -648,498 +235,6 @@ public class USRealmHeader2Test extends CDAValidationTest {
 		};
 
 		validateUSRealmHeader2RecordTargetPatientRolePatientTSBirthTimePreciseToMinuteTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodePTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(pat);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				CE raceCode = DatatypesFactory.eINSTANCE.createCE();
-				for (RecordTarget rt : target.getRecordTargets()) {
-					rt.getPatientRole().getPatient().setRaceCode(raceCode);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(pat);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				CE raceCode = DatatypesFactory.eINSTANCE.createCE("1002-5", "2.16.840.1.113883.6.238");
-				for (RecordTarget rt : target.getRecordTargets()) {
-					rt.getPatientRole().getPatient().setRaceCode(raceCode);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodePTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(pat);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				CE egCode = DatatypesFactory.eINSTANCE.createCE();
-				for (RecordTarget rt : target.getRecordTargets()) {
-					rt.getPatientRole().getPatient().setEthnicGroupCode(egCode);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimeTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				// fails if no birthTime element exists
-				target.init();
-				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				Patient patient = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(patient);
-				re.setPatientRole(pr);
-				target.getRecordTargets().add(re);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				// passes if a birthTime element exists
-				TS btTS = DatatypesFactory.eINSTANCE.createTS();
-				btTS.setNullFlavor(NullFlavor.NAV);
-				target.getRecordTargets().clear();
-				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				Patient patient = CDAFactory.eINSTANCE.createPatient();
-				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS());
-				pr.setPatient(patient);
-				re.setPatientRole(pr);
-				target.getRecordTargets().add(re);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(pat);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				CE egCode = DatatypesFactory.eINSTANCE.createCE("2135-2", "2.16.840.1.113883.6.238");
-				for (RecordTarget rt : target.getRecordTargets()) {
-					rt.getPatientRole().getPatient().setEthnicGroupCode(egCode);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(pat);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				Guardian guard = CDAFactory.eINSTANCE.createGuardian();
-				for (RecordTarget rt : target.getRecordTargets()) {
-					rt.getPatientRole().getPatient().getGuardians().add(guard);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_PATIENT_ROLE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				pr.setPatient(pat);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				LanguageCommunication lcom = CDAFactory.eINSTANCE.createLanguageCommunication();
-				for (RecordTarget rt : target.getRecordTargets()) {
-					rt.getPatientRole().getPatient().getLanguageCommunications().add(lcom);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetPatientRoleGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2RecordTargetGeneralHeaderConstraintsRecordTargetPatientRolePatient() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2RecordTargetGeneralHeaderConstraintsRecordTargetPatientRolePatientTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2RecordTargetGeneralHeaderConstraintsRecordTargetPatientRolePatient",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_RECORD_TARGET_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				rt.setPatientRole(pr);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				Patient pat = CDAFactory.eINSTANCE.createPatient();
-				for (RecordTarget rt : target.getRecordTargets()) {
-					rt.getPatientRole().setPatient(pat);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2RecordTargetGeneralHeaderConstraintsRecordTargetPatientRolePatient(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2RecordTargetGeneralHeaderConstraintsRecordTargetPatientRolePatientTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRole() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRoleTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRole",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
-				target.getRecordTargets().add(rt);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
-				for (RecordTarget r : target.getRecordTargets()) {
-					r.setPatientRole(pr);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRole(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2GeneralHeaderConstraintsRecordTargetPatientRoleTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCodeP() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCodePTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_DATA_ENTERER_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
-				target.setDataEnterer(de);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				de.setAssignedEntity(ae);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				target.getDataEnterer().getAssignedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCode() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCodeTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_DATA_ENTERER_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
-				target.setDataEnterer(de);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				de.setAssignedEntity(ae);
-				ae.setCode(DatatypesFactory.eINSTANCE.createCE());
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				target.getDataEnterer().getAssignedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.101"));
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCode(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2DataEntererGeneralHeaderConstraintsDataEntererAssignedEntityCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2GeneralHeaderConstraintsDataEntererAssignedEntity() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2GeneralHeaderConstraintsDataEntererAssignedEntityTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2GeneralHeaderConstraintsDataEntererAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
-				target.setDataEnterer(de);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				target.getDataEnterer().setAssignedEntity(ae);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2GeneralHeaderConstraintsDataEntererAssignedEntity(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2GeneralHeaderConstraintsDataEntererAssignedEntityTestCase.doValidationTest();
 	}
 
 	/**
@@ -1231,44 +326,6 @@ public class USRealmHeader2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateUSRealmHeader2GeneralHeaderConstraintsAuthorAssignedAuthor() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2GeneralHeaderConstraintsAuthorAssignedAuthorTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2GeneralHeaderConstraintsAuthorAssignedAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				Author a = CDAFactory.eINSTANCE.createAuthor();
-				target.getAuthors().add(a);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				for (Author a : target.getAuthors()) {
-					a.setAssignedAuthor(aa);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2GeneralHeaderConstraintsAuthorAssignedAuthor(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2GeneralHeaderConstraintsAuthorAssignedAuthorTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
 	public void testValidateUSRealmHeader2InformationRecipientIntendedRecipientId() {
 		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformationRecipientIntendedRecipientIdTestCase = new OperationsTestCase<USRealmHeader2>(
 			"validateUSRealmHeader2InformationRecipientIntendedRecipientId",
@@ -1302,44 +359,6 @@ public class USRealmHeader2Test extends CDAValidationTest {
 		};
 
 		validateUSRealmHeader2InformationRecipientIntendedRecipientIdTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2GeneralHeaderConstraintsInformationRecipientIntendedRecipient() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2GeneralHeaderConstraintsInformationRecipientIntendedRecipientTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2GeneralHeaderConstraintsInformationRecipientIntendedRecipient",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
-				target.getInformationRecipients().add(ir);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
-				for (InformationRecipient ir : target.getInformationRecipients()) {
-					ir.setIntendedRecipient(intendedRec);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2GeneralHeaderConstraintsInformationRecipientIntendedRecipient(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2GeneralHeaderConstraintsInformationRecipientIntendedRecipientTestCase.doValidationTest();
 	}
 
 	/**
@@ -1456,956 +475,6 @@ public class USRealmHeader2Test extends CDAValidationTest {
 		};
 
 		validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreetTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUsePTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
-				target.getInformants().add(inf);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				inf.setAssignedEntity(ae);
-				AD addr = DatatypesFactory.eINSTANCE.createAD();
-				ae.getAddrs().add(addr);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				for (Informant12 inf : target.getInformants()) {
-					for (AD addr : inf.getAssignedEntity().getAddrs()) {
-						addr.getUses().add(PostalAddressUse.ABC);
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUsePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
-				target.getInformants().add(inf);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				inf.setAssignedEntity(ae);
-				AD addr = DatatypesFactory.eINSTANCE.createAD();
-				ae.getAddrs().add(addr);
-				addr.getUses().add(PostalAddressUse.ABC);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				for (Informant12 inf : target.getInformants()) {
-					for (AD addr : inf.getAssignedEntity().getAddrs()) {
-						addr.getUses().clear();
-					}
-				}
-				for (Informant12 inf : target.getInformants()) {
-					for (AD addr : inf.getAssignedEntity().getAddrs()) {
-						addr.getUses().add(PostalAddressUse.DIR);
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountryTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
-				target.getInformants().add(inf);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				inf.setAssignedEntity(ae);
-				AD addr = DatatypesFactory.eINSTANCE.createAD();
-				ae.getAddrs().add(addr);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				ADXP country = DatatypesFactory.eINSTANCE.createADXP();
-				for (Informant12 inf : target.getInformants()) {
-					for (AD addr : inf.getAssignedEntity().getAddrs()) {
-						addr.getCountries().add(country);
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountryTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStateTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
-				target.getInformants().add(inf);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				inf.setAssignedEntity(ae);
-				AD addr = DatatypesFactory.eINSTANCE.createAD();
-				ae.getAddrs().add(addr);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				ADXP state = DatatypesFactory.eINSTANCE.createADXP();
-				for (Informant12 inf : target.getInformants()) {
-					for (AD addr : inf.getAssignedEntity().getAddrs()) {
-						addr.getStates().add(state);
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStateTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCityTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
-				target.getInformants().add(inf);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				inf.setAssignedEntity(ae);
-				AD addr = DatatypesFactory.eINSTANCE.createAD();
-				ae.getAddrs().add(addr);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				ADXP city = DatatypesFactory.eINSTANCE.createADXP();
-				for (Informant12 inf : target.getInformants()) {
-					for (AD addr : inf.getAssignedEntity().getAddrs()) {
-						addr.getCities().add(city);
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
-				target.getInformants().add(inf);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				inf.setAssignedEntity(ae);
-				AD addr = DatatypesFactory.eINSTANCE.createAD();
-				ae.getAddrs().add(addr);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				ADXP postalCode = DatatypesFactory.eINSTANCE.createADXP();
-				for (Informant12 inf : target.getInformants()) {
-					for (AD addr : inf.getAssignedEntity().getAddrs()) {
-						addr.getPostalCodes().add(postalCode);
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
-				target.getInformants().add(inf);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				inf.setAssignedEntity(ae);
-				AD addr = DatatypesFactory.eINSTANCE.createAD();
-				ae.getAddrs().add(addr);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				ADXP sdl = DatatypesFactory.eINSTANCE.createADXP();
-				for (Informant12 inf : target.getInformants()) {
-					for (AD addr : inf.getAssignedEntity().getAddrs()) {
-						addr.getStreetAddressLines().add(sdl);
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCodeP() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCodePTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
-				target.getInformants().add(inf);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				inf.setAssignedEntity(ae);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				for (Informant12 inf : target.getInformants()) {
-					inf.getAssignedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCodeP(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCode() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCodeTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
-				target.getInformants().add(inf);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				inf.setAssignedEntity(ae);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				for (Informant12 inf : target.getInformants()) {
-					inf.getAssignedEntity().setCode(
-						DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.101"));
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCode(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityAddr() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityAddrTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityAddr",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
-				target.getInformants().add(inf);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				inf.setAssignedEntity(ae);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				for (Informant12 inf : target.getInformants()) {
-					inf.getAssignedEntity().getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityAddr(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantGeneralHeaderConstraintsInformantAssignedEntityAddrTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2InformantHasAssignedEntityOrRelatedEntity() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2InformantHasAssignedEntityOrRelatedEntityTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2InformantHasAssignedEntityOrRelatedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_INFORMANT_HAS_ASSIGNED_ENTITY_OR_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(USRealmHeader2 target) {
-						target.init();
-						Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
-						target.getInformants().add(informant);
-
-					}
-				});
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(USRealmHeader2 target) {
-						target.init();
-
-						Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
-						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-						informant.setAssignedEntity(ae);
-						RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
-
-						informant.setRelatedEntity(re);
-
-						target.getInformants().add(informant);
-
-					}
-				});
-
-			}
-
-			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-
-					@Override
-					public void updateToPass(USRealmHeader2 target) {
-						target.init();
-
-						Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
-						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-						informant.setAssignedEntity(ae);
-
-						target.getInformants().add(informant);
-
-					}
-
-				});
-
-				addPassTest(new PassTest() {
-
-					@Override
-					public void updateToPass(USRealmHeader2 target) {
-						target.init();
-						Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
-						RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
-						informant.setRelatedEntity(re);
-						target.getInformants().add(informant);
-
-					}
-
-				});
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2InformantHasAssignedEntityOrRelatedEntity(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2InformantHasAssignedEntityOrRelatedEntityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2GeneralHeaderConstraintsComponentOfEncompassingEncounter() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2GeneralHeaderConstraintsComponentOfEncompassingEncounterTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2GeneralHeaderConstraintsComponentOfEncompassingEncounter",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				Component1 comp = CDAFactory.eINSTANCE.createComponent1();
-				target.setComponentOf(comp);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				target.getComponentOf().setEncompassingEncounter(CDAFactory.eINSTANCE.createEncompassingEncounter());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2GeneralHeaderConstraintsComponentOfEncompassingEncounter(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2GeneralHeaderConstraintsComponentOfEncompassingEncounterTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganizationTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_HAS_ASSOCIATED_PERSON_OR_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			public void addFailTests() {
-
-				addFailTest(new FailTest() {
-
-					@Override
-					public void updateToFail(USRealmHeader2 target) {
-						// Does not contain an associatedPerson element or a scopingOrganization element
-						target.init();
-						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
-						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
-						participant.setAssociatedEntity(ae);
-						target.getParticipants().add(participant);
-					}
-				});
-
-			}
-
-			@Override
-			public void addPassTests() {
-
-				addPassTest(new PassTest() {
-
-					@Override
-					public void updateToPass(USRealmHeader2 target) {
-						// associatedPerson element and scopingOrganization element
-						target.init();
-						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
-						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
-						ae.setAssociatedPerson(CDAFactory.eINSTANCE.createPerson());
-						ae.setScopingOrganization(CDAFactory.eINSTANCE.createOrganization());
-						participant.setAssociatedEntity(ae);
-						target.getParticipants().add(participant);
-					}
-				});
-
-				addPassTest(new PassTest() {
-
-					@Override
-					public void updateToPass(USRealmHeader2 target) {
-						// scopingOrganization element only
-						target.init();
-						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
-						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
-						ae.setScopingOrganization(CDAFactory.eINSTANCE.createOrganization());
-						participant.setAssociatedEntity(ae);
-						target.getParticipants().add(participant);
-
-					}
-				});
-
-				addPassTest(new PassTest() {
-
-					@Override
-					public void updateToPass(USRealmHeader2 target) {
-						// associatedPerson element only
-						target.init();
-						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
-						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
-						ae.setAssociatedPerson(CDAFactory.eINSTANCE.createPerson());
-						participant.setAssociatedEntity(ae);
-						target.getParticipants().add(participant);
-
-					}
-				});
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2ParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganizationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodePTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
-				target.getDocumentationOfs().add(docOf);
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				docOf.setServiceEvent(se);
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				se.getPerformers().add(perf);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				perf.setAssignedEntity(ae);
-
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				for (DocumentationOf dof : target.getDocumentationOfs()) {
-					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
-						perf.getAssignedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
-				target.getDocumentationOfs().add(docOf);
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				docOf.setServiceEvent(se);
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				se.getPerformers().add(perf);
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				perf.setAssignedEntity(ae);
-				ae.setCode(DatatypesFactory.eINSTANCE.createCE());
-
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				for (DocumentationOf dof : target.getDocumentationOfs()) {
-					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
-						perf.getAssignedEntity().setCode(
-							DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.101"));
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2DocumentationOfServiceEventPerformer1GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodePTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_DOCUMENTATION_OF_SERVICE_EVENT_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
-				target.getDocumentationOfs().add(docOf);
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				docOf.setServiceEvent(se);
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				se.getPerformers().add(perf);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				for (DocumentationOf dof : target.getDocumentationOfs()) {
-					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
-						perf.setFunctionCode(DatatypesFactory.eINSTANCE.createCE());
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_DOCUMENTATION_OF_SERVICE_EVENT_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
-				target.getDocumentationOfs().add(docOf);
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				docOf.setServiceEvent(se);
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				se.getPerformers().add(perf);
-				perf.setFunctionCode(DatatypesFactory.eINSTANCE.createCE());
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				for (DocumentationOf dof : target.getDocumentationOfs()) {
-					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
-						perf.setFunctionCode(DatatypesFactory.eINSTANCE.createCE("ADMPHYS", "2.16.840.1.113883.5.88"));
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_DOCUMENTATION_OF_SERVICE_EVENT_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
-				target.getDocumentationOfs().add(docOf);
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				docOf.setServiceEvent(se);
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				se.getPerformers().add(perf);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				for (DocumentationOf dof : target.getDocumentationOfs()) {
-					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
-						perf.setAssignedEntity(ae);
-					}
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2DocumentationOfServiceEventGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2DocumentationOfGeneralHeaderConstraintsDocumentationOfServiceEventPerformer() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2DocumentationOfGeneralHeaderConstraintsDocumentationOfServiceEventPerformerTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2DocumentationOfGeneralHeaderConstraintsDocumentationOfServiceEventPerformer",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_DOCUMENTATION_OF_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
-				target.getDocumentationOfs().add(docOf);
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				docOf.setServiceEvent(se);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				for (DocumentationOf dof : target.getDocumentationOfs()) {
-					dof.getServiceEvent().getPerformers().add(perf);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2DocumentationOfGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2DocumentationOfGeneralHeaderConstraintsDocumentationOfServiceEventPerformerTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateUSRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEvent() {
-		OperationsTestCase<USRealmHeader2> validateUSRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEventTestCase = new OperationsTestCase<USRealmHeader2>(
-			"validateUSRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEvent",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER2_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(USRealmHeader2 target) {
-				target.init();
-				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
-				target.getDocumentationOfs().add(docOf);
-			}
-
-			@Override
-			protected void updateToPass(USRealmHeader2 target) {
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				for (DocumentationOf dof : target.getDocumentationOfs()) {
-					dof.setServiceEvent(se);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return USRealmHeader2Operations.validateUSRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEvent(
-					(USRealmHeader2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateUSRealmHeader2GeneralHeaderConstraintsDocumentationOfServiceEventTestCase.doValidationTest();
 	}
 
 	/**
@@ -2953,6 +1022,1937 @@ public class USRealmHeader2Test extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsAuthorizationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUseTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TEL_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+				Guardian guardian = CDAFactory.eINSTANCE.createGuardian();
+				pat.getGuardians().add(guardian);
+				guardian.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				for (RecordTarget rt : target.getRecordTargets()) {
+					for (Guardian g : rt.getPatientRole().getPatient().getGuardians()) {
+						for (TEL t : g.getTelecoms()) {
+							t.getUses().add(TelecommunicationAddressUse.AS);
+						}
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUseTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsiblePartyTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_FROM_PERSONAL_RELATIONSHIP_OR_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsiblePartyTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+				Guardian guard = CDAFactory.eINSTANCE.createGuardian();
+				pat.getGuardians().add(guard);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				CE code = DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.5.111");
+				for (RecordTarget rt : target.getRecordTargets()) {
+					for (Guardian guard : rt.getPatientRole().getPatient().getGuardians()) {
+						guard.setCode(code);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecomTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+				Guardian guardian = CDAFactory.eINSTANCE.createGuardian();
+				pat.getGuardians().add(guardian);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				for (RecordTarget rt : target.getRecordTargets()) {
+					for (Guardian g : rt.getPatientRole().getPatient().getGuardians()) {
+						g.getTelecoms().add(DatatypesFactory.eINSTANCE.createTEL());
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecomTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodePTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+				LanguageCommunication lcom = CDAFactory.eINSTANCE.createLanguageCommunication();
+				pat.getLanguageCommunications().add(lcom);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				CS lanCode = DatatypesFactory.eINSTANCE.createCS();
+				for (RecordTarget rt : target.getRecordTargets()) {
+					for (LanguageCommunication lcom : rt.getPatientRole().getPatient().getLanguageCommunications()) {
+						lcom.setLanguageCode(lanCode);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+				LanguageCommunication lcom = CDAFactory.eINSTANCE.createLanguageCommunication();
+				pat.getLanguageCommunications().add(lcom);
+				lcom.setLanguageCode(DatatypesFactory.eINSTANCE.createCS());
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				CS lanCode = DatatypesFactory.eINSTANCE.createCS("mustExistOnly");
+				for (RecordTarget rt : target.getRecordTargets()) {
+					for (LanguageCommunication lcom : rt.getPatientRole().getPatient().getLanguageCommunications()) {
+						lcom.setLanguageCode(lanCode);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceIndTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PREFERENCE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+				LanguageCommunication lcom = CDAFactory.eINSTANCE.createLanguageCommunication();
+				pat.getLanguageCommunications().add(lcom);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				BL prefInd = DatatypesFactory.eINSTANCE.createBL();
+				for (RecordTarget rt : target.getRecordTargets()) {
+					for (LanguageCommunication lcom : rt.getPatientRole().getPatient().getLanguageCommunications()) {
+						lcom.setPreferenceInd(prefInd);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceIndTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYearTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				// fails if value is less than required number of digits (4)
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("123")); // fails as intended
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				// passes if value is more than or equal to required number of digits (6)
+				target.getRecordTargets().clear();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("1234")); // passes as intended
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYearTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDayTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_TS_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				// fails if value is less than required number of digits (8)
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("1234567")); // fails as intended
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				// passes if value is more than or equal to required number of digits (8)
+				target.getRecordTargets().clear();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("12345678")); // passes as intended
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDayTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				CE raceCode = DatatypesFactory.eINSTANCE.createCE("1002-5", "2.16.840.1.113883.6.238");
+				for (RecordTarget rt : target.getRecordTargets()) {
+					rt.getPatientRole().getPatient().setRaceCode(raceCode);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodePTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				CE raceCode = DatatypesFactory.eINSTANCE.createCE();
+				for (RecordTarget rt : target.getRecordTargets()) {
+					rt.getPatientRole().getPatient().setRaceCode(raceCode);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				CE egCode = DatatypesFactory.eINSTANCE.createCE("2135-2", "2.16.840.1.113883.6.238");
+				for (RecordTarget rt : target.getRecordTargets()) {
+					rt.getPatientRole().getPatient().setEthnicGroupCode(egCode);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodePTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				CE egCode = DatatypesFactory.eINSTANCE.createCE();
+				for (RecordTarget rt : target.getRecordTargets()) {
+					rt.getPatientRole().getPatient().setEthnicGroupCode(egCode);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimeTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				// fails if no birthTime element exists
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				// passes if a birthTime element exists
+				TS btTS = DatatypesFactory.eINSTANCE.createTS();
+				btTS.setNullFlavor(NullFlavor.NAV);
+				target.getRecordTargets().clear();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS());
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				Guardian guard = CDAFactory.eINSTANCE.createGuardian();
+				for (RecordTarget rt : target.getRecordTargets()) {
+					rt.getPatientRole().getPatient().getGuardians().add(guard);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(pat);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				LanguageCommunication lcom = CDAFactory.eINSTANCE.createLanguageCommunication();
+				for (RecordTarget rt : target.getRecordTargets()) {
+					rt.getPatientRole().getPatient().getLanguageCommunications().add(lcom);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatient() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatient",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				rt.setPatientRole(pr);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				Patient pat = CDAFactory.eINSTANCE.createPatient();
+				for (RecordTarget rt : target.getRecordTargets()) {
+					rt.getPatientRole().setPatient(pat);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRole() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRoleTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRole",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget rt = CDAFactory.eINSTANCE.createRecordTarget();
+				target.getRecordTargets().add(rt);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				for (RecordTarget r : target.getRecordTargets()) {
+					r.setPatientRole(pr);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRole(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRoleTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsDataEntererAssignedEntityCodePTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				target.setDataEnterer(de);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				de.setAssignedEntity(ae);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				target.getDataEnterer().getAssignedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDataEntererAssignedEntityCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntityCode() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsDataEntererAssignedEntityCode",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				target.setDataEnterer(de);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				de.setAssignedEntity(ae);
+				ae.setCode(DatatypesFactory.eINSTANCE.createCE());
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				target.getDataEnterer().getAssignedEntity().setCode(
+					DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.101"));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsDataEntererAssignedEntity() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsDataEntererAssignedEntityTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsDataEntererAssignedEntity",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				DataEnterer de = CDAFactory.eINSTANCE.createDataEnterer();
+				target.setDataEnterer(de);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				target.getDataEnterer().setAssignedEntity(ae);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsDataEntererAssignedEntity(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDataEntererAssignedEntityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsAuthorAssignedAuthor() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsAuthorAssignedAuthorTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsAuthorAssignedAuthor",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Author a = CDAFactory.eINSTANCE.createAuthor();
+				target.getAuthors().add(a);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
+				for (Author a : target.getAuthors()) {
+					a.setAssignedAuthor(aa);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsAuthorAssignedAuthor(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthorAssignedAuthorTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsInformationRecipientIntendedRecipient() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				InformationRecipient ir = CDAFactory.eINSTANCE.createInformationRecipient();
+				target.getInformationRecipients().add(ir);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				IntendedRecipient intendedRec = CDAFactory.eINSTANCE.createIntendedRecipient();
+				for (InformationRecipient ir : target.getInformationRecipients()) {
+					ir.setIntendedRecipient(intendedRec);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsUSRealmAddressUseP() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsUSRealmAddressUsePTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsUSRealmAddressUseP",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getUses().add(PostalAddressUse.ABC);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsUSRealmAddressUseP(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsUSRealmAddressUsePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsUSRealmAddressUse() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsUSRealmAddressUseTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsUSRealmAddressUse",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
+				addr.getUses().add(PostalAddressUse.ABC);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getUses().clear();
+					}
+				}
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getUses().add(PostalAddressUse.DIR);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsUSRealmAddressUse(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsUSRealmAddressUseTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsUSRealmAddressCountry() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsUSRealmAddressCountryTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsUSRealmAddressCountry",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				ADXP country = DatatypesFactory.eINSTANCE.createADXP();
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getCountries().add(country);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsUSRealmAddressCountry(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsUSRealmAddressCountryTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsUSRealmAddressState() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsUSRealmAddressStateTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsUSRealmAddressState",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				ADXP state = DatatypesFactory.eINSTANCE.createADXP();
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getStates().add(state);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsUSRealmAddressState(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsUSRealmAddressStateTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsUSRealmAddressCity() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsUSRealmAddressCityTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsUSRealmAddressCity",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				ADXP city = DatatypesFactory.eINSTANCE.createADXP();
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getCities().add(city);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsUSRealmAddressCity(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsUSRealmAddressCityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsUSRealmAddressPostalCode() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				ADXP postalCode = DatatypesFactory.eINSTANCE.createADXP();
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getPostalCodes().add(postalCode);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsUSRealmAddressPostalCode(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+				AD addr = DatatypesFactory.eINSTANCE.createAD();
+				ae.getAddrs().add(addr);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				ADXP sdl = DatatypesFactory.eINSTANCE.createADXP();
+				for (Informant12 inf : target.getInformants()) {
+					for (AD addr : inf.getAssignedEntity().getAddrs()) {
+						addr.getStreetAddressLines().add(sdl);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsInformantAssignedEntityCodeP() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsInformantAssignedEntityCodePTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsInformantAssignedEntityCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				for (Informant12 inf : target.getInformants()) {
+					inf.getAssignedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantAssignedEntityCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsInformantAssignedEntityCode() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsInformantAssignedEntityCodeTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsInformantAssignedEntityCode",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				for (Informant12 inf : target.getInformants()) {
+					inf.getAssignedEntity().setCode(
+						DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.101"));
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantAssignedEntityCode(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantAssignedEntityCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsInformantAssignedEntityAddr() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsInformantAssignedEntityAddrTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsInformantAssignedEntityAddr",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+				target.getInformants().add(inf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				inf.setAssignedEntity(ae);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				for (Informant12 inf : target.getInformants()) {
+					inf.getAssignedEntity().getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantAssignedEntityAddr(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantAssignedEntityAddrTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntityTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_HAS_ASSIGNED_ENTITY_OR_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(USRealmHeader2 target) {
+						target.init();
+						Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
+						target.getInformants().add(informant);
+
+					}
+				});
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(USRealmHeader2 target) {
+						target.init();
+
+						Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						informant.setAssignedEntity(ae);
+						RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
+
+						informant.setRelatedEntity(re);
+
+						target.getInformants().add(informant);
+
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						target.init();
+
+						Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						informant.setAssignedEntity(ae);
+
+						target.getInformants().add(informant);
+
+					}
+
+				});
+
+				addPassTest(new PassTest() {
+
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						target.init();
+						Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
+						RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
+						informant.setRelatedEntity(re);
+						target.getInformants().add(informant);
+
+					}
+
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsComponentOfEncompassingEncounter() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsComponentOfEncompassingEncounterTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsComponentOfEncompassingEncounter",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				Component1 comp = CDAFactory.eINSTANCE.createComponent1();
+				target.setComponentOf(comp);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				target.getComponentOf().setEncompassingEncounter(CDAFactory.eINSTANCE.createEncompassingEncounter());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsComponentOfEncompassingEncounterTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganizationTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_HAS_ASSOCIATED_PERSON_OR_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+
+					@Override
+					public void updateToFail(USRealmHeader2 target) {
+						// Does not contain an associatedPerson element or a scopingOrganization element
+						target.init();
+						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						participant.setAssociatedEntity(ae);
+						target.getParticipants().add(participant);
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						// associatedPerson element and scopingOrganization element
+						target.init();
+						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						ae.setAssociatedPerson(CDAFactory.eINSTANCE.createPerson());
+						ae.setScopingOrganization(CDAFactory.eINSTANCE.createOrganization());
+						participant.setAssociatedEntity(ae);
+						target.getParticipants().add(participant);
+					}
+				});
+
+				addPassTest(new PassTest() {
+
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						// scopingOrganization element only
+						target.init();
+						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						ae.setScopingOrganization(CDAFactory.eINSTANCE.createOrganization());
+						participant.setAssociatedEntity(ae);
+						target.getParticipants().add(participant);
+
+					}
+				});
+
+				addPassTest(new PassTest() {
+
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						// associatedPerson element only
+						target.init();
+						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						ae.setAssociatedPerson(CDAFactory.eINSTANCE.createPerson());
+						participant.setAssociatedEntity(ae);
+						target.getParticipants().add(participant);
+
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganizationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodePTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
+				target.getDocumentationOfs().add(docOf);
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				docOf.setServiceEvent(se);
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				perf.setAssignedEntity(ae);
+
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
+						perf.getAssignedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
+				target.getDocumentationOfs().add(docOf);
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				docOf.setServiceEvent(se);
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				perf.setAssignedEntity(ae);
+				ae.setCode(DatatypesFactory.eINSTANCE.createCE());
+
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
+						perf.getAssignedEntity().setCode(
+							DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.101"));
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodePTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
+				target.getDocumentationOfs().add(docOf);
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				docOf.setServiceEvent(se);
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
+						perf.setFunctionCode(DatatypesFactory.eINSTANCE.createCE());
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
+				target.getDocumentationOfs().add(docOf);
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				docOf.setServiceEvent(se);
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
+				perf.setFunctionCode(DatatypesFactory.eINSTANCE.createCE());
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
+						perf.setFunctionCode(DatatypesFactory.eINSTANCE.createCE("ADMPHYS", "2.16.840.1.113883.5.88"));
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
+				target.getDocumentationOfs().add(docOf);
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				docOf.setServiceEvent(se);
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				se.getPerformers().add(perf);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					for (Performer1 perf : dof.getServiceEvent().getPerformers()) {
+						perf.setAssignedEntity(ae);
+					}
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformerTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
+				target.getDocumentationOfs().add(docOf);
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				docOf.setServiceEvent(se);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					dof.getServiceEvent().getPerformers().add(perf);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformerTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsDocumentationOfServiceEvent() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsDocumentationOfServiceEventTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsDocumentationOfServiceEvent",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				DocumentationOf docOf = CDAFactory.eINSTANCE.createDocumentationOf();
+				target.getDocumentationOfs().add(docOf);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					dof.setServiceEvent(se);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsDocumentationOfServiceEvent(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsDocumentationOfServiceEventTestCase.doValidationTest();
 	}
 
 	/**

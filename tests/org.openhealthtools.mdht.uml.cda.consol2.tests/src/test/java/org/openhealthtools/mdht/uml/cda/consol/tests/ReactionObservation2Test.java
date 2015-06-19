@@ -38,25 +38,25 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservation2CodeValueSet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation2 Code Value Set</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservation2ProcedureActivityProcedureInversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation2 Procedure Activity Procedure Inversion Ind</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservation2MedicationActivityInversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation2 Medication Activity Inversion Ind</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservation2SeverityObservationInversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation2 Severity Observation Inversion Ind</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservation2TextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation2 Text Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservation2TextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation2 Text Reference Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservation2ReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation2 Reference Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationCodeValueSet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Code Value Set</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Status Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationProcedureActivityProcedure2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Procedure Activity Procedure2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationMedicationActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Medication Activity2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationSeverityObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Severity Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#getConsolProcedureActivityProcedure2s() <em>Get Consol Procedure Activity Procedure2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#getConsolMedicationActivity2s() <em>Get Consol Medication Activity2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#getConsolSeverityObservation2() <em>Get Consol Severity Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationProcedureActivityProcedureInversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Procedure Activity Procedure Inversion Ind</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationMedicationActivityInversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Medication Activity Inversion Ind</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationSeverityObservationInversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Severity Observation Inversion Ind</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Text Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Text Reference Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationProcedureActivityProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Procedure Activity Procedure</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationMedicationActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Medication Activity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2#validateReactionObservationSeverityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Severity Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -72,10 +72,10 @@ public class ReactionObservation2Test extends CDAValidationTest {
 	* It always returns true and there is no reason to test it
 	*/
 	@Ignore
-	public void testValidateReactionObservation2CodeValueSet() {
-		OperationsTestCase<ReactionObservation2> validateReactionObservation2CodeValueSetTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservation2CodeValueSet",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION2_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateReactionObservationCodeValueSet() {
+		OperationsTestCase<ReactionObservation2> validateReactionObservationCodeValueSetTestCase = new OperationsTestCase<ReactionObservation2>(
+			"validateReactionObservationCodeValueSet",
+			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -92,284 +92,13 @@ public class ReactionObservation2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ReactionObservation2Operations.validateReactionObservation2CodeValueSet(
+				return ReactionObservation2Operations.validateReactionObservationCodeValueSet(
 					(ReactionObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateReactionObservation2CodeValueSetTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateReactionObservation2ProcedureActivityProcedureInversionInd() {
-		OperationsTestCase<ReactionObservation2> validateReactionObservation2ProcedureActivityProcedureInversionIndTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservation2ProcedureActivityProcedureInversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION2_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			public void addFailTests() {
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(ReactionObservation2 target) {
-						target.init();
-						EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-						er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-						er.setProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
-						target.getEntryRelationships().add(er);
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(ReactionObservation2 target) {
-						target.init();
-						EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-						er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-						er.setInversionInd(false);
-						er.setProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
-						target.getEntryRelationships().add(er);
-					}
-				});
-			}
-
-			@Override
-			protected void updateToPass(ReactionObservation2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-				er.setInversionInd(true);
-				er.setProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ReactionObservation2Operations.validateReactionObservation2ProcedureActivityProcedureInversionInd(
-					(ReactionObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReactionObservation2ProcedureActivityProcedureInversionIndTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateReactionObservation2MedicationActivityInversionInd() {
-		OperationsTestCase<ReactionObservation2> validateReactionObservation2MedicationActivityInversionIndTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservation2MedicationActivityInversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION2_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			public void addFailTests() {
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(ReactionObservation2 target) {
-						target.init();
-						EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-						er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-						er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity2().init());
-						target.getEntryRelationships().add(er);
-					}
-				});
-
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(ReactionObservation2 target) {
-						target.init();
-						EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-						er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-						er.setInversionInd(false);
-						er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity2().init());
-						target.getEntryRelationships().add(er);
-					}
-				});
-			}
-
-			@Override
-			protected void updateToPass(ReactionObservation2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-				er.setInversionInd(true);
-				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ReactionObservation2Operations.validateReactionObservation2MedicationActivityInversionInd(
-					(ReactionObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReactionObservation2MedicationActivityInversionIndTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateReactionObservation2SeverityObservationInversionInd() {
-		OperationsTestCase<ReactionObservation2> validateReactionObservation2SeverityObservationInversionIndTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservation2SeverityObservationInversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION2_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ReactionObservation2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setObservation(ConsolFactory.eINSTANCE.createSeverityObservation2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected void updateToPass(ReactionObservation2 target) {
-				for (EntryRelationship er : target.getEntryRelationships()) {
-					er.setInversionInd(true);
-				}
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ReactionObservation2Operations.validateReactionObservation2SeverityObservationInversionInd(
-					(ReactionObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReactionObservation2SeverityObservationInversionIndTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateReactionObservation2TextReference() {
-		OperationsTestCase<ReactionObservation2> validateReactionObservation2TextReferenceTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservation2TextReference",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION2_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ReactionObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ReactionObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ReactionObservation2Operations.validateReactionObservation2TextReference(
-					(ReactionObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReactionObservation2TextReferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateReactionObservation2TextReferenceValue() {
-		OperationsTestCase<ReactionObservation2> validateReactionObservation2TextReferenceValueTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservation2TextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION2_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ReactionObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ReactionObservation2 target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ReactionObservation2Operations.validateReactionObservation2TextReferenceValue(
-					(ReactionObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReactionObservation2TextReferenceValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateReactionObservation2ReferenceValue() {
-		OperationsTestCase<ReactionObservation2> validateReactionObservation2ReferenceValueTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservation2ReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION2_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ReactionObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ReactionObservation2 target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ReactionObservation2Operations.validateReactionObservation2ReferenceValue(
-					(ReactionObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReactionObservation2ReferenceValueTestCase.doValidationTest();
+		validateReactionObservationCodeValueSetTestCase.doValidationTest();
 	}
 
 	/**
@@ -442,116 +171,6 @@ public class ReactionObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateReactionObservationProcedureActivityProcedure2() {
-		OperationsTestCase<ReactionObservation2> validateReactionObservationProcedureActivityProcedure2TestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservationProcedureActivityProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-			@Override
-			protected void updateToFail(ReactionObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ReactionObservation2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-				er.setProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ReactionObservation2Operations.validateReactionObservationProcedureActivityProcedure2(
-					(ReactionObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReactionObservationProcedureActivityProcedure2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateReactionObservationMedicationActivity2() {
-		OperationsTestCase<ReactionObservation2> validateReactionObservationMedicationActivity2TestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservationMedicationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ReactionObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ReactionObservation2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
-				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ReactionObservation2Operations.validateReactionObservationMedicationActivity2(
-					(ReactionObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReactionObservationMedicationActivity2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateReactionObservationSeverityObservation2() {
-		OperationsTestCase<ReactionObservation2> validateReactionObservationSeverityObservation2TestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservationSeverityObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ReactionObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ReactionObservation2 target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setObservation(ConsolFactory.eINSTANCE.createSeverityObservation2().init());
-				target.getEntryRelationships().add(er);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ReactionObservation2Operations.validateReactionObservationSeverityObservation2(
-					(ReactionObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateReactionObservationSeverityObservation2TestCase.doValidationTest();
-	}
-
-	/**
-	*
 	* @generated
 	*/
 	@Test
@@ -584,6 +203,277 @@ public class ReactionObservation2Test extends CDAValidationTest {
 		ReactionObservation2 target = objectFactory.create();
 		target.getConsolSeverityObservation2();
 
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateReactionObservationProcedureActivityProcedureInversionInd() {
+		OperationsTestCase<ReactionObservation2> validateReactionObservationProcedureActivityProcedureInversionIndTestCase = new OperationsTestCase<ReactionObservation2>(
+			"validateReactionObservationProcedureActivityProcedureInversionInd",
+			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ReactionObservation2 target) {
+						target.init();
+						EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+						er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+						er.setProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
+						target.getEntryRelationships().add(er);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ReactionObservation2 target) {
+						target.init();
+						EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+						er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+						er.setInversionInd(false);
+						er.setProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
+						target.getEntryRelationships().add(er);
+					}
+				});
+			}
+
+			@Override
+			protected void updateToPass(ReactionObservation2 target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+				er.setInversionInd(true);
+				er.setProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReactionObservation2Operations.validateReactionObservationProcedureActivityProcedureInversionInd(
+					(ReactionObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReactionObservationProcedureActivityProcedureInversionIndTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateReactionObservationMedicationActivityInversionInd() {
+		OperationsTestCase<ReactionObservation2> validateReactionObservationMedicationActivityInversionIndTestCase = new OperationsTestCase<ReactionObservation2>(
+			"validateReactionObservationMedicationActivityInversionInd",
+			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ReactionObservation2 target) {
+						target.init();
+						EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+						er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+						er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity2().init());
+						target.getEntryRelationships().add(er);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ReactionObservation2 target) {
+						target.init();
+						EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+						er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+						er.setInversionInd(false);
+						er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity2().init());
+						target.getEntryRelationships().add(er);
+					}
+				});
+			}
+
+			@Override
+			protected void updateToPass(ReactionObservation2 target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+				er.setInversionInd(true);
+				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReactionObservation2Operations.validateReactionObservationMedicationActivityInversionInd(
+					(ReactionObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReactionObservationMedicationActivityInversionIndTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateReactionObservationSeverityObservationInversionInd() {
+		OperationsTestCase<ReactionObservation2> validateReactionObservationSeverityObservationInversionIndTestCase = new OperationsTestCase<ReactionObservation2>(
+			"validateReactionObservationSeverityObservationInversionInd",
+			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ReactionObservation2 target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
+				er.setObservation(ConsolFactory.eINSTANCE.createSeverityObservation2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected void updateToPass(ReactionObservation2 target) {
+				for (EntryRelationship er : target.getEntryRelationships()) {
+					er.setInversionInd(true);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReactionObservation2Operations.validateReactionObservationSeverityObservationInversionInd(
+					(ReactionObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReactionObservationSeverityObservationInversionIndTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateReactionObservationTextReference() {
+		OperationsTestCase<ReactionObservation2> validateReactionObservationTextReferenceTestCase = new OperationsTestCase<ReactionObservation2>(
+			"validateReactionObservationTextReference",
+			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ReactionObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ReactionObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReactionObservation2Operations.validateReactionObservationTextReference(
+					(ReactionObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReactionObservationTextReferenceTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateReactionObservationTextReferenceValue() {
+		OperationsTestCase<ReactionObservation2> validateReactionObservationTextReferenceValueTestCase = new OperationsTestCase<ReactionObservation2>(
+			"validateReactionObservationTextReferenceValue",
+			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ReactionObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ReactionObservation2 target) {
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReactionObservation2Operations.validateReactionObservationTextReferenceValue(
+					(ReactionObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReactionObservationTextReferenceValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateReactionObservationReferenceValue() {
+		OperationsTestCase<ReactionObservation2> validateReactionObservationReferenceValueTestCase = new OperationsTestCase<ReactionObservation2>(
+			"validateReactionObservationReferenceValue",
+			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ReactionObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ReactionObservation2 target) {
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReactionObservation2Operations.validateReactionObservationReferenceValue(
+					(ReactionObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReactionObservationReferenceValueTestCase.doValidationTest();
 	}
 
 	/**
@@ -740,6 +630,117 @@ public class ReactionObservation2Test extends CDAValidationTest {
 		};
 
 		validateReactionObservationStatusCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateReactionObservationProcedureActivityProcedure() {
+		OperationsTestCase<ReactionObservation2> validateReactionObservationProcedureActivityProcedureTestCase = new OperationsTestCase<ReactionObservation2>(
+			"validateReactionObservationProcedureActivityProcedure",
+			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ReactionObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ReactionObservation2 target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+				er.setProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReactionObservation2Operations.validateReactionObservationProcedureActivityProcedure(
+					(ReactionObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReactionObservationProcedureActivityProcedureTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateReactionObservationMedicationActivity() {
+		OperationsTestCase<ReactionObservation2> validateReactionObservationMedicationActivityTestCase = new OperationsTestCase<ReactionObservation2>(
+			"validateReactionObservationMedicationActivity",
+			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ReactionObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ReactionObservation2 target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReactionObservation2Operations.validateReactionObservationMedicationActivity(
+					(ReactionObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReactionObservationMedicationActivityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateReactionObservationSeverityObservation() {
+		OperationsTestCase<ReactionObservation2> validateReactionObservationSeverityObservationTestCase = new OperationsTestCase<ReactionObservation2>(
+			"validateReactionObservationSeverityObservation",
+			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ReactionObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ReactionObservation2 target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
+				er.setObservation(ConsolFactory.eINSTANCE.createSeverityObservation2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ReactionObservation2Operations.validateReactionObservationSeverityObservation(
+					(ReactionObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateReactionObservationSeverityObservationTestCase.doValidationTest();
 	}
 
 	/**

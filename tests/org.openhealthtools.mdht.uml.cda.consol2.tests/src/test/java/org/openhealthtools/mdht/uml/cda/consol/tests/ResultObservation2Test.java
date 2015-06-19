@@ -38,12 +38,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservation2AuthorMultiplicity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation2 Author Multiplicity</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservation2CodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation2 Code Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservation2TextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation2 Text Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservation2ReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation2 Reference Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservation2TextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation2 Text Reference Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservation2NoObservationRangeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation2 No Observation Range Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservationInterpretationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Interpretation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation2 Author Participation</em>}</li>
@@ -51,6 +45,12 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservation2ReferenceRangeObservationRangeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation2 Reference Range Observation Range Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservation2ReferenceRangeObservationRangeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation2 Reference Range Observation Range Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservation2ReferenceRangeObservationRange(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation2 Reference Range Observation Range</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservationAuthorMultiplicity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Author Multiplicity</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservationCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservationTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Text Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservationReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Reference Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservationTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Text Reference Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservationNoObservationRangeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation No Observation Range Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ResultObservation2#validateResultObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code</em>}</li>
@@ -63,251 +63,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  */
 
 public class ResultObservation2Test extends CDAValidationTest {
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateResultObservation2AuthorMultiplicity() {
-		OperationsTestCase<ResultObservation2> validateResultObservation2AuthorMultiplicityTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservation2AuthorMultiplicity",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_AUTHOR_MULTIPLICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ResultObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ResultObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ResultObservation2Operations.validateResultObservation2AuthorMultiplicity(
-					(ResultObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateResultObservation2AuthorMultiplicityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateResultObservation2CodeValue() {
-		OperationsTestCase<ResultObservation2> validateResultObservation2CodeValueTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservation2CodeValue",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ResultObservation2 target) {
-				target.init();
-				CD code = DatatypesFactory.eINSTANCE.createCD();
-				// setting invalid codeSystem to cause failure
-				code.setCodeSystem(BAD_CODESYSTEM_ID);
-				target.setCode(code);
-			}
-
-			@Override
-			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(ResultObservation2 target) {
-						target.init();
-						CD code = DatatypesFactory.eINSTANCE.createCD();
-						// setting valid codeSystem 1
-						code.setCodeSystem("2.16.840.1.113883.6.1");
-						target.setCode(code);
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(ResultObservation2 target) {
-						target.init();
-						CD code = DatatypesFactory.eINSTANCE.createCD();
-						// setting valid codeSystem 2
-						code.setCodeSystem(SNOMEDCT_ID);
-						target.setCode(code);
-					}
-				});
-			};
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ResultObservation2Operations.validateResultObservation2CodeValue(
-					(ResultObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateResultObservation2CodeValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateResultObservation2TextReference() {
-		OperationsTestCase<ResultObservation2> validateResultObservation2TextReferenceTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservation2TextReference",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ResultObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ResultObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ResultObservation2Operations.validateResultObservation2TextReference(
-					(ResultObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateResultObservation2TextReferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateResultObservation2ReferenceValue() {
-		OperationsTestCase<ResultObservation2> validateResultObservation2ReferenceValueTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservation2ReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ResultObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ResultObservation2 target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ResultObservation2Operations.validateResultObservation2ReferenceValue(
-					(ResultObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateResultObservation2ReferenceValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateResultObservation2TextReferenceValue() {
-		OperationsTestCase<ResultObservation2> validateResultObservation2TextReferenceValueTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservation2TextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ResultObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ResultObservation2 target) {
-				target.init();
-
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				target.getValues().add(value);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ResultObservation2Operations.validateResultObservation2TextReferenceValue(
-					(ResultObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateResultObservation2TextReferenceValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
-	* It always returns true and there is no reason to test it
-	*/
-	@Ignore
-	public void testValidateResultObservation2NoObservationRangeCode() {
-		OperationsTestCase<ResultObservation2> validateResultObservation2NoObservationRangeCodeTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservation2NoObservationRangeCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_NO_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(ResultObservation2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(ResultObservation2 target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return ResultObservation2Operations.validateResultObservation2NoObservationRangeCode(
-					(ResultObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateResultObservation2NoObservationRangeCodeTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -553,6 +308,251 @@ public class ResultObservation2Test extends CDAValidationTest {
 		};
 
 		validateResultObservation2ReferenceRangeObservationRangeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateResultObservationAuthorMultiplicity() {
+		OperationsTestCase<ResultObservation2> validateResultObservationAuthorMultiplicityTestCase = new OperationsTestCase<ResultObservation2>(
+			"validateResultObservationAuthorMultiplicity",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_AUTHOR_MULTIPLICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ResultObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultObservation2Operations.validateResultObservationAuthorMultiplicity(
+					(ResultObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationAuthorMultiplicityTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateResultObservationCodeValue() {
+		OperationsTestCase<ResultObservation2> validateResultObservationCodeValueTestCase = new OperationsTestCase<ResultObservation2>(
+			"validateResultObservationCodeValue",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultObservation2 target) {
+				target.init();
+				CD code = DatatypesFactory.eINSTANCE.createCD();
+				// setting invalid codeSystem to cause failure
+				code.setCodeSystem(BAD_CODESYSTEM_ID);
+				target.setCode(code);
+			}
+
+			@Override
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ResultObservation2 target) {
+						target.init();
+						CD code = DatatypesFactory.eINSTANCE.createCD();
+						// setting valid codeSystem 1
+						code.setCodeSystem("2.16.840.1.113883.6.1");
+						target.setCode(code);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ResultObservation2 target) {
+						target.init();
+						CD code = DatatypesFactory.eINSTANCE.createCD();
+						// setting valid codeSystem 2
+						code.setCodeSystem(SNOMEDCT_ID);
+						target.setCode(code);
+					}
+				});
+			};
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultObservation2Operations.validateResultObservationCodeValue(
+					(ResultObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationCodeValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateResultObservationTextReference() {
+		OperationsTestCase<ResultObservation2> validateResultObservationTextReferenceTestCase = new OperationsTestCase<ResultObservation2>(
+			"validateResultObservationTextReference",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ResultObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultObservation2Operations.validateResultObservationTextReference(
+					(ResultObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationTextReferenceTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateResultObservationReferenceValue() {
+		OperationsTestCase<ResultObservation2> validateResultObservationReferenceValueTestCase = new OperationsTestCase<ResultObservation2>(
+			"validateResultObservationReferenceValue",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ResultObservation2 target) {
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultObservation2Operations.validateResultObservationReferenceValue(
+					(ResultObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationReferenceValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateResultObservationTextReferenceValue() {
+		OperationsTestCase<ResultObservation2> validateResultObservationTextReferenceValueTestCase = new OperationsTestCase<ResultObservation2>(
+			"validateResultObservationTextReferenceValue",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ResultObservation2 target) {
+				target.init();
+
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultObservation2Operations.validateResultObservationTextReferenceValue(
+					(ResultObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationTextReferenceValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden with no severity as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateResultObservationNoObservationRangeCode() {
+		OperationsTestCase<ResultObservation2> validateResultObservationNoObservationRangeCodeTestCase = new OperationsTestCase<ResultObservation2>(
+			"validateResultObservationNoObservationRangeCode",
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_NO_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ResultObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ResultObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ResultObservation2Operations.validateResultObservationNoObservationRangeCode(
+					(ResultObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateResultObservationNoObservationRangeCodeTestCase.doValidationTest();
 	}
 
 	/**

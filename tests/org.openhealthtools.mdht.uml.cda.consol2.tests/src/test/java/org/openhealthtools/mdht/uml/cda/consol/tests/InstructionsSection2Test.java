@@ -31,11 +31,11 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section2 Null Flavor</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSectionInstruction2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Instruction2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#getConsolInstruction2s() <em>Get Consol Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.InstructionsSection2#validateInstructionsSectionInstructions(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Section Instructions</em>}</li>
  * </ul>
  * </p>
  *
@@ -76,39 +76,6 @@ public class InstructionsSection2Test extends CDAValidationTest {
 		};
 
 		validateInstructionsSection2NullFlavorTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateInstructionsSectionInstruction2() {
-		OperationsTestCase<InstructionsSection2> validateInstructionsSectionInstruction2TestCase = new OperationsTestCase<InstructionsSection2>(
-			"validateInstructionsSectionInstruction2",
-			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTIONS_SECTION_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(InstructionsSection2 target) {
-				// target.init defaults to a nullFlavor of NI which allows a pass
-			}
-
-			@Override
-			protected void updateToPass(InstructionsSection2 target) {
-				target.addAct(ConsolFactory.eINSTANCE.createInstruction2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return InstructionsSection2Operations.validateInstructionsSectionInstruction2(
-					(InstructionsSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInstructionsSectionInstruction2TestCase.doValidationTest();
 	}
 
 	/**
@@ -230,6 +197,39 @@ public class InstructionsSection2Test extends CDAValidationTest {
 		};
 
 		validateInstructionsSectionCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateInstructionsSectionInstructions() {
+		OperationsTestCase<InstructionsSection2> validateInstructionsSectionInstructionsTestCase = new OperationsTestCase<InstructionsSection2>(
+			"validateInstructionsSectionInstructions",
+			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(InstructionsSection2 target) {
+				// target.init defaults to a nullFlavor of NI which allows a pass
+			}
+
+			@Override
+			protected void updateToPass(InstructionsSection2 target) {
+				target.addAct(ConsolFactory.eINSTANCE.createInstruction2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return InstructionsSection2Operations.validateInstructionsSectionInstructions(
+					(InstructionsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInstructionsSectionInstructionsTestCase.doValidationTest();
 	}
 
 	/**

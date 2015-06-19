@@ -31,9 +31,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionFunctionalStatusOrganizer2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Functional Status Organizer2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionFunctionalStatusObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Functional Status Observation2</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionNonMedicinalSupplyActivity2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Non Medicinal Supply Activity2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSection2SelfCareActivities(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Self Care Activities</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSection2SensoryAndSpeechStatus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Sensory And Speech Status</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getConsolFunctionalStatusOrganizer2s() <em>Get Consol Functional Status Organizer2s</em>}</li>
@@ -47,6 +44,9 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getSensoryAndSpeechStatuss() <em>Get Sensory And Speech Statuss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionFunctionalStatusResultOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Functional Status Result Organizer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionFunctionalStatusResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Functional Status Result Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionNonMedicinalSupplyActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Non Medicinal Supply Activity</em>}</li>
  * </ul>
  * </p>
  *
@@ -87,106 +87,6 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 		};
 
 		validateFunctionalStatusSectionCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateFunctionalStatusSectionFunctionalStatusOrganizer2() {
-		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionFunctionalStatusOrganizer2TestCase = new OperationsTestCase<FunctionalStatusSection2>(
-			"validateFunctionalStatusSectionFunctionalStatusOrganizer2",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusSection2 target) {
-				target.addOrganizer(ConsolFactory.eINSTANCE.createFunctionalStatusOrganizer2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusSection2Operations.validateFunctionalStatusSectionFunctionalStatusOrganizer2(
-					(FunctionalStatusSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusSectionFunctionalStatusOrganizer2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateFunctionalStatusSectionFunctionalStatusObservation2() {
-		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionFunctionalStatusObservation2TestCase = new OperationsTestCase<FunctionalStatusSection2>(
-			"validateFunctionalStatusSectionFunctionalStatusObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusSection2 target) {
-				target.init();
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusSection2 target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createFunctionalStatusObservation2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusSection2Operations.validateFunctionalStatusSectionFunctionalStatusObservation2(
-					(FunctionalStatusSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusSectionFunctionalStatusObservation2TestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateFunctionalStatusSectionNonMedicinalSupplyActivity2() {
-		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionNonMedicinalSupplyActivity2TestCase = new OperationsTestCase<FunctionalStatusSection2>(
-			"validateFunctionalStatusSectionNonMedicinalSupplyActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusSection2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusSection2 target) {
-				target.init();
-				target.addSupply(ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity2().init());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusSection2Operations.validateFunctionalStatusSectionNonMedicinalSupplyActivity2(
-					(FunctionalStatusSection2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusSectionNonMedicinalSupplyActivity2TestCase.doValidationTest();
 	}
 
 	/**
@@ -436,6 +336,106 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 		};
 
 		validateFunctionalStatusSectionCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateFunctionalStatusSectionFunctionalStatusResultOrganizer() {
+		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionFunctionalStatusResultOrganizerTestCase = new OperationsTestCase<FunctionalStatusSection2>(
+			"validateFunctionalStatusSectionFunctionalStatusResultOrganizer",
+			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusSection2 target) {
+				target.addOrganizer(ConsolFactory.eINSTANCE.createFunctionalStatusOrganizer2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusSection2Operations.validateFunctionalStatusSectionFunctionalStatusResultOrganizer(
+					(FunctionalStatusSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusSectionFunctionalStatusResultOrganizerTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateFunctionalStatusSectionFunctionalStatusResultObservation() {
+		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionFunctionalStatusResultObservationTestCase = new OperationsTestCase<FunctionalStatusSection2>(
+			"validateFunctionalStatusSectionFunctionalStatusResultObservation",
+			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusSection2 target) {
+				target.init();
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusSection2 target) {
+				target.addObservation(ConsolFactory.eINSTANCE.createFunctionalStatusObservation2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusSection2Operations.validateFunctionalStatusSectionFunctionalStatusResultObservation(
+					(FunctionalStatusSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusSectionFunctionalStatusResultObservationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateFunctionalStatusSectionNonMedicinalSupplyActivity() {
+		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionNonMedicinalSupplyActivityTestCase = new OperationsTestCase<FunctionalStatusSection2>(
+			"validateFunctionalStatusSectionNonMedicinalSupplyActivity",
+			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusSection2 target) {
+				target.init();
+				target.addSupply(ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity2().init());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusSection2Operations.validateFunctionalStatusSectionNonMedicinalSupplyActivity(
+					(FunctionalStatusSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusSectionNonMedicinalSupplyActivityTestCase.doValidationTest();
 	}
 
 	/**
