@@ -1374,4 +1374,5 @@ The sources of payment are represented as a Coverage Activity, which identifies 
     <ruleId>CONF:1098-32178</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_zOoFoA7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_FskyAOwrEeOqa975IP2wug"/>
+  <CDA:ConstraintValidation xmi:id="_pWavQBUIEeWCiY8iFDNBKA" severity="INFO" base_Constraint="_reFLoPftEeO297ryy8ptVg"/>
 </xmi:XMI>

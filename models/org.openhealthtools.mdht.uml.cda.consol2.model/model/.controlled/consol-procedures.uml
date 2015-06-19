@@ -3504,9 +3504,6 @@ This template can be used with a contained Product Instance template to represen
   <uml:Association xmi:id="_QBjzUALpEeSBA9s7kRnaEg" memberEnd="_QBh-IALpEeSBA9s7kRnaEg _QBkaYALpEeSBA9s7kRnaEg">
     <ownedEnd xmi:id="_QBkaYALpEeSBA9s7kRnaEg" type="_N6wUUALoEeSBA9s7kRnaEg" association="_QBjzUALpEeSBA9s7kRnaEg"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_Sj7pcALpEeSBA9s7kRnaEg" severity="INFO" base_Association="_QBjzUALpEeSBA9s7kRnaEg">
-    <ruleId>CONF:1098-15512</ruleId>
-  </CDA:AssociationValidation>
   <uml:Association xmi:id="_bcyggALpEeSBA9s7kRnaEg" memberEnd="_bcwEQALpEeSBA9s7kRnaEg _bcyggQLpEeSBA9s7kRnaEg">
     <ownedEnd xmi:id="_bcyggQLpEeSBA9s7kRnaEg" type="_N6wUUALoEeSBA9s7kRnaEg" association="_bcyggALpEeSBA9s7kRnaEg"/>
   </uml:Association>
@@ -3666,4 +3663,5 @@ This template can be used with a contained Product Instance template to represen
     <ruleId>CONF:1098-32474</ruleId>
     <ruleId>CONF:1098-32475</ruleId>
   </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="_KBl24BUHEeWCiY8iFDNBKA" severity="INFO" base_Constraint="_ykBmYPvZEeOes-3T-2HryA"/>
 </xmi:XMI>
