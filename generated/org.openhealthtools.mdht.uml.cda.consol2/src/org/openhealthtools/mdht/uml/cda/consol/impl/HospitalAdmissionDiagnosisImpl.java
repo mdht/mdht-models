@@ -101,6 +101,15 @@ public class HospitalAdmissionDiagnosisImpl extends ActImpl implements HospitalA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHospitalAdmissionDiagnosisCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateHospitalAdmissionDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

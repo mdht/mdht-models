@@ -73,6 +73,7 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureActivityObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationStatusCodeP(
@@ -219,6 +220,18 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	@Override
 	public boolean validateProcedureActivityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationMoodCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationMoodCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationMoodCodeP(
 			this, diagnostics, context);
 	}
 

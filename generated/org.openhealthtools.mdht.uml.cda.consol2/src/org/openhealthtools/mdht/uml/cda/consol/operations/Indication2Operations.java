@@ -104,13 +104,9 @@ public class Indication2Operations extends IndicationOperations {
 			indication2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION2__INDICATION_PROBLEM_INDICATION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"Indication2IndicationProblemIndication",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(indication2, context) }),
+					ConsolPlugin.INSTANCE.getString("Indication2IndicationProblemIndication"),
 					new Object[] { indication2 }));
 			}
 
@@ -167,13 +163,9 @@ public class Indication2Operations extends IndicationOperations {
 			indication2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION2__INDICATION_CODE_NULL_FLAVOR_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"Indication2IndicationCodeNullFlavorValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(indication2, context) }),
+					ConsolPlugin.INSTANCE.getString("Indication2IndicationCodeNullFlavorValue"),
 					new Object[] { indication2 }));
 			}
 
@@ -230,13 +222,9 @@ public class Indication2Operations extends IndicationOperations {
 			indication2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.INDICATION2__INDICATION_CODE_NULL_FLAVOR,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"Indication2IndicationCodeNullFlavor",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(indication2, context) }),
+					ConsolPlugin.INSTANCE.getString("Indication2IndicationCodeNullFlavor"),
 					new Object[] { indication2 }));
 			}
 

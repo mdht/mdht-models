@@ -79,6 +79,7 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeP(

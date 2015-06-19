@@ -241,6 +241,26 @@ public class PressureUlcerObservationImpl extends ObservationImpl implements Pre
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePressureUlcerObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PressureUlcerObservationOperations.validatePressureUlcerObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePressureUlcerObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PressureUlcerObservationOperations.validatePressureUlcerObservationEffectiveTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePressureUlcerObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PressureUlcerObservationOperations.validatePressureUlcerObservationValue(this, diagnostics, context);

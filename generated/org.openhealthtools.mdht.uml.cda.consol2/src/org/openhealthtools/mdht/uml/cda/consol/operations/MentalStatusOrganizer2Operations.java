@@ -276,7 +276,7 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MENTAL_STATUS_ORGANIZER2,
-				ConsolPackage.Literals.MENTAL_STATUS_ORGANIZER2.getEAllOperations().get(69));
+				ConsolPackage.Literals.MENTAL_STATUS_ORGANIZER2.getEAllOperations().get(70));
 			try {
 				GET_CONSOL_MENTAL_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_MENTAL_STATUS_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {

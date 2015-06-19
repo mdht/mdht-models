@@ -396,6 +396,16 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * @generated
 	 */
 	@Override
+	public boolean validateMedicationActivityText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivityText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateMedicationActivityInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationActivity2Operations.validateMedicationActivityInstructions(this, diagnostics, context);
 	}

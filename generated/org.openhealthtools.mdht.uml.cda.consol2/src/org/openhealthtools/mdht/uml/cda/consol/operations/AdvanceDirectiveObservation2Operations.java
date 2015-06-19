@@ -39,6 +39,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationCodeVS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Code VS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2Value(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservation2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation2 IVLTS Low</em>}</li>
@@ -75,6 +76,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Custodian Advance Directive Observation Custodian Role</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationReferenceExternalDocumentId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference External Document Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationReferenceExternalDocumentText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference External Document Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationReferenceTypeCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference Type Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2#validateAdvanceDirectiveObservationReferenceTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference Type Code</em>}</li>
  * </ul>
  * </p>
@@ -89,6 +91,75 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	 */
 	protected AdvanceDirectiveObservation2Operations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveObservationCodeVS(AdvanceDirectiveObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Code VS</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAdvanceDirectiveObservationCodeVS(AdvanceDirectiveObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " + "true)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveObservationCodeVS(AdvanceDirectiveObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Code VS</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAdvanceDirectiveObservationCodeVS(AdvanceDirectiveObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param advanceDirectiveObservation2 The receiving '<em><b>Advance Directive Observation2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateAdvanceDirectiveObservationCodeVS(
+			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(advanceDirectiveObservation2)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION2);
+			try {
+				VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			advanceDirectiveObservation2)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_CODE_VS,
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationCodeVS"),
+					new Object[] { advanceDirectiveObservation2 }));
+			}
+
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -1415,14 +1486,10 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 			advanceDirectiveObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_HAS_STARTING_TIME,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AdvanceDirectiveObservation2AdvanceDirectiveObservationHasStartingTime",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									advanceDirectiveObservation2, context) }),
+					ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationHasStartingTime"),
 					new Object[] { advanceDirectiveObservation2 }));
 			}
 
@@ -2534,6 +2601,85 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveObservationReferenceTypeCodeP(AdvanceDirectiveObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference Type Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAdvanceDirectiveObservationReferenceTypeCodeP(AdvanceDirectiveObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null)->reject(true)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveObservationReferenceTypeCodeP(AdvanceDirectiveObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference Type Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAdvanceDirectiveObservationReferenceTypeCodeP(AdvanceDirectiveObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param advanceDirectiveObservation2 The receiving '<em><b>Advance Directive Observation2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateAdvanceDirectiveObservationReferenceTypeCodeP(
+			AdvanceDirectiveObservation2 advanceDirectiveObservation2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(advanceDirectiveObservation2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION2__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE_P,
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservation2AdvanceDirectiveObservationReferenceTypeCodeP"),
+						new Object[] { eObject }));
+				}
+
+				if (context != null) {
+					// generate a pass token for my dependent constraints to short-circuit or filter results
+					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationReferenceTypeCodeP");
+					if (passToken == null) {
+						// anticipate a reasonably healthy model
+						passToken = new java.util.ArrayList<Object>(3);
+						context.put(
+							"org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationReferenceTypeCodeP",
+							passToken);
+					}
+					passToken.addAll(oclResultSet);
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateAdvanceDirectiveObservationReferenceTypeCode(AdvanceDirectiveObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference Type Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2541,9 +2687,7 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null)->reject(not typeCode.oclIsUndefined() and typeCode.oclIsKindOf(vocab::x_ActRelationshipExternalReference) and "
-			+ "let value : vocab::x_ActRelationshipExternalReference = typeCode.oclAsType(vocab::x_ActRelationshipExternalReference) in "
-			+ "value = vocab::x_ActRelationshipExternalReference::REFR)";
+	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.reference->excluding(null)->reject(true)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveObservationReferenceTypeCode(AdvanceDirectiveObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Reference Type Code</em>}' invariant operation.
@@ -2584,6 +2728,15 @@ public class AdvanceDirectiveObservation2Operations extends AdvanceDirectiveObse
 		Object oclResult = VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(advanceDirectiveObservation2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			Object passFilter = (context == null)
+					? null
+					: context.get("org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservationReferenceTypeCodeP");
+			if (passFilter instanceof Collection<?>) {
+				// filter my query results
+				oclResultSet = new ArrayList<EObject>(oclResultSet);
+				oclResultSet.removeAll((Collection<?>) passFilter);
+			}
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {

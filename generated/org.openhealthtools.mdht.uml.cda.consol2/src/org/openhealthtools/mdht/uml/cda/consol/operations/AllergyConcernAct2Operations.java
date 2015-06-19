@@ -287,7 +287,7 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ALLERGY_CONCERN_ACT2,
-				ConsolPackage.Literals.ALLERGY_CONCERN_ACT2.getEAllOperations().get(68));
+				ConsolPackage.Literals.ALLERGY_CONCERN_ACT2.getEAllOperations().get(69));
 			try {
 				GET_CONSOL_ALLERGY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_ALLERGY_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -348,14 +348,9 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			allergyConcernAct2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AllergyConcernAct2AllergyProblemActEffectiveTimeLow",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(allergyConcernAct2, context) }),
+					ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActEffectiveTimeLow"),
 					new Object[] { allergyConcernAct2 }));
 			}
 
@@ -412,14 +407,9 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			allergyConcernAct2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_HIGH,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AllergyConcernAct2AllergyProblemActEffectiveTimeHigh",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(allergyConcernAct2, context) }),
+					ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActEffectiveTimeHigh"),
 					new Object[] { allergyConcernAct2 }));
 			}
 

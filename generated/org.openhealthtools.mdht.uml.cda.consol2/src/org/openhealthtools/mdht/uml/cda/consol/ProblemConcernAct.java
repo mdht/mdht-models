@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemConcernAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemConcernActTemplateId ProblemConcernActEffectiveTimeLow ProblemConcernActClassCode ProblemConcernActMoodCode ProblemConcernActId ProblemConcernActCode ProblemConcernActCodeP ProblemConcernActStatusCode ProblemConcernActEffectiveTime ProblemConcernActProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.3' constraints.validation.warning='ProblemConcernActEffectiveTimeHigh' classCode='ACT' moodCode='EVN' code.code='CONC' code.codeSystem='2.16.840.1.113883.5.6' code.codeSystemName='HL7ActClass' code.displayName='Concern' constraints.validation.dependOn.ProblemConcernActCode='ProblemConcernActCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemConcernActTemplateId ProblemConcernActEffectiveTimeLow ProblemConcernActClassCode ProblemConcernActMoodCode ProblemConcernActId ProblemConcernActCode ProblemConcernActCodeP ProblemConcernActStatusCode ProblemConcernActStatusCodeP ProblemConcernActEffectiveTime ProblemConcernActProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.3' constraints.validation.warning='ProblemConcernActEffectiveTimeHigh' classCode='ACT' moodCode='EVN' code.code='CONC' code.codeSystem='2.16.840.1.113883.5.6' code.codeSystemName='HL7ActClass' code.displayName='Concern' constraints.validation.dependOn.ProblemConcernActCode='ProblemConcernActCodeP' constraints.validation.dependOn.ProblemConcernActStatusCode='ProblemConcernActStatusCodeP'"
  * @generated
  */
 public interface ProblemConcernAct extends Act {
@@ -133,7 +133,19 @@ public interface ProblemConcernAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'active\' or value.code = \'suspended\' or value.code = \'aborted\' or value.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (true)'"
+	 * @generated
+	 */
+	boolean validateProblemConcernActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (true)'"
 	 * @generated
 	 */
 	boolean validateProblemConcernActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

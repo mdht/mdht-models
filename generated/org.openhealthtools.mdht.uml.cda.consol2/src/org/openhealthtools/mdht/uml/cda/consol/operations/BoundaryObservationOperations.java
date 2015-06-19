@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -34,6 +35,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation#validateBoundaryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation#validateBoundaryObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation#validateBoundaryObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation#validateBoundaryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation#validateBoundaryObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation#validateBoundaryObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Value</em>}</li>
@@ -171,6 +173,77 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateBoundaryObservationCodeP(BoundaryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBoundaryObservationCodeP(BoundaryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_BOUNDARY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateBoundaryObservationCodeP(BoundaryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBoundaryObservationCodeP(BoundaryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_BOUNDARY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param boundaryObservation The receiving '<em><b>Boundary Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateBoundaryObservationCodeP(BoundaryObservation boundaryObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_BOUNDARY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.BOUNDARY_OBSERVATION);
+			try {
+				VALIDATE_BOUNDARY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BOUNDARY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_BOUNDARY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			boundaryObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_CODE_P,
+					ConsolPlugin.INSTANCE.getString("BoundaryObservationBoundaryObservationCodeP"),
+					new Object[] { boundaryObservation }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.BoundaryObservationCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.BoundaryObservationCodeP", passToken);
+				}
+				passToken.add(boundaryObservation);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateBoundaryObservationCode(BoundaryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -178,9 +251,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BOUNDARY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '113036' and value.codeSystem = '1.2.840.10008.2.16.4')";
+	protected static final String VALIDATE_BOUNDARY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBoundaryObservationCode(BoundaryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Code</em>}' invariant operation.
@@ -206,6 +277,14 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateBoundaryObservationCode(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.BoundaryObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(boundaryObservation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
 
 		if (VALIDATE_BOUNDARY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEstimatedDateOfDelivery()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EstimatedDateOfDeliveryTemplateId EstimatedDateOfDeliveryClassCode EstimatedDateOfDeliveryCode EstimatedDateOfDeliveryMoodCode EstimatedDateOfDeliveryStatusCode EstimatedDateOfDeliveryValue' templateId.root='2.16.840.1.113883.10.20.15.3.1' classCode='OBS' code.code='11778-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' moodCode='EVN' statusCode.code='completed'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EstimatedDateOfDeliveryTemplateId EstimatedDateOfDeliveryClassCode EstimatedDateOfDeliveryCode EstimatedDateOfDeliveryCodeP EstimatedDateOfDeliveryMoodCode EstimatedDateOfDeliveryStatusCode EstimatedDateOfDeliveryStatusCodeP EstimatedDateOfDeliveryValue' templateId.root='2.16.840.1.113883.10.20.15.3.1' classCode='OBS' code.code='11778-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.EstimatedDateOfDeliveryCode='EstimatedDateOfDeliveryCodeP' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.EstimatedDateOfDeliveryStatusCode='EstimatedDateOfDeliveryStatusCodeP'"
  * @generated
  */
 public interface EstimatedDateOfDelivery extends Observation {
@@ -60,7 +60,19 @@ public interface EstimatedDateOfDelivery extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'11778-8\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)'"
+	 * @generated
+	 */
+	boolean validateEstimatedDateOfDeliveryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)'"
 	 * @generated
 	 */
 	boolean validateEstimatedDateOfDeliveryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -84,7 +96,19 @@ public interface EstimatedDateOfDelivery extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (true)'"
+	 * @generated
+	 */
+	boolean validateEstimatedDateOfDeliveryStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (true)'"
 	 * @generated
 	 */
 	boolean validateEstimatedDateOfDeliveryStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

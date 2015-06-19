@@ -96,6 +96,15 @@ public class DrugVehicleImpl extends ParticipantRoleImpl implements DrugVehicle 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDrugVehicleCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DrugVehicleOperations.validateDrugVehicleCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateDrugVehicleCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DrugVehicleOperations.validateDrugVehicleCode(this, diagnostics, context);

@@ -81,6 +81,7 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMedicationDispenseStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispense2Operations.validateMedicationDispenseStatusCodeP(this, diagnostics, context);
 	}

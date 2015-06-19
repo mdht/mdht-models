@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationTemplateId ProblemObservationHasOnsetDate ProblemObservationEffectiveTime ProblemObservationValueP ProblemObservationCodeP ProblemObservationStatusCode ProblemObservationStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.4' templateId.extension='2014-06-09' constraints.validation.info='ProblemObservationHasResolutionDate ProblemObservationNegationInd ProblemObservation2PrognosisObservation ProblemObservation2PriorityPreference ProblemObservationProblemStatus ProblemObservation2CDQualifier ProblemObservation2CDCode' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='ProblemObservationValue ProblemObservationCode ProblemObservation2AuthorParticipation' constraints.validation.dependOn.ProblemObservationValue='ProblemObservationValueP' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ProblemObservationCode='ProblemObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.ProblemObservationStatusCode='ProblemObservationStatusCodeP' constraints.validation.query='ProblemObservation2CDQualifier ProblemObservation2CDCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationTemplateId ProblemObservationHasOnsetDate ProblemObservationEffectiveTime ProblemObservationValueP ProblemObservationCodeP ProblemObservationText ProblemObservationStatusCode ProblemObservationStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.4' templateId.extension='2014-06-09' constraints.validation.info='ProblemObservationHasTextReference ProblemObservationTextReferenceValue ProblemObservationHasTextReferenceValue ProblemObservationHasResolutionDate ProblemObservationValueNullFlavor ProblemObservationValueNullFlavorUnknown ProblemObservationNegationInd ProblemObservation2PrognosisObservation ProblemObservation2PriorityPreference ProblemObservationProblemStatus ProblemObservation2CDQualifier ProblemObservation2CDCode' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='ProblemObservationValue ProblemObservationCode ProblemObservation2AuthorParticipation' constraints.validation.dependOn.ProblemObservationValue='ProblemObservationValueP' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ProblemObservationCode='ProblemObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.ProblemObservationStatusCode='ProblemObservationStatusCodeP' constraints.validation.query='ProblemObservation2CDQualifier ProblemObservation2CDCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProblemObservation2CD constraints.validation.info='ProblemObservation2CDQualifier ProblemObservation2CDCode'"
  * @generated
  */
@@ -40,18 +40,6 @@ public interface ProblemObservation2 extends ProblemObservation {
 	 * @generated
 	 */
 	boolean validateProblemObservationValueNullFlavorUnknown(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateProblemObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

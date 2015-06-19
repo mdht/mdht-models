@@ -71,6 +71,7 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProblemObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservationStatusCodeP(this, diagnostics, context);
 	}
@@ -295,6 +296,16 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	@Override
 	public boolean validateProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservationText(this, diagnostics, context);
 	}
 
 	/**

@@ -98,6 +98,15 @@ public class PostprocedureDiagnosisImpl extends ActImpl implements Postprocedure
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePostprocedureDiagnosisCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePostprocedureDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

@@ -52,6 +52,7 @@ import org.openhealthtools.mdht.uml.cda.operations.SubstanceAdministrationOperat
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityDrugVehicleTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Drug Vehicle Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityMoodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Mood Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityNegationInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Negation Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity#validateImmunizationActivityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Id</em>}</li>
@@ -664,6 +665,77 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateImmunizationActivityMoodCodeP(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Mood Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateImmunizationActivityMoodCodeP(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateImmunizationActivityMoodCodeP(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Mood Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateImmunizationActivityMoodCodeP(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param immunizationActivity The receiving '<em><b>Immunization Activity</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateImmunizationActivityMoodCodeP(ImmunizationActivity immunizationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_ACTIVITY);
+			try {
+				VALIDATE_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			immunizationActivity)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.IMMUNIZATION_ACTIVITY__IMMUNIZATION_ACTIVITY_MOOD_CODE_P,
+					ConsolPlugin.INSTANCE.getString("ImmunizationActivityImmunizationActivityMoodCodeP"),
+					new Object[] { immunizationActivity }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivityMoodCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivityMoodCodeP", passToken);
+				}
+				passToken.add(immunizationActivity);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateImmunizationActivityMoodCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Mood Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -671,9 +743,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and "
-			+ "let value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in "
-			+ "value = vocab::x_DocumentSubstanceMood::EVN or value = vocab::x_DocumentSubstanceMood::INT";
+	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImmunizationActivityMoodCode(ImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Mood Code</em>}' invariant operation.
@@ -699,6 +769,14 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 
 	public static boolean validateImmunizationActivityMoodCode(ImmunizationActivity immunizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivityMoodCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(immunizationActivity)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
 
 		if (VALIDATE_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2352,7 +2430,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(88));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(89));
 			try {
 				GET_DRUG_VEHICLE__EOCL_QRY = helper.createQuery(GET_DRUG_VEHICLE__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2394,7 +2472,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(89));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(90));
 			try {
 				GET_INDICATION__EOCL_QRY = helper.createQuery(GET_INDICATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2436,7 +2514,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(90));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(91));
 			try {
 				GET_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_INSTRUCTIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2478,7 +2556,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(91));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(92));
 			try {
 				GET_MEDICATION_DISPENSE__EOCL_QRY = helper.createQuery(GET_MEDICATION_DISPENSE__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2520,7 +2598,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(92));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(93));
 			try {
 				GET_REACTION_OBSERVATION__EOCL_QRY = helper.createQuery(GET_REACTION_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2562,7 +2640,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(93));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(94));
 			try {
 				GET_IMMUNIZATION_REFUSAL_REASON__EOCL_QRY = helper.createQuery(GET_IMMUNIZATION_REFUSAL_REASON__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2604,7 +2682,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY,
-				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(94));
+				ConsolPackage.Literals.IMMUNIZATION_ACTIVITY.getEAllOperations().get(95));
 			try {
 				GET_MEDICATION_SUPPLY_ORDER__EOCL_QRY = helper.createQuery(GET_MEDICATION_SUPPLY_ORDER__EOCL_EXP);
 			} catch (ParserException pe) {

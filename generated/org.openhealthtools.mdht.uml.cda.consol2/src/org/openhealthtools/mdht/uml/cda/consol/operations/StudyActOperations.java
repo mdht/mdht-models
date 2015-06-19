@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -44,6 +45,7 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Text</em>}</li>
@@ -577,6 +579,74 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateStudyActCodeP(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateStudyActCodeP(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_STUDY_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateStudyActCodeP(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateStudyActCodeP(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_STUDY_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param studyAct The receiving '<em><b>Study Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateStudyActCodeP(StudyAct studyAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_STUDY_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
+			try {
+				VALIDATE_STUDY_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_CODE_P,
+					ConsolPlugin.INSTANCE.getString("StudyActStudyActCodeP"), new Object[] { studyAct }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.StudyActCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.StudyActCodeP", passToken);
+				}
+				passToken.add(studyAct);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateStudyActCode(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -584,9 +654,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '113014' and value.codeSystem = '1.2.840.10008.2.16.4')";
+	protected static final String VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateStudyActCode(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Code</em>}' invariant operation.
@@ -612,6 +680,14 @@ public class StudyActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateStudyActCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.StudyActCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(studyAct)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
 
 		if (VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -834,7 +910,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 		if (GET_SERIES_ACT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.STUDY_ACT, ConsolPackage.Literals.STUDY_ACT.getEAllOperations().get(64));
+				ConsolPackage.Literals.STUDY_ACT, ConsolPackage.Literals.STUDY_ACT.getEAllOperations().get(65));
 			try {
 				GET_SERIES_ACT__EOCL_QRY = helper.createQuery(GET_SERIES_ACT__EOCL_EXP);
 			} catch (ParserException pe) {

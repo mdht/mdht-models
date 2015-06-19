@@ -80,6 +80,17 @@ public class PlanOfCareActivityObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlanOfCareActivityObservationMoodCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

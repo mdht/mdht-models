@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSocialHistoryObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistoryObservationTemplateId SocialHistoryObservationCodeP SocialHistoryObservationStatusCode SocialHistoryObservationStatusCodeP SocialHistoryObservation2EffectiveTime' templateId.root='2.16.840.1.113883.10.20.22.4.38' templateId.extension='2014-06-09' constraints.validation.warning='SocialHistoryObservation2ReferenceAttribute SocialHistoryObservationCode SocialHistoryObservationValue SocialHistoryObservation2AuthorParticipation' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' statusCode.code='completed' constraints.validation.dependOn.SocialHistoryObservationStatusCode='SocialHistoryObservationStatusCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistoryObservationTemplateId SocialHistoryObservationCodeVS SocialHistoryObservationCodeP SocialHistoryObservationStatusCode SocialHistoryObservationStatusCodeP SocialHistoryObservation2EffectiveTime' templateId.root='2.16.840.1.113883.10.20.22.4.38' templateId.extension='2014-06-09' constraints.validation.warning='SocialHistoryObservation2ReferenceAttribute SocialHistoryObservationCode SocialHistoryObservationValue SocialHistoryObservation2AuthorParticipation' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' statusCode.code='completed' constraints.validation.dependOn.SocialHistoryObservationStatusCode='SocialHistoryObservationStatusCodeP'"
  * @generated
  */
 public interface SocialHistoryObservation2 extends SocialHistoryObservation {
@@ -46,10 +46,10 @@ public interface SocialHistoryObservation2 extends SocialHistoryObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\ntrue)'"
 	 * @generated
 	 */
-	boolean validateSocialHistoryObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSocialHistoryObservationCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

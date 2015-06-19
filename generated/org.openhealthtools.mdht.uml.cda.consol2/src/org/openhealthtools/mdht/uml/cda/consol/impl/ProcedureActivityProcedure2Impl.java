@@ -73,6 +73,7 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureActivityProcedureStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureStatusCodeP(
@@ -219,6 +220,17 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	@Override
 	public boolean validateProcedureActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureMoodCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityProcedureMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureMoodCodeP(
 			this, diagnostics, context);
 	}
 

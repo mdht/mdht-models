@@ -171,6 +171,15 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationActivityMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationActivityOperations.validateImmunizationActivityMoodCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateImmunizationActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivityOperations.validateImmunizationActivityMoodCode(this, diagnostics, context);

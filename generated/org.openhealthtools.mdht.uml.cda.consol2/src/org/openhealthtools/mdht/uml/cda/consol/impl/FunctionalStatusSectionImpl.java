@@ -79,6 +79,15 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFunctionalStatusSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateFunctionalStatusSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCode(this, diagnostics, context);

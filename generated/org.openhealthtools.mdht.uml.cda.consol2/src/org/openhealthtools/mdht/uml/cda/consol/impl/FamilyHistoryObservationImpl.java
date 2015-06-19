@@ -162,6 +162,15 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateFamilyHistoryObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateFamilyHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationValue(this, diagnostics, context);

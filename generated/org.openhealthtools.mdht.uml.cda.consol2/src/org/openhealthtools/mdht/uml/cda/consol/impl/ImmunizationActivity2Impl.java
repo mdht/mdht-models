@@ -308,6 +308,16 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * @generated
 	 */
 	@Override
+	public boolean validateImmunizationActivityText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationActivity2Operations.validateImmunizationActivityText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateImmunizationActivityNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityNegationInd(this, diagnostics, context);
 	}

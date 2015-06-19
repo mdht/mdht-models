@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFunctionalStatusResultObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultObservationTemplateId ResultObservationTextReferenceValue ResultObservationClassCode ResultObservationMoodCode ResultObservationId ResultObservationCodeP ResultObservationStatusCode ResultObservationStatusCodeP ResultObservationEffectiveTime ResultObservationValue FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode FunctionalStatusResultObservationReferenceRangeObservationRange' templateId.root='2.16.840.1.113883.10.20.22.4.67' constraints.validation.warning='ResultObservationTextReference FunctionalStatusResultObservationValueDatatype ResultObservationCode ResultObservationText ResultObservationInterpretationCode FunctionalStatusResultObservationReferenceRange' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ResultObservationCode='ResultObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.ResultObservationStatusCode='ResultObservationStatusCodeP' constraints.validation.info='ResultObservationMethodCode ResultObservationTargetSiteCode FunctionalStatusResultObservationAuthor FunctionalStatusResultObservationNonMedicinalSupplyActivity FunctionalStatusResultObservationCaregiverCharacteristics FunctionalStatusResultObservationAssessmentScaleObservation' constraints.validation.query='FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode FunctionalStatusResultObservationReferenceRangeObservationRange'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultObservationTemplateId ResultObservationTextReferenceValue ResultObservationClassCode ResultObservationMoodCode ResultObservationId ResultObservationCodeP ResultObservationStatusCode ResultObservationStatusCodeVS ResultObservationStatusCodeP ResultObservationEffectiveTime ResultObservationValue FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode FunctionalStatusResultObservationReferenceRangeObservationRange' templateId.root='2.16.840.1.113883.10.20.22.4.67' constraints.validation.warning='ResultObservationTextReference FunctionalStatusResultObservationValueDatatype ResultObservationCode ResultObservationText ResultObservationInterpretationCode FunctionalStatusResultObservationReferenceRange' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ResultObservationCode='ResultObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.ResultObservationStatusCode='ResultObservationStatusCodeP' constraints.validation.dependOn.ResultObservationStatusCodeVS='ResultObservationStatusCodeP' constraints.validation.info='ResultObservationMethodCode ResultObservationTargetSiteCode FunctionalStatusResultObservationAuthor FunctionalStatusResultObservationNonMedicinalSupplyActivity FunctionalStatusResultObservationCaregiverCharacteristics FunctionalStatusResultObservationAssessmentScaleObservation' constraints.validation.query='FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode FunctionalStatusResultObservationReferenceRangeObservationRange'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusResultObservationReferenceRange constraints.validation.error='FunctionalStatusResultObservationReferenceRangeObservationRange'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFunctionalStatusResultObservationReferenceRangeObservationRange constraints.validation.error='FunctionalStatusResultObservationReferenceRangeObservationRangeNoCode'"
  * @generated
@@ -50,6 +50,18 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 	 * @generated
 	 */
 	boolean validateResultObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\ntrue)'"
+	 * @generated
+	 */
+	boolean validateResultObservationStatusCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

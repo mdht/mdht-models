@@ -132,6 +132,48 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * @generated
 	 */
 	@Override
+	public boolean validateResultObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusObservation2Operations.validateResultObservationText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusObservation2Operations.validateResultObservationInterpretationCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusObservation2Operations.validateResultObservationMethodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusObservation2Operations.validateResultObservationTargetSiteCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateFunctionalStatusResultObservationReferenceRange(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationReferenceRange(

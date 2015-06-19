@@ -152,6 +152,15 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservationOperations.validateAllergyObservationStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateAllergyObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationStatusCode(this, diagnostics, context);
@@ -165,6 +174,15 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	@Override
 	public boolean validateAllergyObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyObservationOperations.validateAllergyObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -321,6 +339,17 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyObservationParticipantParticipantRoleClassCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRoleClassCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateAllergyObservationParticipantParticipantRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -338,6 +367,16 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRolePlayingEntity(
 			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservationParticipantTypeCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservationOperations.validateAllergyObservationParticipantTypeCodeP(this, diagnostics, context);
 	}
 
 	/**

@@ -75,6 +75,7 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateHealthStatusObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservation2Operations.validateHealthStatusObservationStatusCodeP(this, diagnostics, context);
 	}
@@ -133,6 +134,16 @@ public class HealthStatusObservation2Impl extends HealthStatusObservationImpl im
 	@Override
 	public boolean validateHealthStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservation2Operations.validateHealthStatusObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateHealthStatusObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthStatusObservation2Operations.validateHealthStatusObservationText(this, diagnostics, context);
 	}
 
 	/**

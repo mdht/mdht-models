@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReactionObservation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReactionObservationTemplateId ReactionObservationProcedureActivityProcedureInversionInd ReactionObservationMedicationActivityInversionInd ReactionObservationSeverityObservationInversionInd ReactionObservationCode ReactionObservationCodeP ReactionObservationId ReactionObservationStatusCode ReactionObservationStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.9' templateId.extension='2014-06-09' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.ReactionObservationCode='ReactionObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.ReactionObservationStatusCode='ReactionObservationStatusCodeP' constraints.validation.info='ReactionObservationProcedureActivityProcedure ReactionObservationMedicationActivity ReactionObservationSeverityObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReactionObservationTemplateId ReactionObservationProcedureActivityProcedureInversionInd ReactionObservationMedicationActivityInversionInd ReactionObservationSeverityObservationInversionInd ReactionObservationCode ReactionObservationCodeP ReactionObservationId ReactionObservationText ReactionObservationStatusCode ReactionObservationStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.9' templateId.extension='2014-06-09' constraints.validation.info='ReactionObservationCodeValueSet ReactionObservationTextReference ReactionObservationTextReferenceValue ReactionObservationReferenceValue ReactionObservationProcedureActivityProcedure ReactionObservationMedicationActivity ReactionObservationSeverityObservation' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.ReactionObservationCode='ReactionObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.ReactionObservationStatusCode='ReactionObservationStatusCodeP'"
  * @generated
  */
 public interface ReactionObservation2 extends ReactionObservation {
@@ -51,18 +51,6 @@ public interface ReactionObservation2 extends ReactionObservation {
 	 * @generated
 	 */
 	boolean validateReactionObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateReactionObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getIndication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IndicationTemplateId IndicationClassCode IndicationMoodCode IndicationId IndicationCodeP IndicationStatusCode' templateId.root='2.16.840.1.113883.10.20.22.4.19' constraints.validation.info='IndicationCodeNullFlavor' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='IndicationCode IndicationEffectiveTime IndicationValue IndicationValueP' constraints.validation.dependOn.IndicationCode='IndicationCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IndicationTemplateId IndicationClassCode IndicationMoodCode IndicationId IndicationCodeP IndicationStatusCode IndicationStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.19' constraints.validation.info='IndicationCodeNullFlavor' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='IndicationCode IndicationEffectiveTime IndicationValue IndicationValueP' constraints.validation.dependOn.IndicationCode='IndicationCodeP' statusCode.code='completed' constraints.validation.dependOn.IndicationStatusCode='IndicationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
  * @generated
  */
 public interface Indication extends Observation {
@@ -84,6 +84,18 @@ public interface Indication extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (true)'"
+	 * @generated
+	 */
+	boolean validateIndicationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
 	 * @generated
 	 */
@@ -132,7 +144,7 @@ public interface Indication extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (true)'"
 	 * @generated
 	 */
 	boolean validateIndicationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

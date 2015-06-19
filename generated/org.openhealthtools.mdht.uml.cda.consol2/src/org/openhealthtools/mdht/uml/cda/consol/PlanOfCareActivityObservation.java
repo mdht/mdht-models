@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfCareActivityObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityObservationTemplateId PlanOfCareActivityObservationClassCode PlanOfCareActivityObservationMoodCode PlanOfCareActivityObservationId' templateId.root='2.16.840.1.113883.10.20.22.4.44' classCode='OBS'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityObservationTemplateId PlanOfCareActivityObservationClassCode PlanOfCareActivityObservationMoodCode PlanOfCareActivityObservationMoodCodeP PlanOfCareActivityObservationId' templateId.root='2.16.840.1.113883.10.20.22.4.44' classCode='OBS' constraints.validation.dependOn.PlanOfCareActivityObservationMoodCode='PlanOfCareActivityObservationMoodCodeP'"
  * @generated
  */
 public interface PlanOfCareActivityObservation extends Observation {
@@ -60,7 +60,19 @@ public interface PlanOfCareActivityObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_ActMoodDocumentObservation) and \r\nlet value : vocab::x_ActMoodDocumentObservation = self.moodCode.oclAsType(vocab::x_ActMoodDocumentObservation) in \r\nvalue = vocab::x_ActMoodDocumentObservation::INT or value = vocab::x_ActMoodDocumentObservation::GOL or value = vocab::x_ActMoodDocumentObservation::PRMS or value = vocab::x_ActMoodDocumentObservation::PRP or value = vocab::x_ActMoodDocumentObservation::RQO'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @generated
+	 */
+	boolean validatePlanOfCareActivityObservationMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
 	 * @generated
 	 */
 	boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);

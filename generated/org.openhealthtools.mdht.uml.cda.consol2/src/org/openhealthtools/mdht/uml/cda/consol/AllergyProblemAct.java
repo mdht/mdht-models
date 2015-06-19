@@ -30,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyProblemAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEffectiveTimeLow AllergyProblemActEffectiveTimeHigh AllergyProblemActClassCode AllergyProblemActMoodCode AllergyProblemActId AllergyProblemActCode AllergyProblemActStatusCode AllergyProblemActEffectiveTime AllergyProblemActAllergyObservation AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem' templateId.root='2.16.840.1.113883.10.20.22.4.30' classCode='ACT' moodCode='EVN' constraints.validation.query='AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEffectiveTimeLow AllergyProblemActEffectiveTimeHigh AllergyProblemActClassCode AllergyProblemActMoodCode AllergyProblemActId AllergyProblemActCode AllergyProblemActStatusCode AllergyProblemActStatusCodeP AllergyProblemActEffectiveTime AllergyProblemActAllergyObservation AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem' templateId.root='2.16.840.1.113883.10.20.22.4.30' classCode='ACT' moodCode='EVN' constraints.validation.dependOn.AllergyProblemActStatusCode='AllergyProblemActStatusCodeP' constraints.validation.query='AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyProblemActCD constraints.validation.error='AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem'"
  *        annotation="uml2.alias Allergies\040and\040Drug\040Sensitivities='null' Allergy\040and\040Drug\040Sensitivity='null'"
  * @generated
@@ -127,7 +127,19 @@ public interface AllergyProblemAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'active\' or value.code = \'suspended\' or value.code = \'aborted\' or value.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (true)'"
+	 * @generated
+	 */
+	boolean validateAllergyProblemActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (true)'"
 	 * @generated
 	 */
 	boolean validateAllergyProblemActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

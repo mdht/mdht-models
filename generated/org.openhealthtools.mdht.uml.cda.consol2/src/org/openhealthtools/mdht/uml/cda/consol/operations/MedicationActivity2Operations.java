@@ -73,6 +73,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityDoseQuantity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Dose Quantity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityAdministrationUnitCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Administration Unit Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityAdministrationUnitCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Administration Unit Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityInstructions(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Instructions</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityIndication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Indication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2#validateMedicationActivityConsumable(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Consumable</em>}</li>
@@ -613,7 +614,7 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_ACTIVITY2,
-				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(108));
+				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(109));
 			try {
 				GET_DRUG_MONITORING_ACT__EOCL_QRY = helper.createQuery(GET_DRUG_MONITORING_ACT__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -655,7 +656,7 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_ACTIVITY2,
-				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(109));
+				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(110));
 			try {
 				GET_CONSOL_INSTRUCTION2__EOCL_QRY = helper.createQuery(GET_CONSOL_INSTRUCTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -697,7 +698,7 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_ACTIVITY2,
-				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(110));
+				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(111));
 			try {
 				GET_SUBSTANCE_ADMINISTERED_ACTS__EOCL_QRY = helper.createQuery(GET_SUBSTANCE_ADMINISTERED_ACTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -741,7 +742,7 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_ACTIVITY2,
-				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(111));
+				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(112));
 			try {
 				GET_CONSOL_INDICATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_INDICATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -785,7 +786,7 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_ACTIVITY2,
-				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(112));
+				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(113));
 			try {
 				GET_CONSOL_MEDICATION_SUPPLY_ORDER2__EOCL_QRY = helper.createQuery(GET_CONSOL_MEDICATION_SUPPLY_ORDER2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -827,7 +828,7 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_ACTIVITY2,
-				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(113));
+				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(114));
 			try {
 				GET_CONSOL_MEDICATION_DISPENSE2S__EOCL_QRY = helper.createQuery(GET_CONSOL_MEDICATION_DISPENSE2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -871,7 +872,7 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.MEDICATION_ACTIVITY2,
-				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(114));
+				ConsolPackage.Literals.MEDICATION_ACTIVITY2.getEAllOperations().get(115));
 			try {
 				GET_CONSOL_REACTION_OBSERVATION2__EOCL_QRY = helper.createQuery(GET_CONSOL_REACTION_OBSERVATION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -930,14 +931,9 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			medicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY2__MEDICATION_ACTIVITY_TEXT_REFERENCE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MedicationActivity2MedicationActivityTextReference",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicationActivity2, context) }),
+					ConsolPlugin.INSTANCE.getString("MedicationActivity2MedicationActivityTextReference"),
 					new Object[] { medicationActivity2 }));
 			}
 
@@ -994,14 +990,9 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			medicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY2__MEDICATION_ACTIVITY_REFERENCE_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MedicationActivity2MedicationActivityReferenceValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicationActivity2, context) }),
+					ConsolPlugin.INSTANCE.getString("MedicationActivity2MedicationActivityReferenceValue"),
 					new Object[] { medicationActivity2 }));
 			}
 
@@ -1058,14 +1049,9 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 			medicationActivity2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.MEDICATION_ACTIVITY2__MEDICATION_ACTIVITY_TEXT_REFERENCE_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MedicationActivity2MedicationActivityTextReferenceValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicationActivity2, context) }),
+					ConsolPlugin.INSTANCE.getString("MedicationActivity2MedicationActivityTextReferenceValue"),
 					new Object[] { medicationActivity2 }));
 			}
 
@@ -1875,6 +1861,44 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	 * @generated
 	 */
 
+	public static boolean validateMedicationActivityText(MedicationActivity2 medicationActivity2,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_MEDICATION_ACTIVITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.MEDICATION_ACTIVITY2);
+			try {
+				VALIDATE_MEDICATION_ACTIVITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationActivity2)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.MEDICATION_ACTIVITY2__MEDICATION_ACTIVITY_TEXT,
+					ConsolPlugin.INSTANCE.getString("MedicationActivity2MedicationActivityText"),
+					new Object[] { medicationActivity2 }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param medicationActivity2 The receiving '<em><b>Medication Activity2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
 	public static boolean validateMedicationActivityInstructions(MedicationActivity2 medicationActivity2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -2004,6 +2028,27 @@ public class MedicationActivity2Operations extends MedicationActivityOperations 
 	 */
 
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateMedicationActivityText(MedicationActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Text</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationActivityText(MedicationActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (true)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateMedicationActivityText(MedicationActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Text</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationActivityText(MedicationActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateMedicationActivityInstructions(MedicationActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Instructions</em>}' operation.

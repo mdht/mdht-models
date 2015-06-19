@@ -71,6 +71,7 @@ public class ProcedureActivityAct2Impl extends ProcedureActivityActImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProcedureActivityActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityAct2Operations.validateProcedureActivityActStatusCodeP(this, diagnostics, context);
 	}
@@ -146,6 +147,16 @@ public class ProcedureActivityAct2Impl extends ProcedureActivityActImpl implemen
 	@Override
 	public boolean validateProcedureActivityActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityAct2Operations.validateProcedureActivityActMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityActMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityAct2Operations.validateProcedureActivityActMoodCodeP(this, diagnostics, context);
 	}
 
 	/**

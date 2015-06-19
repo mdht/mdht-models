@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationRefusalReason()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationRefusalReasonTemplateId ImmunizationRefusalReasonClassCode ImmunizationRefusalReasonCode ImmunizationRefusalReasonId ImmunizationRefusalReasonMoodCode ImmunizationRefusalReasonStatusCode' templateId.root='2.16.840.1.113883.10.20.22.4.53' classCode='OBS' code.codeSystem='2.16.840.1.113883.5.8' code.codeSystemName='ActReason' moodCode='EVN' statusCode.code='completed'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationRefusalReasonTemplateId ImmunizationRefusalReasonClassCode ImmunizationRefusalReasonCode ImmunizationRefusalReasonCodeP ImmunizationRefusalReasonId ImmunizationRefusalReasonMoodCode ImmunizationRefusalReasonStatusCode ImmunizationRefusalReasonStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.53' classCode='OBS' code.codeSystem='2.16.840.1.113883.5.8' code.codeSystemName='ActReason' constraints.validation.dependOn.ImmunizationRefusalReasonCode='ImmunizationRefusalReasonCodeP' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.ImmunizationRefusalReasonStatusCode='ImmunizationRefusalReasonStatusCodeP'"
  * @generated
  */
 public interface ImmunizationRefusalReason extends Observation {
@@ -60,7 +60,19 @@ public interface ImmunizationRefusalReason extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.8\' and (value.code = \'IMMUNE\' or value.code = \'MEDPREC\' or value.code = \'OSTOCK\' or value.code = \'PATOBJ\' or value.code = \'PHILISOP\' or value.code = \'RELIG\' or value.code = \'VACEFF\' or value.code = \'VACSAF\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)'"
+	 * @generated
+	 */
+	boolean validateImmunizationRefusalReasonCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)'"
 	 * @generated
 	 */
 	boolean validateImmunizationRefusalReasonCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -96,7 +108,19 @@ public interface ImmunizationRefusalReason extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (true)'"
+	 * @generated
+	 */
+	boolean validateImmunizationRefusalReasonStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (true)'"
 	 * @generated
 	 */
 	boolean validateImmunizationRefusalReasonStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

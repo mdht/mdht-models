@@ -108,14 +108,10 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 			complicationsSection2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ComplicationsSection2ComplicationsSectionExplicitComplications",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									complicationsSection2, context) }), new Object[] { complicationsSection2 }));
+					ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionExplicitComplications"),
+					new Object[] { complicationsSection2 }));
 			}
 
 			return false;

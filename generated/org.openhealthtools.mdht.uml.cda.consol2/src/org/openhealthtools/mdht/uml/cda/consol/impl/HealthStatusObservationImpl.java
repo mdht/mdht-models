@@ -122,6 +122,15 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateHealthStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthStatusObservationOperations.validateHealthStatusObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateHealthStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationCode(this, diagnostics, context);
@@ -135,6 +144,15 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	@Override
 	public boolean validateHealthStatusObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHealthStatusObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthStatusObservationOperations.validateHealthStatusObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**

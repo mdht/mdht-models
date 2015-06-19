@@ -164,6 +164,17 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

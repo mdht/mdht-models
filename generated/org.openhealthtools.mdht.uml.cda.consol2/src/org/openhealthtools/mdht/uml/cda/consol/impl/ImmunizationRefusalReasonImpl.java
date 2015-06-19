@@ -78,6 +78,15 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationRefusalReasonCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateImmunizationRefusalReasonCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonCode(this, diagnostics, context);
@@ -101,6 +110,16 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	@Override
 	public boolean validateImmunizationRefusalReasonMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationRefusalReasonStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**

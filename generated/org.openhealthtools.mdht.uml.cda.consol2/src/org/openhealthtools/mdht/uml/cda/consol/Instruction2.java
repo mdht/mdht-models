@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getInstruction2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InstructionsTemplateId' templateId.root='2.16.840.1.113883.10.20.22.4.20' templateId.extension='2014-06-09'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InstructionsTemplateId InstructionsText' templateId.root='2.16.840.1.113883.10.20.22.4.20' templateId.extension='2014-06-09'"
  * @generated
  */
 public interface Instruction2 extends Instructions {

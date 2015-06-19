@@ -56,6 +56,15 @@ public class FunctionalStatusProblemObservationImpl extends ProblemObservationIm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemObservationCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationCodeVS(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateFunctionalStatusProblemObservationMethodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -278,6 +287,17 @@ public class FunctionalStatusProblemObservationImpl extends ProblemObservationIm
 	@Override
 	public boolean validateProblemObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusProblemObservationOperations.validateProblemObservationText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationStatusCodeP(
+			this, diagnostics, context);
 	}
 
 	/**

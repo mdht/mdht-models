@@ -115,6 +115,16 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePurposeofReferenceObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationValueP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePurposeofReferenceObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationValue(
