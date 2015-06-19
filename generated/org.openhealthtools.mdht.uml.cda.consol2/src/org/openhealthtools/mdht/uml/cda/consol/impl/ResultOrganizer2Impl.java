@@ -59,38 +59,8 @@ public class ResultOrganizer2Impl extends ResultOrganizerImpl implements ResultO
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultOrganizer2CodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizer2Operations.validateResultOrganizer2CodeValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultOrganizer2ClassCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizer2Operations.validateResultOrganizer2ClassCodeValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateResultOrganizer2EffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizer2Operations.validateResultOrganizer2EffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultOrganizerResultObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultOrganizer2Operations.validateResultOrganizerResultObservation2(this, diagnostics, context);
 	}
 
 	/**
@@ -137,8 +107,38 @@ public class ResultOrganizer2Impl extends ResultOrganizerImpl implements ResultO
 	 * @generated
 	 */
 	@Override
+	public boolean validateResultOrganizerCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizer2Operations.validateResultOrganizerCodeValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerClassCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizer2Operations.validateResultOrganizerClassCodeValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateResultOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizer2Operations.validateResultOrganizerTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizer2Operations.validateResultOrganizerResultObservation(this, diagnostics, context);
 	}
 
 	/**

@@ -58,22 +58,9 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateComplicationsSection2ExplicitComplications(DiagnosticChain diagnostics,
+	public boolean validateComplicationsSectionExplicitComplications(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ComplicationsSection2Operations.validateComplicationsSection2ExplicitComplications(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateComplicationsSectionProblemObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ComplicationsSection2Operations.validateComplicationsSectionProblemObservation2(
+		return ComplicationsSection2Operations.validateComplicationsSectionExplicitComplications(
 			this, diagnostics, context);
 	}
 
@@ -115,6 +102,18 @@ public class ComplicationsSection2Impl extends ComplicationsSectionImpl implemen
 	@Override
 	public boolean validateComplicationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplicationsSection2Operations.validateComplicationsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateComplicationsSectionProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ComplicationsSection2Operations.validateComplicationsSectionProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**

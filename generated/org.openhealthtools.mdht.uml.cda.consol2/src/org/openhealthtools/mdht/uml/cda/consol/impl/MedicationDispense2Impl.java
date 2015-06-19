@@ -81,18 +81,6 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicationDispense2ContainsMedicationOrImmunization(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationDispense2Operations.validateMedicationDispense2ContainsMedicationOrImmunization(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMedicationDispenseStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispense2Operations.validateMedicationDispenseStatusCodeP(this, diagnostics, context);
 	}
@@ -103,10 +91,8 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationDispenseMedicationSupplyOrder2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationDispense2Operations.validateMedicationDispenseMedicationSupplyOrder2(
-			this, diagnostics, context);
+	public MedicationSupplyOrder2 getConsolMedicationSupplyOrder2() {
+		return MedicationDispense2Operations.getConsolMedicationSupplyOrder2(this);
 	}
 
 	/**
@@ -115,8 +101,10 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	 * @generated
 	 */
 	@Override
-	public MedicationSupplyOrder2 getConsolMedicationSupplyOrder2() {
-		return MedicationDispense2Operations.getConsolMedicationSupplyOrder2(this);
+	public boolean validateMedicationDispenseContainsMedicationOrImmunization(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationDispense2Operations.validateMedicationDispenseContainsMedicationOrImmunization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -147,6 +135,17 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	@Override
 	public boolean validateMedicationDispenseRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispense2Operations.validateMedicationDispenseRepeatNumber(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationDispenseMedicationSupplyOrder(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationDispense2Operations.validateMedicationDispenseMedicationSupplyOrder(this, diagnostics, context);
 	}
 
 	/**

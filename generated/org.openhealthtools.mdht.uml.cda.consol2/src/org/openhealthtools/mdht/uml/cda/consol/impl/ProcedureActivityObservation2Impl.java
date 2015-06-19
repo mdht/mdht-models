@@ -62,29 +62,6 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateProcedureActivityObservation2InstructionsInversion(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2InstructionsInversion(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityObservation2CodeCodeSystems(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2CodeCodeSystems(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateProcedureActivityObservation2CodeSuggestedCodeSystems(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2CodeSuggestedCodeSystems(
@@ -99,42 +76,6 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	public boolean validateProcedureActivityObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationStatusCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureActivityObservationIndication2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationIndication2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureActivityObservationMedicationActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationMedicationActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProcedureActivityObservationInstruction2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationInstruction2(
 			this, diagnostics, context);
 	}
 
@@ -176,39 +117,6 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityObservation2ProcedureObservationPerformerProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2ProcedureObservationPerformerProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityObservation2ProcedureObservationPerformerProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2ProcedureObservationPerformerProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityObservation2ProcedureActivityObservationProcedureObservationPerformerAssignedEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservation2ProcedureActivityObservationProcedureObservationPerformerAssignedEntity(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public EList<Indication2> getConsolIndication2s() {
 		return ProcedureActivityObservation2Operations.getConsolIndication2s(this);
@@ -241,6 +149,30 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 */
 	public EList<ReactionObservation2> getReactionObservation2s() {
 		return ProcedureActivityObservation2Operations.getReactionObservation2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationInstructionsInversion(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationInstructionsInversion(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationCodeCodeSystems(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationCodeCodeSystems(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -319,9 +251,81 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * @generated
 	 */
 	@Override
+	public boolean validateProcedureActivityObservationIndication(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationIndication(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationMedicationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationMedicationActivity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationInstructions(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationInstructions(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateProcedureActivityObservationPerformer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationPerformer(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProcedureActivityObservationProcedureObservationPerformerAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationProcedureObservationPerformerAssignedEntity(
 			this, diagnostics, context);
 	}
 

@@ -68,16 +68,6 @@ public class InstructionsSection2Impl extends InstructionsSectionImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateInstructionsSectionInstruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsSection2Operations.validateInstructionsSectionInstruction2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<Instruction2> getConsolInstruction2s() {
 		return InstructionsSection2Operations.getConsolInstruction2s(this);
 	}
@@ -110,6 +100,16 @@ public class InstructionsSection2Impl extends InstructionsSectionImpl implements
 	@Override
 	public boolean validateInstructionsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsSection2Operations.validateInstructionsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateInstructionsSectionInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InstructionsSection2Operations.validateInstructionsSectionInstructions(this, diagnostics, context);
 	}
 
 	/**

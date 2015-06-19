@@ -54,17 +54,6 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public HospitalDischargeDiagnosis2 getConsolHospitalDischargeDiagnosis2() {
 		return DischargeDiagnosisSection2Operations.getConsolHospitalDischargeDiagnosis2(this);
 	}
@@ -102,6 +91,18 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	public boolean validateHospitalDischargeDiagnosisSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeDiagnosisSection2Operations.validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(
 			this, diagnostics, context);
 	}
 

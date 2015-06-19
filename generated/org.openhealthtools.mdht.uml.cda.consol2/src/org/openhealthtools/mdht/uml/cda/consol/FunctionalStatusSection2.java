@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFunctionalStatusSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusSectionTemplateId FunctionalStatusSectionCode FunctionalStatusSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.14' templateId.extension='2014-06-09' code.code='47420-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Functional Status' constraints.validation.dependOn.FunctionalStatusSectionCode='FunctionalStatusSectionCodeP' constraints.validation.info='FunctionalStatusSectionFunctionalStatusOrganizer2 FunctionalStatusSectionFunctionalStatusObservation2 FunctionalStatusSectionNonMedicinalSupplyActivity2 FunctionalStatusSection2SelfCareActivities FunctionalStatusSection2SensoryAndSpeechStatus'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusSectionTemplateId FunctionalStatusSectionCode FunctionalStatusSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.14' templateId.extension='2014-06-09' code.code='47420-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Functional Status' constraints.validation.dependOn.FunctionalStatusSectionCode='FunctionalStatusSectionCodeP' constraints.validation.info='FunctionalStatusSectionFunctionalStatusResultOrganizer FunctionalStatusSectionFunctionalStatusResultObservation FunctionalStatusSectionNonMedicinalSupplyActivity FunctionalStatusSection2SelfCareActivities FunctionalStatusSection2SensoryAndSpeechStatus'"
  * @generated
  */
 public interface FunctionalStatusSection2 extends FunctionalStatusSection {
@@ -39,45 +39,6 @@ public interface FunctionalStatusSection2 extends FunctionalStatusSection {
 	 * @generated
 	 */
 	boolean validateFunctionalStatusSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(consol::FunctionalStatusOrganizer2))'"
-	 * @generated
-	 */
-	boolean validateFunctionalStatusSectionFunctionalStatusOrganizer2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::FunctionalStatusObservation2))'"
-	 * @generated
-	 */
-	boolean validateFunctionalStatusSectionFunctionalStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.supply.oclIsUndefined() and entry.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2))'"
-	 * @generated
-	 */
-	boolean validateFunctionalStatusSectionNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

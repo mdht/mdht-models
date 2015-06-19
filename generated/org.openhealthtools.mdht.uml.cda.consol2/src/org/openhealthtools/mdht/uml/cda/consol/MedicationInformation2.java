@@ -23,8 +23,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationInformation2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationInformationTemplateId MedicationInformationManufacturedMaterial MedicationInformation2MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformation2MedicationInformationManufacturedMaterialCodeTranslation MedicationInformation2MedicationInformationManufacturedMaterialReference MedicationInformation2MedicationInformationManufacturedMaterialOriginalTextReferenceValue MedicationInformation2MedicationInformationManufacturedMaterialReferenceValue MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeP MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode' templateId.root='2.16.840.1.113883.10.20.22.4.23' templateId.extension='2014-06-09' constraints.validation.info='MedicationInformation2MedicationInformationManufacturedMaterialCETranslation' constraints.validation.query='MedicationInformation2MedicationInformationManufacturedMaterialCETranslation MedicationInformation2MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformation2MedicationInformationManufacturedMaterialCodeTranslation MedicationInformation2MedicationInformationManufacturedMaterialReference MedicationInformation2MedicationInformationManufacturedMaterialOriginalTextReferenceValue MedicationInformation2MedicationInformationManufacturedMaterialReferenceValue MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeP MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode' constraints.validation.dependOn.MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode='MedicationInformationMedicationInformationManufacturedMaterialCodeP'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationInformation2MedicationInformationManufacturedMaterial code.codeSystem='2.16.840.1.113883.6.88' code.codeSystemName='RxNorm' constraints.validation.error='MedicationInformationMedicationInformationManufacturedMaterialCode MedicationInformationMedicationInformationManufacturedMaterialCodeP' constraints.validation.dependOn.MedicationInformationMedicationInformationManufacturedMaterialCode='MedicationInformationMedicationInformationManufacturedMaterialCodeP' constraints.validation.info='MedicationInformation2MedicationInformationManufacturedMaterialCETranslation' constraints.validation.query='MedicationInformation2MedicationInformationManufacturedMaterialCETranslation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationInformationTemplateId MedicationInformationManufacturedMaterial MedicationInformationMedicationInformationManufacturedMaterialCodeP MedicationInformationMedicationInformationManufacturedMaterialCode' templateId.root='2.16.840.1.113883.10.20.22.4.23' templateId.extension='2014-06-09' constraints.validation.info='MedicationInformation2MedicationInformationManufacturedMaterialCETranslation MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation MedicationInformationMedicationInformationManufacturedMaterialReference MedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue MedicationInformationMedicationInformationManufacturedMaterialReferenceValue' constraints.validation.query='MedicationInformation2MedicationInformationManufacturedMaterialCETranslation MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation MedicationInformationMedicationInformationManufacturedMaterialReference MedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue MedicationInformationMedicationInformationManufacturedMaterialReferenceValue MedicationInformationMedicationInformationManufacturedMaterialCodeP MedicationInformationMedicationInformationManufacturedMaterialCode' constraints.validation.dependOn.MedicationInformationMedicationInformationManufacturedMaterialCode='MedicationInformationMedicationInformationManufacturedMaterialCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationInformation2MedicationInformationManufacturedMaterial constraints.validation.info='MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation MedicationInformationMedicationInformationManufacturedMaterialReference MedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue MedicationInformationMedicationInformationManufacturedMaterialReferenceValue MedicationInformationManufacturedMaterialMedicationInformation2MedicationInformationManufacturedMaterialCETranslation' code.codeSystem='2.16.840.1.113883.6.88' code.codeSystemName='RxNorm' constraints.validation.error='MedicationInformationMedicationInformationManufacturedMaterialCode MedicationInformationMedicationInformationManufacturedMaterialCodeP' constraints.validation.dependOn.MedicationInformationMedicationInformationManufacturedMaterialCode='MedicationInformationMedicationInformationManufacturedMaterialCodeP' constraints.validation.query='MedicationInformationManufacturedMaterialMedicationInformation2MedicationInformationManufacturedMaterialCETranslation'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationInformation2MedicationInformationManufacturedMaterialCE constraints.validation.info='MedicationInformation2MedicationInformationManufacturedMaterialCETranslation'"
  * @generated
  */
@@ -52,59 +52,7 @@ public interface MedicationInformation2 extends MedicationInformation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(true)'"
 	 * @generated
 	 */
-	boolean validateMedicationInformation2MedicationInformationManufacturedMaterialCodeOriginalText(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(true)'"
-	 * @generated
-	 */
-	boolean validateMedicationInformation2MedicationInformationManufacturedMaterialCodeTranslation(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(true)'"
-	 * @generated
-	 */
-	boolean validateMedicationInformation2MedicationInformationManufacturedMaterialReference(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(true)'"
-	 * @generated
-	 */
-	boolean validateMedicationInformation2MedicationInformationManufacturedMaterialOriginalTextReferenceValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(true)'"
-	 * @generated
-	 */
-	boolean validateMedicationInformation2MedicationInformationManufacturedMaterialReferenceValue(
+	boolean validateMedicationInformationMedicationInformationManufacturedMaterialReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
@@ -117,21 +65,8 @@ public interface MedicationInformation2 extends MedicationInformation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateMedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeP(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.88\' and not value.code.oclIsUndefined()))'"
-	 * @generated
-	 */
-	boolean validateMedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

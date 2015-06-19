@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getGoalObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GoalObservationTemplateId GoalObservationClassCode GoalObservationMoodCode GoalObservationId GoalObservationCodeP GoalObservationStatusCode GoalObservationStatusCodeP GoalObservationAuthorParticipation GoalObservationReferenceTypeCode GoalObservationReferenceExternalDocumentReference' templateId.root='2.16.840.1.113883.10.20.22.4.121' classCode='OBS' moodCode='GOL' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='GoalObservationCode GoalObservationEffectiveTime GoalObservationPriorityPreference' constraints.validation.dependOn.GoalObservationCode='GoalObservationCodeP' statusCode.code='active' constraints.validation.info='GoalObservationValue GoalObservation GoalObservationActReferenceER GoalObservationHealthConcernActER GoalObservationPlannedERs GoalObservationReference' constraints.validation.query='GoalObservationReferenceTypeCode GoalObservationReferenceExternalDocumentReference'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GoalObservationTemplateId GoalObservationClassCode GoalObservationMoodCode GoalObservationId GoalObservationCodeP GoalObservationStatusCode GoalObservationStatusCodeP GoalObservationAuthorParticipation GoalObservationReferenceTypeCode GoalObservationReferenceExternalDocumentReference' templateId.root='2.16.840.1.113883.10.20.22.4.121' classCode='OBS' moodCode='GOL' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='GoalObservationCode GoalObservationEffectiveTime GoalObservationPriorityPreference' constraints.validation.dependOn.GoalObservationCode='GoalObservationCodeP' statusCode.code='active' constraints.validation.info='GoalObservationValue GoalObservationGoalObservation GoalObservationActReferenceER GoalObservationHealthConcernActER GoalObservationPlannedERs GoalObservationReference' constraints.validation.query='GoalObservationReferenceTypeCode GoalObservationReferenceExternalDocumentReference'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolGoalObservationReference typeCode='REFR' constraints.validation.error='GoalObservationReferenceTypeCode GoalObservationReferenceExternalDocumentReference'"
  * @generated
  */
@@ -160,7 +160,7 @@ public interface GoalObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::GoalObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateGoalObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateGoalObservationGoalObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -59,18 +59,6 @@ public class PlannedProcedureSection2Impl extends PlannedProcedureSectionImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedProcedureSectionPlannedProcedure2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedProcedureSection2Operations.validatePlannedProcedureSectionPlannedProcedure2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<PlannedProcedure2> getConsolPlannedProcedure2s() {
 		return PlannedProcedureSection2Operations.getConsolPlannedProcedure2s(this);
 	}
@@ -103,6 +91,18 @@ public class PlannedProcedureSection2Impl extends PlannedProcedureSectionImpl im
 	@Override
 	public boolean validatePlannedProcedureSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedureSection2Operations.validatePlannedProcedureSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedProcedureSection2Operations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**

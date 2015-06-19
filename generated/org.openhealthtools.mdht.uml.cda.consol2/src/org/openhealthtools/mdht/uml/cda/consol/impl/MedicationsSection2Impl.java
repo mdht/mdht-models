@@ -122,9 +122,9 @@ public class MedicationsSection2Impl extends MedicationsSectionEntriesOptional2I
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity2(DiagnosticChain diagnostics,
+	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSection2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity2(
+		return MedicationsSection2Operations.validateMedicationsSectionEntriesOptionalMedicationActivity(
 			this, diagnostics, context);
 	}
 

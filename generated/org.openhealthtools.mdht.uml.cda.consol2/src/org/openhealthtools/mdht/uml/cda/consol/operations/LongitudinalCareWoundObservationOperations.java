@@ -295,8 +295,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	 * @ordered
 	 */
 	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " + "value.code = 'ASSERTION')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLongitudinalCareWoundObservationCode(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Code</em>}' invariant operation.
@@ -1393,7 +1392,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION,
-				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION.getEAllOperations().get(114));
+				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION.getEAllOperations().get(108));
 			try {
 				GET_WOUND_MEASUREMENT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WOUND_MEASUREMENT_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1438,7 +1437,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION,
-				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION.getEAllOperations().get(115));
+				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION.getEAllOperations().get(109));
 			try {
 				GET_WOUND_CHARACTERISTICSS__EOCL_QRY = helper.createQuery(GET_WOUND_CHARACTERISTICSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1483,7 +1482,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION,
-				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION.getEAllOperations().get(116));
+				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION.getEAllOperations().get(110));
 			try {
 				GET_HIGHEST_PRESSURE_ULCER_STAGE__EOCL_QRY = helper.createQuery(GET_HIGHEST_PRESSURE_ULCER_STAGE__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1526,7 +1525,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION,
-				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION.getEAllOperations().get(117));
+				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION.getEAllOperations().get(111));
 			try {
 				GET_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {

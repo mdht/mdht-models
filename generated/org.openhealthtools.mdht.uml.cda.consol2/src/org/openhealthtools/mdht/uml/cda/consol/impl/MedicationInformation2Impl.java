@@ -68,10 +68,9 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialCodeOriginalText(
+	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialReferenceValue(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialCodeOriginalText(
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialReferenceValue(
 			this, diagnostics, context);
 	}
 
@@ -80,70 +79,9 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialCodeTranslation(
+	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialCodeTranslation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialReference(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialReference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialOriginalTextReferenceValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialOriginalTextReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationInformation2MedicationInformationManufacturedMaterialReferenceValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationManufacturedMaterialReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeP(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateMedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformation2Operations.validateMedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode(
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeP(
 			this, diagnostics, context);
 	}
 
@@ -166,6 +104,66 @@ public class MedicationInformation2Impl extends MedicationInformationImpl implem
 	public boolean validateMedicationInformationManufacturedMaterial(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformation2Operations.validateMedicationInformationManufacturedMaterial(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialReference(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationInformation2Operations.validateMedicationInformationMedicationInformationManufacturedMaterialCode(
 			this, diagnostics, context);
 	}
 

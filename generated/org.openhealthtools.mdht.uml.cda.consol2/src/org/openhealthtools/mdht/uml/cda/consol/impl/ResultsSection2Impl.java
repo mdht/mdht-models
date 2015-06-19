@@ -119,9 +119,9 @@ public class ResultsSection2Impl extends ResultsSectionEntriesOptional2Impl impl
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultsSectionEntriesOptionalResultOrganizer2(DiagnosticChain diagnostics,
+	public boolean validateResultsSectionEntriesOptionalResultOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSection2Operations.validateResultsSectionEntriesOptionalResultOrganizer2(
+		return ResultsSection2Operations.validateResultsSectionEntriesOptionalResultOrganizer(
 			this, diagnostics, context);
 	}
 

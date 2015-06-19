@@ -177,8 +177,9 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthConcernActErRefr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActErRefr(this, diagnostics, context);
+	public boolean validateHealthConcernActHealthConcernActErRefr(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActHealthConcernActErRefr(this, diagnostics, context);
 	}
 
 	/**
@@ -186,8 +187,9 @@ public class HealthConcernActImpl extends ActImpl implements HealthConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthConcernActErComp(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HealthConcernActOperations.validateHealthConcernActErComp(this, diagnostics, context);
+	public boolean validateHealthConcernActHealthConcernActErComp(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthConcernActOperations.validateHealthConcernActHealthConcernActErComp(this, diagnostics, context);
 	}
 
 	/**

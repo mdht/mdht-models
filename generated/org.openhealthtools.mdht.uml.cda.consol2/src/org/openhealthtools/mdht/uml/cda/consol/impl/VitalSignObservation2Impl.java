@@ -56,35 +56,6 @@ public class VitalSignObservation2Impl extends VitalSignObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignObservation2TextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignObservation2Operations.validateVitalSignObservation2TextReference(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateVitalSignObservation2ReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignObservation2Operations.validateVitalSignObservation2ReferenceValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateVitalSignObservation2TextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return VitalSignObservation2Operations.validateVitalSignObservation2TextReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateVitalSignObservationInterpretationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return VitalSignObservation2Operations.validateVitalSignObservationInterpretationCodeP(
@@ -111,6 +82,38 @@ public class VitalSignObservation2Impl extends VitalSignObservationImpl implemen
 	@Override
 	public boolean validateVitalSignObservation2PQUnit(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignObservation2Operations.validateVitalSignObservation2PQUnit(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateVitalSignObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignObservation2Operations.validateVitalSignObservationTextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateVitalSignObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignObservation2Operations.validateVitalSignObservationReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateVitalSignObservationTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VitalSignObservation2Operations.validateVitalSignObservationTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**

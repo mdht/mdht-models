@@ -76,42 +76,6 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validateFunctionalStatusSectionFunctionalStatusOrganizer2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionFunctionalStatusOrganizer2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusSectionFunctionalStatusObservation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionFunctionalStatusObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusSectionNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionNonMedicinalSupplyActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateFunctionalStatusSection2SelfCareActivities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusSection2Operations.validateFunctionalStatusSection2SelfCareActivities(
@@ -238,6 +202,42 @@ public class FunctionalStatusSection2Impl extends FunctionalStatusSectionImpl im
 	@Override
 	public boolean validateFunctionalStatusSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusSectionFunctionalStatusResultOrganizer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionFunctionalStatusResultOrganizer(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusSectionFunctionalStatusResultObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionFunctionalStatusResultObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusSection2Operations.validateFunctionalStatusSectionNonMedicinalSupplyActivity(
+			this, diagnostics, context);
 	}
 
 	/**

@@ -481,13 +481,14 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #validateEntryReferenceIINullFlavor(EntryReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
+	 * @generated NOT
 	 * @ordered
 	 */
+	protected static final String VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.id->reject(isNullFlavorUndefined())";
+
+	// old non-working generated version:
 	// protected static final String VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP =
 	// "self.id->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (isDefined('nullFlavor') )))";
-
-	protected static final String VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.id->reject(isNullFlavorUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEntryReferenceIINullFlavor(EntryReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Entry Reference II Null Flavor</em>}' invariant operation.

@@ -69,79 +69,6 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlanOfCareSectionPlannedObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedObservation2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareSectionPlannedEncounter2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedEncounter2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareSectionPlannedAct2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedAct2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareSectionPlannedProcedure2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedProcedure2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareSectionPlannedMedicationActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedMedicationActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareSectionPlannedSupply2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlannedSupply2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlanOfCareSectionInstruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionInstruction2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validatePlanOfTreatmentSection2HandoffCommunication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlanOfTreatmentSection2Operations.validatePlanOfTreatmentSection2HandoffCommunication(
@@ -316,6 +243,88 @@ public class PlanOfTreatmentSection2Impl extends PlanOfCareSectionImpl implement
 	@Override
 	public boolean validatePlanOfCareSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlanOfCareActivityObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlanOfCareSectionPlanOfCareActivityEncounter(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlanOfCareActivityEncounter(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlanOfCareSectionPlanOfCareActivityAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlanOfCareActivityAct(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlanOfCareSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlanOfCareActivityProcedure(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlanOfCareSectionPlanOfCareActivitySupply(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionPlanOfCareActivitySupply(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePlanOfCareSectionInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PlanOfTreatmentSection2Operations.validatePlanOfCareSectionInstructions(this, diagnostics, context);
 	}
 
 	/**

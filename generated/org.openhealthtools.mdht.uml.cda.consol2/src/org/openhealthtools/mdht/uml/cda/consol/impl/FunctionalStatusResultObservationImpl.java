@@ -56,30 +56,6 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateFunctionalStatusResultObservationTextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationTextReference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateFunctionalStatusResultObservationTextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationTextReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateFunctionalStatusResultObservationValueDatatype(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusResultObservationOperations.validateFunctionalStatusResultObservationValueDatatype(
@@ -208,6 +184,28 @@ public class FunctionalStatusResultObservationImpl extends ResultObservationImpl
 	@Override
 	public AssessmentScaleObservation getAssessmentScaleObservation() {
 		return FunctionalStatusResultObservationOperations.getAssessmentScaleObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultObservationOperations.validateResultObservationTextReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultObservationOperations.validateResultObservationTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**

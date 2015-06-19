@@ -60,18 +60,6 @@ public class ImmunizationsSectionEntriesOptional2Impl extends ImmunizationsSecti
 	 * @generated
 	 */
 	@Override
-	public boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptional2Operations.validateImmunizationsSectionEntriesOptionalImmunizationActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<ImmunizationActivity2> getConsolImmunizationActivity2s() {
 		return ImmunizationsSectionEntriesOptional2Operations.getConsolImmunizationActivity2s(this);
 	}
@@ -109,6 +97,18 @@ public class ImmunizationsSectionEntriesOptional2Impl extends ImmunizationsSecti
 	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationsSectionEntriesOptional2Operations.validateImmunizationsSectionEntriesOptionalCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationsSectionEntriesOptional2Operations.validateImmunizationsSectionEntriesOptionalImmunizationActivity(
 			this, diagnostics, context);
 	}
 

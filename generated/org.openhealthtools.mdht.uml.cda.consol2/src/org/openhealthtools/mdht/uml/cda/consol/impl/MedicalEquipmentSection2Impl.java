@@ -61,18 +61,6 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity2(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSectionNonMedicinalSupplyActivity2(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateMedicalEquipmentSection2MedicalEquipmentOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSection2MedicalEquipmentOrganizer(
@@ -149,6 +137,18 @@ public class MedicalEquipmentSection2Impl extends MedicalEquipmentSectionImpl im
 	@Override
 	public boolean validateMedicalEquipmentSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicalEquipmentSection2Operations.validateMedicalEquipmentSectionNonMedicinalSupplyActivity(
+			this, diagnostics, context);
 	}
 
 	/**

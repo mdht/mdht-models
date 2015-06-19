@@ -59,18 +59,6 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	 * @generated
 	 */
 	@Override
-	public boolean validateCoverageActivity2CoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CoverageActivity2Operations.validateCoverageActivity2CoverageActivityRelationshipSequenceNumber(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateCoverageActivityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivity2Operations.validateCoverageActivityCodeP(this, diagnostics, context);
 	}
@@ -136,6 +124,18 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	@Override
 	public EList<PolicyActivity2> getConsolPolicyActivity2s() {
 		return CoverageActivity2Operations.getConsolPolicyActivity2s(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateCoverageActivityCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CoverageActivity2Operations.validateCoverageActivityCoverageActivityRelationshipSequenceNumber(
+			this, diagnostics, context);
 	}
 
 	/**

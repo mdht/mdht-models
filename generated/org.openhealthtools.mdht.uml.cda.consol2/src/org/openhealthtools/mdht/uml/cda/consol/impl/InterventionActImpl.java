@@ -160,9 +160,8 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateInterventionAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InterventionActOperations.validateInterventionAct(this, diagnostics, context);
+	public boolean validateInterventionActInterventionAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InterventionActOperations.validateInterventionActInterventionAct(this, diagnostics, context);
 	}
 
 	/**
