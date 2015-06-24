@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -35,6 +36,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugVehicle#validateDrugVehiclePlayingEntityName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Playing Entity Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugVehicle#validateDrugVehicleTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugVehicle#validateDrugVehicleClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugVehicle#validateDrugVehicleCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugVehicle#validateDrugVehicleCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DrugVehicle#validateDrugVehiclePlayingEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Drug Vehicle Playing Entity</em>}</li>
  * </ul>
@@ -191,6 +193,38 @@ public class DrugVehicleTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+	public void testValidateDrugVehicleCodeP() {
+		OperationsTestCase<DrugVehicle> validateDrugVehicleCodePTestCase = new OperationsTestCase<DrugVehicle>(
+			"validateDrugVehicleCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_DRUG_VEHICLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+
+			@Override
+			protected void updateToFail(DrugVehicle target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DrugVehicle target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DrugVehicleOperations.validateDrugVehicleCodeP((DrugVehicle) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDrugVehicleCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
 	public void testValidateDrugVehicleCode() {
 		OperationsTestCase<DrugVehicle> validateDrugVehicleCodeTestCase = new OperationsTestCase<DrugVehicle>(
 			"validateDrugVehicleCode",
@@ -205,6 +239,13 @@ public class DrugVehicleTest extends CDAValidationTest {
 			protected void updateToPass(DrugVehicle target) {
 				target.init();
 
+			}
+
+			@Override
+			protected void setDependency(DrugVehicle target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.DrugVehicleCodeP", passToken);
 			}
 
 			@Override

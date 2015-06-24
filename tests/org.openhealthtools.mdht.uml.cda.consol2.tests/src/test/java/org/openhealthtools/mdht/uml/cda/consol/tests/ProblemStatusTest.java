@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -40,9 +41,12 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus#validateProblemStatusTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus#validateProblemStatusClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus#validateProblemStatusMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus#validateProblemStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus#validateProblemStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus#validateProblemStatusText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus#validateProblemStatusStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus#validateProblemStatusStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus#validateProblemStatusValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProblemStatus#validateProblemStatusValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Status Value</em>}</li>
  * </ul>
  * </p>
@@ -284,6 +288,40 @@ public class ProblemStatusTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated
+	*/
+	@Test
+	public void testValidateProblemStatusCodeP() {
+		OperationsTestCase<ProblemStatus> validateProblemStatusCodePTestCase = new OperationsTestCase<ProblemStatus>(
+			"validateProblemStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProblemStatus target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProblemStatus target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemStatusOperations.validateProblemStatusCodeP(
+					(ProblemStatus) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemStatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated not
 	*/
 	@Test
@@ -343,6 +381,13 @@ public class ProblemStatusTest extends CDAValidationTest {
 			}
 
 			@Override
+			protected void setDependency(ProblemStatus target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.ProblemStatusStatusCodeP", passToken);
+			}
+
+			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
 				return ProblemStatusOperations.validateProblemStatusStatusCode(
@@ -352,6 +397,40 @@ public class ProblemStatusTest extends CDAValidationTest {
 		};
 
 		validateProblemStatusStatusCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateProblemStatusValueP() {
+		OperationsTestCase<ProblemStatus> validateProblemStatusValuePTestCase = new OperationsTestCase<ProblemStatus>(
+			"validateProblemStatusValueP",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProblemStatus target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProblemStatus target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemStatusOperations.validateProblemStatusValueP(
+					(ProblemStatus) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemStatusValuePTestCase.doValidationTest();
 	}
 
 	/**
@@ -388,6 +467,40 @@ public class ProblemStatusTest extends CDAValidationTest {
 		};
 
 		validateProblemStatusTextTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateProblemStatusStatusCodeP() {
+		OperationsTestCase<ProblemStatus> validateProblemStatusStatusCodePTestCase = new OperationsTestCase<ProblemStatus>(
+			"validateProblemStatusStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_STATUS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ProblemStatus target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ProblemStatus target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ProblemStatusOperations.validateProblemStatusStatusCodeP(
+					(ProblemStatus) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemStatusStatusCodePTestCase.doValidationTest();
 	}
 
 	/**
