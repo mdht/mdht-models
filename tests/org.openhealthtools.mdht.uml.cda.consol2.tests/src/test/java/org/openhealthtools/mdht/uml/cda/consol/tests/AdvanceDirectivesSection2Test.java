@@ -11,10 +11,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.Entry;
@@ -22,6 +24,8 @@ import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSection2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 
 /**
@@ -33,12 +37,16 @@ import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Has Advance Directive Observation2 Xor Advance Directive Organizer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2NullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2Entry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2EntryAdvanceDirectiveOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Advance Directive Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSection2EntryAdvanceDirectiveObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section2 Entry Advance Directive Observation2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#getConsolAdvanceDirectiveOrganizers() <em>Get Consol Advance Directive Organizers</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSectionEntriesOptionalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#validateAdvanceDirectivesSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection2#getConsolAdvanceDirectiveObservation2s() <em>Get Consol Advance Directive Observation2s</em>}</li>
  * </ul>
  * </p>
@@ -174,6 +182,80 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 		};
 
 		validateAdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizerTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This attribute is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateAdvanceDirectivesSection2Text() {
+		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2TextTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
+			"validateAdvanceDirectivesSection2Text",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION2_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectivesSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectivesSection2 target) {
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSection2Text(
+					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectivesSection2TextTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This attribute is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateAdvanceDirectivesSection2Title() {
+		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSection2TitleTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
+			"validateAdvanceDirectivesSection2Title",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION2_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectivesSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectivesSection2 target) {
+				target.init();
+
+				ST title = DatatypesFactory.eINSTANCE.createST("title");
+				target.setTitle(title);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSection2Title(
+					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectivesSection2TitleTestCase.doValidationTest();
 	}
 
 	/**
@@ -364,6 +446,86 @@ public class AdvanceDirectivesSection2Test extends CDAValidationTest {
 		};
 
 		validateAdvanceDirectivesSectionEntriesOptionalTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This attribute is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateAdvanceDirectivesSectionEntriesOptionalCodeP() {
+		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSectionEntriesOptionalCodePTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
+			"validateAdvanceDirectivesSectionEntriesOptionalCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectivesSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectivesSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptionalCodeP(
+					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectivesSectionEntriesOptionalCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This attribute is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateAdvanceDirectivesSectionEntriesOptionalCode() {
+		OperationsTestCase<AdvanceDirectivesSection2> validateAdvanceDirectivesSectionEntriesOptionalCodeTestCase = new OperationsTestCase<AdvanceDirectivesSection2>(
+			"validateAdvanceDirectivesSectionEntriesOptionalCode",
+			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdvanceDirectivesSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AdvanceDirectivesSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected void setDependency(AdvanceDirectivesSection2 target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put(
+					"org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptionalCodeP", passToken);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptionalCode(
+					(AdvanceDirectivesSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdvanceDirectivesSectionEntriesOptionalCodeTestCase.doValidationTest();
 	}
 
 	/**

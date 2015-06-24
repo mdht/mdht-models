@@ -46,6 +46,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.StudyAct#validateStudyActText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Text</em>}</li>
@@ -386,6 +387,38 @@ public class StudyActTest extends CDAValidationTest {
 		};
 
 		validateStudyActIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateStudyActCodeP() {
+		OperationsTestCase<StudyAct> validateStudyActCodePTestCase = new OperationsTestCase<StudyAct>(
+			"validateStudyActCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_STUDY_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+
+			@Override
+			protected void updateToFail(StudyAct target) {
+
+			}
+
+			@Override
+			protected void updateToPass(StudyAct target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return StudyActOperations.validateStudyActCodeP((StudyAct) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateStudyActCodePTestCase.doValidationTest();
 	}
 
 	/**

@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -35,6 +36,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#validateDischargeMedicationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#validateDischargeMedicationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#validateDischargeMedicationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#validateDischargeMedicationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#validateDischargeMedicationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medication Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedication#getMedicationActivities() <em>Get Medication Activities</em>}</li>
  * </ul>
@@ -189,6 +191,40 @@ public class DischargeMedicationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+	public void testValidateDischargeMedicationCodeP() {
+		OperationsTestCase<DischargeMedication> validateDischargeMedicationCodePTestCase = new OperationsTestCase<DischargeMedication>(
+			"validateDischargeMedicationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeMedication target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DischargeMedication target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeMedicationOperations.validateDischargeMedicationCodeP(
+					(DischargeMedication) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeMedicationCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
 	public void testValidateDischargeMedicationCode() {
 		OperationsTestCase<DischargeMedication> validateDischargeMedicationCodeTestCase = new OperationsTestCase<DischargeMedication>(
 			"validateDischargeMedicationCode",
@@ -204,6 +240,13 @@ public class DischargeMedicationTest extends CDAValidationTest {
 			protected void updateToPass(DischargeMedication target) {
 				target.init();
 
+			}
+
+			@Override
+			protected void setDependency(DischargeMedication target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationCodeP", passToken);
 			}
 
 			@Override

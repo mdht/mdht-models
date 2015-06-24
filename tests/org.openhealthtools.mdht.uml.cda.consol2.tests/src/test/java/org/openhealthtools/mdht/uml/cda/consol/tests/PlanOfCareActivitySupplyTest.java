@@ -33,6 +33,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupply#validatePlanOfCareActivitySupplyTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupply#validatePlanOfCareActivitySupplyClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupply#validatePlanOfCareActivitySupplyMoodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Mood Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupply#validatePlanOfCareActivitySupplyMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupply#validatePlanOfCareActivitySupplyId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Id</em>}</li>
  * </ul>
@@ -115,6 +116,40 @@ public class PlanOfCareActivitySupplyTest extends CDAValidationTest {
 		};
 
 		validatePlanOfCareActivitySupplyClassCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePlanOfCareActivitySupplyMoodCodeP() {
+		OperationsTestCase<PlanOfCareActivitySupply> validatePlanOfCareActivitySupplyMoodCodePTestCase = new OperationsTestCase<PlanOfCareActivitySupply>(
+			"validatePlanOfCareActivitySupplyMoodCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlanOfCareActivitySupply target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlanOfCareActivitySupply target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlanOfCareActivitySupplyOperations.validatePlanOfCareActivitySupplyMoodCodeP(
+					(PlanOfCareActivitySupply) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareActivitySupplyMoodCodePTestCase.doValidationTest();
 	}
 
 	/**

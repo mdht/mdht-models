@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -33,6 +34,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection#validateFunctionalStatusSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection#validateFunctionalStatusSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection#validateFunctionalStatusSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection#validateFunctionalStatusSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection#validateFunctionalStatusSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Text</em>}</li>
@@ -107,6 +109,40 @@ public class FunctionalStatusSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+	public void testValidateFunctionalStatusSectionCodeP() {
+		OperationsTestCase<FunctionalStatusSection> validateFunctionalStatusSectionCodePTestCase = new OperationsTestCase<FunctionalStatusSection>(
+			"validateFunctionalStatusSectionCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCodeP(
+					(FunctionalStatusSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusSectionCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
 	public void testValidateFunctionalStatusSectionCode() {
 		OperationsTestCase<FunctionalStatusSection> validateFunctionalStatusSectionCodeTestCase = new OperationsTestCase<FunctionalStatusSection>(
 			"validateFunctionalStatusSectionCode",
@@ -122,6 +158,13 @@ public class FunctionalStatusSectionTest extends CDAValidationTest {
 			protected void updateToPass(FunctionalStatusSection target) {
 				target.init();
 
+			}
+
+			@Override
+			protected void setDependency(FunctionalStatusSection target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSectionCodeP", passToken);
 			}
 
 			@Override

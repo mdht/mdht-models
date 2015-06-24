@@ -37,6 +37,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.EntityClassRoot;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation#validateServiceDeliveryLocationHasPlayingEntityName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Service Delivery Location Has Playing Entity Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation#validateServiceDeliveryLocationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Service Delivery Location Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation#validateServiceDeliveryLocationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Service Delivery Location Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation#validateServiceDeliveryLocationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Service Delivery Location Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation#validateServiceDeliveryLocationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Service Delivery Location Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation#validateServiceDeliveryLocationAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Service Delivery Location Addr</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation#validateServiceDeliveryLocationTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Service Delivery Location Telecom</em>}</li>
@@ -233,6 +234,40 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 		};
 
 		validateServiceDeliveryLocationClassCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidateServiceDeliveryLocationCodeP() {
+		OperationsTestCase<ServiceDeliveryLocation> validateServiceDeliveryLocationCodePTestCase = new OperationsTestCase<ServiceDeliveryLocation>(
+			"validateServiceDeliveryLocationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_SERVICE_DELIVERY_LOCATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(ServiceDeliveryLocation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(ServiceDeliveryLocation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationCodeP(
+					(ServiceDeliveryLocation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateServiceDeliveryLocationCodePTestCase.doValidationTest();
 	}
 
 	/**

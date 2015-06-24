@@ -11,6 +11,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -46,17 +47,18 @@ import org.openhealthtools.mdht.uml.hl7.vocab.PostalAddressUse;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address US Realm Address Street</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Use P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Use</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Country</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateGeneralHeaderConstraintsUSRealmAddressState(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address State</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateGeneralHeaderConstraintsUSRealmAddressCity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address City</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateGeneralHeaderConstraintsUSRealmAddressPostalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Postal Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Street Address Line</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Use P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Use</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Country</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address State</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address City</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Postal Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author General Header Constraints US Realm Address Street Address Line</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author Has Person Or Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorAssignPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author Assign Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CommentActivity#validateCommentActivityAuthorAssignedAuthorAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Activity Author Assigned Author Addr</em>}</li>
@@ -299,7 +301,41 @@ public class CommentActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateCommentActivityCodeP() {
+		OperationsTestCase<CommentActivity> validateCommentActivityCodePTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(CommentActivity target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CommentActivity target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return CommentActivityOperations.validateCommentActivityCodeP(
+					(CommentActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCommentActivityCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateCommentActivityCode() {
@@ -317,6 +353,13 @@ public class CommentActivityTest extends CDAValidationTest {
 			protected void updateToPass(CommentActivity target) {
 				target.init();
 
+			}
+
+			@Override
+			protected void setDependency(CommentActivity target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.CommentActivityCodeP", passToken);
 			}
 
 			@Override
@@ -482,10 +525,10 @@ public class CommentActivityTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGeneralHeaderConstraintsUSRealmAddressUseP() {
-		OperationsTestCase<CommentActivity> validateGeneralHeaderConstraintsUSRealmAddressUsePTestCase = new OperationsTestCase<CommentActivity>(
-			"validateGeneralHeaderConstraintsUSRealmAddressUseP",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP() {
+		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUsePTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP",
+			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -513,13 +556,13 @@ public class CommentActivityTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CommentActivityOperations.validateGeneralHeaderConstraintsUSRealmAddressUseP(
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(
 					(CommentActivity) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGeneralHeaderConstraintsUSRealmAddressUsePTestCase.doValidationTest();
+		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUsePTestCase.doValidationTest();
 	}
 
 	/**
@@ -527,10 +570,10 @@ public class CommentActivityTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGeneralHeaderConstraintsUSRealmAddressUse() {
-		OperationsTestCase<CommentActivity> validateGeneralHeaderConstraintsUSRealmAddressUseTestCase = new OperationsTestCase<CommentActivity>(
-			"validateGeneralHeaderConstraintsUSRealmAddressUse",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse() {
+		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse",
+			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -561,13 +604,13 @@ public class CommentActivityTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CommentActivityOperations.validateGeneralHeaderConstraintsUSRealmAddressUse(
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(
 					(CommentActivity) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGeneralHeaderConstraintsUSRealmAddressUseTestCase.doValidationTest();
+		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseTestCase.doValidationTest();
 	}
 
 	/**
@@ -575,10 +618,10 @@ public class CommentActivityTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGeneralHeaderConstraintsUSRealmAddressCountry() {
-		OperationsTestCase<CommentActivity> validateGeneralHeaderConstraintsUSRealmAddressCountryTestCase = new OperationsTestCase<CommentActivity>(
-			"validateGeneralHeaderConstraintsUSRealmAddressCountry",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry() {
+		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountryTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry",
+			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -606,13 +649,13 @@ public class CommentActivityTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CommentActivityOperations.validateGeneralHeaderConstraintsUSRealmAddressCountry(
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(
 					(CommentActivity) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGeneralHeaderConstraintsUSRealmAddressCountryTestCase.doValidationTest();
+		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountryTestCase.doValidationTest();
 	}
 
 	/**
@@ -620,10 +663,10 @@ public class CommentActivityTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGeneralHeaderConstraintsUSRealmAddressState() {
-		OperationsTestCase<CommentActivity> validateGeneralHeaderConstraintsUSRealmAddressStateTestCase = new OperationsTestCase<CommentActivity>(
-			"validateGeneralHeaderConstraintsUSRealmAddressState",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState() {
+		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStateTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState",
+			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -651,13 +694,13 @@ public class CommentActivityTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CommentActivityOperations.validateGeneralHeaderConstraintsUSRealmAddressState(
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(
 					(CommentActivity) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGeneralHeaderConstraintsUSRealmAddressStateTestCase.doValidationTest();
+		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStateTestCase.doValidationTest();
 	}
 
 	/**
@@ -665,10 +708,10 @@ public class CommentActivityTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGeneralHeaderConstraintsUSRealmAddressCity() {
-		OperationsTestCase<CommentActivity> validateGeneralHeaderConstraintsUSRealmAddressCityTestCase = new OperationsTestCase<CommentActivity>(
-			"validateGeneralHeaderConstraintsUSRealmAddressCity",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity() {
+		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCityTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity",
+			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -696,13 +739,13 @@ public class CommentActivityTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CommentActivityOperations.validateGeneralHeaderConstraintsUSRealmAddressCity(
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(
 					(CommentActivity) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGeneralHeaderConstraintsUSRealmAddressCityTestCase.doValidationTest();
+		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCityTestCase.doValidationTest();
 	}
 
 	/**
@@ -710,10 +753,10 @@ public class CommentActivityTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGeneralHeaderConstraintsUSRealmAddressPostalCode() {
-		OperationsTestCase<CommentActivity> validateGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<CommentActivity>(
-			"validateGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode() {
+		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -741,13 +784,13 @@ public class CommentActivityTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CommentActivityOperations.validateGeneralHeaderConstraintsUSRealmAddressPostalCode(
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(
 					(CommentActivity) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
+		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
 	}
 
 	/**
@@ -755,10 +798,10 @@ public class CommentActivityTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine() {
-		OperationsTestCase<CommentActivity> validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase = new OperationsTestCase<CommentActivity>(
-			"validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine() {
+		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase = new OperationsTestCase<CommentActivity>(
+			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
+			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -786,13 +829,13 @@ public class CommentActivityTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return CommentActivityOperations.validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+				return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 					(CommentActivity) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase.doValidationTest();
+		validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase.doValidationTest();
 	}
 
 	/**

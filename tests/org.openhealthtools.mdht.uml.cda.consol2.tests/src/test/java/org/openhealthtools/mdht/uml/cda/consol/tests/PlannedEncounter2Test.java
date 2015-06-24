@@ -56,6 +56,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentEncounterMood;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2#getPriorityPreference() <em>Get Priority Preference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2#getIndication2s() <em>Get Indication2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2#validatePlanOfCareActivityEncounterTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Encounter Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2#validatePlanOfCareActivityEncounterMoodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Encounter Mood Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2#validatePlanOfCareActivityEncounterMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Encounter Mood Code</em>}</li>
  * </ul>
  * </p>
@@ -561,6 +562,40 @@ public class PlannedEncounter2Test extends CDAValidationTest {
 		};
 
 		validatePlanOfCareActivityEncounterTemplateIdTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePlanOfCareActivityEncounterMoodCodeP() {
+		OperationsTestCase<PlannedEncounter2> validatePlanOfCareActivityEncounterMoodCodePTestCase = new OperationsTestCase<PlannedEncounter2>(
+			"validatePlanOfCareActivityEncounterMoodCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedEncounter2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PlannedEncounter2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedEncounter2Operations.validatePlanOfCareActivityEncounterMoodCodeP(
+					(PlannedEncounter2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlanOfCareActivityEncounterMoodCodePTestCase.doValidationTest();
 	}
 
 	/**

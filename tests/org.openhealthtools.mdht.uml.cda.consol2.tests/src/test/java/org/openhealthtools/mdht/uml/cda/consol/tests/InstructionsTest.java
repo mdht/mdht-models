@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -42,6 +43,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Instructions#validateInstructionsCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Instructions#validateInstructionsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Instructions#validateInstructionsText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Instructions#validateInstructionsStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.Instructions#validateInstructionsStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Instructions Status Code</em>}</li>
  * </ul>
  * </p>
@@ -386,6 +388,40 @@ public class InstructionsTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+	public void testValidateInstructionsStatusCodeP() {
+		OperationsTestCase<Instructions> validateInstructionsStatusCodePTestCase = new OperationsTestCase<Instructions>(
+			"validateInstructionsStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTIONS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(Instructions target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Instructions target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return InstructionsOperations.validateInstructionsStatusCodeP(
+					(Instructions) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInstructionsStatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
 	public void testValidateInstructionsStatusCode() {
 		OperationsTestCase<Instructions> validateInstructionsStatusCodeTestCase = new OperationsTestCase<Instructions>(
 			"validateInstructionsStatusCode",
@@ -404,6 +440,13 @@ public class InstructionsTest extends CDAValidationTest {
 				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
 
+			}
+
+			@Override
+			protected void setDependency(Instructions target) {
+				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+				passToken.add(target);
+				map.put("org.openhealthtools.mdht.uml.cda.consol.InstructionsStatusCodeP", passToken);
 			}
 
 			@Override

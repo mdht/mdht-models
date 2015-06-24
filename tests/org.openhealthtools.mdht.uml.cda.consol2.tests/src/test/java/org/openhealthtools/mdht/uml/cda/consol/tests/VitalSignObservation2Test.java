@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignObservation2O
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
 
@@ -44,6 +45,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationInterpretationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Interpretation Code</em>}</li>
  * </ul>
  * </p>
@@ -382,6 +384,45 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 		};
 
 		validateVitalSignObservationValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This attribute is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateVitalSignObservationText() {
+		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationTextTestCase = new OperationsTestCase<VitalSignObservation2>(
+			"validateVitalSignObservationText",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(VitalSignObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(VitalSignObservation2 target) {
+				target.init();
+
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				target.setText(text);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return VitalSignObservation2Operations.validateVitalSignObservationText(
+					(VitalSignObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateVitalSignObservationTextTestCase.doValidationTest();
 	}
 
 	/**
