@@ -3361,7 +3361,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(297));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(367));
 			try {
 				GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY = helper.createQuery(GET_PLAN_OF_TREATMENT_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3403,7 +3403,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(298));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(368));
 			try {
 				GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3444,7 +3444,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(299));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(369));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3485,7 +3485,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_IMMUNIZATIONS_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(300));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(370));
 			try {
 				GET_IMMUNIZATIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3526,7 +3526,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_PROBLEM_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(301));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(371));
 			try {
 				GET_PROBLEM_SECTION2__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3567,7 +3567,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(302));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(372));
 			try {
 				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3608,7 +3608,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_RESULTS_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(303));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(373));
 			try {
 				GET_RESULTS_SECTION2__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3649,7 +3649,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(304));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(374));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3690,7 +3690,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_SOCIAL_HISTORY_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(305));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(375));
 			try {
 				GET_SOCIAL_HISTORY_SECTION2__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3731,7 +3731,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_VITAL_SIGNS_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(306));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(376));
 			try {
 				GET_VITAL_SIGNS_SECTION2__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3772,7 +3772,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_FUNCTIONAL_STATUS_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(307));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(377));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION2__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3813,7 +3813,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_PHYSICAL_EXAM_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(308));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(378));
 			try {
 				GET_PHYSICAL_EXAM_SECTION2__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3855,7 +3855,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(309));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(379));
 			try {
 				GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3896,7 +3896,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_NUTRITION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(310));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(380));
 			try {
 				GET_NUTRITION_SECTION__EOCL_QRY = helper.createQuery(GET_NUTRITION_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3937,7 +3937,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_MENTAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(311));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(381));
 			try {
 				GET_MENTAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_MENTAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3978,7 +3978,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_MEDICAL_EQUIPMENT_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(312));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(382));
 			try {
 				GET_MEDICAL_EQUIPMENT_SECTION2__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4019,7 +4019,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_ALLERGIES_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(313));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(383));
 			try {
 				GET_ALLERGIES_SECTION2__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4060,7 +4060,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_ASSESSMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(314));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(384));
 			try {
 				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4101,7 +4101,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(315));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(385));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4142,7 +4142,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(316));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(386));
 			try {
 				GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4183,7 +4183,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_GENERAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(317));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(387));
 			try {
 				GET_GENERAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_GENERAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4224,7 +4224,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_MEDICATIONS_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(318));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(388));
 			try {
 				GET_MEDICATIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4265,7 +4265,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_REASON_FOR_REFERRAL_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(319));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(389));
 			try {
 				GET_REASON_FOR_REFERRAL_SECTION2__EOCL_QRY = helper.createQuery(GET_REASON_FOR_REFERRAL_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4306,7 +4306,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_FAMILY_HISTORY_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(320));
+				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(390));
 			try {
 				GET_FAMILY_HISTORY_SECTION2__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {

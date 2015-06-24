@@ -46,6 +46,13 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2LegalAuthenticatorSDTCSignatureText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Legal Authenticator SDTC Signature Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2AuthenticatorSDTCSignatureText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Authenticator SDTC Signature Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address US Realm Address Street</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Use P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Use</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Country</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address State</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address City</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Postal Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Street Address Line</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsInformantAssignedEntityCodeVS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Informant Assigned Entity Code VS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeVS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of Service Event Performer1 Assigned Entity Code VS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeVS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Documentation Of Service Event Performer1 Function Code VS</em>}</li>
@@ -92,13 +99,6 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Author Assigned Author Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsAuthorAssignedAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Author Assigned Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Information Recipient Intended Recipient</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressUseP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Use P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Use</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressCountry(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Country</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressState(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address State</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressCity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address City</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressPostalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Postal Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Street Address Line</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Informant Assigned Entity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsInformantAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Informant Assigned Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsInformantAssignedEntityAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Informant Assigned Entity Addr</em>}</li>
@@ -727,6 +727,472 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET,
 						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Use P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not use->isEmpty() )))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Use P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P,
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Use</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and "
+			+ "let value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in "
+			+ "value = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP) )))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Use</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			Object passFilter = (context == null)
+					? null
+					: context.get("org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraintsUSRealmAddressUseP");
+			if (passFilter instanceof Collection<?>) {
+				// filter my query results
+				oclResultSet = new ArrayList<EObject>(oclResultSet);
+				oclResultSet.removeAll((Collection<?>) passFilter);
+			}
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE,
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Country</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((country->isEmpty() or country->exists(element | element.isNullFlavorUndefined())) implies (not country->isEmpty()) )))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Country</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY,
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address State</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((state->isEmpty() or state->exists(element | element.isNullFlavorUndefined())) implies (not state->isEmpty()) )))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address State</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
+			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE,
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address City</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((city->isEmpty() or city->exists(element | element.isNullFlavorUndefined())) implies (city->size() = 1) )))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address City</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY,
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Postal Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((postalCode->isEmpty() or postalCode->exists(element | element.isNullFlavorUndefined())) implies (not postalCode->isEmpty()) )))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Postal Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.WARNING,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE,
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Street Address Line</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((streetAddressLine->isEmpty() or streetAddressLine->exists(element | element.isNullFlavorUndefined())) implies (not streetAddressLine->isEmpty()) )))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header2 Informant Assigned Entity General Header Constraints US Realm Address Street Address Line</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateUSRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.US_REALM_HEADER2__US_REALM_HEADER2_INFORMANT_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE,
+						ConsolPlugin.INSTANCE.getString("USRealmHeader2USRealmHeader2InformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine"),
 						new Object[] { eObject }));
 				}
 
@@ -3754,480 +4220,6 @@ public class USRealmHeader2Operations extends GeneralHeaderConstraintsOperations
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT,
 						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsInformationRecipientIntendedRecipient"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressUseP(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Use P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressUseP(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not use->isEmpty() )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressUseP(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Use P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressUseP(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateGeneralHeaderConstraintsUSRealmAddressUseP(USRealmHeader2 usRealmHeader2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsUSRealmAddressUseP"),
-						new Object[] { eObject }));
-				}
-
-				if (context != null) {
-					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraintsUSRealmAddressUseP");
-					if (passToken == null) {
-						// anticipate a reasonably healthy model
-						passToken = new java.util.ArrayList<Object>(3);
-						context.put(
-							"org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraintsUSRealmAddressUseP",
-							passToken);
-					}
-					passToken.addAll(oclResultSet);
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressUse(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Use</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressUse(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and "
-			+ "let value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in "
-			+ "value = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP) )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressUse(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Use</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressUse(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateGeneralHeaderConstraintsUSRealmAddressUse(USRealmHeader2 usRealmHeader2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			Object passFilter = (context == null)
-					? null
-					: context.get("org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraintsUSRealmAddressUseP");
-			if (passFilter instanceof Collection<?>) {
-				// filter my query results
-				oclResultSet = new ArrayList<EObject>(oclResultSet);
-				oclResultSet.removeAll((Collection<?>) passFilter);
-			}
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsUSRealmAddressUse"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressCountry(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Country</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressCountry(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((country->isEmpty() or country->exists(element | element.isNullFlavorUndefined())) implies (not country->isEmpty()) )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressCountry(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Country</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressCountry(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateGeneralHeaderConstraintsUSRealmAddressCountry(USRealmHeader2 usRealmHeader2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsUSRealmAddressCountry"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressState(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address State</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressState(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((state->isEmpty() or state->exists(element | element.isNullFlavorUndefined())) implies (not state->isEmpty()) )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressState(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address State</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressState(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateGeneralHeaderConstraintsUSRealmAddressState(USRealmHeader2 usRealmHeader2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsUSRealmAddressState"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressCity(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address City</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressCity(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((city->isEmpty() or city->exists(element | element.isNullFlavorUndefined())) implies (city->size() = 1) )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressCity(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address City</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressCity(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateGeneralHeaderConstraintsUSRealmAddressCity(USRealmHeader2 usRealmHeader2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsUSRealmAddressCity"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressPostalCode(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Postal Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressPostalCode(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((postalCode->isEmpty() or postalCode->exists(element | element.isNullFlavorUndefined())) implies (not postalCode->isEmpty()) )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressPostalCode(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Postal Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressPostalCode(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateGeneralHeaderConstraintsUSRealmAddressPostalCode(USRealmHeader2 usRealmHeader2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsUSRealmAddressPostalCode"),
-						new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Street Address Line</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((streetAddressLine->isEmpty() or streetAddressLine->exists(element | element.isNullFlavorUndefined())) implies (not streetAddressLine->isEmpty()) )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Address Street Address Line</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(USRealmHeader2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param usRealmHeader2 The receiving '<em><b>US Realm Header2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-			USRealmHeader2 usRealmHeader2, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.US_REALM_HEADER2);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(usRealmHeader2);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.US_REALM_HEADER2__GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE,
-						ConsolPlugin.INSTANCE.getString("USRealmHeader2GeneralHeaderConstraintsUSRealmAddressStreetAddressLine"),
 						new Object[] { eObject }));
 				}
 

@@ -25,9 +25,9 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationDispense()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationDispenseTemplateId MedicationDispenseContainsMedicationOrImmunization MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispenseStatusCodeP MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet GeneralHeaderConstraintsUSRealmAddressUse GeneralHeaderConstraintsUSRealmAddressCity GeneralHeaderConstraintsUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.18' classCode='SPLY' constraints.validation.warning='MedicationDispenseEffectiveTime MedicationDispenseRepeatNumber MedicationDispenseQuantity GeneralHeaderConstraintsUSRealmAddressUseP GeneralHeaderConstraintsUSRealmAddressCountry GeneralHeaderConstraintsUSRealmAddressState GeneralHeaderConstraintsUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityAddr' moodCode='EVN' constraints.validation.dependOn.MedicationDispenseStatusCode='MedicationDispenseStatusCodeP' constraints.validation.info='MedicationDispenseMedicationSupplyOrder MedicationDispensePerformer' constraints.validation.query='MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet GeneralHeaderConstraintsUSRealmAddressUseP GeneralHeaderConstraintsUSRealmAddressUse GeneralHeaderConstraintsUSRealmAddressCountry GeneralHeaderConstraintsUSRealmAddressState GeneralHeaderConstraintsUSRealmAddressCity GeneralHeaderConstraintsUSRealmAddressPostalCode GeneralHeaderConstraintsUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityAddr MedicationDispensePerformerMedicationDispenseAssignedEntity' constraints.validation.dependOn.GeneralHeaderConstraintsUSRealmAddressUse='GeneralHeaderConstraintsUSRealmAddressUseP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationDispenseTemplateId MedicationDispenseContainsMedicationOrImmunization MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispenseStatusCodeP MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.18' classCode='SPLY' constraints.validation.warning='MedicationDispenseEffectiveTime MedicationDispenseRepeatNumber MedicationDispenseQuantity MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityAddr' moodCode='EVN' constraints.validation.dependOn.MedicationDispenseStatusCode='MedicationDispenseStatusCodeP' constraints.validation.info='MedicationDispenseMedicationSupplyOrder MedicationDispensePerformer' constraints.validation.query='MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityAddr MedicationDispensePerformerMedicationDispenseAssignedEntity' constraints.validation.dependOn.MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse='GeneralHeaderConstraintsUSRealmAddressUseP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationDispensePerformer constraints.validation.error='MedicationDispensePerformerMedicationDispenseAssignedEntity'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationDispensePerformerMedicationDispenseAssignedEntity constraints.validation.warning='MedicationDispensePerformerMedicationDispenseAssignedEntityAddr GeneralHeaderConstraintsUSRealmAddressUseP GeneralHeaderConstraintsUSRealmAddressCountry GeneralHeaderConstraintsUSRealmAddressState GeneralHeaderConstraintsUSRealmAddressPostalCode' constraints.validation.error='MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet GeneralHeaderConstraintsUSRealmAddressUse GeneralHeaderConstraintsUSRealmAddressCity GeneralHeaderConstraintsUSRealmAddressStreetAddressLine' constraints.validation.query='MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet GeneralHeaderConstraintsUSRealmAddressUseP GeneralHeaderConstraintsUSRealmAddressUse GeneralHeaderConstraintsUSRealmAddressCountry GeneralHeaderConstraintsUSRealmAddressState GeneralHeaderConstraintsUSRealmAddressCity GeneralHeaderConstraintsUSRealmAddressPostalCode GeneralHeaderConstraintsUSRealmAddressStreetAddressLine' constraints.validation.dependOn.GeneralHeaderConstraintsUSRealmAddressUse='GeneralHeaderConstraintsUSRealmAddressUseP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationDispensePerformerMedicationDispenseAssignedEntity constraints.validation.warning='MedicationDispensePerformerMedicationDispenseAssignedEntityAddr MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode' constraints.validation.error='MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine' constraints.validation.query='MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine' constraints.validation.dependOn.MedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse='GeneralHeaderConstraintsUSRealmAddressUseP'"
  * @generated
  */
 public interface MedicationDispense extends Supply {
@@ -187,7 +187,8 @@ public interface MedicationDispense extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not use->isEmpty() )))'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsUSRealmAddressUseP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,7 +200,8 @@ public interface MedicationDispense extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and \r\nlet value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in \r\nvalue = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP) )))'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsUSRealmAddressUse(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,8 +213,8 @@ public interface MedicationDispense extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((country->isEmpty() or country->exists(element | element.isNullFlavorUndefined())) implies (not country->isEmpty()) )))'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsUSRealmAddressCountry(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -224,7 +226,8 @@ public interface MedicationDispense extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((state->isEmpty() or state->exists(element | element.isNullFlavorUndefined())) implies (not state->isEmpty()) )))'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsUSRealmAddressState(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -236,7 +239,8 @@ public interface MedicationDispense extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((city->isEmpty() or city->exists(element | element.isNullFlavorUndefined())) implies (city->size() = 1) )))'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsUSRealmAddressCity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,8 +252,8 @@ public interface MedicationDispense extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((postalCode->isEmpty() or postalCode->exists(element | element.isNullFlavorUndefined())) implies (not postalCode->isEmpty()) )))'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsUSRealmAddressPostalCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -261,8 +265,8 @@ public interface MedicationDispense extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((streetAddressLine->isEmpty() or streetAddressLine->exists(element | element.isNullFlavorUndefined())) implies (not streetAddressLine->isEmpty()) )))'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -180,9 +180,9 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsUSRealmAddressUseP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateGeneralHeaderConstraintsUSRealmAddressUseP(
+	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
 			this, diagnostics, context);
 	}
 
@@ -191,9 +191,9 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsUSRealmAddressUse(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateGeneralHeaderConstraintsUSRealmAddressUse(
+	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
 			this, diagnostics, context);
 	}
 
@@ -202,9 +202,9 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsUSRealmAddressCountry(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateGeneralHeaderConstraintsUSRealmAddressCountry(
+	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
 			this, diagnostics, context);
 	}
 
@@ -213,9 +213,9 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsUSRealmAddressState(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateGeneralHeaderConstraintsUSRealmAddressState(
+	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
 			this, diagnostics, context);
 	}
 
@@ -224,9 +224,9 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsUSRealmAddressCity(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateGeneralHeaderConstraintsUSRealmAddressCity(
+	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
 			this, diagnostics, context);
 	}
 
@@ -235,9 +235,9 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsUSRealmAddressPostalCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateGeneralHeaderConstraintsUSRealmAddressPostalCode(
+	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
 			this, diagnostics, context);
 	}
 
@@ -246,9 +246,9 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
 			this, diagnostics, context);
 	}
 
