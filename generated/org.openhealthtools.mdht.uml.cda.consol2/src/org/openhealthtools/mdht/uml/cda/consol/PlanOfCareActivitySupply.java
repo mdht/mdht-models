@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfCareActivitySupply()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivitySupplyTemplateId PlanOfCareActivitySupplyClassCode PlanOfCareActivitySupplyMoodCode PlanOfCareActivitySupplyMoodCodeP PlanOfCareActivitySupplyId' templateId.root='2.16.840.1.113883.10.20.22.4.43' classCode='SPLY' constraints.validation.dependOn.PlanOfCareActivitySupplyMoodCode='PlanOfCareActivitySupplyMoodCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivitySupplyTemplateId PlanOfCareActivitySupplyClassCode PlanOfCareActivitySupplyMoodCode PlanOfCareActivitySupplyId' templateId.root='2.16.840.1.113883.10.20.22.4.43' classCode='SPLY'"
  * @generated
  */
 public interface PlanOfCareActivitySupply extends Supply {
@@ -60,19 +60,7 @@ public interface PlanOfCareActivitySupply extends Supply {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
-	 * @generated
-	 */
-	boolean validatePlanOfCareActivitySupplyMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='true'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and \r\nlet value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in \r\nvalue = vocab::x_DocumentSubstanceMood::INT or value = vocab::x_DocumentSubstanceMood::PRMS or value = vocab::x_DocumentSubstanceMood::PRP or value = vocab::x_DocumentSubstanceMood::RQO'"
 	 * @generated
 	 */
 	boolean validatePlanOfCareActivitySupplyMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);

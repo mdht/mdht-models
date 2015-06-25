@@ -166,15 +166,6 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncounterActivitiesCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterActivitiesOperations.validateEncounterActivitiesCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateEncounterActivitiesCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesCode(this, diagnostics, context);

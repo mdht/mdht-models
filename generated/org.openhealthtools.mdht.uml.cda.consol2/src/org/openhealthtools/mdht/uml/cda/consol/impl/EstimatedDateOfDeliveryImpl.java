@@ -76,15 +76,6 @@ public class EstimatedDateOfDeliveryImpl extends ObservationImpl implements Esti
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEstimatedDateOfDeliveryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EstimatedDateOfDeliveryOperations.validateEstimatedDateOfDeliveryCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateEstimatedDateOfDeliveryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EstimatedDateOfDeliveryOperations.validateEstimatedDateOfDeliveryCode(this, diagnostics, context);
@@ -98,15 +89,6 @@ public class EstimatedDateOfDeliveryImpl extends ObservationImpl implements Esti
 	@Override
 	public boolean validateEstimatedDateOfDeliveryMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EstimatedDateOfDeliveryOperations.validateEstimatedDateOfDeliveryMoodCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEstimatedDateOfDeliveryStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EstimatedDateOfDeliveryOperations.validateEstimatedDateOfDeliveryStatusCodeP(this, diagnostics, context);
 	}
 
 	/**

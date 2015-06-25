@@ -229,17 +229,6 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureMoodCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateProcedureActivityProcedureStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureStatusCode(
 			this, diagnostics, context);

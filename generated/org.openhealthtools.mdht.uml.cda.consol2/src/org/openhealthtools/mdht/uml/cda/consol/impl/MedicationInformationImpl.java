@@ -146,17 +146,6 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeP(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {

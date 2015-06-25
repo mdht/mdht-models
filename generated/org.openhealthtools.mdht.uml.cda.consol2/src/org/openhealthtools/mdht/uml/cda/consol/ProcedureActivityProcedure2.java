@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureActivityProcedure2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityProcedureTemplateId ProcedureActivityProcedureInstructionsInversion ProcedureActivityProcedureServiceDeliveryLocationTypeCode ProcedureActivityProcedureTargetSiteCode ProcedureActivityProcedureMoodCode ProcedureActivityProcedureMoodCodeP ProcedureActivityProcedureStatusCode ProcedureActivityProcedureStatusCodeP ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.14' templateId.extension='2014-06-09' constraints.validation.warning='ProcedureActivityProcedureCodeCodeSystems ProcedureActivityProcedureTargetSiteCodeP ProcedureActivityProcedurePerformer ProcedureActivityProcedure2AuthorParticipation' constraints.validation.info='ProcedureActivityProcedure2CodeSuggestedCodeSystems ProcedureActivityProcedureIndication ProcedureActivityProcedureMedicationActivity ProcedureActivityProcedurePatientInstruction ProcedureActivityProcedureSpecimen ProcedureActivityProcedure2ReactionObservation2' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.ProcedureActivityProcedureTargetSiteCode='ProcedureActivityProcedureTargetSiteCodeP' moodCode='EVN' constraints.validation.dependOn.ProcedureActivityProcedureStatusCode='ProcedureActivityProcedureStatusCodeP' constraints.validation.query='ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityProcedureTemplateId ProcedureActivityProcedureInstructionsInversion ProcedureActivityProcedureServiceDeliveryLocationTypeCode ProcedureActivityProcedureTargetSiteCode ProcedureActivityProcedureMoodCode ProcedureActivityProcedureStatusCode ProcedureActivityProcedureStatusCodeP ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.14' templateId.extension='2014-06-09' constraints.validation.warning='ProcedureActivityProcedureCodeCodeSystems ProcedureActivityProcedureTargetSiteCodeP ProcedureActivityProcedurePerformer ProcedureActivityProcedure2AuthorParticipation' constraints.validation.info='ProcedureActivityProcedure2CodeSuggestedCodeSystems ProcedureActivityProcedureIndication ProcedureActivityProcedureMedicationActivity ProcedureActivityProcedurePatientInstruction ProcedureActivityProcedureSpecimen ProcedureActivityProcedure2ReactionObservation2' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.ProcedureActivityProcedureTargetSiteCode='ProcedureActivityProcedureTargetSiteCodeP' moodCode='EVN' constraints.validation.dependOn.ProcedureActivityProcedureStatusCode='ProcedureActivityProcedureStatusCodeP' constraints.validation.query='ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityProcedure2ProcedureActivityPerformer constraints.validation.error='ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityProcedure2ProcedureActivityPerformerProcedureActivityAssignedEntity constraints.validation.error='ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom'"
  * @generated
@@ -42,6 +42,18 @@ public interface ProcedureActivityProcedure2 extends ProcedureActivityProcedure 
 	 */
 	boolean validateProcedureActivityProcedure2CodeSuggestedCodeSystems(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityProcedureStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

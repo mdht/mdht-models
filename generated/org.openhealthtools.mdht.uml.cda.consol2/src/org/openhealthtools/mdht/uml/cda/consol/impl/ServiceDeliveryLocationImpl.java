@@ -112,15 +112,6 @@ public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateServiceDeliveryLocationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateServiceDeliveryLocationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationCode(this, diagnostics, context);

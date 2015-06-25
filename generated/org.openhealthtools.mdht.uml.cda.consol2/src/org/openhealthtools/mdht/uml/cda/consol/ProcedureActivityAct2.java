@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureActivityAct2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityActTemplateId ProcedureActivityActInstructionsInversion ProcedureActivityActMoodCode ProcedureActivityActMoodCodeP ProcedureActivityActStatusCode ProcedureActivityActStatusCodeP ProcedureActivityActEffectiveTime ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom ProcedureActivityActProcedureActPerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.12' templateId.extension='2014-06-09' constraints.validation.info='ProcedureActivityAct2CodeSuggestedCodeSystems ProcedureActivityActInstructions ProcedureActivityActIndication ProcedureActivityActMedicationActivity' moodCode='EVN' constraints.validation.dependOn.ProcedureActivityActStatusCode='ProcedureActivityActStatusCodeP' constraints.validation.warning='ProcedureActivityActPerformer ProcedureActivityAct2AuthorParticipation ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization' constraints.validation.query='ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization ProcedureActivityActProcedureActPerformerAssignedEntity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityActTemplateId ProcedureActivityActInstructionsInversion ProcedureActivityActMoodCode ProcedureActivityActStatusCode ProcedureActivityActStatusCodeP ProcedureActivityActEffectiveTime ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom ProcedureActivityActProcedureActPerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.12' templateId.extension='2014-06-09' constraints.validation.info='ProcedureActivityAct2CodeSuggestedCodeSystems ProcedureActivityActInstructions ProcedureActivityActIndication ProcedureActivityActMedicationActivity' moodCode='EVN' constraints.validation.dependOn.ProcedureActivityActStatusCode='ProcedureActivityActStatusCodeP' constraints.validation.warning='ProcedureActivityActPerformer ProcedureActivityAct2AuthorParticipation ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization' constraints.validation.query='ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization ProcedureActivityActProcedureActPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityAct2ProcedureActPerformer constraints.validation.error='ProcedureActivityActProcedureActPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityAct2ProcedureActPerformerProcedureActAssignedEntity constraints.validation.error='ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom' constraints.validation.warning='ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProcedureActivityAct2ProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganization constraints.validation.error='ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr'"
@@ -43,6 +43,18 @@ public interface ProcedureActivityAct2 extends ProcedureActivityAct {
 	 */
 	boolean validateProcedureActivityAct2CodeSuggestedCodeSystems(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateProcedureActivityActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -222,16 +222,6 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlanOfCareActivityEncounterMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedEncounter2Operations.validatePlanOfCareActivityEncounterMoodCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlanOfCareActivityEncounterMoodCode(this, diagnostics, context);
 	}

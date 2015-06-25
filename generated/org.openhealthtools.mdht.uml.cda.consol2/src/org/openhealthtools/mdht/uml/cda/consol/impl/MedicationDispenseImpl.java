@@ -129,15 +129,6 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationDispenseStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateMedicationDispenseStatusCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateMedicationDispenseStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseStatusCode(this, diagnostics, context);

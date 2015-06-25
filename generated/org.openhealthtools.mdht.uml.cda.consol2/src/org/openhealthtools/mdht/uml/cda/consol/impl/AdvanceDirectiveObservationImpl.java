@@ -145,17 +145,6 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveObservationStatusCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationStatusCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateAdvanceDirectiveObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -372,17 +361,6 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	public boolean validateAdvanceDirectiveObservationReferenceExternalDocumentText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentText(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAdvanceDirectiveObservationReferenceTypeCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceTypeCodeP(
 			this, diagnostics, context);
 	}
 

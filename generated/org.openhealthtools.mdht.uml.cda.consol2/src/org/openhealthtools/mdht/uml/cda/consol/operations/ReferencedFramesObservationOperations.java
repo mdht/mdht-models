@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -39,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#validateReferencedFramesObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#validateReferencedFramesObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#validateReferencedFramesObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#validateReferencedFramesObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#validateReferencedFramesObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#validateReferencedFramesObservationBoundaryObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Boundary Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation#getBoundaryObservation() <em>Get Boundary Observation</em>}</li>
@@ -240,78 +238,6 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateReferencedFramesObservationCodeP(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateReferencedFramesObservationCodeP(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateReferencedFramesObservationCodeP(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateReferencedFramesObservationCodeP(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param referencedFramesObservation The receiving '<em><b>Referenced Frames Observation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateReferencedFramesObservationCodeP(
-			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
-			try {
-				VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referencedFramesObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationCodeP"),
-					new Object[] { referencedFramesObservation }));
-			}
-
-			if (context != null) {
-				// generate a pass token for my dependent constraints to short-circuit or filter results
-				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservationCodeP");
-				if (passToken == null) {
-					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservationCodeP", passToken);
-				}
-				passToken.add(referencedFramesObservation);
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -319,7 +245,9 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)";
+	protected static final String VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '121190' and value.codeSystem = '1.2.840.10008.2.16.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}' invariant operation.
@@ -346,14 +274,6 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	public static boolean validateReferencedFramesObservationCode(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservationCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(referencedFramesObservation)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
 
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -472,7 +392,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION,
-				ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION.getEAllOperations().get(57));
+				ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION.getEAllOperations().get(56));
 			try {
 				GET_BOUNDARY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_BOUNDARY_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

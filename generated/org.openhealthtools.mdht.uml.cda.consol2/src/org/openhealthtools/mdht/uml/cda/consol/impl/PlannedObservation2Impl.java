@@ -260,17 +260,6 @@ public class PlannedObservation2Impl extends PlanOfCareActivityObservationImpl i
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlanOfCareActivityObservationMoodCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedObservation2Operations.validatePlanOfCareActivityObservationMoodCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedObservation2Operations.validatePlanOfCareActivityObservationMoodCode(this, diagnostics, context);

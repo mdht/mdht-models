@@ -162,7 +162,7 @@ public class FunctionalStatusObservation2Operations extends FunctionalStatusResu
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2.getEAllOperations().get(84));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION2.getEAllOperations().get(83));
 			try {
 				GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2__EOCL_QRY = helper.createQuery(GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2__EOCL_EXP);
 			} catch (ParserException pe) {

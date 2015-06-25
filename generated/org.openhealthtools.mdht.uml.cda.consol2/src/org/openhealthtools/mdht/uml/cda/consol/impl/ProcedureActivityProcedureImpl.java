@@ -272,16 +272,6 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityProcedureMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureMoodCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateProcedureActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureMoodCode(
@@ -306,17 +296,6 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	@Override
 	public boolean validateProcedureActivityProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityProcedureStatusCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureStatusCodeP(
-			this, diagnostics, context);
 	}
 
 	/**

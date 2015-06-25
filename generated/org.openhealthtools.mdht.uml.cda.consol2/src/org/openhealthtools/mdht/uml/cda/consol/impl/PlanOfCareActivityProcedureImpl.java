@@ -79,16 +79,6 @@ public class PlanOfCareActivityProcedureImpl extends ProcedureImpl implements Pl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareActivityProcedureMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureMoodCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validatePlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivityProcedureOperations.validatePlanOfCareActivityProcedureMoodCode(

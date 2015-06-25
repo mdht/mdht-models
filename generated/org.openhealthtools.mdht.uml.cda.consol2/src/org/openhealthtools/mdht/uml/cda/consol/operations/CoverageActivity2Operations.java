@@ -39,6 +39,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivity2EntryRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivity2EntryRelationshipINTValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship INT Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivity2EntryRelationshipTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Type Code</em>}</li>
@@ -47,7 +48,6 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#getConsolPolicyActivity2s() <em>Get Consol Policy Activity2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivityCoverageActivityRelationshipSequenceNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Coverage Activity Relationship Sequence Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2#validateCoverageActivityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code</em>}</li>
  * </ul>
  * </p>
@@ -115,27 +115,6 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationship(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivity2EntryRelationship(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCoverageActivity2EntryRelationship(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivity2EntryRelationship(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -172,27 +151,6 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 		}
 		return true;
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationshipINTValue(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship INT Value</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivity2EntryRelationshipINTValue(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).sequenceNumber->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not value.oclIsUndefined() )))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCoverageActivity2EntryRelationshipINTValue(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship INT Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivity2EntryRelationshipINTValue(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -238,27 +196,6 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationshipTypeCode(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Type Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivity2EntryRelationshipTypeCode(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCoverageActivity2EntryRelationshipTypeCode(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Type Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivity2EntryRelationshipTypeCode(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -300,27 +237,6 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 		}
 		return true;
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Sequence Number</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivity2EntryRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject((sequenceNumber.oclIsUndefined() or sequenceNumber.isNullFlavorUndefined()) implies (not sequenceNumber.oclIsUndefined()))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCoverageActivity2EntryRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Sequence Number</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivity2EntryRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -367,27 +283,6 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationshipPolicyActivity2(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Policy Activity2</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivity2EntryRelationshipPolicyActivity2(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PolicyActivity2)))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCoverageActivity2EntryRelationshipPolicyActivity2(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Policy Activity2</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivity2EntryRelationshipPolicyActivity2(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -432,26 +327,6 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolPolicyActivity2s(CoverageActivity2) <em>Get Consol Policy Activity2s</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolPolicyActivity2s(CoverageActivity2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONSOL_POLICY_ACTIVITY2S__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PolicyActivity2)).oclAsType(consol::PolicyActivity2)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConsolPolicyActivity2s(CoverageActivity2) <em>Get Consol Policy Activity2s</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolPolicyActivity2s(CoverageActivity2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_POLICY_ACTIVITY2S__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -462,7 +337,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.COVERAGE_ACTIVITY2,
-				ConsolPackage.Literals.COVERAGE_ACTIVITY2.getEAllOperations().get(67));
+				ConsolPackage.Literals.COVERAGE_ACTIVITY2.getEAllOperations().get(66));
 			try {
 				GET_CONSOL_POLICY_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_CONSOL_POLICY_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -474,27 +349,6 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 		Collection<PolicyActivity2> result = (Collection<PolicyActivity2>) query.evaluate(coverageActivity2);
 		return new BasicEList.UnmodifiableEList<PolicyActivity2>(result.size(), result.toArray());
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateCoverageActivityCoverageActivityRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Coverage Activity Relationship Sequence Number</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivityCoverageActivityRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCoverageActivityCoverageActivityRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Coverage Activity Relationship Sequence Number</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivityCoverageActivityRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -537,27 +391,6 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCoverageActivityTemplateId(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivityTemplateId(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_COVERAGE_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.60' and id.extension = '2014-06-09')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateCoverageActivityTemplateId(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateCoverageActivityTemplateId(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateCoverageActivityCodeP(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code P</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -577,6 +410,173 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 	 */
 
 	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationship(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivity2EntryRelationship(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCoverageActivity2EntryRelationship(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivity2EntryRelationship(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationshipINTValue(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship INT Value</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivity2EntryRelationshipINTValue(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).sequenceNumber->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not value.oclIsUndefined() )))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCoverageActivity2EntryRelationshipINTValue(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship INT Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivity2EntryRelationshipINTValue(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationshipTypeCode(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Type Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivity2EntryRelationshipTypeCode(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCoverageActivity2EntryRelationshipTypeCode(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Type Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivity2EntryRelationshipTypeCode(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Sequence Number</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivity2EntryRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject((sequenceNumber.oclIsUndefined() or sequenceNumber.isNullFlavorUndefined()) implies (not sequenceNumber.oclIsUndefined()))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCoverageActivity2EntryRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Sequence Number</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivity2EntryRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateCoverageActivity2EntryRelationshipPolicyActivity2(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Policy Activity2</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivity2EntryRelationshipPolicyActivity2(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PolicyActivity2)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCoverageActivity2EntryRelationshipPolicyActivity2(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity2 Entry Relationship Policy Activity2</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivity2EntryRelationshipPolicyActivity2(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getConsolPolicyActivity2s(CoverageActivity2) <em>Get Consol Policy Activity2s</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolPolicyActivity2s(CoverageActivity2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CONSOL_POLICY_ACTIVITY2S__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PolicyActivity2)).oclAsType(consol::PolicyActivity2)";
+
+	/**
+	 * The cached OCL query for the '{@link #getConsolPolicyActivity2s(CoverageActivity2) <em>Get Consol Policy Activity2s</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolPolicyActivity2s(CoverageActivity2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CONSOL_POLICY_ACTIVITY2S__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateCoverageActivityCoverageActivityRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Coverage Activity Relationship Sequence Number</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivityCoverageActivityRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCoverageActivityCoverageActivityRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Coverage Activity Relationship Sequence Number</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivityCoverageActivityRelationshipSequenceNumber(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateCoverageActivityTemplateId(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivityTemplateId(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_COVERAGE_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.60' and id.extension = '2014-06-09')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateCoverageActivityTemplateId(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateCoverageActivityTemplateId(CoverageActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->

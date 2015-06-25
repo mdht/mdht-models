@@ -76,15 +76,6 @@ public class PlanOfCareActivityActImpl extends ActImpl implements PlanOfCareActi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareActivityActMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActMoodCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validatePlanOfCareActivityActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareActivityActOperations.validatePlanOfCareActivityActMoodCode(this, diagnostics, context);

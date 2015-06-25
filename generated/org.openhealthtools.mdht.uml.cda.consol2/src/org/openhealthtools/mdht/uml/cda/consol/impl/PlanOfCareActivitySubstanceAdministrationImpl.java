@@ -81,17 +81,6 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareActivitySubstanceAdministrationMoodCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationMoodCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validatePlanOfCareActivitySubstanceAdministrationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

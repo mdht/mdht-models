@@ -62,7 +62,6 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#getInstruction2s() <em>Get Instruction2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#getPlannedCoverages() <em>Get Planned Coverages</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlanOfCareActivitySupplyTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlanOfCareActivitySupplyMoodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Mood Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2#validatePlanOfCareActivitySupplyMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Mood Code</em>}</li>
  * </ul>
  * </p>
@@ -1126,7 +1125,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_SUPPLY2,
-				ConsolPackage.Literals.PLANNED_SUPPLY2.getEAllOperations().get(74));
+				ConsolPackage.Literals.PLANNED_SUPPLY2.getEAllOperations().get(73));
 			try {
 				GET_PRODUCT_INSTANCE__EOCL_QRY = helper.createQuery(GET_PRODUCT_INSTANCE__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1168,7 +1167,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_SUPPLY2,
-				ConsolPackage.Literals.PLANNED_SUPPLY2.getEAllOperations().get(75));
+				ConsolPackage.Literals.PLANNED_SUPPLY2.getEAllOperations().get(74));
 			try {
 				GET_PRIORITY_PREFERENCES__EOCL_QRY = helper.createQuery(GET_PRIORITY_PREFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1212,7 +1211,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_SUPPLY2,
-				ConsolPackage.Literals.PLANNED_SUPPLY2.getEAllOperations().get(76));
+				ConsolPackage.Literals.PLANNED_SUPPLY2.getEAllOperations().get(75));
 			try {
 				GET_INDICATION2S__EOCL_QRY = helper.createQuery(GET_INDICATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1256,7 +1255,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_SUPPLY2,
-				ConsolPackage.Literals.PLANNED_SUPPLY2.getEAllOperations().get(77));
+				ConsolPackage.Literals.PLANNED_SUPPLY2.getEAllOperations().get(76));
 			try {
 				GET_INSTRUCTION2S__EOCL_QRY = helper.createQuery(GET_INSTRUCTION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1300,7 +1299,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PLANNED_SUPPLY2,
-				ConsolPackage.Literals.PLANNED_SUPPLY2.getEAllOperations().get(78));
+				ConsolPackage.Literals.PLANNED_SUPPLY2.getEAllOperations().get(77));
 			try {
 				GET_PLANNED_COVERAGES__EOCL_QRY = helper.createQuery(GET_PLANNED_COVERAGES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1373,77 +1372,6 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePlanOfCareActivitySupplyMoodCodeP(PlannedSupply2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Mood Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePlanOfCareActivitySupplyMoodCodeP(PlannedSupply2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validatePlanOfCareActivitySupplyMoodCodeP(PlannedSupply2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Mood Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validatePlanOfCareActivitySupplyMoodCodeP(PlannedSupply2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param plannedSupply2 The receiving '<em><b>Planned Supply2</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validatePlanOfCareActivitySupplyMoodCodeP(PlannedSupply2 plannedSupply2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
-			try {
-				VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedSupply2)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlanOfCareActivitySupplyMoodCodeP"),
-					new Object[] { plannedSupply2 }));
-			}
-
-			if (context != null) {
-				// generate a pass token for my dependent constraints to short-circuit or filter results
-				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupplyMoodCodeP");
-				if (passToken == null) {
-					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupplyMoodCodeP", passToken);
-				}
-				passToken.add(plannedSupply2);
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
 	 * The cached OCL expression body for the '{@link #validatePlanOfCareActivitySupplyMoodCode(PlannedSupply2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Mood Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1451,7 +1379,9 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "true";
+	protected static final String VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and "
+			+ "let value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in "
+			+ "value = vocab::x_DocumentSubstanceMood::INT or value = vocab::x_DocumentSubstanceMood::PRMS or value = vocab::x_DocumentSubstanceMood::PRP or value = vocab::x_DocumentSubstanceMood::RQO";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlanOfCareActivitySupplyMoodCode(PlannedSupply2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Mood Code</em>}' invariant operation.
@@ -1477,14 +1407,6 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 
 	public static boolean validatePlanOfCareActivitySupplyMoodCode(PlannedSupply2 plannedSupply2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupplyMoodCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(plannedSupply2)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
 
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

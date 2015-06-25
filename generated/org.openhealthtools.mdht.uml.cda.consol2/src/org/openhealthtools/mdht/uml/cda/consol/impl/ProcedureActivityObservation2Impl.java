@@ -229,18 +229,6 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityObservationMoodCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationMoodCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateProcedureActivityObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationStatusCode(

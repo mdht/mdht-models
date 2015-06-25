@@ -181,17 +181,6 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureActivityObservationMoodCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationMoodCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateProcedureActivityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationMoodCode(
@@ -216,17 +205,6 @@ public class ProcedureActivityObservationImpl extends ObservationImpl implements
 	@Override
 	public boolean validateProcedureActivityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityObservationOperations.validateProcedureActivityObservationCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityObservationStatusCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityObservationOperations.validateProcedureActivityObservationStatusCodeP(
 			this, diagnostics, context);
 	}
 

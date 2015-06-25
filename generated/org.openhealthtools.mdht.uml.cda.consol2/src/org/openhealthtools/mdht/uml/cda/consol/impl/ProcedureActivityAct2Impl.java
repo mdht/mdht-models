@@ -155,16 +155,6 @@ public class ProcedureActivityAct2Impl extends ProcedureActivityActImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityActMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityAct2Operations.validateProcedureActivityActMoodCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateProcedureActivityActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureActivityAct2Operations.validateProcedureActivityActStatusCode(this, diagnostics, context);
 	}
