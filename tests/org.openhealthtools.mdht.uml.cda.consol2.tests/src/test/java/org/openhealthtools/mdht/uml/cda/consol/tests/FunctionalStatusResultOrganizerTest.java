@@ -28,7 +28,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer#validateFunctionalStatusResultOrganizerCodeCodeSystem(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Organizer Code Code System</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer#validateResultOrganizerStatusCodeVS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Status Code VS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer#validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Organizer Functional Status Result Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer#getFunctionalStatusResultObservations() <em>Get Functional Status Result Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
@@ -78,47 +77,6 @@ public class FunctionalStatusResultOrganizerTest extends CDAValidationTest {
 		};
 
 		validateFunctionalStatusResultOrganizerCodeCodeSystemTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateResultOrganizerStatusCodeVS() {
-		OperationsTestCase<FunctionalStatusResultOrganizer> validateResultOrganizerStatusCodeVSTestCase = new OperationsTestCase<FunctionalStatusResultOrganizer>(
-			"validateResultOrganizerStatusCodeVS",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_STATUS_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusResultOrganizer target) {
-
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusResultOrganizer target) {
-				target.init();
-
-			}
-
-			@Override
-			protected void setDependency(FunctionalStatusResultOrganizer target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.ResultOrganizerStatusCodeP", passToken);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusResultOrganizerOperations.validateResultOrganizerStatusCodeVS(
-					(FunctionalStatusResultOrganizer) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateResultOrganizerStatusCodeVSTestCase.doValidationTest();
 	}
 
 	/**

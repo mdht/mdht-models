@@ -33,7 +33,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct#validatePlanOfCareActivityActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Act Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct#validatePlanOfCareActivityActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Act Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct#validatePlanOfCareActivityActMoodCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Act Mood Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct#validatePlanOfCareActivityActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Act Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct#validatePlanOfCareActivityActId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Act Id</em>}</li>
  * </ul>
@@ -110,40 +109,6 @@ public class PlanOfCareActivityActTest extends CDAValidationTest {
 		};
 
 		validatePlanOfCareActivityActClassCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidatePlanOfCareActivityActMoodCodeP() {
-		OperationsTestCase<PlanOfCareActivityAct> validatePlanOfCareActivityActMoodCodePTestCase = new OperationsTestCase<PlanOfCareActivityAct>(
-			"validatePlanOfCareActivityActMoodCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlanOfCareActivityAct target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PlanOfCareActivityAct target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlanOfCareActivityActOperations.validatePlanOfCareActivityActMoodCodeP(
-					(PlanOfCareActivityAct) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlanOfCareActivityActMoodCodePTestCase.doValidationTest();
 	}
 
 	/**

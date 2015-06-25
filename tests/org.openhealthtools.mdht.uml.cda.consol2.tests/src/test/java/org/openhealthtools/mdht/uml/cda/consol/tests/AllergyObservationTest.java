@@ -442,40 +442,6 @@ public class AllergyObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAllergyObservationStatusCodeP() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationStatusCodePTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergyObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservationOperations.validateAllergyObservationStatusCodeP(
-					(AllergyObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyObservationStatusCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
 	* @generated not
 	*/
 	@Test
@@ -546,40 +512,6 @@ public class AllergyObservationTest extends CDAValidationTest {
 		};
 
 		validateAllergyObservationEffectiveTimeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAllergyObservationValueP() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationValuePTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationValueP",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergyObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservationOperations.validateAllergyObservationValueP(
-					(AllergyObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyObservationValuePTestCase.doValidationTest();
 	}
 
 	/**
@@ -1327,40 +1259,6 @@ public class AllergyObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAllergyObservationParticipantParticipantRoleClassCodeP() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantParticipantRoleClassCodePTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationParticipantParticipantRoleClassCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergyObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservationOperations.validateAllergyObservationParticipantParticipantRoleClassCodeP(
-					(AllergyObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyObservationParticipantParticipantRoleClassCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
 	* @generated NOT
 	*/
 	@Test
@@ -1440,40 +1338,6 @@ public class AllergyObservationTest extends CDAValidationTest {
 		};
 
 		validateAllergyObservationParticipantParticipantRolePlayingEntityTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAllergyObservationParticipantTypeCodeP() {
-		OperationsTestCase<AllergyObservation> validateAllergyObservationParticipantTypeCodePTestCase = new OperationsTestCase<AllergyObservation>(
-			"validateAllergyObservationParticipantTypeCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_OBSERVATION_PARTICIPANT_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergyObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyObservationOperations.validateAllergyObservationParticipantTypeCodeP(
-					(AllergyObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyObservationParticipantTypeCodePTestCase.doValidationTest();
 	}
 
 	/**

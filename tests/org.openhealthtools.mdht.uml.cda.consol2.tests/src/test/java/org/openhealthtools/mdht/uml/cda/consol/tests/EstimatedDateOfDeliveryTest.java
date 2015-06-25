@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -34,10 +33,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.TS;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery#validateEstimatedDateOfDeliveryTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery#validateEstimatedDateOfDeliveryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery#validateEstimatedDateOfDeliveryCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery#validateEstimatedDateOfDeliveryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery#validateEstimatedDateOfDeliveryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery#validateEstimatedDateOfDeliveryStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery#validateEstimatedDateOfDeliveryStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery#validateEstimatedDateOfDeliveryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Value</em>}</li>
  * </ul>
@@ -121,40 +118,6 @@ public class EstimatedDateOfDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateEstimatedDateOfDeliveryCodeP() {
-		OperationsTestCase<EstimatedDateOfDelivery> validateEstimatedDateOfDeliveryCodePTestCase = new OperationsTestCase<EstimatedDateOfDelivery>(
-			"validateEstimatedDateOfDeliveryCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ESTIMATED_DATE_OF_DELIVERY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(EstimatedDateOfDelivery target) {
-
-			}
-
-			@Override
-			protected void updateToPass(EstimatedDateOfDelivery target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return EstimatedDateOfDeliveryOperations.validateEstimatedDateOfDeliveryCodeP(
-					(EstimatedDateOfDelivery) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateEstimatedDateOfDeliveryCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
 	public void testValidateEstimatedDateOfDeliveryCode() {
 		OperationsTestCase<EstimatedDateOfDelivery> validateEstimatedDateOfDeliveryCodeTestCase = new OperationsTestCase<EstimatedDateOfDelivery>(
 			"validateEstimatedDateOfDeliveryCode",
@@ -170,13 +133,6 @@ public class EstimatedDateOfDeliveryTest extends CDAValidationTest {
 			protected void updateToPass(EstimatedDateOfDelivery target) {
 				target.init();
 
-			}
-
-			@Override
-			protected void setDependency(EstimatedDateOfDelivery target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDeliveryCodeP", passToken);
 			}
 
 			@Override
@@ -230,40 +186,6 @@ public class EstimatedDateOfDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateEstimatedDateOfDeliveryStatusCodeP() {
-		OperationsTestCase<EstimatedDateOfDelivery> validateEstimatedDateOfDeliveryStatusCodePTestCase = new OperationsTestCase<EstimatedDateOfDelivery>(
-			"validateEstimatedDateOfDeliveryStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ESTIMATED_DATE_OF_DELIVERY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(EstimatedDateOfDelivery target) {
-
-			}
-
-			@Override
-			protected void updateToPass(EstimatedDateOfDelivery target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return EstimatedDateOfDeliveryOperations.validateEstimatedDateOfDeliveryStatusCodeP(
-					(EstimatedDateOfDelivery) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateEstimatedDateOfDeliveryStatusCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
 	public void testValidateEstimatedDateOfDeliveryStatusCode() {
 		OperationsTestCase<EstimatedDateOfDelivery> validateEstimatedDateOfDeliveryStatusCodeTestCase = new OperationsTestCase<EstimatedDateOfDelivery>(
 			"validateEstimatedDateOfDeliveryStatusCode",
@@ -282,13 +204,6 @@ public class EstimatedDateOfDeliveryTest extends CDAValidationTest {
 				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
 				target.setStatusCode(cs);
 
-			}
-
-			@Override
-			protected void setDependency(EstimatedDateOfDelivery target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDeliveryStatusCodeP", passToken);
 			}
 
 			@Override

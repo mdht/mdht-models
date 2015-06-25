@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -35,11 +34,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation#validateAllergyStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation#validateAllergyStatusObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation#validateAllergyStatusObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation#validateAllergyStatusObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation#validateAllergyStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation#validateAllergyStatusObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation#validateAllergyStatusObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation#validateAllergyStatusObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation#validateAllergyStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Status Observation Value</em>}</li>
  * </ul>
  * </p>
@@ -153,40 +149,6 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAllergyStatusObservationCodeP() {
-		OperationsTestCase<AllergyStatusObservation> validateAllergyStatusObservationCodePTestCase = new OperationsTestCase<AllergyStatusObservation>(
-			"validateAllergyStatusObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyStatusObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergyStatusObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyStatusObservationOperations.validateAllergyStatusObservationCodeP(
-					(AllergyStatusObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyStatusObservationCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
 	* @generated NOT
 	*/
 	@Test
@@ -224,40 +186,6 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateAllergyStatusObservationStatusCodeP() {
-		OperationsTestCase<AllergyStatusObservation> validateAllergyStatusObservationStatusCodePTestCase = new OperationsTestCase<AllergyStatusObservation>(
-			"validateAllergyStatusObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyStatusObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergyStatusObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyStatusObservationOperations.validateAllergyStatusObservationStatusCodeP(
-					(AllergyStatusObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyStatusObservationStatusCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
 	public void testValidateAllergyStatusObservationStatusCode() {
 		OperationsTestCase<AllergyStatusObservation> validateAllergyStatusObservationStatusCodeTestCase = new OperationsTestCase<AllergyStatusObservation>(
 			"validateAllergyStatusObservationStatusCode",
@@ -279,13 +207,6 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 			}
 
 			@Override
-			protected void setDependency(AllergyStatusObservation target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservationStatusCodeP", passToken);
-			}
-
-			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
 				return AllergyStatusObservationOperations.validateAllergyStatusObservationStatusCode(
@@ -295,40 +216,6 @@ public class AllergyStatusObservationTest extends CDAValidationTest {
 		};
 
 		validateAllergyStatusObservationStatusCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAllergyStatusObservationValueP() {
-		OperationsTestCase<AllergyStatusObservation> validateAllergyStatusObservationValuePTestCase = new OperationsTestCase<AllergyStatusObservation>(
-			"validateAllergyStatusObservationValueP",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyStatusObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergyStatusObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyStatusObservationOperations.validateAllergyStatusObservationValueP(
-					(AllergyStatusObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyStatusObservationValuePTestCase.doValidationTest();
 	}
 
 	/**

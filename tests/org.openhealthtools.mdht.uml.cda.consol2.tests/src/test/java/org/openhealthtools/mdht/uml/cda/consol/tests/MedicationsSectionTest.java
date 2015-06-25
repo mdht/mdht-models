@@ -10,7 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -33,7 +32,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicationsSection#validateMedicationsSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Text</em>}</li>
@@ -47,40 +45,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  */
 
 public class MedicationsSectionTest extends CDAValidationTest {
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateMedicationsSectionCodeP() {
-		OperationsTestCase<MedicationsSection> validateMedicationsSectionCodePTestCase = new OperationsTestCase<MedicationsSection>(
-			"validateMedicationsSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MedicationsSection target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MedicationsSection target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MedicationsSectionOperations.validateMedicationsSectionCodeP(
-					(MedicationsSection) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMedicationsSectionCodePTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -102,13 +66,6 @@ public class MedicationsSectionTest extends CDAValidationTest {
 			protected void updateToPass(MedicationsSection target) {
 				target.init();
 
-			}
-
-			@Override
-			protected void setDependency(MedicationsSection target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.MedicationsSectionCodeP", passToken);
 			}
 
 			@Override
