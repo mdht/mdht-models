@@ -291,16 +291,6 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlanOfCareActivitySupplyMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedSupply2Operations.validatePlanOfCareActivitySupplyMoodCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validatePlanOfCareActivitySupplyMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlanOfCareActivitySupplyMoodCode(this, diagnostics, context);
 	}

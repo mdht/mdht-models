@@ -287,7 +287,7 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ALLERGY_CONCERN_ACT2,
-				ConsolPackage.Literals.ALLERGY_CONCERN_ACT2.getEAllOperations().get(69));
+				ConsolPackage.Literals.ALLERGY_CONCERN_ACT2.getEAllOperations().get(68));
 			try {
 				GET_CONSOL_ALLERGY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_ALLERGY_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {

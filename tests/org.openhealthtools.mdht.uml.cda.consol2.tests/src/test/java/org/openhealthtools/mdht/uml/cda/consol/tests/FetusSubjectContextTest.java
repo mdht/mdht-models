@@ -6,7 +6,6 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -27,7 +26,6 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FetusSubjectContext#validateFetusSubjectContextTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetus Subject Context Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FetusSubjectContext#validateFetusSubjectContextCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetus Subject Context Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FetusSubjectContext#validateFetusSubjectContextCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetus Subject Context Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FetusSubjectContext#validateFetusSubjectContextSubject(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetus Subject Context Subject</em>}</li>
  * </ul>
@@ -77,40 +75,6 @@ public class FetusSubjectContextTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateFetusSubjectContextCodeP() {
-		OperationsTestCase<FetusSubjectContext> validateFetusSubjectContextCodePTestCase = new OperationsTestCase<FetusSubjectContext>(
-			"validateFetusSubjectContextCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_FETUS_SUBJECT_CONTEXT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FetusSubjectContext target) {
-
-			}
-
-			@Override
-			protected void updateToPass(FetusSubjectContext target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FetusSubjectContextOperations.validateFetusSubjectContextCodeP(
-					(FetusSubjectContext) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFetusSubjectContextCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
 	public void testValidateFetusSubjectContextCode() {
 		OperationsTestCase<FetusSubjectContext> validateFetusSubjectContextCodeTestCase = new OperationsTestCase<FetusSubjectContext>(
 			"validateFetusSubjectContextCode",
@@ -126,13 +90,6 @@ public class FetusSubjectContextTest extends CDAValidationTest {
 			protected void updateToPass(FetusSubjectContext target) {
 				target.init();
 
-			}
-
-			@Override
-			protected void setDependency(FetusSubjectContext target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.FetusSubjectContextCodeP", passToken);
 			}
 
 			@Override

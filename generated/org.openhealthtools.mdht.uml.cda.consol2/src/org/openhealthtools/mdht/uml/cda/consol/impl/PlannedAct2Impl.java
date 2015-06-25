@@ -197,16 +197,6 @@ public class PlannedAct2Impl extends PlanOfCareActivityActImpl implements Planne
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlanOfCareActivityActMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedAct2Operations.validatePlanOfCareActivityActMoodCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validatePlanOfCareActivityActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedAct2Operations.validatePlanOfCareActivityActMoodCode(this, diagnostics, context);
 	}

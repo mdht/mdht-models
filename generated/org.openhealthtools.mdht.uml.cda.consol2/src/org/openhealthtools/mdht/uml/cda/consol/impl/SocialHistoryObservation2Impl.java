@@ -67,15 +67,6 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryObservationCodeVS(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SocialHistoryObservation2Operations.validateSocialHistoryObservationCodeVS(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateSocialHistoryObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCodeP(

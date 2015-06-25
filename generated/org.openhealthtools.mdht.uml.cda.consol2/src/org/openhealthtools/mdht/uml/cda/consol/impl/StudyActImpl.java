@@ -147,15 +147,6 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateStudyActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return StudyActOperations.validateStudyActCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateStudyActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActCode(this, diagnostics, context);

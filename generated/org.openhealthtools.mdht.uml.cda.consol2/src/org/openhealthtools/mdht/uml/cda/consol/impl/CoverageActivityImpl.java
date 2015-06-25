@@ -99,27 +99,9 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCoverageActivityStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoverageActivityOperations.validateCoverageActivityStatusCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateCoverageActivityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivityOperations.validateCoverageActivityId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCoverageActivityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CoverageActivityOperations.validateCoverageActivityCodeP(this, diagnostics, context);
 	}
 
 	/**

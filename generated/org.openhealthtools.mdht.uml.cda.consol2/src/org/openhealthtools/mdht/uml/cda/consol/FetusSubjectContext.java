@@ -21,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.RelatedSubject;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFetusSubjectContext()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FetusSubjectContextTemplateId FetusSubjectContextCode FetusSubjectContextCodeP FetusSubjectContextSubject' templateId.root='2.16.840.1.113883.10.20.6.2.3' code.code='121026' code.codeSystem='1.2.840.10008.2.16.4' code.codeSystemName='DCM' constraints.validation.dependOn.FetusSubjectContextCode='FetusSubjectContextCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FetusSubjectContextTemplateId FetusSubjectContextCode FetusSubjectContextSubject' templateId.root='2.16.840.1.113883.10.20.6.2.3' code.code='121026' code.codeSystem='1.2.840.10008.2.16.4' code.codeSystemName='DCM'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolFetusSubjectContextSubjectPerson constraints.validation.error='FetusSubjectContextSubjectPersonName'"
  * @generated
  */
@@ -45,19 +45,7 @@ public interface FetusSubjectContext extends RelatedSubject {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)'"
-	 * @generated
-	 */
-	boolean validateFetusSubjectContextCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (true)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'121026\' and value.codeSystem = \'1.2.840.10008.2.16.4\')'"
 	 * @generated
 	 */
 	boolean validateFetusSubjectContextCode(DiagnosticChain diagnostics, Map<Object, Object> context);

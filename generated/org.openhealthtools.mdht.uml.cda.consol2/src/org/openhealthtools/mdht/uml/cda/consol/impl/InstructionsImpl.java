@@ -146,15 +146,6 @@ public class InstructionsImpl extends ActImpl implements Instructions {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInstructionsStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsOperations.validateInstructionsStatusCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateInstructionsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsOperations.validateInstructionsStatusCode(this, diagnostics, context);

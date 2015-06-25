@@ -46,6 +46,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSection2SelfCareActivities(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Self Care Activities</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSection2SensoryAndSpeechStatus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Sensory And Speech Status</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getConsolFunctionalStatusOrganizer2s() <em>Get Consol Functional Status Organizer2s</em>}</li>
@@ -58,7 +59,6 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getSelfCareActivitiess() <em>Get Self Care Activitiess</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#getSensoryAndSpeechStatuss() <em>Get Sensory And Speech Statuss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionFunctionalStatusResultOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Functional Status Result Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2#validateFunctionalStatusSectionFunctionalStatusResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Functional Status Result Observation</em>}</li>
@@ -129,27 +129,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateFunctionalStatusSection2SelfCareActivities(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Self Care Activities</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFunctionalStatusSection2SelfCareActivities(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_FUNCTIONAL_STATUS_SECTION2_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SelfCareActivities))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateFunctionalStatusSection2SelfCareActivities(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Self Care Activities</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFunctionalStatusSection2SelfCareActivities(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_SECTION2_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -188,27 +167,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		}
 		return true;
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateFunctionalStatusSection2SensoryAndSpeechStatus(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Sensory And Speech Status</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFunctionalStatusSection2SensoryAndSpeechStatus(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SensoryStatus))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateFunctionalStatusSection2SensoryAndSpeechStatus(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Sensory And Speech Status</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFunctionalStatusSection2SensoryAndSpeechStatus(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -251,26 +209,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolFunctionalStatusOrganizer2s(FunctionalStatusSection2) <em>Get Consol Functional Status Organizer2s</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolFunctionalStatusOrganizer2s(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONSOL_FUNCTIONAL_STATUS_ORGANIZER2S__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::FunctionalStatusOrganizer2)).oclAsType(consol::FunctionalStatusOrganizer2)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConsolFunctionalStatusOrganizer2s(FunctionalStatusSection2) <em>Get Consol Functional Status Organizer2s</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolFunctionalStatusOrganizer2s(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_FUNCTIONAL_STATUS_ORGANIZER2S__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -294,26 +232,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		Collection<FunctionalStatusOrganizer2> result = (Collection<FunctionalStatusOrganizer2>) query.evaluate(functionalStatusSection2);
 		return new BasicEList.UnmodifiableEList<FunctionalStatusOrganizer2>(result.size(), result.toArray());
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getConsolFunctionalStatusObservation2s(FunctionalStatusSection2) <em>Get Consol Functional Status Observation2s</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolFunctionalStatusObservation2s(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONSOL_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusObservation2)).oclAsType(consol::FunctionalStatusObservation2)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConsolFunctionalStatusObservation2s(FunctionalStatusSection2) <em>Get Consol Functional Status Observation2s</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolFunctionalStatusObservation2s(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,26 +259,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolCognitiveStatusResultOrganizers(FunctionalStatusSection2) <em>Get Consol Cognitive Status Result Organizers</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolCognitiveStatusResultOrganizers(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer)).oclAsType(consol::CognitiveStatusResultOrganizer)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConsolCognitiveStatusResultOrganizers(FunctionalStatusSection2) <em>Get Consol Cognitive Status Result Organizers</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolCognitiveStatusResultOrganizers(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -384,26 +282,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		Collection<CognitiveStatusResultOrganizer> result = (Collection<CognitiveStatusResultOrganizer>) query.evaluate(functionalStatusSection2);
 		return new BasicEList.UnmodifiableEList<CognitiveStatusResultOrganizer>(result.size(), result.toArray());
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getConsolCognitiveStatusResultObservations(FunctionalStatusSection2) <em>Get Consol Cognitive Status Result Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolCognitiveStatusResultObservations(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusResultObservation)).oclAsType(consol::CognitiveStatusResultObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConsolCognitiveStatusResultObservations(FunctionalStatusSection2) <em>Get Consol Cognitive Status Result Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolCognitiveStatusResultObservations(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -431,26 +309,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolNonMedicinalSupplyActivity2s(FunctionalStatusSection2) <em>Get Consol Non Medicinal Supply Activity2s</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolNonMedicinalSupplyActivity2s(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2)).oclAsType(consol::NonMedicinalSupplyActivity2)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConsolNonMedicinalSupplyActivity2s(FunctionalStatusSection2) <em>Get Consol Non Medicinal Supply Activity2s</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolNonMedicinalSupplyActivity2s(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -474,26 +332,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		Collection<NonMedicinalSupplyActivity2> result = (Collection<NonMedicinalSupplyActivity2>) query.evaluate(functionalStatusSection2);
 		return new BasicEList.UnmodifiableEList<NonMedicinalSupplyActivity2>(result.size(), result.toArray());
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getConsolNumberOfPressureUlcersObservations(FunctionalStatusSection2) <em>Get Consol Number Of Pressure Ulcers Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolNumberOfPressureUlcersObservations(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation)).oclAsType(consol::NumberOfPressureUlcersObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConsolNumberOfPressureUlcersObservations(FunctionalStatusSection2) <em>Get Consol Number Of Pressure Ulcers Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolNumberOfPressureUlcersObservations(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -521,26 +359,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolHighestPressureUlcerStages(FunctionalStatusSection2) <em>Get Consol Highest Pressure Ulcer Stages</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolHighestPressureUlcerStages(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage)).oclAsType(consol::HighestPressureUlcerStage)";
-
-	/**
-	 * The cached OCL query for the '{@link #getConsolHighestPressureUlcerStages(FunctionalStatusSection2) <em>Get Consol Highest Pressure Ulcer Stages</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getConsolHighestPressureUlcerStages(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -564,26 +382,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 		Collection<HighestPressureUlcerStage> result = (Collection<HighestPressureUlcerStage>) query.evaluate(functionalStatusSection2);
 		return new BasicEList.UnmodifiableEList<HighestPressureUlcerStage>(result.size(), result.toArray());
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getSelfCareActivitiess(FunctionalStatusSection2) <em>Get Self Care Activitiess</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSelfCareActivitiess(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_SELF_CARE_ACTIVITIESS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SelfCareActivities)).oclAsType(consol::SelfCareActivities)";
-
-	/**
-	 * The cached OCL query for the '{@link #getSelfCareActivitiess(FunctionalStatusSection2) <em>Get Self Care Activitiess</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSelfCareActivitiess(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_SELF_CARE_ACTIVITIESS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -610,26 +408,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getSensoryAndSpeechStatuss(FunctionalStatusSection2) <em>Get Sensory And Speech Statuss</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSensoryAndSpeechStatuss(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_SENSORY_AND_SPEECH_STATUSS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SensoryStatus)).oclAsType(consol::SensoryStatus)";
-
-	/**
-	 * The cached OCL query for the '{@link #getSensoryAndSpeechStatuss(FunctionalStatusSection2) <em>Get Sensory And Speech Statuss</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getSensoryAndSpeechStatuss(FunctionalStatusSection2)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_SENSORY_AND_SPEECH_STATUSS__EOCL_QRY;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -654,27 +432,6 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.14' and id.extension = '2014-06-09')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * The cached OCL expression body for the '{@link #validateFunctionalStatusSectionCodeP(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Code P</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -694,6 +451,249 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 	 */
 
 	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateFunctionalStatusSection2SelfCareActivities(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Self Care Activities</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateFunctionalStatusSection2SelfCareActivities(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_FUNCTIONAL_STATUS_SECTION2_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SelfCareActivities))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateFunctionalStatusSection2SelfCareActivities(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Self Care Activities</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateFunctionalStatusSection2SelfCareActivities(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_SECTION2_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateFunctionalStatusSection2SensoryAndSpeechStatus(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Sensory And Speech Status</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateFunctionalStatusSection2SensoryAndSpeechStatus(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SensoryStatus))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateFunctionalStatusSection2SensoryAndSpeechStatus(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section2 Sensory And Speech Status</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateFunctionalStatusSection2SensoryAndSpeechStatus(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getConsolFunctionalStatusOrganizer2s(FunctionalStatusSection2) <em>Get Consol Functional Status Organizer2s</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolFunctionalStatusOrganizer2s(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CONSOL_FUNCTIONAL_STATUS_ORGANIZER2S__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::FunctionalStatusOrganizer2)).oclAsType(consol::FunctionalStatusOrganizer2)";
+
+	/**
+	 * The cached OCL query for the '{@link #getConsolFunctionalStatusOrganizer2s(FunctionalStatusSection2) <em>Get Consol Functional Status Organizer2s</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolFunctionalStatusOrganizer2s(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CONSOL_FUNCTIONAL_STATUS_ORGANIZER2S__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getConsolFunctionalStatusObservation2s(FunctionalStatusSection2) <em>Get Consol Functional Status Observation2s</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolFunctionalStatusObservation2s(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CONSOL_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FunctionalStatusObservation2)).oclAsType(consol::FunctionalStatusObservation2)";
+
+	/**
+	 * The cached OCL query for the '{@link #getConsolFunctionalStatusObservation2s(FunctionalStatusSection2) <em>Get Consol Functional Status Observation2s</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolFunctionalStatusObservation2s(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CONSOL_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getConsolCognitiveStatusResultOrganizers(FunctionalStatusSection2) <em>Get Consol Cognitive Status Result Organizers</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolCognitiveStatusResultOrganizers(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::CognitiveStatusResultOrganizer)).oclAsType(consol::CognitiveStatusResultOrganizer)";
+
+	/**
+	 * The cached OCL query for the '{@link #getConsolCognitiveStatusResultOrganizers(FunctionalStatusSection2) <em>Get Consol Cognitive Status Result Organizers</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolCognitiveStatusResultOrganizers(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getConsolCognitiveStatusResultObservations(FunctionalStatusSection2) <em>Get Consol Cognitive Status Result Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolCognitiveStatusResultObservations(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusResultObservation)).oclAsType(consol::CognitiveStatusResultObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getConsolCognitiveStatusResultObservations(FunctionalStatusSection2) <em>Get Consol Cognitive Status Result Observations</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolCognitiveStatusResultObservations(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getConsolNonMedicinalSupplyActivity2s(FunctionalStatusSection2) <em>Get Consol Non Medicinal Supply Activity2s</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolNonMedicinalSupplyActivity2s(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2)).oclAsType(consol::NonMedicinalSupplyActivity2)";
+
+	/**
+	 * The cached OCL query for the '{@link #getConsolNonMedicinalSupplyActivity2s(FunctionalStatusSection2) <em>Get Consol Non Medicinal Supply Activity2s</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolNonMedicinalSupplyActivity2s(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CONSOL_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getConsolNumberOfPressureUlcersObservations(FunctionalStatusSection2) <em>Get Consol Number Of Pressure Ulcers Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolNumberOfPressureUlcersObservations(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation)).oclAsType(consol::NumberOfPressureUlcersObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getConsolNumberOfPressureUlcersObservations(FunctionalStatusSection2) <em>Get Consol Number Of Pressure Ulcers Observations</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolNumberOfPressureUlcersObservations(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CONSOL_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getConsolHighestPressureUlcerStages(FunctionalStatusSection2) <em>Get Consol Highest Pressure Ulcer Stages</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolHighestPressureUlcerStages(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage)).oclAsType(consol::HighestPressureUlcerStage)";
+
+	/**
+	 * The cached OCL query for the '{@link #getConsolHighestPressureUlcerStages(FunctionalStatusSection2) <em>Get Consol Highest Pressure Ulcer Stages</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getConsolHighestPressureUlcerStages(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CONSOL_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getSelfCareActivitiess(FunctionalStatusSection2) <em>Get Self Care Activitiess</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSelfCareActivitiess(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_SELF_CARE_ACTIVITIESS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SelfCareActivities)).oclAsType(consol::SelfCareActivities)";
+
+	/**
+	 * The cached OCL query for the '{@link #getSelfCareActivitiess(FunctionalStatusSection2) <em>Get Self Care Activitiess</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSelfCareActivitiess(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_SELF_CARE_ACTIVITIESS__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getSensoryAndSpeechStatuss(FunctionalStatusSection2) <em>Get Sensory And Speech Statuss</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSensoryAndSpeechStatuss(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_SENSORY_AND_SPEECH_STATUSS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SensoryStatus)).oclAsType(consol::SensoryStatus)";
+
+	/**
+	 * The cached OCL query for the '{@link #getSensoryAndSpeechStatuss(FunctionalStatusSection2) <em>Get Sensory And Speech Statuss</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getSensoryAndSpeechStatuss(FunctionalStatusSection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_SENSORY_AND_SPEECH_STATUSS__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.14' and id.extension = '2014-06-09')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->

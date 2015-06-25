@@ -116,15 +116,6 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemStatusOperations.validateProblemStatusCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateProblemStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusCode(this, diagnostics, context);
@@ -145,27 +136,9 @@ public class ProblemStatusImpl extends ObservationImpl implements ProblemStatus 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemStatusValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemStatusOperations.validateProblemStatusValueP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateProblemStatusText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusOperations.validateProblemStatusText(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProblemStatusStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemStatusOperations.validateProblemStatusStatusCodeP(this, diagnostics, context);
 	}
 
 	/**

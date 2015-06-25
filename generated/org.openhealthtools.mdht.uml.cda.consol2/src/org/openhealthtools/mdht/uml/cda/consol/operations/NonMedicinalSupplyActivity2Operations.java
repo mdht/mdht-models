@@ -289,7 +289,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2,
-				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2.getEAllOperations().get(67));
+				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2.getEAllOperations().get(66));
 			try {
 				GET_INSTRUCTION2__EOCL_QRY = helper.createQuery(GET_INSTRUCTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -331,7 +331,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2,
-				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2.getEAllOperations().get(68));
+				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2.getEAllOperations().get(67));
 			try {
 				GET_CONSOL_PRODUCT_INSTANCE__EOCL_QRY = helper.createQuery(GET_CONSOL_PRODUCT_INSTANCE__EOCL_EXP);
 			} catch (ParserException pe) {

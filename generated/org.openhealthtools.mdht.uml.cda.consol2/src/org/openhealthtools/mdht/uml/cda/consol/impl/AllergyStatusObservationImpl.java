@@ -86,15 +86,6 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyStatusObservationOperations.validateAllergyStatusObservationCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateAllergyStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationCode(this, diagnostics, context);
@@ -105,28 +96,9 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyStatusObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyStatusObservationOperations.validateAllergyStatusObservationStatusCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateAllergyStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyStatusObservationOperations.validateAllergyStatusObservationStatusCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAllergyStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyStatusObservationOperations.validateAllergyStatusObservationValueP(this, diagnostics, context);
 	}
 
 	/**

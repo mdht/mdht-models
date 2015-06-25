@@ -32,7 +32,6 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation#validateBoundaryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation#validateBoundaryObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation#validateBoundaryObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation#validateBoundaryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation#validateBoundaryObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation#validateBoundaryObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Value</em>}</li>
@@ -110,40 +109,6 @@ public class BoundaryObservationTest extends CDAValidationTest {
 		};
 
 		validateBoundaryObservationClassCodeTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateBoundaryObservationCodeP() {
-		OperationsTestCase<BoundaryObservation> validateBoundaryObservationCodePTestCase = new OperationsTestCase<BoundaryObservation>(
-			"validateBoundaryObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_BOUNDARY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(BoundaryObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(BoundaryObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return BoundaryObservationOperations.validateBoundaryObservationCodeP(
-					(BoundaryObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateBoundaryObservationCodePTestCase.doValidationTest();
 	}
 
 	/**
