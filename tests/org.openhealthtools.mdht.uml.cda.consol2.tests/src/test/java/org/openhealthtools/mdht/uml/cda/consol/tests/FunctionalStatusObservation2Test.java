@@ -49,8 +49,10 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationMethodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Method Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateResultObservationTargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusResultObservationReferenceRange(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusResultObservationAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Non Medicinal Supply Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range Observation Range No Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2#validateFunctionalStatusResultObservationReferenceRangeObservationRange(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Observation Reference Range Observation Range</em>}</li>
  * </ul>
  * </p>
  *
@@ -476,6 +478,42 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
+	* This association is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateFunctionalStatusResultObservationAuthor() {
+		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusResultObservationAuthorTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateFunctionalStatusResultObservationAuthor",
+			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationAuthor(
+					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusResultObservationAuthorTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateFunctionalStatusResultObservationNonMedicinalSupplyActivity() {
@@ -544,6 +582,42 @@ public class FunctionalStatusObservation2Test extends CDAValidationTest {
 		};
 
 		validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This association is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
+	public void testValidateFunctionalStatusResultObservationReferenceRangeObservationRange() {
+		OperationsTestCase<FunctionalStatusObservation2> validateFunctionalStatusResultObservationReferenceRangeObservationRangeTestCase = new OperationsTestCase<FunctionalStatusObservation2>(
+			"validateFunctionalStatusResultObservationReferenceRangeObservationRange",
+			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusObservation2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusObservation2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationReferenceRangeObservationRange(
+					(FunctionalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateFunctionalStatusResultObservationReferenceRangeObservationRangeTestCase.doValidationTest();
 	}
 
 	/**
