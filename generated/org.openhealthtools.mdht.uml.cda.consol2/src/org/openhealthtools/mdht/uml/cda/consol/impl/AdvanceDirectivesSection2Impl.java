@@ -175,6 +175,30 @@ public class AdvanceDirectivesSection2Impl extends AdvanceDirectivesSectionEntri
 	 * @generated
 	 */
 	@Override
+	public boolean validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdvanceDirectivesSection2Operations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EList<AdvanceDirectiveObservation2> getConsolAdvanceDirectiveObservation2s() {
 		return AdvanceDirectivesSection2Operations.getConsolAdvanceDirectiveObservation2s(this);
 	}

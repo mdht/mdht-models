@@ -16,6 +16,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.Component5;
@@ -24,7 +25,6 @@ import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalExamSection2Operations;
-import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalExamSectionOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
@@ -50,6 +50,9 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionPressureUlcerObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Pressure Ulcer Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionHighestPressureUlcerStage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Highest Pressure Ulcer Stage</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2#validatePhysicalExamSectionNumberOfPressureUlcersObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Number Of Pressure Ulcers Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -480,8 +483,46 @@ public class PhysicalExamSection2Test extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
+	* This association is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
 	*/
-	@Test
+	@Ignore
+	public void testValidatePhysicalExamSectionPressureUlcerObservation() {
+		OperationsTestCase<PhysicalExamSection2> validatePhysicalExamSectionPressureUlcerObservationTestCase = new OperationsTestCase<PhysicalExamSection2>(
+			"validatePhysicalExamSectionPressureUlcerObservation",
+			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PhysicalExamSection2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PhysicalExamSection2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PhysicalExamSection2Operations.validatePhysicalExamSectionPressureUlcerObservation(
+					(PhysicalExamSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePhysicalExamSectionPressureUlcerObservationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This association is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	*/
+	@Ignore
 	public void testValidatePhysicalExamSectionHighestPressureUlcerStage() {
 		OperationsTestCase<PhysicalExamSection2> validatePhysicalExamSectionHighestPressureUlcerStageTestCase = new OperationsTestCase<PhysicalExamSection2>(
 			"validatePhysicalExamSectionHighestPressureUlcerStage",
@@ -490,18 +531,19 @@ public class PhysicalExamSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PhysicalExamSection2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicalExamSection2 target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createHighestPressureUlcerStage().init());
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PhysicalExamSectionOperations.validatePhysicalExamSectionHighestPressureUlcerStage(
+				return PhysicalExamSection2Operations.validatePhysicalExamSectionHighestPressureUlcerStage(
 					(PhysicalExamSection2) objectToTest, diagnostician, map);
 			}
 
@@ -513,8 +555,10 @@ public class PhysicalExamSection2Test extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
+	* This association is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
 	*/
-	@Test
+	@Ignore
 	public void testValidatePhysicalExamSectionNumberOfPressureUlcersObservation() {
 		OperationsTestCase<PhysicalExamSection2> validatePhysicalExamSectionNumberOfPressureUlcersObservationTestCase = new OperationsTestCase<PhysicalExamSection2>(
 			"validatePhysicalExamSectionNumberOfPressureUlcersObservation",
@@ -523,18 +567,19 @@ public class PhysicalExamSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PhysicalExamSection2 target) {
-				target.init();
+
 			}
 
 			@Override
 			protected void updateToPass(PhysicalExamSection2 target) {
-				target.addObservation(ConsolFactory.eINSTANCE.createNumberOfPressureUlcersObservation().init());
+				target.init();
+
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PhysicalExamSectionOperations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(
+				return PhysicalExamSection2Operations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(
 					(PhysicalExamSection2) objectToTest, diagnostician, map);
 			}
 

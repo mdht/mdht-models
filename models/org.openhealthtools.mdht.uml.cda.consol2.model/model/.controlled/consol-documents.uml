@@ -604,7 +604,6 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
         <ownedAttribute xmi:id="_BwGpoOxvEeG7k4bbVdXbXw" name="assignedPerson" visibility="private" type="_ClARUOxvEeG7k4bbVdXbXw" aggregation="composite">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BwGpouxvEeG7k4bbVdXbXw"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BwGpoexvEeG7k4bbVdXbXw" value="1"/>
-          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9_sjEUcgEd6besF9iFIJkQ"/>
           <association href="../consol.uml#_BwHQsOxvEeG7k4bbVdXbXw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_1_b_0Cy_EeGMXrZ0DiQwGg" name="AuthoringDevice">

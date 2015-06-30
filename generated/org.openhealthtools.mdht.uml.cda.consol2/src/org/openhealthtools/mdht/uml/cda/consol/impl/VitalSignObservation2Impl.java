@@ -174,6 +174,16 @@ public class VitalSignObservation2Impl extends VitalSignObservationImpl implemen
 	 * @generated
 	 */
 	@Override
+	public boolean validateVitalSignObservationAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignObservation2Operations.validateVitalSignObservationAuthor(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public VitalSignObservation2 init() {
 		return Initializer.Util.init(this);
 	}

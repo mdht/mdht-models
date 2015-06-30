@@ -186,6 +186,18 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * @generated
 	 */
 	@Override
+	public boolean validateFunctionalStatusResultObservationAuthor(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationAuthor(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(
@@ -201,6 +213,18 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	public boolean validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateFunctionalStatusResultObservationReferenceRangeObservationRange(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FunctionalStatusObservation2Operations.validateFunctionalStatusResultObservationReferenceRangeObservationRange(
 			this, diagnostics, context);
 	}
 
