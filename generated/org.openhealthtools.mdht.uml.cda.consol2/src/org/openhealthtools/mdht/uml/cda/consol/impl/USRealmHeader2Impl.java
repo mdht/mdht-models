@@ -222,6 +222,28 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateUSRealmHeader2GeneralHeaderConstraintsInformantAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return USRealmHeader2Operations.validateUSRealmHeader2GeneralHeaderConstraintsInformantAssignedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeader2GeneralHeaderConstraintsInformantRelatedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return USRealmHeader2Operations.validateUSRealmHeader2GeneralHeaderConstraintsInformantRelatedEntity(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeader2Operations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
@@ -740,6 +762,18 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantRelatedEntityAddr(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsInformantRelatedEntityPerson(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsInformantRelatedEntityPerson(
 			this, diagnostics, context);
 	}
 

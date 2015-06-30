@@ -164,6 +164,16 @@ public class CoverageActivity2Impl extends CoverageActivityImpl implements Cover
 	 * @generated
 	 */
 	@Override
+	public boolean validateCoverageActivityPolicyActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CoverageActivity2Operations.validateCoverageActivityPolicyActivity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public CoverageActivity2 init() {
 		return Initializer.Util.init(this);
 	}

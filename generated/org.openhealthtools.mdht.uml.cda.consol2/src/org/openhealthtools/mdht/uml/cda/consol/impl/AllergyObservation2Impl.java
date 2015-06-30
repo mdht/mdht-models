@@ -337,6 +337,18 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * @generated
 	 */
 	@Override
+	public boolean validateAllergyObservationAllergyStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservationAllergyStatusObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateAllergyObservationReactionObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservationReactionObservation(this, diagnostics, context);

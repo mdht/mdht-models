@@ -324,6 +324,18 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * @generated
 	 */
 	@Override
+	public boolean validateProblemObservationHealthStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservationHealthStatusObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateProblemObservationProblemStatus(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservationProblemStatus(this, diagnostics, context);
 	}

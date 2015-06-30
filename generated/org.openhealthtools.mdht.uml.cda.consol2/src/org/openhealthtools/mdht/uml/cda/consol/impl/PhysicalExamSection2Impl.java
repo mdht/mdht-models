@@ -203,6 +203,42 @@ public class PhysicalExamSection2Impl extends PhysicalExamSectionImpl implements
 	 * @generated
 	 */
 	@Override
+	public boolean validatePhysicalExamSectionPressureUlcerObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalExamSection2Operations.validatePhysicalExamSectionPressureUlcerObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePhysicalExamSectionHighestPressureUlcerStage(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalExamSection2Operations.validatePhysicalExamSectionHighestPressureUlcerStage(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePhysicalExamSectionNumberOfPressureUlcersObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicalExamSection2Operations.validatePhysicalExamSectionNumberOfPressureUlcersObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public PhysicalExamSection2 init() {
 		return Initializer.Util.init(this);
 	}
