@@ -22,10 +22,12 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PressureUlcerObservati
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CR;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CV;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
+import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 import org.openhealthtools.mdht.uml.hl7.vocab.ActClassObservation;
 import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActMoodDocumentObservation;
@@ -56,6 +58,9 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation#validatePressureUlcerObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation#validatePressureUlcerObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation#validatePressureUlcerObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation#validatePressureUlcerObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation#validatePressureUlcerObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Status Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation#validatePressureUlcerObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation#validatePressureUlcerObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation#validatePressureUlcerObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation#validatePressureUlcerObservationTargetSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Target Site Code P</em>}</li>
@@ -750,6 +755,114 @@ public class PressureUlcerObservationTest extends CDAValidationTest {
 		};
 
 		validatePressureUlcerObservationTextTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePressureUlcerObservationStatusCode() {
+		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationStatusCodeTestCase = new OperationsTestCase<PressureUlcerObservation>(
+			"validatePressureUlcerObservationStatusCode",
+			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PressureUlcerObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PressureUlcerObservation target) {
+				target.init();
+
+				CS cs = DatatypesFactory.eINSTANCE.createCS("completed");
+				target.setStatusCode(cs);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PressureUlcerObservationOperations.validatePressureUlcerObservationStatusCode(
+					(PressureUlcerObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePressureUlcerObservationStatusCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePressureUlcerObservationStatusCodeP() {
+		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationStatusCodePTestCase = new OperationsTestCase<PressureUlcerObservation>(
+			"validatePressureUlcerObservationStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PressureUlcerObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PressureUlcerObservation target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PressureUlcerObservationOperations.validatePressureUlcerObservationStatusCodeP(
+					(PressureUlcerObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePressureUlcerObservationStatusCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+	public void testValidatePressureUlcerObservationEffectiveTime() {
+		OperationsTestCase<PressureUlcerObservation> validatePressureUlcerObservationEffectiveTimeTestCase = new OperationsTestCase<PressureUlcerObservation>(
+			"validatePressureUlcerObservationEffectiveTime",
+			operationsForOCL.getOCLValue("VALIDATE_PRESSURE_ULCER_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PressureUlcerObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PressureUlcerObservation target) {
+				target.init();
+
+				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.setEffectiveTime(ts);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PressureUlcerObservationOperations.validatePressureUlcerObservationEffectiveTime(
+					(PressureUlcerObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePressureUlcerObservationEffectiveTimeTestCase.doValidationTest();
 	}
 
 	/**

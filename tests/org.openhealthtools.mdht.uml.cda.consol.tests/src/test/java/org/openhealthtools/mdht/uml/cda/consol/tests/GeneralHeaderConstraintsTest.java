@@ -9,6 +9,7 @@
  *     Sean Muir (JKM Software) - initial API and implementation
  *     Dan Brown (Audacious Inquiry) - additional testing code
  *     								 - errata 227 testing code
+ *     								 - various new constraints
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
@@ -829,7 +830,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateGeneralHeaderConstraintsLanguageCode() {
@@ -841,12 +842,12 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 			@Override
 			protected void updateToFail(GeneralHeaderConstraints target) {
 				target.init();
+				target.setLanguageCode(DatatypesFactory.eINSTANCE.createCS());
 			}
 
 			@Override
 			protected void updateToPass(GeneralHeaderConstraints target) {
-
-				target.setLanguageCode(DatatypesFactory.eINSTANCE.createCS("value"));
+				target.getLanguageCode().setCode("hasCode");
 			}
 
 			@Override
@@ -861,45 +862,44 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		validateGeneralHeaderConstraintsLanguageCodeTestCase.doValidationTest();
 	}
 
-	// /**
-	// *
-	// * @generated not
-	// */
-	// @Test
-	// public void testValidateGeneralHeaderConstraintsLanguageCode() {
-	// OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsLanguageCodeTestCase = new
-	// OperationsTestCase<GeneralHeaderConstraints>(
-	// "validateGeneralHeaderConstraintsLanguageCode",
-	// operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-	// objectFactory) {
-	//
-	// @Override
-	// protected void updateToFail(GeneralHeaderConstraints target) {
-	//
-	// }
-	//
-	// @Override
-	// protected void updateToPass(GeneralHeaderConstraints target) {
-	// target.init();
-	// target.setLanguageCode(DatatypesFactory.eINSTANCE.createCS());
-	//
-	// }
-	//
-	// @Override
-	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-	//
-	// return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLanguageCode(
-	// (GeneralHeaderConstraints) objectToTest, diagnostician, map);
-	// }
-	//
-	// };
-	//
-	// validateGeneralHeaderConstraintsLanguageCodeTestCase.doValidationTest();
-	// }
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsLanguageCodeP() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsLanguageCodePTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsLanguageCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_LANGUAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.init();
+				target.setLanguageCode(DatatypesFactory.eINSTANCE.createCS());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLanguageCodeP(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsLanguageCodePTestCase.doValidationTest();
+	}
 
 	/**
 	*
-	* @generated not  not
+	* @generated not
 	*/
 	@Test
 	public void testValidateGeneralHeaderConstraintsSetId() {
@@ -1917,12 +1917,12 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(GeneralHeaderConstraints target) {
-				// fails if value is less than required number of digits (6)
+				// fails if value is less than required number of digits (8)
 				target.init();
 				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
 				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
 				Patient patient = CDAFactory.eINSTANCE.createPatient();
-				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("12345")); // fails as intended
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("1234567")); // fails as intended
 				pr.setPatient(patient);
 				re.setPatientRole(pr);
 				target.getRecordTargets().add(re);
@@ -1930,12 +1930,12 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(GeneralHeaderConstraints target) {
-				// passes if value is more than or equal to required number of digits (6)
+				// passes if value is more than or equal to required number of digits (8)
 				target.getRecordTargets().clear();
 				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
 				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
 				Patient patient = CDAFactory.eINSTANCE.createPatient();
-				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("123456")); // passes as intended
+				patient.setBirthTime(DatatypesFactory.eINSTANCE.createTS("12345678")); // passes as intended
 				pr.setPatient(patient);
 				re.setPatientRole(pr);
 				target.getRecordTargets().add(re);
@@ -3203,8 +3203,8 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 					@Override
 					public void updateToFail(GeneralHeaderConstraints target) {
 						// f1
-						// <assignedPerson> exists and there is an id and the id/@root does NOT = ???2.16.840.1.113883.4.6???
-						// and the id???s/@extension exists)
+						// <assignedPerson> exists and there is an id and the id/@root does NOT = '2.16.840.1.113883.4.6'
+						// and the id's/@extension exists)
 						// expect fail because assigned person exists and the root (NPI) is incorrect
 						System.out.println("\nf1");
 						target.init();
@@ -3222,8 +3222,8 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 					@Override
 					public void updateToFail(GeneralHeaderConstraints target) {
 						// f2
-						// -<assignedPerson> exists and there is an id and (the id/@root = ???2.16.840.1.113883.4.6???
-						// and the id???s/@extension DOES NOT EXIST)
+						// -<assignedPerson> exists and there is an id and (the id/@root = '2.16.840.1.113883.4.6'
+						// and the id's/@extension DOES NOT EXIST)
 						// expect fail because assigned person exists and the id/@extension does not exist
 						System.out.println("\nf2");
 						target.init();
@@ -3241,8 +3241,8 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 					@Override
 					public void updateToFail(GeneralHeaderConstraints target) {
 						// f3
-						// -<assignedPerson> exists and there is an id and (the id/@root does NOT = ???2.16.840.1.113883.4.6???
-						// and the id???s/@extension DOES NOT EXIST)
+						// -<assignedPerson> exists and there is an id and (the id/@root does NOT = '2.16.840.1.113883.4.6'
+						// and the id's/@extension DOES NOT EXIST)
 						// expect fail because assigned person exists and the root (NPI) is incorrect and
 						// the id/@extension does not exist
 						System.out.println("\nf3");
@@ -3389,8 +3389,8 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 					@Override
 					public void updateToPass(GeneralHeaderConstraints target) {
 						// p1
-						// <assignedPerson> exists and there is an id and (the id/@root = ???2.16.840.1.113883.4.6???
-						// and the id???s/@extension exists)
+						// <assignedPerson> exists and there is an id and (the id/@root = '2.16.840.1.113883.4.6'
+						// and the id's/@extension exists)
 						System.out.println("\np1");
 						target.init();
 						Author author = CDAFactory.eINSTANCE.createAuthor();
@@ -3426,7 +3426,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 					@Override
 					public void updateToPass(GeneralHeaderConstraints target) {
 						// p3
-						// If <assignedPerson> DOES NOT exist (we don???t enforce the id/@root or id/@extension NPI warning at all
+						// If <assignedPerson> DOES NOT exist (we don't enforce the id/@root or id/@extension NPI warning at all
 						// For the example we have an incorrect NPI, which is NOT checked.
 						System.out.println("\np3");
 						target.init();
@@ -3443,9 +3443,9 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 					@Override
 					public void updateToPass(GeneralHeaderConstraints target) {
 						// p4
-						// If <assignedPerson> DOES NOT exist (we don???t enforce the id/@root or id/@extension NPI warning at all
+						// If <assignedPerson> DOES NOT exist (we don't enforce the id/@root or id/@extension NPI warning at all
 						// For the example we have an incorrect NPI, which is NOT checked, and,
-						// we don???t have an extension, which is NOT checked.
+						// we don't have an extension, which is NOT checked.
 						System.out.println("\np4");
 						target.init();
 						Author author = CDAFactory.eINSTANCE.createAuthor();
@@ -5666,13 +5666,13 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateGeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganization() {
-		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganizationTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
-			"validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECIEVED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganizationTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganization",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -5711,7 +5711,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 		};
 
-		validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganizationTestCase.doValidationTest();
+		validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganizationTestCase.doValidationTest();
 	}
 
 	/**
@@ -6702,6 +6702,41 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(GeneralHeaderConstraints target) {
+				target.init();
+				LegalAuthenticator la = CDAFactory.eINSTANCE.createLegalAuthenticator();
+				target.setLegalAuthenticator(la);
+			}
+
+			@Override
+			protected void updateToPass(GeneralHeaderConstraints target) {
+				target.getLegalAuthenticator().setAssignedEntity(CDAFactory.eINSTANCE.createAssignedEntity());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTestCase.doValidationTest();
 	}
 
 	/**
@@ -12158,61 +12193,6 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 	*
 	* @generated not
 	*/
-	@Test
-	public void testValidateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName() {
-		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonNameTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
-			"validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_RELATED_ENTITY_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName(
-					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(GeneralHeaderConstraints target) {
-				target.init();
-
-				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
-				CDAFactory.eINSTANCE.createAssignedEntity();
-
-				RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
-				Person person = CDAFactory.eINSTANCE.createPerson();
-				re.setRelatedPerson(person);
-
-				informant.setRelatedEntity(re);
-				target.getInformants().add(informant);
-			}
-
-			@Override
-			protected void updateToPass(GeneralHeaderConstraints target) {
-				target.getInformants().clear();
-
-				Informant12 informant = CDAFactory.eINSTANCE.createInformant12();
-				CDAFactory.eINSTANCE.createAssignedEntity();
-
-				RelatedEntity re = CDAFactory.eINSTANCE.createRelatedEntity();
-				Person person = CDAFactory.eINSTANCE.createPerson();
-				person.getNames().add(DatatypesFactory.eINSTANCE.createPN());
-				re.setRelatedPerson(person);
-
-				informant.setRelatedEntity(re);
-				target.getInformants().add(informant);
-
-			}
-
-		};
-
-		validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonNameTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
 	// @Test
 	// public void testValidateGeneralHeaderConstraintsInformantAssignedEntityPerson() {
 	// OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsInformantAssignedEntityPersonTestCase = new
@@ -12362,7 +12342,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateGeneralHeaderConstraintsInformantAssignedEntity() {
@@ -12407,7 +12387,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateGeneralHeaderConstraintsInformantRelatedEntity() {
@@ -13675,6 +13655,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 	* @generated 
 	*/
 	private static class ObjectFactory implements TestObjectFactory<GeneralHeaderConstraints> {
+		@Override
 		public GeneralHeaderConstraints create() {
 			return ConsolFactory.eINSTANCE.createGeneralHeaderConstraints();
 		}

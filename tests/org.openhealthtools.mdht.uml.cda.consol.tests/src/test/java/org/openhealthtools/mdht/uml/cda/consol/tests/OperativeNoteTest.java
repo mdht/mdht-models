@@ -68,8 +68,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteProcedureSpecimensTakenSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Procedure Specimens Taken Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteProcedureDescriptionSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Procedure Description Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteProcedureImplantsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Procedure Implants Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteFluidSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Fluid Section</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteSurgicalProcedureSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Surgical Procedure Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteOperativeNoteFluidSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Operative Note Fluid Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteOperativeNoteSurgicalProcedureSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Operative Note Surgical Procedure Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNotePlanOfCareSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Plan Of Care Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNotePlannedProcedureSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Planned Procedure Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.OperativeNote#validateOperativeNoteProcedureDispositionSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Operative Note Procedure Disposition Section</em>}</li>
@@ -590,13 +590,13 @@ public class OperativeNoteTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateOperativeNoteFluidSection() {
-		OperationsTestCase<OperativeNote> validateOperativeNoteFluidSectionTestCase = new OperationsTestCase<OperativeNote>(
-			"validateOperativeNoteFluidSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateOperativeNoteOperativeNoteFluidSection() {
+		OperationsTestCase<OperativeNote> validateOperativeNoteOperativeNoteFluidSectionTestCase = new OperationsTestCase<OperativeNote>(
+			"validateOperativeNoteOperativeNoteFluidSection",
+			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -607,8 +607,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(OperativeNote target) {
 				target.init();
-				//
-				// /* FluidSection */
+
+				/* OperativeNoteFluidSection */
 				OperativeNoteFluidSection section =
 
 				ConsolFactory.eINSTANCE.createOperativeNoteFluidSection().init();
@@ -620,24 +620,24 @@ public class OperativeNoteTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return OperativeNoteOperations.validateOperativeNoteFluidSection(
+				return OperativeNoteOperations.validateOperativeNoteOperativeNoteFluidSection(
 					(OperativeNote) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateOperativeNoteFluidSectionTestCase.doValidationTest();
+		validateOperativeNoteOperativeNoteFluidSectionTestCase.doValidationTest();
 	}
 
 	/**
 	*
-	* @generated not
+	* @generated
 	*/
 	@Test
-	public void testValidateOperativeNoteSurgicalProcedureSection() {
-		OperationsTestCase<OperativeNote> validateOperativeNoteSurgicalProcedureSectionTestCase = new OperationsTestCase<OperativeNote>(
-			"validateOperativeNoteSurgicalProcedureSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateOperativeNoteOperativeNoteSurgicalProcedureSection() {
+		OperationsTestCase<OperativeNote> validateOperativeNoteOperativeNoteSurgicalProcedureSectionTestCase = new OperationsTestCase<OperativeNote>(
+			"validateOperativeNoteOperativeNoteSurgicalProcedureSection",
+			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -649,7 +649,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 			protected void updateToPass(OperativeNote target) {
 				target.init();
 
-				/* SurgicalProcedureSection */
+				/* OperativeNoteSurgicalProcedureSection */
 				OperativeNoteSurgicalProcedureSection section =
 
 				ConsolFactory.eINSTANCE.createOperativeNoteSurgicalProcedureSection().init();
@@ -661,13 +661,13 @@ public class OperativeNoteTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return OperativeNoteOperations.validateOperativeNoteSurgicalProcedureSection(
+				return OperativeNoteOperations.validateOperativeNoteOperativeNoteSurgicalProcedureSection(
 					(OperativeNote) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateOperativeNoteSurgicalProcedureSectionTestCase.doValidationTest();
+		validateOperativeNoteOperativeNoteSurgicalProcedureSectionTestCase.doValidationTest();
 	}
 
 	/**
@@ -1930,6 +1930,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<OperativeNote> {
+		@Override
 		public OperativeNote create() {
 			return ConsolFactory.eINSTANCE.createOperativeNote();
 		}

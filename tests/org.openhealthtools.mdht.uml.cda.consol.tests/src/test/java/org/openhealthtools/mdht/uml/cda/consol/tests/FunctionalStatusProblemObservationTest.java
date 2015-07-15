@@ -37,12 +37,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateFunctionalStatusProblemObservationHasTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Problem Observation Has Text Reference</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateFunctionalStatusProblemObservationTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Problem Observation Text Reference Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateFunctionalStatusProblemObservationHasTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Problem Observation Has Text Reference Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateFunctionalStatusProblemObservationHasOnsetDate(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Problem Observation Has Onset Date</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateFunctionalStatusProblemObservationHasResolutionDate(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Problem Observation Has Resolution Date</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateFunctionalStatusProblemObservationValueNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Problem Observation Value Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateFunctionalStatusProblemObservationMethodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Problem Observation Method Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateFunctionalStatusProblemObservationNonMedicinalSupplyActivity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Problem Observation Non Medicinal Supply Activity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateFunctionalStatusProblemObservationCaregiverCharacteristics(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Problem Observation Caregiver Characteristics</em>}</li>
@@ -50,6 +44,12 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#getNonMedicinalSupplyActivities() <em>Get Non Medicinal Supply Activities</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#getCaregiverCharacteristicss() <em>Get Caregiver Characteristicss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#getAssessmentScaleObservations() <em>Get Assessment Scale Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateProblemObservationHasTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Has Text Reference</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateProblemObservationTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Text Reference Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateProblemObservationHasTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Has Text Reference Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateProblemObservationHasOnsetDate(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Has Onset Date</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateProblemObservationHasResolutionDate(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Has Resolution Date</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateProblemObservationValueNullFlavor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Value Null Flavor</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateProblemObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation#validateProblemObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Mood Code</em>}</li>
@@ -69,234 +69,6 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  */
 
 public class FunctionalStatusProblemObservationTest extends CDAValidationTest {
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateFunctionalStatusProblemObservationHasTextReference() {
-		OperationsTestCase<FunctionalStatusProblemObservation> validateFunctionalStatusProblemObservationHasTextReferenceTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
-			"validateFunctionalStatusProblemObservationHasTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusProblemObservation target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				target.setText(txt);
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusProblemObservation target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationHasTextReference(
-					(FunctionalStatusProblemObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusProblemObservationHasTextReferenceTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateFunctionalStatusProblemObservationTextReferenceValue() {
-		OperationsTestCase<FunctionalStatusProblemObservation> validateFunctionalStatusProblemObservationTextReferenceValueTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
-			"validateFunctionalStatusProblemObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusProblemObservation target) {
-				target.init();
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
-				target.setText(txt);
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusProblemObservation target) {
-				ED txt = DatatypesFactory.eINSTANCE.createED();
-				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
-				target.setText(txt);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationTextReferenceValue(
-					(FunctionalStatusProblemObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusProblemObservationTextReferenceValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateFunctionalStatusProblemObservationHasTextReferenceValue() {
-		OperationsTestCase<FunctionalStatusProblemObservation> validateFunctionalStatusProblemObservationHasTextReferenceValueTestCase = new NarrativeReferenceTestCase<FunctionalStatusProblemObservation>(
-			"validateFunctionalStatusProblemObservationHasTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusProblemObservation target) {
-				target.init();
-
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"No particular health status observed.");
-
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusProblemObservation target) {
-				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
-					"1.2.3.4", "No particular health status observed.");
-
-				// add a reference to the section text
-				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationHasTextReferenceValue(
-					(FunctionalStatusProblemObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusProblemObservationHasTextReferenceValueTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateFunctionalStatusProblemObservationHasOnsetDate() {
-		OperationsTestCase<FunctionalStatusProblemObservation> validateFunctionalStatusProblemObservationHasOnsetDateTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
-			"validateFunctionalStatusProblemObservationHasOnsetDate",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_HAS_ONSET_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusProblemObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusProblemObservation target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS("1", "2"));
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationHasOnsetDate(
-					(FunctionalStatusProblemObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusProblemObservationHasOnsetDateTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateFunctionalStatusProblemObservationHasResolutionDate() {
-		OperationsTestCase<FunctionalStatusProblemObservation> validateFunctionalStatusProblemObservationHasResolutionDateTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
-			"validateFunctionalStatusProblemObservationHasResolutionDate",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusProblemObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusProblemObservation target) {
-				target.init();
-				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS("1", "2"));
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationHasResolutionDate(
-					(FunctionalStatusProblemObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusProblemObservationHasResolutionDateTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidateFunctionalStatusProblemObservationValueNullFlavor() {
-		OperationsTestCase<FunctionalStatusProblemObservation> validateFunctionalStatusProblemObservationValueNullFlavorTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
-			"validateFunctionalStatusProblemObservationValueNullFlavor",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(FunctionalStatusProblemObservation target) {
-				target.init();
-				target.getValues().add(DatatypesFactory.eINSTANCE.createCD());
-			}
-
-			@Override
-			protected void updateToPass(FunctionalStatusProblemObservation target) {
-				target.getValues().get(0).setNullFlavor(NullFlavor.NA);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return FunctionalStatusProblemObservationOperations.validateFunctionalStatusProblemObservationValueNullFlavor(
-					(FunctionalStatusProblemObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateFunctionalStatusProblemObservationValueNullFlavorTestCase.doValidationTest();
-	}
 
 	/**
 	*
@@ -480,6 +252,238 @@ public class FunctionalStatusProblemObservationTest extends CDAValidationTest {
 		FunctionalStatusProblemObservation target = objectFactory.create();
 		target.getAssessmentScaleObservations();
 
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProblemObservationHasTextReference() {
+		OperationsTestCase<FunctionalStatusProblemObservation> validateProblemObservationHasTextReferenceTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
+			"validateProblemObservationHasTextReference",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusProblemObservation target) {
+				target.init();
+				ED txt = DatatypesFactory.eINSTANCE.createED();
+				target.setText(txt);
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusProblemObservation target) {
+				ED txt = DatatypesFactory.eINSTANCE.createED();
+				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
+				target.setText(txt);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusProblemObservationOperations.validateProblemObservationHasTextReference(
+					(FunctionalStatusProblemObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemObservationHasTextReferenceTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProblemObservationTextReferenceValue() {
+		OperationsTestCase<FunctionalStatusProblemObservation> validateProblemObservationTextReferenceValueTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
+			"validateProblemObservationTextReferenceValue",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusProblemObservation target) {
+				target.init();
+				ED txt = DatatypesFactory.eINSTANCE.createED();
+				txt.setReference(DatatypesFactory.eINSTANCE.createTEL());
+				target.setText(txt);
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusProblemObservation target) {
+				ED txt = DatatypesFactory.eINSTANCE.createED();
+				txt.setReference(DatatypesFactory.eINSTANCE.createTEL("test"));
+				target.setText(txt);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusProblemObservationOperations.validateProblemObservationTextReferenceValue(
+					(FunctionalStatusProblemObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemObservationTextReferenceValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProblemObservationHasTextReferenceValue() {
+		OperationsTestCase<FunctionalStatusProblemObservation> validateProblemObservationHasTextReferenceValueTestCase = new NarrativeReferenceTestCase<FunctionalStatusProblemObservation>(
+			"validateProblemObservationHasTextReferenceValue",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusProblemObservation target) {
+				target.init();
+
+				// add the observation to a section, as required by the constraint, that has text that we can reference
+				addText(
+					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
+					"No particular health status observed.");
+
+				// add a reference to the section text
+				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusProblemObservation target) {
+				// add the observation to a section, as required by the constraint, that has text that we can reference
+				addText(
+					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
+					"1.2.3.4", "No particular health status observed.");
+
+				// add a reference to the section text
+				target.setText(createEDWithReference("Some sample text", "#1.2.3.4"));
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusProblemObservationOperations.validateProblemObservationHasTextReferenceValue(
+					(FunctionalStatusProblemObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemObservationHasTextReferenceValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProblemObservationHasOnsetDate() {
+		OperationsTestCase<FunctionalStatusProblemObservation> validateProblemObservationHasOnsetDateTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
+			"validateProblemObservationHasOnsetDate",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_ONSET_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusProblemObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusProblemObservation target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS("1", "2"));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusProblemObservationOperations.validateProblemObservationHasOnsetDate(
+					(FunctionalStatusProblemObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemObservationHasOnsetDateTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProblemObservationHasResolutionDate() {
+		OperationsTestCase<FunctionalStatusProblemObservation> validateProblemObservationHasResolutionDateTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
+			"validateProblemObservationHasResolutionDate",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusProblemObservation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusProblemObservation target) {
+				target.init();
+				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS("1", "2"));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusProblemObservationOperations.validateProblemObservationHasResolutionDate(
+					(FunctionalStatusProblemObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemObservationHasResolutionDateTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateProblemObservationValueNullFlavor() {
+		OperationsTestCase<FunctionalStatusProblemObservation> validateProblemObservationValueNullFlavorTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
+			"validateProblemObservationValueNullFlavor",
+			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(FunctionalStatusProblemObservation target) {
+				target.init();
+				target.getValues().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(FunctionalStatusProblemObservation target) {
+				target.getValues().clear();
+
+				CD val = DatatypesFactory.eINSTANCE.createCD();
+				val.setNullFlavor(NullFlavor.UNK);
+				target.getValues().add(val);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return FunctionalStatusProblemObservationOperations.validateProblemObservationValueNullFlavor(
+					(FunctionalStatusProblemObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateProblemObservationValueNullFlavorTestCase.doValidationTest();
 	}
 
 	/**
@@ -948,6 +952,7 @@ public class FunctionalStatusProblemObservationTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<FunctionalStatusProblemObservation> {
+		@Override
 		public FunctionalStatusProblemObservation create() {
 			return ConsolFactory.eINSTANCE.createFunctionalStatusProblemObservation();
 		}
