@@ -102,7 +102,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REVIEW_OF_SYSTEMS_SECTION__REVIEW_OF_SYSTEMS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionReviewOfSystemsSectionTemplateId"),
 					new Object[] { reviewOfSystemsSection }));
 			}
 
@@ -163,7 +163,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REVIEW_OF_SYSTEMS_SECTION__REVIEW_OF_SYSTEMS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionReviewOfSystemsSectionCode"),
 					new Object[] { reviewOfSystemsSection }));
 			}
 
@@ -222,7 +222,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REVIEW_OF_SYSTEMS_SECTION__REVIEW_OF_SYSTEMS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionReviewOfSystemsSectionCodeP"),
 					new Object[] { reviewOfSystemsSection }));
 			}
 
@@ -281,7 +281,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REVIEW_OF_SYSTEMS_SECTION__REVIEW_OF_SYSTEMS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionReviewOfSystemsSectionTitle"),
 					new Object[] { reviewOfSystemsSection }));
 			}
 
@@ -340,7 +340,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.REVIEW_OF_SYSTEMS_SECTION__REVIEW_OF_SYSTEMS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionText"),
+					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionReviewOfSystemsSectionText"),
 					new Object[] { reviewOfSystemsSection }));
 			}
 

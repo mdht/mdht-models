@@ -107,7 +107,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationTextReference"),
+					ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationTextReference"),
 					new Object[] { severityObservation }));
 			}
 
@@ -166,7 +166,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationTextReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationTextReferenceValue"),
 					new Object[] { severityObservation }));
 			}
 
@@ -225,7 +225,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationReferenceValue"),
+					ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationReferenceValue"),
 					new Object[] { severityObservation }));
 			}
 
@@ -284,7 +284,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationTemplateId"),
 					new Object[] { severityObservation }));
 			}
 
@@ -343,7 +343,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationClassCode"),
 					new Object[] { severityObservation }));
 			}
 
@@ -402,7 +402,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationMoodCode"),
 					new Object[] { severityObservation }));
 			}
 
@@ -463,7 +463,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationCode"), new Object[] { severityObservation }));
+					ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationCode"),
+					new Object[] { severityObservation }));
 			}
 
 			return false;
@@ -521,7 +522,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationText"), new Object[] { severityObservation }));
+					ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationText"),
+					new Object[] { severityObservation }));
 			}
 
 			return false;
@@ -580,7 +582,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationStatusCode"),
+					ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationStatusCode"),
 					new Object[] { severityObservation }));
 			}
 
@@ -641,7 +643,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("SeverityObservationValue"), new Object[] { severityObservation }));
+					ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationValue"),
+					new Object[] { severityObservation }));
 			}
 
 			return false;

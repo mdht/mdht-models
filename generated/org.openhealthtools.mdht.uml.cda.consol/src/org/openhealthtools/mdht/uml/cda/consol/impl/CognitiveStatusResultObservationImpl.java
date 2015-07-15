@@ -56,28 +56,6 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCognitiveStatusResultObservationTextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationTextReference(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCognitiveStatusResultObservationTextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationTextReferenceValue(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateCognitiveStatusResultObservationValueDatatype(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return CognitiveStatusResultObservationOperations.validateCognitiveStatusResultObservationValueDatatype(
@@ -195,6 +173,28 @@ public class CognitiveStatusResultObservationImpl extends ResultObservationImpl 
 	 */
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return CognitiveStatusResultObservationOperations.getAssessmentScaleObservations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusResultObservationOperations.validateResultObservationTextReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusResultObservationOperations.validateResultObservationTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**

@@ -105,7 +105,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionOperativeNoteSurgicalProcedureSectionTemplateId"),
 					new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
 
@@ -169,7 +169,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionCode"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionOperativeNoteSurgicalProcedureSectionCode"),
 					new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
 
@@ -231,7 +231,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionOperativeNoteSurgicalProcedureSectionCodeP"),
 					new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
 
@@ -293,7 +293,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionText"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionOperativeNoteSurgicalProcedureSectionText"),
 					new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
 
@@ -355,7 +355,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionOperativeNoteSurgicalProcedureSectionTitle"),
 					new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
 

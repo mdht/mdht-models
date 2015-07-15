@@ -112,7 +112,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER__VITAL_SIGNS_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerTemplateId"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerVitalSignsOrganizerTemplateId"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 
@@ -171,7 +171,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER__VITAL_SIGNS_ORGANIZER_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerClassCode"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerVitalSignsOrganizerClassCode"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 
@@ -230,7 +230,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER__VITAL_SIGNS_ORGANIZER_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerMoodCode"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerVitalSignsOrganizerMoodCode"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 
@@ -289,7 +289,8 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER__VITAL_SIGNS_ORGANIZER_ID,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerId"), new Object[] { vitalSignsOrganizer }));
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerVitalSignsOrganizerId"),
+					new Object[] { vitalSignsOrganizer }));
 			}
 
 			return false;
@@ -349,7 +350,8 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER__VITAL_SIGNS_ORGANIZER_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerCode"), new Object[] { vitalSignsOrganizer }));
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerVitalSignsOrganizerCode"),
+					new Object[] { vitalSignsOrganizer }));
 			}
 
 			return false;
@@ -408,7 +410,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER__VITAL_SIGNS_ORGANIZER_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerStatusCode"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerVitalSignsOrganizerStatusCode"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 
@@ -467,7 +469,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER__VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerEffectiveTime"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerVitalSignsOrganizerEffectiveTime"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 
@@ -526,7 +528,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.VITAL_SIGNS_ORGANIZER__VITAL_SIGNS_ORGANIZER_VITAL_SIGN_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerVitalSignObservation"),
+					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerVitalSignsOrganizerVitalSignObservation"),
 					new Object[] { vitalSignsOrganizer }));
 			}
 

@@ -104,7 +104,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_REFUSAL_REASON__IMMUNIZATION_REFUSAL_REASON_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonImmunizationRefusalReasonTemplateId"),
 					new Object[] { immunizationRefusalReason }));
 			}
 
@@ -164,7 +164,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_REFUSAL_REASON__IMMUNIZATION_REFUSAL_REASON_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonClassCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonImmunizationRefusalReasonClassCode"),
 					new Object[] { immunizationRefusalReason }));
 			}
 
@@ -225,7 +225,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_REFUSAL_REASON__IMMUNIZATION_REFUSAL_REASON_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonImmunizationRefusalReasonCode"),
 					new Object[] { immunizationRefusalReason }));
 			}
 
@@ -284,7 +284,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_REFUSAL_REASON__IMMUNIZATION_REFUSAL_REASON_ID,
-					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonId"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonImmunizationRefusalReasonId"),
 					new Object[] { immunizationRefusalReason }));
 			}
 
@@ -344,7 +344,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_REFUSAL_REASON__IMMUNIZATION_REFUSAL_REASON_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonMoodCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonImmunizationRefusalReasonMoodCode"),
 					new Object[] { immunizationRefusalReason }));
 			}
 
@@ -405,7 +405,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.IMMUNIZATION_REFUSAL_REASON__IMMUNIZATION_REFUSAL_REASON_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonStatusCode"),
+					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonImmunizationRefusalReasonStatusCode"),
 					new Object[] { immunizationRefusalReason }));
 			}
 

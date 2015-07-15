@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCoverageActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoverageActivityTemplateId CoverageActivityClassCode CoverageActivityCode CoverageActivityId CoverageActivityMoodCode CoverageActivityStatusCode CoverageActivityPolicyActivity' templateId.root='2.16.840.1.113883.10.20.22.4.60' constraints.validation.info='CoverageActivityRelationshipSequenceNumber' classCode='ACT' code.code='48768-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Payment Sources' moodCode='EVN' statusCode.code='completed'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoverageActivityTemplateId CoverageActivityClassCode CoverageActivityCode CoverageActivityId CoverageActivityMoodCode CoverageActivityStatusCode CoverageActivityPolicyActivity' templateId.root='2.16.840.1.113883.10.20.22.4.60' constraints.validation.info='CoverageActivityCoverageActivityRelationshipSequenceNumber' classCode='ACT' code.code='48768-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Payment Sources' moodCode='EVN' statusCode.code='completed'"
  * @generated
  */
 public interface CoverageActivity extends Act {
@@ -40,7 +40,8 @@ public interface CoverageActivity extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll(er : cda::EntryRelationship | not er.sequenceNumber.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCoverageActivityCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
