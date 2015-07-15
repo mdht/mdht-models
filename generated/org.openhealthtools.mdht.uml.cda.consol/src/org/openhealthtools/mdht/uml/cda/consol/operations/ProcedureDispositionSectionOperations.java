@@ -101,9 +101,10 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 			procedureDispositionSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_DISPOSITION_SECTION__PROCEDURE_DISPOSITION_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionProcedureDispositionSectionTemplateId"),
 					new Object[] { procedureDispositionSection }));
 			}
 
@@ -165,7 +166,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_DISPOSITION_SECTION__PROCEDURE_DISPOSITION_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionCode"),
+					ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionProcedureDispositionSectionCode"),
 					new Object[] { procedureDispositionSection }));
 			}
 
@@ -225,7 +226,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_DISPOSITION_SECTION__PROCEDURE_DISPOSITION_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionProcedureDispositionSectionCodeP"),
 					new Object[] { procedureDispositionSection }));
 			}
 
@@ -285,7 +286,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_DISPOSITION_SECTION__PROCEDURE_DISPOSITION_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionText"),
+					ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionProcedureDispositionSectionText"),
 					new Object[] { procedureDispositionSection }));
 			}
 
@@ -345,7 +346,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_DISPOSITION_SECTION__PROCEDURE_DISPOSITION_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionProcedureDispositionSectionTitle"),
 					new Object[] { procedureDispositionSection }));
 			}
 

@@ -139,9 +139,10 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 			diagnosticImagingReport)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_USE_DIAGNOSTIC_IMAGING_CODE,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportUseDiagnosticImagingCode"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportUseDiagnosticImagingCode"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -199,9 +200,10 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 			diagnosticImagingReport)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_ALL_SECTIONS_HAVE_TITLE,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportAllSectionsHaveTitle"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportAllSectionsHaveTitle"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -260,7 +262,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_SECTIONS_HAVE_TEXT,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportSectionsHaveText"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportSectionsHaveText"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -319,7 +321,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportTemplateId"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportTemplateId"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -378,7 +380,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__GENERAL_HEADER_CONSTRAINTS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCodeP"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportGeneralHeaderConstraintsCodeP"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -449,7 +451,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_INFORMANT,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportInformant"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportInformant"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -507,9 +509,10 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 			diagnosticImagingReport)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.INFO,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_INFORMATION_RECIPIENT,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportInformationRecipient"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportInformationRecipient"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -568,7 +571,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT1,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportParticipant1"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportParticipant1"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -627,7 +630,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_IN_FULFILLMENT_OF,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportInFulfillmentOf"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportInFulfillmentOf"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -686,7 +689,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDocumentationOf"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportDocumentationOf"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -745,7 +748,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_RELATED_DOCUMENT,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportRelatedDocument"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportRelatedDocument"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -804,7 +807,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOf"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOf"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -863,7 +866,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_FINDINGS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportFindingsSection"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportFindingsSection"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -921,9 +924,10 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 			diagnosticImagingReport)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DICOM_OBJECT_CATALOG_SECTION,
-					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDICOMObjectCatalogSection"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportDICOMObjectCatalogSection"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -987,7 +991,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportParticipantAssociatedEntityPersonName"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportParticipantAssociatedEntityPersonName"),
 						new Object[] { eObject }));
 				}
 
@@ -1052,7 +1056,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson"),
 						new Object[] { eObject }));
 				}
 
@@ -1117,7 +1121,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportParticipantAssociatedEntity"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportParticipantAssociatedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -1182,7 +1186,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDocumentationOfServiceEvent4ClassCode"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportDocumentationOfServiceEvent4ClassCode"),
 						new Object[] { eObject }));
 				}
 
@@ -1247,7 +1251,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_CODE,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDocumentationOfServiceEvent4Code"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportDocumentationOfServiceEvent4Code"),
 						new Object[] { eObject }));
 				}
 
@@ -1312,7 +1316,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_ID,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDocumentationOfServiceEvent4Id"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportDocumentationOfServiceEvent4Id"),
 						new Object[] { eObject }));
 				}
 
@@ -1377,7 +1381,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_PHYSICIAN_READING_STUDY_PERFORMER,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer"),
 						new Object[] { eObject }));
 				}
 
@@ -1442,7 +1446,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT3,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDocumentationOfServiceEvent3"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportDocumentationOfServiceEvent3"),
 						new Object[] { eObject }));
 				}
 
@@ -1507,7 +1511,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization"),
 						new Object[] { eObject }));
 				}
 
@@ -1572,7 +1576,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity"),
 						new Object[] { eObject }));
 				}
 
@@ -1637,7 +1641,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PRECISE_TO_THE_DAY,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay"),
 						new Object[] { eObject }));
 				}
 
@@ -1702,7 +1706,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PRECISE_TO_THE_MINUTE,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute"),
 						new Object[] { eObject }));
 				}
 
@@ -1767,7 +1771,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PRECISE_TO_THE_SECOND,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond"),
 						new Object[] { eObject }));
 				}
 
@@ -1832,7 +1836,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset"),
 						new Object[] { eObject }));
 				}
 
@@ -1897,7 +1901,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime"),
 						new Object[] { eObject }));
 				}
 
@@ -1962,7 +1966,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_ID,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOfEncompassingEncounter7Id"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7Id"),
 						new Object[] { eObject }));
 				}
 
@@ -2027,7 +2031,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PHYSICIANOF_RECORD_PARTICIPANT,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant"),
 						new Object[] { eObject }));
 				}
 
@@ -2092,7 +2096,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty"),
 						new Object[] { eObject }));
 				}
 
@@ -2157,7 +2161,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOfEncompassingEncounter"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter"),
 						new Object[] { eObject }));
 				}
 
@@ -2198,7 +2202,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT,
-				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT.getEAllOperations().get(324));
+				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT.getEAllOperations().get(325));
 			try {
 				GET_FINDINGS_SECTION__EOCL_QRY = helper.createQuery(GET_FINDINGS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2240,7 +2244,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT,
-				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT.getEAllOperations().get(325));
+				ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT.getEAllOperations().get(326));
 			try {
 				GET_DICOM_OBJECT_CATALOG_SECTION__EOCL_QRY = helper.createQuery(GET_DICOM_OBJECT_CATALOG_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2311,7 +2315,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__GENERAL_HEADER_CONSTRAINTS_CODE,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportGeneralHeaderConstraintsCode"),
 					new Object[] { diagnosticImagingReport }));
 			}
 
@@ -2370,7 +2374,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__GENERAL_HEADER_CONSTRAINTS_ID,
-					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsId"),
+					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportGeneralHeaderConstraintsId"),
 					new Object[] { diagnosticImagingReport }));
 			}
 

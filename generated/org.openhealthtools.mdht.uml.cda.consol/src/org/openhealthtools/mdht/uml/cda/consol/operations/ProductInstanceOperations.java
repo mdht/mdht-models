@@ -109,7 +109,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceTemplateId"), new Object[] { productInstance }));
+					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceTemplateId"),
+					new Object[] { productInstance }));
 			}
 
 			return false;
@@ -167,7 +168,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceClassCode"), new Object[] { productInstance }));
+					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceClassCode"),
+					new Object[] { productInstance }));
 			}
 
 			return false;
@@ -224,7 +226,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_ID,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceId"), new Object[] { productInstance }));
+					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceId"),
+					new Object[] { productInstance }));
 			}
 
 			return false;
@@ -282,7 +285,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceScopingEntity"), new Object[] { productInstance }));
+					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceScopingEntity"),
+					new Object[] { productInstance }));
 			}
 
 			return false;
@@ -340,7 +344,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE,
-					ConsolPlugin.INSTANCE.getString("ProductInstancePlayingDevice"), new Object[] { productInstance }));
+					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstancePlayingDevice"),
+					new Object[] { productInstance }));
 			}
 
 			return false;
@@ -402,7 +407,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("ProductInstanceScopingEntityId"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceScopingEntityId"),
+						new Object[] { eObject }));
 				}
 
 			}
@@ -465,7 +471,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE_CODE,
-						ConsolPlugin.INSTANCE.getString("ProductInstancePlayingDeviceCode"), new Object[] { eObject }));
+						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstancePlayingDeviceCode"),
+						new Object[] { eObject }));
 				}
 
 			}

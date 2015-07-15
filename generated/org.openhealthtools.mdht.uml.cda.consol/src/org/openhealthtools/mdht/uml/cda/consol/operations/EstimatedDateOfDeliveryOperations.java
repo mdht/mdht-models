@@ -103,7 +103,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ESTIMATED_DATE_OF_DELIVERY__ESTIMATED_DATE_OF_DELIVERY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryTemplateId"),
+					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryEstimatedDateOfDeliveryTemplateId"),
 					new Object[] { estimatedDateOfDelivery }));
 			}
 
@@ -162,7 +162,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ESTIMATED_DATE_OF_DELIVERY__ESTIMATED_DATE_OF_DELIVERY_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryClassCode"),
+					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryEstimatedDateOfDeliveryClassCode"),
 					new Object[] { estimatedDateOfDelivery }));
 			}
 
@@ -223,7 +223,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ESTIMATED_DATE_OF_DELIVERY__ESTIMATED_DATE_OF_DELIVERY_CODE,
-					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryCode"),
+					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryEstimatedDateOfDeliveryCode"),
 					new Object[] { estimatedDateOfDelivery }));
 			}
 
@@ -282,7 +282,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ESTIMATED_DATE_OF_DELIVERY__ESTIMATED_DATE_OF_DELIVERY_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryMoodCode"),
+					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryEstimatedDateOfDeliveryMoodCode"),
 					new Object[] { estimatedDateOfDelivery }));
 			}
 
@@ -342,7 +342,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ESTIMATED_DATE_OF_DELIVERY__ESTIMATED_DATE_OF_DELIVERY_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryStatusCode"),
+					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryEstimatedDateOfDeliveryStatusCode"),
 					new Object[] { estimatedDateOfDelivery }));
 			}
 
@@ -401,7 +401,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.ESTIMATED_DATE_OF_DELIVERY__ESTIMATED_DATE_OF_DELIVERY_VALUE,
-					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryValue"),
+					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryEstimatedDateOfDeliveryValue"),
 					new Object[] { estimatedDateOfDelivery }));
 			}
 

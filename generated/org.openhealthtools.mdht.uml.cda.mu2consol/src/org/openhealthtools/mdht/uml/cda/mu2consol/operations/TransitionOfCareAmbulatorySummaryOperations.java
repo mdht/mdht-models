@@ -412,7 +412,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY,
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY
-							.getEAllOperations().get(318));
+							.getEAllOperations().get(319));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);

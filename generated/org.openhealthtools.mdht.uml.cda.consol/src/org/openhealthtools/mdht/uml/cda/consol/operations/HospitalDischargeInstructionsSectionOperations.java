@@ -105,7 +105,7 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeInstructionsSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeInstructionsSectionHospitalDischargeInstructionsSectionTemplateId"),
 					new Object[] { hospitalDischargeInstructionsSection }));
 			}
 
@@ -168,7 +168,7 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeInstructionsSectionCode"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeInstructionsSectionHospitalDischargeInstructionsSectionCode"),
 					new Object[] { hospitalDischargeInstructionsSection }));
 			}
 
@@ -230,7 +230,7 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeInstructionsSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeInstructionsSectionHospitalDischargeInstructionsSectionCodeP"),
 					new Object[] { hospitalDischargeInstructionsSection }));
 			}
 
@@ -292,7 +292,7 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeInstructionsSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeInstructionsSectionHospitalDischargeInstructionsSectionTitle"),
 					new Object[] { hospitalDischargeInstructionsSection }));
 			}
 
@@ -353,7 +353,7 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 					Diagnostic.ERROR,
 					ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeInstructionsSectionText"),
+					ConsolPlugin.INSTANCE.getString("HospitalDischargeInstructionsSectionHospitalDischargeInstructionsSectionText"),
 					new Object[] { hospitalDischargeInstructionsSection }));
 			}
 

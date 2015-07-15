@@ -98,7 +98,8 @@ public class FindingsSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FINDINGS_SECTION__FINDINGS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FindingsSectionTemplateId"), new Object[] { findingsSection }));
+					ConsolPlugin.INSTANCE.getString("FindingsSectionFindingsSectionTemplateId"),
+					new Object[] { findingsSection }));
 			}
 
 			return false;

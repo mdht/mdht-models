@@ -584,7 +584,7 @@ public class VDTInpatientSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY,
 					Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY
-							.getEAllOperations().get(313));
+							.getEAllOperations().get(314));
 			try {
 				GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);

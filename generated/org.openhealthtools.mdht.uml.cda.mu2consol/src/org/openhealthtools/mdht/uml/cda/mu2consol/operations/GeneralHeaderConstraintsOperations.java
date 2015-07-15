@@ -252,7 +252,7 @@ public class GeneralHeaderConstraintsOperations
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS,
 					Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS
-							.getEAllOperations().get(293));
+							.getEAllOperations().get(294));
 			try {
 				RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP);

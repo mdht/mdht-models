@@ -443,7 +443,7 @@ value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'ADOPT' or value.
                 <language>Analysis</language>
                 <language>OCL</language>
                 <body>precise to day</body>
-                <body>not value.oclIsUndefined() and value.size() >= 6</body>
+                <body>not value.oclIsUndefined() and value.size() >= 8</body>
               </specification>
             </ownedRule>
             <generalization xmi:id="_nFfhQJ4wEeKLDuYB2cFreQ">
@@ -627,7 +627,6 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
         <ownedAttribute xmi:id="_BwGpoOxvEeG7k4bbVdXbXw" name="assignedPerson" visibility="private" type="_ClARUOxvEeG7k4bbVdXbXw" aggregation="composite">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BwGpouxvEeG7k4bbVdXbXw"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BwGpoexvEeG7k4bbVdXbXw" value="1"/>
-          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9_sjEUcgEd6besF9iFIJkQ"/>
           <association href="../consol.uml#_BwHQsOxvEeG7k4bbVdXbXw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_1_b_0Cy_EeGMXrZ0DiQwGg" name="AuthoringDevice">
@@ -894,7 +893,8 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_xQJ_AEo5Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_1mbIwDVYEeGIw7CntkyPQw" name="assignedEntity" type="_nlqjwDVYEeGIw7CntkyPQw" association="_1mbIwjVYEeGIw7CntkyPQw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1mbIwTVYEeGIw7CntkyPQw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S7ls0ScjEeWsauhFfwCr-g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S7ls0CcjEeWsauhFfwCr-g" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_nlqjwDVYEeGIw7CntkyPQw" name="AssignedEntity">
         <ownedRule xmi:id="_nlqjwTVYEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
@@ -1322,37 +1322,37 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_DHg4ID5zEd6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uZbsofIQEeGu1M-cCXg0Dg" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uZbsoPIQEeGu1M-cCXg0Dg" value="1"/>
-        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_XlrLED9HEd6uA6ElmbQH3Q"/>
+        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_XlrLED9HEd6uA6ElmbQH3Q"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_qB12w_IPEeGu1M-cCXg0Dg" name="country" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_DHg4ID5zEd6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XymCofIQEeGu1M-cCXg0Dg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XymCoPIQEeGu1M-cCXg0Dg" value="1"/>
-        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_Q-8j4D_lEd6wZe6nFLrjsw"/>
+        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_qvTjkD_lEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_qB12xvIPEeGu1M-cCXg0Dg" name="postalCode" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_DHg4ID5zEd6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yRva8fIQEeGu1M-cCXg0Dg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yRva8PIQEeGu1M-cCXg0Dg" value="1"/>
-        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_wQKkED_lEd6wZe6nFLrjsw"/>
+        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_wQKkED_lEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_qB12yfIPEeGu1M-cCXg0Dg" name="state" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_DHg4ID5zEd6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DIvpwfIQEeGu1M-cCXg0Dg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DIvpwPIQEeGu1M-cCXg0Dg" value="1"/>
-        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_UGUkgD_lEd6wZe6nFLrjsw"/>
+        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_UGUkgD_lEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_qB12zPIPEeGu1M-cCXg0Dg" name="streetAddressLine" visibility="private" isOrdered="true" aggregation="composite" isDerived="true">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_DHg4ID5zEd6cla2oXsPtlA"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SUr_gPLAEeGFUPBL8qS7yQ" value="1"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SUqKUPLAEeGFUPBL8qS7yQ" value="*"/>
-        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_00o1ED9GEd6uA6ElmbQH3Q"/>
+        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_00o1ED9GEd6uA6ElmbQH3Q"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_qB12z_IPEeGu1M-cCXg0Dg" name="use" visibility="private">
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7Gd0DcEd6xYZuu1VKCVw"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ii1JEPeQEeGE6_g8dRyaRg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ii0iAPeQEeGE6_g8dRyaRg" value="1"/>
-        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_qe2q4D5zEd6cla2oXsPtlA"/>
+        <subsettedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_qe2q4D5zEd6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_aSeEwPIYEeGu1M-cCXg0Dg" name="USRealmPatientName">
@@ -5648,11 +5648,10 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_zfLAwPbZEeGhu-W52CK0Dg" severity="WARNING" base_Property="_aRe9kPIpEeGu1M-cCXg0Dg"/>
   <CDA:PropertyValidation xmi:id="_GICZUPbaEeGhu-W52CK0Dg" severity="WARNING" base_Property="_bMjqQPIfEeGu1M-cCXg0Dg"/>
-  <CDA:PropertyValidation xmi:id="_x7ehsPePEeGE6_g8dRyaRg" severity="WARNING" base_Property="_qB12z_IPEeGu1M-cCXg0Dg">
-    <ruleId>CONF:7290</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_x7ehsPePEeGE6_g8dRyaRg" severity="WARNING" base_Property="_qB12z_IPEeGu1M-cCXg0Dg"/>
   <CDA:ValueSetConstraint xmi:id="_KITSEPeQEeGE6_g8dRyaRg" base_Property="_qB12z_IPEeGu1M-cCXg0Dg">
     <reference href="../consol-vocab.uml#_x6zGAG1HEeGCevFpokwODw"/>
+    <ruleId>CONF:7290</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_xY4DoCeiEeKFA9nMp1YYPg" base_Property="_wsF2ICeiEeKFA9nMp1YYPg">
     <ruleId>CONF:14840</ruleId>
@@ -5811,4 +5810,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:ConformsTo xmi:id="_T4eEYHyrEeOMoc1VIZQnRQ" base_Generalization="_Luag8D7YEeGvOdejHZ7dYg" requiresParentId="true"/>
   <CDA:ConformsTo xmi:id="_V0tuoHyrEeOMoc1VIZQnRQ" base_Generalization="_UCQbAD_LEeGXieeKs7NJjA" requiresParentId="true"/>
   <CDA:ConformsTo xmi:id="_XylwkHyrEeOMoc1VIZQnRQ" base_Generalization="_2T9DPxSVEeGGzu7fmW9pXw" requiresParentId="true"/>
+  <CDA:Inline xmi:id="_j7FfYCcZEeWsauhFfwCr-g" base_Class="_i4zXgPIPEeGu1M-cCXg0Dg"/>
+  <CDA:AssociationValidation xmi:id="_Rb1xUCcjEeWsauhFfwCr-g" base_Association="_1mbIwjVYEeGIw7CntkyPQw">
+    <ruleId>CONF:5585</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_pQw_ECcjEeWsauhFfwCr-g" base_Property="_2DNR8RSVEeGGzu7fmW9pXw"/>
 </xmi:XMI>

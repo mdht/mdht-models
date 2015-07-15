@@ -102,7 +102,8 @@ public class SubjectiveSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SubjectiveSectionTemplateId"), new Object[] { subjectiveSection }));
+					ConsolPlugin.INSTANCE.getString("SubjectiveSectionSubjectiveSectionTemplateId"),
+					new Object[] { subjectiveSection }));
 			}
 
 			return false;
@@ -162,7 +163,8 @@ public class SubjectiveSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("SubjectiveSectionCode"), new Object[] { subjectiveSection }));
+					ConsolPlugin.INSTANCE.getString("SubjectiveSectionSubjectiveSectionCode"),
+					new Object[] { subjectiveSection }));
 			}
 
 			return false;
@@ -220,7 +222,8 @@ public class SubjectiveSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SubjectiveSectionCodeP"), new Object[] { subjectiveSection }));
+					ConsolPlugin.INSTANCE.getString("SubjectiveSectionSubjectiveSectionCodeP"),
+					new Object[] { subjectiveSection }));
 			}
 
 			return false;
@@ -278,7 +281,8 @@ public class SubjectiveSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("SubjectiveSectionText"), new Object[] { subjectiveSection }));
+					ConsolPlugin.INSTANCE.getString("SubjectiveSectionSubjectiveSectionText"),
+					new Object[] { subjectiveSection }));
 			}
 
 			return false;
@@ -336,7 +340,8 @@ public class SubjectiveSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("SubjectiveSectionTitle"), new Object[] { subjectiveSection }));
+					ConsolPlugin.INSTANCE.getString("SubjectiveSectionSubjectiveSectionTitle"),
+					new Object[] { subjectiveSection }));
 			}
 
 			return false;

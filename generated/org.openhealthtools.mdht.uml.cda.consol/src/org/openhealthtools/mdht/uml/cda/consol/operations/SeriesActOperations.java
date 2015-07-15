@@ -117,7 +117,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERIES_ACT__SERIES_ACT_ID_HAS_ROOT,
-					ConsolPlugin.INSTANCE.getString("SeriesActIdHasRoot"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActIdHasRoot"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -174,7 +174,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERIES_ACT__SERIES_ACT_ID_NO_EXTENSION,
-					ConsolPlugin.INSTANCE.getString("SeriesActIdNoExtension"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActIdNoExtension"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -231,7 +231,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERIES_ACT__SERIES_ACT_CODE_QUALIFIER,
-					ConsolPlugin.INSTANCE.getString("SeriesActCodeQualifier"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActCodeQualifier"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -289,7 +289,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERIES_ACT__SERIES_ACT_CODE_QUALIFIER_CODE,
-					ConsolPlugin.INSTANCE.getString("SeriesActCodeQualifierCode"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActCodeQualifierCode"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -347,7 +347,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERIES_ACT__SERIES_ACT_CODE_QUALIFIER_VALUE,
-					ConsolPlugin.INSTANCE.getString("SeriesActCodeQualifierValue"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActCodeQualifierValue"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -405,7 +405,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERIES_ACT__SERIES_ACT_CODE_QUALIFIER_VALUE_CODE,
-					ConsolPlugin.INSTANCE.getString("SeriesActCodeQualifierValueCode"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActCodeQualifierValueCode"),
+					new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -462,7 +463,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERIES_ACT__SERIES_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SeriesActTemplateId"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActTemplateId"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -519,7 +520,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERIES_ACT__SERIES_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("SeriesActClassCode"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActClassCode"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -576,7 +577,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERIES_ACT__SERIES_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SeriesActMoodCode"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActMoodCode"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -634,7 +635,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.SERIES_ACT__SERIES_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("SeriesActCode"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActCode"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -691,7 +692,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERIES_ACT__SERIES_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("SeriesActEffectiveTime"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActEffectiveTime"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -747,7 +748,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.SERIES_ACT__SERIES_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("SeriesActId"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActId"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -803,7 +804,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.SERIES_ACT__SERIES_ACT_TEXT,
-					ConsolPlugin.INSTANCE.getString("SeriesActText"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActText"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -861,7 +862,8 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SERIES_ACT__SERIES_ACT_SOP_INSTANCE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SeriesActSOPInstanceObservation"), new Object[] { seriesAct }));
+					ConsolPlugin.INSTANCE.getString("SeriesActSeriesActSOPInstanceObservation"),
+					new Object[] { seriesAct }));
 			}
 
 			return false;

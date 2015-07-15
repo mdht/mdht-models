@@ -107,7 +107,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_VALUE_UNITS,
-					ConsolPlugin.INSTANCE.getString("AgeObservationValueUnits"), new Object[] { ageObservation }));
+					ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationValueUnits"),
+					new Object[] { ageObservation }));
 			}
 
 			return false;
@@ -165,7 +166,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AgeObservationTemplateId"), new Object[] { ageObservation }));
+					ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationTemplateId"),
+					new Object[] { ageObservation }));
 			}
 
 			return false;
@@ -223,7 +225,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("AgeObservationClassCode"), new Object[] { ageObservation }));
+					ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationClassCode"),
+					new Object[] { ageObservation }));
 			}
 
 			return false;
@@ -281,7 +284,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("AgeObservationMoodCode"), new Object[] { ageObservation }));
+					ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationMoodCode"),
+					new Object[] { ageObservation }));
 			}
 
 			return false;
@@ -338,7 +342,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AgeObservationCodeP"), new Object[] { ageObservation }));
+					ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationCodeP"),
+					new Object[] { ageObservation }));
 			}
 
 			if (context != null) {
@@ -417,7 +422,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("AgeObservationCode"), new Object[] { ageObservation }));
+					ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationCode"),
+					new Object[] { ageObservation }));
 			}
 
 			return false;
@@ -476,7 +482,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("AgeObservationStatusCode"), new Object[] { ageObservation }));
+					ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationStatusCode"),
+					new Object[] { ageObservation }));
 			}
 
 			return false;
@@ -534,7 +541,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("AgeObservationStatusCodeP"), new Object[] { ageObservation }));
+					ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationStatusCodeP"),
+					new Object[] { ageObservation }));
 			}
 
 			return false;
@@ -591,7 +599,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("AgeObservationValue"), new Object[] { ageObservation }));
+					ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationValue"),
+					new Object[] { ageObservation }));
 			}
 
 			return false;

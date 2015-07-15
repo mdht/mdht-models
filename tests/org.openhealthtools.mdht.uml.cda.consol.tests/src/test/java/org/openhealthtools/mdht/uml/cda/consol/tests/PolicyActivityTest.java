@@ -908,6 +908,52 @@ public class PolicyActivityTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode() {
+		OperationsTestCase<PolicyActivity> validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<PolicyActivity>(
+			"validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity target) {
+				target.init();
+				target.getPerformers().clear();
+				Performer2 payer = createPerformer();
+				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+				target.getPerformers().add(payer);
+				AssignedEntity payerEntity = createPayerAssignedEntity();
+				payer.setAssignedEntity(payerEntity);
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity target) {
+				target.getPerformers().clear();
+				Performer2 payer = createPerformer();
+				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
+				target.getPerformers().add(payer);
+				AssignedEntity payerEntity = createPayerAssignedEntity();
+				payerEntity.getAddrs().clear();
+				payerEntity.getAddrs().add(createUSRealmAddress());
+				payer.setAssignedEntity(payerEntity);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+					(PolicyActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated not
 	*/
 	@Test
@@ -953,52 +999,6 @@ public class PolicyActivityTest extends CDAValidationTest {
 		};
 
 		validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountryTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode() {
-		OperationsTestCase<PolicyActivity> validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<PolicyActivity>(
-			"validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-					(PolicyActivity) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(PolicyActivity target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payer.setAssignedEntity(payerEntity);
-			}
-
-			@Override
-			protected void updateToPass(PolicyActivity target) {
-				target.getPerformers().clear();
-				Performer2 payer = createPerformer();
-				payer.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(PAYER_PERFORMER_ROOT));
-				target.getPerformers().add(payer);
-				AssignedEntity payerEntity = createPayerAssignedEntity();
-				payerEntity.getAddrs().clear();
-				payerEntity.getAddrs().add(createUSRealmAddress());
-				payer.setAssignedEntity(payerEntity);
-			}
-
-		};
-
-		validatePolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
 	}
 
 	/**
@@ -1850,6 +1850,53 @@ public class PolicyActivityTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode() {
+		OperationsTestCase<PolicyActivity> validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<PolicyActivity>(
+			"validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity target) {
+				target.init();
+				target.getPerformers().clear();
+				Performer2 guarantor = createPerformer();
+				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+				target.getPerformers().add(guarantor);
+				AssignedEntity gEntity = createGuarantorAssignedEntity();
+				guarantor.setAssignedEntity(gEntity);
+				gEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity target) {
+				target.getPerformers().clear();
+				Performer2 guarantor = createPerformer();
+				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
+				target.getPerformers().add(guarantor);
+				AssignedEntity gEntity = createGuarantorAssignedEntity();
+				guarantor.setAssignedEntity(gEntity);
+				gEntity.getAddrs().clear();
+				gEntity.getAddrs().add(createUSRealmAddress());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
+					(PolicyActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated not
 	*/
 	@Test
@@ -1893,53 +1940,6 @@ public class PolicyActivityTest extends CDAValidationTest {
 		};
 
 		validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountryTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode() {
-		OperationsTestCase<PolicyActivity> validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<PolicyActivity>(
-			"validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-					(PolicyActivity) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(PolicyActivity target) {
-				target.init();
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-			}
-
-			@Override
-			protected void updateToPass(PolicyActivity target) {
-				target.getPerformers().clear();
-				Performer2 guarantor = createPerformer();
-				guarantor.getTemplateIds().add(DatatypesFactory.eINSTANCE.createII(GUARANTOR_PERFORMER_ROOT));
-				target.getPerformers().add(guarantor);
-				AssignedEntity gEntity = createGuarantorAssignedEntity();
-				guarantor.setAssignedEntity(gEntity);
-				gEntity.getAddrs().clear();
-				gEntity.getAddrs().add(createUSRealmAddress());
-			}
-
-		};
-
-		validatePolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
 	}
 
 	/**
@@ -2779,6 +2779,46 @@ public class PolicyActivityTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressPostalCode() {
+		OperationsTestCase<PolicyActivity> validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<PolicyActivity>(
+			"validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity target) {
+				target.getParticipants().clear();
+				Participant2 coverage = createCoverage();
+				target.getParticipants().add(coverage);
+				coverage.getParticipantRole().getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity target) {
+				target.getParticipants().clear();
+				Participant2 coverage = createCoverage();
+				target.getParticipants().add(coverage);
+				coverage.getParticipantRole().getAddrs().add(createUSRealmAddress());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressPostalCode(
+					(PolicyActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated not
 	*/
 	@Test
@@ -2815,46 +2855,6 @@ public class PolicyActivityTest extends CDAValidationTest {
 		};
 
 		validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressCountryTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressPostalCode() {
-		OperationsTestCase<PolicyActivity> validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<PolicyActivity>(
-			"validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressPostalCode(
-					(PolicyActivity) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(PolicyActivity target) {
-				target.getParticipants().clear();
-				Participant2 coverage = createCoverage();
-				target.getParticipants().add(coverage);
-				coverage.getParticipantRole().getAddrs().add(DatatypesFactory.eINSTANCE.createAD());
-			}
-
-			@Override
-			protected void updateToPass(PolicyActivity target) {
-				target.getParticipants().clear();
-				Participant2 coverage = createCoverage();
-				target.getParticipants().add(coverage);
-				coverage.getParticipantRole().getAddrs().add(createUSRealmAddress());
-
-			}
-
-		};
-
-		validatePolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
 	}
 
 	/**
@@ -3683,6 +3683,54 @@ public class PolicyActivityTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressPostalCode() {
+		OperationsTestCase<PolicyActivity> validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<PolicyActivity>(
+			"validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressPostalCode",
+			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity target) {
+				target.getParticipants().clear();
+				Participant2 holder = CDAFactory.eINSTANCE.createParticipant2();
+				holder.setTypeCode(ParticipationType.HLD);
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+				AD ad = DatatypesFactory.eINSTANCE.createAD();
+				pr.getAddrs().add(ad);
+				holder.setParticipantRole(pr);
+				target.getParticipants().add(holder);
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity target) {
+				target.getParticipants().clear();
+				Participant2 holder = CDAFactory.eINSTANCE.createParticipant2();
+				holder.setTypeCode(ParticipationType.HLD);
+				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
+
+				pr.getAddrs().add(createUSRealmAddress());
+				holder.setParticipantRole(pr);
+				target.getParticipants().add(holder);
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressPostalCode(
+					(PolicyActivity) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated not
 	*/
 	@Test
@@ -3729,53 +3777,13 @@ public class PolicyActivityTest extends CDAValidationTest {
 		validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressCountryTestCase.doValidationTest();
 	}
 
-	/**
-	*
-	* @generated not
-	*/
-	@Test
-	public void testValidatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressPostalCode() {
-		OperationsTestCase<PolicyActivity> validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<PolicyActivity>(
-			"validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
+	//
 
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressPostalCode(
-					(PolicyActivity) objectToTest, diagnostician, map);
-			}
-
-			@Override
-			protected void updateToFail(PolicyActivity target) {
-				target.getParticipants().clear();
-				Participant2 holder = CDAFactory.eINSTANCE.createParticipant2();
-				holder.setTypeCode(ParticipationType.HLD);
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-				AD ad = DatatypesFactory.eINSTANCE.createAD();
-				pr.getAddrs().add(ad);
-				holder.setParticipantRole(pr);
-				target.getParticipants().add(holder);
-			}
-
-			@Override
-			protected void updateToPass(PolicyActivity target) {
-				target.getParticipants().clear();
-				Participant2 holder = CDAFactory.eINSTANCE.createParticipant2();
-				holder.setTypeCode(ParticipationType.HLD);
-				ParticipantRole pr = CDAFactory.eINSTANCE.createParticipantRole();
-
-				pr.getAddrs().add(createUSRealmAddress());
-				holder.setParticipantRole(pr);
-				target.getParticipants().add(holder);
-
-			}
-
-		};
-
-		validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
-	}
+	//
+	// };
+	//
+	// validatePolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase.doValidationTest();
+	// }
 
 	/**
 	*
@@ -4380,6 +4388,7 @@ public class PolicyActivityTest extends CDAValidationTest {
 	* @generated
 	*/
 	private static class ObjectFactory implements TestObjectFactory<PolicyActivity> {
+		@Override
 		public PolicyActivity create() {
 			return ConsolFactory.eINSTANCE.createPolicyActivity();
 		}
@@ -4461,7 +4470,7 @@ public class PolicyActivityTest extends CDAValidationTest {
 		return holder;
 	}
 
-	private AD createUSRealmAddress() {
+	public static AD createUSRealmAddress() {
 		AD addr = DatatypesFactory.eINSTANCE.createAD();
 		addr.getUses().add(PostalAddressUse.HP);
 		addr.addStreetAddressLine("123 Main Street");
@@ -4471,7 +4480,6 @@ public class PolicyActivityTest extends CDAValidationTest {
 		addr.addPostalCode("01001");
 
 		return addr;
-
 	}
 
 } // PolicyActivityOperations

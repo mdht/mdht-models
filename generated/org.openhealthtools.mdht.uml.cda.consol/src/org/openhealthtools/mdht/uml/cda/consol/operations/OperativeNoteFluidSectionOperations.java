@@ -103,7 +103,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE_FLUID_SECTION__OPERATIVE_NOTE_FLUID_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionTemplateId"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionOperativeNoteFluidSectionTemplateId"),
 					new Object[] { operativeNoteFluidSection }));
 			}
 
@@ -164,7 +164,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE_FLUID_SECTION__OPERATIVE_NOTE_FLUID_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionCode"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionOperativeNoteFluidSectionCode"),
 					new Object[] { operativeNoteFluidSection }));
 			}
 
@@ -223,7 +223,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE_FLUID_SECTION__OPERATIVE_NOTE_FLUID_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionCodeP"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionOperativeNoteFluidSectionCodeP"),
 					new Object[] { operativeNoteFluidSection }));
 			}
 
@@ -282,7 +282,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE_FLUID_SECTION__OPERATIVE_NOTE_FLUID_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionText"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionOperativeNoteFluidSectionText"),
 					new Object[] { operativeNoteFluidSection }));
 			}
 
@@ -341,7 +341,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.OPERATIVE_NOTE_FLUID_SECTION__OPERATIVE_NOTE_FLUID_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionTitle"),
+					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionOperativeNoteFluidSectionTitle"),
 					new Object[] { operativeNoteFluidSection }));
 			}
 

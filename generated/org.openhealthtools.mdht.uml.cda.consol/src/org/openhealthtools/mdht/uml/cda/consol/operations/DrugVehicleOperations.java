@@ -103,7 +103,8 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_CODE,
-					ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntityCode"), new Object[] { drugVehicle }));
+					ConsolPlugin.INSTANCE.getString("DrugVehicleDrugVehiclePlayingEntityCode"),
+					new Object[] { drugVehicle }));
 			}
 
 			return false;
@@ -161,7 +162,8 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_NAME,
-					ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntityName"), new Object[] { drugVehicle }));
+					ConsolPlugin.INSTANCE.getString("DrugVehicleDrugVehiclePlayingEntityName"),
+					new Object[] { drugVehicle }));
 			}
 
 			return false;
@@ -218,7 +220,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DrugVehicleTemplateId"), new Object[] { drugVehicle }));
+					ConsolPlugin.INSTANCE.getString("DrugVehicleDrugVehicleTemplateId"), new Object[] { drugVehicle }));
 			}
 
 			return false;
@@ -275,7 +277,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("DrugVehicleClassCode"), new Object[] { drugVehicle }));
+					ConsolPlugin.INSTANCE.getString("DrugVehicleDrugVehicleClassCode"), new Object[] { drugVehicle }));
 			}
 
 			return false;
@@ -334,7 +336,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CODE,
-					ConsolPlugin.INSTANCE.getString("DrugVehicleCode"), new Object[] { drugVehicle }));
+					ConsolPlugin.INSTANCE.getString("DrugVehicleDrugVehicleCode"), new Object[] { drugVehicle }));
 			}
 
 			return false;
@@ -392,7 +394,8 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY,
-					ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntity"), new Object[] { drugVehicle }));
+					ConsolPlugin.INSTANCE.getString("DrugVehicleDrugVehiclePlayingEntity"),
+					new Object[] { drugVehicle }));
 			}
 
 			return false;

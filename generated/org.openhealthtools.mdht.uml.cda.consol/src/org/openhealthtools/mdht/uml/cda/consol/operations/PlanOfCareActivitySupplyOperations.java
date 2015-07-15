@@ -101,7 +101,7 @@ public class PlanOfCareActivitySupplyOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_SUPPLY__PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySupplyTemplateId"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySupplyPlanOfCareActivitySupplyTemplateId"),
 					new Object[] { planOfCareActivitySupply }));
 			}
 
@@ -160,7 +160,7 @@ public class PlanOfCareActivitySupplyOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_SUPPLY__PLAN_OF_CARE_ACTIVITY_SUPPLY_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySupplyClassCode"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySupplyPlanOfCareActivitySupplyClassCode"),
 					new Object[] { planOfCareActivitySupply }));
 			}
 
@@ -221,7 +221,7 @@ public class PlanOfCareActivitySupplyOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_SUPPLY__PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySupplyMoodCode"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySupplyPlanOfCareActivitySupplyMoodCode"),
 					new Object[] { planOfCareActivitySupply }));
 			}
 
@@ -280,7 +280,7 @@ public class PlanOfCareActivitySupplyOperations extends SupplyOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PLAN_OF_CARE_ACTIVITY_SUPPLY__PLAN_OF_CARE_ACTIVITY_SUPPLY_ID,
-					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySupplyId"),
+					ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySupplyPlanOfCareActivitySupplyId"),
 					new Object[] { planOfCareActivitySupply }));
 			}
 

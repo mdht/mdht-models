@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSOPInstanceObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SOPInstanceObservationTemplateId SOPInstanceObservationEffectiveTimeHasValue SOPInstanceObservationEffectiveTimeNoLow SOPInstanceObservationEffectiveTimeNoHigh SOPInstanceObservationTextMediaType SOPInstanceObservationTextReference SOPInstanceObservationTextReferenceValue SOPInstanceObservationClassCode SOPInstanceObservationId SOPInstanceObservationMoodCode SOPInstanceObservationCode SOPInstanceObservationCodeP' templateId.root='2.16.840.1.113883.10.20.6.2.8' classCode='DGIMG' constraints.validation.warning='SOPInstanceObservationEffectiveTime SOPInstanceObservationText' moodCode='EVN' code.codeSystem='1.2.840.10008.2.6.1' code.codeSystemName='DCMUID' constraints.validation.dependOn.SOPInstanceObservationCode='SOPInstanceObservationCodeP' constraints.validation.info='SOPInstanceObservation SOPInstanceObservationPurposeofReferenceObservation SOPInstanceObservationReferencedFramesObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SOPInstanceObservationTemplateId SOPInstanceObservationEffectiveTimeHasValue SOPInstanceObservationEffectiveTimeNoLow SOPInstanceObservationEffectiveTimeNoHigh SOPInstanceObservationTextMediaType SOPInstanceObservationTextReference SOPInstanceObservationTextReferenceValue SOPInstanceObservationClassCode SOPInstanceObservationId SOPInstanceObservationMoodCode SOPInstanceObservationCode SOPInstanceObservationCodeP' templateId.root='2.16.840.1.113883.10.20.6.2.8' classCode='DGIMG' constraints.validation.warning='SOPInstanceObservationEffectiveTime SOPInstanceObservationText' moodCode='EVN' code.codeSystem='1.2.840.10008.2.6.1' code.codeSystemName='DCMUID' constraints.validation.dependOn.SOPInstanceObservationCode='SOPInstanceObservationCodeP' constraints.validation.info='SOPInstanceObservationSOPInstanceObservation SOPInstanceObservationPurposeofReferenceObservation SOPInstanceObservationReferencedFramesObservation'"
  * @generated
  */
 public interface SOPInstanceObservation extends Observation {
@@ -200,7 +200,7 @@ public interface SOPInstanceObservation extends Observation {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -208,7 +208,8 @@ public interface SOPInstanceObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SOPInstanceObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
 	 * @generated
 	 */
-	boolean validateSOPInstanceObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSOPInstanceObservationSOPInstanceObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

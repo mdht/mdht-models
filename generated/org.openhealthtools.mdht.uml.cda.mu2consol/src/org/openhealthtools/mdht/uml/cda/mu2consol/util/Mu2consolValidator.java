@@ -1080,6 +1080,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+							generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
 							generalHeaderConstraints, diagnostics, context);
 		}
@@ -1961,6 +1966,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
+							generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 							generalHeaderConstraints, diagnostics, context);
 		}
@@ -2172,11 +2182,6 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							generalHeaderConstraints, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName(
 							generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -2629,6 +2634,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+							summaryOfCareRecord, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
 							summaryOfCareRecord, diagnostics, context);
 		}
@@ -3510,6 +3520,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
+							summaryOfCareRecord, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 							summaryOfCareRecord, diagnostics, context);
 		}
@@ -3721,11 +3736,6 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							summaryOfCareRecord, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName(
 							summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5287,6 +5297,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+							clinicalOfficeVisitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
 							clinicalOfficeVisitSummary, diagnostics, context);
 		}
@@ -6168,6 +6183,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
+							clinicalOfficeVisitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 							clinicalOfficeVisitSummary, diagnostics, context);
 		}
@@ -6379,11 +6399,6 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							clinicalOfficeVisitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName(
 							clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -7044,6 +7059,12 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+							transitionOfCareAmbulatorySummary, diagnostics,
+							context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
 							transitionOfCareAmbulatorySummary, diagnostics,
 							context);
@@ -8094,6 +8115,12 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
+							transitionOfCareAmbulatorySummary, diagnostics,
+							context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 							transitionOfCareAmbulatorySummary, diagnostics,
 							context);
@@ -8347,12 +8374,6 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName(
 							transitionOfCareAmbulatorySummary, diagnostics,
 							context);
 		}
@@ -8770,6 +8791,12 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+							transitionOfCareInpatientSummary, diagnostics,
+							context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
 							transitionOfCareInpatientSummary, diagnostics,
 							context);
@@ -9820,6 +9847,12 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
+							transitionOfCareInpatientSummary, diagnostics,
+							context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 							transitionOfCareInpatientSummary, diagnostics,
 							context);
@@ -10073,12 +10106,6 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName(
 							transitionOfCareInpatientSummary, diagnostics,
 							context);
 		}
@@ -10464,6 +10491,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+							viewDownloadTransmitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
 							viewDownloadTransmitSummary, diagnostics, context);
 		}
@@ -11345,6 +11377,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
+							viewDownloadTransmitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 							viewDownloadTransmitSummary, diagnostics, context);
 		}
@@ -11556,11 +11593,6 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							viewDownloadTransmitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName(
 							viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -11958,6 +11990,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+							vdtInpatientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
 							vdtInpatientSummary, diagnostics, context);
 		}
@@ -12839,6 +12876,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
+							vdtInpatientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 							vdtInpatientSummary, diagnostics, context);
 		}
@@ -13050,11 +13092,6 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							vdtInpatientSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName(
 							vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -13459,6 +13496,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+							vdtAmbulatorySummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
 							vdtAmbulatorySummary, diagnostics, context);
 		}
@@ -14340,6 +14382,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
+							vdtAmbulatorySummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
 							vdtAmbulatorySummary, diagnostics, context);
 		}
@@ -14551,11 +14598,6 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							vdtAmbulatorySummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName(
 							vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -14955,7 +14997,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
-					.validateResultObservation_validateResultObservationTextReference(
+					.validateCognitiveStatusResultObservation_validateResultObservationTextReference(
 							cognitiveStatusResultObservation, diagnostics,
 							context);
 		}
@@ -14967,7 +15009,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
-					.validateResultObservation_validateResultObservationTextReferenceValue(
+					.validateCognitiveStatusResultObservation_validateResultObservationTextReferenceValue(
 							cognitiveStatusResultObservation, diagnostics,
 							context);
 		}
@@ -15062,18 +15104,6 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultObservation_validateResultObservationTargetSiteCode(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationTextReference(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationTextReferenceValue(
 							cognitiveStatusResultObservation, diagnostics,
 							context);
 		}
@@ -15321,7 +15351,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
-					.validateResultObservation_validateResultObservationTextReference(
+					.validateFunctionalStatusResultObservation_validateResultObservationTextReference(
 							functionalStatusResultObservation, diagnostics,
 							context);
 		}
@@ -15333,7 +15363,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
-					.validateResultObservation_validateResultObservationTextReferenceValue(
+					.validateFunctionalStatusResultObservation_validateResultObservationTextReferenceValue(
 							functionalStatusResultObservation, diagnostics,
 							context);
 		}
@@ -15428,18 +15458,6 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultObservation_validateResultObservationTargetSiteCode(
-							functionalStatusResultObservation, diagnostics,
-							context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationTextReference(
-							functionalStatusResultObservation, diagnostics,
-							context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationTextReferenceValue(
 							functionalStatusResultObservation, diagnostics,
 							context);
 		}

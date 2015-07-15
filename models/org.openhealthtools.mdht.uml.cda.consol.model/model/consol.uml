@@ -910,14 +910,14 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
       </ownedAttribute>
       <ownedAttribute xmi:id="_z63WbOcDEeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z63WbucDEeGINOJ_SD9_dA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z63WbecDEeGINOJ_SD9_dA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vZvlMCaDEeWsauhFfwCr-g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vZu-ICaDEeWsauhFfwCr-g" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_z63WYucDEeGINOJ_SD9_dA" name="effectiveTime" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z63WZOcDEeGINOJ_SD9_dA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z63WY-cDEeGINOJ_SD9_dA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WDyXoSaFEeWsauhFfwCr-g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WDyXoCaFEeWsauhFfwCr-g" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_z7BHYOcDEeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
@@ -2829,4 +2829,12 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:AssociationValidation xmi:id="_VUs-UO2oEeOchpob7ipcww" severity="WARNING" base_Association="_HbZFIO2oEeOchpob7ipcww">
     <ruleId>CONF:8306</ruleId>
   </CDA:AssociationValidation>
+  <CDA:CodeSystemConstraint xmi:id="_qoigACaDEeWsauhFfwCr-g" code="completed" base_Property="_z63WbOcDEeGINOJ_SD9_dA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:14394</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_enFq4CaEEeWsauhFfwCr-g" base_Property="_z63WbOcDEeGINOJ_SD9_dA"/>
+  <CDA:PropertyValidation xmi:id="_VTEFUCaFEeWsauhFfwCr-g" base_Property="_z63WYucDEeGINOJ_SD9_dA">
+    <ruleId>CONF:14395</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

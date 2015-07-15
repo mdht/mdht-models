@@ -102,7 +102,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("BoundaryObservationTemplateId"),
+					ConsolPlugin.INSTANCE.getString("BoundaryObservationBoundaryObservationTemplateId"),
 					new Object[] { boundaryObservation }));
 			}
 
@@ -161,7 +161,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("BoundaryObservationClassCode"),
+					ConsolPlugin.INSTANCE.getString("BoundaryObservationBoundaryObservationClassCode"),
 					new Object[] { boundaryObservation }));
 			}
 
@@ -222,7 +222,8 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("BoundaryObservationCode"), new Object[] { boundaryObservation }));
+					ConsolPlugin.INSTANCE.getString("BoundaryObservationBoundaryObservationCode"),
+					new Object[] { boundaryObservation }));
 			}
 
 			return false;
@@ -280,7 +281,7 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("BoundaryObservationMoodCode"),
+					ConsolPlugin.INSTANCE.getString("BoundaryObservationBoundaryObservationMoodCode"),
 					new Object[] { boundaryObservation }));
 			}
 
@@ -339,7 +340,8 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("BoundaryObservationValue"), new Object[] { boundaryObservation }));
+					ConsolPlugin.INSTANCE.getString("BoundaryObservationBoundaryObservationValue"),
+					new Object[] { boundaryObservation }));
 			}
 
 			return false;
