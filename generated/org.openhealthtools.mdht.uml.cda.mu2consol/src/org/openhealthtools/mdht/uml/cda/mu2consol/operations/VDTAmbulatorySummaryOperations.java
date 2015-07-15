@@ -248,7 +248,7 @@ public class VDTAmbulatorySummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY,
 					Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY
-							.getEAllOperations().get(309));
+							.getEAllOperations().get(310));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);

@@ -1251,7 +1251,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(308));
+							.getEAllOperations().get(309));
 			try {
 				RETRIEVE_INSTRUCTIONS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_INSTRUCTIONS_SECTION__EOCL_EXP);
@@ -1286,7 +1286,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(309));
+							.getEAllOperations().get(310));
 			try {
 				RETRIEVE_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
@@ -1369,7 +1369,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(317));
+							.getEAllOperations().get(318));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper
 						.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
@@ -1428,7 +1428,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(310));
+							.getEAllOperations().get(311));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper
 						.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
@@ -1485,7 +1485,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(311));
+							.getEAllOperations().get(312));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
@@ -1543,7 +1543,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(312));
+							.getEAllOperations().get(313));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper
 						.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
@@ -1600,7 +1600,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(313));
+							.getEAllOperations().get(314));
 			try {
 				GET_RESULTS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
@@ -1657,7 +1657,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(314));
+							.getEAllOperations().get(315));
 			try {
 				GET_PROCEDURES_SECTION__EOCL_QRY = helper
 						.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
@@ -1715,7 +1715,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(315));
+							.getEAllOperations().get(316));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
@@ -1751,7 +1751,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(318));
+							.getEAllOperations().get(319));
 			try {
 				GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper
 						.createQuery(GET_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
@@ -1858,7 +1858,7 @@ public class ClinicalOfficeVisitSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY,
 					Mu2consolPackage.Literals.CLINICAL_OFFICE_VISIT_SUMMARY
-							.getEAllOperations().get(316));
+							.getEAllOperations().get(317));
 			try {
 				GET_INSTRUCTIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_INSTRUCTIONS_SECTION__EOCL_EXP);

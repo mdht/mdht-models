@@ -344,7 +344,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY,
 					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY
-							.getEAllOperations().get(317));
+							.getEAllOperations().get(318));
 			try {
 				GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);

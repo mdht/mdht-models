@@ -873,7 +873,7 @@ public class SummaryOfCareRecordOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(303));
+							.getEAllOperations().get(304));
 			try {
 				RETRIEVE_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
@@ -932,7 +932,7 @@ public class SummaryOfCareRecordOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(304));
+							.getEAllOperations().get(305));
 			try {
 				RETRIEVE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -992,7 +992,7 @@ public class SummaryOfCareRecordOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(305));
+							.getEAllOperations().get(306));
 			try {
 				RETRIEVE_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -1052,7 +1052,7 @@ public class SummaryOfCareRecordOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(306));
+							.getEAllOperations().get(307));
 			try {
 				RETRIEVE_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -1111,7 +1111,7 @@ public class SummaryOfCareRecordOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(307));
+							.getEAllOperations().get(308));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper
 						.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
@@ -1168,7 +1168,7 @@ public class SummaryOfCareRecordOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(308));
+							.getEAllOperations().get(309));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper
 						.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
@@ -1225,7 +1225,7 @@ public class SummaryOfCareRecordOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(309));
+							.getEAllOperations().get(310));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
@@ -1283,7 +1283,7 @@ public class SummaryOfCareRecordOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(310));
+							.getEAllOperations().get(311));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper
 						.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
@@ -1341,7 +1341,7 @@ public class SummaryOfCareRecordOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(311));
+							.getEAllOperations().get(312));
 			try {
 				GET_RESULTS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
@@ -1398,7 +1398,7 @@ public class SummaryOfCareRecordOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(312));
+							.getEAllOperations().get(313));
 			try {
 				GET_PROCEDURES_SECTION__EOCL_QRY = helper
 						.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
@@ -1456,7 +1456,7 @@ public class SummaryOfCareRecordOperations extends
 			helper.setOperationContext(
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
 					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(313));
+							.getEAllOperations().get(314));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
