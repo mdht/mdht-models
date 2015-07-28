@@ -3194,15 +3194,12 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_h9zhUPylEeOc0tW1-DpN-Q" base_Class="_ctJgAPylEeOc0tW1-DpN-Q" templateId="2.16.840.1.113883.10.20.22.2.43" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-9930</ruleId>
-    <ruleId>CONF:1098-10391</ruleId>
-    <ruleId>CONF:1098-32563</ruleId>
+    <ruleId>CONF:1098-9930, CONF:1098-10391, CONF:1098-32563</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_w8AmAPylEeOc0tW1-DpN-Q" base_Generalization="_ctL8QPylEeOc0tW1-DpN-Q"/>
   <CDA:CodeSystemConstraint xmi:id="_4hbNUPynEeOc0tW1-DpN-Q" code="42347-5" displayName="Admission diagnosis" base_Property="_4hamQPynEeOc0tW1-DpN-Q">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15480</ruleId>
-    <ruleId>CONF:1098-30865</ruleId>
+    <ruleId>CONF:1098-15480, CONF:1098-30865</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_4hdpkPynEeOc0tW1-DpN-Q" base_Property="_4hamQPynEeOc0tW1-DpN-Q">
     <ruleId>CONF:1098-15479</ruleId>
@@ -3211,8 +3208,7 @@ See also the Assessment Section: templateId 2.16.840.1.113883.10.20.22.2.8 and P
     <ownedEnd xmi:id="_W3bicPyoEeOc0tW1-DpN-Q" type="_ctJgAPylEeOc0tW1-DpN-Q" association="_W3a7YPyoEeOc0tW1-DpN-Q"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_ZKzTQPyoEeOc0tW1-DpN-Q" severity="WARNING" base_Association="_W3a7YPyoEeOc0tW1-DpN-Q">
-    <ruleId>CONF:9934</ruleId>
-    <ruleId>CONF:15481</ruleId>
+    <ruleId>CONF:1198-9934, CONF:1198-15481</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_k8L2YP1HEeOVx4YMwgfjlA" clientDependency="_BgsYsP1IEeOVx4YMwgfjlA" name="InstructionsSection2">
     <ownedComment xmi:id="_4mmykP1HEeOVx4YMwgfjlA">

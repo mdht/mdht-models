@@ -4023,11 +4023,10 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_kbOY0OZkEeGINOJ_SD9_dA" base_Property="_f4E9wOZkEeGINOJ_SD9_dA">
     <ruleId>CONF:14851</ruleId>
-    <ruleId>R2.0=CONF:14851</ruleId>
+    <ruleId>R2.1=CONF:1198-14851</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_oT1CEOZkEeGINOJ_SD9_dA" base_Property="_f4E9yOZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14852</ruleId>
-    <ruleId>R2.0=CONF:14852</ruleId>
+    <ruleId>CONF:14852, R2.1=CONF:1198-14852</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_qga1cOZkEeGINOJ_SD9_dA" base_Class="_lm3boOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.79">
     <ruleId>CONF:14871</ruleId>
