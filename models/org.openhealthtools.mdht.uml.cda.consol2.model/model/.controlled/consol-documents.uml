@@ -392,7 +392,9 @@ value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'ADOPT' or value.
               <ownedRule xmi:id="_7XFBIOxlEeG7k4bbVdXbXw" name="HasState" constrainedElement="_TGgbcCymEeGMXrZ0DiQwGg">
                 <specification xmi:type="uml:OpaqueExpression" xmi:id="__kVEsOxlEeG7k4bbVdXbXw">
                   <language>Analysis</language>
+                  <language>OCL</language>
                   <body>If country is US, this addr SHALL contain exactly one [1..1] state, which SHALL be selected from ValueSet StateValueSet 2.16.840.1.113883.3.88.12.80.1 DYNAMIC</body>
+                  <body>(addr.country->exists(curCountry | not curCountry.oclIsUndefined() and curCountry = 'US')) and (addr.state->isEmpty() or addr.state->exists(curState | curState.isNullFlavorUndefined())) implies addr.state->size() = 1</body>
                 </specification>
               </ownedRule>
               <generalization xmi:id="_TGgbcSymEeGMXrZ0DiQwGg">
@@ -5423,7 +5425,7 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>CONF:5403, R2.1=CONF:1198-5403</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_PktYEOxmEeG7k4bbVdXbXw" base_Constraint="_7XFBIOxlEeG7k4bbVdXbXw">
-    <ruleId>CONF:5402, R2.1=CONF:1198-5402</ruleId>
+    <ruleId>CONF:5402</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_zpgcAOxmEeG7k4bbVdXbXw" severity="WARNING" base_Property="_xqTkYOxmEeG7k4bbVdXbXw">
     <ruleId>CONF:7994, CONF:1198-7994</ruleId>
@@ -5994,12 +5996,16 @@ OIDs SHALL be no more than 64 characters in length..</body>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G1lQERwQEeSMr-NWzQuDBw" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_Iy9GQBwREeSMr-NWzQuDBw" name="languageCommunication" type="_VUSf4BwREeSMr-NWzQuDBw" redefinedProperty="_GmM4YCytEeGMXrZ0DiQwGg" association="_Iy-UYBwREeSMr-NWzQuDBw">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CRA48Yu_EeSZu6J-Yjmr9w" value="1"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CRA48Iu_EeSZu6J-Yjmr9w" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WIDSUTWIEeWSirBmKjo0Zw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WIDSUDWIEeWSirBmKjo0Zw" value="*"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_7Ga1IIurEeSZu6J-Yjmr9w" name="birthTime" visibility="private" type="_IfyC8IusEeSZu6J-Yjmr9w" aggregation="composite" redefinedProperty="_7Os40CylEeGMXrZ0DiQwGg">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7Ga1IYurEeSZu6J-Yjmr9w" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Ga1IourEeSZu6J-Yjmr9w" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_iX7XQDWCEeWSirBmKjo0Zw" name="birthplace" type="_FTY0kDWDEeWSirBmKjo0Zw" redefinedProperty="_ypIF8CysEeGMXrZ0DiQwGg" association="_iX9zgDWCEeWSirBmKjo0Zw">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oI-v4TWCEeWSirBmKjo0Zw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oI-v4DWCEeWSirBmKjo0Zw" value="1"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_al6nABwQEeSMr-NWzQuDBw" name="Guardian">
             <ownedRule xmi:id="_ildAUFP-EeSRgsl8Ss66oQ" name="CodeFromPersonalRelationshipOrResponsibleParty">
@@ -6068,6 +6074,24 @@ OIDs SHALL be no more than 64 characters in length..</body>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JiljwYusEeSZu6J-Yjmr9w" value="1"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JiljwousEeSZu6J-Yjmr9w" value="1"/>
             </ownedAttribute>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_FTY0kDWDEeWSirBmKjo0Zw" name="Birthplace">
+            <generalization xmi:id="_FTZboDWDEeWSirBmKjo0Zw" general="_NOxMACymEeGMXrZ0DiQwGg"/>
+            <ownedAttribute xmi:id="_eVZOkDWFEeWSirBmKjo0Zw" name="place" type="_vrBdoDWFEeWSirBmKjo0Zw" redefinedProperty="_5KzqQCysEeGMXrZ0DiQwGg" association="_eVbDwDWFEeWSirBmKjo0Zw">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jepnYTWFEeWSirBmKjo0Zw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jepnYDWFEeWSirBmKjo0Zw" value="1"/>
+            </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_vrBdoDWFEeWSirBmKjo0Zw" name="Place">
+              <ownedRule xmi:id="_FtyxQDWGEeWSirBmKjo0Zw" name="HasState">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_FtyxQTWGEeWSirBmKjo0Zw">
+                  <language>OCL</language>
+                  <language>Analysis</language>
+                  <body>(addr.country->exists(curCountry | not curCountry.oclIsUndefined() and curCountry = 'US')) and (addr.state->isEmpty() or addr.state->exists(curState | curState.isNullFlavorUndefined())) implies addr.state->size() = 1</body>
+                  <body>If country is US, this addr SHALL contain exactly one [1..1] state, which SHALL be selected from ValueSet StateValueSet 2.16.840.1.113883.3.88.12.80.1 DYNAMIC (CONF:1198-5402). Note: A nullFlavor of 'UNK' may be used if the state is unknown.</body>
+                </specification>
+              </ownedRule>
+              <generalization xmi:id="_vrCEsDWFEeWSirBmKjo0Zw" general="_TGgbcCymEeGMXrZ0DiQwGg"/>
+            </nestedClassifier>
           </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
@@ -9016,12 +9040,12 @@ When indicating the performer was the primary care physician the functionCode sh
   <uml:Association xmi:id="_Iy-UYBwREeSMr-NWzQuDBw" memberEnd="_Iy9GQBwREeSMr-NWzQuDBw _Iy-UYRwREeSMr-NWzQuDBw">
     <ownedEnd xmi:id="_Iy-UYRwREeSMr-NWzQuDBw" type="_AaXVkBwPEeSMr-NWzQuDBw" association="_Iy-UYBwREeSMr-NWzQuDBw"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_LnzMcBwREeSMr-NWzQuDBw" base_Association="_Iy-UYBwREeSMr-NWzQuDBw">
+  <CDA:AssociationValidation xmi:id="_LnzMcBwREeSMr-NWzQuDBw" severity="WARNING" base_Association="_Iy-UYBwREeSMr-NWzQuDBw">
     <ruleId>CONF:1198-5406</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_XtDuExwREeSMr-NWzQuDBw" base_Property="_XtDuEBwREeSMr-NWzQuDBw"/>
   <CDA:ValueSetConstraint xmi:id="_XtE8MBwREeSMr-NWzQuDBw" base_Property="_XtDuEBwREeSMr-NWzQuDBw">
-    <reference href="../consol-vocab.uml#_bb5h4BwSEeSMr-NWzQuDBw"/>
+    <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1198-5407</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_tR8y4BwREeSMr-NWzQuDBw" severity="WARNING" base_Property="_tR8L0BwREeSMr-NWzQuDBw">
@@ -14824,4 +14848,19 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   <CDA:ConstraintValidation xmi:id="_2TsEAA7TEeWbLdDULBrUww" severity="INFO" base_Constraint="_ildAUFP-EeSRgsl8Ss66oQ"/>
   <CDA:Inline xmi:id="_vTZGABnUEeW8X8jq1nnFIw" base_Class="_i4zXgPIPEeGu1M-cCXg0Dg"/>
   <CDA:Inline xmi:id="_3G8h4BnUEeW8X8jq1nnFIw" base_Class="_aSeEwPIYEeGu1M-cCXg0Dg"/>
+  <uml:Association xmi:id="_iX9zgDWCEeWSirBmKjo0Zw" memberEnd="_iX7XQDWCEeWSirBmKjo0Zw _iX9zgTWCEeWSirBmKjo0Zw">
+    <ownedEnd xmi:id="_iX9zgTWCEeWSirBmKjo0Zw" type="_AaXVkBwPEeSMr-NWzQuDBw" association="_iX9zgDWCEeWSirBmKjo0Zw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_l_pr4DWCEeWSirBmKjo0Zw" severity="INFO" base_Association="_iX9zgDWCEeWSirBmKjo0Zw">
+    <ruleId>CONF:1198-5395</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_eVbDwDWFEeWSirBmKjo0Zw" memberEnd="_eVZOkDWFEeWSirBmKjo0Zw _eVbDwTWFEeWSirBmKjo0Zw">
+    <ownedEnd xmi:id="_eVbDwTWFEeWSirBmKjo0Zw" type="_FTY0kDWDEeWSirBmKjo0Zw" association="_eVbDwDWFEeWSirBmKjo0Zw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_iC2-0DWFEeWSirBmKjo0Zw" base_Association="_eVbDwDWFEeWSirBmKjo0Zw">
+    <ruleId>CONF:1198-5396</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_FtyxQjWGEeWSirBmKjo0Zw" base_Constraint="_FtyxQDWGEeWSirBmKjo0Zw">
+    <ruleId>CONF:1198-5402</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

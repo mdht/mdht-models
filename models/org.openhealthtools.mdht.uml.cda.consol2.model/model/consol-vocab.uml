@@ -2020,8 +2020,8 @@ Value Set Source: https://vsac.nlm.nih.gov&#xD;
   <term:ValueSetVersion xmi:id="_2SVSkRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.3.88.12.3221.7.4" source="http://phinvads.cdc.gov/vads/ViewValueSet.action?id=70FDBFB5-A277-DE11-9B52-0015173D1785" revisionDate="07/23/2009" binding="Dynamic" base_Enumeration="_2SVSkBSVEeGGzu7fmW9pXw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_2SbZNRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.11526" version="200609" fullName="Language" source="The Internet Society" url="http://www.ietf.org/rfc/rfc4646.txt" definition="The value set is defined by Internet RFC 4646 (replacing RFC 3066). Please see ISO 639 language code set maintained by Library of Congress for enumeration of language codes and Frequently Asked Questions." effectiveDate="20081218" type="Intensional" binding="Dynamic" base_Enumeration="_2SbZNBSVEeGGzu7fmW9pXw">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  <term:ValueSetVersion xmi:id="_2SbZNRSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.11526" fullName="Language" source="Internet RFC 4646" url="http://www.loc.gov/standards/iso639-2/php/code_list.php" definition="A value set of codes defined by Internet RFC 4646 (replacing RFC 3066). Please see ISO 639 language code set maintained by Library of Congress for enumeration of language codes." effectiveDate="20081218" type="Intensional" binding="Dynamic" base_Enumeration="_2SbZNBSVEeGGzu7fmW9pXw">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_M_9VALC4EeSVMPnHsd38Lg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_2SbZPhSVEeGGzu7fmW9pXw" identifier="2.16.840.1.113883.1.11.12249" version="1" fullName="LanguageAbilityMode Value Set" definition="This identifies the language ability of the individual. A value representing the method of expression of the language." revisionDate="07/23/2009" base_Enumeration="_2SbZNxSVEeGGzu7fmW9pXw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dLvLYaDqEd-dVeaMP0XXQw"/>
