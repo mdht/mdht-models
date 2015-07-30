@@ -20,7 +20,6 @@
 
 <!--	<property name="modelPath.uml" location="${basedir}.model/model/${modelName}.uml"/> -->
 
-		
 
 	<property name="validation.failOnError" value="false" />
 	<property name="runPostProcessing" value="true" />
@@ -84,14 +83,19 @@
 	</macrodef>
 
 
-
-
-
 	<property name="oldTemplateName" value="General Header Constraints" />
 	<property name="newTemplateName" value="US Realm Header" />
 
 	<target name="postProcess">
+		<!-- update C-CDA R1.x template names in plugin.properties -->
 		<replaceTemplateNames oldTemplateName="${oldTemplateName}" newTemplateName="${newTemplateName}" />
+		<!-- update C-CDA R2.x+ template names in plugin.properties -->
+		<!-- versioning - update as necessary -->
+		<replaceTemplateNames oldTemplateName="US Realm Header2" newTemplateName="US Realm Header (V3)" />
+		<replaceTemplateNames oldTemplateName="Continuity Of Care Document2" newTemplateName="Continuity of Care Document (CCD) (V3)" />
+		<replaceTemplateNames oldTemplateName="Discharge Summary2" newTemplateName="Discharge Summary (V3)" />
+		
+		<replaceTemplateNames oldTemplateName="Referral Note" newTemplateName="Referral Note (V2)" />
 	</target>
 
 
