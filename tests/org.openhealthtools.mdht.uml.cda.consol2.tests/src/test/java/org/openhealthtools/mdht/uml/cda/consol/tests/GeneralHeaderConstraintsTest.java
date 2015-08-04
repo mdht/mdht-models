@@ -59,6 +59,7 @@ import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraintsOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
+import org.openhealthtools.mdht.uml.hl7.datatypes.ADXP;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
@@ -8504,6 +8505,184 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPersonTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasStateTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE_PLACE_HAS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(GeneralHeaderConstraints target) {
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has <country>US</country> equal to 'US' but doesn't have a <state />
+						place.getAddr().addCountry("US");
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(GeneralHeaderConstraints target) {
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has <country>US</country> equal to 'US' and has a state but it has no value
+						place.getAddr().addCountry("US");
+						place.getAddr().getStates().add(DatatypesFactory.eINSTANCE.createADXP());
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(GeneralHeaderConstraints target) {
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has <country>US</country> equal to 'US' and has a state but it has an invalid code
+						place.getAddr().addCountry("US");
+						place.getAddr().addState("Delaware");
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(GeneralHeaderConstraints target) {
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has <country>US</country> equal to 'US' and has a state but it has an invalid 2 digit code
+						place.getAddr().addCountry("US");
+						place.getAddr().addState("XX");
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(GeneralHeaderConstraints target) {
+						target.init();
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has <country>US</country> equal to 'US' and has one <state /> with a valid code
+						place.getAddr().addCountry("US");
+						place.getAddr().addState("PA");
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(GeneralHeaderConstraints target) {
+						target.init();
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has <country>US</country> equal to 'US' and has a nullFlavor to avoid state code requirement
+						place.getAddr().addCountry("US");
+						place.getAddr().getStates().add(DatatypesFactory.eINSTANCE.createADXP());
+						for (ADXP state : place.getAddr().getStates())
+							state.setNullFlavor(NullFlavor.UNK);
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(GeneralHeaderConstraints target) {
+						target.init();
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has country but it does not equal 'US' so we don't enforce anything
+						place.getAddr().addCountry("Not The US");
+						for (ADXP state : place.getAddr().getStates())
+							state.setNullFlavor(NullFlavor.UNK);
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasStateTestCase.doValidationTest();
 	}
 
 	/**

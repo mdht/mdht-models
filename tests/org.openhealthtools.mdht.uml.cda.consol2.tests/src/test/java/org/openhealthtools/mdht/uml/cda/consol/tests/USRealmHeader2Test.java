@@ -22,6 +22,7 @@ import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
 import org.openhealthtools.mdht.uml.cda.Authenticator;
 import org.openhealthtools.mdht.uml.cda.Author;
+import org.openhealthtools.mdht.uml.cda.Birthplace;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.Component1;
 import org.openhealthtools.mdht.uml.cda.DataEnterer;
@@ -37,6 +38,7 @@ import org.openhealthtools.mdht.uml.cda.Patient;
 import org.openhealthtools.mdht.uml.cda.PatientRole;
 import org.openhealthtools.mdht.uml.cda.Performer1;
 import org.openhealthtools.mdht.uml.cda.Person;
+import org.openhealthtools.mdht.uml.cda.Place;
 import org.openhealthtools.mdht.uml.cda.RecordTarget;
 import org.openhealthtools.mdht.uml.cda.RelatedEntity;
 import org.openhealthtools.mdht.uml.cda.ServiceEvent;
@@ -109,6 +111,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.TelecommunicationAddressUse;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient TS Birth Time Precise To Year</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient TS Birth Time Precise To Day</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient TS Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birthplace Place Has State</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birthplace Place</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Race Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Race Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code</em>}</li>
@@ -116,6 +120,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.TelecommunicationAddressUse;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birth Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birthplace</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsRecordTargetPatientRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeader2#validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Data Enterer Assigned Entity Code P</em>}</li>
@@ -1868,6 +1873,236 @@ public class USRealmHeader2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasStateTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE_PLACE_HAS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(USRealmHeader2 target) {
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has <country>US</country> equal to 'US' but doesn't have a <state />
+						place.getAddr().addCountry("US");
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(USRealmHeader2 target) {
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has <country>US</country> equal to 'US' and has a state but it has no value
+						place.getAddr().addCountry("US");
+						place.getAddr().getStates().add(DatatypesFactory.eINSTANCE.createADXP());
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(USRealmHeader2 target) {
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has <country>US</country> equal to 'US' and has a state but it has an invalid code
+						place.getAddr().addCountry("US");
+						place.getAddr().addState("Delaware");
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(USRealmHeader2 target) {
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has <country>US</country> equal to 'US' and has a state but it has an invalid 2 digit code
+						place.getAddr().addCountry("US");
+						place.getAddr().addState("XX");
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						target.init();
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has <country>US</country> equal to 'US' and has one <state /> with a valid code
+						place.getAddr().addCountry("US");
+						place.getAddr().addState("PA");
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						target.init();
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has <country>US</country> equal to 'US' and has a nullFlavor to avoid state code requirement
+						place.getAddr().addCountry("US");
+						place.getAddr().getStates().add(DatatypesFactory.eINSTANCE.createADXP());
+						for (ADXP state : place.getAddr().getStates())
+							state.setNullFlavor(NullFlavor.UNK);
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(USRealmHeader2 target) {
+						target.init();
+						RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+						PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+						Patient patient = CDAFactory.eINSTANCE.createPatient();
+						Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+						Place place = CDAFactory.eINSTANCE.createPlace();
+						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
+						// has country but it does not equal 'US' so we don't enforce anything
+						place.getAddr().addCountry("Not The US");
+						for (ADXP state : place.getAddr().getStates())
+							state.setNullFlavor(NullFlavor.UNK);
+						birthplace.setPlace(place);
+						patient.setBirthplace(birthplace);
+						pr.setPatient(patient);
+						re.setPatientRole(pr);
+						target.getRecordTargets().add(re);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasStateTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+				CDAFactory.eINSTANCE.createPlace();
+				patient.setBirthplace(birthplace);
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				target.getRecordTargets().clear();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+				Place place = CDAFactory.eINSTANCE.createPlace();
+				birthplace.setPlace(place);
+				patient.setBirthplace(birthplace);
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
 	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode() {
 		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeTestCase = new OperationsTestCase<USRealmHeader2>(
 			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode",
@@ -2163,6 +2398,53 @@ public class USRealmHeader2Test extends CDAValidationTest {
 		};
 
 		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace() {
+		OperationsTestCase<USRealmHeader2> validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplaceTestCase = new OperationsTestCase<USRealmHeader2>(
+			"validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace",
+			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeader2 target) {
+				target.init();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeader2 target) {
+				target.getRecordTargets().clear();
+				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
+				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
+				Patient patient = CDAFactory.eINSTANCE.createPatient();
+				Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
+				patient.setBirthplace(birthplace);
+				pr.setPatient(patient);
+				re.setPatientRole(pr);
+				target.getRecordTargets().add(re);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
+					(USRealmHeader2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplaceTestCase.doValidationTest();
 	}
 
 	/**
