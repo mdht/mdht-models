@@ -304,6 +304,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr/context"/>
@@ -15498,6 +15502,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeSummary2/DischargeSummary2DischargeDietSection">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary2/DischargeSummary2DischargeDietSection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary2/DischargeSummary2DischargeDietSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeSummary2/DischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary2/DischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary2/DischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeSummary2/DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeSummary2/DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow/diagnostics"/>

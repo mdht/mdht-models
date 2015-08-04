@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.AssignedEntity;
+import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.Component1;
 import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
@@ -44,6 +45,8 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
+import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
+import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
 
 /**
  * <!-- begin-user-doc -->
@@ -85,6 +88,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Admission Medications Section Entries Optional2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2DischargeMedicationsSection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Discharge Medications Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2DischargeDietSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Discharge Diet Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Participant If Par Type Code IND Then AE Class Code IND</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Of Encompassing Encounter IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Of Encompassing Encounter IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2#validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Of Encompassing Encounter Encounter Participant Assigned Entity Assigned Person</em>}</li>
@@ -1359,6 +1363,89 @@ public class DischargeSummary2Test extends CDAValidationTest {
 		};
 
 		validateDischargeSummary2DischargeDietSectionTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND() {
+		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeINDTestCase = new OperationsTestCase<DischargeSummary2>(
+			"validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND",
+			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			// @Override
+			// protected void updateToFail(DischargeSummary2 target) {
+			// // <participant typeCode="IND"/>
+			// target.init();
+			// Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+			// p.setTypeCode(ParticipationType.IND);
+			// target.getParticipants().add(p);
+			// }
+
+			// @Override
+			// protected void updateToFail(DischargeSummary2 target) {
+			// // <participant typeCode="IND">
+			// // <associatedEntity/>
+			// target.init();
+			// Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+			// target.getParticipants().add(p);
+			// p.setTypeCode(ParticipationType.IND);
+			// AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+			// p.setAssociatedEntity(ae);
+			// }
+
+			@Override
+			protected void updateToFail(DischargeSummary2 target) {
+				// <participant typeCode="IND">
+				// <associatedEntity classCode="ACCESS"/>
+				target.init();
+				Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+				target.getParticipants().add(p);
+				p.setTypeCode(ParticipationType.IND);
+				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+				p.setAssociatedEntity(ae);
+				ae.setClassCode(RoleClassAssociative.ACCESS); // invalid code
+			}
+
+			@Override
+			protected void updateToPass(DischargeSummary2 target) {
+				// correct value pass
+				// <participant typeCode="IND" >
+				// <associatedEntity classCode="SOME CODE FROM THE SET" />
+				target.getParticipants().clear();
+				target.init();
+				Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+				target.getParticipants().add(p);
+				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+				p.setAssociatedEntity(ae);
+				p.getAssociatedEntity().setClassCode(RoleClassAssociative.PRS);
+			}
+
+			// @Override
+			// protected void updateToPass(DischargeSummary2 target) {
+			// // nullFlavor pass
+			// // has <participant typeCode="IND"> and has <associatedEntity nullFlavor=”NA” />
+			// target.init();
+			// Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+			// target.getParticipants().add(p);
+			// AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+			// p.setAssociatedEntity(ae);
+			// p.getAssociatedEntity().setNullFlavor(NullFlavor.NA);
+			// }
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeSummary2Operations.validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND(
+					(DischargeSummary2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeINDTestCase.doValidationTest();
 	}
 
 	/**

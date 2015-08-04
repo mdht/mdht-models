@@ -532,6 +532,30 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	 * @generated
 	 */
 	@Override
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceHasState(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
@@ -607,6 +631,18 @@ public class USRealmHeader2Impl extends GeneralHeaderConstraintsImpl implements 
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeader2Operations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
 			this, diagnostics, context);
 	}
 
