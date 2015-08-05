@@ -1847,6 +1847,10 @@ This effectiveTime represents either the medication duration (i.e., the time the
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fQB7wcLPEeSqg-Exmsy2kg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fQB7wsLPEeSqg-Exmsy2kg" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_22V-4DumEeWD4MX6K2c_gA" name="medicationFreeTextSig" type="_kowjcDr-EeWD4MX6K2c_gA" association="_22Wl8DumEeWD4MX6K2c_gA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_22V-4TumEeWD4MX6K2c_gA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_22V-4jumEeWD4MX6K2c_gA" value="*"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_NeRkMPiWEeOXlK95I8tUew" name="Consumable">
       <ownedComment xmi:id="_bYElkPiWEeOXlK95I8tUew">
         <body>INLINE</body>
@@ -2859,4 +2863,12 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
   <CDA:PropertyValidation xmi:id="_li3zUDujEeWD4MX6K2c_gA" base_Property="_e2IOgDujEeWD4MX6K2c_gA">
     <ruleId>CONF:1198-32779</ruleId>
   </CDA:PropertyValidation>
+  <uml:Association xmi:id="_22Wl8DumEeWD4MX6K2c_gA" memberEnd="_22V-4DumEeWD4MX6K2c_gA _22XNADumEeWD4MX6K2c_gA">
+    <ownedEnd xmi:id="_22XNADumEeWD4MX6K2c_gA" type="_WnSCMOLAEeOc7-TVP7Wi6w" association="_22Wl8DumEeWD4MX6K2c_gA"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_-cuhcDumEeWD4MX6K2c_gA" severity="INFO" base_Association="_22Wl8DumEeWD4MX6K2c_gA" typeCode="COMP">
+    <ruleId>CONF:1098-32907</ruleId>
+    <ruleId>CONF:1098-32908</ruleId>
+    <ruleId>CONF:1098-32909</ruleId>
+  </CDA:EntryRelationship>
 </xmi:XMI>
