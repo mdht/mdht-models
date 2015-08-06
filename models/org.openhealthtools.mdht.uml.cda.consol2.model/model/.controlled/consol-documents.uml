@@ -10233,7 +10233,7 @@ The serviceEvent/performer represents the healthcare providers involved in the c
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_4JRRsCJnEeSBLYc2hU6GfA" clientDependency="_iWiTQCJpEeSBLYc2hU6GfA" name="DiagnosticImagingReport2">
     <ownedComment xmi:id="_GhvMECJoEeSBLYc2hU6GfA">
-      <body>A Diagnostic Imaging Report (DIR) is a document that contains a consulting specialist's interpretation of image data.??It conveys the interpretation to the referring (ordering) physician and becomes part of the patient's medical record.??It is for use in Radiology, Endoscopy, Cardiology, and other imaging specialties.</body>
+      <body>A Diagnostic Imaging Report (DIR) is a document that contains a consulting specialist's interpretation of image data. It conveys the interpretation to the referring (ordering) physician and becomes part of the patient's medical record. It is for use in Radiology, Endoscopy, Cardiology, and other imaging specialties.</body>
     </ownedComment>
     <ownedRule xmi:id="_jwPR4CL9EeS4d9o7u1_H3A" name="physicianRequestingProcedureRecordedAsInformationRecipient" constrainedElement="_4JRRsCJnEeSBLYc2hU6GfA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_tyxGwCL9EeS4d9o7u1_H3A">
@@ -10751,292 +10751,284 @@ Note: The section/code SHOULD be selected from LOINC or DICOM for sections not l
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_8pFr8CJnEeSBLYc2hU6GfA" base_Class="_4JRRsCJnEeSBLYc2hU6GfA" templateId="2.16.840.1.113883.10.20.22.1.5" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-8404</ruleId>
-    <ruleId>CONF:1098-10042</ruleId>
-    <ruleId>CONF:1098-32515</ruleId>
+  <CDA:CDATemplate xmi:id="_8pFr8CJnEeSBLYc2hU6GfA" base_Class="_4JRRsCJnEeSBLYc2hU6GfA" templateId="2.16.840.1.113883.10.20.22.1.5" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-8404, CONF:1198-10042, CONF:1198-32515</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_odKIsCJoEeSBLYc2hU6GfA" base_Generalization="_4JRRsSJnEeSBLYc2hU6GfA"/>
   <CDA:PropertyValidation xmi:id="_nyLckCJpEeSBLYc2hU6GfA" base_Property="_nyK1gCJpEeSBLYc2hU6GfA">
-    <ruleId>CONF:1098-30932</ruleId>
+    <ruleId>CONF:1198-30932</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_ESrooCJqEeSBLYc2hU6GfA" base_Property="__jhK0CJpEeSBLYc2hU6GfA">
-    <ruleId>CONF:1098-30933</ruleId>
+    <ruleId>CONF:1198-30933</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_BAgQwCJrEeSBLYc2hU6GfA" base_Constraint="___gt0CJqEeSBLYc2hU6GfA">
-    <ruleId>CONF:1098-30934</ruleId>
+    <ruleId>CONF:1198-30934</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_Wi73cCJrEeSBLYc2hU6GfA" base_Constraint="_Wi7QYCJrEeSBLYc2hU6GfA">
-    <ruleId>CONF:1098-30935</ruleId>
+    <ruleId>CONF:1198-30935</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_WUiCECL6EeS4d9o7u1_H3A" base_Property="_WUe-wCL6EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-14833</ruleId>
+    <ruleId>CONF:1198-14833</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_KCRw0CL7EeS4d9o7u1_H3A" base_Property="_WUe-wCL6EeS4d9o7u1_H3A" severity="WARNING">
     <reference href="../consol-vocab.uml#_tcT18CL6EeS4d9o7u1_H3A"/>
-    <ruleId>CONF:1098-14834</ruleId>
+    <ruleId>CONF:1198-14834</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="__9V2QCL8EeS4d9o7u1_H3A" memberEnd="__9UoICL8EeS4d9o7u1_H3A __9V2QSL8EeS4d9o7u1_H3A">
     <ownedEnd xmi:id="__9V2QSL8EeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="__9V2QCL8EeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_AqFAcCL9EeS4d9o7u1_H3A" severity="INFO" base_Association="__9V2QCL8EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8411</ruleId>
+    <ruleId>CONF:1198-8411</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_oU36sCL9EeS4d9o7u1_H3A" severity="WARNING" base_Constraint="_jwPR4CL9EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8412</ruleId>
+    <ruleId>CONF:1198-8412</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_SebWYCL-EeS4d9o7u1_H3A" severity="INFO" base_Constraint="_SeavUCL-EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8413</ruleId>
+    <ruleId>CONF:1198-8413</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_A302oCL_EeS4d9o7u1_H3A" memberEnd="_A3zogCL_EeS4d9o7u1_H3A _A302oSL_EeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_A302oSL_EeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="_A302oCL_EeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_CDQvACL_EeS4d9o7u1_H3A" severity="INFO" base_Association="_A302oCL_EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8414</ruleId>
+    <ruleId>CONF:1198-8414</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_E8RHACMAEeS4d9o7u1_H3A" memberEnd="_E8Qf8CMAEeS4d9o7u1_H3A _E8RuECMAEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_E8RuECMAEeS4d9o7u1_H3A" type="_R38vwCL_EeS4d9o7u1_H3A" association="_E8RHACMAEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_Fkp8sCMAEeS4d9o7u1_H3A" base_Association="_E8RHACMAEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31198</ruleId>
+    <ruleId>CONF:1198-31198</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_QUHwECMAEeS4d9o7u1_H3A" memberEnd="_QUGh8CMAEeS4d9o7u1_H3A _QUHwESMAEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_QUHwESMAEeS4d9o7u1_H3A" type="_K-bdwCMAEeS4d9o7u1_H3A" association="_QUHwECMAEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_TYticCMAEeS4d9o7u1_H3A" base_Association="_QUHwECMAEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31199</ruleId>
+    <ruleId>CONF:1198-31199</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_bAJ08CMAEeS4d9o7u1_H3A" message="This associatedPerson SHALL contain exactly one [1..1] US Realm Person Name (PN.US.FIELDED) (identifier: oid:2.16.840.1.113883.10.20.22.5.1.1) (CONF:1098-31200)." base_Property="_ZhsS4CMAEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31200</ruleId>
+    <ruleId>CONF:1198-31200</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_eN3RoCMBEeS4d9o7u1_H3A" memberEnd="_eN2DgCMBEeS4d9o7u1_H3A _eN3RoSMBEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_eN3RoSMBEeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="_eN3RoCMBEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_fDxl8CMBEeS4d9o7u1_H3A" severity="INFO" base_Association="_eN3RoCMBEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30936</ruleId>
+    <ruleId>CONF:1198-30936</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_uunHICMBEeS4d9o7u1_H3A" memberEnd="_uul5ACMBEeS4d9o7u1_H3A _uunHISMBEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_uunHISMBEeS4d9o7u1_H3A" type="_nzM0MCMBEeS4d9o7u1_H3A" association="_uunHICMBEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_vytBYCMBEeS4d9o7u1_H3A" base_Association="_uunHICMBEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30937</ruleId>
+    <ruleId>CONF:1198-30937</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_4MsyMCMBEeS4d9o7u1_H3A" base_Property="_2KrQECMBEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30938</ruleId>
+    <ruleId>CONF:1198-30938</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_rHfV0CMJEeS4d9o7u1_H3A" memberEnd="_rHeuwCMJEeS4d9o7u1_H3A _rHf84CMJEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_rHf84CMJEeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="_rHfV0CMJEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_rqFskCMJEeS4d9o7u1_H3A" base_Association="_rHfV0CMJEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8416</ruleId>
+    <ruleId>CONF:1198-8416</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_C4g7ACMKEeS4d9o7u1_H3A" memberEnd="_C4gT8CMKEeS4d9o7u1_H3A _C4g7ASMKEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_C4g7ASMKEeS4d9o7u1_H3A" type="_ykn1wCMJEeS4d9o7u1_H3A" association="_C4g7ACMKEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_Do4oACMKEeS4d9o7u1_H3A" base_Association="_C4g7ACMKEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8431</ruleId>
+    <ruleId>CONF:1198-8431</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_bJ40MCMKEeS4d9o7u1_H3A" base_Property="_LmHkUCMKEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8430</ruleId>
+    <ruleId>CONF:1198-8430</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_gL2SMCMKEeS4d9o7u1_H3A" base_Property="_LmHkVCMKEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8419</ruleId>
+    <ruleId>CONF:1198-8419</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_hAfbMCMKEeS4d9o7u1_H3A" severity="WARNING" base_Property="_LmILYCMKEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8418</ruleId>
+    <ruleId>CONF:1198-8418</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_Rbm7kCMLEeS4d9o7u1_H3A" base_Constraint="_QlsnQCMLEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8420</ruleId>
+    <ruleId>CONF:1198-8420</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_a19rQCMNEeS4d9o7u1_H3A" memberEnd="_a18dICMNEeS4d9o7u1_H3A _a1-SUCMNEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_a1-SUCMNEeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="_a19rQCMNEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_bo7ZQCMNEeS4d9o7u1_H3A" severity="INFO" base_Association="_a19rQCMNEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8432</ruleId>
+    <ruleId>CONF:1198-8432</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_vUvckCMNEeS4d9o7u1_H3A" memberEnd="_vUuOcCMNEeS4d9o7u1_H3A _vUwDoCMNEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_vUwDoCMNEeS4d9o7u1_H3A" type="_gwnr0CMNEeS4d9o7u1_H3A" association="_vUvckCMNEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_xhN7MCMNEeS4d9o7u1_H3A" base_Association="_vUvckCMNEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-32089</ruleId>
+    <ruleId>CONF:1198-32089</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_4snx8CMNEeS4d9o7u1_H3A" base_Property="_4EUb0CMNEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-32090</ruleId>
+    <ruleId>CONF:1198-32090</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_-5DCgCMOEeS4d9o7u1_H3A" base_Constraint="_-PyqICMOEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8433</ruleId>
+    <ruleId>CONF:1198-8433</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_QU5uASMSEeS4d9o7u1_H3A" memberEnd="_QU5G8CMSEeS4d9o7u1_H3A _QU6VECMSEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_QU6VECMSEeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="_QU5uASMSEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_S9UhwCMSEeS4d9o7u1_H3A" severity="INFO" base_Association="_QU5uASMSEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30939</ruleId>
+    <ruleId>CONF:1198-30939</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_PVg4ICMTEeS4d9o7u1_H3A" memberEnd="_PVgRECMTEeS4d9o7u1_H3A _PVg4ISMTEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_PVg4ISMTEeS4d9o7u1_H3A" type="_G9lj4CMTEeS4d9o7u1_H3A" association="_PVg4ICMTEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_RU8ZQCMTEeS4d9o7u1_H3A" base_Association="_PVg4ICMTEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30940</ruleId>
+    <ruleId>CONF:1198-30940</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_BJtSACMZEeS4d9o7u1_H3A" base_Property="_dHgoYSMTEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30941</ruleId>
+    <ruleId>CONF:1198-30941</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_QnvGQCMZEeS4d9o7u1_H3A" base_Property="_dHgoYCMTEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30943</ruleId>
+    <ruleId>CONF:1198-30943</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_rgKhQCMZEeS4d9o7u1_H3A" severity="INFO" base_Constraint="_mqcvgCMZEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30942</ruleId>
+    <ruleId>CONF:1198-30942</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_oVb_wCMbEeS4d9o7u1_H3A" memberEnd="_oVaxoCMbEeS4d9o7u1_H3A _oVb_wSMbEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_oVb_wSMbEeS4d9o7u1_H3A" type="_Y7kMYCMTEeS4d9o7u1_H3A" association="_oVb_wCMbEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_oxPK8CMbEeS4d9o7u1_H3A" severity="INFO" base_Association="_oVb_wCMbEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30945</ruleId>
+    <ruleId>CONF:1198-30945</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_ypfCcCMbEeS4d9o7u1_H3A" memberEnd="_ypebYCMbEeS4d9o7u1_H3A _ypfpgCMbEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_ypfpgCMbEeS4d9o7u1_H3A" type="_uyMAwCMbEeS4d9o7u1_H3A" association="_ypfCcCMbEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_zFqBECMbEeS4d9o7u1_H3A" base_Association="_ypfCcCMbEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30946</ruleId>
+    <ruleId>CONF:1198-30946</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_RFX9IiMcEeS4d9o7u1_H3A" severity="WARNING" base_Constraint="_RFX9ICMcEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30947</ruleId>
+    <ruleId>CONF:1198-30947</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_ry690CMcEeS4d9o7u1_H3A" memberEnd="_ry5vsCMcEeS4d9o7u1_H3A _ry7k4CMcEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_ry7k4CMcEeS4d9o7u1_H3A" type="_Y7kMYCMTEeS4d9o7u1_H3A" association="_ry690CMcEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_teBNsCMcEeS4d9o7u1_H3A" severity="WARNING" base_Association="_ry690CMcEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30948</ruleId>
+    <ruleId>CONF:1198-30948</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_Br3fsCMgEeS4d9o7u1_H3A" memberEnd="_Br2RkCMgEeS4d9o7u1_H3A _Br3fsSMgEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_Br3fsSMgEeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="_Br3fsCMgEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_CcKUMCMgEeS4d9o7u1_H3A" base_Association="_Br3fsCMgEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30696</ruleId>
-    <ruleId>CONF:1098-30697</ruleId>
+    <ruleId>CONF:1198-30696, CONF:1198-30697</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_Srj7ACMgEeS4d9o7u1_H3A" memberEnd="_Sris4CMgEeS4d9o7u1_H3A _Srj7ASMgEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_Srj7ASMgEeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="_Srj7ACMgEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_Ucz2MCMgEeS4d9o7u1_H3A" severity="WARNING" base_Association="_Srj7ACMgEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30698</ruleId>
-    <ruleId>CONF:1098-30699</ruleId>
+    <ruleId>CONF:1198-30698, CONF:1198-30699</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_0X1BUCMgEeS4d9o7u1_H3A" base_Constraint="_0X0aQCMgEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31206</ruleId>
+    <ruleId>CONF:1198-31206</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_ejvtICMkEeS4d9o7u1_H3A" memberEnd="_ejufACMkEeS4d9o7u1_H3A _ejvtISMkEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_ejvtISMkEeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="_ejvtICMkEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_jwIScCMkEeS4d9o7u1_H3A" base_Association="_ejvtICMkEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-14907</ruleId>
+    <ruleId>CONF:1198-14907</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_FqSq0CMlEeS4d9o7u1_H3A" memberEnd="_FqSDwCMlEeS4d9o7u1_H3A _FqTR4CMlEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_FqTR4CMlEeS4d9o7u1_H3A" type="_sIwxUCMkEeS4d9o7u1_H3A" association="_FqSq0CMlEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_GauCMCMlEeS4d9o7u1_H3A" base_Association="_FqSq0CMlEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-30695</ruleId>
+    <ruleId>CONF:1198-30695</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_N0qOwCMmEeS4d9o7u1_H3A" memberEnd="_N0pAoCMmEeS4d9o7u1_H3A _N0qOwSMmEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_N0qOwSMmEeS4d9o7u1_H3A" type="_9dqLICMlEeS4d9o7u1_H3A" association="_N0qOwCMmEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_Rg6eECMmEeS4d9o7u1_H3A" severity="INFO" base_Association="_N0qOwCMmEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31055</ruleId>
+    <ruleId>CONF:1198-31055</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_58riQCMmEeS4d9o7u1_H3A" memberEnd="_58qUICMmEeS4d9o7u1_H3A _58sJUCMmEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_58sJUCMmEeS4d9o7u1_H3A" type="_yADp8CMmEeS4d9o7u1_H3A" association="_58riQCMmEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_7EzA4CMmEeS4d9o7u1_H3A" base_Association="_58riQCMmEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31056</ruleId>
+    <ruleId>CONF:1198-31056</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_H-q2UCMnEeS4d9o7u1_H3A" base_Property="_FhwvACMnEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31057</ruleId>
+    <ruleId>CONF:1198-31057</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_H9_toCM3EeS4d9o7u1_H3A" base_Property="_FhwvACMnEeS4d9o7u1_H3A" severity="WARNING">
     <reference href="../consol-vocab.uml#_bh5u8CMzEeS4d9o7u1_H3A"/>
-    <ruleId>CONF:1098-31207</ruleId>
+    <ruleId>CONF:1198-31207</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_cyV0YCM5EeS4d9o7u1_H3A" severity="WARNING" base_Property="_Oi1BsyM5EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31058</ruleId>
+    <ruleId>CONF:1198-31058</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_horRMCM5EeS4d9o7u1_H3A" severity="WARNING" base_Property="_Oi1BsCM5EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31059</ruleId>
+    <ruleId>CONF:1198-31059</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_45XwgCM5EeS4d9o7u1_H3A" memberEnd="_45WiYCM5EeS4d9o7u1_H3A _45XwgSM5EeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_45XwgSM5EeS4d9o7u1_H3A" type="_EwK6ACMnEeS4d9o7u1_H3A" association="_45XwgCM5EeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_77SCUCM5EeS4d9o7u1_H3A" severity="INFO" base_Association="_45XwgCM5EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31215</ruleId>
+    <ruleId>CONF:1198-31215</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_rePLoiM6EeS4d9o7u1_H3A" memberEnd="_reOkkCM6EeS4d9o7u1_H3A _rePysCM6EeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_rePysCM6EeS4d9o7u1_H3A" type="_dnDZYCM6EeS4d9o7u1_H3A" association="_rePLoiM6EeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_t4iq4CM6EeS4d9o7u1_H3A" base_Association="_rePLoiM6EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31216</ruleId>
+    <ruleId>CONF:1198-31216</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_mJISsCM7EeS4d9o7u1_H3A" memberEnd="_mJHEkCM7EeS4d9o7u1_H3A _mJISsSM7EeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_mJISsSM7EeS4d9o7u1_H3A" type="_EwK6ACMnEeS4d9o7u1_H3A" association="_mJISsCM7EeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_ncYDQCM7EeS4d9o7u1_H3A" severity="INFO" base_Association="_mJISsCM7EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31217</ruleId>
+    <ruleId>CONF:1198-31217</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_FvSBECM8EeS4d9o7u1_H3A" memberEnd="_FvQy8CM8EeS4d9o7u1_H3A _FvSoICM8EeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_FvSoICM8EeS4d9o7u1_H3A" type="_z9lhECM7EeS4d9o7u1_H3A" association="_FvSBECM8EeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_OVV38CM8EeS4d9o7u1_H3A" base_Association="_FvSBECM8EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31218</ruleId>
+    <ruleId>CONF:1198-31218</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_KQglACNGEeS4d9o7u1_H3A" memberEnd="_KQfW4CNGEeS4d9o7u1_H3A _KQglASNGEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_KQglASNGEeS4d9o7u1_H3A" type="_EwK6ACMnEeS4d9o7u1_H3A" association="_KQglACNGEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_MCs7YCNGEeS4d9o7u1_H3A" severity="INFO" base_Association="_KQglACNGEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31213</ruleId>
-    <ruleId>CONF:1098-31214</ruleId>
+    <ruleId>CONF:1198-31213, CONF:1198-31214</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_4ofpMCO4EeS4d9o7u1_H3A" memberEnd="_4oebECO4EeS4d9o7u1_H3A _4ogQQCO4EeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_4ogQQCO4EeS4d9o7u1_H3A" type="_EwK6ACMnEeS4d9o7u1_H3A" association="_4ofpMCO4EeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_5ccOoCO4EeS4d9o7u1_H3A" severity="INFO" base_Association="_4ofpMCO4EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31357</ruleId>
-    <ruleId>CONF:1098-31358</ruleId>
+    <ruleId>CONF:1198-31357, CONF:1198-31358</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_MqFdUCO7EeS4d9o7u1_H3A" memberEnd="_MqDoICO7EeS4d9o7u1_H3A _MqFdUSO7EeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_MqFdUSO7EeS4d9o7u1_H3A" type="_EwK6ACMnEeS4d9o7u1_H3A" association="_MqFdUCO7EeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_Pvz4ICO7EeS4d9o7u1_H3A" severity="INFO" base_Association="_MqFdUCO7EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31359</ruleId>
-    <ruleId>CONF:1098-31360</ruleId>
+    <ruleId>CONF:1198-31359, CONF:1198-31360</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_btcu0CO7EeS4d9o7u1_H3A" memberEnd="_btbgsCO7EeS4d9o7u1_H3A _btcu0SO7EeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_btcu0SO7EeS4d9o7u1_H3A" type="_EwK6ACMnEeS4d9o7u1_H3A" association="_btcu0CO7EeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_cMxvICO7EeS4d9o7u1_H3A" severity="INFO" base_Association="_btcu0CO7EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31361</ruleId>
-    <ruleId>CONF:1098-31362</ruleId>
+    <ruleId>CONF:1198-31361, CONF:1198-31362</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_I-qpkCO9EeS4d9o7u1_H3A" base_Constraint="_I-qCgCO9EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31211</ruleId>
+    <ruleId>CONF:1198-31211</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_6xhY8CO9EeS4d9o7u1_H3A" base_Constraint="_6xgx4CO9EeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31212</ruleId>
+    <ruleId>CONF:1198-31212</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_tqUYgCPFEeS4d9o7u1_H3A" memberEnd="_tqUYgiPFEeS4d9o7u1_H3A _tqUYgSPFEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_tqUYgSPFEeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="_tqUYgCPFEeS4d9o7u1_H3A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_tqU_kCPFEeS4d9o7u1_H3A" message="SHALL NOT contain [0..0] informant (CONF:1098-8410)" base_Association="_tqUYgCPFEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-8410</ruleId>
+    <ruleId>CONF:1198-8410</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_tqU_kSPFEeS4d9o7u1_H3A" base_Association="_tqUYgCPFEeS4d9o7u1_H3A">
     <ruleId>CONF:8410</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_xQb74CPLEeS4d9o7u1_H3A" base_Constraint="_xQbU0CPLEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31061</ruleId>
+    <ruleId>CONF:1198-31061</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_0LdtICPMEeS4d9o7u1_H3A" severity="INFO" base_Constraint="_0LdGECPMEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31062</ruleId>
+    <ruleId>CONF:1198-31062</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_Qi3nkCPNEeS4d9o7u1_H3A" base_Constraint="_Qi2ZcCPNEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-31060</ruleId>
+    <ruleId>CONF:1198-31060</ruleId>
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_89EzQCP5EeS4d9o7u1_H3A" clientDependency="_gfs-QCP6EeS4d9o7u1_H3A" name="DischargeSummary2">
     <ownedComment xmi:id="_QEvAoCP6EeS4d9o7u1_H3A">
@@ -11573,8 +11565,7 @@ The dischargeDispositionCode, @displayName, or NUBC UB-04 Print Name, must be di
     <ownedEnd xmi:id="_GJ5yICcOEeS1IqSA2eXqEg" type="_EwK6ACMnEeS4d9o7u1_H3A" association="_GJ5LECcOEeS1IqSA2eXqEg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_Huz6cCcOEeS1IqSA2eXqEg" severity="INFO" base_Association="_GJ5LECcOEeS1IqSA2eXqEg">
-    <ruleId>CONF:1098-31363</ruleId>
-    <ruleId>CONF:1098-31364</ruleId>
+    <ruleId>CONF:1198-31363, CONF:1198-31364</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_4mLhsCluEeSoCqqrpX8LzQ" clientDependency="_1V1V0ClvEeSoCqqrpX8LzQ" name="HistoryAndPhysicalNote2">
     <ownedComment xmi:id="_QnxScClvEeSoCqqrpX8LzQ">
@@ -14561,7 +14552,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <ownedEnd xmi:id="_cVcDkZeFEeSXWdEithrUxA" type="_JensUCMKEeS4d9o7u1_H3A" association="_cVcDkJeFEeSXWdEithrUxA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_e4i5gJeFEeSXWdEithrUxA" severity="WARNING" base_Association="_cVcDkJeFEeSXWdEithrUxA">
-    <ruleId>CONF:1098-8422</ruleId>
+    <ruleId>CONF:1198-8422</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_DRklUJhoEeS_FroupdFHog" memberEnd="_DRiwIJhoEeS_FroupdFHog _DRklUZhoEeS_FroupdFHog">
     <ownedEnd xmi:id="_DRklUZhoEeS_FroupdFHog" type="_wNAvQJhnEeS_FroupdFHog" association="_DRklUJhoEeS_FroupdFHog"/>
@@ -14637,10 +14628,10 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
     <ruleId>CONF:1098-30584</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_TIw5kCMOEeS4d9o7u1_H3A" base_Constraint="_LsJXACMOEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-10031</ruleId>
+    <ruleId>CONF:1198-10031</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_dvC7wiMOEeS4d9o7u1_H3A" base_Constraint="_dvC7wCMOEeS4d9o7u1_H3A">
-    <ruleId>CONF:1098-10032</ruleId>
+    <ruleId>CONF:1198-10032</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_IblgwJ3GEeSofqct4VeYrw" base_Property="_E8dHcJ3GEeSofqct4VeYrw">
     <ruleId>CONF:1098-8488</ruleId>
