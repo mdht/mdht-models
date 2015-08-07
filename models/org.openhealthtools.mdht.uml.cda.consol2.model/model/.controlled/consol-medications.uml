@@ -1602,7 +1602,7 @@ For example, a cardiologist may prescribe a patient Warfarin. The patient's prim
   <CDA:PropertyValidation xmi:id="_0bUsoIzzEeOoMZgUoTghIg" base_Property="_nvzcQIzzEeOoMZgUoTghIg">
     <ruleId>CONF:1098-28668</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_3HD6IIzzEeOoMZgUoTghIg" message="This playingEntity SHALL contain exactly one [1..1] US Realm Patient Name (PTN.US.FIELDED) (identifier: urn:oid:2.16.840.1.113883.10.20.22.5.1) (CONF:1098-28669)." base_Property="_nv0DUIzzEeOoMZgUoTghIg">
+  <CDA:PropertyValidation xmi:id="_3HD6IIzzEeOoMZgUoTghIg" message="This playingEntity SHALL contain exactly one [1..1] US Realm Patient Name (PTN.US.FIELDED) (identifier: urn:oid:2.16.840.1.113883.10.20.22.5.1) (CONF:1098-28669)" base_Property="_nv0DUIzzEeOoMZgUoTghIg">
     <ruleId>CONF:1098-28669</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_ZQpEwK-1EeO8duI_7f6kZw" clientDependency="_z821MLBkEeOtlapy2HWYww" name="AdmissionMedication2">

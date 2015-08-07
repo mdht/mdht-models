@@ -7399,8 +7399,7 @@ The Participants (support) identifies participants who support the patient such 
           <generalization xmi:id="_NeTWcKAPEeOQs7VC4HptuQ">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
           </generalization>
-          <ownedAttribute xmi:id="_OFEbgKAPEeOQs7VC4HptuQ" name="name" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+          <ownedAttribute xmi:id="_OFEbgKAPEeOQs7VC4HptuQ" name="name" visibility="private" type="_SmlTcJBEEeSSfIVHL_x3Xw" aggregation="composite">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KAjigO9fEeSE7JpIy9Dpjg" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KAdb4O9fEeSE7JpIy9Dpjg" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
@@ -7530,7 +7529,7 @@ This participant represents the clinician to contact for questions about the ref
   <CDA:AssociationValidation xmi:id="_FFRO8KAPEeOQs7VC4HptuQ" base_Association="_A7R6wKAPEeOQs7VC4HptuQ">
     <ruleId>CONF:1198-31644</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_QNzCkKAPEeOQs7VC4HptuQ" base_Property="_OFEbgKAPEeOQs7VC4HptuQ">
+  <CDA:PropertyValidation xmi:id="_QNzCkKAPEeOQs7VC4HptuQ" message="This associatedPerson SHALL contain at least one [1..*] US Realm Patient Name (PTN.US.FIELDED) (identifier: urn:oid:2.16.840.1.113883.10.20.22.5.1) (CONF:1198-31645)" base_Property="_OFEbgKAPEeOQs7VC4HptuQ">
     <ruleId>CONF:1198-31645</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_4AIvQKAPEeOQs7VC4HptuQ" memberEnd="_4AG6EKAPEeOQs7VC4HptuQ _4AIvQaAPEeOQs7VC4HptuQ">
