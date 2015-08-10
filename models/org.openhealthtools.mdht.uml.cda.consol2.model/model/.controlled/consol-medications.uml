@@ -2716,7 +2716,7 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
       </specification>
     </ownedRule>
     <generalization xmi:id="_kowjcTr-EeWD4MX6K2c_gA">
-      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_nazskEbuEd6besF9iFIJkQ"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_nazskEbuEd6besF9iFIJkQ"/>
     </generalization>
     <ownedAttribute xmi:id="_Hj-6wDsAEeWD4MX6K2c_gA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
