@@ -13822,10 +13822,17 @@ All visits take place at a specific location. When available, the location ID is
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_MrNuQC-6EeSoCqqrpX8LzQ" clientDependency="_xeYeoC-7EeSoCqqrpX8LzQ" name="UnstructuredDocument2">
     <ownedComment xmi:id="_FCUNwC-7EeSoCqqrpX8LzQ">
-      <body>An Unstructured Document (UD) document type can (1) include unstructured content, such as a graphic, directly in a text element with a mediaType attribute, or (2) reference a single document file, such as a word-processing document using a text/reference element.&#xD;
+      <body>&lt;p>&#xD;
+An Unstructured Document (UD) document type can (1) include unstructured content, such as a graphic, directly in a text element with a mediaType attribute, or (2) reference a single document file, such as a word-processing document using a text/reference element.&#xD;
+&lt;/p>&#xD;
 For guidance on how to handle multiple files, on the selection of media types for this IG, and on the identification of external files, see the examples that follow the constraints below.&#xD;
-IHE's XDS-SD (Cross-Transaction Specifications and Content Specifications, Scanned Documents Module) profile addresses a similar, more restricted use case, specifically for scanned documents or documents electronically created from existing text sources, and limits content to PDF-A or text. This Unstructured Documents template is applicable not only for scanned documents in non-PDF formats, but also for clinical documents produced through word processing applications, etc. &#xD;
-For conformance with both specifications, implementers need to ensure that their documents at a minimum conform with the SHALL constraints from either specification.</body>
+&lt;/p>&#xD;
+&lt;p>&#xD;
+IHE's XDS-SD (Cross-Transaction Specifications and Content Specifications, Scanned Documents Module) profile addresses a similar, more restricted use case, specifically for scanned documents or documents electronically created from existing text sources, and limits content to PDF-A or text. This Unstructured Documents template is applicable not only for scanned documents in non-PDF formats, but also for clinical documents produced through word processing applications, etc.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+For conformance with both specifications, implementers need to ensure that their documents at a minimum conform with the SHALL constraints from either specification.&#xD;
+&lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_MrPjcC-6EeSoCqqrpX8LzQ" general="_dduXkJ5OEeOr4eM3k36wAg"/>
     <substitution xmi:id="_xeYeoC-7EeSoCqqrpX8LzQ" name="UnstructuredDocument" client="_MrNuQC-6EeSoCqqrpX8LzQ" supplier="_2TeiIRSVEeGGzu7fmW9pXw" contract="_2TeiIRSVEeGGzu7fmW9pXw"/>
@@ -13909,18 +13916,20 @@ For conformance with both specifications, implementers need to ensure that their
 An Unstructured Document must include a nonXMLBody component with a single text element. The text element can reference an external file using a reference element, or include unstructured content directly with a mediaType attribute.&#xD;
 The nonXMLBody/text element also has a &quot;compression&quot; attribute that can be used to indicate that the unstructured content was compressed before being Base64Encoded. At a minimum, a compression value of &quot;DF&quot; for the deflate compression algorithm (RFC 1951 http://www.ietf.org/rfc/rfc1951.txt) must be supported although it is not required that content be compressed.</body>
         </ownedComment>
+        <ownedRule xmi:id="_ajMgkDLBEeSoCqqrpX8LzQ" name="hasReferenceOrRepresentation">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ajMgkTLBEeSoCqqrpX8LzQ">
+            <language>Analysis</language>
+            <language>OCL</language>
+            <body>If the text element does not contain a reference element with a value attribute, then it SHALL contain exactly one [1..1] @representation=&quot;B64&quot; and exactly one [1..1] @mediaType</body>
+            <body>not text.reference.value.oclIsUndefined() xor ( text.representation = 'B64' and (not text.mediaType.oclIsUndefined()) )</body>
+          </specification>
+        </ownedRule>
         <ownedRule xmi:id="_9q_mMDLAEeSoCqqrpX8LzQ" name="mediaTypeFileFormats">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_9q_mMTLAEeSoCqqrpX8LzQ">
             <language>Analysis</language>
             <language>OCL</language>
-            <body>The value of @mediaType, if present, SHALL be selected from ValueSet SupportedFileFormats 2.16.840.1.113883.11.20.7.1 DYNAMIC</body>
+            <body>The value of @mediaType, if present, SHALL be drawn from the value set 2.16.840.1.113883.11.20.7.1 SupportedFileFormats STATIC 20100512</body>
             <body>not self.text.mediaType.oclIsUndefined()  implies (self.text.mediaType = 'application/msword' or self.text.mediaType = 'application/pdf' or self.text.mediaType = 'text/plain' or self.text.mediaType = 'text/rtf' or self.text.mediaType = 'text/html' or self.text.mediaType = 'image/gif' or self.text.mediaType = 'image/tiff' or self.text.mediaType = 'image/jpeg' or self.text.mediaType = 'image/png')</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_ajMgkDLBEeSoCqqrpX8LzQ" name="hasReferenceOrRepresentation">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ajMgkTLBEeSoCqqrpX8LzQ">
-            <language>Analysis</language>
-            <body>If the text element does not contain a reference element with a value attribute, then it SHALL contain exactly one [1..1] @representation=&quot;B64&quot; and exactly one [1..1] @mediaType</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_5ztoEDK_EeSoCqqrpX8LzQ">
@@ -13944,68 +13953,66 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_SxqvIC-6EeSoCqqrpX8LzQ" base_Class="_MrNuQC-6EeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.10" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-7710</ruleId>
-    <ruleId>CONF:1098-10054</ruleId>
-    <ruleId>CONF:1098-32522</ruleId>
+  <CDA:CDATemplate xmi:id="_SxqvIC-6EeSoCqqrpX8LzQ" base_Class="_MrNuQC-6EeSoCqqrpX8LzQ" templateId="2.16.840.1.113883.10.20.22.1.10" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7710, CONF:1198-10054, CONF:1198-32522</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_u1fw0C-7EeSoCqqrpX8LzQ" base_Generalization="_MrPjcC-6EeSoCqqrpX8LzQ"/>
   <uml:Association xmi:id="_dHbhsC-9EeSoCqqrpX8LzQ" memberEnd="_dHXQQC-9EeSoCqqrpX8LzQ _dHcIwC-9EeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_dHcIwC-9EeSoCqqrpX8LzQ" type="_MrNuQC-6EeSoCqqrpX8LzQ" association="_dHbhsC-9EeSoCqqrpX8LzQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_eWy30C-9EeSoCqqrpX8LzQ" base_Association="_dHbhsC-9EeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-31089</ruleId>
+    <ruleId>CONF:1198-31089</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_xtMr0C-9EeSoCqqrpX8LzQ" memberEnd="_xtJogC-9EeSoCqqrpX8LzQ _xtNS4C-9EeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_xtNS4C-9EeSoCqqrpX8LzQ" type="_qQJEYC-9EeSoCqqrpX8LzQ" association="_xtMr0C-9EeSoCqqrpX8LzQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_zHMkoC-9EeSoCqqrpX8LzQ" base_Association="_xtMr0C-9EeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-31090</ruleId>
+    <ruleId>CONF:1198-31090</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_FxKJYC--EeSoCqqrpX8LzQ" base_Property="_DzVKwC--EeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-31091</ruleId>
+    <ruleId>CONF:1198-31091</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_LDJacDK-EeSoCqqrpX8LzQ" memberEnd="_LDD64DK-EeSoCqqrpX8LzQ _LDJacTK-EeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_LDJacTK-EeSoCqqrpX8LzQ" type="_MrNuQC-6EeSoCqqrpX8LzQ" association="_LDJacDK-EeSoCqqrpX8LzQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_LnDYwDK-EeSoCqqrpX8LzQ" base_Association="_LDJacDK-EeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-31096</ruleId>
+    <ruleId>CONF:1198-31096</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_aZU6QDK-EeSoCqqrpX8LzQ" memberEnd="_aZSeADK-EeSoCqqrpX8LzQ _aZVhUDK-EeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_aZVhUDK-EeSoCqqrpX8LzQ" type="_UNTc4DK-EeSoCqqrpX8LzQ" association="_aZU6QDK-EeSoCqqrpX8LzQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_gEyBMDK-EeSoCqqrpX8LzQ" base_Association="_aZU6QDK-EeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-31097</ruleId>
+    <ruleId>CONF:1198-31097</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_9MunwDK-EeSoCqqrpX8LzQ" memberEnd="_9Mq9YDK-EeSoCqqrpX8LzQ _9MunwTK-EeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_9MunwTK-EeSoCqqrpX8LzQ" type="_zUun4DK-EeSoCqqrpX8LzQ" association="_9MunwDK-EeSoCqqrpX8LzQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_92rjsDK-EeSoCqqrpX8LzQ" base_Association="_9MunwDK-EeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-31098</ruleId>
+    <ruleId>CONF:1198-31098</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_W1Or8DK_EeSoCqqrpX8LzQ" memberEnd="_W1MPsDK_EeSoCqqrpX8LzQ _W1PTADK_EeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_W1PTADK_EeSoCqqrpX8LzQ" type="_MrNuQC-6EeSoCqqrpX8LzQ" association="_W1Or8DK_EeSoCqqrpX8LzQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_ZBehEDK_EeSoCqqrpX8LzQ" base_Association="_W1Or8DK_EeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-31085</ruleId>
+    <ruleId>CONF:1198-31085</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_y9ySEDK_EeSoCqqrpX8LzQ" memberEnd="_y9vOwDK_EeSoCqqrpX8LzQ _y9y5IDK_EeSoCqqrpX8LzQ">
     <ownedEnd xmi:id="_y9y5IDK_EeSoCqqrpX8LzQ" type="_oNGWsDK_EeSoCqqrpX8LzQ" association="_y9ySEDK_EeSoCqqrpX8LzQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_zmpB0DK_EeSoCqqrpX8LzQ" base_Association="_y9ySEDK_EeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-31086</ruleId>
+    <ruleId>CONF:1198-31086</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_VLPZ4DLAEeSoCqqrpX8LzQ" base_Property="_6yF74DK_EeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-31087</ruleId>
+    <ruleId>CONF:1198-31087</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_v0vBADLAEeSoCqqrpX8LzQ" severity="INFO" base_Property="_tTXQcDLAEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-31088</ruleId>
+    <ruleId>CONF:1198-31088</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_9rA0UDLAEeSoCqqrpX8LzQ" base_Constraint="_9q_mMDLAEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-31088</ruleId>
+    <ruleId>CONF:1198-7623</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_ajOVwDLBEeSoCqqrpX8LzQ" base_Constraint="_ajMgkDLBEeSoCqqrpX8LzQ">
-    <ruleId>CONF:1098-31103</ruleId>
+    <ruleId>CONF:1198-7624</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_qlWsoDrEEeSyGa6KC25kiw" memberEnd="_qlU3cDrEEeSyGa6KC25kiw _qlWsoTrEEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_qlWsoTrEEeSyGa6KC25kiw" type="_2jWfwJ5wEeOr4eM3k36wAg" association="_qlWsoDrEEeSyGa6KC25kiw"/>
