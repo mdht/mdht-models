@@ -1,5 +1,15 @@
-/**
- */
+/*******************************************************************************
+ * Copyright (c) 2015 Dan Brown and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     Dan Brown (Audacious Inquiry) - initial API and implementation
+ *     								 - modified VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP
+ *     								 as it required the use of select instead of reject 
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Collection;
@@ -2092,13 +2102,14 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND(DischargeSummary2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Participant If Par Type Code IND Then AE Class Code IND</em>}' operation.
+	 * Note: OCL was modified post-generation as it required the use of select instead of reject.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND(DischargeSummary2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
+	 * @generated NOT
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject(( ( typeCode = 'IND' ) implies ( (not associatedEntity.oclIsUndefined()) and ( associatedEntity.classCode = 'PRS' or associatedEntity.classCode = 'NOK' or associatedEntity.classCode = 'CAREGIVER' or associatedEntity.classCode = 'AGNT' or associatedEntity.classCode = 'GUAR' or associatedEntity.classCode = 'ECON' ) ) or ( associatedEntity.isNullFlavorDefined() ) ))";
+	protected static final String VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select( p : cda::Participant1 | p.typeCode = vocab::ParticipationType::IND and not ( p.associatedEntity.classCode = vocab::RoleClassAssociative::PRS  or p.associatedEntity.classCode = vocab::RoleClassAssociative::NOK or p.associatedEntity.classCode = vocab::RoleClassAssociative::CAREGIVER or p.associatedEntity.classCode = vocab::RoleClassAssociative::AGNT or p.associatedEntity.classCode = vocab::RoleClassAssociative::GUAR or p.associatedEntity.classCode = vocab::RoleClassAssociative::ECON or p.associatedEntity.isNullFlavorDefined() ) or p.associatedEntity.oclIsUndefined() )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND(DischargeSummary2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Participant If Par Type Code IND Then AE Class Code IND</em>}' invariant operation.

@@ -91,11 +91,26 @@
 		<replaceTemplateNames oldTemplateName="${oldTemplateName}" newTemplateName="${newTemplateName}" />
 		<!-- update C-CDA R2.x+ template names in plugin.properties -->
 		<!-- versioning - update as necessary -->
+		<!-- documents -->
 		<replaceTemplateNames oldTemplateName="US Realm Header2" newTemplateName="US Realm Header (V3)" />
+		<replaceTemplateNames oldTemplateName="Consol Care Plan" newTemplateName="Consol Care Plan (V2)" />
+		<replaceTemplateNames oldTemplateName="Consultation Note2" newTemplateName="Consultation Note (V3)" />
 		<replaceTemplateNames oldTemplateName="Continuity Of Care Document2" newTemplateName="Continuity of Care Document (CCD) (V3)" />
+		<replaceTemplateNames oldTemplateName="Diagnostic Imaging Report2" newTemplateName="Diagnostic Imaging Report (V3)" />
 		<replaceTemplateNames oldTemplateName="Discharge Summary2" newTemplateName="Discharge Summary (V3)" />
-		
+		<replaceTemplateNames oldTemplateName="History And Physical Note2" newTemplateName="History and Physical (V3)" />
+		<replaceTemplateNames oldTemplateName="Operative Note2" newTemplateName="Operative Note (V3)" />
+		<replaceTemplateNames oldTemplateName="Procedure Note2" newTemplateName="Procedure Note (V3)" />
+		<replaceTemplateNames oldTemplateName="Progress Note2" newTemplateName="Progress Note (V3)" />
 		<replaceTemplateNames oldTemplateName="Referral Note" newTemplateName="Referral Note (V2)" />
+		<replaceTemplateNames oldTemplateName="Consol Transfer Summary" newTemplateName="Consol Transfer Summary (V2)" />
+		<replaceTemplateNames oldTemplateName="Unstructured Document2" newTemplateName="Unstructured Document (V3)" />		
+		<!-- sections -->
+		
+		<!-- entries -->
+		
+		<!-- other -->
+		<replaceTemplateNames oldTemplateName="US Realm Header Patient Generated Document" newTemplateName="US Realm Header - Patient Generated Document (V2)" />
 	</target>
 
 

@@ -1137,6 +1137,9 @@ Value Set Source: http://www.hl7.org&#xD;
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2Qf68G1HEeGCevFpokwODw" name="PostalCode"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_9c_94G1HEeGCevFpokwODw" name="StateValueSet"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ekou8G1IEeGCevFpokwODw" name="SupportedFileFormats">
+      <ownedComment xmi:id="_SsOegD1FEeWD4MX6K2c_gA">
+        <body>A value set of the file formats supported by the Unstructured Document IG.</body>
+      </ownedComment>
       <ownedLiteral xmi:id="_ewH6APwXEeGXDIdcQJhgtg" name="application/msword"/>
       <ownedLiteral xmi:id="_jkrOIPwXEeGXDIdcQJhgtg" name="application/pdf"/>
       <ownedLiteral xmi:id="_k4wFIPwXEeGXDIdcQJhgtg" name="text/plain"/>
@@ -1693,8 +1696,7 @@ Value Set Source: http://www.loinc.org/</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_8lXegC1oEeSoCqqrpX8LzQ" name="Provider Role">
       <ownedComment xmi:id="_8lXegS1oEeSoCqqrpX8LzQ">
-        <body>The Provider type vocabulary classifies providers according to the type of license or accreditation they hold or the service they provide.&#xD;
-http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;Itemid=125</body>
+        <body>The Provider type vocabulary classifies providers according to the type of license or accreditation they hold or the service they provide.</body>
       </ownedComment>
       <ownedLiteral xmi:id="_VYoj0C1pEeSoCqqrpX8LzQ" name="CP"/>
       <ownedLiteral xmi:id="_Zp8A8C1pEeSoCqqrpX8LzQ" name="PP"/>
@@ -2163,7 +2165,7 @@ Value Set Source: https://vsac.nlm.nih.gov&#xD;
   <term:ValueSetVersion xmi:id="_MBvVoD1kEeG3tde5scYNWA" identifier="3. 2.16.840.1.113883.1.11.20.22" fullName="H and P LOINC Document Type Codes" binding="Dynamic" base_Enumeration="_MBuukD1kEeG3tde5scYNWA">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_IuPWwT4jEeGhnL_c4sBHGg" identifier="2.16.840.1.113883.11.20.1.1" fullName="Surgical Operation Note LOINC Document Codes" binding="Dynamic" base_Enumeration="_IuPWwD4jEeGhnL_c4sBHGg">
+  <term:ValueSetVersion xmi:id="_IuPWwT4jEeGhnL_c4sBHGg" identifier="2.16.840.1.113883.11.20.1.1" fullName="Surgical Operation Note LOINC Document Codes" url="http://www.loinc.org/" binding="Dynamic" base_Enumeration="_IuPWwD4jEeGhnL_c4sBHGg">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_UcLAsD4nEeGtCLm-c2g23Q" identifier="2.16.840.1.113883.3.88.12.3221.4" binding="Dynamic" base_Enumeration="_UcKZoD4nEeGtCLm-c2g23Q">
@@ -2310,7 +2312,9 @@ Value Set Source: https://vsac.nlm.nih.gov&#xD;
   <term:ValueSetVersion xmi:id="_9dAk8G1HEeGCevFpokwODw" identifier="2.16.840.1.113883.3.88.12.80.1" base_Enumeration="_9c_94G1HEeGCevFpokwODw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dkSOQaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_EkpWAG1IEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.7.1" base_Enumeration="_Ekou8G1IEeGCevFpokwODw"/>
+  <term:ValueSetVersion xmi:id="_EkpWAG1IEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.7.1" version="20100512" source="HL7" url="http://www.hl7.org" base_Enumeration="_Ekou8G1IEeGCevFpokwODw">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3OgvsD1FEeWD4MX6K2c_gA"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_Z99c8G1IEeGCevFpokwODw" identifier="2.16.840.1.113883.11.20.9.20" base_Enumeration="_Z9814G1IEeGCevFpokwODw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_lC2TwGSiEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
@@ -3409,7 +3413,7 @@ Value Set Source: https://vsac.nlm.nih.gov&#xD;
   <term:ValueSetVersion xmi:id="_bh5u8CMzEeS4d9o7u1_H3A" identifier="2.16.840.1.113883.11.20.9.59" fullName="DIRSectionTypeCodes" base_Enumeration="_bh5H4CMzEeS4d9o7u1_H3A">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_8lYFkC1oEeSoCqqrpX8LzQ" identifier="2.16.840.1.113883.3.88.12.3221.4.2" binding="Dynamic" base_Enumeration="_8lXegC1oEeSoCqqrpX8LzQ">
+  <term:ValueSetVersion xmi:id="_8lYFkC1oEeSoCqqrpX8LzQ" identifier="2.16.840.1.113883.3.88.12.3221.4.2" url="http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;Itemid=125" binding="Dynamic" base_Enumeration="_8lXegC1oEeSoCqqrpX8LzQ">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfNhAaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_VYpK4C1pEeSoCqqrpX8LzQ" conceptName="Consulting Provider" base_EnumerationLiteral="_VYoj0C1pEeSoCqqrpX8LzQ"/>
