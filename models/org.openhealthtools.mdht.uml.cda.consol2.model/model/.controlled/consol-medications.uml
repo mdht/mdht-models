@@ -2871,4 +2871,5 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <ruleId>CONF:1098-32908</ruleId>
     <ruleId>CONF:1098-32909</ruleId>
   </CDA:EntryRelationship>
+  <CDA:PropertyValidation xmi:id="_1RLKMD-_EeWCWce3kO1aHQ" base_Property="_HkAI4DsAEeWD4MX6K2c_gA"/>
 </xmi:XMI>
