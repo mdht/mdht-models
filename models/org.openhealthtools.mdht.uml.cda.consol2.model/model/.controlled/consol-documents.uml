@@ -8183,7 +8183,7 @@ HL7 Vocabulary simply describes guardian as a relationship to a ward.  This ne
               <language>Analysis</language>
               <language>OCL</language>
               <body>If more than one languageCommunication is present, only one languageCommunication element SHALL have a preferenceInd with a value of 1</body>
-              <body>languageCommunication->size() > 1 implies languageCommunication->one( langCom : cda::LanguageCommunication | langCom.preferenceInd.value = 1)</body>
+              <body>languageCommunication->size() > 1 implies languageCommunication->one( langCom : cda::LanguageCommunication | langCom.preferenceInd.value)</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_lQM5EKlJEeOTwZftO6CV5g">
