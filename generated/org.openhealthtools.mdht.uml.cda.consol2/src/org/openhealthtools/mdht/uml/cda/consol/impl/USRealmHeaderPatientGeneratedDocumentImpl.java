@@ -237,6 +237,17 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -420,6 +431,17 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity(
 			this, diagnostics, context);
 	}
 
@@ -635,6 +657,17 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	public boolean validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes(
 			this, diagnostics, context);
 	}
 

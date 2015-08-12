@@ -3667,6 +3667,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.MEDICATION_FREE_TEXT_SIG: {
+				MedicationFreeTextSig medicationFreeTextSig = (MedicationFreeTextSig) theEObject;
+				T result = caseMedicationFreeTextSig(medicationFreeTextSig);
+				if (result == null) {
+					result = caseSubstanceAdministration(medicationFreeTextSig);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(medicationFreeTextSig);
+				}
+				if (result == null) {
+					result = caseAct(medicationFreeTextSig);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(medicationFreeTextSig);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.MENTAL_STATUS_OBSERVATION: {
 				MentalStatusObservation mentalStatusObservation = (MentalStatusObservation) theEObject;
 				T result = caseMentalStatusObservation(mentalStatusObservation);
@@ -10508,6 +10528,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseSeverityObservation2(SeverityObservation2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Medication Free Text Sig</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Medication Free Text Sig</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMedicationFreeTextSig(MedicationFreeTextSig object) {
 		return null;
 	}
 

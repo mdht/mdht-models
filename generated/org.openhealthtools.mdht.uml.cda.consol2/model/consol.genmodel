@@ -9888,6 +9888,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity2/MedicationActivity2SubstanceAdministeredAct/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity2/MedicationActivity2SubstanceAdministeredAct/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity2/MedicationActivity2MedicationFreeTextSig">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity2/MedicationActivity2MedicationFreeTextSig/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationActivity2/MedicationActivity2MedicationFreeTextSig/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity2/getDrugMonitoringAct"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity2/getConsolInstruction2"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity2/getSubstanceAdministeredActs"/>
@@ -9895,6 +9899,7 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity2/getConsolMedicationSupplyOrder2"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity2/getConsolMedicationDispense2s"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity2/getConsolReactionObservation2"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationActivity2/getMedicationFreeTextSigs"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//SubstanceAdministeredAct">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceAdministeredAct/SubstanceAdministeredActTemplateId">
@@ -9989,6 +9994,60 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SeverityObservation2/SeverityObservationStatusCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SeverityObservation2/SeverityObservationStatusCodeP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SeverityObservation2/SeverityObservationStatusCodeP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//MedicationFreeTextSig">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigTextReferenceValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigTextReferenceValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigTextReferenceValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigConsumable">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigConsumable/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigConsumable/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigEDTELValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigEDTELValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigEDTELValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigEDReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigEDReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigEDReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigConsumableManufacturedProduct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigConsumableManufacturedProduct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicationFreeTextSig/MedicationFreeTextSigConsumableManufacturedProduct/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//MentalStatusObservation">
@@ -14368,6 +14427,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian/context"/>
@@ -14431,6 +14494,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntity">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentInformantRelatedEntity/diagnostics"/>
@@ -14503,6 +14570,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantTypeCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//USRealmHeaderPatientGeneratedDocument/USRealmHeaderPatientGeneratedDocumentParticipantTypeCode/diagnostics"/>
@@ -14748,6 +14819,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConsultationNote2/ConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote2/ConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote2/ConsultationNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConsultationNote2/ConsultationNote2HasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote2/ConsultationNote2HasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote2/ConsultationNote2HasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ConsultationNote2/ConsultationNote2CodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ConsultationNote2/ConsultationNote2CodeP/diagnostics"/>
@@ -15728,6 +15803,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote2/HistoryAndPhysicalNote2InformationRecipientIntendedRecipient/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote2/HistoryAndPhysicalNote2InformationRecipientIntendedRecipient/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HistoryAndPhysicalNote2/HistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote2/HistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote2/HistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//HistoryAndPhysicalNote2/HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote2/HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//HistoryAndPhysicalNote2/HistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS/context"/>
@@ -16504,6 +16583,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//UnstructuredDocument2/UnstructuredDocument2ComponentNonXMLBodyEDMediaType">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//UnstructuredDocument2/UnstructuredDocument2ComponentNonXMLBodyEDMediaType/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//UnstructuredDocument2/UnstructuredDocument2ComponentNonXMLBodyEDMediaType/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//UnstructuredDocument2/UnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//UnstructuredDocument2/UnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//UnstructuredDocument2/UnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//UnstructuredDocument2/UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//UnstructuredDocument2/UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats/diagnostics"/>

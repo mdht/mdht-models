@@ -432,6 +432,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createReactionObservation2();
 			case ConsolPackage.SEVERITY_OBSERVATION2:
 				return createSeverityObservation2();
+			case ConsolPackage.MEDICATION_FREE_TEXT_SIG:
+				return createMedicationFreeTextSig();
 			case ConsolPackage.MENTAL_STATUS_OBSERVATION:
 				return createMentalStatusObservation();
 			case ConsolPackage.NUTRITION_ASSESSMENT:
@@ -3273,6 +3275,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public SeverityObservation2 createSeverityObservation2() {
 		SeverityObservation2Impl severityObservation2 = new SeverityObservation2Impl();
 		return severityObservation2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationFreeTextSig createMedicationFreeTextSig() {
+		MedicationFreeTextSigImpl medicationFreeTextSig = new MedicationFreeTextSigImpl();
+		return medicationFreeTextSig;
 	}
 
 	/**

@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense2;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationFreeTextSig;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SubstanceAdministeredAct;
@@ -153,6 +154,17 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationActivity2MedicationFreeTextSig(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationActivity2Operations.validateMedicationActivity2MedicationFreeTextSig(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public DrugMonitoringAct getDrugMonitoringAct() {
 		return MedicationActivity2Operations.getDrugMonitoringAct(this);
@@ -216,6 +228,15 @@ public class MedicationActivity2Impl extends MedicationActivityImpl implements M
 	@Override
 	public ReactionObservation2 getConsolReactionObservation2() {
 		return MedicationActivity2Operations.getConsolReactionObservation2(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<MedicationFreeTextSig> getMedicationFreeTextSigs() {
+		return MedicationActivity2Operations.getMedicationFreeTextSigs(this);
 	}
 
 	/**

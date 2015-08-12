@@ -1,5 +1,15 @@
-/**
- */
+/*******************************************************************************
+ * Copyright (c) 2015 Dan Brown and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     Dan Brown (Audacious Inquiry) - initial API and implementation
+ *     								 - modified VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP
+ *     								   as it required the use of select instead of reject 
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Collection;
@@ -8,18 +18,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
@@ -44,7 +49,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional2;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -87,6 +91,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Vital Signs Section Entries Optional2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2FamilyHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Family History Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Information Recipient Intended Recipient</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Participant If Par Type Code IND Then AE Class Code IND</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Day IVLTS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Minute IVLTS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Second IVLTS</em>}</li>
@@ -2106,6 +2111,71 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(HistoryAndPhysicalNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Participant If Par Type Code IND Then AE Class Code IND</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(HistoryAndPhysicalNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated NOT
+	 * @ordered
+	 */
+	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(p : cda::Participant1 | p.typeCode = vocab::ParticipationType::IND and not ( p.associatedEntity.classCode = vocab::RoleClassAssociative::PRS  or p.associatedEntity.classCode = vocab::RoleClassAssociative::NOK or p.associatedEntity.classCode = vocab::RoleClassAssociative::CAREGIVER or p.associatedEntity.classCode = vocab::RoleClassAssociative::AGNT or p.associatedEntity.classCode = vocab::RoleClassAssociative::GUAR or p.associatedEntity.classCode = vocab::RoleClassAssociative::ECON or p.associatedEntity.isNullFlavorDefined() ) or p.associatedEntity.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(HistoryAndPhysicalNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Participant If Par Type Code IND Then AE Class Code IND</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(HistoryAndPhysicalNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Query<?, ?, ?> VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param historyAndPhysicalNote2 The receiving '<em><b>History And Physical Note2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	public static boolean validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(
+			HistoryAndPhysicalNote2 historyAndPhysicalNote2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2);
+			try {
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		Object oclResult = VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(historyAndPhysicalNote2);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
+			if (diagnostics != null) {
+				for (EObject eObject : oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR,
+						ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HISTORY_AND_PHYSICAL_NOTE2__HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND,
+						ConsolPlugin.INSTANCE.getString("HistoryAndPhysicalNote2HistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND"),
+						new Object[] { eObject }));
+				}
+
+			}
+			return oclResultSet.isEmpty();
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(HistoryAndPhysicalNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Day IVLTS</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3047,7 +3117,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(359));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(360));
 			try {
 				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3089,7 +3159,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(360));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(361));
 			try {
 				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3131,7 +3201,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(361));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(362));
 			try {
 				GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY = helper.createQuery(GET_PLAN_OF_TREATMENT_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3173,7 +3243,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(362));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(363));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3215,7 +3285,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(363));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(364));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3258,7 +3328,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(364));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(365));
 			try {
 				GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3300,7 +3370,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(365));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(366));
 			try {
 				GET_GENERAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_GENERAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3343,7 +3413,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(366));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(367));
 			try {
 				GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3386,7 +3456,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(367));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(368));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3429,7 +3499,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(368));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(369));
 			try {
 				GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3471,7 +3541,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(369));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(370));
 			try {
 				GET_INSTRUCTIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_INSTRUCTIONS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3514,7 +3584,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(370));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(371));
 			try {
 				GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3556,7 +3626,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(371));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(372));
 			try {
 				GET_PHYSICAL_EXAM_SECTION2__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3599,7 +3669,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(372));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(373));
 			try {
 				GET_PROBLEM_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3642,7 +3712,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(373));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(374));
 			try {
 				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3684,7 +3754,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(374));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(375));
 			try {
 				GET_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3727,7 +3797,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(375));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(376));
 			try {
 				GET_RESULTS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3769,7 +3839,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(376));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(377));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3811,7 +3881,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(377));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(378));
 			try {
 				GET_SOCIAL_HISTORY_SECTION2__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3854,7 +3924,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(378));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(379));
 			try {
 				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3896,7 +3966,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2,
-				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(379));
+				ConsolPackage.Literals.HISTORY_AND_PHYSICAL_NOTE2.getEAllOperations().get(380));
 			try {
 				GET_FAMILY_HISTORY_SECTION2__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3915,7 +3985,7 @@ public class HistoryAndPhysicalNote2Operations extends USRealmHeader2Operations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.1.3' and id.extension = '2014-06-09')";
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.1.3' and id.extension = '2015-08-01')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsTemplateId(HistoryAndPhysicalNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}' invariant operation.
