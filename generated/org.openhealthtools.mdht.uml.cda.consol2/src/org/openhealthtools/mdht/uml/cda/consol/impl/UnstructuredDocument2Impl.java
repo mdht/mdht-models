@@ -134,6 +134,17 @@ public class UnstructuredDocument2Impl extends USRealmHeader2Impl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats(

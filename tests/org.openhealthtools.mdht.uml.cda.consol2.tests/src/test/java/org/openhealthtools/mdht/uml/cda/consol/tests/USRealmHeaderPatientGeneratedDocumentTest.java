@@ -11,6 +11,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
+import java.util.List;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -18,11 +19,14 @@ import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.AssignedCustodian;
 import org.openhealthtools.mdht.uml.cda.AssignedEntity;
+import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.Custodian;
 import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
 import org.openhealthtools.mdht.uml.cda.DataEnterer;
 import org.openhealthtools.mdht.uml.cda.Informant12;
+import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
+import org.openhealthtools.mdht.uml.cda.Participant1;
 import org.openhealthtools.mdht.uml.cda.RelatedEntity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument;
@@ -31,7 +35,9 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
+import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
+import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
 
 /**
  * <!-- begin-user-doc -->
@@ -56,6 +62,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Language Communication Preference Ind</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient If More Than One Lang Comm</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Guardian</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Patient Language Communication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Record Target Patient Role Id</em>}</li>
@@ -72,6 +79,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Data Enterer Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Informant Related Entity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Informant Related Entity Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Informant Has Related Entity Or Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Informant Related Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Custodian Assigned Custodian Represented Custodian Organization</em>}</li>
@@ -90,6 +98,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Authenticator Assigned Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Participant Associated Entity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Participant Associated Entity Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Participant If Type Code IND Then AE Class Code From IND Roleclass Codes</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentParticipantTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Participant Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document Participant Associated Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument#validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate US Realm Header Patient Generated Document In Fulfillment Of Order Id</em>}</li>
@@ -634,6 +643,53 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 		};
 
 		validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceIndTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm() {
+		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangCommTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
+			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm",
+			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_IF_MORE_THAN_ONE_LANG_COMM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(USRealmHeaderPatientGeneratedDocument target) {
+				target.init();
+				target.getRecordTargets().add(CDAFactory.eINSTANCE.createRecordTarget());
+				target.getRecordTargets().get(0).setPatientRole(CDAFactory.eINSTANCE.createPatientRole());
+				target.getRecordTargets().get(0).getPatientRole().setPatient(CDAFactory.eINSTANCE.createPatient());
+				List<LanguageCommunication> lcoms = target.getRecordTargets().get(0).getPatientRole().getPatient().getLanguageCommunications();
+				LanguageCommunication lcom1 = CDAFactory.eINSTANCE.createLanguageCommunication();
+				lcom1.setPreferenceInd(DatatypesFactory.eINSTANCE.createBL());
+				lcom1.getPreferenceInd().setValue(true);
+				LanguageCommunication lcom2 = CDAFactory.eINSTANCE.createLanguageCommunication();
+				lcom2.setPreferenceInd(DatatypesFactory.eINSTANCE.createBL());
+				lcom2.getPreferenceInd().setValue(true);
+				lcoms.add(lcom1);
+				lcoms.add(lcom2);
+			}
+
+			@Override
+			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
+				// remove value
+				target.getRecordTargets().get(0).getPatientRole().getPatient().getLanguageCommunications().get(0).getPreferenceInd().setValue(
+					null);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm(
+					(USRealmHeaderPatientGeneratedDocument) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangCommTestCase.doValidationTest();
 	}
 
 	/**
@@ -1216,6 +1272,87 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 		};
 
 		validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity() {
+		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntityTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
+			"validateUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity",
+			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_HAS_RELATED_ENTITY_OR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(USRealmHeaderPatientGeneratedDocument target) {
+						// none
+						target.init();
+						Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+						target.getInformants().add(inf);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(USRealmHeaderPatientGeneratedDocument target) {
+						// both (xor)
+						target.init();
+						Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+						target.getInformants().add(inf);
+						RelatedEntity relEnt = CDAFactory.eINSTANCE.createRelatedEntity();
+						inf.setRelatedEntity(relEnt);
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						inf.setAssignedEntity(ae);
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
+						// RelatedEntity only
+						target.init();
+						Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+						target.getInformants().add(inf);
+						RelatedEntity relEnt = CDAFactory.eINSTANCE.createRelatedEntity();
+						inf.setRelatedEntity(relEnt);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
+						// AssignedEntity only
+						target.init();
+						Informant12 inf = CDAFactory.eINSTANCE.createInformant12();
+						target.getInformants().add(inf);
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						inf.setAssignedEntity(ae);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity(
+					(USRealmHeaderPatientGeneratedDocument) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntityTestCase.doValidationTest();
 	}
 
 	/**
@@ -1868,6 +2005,110 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 		};
 
 		validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* Note: modified OCL in operations
+	*/
+	@Test
+	public void testValidateUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes() {
+		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodesTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
+			"validateUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes",
+			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_IF_TYPE_CODE_IND_THEN_AE_CLASS_CODE_FROM_IND_ROLECLASS_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(USRealmHeaderPatientGeneratedDocument target) {
+						// <participant typeCode="IND"/>
+						target.init();
+						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+						p.setTypeCode(ParticipationType.IND);
+						target.getParticipants().add(p);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(USRealmHeaderPatientGeneratedDocument target) {
+						// <participant typeCode="IND">
+						// <associatedEntity/>
+						target.init();
+						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+						target.getParticipants().add(p);
+						p.setTypeCode(ParticipationType.IND);
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						p.setAssociatedEntity(ae);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(USRealmHeaderPatientGeneratedDocument target) {
+						// <participant typeCode="IND">
+						// <associatedEntity classCode="ACCESS"/>
+						target.init();
+						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+						target.getParticipants().add(p);
+						p.setTypeCode(ParticipationType.IND);
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						p.setAssociatedEntity(ae);
+						ae.setClassCode(RoleClassAssociative.ACCESS); // invalid code
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
+						// correct value pass
+						// <participant typeCode="IND" >
+						// <associatedEntity classCode="SOME CODE FROM THE SET" />
+						target.getParticipants().clear();
+						target.init();
+						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+						target.getParticipants().add(p);
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						p.setAssociatedEntity(ae);
+						p.getAssociatedEntity().setClassCode(RoleClassAssociative.PRS);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
+						// nullFlavor pass
+						// has <participant typeCode="IND"> and has <associatedEntity nullFlavor=”NA” />
+						target.getParticipants().clear();
+						target.init();
+						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+						target.getParticipants().add(p);
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						p.setAssociatedEntity(ae);
+						p.getAssociatedEntity().setNullFlavor(NullFlavor.NA);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes(
+					(USRealmHeaderPatientGeneratedDocument) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodesTestCase.doValidationTest();
 	}
 
 	/**

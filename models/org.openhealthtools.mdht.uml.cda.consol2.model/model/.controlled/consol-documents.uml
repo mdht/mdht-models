@@ -8183,7 +8183,7 @@ HL7 Vocabulary simply describes guardian as a relationship to a ward.  This ne
               <language>Analysis</language>
               <language>OCL</language>
               <body>If more than one languageCommunication is present, only one languageCommunication element SHALL have a preferenceInd with a value of 1</body>
-              <body>languageCommunication->size() > 1 implies languageCommunication->one( langCom : cda::LanguageCommunication | langCom.preferenceInd.value = 1)</body>
+              <body>languageCommunication->size() > 1 implies languageCommunication->one( langCom : cda::LanguageCommunication | langCom.preferenceInd.value)</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_lQM5EKlJEeOTwZftO6CV5g">
@@ -13921,7 +13921,7 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
             <language>Analysis</language>
             <language>OCL</language>
             <body>If the text element does not contain a reference element with a value attribute, then it SHALL contain exactly one [1..1] @representation=&quot;B64&quot; and exactly one [1..1] @mediaType</body>
-            <body>not text.reference.value.oclIsUndefined() xor ( text.representation = 'B64' and (not text.mediaType.oclIsUndefined()) )</body>
+            <body>not text.reference.value.oclIsUndefined() xor ( text.isDefined('representation') and text.representation = datatypes::BinaryDataEncoding::B64 and (not text.mediaType.oclIsUndefined()) )</body>
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_9q_mMDLAEeSoCqqrpX8LzQ" name="mediaTypeFileFormats">

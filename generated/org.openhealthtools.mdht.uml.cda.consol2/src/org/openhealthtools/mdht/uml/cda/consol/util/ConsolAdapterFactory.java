@@ -1025,6 +1025,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseMedicationFreeTextSig(MedicationFreeTextSig object) {
+			return createMedicationFreeTextSigAdapter();
+		}
+
+		@Override
 		public Adapter caseMentalStatusObservation(MentalStatusObservation object) {
 			return createMentalStatusObservationAdapter();
 		}
@@ -5564,6 +5569,20 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSeverityObservation2Adapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationFreeTextSig <em>Medication Free Text Sig</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.MedicationFreeTextSig
+	 * @generated
+	 */
+	public Adapter createMedicationFreeTextSigAdapter() {
 		return null;
 	}
 

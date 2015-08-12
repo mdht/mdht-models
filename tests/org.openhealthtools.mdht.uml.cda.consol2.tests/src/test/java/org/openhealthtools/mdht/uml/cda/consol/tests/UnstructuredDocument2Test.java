@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.UnstructuredDocument2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.BinaryDataEncoding;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
@@ -46,6 +47,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument2#validateUnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document2 Custodian Assigned Custodian Represented Custodian Organization</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument2#validateUnstructuredDocument2CustodianAssignedCustodian(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document2 Custodian Assigned Custodian</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument2#validateUnstructuredDocument2ComponentNonXMLBodyEDMediaType(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document2 Component Non XML Body ED Media Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument2#validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document2 Component Non XML Body Has Reference Or Representation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument2#validateUnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document2 Component Non XML Body Media Type File Formats</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument2#validateUnstructuredDocument2ComponentNonXMLBodyText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document2 Component Non XML Body Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument2#validateUnstructuredDocument2ComponentNonXMLBody(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document2 Component Non XML Body</em>}</li>
@@ -355,6 +357,48 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 		};
 
 		validateUnstructuredDocument2ComponentNonXMLBodyEDMediaTypeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation() {
+		OperationsTestCase<UnstructuredDocument2> validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentationTestCase = new OperationsTestCase<UnstructuredDocument2>(
+			"validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation",
+			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(UnstructuredDocument2 target) {
+				target.init();
+				Component2 c2 = CDAFactory.eINSTANCE.createComponent2();
+				target.setComponent(c2);
+				NonXMLBody nxb = CDAFactory.eINSTANCE.createNonXMLBody();
+				c2.setNonXMLBody(nxb);
+				ED text = DatatypesFactory.eINSTANCE.createED();
+				nxb.setText(text);
+			}
+
+			@Override
+			protected void updateToPass(UnstructuredDocument2 target) {
+				ED validText = DatatypesFactory.eINSTANCE.createED();
+				validText.setMediaType("hasMediaType");
+				validText.setRepresentation(BinaryDataEncoding.B64);
+				target.getComponent().getNonXMLBody().setText(validText);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return UnstructuredDocument2Operations.validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation(
+					(UnstructuredDocument2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentationTestCase.doValidationTest();
 	}
 
 	/**

@@ -110,6 +110,17 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateConsultationNote2HasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConsultationNote2Operations.validateConsultationNote2HasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateConsultationNote2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2CodeP(this, diagnostics, context);
 	}

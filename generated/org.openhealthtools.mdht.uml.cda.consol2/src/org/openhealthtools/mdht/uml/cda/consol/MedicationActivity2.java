@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationActivity2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActivityTemplateId MedicationActivityInstructionsInversionInd MedicationActivity2SubstanceAdministeredActInversionInd MedicationActivityEffectiveTimeIVLTSorTS MedicationActivity2EffectiveTimeIVLTSLowXorValue MedicationActivityStatusCode MedicationActivityStatusCodeP MedicationActivityRouteCode MedicationActivityDoseQuantity MedicationActivityAdministrationUnitCode MedicationActivityText MedicationActivityConsumable MedicationActivityPreconditionTypeCode MedicationActivityPreconditionPreconditionForSubstanceAdministration MedicationActivityConsumableMedicationInformation' templateId.root='2.16.840.1.113883.10.20.22.4.16' templateId.extension='2014-06-09' constraints.validation.info='MedicationActivityTextReference MedicationActivityReferenceValue MedicationActivityTextReferenceValue MedicationActivity2SubstanceAdministeredActSequenceNumber MedicationActivityEffectiveTimeIVLTSHigh MedicationActivityCode MedicationActivityRepeatNumber MedicationActivityAdministrationUnitCodeP MedicationActivity2DrugMonitoringAct MedicationActivityInstructions MedicationActivity2SubstanceAdministeredAct MedicationActivityIndication MedicationActivityMedicationSupplyOrder MedicationActivityMedicationDispense MedicationActivityReactionObservation MedicationActivityPrecondition' constraints.validation.warning='MedicationActivityDoseQuantityorrateQuantity MedicationActivityEffectiveTimeIVLTSLow MedicationActivityEffectiveTimePIVLTS MedicationActivityRouteCodeP MedicationActivity2AuthorParticipation' constraints.validation.dependOn.MedicationActivityStatusCode='MedicationActivityStatusCodeP' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1' routeCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.MedicationActivityRouteCode='MedicationActivityRouteCodeP' administrationUnitCode.codeSystemName='' constraints.validation.dependOn.MedicationActivityAdministrationUnitCode='MedicationActivityAdministrationUnitCodeP' constraints.validation.query='MedicationActivityPreconditionTypeCode MedicationActivityPreconditionPreconditionForSubstanceAdministration MedicationActivityConsumableMedicationInformation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActivityTemplateId MedicationActivityInstructionsInversionInd MedicationActivity2SubstanceAdministeredActInversionInd MedicationActivityEffectiveTimeIVLTSorTS MedicationActivity2EffectiveTimeIVLTSLowXorValue MedicationActivityStatusCode MedicationActivityStatusCodeP MedicationActivityRouteCode MedicationActivityDoseQuantity MedicationActivityAdministrationUnitCode MedicationActivityText MedicationActivityConsumable MedicationActivityPreconditionTypeCode MedicationActivityPreconditionPreconditionForSubstanceAdministration MedicationActivityConsumableMedicationInformation' templateId.root='2.16.840.1.113883.10.20.22.4.16' templateId.extension='2014-06-09' constraints.validation.info='MedicationActivityTextReference MedicationActivityReferenceValue MedicationActivityTextReferenceValue MedicationActivity2SubstanceAdministeredActSequenceNumber MedicationActivityEffectiveTimeIVLTSHigh MedicationActivityCode MedicationActivityRepeatNumber MedicationActivityAdministrationUnitCodeP MedicationActivity2DrugMonitoringAct MedicationActivityInstructions MedicationActivity2SubstanceAdministeredAct MedicationActivityIndication MedicationActivityMedicationSupplyOrder MedicationActivityMedicationDispense MedicationActivityReactionObservation MedicationActivityPrecondition MedicationActivity2MedicationFreeTextSig' constraints.validation.warning='MedicationActivityDoseQuantityorrateQuantity MedicationActivityEffectiveTimeIVLTSLow MedicationActivityEffectiveTimePIVLTS MedicationActivityRouteCodeP MedicationActivity2AuthorParticipation' constraints.validation.dependOn.MedicationActivityStatusCode='MedicationActivityStatusCodeP' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1' routeCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.MedicationActivityRouteCode='MedicationActivityRouteCodeP' administrationUnitCode.codeSystemName='' constraints.validation.dependOn.MedicationActivityAdministrationUnitCode='MedicationActivityAdministrationUnitCodeP' constraints.validation.query='MedicationActivityPreconditionTypeCode MedicationActivityPreconditionPreconditionForSubstanceAdministration MedicationActivityConsumableMedicationInformation'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationActivity2Consumable constraints.validation.error='MedicationActivityConsumableMedicationInformation'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationActivity2Precondition typeCode='PRCN' constraints.validation.error='MedicationActivityPreconditionTypeCode MedicationActivityPreconditionPreconditionForSubstanceAdministration'"
  * @generated
@@ -120,6 +120,18 @@ public interface MedicationActivity2 extends MedicationActivity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(consol::MedicationFreeTextSig) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @generated
+	 */
+	boolean validateMedicationActivity2MedicationFreeTextSig(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::DrugMonitoringAct))->asSequence()->any(true).oclAsType(consol::DrugMonitoringAct)'"
 	 * @generated
@@ -179,6 +191,15 @@ public interface MedicationActivity2 extends MedicationActivity {
 	 * @generated
 	 */
 	ReactionObservation2 getConsolReactionObservation2();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationFreeTextSig)).oclAsType(consol::MedicationFreeTextSig)'"
+	 * @generated
+	 */
+	EList<MedicationFreeTextSig> getMedicationFreeTextSigs();
 
 	/**
 	 * <!-- begin-user-doc -->

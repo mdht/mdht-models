@@ -2145,6 +2145,15 @@ public interface ConsolFactory extends EFactory {
 	SeverityObservation2 createSeverityObservation2();
 
 	/**
+	 * Returns a new object of class '<em>Medication Free Text Sig</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Medication Free Text Sig</em>'.
+	 * @generated
+	 */
+	MedicationFreeTextSig createMedicationFreeTextSig();
+
+	/**
 	 * Returns a new object of class '<em>Social History Observation2</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

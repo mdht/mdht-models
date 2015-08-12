@@ -2716,7 +2716,7 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
       </specification>
     </ownedRule>
     <generalization xmi:id="_kowjcTr-EeWD4MX6K2c_gA">
-      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL///cda.uml#_nazskEbuEd6besF9iFIJkQ"/>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_nazskEbuEd6besF9iFIJkQ"/>
     </generalization>
     <ownedAttribute xmi:id="_Hj-6wDsAEeWD4MX6K2c_gA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
@@ -2724,25 +2724,25 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
         <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdc0DcEd6xYZuu1VKCVw"/>
       </defaultValue>
-      <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_dTy38Eb8Ed6besF9iFIJkQ"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_dTy38Eb8Ed6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_HkAI4DsAEeWD4MX6K2c_gA" name="moodCode" visibility="private">
       <ownedComment xmi:id="_92qO8DsBEeWD4MX6K2c_gA">
         <body>Note: moodCode must match the parent substanceAdministration EVN or INT</body>
       </ownedComment>
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_bN2_sErtEd6FXKclYGEDCw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bN2_sErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Hj_h0DsAEeWD4MX6K2c_gA" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NXd8UDsAEeWD4MX6K2c_gA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NXdVQDsAEeWD4MX6K2c_gA" value="1"/>
-      <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_jEJb8ErsEd6FXKclYGEDCw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_jEJb8ErsEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_HkAI4TsAEeWD4MX6K2c_gA" name="text" visibility="private" type="_c0WPIDsCEeWD4MX6K2c_gA" aggregation="composite">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O9eQ0DsAEeWD4MX6K2c_gA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O9dpwDsAEeWD4MX6K2c_gA" value="1"/>
-      <redefinedProperty href="pathmap://CDA_MODEL///cda.uml#_p-taUErsEd6FXKclYGEDCw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_p-taUErsEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_WucAkDuhEeWD4MX6K2c_gA" name="consumable" type="_hm4JwDuhEeWD4MX6K2c_gA" association="_Wud1wDuhEeWD4MX6K2c_gA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZBrOgDuhEeWD4MX6K2c_gA" value="1"/>
@@ -2871,4 +2871,5 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <ruleId>CONF:1098-32908</ruleId>
     <ruleId>CONF:1098-32909</ruleId>
   </CDA:EntryRelationship>
+  <CDA:PropertyValidation xmi:id="_1RLKMD-_EeWCWce3kO1aHQ" base_Property="_HkAI4DsAEeWD4MX6K2c_gA"/>
 </xmi:XMI>
