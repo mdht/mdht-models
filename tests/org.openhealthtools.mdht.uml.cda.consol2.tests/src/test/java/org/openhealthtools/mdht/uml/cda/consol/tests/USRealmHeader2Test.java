@@ -2000,8 +2000,9 @@ public class USRealmHeader2Test extends CDAValidationTest {
 						// has <country>US</country> equal to 'US' and has a nullFlavor to avoid state code requirement
 						place.getAddr().addCountry("US");
 						place.getAddr().getStates().add(DatatypesFactory.eINSTANCE.createADXP());
-						for (ADXP state : place.getAddr().getStates())
+						for (ADXP state : place.getAddr().getStates()) {
 							state.setNullFlavor(NullFlavor.UNK);
+						}
 						birthplace.setPlace(place);
 						patient.setBirthplace(birthplace);
 						pr.setPatient(patient);
@@ -2022,8 +2023,9 @@ public class USRealmHeader2Test extends CDAValidationTest {
 						place.setAddr(DatatypesFactory.eINSTANCE.createAD());
 						// has country but it does not equal 'US' so we don't enforce anything
 						place.getAddr().addCountry("Not The US");
-						for (ADXP state : place.getAddr().getStates())
+						for (ADXP state : place.getAddr().getStates()) {
 							state.setNullFlavor(NullFlavor.UNK);
+						}
 						birthplace.setPlace(place);
 						patient.setBirthplace(birthplace);
 						pr.setPatient(patient);

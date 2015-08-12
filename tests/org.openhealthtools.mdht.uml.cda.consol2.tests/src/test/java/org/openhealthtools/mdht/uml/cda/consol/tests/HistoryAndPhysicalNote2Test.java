@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.AssignedEntity;
+import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.Component1;
 import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
@@ -40,6 +41,9 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
+import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
+import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
+import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
 
 /**
  * <!-- begin-user-doc -->
@@ -81,6 +85,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2VitalSignsSectionEntriesOptional2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Vital Signs Section Entries Optional2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2FamilyHistorySection2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Family History Section2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Information Recipient Intended Recipient</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Participant If Par Type Code IND Then AE Class Code IND</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheDayIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Day IVLTS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheMinuteIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Minute IVLTS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.HistoryAndPhysicalNote2#validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterGeneralHeaderConstraintsUSRealmDateAndTimeDTPreciseToTheSecondIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note2 Component Of Encompassing Encounter General Header Constraints US Realm Date And Time DT Precise To The Second IVLTS</em>}</li>
@@ -1488,6 +1493,110 @@ public class HistoryAndPhysicalNote2Test extends CDAValidationTest {
 		};
 
 		validateHistoryAndPhysicalNote2InformationRecipientIntendedRecipientTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* Note: Modified OCL in operations.
+	*/
+	@Test
+	public void testValidateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND() {
+		OperationsTestCase<HistoryAndPhysicalNote2> validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeINDTestCase = new OperationsTestCase<HistoryAndPhysicalNote2>(
+			"validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND",
+			operationsForOCL.getOCLValue("VALIDATE_HISTORY_AND_PHYSICAL_NOTE2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(HistoryAndPhysicalNote2 target) {
+						// <participant typeCode="IND"/>
+						target.init();
+						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+						p.setTypeCode(ParticipationType.IND);
+						target.getParticipants().add(p);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(HistoryAndPhysicalNote2 target) {
+						// <participant typeCode="IND">
+						// <associatedEntity/>
+						target.init();
+						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+						target.getParticipants().add(p);
+						p.setTypeCode(ParticipationType.IND);
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						p.setAssociatedEntity(ae);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(HistoryAndPhysicalNote2 target) {
+						// <participant typeCode="IND">
+						// <associatedEntity classCode="ACCESS"/>
+						target.init();
+						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+						target.getParticipants().add(p);
+						p.setTypeCode(ParticipationType.IND);
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						p.setAssociatedEntity(ae);
+						ae.setClassCode(RoleClassAssociative.ACCESS); // invalid code
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(HistoryAndPhysicalNote2 target) {
+						// correct value pass
+						// <participant typeCode="IND" >
+						// <associatedEntity classCode="SOME CODE FROM THE SET" />
+						target.getParticipants().clear();
+						target.init();
+						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+						target.getParticipants().add(p);
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						p.setAssociatedEntity(ae);
+						p.getAssociatedEntity().setClassCode(RoleClassAssociative.PRS);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(HistoryAndPhysicalNote2 target) {
+						// nullFlavor pass
+						// has <participant typeCode="IND"> and has <associatedEntity nullFlavor=”NA” />
+						target.getParticipants().clear();
+						target.init();
+						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
+						target.getParticipants().add(p);
+						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
+						p.setAssociatedEntity(ae);
+						p.getAssociatedEntity().setNullFlavor(NullFlavor.NA);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return HistoryAndPhysicalNote2Operations.validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeIND(
+					(HistoryAndPhysicalNote2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateHistoryAndPhysicalNote2ParticipantIfParTypeCodeINDThenAEClassCodeINDTestCase.doValidationTest();
 	}
 
 	/**

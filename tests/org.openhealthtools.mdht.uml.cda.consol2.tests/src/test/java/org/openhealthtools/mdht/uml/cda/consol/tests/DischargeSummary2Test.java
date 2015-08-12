@@ -1369,6 +1369,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
+	* Note: Modified OCL in operations.
 	*/
 	@Test
 	public void testValidateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND() {
