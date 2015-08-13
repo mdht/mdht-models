@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Hearing Plan Of Care Header"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.2.1]"/>
+<meta name="description" content="[ClinicalDocument: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.2.1]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Relation" scheme="URI" content="../content/DocumentTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Hearing Plan Of Care Header</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Hearing Plan Of Care Header</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.2.1</tt>]</p>
+
+<div class="section">
+<p class="p">Known Subclasses: <a class="xref" href="HearingPlanOfCareDocument.html" title="[ClinicalDocument: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.1]">Hearing Plan Of Care Document</a></p>
+
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i"><strong class="ph b">Template Design Relationships</strong><br/>
+This template is an adaptation of the header template adopted by IHE for use in the UV Realm. Machine readable entries associated with US Realm templates have been modified to use vocabulary constraints established for the Hearing Plan of Care in the US Realm. <br/>
+<br/>
+This template design has been adapted based on the design for the HL7 Consolidated CDA R1.1 US Realm Header template.<br/>
+<br/>
+<strong class="ph b">Template Purpose</strong><br/>
+This template constrains only the recordTarget, author, custodian, documentationOf/serviceEvent and componentOf/encompassingEncounter elements of the header. It adds constraints for the recordTarget.guardian role and the author (when it is a system). It also adds vocabulary constraints for the serviceEvent to encode the service of creating a hearing plan of care and encompassingEncounter to encode the type of encounter.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.2.1"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">recordTarget</strong></tt> <ol class="ol" type="a"><li class="li"> This recordTarget <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patientRole</strong></tt> <ol class="ol" type="i"><li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt><ol class="ol"><li class="li">The content of addr <strong class="ph b">SHALL</strong> be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</li>
+</ol>
+</li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt></li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt><ol class="ol"><li class="li">Such telecoms <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @use, which <strong class="ph b">SHALL</strong> be selected from ValueSet Telecom Use (US Realm Header) 2.16.840.1.113883.11.20.9.20 DYNAMIC.</li>
+</ol>
+</li>
+<li class="li"> This patientRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">patient</strong></tt> <ol class="ol"><li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">administrativeGenderCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> Administrative Gender (HL7 V3) 2.16.840.1.113883.1.11.1</tt><strong class="ph b"> DYNAMIC</strong></li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">birthTime</strong></tt><ol class="ol" type="a"><li class="li">birthTime <strong class="ph b">SHALL</strong> be precise to year.</li>
+<li class="li">birthTime <strong class="ph b">SHOULD</strong> be precise to day.</li>
+</ol>
+</li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">ethnicGroupCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> Ethnicity Value Set 2.16.840.1.114222.4.11.837</tt><strong class="ph b"> DYNAMIC</strong></li>
+<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">maritalStatusCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> Marital Status 2.16.840.1.113883.1.11.12212</tt><strong class="ph b"> STATIC</strong> 1</li>
+<li class="li"> This patient <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt><ol class="ol" type="a"><li class="li">The content of name <strong class="ph b">SHALL</strong> be a conformant US Realm Patient Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1)</li>
+</ol>
+</li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">raceCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> Race Value Set 2.16.840.1.113883.1.11.14914</tt><strong class="ph b"> DYNAMIC</strong></li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">religiousAffiliationCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> Religious Affiliation 2.16.840.1.113883.1.11.19185</tt><strong class="ph b"> STATIC</strong> 1</li>
+<li class="li"> This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">birthplace</strong></tt> <ol class="ol" type="a"><li class="li"> This birthplace <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">place</strong></tt> <ol class="ol" type="i"><li class="li"> This place <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt><ol class="ol"><li class="li">This addr <strong class="ph b">SHOULD</strong> contain zero or one [0..1] country, which <strong class="ph b">SHALL</strong> be selected from ValueSet CountryValueSet 2.16.840.1.113883.3.88.12.80.63 DYNAMIC</li>
+<li class="li">This addr <strong class="ph b">MAY</strong> contain zero or one [0..1] postalCode, which <strong class="ph b">SHALL</strong> be selected from ValueSet PostalCodeValueSet 2.16.840.1.113883.3.88.12.80.2 DYNAMIC</li>
+<li class="li">If country is US, this addr <strong class="ph b">SHALL</strong> contain exactly one [1..1] state, which <strong class="ph b">SHALL</strong> be selected from ValueSet 2.16.840.1.113883.3.88.12.80.1 StateValueSet DYNAMIC</li>
+</ol>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">guardian</strong></tt> <ol class="ol" type="a"><li class="li"> Such guardians <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt><ol class="ol" type="i"><li class="li">The content of addr <strong class="ph b">SHALL</strong> be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</li>
+</ol>
+</li>
+<li class="li"> Such guardians <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> PersonalAndLegalRelationshipRoleType 2.16.840.1.113883.11.20.12.1</tt><strong class="ph b"> DYNAMIC</strong></li>
+<li class="li"> Such guardians <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt><ol class="ol" type="i"><li class="li">The telecom, if present <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @use, which <strong class="ph b">SHALL</strong> be selected from ValueSet Telecom Use (US Realm Header) 2.16.840.1.113883.11.20.9.20 DYNAMIC.</li>
+</ol>
+</li>
+<li class="li"> Such guardians Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">guardianPerson</strong></tt> <ol class="ol" type="i"><li class="li"> This guardianPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt><ol class="ol"><li class="li">The content of name <strong class="ph b">SHALL</strong> be a conformant US Realm Patient Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1)</li>
+</ol>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+<li class="li"> This patient <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">languageCommunication</strong></tt> <ol class="ol" type="a"><li class="li"> Such languageCommunications <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> Language 2.16.840.1.113883.1.11.11526</tt><strong class="ph b"> DYNAMIC</strong></li>
+<li class="li"> Such languageCommunications <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">modeCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> LanguageAbilityMode 2.16.840.1.113883.1.11.12249</tt><strong class="ph b"> STATIC</strong> 1</li>
+<li class="li"> Such languageCommunications <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">preferenceInd</strong></tt></li>
+<li class="li"> Such languageCommunications <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">proficiencyLevelCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> LanguageAbilityProficiency 2.16.840.1.113883.1.11.12199</tt><strong class="ph b"> STATIC</strong></li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">author</strong></tt> <ol class="ol" type="a"><li class="li"> Such authors <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">time</strong></tt><ol class="ol" type="i"><li class="li">The content <strong class="ph b">SHALL</strong> be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4)</li>
+</ol>
+</li>
+<li class="li"> Such authors <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt><ol class="ol"><li class="li">The content of addr <strong class="ph b">SHALL</strong> be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</li>
+</ol>
+</li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> Healthcare Provider Taxonomy (HIPAA) 2.16.840.1.114222.4.11.1066</tt><strong class="ph b"> STATIC</strong> 1</li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt><ol class="ol"><li class="li">id <strong class="ph b">SHALL</strong> contain exactly one [1..1] @root</li>
+<li class="li">If this assignedAuthor is an assignedPerson the assignedAuthor id <strong class="ph b">SHALL</strong> contain exactly one [1..1] @root="2.16.840.1.113883.4.6" National Provider Identifier</li>
+</ol>
+</li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt><ol class="ol"><li class="li">Such telecoms <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @use, which <strong class="ph b">SHALL</strong> be selected from ValueSet Telecom Use (US Realm Header) 2.16.840.1.113883.11.20.9.20 DYNAMIC.</li>
+</ol>
+</li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedAuthoringDevice</strong></tt> <ol class="ol"><li class="li"> This assignedAuthoringDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">manufacturerModelName</strong></tt></li>
+<li class="li"> This assignedAuthoringDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">softwareName</strong></tt></li>
+</ol>
+ </li>
+<li class="li"> This assignedAuthor <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedPerson</strong></tt> <ol class="ol"><li class="li"> This assignedPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt><ol class="ol" type="a"><li class="li">The content of name <strong class="ph b">SHALL</strong> be a conformant US Realm Patient Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1)</li>
+</ol>
+</li>
+</ol>
+ </li>
+</ol>
+ <ol class="ol" type="i"><li class="li">There <strong class="ph b">SHALL</strong> be exactly one assignedAuthor/assignedPerson or exactly one assignedAuthor/assignedAuthoringDevice, or exactly one of each.</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">custodian</strong></tt> <ol class="ol" type="a"><li class="li"> This custodian <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedCustodian</strong></tt> <ol class="ol" type="i"><li class="li"> This assignedCustodian <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">representedCustodianOrganization</strong></tt> <ol class="ol"><li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt><ol class="ol" type="a"><li class="li">The content of addr <strong class="ph b">SHALL</strong> be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</li>
+</ol>
+</li>
+<li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt><ol class="ol" type="a"><li class="li">Such ids <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @root="2.16.840.1.113883.4.6" National Provider Identifier.</li>
+</ol>
+</li>
+<li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">name</strong></tt></li>
+<li class="li"> This representedCustodianOrganization <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">telecom</strong></tt><ol class="ol" type="a"><li class="li">This telecom <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @use, which <strong class="ph b">SHALL</strong> be selected from ValueSet Telecom Use (US Realm Header) 2.16.840.1.113883.11.20.9.20 DYNAMIC</li>
+</ol>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">componentOf</strong></tt> <ol class="ol" type="a"><li class="li"> This componentOf <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">encompassingEncounter</strong></tt> <ol class="ol" type="i"><li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/VS_HPoCEncounterType.html">VS_HPoCEncounterType</a> 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.1</tt><strong class="ph b"> STATIC</strong> 1<div class="p"><p class="lines"><em class="ph i">Implementer Guidance:<br/>
+The code element of the encompassingEncounter records the type of encounter. The vocabulary binding in this template constrains the set of codes used to represent a birth encounter. This value set may be created from concepts in the ICD code system for the US Realm template.</em></p>
+</div>
+</li>
+<li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt></li>
+<li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt></li>
+<li class="li"> This encompassingEncounter <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">location</strong></tt> <ol class="ol"><li class="li"> This location <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">healthCareFacility</strong></tt> <ol class="ol" type="a"><li class="li"> This healthCareFacility <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">location</strong></tt>, where its type is CDA Place<ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] CDA Place</li>
+</ol>
+</li>
+<li class="li"> This healthCareFacility <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">serviceProviderOrganization</strong></tt>, where its type is CDA Organization<ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] CDA Organization</li>
+</ol>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">documentationOf</strong></tt> <div class="p"><p class="lines"><em class="ph i">Implementer Guidance:<br/>
+One of the documentationOf elements should record the service event of creating the Hearing Plan of Care.<br/>
+Additionally, other documentationOf elements optionally can record the derived screening outcome for each ear.<br/>
+<br/>
+When the Hearing Plan of Care is developed by a system, Implementers will need to determine who should be listed as the performer of the service event associated with creation of the hearing plan of care. This may be someone who is responsible for reviewing the generated plan before it is completed. This implementation detail is out of scope for this profile.<br/>
+<br/>
+The performer participant represents clinicians who actually and principally carry out the serviceEvent. In a transfer of care this represents the healthcare providers involved in the current or pertinent historical care of the patient. Preferably, the patient's key healthcare care team members would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors</em></p>
+</div>
+<ol class="ol" type="a"><li class="li"> This documentationOf <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">serviceEvent</strong></tt> <ol class="ol" type="i"><li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/VS_HPoCServiceEvent.html">VS_HPoCServiceEvent</a> 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.2</tt><strong class="ph b"> STATIC</strong> 1</li>
+<li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt><ol class="ol"><li class="li">This effectiveTime <strong class="ph b">SHALL</strong> contain exactly one [1..1] low</li>
+</ol>
+</li>
+<li class="li"> This serviceEvent <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> <ol class="ol"><li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">functionCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.88 ParticipationFunction</tt>)</li>
+<li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.90 HL7ParticipationType</tt>)</li>
+<li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> <ol class="ol" type="a"><li class="li"> This assignedEntity <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt><ol class="ol" type="i"><li class="li">Such ids <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @root="2.16.840.1.113883.4.6" National Provider Identifier.</li>
+</ol>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Hearing Plan Of Care Header example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.2.1"/&gt;
+  &lt;id root="MDHT" extension="363907016"/&gt;
+  &lt;code code="2084956965"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode code="1730447884"/&gt;
+  &lt;recordTarget&gt;
+    &lt;patientRole&gt;
+      &lt;id root="MDHT" extension="665468374"/&gt;
+      &lt;addr/&gt;
+      &lt;telecom/&gt;
+      &lt;patient&gt;
+        &lt;administrativeGenderCode codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGenderCode"/&gt;
+        &lt;maritalStatusCode codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/&gt;
+        &lt;religiousAffiliationCode codeSystem="2.16.840.1.113883.5.1076" codeSystemName="ReligiousAffiliation"/&gt;
+        &lt;raceCode codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC"/&gt;
+        &lt;ethnicGroupCode codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC"/&gt;
+      &lt;/patient&gt;
+    &lt;/patientRole&gt;
+  &lt;/recordTarget&gt;
+  &lt;author&gt;
+    &lt;time/&gt;
+    &lt;assignedAuthor&gt;
+      &lt;id root="MDHT" extension="1380612188"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.5.53" codeSystemName="Healthcare Provider Taxonomy (HIPAA)"/&gt;
+      &lt;addr/&gt;
+      &lt;telecom/&gt;
+      &lt;assignedPerson/&gt;
+      &lt;assignedAuthoringDevice/&gt;
+    &lt;/assignedAuthor&gt;
+  &lt;/author&gt;
+  &lt;custodian&gt;
+    &lt;assignedCustodian&gt;
+      &lt;representedCustodianOrganization/&gt;
+    &lt;/assignedCustodian&gt;
+  &lt;/custodian&gt;
+  &lt;documentationOf&gt;
+    &lt;serviceEvent&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2015"/&gt;
+        &lt;high value="2015"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;performer&gt;
+        &lt;functionCode codeSystem="2.16.840.1.113883.5.88" codeSystemName="ParticipationFunction"/&gt;
+      &lt;/performer&gt;
+    &lt;/serviceEvent&gt;
+  &lt;/documentationOf&gt;
+  &lt;componentOf&gt;
+    &lt;encompassingEncounter&gt;
+      &lt;id root="MDHT" extension="1131760425"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2015"/&gt;
+        &lt;high value="2015"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;location/&gt;
+    &lt;/encompassingEncounter&gt;
+  &lt;/componentOf&gt;
+  &lt;component/&gt;
+&lt;/ClinicalDocument&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/DocumentTemplates.html">DOCUMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="cdabook">
+	<booktitle>
+		<booklibrary>HL7 Implementation Guide for CDA &#174; Release 2:</booklibrary>
+		<mainbooktitle>Hearing Plan of Care</mainbooktitle>
+		<booktitlealt>
+			<image height="2cm" href="images/ihelogo.jpg" />
+		</booktitlealt>
+		<booktitlealt>(US Realm)</booktitlealt>
+		<booktitlealt>Trial Implementation</booktitlealt>
+		<booktitlealt>September 2014</booktitlealt>
+	</booktitle>
+	<bookmeta>
+		<prodinfo>
+			<prodname>CDAR2_IG_EHCP</prodname>
+			<vrmlist>
+				<vrm release="DSTU_R1_1" version="2014SEP"></vrm>
+			</vrmlist>
+			<brand>HL7 IG for CDA R2</brand>
+			<series>Trial Implementation</series>
+			<platform>US Realm</platform>
+		</prodinfo>
+		<bookid>
+			<booknumber></booknumber>
+			<maintainer>
+				<organization>Integrating the Healthcare Enterprise (IHE)</organization>
+				<person>QRPH Technical Committee</person>
+			</maintainer>
+		</bookid>
+		<bookrights>
+			<copyrfirst>
+				<year>2014</year>
+			</copyrfirst>
+			<copyrlast>
+				<year>2015</year>
+			</copyrlast>
+			<bookowner>
+				<organization>Integrating the Healthcare Enterprise (IHE)</organization>
+			</bookowner>
+		</bookrights>
+	</bookmeta>
+	<frontmatter>
+		<preface>
+			<topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments"
+				type="topic" />
+			<topicref href="preface/RevisionHistory.dita" navtitle="Authors"
+				type="topic" />
+		</preface>
+		<booklists>
+			<toc />
+			<figurelist />
+			<tablelist />
+		</booklists>
+	</frontmatter>
+
+	<chapter format="ditamap" href="introduction/introduction.ditamap" />
+
+	<chapter format="ditamap" href="content/content.ditamap" />
+
+	<backmatter>
+		<topicref href="References.dita" navtitle="REFERENCES" type="topic" />
+	</backmatter>
+</bookmap>

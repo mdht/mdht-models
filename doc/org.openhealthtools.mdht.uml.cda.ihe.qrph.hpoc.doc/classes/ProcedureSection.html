@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Procedure Section"/>
+<meta name="abstract" content="[Section: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.6]"/>
+<meta name="description" content="[Section: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.6]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Procedure Section</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Procedure Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.6</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i"><strong class="ph b">Template Design Relationships</strong><br/>
+This template is an adaptation of the IHE Universal Procedures section template. Machine readable entries associated with this template have been modified to use US Realm vocabulary constraints established for this purpose.<br/>
+<br/>
+This template is an adaption of the C-CDA R1.1 Procedures section template (2.16.840.1.113883.10.20.22.2.7.1). It does not utilize the Procedure Activity Observation as direct entry of the section and permits use of that template within the context of a Procedure 2670 Activity Procedure or Procedure Activity Act.<br/>
+<br/>
+<strong class="ph b">Template Purpose</strong><br/>
+This section defines all interventional, surgical, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. It does not include diagnostic procedures. Diagnostic and screening procedures are recorded in a Result Section. Procedures recorded in this section are encoded using one of two machine readable entry templates. A Procedure Activity Procedure entry is used to record procedures that alter the physical condition of a patient (Splenectomy). A Procedure Activity Act entry is for all other types of procedures (dressing change). If a procedure produces new information about a patient, that information is recorded using the Procedure Activity Observation template as an entry relationship to the procedure or act entry with which the observation is associated. The Activity Observation template is only used as a subordinate act to the procedure of act entries associated with this section.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.6"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="47519-4" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
+
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> Such entrys Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">procedure</strong></tt>, where its type is <a class="xref" href="ProcedureActivityProcedure.html" title="[Procedure: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.18]">Procedure Activity Procedure</a><ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureActivityProcedure.html" title="[Procedure: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.18]">Procedure Activity Procedure</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.18</tt>)</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> Such entrys Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">act</strong></tt>, where its type is <a class="xref" href="ProcedureActivityAct.html" title="[Act: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.19]">Procedure Activity Act</a><ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureActivityAct.html" title="[Act: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.19]">Procedure Activity Act</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.19</tt>)</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Procedure Section example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;section xmlns="urn:hl7-org:v3"&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.6"/&gt;
+  &lt;id root="MDHT" extension="978367557"/&gt;
+  &lt;code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+  &lt;title&gt;TEXT FOR TITLE&lt;/title&gt;
+  &lt;text/&gt;
+  &lt;entry&gt;
+    &lt;procedure&gt;
+      &lt;id root="MDHT" extension="505167000"/&gt;
+      &lt;code code="70128287"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2015"/&gt;
+        &lt;high value="2015"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;priorityCode code="929412425"/&gt;
+      &lt;methodCode code="1577572399"/&gt;
+      &lt;targetSiteCode code="1704993689"/&gt;
+    &lt;/procedure&gt;
+  &lt;/entry&gt;
+  &lt;entry&gt;
+    &lt;act&gt;
+      &lt;id root="MDHT" extension="255974282"/&gt;
+      &lt;code code="320510648"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2015"/&gt;
+        &lt;high value="2015"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;priorityCode code="1288820644"/&gt;
+      &lt;entryRelationship typeCode="COMP" inversionInd="true"/&gt;
+      &lt;entryRelationship typeCode="SUBJ" inversionInd="true"/&gt;
+      &lt;entryRelationship typeCode="RSON"/&gt;
+      &lt;entryRelationship typeCode="COMP"/&gt;
+      &lt;entryRelationship typeCode="COMP"/&gt;
+    &lt;/act&gt;
+  &lt;/entry&gt;
+&lt;/section&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

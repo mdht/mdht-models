@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Hearing Plan Of Care Activity Act"/>
+<meta name="abstract" content="[Act: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.2]"/>
+<meta name="description" content="[Act: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.2]"/>
+<meta name="DC.Coverage" content="Act"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Hearing Plan Of Care Activity Act</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Hearing Plan Of Care Activity Act</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Act: templateId <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.2</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i"><strong class="ph b">Template Design Relationships</strong><br/>
+This template is a specialization of the IHE UV Realm HPoC Activity Act template. Machine readable entries associated with this template use US Realm vocabulary constraints established for this purpose.<br/>
+<br/>
+The design is a specialization of the C-CDA R1.1 Plan of Care Activity Act template (2.16.840.1.113883.10.20.22.4.39). A value set is added to express the type of care activities relevant to a hearing plan of care.<br/>
+<br/>
+<strong class="ph b">Template Purpose</strong><br/>
+This is the generic template for the Plan of Care Activity. This template is used to record actions the patient or patient's family should perform and education that should be received.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.2"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityAct.html">Consol Plan Of Care Activity Act</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.39</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/VS_HPoCActivityAct.html">VS_HPoCActivityAct</a> 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.4</tt><strong class="ph b"> STATIC</strong> 1
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+<ol class="ol" type="a">
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: contains exactly one [1..1] reference such that it contains exactly one [1..1] @value such that it begins with a '#' and points to its corresponding narrative (using the approach defined in CDA Release 2, Section 4.3.5.1)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<ol class="ol" type="a">
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: contains exactly one [1..1] low and contains exactly one [1..1] high</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Hearing Plan Of Care Activity Act example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;act xmlns="urn:hl7-org:v3" classCode="ACT"&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.2"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.39"/&gt;
+  &lt;id root="MDHT" extension="1908586515"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+  &lt;text&gt;Text Value&lt;/text&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2015"/&gt;
+    &lt;high value="2015"/&gt;
+  &lt;/effectiveTime&gt;
+&lt;/act&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

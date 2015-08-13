@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Section Templates">
+<topicref href="HearingPlanOfCareProblemsSubSection.dita" type="topic" />
+<topicref href="HearingPlanOfCareRelevantProceduresSubSection.dita" type="topic" />
+<topicref href="HearingPlanOfCareSection.dita" type="topic" />
+<topicref href="HearingScreeningSection.dita" type="topic" />
+<topicref href="ProblemsSection.dita" type="topic" />
+<topicref href="ProcedureSection.dita" type="topic" />
+<topicref href="RiskIndicatorsForHearingLossSection.dita" type="topic" />
+</map>

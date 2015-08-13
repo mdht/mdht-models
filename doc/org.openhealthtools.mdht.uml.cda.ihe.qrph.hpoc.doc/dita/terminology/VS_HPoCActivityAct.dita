@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>VS H Po C Activity Act</title>
+<prolog id="prolog">
+<resourceid id="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.4"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>VS_HPoCActivityAct - 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.4</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>1</entry></row>
+<row><entry>Definition</entry><entry>This value set holds a list of coded concepts representing plan of care acts (activities that are not observations or procedures) used in a Hearing Plan of Care. For example, these are actions that a patient or care giver can perform.</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>IHE-TSC-7.3.1.1.2.5.4.001</entry><entry>SNOMEDCT</entry><entry>Participate in parental support group</entry></row>
+<row><entry>IHE-TSC-7.3.1.1.2.5.4.002</entry><entry>SNOMEDCT</entry><entry>Attend education for parents on newborn developmental issues.</entry></row>
+<row><entry>IHE-TSC-7.3.1.1.2.5.4.003</entry><entry>SNOMEDCT</entry><entry>Implement home safety improvements</entry></row>
+<row><entry>IHE-TSC-7.3.1.1.2.5.5.003</entry><entry>SNOMEDCT</entry><entry>Conduct developmental surveillance to identify any parental concerns</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

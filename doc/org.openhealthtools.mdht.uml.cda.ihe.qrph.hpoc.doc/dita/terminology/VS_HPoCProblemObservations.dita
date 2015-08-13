@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>VS H Po C Problem Observations</title>
+<prolog id="prolog">
+<resourceid id="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.17"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>VS_HPoCProblemObservations - 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.17</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Version</entry><entry>1</entry></row>
+<row><entry>Definition</entry><entry>This value set holds a list of coded concepts representing the problems considered relevant for hearing care planning. The values below need to include a qualifier that indicates the test produced a "fail", so the total concept is a "failed xyz Test". (This value set it not a complete set of codes. The value set needs to be defined in a value set repository and then referenced by URL from this profile.)</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>83330001</entry><entry>SNOMEDCT</entry><entry>Patent ductus arteriosus (disorder)</entry></row>
+<row><entry>253686000</entry><entry>SNOMEDCT</entry><entry>Patent ductus arteriosus - persisting type (disorder)</entry></row>
+<row><entry>253685001</entry><entry>SNOMEDCT</entry><entry>Patent ductus arteriosus - delayed closure (disorder)</entry></row>
+<row><entry>125963005</entry><entry>SNOMEDCT</entry><entry>Patent ductus arteriosus with left-to-right shunt (disorder)</entry></row>
+<row><entry>22033007</entry><entry>SNOMEDCT</entry><entry>Fetal growth retardation (disorder)</entry></row>
+<row><entry>181000119105</entry><entry>SNOMEDCT</entry><entry>Fetal growth retardation, antenatal (disorder)</entry></row>
+<row><entry>276606009</entry><entry>SNOMEDCT</entry><entry>Asymmetrical growth retardation (disorder)</entry></row>
+<row><entry>276607000</entry><entry>SNOMEDCT</entry><entry>Symmetrical growth retardation (disorder)</entry></row>
+<row><entry>234350007</entry><entry>SNOMEDCT</entry><entry>Neonatal anemia (disorder)</entry></row>
+<row><entry>47100003</entry><entry>SNOMEDCT</entry><entry>Anemia of prematurity (disorder)</entry></row>
+<row><entry>359007</entry><entry>SNOMEDCT</entry><entry>Kernicterus due to isoimmunization (disorder)</entry></row>
+<row><entry>276579007</entry><entry>SNOMEDCT</entry><entry>Late anemia of newborn (disorder)</entry></row>
+<row><entry>276578004</entry><entry>SNOMEDCT</entry><entry>Physiological anemia of infancy (disorder)</entry></row>
+<row><entry>387702001</entry><entry>SNOMEDCT</entry><entry>Perinatal anemia (disorder)</entry></row>
+<row><entry>67569000</entry><entry>SNOMEDCT</entry><entry>Bronchopulmonary dysplasia of newborn (disorder)</entry></row>
+<row><entry>17190001</entry><entry>SNOMEDCT</entry><entry>Congenital diaphragmatic hernia (disorder)</entry></row>
+<row><entry>447821002</entry><entry>SNOMEDCT</entry><entry>Congenital posterolateral diaphragmatic hernia (disorder)</entry></row>
+<row><entry>204271000</entry><entry>SNOMEDCT</entry><entry>Preauricular sinus (disorder)</entry></row>
+<row><entry>18820007</entry><entry>SNOMEDCT</entry><entry>Preauricular cyst (disorder)</entry></row>
+<row><entry>205616004</entry><entry>SNOMEDCT</entry><entry>Trisomy 21- mitotic nondisjunction mosaicism (disorder)</entry></row>
+<row><entry>80281008</entry><entry>SNOMEDCT</entry><entry>Cleft lip (disorder)</entry></row>
+<row><entry>304068004</entry><entry>SNOMEDCT</entry><entry>Bilateral cleft lip (disorder)</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

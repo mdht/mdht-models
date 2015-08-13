@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>HPOC Problem Concern - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.17</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.17"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.17"</li></ol></li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemConcernAct.html">Consol Problem Concern Act</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.3</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:9026)
+</li>
+<li>Contains exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:9027)<tt><b>/@code</b>="CONC" </tt><i>Concern</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9440)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemConcernAct.html">Consol Problem Concern Act</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.4.3</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9024)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9025)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:9026)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:9027)<tt><b>/@code</b>="CONC" </tt><i>Concern</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9440)
+</li>
+<li>Contains exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProblemActStatusCode.dita">ProblemActStatusCode</xref> 2.16.840.1.113883.11.20.9.19</tt><b> STATIC</b> 2011-09-09 (CONF:9029)
+<ul><li><p><lines><i><p>
+The statusCode associated with any concern must be one of the following values:
+</p>
+<p>
+<b>active</b>: A concern that is still being tracked.
+<b>suspended</b>: A concern that is active, but which may be set aside. For example, this value might be used to suspend concern
+about a patient problem after some period of remission, but before assumption that the concern has been resolved.
+<b>aborted</b>: A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved.
+This value might be used to mark a concern as being aborted after a patient leaves care against medical advice.
+<b>completed</b>:
+The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for
+historical purposes.
+</p></i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:9030)
+<ul><li><p><lines><i>The effectiveTime element records the starting and ending times during which the concern was active on the Problem List.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:15980)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.4</tt>)</li></ol></li>
+<li>effectiveTime <b>SHALL</b> contain exactly one [1..1] low (CONF:9032)</li>
+<li>effectiveTime <b>SHOULD</b> contain zero or one [0..1] high (CONF:9033)</li>
+</ol>
+<codeblock id="example"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">HPOC Problem Concern</ph></p>
+<p id="shortdesc">[Act: templateId <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.17</tt>]</p>
+</body>
+</topic>
