@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+  <uml:Package xmi:id="_KhWKoIoCEeSU9N5UlpYCQg" name="hpoc-vocab">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_fzg48IrMEeSv-cXc3yJXYA" name="VS_HPoCEncounterType">
+      <ownedLiteral xmi:id="_dpA60IrNEeSv-cXc3yJXYA" name="IHE-TSC-7.3.1.1.2.5.1.001"/>
+      <ownedLiteral xmi:id="_luurcIrSEeSJhbKHMkUXqg" name="IHE-TSC-7.3.1.1.2.5.1.002"/>
+      <ownedLiteral xmi:id="_v5QlwIrSEeSJhbKHMkUXqg" name="IHE-TSC-7.3.1.1.2.5.1.003"/>
+      <ownedLiteral xmi:id="_4cS90IrSEeSJhbKHMkUXqg" name="IHE-TSC-7.3.1.1.2.5.1.004"/>
+      <ownedLiteral xmi:id="_9mg_8IrSEeSJhbKHMkUXqg" name="IHE-TSC-7.3.1.1.2.5.1.005"/>
+      <ownedLiteral xmi:id="_E7WfgIrTEeSJhbKHMkUXqg" name="IHE-TSC-7.3.1.1.2.5.1.006"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_e5aoYIrxEeSOlJzRSfkI0g" name="VS_HPoCServiceEvent">
+      <ownedLiteral xmi:id="_r83QkIrxEeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.2.001"/>
+      <ownedLiteral xmi:id="_wuEVwIrxEeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.2.002"/>
+      <ownedLiteral xmi:id="_Av-6MIryEeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.2.003"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_gj3o8Ir6EeSOlJzRSfkI0g" name="VS_HPoCActivityAct">
+      <ownedLiteral xmi:id="_wpXF0Ir6EeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.4.001"/>
+      <ownedLiteral xmi:id="_3zBQIIr6EeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.4.002"/>
+      <ownedLiteral xmi:id="_-wYD0Ir6EeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.4.003"/>
+      <ownedLiteral xmi:id="_DdDOUIr7EeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.5.003"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_fT9OUIr8EeSOlJzRSfkI0g" name="VS_HPoCActivityEncounter">
+      <ownedLiteral xmi:id="_v2Ot0Ir8EeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.5.001"/>
+      <ownedLiteral xmi:id="_2zgpAIr8EeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.5.002"/>
+      <ownedLiteral xmi:id="_6xeTYIr8EeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.5.003"/>
+      <ownedLiteral xmi:id="_99KzUIr8EeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.5.004"/>
+      <ownedLiteral xmi:id="_CPlDsIr9EeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.5.005"/>
+      <ownedLiteral xmi:id="_FWE6kIr9EeSOlJzRSfkI0g" name="IHE-TSC-7.3.1.1.2.5.5.006"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_zov7MIsSEeSxKeePNkqZnQ" name="VS_HPoCActivityObservation">
+      <ownedLiteral xmi:id="_9dkEMIsSEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.6.001"/>
+      <ownedLiteral xmi:id="_GzX9AIsTEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.6.002"/>
+      <ownedLiteral xmi:id="_Lal_wIsTEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.6.003"/>
+      <ownedLiteral xmi:id="_PxB0gIsTEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.6.004"/>
+      <ownedLiteral xmi:id="_UBDfQIsTEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.6.005"/>
+      <ownedLiteral xmi:id="_W5d20IsTEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.6.006"/>
+      <ownedLiteral xmi:id="_ZinqYIsTEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.6.007"/>
+      <ownedLiteral xmi:id="_eFA3gIsTEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.6.008"/>
+      <ownedLiteral xmi:id="_hNwKEIsTEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.6.009"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ba804IsVEeSxKeePNkqZnQ" name="VS_HPoCActivityProcedure">
+      <ownedLiteral xmi:id="_KSmyEIsVEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.7.001"/>
+      <ownedLiteral xmi:id="_PFeEIIsVEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.7.002"/>
+      <ownedLiteral xmi:id="_Tu0N0IsVEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.7.003"/>
+      <ownedLiteral xmi:id="_Wt2x0IsVEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.7.004"/>
+      <ownedLiteral xmi:id="_bQM7oIsVEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.7.005"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tvyMMIugEeSxKeePNkqZnQ" name="VS_HPoCActivitySubstanceAdministration">
+      <ownedLiteral xmi:id="_43oqYIugEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.8.001"/>
+      <ownedLiteral xmi:id="_9Kx6kIugEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.8.002"/>
+      <ownedLiteral xmi:id="__-NEcIugEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.8.003"/>
+      <ownedLiteral xmi:id="_DGd14IuhEeSxKeePNkqZnQ" name="IHE-TSC-7.3.1.1.2.5.8.004"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_rdxMgI0wEeStztbexOMBxw" name="VS_HPoCActivityNon-MedicinalSupply">
+      <ownedLiteral xmi:id="_4QEaUI0wEeStztbexOMBxw" name="IHE-TSC-7.3.1.1.2.5.9.001"/>
+      <ownedLiteral xmi:id="_8I2pwI0wEeStztbexOMBxw" name="IHE-TSC-7.3.1.1.2.5.9.002"/>
+      <ownedLiteral xmi:id="_HT-eYI0xEeStztbexOMBxw" name="IHE-TSC-7.3.1.1.2.5.9.003"/>
+      <ownedLiteral xmi:id="_KyB5oI0xEeStztbexOMBxw" name="IHE-TSC-7.3.1.1.2.5.9.004"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_FCX_cI1CEeSvh9GlsbVgGg" name="VS_HPoCInstructions">
+      <ownedLiteral xmi:id="_O8b00I1CEeSvh9GlsbVgGg" name="IHE-TSC-7.3.1.1.2.5.3.001"/>
+      <ownedLiteral xmi:id="_UlzREI1CEeSvh9GlsbVgGg" name="IHE-TSC-7.3.1.1.2.5.3.002"/>
+      <ownedLiteral xmi:id="_X0sO8I1CEeSvh9GlsbVgGg" name="IHE-TSC-7.3.1.1.2.5.3.003"/>
+      <ownedLiteral xmi:id="_bUIxUI1CEeSvh9GlsbVgGg" name="IHE-TSC-7.3.1.1.2.5.3.004"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_QIMtQI1WEeSvh9GlsbVgGg" name="VS_HearingScreeningOutcomeObservationValues">
+      <ownedLiteral xmi:id="_cz1SYI1WEeSvh9GlsbVgGg" name="164059009"/>
+      <ownedLiteral xmi:id="_gL7PkI1WEeSvh9GlsbVgGg" name="183924009"/>
+      <ownedLiteral xmi:id="_jJmhoI1WEeSvh9GlsbVgGg" name="262008008"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_RyQpEI1bEeSvh9GlsbVgGg" name="VS_HearingScreeningMethods">
+      <ownedLiteral xmi:id="_ZMtBYI1bEeSvh9GlsbVgGg" name="LA10387-1"/>
+      <ownedLiteral xmi:id="_fBV5gI1bEeSvh9GlsbVgGg" name="LA10388-9"/>
+      <ownedLiteral xmi:id="_iUNYcI1bEeSvh9GlsbVgGg" name="LA10389-7"/>
+      <ownedLiteral xmi:id="_lXSH4I1bEeSvh9GlsbVgGg" name="LA10390-5"/>
+      <ownedLiteral xmi:id="_rDrqAI1bEeSvh9GlsbVgGg" name="LA10391-3"/>
+      <ownedLiteral xmi:id="_w5ql8I1bEeSvh9GlsbVgGg" name="LA12406-7"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_H_0CII1cEeSvh9GlsbVgGg" name="VS_HearingScreeningTargetSites">
+      <ownedLiteral xmi:id="_MJ1LgI1cEeSvh9GlsbVgGg" name="89644007"/>
+      <ownedLiteral xmi:id="_R9hBYI1cEeSvh9GlsbVgGg" name="25577004"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_m_0PII1fEeSvh9GlsbVgGg" name="VS_ReasonNotScreened">
+      <ownedLiteral xmi:id="_v7rW4I1fEeSvh9GlsbVgGg" name="410534003"/>
+      <ownedLiteral xmi:id="_3DMMII1fEeSvh9GlsbVgGg" name="183949008"/>
+      <ownedLiteral xmi:id="_42WL0I1fEeSvh9GlsbVgGg" name="183945002"/>
+      <ownedLiteral xmi:id="_7r1yQI1fEeSvh9GlsbVgGg" name="183948000"/>
+      <ownedLiteral xmi:id="_9uGk8I1fEeSvh9GlsbVgGg" name="397709008"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_78_4kJEhEeSaOItn9Hi5XA" name="VS_HearingScreeningTestResultValues">
+      <ownedLiteral xmi:id="_LHa0UJEiEeSaOItn9Hi5XA" name="164059009"/>
+      <ownedLiteral xmi:id="_O4BYIJEiEeSaOItn9Hi5XA" name="183924009"/>
+      <ownedLiteral xmi:id="_SV4mIJEiEeSaOItn9Hi5XA" name="103709008"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lfuKgJEyEeSaOItn9Hi5XA" name="VS_RiskFactorsForHearing">
+      <ownedLiteral xmi:id="_zMrpwJEyEeSaOItn9Hi5XA" name="439750006"/>
+      <ownedLiteral xmi:id="_28m4IJEyEeSaOItn9Hi5XA" name="441899004"/>
+      <ownedLiteral xmi:id="_6rMpwJEyEeSaOItn9Hi5XA" name="276687002"/>
+      <ownedLiteral xmi:id="_9qAkQJEyEeSaOItn9Hi5XA" name="281610001"/>
+      <ownedLiteral xmi:id="_Atj00JEzEeSaOItn9Hi5XA" name="281612009"/>
+      <ownedLiteral xmi:id="_Du-XYJEzEeSaOItn9Hi5XA" name="281611002"/>
+      <ownedLiteral xmi:id="_KdnZoJEzEeSaOItn9Hi5XA" name="206331005"/>
+      <ownedLiteral xmi:id="_PyaUEJEzEeSaOItn9Hi5XA" name="206005002"/>
+      <ownedLiteral xmi:id="_S2uZoJEzEeSaOItn9Hi5XA" name="80690008"/>
+      <ownedLiteral xmi:id="_Xd6AIJEzEeSaOItn9Hi5XA" name="178280004"/>
+      <ownedLiteral xmi:id="_bEtHsJEzEeSaOItn9Hi5XA" name="312972009"/>
+      <ownedLiteral xmi:id="_hFiowJEzEeSaOItn9Hi5XA" name="161653008"/>
+      <ownedLiteral xmi:id="_lTeo0JEzEeSaOItn9Hi5XA" name="LA137-2"/>
+      <ownedLiteral xmi:id="_psLHYJEzEeSaOItn9Hi5XA" name="LA12667-4"/>
+      <ownedLiteral xmi:id="_tKbW8JEzEeSaOItn9Hi5XA" name="LA12669-0"/>
+      <ownedLiteral xmi:id="_ws9CgJEzEeSaOItn9Hi5XA" name="LA12670-8"/>
+      <ownedLiteral xmi:id="_zgpSIJEzEeSaOItn9Hi5XA" name="LA12671-6"/>
+      <ownedLiteral xmi:id="_2fYUIJEzEeSaOItn9Hi5XA" name="LA12673-2"/>
+      <ownedLiteral xmi:id="_5tw7sJEzEeSaOItn9Hi5XA" name="LA12674-0"/>
+      <ownedLiteral xmi:id="_-OxowJEzEeSaOItn9Hi5XA" name="LA12675-7"/>
+      <ownedLiteral xmi:id="_CWnA0JE0EeSaOItn9Hi5XA" name="LA12681-5"/>
+      <ownedLiteral xmi:id="_F_6p0JE0EeSaOItn9Hi5XA" name="LA12676-5"/>
+      <ownedLiteral xmi:id="_Ja-bcJE0EeSaOItn9Hi5XA" name="LA12677-3"/>
+      <ownedLiteral xmi:id="_MagHoJE0EeSaOItn9Hi5XA" name="LA12678-1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_yrT5sJFAEeSdydvp_jSYIw" name="VS_HPoCProblemObservations">
+      <ownedLiteral xmi:id="_D-TEcJFBEeSdydvp_jSYIw" name="83330001"/>
+      <ownedLiteral xmi:id="_IuKs4JFBEeSdydvp_jSYIw" name="253686000"/>
+      <ownedLiteral xmi:id="_K1-t8JFBEeSdydvp_jSYIw" name="253685001"/>
+      <ownedLiteral xmi:id="_MwONEJFBEeSdydvp_jSYIw" name="125963005"/>
+      <ownedLiteral xmi:id="_OZa_gJFBEeSdydvp_jSYIw" name="22033007"/>
+      <ownedLiteral xmi:id="_QIH9AJFBEeSdydvp_jSYIw" name="181000119105"/>
+      <ownedLiteral xmi:id="_RuwjoJFBEeSdydvp_jSYIw" name="276606009"/>
+      <ownedLiteral xmi:id="_URfmIJFBEeSdydvp_jSYIw" name="276607000"/>
+      <ownedLiteral xmi:id="_W319UJFBEeSdydvp_jSYIw" name="234350007"/>
+      <ownedLiteral xmi:id="_YlACsJFBEeSdydvp_jSYIw" name="47100003"/>
+      <ownedLiteral xmi:id="_as1R4JFBEeSdydvp_jSYIw" name="359007"/>
+      <ownedLiteral xmi:id="_cdsykJFBEeSdydvp_jSYIw" name="276579007"/>
+      <ownedLiteral xmi:id="_dzW98JFBEeSdydvp_jSYIw" name="276578004"/>
+      <ownedLiteral xmi:id="_fvFq0JFBEeSdydvp_jSYIw" name="387702001"/>
+      <ownedLiteral xmi:id="_hiOcYJFBEeSdydvp_jSYIw" name="67569000"/>
+      <ownedLiteral xmi:id="_i_nAYJFBEeSdydvp_jSYIw" name="17190001"/>
+      <ownedLiteral xmi:id="_kUSUUJFBEeSdydvp_jSYIw" name="447821002"/>
+      <ownedLiteral xmi:id="_l5RVIJFBEeSdydvp_jSYIw" name="204271000"/>
+      <ownedLiteral xmi:id="_nj7gIJFBEeSdydvp_jSYIw" name="18820007"/>
+      <ownedLiteral xmi:id="_o-Ei4JFBEeSdydvp_jSYIw" name="205616004"/>
+      <ownedLiteral xmi:id="_rIOtUJFBEeSdydvp_jSYIw" name="80281008"/>
+      <ownedLiteral xmi:id="_1N1EUJFBEeSdydvp_jSYIw" name="304068004"/>
+    </packagedElement>
+    <profileApplication xmi:id="_KhWKoYoCEeSU9N5UlpYCQg">
+      <eAnnotations xmi:id="_KhWKoooCEeSU9N5UlpYCQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <term:ValueSetVersion xmi:id="_fzhgAIrMEeSv-cXc3yJXYA" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.1" version="1" fullName="Hearing Plan of Care Encounter Type" definition="This value set holds a list of coded encounter types where a hearing plan of care would get created or updated. These are going to be the same concepts as those used in the VS_HPoCActivityEncounters." base_Enumeration="_fzg48IrMEeSv-cXc3yJXYA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_dpA60YrNEeSv-cXc3yJXYA" conceptName="Visit with Primary Care Physician" usageNote="VS_HPoCEncounterType" base_EnumerationLiteral="_dpA60IrNEeSv-cXc3yJXYA"/>
+  <term:ValueSetCode xmi:id="_lwXqMIrSEeSJhbKHMkUXqg" conceptName="Follow-up with Primary Care Provider" usageNote="VS_HPoCEncounterType" base_EnumerationLiteral="_luurcIrSEeSJhbKHMkUXqg"/>
+  <term:ValueSetCode xmi:id="_v5QlwYrSEeSJhbKHMkUXqg" conceptName="Referral to audiologist" usageNote="VS_HPoCEncounterType" base_EnumerationLiteral="_v5QlwIrSEeSJhbKHMkUXqg"/>
+  <term:ValueSetCode xmi:id="_4cS90YrSEeSJhbKHMkUXqg" conceptName="Referral to Geneticist" usageNote="VS_HPoCEncounterType" base_EnumerationLiteral="_4cS90IrSEeSJhbKHMkUXqg"/>
+  <term:ValueSetCode xmi:id="_9mg_8YrSEeSJhbKHMkUXqg" conceptName="Referral to Early Intervention Specialist" usageNote="VS_HPoCEncounterType" base_EnumerationLiteral="_9mg_8IrSEeSJhbKHMkUXqg"/>
+  <term:ValueSetCode xmi:id="_E7XGkIrTEeSJhbKHMkUXqg" conceptName="Referral to Ear Nose and Throat Specialist" usageNote="VS_HPoCEncounterType" base_EnumerationLiteral="_E7WfgIrTEeSJhbKHMkUXqg"/>
+  <term:ValueSetVersion xmi:id="_e5bPcIrxEeSOlJzRSfkI0g" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.2" version="1" fullName="Hearing Plan of Care Service Event" definition="This value set holds a list of coded service acts for a hearing plan of care. A plan can be created, updated (where a plan is modified), or reconciled (where a plan is transformed to include content from other plans)." base_Enumeration="_e5aoYIrxEeSOlJzRSfkI0g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_r83QkYrxEeSOlJzRSfkI0g" conceptName="HPoC Created" usageNote="VS_HPoCServiceEvent" base_EnumerationLiteral="_r83QkIrxEeSOlJzRSfkI0g"/>
+  <term:ValueSetCode xmi:id="_wuEVwYrxEeSOlJzRSfkI0g" conceptName="HPoC Appended" usageNote="VS_HPoCServiceEvent" base_EnumerationLiteral="_wuEVwIrxEeSOlJzRSfkI0g"/>
+  <term:ValueSetCode xmi:id="_Av-6MYryEeSOlJzRSfkI0g" conceptName="HPoC Transformed" usageNote="VS_HPoCServiceEvent" base_EnumerationLiteral="_Av-6MIryEeSOlJzRSfkI0g"/>
+  <term:ValueSetVersion xmi:id="_gj4QAIr6EeSOlJzRSfkI0g" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.4" version="1" fullName="Hearing Plan of Care Activity Act" definition="This value set holds a list of coded concepts representing plan of care acts (activities that are not observations or procedures) used in a Hearing Plan of Care. For example, these are actions that a patient or care giver can perform." base_Enumeration="_gj3o8Ir6EeSOlJzRSfkI0g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_wpXs4Ir6EeSOlJzRSfkI0g" conceptName="Participate in parental support group" usageNote="VS_HPoCActivityAct" base_EnumerationLiteral="_wpXF0Ir6EeSOlJzRSfkI0g"/>
+  <term:ValueSetCode xmi:id="_3zB3MIr6EeSOlJzRSfkI0g" conceptName="Attend education for parents on newborn developmental issues." usageNote="VS_HPoCActivityAct" base_EnumerationLiteral="_3zBQIIr6EeSOlJzRSfkI0g"/>
+  <term:ValueSetCode xmi:id="_-wYq4Ir6EeSOlJzRSfkI0g" conceptName="Implement home safety improvements" usageNote="VS_HPoCActivityAct" base_EnumerationLiteral="_-wYD0Ir6EeSOlJzRSfkI0g"/>
+  <term:ValueSetCode xmi:id="_DdD1YIr7EeSOlJzRSfkI0g" conceptName="Conduct developmental surveillance to identify any parental concerns" usageNote="VS_HPoCActivityAct" base_EnumerationLiteral="_DdDOUIr7EeSOlJzRSfkI0g"/>
+  <term:ValueSetVersion xmi:id="_fT9OUYr8EeSOlJzRSfkI0g" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.5" version="1" fullName="Hearing Plan of Care Activity Encounter" definition="This value set holds a list of coded concepts representing plan of care encounters used in a Hearing Plan of Care." base_Enumeration="_fT9OUIr8EeSOlJzRSfkI0g">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_v2PU4Ir8EeSOlJzRSfkI0g" conceptName="Visit with Primary Care Physician" usageNote="VS_HPoCActivityEncounter" base_EnumerationLiteral="_v2Ot0Ir8EeSOlJzRSfkI0g"/>
+  <term:ValueSetCode xmi:id="_2zgpAYr8EeSOlJzRSfkI0g" conceptName="Follow-up with Primary Care Provider" usageNote="VS_HPoCActivityEncounter" base_EnumerationLiteral="_2zgpAIr8EeSOlJzRSfkI0g"/>
+  <term:ValueSetCode xmi:id="_6xeTYYr8EeSOlJzRSfkI0g" conceptName="Referral to audiologist" usageNote="VS_HPoCActivityEncounter" base_EnumerationLiteral="_6xeTYIr8EeSOlJzRSfkI0g"/>
+  <term:ValueSetCode xmi:id="_99KzUYr8EeSOlJzRSfkI0g" conceptName="Referral to Geneticist" usageNote="VS_HPoCActivityEncounter" base_EnumerationLiteral="_99KzUIr8EeSOlJzRSfkI0g"/>
+  <term:ValueSetCode xmi:id="_CPlDsYr9EeSOlJzRSfkI0g" conceptName="Referral to Early Intervention Specialist" usageNote="VS_HPoCActivityEncounter" base_EnumerationLiteral="_CPlDsIr9EeSOlJzRSfkI0g"/>
+  <term:ValueSetCode xmi:id="_FWFhoIr9EeSOlJzRSfkI0g" conceptName="Referral to Ear Nose and Throat Specialist" usageNote="VS_HPoCActivityEncounter" base_EnumerationLiteral="_FWE6kIr9EeSOlJzRSfkI0g"/>
+  <term:ValueSetVersion xmi:id="_zov7MYsSEeSxKeePNkqZnQ" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.6" version="1" fullName="Hearing Plan of Care Activity Observation" definition="This value set holds a list of coded concepts representing plan of observation (diagnostic test) activities used in a Hearing Plan of Care." base_Enumeration="_zov7MIsSEeSxKeePNkqZnQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_9dkEMYsSEeSxKeePNkqZnQ" conceptName="Tympanogram Test" usageNote="VS_HPoCActivityObservation" base_EnumerationLiteral="_9dkEMIsSEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_GzZLIIsTEeSxKeePNkqZnQ" conceptName="Otoacousic emissions Test" usageNote="VS_HPoCActivityObservation" base_EnumerationLiteral="_GzX9AIsTEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_Lal_wYsTEeSxKeePNkqZnQ" conceptName="Auditory Brainstem Response Test" usageNote="VS_HPoCActivityObservation" base_EnumerationLiteral="_Lal_wIsTEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_PxB0gYsTEeSxKeePNkqZnQ" conceptName="Acoustic Immitance Test" usageNote="VS_HPoCActivityObservation" base_EnumerationLiteral="_PxB0gIsTEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_UBEGUIsTEeSxKeePNkqZnQ" conceptName="Auditory Brainstem Response with sedation" usageNote="VS_HPoCActivityObservation" base_EnumerationLiteral="_UBDfQIsTEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_W5d20YsTEeSxKeePNkqZnQ" conceptName="Developmental assessment" usageNote="VS_HPoCActivityObservation" base_EnumerationLiteral="_W5d20IsTEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_ZinqYYsTEeSxKeePNkqZnQ" conceptName="Genetic Testing and Counseling" usageNote="VS_HPoCActivityObservation" base_EnumerationLiteral="_ZinqYIsTEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_eFA3gYsTEeSxKeePNkqZnQ" conceptName="Speech and Language Assessment" usageNote="VS_HPoCActivityObservation" base_EnumerationLiteral="_eFA3gIsTEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_hNwxIIsTEeSxKeePNkqZnQ" conceptName="MRI" usageNote="VS_HPoCActivityObservation" base_EnumerationLiteral="_hNwKEIsTEeSxKeePNkqZnQ"/>
+  <term:ValueSetVersion xmi:id="_Ba-DAIsVEeSxKeePNkqZnQ" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.7" version="1" fullName="Hearing Plan of Care Activity Procedure" definition="This value set holds a list of coded concepts representing plan of care procedures (activities to treat a condition and alter the patient’s health status) included in a Hearing Plan of Care." base_Enumeration="_Ba804IsVEeSxKeePNkqZnQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_KSmyEYsVEeSxKeePNkqZnQ" conceptName="Cochlear implant" usageNote="VS_HPoCActivityProcedure" base_EnumerationLiteral="_KSmyEIsVEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_PFerMIsVEeSxKeePNkqZnQ" conceptName="Reconstruction to resolve atresia" usageNote="VS_HPoCActivityProcedure" base_EnumerationLiteral="_PFeEIIsVEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_Tu004IsVEeSxKeePNkqZnQ" conceptName="Treatment for otitis media" usageNote="VS_HPoCActivityProcedure" base_EnumerationLiteral="_Tu0N0IsVEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_Wt2x0YsVEeSxKeePNkqZnQ" conceptName="Cleft Lip/Palate Repair" usageNote="VS_HPoCActivityProcedure" base_EnumerationLiteral="_Wt2x0IsVEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_bQNisIsVEeSxKeePNkqZnQ" conceptName="Myringotomy and PE tube placement" usageNote="VS_HPoCActivityProcedure" base_EnumerationLiteral="_bQM7oIsVEeSxKeePNkqZnQ"/>
+  <term:ValueSetVersion xmi:id="_tvyzQIugEeSxKeePNkqZnQ" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.8" version="1" fullName="Hearing Plan of Care Activity Substance Administration" definition="This value set holds a list of coded concepts representing plan of care substance administration act used in a Hearing Plan of Care." base_Enumeration="_tvyMMIugEeSxKeePNkqZnQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_43pRcIugEeSxKeePNkqZnQ" conceptName="Thyroid Supplement" usageNote="VS_HPoCActivitySubstanceAdministration" base_EnumerationLiteral="_43oqYIugEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_9Kx6kYugEeSxKeePNkqZnQ" conceptName="Vitamin Supplement" usageNote="VS_HPoCActivitySubstanceAdministration" base_EnumerationLiteral="_9Kx6kIugEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="__-NrgIugEeSxKeePNkqZnQ" conceptName="Amoxicillin" usageNote="VS_HPoCActivitySubstanceAdministration" base_EnumerationLiteral="__-NEcIugEeSxKeePNkqZnQ"/>
+  <term:ValueSetCode xmi:id="_DGec8IuhEeSxKeePNkqZnQ" conceptName="Antibiotic" usageNote="VS_HPoCActivitySubstanceAdministration" base_EnumerationLiteral="_DGd14IuhEeSxKeePNkqZnQ"/>
+  <term:ValueSetVersion xmi:id="_rdxzkI0wEeStztbexOMBxw" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.9" version="1" fullName="Hearing Plan of Care Activity Non-Medicinal Supply" definition="This value set holds a list of coded concepts representing plan of care non-medicinal supply act used in a Hearing Plan of Care. This would cover supply of implantable devices and other medical devices used for patient care." base_Enumeration="_rdxMgI0wEeStztbexOMBxw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_4QFBYI0wEeStztbexOMBxw" conceptName="Hearing Aid" usageNote="VS_HPoCActivityNon-MedicinalSupply" base_EnumerationLiteral="_4QEaUI0wEeStztbexOMBxw"/>
+  <term:ValueSetCode xmi:id="_8I2pwY0wEeStztbexOMBxw" conceptName="Assistive Listening Device" usageNote="VS_HPoCActivityNon-MedicinalSupply" base_EnumerationLiteral="_8I2pwI0wEeStztbexOMBxw"/>
+  <term:ValueSetCode xmi:id="_HT_FcI0xEeStztbexOMBxw" conceptName="FM system" usageNote="VS_HPoCActivityNon-MedicinalSupply" base_EnumerationLiteral="_HT-eYI0xEeStztbexOMBxw"/>
+  <term:ValueSetCode xmi:id="_KyB5oY0xEeStztbexOMBxw" conceptName="Cochlear implant" usageNote="VS_HPoCActivityNon-MedicinalSupply" base_EnumerationLiteral="_KyB5oI0xEeStztbexOMBxw"/>
+  <term:ValueSetVersion xmi:id="_FD5pcI1CEeSvh9GlsbVgGg" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.3" version="1" fullName="Hearing Plan of Care Activity Instructions" base_Enumeration="_FCX_cI1CEeSvh9GlsbVgGg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_O8b00Y1CEeSvh9GlsbVgGg" conceptName="Conduct additional hearing screening if there is parental concern for speech and language development" usageNote="VS_HPoCInstructions" base_EnumerationLiteral="_O8b00I1CEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_UlzREY1CEeSvh9GlsbVgGg" conceptName="Aggressively treat the middle ear disease if it is detected." usageNote="VS_HPoCInstructions" base_EnumerationLiteral="_UlzREI1CEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_X0sO8Y1CEeSvh9GlsbVgGg" conceptName="Refer to specialist if vision screening indicates to refer" usageNote="VS_HPoCInstructions" base_EnumerationLiteral="_X0sO8I1CEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_bUIxUY1CEeSvh9GlsbVgGg" conceptName="Refer to specialist if ongoing developmental screening indicates to refer" usageNote="VS_HPoCInstructions" base_EnumerationLiteral="_bUIxUI1CEeSvh9GlsbVgGg"/>
+  <term:ValueSetVersion xmi:id="_QIMtQY1WEeSvh9GlsbVgGg" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.10" version="1" fullName="Hearing Screening Outcome Observation Values" definition="This value set holds a list of coded concepts representing the possible outcome values for a hearing screening panel." base_Enumeration="_QIMtQI1WEeSvh9GlsbVgGg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_cz15cI1WEeSvh9GlsbVgGg" conceptName="Pass" usageNote="VS_HearingScreeningOutcomeObservationValues" base_EnumerationLiteral="_cz1SYI1WEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_gL7PkY1WEeSvh9GlsbVgGg" conceptName="Refer" usageNote="VS_HearingScreeningOutcomeObservationValues" base_EnumerationLiteral="_gL7PkI1WEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_jJmhoY1WEeSvh9GlsbVgGg" conceptName="Not Performed" usageNote="VS_HearingScreeningOutcomeObservationValues" base_EnumerationLiteral="_jJmhoI1WEeSvh9GlsbVgGg"/>
+  <term:ValueSetVersion xmi:id="_RyRQII1bEeSvh9GlsbVgGg" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.13" version="1" definition="This value set holds a list of coded concepts representing the possible methods for performing hearing screening." base_Enumeration="_RyQpEI1bEeSvh9GlsbVgGg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_ZMtocI1bEeSvh9GlsbVgGg" conceptName="Automated auditory brainstem response (AABR)" usageNote="VS_HearingScreeningMethods" base_EnumerationLiteral="_ZMtBYI1bEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_fBWgkI1bEeSvh9GlsbVgGg" conceptName="Auditory brain stem response (ABR)" usageNote="VS_HearingScreeningMethods" base_EnumerationLiteral="_fBV5gI1bEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_iUN_gI1bEeSvh9GlsbVgGg" conceptName="Otoacoustic emissions (OAE)" usageNote="VS_HearingScreeningMethods" base_EnumerationLiteral="_iUNYcI1bEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_lXSH4Y1bEeSvh9GlsbVgGg" conceptName="Distortion product otoacoustic emissions (DPOAE)" usageNote="VS_HearingScreeningMethods" base_EnumerationLiteral="_lXSH4I1bEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_rDrqAY1bEeSvh9GlsbVgGg" conceptName="Transient otoacoustic emissions (TOAE)" usageNote="VS_HearingScreeningMethods" base_EnumerationLiteral="_rDrqAI1bEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_w5ql8Y1bEeSvh9GlsbVgGg" conceptName="Methodology unknown" usageNote="VS_HearingScreeningMethods" base_EnumerationLiteral="_w5ql8I1bEeSvh9GlsbVgGg"/>
+  <term:ValueSetVersion xmi:id="_H_0pMI1cEeSvh9GlsbVgGg" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.12" version="1" definition="This value set holds a list of coded concepts representing the possible body sites involved in hearing screening." base_Enumeration="_H_0CII1cEeSvh9GlsbVgGg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_MJ1ykI1cEeSvh9GlsbVgGg" conceptName="Left Ear" usageNote="VS_HearingScreeningTargetSites" base_EnumerationLiteral="_MJ1LgI1cEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_R9hBYY1cEeSvh9GlsbVgGg" conceptName="Right Ear" usageNote="VS_HearingScreeningTargetSites" base_EnumerationLiteral="_R9hBYI1cEeSvh9GlsbVgGg"/>
+  <term:ValueSetVersion xmi:id="_m_0PIY1fEeSvh9GlsbVgGg" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.11" version="1" fullName="Reason Not Screened" definition="This value set holds a list of coded concepts representing the possible reasons for not performing hearing screening." base_Enumeration="_m_0PII1fEeSvh9GlsbVgGg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_v7rW4Y1fEeSvh9GlsbVgGg" conceptName="Not performed, medical exclusion - not indicated" usageNote="VS_ReasonNotScreened" base_EnumerationLiteral="_v7rW4I1fEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_3DMzMI1fEeSvh9GlsbVgGg" conceptName="Assessment examination" usageNote="VS_ReasonNotScreened" base_EnumerationLiteral="_3DMMII1fEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_42WL0Y1fEeSvh9GlsbVgGg" conceptName="Procedure refused - religion (situation)" usageNote="VS_ReasonNotScreened" base_EnumerationLiteral="_42WL0I1fEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_7r2ZUI1fEeSvh9GlsbVgGg" conceptName="Refused procedure - parent's wish (situation)" usageNote="VS_ReasonNotScreened" base_EnumerationLiteral="_7r1yQI1fEeSvh9GlsbVgGg"/>
+  <term:ValueSetCode xmi:id="_9uHMAI1fEeSvh9GlsbVgGg" conceptName="Patient died (finding)" usageNote="VS_ReasonNotScreened" base_EnumerationLiteral="_9uGk8I1fEeSvh9GlsbVgGg"/>
+  <term:ValueSetVersion xmi:id="_79AfoJEhEeSaOItn9Hi5XA" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.14" version="1" fullName="Hearing Screening Test Result Values" definition="This value set holds a list of coded concepts representing the possible result values produced by a device when performing hearing screening. If a test was not performed by the device, it does not send back a value. The code for “attempted, but unsuccessful-technical fail” indicates that the test was performed, but the value measured by the device could not be determined to be a clear pass or fail (refer)." base_Enumeration="_78_4kJEhEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_LHbbYJEiEeSaOItn9Hi5XA" conceptName="Pass" usageNote="VS_HearingScreeningTestResultValues" base_EnumerationLiteral="_LHa0UJEiEeSaOItn9Hi5XA"/>
+  <term:ValueSetCode xmi:id="_O4BYIZEiEeSaOItn9Hi5XA" conceptName="Refer" usageNote="VS_HearingScreeningTestResultValues" base_EnumerationLiteral="_O4BYIJEiEeSaOItn9Hi5XA"/>
+  <term:ValueSetCode xmi:id="_SV4mIZEiEeSaOItn9Hi5XA" conceptName="Attempted, but unsuccessful - technical fail" usageNote="VS_HearingScreeningTestResultValues" base_EnumerationLiteral="_SV4mIJEiEeSaOItn9Hi5XA"/>
+  <term:ValueSetVersion xmi:id="_lfuKgZEyEeSaOItn9Hi5XA" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.16" version="1" fullName="Risk Factors for Hearing" definition="This value set holds a list of coded concepts representing the risk factors considered during hearing screening." base_Enumeration="_lfuKgJEyEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_zMrpwZEyEeSaOItn9Hi5XA" conceptName="Family Hx of Hearing loss" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_zMrpwJEyEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_28nfMJEyEeSaOItn9Hi5XA" conceptName="History of therapy with ototoxic medication (situation)" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_28m4IJEyEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_6rMpwZEyEeSaOItn9Hi5XA" conceptName="Conjugated hyperbilirubinemia in infancy (disorder)" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_6rMpwJEyEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_9qBLUJEyEeSaOItn9Hi5XA" conceptName="Neonatal Hyperbilirubinemia (disorder)" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_9qAkQJEyEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_Atj00ZEzEeSaOItn9Hi5XA" conceptName="Neonatal conjugated hyperbilirubinemia (disorder)" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_Atj00JEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_Du-XYZEzEeSaOItn9Hi5XA" conceptName="Neonatal unconjugated hyperbilirubinemia (disorder)" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_Du-XYJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_KdnZoZEzEeSaOItn9Hi5XA" conceptName="Infections specific to perinatal period (disorder)" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_KdnZoJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_PyaUEZEzEeSaOItn9Hi5XA" conceptName="Fetus or neonate affected by maternal infection (disorder)" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_PyaUEJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_S2uZoZEzEeSaOItn9Hi5XA" conceptName="Degenerative disease of the central nervous system (disorder)" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_S2uZoJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_Xd6nMJEzEeSaOItn9Hi5XA" conceptName="Postnatal infection (disorder)" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_Xd6AIJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_bEtHsZEzEeSaOItn9Hi5XA" conceptName="Neonatal extracranial head trauma (disorder)" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_bEtHsJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_hFiowZEzEeSaOItn9Hi5XA" conceptName="History of - chemotherapy (situation)" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_hFiowJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_lTfP4JEzEeSaOItn9Hi5XA" conceptName="None" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_lTeo0JEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_psLucJEzEeSaOItn9Hi5XA" conceptName="Caregiver concern about hearing" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_psLHYJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_tKbW8ZEzEeSaOItn9Hi5XA" conceptName="ICU stay > 5 days" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_tKbW8JEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_ws9pkJEzEeSaOItn9Hi5XA" conceptName="ECMO" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_ws9CgJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_zgp5MJEzEeSaOItn9Hi5XA" conceptName="Assisted ventilation" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_zgpSIJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_2fYUIZEzEeSaOItn9Hi5XA" conceptName="Exchange transfusion for Hyperbilirubinemia" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_2fYUIJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_5tw7sZEzEeSaOItn9Hi5XA" conceptName="In utero infection(s)" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_5tw7sJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_-OxowZEzEeSaOItn9Hi5XA" conceptName="Craniofacial anomalies" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_-OxowJEzEeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_CWnA0ZE0EeSaOItn9Hi5XA" conceptName="Physical findings of syndromes that include hearing loss" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_CWnA0JE0EeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_F_7Q4JE0EeSaOItn9Hi5XA" conceptName="Syndromes associated with hearing loss" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_F_6p0JE0EeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_Ja_CgJE0EeSaOItn9Hi5XA" conceptName="Neurodegenerative disorders" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_Ja-bcJE0EeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_MagHoZE0EeSaOItn9Hi5XA" conceptName="Postnatal infections" usageNote="VS_RiskFactorsForHearing" base_EnumerationLiteral="_MagHoJE0EeSaOItn9Hi5XA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_yrUgwJFAEeSdydvp_jSYIw" identifier="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.17" version="1" fullName="Hearing Plan of Care Problem Observations" definition="This value set holds a list of coded concepts representing the problems considered relevant for hearing care planning. The values below need to include a qualifier that indicates the test produced a “fail”, so the total concept is a “failed xyz Test”. (This value set it not a complete set of codes. The value set needs to be defined in a value set repository and then referenced by URL from this profile.)" base_Enumeration="_yrT5sJFAEeSdydvp_jSYIw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_D-TEcZFBEeSdydvp_jSYIw" conceptName="Patent ductus arteriosus (disorder)" base_EnumerationLiteral="_D-TEcJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_IuKs4ZFBEeSdydvp_jSYIw" conceptName="Patent ductus arteriosus - persisting type (disorder)" base_EnumerationLiteral="_IuKs4JFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_K1-t8ZFBEeSdydvp_jSYIw" conceptName="Patent ductus arteriosus - delayed closure (disorder)" base_EnumerationLiteral="_K1-t8JFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_MwONEZFBEeSdydvp_jSYIw" conceptName="Patent ductus arteriosus with left-to-right shunt (disorder)" base_EnumerationLiteral="_MwONEJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_OZa_gZFBEeSdydvp_jSYIw" conceptName="Fetal growth retardation (disorder)" base_EnumerationLiteral="_OZa_gJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_QIH9AZFBEeSdydvp_jSYIw" conceptName="Fetal growth retardation, antenatal (disorder)" base_EnumerationLiteral="_QIH9AJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_RuxKsJFBEeSdydvp_jSYIw" conceptName="Asymmetrical growth retardation (disorder)" usageNote="Asymmetrical growth retardation (disorder)" base_EnumerationLiteral="_RuwjoJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_URfmIZFBEeSdydvp_jSYIw" conceptName="Symmetrical growth retardation (disorder)" base_EnumerationLiteral="_URfmIJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_W319UZFBEeSdydvp_jSYIw" conceptName="Neonatal anemia (disorder)" base_EnumerationLiteral="_W319UJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_YlACsZFBEeSdydvp_jSYIw" conceptName="Anemia of prematurity (disorder)" base_EnumerationLiteral="_YlACsJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_as1R4ZFBEeSdydvp_jSYIw" conceptName="Kernicterus due to isoimmunization (disorder)" base_EnumerationLiteral="_as1R4JFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_cdsykZFBEeSdydvp_jSYIw" conceptName="Late anemia of newborn (disorder)" base_EnumerationLiteral="_cdsykJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_dzW98ZFBEeSdydvp_jSYIw" conceptName="Physiological anemia of infancy (disorder)" base_EnumerationLiteral="_dzW98JFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_fvGR4JFBEeSdydvp_jSYIw" conceptName="Perinatal anemia (disorder)" base_EnumerationLiteral="_fvFq0JFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_hiOcYZFBEeSdydvp_jSYIw" conceptName="Bronchopulmonary dysplasia of newborn (disorder)" base_EnumerationLiteral="_hiOcYJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_i_nncJFBEeSdydvp_jSYIw" conceptName="Congenital diaphragmatic hernia (disorder)" base_EnumerationLiteral="_i_nAYJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_kUSUUZFBEeSdydvp_jSYIw" conceptName="Congenital posterolateral diaphragmatic hernia (disorder)" base_EnumerationLiteral="_kUSUUJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_l5R8MJFBEeSdydvp_jSYIw" conceptName="Preauricular sinus (disorder)" base_EnumerationLiteral="_l5RVIJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_nj8HMJFBEeSdydvp_jSYIw" conceptName="Preauricular cyst (disorder)" base_EnumerationLiteral="_nj7gIJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_o-FJ8JFBEeSdydvp_jSYIw" conceptName="Trisomy 21- mitotic nondisjunction mosaicism (disorder)" base_EnumerationLiteral="_o-Ei4JFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_rIOtUZFBEeSdydvp_jSYIw" conceptName="Cleft lip (disorder)" base_EnumerationLiteral="_rIOtUJFBEeSdydvp_jSYIw"/>
+  <term:ValueSetCode xmi:id="_1N1rYJFBEeSdydvp_jSYIw" conceptName="Bilateral cleft lip (disorder)" base_EnumerationLiteral="_1N1EUJFBEeSdydvp_jSYIw"/>
+</xmi:XMI>
