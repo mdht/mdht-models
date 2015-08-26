@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeMedicationsSection2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
@@ -39,6 +40,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2Code(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medications Section2 Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2Title(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medications Section2 Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2Text(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medications Section2 Text</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2CETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medications Section2 CE Translation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateDischargeMedicationsSection2CETranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medications Section2 CE Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Entries Optional Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#validateHospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Entries Optional Discharge Medication</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSection2#getConsolDischargeMedication2s() <em>Get Consol Discharge Medication2s</em>}</li>
@@ -86,7 +89,7 @@ public class DischargeMedicationsSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateDischargeMedicationsSection2CodeP() {
@@ -103,7 +106,7 @@ public class DischargeMedicationsSection2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(DischargeMedicationsSection2 target) {
 				target.init();
-
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
@@ -120,7 +123,7 @@ public class DischargeMedicationsSection2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateDischargeMedicationsSection2Code() {
@@ -131,13 +134,14 @@ public class DischargeMedicationsSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(DischargeMedicationsSection2 target) {
-
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
 			protected void updateToPass(DischargeMedicationsSection2 target) {
-				target.init();
-
+				target.getCode().setCode("10183-2");
+				target.getCode().setCodeSystem(LOINC_ID);
 			}
 
 			@Override
@@ -230,6 +234,82 @@ public class DischargeMedicationsSection2Test extends CDAValidationTest {
 		};
 
 		validateDischargeMedicationsSection2TextTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateDischargeMedicationsSection2CETranslation() {
+		OperationsTestCase<DischargeMedicationsSection2> validateDischargeMedicationsSection2CETranslationTestCase = new OperationsTestCase<DischargeMedicationsSection2>(
+			"validateDischargeMedicationsSection2CETranslation",
+			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeMedicationsSection2 target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.getCode().setCode("10183-2");
+				target.getCode().setCodeSystem(LOINC_ID);
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(DischargeMedicationsSection2 target) {
+				for (CD trans : target.getCode().getTranslations()) {
+					trans.setCode("75311-1");
+					trans.setCodeSystem(LOINC_ID);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeMedicationsSection2Operations.validateDischargeMedicationsSection2CETranslation(
+					(DischargeMedicationsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeMedicationsSection2CETranslationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateDischargeMedicationsSection2CETranslationP() {
+		OperationsTestCase<DischargeMedicationsSection2> validateDischargeMedicationsSection2CETranslationPTestCase = new OperationsTestCase<DischargeMedicationsSection2>(
+			"validateDischargeMedicationsSection2CETranslationP",
+			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATIONS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(DischargeMedicationsSection2 target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.getCode().setCode("10183-2");
+				target.getCode().setCodeSystem(LOINC_ID);
+			}
+
+			@Override
+			protected void updateToPass(DischargeMedicationsSection2 target) {
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return DischargeMedicationsSection2Operations.validateDischargeMedicationsSection2CETranslationP(
+					(DischargeMedicationsSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDischargeMedicationsSection2CETranslationPTestCase.doValidationTest();
 	}
 
 	/**
