@@ -70,8 +70,7 @@
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_45wiEBkaEeGs5a462vYX5Q" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.6">
-    <ruleId>CONF:7800</ruleId>
-    <ruleId>CONF:10378</ruleId>
+    <ruleId>CONF:7800, CONF:10378</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_2EaLUBSVEeGGzu7fmW9pXw" name="AllergyObservation">
     <eAnnotations xmi:id="_2EaLURSVEeGGzu7fmW9pXw" source="uml2.alias">
@@ -822,12 +821,10 @@ historical purposes.&#xD;
     <ruleId>CONF:15346</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_skqTkBwNEeGlALrr33gUJg" base_Property="_bGzYixVdEeGQCvUGzi1kDQ">
-    <ruleId>CONF:7802</ruleId>
-    <ruleId>R2.0=CONF:1098-7802</ruleId>
+    <ruleId>CONF:7802, R2.1=CONF:1198-7802</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_2GICwBwNEeGlALrr33gUJg" base_Property="_bGzYjBVdEeGQCvUGzi1kDQ">
-    <ruleId>CONF:7803</ruleId>
-    <ruleId>R2.0=CONF:1098-7803</ruleId>
+    <ruleId>CONF:7803, R2.1=CONF:1198-7803</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="__eoqQBwNEeGlALrr33gUJg" severity="WARNING">
     <ruleId>CONF:7805</ruleId>
@@ -905,8 +902,7 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
     <ruleId>CONF:7322</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_i7X6oCAqEeGq2sn1dgvG_g" severity="WARNING" base_Association="_lqJOQh0aEeGGdsHVD60BZA">
-    <ruleId>CONF:7804</ruleId>
-    <ruleId>CONF:7805</ruleId>
+    <ruleId>CONF:7804, CONF:7805</ruleId>
   </CDA:AssociationValidation>
   <CDA:TextValue xmi:id="_iecvoCCOEeGq2sn1dgvG_g"/>
   <CDA:ConstraintValidation xmi:id="_-vDsACEyEeG9m6LRl9ardQ" base_Constraint="_2l9d8CEyEeG9m6LRl9ardQ">
@@ -2351,25 +2347,24 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j0ExEQIkEeSVzfoPSatgpg" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_uK0X4AIjEeSVzfoPSatgpg" base_Class="_nWAcMAIjEeSVzfoPSatgpg" templateId="2.16.840.1.113883.10.20.22.2.6" templateVersion="2014-06-09">
-    <ruleId>CONF:7800</ruleId>
-    <ruleId>CONF:10378</ruleId>
+  <CDA:CDATemplate xmi:id="_uK0X4AIjEeSVzfoPSatgpg" base_Class="_nWAcMAIjEeSVzfoPSatgpg" templateId="2.16.840.1.113883.10.20.22.2.6" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7800</ruleId>
+    <ruleId>CONF:1198-10378</ruleId>
+    <ruleId>CONF:1198-32544</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_Bp4_sAIkEeSVzfoPSatgpg" base_Generalization="_nWC4cAIjEeSVzfoPSatgpg"/>
   <CDA:CodeSystemConstraint xmi:id="_UrrOkQIkEeSVzfoPSatgpg" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_UrrOkAIkEeSVzfoPSatgpg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15346</ruleId>
-    <ruleId>CONF:1098-32139</ruleId>
+    <ruleId>CONF:1198-15346, CONF:1198-32139</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_UrscsAIkEeSVzfoPSatgpg" base_Property="_UrrOkAIkEeSVzfoPSatgpg">
-    <ruleId>CONF:1098-15345</ruleId>
+    <ruleId>CONF:1198-15345</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_j0GmQAIkEeSVzfoPSatgpg" memberEnd="_j0EKAAIkEeSVzfoPSatgpg _j0GmQQIkEeSVzfoPSatgpg">
     <ownedEnd xmi:id="_j0GmQQIkEeSVzfoPSatgpg" type="_nWAcMAIjEeSVzfoPSatgpg" association="_j0GmQAIkEeSVzfoPSatgpg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_lrx5kAIkEeSVzfoPSatgpg" severity="WARNING" base_Association="_j0GmQAIkEeSVzfoPSatgpg">
-    <ruleId>CONF:1098-7804</ruleId>
-    <ruleId>CONF:1098-15444</ruleId>
+    <ruleId>CONF:1198-7804, CONF:1198-15444</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_EONPMAInEeSr1aKUYorURA" clientDependency="_tTejYAInEeSr1aKUYorURA" name="AllergiesSection2">
     <ownedComment xmi:id="_MQKTcAInEeSr1aKUYorURA">
@@ -2403,32 +2398,28 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I_9QgQIzEeScubSeRE1upQ" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_LXPHYAInEeSr1aKUYorURA" base_Class="_EONPMAInEeSr1aKUYorURA" templateId="2.16.840.1.113883.10.20.22.2.6.1" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-7527</ruleId>
-    <ruleId>CONF:1098-10379</ruleId>
-    <ruleId>CONF:1098-32545</ruleId>
+  <CDA:CDATemplate xmi:id="_LXPHYAInEeSr1aKUYorURA" base_Class="_EONPMAInEeSr1aKUYorURA" templateId="2.16.840.1.113883.10.20.22.2.6.1" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7527, CONF:1198-10379, CONF:1198-32545</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_Z2m7AAInEeSr1aKUYorURA" base_Generalization="_EOQSgAInEeSr1aKUYorURA"/>
   <CDA:CodeSystemConstraint xmi:id="_ENCVEQIoEeSr1aKUYorURA" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_ENCVEAIoEeSr1aKUYorURA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15350</ruleId>
-    <ruleId>CONF:1098-32140</ruleId>
+    <ruleId>CONF:1198-15350, CONF:1198-32140</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_ENDjMAIoEeSr1aKUYorURA" base_Property="_ENCVEAIoEeSr1aKUYorURA">
-    <ruleId>CONF:1098-15349</ruleId>
+    <ruleId>CONF:1198-15349</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_kAF3AAIoEeSr1aKUYorURA" memberEnd="_kAEB0AIoEeSr1aKUYorURA _kAF3AQIoEeSr1aKUYorURA">
     <ownedEnd xmi:id="_kAF3AQIoEeSr1aKUYorURA" type="_EONPMAInEeSr1aKUYorURA" association="_kAF3AAIoEeSr1aKUYorURA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_06SuUAIoEeSr1aKUYorURA" base_Association="_kAF3AAIoEeSr1aKUYorURA">
-    <ruleId>CONF:1098-7531</ruleId>
-    <ruleId>CONF:1098-15446</ruleId>
+    <ruleId>CONF:1198-7531, CONF:1198-15446</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_I_9QgwIzEeScubSeRE1upQ" base_Property="_I_9QgAIzEeScubSeRE1upQ">
-    <ruleId>CONF:1098-7530</ruleId>
+    <ruleId>CONF:1198-7530</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_NFIWIAIzEeScubSeRE1upQ" base_Property="_I_93kAIzEeScubSeRE1upQ">
-    <ruleId>CONF:1098-7534</ruleId>
+    <ruleId>CONF:1198-7534</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_1ymUgGFNEeSNI6leTohBaQ" base_Constraint="_tYfO8GFNEeSNI6leTohBaQ">
     <ruleId>CONF:7419</ruleId>
@@ -2438,7 +2429,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>R2.0=CONF:1098-16324</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_CeCFYKJ1EeSOc57SOMra_g" severity="INFO" base_Property="_Blpr4KJ1EeSOc57SOMra_g">
-    <ruleId>CONF:1098-32824</ruleId>
+    <ruleId>CONF:1198-32824</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_K0JQ0KvuEeS-mulaI3YUlw" base_Property="_K0IpwKvuEeS-mulaI3YUlw">
     <ruleId>CONF:1098-7477</ruleId>

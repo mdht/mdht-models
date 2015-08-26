@@ -2924,8 +2924,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-socialhistory.uml#_5LuUQBtpEeGT89b80j3MTg"/>
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_2dO_4BrIEeGZ46SdiDZtPQ" severity="WARNING">
-    <ruleId>CONF:7119</ruleId>
-    <ruleId>CONF:7120</ruleId>
+    <ruleId>CONF:7119, CONF:7120</ruleId>
     <base_Association href=".controlled/consol-results.uml#_GXXWwBrIEeGZ46SdiDZtPQ"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_xyLJgBrJEeGZ46SdiDZtPQ">
@@ -2950,8 +2949,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-procedures.uml#_VDZHUBq9EeGYcL3NfEQErA"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_gfRaABxYEeG8X6LmnKJ43Q" severity="WARNING">
-    <ruleId>CONF:7271</ruleId>
-    <ruleId>CONF:7272</ruleId>
+    <ruleId>CONF:7271, CONF:7272</ruleId>
     <base_Association href=".controlled/consol-vitalsigns.uml#_XgAY8BxYEeG8X6LmnKJ43Q"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_IVoLYBxWEeGXP8PxDYviDg" message="" severity="INFO">
@@ -3044,8 +3042,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF-7150</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_xsgVECQ6EeG4DdjGPr5_Vg" severity="WARNING">
-    <ruleId>CONF:7969</ruleId>
-    <ruleId>CONF:7970</ruleId>
+    <ruleId>CONF:7969, CONF:7970</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_qfAzoiQ6EeG4DdjGPr5_Vg"/>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="__6IX4CUrEeG_gJw2x8CkdQ"/>
@@ -3059,8 +3056,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2PidWxSVEeGGzu7fmW9pXw"/>
   <CDA:AssociationValidation xmi:id="_v7r-gCsbEeGQ5rkpDKAt8A" severity="INFO">
-    <ruleId>CONF:7957</ruleId>
-    <ruleId>CONF:8800</ruleId>
+    <ruleId>CONF:7957, CONF:8800</ruleId>
     <base_Association href=".controlled/consol-advancedirectives.uml#_m-faACsbEeGQ5rkpDKAt8A"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_T0tv8CsfEeGQ5rkpDKAt8A" severity="WARNING">
@@ -3132,8 +3128,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-other.uml#_U6kJgCznEeGanY0p4MnU2w"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_0qoakDFVEeGbx9xBxK_Upg" severity="WARNING">
-    <ruleId>CONF:7951</ruleId>
-    <ruleId>CONF:8802</ruleId>
+    <ruleId>CONF:7951, CONF:8802</ruleId>
     <base_Association href=".controlled/consol-encounters.uml#_tEK_gDFVEeGbx9xBxK_Upg"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_AhNnADFWEeGbx9xBxK_Upg">
@@ -3742,13 +3737,11 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-procedures.uml#_HSV9EkEvEeGdmoWy_aLP0Q"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_gNPe8EEwEeGdmoWy_aLP0Q" severity="WARNING">
-    <ruleId>CONF:8762</ruleId>
-    <ruleId>CONF:8764</ruleId>
+    <ruleId>CONF:8762, CONF:8764</ruleId>
     <base_Association href=".controlled/consol-procedures.uml#_eZUDMkEwEeGdmoWy_aLP0Q"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_qN6AsEEyEeGdmoWy_aLP0Q" severity="INFO">
-    <ruleId>CONF:8090</ruleId>
-    <ruleId>CONF:8091</ruleId>
+    <ruleId>CONF:8090, CONF:8091</ruleId>
     <base_Association href=".controlled/consol-procedures.uml#_oVNZsEEyEeGdmoWy_aLP0Q"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_m-9jAEEzEeGdmoWy_aLP0Q" severity="INFO">
@@ -4361,7 +4354,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:1098-16320</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_JI1TsKZKEeSy2PrVxD6riw" base_Association="_FSEdgKZKEeSy2PrVxD6riw">
-    <ruleId>CONF:1098-32435</ruleId>
+    <ruleId>CONF:1198-32435</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_kKGBwK11EeS-n_bBhdNjYg" severity="INFO" base_Association="_kKEzoK11EeS-n_bBhdNjYg">
     <ruleId>CONF:1098-8725</ruleId>

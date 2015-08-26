@@ -197,20 +197,17 @@
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_41cG4BnXEeGs5a462vYX5Q" base_Class="_2PidURSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.24" assigningAuthorityName="HL7">
-    <ruleId>CONF:7979</ruleId>
-    <ruleId>CONF:10394</ruleId>
+    <ruleId>CONF:7979, CONF:10394</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2Poj4RSVEeGGzu7fmW9pXw" code="11535-2" displayName="Hospital Discharge Diagnosis" base_Property="_2Poj4BSVEeGGzu7fmW9pXw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:15356</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_zgAcgCUKEeGiOPpZVnfEJA" base_Property="_wbgJsCUKEeGiOPpZVnfEJA">
-    <ruleId>CONF:7981</ruleId>
-    <ruleId>R2.0=CONF:1098-7981</ruleId>
+    <ruleId>CONF:7981, R2.1=CONF:1198-7981</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_0U5dICUKEeGiOPpZVnfEJA" base_Property="_wbe7kCUKEeGiOPpZVnfEJA">
-    <ruleId>CONF:7982</ruleId>
-    <ruleId>R2.0=CONF:1098-7982</ruleId>
+    <ruleId>CONF:7982, R2.1=CONF:1198-7982</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_lBergCUMEeGiOPpZVnfEJA" name="HospitalDischargeInstructionsSection">
     <ownedComment xmi:id="_YHIqECUOEeGiOPpZVnfEJA">
@@ -314,20 +311,17 @@
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="__7eHsBnSEeGs5a462vYX5Q" base_Class="_2Poj7RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.11" assigningAuthorityName="HL7">
-    <ruleId>CONF:7816</ruleId>
-    <ruleId>CONF:10396</ruleId>
+    <ruleId>CONF:7816, CONF:10396</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2Poj-RSVEeGGzu7fmW9pXw" code="10183-2" displayName="HOSPITAL DISCHARGE MEDICATIONS" base_Property="_2Poj-BSVEeGGzu7fmW9pXw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:15360</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_236PoCUOEeGiOPpZVnfEJA" base_Property="_zaK9cCUOEeGiOPpZVnfEJA">
-    <ruleId>CONF:7818</ruleId>
-    <ruleId>R2.0=CONF:1098-7818</ruleId>
+    <ruleId>CONF:7818, R2.1=CONF:1198-7818</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_4s9swCUOEeGiOPpZVnfEJA" base_Property="_zaJvUCUOEeGiOPpZVnfEJA">
-    <ruleId>CONF:7819</ruleId>
-    <ruleId>R2.0=CONF:1098-7819</ruleId>
+    <ruleId>CONF:7819, R2.1=CONF:1198-7819</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_WikGsCUTEeGiOPpZVnfEJA" name="HospitalDischargePhysicalSection">
     <ownedComment xmi:id="_YsVPkCUTEeGiOPpZVnfEJA">
@@ -924,34 +918,42 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     </ownedComment>
     <generalization xmi:id="_jfv7kPytEeOmn53IDV99zw" general="_2PidURSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_KptZoPyuEeOmn53IDV99zw" name="HospitalDischargeDiagnosisSection" client="_jfuGYPytEeOmn53IDV99zw" supplier="_2PidURSVEeGGzu7fmW9pXw" contract="_2PidURSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="__MeE0PyuEeOmn53IDV99zw" name="code" visibility="private" redefinedProperty="_2Poj4BSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:id="__MeE0PyuEeOmn53IDV99zw" name="code" visibility="private" type="_1ULlAEKrEeWCWce3kO1aHQ" redefinedProperty="_2Poj4BSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_JZsRUPywEeOmn53IDV99zw" name="hospitalDischargeDiagnosis2" type="_Trd1cOEMEeOmBMTtnrPqww" redefinedProperty="_fU_8gCqAEeGiFpKeZIy4Pg" association="_JZutkPywEeOmn53IDV99zw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjQuwfywEeOmn53IDV99zw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjQuwPywEeOmn53IDV99zw" value="1"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_1ULlAEKrEeWCWce3kO1aHQ" name="CE">
+      <ownedComment xmi:id="_3ZDm0EKrEeWCWce3kO1aHQ">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_1UMMEEKrEeWCWce3kO1aHQ">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_2CYHwEKrEeWCWce3kO1aHQ" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7iLYUEKrEeWCWce3kO1aHQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7iKxQEKrEeWCWce3kO1aHQ" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_u9a4wPytEeOmn53IDV99zw" base_Class="_jfuGYPytEeOmn53IDV99zw" templateId="2.16.840.1.113883.10.20.22.2.24" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-7979</ruleId>
-    <ruleId>CONF:1098-10394</ruleId>
-    <ruleId>CONF:1098-15355</ruleId>
+  <CDA:CDATemplate xmi:id="_u9a4wPytEeOmn53IDV99zw" base_Class="_jfuGYPytEeOmn53IDV99zw" templateId="2.16.840.1.113883.10.20.22.2.24" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7979, CONF:1198-10394, CONF:1198-15355</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_FiUpEPyuEeOmn53IDV99zw" base_Generalization="_jfv7kPytEeOmn53IDV99zw"/>
-  <CDA:CodeSystemConstraint xmi:id="__MeE0fyuEeOmn53IDV99zw" code="C-CDAV2-DDN" displayName="Prognosis" base_Property="__MeE0PyuEeOmn53IDV99zw">
+  <CDA:CodeSystemConstraint xmi:id="__MeE0fyuEeOmn53IDV99zw" code="11535-2" displayName="Hospital Discharge Diagnosis" base_Property="__MeE0PyuEeOmn53IDV99zw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15356</ruleId>
-    <ruleId>CONF:1098-30861</ruleId>
+    <ruleId>CONF:1198-15356, CONF:1198-30861</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="__MfS8PyuEeOmn53IDV99zw" base_Property="__MeE0PyuEeOmn53IDV99zw">
-    <ruleId>CONF:1098-15355</ruleId>
+    <ruleId>CONF:1198-15355</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_JZutkPywEeOmn53IDV99zw" memberEnd="_JZsRUPywEeOmn53IDV99zw _JZvUoPywEeOmn53IDV99zw">
     <ownedEnd xmi:id="_JZvUoPywEeOmn53IDV99zw" type="_jfuGYPytEeOmn53IDV99zw" association="_JZutkPywEeOmn53IDV99zw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_MVLyEPywEeOmn53IDV99zw" severity="WARNING" base_Association="_JZutkPywEeOmn53IDV99zw">
-    <ruleId>CONF:1098-7983</ruleId>
-    <ruleId>CONF:1098-15489</ruleId>
+    <ruleId>CONF:1198-7983, CONF:1198-15489</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_HlfBYPyzEeOfAK77IvEBUw" clientDependency="_aFs0QPyzEeOfAK77IvEBUw" name="DischargeMedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_PlPGMPyzEeOfAK77IvEBUw">
@@ -967,18 +969,15 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_JxnhwPyzEeOfAK77IvEBUw" base_Class="_HlfBYPyzEeOfAK77IvEBUw" templateId="2.16.840.1.113883.10.20.22.2.11" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-7816</ruleId>
-    <ruleId>CONF:1098-10396</ruleId>
-    <ruleId>CONF:1098-32561</ruleId>
+  <CDA:CDATemplate xmi:id="_JxnhwPyzEeOfAK77IvEBUw" base_Class="_HlfBYPyzEeOfAK77IvEBUw" templateId="2.16.840.1.113883.10.20.22.2.11" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7816, CONF:1198-10396, CONF:1198-32561</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_Wmtk4PyzEeOfAK77IvEBUw" base_Generalization="_HlhdoPyzEeOfAK77IvEBUw"/>
   <uml:Association xmi:id="_nTDw8Py0EeOfAK77IvEBUw" memberEnd="_nTBUsPy0EeOfAK77IvEBUw _nTDw8fy0EeOfAK77IvEBUw">
     <ownedEnd xmi:id="_nTDw8fy0EeOfAK77IvEBUw" type="_HlfBYPyzEeOfAK77IvEBUw" association="_nTDw8Py0EeOfAK77IvEBUw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_oxVFwPy0EeOfAK77IvEBUw" severity="WARNING" base_Association="_nTDw8Py0EeOfAK77IvEBUw">
-    <ruleId>CONF:1098-7820</ruleId>
-    <ruleId>CONF:1098-15490</ruleId>
+    <ruleId>CONF:1198-7820, CONF:1198-15490</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_Jt0moAI0EeSRkrs1G7P_XQ" clientDependency="_bZ0uUAI0EeSRkrs1G7P_XQ" name="DischargeMedicationsSection2">
     <ownedComment xmi:id="_RgJTcAI0EeSRkrs1G7P_XQ">
@@ -993,9 +992,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_o8qIYKMuEeS3pZBAijm94w" value="NI"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_GqrwUAI1EeSRkrs1G7P_XQ" name="code" visibility="private" redefinedProperty="_2Poj-BSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:id="_GqrwUAI1EeSRkrs1G7P_XQ" name="code" visibility="private" type="_3pFqEEKvEeWCWce3kO1aHQ" redefinedProperty="_2Poj-BSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_GxNZoAI2EeSRkrs1G7P_XQ" name="dischargeMedication2" type="_EIeu8MyjEeO93sHu8pHB2g" redefinedProperty="_nTBUsPy0EeOfAK77IvEBUw" association="_GxP14AI2EeSRkrs1G7P_XQ">
       <ownedComment xmi:id="_lCe8YKMvEeS3pZBAijm94w">
         <body>If section/@nullFlavor is not present:</body>
@@ -1013,44 +1010,50 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e05cIgI2EeSRkrs1G7P_XQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e05cIQI2EeSRkrs1G7P_XQ" value="1"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_3pFqEEKvEeWCWce3kO1aHQ" name="CE">
+      <generalization xmi:id="_3pGRIEKvEeWCWce3kO1aHQ">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_4K4vkEKvEeWCWce3kO1aHQ" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_70kMAEKvEeWCWce3kO1aHQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_70jk8EKvEeWCWce3kO1aHQ" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_Pcn8gAI0EeSRkrs1G7P_XQ" base_Class="_Jt0moAI0EeSRkrs1G7P_XQ" templateId="2.16.840.1.113883.10.20.22.2.11.1" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-7822</ruleId>
-    <ruleId>CONF:1098-10397</ruleId>
-    <ruleId>CONF:1098-32562</ruleId>
+  <CDA:CDATemplate xmi:id="_Pcn8gAI0EeSRkrs1G7P_XQ" base_Class="_Jt0moAI0EeSRkrs1G7P_XQ" templateId="2.16.840.1.113883.10.20.22.2.11.1" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7822, CONF:1198-10397, CONF:1198-32562</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_Y9iSEAI0EeSRkrs1G7P_XQ" base_Generalization="_Jt3p8AI0EeSRkrs1G7P_XQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_GqsXYAI1EeSRkrs1G7P_XQ" code="75311-1" displayName="Discharge Medications" base_Property="_GqrwUAI1EeSRkrs1G7P_XQ">
+  <CDA:CodeSystemConstraint xmi:id="_GqsXYAI1EeSRkrs1G7P_XQ" code="10183-2" displayName="Hospital Discharge Medications" base_Property="_GqrwUAI1EeSRkrs1G7P_XQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15362</ruleId>
-    <ruleId>CONF:1098-32145</ruleId>
+    <ruleId>CONF:1198-15362, CONF:1198-32145</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_Gqs-cAI1EeSRkrs1G7P_XQ" base_Property="_GqrwUAI1EeSRkrs1G7P_XQ">
-    <ruleId>CONF:1098-15361</ruleId>
+    <ruleId>CONF:1198-15361</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_GxP14AI2EeSRkrs1G7P_XQ" memberEnd="_GxNZoAI2EeSRkrs1G7P_XQ _GxQc8AI2EeSRkrs1G7P_XQ">
     <ownedEnd xmi:id="_GxQc8AI2EeSRkrs1G7P_XQ" type="_Jt0moAI0EeSRkrs1G7P_XQ" association="_GxP14AI2EeSRkrs1G7P_XQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_HkURkAI2EeSRkrs1G7P_XQ" base_Association="_GxP14AI2EeSRkrs1G7P_XQ">
-    <ruleId>CONF:1098-7826</ruleId>
-    <ruleId>CONF:1098-15491</ruleId>
+    <ruleId>CONF:1198-7826, CONF:1198-15491</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_e05cIwI2EeSRkrs1G7P_XQ" base_Property="_e05cIAI2EeSRkrs1G7P_XQ">
-    <ruleId>CONF:1098-7825</ruleId>
+    <ruleId>CONF:1198-7825</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_iGRGQAI2EeSRkrs1G7P_XQ" base_Property="_e06DMAI2EeSRkrs1G7P_XQ">
-    <ruleId>CONF:1098-7824</ruleId>
+    <ruleId>CONF:1198-7824</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_7U8ZMKMsEeS3pZBAijm94w" code="75311-1" displayName="Discharge medications" base_Property="_7U7yIKMsEeS3pZBAijm94w">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15360</ruleId>
-    <ruleId>CONF:1098-32480</ruleId>
+    <ruleId>CONF:1198-15360, CONF:1198-32480</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_7U_cgKMsEeS3pZBAijm94w" base_Property="_7U7yIKMsEeS3pZBAijm94w">
-    <ruleId>CONF:1098-15359</ruleId>
+    <ruleId>CONF:1198-15359</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_lVOHoKMuEeS3pZBAijm94w" severity="INFO" base_Property="_kLdqQKMuEeS3pZBAijm94w">
-    <ruleId>CONF:1098-32812</ruleId>
+    <ruleId>CONF:1198-32812</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_-GTp8K1mEeS-n_bBhdNjYg" base_Property="_8lQt8K1mEeS-n_bBhdNjYg">
     <ruleId>CONF:1098-32779</ruleId>
@@ -1106,4 +1109,20 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:AssociationValidation xmi:id="_B3mQIP8-EeS4jrgU1p4iug" message="SHALL contain at least one 1..*] entryRelationships (CONF:1098-32782)" base_Association="_BDTscP8-EeS4jrgU1p4iug">
     <ruleId>CONF:1098-32782</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_72y9cEKrEeWCWce3kO1aHQ" base_Property="_2CYHwEKrEeWCWce3kO1aHQ">
+    <ruleId>CONF:1198-32834</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_AYLd8EKsEeWCWce3kO1aHQ" code="78375-3" displayName="Discharge Diagnosis" base_Property="_2CYHwEKrEeWCWce3kO1aHQ">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-32835</ruleId>
+    <ruleId>CONF:1198-32836</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_6RVesEKvEeWCWce3kO1aHQ" base_Property="_4K4vkEKvEeWCWce3kO1aHQ">
+    <ruleId>CONF:1198-32857</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_Ab-cAEKwEeWCWce3kO1aHQ" code="75311-1" displayName="Discharge Medications" base_Property="_4K4vkEKvEeWCWce3kO1aHQ">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-32858</ruleId>
+    <ruleId>CONF:1198-32859</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>

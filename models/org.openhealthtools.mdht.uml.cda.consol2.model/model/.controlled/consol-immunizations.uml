@@ -502,20 +502,17 @@
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_npcu0BVfEeGQCvUGzi1kDQ" base_Class="_EuPloBVeEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.2">
-    <ruleId>CONF:7965</ruleId>
-    <ruleId>CONF:10399</ruleId>
+    <ruleId>CONF:7965, CONF:10399</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_k6QYgBqgEeGo461UQq-B1g" code="11369-6" base_Property="_EuPlsRVeEeGQCvUGzi1kDQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:15368</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_trjPABqgEeGo461UQq-B1g" base_Property="_EuPlshVeEeGQCvUGzi1kDQ">
-    <ruleId>CONF:7967.</ruleId>
-    <ruleId>R2.0=CONF:1098-7967</ruleId>
+    <ruleId>CONF:7967., R2.1=CONF:1198-7967</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_uNuH8BqgEeGo461UQq-B1g" base_Property="_EuPlsxVeEeGQCvUGzi1kDQ">
-    <ruleId>CONF:7968</ruleId>
-    <ruleId>R2.0=CONF:1098-7968</ruleId>
+    <ruleId>CONF:7968, R2.1=CONF:1198-7968</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_wL6S8BqgEeGo461UQq-B1g" severity="WARNING">
     <ruleId>CONF:7969</ruleId>
@@ -1356,26 +1353,22 @@ This information should be included in an Immunization Activity when available. 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XHuN8fy4EeO1SvUcmWeLDQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_qxeRMPy3EeO1SvUcmWeLDQ" base_Class="_kdQhIPy3EeO1SvUcmWeLDQ" templateId="2.16.840.1.113883.10.20.22.2.2" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-7965</ruleId>
-    <ruleId>CONF:1098-10399</ruleId>
-    <ruleId>CONF:1098-32529</ruleId>
+  <CDA:CDATemplate xmi:id="_qxeRMPy3EeO1SvUcmWeLDQ" base_Class="_kdQhIPy3EeO1SvUcmWeLDQ" templateId="2.16.840.1.113883.10.20.22.2.2" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7965, CONF:1198-10399, CONF:1198-32529</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_5zZ_UPy3EeO1SvUcmWeLDQ" base_Generalization="_kdS9YPy3EeO1SvUcmWeLDQ"/>
   <CDA:CodeSystemConstraint xmi:id="_DNWKMPy4EeO1SvUcmWeLDQ" code="11369-6" displayName="Immunizations" base_Property="_DNVjIPy4EeO1SvUcmWeLDQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15368</ruleId>
-    <ruleId>CONF:1098-32146</ruleId>
+    <ruleId>CONF:1198-15368, CONF:1198-32146</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_DNXYUPy4EeO1SvUcmWeLDQ" base_Property="_DNVjIPy4EeO1SvUcmWeLDQ">
-    <ruleId>CONF:1098-15367</ruleId>
+    <ruleId>CONF:1198-15367</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_XHwDIPy4EeO1SvUcmWeLDQ" memberEnd="_XHtm4Py4EeO1SvUcmWeLDQ _XHwqMPy4EeO1SvUcmWeLDQ">
     <ownedEnd xmi:id="_XHwqMPy4EeO1SvUcmWeLDQ" type="_kdQhIPy3EeO1SvUcmWeLDQ" association="_XHwDIPy4EeO1SvUcmWeLDQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_YSjpYPy4EeO1SvUcmWeLDQ" severity="WARNING" base_Association="_XHwDIPy4EeO1SvUcmWeLDQ">
-    <ruleId>CONF:1098-7969</ruleId>
-    <ruleId>CONF:1098-15494</ruleId>
+    <ruleId>CONF:1198-7969, CONF:1198-15494</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_14bikALNEeSIPYXg7AgJzw" clientDependency="_G26c8ALOEeSIPYXg7AgJzw" name="ImmunizationsSection2">
     <ownedComment xmi:id="_64PrgALNEeSIPYXg7AgJzw">
@@ -1409,29 +1402,25 @@ This information should be included in an Immunization Activity when available. 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4abIwQLOEeSIPYXg7AgJzw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_6KbjQALNEeSIPYXg7AgJzw" base_Class="_14bikALNEeSIPYXg7AgJzw" templateId="2.16.840.1.113883.10.20.22.2.2.1" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-9015</ruleId>
-    <ruleId>CONF:1098-10400</ruleId>
-    <ruleId>CONF:1098-32530</ruleId>
+  <CDA:CDATemplate xmi:id="_6KbjQALNEeSIPYXg7AgJzw" base_Class="_14bikALNEeSIPYXg7AgJzw" templateId="2.16.840.1.113883.10.20.22.2.2.1" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-9015, CONF:1198-10400, CONF:1198-32530</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_Bq7gQALOEeSIPYXg7AgJzw" base_Generalization="_14dXwALNEeSIPYXg7AgJzw"/>
   <CDA:CodeSystemConstraint xmi:id="_Spn2AALOEeSIPYXg7AgJzw" code="11369-6" displayName="Immunizations" base_Property="_SpnO8ALOEeSIPYXg7AgJzw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15370</ruleId>
-    <ruleId>CONF:1098-32147</ruleId>
+    <ruleId>CONF:1198-15370, CONF:1198-32147</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_SppEIALOEeSIPYXg7AgJzw" base_Property="_SpnO8ALOEeSIPYXg7AgJzw">
-    <ruleId>CONF:1098-15369</ruleId>
+    <ruleId>CONF:1198-15369</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_fikeYALOEeSIPYXg7AgJzw" memberEnd="_fiipMALOEeSIPYXg7AgJzw _fikeYQLOEeSIPYXg7AgJzw">
     <ownedEnd xmi:id="_fikeYQLOEeSIPYXg7AgJzw" type="_14bikALNEeSIPYXg7AgJzw" association="_fikeYALOEeSIPYXg7AgJzw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_itTVAALOEeSIPYXg7AgJzw" base_Association="_fikeYALOEeSIPYXg7AgJzw">
-    <ruleId>CONF:1098-9019</ruleId>
-    <ruleId>CONF:1098-15495</ruleId>
+    <ruleId>CONF:1198-9019, CONF:1198-15495</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_4abv0ALOEeSIPYXg7AgJzw" base_Property="_4abIwALOEeSIPYXg7AgJzw">
-    <ruleId>CONF:1098-9018</ruleId>
+    <ruleId>CONF:1198-9018</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_u501sDhXEeS1WeMhbm6GZw" memberEnd="_u5znkDhXEeS1WeMhbm6GZw _u501sThXEeS1WeMhbm6GZw">
     <ownedEnd xmi:id="_u501sThXEeS1WeMhbm6GZw" type="_2MAoIBSVEeGGzu7fmW9pXw" association="_u501sDhXEeS1WeMhbm6GZw"/>
@@ -1507,10 +1496,10 @@ This information should be included in an Immunization Activity when available. 
     <ruleId>CONF:1098-15548</ruleId>
   </CDA:AssociationValidation>
   <CDA:TextValue xmi:id="_A1c-8KWfEeSPMaiGDG98Yg" base_Property="_4abv0QLOEeSIPYXg7AgJzw">
-    <ruleId>CONF:1098-9017</ruleId>
+    <ruleId>CONF:1198-9017</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_T2JosKWfEeSPMaiGDG98Yg" severity="INFO" base_Property="_Stc7QKWfEeSPMaiGDG98Yg">
-    <ruleId>CONF:1098-32833</ruleId>
+    <ruleId>CONF:1198-32833</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_ZVy_ksHrEeST26B_nQ4gxA" base_Constraint="_ZVy_kMHrEeST26B_nQ4gxA">
     <ruleId>CONF:1098-8858</ruleId>

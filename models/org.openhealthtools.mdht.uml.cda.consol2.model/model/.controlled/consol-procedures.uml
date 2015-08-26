@@ -1837,8 +1837,7 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:10380</ruleId>
   </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_kL-k8DV1EeGaW4kr-GbV8Q" base_Class="_R1OXcDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.37">
-    <ruleId>CONF:8174</ruleId>
-    <ruleId>CONF:10384</ruleId>
+    <ruleId>CONF:8174, CONF:10384</ruleId>
   </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_DIe5YDV2EeGaW4kr-GbV8Q" base_Class="_vHfXoDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.7.12">
     <ruleId>CONF:8030</ruleId>
@@ -1857,12 +1856,10 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:10437</ruleId>
   </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_OjincDV2EeGaW4kr-GbV8Q" base_Class="_-jlSMDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.36">
-    <ruleId>CONF:8167</ruleId>
-    <ruleId>CONF:10438</ruleId>
+    <ruleId>CONF:8167, CONF:10438</ruleId>
   </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_Rt5DkDV2EeGaW4kr-GbV8Q" base_Class="_Cu6qMDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.34">
-    <ruleId>CONF:8097</ruleId>
-    <ruleId>CONF:10439</ruleId>
+    <ruleId>CONF:8097, CONF:10439</ruleId>
   </CDA:CDATemplate>
   <CDA:CDATemplate xmi:id="_U67nUDV2EeGaW4kr-GbV8Q" base_Class="_HNUIIDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.27">
     <ruleId>CONF:8062</ruleId>
@@ -1976,12 +1973,10 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:15404</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_cNzqYEEvEeGdmoWy_aLP0Q" base_Property="_SQVUo0EvEeGdmoWy_aLP0Q">
-    <ruleId>CONF:8171</ruleId>
-    <ruleId>R2.0=CONF:1098-8171</ruleId>
+    <ruleId>CONF:8171, R2.1=CONF:1198-8171</ruleId>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_d1rAEEEvEeGdmoWy_aLP0Q" base_Property="_SQVUpkEvEeGdmoWy_aLP0Q">
-    <ruleId>CONF:8170</ruleId>
-    <ruleId>R2.0=CONF:1098-8170</ruleId>
+    <ruleId>CONF:8170, R2.1=CONF:1198-8170</ruleId>
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_5q3TYEExEeGdmoWy_aLP0Q" code="59770-8" displayName="Procedure Estimated Blood Loss" base_Property="_0UcBQEExEeGdmoWy_aLP0Q">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -1997,12 +1992,10 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:8741</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_bJXDcEEyEeGdmoWy_aLP0Q" base_Property="_V8xCw0EyEeGdmoWy_aLP0Q">
-    <ruleId>CONF:8081</ruleId>
-    <ruleId>R2.0=CONF:1098-8081</ruleId>
+    <ruleId>CONF:8081, R2.1=CONF:1198-8081</ruleId>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_bkLXMEEyEeGdmoWy_aLP0Q" base_Property="_V86MsEEyEeGdmoWy_aLP0Q">
-    <ruleId>CONF:8080</ruleId>
-    <ruleId>R2.0=CONF:1098-8080</ruleId>
+    <ruleId>CONF:8080, R2.1=CONF:1198-8080</ruleId>
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_dAkcsEEyEeGdmoWy_aLP0Q" code="59776-5" displayName="Procedure Findings" base_Property="_V8xCwEEyEeGdmoWy_aLP0Q">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -2180,12 +2173,10 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:15454</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_uDTKsFjoEeGRqYkwoeymcA" base_Property="_zwabUFjkEeGRqYkwoeymcA">
-    <ruleId>CONF:8176</ruleId>
-    <ruleId>R2.0=CONF:1098-8176</ruleId>
+    <ruleId>CONF:8176, R2.1=CONF:1198-8176</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_vb2SAFjoEeGRqYkwoeymcA" base_Property="_zwZ0Q1jkEeGRqYkwoeymcA">
-    <ruleId>CONF:8177</ruleId>
-    <ruleId>R2.0=CONF:1098-8177</ruleId>
+    <ruleId>CONF:8177, R2.1=CONF:1198-8177</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_2qMIAFjoEeGRqYkwoeymcA" base_Constraint="_z_CwYFjoEeGRqYkwoeymcA">
     <ruleId>CONF:8797</ruleId>
@@ -2194,8 +2185,7 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ownedEnd xmi:id="_4Xf-YFjoEeGRqYkwoeymcA" type="_R1OXcDVyEeGaW4kr-GbV8Q" association="_4XfXUFjoEeGRqYkwoeymcA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_7wZM0FjoEeGRqYkwoeymcA" severity="INFO" base_Association="_4XfXUFjoEeGRqYkwoeymcA">
-    <ruleId>CONF:8795</ruleId>
-    <ruleId>CONF:8796</ruleId>
+    <ruleId>CONF:8795, CONF:8796</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_d1NEAFmvEeGRqYkwoeymcA" base_Constraint="_ZcsLoFmvEeGRqYkwoeymcA">
     <ruleId>CONF:8052</ruleId>
@@ -2205,19 +2195,16 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:15406</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_cDaQ4FwNEeG0y_7i0ygc4g" base_Property="_5vrBEFvvEeGxXeivz89y3A">
-    <ruleId>CONF:8100</ruleId>
-    <ruleId>R2.0=CONF:1098-8100</ruleId>
+    <ruleId>CONF:8100, R2.1=CONF:1198-8100</ruleId>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_evZWAFwNEeG0y_7i0ygc4g" base_Property="_5vroIFvvEeGxXeivz89y3A">
-    <ruleId>CONF:8099</ruleId>
-    <ruleId>R2.0=CONF:1098-8099</ruleId>
+    <ruleId>CONF:8099, R2.1=CONF:1198-8099</ruleId>
   </CDA:TextValue>
   <uml:Association xmi:id="_0c-nUFwOEeG0y_7i0ygc4g" memberEnd="_0c8yIFwOEeG0y_7i0ygc4g _0c_OYFwOEeG0y_7i0ygc4g">
     <ownedEnd xmi:id="_0c_OYFwOEeG0y_7i0ygc4g" type="_Cu6qMDVzEeGaW4kr-GbV8Q" association="_0c-nUFwOEeG0y_7i0ygc4g"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_1fvE0FwOEeG0y_7i0ygc4g" severity="WARNING" base_Association="_0c-nUFwOEeG0y_7i0ygc4g">
-    <ruleId>CONF:10096</ruleId>
-    <ruleId>CONF:10097</ruleId>
+    <ruleId>CONF:10096, CONF:10097</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_mrBocFwQEeG0y_7i0ygc4g" base_Constraint="_L5NdsEEzEeGdmoWy_aLP0Q">
     <ruleId>CONF:8769</ruleId>
@@ -3147,10 +3134,8 @@ This template can be used with a contained Product Instance template to represen
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iqwAkfvZEeOes-3T-2HryA" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_EuKGcPvYEeOes-3T-2HryA" base_Class="_6M-msPvXEeOes-3T-2HryA" templateId="2.16.840.1.113883.10.20.22.2.37" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-8174</ruleId>
-    <ruleId>CONF:1098-10384</ruleId>
-    <ruleId>CONF:1098-32538</ruleId>
+  <CDA:CDATemplate xmi:id="_EuKGcPvYEeOes-3T-2HryA" base_Class="_6M-msPvXEeOes-3T-2HryA" templateId="2.16.840.1.113883.10.20.22.2.37" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-8174, CONF:1198-10384, CONF:1198-32538</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_SzN8oPvYEeOes-3T-2HryA" base_Generalization="_6NBC8PvXEeOes-3T-2HryA"/>
   <uml:Association xmi:id="_OZtJQPvZEeOes-3T-2HryA" memberEnd="_OZr7IPvZEeOes-3T-2HryA _OZtJQfvZEeOes-3T-2HryA">
@@ -3160,16 +3145,14 @@ This template can be used with a contained Product Instance template to represen
     <ownedEnd xmi:id="_OZtJQfvZEeOes-3T-2HryA" type="_6M-msPvXEeOes-3T-2HryA" association="_OZtJQPvZEeOes-3T-2HryA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_O9TlkPvZEeOes-3T-2HryA" severity="INFO" base_Association="_OZtJQPvZEeOes-3T-2HryA">
-    <ruleId>CONF:1098-8795</ruleId>
-    <ruleId>CONF:1098-15455</ruleId>
+    <ruleId>CONF:1198-8795, CONF:1198-15455</ruleId>
   </CDA:AssociationValidation>
   <CDA:CodeSystemConstraint xmi:id="_iqwnoPvZEeOes-3T-2HryA" code="55109-3" displayName="Complications" base_Property="_iqwAkPvZEeOes-3T-2HryA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15454</ruleId>
-    <ruleId>CONF:1098-30860</ruleId>
+    <ruleId>CONF:1198-15454, CONF:1198-30860</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_iqyc0PvZEeOes-3T-2HryA" base_Property="_iqwAkPvZEeOes-3T-2HryA">
-    <ruleId>CONF:1098-15453</ruleId>
+    <ruleId>CONF:1198-15453</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_dz0ZwP49EeO_F_2qLv6FWQ" clientDependency="_nL_qEP49EeO_F_2qLv6FWQ" name="PlannedProcedureSection2">
     <ownedComment xmi:id="_qFPvIP49EeO_F_2qLv6FWQ">
@@ -3225,26 +3208,22 @@ This template can be used with a contained Product Instance template to represen
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2pwmUP5CEeOmw9RN80Tpig" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_rcLJAP5BEeOmw9RN80Tpig" base_Class="_MLNngP5BEeOmw9RN80Tpig" templateId="2.16.840.1.113883.10.20.22.2.36" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-8167</ruleId>
-    <ruleId>CONF:1098-10438</ruleId>
-    <ruleId>CONF:1098-32550</ruleId>
+  <CDA:CDATemplate xmi:id="_rcLJAP5BEeOmw9RN80Tpig" base_Class="_MLNngP5BEeOmw9RN80Tpig" templateId="2.16.840.1.113883.10.20.22.2.36" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-8167, CONF:1198-10438, CONF:1198-32550</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_4dWgUP5BEeOmw9RN80Tpig" base_Generalization="_MLRR4P5BEeOmw9RN80Tpig"/>
   <CDA:CodeSystemConstraint xmi:id="_9q9No_5BEeOmw9RN80Tpig" code="59769-0" displayName="Postprocedure Diagnosis" base_Property="_9q9NoP5BEeOmw9RN80Tpig">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15404</ruleId>
-    <ruleId>CONF:1098-30862</ruleId>
+    <ruleId>CONF:1198-15404, CONF:1198-30862</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_9q_p4P5BEeOmw9RN80Tpig" base_Property="_9q9NoP5BEeOmw9RN80Tpig">
-    <ruleId>CONF:1098-15403</ruleId>
+    <ruleId>CONF:1198-15403</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_zMcK4P5CEeOmw9RN80Tpig" memberEnd="_zMa8wP5CEeOmw9RN80Tpig _zMcx8P5CEeOmw9RN80Tpig">
     <ownedEnd xmi:id="_zMcx8P5CEeOmw9RN80Tpig" type="_MLNngP5BEeOmw9RN80Tpig" association="_zMcK4P5CEeOmw9RN80Tpig"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_1TwcsP5CEeOmw9RN80Tpig" severity="WARNING" base_Association="_zMcK4P5CEeOmw9RN80Tpig">
-    <ruleId>CONF:1098-8762</ruleId>
-    <ruleId>CONF:1098-15503</ruleId>
+    <ruleId>CONF:1198-8762, CONF:1198-15503</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_JFd3MP5EEeOBnLkJOVC8NQ" clientDependency="_UH8GIP5EEeOBnLkJOVC8NQ" name="PreoperativeDiagnosisSection2">
     <ownedComment xmi:id="_OTT1EP5EEeOBnLkJOVC8NQ">
@@ -3262,26 +3241,22 @@ This template can be used with a contained Product Instance template to represen
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u8_dAP5EEeOBnLkJOVC8NQ" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_NcdsoP5EEeOBnLkJOVC8NQ" base_Class="_JFd3MP5EEeOBnLkJOVC8NQ" templateId="2.16.840.1.113883.10.20.22.2.34" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-8097</ruleId>
-    <ruleId>CONF:1098-10439</ruleId>
-    <ruleId>CONF:1098-32551</ruleId>
+  <CDA:CDATemplate xmi:id="_NcdsoP5EEeOBnLkJOVC8NQ" base_Class="_JFd3MP5EEeOBnLkJOVC8NQ" templateId="2.16.840.1.113883.10.20.22.2.34" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-8097, CONF:1198-10439, CONF:1198-32551</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_Sf6_cP5EEeOBnLkJOVC8NQ" base_Generalization="_JFgTcP5EEeOBnLkJOVC8NQ"/>
   <CDA:CodeSystemConstraint xmi:id="_iyCjEP5EEeOBnLkJOVC8NQ" code="10219-4" displayName="Preoperative Diagnosis" base_Property="_iyB8AP5EEeOBnLkJOVC8NQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15406</ruleId>
-    <ruleId>CONF:1098-30863</ruleId>
+    <ruleId>CONF:1198-15406, CONF:1198-30863</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_iyDxMP5EEeOBnLkJOVC8NQ" base_Property="_iyB8AP5EEeOBnLkJOVC8NQ">
-    <ruleId>CONF:1098-15405</ruleId>
+    <ruleId>CONF:1198-15405</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_tinwwP5EEeOBnLkJOVC8NQ" memberEnd="_tilUgP5EEeOBnLkJOVC8NQ _tioX0P5EEeOBnLkJOVC8NQ">
     <ownedEnd xmi:id="_tioX0P5EEeOBnLkJOVC8NQ" type="_JFd3MP5EEeOBnLkJOVC8NQ" association="_tinwwP5EEeOBnLkJOVC8NQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_uLQeEP5EEeOBnLkJOVC8NQ" severity="WARNING" base_Association="_tinwwP5EEeOBnLkJOVC8NQ">
-    <ruleId>CONF:1098-10096</ruleId>
-    <ruleId>CONF:1098-15504</ruleId>
+    <ruleId>CONF:1198-10096, CONF:1198-15504</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_lLOykP5FEeO_r7yO9mhwnA" clientDependency="_xzFD4P5FEeO_r7yO9mhwnA" name="ProcedureFindingsSection2">
     <ownedComment xmi:id="_vk8YYP5FEeO_r7yO9mhwnA">
@@ -3300,26 +3275,22 @@ This template can be used with a contained Product Instance template to represen
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j_3WMv5GEeO_r7yO9mhwnA" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_qE4pIP5FEeO_r7yO9mhwnA" base_Class="_lLOykP5FEeO_r7yO9mhwnA" templateId="2.16.840.1.113883.10.20.22.2.28" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-8078</ruleId>
-    <ruleId>CONF:1098-10443</ruleId>
-    <ruleId>CONF:1098-32537</ruleId>
+  <CDA:CDATemplate xmi:id="_qE4pIP5FEeO_r7yO9mhwnA" base_Class="_lLOykP5FEeO_r7yO9mhwnA" templateId="2.16.840.1.113883.10.20.22.2.28" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-8078, CONF:1198-10443, CONF:1198-32537</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_wmzeAP5FEeO_r7yO9mhwnA" base_Generalization="_lLR14P5FEeO_r7yO9mhwnA"/>
   <CDA:CodeSystemConstraint xmi:id="_1csO4P5FEeO_r7yO9mhwnA" code="59776-5" displayName="Procedure Findings" base_Property="_1crn0P5FEeO_r7yO9mhwnA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15418</ruleId>
-    <ruleId>CONF:1098-30859</ruleId>
+    <ruleId>CONF:1198-15418, CONF:1198-30859</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_1cuEEP5FEeO_r7yO9mhwnA" base_Property="_1crn0P5FEeO_r7yO9mhwnA">
-    <ruleId>CONF:1098-15417</ruleId>
+    <ruleId>CONF:1198-15417</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_j_5LYP5GEeO_r7yO9mhwnA" memberEnd="_j_3WMP5GEeO_r7yO9mhwnA _j_5ycP5GEeO_r7yO9mhwnA">
     <ownedEnd xmi:id="_j_5ycP5GEeO_r7yO9mhwnA" type="_lLOykP5FEeO_r7yO9mhwnA" association="_j_5LYP5GEeO_r7yO9mhwnA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_k9tegP5GEeO_r7yO9mhwnA" severity="INFO" base_Association="_j_5LYP5GEeO_r7yO9mhwnA">
-    <ruleId>CONF:1098-8090</ruleId>
-    <ruleId>CONF:1098-15507</ruleId>
+    <ruleId>CONF:1198-8090, CONF:1198-15507</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_5_O94AByEeSjnfOPJpFg3A" clientDependency="_JROhQABzEeSjnfOPJpFg3A" name="ProcedureIndicationsSection2">
     <ownedComment xmi:id="_EH_WkABzEeSjnfOPJpFg3A">
