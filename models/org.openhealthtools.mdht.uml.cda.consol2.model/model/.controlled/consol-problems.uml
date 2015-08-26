@@ -592,12 +592,10 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:15408</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_QmUg0CAoEeGetMjKLkqR8g" base_Property="_naxrmRVdEeGQCvUGzi1kDQ">
-    <ruleId>CONF:7879</ruleId>
-    <ruleId>R2.0=CONF:1098-7879</ruleId>
+    <ruleId>CONF:7879, R2.1=CONF:1198-7879</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_TqvUECAoEeGetMjKLkqR8g" base_Property="_naxrmhVdEeGQCvUGzi1kDQ">
-    <ruleId>CONF:7880</ruleId>
-    <ruleId>R2.0=CONF:1098-7880</ruleId>
+    <ruleId>CONF:7880, R2.1=CONF:1198-7880</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_k2bHgCApEeGetMjKLkqR8g" code="CONC" displayName="Concern" base_Property="_2H_DwRSVEeGGzu7fmW9pXw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
@@ -926,8 +924,12 @@ The effectiveTime represents the clinically relevant time of the observation. Th
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_2umuYJ18EeORR8_YW0n_jQ" name="HealthConcernsSection">
     <ownedComment xmi:id="_iK49QJ19EeORR8_YW0n_jQ">
-      <body>This section contains data describing an interest or worry about a health state or process that could possibly require attention, intervention, or management. A Health Concern is a health related matter that is of interest, importance or worry to someone, who may be the patient, patient's family or patient's health care provider. Health concerns are derived from a variety of sources within an EHR (such as Problem List, Family History, Social History, Social Worker Note, etc.). Health concerns can be medical, surgical, nursing, allied health or patient-reported concerns.&#xD;
-Problem Concerns are a subset of Health Concerns that have risen to the level of importance that they typically would belong on a classic &quot;Problem List&quot;, such as &quot;Diabetes Mellitus&quot; or &quot;Family History of Melanoma&quot; or &quot;Tobacco abuse&quot;. These are of broad interest to multiple members of the care team. Examples of other Health Concerns that might not typically be considered a Problem Concern include &quot;Risk of Hyperkalemia&quot; for a patient taking an ACE-inhibitor medication, or &quot;Transportation difficulties&quot; for someone who doesn't drive and has trouble getting to appointments, or &quot;Under-insured&quot; for someone who doesn't have sufficient insurance to properly cover their medical needs such as medications. These are typically most important to just a limited number of care team members.</body>
+      <body>&lt;p>&#xD;
+This section contains data describing an interest or worry about a health state or process that could possibly require attention, intervention, or management. A Health Concern is a health related matter that is of interest, importance or worry to someone, who may be the patient, patient's family or patient's health care provider. Health concerns are derived from a variety of sources within an EHR (such as Problem List, Family History, Social History, Social Worker Note, etc.). Health concerns can be medical, surgical, nursing, allied health or patient-reported concerns.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Problem Concerns are a subset of Health Concerns that have risen to the level of importance that they typically would belong on a classic &quot;Problem List&quot;, such as &quot;Diabetes Mellitus&quot; or &quot;Family History of Melanoma&quot; or &quot;Tobacco abuse&quot;. These are of broad interest to multiple members of the care team. Examples of other Health Concerns that might not typically be considered a Problem Concern include &quot;Risk of Hyperkalemia&quot; for a patient taking an ACE-inhibitor medication, or &quot;Transportation difficulties&quot; for someone who doesn't drive and has trouble getting to appointments, or &quot;Under-insured&quot; for someone who doesn't have sufficient insurance to properly cover their medical needs such as medications. These are typically most important to just a limited number of care team members.&#xD;
+&lt;/p></body>
     </ownedComment>
     <generalization xmi:id="_2unVcJ18EeORR8_YW0n_jQ">
       <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -972,30 +974,29 @@ Problem Concerns are a subset of Health Concerns that have risen to the level of
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nlRNAfgEEeSx6PQhw3nAUw" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_dzjJkJ19EeORR8_YW0n_jQ" base_Class="_2umuYJ18EeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.58">
-    <ruleId>CONF:1098-28804</ruleId>
-    <ruleId>CONF:1098-28805</ruleId>
+  <CDA:CDATemplate xmi:id="_dzjJkJ19EeORR8_YW0n_jQ" base_Class="_2umuYJ18EeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.58" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-28804</ruleId>
+    <ruleId>CONF:1198-28805</ruleId>
+    <ruleId>CONF:1198-32862</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_m5KDMJ19EeORR8_YW0n_jQ" base_Property="_E9dZwJ19EeORR8_YW0n_jQ">
-    <ruleId>CONF:1098-28806</ruleId>
+    <ruleId>CONF:1198-28806</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_nyNLEJ19EeORR8_YW0n_jQ" base_Property="_E9eA0519EeORR8_YW0n_jQ">
-    <ruleId>CONF:1098-28809</ruleId>
+    <ruleId>CONF:1198-28809</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_oGxF0J19EeORR8_YW0n_jQ" base_Property="_E9eA0J19EeORR8_YW0n_jQ">
-    <ruleId>CONF:1098-28810</ruleId>
+    <ruleId>CONF:1198-28810</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_sCq6sJ19EeORR8_YW0n_jQ" code="75310-3" displayName="Health concerns document" base_Property="_E9dZwJ19EeORR8_YW0n_jQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-28807</ruleId>
-    <ruleId>CONF:1098-28808</ruleId>
+    <ruleId>CONF:1198-28807, CONF:1198-28808</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_YUzzgJ1-EeORR8_YW0n_jQ" memberEnd="_YUwwMJ1-EeORR8_YW0n_jQ _YU0akJ1-EeORR8_YW0n_jQ">
     <ownedEnd xmi:id="_YU0akJ1-EeORR8_YW0n_jQ" type="_2umuYJ18EeORR8_YW0n_jQ" association="_YUzzgJ1-EeORR8_YW0n_jQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_ZVIoEJ1-EeORR8_YW0n_jQ" base_Association="_YUzzgJ1-EeORR8_YW0n_jQ">
-    <ruleId>CONF:1098-30768</ruleId>
-    <ruleId>CONF:1098-30769</ruleId>
+    <ruleId>CONF:1198-30768, CONF:1198-30769</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_DMvdYOEFEeOmBMTtnrPqww" clientDependency="_ItZpkOEFEeOmBMTtnrPqww" name="HealthStatusObservation2">
     <ownedComment xmi:id="_3pdyAOEFEeOmBMTtnrPqww">
@@ -1403,33 +1404,28 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-o9hMAFmEeSJ2uHfynwxCw" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_fcIjsAFkEeSJ2uHfynwxCw" base_Class="_ZgLioAFkEeSJ2uHfynwxCw" templateId="2.16.840.1.113883.10.20.22.2.5" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-7877</ruleId>
-    <ruleId>CONF:1098-10440</ruleId>
-    <ruleId>CONF:1098-32511</ruleId>
+  <CDA:CDATemplate xmi:id="_fcIjsAFkEeSJ2uHfynwxCw" base_Class="_ZgLioAFkEeSJ2uHfynwxCw" templateId="2.16.840.1.113883.10.20.22.2.5" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7877, CONF:1198-10440, CONF:1198-32511</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_EitYQAFmEeSJ2uHfynwxCw" base_Generalization="_ZgPNAAFkEeSJ2uHfynwxCw"/>
   <CDA:CodeSystemConstraint xmi:id="_OtcG4QFmEeSJ2uHfynwxCw" code="11450-4" displayName="Problem List" base_Property="_OtcG4AFmEeSJ2uHfynwxCw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15408</ruleId>
-    <ruleId>CONF:1098-31141</ruleId>
+    <ruleId>CONF:1198-15408, CONF:1198-31141</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_OtdVAAFmEeSJ2uHfynwxCw" base_Property="_OtcG4AFmEeSJ2uHfynwxCw">
-    <ruleId>CONF:1098-15407</ruleId>
+    <ruleId>CONF:1198-15407</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_ptraEAFmEeSJ2uHfynwxCw" memberEnd="_ptqL8AFmEeSJ2uHfynwxCw _ptsBIAFmEeSJ2uHfynwxCw">
     <ownedEnd xmi:id="_ptsBIAFmEeSJ2uHfynwxCw" type="_ZgLioAFkEeSJ2uHfynwxCw" association="_ptraEAFmEeSJ2uHfynwxCw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_rfxp0AFmEeSJ2uHfynwxCw" severity="WARNING" base_Association="_ptraEAFmEeSJ2uHfynwxCw">
-    <ruleId>CONF:1098-7881</ruleId>
-    <ruleId>CONF:1098-15505</ruleId>
+    <ruleId>CONF:1198-7881, CONF:1198-15505</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_7CKZoAFmEeSJ2uHfynwxCw" memberEnd="_7CJLgAFmEeSJ2uHfynwxCw _7CLAsAFmEeSJ2uHfynwxCw">
     <ownedEnd xmi:id="_7CLAsAFmEeSJ2uHfynwxCw" type="_ZgLioAFkEeSJ2uHfynwxCw" association="_7CKZoAFmEeSJ2uHfynwxCw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_7k-LwAFmEeSJ2uHfynwxCw" severity="INFO" base_Association="_7CKZoAFmEeSJ2uHfynwxCw">
-    <ruleId>CONF:1098-30481</ruleId>
-    <ruleId>CONF:1098-30482</ruleId>
+    <ruleId>CONF:1198-30481, CONF:1198-30482</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_IXrA4ALVEeSyydFGYJajGA" clientDependency="_DbtnwALWEeSyydFGYJajGA" name="ProblemSection2">
     <ownedComment xmi:id="_1M5_sALVEeSyydFGYJajGA">
@@ -1467,49 +1463,43 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_szXagQLYEeSyydFGYJajGA" value="1"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_z4rXsALVEeSyydFGYJajGA" base_Class="_IXrA4ALVEeSyydFGYJajGA" templateId="2.16.840.1.113883.10.20.22.2.5.1" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-9179</ruleId>
-    <ruleId>CONF:1098-10441</ruleId>
-    <ruleId>CONF:1098-32510</ruleId>
+  <CDA:CDATemplate xmi:id="_z4rXsALVEeSyydFGYJajGA" base_Class="_IXrA4ALVEeSyydFGYJajGA" templateId="2.16.840.1.113883.10.20.22.2.5.1" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-9179, CONF:1198-10441, CONF:1198-32510</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="__-n10ALVEeSyydFGYJajGA" base_Generalization="_IXs2EALVEeSyydFGYJajGA"/>
   <CDA:CodeSystemConstraint xmi:id="_194UMALWEeSyydFGYJajGA" code="11450-4" displayName="Problem List" base_Property="_193tIALWEeSyydFGYJajGA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15410</ruleId>
-    <ruleId>CONF:1098-31142</ruleId>
+    <ruleId>CONF:1198-15410, CONF:1198-31142</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_196JYALWEeSyydFGYJajGA" base_Property="_193tIALWEeSyydFGYJajGA">
-    <ruleId>CONF:1098-15409</ruleId>
+    <ruleId>CONF:1198-15409</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_v5IuEALXEeSyydFGYJajGA" memberEnd="_v5FqwALXEeSyydFGYJajGA _v5IuEQLXEeSyydFGYJajGA">
     <ownedEnd xmi:id="_v5IuEQLXEeSyydFGYJajGA" type="_IXrA4ALVEeSyydFGYJajGA" association="_v5IuEALXEeSyydFGYJajGA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_xupeMALXEeSyydFGYJajGA" base_Association="_v5IuEALXEeSyydFGYJajGA">
-    <ruleId>CONF:1098-9183</ruleId>
-    <ruleId>CONF:1098-15506</ruleId>
+    <ruleId>CONF:1198-9183, CONF:1198-15506</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_JjQi4ALYEeSyydFGYJajGA" memberEnd="_JjOGoALYEeSyydFGYJajGA _JjRJ8ALYEeSyydFGYJajGA">
     <ownedEnd xmi:id="_JjRJ8ALYEeSyydFGYJajGA" type="_IXrA4ALVEeSyydFGYJajGA" association="_JjQi4ALYEeSyydFGYJajGA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_NxYJIALYEeSyydFGYJajGA" severity="INFO" base_Association="_JjQi4ALYEeSyydFGYJajGA">
-    <ruleId>CONF:1098-30479</ruleId>
-    <ruleId>CONF:1098-30480</ruleId>
+    <ruleId>CONF:1198-30479, CONF:1198-30480</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_szXagwLYEeSyydFGYJajGA" base_Property="_szXagALYEeSyydFGYJajGA">
-    <ruleId>CONF:1098-9182</ruleId>
+    <ruleId>CONF:1198-9182</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_AVyzwDq9EeSyGa6KC25kiw" memberEnd="_AVxloDq9EeSyGa6KC25kiw _AVyzwTq9EeSyGa6KC25kiw">
     <ownedEnd xmi:id="_AVyzwTq9EeSyGa6KC25kiw" type="_2umuYJ18EeORR8_YW0n_jQ" association="_AVyzwDq9EeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_DQKTIDq9EeSyGa6KC25kiw" severity="WARNING" base_Association="_AVyzwDq9EeSyGa6KC25kiw">
-    <ruleId>CONF:1098-30483</ruleId>
-    <ruleId>CONF:1098-30484</ruleId>
+    <ruleId>CONF:1198-30483, CONF:1198-30484</ruleId>
   </CDA:AssociationValidation>
   <CDA:TextValue xmi:id="_qGW24KcJEeSFQp5MpGZ8qw" base_Property="_szXahALYEeSyydFGYJajGA">
-    <ruleId>CONF:1098-9181</ruleId>
+    <ruleId>CONF:1198-9181</ruleId>
   </CDA:TextValue>
   <CDA:PropertyValidation xmi:id="_1Wtw0KcJEeSFQp5MpGZ8qw" severity="INFO" base_Property="_ybG7UKcJEeSFQp5MpGZ8qw">
-    <ruleId>CONF:1098-32864</ruleId>
+    <ruleId>CONF:1198-32864</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_dGLy8MElEeSjB6vMjDsL5Q" base_Property="_Zob5sMElEeSjB6vMjDsL5Q">
     <ruleId>CONF:1098-32486</ruleId>
@@ -1534,14 +1524,13 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <ruleId>CONF:1098-9049</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_a9gQsPgDEeSx6PQhw3nAUw" severity="INFO" base_Property="_Z0MfQPgDEeSx6PQhw3nAUw">
-    <ruleId>CONF:1098-32802</ruleId>
+    <ruleId>CONF:1198-32802</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_nlSbIPgEEeSx6PQhw3nAUw" memberEnd="_nlQl8PgEEeSx6PQhw3nAUw _nlTCMPgEEeSx6PQhw3nAUw">
     <ownedEnd xmi:id="_nlTCMPgEEeSx6PQhw3nAUw" type="_2umuYJ18EeORR8_YW0n_jQ" association="_nlSbIPgEEeSx6PQhw3nAUw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_oen24PgEEeSx6PQhw3nAUw" severity="INFO" base_Association="_nlSbIPgEEeSx6PQhw3nAUw">
-    <ruleId>CONF:1098-32308</ruleId>
-    <ruleId>CONF:1098-32309</ruleId>
+    <ruleId>CONF:1198-32308, CONF:1198-32309</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_Ie7VkASFEeWqeJlhkO8aqA" base_Property="_CjbAcASFEeWqeJlhkO8aqA">
     <ruleId>CONF:1098-29943</ruleId>

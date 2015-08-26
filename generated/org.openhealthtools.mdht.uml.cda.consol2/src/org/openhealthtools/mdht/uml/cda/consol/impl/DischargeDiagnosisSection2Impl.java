@@ -54,6 +54,28 @@ public class DischargeDiagnosisSection2Impl extends HospitalDischargeDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDischargeDiagnosisSection2CETranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeDiagnosisSection2CETranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeDiagnosisSection2Operations.validateDischargeDiagnosisSection2CETranslationP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalDischargeDiagnosis2 getConsolHospitalDischargeDiagnosis2() {
 		return DischargeDiagnosisSection2Operations.getConsolHospitalDischargeDiagnosis2(this);
 	}

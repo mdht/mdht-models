@@ -1384,30 +1384,29 @@ The Mental Status Section contains observations and evaluations related to a pat
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A4wxEp2EEeORR8_YW0n_jQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_AIPvkJ2DEeORR8_YW0n_jQ" base_Class="_4tfOMJ2CEeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.56">
-    <ruleId>CONF:1098-28293</ruleId>
-    <ruleId>CONF:1098-28294</ruleId>
+  <CDA:CDATemplate xmi:id="_AIPvkJ2DEeORR8_YW0n_jQ" base_Class="_4tfOMJ2CEeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.56" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-28293</ruleId>
+    <ruleId>CONF:1198-28294</ruleId>
+    <ruleId>CONF:1198-32793</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_LHlyAJ2DEeORR8_YW0n_jQ" base_Property="_8_RMcJ2CEeORR8_YW0n_jQ">
-    <ruleId>CONF:1098-28295</ruleId>
+    <ruleId>CONF:1198-28295</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_LfnQcJ2DEeORR8_YW0n_jQ" base_Property="_8_Rzg52CEeORR8_YW0n_jQ">
-    <ruleId>CONF:1098-28297</ruleId>
+    <ruleId>CONF:1198-28297</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_L3WbAJ2DEeORR8_YW0n_jQ" base_Property="_8_RzgJ2CEeORR8_YW0n_jQ">
-    <ruleId>CONF:1098-28298</ruleId>
+    <ruleId>CONF:1198-28298</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_ZczkEJ2DEeORR8_YW0n_jQ" code="10190-7" displayName="Mental Status" base_Property="_8_RMcJ2CEeORR8_YW0n_jQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-28296</ruleId>
-    <ruleId>CONF:1098-30826</ruleId>
+    <ruleId>CONF:1198-28296, CONF:1198-30826</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_A4xYIJ2EEeORR8_YW0n_jQ" memberEnd="_A4wxEJ2EEeORR8_YW0n_jQ _A4ymQJ2EEeORR8_YW0n_jQ">
     <ownedEnd xmi:id="_A4ymQJ2EEeORR8_YW0n_jQ" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_A4xYIJ2EEeORR8_YW0n_jQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_BgUgUJ2EEeORR8_YW0n_jQ" severity="INFO" base_Association="_A4xYIJ2EEeORR8_YW0n_jQ">
-    <ruleId>CONF:1098-28313</ruleId>
-    <ruleId>CONF:1098-28314</ruleId>
+    <ruleId>CONF:1198-28313, CONF:1198-28314</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_7sqlcKvCEeOEkquDecUlEw" memberEnd="_7sls8KvCEeOEkquDecUlEw _7sqlcavCEeOEkquDecUlEw">
     <ownedEnd xmi:id="_7sqlcavCEeOEkquDecUlEw" type="_Y_oGkIoAEeOoMZgUoTghIg" association="_7sqlcKvCEeOEkquDecUlEw"/>
@@ -1639,15 +1638,13 @@ The Mental Status Section contains observations and evaluations related to a pat
     <ownedEnd xmi:id="_AEixwfglEeSx6PQhw3nAUw" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_AEixwPglEeSx6PQhw3nAUw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_CKkDEPglEeSx6PQhw3nAUw" severity="INFO" base_Association="_AEixwPglEeSx6PQhw3nAUw">
-    <ruleId>CONF:1098-28301</ruleId>
-    <ruleId>CONF:1098-28302</ruleId>
+    <ruleId>CONF:1198-28301, CONF:1198-28302</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_YkFp0PglEeSx6PQhw3nAUw" memberEnd="_YkEbsPglEeSx6PQhw3nAUw _YkFp0fglEeSx6PQhw3nAUw">
     <ownedEnd xmi:id="_YkFp0fglEeSx6PQhw3nAUw" type="_4tfOMJ2CEeORR8_YW0n_jQ" association="_YkFp0PglEeSx6PQhw3nAUw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_ZBQuAPglEeSx6PQhw3nAUw" severity="INFO" base_Association="_YkFp0PglEeSx6PQhw3nAUw">
-    <ruleId>CONF:1098-28305</ruleId>
-    <ruleId>CONF:1098-28306</ruleId>
+    <ruleId>CONF:1198-28305, CONF:1198-28306</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_lLbkQAPrEeWlspDC_8d7eg" base_Property="_Zhr58APrEeWlspDC_8d7eg">
     <ruleId>CONF:1098-32630</ruleId>

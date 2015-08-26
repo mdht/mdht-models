@@ -54,6 +54,28 @@ public class AdmissionDiagnosisSection2Impl extends HospitalAdmissionDiagnosisSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAdmissionDiagnosisSection2CETranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2CETranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAdmissionDiagnosisSection2CETranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2CETranslationP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public HospitalAdmissionDiagnosis2 getConsolHospitalAdmissionDiagnosis2() {
 		return AdmissionDiagnosisSection2Operations.getConsolHospitalAdmissionDiagnosis2(this);
 	}

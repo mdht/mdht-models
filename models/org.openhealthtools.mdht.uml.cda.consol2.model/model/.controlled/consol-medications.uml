@@ -2333,26 +2333,22 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9ZtOEfyrEeOlg_Cnc5bODw" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_dxv-UPyqEeOlg_Cnc5bODw" base_Class="_ZLY3MPyqEeOlg_Cnc5bODw" templateId="2.16.840.1.113883.10.20.22.2.44" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-10098</ruleId>
-    <ruleId>CONF:1098-10392</ruleId>
-    <ruleId>CONF:1098-32560</ruleId>
+  <CDA:CDATemplate xmi:id="_dxv-UPyqEeOlg_Cnc5bODw" base_Class="_ZLY3MPyqEeOlg_Cnc5bODw" templateId="2.16.840.1.113883.10.20.22.2.44" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-10098, CONF:1198-10392, CONF:1198-32560</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_ydsB4PyqEeOlg_Cnc5bODw" base_Generalization="_ZLbTcPyqEeOlg_Cnc5bODw"/>
   <CDA:CodeSystemConstraint xmi:id="_3BxREPyqEeOlg_Cnc5bODw" code="42346-7" displayName="Medications on Admission" base_Property="_3BwqAPyqEeOlg_Cnc5bODw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-15483</ruleId>
-    <ruleId>CONF:1098-32142</ruleId>
+    <ruleId>CONF:1198-15483, CONF:1198-32142</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_3BztUPyqEeOlg_Cnc5bODw" base_Property="_3BwqAPyqEeOlg_Cnc5bODw">
-    <ruleId>CONF:1098-15482</ruleId>
+    <ruleId>CONF:1198-15482</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_9ZvqUPyrEeOlg_Cnc5bODw" memberEnd="_9ZsnAPyrEeOlg_Cnc5bODw _9ZvqUfyrEeOlg_Cnc5bODw">
     <ownedEnd xmi:id="_9ZvqUfyrEeOlg_Cnc5bODw" type="_ZLY3MPyqEeOlg_Cnc5bODw" association="_9ZvqUPyrEeOlg_Cnc5bODw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_-48zQPyrEeOlg_Cnc5bODw" severity="WARNING" base_Association="_9ZvqUPyrEeOlg_Cnc5bODw">
-    <ruleId>CONF:1098-10102</ruleId>
-    <ruleId>CONF:1098-15484</ruleId>
+    <ruleId>CONF:1198-10102, CONF:1198-15484</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_5OKxwP1bEeO5Hq-yrsJSmg" clientDependency="_QpJ1gP1cEeO5Hq-yrsJSmg" name="MedicalEquipmentSection2">
     <ownedComment xmi:id="_GwZnsP1cEeO5Hq-yrsJSmg">
@@ -2731,7 +2727,6 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
         <body>Note: moodCode must match the parent substanceAdministration EVN or INT</body>
       </ownedComment>
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpxEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bN2_sErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Hj_h0DsAEeWD4MX6K2c_gA" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -2871,5 +2866,4 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <ruleId>CONF:1098-32908</ruleId>
     <ruleId>CONF:1098-32909</ruleId>
   </CDA:EntryRelationship>
-  <CDA:PropertyValidation xmi:id="_1RLKMD-_EeWCWce3kO1aHQ" base_Property="_HkAI4DsAEeWD4MX6K2c_gA"/>
 </xmi:XMI>

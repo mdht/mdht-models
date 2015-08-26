@@ -139,7 +139,7 @@ import org.junit.runners.Suite;
 		FamilyHistoryObservation2Test.class, FamilyHistoryOrganizer2Test.class, FamilyHistorySection2Test.class,
 		PhysicianReadingStudyPerformer2Test.class, CourseOfCareSectionTest.class, USRealmHeader2Test.class,
 		MentalStatusObservation2Test.class, MentalStatusOrganizer2Test.class, SmokingStatusMeaningfulUse2Test.class,
-		RiskConcernActTest.class, PlannedInterventionActTest.class })
+		RiskConcernActTest.class, PlannedInterventionActTest.class, MedicationFreeTextSigTest.class })
 public class ConsolTests {
 
 	/**

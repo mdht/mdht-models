@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMentalStatusSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MentalStatusSectionTemplateId MentalStatusSectionCode MentalStatusSectionCodeP MentalStatusSectionTitle MentalStatusSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.56' code.code='10190-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Mental Status' constraints.validation.info='MentalStatusSectionAssessmentScaleObservation MentalStatusSectionMentalStatusOrganizer2 MentalStatusSectionMentalStatusObservation2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MentalStatusSectionTemplateId MentalStatusSectionCode MentalStatusSectionCodeP MentalStatusSectionTitle MentalStatusSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.56' templateId.extension='2015-08-01' code.code='10190-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Mental Status' constraints.validation.info='MentalStatusSectionAssessmentScaleObservation MentalStatusSectionMentalStatusOrganizer2 MentalStatusSectionMentalStatusObservation2'"
  * @generated
  */
 public interface MentalStatusSection extends Section {
@@ -37,7 +37,7 @@ public interface MentalStatusSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.56\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.2.56\' and id.extension = \'2015-08-01\')'"
 	 * @generated
 	 */
 	boolean validateMentalStatusSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);

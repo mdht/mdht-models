@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdmissionDiagnosisSection2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
@@ -31,6 +32,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#validateAdmissionDiagnosisSection2CETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Diagnosis Section2 CE Translation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#validateAdmissionDiagnosisSection2CETranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Diagnosis Section2 CE Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#getConsolHospitalAdmissionDiagnosis2() <em>Get Consol Hospital Admission Diagnosis2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#validateHospitalAdmissionDiagnosisSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2#validateHospitalAdmissionDiagnosisSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Section Code P</em>}</li>
@@ -43,6 +46,82 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  */
 
 public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAdmissionDiagnosisSection2CETranslation() {
+		OperationsTestCase<AdmissionDiagnosisSection2> validateAdmissionDiagnosisSection2CETranslationTestCase = new OperationsTestCase<AdmissionDiagnosisSection2>(
+			"validateAdmissionDiagnosisSection2CETranslation",
+			operationsForOCL.getOCLValue("VALIDATE_ADMISSION_DIAGNOSIS_SECTION2_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdmissionDiagnosisSection2 target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.getCode().setCode("46241-6");
+				target.getCode().setCodeSystem(LOINC_ID);
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(AdmissionDiagnosisSection2 target) {
+				for (CD translation : target.getCode().getTranslations()) {
+					translation.setCodeSystem(LOINC_ID);
+					translation.setCode("42347-5");
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2CETranslation(
+					(AdmissionDiagnosisSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdmissionDiagnosisSection2CETranslationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAdmissionDiagnosisSection2CETranslationP() {
+		OperationsTestCase<AdmissionDiagnosisSection2> validateAdmissionDiagnosisSection2CETranslationPTestCase = new OperationsTestCase<AdmissionDiagnosisSection2>(
+			"validateAdmissionDiagnosisSection2CETranslationP",
+			operationsForOCL.getOCLValue("VALIDATE_ADMISSION_DIAGNOSIS_SECTION2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AdmissionDiagnosisSection2 target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCE());
+				target.getCode().setCode("46241-6");
+				target.getCode().setCodeSystem(LOINC_ID);
+			}
+
+			@Override
+			protected void updateToPass(AdmissionDiagnosisSection2 target) {
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AdmissionDiagnosisSection2Operations.validateAdmissionDiagnosisSection2CETranslationP(
+					(AdmissionDiagnosisSection2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAdmissionDiagnosisSection2CETranslationPTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -143,7 +222,7 @@ public class AdmissionDiagnosisSection2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(AdmissionDiagnosisSection2 target) {
-				target.getCode().setCode("42347-5");
+				target.getCode().setCode("46241-6");
 				target.getCode().setCodeSystem(LOINC_ID);
 			}
 
