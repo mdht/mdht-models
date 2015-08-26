@@ -106,6 +106,28 @@ public class DischargeMedicationsSection2Impl extends DischargeMedicationsSectio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDischargeMedicationsSection2CETranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeMedicationsSection2Operations.validateDischargeMedicationsSection2CETranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeMedicationsSection2CETranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeMedicationsSection2Operations.validateDischargeMedicationsSection2CETranslationP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {

@@ -138,7 +138,7 @@ public interface UnstructuredDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).nonXMLBody->excluding(null)->reject(not text.reference.value.oclIsUndefined() xor ( text.representation = \'B64\' and (not text.mediaType.oclIsUndefined()) ))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->excluding(null).nonXMLBody->excluding(null)->reject(not text.reference.value.oclIsUndefined() xor ( text.isDefined(\'representation\') and text.representation = datatypes::BinaryDataEncoding::B64 and (not text.mediaType.oclIsUndefined()) ))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation(DiagnosticChain diagnostics,

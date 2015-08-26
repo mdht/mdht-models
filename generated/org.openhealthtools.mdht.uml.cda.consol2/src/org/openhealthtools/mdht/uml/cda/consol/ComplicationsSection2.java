@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getComplicationsSection2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ComplicationsSectionTemplateId ComplicationsSectionCode ComplicationsSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.37' templateId.extension='2014-06-09' constraints.validation.info='ComplicationsSectionExplicitComplications ComplicationsSectionProblemObservation' code.code='55109-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Complications' constraints.validation.dependOn.ComplicationsSectionCode='ComplicationsSectionCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ComplicationsSectionTemplateId ComplicationsSectionCode ComplicationsSectionCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.37' templateId.extension='2015-08-01' constraints.validation.info='ComplicationsSectionExplicitComplications ComplicationsSectionProblemObservation' code.code='55109-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Complications' constraints.validation.dependOn.ComplicationsSectionCode='ComplicationsSectionCodeP'"
  * @generated
  */
 public interface ComplicationsSection2 extends ComplicationsSection {
