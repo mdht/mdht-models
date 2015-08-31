@@ -29,6 +29,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PolicyActivity2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.II;
@@ -64,6 +65,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.PostalAddressUse;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2GuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Guarantor Guarantor Assigned Entity General Header Constraints US Realm Address Street Address Line</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityDateOfBirthInSDTCbirthTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Coverage Coverage Role Coverage Playing Entity Date Of Birth In SDT Cbirth Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2CoverageCoverageRoleCoveragePlayingEntitySDTCBirthTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 Coverage Coverage Role Coverage Playing Entity SDTC Birth Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 CD Translation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivity2CDTranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity2 CD Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivityTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivityCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2#validatePolicyActivityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Code</em>}</li>
@@ -1354,6 +1357,79 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivity2CDTranslation() {
+		OperationsTestCase<PolicyActivity2> validatePolicyActivity2CDTranslationTestCase = new OperationsTestCase<PolicyActivity2>(
+			"validatePolicyActivity2CDTranslation",
+			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity2 target) {
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity2 target) {
+				target.getCode().getTranslations().set(
+					0, DatatypesFactory.eINSTANCE.createCD("hasCode", "2.16.840.1.113883.3.221.5"));
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivity2Operations.validatePolicyActivity2CDTranslation(
+					(PolicyActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivity2CDTranslationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidatePolicyActivity2CDTranslationP() {
+		OperationsTestCase<PolicyActivity2> validatePolicyActivity2CDTranslationPTestCase = new OperationsTestCase<PolicyActivity2>(
+			"validatePolicyActivity2CDTranslationP",
+			operationsForOCL.getOCLValue("VALIDATE_POLICY_ACTIVITY2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PolicyActivity2 target) {
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+			}
+
+			@Override
+			protected void updateToPass(PolicyActivity2 target) {
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PolicyActivity2Operations.validatePolicyActivity2CDTranslationP(
+					(PolicyActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePolicyActivity2CDTranslationPTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated
 	*/
 	@Test
@@ -1439,8 +1515,7 @@ public class PolicyActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(PolicyActivity2 target) {
-				target.getCode().setCode("mustExistOnly");
-				target.getCode().setCodeSystem("2.16.840.1.113883.3.221.5");
+				target.getCode().setCode("12");
 			}
 
 			@Override

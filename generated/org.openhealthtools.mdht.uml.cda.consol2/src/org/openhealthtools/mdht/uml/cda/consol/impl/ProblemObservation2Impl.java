@@ -133,6 +133,25 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemObservation2CDCodeTranslation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservation2CDCodeTranslation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProblemObservation2CDCodeTranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProblemObservation2Operations.validateProblemObservation2CDCodeTranslationP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public PrognosisObservation getPrognosisObservation() {
 		return ProblemObservation2Operations.getPrognosisObservation(this);

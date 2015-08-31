@@ -38,6 +38,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservation2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation2 CD Translation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservation2CDTranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation2 CD Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation2 Entry Relationship Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation2 Entry Relationship Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2#validateNumberOfPressureUlcersObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation Template Id</em>}</li>
@@ -57,6 +59,79 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  */
 
 public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateNumberOfPressureUlcersObservation2CDTranslation() {
+		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservation2CDTranslationTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
+			"validateNumberOfPressureUlcersObservation2CDTranslation",
+			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NumberOfPressureUlcersObservation2 target) {
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(NumberOfPressureUlcersObservation2 target) {
+				target.getCode().getTranslations().set(0, DatatypesFactory.eINSTANCE.createCD("75277-4", LOINC_ID));
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2CDTranslation(
+					(NumberOfPressureUlcersObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNumberOfPressureUlcersObservation2CDTranslationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateNumberOfPressureUlcersObservation2CDTranslationP() {
+		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservation2CDTranslationPTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
+			"validateNumberOfPressureUlcersObservation2CDTranslationP",
+			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(NumberOfPressureUlcersObservation2 target) {
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+			}
+
+			@Override
+			protected void updateToPass(NumberOfPressureUlcersObservation2 target) {
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2CDTranslationP(
+					(NumberOfPressureUlcersObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateNumberOfPressureUlcersObservation2CDTranslationPTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -226,14 +301,14 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 			@Override
 			protected void updateToFail(NumberOfPressureUlcersObservation2 target) {
 				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
 			}
 
 			@Override
 			protected void updateToPass(NumberOfPressureUlcersObservation2 target) {
-				CD code = target.getCode();
-				code.setCode("75277-4");
-				code.setCodeSystem(LOINC_ID);
+				target.getCode().setCodeSystem(SNOMEDCT_ID);
+				target.getCode().setCode("2264892003");
 			}
 
 			@Override

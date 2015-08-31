@@ -679,7 +679,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
       <ownedLiteral xmi:id="_qlnFsFoCEeGKdMKWzrgL_Q" name="G"/>
       <ownedLiteral xmi:id="_vRMEAFoCEeGKdMKWzrgL_Q" name="P"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_F4ypIDrtEeG-aJb2h_4S8w" name="Health Insurance Type Value Set">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_F4ypIDrtEeG-aJb2h_4S8w" name="Health Insurance Type">
       <ownedLiteral xmi:id="_oBbiYDrtEeG-aJb2h_4S8w" name="12"/>
       <ownedLiteral xmi:id="_ru4EgDrtEeG-aJb2h_4S8w" name="13"/>
       <ownedLiteral xmi:id="_wqPyUDrtEeG-aJb2h_4S8w" name="14"/>
@@ -1702,10 +1702,26 @@ Value Set Source: http://www.loinc.org/</body>
       <ownedLiteral xmi:id="_Zp8A8C1pEeSoCqqrpX8LzQ" name="PP"/>
       <ownedLiteral xmi:id="_bldScC1pEeSoCqqrpX8LzQ" name="RP"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_hRIUkIY5EeS7A_69H25Pzw" name="Problem Type">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_hRIUkIY5EeS7A_69H25Pzw" name="Problem Type (LOINC)">
       <ownedComment xmi:id="_hRIUkYY5EeS7A_69H25Pzw">
         <body>This value set indicates the level of medical judgment used to determine the existence of a problem.</body>
       </ownedComment>
+      <ownedLiteral xmi:id="_ASmHAEz3EeWJ65CktI2ODQ" name="75326-9"/>
+      <ownedLiteral xmi:id="_CAw5AEz3EeWJ65CktI2ODQ" name="75325-1"/>
+      <ownedLiteral xmi:id="_D9JGIEz3EeWJ65CktI2ODQ" name="75324-4"/>
+      <ownedLiteral xmi:id="_IxvdkEz3EeWJ65CktI2ODQ" name="75323-6"/>
+      <ownedLiteral xmi:id="_KVuY0Ez3EeWJ65CktI2ODQ" name="29308-4"/>
+      <ownedLiteral xmi:id="_PZB6oEz3EeWJ65CktI2ODQ" name="75322-8"/>
+      <ownedLiteral xmi:id="_RmURkEz3EeWJ65CktI2ODQ" name="75275-8"/>
+      <ownedLiteral xmi:id="_SkqwMEz3EeWJ65CktI2ODQ" name="75321-0"/>
+      <ownedLiteral xmi:id="_UJupgEz3EeWJ65CktI2ODQ" name="75319-4"/>
+      <ownedLiteral xmi:id="_VvHS8Ez3EeWJ65CktI2ODQ" name="75318-6"/>
+      <ownedLiteral xmi:id="_Wol4oEz3EeWJ65CktI2ODQ" name="75317-8"/>
+      <ownedLiteral xmi:id="_X2zYMEz3EeWJ65CktI2ODQ" name="75316-0"/>
+      <ownedLiteral xmi:id="_ZP2OwEz3EeWJ65CktI2ODQ" name="75315-2"/>
+      <ownedLiteral xmi:id="_agBdMEz3EeWJ65CktI2ODQ" name="75314-5"/>
+      <ownedLiteral xmi:id="_d_P9IEz3EeWJ65CktI2ODQ" name="75313-7"/>
+      <ownedLiteral xmi:id="_fxqV8Ez3EeWJ65CktI2ODQ" name="75312-9"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_PPY8QIuxEeSZu6J-Yjmr9w" name="Race Category Excluding Nulls">
       <ownedLiteral xmi:id="_3G3noIuxEeSZu6J-Yjmr9w" name="1002-5"/>
@@ -1917,6 +1933,50 @@ Value Set Source: https://vsac.nlm.nih.gov&#xD;
       <ownedLiteral xmi:id="_aeLRAgPjEeWlspDC_8d7eg" name="390802008"/>
       <ownedLiteral xmi:id="_aeLRAwPjEeWlspDC_8d7eg" name="390801001"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_PDM9MExKEeWJ65CktI2ODQ" name="AdvanceDirectiveTypeCode">
+      <ownedLiteral xmi:id="_PDM9NExKEeWJ65CktI2ODQ" name="52765003"/>
+      <ownedLiteral xmi:id="_PDM9N0xKEeWJ65CktI2ODQ" name="61420007"/>
+      <ownedLiteral xmi:id="_PDM9OExKEeWJ65CktI2ODQ" name="71388002"/>
+      <ownedLiteral xmi:id="_PDM9NUxKEeWJ65CktI2ODQ" name="78823007"/>
+      <ownedLiteral xmi:id="_PDM9MkxKEeWJ65CktI2ODQ" name="89666000"/>
+      <ownedLiteral xmi:id="_PDM9M0xKEeWJ65CktI2ODQ" name="225204009"/>
+      <ownedLiteral xmi:id="_PDM9MUxKEeWJ65CktI2ODQ" name="281789004"/>
+      <ownedLiteral xmi:id="_PDM9NkxKEeWJ65CktI2ODQ" name="304251008"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ngZ_wEz2EeWJ65CktI2ODQ" name="Problem Type (SNOMED CT)">
+      <ownedComment xmi:id="_ngZ_wUz2EeWJ65CktI2ODQ">
+        <body>This value set indicates the level of medical judgment used to determine the existence of a problem.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_ngZ_wkz2EeWJ65CktI2ODQ" name="404684003"/>
+      <ownedLiteral xmi:id="_ngZ_w0z2EeWJ65CktI2ODQ" name="409586006"/>
+      <ownedLiteral xmi:id="_ngZ_xEz2EeWJ65CktI2ODQ" name="282291009"/>
+      <ownedLiteral xmi:id="_ngZ_xUz2EeWJ65CktI2ODQ" name="64572001"/>
+      <ownedLiteral xmi:id="_ngZ_xkz2EeWJ65CktI2ODQ" name="248536006"/>
+      <ownedLiteral xmi:id="_ngZ_x0z2EeWJ65CktI2ODQ" name="418799008"/>
+      <ownedLiteral xmi:id="_ngZ_yEz2EeWJ65CktI2ODQ" name="55607006"/>
+      <ownedLiteral xmi:id="_ngZ_yUz2EeWJ65CktI2ODQ" name="373930000"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_QJTd0E9kEeWsIc5CMrI4GA" name="Payer"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xhC6EE9uEeWsIc5CMrI4GA" name="Social History Type">
+      <ownedComment xmi:id="_xhC6EU9uEeWsIc5CMrI4GA">
+        <body>A value set of SNOMED-CT observable entity codes containing common social history observables. Though Tobacco Use and Exposure exists in this value set, it is recommended to use the Current Smoking Status template or the Tobacco Use template to represent smoking or tobacco habits.&#xD;
+
+Specific URL Pending 
+ 
+ 
+&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_xhC6Ek9uEeWsIc5CMrI4GA" name="229819007"/>
+      <ownedLiteral xmi:id="_xhC6E09uEeWsIc5CMrI4GA" name="256235009"/>
+      <ownedLiteral xmi:id="_xhC6FE9uEeWsIc5CMrI4GA" name="160573003"/>
+      <ownedLiteral xmi:id="_xhC6FU9uEeWsIc5CMrI4GA" name="364393001"/>
+      <ownedLiteral xmi:id="_xhC6Fk9uEeWsIc5CMrI4GA" name="364703007"/>
+      <ownedLiteral xmi:id="_xhC6F09uEeWsIc5CMrI4GA" name="425400000"/>
+      <ownedLiteral xmi:id="_xhC6GE9uEeWsIc5CMrI4GA" name="363908000"/>
+      <ownedLiteral xmi:id="_xhC6GU9uEeWsIc5CMrI4GA" name="228272008"/>
+      <ownedLiteral xmi:id="_xhC6Gk9uEeWsIc5CMrI4GA" name="105421008"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -2108,7 +2168,7 @@ Value Set Source: https://vsac.nlm.nih.gov&#xD;
   <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" binding="Dynamic" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_PaapkGdREeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_F4z3QDrtEeG-aJb2h_4S8w" identifier="2.16.840.1.113883.3.88.12.3221.5.2" version="20081218" fullName="Health Insurance Type Value Set" source="HITSP" definition="This value set uses the ACS X12 vocabulary for Insurance Type Code (ASC X12 Data Element 1336) and has been limited by HITSP to the value set reproduced below in Table 2-52 Health Insurance Type Value Set Definition&#xD;&#xA;The type of health plan covering the individual, e.g., an HMO, PPO, POS, etc." effectiveDate="20081218" releaseDate="20081218" binding="Dynamic" base_Enumeration="_F4ypIDrtEeG-aJb2h_4S8w">
+  <term:ValueSetVersion xmi:id="_F4z3QDrtEeG-aJb2h_4S8w" identifier="2.16.840.1.113883.3.88.12.3221.5.2" fullName="Health Insurance Type" source="HITSP" definition="This value set uses the ACS X12 vocabulary for Insurance Type Code (ASC X12 Data Element 1336) and has been limited by HITSP to the value set reproduced below in Table 2-52 Health Insurance Type Value Set Definition&#xD;&#xA;The type of health plan covering the individual, e.g., an HMO, PPO, POS, etc." releaseDate="20081218" binding="Dynamic" base_Enumeration="_F4ypIDrtEeG-aJb2h_4S8w">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_yJCGQBJOEeKjxqZmTX2rRQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_oBcwgDrtEeG-aJb2h_4S8w" conceptName="Medicare Secondary Working Aged Beneficiary or Spouse with Employer Group Health Plan" base_EnumerationLiteral="_oBbiYDrtEeG-aJb2h_4S8w"/>
@@ -2350,7 +2410,7 @@ Value Set Source: https://vsac.nlm.nih.gov&#xD;
   <term:ValueSetCode xmi:id="_qu2JgeWUEeGKmvzED_He2w" conceptName="Never smoker (Never Smoked)" base_EnumerationLiteral="_qu2JgOWUEeGKmvzED_He2w"/>
   <term:ValueSetCode xmi:id="_shQiUeWUEeGKmvzED_He2w" conceptName="Smoker, current status unknown" base_EnumerationLiteral="_shQiUOWUEeGKmvzED_He2w"/>
   <term:ValueSetCode xmi:id="_uoyPgeWUEeGKmvzED_He2w" conceptName="Unknown if ever smoked" base_EnumerationLiteral="_uoyPgOWUEeGKmvzED_He2w"/>
-  <term:ValueSetVersion xmi:id="_3NE1YOcAEeGINOJ_SD9_dA" identifier="2.16.840.1.113883.11.20.9.35" version="2014-09-01" definition="This value set enumerates the type of a pressure ulcer" base_Enumeration="_3NDnQOcAEeGINOJ_SD9_dA">
+  <term:ValueSetVersion xmi:id="_3NE1YOcAEeGINOJ_SD9_dA" identifier="2.16.840.1.113883.11.20.9.35" version="2014-09-01" source="https://vsac.nlm.nih.gov" definition="This value set enumerates the type of a pressure ulcer." base_Enumeration="_3NDnQOcAEeGINOJ_SD9_dA">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_9AVNcOcAEeGINOJ_SD9_dA" conceptName="Pressure Ulcer Stage 1" base_EnumerationLiteral="_9AUmYOcAEeGINOJ_SD9_dA"/>
@@ -3517,7 +3577,7 @@ Value Set Source: https://vsac.nlm.nih.gov&#xD;
   <term:ValueSetCode xmi:id="_OKXbsOLWEeS505YV9ux2XA" conceptName="Promise" base_EnumerationLiteral="_OKW0oOLWEeS505YV9ux2XA"/>
   <term:ValueSetCode xmi:id="_PHGJseLWEeS505YV9ux2XA" conceptName="Proposal" base_EnumerationLiteral="_PHGJsOLWEeS505YV9ux2XA"/>
   <term:ValueSetCode xmi:id="_QStoQOLWEeS505YV9ux2XA" conceptName="Request" base_EnumerationLiteral="_QStBMOLWEeS505YV9ux2XA"/>
-  <term:ValueSetVersion xmi:id="_uUyNJuN4EeS_XOr-dz_KWA" identifier="2.16.840.1.113883.11.20.9.19" version="2014-03-24" source="http://www.hl7.org" definition="A ValueSet of HL7 actStatus codes for use with a procedure activity" base_Enumeration="_uUyNION4EeS_XOr-dz_KWA">
+  <term:ValueSetVersion xmi:id="_uUyNJuN4EeS_XOr-dz_KWA" identifier="2.16.840.1.113883.11.20.9.19" version="2014-03-24" source="http://www.hl7.org" url="http://www.hl7.org/documentcenter/public/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/vocabulary.html" definition="A ValueSet of HL7 actStatus codes for use with a procedure activity" base_Enumeration="_uUyNION4EeS_XOr-dz_KWA">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_uUyNJ-N4EeS_XOr-dz_KWA" conceptName="Active" usageNote="A concern that is still being tracked." base_EnumerationLiteral="_uUyNIuN4EeS_XOr-dz_KWA"/>
@@ -3598,4 +3658,57 @@ Value Set Source: https://vsac.nlm.nih.gov&#xD;
   <term:ValueSetCode xmi:id="_TvPkgASLEeWqeJlhkO8aqA" conceptName="Width of Wound" base_EnumerationLiteral="_TvO9cASLEeWqeJlhkO8aqA"/>
   <term:ValueSetCode xmi:id="_V9_7EASLEeWqeJlhkO8aqA" conceptName="Depth of Wound" base_EnumerationLiteral="_V9_UAASLEeWqeJlhkO8aqA"/>
   <term:ValueSetCode xmi:id="_XMg8oQSLEeWqeJlhkO8aqA" conceptName="Length of Wound" base_EnumerationLiteral="_XMg8oASLEeWqeJlhkO8aqA"/>
+  <term:ValueSetVersion xmi:id="_PDM9OUxKEeWJ65CktI2ODQ" identifier="2.16.840.1.113883.1.11.20.2" version="2006-10-17" fullName="Advance Directive Type Value Set" definition="This identifies the type of the Advance Directive. Uses the AdvanceDirectiveTypeCode vocabulary defined by CCD." revisionDate="07/23/2009" base_Enumeration="_PDM9MExKEeWJ65CktI2ODQ">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_PDM9OkxKEeWJ65CktI2ODQ" conceptName="Antibiotics" usageNote="SNOMED-CT" base_EnumerationLiteral="_PDM9MUxKEeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_PDM9O0xKEeWJ65CktI2ODQ" conceptName="CPR" usageNote="SNOMED-CT" base_EnumerationLiteral="_PDM9MkxKEeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_PDM9PExKEeWJ65CktI2ODQ" conceptName="IV Fluid and Support" usageNote="SNOMED-CT" base_EnumerationLiteral="_PDM9M0xKEeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_PDM9PUxKEeWJ65CktI2ODQ" conceptName="Intubation" usageNote="SNOMED-CT" base_EnumerationLiteral="_PDM9NExKEeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_PDM9PkxKEeWJ65CktI2ODQ" conceptName="Life Support" usageNote="SNOMED-CT" base_EnumerationLiteral="_PDM9NUxKEeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_PDM9P0xKEeWJ65CktI2ODQ" conceptName="Resuscitation" usageNote="SNOMED-CT" base_EnumerationLiteral="_PDM9NkxKEeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_PDM9QExKEeWJ65CktI2ODQ" conceptName="Tube Feedings" base_EnumerationLiteral="_PDM9N0xKEeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_PDM9QUxKEeWJ65CktI2ODQ" conceptName="Other Directive" base_EnumerationLiteral="_PDM9OExKEeWJ65CktI2ODQ"/>
+  <term:ValueSetVersion xmi:id="_ngam0Ez2EeWJ65CktI2ODQ" identifier="2.16.840.1.113883.3.88.12.3221.7.2" version="2012-06-01" revisionDate="07/23/2009" base_Enumeration="_ngZ_wEz2EeWJ65CktI2ODQ">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_ngam0Uz2EeWJ65CktI2ODQ" conceptName="Finding" usageNote="SNOMED-CT" base_EnumerationLiteral="_ngZ_wkz2EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_ngam0kz2EeWJ65CktI2ODQ" conceptName="Complaint" usageNote="SNOMED-CT" base_EnumerationLiteral="_ngZ_w0z2EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_ngam00z2EeWJ65CktI2ODQ" conceptName="Diagnosis" usageNote="SNOMED-CT" base_EnumerationLiteral="_ngZ_xEz2EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_ngam1Ez2EeWJ65CktI2ODQ" conceptName="Condition" usageNote="SNOMED-CT" base_EnumerationLiteral="_ngZ_xUz2EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_ngam1Uz2EeWJ65CktI2ODQ" conceptName="Finding of functional performance and activity" usageNote="SNOMED-CT" base_EnumerationLiteral="_ngZ_xkz2EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_ngam1kz2EeWJ65CktI2ODQ" conceptName="Symptom" usageNote="SNOMED-CT" base_EnumerationLiteral="_ngZ_x0z2EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_ngam10z2EeWJ65CktI2ODQ" conceptName="Problem" usageNote="SNOMED-CT" base_EnumerationLiteral="_ngZ_yEz2EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_ngam2Ez2EeWJ65CktI2ODQ" conceptName="Cognitive function finding" base_EnumerationLiteral="_ngZ_yUz2EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_ASn8MEz3EeWJ65CktI2ODQ" conceptName="Problem HL7.CCDAR2" base_EnumerationLiteral="_ASmHAEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_CAxgEEz3EeWJ65CktI2ODQ" conceptName="Symptom HL7.CCDAR2" base_EnumerationLiteral="_CAw5AEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_D9JtMEz3EeWJ65CktI2ODQ" conceptName="Functional performance HL7.CCDAR2" base_EnumerationLiteral="_D9JGIEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_IxwEoEz3EeWJ65CktI2ODQ" conceptName="Condition HL7.CCDAR2" base_EnumerationLiteral="_IxvdkEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_KVuY0Uz3EeWJ65CktI2ODQ" conceptName="Diagnosis" base_EnumerationLiteral="_KVuY0Ez3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_PZChsEz3EeWJ65CktI2ODQ" conceptName="Complaint HL7.CCDAR2" base_EnumerationLiteral="_PZB6oEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_RmURkUz3EeWJ65CktI2ODQ" conceptName="Cognitive Function HL7.CCDAR2" base_EnumerationLiteral="_RmURkEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_SkrXQEz3EeWJ65CktI2ODQ" conceptName="Clinical finding HL7.CCDAR2" base_EnumerationLiteral="_SkqwMEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_UJvQkEz3EeWJ65CktI2ODQ" conceptName="Cognitive function family member HL7.CCDAR2" base_EnumerationLiteral="_UJupgEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_VvH6AEz3EeWJ65CktI2ODQ" conceptName="Problem family member HL7.CCDAR2" base_EnumerationLiteral="_VvHS8Ez3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_WomfsEz3EeWJ65CktI2ODQ" conceptName="Symptom family member HL7.CCDAR2" base_EnumerationLiteral="_Wol4oEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_X2zYMUz3EeWJ65CktI2ODQ" conceptName="Functional performance family member HL7.CCDAR2" base_EnumerationLiteral="_X2zYMEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_ZP2OwUz3EeWJ65CktI2ODQ" conceptName="Condition family member HL7.CCDAR2" base_EnumerationLiteral="_ZP2OwEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_agCEQEz3EeWJ65CktI2ODQ" conceptName="Diagnosis family member HL7.CCDAR2" base_EnumerationLiteral="_agBdMEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_d_QkMEz3EeWJ65CktI2ODQ" conceptName="Complaint family member HL7.CCDAR2" base_EnumerationLiteral="_d_P9IEz3EeWJ65CktI2ODQ"/>
+  <term:ValueSetCode xmi:id="_fxq9AEz3EeWJ65CktI2ODQ" conceptName="Clinical finding family member HL7.CCDAR2" base_EnumerationLiteral="_fxqV8Ez3EeWJ65CktI2ODQ"/>
+  <term:ValueSetVersion xmi:id="_QJUE4E9kEeWsIc5CMrI4GA" identifier="2.16.840.1.114222.4.11.3591" url="http://www.phdsc.org/standards/payer-typology.asp" definition="A value set of Public Health Data Standards Consortium Source of Payment Typology Version 3.0 Codes" base_Enumeration="_QJTd0E9kEeWsIc5CMrI4GA">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_mLN0II9QEeOB0eBUISUB4Q"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_xhC6IU9uEeWsIc5CMrI4GA" identifier="2.16.840.1.113883.3.88.12.80.60" version="2008-12-18" fullName="Social History Type" revisionDate="07/23/2009" base_Enumeration="_xhC6EE9uEeWsIc5CMrI4GA">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_xhC6Ik9uEeWsIc5CMrI4GA" conceptName="Tobacco use and exposure" usageNote="SNOMED-CT" base_EnumerationLiteral="_xhC6Ek9uEeWsIc5CMrI4GA"/>
+  <term:ValueSetCode xmi:id="_xhC6I09uEeWsIc5CMrI4GA" conceptName="Exercise" usageNote="SNOMED-CT" base_EnumerationLiteral="_xhC6E09uEeWsIc5CMrI4GA"/>
+  <term:ValueSetCode xmi:id="_xhC6JE9uEeWsIc5CMrI4GA" conceptName="Alcohol intake" usageNote="SNOMED-CT" base_EnumerationLiteral="_xhC6FE9uEeWsIc5CMrI4GA"/>
+  <term:ValueSetCode xmi:id="_xhC6JU9uEeWsIc5CMrI4GA" conceptName="Nutritional observable" usageNote="SNOMED-CT" base_EnumerationLiteral="_xhC6FU9uEeWsIc5CMrI4GA"/>
+  <term:ValueSetCode xmi:id="_xhC6Jk9uEeWsIc5CMrI4GA" conceptName="Employment detail" usageNote="SNOMED-CT" base_EnumerationLiteral="_xhC6Fk9uEeWsIc5CMrI4GA"/>
+  <term:ValueSetCode xmi:id="_xhC6J09uEeWsIc5CMrI4GA" conceptName="Toxic exposure status" usageNote="SNOMED-CT" base_EnumerationLiteral="_xhC6F09uEeWsIc5CMrI4GA"/>
+  <term:ValueSetCode xmi:id="_xhC6KE9uEeWsIc5CMrI4GA" conceptName="Details of drug misuse behavior" usageNote="SNOMED-CT" base_EnumerationLiteral="_xhC6GE9uEeWsIc5CMrI4GA"/>
+  <term:ValueSetCode xmi:id="_xhC6KU9uEeWsIc5CMrI4GA" conceptName="Health-related behavior" usageNote="SNOMED-CT" base_EnumerationLiteral="_xhC6GU9uEeWsIc5CMrI4GA"/>
+  <term:ValueSetCode xmi:id="_xhC6Kk9uEeWsIc5CMrI4GA" conceptName="Educational Achievement" base_EnumerationLiteral="_xhC6Gk9uEeWsIc5CMrI4GA"/>
 </xmi:XMI>

@@ -265,6 +265,24 @@ public class PolicyActivity2Impl extends PolicyActivityImpl implements PolicyAct
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePolicyActivity2CDTranslation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PolicyActivity2Operations.validatePolicyActivity2CDTranslation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePolicyActivity2CDTranslationP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PolicyActivity2Operations.validatePolicyActivity2CDTranslationP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePolicyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivity2Operations.validatePolicyActivityTemplateId(this, diagnostics, context);

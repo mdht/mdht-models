@@ -2878,8 +2878,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:AssociationValidation xmi:id="_sGVWMBUlEeGvPruliC3crg" severity="WARNING"/>
   <CDA:PropertyValidation xmi:id="_vAJFABVeEeGQCvUGzi1kDQ" severity="INFO"/>
   <CDA:AssociationValidation xmi:id="_FBOT8BqsEeGo461UQq-B1g" severity="WARNING">
-    <ruleId>CONF:8849</ruleId>
-    <ruleId>R2.0=CONF:1098-8849</ruleId>
+    <ruleId>CONF:8849, R2.1=CONF:1198-8849</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_CtfWwRqsEeGo461UQq-B1g"/>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_ChoggBq2EeGo461UQq-B1g">
@@ -2902,9 +2901,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Association href=".controlled/consol-immunizations.uml#_nTmMohrbEeGo461UQq-B1g"/>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_qYdhABt5EeGnMahsPjlwOw" severity="INFO" typeCode="REFR">
-    <ruleId>CONF:8860</ruleId>
-    <ruleId>CONF:8861</ruleId>
-    <ruleId>CONF:15539</ruleId>
+    <ruleId>CONF:8860, CONF:8861, CONF:15539</ruleId>
     <base_Association href=".controlled/consol-immunizations.uml#_nYYbMBt5EeGnMahsPjlwOw"/>
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_1ZGHcBt6EeGnMahsPjlwOw" severity="WARNING">
@@ -3141,17 +3138,11 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Constraint href=".controlled/consol-advancedirectives.uml#_mZCKQCsgEeGQ5rkpDKAt8A"/>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_xQtecCsgEeGQ5rkpDKAt8A" severity="INFO">
-    <ruleId>CONF:8697</ruleId>
-    <ruleId>R2.0=CONF:1098-8697</ruleId>
-    <ruleId>CONF:8698</ruleId>
-    <ruleId>R2.0=CONF:1098-8698</ruleId>
-    <ruleId>CONF:8699</ruleId>
-    <ruleId>R2.0=CONF:1098-8699</ruleId>
+    <ruleId>CONF:8697, R2.1=CONF:1198-8697, CONF:8698, R2.1=CONF:1198-8698, CONF:8699, R2.1=CONF:1198-8699</ruleId>
     <base_Constraint href=".controlled/consol-advancedirectives.uml#_ujQZsCsgEeGQ5rkpDKAt8A"/>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_hpVg8CsgEeGQ5rkpDKAt8A">
-    <ruleId>CONF:8695</ruleId>
-    <ruleId>R2.0=CONF:1098-8695</ruleId>
+    <ruleId>CONF:8695, R2.1=CONF:1198-8695</ruleId>
     <base_Property href=".controlled/consol-advancedirectives.uml#_WJKCUCsgEeGQ5rkpDKAt8A"/>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_jhbD8CsgEeGQ5rkpDKAt8A" severity="INFO">
@@ -3160,17 +3151,14 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   <CDA:CodeSystemConstraint xmi:id="_hhq9QCshEeGQ5rkpDKAt8A" code="REFR">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_f6DvAE6SEeC5ttwajeXVXg"/>
     <base_Property href=".controlled/consol-advancedirectives.uml#_PfjRECsgEeGQ5rkpDKAt8A"/>
-    <ruleId>CONF:8694</ruleId>
-    <ruleId>R2.0=CONF:1098-8694</ruleId>
+    <ruleId>CONF:8694, R2.1=CONF:1198-8694</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_Tcl48CshEeGQ5rkpDKAt8A">
-    <ruleId>CONF:8693</ruleId>
-    <ruleId>R2.0=CONF:1098-8693</ruleId>
+    <ruleId>CONF:8693, R2.1=CONF:1198-8693</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_SYpvsSshEeGQ5rkpDKAt8A"/>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_mHNP4CsfEeGQ5rkpDKAt8A">
-    <ruleId>CONF:8668</ruleId>
-    <ruleId>R2.0=CONF:1098-8668</ruleId>
+    <ruleId>CONF:8668, R2.1=CONF:1198-8668</ruleId>
     <base_Property href=".controlled/consol-advancedirectives.uml#_yVu3sCseEeGQ5rkpDKAt8A"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_t2-X8CsfEeGQ5rkpDKAt8A">
@@ -3190,8 +3178,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Property href=".controlled/consol-advancedirectives.uml#_7kDBYCseEeGQ5rkpDKAt8A"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_3a164CsfEeGQ5rkpDKAt8A">
-    <ruleId>CONF:8670</ruleId>
-    <ruleId>R2.0=CONF:1098-8670</ruleId>
+    <ruleId>CONF:8670, R2.1=CONF:1198-8670</ruleId>
     <base_Property href=".controlled/consol-advancedirectives.uml#_7kDocCseEeGQ5rkpDKAt8A"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_606OACsfEeGQ5rkpDKAt8A" severity="WARNING">
@@ -3207,8 +3194,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Property href=".controlled/consol-advancedirectives.uml#_EudX8CseEeGQ5rkpDKAt8A"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_UQVxcCseEeGQ5rkpDKAt8A">
-    <ruleId>CONF:8663</ruleId>
-    <ruleId>R2.0=CONF:1098-8663</ruleId>
+    <ruleId>CONF:8663, R2.1=CONF:1198-8663</ruleId>
     <base_Property href=".controlled/consol-advancedirectives.uml#_EuemECseEeGQ5rkpDKAt8A"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_fHrHYCseEeGQ5rkpDKAt8A">
@@ -4271,33 +4257,32 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:1098-31969</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_uDUBILEjEeOtlapy2HWYww" severity="WARNING" base_Association="_uDTaELEjEeOtlapy2HWYww">
-    <ruleId>CONF:1098-8662</ruleId>
+    <ruleId>CONF:1198-8662</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_e8g0kbE4EeOtlapy2HWYww" severity="WARNING" base_Association="_e8gNgLE4EeOtlapy2HWYww">
-    <ruleId>CONF:1098-8667</ruleId>
+    <ruleId>CONF:1198-8667</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_qh6YIbE9EeOtlapy2HWYww" base_Association="_qh5xELE9EeOtlapy2HWYww">
-    <ruleId>CONF:1098-8669</ruleId>
+    <ruleId>CONF:1198-8669</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_TOPA0rE-EeOtlapy2HWYww" severity="WARNING" base_Association="_TOPA0LE-EeOtlapy2HWYww">
-    <ruleId>CONF:1098-8692</ruleId>
+    <ruleId>CONF:1198-8692</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_zD14wLFEEeOtlapy2HWYww" base_Association="_zD1RsLFEEeOtlapy2HWYww">
-    <ruleId>CONF:1098-8825</ruleId>
+    <ruleId>CONF:1198-8825</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_M_AaQLFFEeOtlapy2HWYww" severity="INFO" base_Association="_LX5SgLFFEeOtlapy2HWYww">
-    <ruleId>CONF:1098-28428</ruleId>
+    <ruleId>CONF:1198-28428</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_KcZ80rFUEeOtlapy2HWYww" base_Association="_KcZ80LFUEeOtlapy2HWYww">
-    <ruleId>CONF:1098-8824</ruleId>
+    <ruleId>CONF:1198-8824</ruleId>
   </CDA:AssociationValidation>
   <CDA:ActRelationship xmi:id="_FNvRYLkcEeODDJAC5t5vpw" base_Association="_FNuDQLkcEeODDJAC5t5vpw"/>
   <CDA:AssociationValidation xmi:id="_Vxux4czVEeO93sHu8pHB2g" severity="INFO" base_Association="_VxuK0MzVEeO93sHu8pHB2g">
     <ruleId>CONF:1098-13937</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_xbTX0uHPEeO04sHNODkHmQ" severity="INFO" base_Association="_xbTX0OHPEeO04sHNODkHmQ">
-    <ruleId>CONF:1098-8850</ruleId>
-    <ruleId>CONF:1098-15547</ruleId>
+    <ruleId>CONF:1198-8850, CONF:1198-15547</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_b88xIeHVEeO04sHNODkHmQ" base_Association="_b88KEOHVEeO04sHNODkHmQ">
     <ruleId>CONF:1098-9006</ruleId>
@@ -4318,25 +4303,25 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:1098-31874</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_qxJ0wOwnEeOqa975IP2wug" base_Association="_qxJNsOwnEeOqa975IP2wug">
-    <ruleId>CONF:1098-8906</ruleId>
+    <ruleId>CONF:1198-8906</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_0IYp4uwnEeOqa975IP2wug" base_Association="_0IYp4OwnEeOqa975IP2wug">
-    <ruleId>CONF:1098-8908</ruleId>
+    <ruleId>CONF:1198-8908</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_HDFj4uwpEeOqa975IP2wug" severity="WARNING" base_Association="_HDFj4OwpEeOqa975IP2wug">
-    <ruleId>CONF:1098-8961</ruleId>
+    <ruleId>CONF:1198-8961</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_JVtGwewpEeOqa975IP2wug" base_Association="_JVsfsOwpEeOqa975IP2wug">
-    <ruleId>CONF:1098-8962</ruleId>
+    <ruleId>CONF:1198-8962</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_xCGuEewqEeOqa975IP2wug" base_Association="_xCGHAOwqEeOqa975IP2wug">
-    <ruleId>CONF:1098-8916</ruleId>
+    <ruleId>CONF:1198-8916</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_y8zgMewqEeOqa975IP2wug" base_Association="_y8y5IOwqEeOqa975IP2wug">
-    <ruleId>CONF:1098-8921</ruleId>
+    <ruleId>CONF:1198-8921</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_34SiwOwqEeOqa975IP2wug" severity="WARNING" base_Association="_34R7sOwqEeOqa975IP2wug">
-    <ruleId>CONF:1098-8932</ruleId>
+    <ruleId>CONF:1198-8932</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_FORDEO2kEeOchpob7ipcww" base_Association="_CEzXwO2kEeOchpob7ipcww">
     <ruleId>CONF:8302</ruleId>
@@ -4363,9 +4348,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:1098-8726</ruleId>
   </CDA:AssociationValidation>
   <CDA:EntryRelationship xmi:id="_Qxds8cnAEeSr1c1X9ACWbg" severity="INFO" base_Association="_QxdF4MnAEeSr1c1X9ACWbg" typeCode="REFR">
-    <ruleId>CONF:1098-9063</ruleId>
-    <ruleId>CONF:1098-9068</ruleId>
-    <ruleId>CONF:1098-15591</ruleId>
+    <ruleId>CONF:1198-9063, CONF:1198-9068, CONF:1198-15591</ruleId>
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_O-yC0cnKEeSr1c1X9ACWbg" severity="WARNING" base_Association="_O-xbwMnKEeSr1c1X9ACWbg">
     <ruleId>CONF:1098-8301</ruleId>

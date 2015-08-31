@@ -139,7 +139,18 @@
 		<replaceTemplateNames oldTemplateName="Vital Signs Section Entries Optional2" newTemplateName="Vital Signs Section (entries optional) (V3)" />
 		<replaceTemplateNames oldTemplateName="Vital Signs Section2" newTemplateName="Vital Signs Section (entries required) (V3)" />
 		<!-- entries -->
-
+		<replaceTemplateNames oldTemplateName="Advance Directive Observation2" newTemplateName="Advance Directive Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Allergy Concern Act2" newTemplateName="Allergy Concern Act (V3)" />
+		<replaceTemplateNames oldTemplateName="Family History Observation2" newTemplateName="Family History Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Immunization Activity2" newTemplateName="Immunization Activity (V3)" />
+		<replaceTemplateNames oldTemplateName="Mental Status Observation2" newTemplateName="Mental Status Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Mental Status Organizer2" newTemplateName="Mental Status Organizer (V3)" />
+		<replaceTemplateNames oldTemplateName="Number Of Pressure Ulcers Observation2" newTemplateName="Number of Pressure Ulcers Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Policy Activity2" newTemplateName="Policy Activity (V3)" />
+		<replaceTemplateNames oldTemplateName="Problem Observation2" newTemplateName="Problem Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Result Observation2" newTemplateName="Result Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Social History Observation2" newTemplateName="Social History Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Vital Signs Organizer2" newTemplateName="Vital Signs Organizer (V3)" />
 		<!-- other -->
 		<replaceTemplateNames oldTemplateName="US Realm Header Patient Generated Document" newTemplateName="US Realm Header - Patient Generated Document (V2)" />
 	</target>

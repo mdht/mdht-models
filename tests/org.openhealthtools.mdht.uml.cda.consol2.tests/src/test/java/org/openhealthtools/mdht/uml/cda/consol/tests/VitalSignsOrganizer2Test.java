@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsOrganizer2Operations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
@@ -35,6 +36,8 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizer2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer2 Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizer2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer2 CD Translation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizer2CDTranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer2 CD Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#getConsolVitalSignObservation2s() <em>Get Consol Vital Sign Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2#validateVitalSignsOrganizerCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer Code P</em>}</li>
@@ -119,6 +122,79 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateVitalSignsOrganizer2CDTranslation() {
+		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizer2CDTranslationTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
+			"validateVitalSignsOrganizer2CDTranslation",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(VitalSignsOrganizer2 target) {
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(VitalSignsOrganizer2 target) {
+				target.getCode().getTranslations().set(0, DatatypesFactory.eINSTANCE.createCD("74728-7", LOINC_ID));
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2CDTranslation(
+					(VitalSignsOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateVitalSignsOrganizer2CDTranslationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateVitalSignsOrganizer2CDTranslationP() {
+		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizer2CDTranslationPTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
+			"validateVitalSignsOrganizer2CDTranslationP",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(VitalSignsOrganizer2 target) {
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+			}
+
+			@Override
+			protected void updateToPass(VitalSignsOrganizer2 target) {
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2CDTranslationP(
+					(VitalSignsOrganizer2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateVitalSignsOrganizer2CDTranslationPTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated
 	*/
 	@Test
@@ -181,7 +257,7 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(VitalSignsOrganizer2 target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD("74728-7", LOINC_ID));
+				target.setCode(DatatypesFactory.eINSTANCE.createCD("46680005", SNOMEDCT_ID));
 			}
 
 			@Override

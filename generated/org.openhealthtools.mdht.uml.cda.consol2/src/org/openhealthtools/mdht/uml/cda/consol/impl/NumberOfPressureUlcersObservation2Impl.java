@@ -53,6 +53,28 @@ public class NumberOfPressureUlcersObservation2Impl extends NumberOfPressureUlce
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateNumberOfPressureUlcersObservation2CDTranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2CDTranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateNumberOfPressureUlcersObservation2CDTranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2CDTranslationP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return NumberOfPressureUlcersObservation2Operations.validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP(

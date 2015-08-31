@@ -278,24 +278,20 @@
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2MB2QBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2MDrcxSVEeGGzu7fmW9pXw" base_Property="_2MDrcBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8829</ruleId>
-    <ruleId>R2.0=CONF:1098-8829</ruleId>
+    <ruleId>CONF:8829, R2.1=CONF:1198-8829</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2MEShBSVEeGGzu7fmW9pXw" base_Property="_2MESgBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8833</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2ME5kBSVEeGGzu7fmW9pXw" base_Property="_2MEShRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8834</ruleId>
-    <ruleId>R2.0=CONF:1098-8834</ruleId>
+    <ruleId>CONF:8834, R2.1=CONF:1198-8834</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2ME5lBSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2ME5kRSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2MHV4BSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-312</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_amz3YBU9EeGbmN_W114JUw" severity="INFO" base_Association="_ZljOshU9EeGbmN_W114JUw">
-    <ruleId>CONF:8850</ruleId>
-    <ruleId>CONF:8851</ruleId>
-    <ruleId>CONF:15547</ruleId>
+    <ruleId>CONF:8850, CONF:8851, CONF:15547</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_daTqABVOEeGbmN_W114JUw" name="ImmunizationMedicationInformation">
     <ownedComment xmi:id="_JOE1QBq0EeGo461UQq-B1g">
@@ -519,11 +515,11 @@
     <ruleId>CONF:7970</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_k-uhcBqjEeGo461UQq-B1g" base_Property="_2MDEYBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8826</ruleId>
-    <ruleId>R2.0=CONF:1098-8826</ruleId>
+    <ruleId>CONF:8826, R2.1=CONF:1198-8826</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_29xg8BqjEeGo461UQq-B1g" base_Property="_1GG0sBqjEeGo461UQq-B1g">
     <ruleId>CONF:8985</ruleId>
+    <ruleId>R2.1=CONF:1198-8985</ruleId>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_eIVb8BqkEeGo461UQq-B1g" severity="WARNING" base_Property="_b0iNUBqkEeGo461UQq-B1g">
     <ruleId>CONF:8831</ruleId>
@@ -533,53 +529,36 @@
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_HZBV8BqlEeGo461UQq-B1g" base_Property="_2ME5kRSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:8839</ruleId>
-    <ruleId>R2.0=CONF:1098-8839</ruleId>
+    <ruleId>CONF:8839, R2.1=CONF:1198-8839</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_T_-PYBqlEeGo461UQq-B1g" base_Property="_2MHV0BSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:8840</ruleId>
-    <ruleId>R2.0=CONF:1098-8840</ruleId>
+    <ruleId>CONF:8840, R2.1=CONF:1198-8840</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_aN2t8BqlEeGo461UQq-B1g" severity="WARNING" base_Property="_2MHV1BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8841</ruleId>
-    <ruleId>R2.0=CONF:1098-8841</ruleId>
+    <ruleId>CONF:8841, R2.1=CONF:1198-8841</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_IQes8BqmEeGo461UQq-B1g" severity="INFO" base_Property="_ESwTIBqmEeGo461UQq-B1g">
     <ruleId>CONF:8846</ruleId>
   </CDA:PropertyValidation>
   <CDA:EntryRelationship xmi:id="_7ESjABqmEeGo461UQq-B1g" severity="INFO" base_Association="_JEY5whVOEeGbmN_W114JUw" typeCode="RSON">
-    <ruleId>CONF:8988</ruleId>
-    <ruleId>CONF:8989</ruleId>
-    <ruleId>CONF:15542</ruleId>
-    <ruleId>R2.0=CONF:1098-8988</ruleId>
-    <ruleId>R2.0=CONF:1098-8989</ruleId>
-    <ruleId>R2.0=CONF:1098-15542</ruleId>
+    <ruleId>CONF:8988, CONF:8989, CONF:15542, R2.1=CONF:1198-8988, R2.1=CONF:1198-8989, R2.1=CONF:1198-15542</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_FG53cBqnEeGo461UQq-B1g" severity="INFO" base_Association="_cqsashU9EeGbmN_W114JUw" typeCode="RSON">
-    <ruleId>CONF:8853</ruleId>
-    <ruleId>CONF:8854</ruleId>
-    <ruleId>CONF:15537</ruleId>
+    <ruleId>CONF:8853, CONF:8854, CONF:15537</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_Jc188BqnEeGo461UQq-B1g" severity="INFO" base_Association="_fhFZAhU9EeGbmN_W114JUw" typeCode="SUBJ">
-    <ruleId>CONF:8856</ruleId>
-    <ruleId>CONF:8857</ruleId>
-    <ruleId>CONF:15538</ruleId>
+    <ruleId>CONF:8856, CONF:8857, CONF:15538</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_N0Yk8BqnEeGo461UQq-B1g" severity="INFO" base_Association="_m131QhU9EeGbmN_W114JUw" typeCode="REFR">
-    <ruleId>CONF:8863</ruleId>
-    <ruleId>CONF:8864</ruleId>
-    <ruleId>CONF:15540</ruleId>
+    <ruleId>CONF:8863, CONF:8864, CONF:15540</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_P-K78BqnEeGo461UQq-B1g" severity="INFO" base_Association="_pdgl4RU9EeGbmN_W114JUw">
-    <ruleId>CONF:8866</ruleId>
-    <ruleId>CONF:8867</ruleId>
-    <ruleId>CONF:15541</ruleId>
+    <ruleId>CONF:8866, CONF:8867, CONF:15541</ruleId>
   </CDA:EntryRelationship>
   <CDA:ValueSetConstraint xmi:id="_xMN1MBqnEeGo461UQq-B1g" base_Property="_2MDEYxSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
-    <ruleId>CONF:8827</ruleId>
-    <ruleId>R2.0=CONF:1098-8827</ruleId>
+    <ruleId>CONF:8827, R2.1=CONF:1198-8827</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_OEcn8BqsEeGo461UQq-B1g" base_Association="_o-v9khVOEeGbmN_W114JUw">
     <ruleId>CONF:8847</ruleId>
@@ -673,12 +652,10 @@
     <ruleId>CONF:15543</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_GF72UEX7EeG6e5lG0YsSyQ" severity="WARNING" base_Constraint="_COIeUEX7EeG6e5lG0YsSyQ">
-    <ruleId>CONF:8842</ruleId>
-    <ruleId>R2.0=CONF:1098-8842</ruleId>
+    <ruleId>CONF:8842, R2.1=CONF:1198-8842</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_h5HCUEX7EeG6e5lG0YsSyQ" base_Constraint="_bnbB0EX7EeG6e5lG0YsSyQ">
-    <ruleId>CONF:8851</ruleId>
-    <ruleId>R2.0=CONF:1098-8851</ruleId>
+    <ruleId>CONF:8851, R2.1=CONF:1198-8851</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_efdwkG65EeGeVrQbtyMiPg" memberEnd="_efdJgG65EeGeVrQbtyMiPg _efeXoG65EeGeVrQbtyMiPg">
     <ownedEnd xmi:id="_efeXoG65EeGeVrQbtyMiPg" type="_VboYkG65EeGeVrQbtyMiPg" association="_efdwkG65EeGeVrQbtyMiPg"/>
@@ -965,16 +942,26 @@ The priority of the immunization activity to the patient and provider is communi
   <CDA:PropertyValidation xmi:id="_Y1-IwK72EeORf5eJaKt1KQ" base_Property="_rorhQJXFEeOgXcDbh8Igkw"/>
   <uml:Class xmi:id="_zI6vcOE7EeOTq9XEMvvkWw" clientDependency="_uJQiEOE8EeOTq9XEMvvkWw" name="ImmunizationActivity2">
     <ownedComment xmi:id="_Jul70OE8EeOTq9XEMvvkWw">
-      <body>An Immunization Activity describes immunization substance administrations that have actually occurred or are intended to occur. Immunization Activities in &quot;INT&quot; mood are reflections of immunizations a clinician intends a patient to receive. Immunization Activities in &quot;EVN&quot; mood reflect immunizations actually received.&#xD;
-An Immunization Activity is very similar to a Medication Activity with some key differentiators. The drug code system is constrained to CVX codes. Administration timing is less complex. Patient refusal reasons should be captured. All vaccines administered should be fully documented in the patient's permanent medical record. Healthcare providers who administer vaccines covered by the National Childhood Vaccine Injury Act are required to ensure that the permanent medical record of the recipient indicates: &#xD;
-1) Date of administration &#xD;
-2) Vaccine manufacturer &#xD;
-3) Vaccine lot number &#xD;
-4) Name and title of the person who administered the vaccine and the address of the clinic or facility where the permanent record will reside &#xD;
-5) Vaccine information statement (VIS) &#xD;
-a. Date printed on the VIS &#xD;
-b. Date VIS given to patient or parent/guardian.&#xD;
-This information should be included in an Immunization Activity when available. (Reference: http://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/D/vacc_admin.pdf)</body>
+      <body>&lt;p>&#xD;
+An Immunization Activity describes immunization substance administrations that have actually occurred or are intended to occur. Immunization Activities in &quot;INT&quot; mood are reflections of immunizations a clinician intends a patient to receive. Immunization Activities in &quot;EVN&quot; mood reflect immunizations actually received.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+An Immunization Activity is very similar to a Medication Activity with some key differentiators. The drug code system is constrained to CVX codes. Administration timing is less complex. Patient refusal reasons should be captured. All vaccines administered should be fully documented in the patient's permanent medical record. Healthcare providers who administer vaccines covered by the National Childhood Vaccine Injury Act are required to ensure that the permanent medical record of the recipient indicates:&#xD;
+&lt;ul>&#xD;
+&lt;li>1) Date of administration&lt;/li>&#xD;
+&lt;li>2) Vaccine manufacturer&lt;/li>&#xD;
+&lt;li>3) Vaccine lot number&lt;/li>&#xD;
+&lt;li>4) Name and title of the person who administered the vaccine and the address of the clinic or facility where the permanent record will reside&lt;/li>&#xD;
+&lt;li>5) Vaccine information statement (VIS)&lt;/li>&#xD;
+&lt;ul>&#xD;
+&lt;li>a. Date printed on the VIS&lt;/li>&#xD;
+&lt;li>b. Date VIS given to patient or parent/guardian.&lt;/li>&#xD;
+&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+This information should be included in an Immunization Activity when available. (Reference: &lt;a href=http://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/D/vacc_admin.pdf>http://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/D/vacc_admin.pdf&lt;/a>)&#xD;
+&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_xYXwIMHdEeST26B_nQ4gxA" name="textReference">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_xYXwI8HdEeST26B_nQ4gxA">
@@ -1014,14 +1001,6 @@ This information should be included in an Immunization Activity when available. 
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OFe-8OG9EeO04sHNODkHmQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OFfmAOG9EeO04sHNODkHmQ" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_JbZwQOHPEeO04sHNODkHmQ" name="negationInd" visibility="private" redefinedProperty="_1GG0sBqjEeGo461UQq-B1g">
-      <ownedComment xmi:id="_UPUl0OHPEeO04sHNODkHmQ">
-        <body>Note: Use negationInd=&quot;true&quot; to indicate that the immunization was not given.</body>
-      </ownedComment>
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OQYiMOHPEeO04sHNODkHmQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OQX7IOHPEeO04sHNODkHmQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_3izGEOHFEeO04sHNODkHmQ" name="code" visibility="private" aggregation="composite" redefinedProperty="_2MAoJBSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_4ZNwsOHFEeO04sHNODkHmQ">
@@ -1163,38 +1142,36 @@ This information should be included in an Immunization Activity when available. 
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_GXjukOE8EeOTq9XEMvvkWw" base_Class="_zI6vcOE7EeOTq9XEMvvkWw" templateId="2.16.840.1.113883.10.20.22.4.52" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-8828</ruleId>
-    <ruleId>CONF:1098-10498</ruleId>
-    <ruleId>CONF:1098-32528</ruleId>
+  <CDA:CDATemplate xmi:id="_GXjukOE8EeOTq9XEMvvkWw" base_Class="_zI6vcOE7EeOTq9XEMvvkWw" templateId="2.16.840.1.113883.10.20.22.4.52" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-8828, CONF:1198-10498, CONF:1198-32528</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_qqzeMOE8EeOTq9XEMvvkWw" base_Generalization="_zI_A4OE7EeOTq9XEMvvkWw"/>
   <uml:Association xmi:id="_OFgNEOG9EeO04sHNODkHmQ" memberEnd="_OFdJwOG9EeO04sHNODkHmQ _OFgNEeG9EeO04sHNODkHmQ">
     <ownedEnd xmi:id="_OFgNEeG9EeO04sHNODkHmQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_OFgNEOG9EeO04sHNODkHmQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_O7DVAOG9EeO04sHNODkHmQ" severity="WARNING" base_Association="_OFgNEOG9EeO04sHNODkHmQ">
-    <ruleId>CONF:1098-31151</ruleId>
+    <ruleId>CONF:1198-31151</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_3iztIOHFEeO04sHNODkHmQ" severity="INFO" base_Property="_3izGEOHFEeO04sHNODkHmQ">
-    <ruleId>CONF:1098-8830</ruleId>
+    <ruleId>CONF:1198-8830</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_BHOCoOHGEeO04sHNODkHmQ" base_Property="_BHNbkOHGEeO04sHNODkHmQ">
-    <ruleId>CONF:1098-8833</ruleId>
+    <ruleId>CONF:1198-8833</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_D06X8OHGEeO04sHNODkHmQ" base_Property="_BHNbkOHGEeO04sHNODkHmQ">
     <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
-    <ruleId>CONF:1098-32359</ruleId>
+    <ruleId>CONF:1198-32359</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_CXurc-HKEeO04sHNODkHmQ" severity="INFO" base_Property="_CXurcOHKEeO04sHNODkHmQ">
-    <ruleId>CONF:1098-8838</ruleId>
+    <ruleId>CONF:1198-8838</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Z9QyUOHKEeO04sHNODkHmQ" severity="INFO" base_Property="_Z9QLQOHKEeO04sHNODkHmQ"/>
   <CDA:ValueSetConstraint xmi:id="_Z9RZYOHKEeO04sHNODkHmQ" base_Property="_Z9QLQOHKEeO04sHNODkHmQ">
     <reference href="../consol-vocab.uml#_maiyYOHKEeO04sHNODkHmQ"/>
-    <ruleId>CONF:1098-8846</ruleId>
+    <ruleId>CONF:1198-8846</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_JbaXUOHPEeO04sHNODkHmQ" severity="INFO" base_Property="_JbZwQOHPEeO04sHNODkHmQ">
-    <ruleId>CONF:1098-8985</ruleId>
+  <CDA:PropertyValidation xmi:id="_JbaXUOHPEeO04sHNODkHmQ" severity="INFO">
+    <ruleId>CONF:1198-8985</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_Rx8LIOHUEeO04sHNODkHmQ" clientDependency="_nm3QAOHUEeO04sHNODkHmQ" name="ImmunizationMedicationInformation2">
     <ownedComment xmi:id="_xLRlgOHUEeO04sHNODkHmQ">
@@ -1291,53 +1268,43 @@ This information should be included in an Immunization Activity when available. 
     <ownedEnd xmi:id="_XyKGsfgFEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_XyKGsPgFEeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_afcMUPgFEeOYeZoWJF5yyQ" severity="INFO" base_Association="_XyKGsPgFEeOYeZoWJF5yyQ" typeCode="RSON">
-    <ruleId>CONF:1098-8853</ruleId>
-    <ruleId>CONF:1098-8854</ruleId>
-    <ruleId>CONF:1098-15537</ruleId>
+    <ruleId>CONF:1198-8853, CONF:1198-8854, CONF:1198-15537</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_1hcaEPgFEeOYeZoWJF5yyQ" memberEnd="_1hak4PgFEeOYeZoWJF5yyQ _1hcaEfgFEeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="_1hcaEfgFEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_1hcaEPgFEeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_4zeykPgFEeOYeZoWJF5yyQ" severity="INFO" base_Association="_1hcaEPgFEeOYeZoWJF5yyQ" typeCode="REFR">
-    <ruleId>CONF:1098-8860</ruleId>
-    <ruleId>CONF:1098-8861</ruleId>
-    <ruleId>CONF:1098-15539</ruleId>
+    <ruleId>CONF:1198-8860, CONF:1198-8861, CONF:1198-15539</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_I4uX0PgGEeOYeZoWJF5yyQ" memberEnd="_I4r7kPgGEeOYeZoWJF5yyQ _I4uX0fgGEeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="_I4uX0fgGEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_I4uX0PgGEeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_MUbpsPgGEeOYeZoWJF5yyQ" severity="INFO" base_Association="_I4uX0PgGEeOYeZoWJF5yyQ" typeCode="REFR">
-    <ruleId>CONF:1098-8863</ruleId>
-    <ruleId>CONF:1098-8864</ruleId>
-    <ruleId>CONF:1098-15540</ruleId>
+    <ruleId>CONF:1198-8863, CONF:1198-8864, CONF:1198-15540</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_Z6t5MPgGEeOYeZoWJF5yyQ" memberEnd="_Z6srEPgGEeOYeZoWJF5yyQ _Z6t5MfgGEeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="_Z6t5MfgGEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_Z6t5MPgGEeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_ewXZgPgGEeOYeZoWJF5yyQ" severity="INFO" base_Association="_Z6t5MPgGEeOYeZoWJF5yyQ">
-    <ruleId>CONF:1098-8866</ruleId>
-    <ruleId>CONF:1098-8867</ruleId>
-    <ruleId>CONF:1098-15541</ruleId>
+    <ruleId>CONF:1198-8866, CONF:1198-8867, CONF:1198-15541</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_3Fk-8PgIEeOYeZoWJF5yyQ" memberEnd="_3FiisPgIEeOYeZoWJF5yyQ _3FlmAPgIEeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="_3FlmAPgIEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_3Fk-8PgIEeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_TFke8PgJEeOYeZoWJF5yyQ" severity="INFO" base_Association="_3Fk-8PgIEeOYeZoWJF5yyQ" typeCode="SUBJ">
-    <ruleId>CONF:1098-8856</ruleId>
-    <ruleId>CONF:1098-8857</ruleId>
-    <ruleId>CONF:1098-31392</ruleId>
+    <ruleId>CONF:1198-8856, CONF:1198-8857, CONF:1198-31392</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_3ZCbkPgKEeOYeZoWJF5yyQ" memberEnd="_3ZAmYPgKEeOYeZoWJF5yyQ _3ZCbkfgKEeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="_3ZCbkfgKEeOYeZoWJF5yyQ" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_3ZCbkPgKEeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_9NvlIPgKEeOYeZoWJF5yyQ" base_Association="_3ZCbkPgKEeOYeZoWJF5yyQ">
-    <ruleId>CONF:1098-8847</ruleId>
+    <ruleId>CONF:1198-8847</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_Vq0YAPgLEeOYeZoWJF5yyQ" memberEnd="_Vqyi0PgLEeOYeZoWJF5yyQ _Vq0YAfgLEeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="_Vq0YAfgLEeOYeZoWJF5yyQ" type="_Bpk3QPgLEeOYeZoWJF5yyQ" association="_Vq0YAPgLEeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_ejvggPgLEeOYeZoWJF5yyQ" base_Association="_Vq0YAPgLEeOYeZoWJF5yyQ">
-    <ruleId>CONF:1098-15546</ruleId>
+    <ruleId>CONF:1198-15546</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_kdQhIPy3EeO1SvUcmWeLDQ" clientDependency="_7ore4Py3EeO1SvUcmWeLDQ" name="ImmunizationsSectionEntriesOptional2">
     <ownedComment xmi:id="_5M3jwPy3EeO1SvUcmWeLDQ">
@@ -1484,16 +1451,16 @@ This information should be included in an Immunization Activity when available. 
     <ownedEnd xmi:id="_6LkF4D3MEeSyGa6KC25kiw" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_6Lje0D3MEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_9AQbED3MEeSyGa6KC25kiw" severity="INFO" base_Association="_6Lje0D3MEeSyGa6KC25kiw">
-    <ruleId>CONF:1098-8869</ruleId>
+    <ruleId>CONF:1198-8869</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_Sd0I0D3NEeSyGa6KC25kiw" base_Property="_Qr3DAD3NEeSyGa6KC25kiw">
-    <ruleId>CONF:1098-8870</ruleId>
+    <ruleId>CONF:1198-8870</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_O0YHgD3OEeSyGa6KC25kiw" memberEnd="_O0WSUD3OEeSyGa6KC25kiw _O0YHgT3OEeSyGa6KC25kiw">
     <ownedEnd xmi:id="_O0YHgT3OEeSyGa6KC25kiw" type="_Psw9gD3NEeSyGa6KC25kiw" association="_O0YHgD3OEeSyGa6KC25kiw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_SzZh0D3OEeSyGa6KC25kiw" base_Association="_O0YHgD3OEeSyGa6KC25kiw">
-    <ruleId>CONF:1098-15548</ruleId>
+    <ruleId>CONF:1198-15548</ruleId>
   </CDA:AssociationValidation>
   <CDA:TextValue xmi:id="_A1c-8KWfEeSPMaiGDG98Yg" base_Property="_4abv0QLOEeSIPYXg7AgJzw">
     <ruleId>CONF:1198-9017</ruleId>
@@ -1502,28 +1469,28 @@ This information should be included in an Immunization Activity when available. 
     <ruleId>CONF:1198-32833</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_ZVy_ksHrEeST26B_nQ4gxA" base_Constraint="_ZVy_kMHrEeST26B_nQ4gxA">
-    <ruleId>CONF:1098-8858</ruleId>
+    <ruleId>CONF:1198-8858</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_X5kN8MHyEeST26B_nQ4gxA" memberEnd="_X5i_0MHyEeST26B_nQ4gxA _X5lcEMHyEeST26B_nQ4gxA">
     <ownedEnd xmi:id="_X5lcEMHyEeST26B_nQ4gxA" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_X5kN8MHyEeST26B_nQ4gxA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_buqQMMHyEeST26B_nQ4gxA" severity="WARNING" base_Association="_X5kN8MHyEeST26B_nQ4gxA">
-    <ruleId>CONF:1098-31510</ruleId>
+    <ruleId>CONF:1198-31510</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_-u3qoMHyEeST26B_nQ4gxA" base_Property="_pBFIgMHyEeST26B_nQ4gxA">
-    <ruleId>CONF:1098-31511</ruleId>
+    <ruleId>CONF:1198-31511</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_OIHFgMHzEeST26B_nQ4gxA" base_Property="_pBEhcMHyEeST26B_nQ4gxA">
-    <ruleId>CONF:1098-31512</ruleId>
+    <ruleId>CONF:1198-31512</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_fQUjoMHzEeST26B_nQ4gxA" severity="INFO" base_Property="_pBEhc8HyEeST26B_nQ4gxA">
-    <ruleId>CONF:1098-31513</ruleId>
+    <ruleId>CONF:1198-31513</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_yQQYYMHzEeST26B_nQ4gxA" memberEnd="_yQPKQMHzEeST26B_nQ4gxA _yQQ_cMHzEeST26B_nQ4gxA">
     <ownedEnd xmi:id="_yQQ_cMHzEeST26B_nQ4gxA" type="_kL7XcMHyEeST26B_nQ4gxA" association="_yQQYYMHzEeST26B_nQ4gxA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_y8WpYMHzEeST26B_nQ4gxA" base_Association="_yQQYYMHzEeST26B_nQ4gxA">
-    <ruleId>CONF:1098-31514</ruleId>
+    <ruleId>CONF:1198-31514</ruleId>
   </CDA:AssociationValidation>
   <CDA:TextValue xmi:id="_2dcZAMKMEeSqg-Exmsy2kg" base_Property="_2daj0MKMEeSqg-Exmsy2kg">
     <ruleId>CONF:1098-9014</ruleId>

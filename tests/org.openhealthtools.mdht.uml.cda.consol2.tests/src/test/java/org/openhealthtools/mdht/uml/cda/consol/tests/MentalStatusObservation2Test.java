@@ -51,6 +51,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateMentalStatusObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateMentalStatusObservation2AssessmentScaleObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation2 Assessment Scale Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateMentalStatusObservation2ReferenceRange(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation2 Reference Range</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateMentalStatusObservation2CDTranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation2 CD Translation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#validateMentalStatusObservation2CDTranslationP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mental Status Observation2 CD Translation P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2#getAssessmentScaleObservations() <em>Get Assessment Scale Observations</em>}</li>
  * </ul>
  * </p>
@@ -269,7 +271,7 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateMentalStatusObservation2Code() {
@@ -280,12 +282,15 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(MentalStatusObservation2 target) {
-
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
 			}
 
 			@Override
 			protected void updateToPass(MentalStatusObservation2 target) {
-				target.init();
+				target.getCode().setCodeSystem(SNOMEDCT_ID);
+				target.getCode().setCode("373930000");
 
 			}
 
@@ -559,6 +564,79 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 		};
 
 		validateMentalStatusObservation2ReferenceRangeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateMentalStatusObservation2CDTranslation() {
+		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2CDTranslationTestCase = new OperationsTestCase<MentalStatusObservation2>(
+			"validateMentalStatusObservation2CDTranslation",
+			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MentalStatusObservation2 target) {
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(MentalStatusObservation2 target) {
+				target.getCode().getTranslations().set(0, DatatypesFactory.eINSTANCE.createCD("75275-8", LOINC_ID));
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MentalStatusObservation2Operations.validateMentalStatusObservation2CDTranslation(
+					(MentalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMentalStatusObservation2CDTranslationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateMentalStatusObservation2CDTranslationP() {
+		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2CDTranslationPTestCase = new OperationsTestCase<MentalStatusObservation2>(
+			"validateMentalStatusObservation2CDTranslationP",
+			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MentalStatusObservation2 target) {
+				target.init();
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+			}
+
+			@Override
+			protected void updateToPass(MentalStatusObservation2 target) {
+				target.getCode().getTranslations().add(DatatypesFactory.eINSTANCE.createCD());
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MentalStatusObservation2Operations.validateMentalStatusObservation2CDTranslationP(
+					(MentalStatusObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMentalStatusObservation2CDTranslationPTestCase.doValidationTest();
 	}
 
 	/**

@@ -311,20 +311,16 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ownedEnd xmi:id="_DxKLkucCEeGINOJ_SD9_dA" type="_7c4ssOZbEeGINOJ_SD9_dA" association="_DxKLkecCEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_PMNZ8Ob_EeGINOJ_SD9_dA" base_Class="_7c4ssOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.76">
-    <ruleId>CONF:14707</ruleId>
-    <ruleId>CONF:14708</ruleId>
+    <ruleId>CONF:14707, CONF:14708</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_5NqfAOb-EeGINOJ_SD9_dA" base_Property="_4rvdsOb-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14705</ruleId>
-    <ruleId>R2.0=CONF:1098-14705</ruleId>
+    <ruleId>CONF:14705, R2.1=CONF:1198-14705</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_MfbqoOb_EeGINOJ_SD9_dA" base_Property="_4rvduOb-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14706</ruleId>
-    <ruleId>R2.0=CONF:1098-14706</ruleId>
+    <ruleId>CONF:14706, R2.1=CONF:1198-14706</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Tb4fYOb_EeGINOJ_SD9_dA" base_Property="_4rvdteb-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14709</ruleId>
-    <ruleId>R2.0=CONF:1098-14709</ruleId>
+    <ruleId>CONF:14709, R2.1=CONF:1198-14709</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_WuTSYOb_EeGINOJ_SD9_dA" base_Property="_4rvdseb-EeGINOJ_SD9_dA">
     <ruleId>CONF:14767</ruleId>
@@ -334,21 +330,17 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ruleId>CONF:14768</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_eutegOb_EeGINOJ_SD9_dA" base_Property="_4rvdueb-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14714</ruleId>
-    <ruleId>R2.0=CONF:1098-14714</ruleId>
+    <ruleId>CONF:14714, R2.1=CONF:1198-14714</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_jwzfYOb_EeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_4rvdueb-EeGINOJ_SD9_dA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:14714</ruleId>
-    <ruleId>R2.0=CONF:1098-19108</ruleId>
+    <ruleId>CONF:14714, R2.1=CONF:1198-19108</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_pBadYOb_EeGINOJ_SD9_dA" base_Property="_4rvdsub-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14715</ruleId>
-    <ruleId>R2.0=CONF:1098-14715</ruleId>
+    <ruleId>CONF:14715, R2.1=CONF:1198-14715</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_usV_4Ob_EeGINOJ_SD9_dA" base_Property="_4rvdvOb-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14771</ruleId>
-    <ruleId>R2.0=CONF:1098-14771</ruleId>
+    <ruleId>CONF:14771, R2.1=CONF:1198-14771</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_F9vX4OcCEeGINOJ_SD9_dA" base_Property="_FQgecOcCEeGINOJ_SD9_dA">
     <ruleId>CONF:14719</ruleId>
@@ -366,8 +358,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <ruleId>CONF:14725</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_ydqVYOb_EeGINOJ_SD9_dA" severity="INFO" base_Association="_4rvdwub-EeGINOJ_SD9_dA">
-    <ruleId>CONF:14717</ruleId>
-    <ruleId>R2.0=CONF:1098-14717</ruleId>
+    <ruleId>CONF:14717, R2.1=CONF:1198-14717</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_QGo6gOcCEeGINOJ_SD9_dA" base_Association="_DxKLkecCEeGINOJ_SD9_dA">
     <ruleId>CONF:14718</ruleId>
@@ -807,9 +798,7 @@ The Physical Exam Section may contain multiple nested subsections.&#xD;
     </ownedComment>
     <generalization xmi:id="_YZLSIIC3EeS108flGLVEBA" general="_7c4ssOZbEeGINOJ_SD9_dA"/>
     <substitution xmi:id="_jv8goIC4EeS108flGLVEBA" name="NumberOfPressureUlcersObservation" client="_YYgjwIC3EeS108flGLVEBA" supplier="_7c4ssOZbEeGINOJ_SD9_dA" contract="_7c4ssOZbEeGINOJ_SD9_dA"/>
-    <ownedAttribute xmi:id="_nvQ5EIC8EeS108flGLVEBA" name="code" visibility="private" aggregation="composite" redefinedProperty="_4rvdseb-EeGINOJ_SD9_dA">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:id="_nvQ5EIC8EeS108flGLVEBA" name="code" visibility="private" type="_KMZXUE9gEeWsIc5CMrI4GA" aggregation="composite" redefinedProperty="_4rvdseb-EeGINOJ_SD9_dA"/>
     <ownedAttribute xmi:id="_sApxkIDDEeS108flGLVEBA" name="entryRelationship" type="_H1WAgIDEEeS108flGLVEBA" redefinedProperty="_DxAakOcCEeGINOJ_SD9_dA" association="_sApxk4DDEeS108flGLVEBA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CehFwYDEEeS108flGLVEBA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CehFwIDEEeS108flGLVEBA" value="1"/>
@@ -848,51 +837,62 @@ The Physical Exam Section may contain multiple nested subsections.&#xD;
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_KMZXUE9gEeWsIc5CMrI4GA" name="CD">
+      <ownedComment xmi:id="_OgMHwE9gEeWsIc5CMrI4GA">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_KMZ-YE9gEeWsIc5CMrI4GA">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_KuxroE9gEeWsIc5CMrI4GA" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T3BpkU9gEeWsIc5CMrI4GA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T3BpkE9gEeWsIc5CMrI4GA" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_2sh74IC3EeS108flGLVEBA" base_Class="_YYgjwIC3EeS108flGLVEBA" templateId="2.16.840.1.113883.10.20.22.4.76" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-14707</ruleId>
-    <ruleId>CONF:1098-14708</ruleId>
-    <ruleId>CONF:1098-32604</ruleId>
+  <CDA:CDATemplate xmi:id="_2sh74IC3EeS108flGLVEBA" base_Class="_YYgjwIC3EeS108flGLVEBA" templateId="2.16.840.1.113883.10.20.22.4.76" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-14707, CONF:1198-14708, CONF:1198-32604</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_dWmY8IC4EeS108flGLVEBA" base_Generalization="_YZLSIIC3EeS108flGLVEBA"/>
   <CDA:PropertyValidation xmi:id="_nvQ5EYC8EeS108flGLVEBA" base_Property="_nvQ5EIC8EeS108flGLVEBA">
-    <ruleId>CONF:1098-14767</ruleId>
+    <ruleId>CONF:1198-14767</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_nvW_sIC8EeS108flGLVEBA" code="75277-4" displayName="Number of pressure ulcers" base_Property="_nvQ5EIC8EeS108flGLVEBA">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-14768</ruleId>
-    <ruleId>CONF:1098-32164</ruleId>
+  <CDA:CodeSystemConstraint xmi:id="_nvW_sIC8EeS108flGLVEBA" code="2264892003" displayName="Number of pressure ulcers" base_Property="_nvQ5EIC8EeS108flGLVEBA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-14768, CONF:1198-32164</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_sApxk4DDEeS108flGLVEBA" memberEnd="_sApxkIDDEeS108flGLVEBA _sApxlIDDEeS108flGLVEBA">
     <ownedEnd xmi:id="_sApxlIDDEeS108flGLVEBA" type="_YYgjwIC3EeS108flGLVEBA" association="_sApxk4DDEeS108flGLVEBA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_8yTJ0IDDEeS108flGLVEBA" base_Association="_sApxk4DDEeS108flGLVEBA">
-    <ruleId>CONF:1098-14718</ruleId>
+    <ruleId>CONF:1198-14718</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_S7AtYIDEEeS108flGLVEBA" base_Property="_Jq83QIDEEeS108flGLVEBA">
-    <ruleId>CONF:1098-14719</ruleId>
+    <ruleId>CONF:1198-14719</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_AvXm44DFEeS108flGLVEBA" memberEnd="_AvXm4IDFEeS108flGLVEBA _AvdtgIDFEeS108flGLVEBA">
     <ownedEnd xmi:id="_AvdtgIDFEeS108flGLVEBA" type="_H1WAgIDEEeS108flGLVEBA" association="_AvXm44DFEeS108flGLVEBA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_fo3qoIDFEeS108flGLVEBA" base_Association="_AvXm44DFEeS108flGLVEBA">
-    <ruleId>CONF:1098-14720</ruleId>
+    <ruleId>CONF:1198-14720</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_8dUGYIDFEeS108flGLVEBA" base_Property="_0jK6UIDFEeS108flGLVEBA">
-    <ruleId>CONF:1098-14721</ruleId>
+    <ruleId>CONF:1198-14721</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_AYMAgIDGEeS108flGLVEBA" base_Property="_0jK6UYDFEeS108flGLVEBA"/>
   <CDA:PropertyValidation xmi:id="_CW0QYIDGEeS108flGLVEBA" base_Property="_0jK6UoDFEeS108flGLVEBA">
-    <ruleId>CONF:1098-14722</ruleId>
+    <ruleId>CONF:1198-14722</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_1cwYQIDGEeS108flGLVEBA" base_Property="_0jK6U4DFEeS108flGLVEBA"/>
   <CDA:ValueSetConstraint xmi:id="_Z7XqYIDHEeS108flGLVEBA" base_Property="_0jK6U4DFEeS108flGLVEBA" severity="WARNING">
     <reference href="../consol-vocab.uml#_3NE1YOcAEeGINOJ_SD9_dA"/>
-    <ruleId>CONF:1098-14725</ruleId>
+    <ruleId>CONF:1198-14725</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_20TkkIDHEeS108flGLVEBA" code="ASSERTION" displayName="Assertion" base_Property="_0jK6UYDFEeS108flGLVEBA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-31930</ruleId>
+    <ruleId>CONF:1198-31930</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_u2URsIF0EeSMbOpQu8Kfvw" memberEnd="_u2ScgIF0EeSMbOpQu8Kfvw _u2U4wIF0EeSMbOpQu8Kfvw">
     <ownedEnd xmi:id="_u2U4wIF0EeSMbOpQu8Kfvw" type="_09uFMJp_EeOK6dzbL4VoTA" association="_u2URsIF0EeSMbOpQu8Kfvw"/>
@@ -919,4 +919,12 @@ The Physical Exam Section may contain multiple nested subsections.&#xD;
     <reference href="../consol-vocab.uml#_3uYZkKZKEeSy2PrVxD6riw"/>
     <ruleId>CONF:1198-32436</ruleId>
   </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_UOFesE9gEeWsIc5CMrI4GA" base_Property="_KuxroE9gEeWsIc5CMrI4GA">
+    <ruleId>CONF:1198-32849</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_YYTcYE9gEeWsIc5CMrI4GA" code="75277-4" displayName="Number of pressure ulcers" base_Property="_KuxroE9gEeWsIc5CMrI4GA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-32850</ruleId>
+    <ruleId>CONF:1198-32851</ruleId>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>
