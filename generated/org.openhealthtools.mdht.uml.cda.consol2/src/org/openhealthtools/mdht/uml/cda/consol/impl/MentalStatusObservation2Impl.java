@@ -193,6 +193,28 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMentalStatusObservation2CDTranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2CDTranslation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMentalStatusObservation2CDTranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2CDTranslationP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<AssessmentScaleObservation> getAssessmentScaleObservations() {
 		return MentalStatusObservation2Operations.getAssessmentScaleObservations(this);
 	}

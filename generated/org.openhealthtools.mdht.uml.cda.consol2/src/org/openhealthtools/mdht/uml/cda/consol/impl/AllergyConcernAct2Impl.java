@@ -70,26 +70,6 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	 * @generated
 	 */
 	@Override
-	public boolean validateAllergyConcernAct2IVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyConcernAct2Operations.validateAllergyConcernAct2IVLTSLow(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyConcernAct2IVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyConcernAct2Operations.validateAllergyConcernAct2IVLTSHigh(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EList<AllergyObservation2> getConsolAllergyObservation2s() {
 		return AllergyConcernAct2Operations.getConsolAllergyObservation2s(this);
 	}
@@ -100,38 +80,8 @@ public class AllergyConcernAct2Impl extends AllergyProblemActImpl implements All
 	 * @generated
 	 */
 	@Override
-	public boolean validateAllergyProblemActEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyConcernAct2Operations.validateAllergyProblemActEffectiveTimeLow(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyProblemActEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyConcernAct2Operations.validateAllergyProblemActEffectiveTimeHigh(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateAllergyProblemActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyConcernAct2Operations.validateAllergyProblemActTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateAllergyProblemActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergyConcernAct2Operations.validateAllergyProblemActEffectiveTime(this, diagnostics, context);
 	}
 
 	/**

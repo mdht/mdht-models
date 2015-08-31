@@ -80,6 +80,24 @@ public class VitalSignsOrganizer2Impl extends VitalSignsOrganizerImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateVitalSignsOrganizer2CDTranslation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2CDTranslation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateVitalSignsOrganizer2CDTranslationP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignsOrganizer2Operations.validateVitalSignsOrganizer2CDTranslationP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EList<VitalSignObservation2> getConsolVitalSignObservation2s() {
 		return VitalSignsOrganizer2Operations.getConsolVitalSignObservation2s(this);
