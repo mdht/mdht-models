@@ -522,8 +522,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ownedEnd xmi:id="_c6LMsxUzEeGbmN_W114JUw" type="_5Ha7ABUyEeGbmN_W114JUw" association="_c6LMshUzEeGbmN_W114JUw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_GYVXcBUzEeGbmN_W114JUw" base_Class="_5Ha7ABUyEeGbmN_W114JUw" templateId="2.16.840.1.113883.10.20.22.4.4">
-    <ruleId>CONF:14926</ruleId>
-    <ruleId>CONF:14927</ruleId>
+    <ruleId>CONF:14926, CONF:14927</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_2EqqABSVEeGGzu7fmW9pXw" name="AgeObservation">
     <ownedComment xmi:id="_2EqqARSVEeGGzu7fmW9pXw" annotatedElement="_2EqqABSVEeGGzu7fmW9pXw">
@@ -605,19 +604,16 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:15980</ruleId>
   </CDA:EntryRelationship>
   <CDA:PropertyValidation xmi:id="_dDG_YCAtEeGetMjKLkqR8g" base_Property="_6-B3UBUyEeGbmN_W114JUw">
-    <ruleId>CONF:9041</ruleId>
-    <ruleId>R2.0=CONF:1098-9041</ruleId>
+    <ruleId>CONF:9041, R2.1=CONF:1198-9041</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_gYJBgCAtEeGetMjKLkqR8g" base_Property="_6-ejRBUyEeGbmN_W114JUw">
-    <ruleId>CONF:9042</ruleId>
-    <ruleId>R2.0=CONF:1098-9042</ruleId>
+    <ruleId>CONF:9042, R2.1=CONF:1198-9042</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_uwAe8CAtEeGetMjKLkqR8g" severity="INFO" base_Property="_qzvdsCAtEeGetMjKLkqR8g">
     <ruleId>CONF:10139</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_4oveoCAtEeGetMjKLkqR8g" base_Property="_6-ejQBUyEeGbmN_W114JUw">
-    <ruleId>CONF:9043</ruleId>
-    <ruleId>R2.0=CONF:1098-9043</ruleId>
+    <ruleId>CONF:9043, R2.1=CONF:1198-9043</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_AbDkYCAuEeGetMjKLkqR8g" base_Property="_6-UyQBUyEeGbmN_W114JUw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
@@ -631,30 +627,20 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_SsEywCAwEeGetMjKLkqR8g" code="completed" displayName="Completed" base_Property="_zGbQICAuEeGetMjKLkqR8g">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:9049</ruleId>
-    <ruleId>R2.0=CONF:1098-9049</ruleId>
+    <ruleId>CONF:9049, R2.1=CONF:1198-9049</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_JUSukCAxEeGetMjKLkqR8g" base_Property="_zGb3MSAuEeGetMjKLkqR8g" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:9058</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_99C6wCA2EeG9GZYpu7WBOQ" severity="INFO" base_Association="_H_AaUBUzEeGbmN_W114JUw" typeCode="SUBJ">
-    <ruleId>CONF:9059</ruleId>
-    <ruleId>CONF:9060</ruleId>
-    <ruleId>CONF:15590</ruleId>
-    <ruleId>R2.0=CONF:1098-9059</ruleId>
-    <ruleId>R2.0=CONF:1098-9060</ruleId>
-    <ruleId>R2.0=CONF:1098-15590</ruleId>
+    <ruleId>CONF:9059, CONF:9060, CONF:15590, R2.1=CONF:1198-9059, R2.1=CONF:1198-9060, R2.1=CONF:1198-15590</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="__Yj2gCA2EeG9GZYpu7WBOQ" severity="INFO" base_Association="_c6LMshUzEeGbmN_W114JUw" typeCode="REFR">
-    <ruleId>CONF:9063</ruleId>
-    <ruleId>CONF:9068</ruleId>
-    <ruleId>CONF:15591</ruleId>
+    <ruleId>CONF:9063, CONF:9068, CONF:15591</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_AqupACA3EeG9GZYpu7WBOQ" severity="INFO" base_Association="_NozUYBUzEeGbmN_W114JUw" typeCode="REFR">
-    <ruleId>CONF:9067</ruleId>
-    <ruleId>CONF:9064</ruleId>
-    <ruleId>CONF:15592</ruleId>
+    <ruleId>CONF:9067, CONF:9064, CONF:15592</ruleId>
   </CDA:EntryRelationship>
   <CDA:PropertyValidation xmi:id="_IOVyICA8EeG9GZYpu7WBOQ" base_Property="_XGPfMBUzEeGbmN_W114JUw">
     <ruleId>CONF:7357</ruleId>
@@ -708,8 +694,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:10141</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_-OqsQCf3EeGO5_JBy9h6BA" base_Constraint="_1fQFECf3EeGO5_JBy9h6BA">
-    <ruleId>CONF:9069</ruleId>
-    <ruleId>R2.0=CONF:9069</ruleId>
+    <ruleId>CONF:9069, R2.1=CONF:9069</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_SheeICf4EeGO5_JBy9h6BA" base_Constraint="_QEznYCf4EeGO5_JBy9h6BA">
     <ruleId>CONF:9272</ruleId>
@@ -750,12 +735,10 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:15588</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_rJa-AOJlEeG3cO7ebC3QuA" severity="INFO" base_Constraint="_nck40OJlEeG3cO7ebC3QuA">
-    <ruleId>CONF:16749</ruleId>
-    <ruleId>R2.0=CONF:1098-16749</ruleId>
+    <ruleId>CONF:16749, R2.1=CONF:1198-16749</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_w9zXcOJlEeG3cO7ebC3QuA" severity="INFO" base_Constraint="_uQVroOJlEeG3cO7ebC3QuA">
-    <ruleId>CONF:16750</ruleId>
-    <ruleId>R2.0=CONF:1098-16750</ruleId>
+    <ruleId>CONF:16750, R2.1=CONF:1198-16750</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_BbmfQOJpEeG3cO7ebC3QuA" base_Property="_2EqqBxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7615</ruleId>
@@ -1178,8 +1161,12 @@ Many systems display the nested Problem Observation with the most recent author 
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_prDAkPDCEeOKPKE9au0oug" clientDependency="_3P7scPDDEeOKPKE9au0oug" name="ProblemObservation2">
     <ownedComment xmi:id="_xAdH4PDCEeOKPKE9au0oug">
-      <body>This template reflects a discrete observation about a patient's problem. Because it is a discrete observation, it will have a statusCode of &quot;completed&quot;. The effectiveTime, also referred to as the &quot;biologically relevant time&quot; is the time at which the observation holds for the patient. For a provider seeing a patient in the clinic today, observing a history of heart attack that occurred five years ago, the effectiveTime is five years ago. &#xD;
-The effectiveTime of the Problem Observation is the definitive indication of whether or not the underlying condition is resolved. If the problem is known to be resolved, then an effectiveTime/high would be present. If the date of resolution is not known, then effectiveTime/high will be present with a nullFlavor of &quot;UNK&quot;.</body>
+      <body>&lt;p>&#xD;
+This template reflects a discrete observation about a patient's problem. Because it is a discrete observation, it will have a statusCode of &quot;completed&quot;. The effectiveTime, also referred to as the &quot;biologically relevant time&quot; is the time at which the observation holds for the patient. For a provider seeing a patient in the clinic today, observing a history of heart attack that occurred five years ago, the effectiveTime is five years ago.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The effectiveTime of the Problem Observation is the definitive indication of whether or not the underlying condition is resolved. If the problem is known to be resolved, then an effectiveTime/high would be present. If the date of resolution is not known, then effectiveTime/high will be present with a nullFlavor of &quot;UNK&quot;.&#xD;
+&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_SPweoMm6EeSr1c1X9ACWbg" name="hasTextReference">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_SPweocm6EeSr1c1X9ACWbg">
@@ -1289,9 +1276,7 @@ The effectiveTime of the Problem Observation is the definitive indication of whe
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OWRKUfDOEeOKPKE9au0oug"/>
       <association href="../consol.uml#_OWS_gPDOEeOKPKE9au0oug"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_52ZjkMm4EeSr1c1X9ACWbg" name="code" visibility="private" aggregation="composite" redefinedProperty="_6-UyQBUyEeGbmN_W114JUw">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:id="_52ZjkMm4EeSr1c1X9ACWbg" name="code" visibility="private" type="_y3_GkE9oEeWsIc5CMrI4GA" aggregation="composite" redefinedProperty="_6-UyQBUyEeGbmN_W114JUw"/>
     <ownedAttribute xmi:id="_CSKZgMm6EeSr1c1X9ACWbg" name="text" visibility="private" aggregation="composite" redefinedProperty="_zGbQJCAuEeGetMjKLkqR8g">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CSKZgcm6EeSr1c1X9ACWbg"/>
@@ -1303,6 +1288,9 @@ The effectiveTime of the Problem Observation is the definitive indication of whe
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8NsgMsm6EeSr1c1X9ACWbg" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_hNARsPDMEeOKPKE9au0oug" name="CD">
+      <ownedComment xmi:id="_9CAYoE9qEeWsIc5CMrI4GA">
+        <body>INLINE</body>
+      </ownedComment>
       <generalization xmi:id="_hNA4wPDMEeOKPKE9au0oug">
         <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </generalization>
@@ -1326,57 +1314,65 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_y3_GkE9oEeWsIc5CMrI4GA" name="CDCode">
+      <ownedComment xmi:id="_-CxSEE9qEeWsIc5CMrI4GA">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_y3_toE9oEeWsIc5CMrI4GA">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_zWj48E9oEeWsIc5CMrI4GA" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4vP04U9oEeWsIc5CMrI4GA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4vP04E9oEeWsIc5CMrI4GA" value="*"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_tIFIIPDCEeOKPKE9au0oug" base_Class="_prDAkPDCEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.4" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-14926</ruleId>
-    <ruleId>CONF:1098-14927</ruleId>
-    <ruleId>CONF:1098-32508</ruleId>
+  <CDA:CDATemplate xmi:id="_tIFIIPDCEeOKPKE9au0oug" base_Class="_prDAkPDCEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.4" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-14926, CONF:1198-14927, CONF:1198-32508</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_zgiCgPDDEeOKPKE9au0oug" base_Generalization="_prGD4PDCEeOKPKE9au0oug"/>
   <CDA:PropertyValidation xmi:id="_LLteY_DEEeOKPKE9au0oug" base_Property="_LLteYPDEEeOKPKE9au0oug">
-    <ruleId>CONF:1098-9050</ruleId>
+    <ruleId>CONF:1198-9050</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_dJUTc_DEEeOKPKE9au0oug" severity="INFO" base_Property="_dJUTcPDEEeOKPKE9au0oug">
-    <ruleId>CONF:1098-10139</ruleId>
+    <ruleId>CONF:1198-10139</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_8_sPI_DEEeOKPKE9au0oug" base_Constraint="_8_sPIPDEEeOKPKE9au0oug">
-    <ruleId>CONF:1098-15603</ruleId>
+    <ruleId>CONF:1198-15603</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_9fzSk_DEEeOKPKE9au0oug" severity="INFO" base_Constraint="_9fzSkPDEEeOKPKE9au0oug">
-    <ruleId>CONF:1098-15604</ruleId>
+    <ruleId>CONF:1198-15604</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="__YbWMPDGEeOKPKE9au0oug" memberEnd="__YZhAPDGEeOKPKE9au0oug __Yb9QPDGEeOKPKE9au0oug">
     <ownedEnd xmi:id="__Yb9QPDGEeOKPKE9au0oug" type="_prDAkPDCEeOKPKE9au0oug" association="__YbWMPDGEeOKPKE9au0oug"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_E5kqkPDHEeOKPKE9au0oug" severity="INFO" base_Association="__YbWMPDGEeOKPKE9au0oug" typeCode="REFR">
-    <ruleId>CONF:1098-29951</ruleId>
-    <ruleId>CONF:1098-31531</ruleId>
-    <ruleId>CONF:1098-29952</ruleId>
+    <ruleId>CONF:1198-29951, CONF:1198-31531, CONF:1198-29952</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_5Y9xUPDKEeOKPKE9au0oug" memberEnd="_5Y78IPDKEeOKPKE9au0oug _5Y9xUfDKEeOKPKE9au0oug">
     <ownedEnd xmi:id="_5Y9xUfDKEeOKPKE9au0oug" type="_prDAkPDCEeOKPKE9au0oug" association="_5Y9xUPDKEeOKPKE9au0oug"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_DUJBAPDLEeOKPKE9au0oug" severity="INFO" base_Association="_5Y9xUPDKEeOKPKE9au0oug" typeCode="REFR">
-    <ruleId>CONF:1098-31063</ruleId>
-    <ruleId>CONF:1098-31532</ruleId>
-    <ruleId>CONF:1098-31064</ruleId>
+    <ruleId>CONF:1198-31063, CONF:1198-31532, CONF:1198-31064</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_UxJqcPDLEeOKPKE9au0oug" memberEnd="_UxHOMPDLEeOKPKE9au0oug _UxJqcfDLEeOKPKE9au0oug">
     <ownedEnd xmi:id="_UxJqcfDLEeOKPKE9au0oug" type="_prDAkPDCEeOKPKE9au0oug" association="_UxJqcPDLEeOKPKE9au0oug"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_VckmAPDLEeOKPKE9au0oug" severity="WARNING" base_Association="_UxJqcPDLEeOKPKE9au0oug">
-    <ruleId>CONF:1098-31147</ruleId>
+    <ruleId>CONF:1198-31147</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_bZKDwPDMEeOKPKE9au0oug" base_Property="_bZJcsPDMEeOKPKE9au0oug" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:1098-9058</ruleId>
+    <ruleId>CONF:1198-9058</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_bZL48PDMEeOKPKE9au0oug" base_Property="_bZJcsPDMEeOKPKE9au0oug"/>
   <CDA:PropertyValidation xmi:id="_kTm2QPDMEeOKPKE9au0oug" severity="INFO" base_Property="_hztFUPDMEeOKPKE9au0oug">
-    <ruleId>CONF:1098-31870</ruleId>
+    <ruleId>CONF:1198-31870</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_-Q4QkPDMEeOKPKE9au0oug" severity="INFO" base_Property="_9k3fIPDMEeOKPKE9au0oug">
-    <ruleId>CONF:1098-31871</ruleId>
+    <ruleId>CONF:1198-31871</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_wOP0IPifEeOXlK95I8tUew" memberEnd="_wON-8PifEeOXlK95I8tUew _wOQbMPifEeOXlK95I8tUew">
     <ownedEnd xmi:id="_wOQbMPifEeOXlK95I8tUew" type="_y5C8IOzbEeOnE-G4kptBiw" association="_wOP0IPifEeOXlK95I8tUew"/>
@@ -1512,16 +1508,16 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
     <ruleId>CONF:1098-9074</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_52axsMm4EeSr1c1X9ACWbg" base_Property="_52ZjkMm4EeSr1c1X9ACWbg" severity="WARNING">
-    <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
-    <ruleId>CONF:9045</ruleId>
+    <reference href="../consol-vocab.uml#_ngam0Ez2EeWJ65CktI2ODQ"/>
+    <ruleId>CONF:1198-9045</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_52d1AMm4EeSr1c1X9ACWbg" base_Property="_52ZjkMm4EeSr1c1X9ACWbg"/>
   <CDA:CodeSystemConstraint xmi:id="_8NtHQMm6EeSr1c1X9ACWbg" code="completed" displayName="Completed" base_Property="_8NsgMMm6EeSr1c1X9ACWbg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-19112</ruleId>
+    <ruleId>CONF:1198-19112</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_-kpJcMm6EeSr1c1X9ACWbg" base_Property="_8NsgMMm6EeSr1c1X9ACWbg">
-    <ruleId>CONF:1098-9049</ruleId>
+    <ruleId>CONF:1198-9049</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_a9gQsPgDEeSx6PQhw3nAUw" severity="INFO" base_Property="_Z0MfQPgDEeSx6PQhw3nAUw">
     <ruleId>CONF:1198-32802</ruleId>
@@ -1548,4 +1544,9 @@ For example, SNOMED CT allows constructing concepts as a combination of multiple
   <CDA:ConstraintValidation xmi:id="_ZOxR8BaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_RGF6oMEkEeSjB6vMjDsL5Q"/>
   <CDA:ConstraintValidation xmi:id="_ZsFgEBaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_UJBgIMEkEeSjB6vMjDsL5Q"/>
   <CDA:ConstraintValidation xmi:id="_cDQLwBaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_YgU3kMEkEeSjB6vMjDsL5Q"/>
+  <CDA:PropertyValidation xmi:id="_3bREgE9oEeWsIc5CMrI4GA" base_Property="_zWj48E9oEeWsIc5CMrI4GA"/>
+  <CDA:ValueSetConstraint xmi:id="_5ALM0E9oEeWsIc5CMrI4GA" base_Property="_zWj48E9oEeWsIc5CMrI4GA" severity="WARNING">
+    <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
+    <ruleId>CONF:1198-32848</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>

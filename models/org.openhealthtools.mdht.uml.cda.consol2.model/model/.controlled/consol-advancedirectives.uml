@@ -216,20 +216,17 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_u5G5QBnaEeGs5a462vYX5Q" base_Class="_2KlEwBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.48">
-    <ruleId>CONF:8655</ruleId>
-    <ruleId>CONF:10485</ruleId>
+    <ruleId>CONF:8655, CONF:10485</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2LEM8hSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_2LE0AhSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2KnhARSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2KoIEBSVEeGGzu7fmW9pXw" base_Constraint="_2KlExRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8657</ruleId>
-    <ruleId>CONF:8658</ruleId>
+    <ruleId>CONF:8657, CONF:8658</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2KovIBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2KovIRSVEeGGzu7fmW9pXw" base_Constraint="_2KlEyhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8659</ruleId>
-    <ruleId>CONF:8660</ruleId>
+    <ruleId>CONF:8659, CONF:8660</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_2KpWMBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2Kp9QBSVEeGGzu7fmW9pXw"/>
@@ -240,16 +237,13 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
   <CDA:ConstraintValidation xmi:id="_2KrycBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2KsZgBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2KtAkhSVEeGGzu7fmW9pXw" base_Property="_2KtAkBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8648</ruleId>
-    <ruleId>R2.0=CONF:1098-8648</ruleId>
+    <ruleId>CONF:8648, R2.1=CONF:1198-8648</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2KtnohSVEeGGzu7fmW9pXw" base_Property="_2KtnoBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8649</ruleId>
-    <ruleId>R2.0=CONF:1098-8649</ruleId>
+    <ruleId>CONF:8649, R2.1=CONF:1198-8649</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2KtnphSVEeGGzu7fmW9pXw" base_Property="_2KtnoxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8654</ruleId>
-    <ruleId>R2.0=CONF:1098-8654</ruleId>
+    <ruleId>CONF:8654, R2.1=CONF:1198-8654</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2KmS4BSVEeGGzu7fmW9pXw" base_Property="_2KlE3hSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2LHQRxSVEeGGzu7fmW9pXw"/>
@@ -257,9 +251,7 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_2KuOsRSVEeGGzu7fmW9pXw" code="completed" displayName="Completed" base_Property="_2KuOsBSVEeGGzu7fmW9pXw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:8652</ruleId>
-    <ruleId>R2.0=CONF:1098-8652</ruleId>
-    <ruleId>R2.0=CONF:1098-19082</ruleId>
+    <ruleId>CONF:8652, R2.1=CONF:1198-8652, R2.1=CONF:1198-19082</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2KnhABSVEeGGzu7fmW9pXw" base_Property="_2KlE3xSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8656</ruleId>
@@ -362,8 +354,7 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
     <ownedEnd xmi:id="_GTulQSshEeGQ5rkpDKAt8A" type="_2KlEwBSVEeGGzu7fmW9pXw" association="_GTulQCshEeGQ5rkpDKAt8A"/>
   </uml:Association>
   <CDA:PropertyValidation xmi:id="_Ed9w0HhtEeGJtvg2iiStYg" severity="INFO" base_Property="_WJKpYCsgEeGQ5rkpDKAt8A">
-    <ruleId>CONF:8696</ruleId>
-    <ruleId>R2.0=CONF:1098-8696</ruleId>
+    <ruleId>CONF:8696, R2.1=CONF:1198-8696</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_iJJAQHhtEeGJtvg2iiStYg" base_Property="_2KjPkBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8645</ruleId>
@@ -457,16 +448,24 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_GnllUK-9EeO8duI_7f6kZw" clientDependency="_4mXW8LBkEeOtlapy2HWYww" name="AdvanceDirectiveObservation2">
     <ownedComment xmi:id="_V-vVgK-9EeO8duI_7f6kZw">
-      <body>This clinical statement represents Advance Directive Observation findings (e.g., &quot;resuscitation status is Full Code&quot;) rather than orders. It should not be considered a legal document or a substitute for the actual Advance Directive document. The related legal documents are referenced using the reference/externalReference element.&#xD;
+      <body>&lt;p>&#xD;
+This clinical statement represents Advance Directive Observation findings (e.g., &quot;resuscitation status is Full Code&quot;) rather than orders. It should not be considered a legal document or a substitute for the actual Advance Directive document. The related legal documents are referenced using the reference/externalReference element.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
 The Advance Directive Observation describes the patient's directives, including but not limited to:&#xD;
-Medications&#xD;
-Transfer of Care to Hospital&#xD;
-Treatment&#xD;
-Procedures&#xD;
-Intubation and Ventilation&#xD;
-Diagnostic Tests&#xD;
-Tests&#xD;
-The general category of the patient's directive is documented in the observation/code element. The observation/value element contains the detailed patient directive which may be coded or text. For example, a category directive may be antibiotics, and the details would be intravenous antibiotics only.</body>
+&lt;ul>&#xD;
+&lt;li>Medications&lt;/li>&#xD;
+&lt;li>Transfer of Care to Hospital&lt;/li>&#xD;
+&lt;li>Treatment&lt;/li>&#xD;
+&lt;li>Procedures&lt;/li>&#xD;
+&lt;li>Intubation and Ventilation&lt;/li>&#xD;
+&lt;li>Diagnostic Tests&lt;/li>&#xD;
+&lt;li>Tests&lt;/li>&#xD;
+&lt;/ul>&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The observation/value element contains the detailed patient directive which may be coded or text. For example, a category directive may be antibiotics, and the details would be intravenous antibiotics only.&#xD;
+&lt;/p></body>
     </ownedComment>
     <ownedRule xmi:id="_B2cNcKvXEeS-mulaI3YUlw" name="hasStartingTime" constrainedElement="_GnllUK-9EeO8duI_7f6kZw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_59fpUKvYEeS-mulaI3YUlw">
@@ -486,9 +485,7 @@ The general category of the patient's directive is documented in the observation
     </ownedRule>
     <generalization xmi:id="_GnmMYK-9EeO8duI_7f6kZw" general="_2KlEwBSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_4mXW8LBkEeOtlapy2HWYww" name="AdvanceDirectiveObservation" client="_GnllUK-9EeO8duI_7f6kZw" supplier="_2KlEwBSVEeGGzu7fmW9pXw" contract="_2KlEwBSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="_iRIecLEhEeOtlapy2HWYww" name="code" visibility="private" redefinedProperty="_2KlE3hSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:id="_iRIecLEhEeOtlapy2HWYww" name="code" visibility="private" type="_I-YekExLEeWJ65CktI2ODQ" redefinedProperty="_2KlE3hSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_3KFfwLEgEeOtlapy2HWYww" name="effectiveTime" visibility="private" type="_9grOYLEgEeOtlapy2HWYww" aggregation="composite" redefinedProperty="_2KlE3xSVEeGGzu7fmW9pXw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3KFfwrEgEeOtlapy2HWYww" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3KFfwbEgEeOtlapy2HWYww" value="1"/>
@@ -659,59 +656,69 @@ The general category of the patient's directive is documented in the observation
         </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_I-YekExLEeWJ65CktI2ODQ" name="CD">
+      <ownedComment xmi:id="_K1w28ExLEeWJ65CktI2ODQ">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_I-ZFoExLEeWJ65CktI2ODQ">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_NaJfQExLEeWJ65CktI2ODQ" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VvuDEUxLEeWJ65CktI2ODQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VvuDEExLEeWJ65CktI2ODQ" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_LsOj4K-9EeO8duI_7f6kZw" base_Class="_GnllUK-9EeO8duI_7f6kZw" templateId="2.16.840.1.113883.10.20.22.4.48" templateVersion="2014-06-09">
-    <ruleId>CONF:1098-8655</ruleId>
-    <ruleId>CONF:1098-10485</ruleId>
-    <ruleId>CONF:1098-32496</ruleId>
+  <CDA:CDATemplate xmi:id="_LsOj4K-9EeO8duI_7f6kZw" base_Class="_GnllUK-9EeO8duI_7f6kZw" templateId="2.16.840.1.113883.10.20.22.4.48" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-8655, CONF:1198-10485, CONF:1198-32496</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_YFwFUK-9EeO8duI_7f6kZw" base_Generalization="_GnmMYK-9EeO8duI_7f6kZw"/>
   <CDA:PropertyValidation xmi:id="_E3ECkLEgEeOtlapy2HWYww" base_Property="_AKj3MLEgEeOtlapy2HWYww">
-    <ruleId>CONF:1098-30804</ruleId>
+    <ruleId>CONF:1198-30804</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_3KGG0LEgEeOtlapy2HWYww" base_Property="_3KFfwLEgEeOtlapy2HWYww">
-    <ruleId>CONF:1098-8656</ruleId>
+    <ruleId>CONF:1198-8656</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_CdZnELEhEeOtlapy2HWYww" base_Property="_BVzs4LEhEeOtlapy2HWYww">
-    <ruleId>CONF:1098-28719</ruleId>
+    <ruleId>CONF:1198-28719</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_iRK6sLEhEeOtlapy2HWYww" base_Property="_iRIecLEhEeOtlapy2HWYww">
-    <ruleId>CONF:1098-8651</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_iRK6sLEhEeOtlapy2HWYww" base_Property="_iRIecLEhEeOtlapy2HWYww"/>
   <CDA:PropertyValidation xmi:id="_2xJ8MLE9EeOtlapy2HWYww" severity="WARNING" base_Property="_2xJVILE9EeOtlapy2HWYww">
-    <ruleId>CONF:1098-8672</ruleId>
+    <ruleId>CONF:1198-8672</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_5u_I0LFJEeOtlapy2HWYww" severity="INFO" base_Property="_3ZLE07FFEeOtlapy2HWYww">
-    <ruleId>CONF:1098-28454</ruleId>
+    <ruleId>CONF:1198-28454</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_DtG-0LFKEeOtlapy2HWYww" severity="WARNING" base_Property="_3ZLE0LFFEeOtlapy2HWYww"/>
   <CDA:ValueSetConstraint xmi:id="_3tQFILFKEeOtlapy2HWYww" base_Property="_3ZLE0LFFEeOtlapy2HWYww" severity="WARNING">
     <reference href="../consol-vocab.uml#_I2mywLFLEeOtlapy2HWYww"/>
-    <ruleId>CONF:1098-28429</ruleId>
+    <ruleId>CONF:1198-28429</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__C7_oLFSEeOtlapy2HWYww" severity="WARNING" base_Property="_8ej-YLFSEeOtlapy2HWYww"/>
   <CDA:ValueSetConstraint xmi:id="_AQ1WILFTEeOtlapy2HWYww" base_Property="_8ej-YLFSEeOtlapy2HWYww" severity="WARNING">
     <reference href="../consol-vocab.uml#_x4P9YZ6CEeOr4eM3k36wAg"/>
-    <ruleId>CONF:1098-28440</ruleId>
+    <ruleId>CONF:1198-28440</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_XXVXoLFTEeOtlapy2HWYww" severity="WARNING" base_Property="_XXUwkLFTEeOtlapy2HWYww">
-    <ruleId>CONF:1098-8671</ruleId>
+    <ruleId>CONF:1198-8671</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_iHQBhrFUEeOtlapy2HWYww" base_Property="_iHQBg7FUEeOtlapy2HWYww">
-    <ruleId>CONF:1098-8673</ruleId>
+    <ruleId>CONF:1198-8673</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_q9r2sLFUEeOtlapy2HWYww" severity="WARNING" base_Property="_iHQBgLFUEeOtlapy2HWYww"/>
   <CDA:ValueSetConstraint xmi:id="_sOfXQLFUEeOtlapy2HWYww" base_Property="_iHQBgLFUEeOtlapy2HWYww" severity="WARNING">
     <reference href="../consol-vocab.uml#_I2mywLFLEeOtlapy2HWYww"/>
-    <ruleId>CONF:1098-28444</ruleId>
+    <ruleId>CONF:1198-28444</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_LU9DgLFWEeOtlapy2HWYww" severity="WARNING" base_Property="_EnlzoLFWEeOtlapy2HWYww"/>
   <CDA:ValueSetConstraint xmi:id="_NuixELFWEeOtlapy2HWYww" base_Property="_EnlzoLFWEeOtlapy2HWYww" severity="WARNING">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
-    <ruleId>CONF:1098-28446</ruleId>
+    <ruleId>CONF:1198-28446</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_W6N2cLFWEeOtlapy2HWYww" severity="INFO" base_Property="_EnlMkLFWEeOtlapy2HWYww">
-    <ruleId>CONF:1098-28451</ruleId>
+    <ruleId>CONF:1198-28451</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_jsKhYAFXEeSLIY0bHb-fFQ" clientDependency="_8GwoAAFXEeSLIY0bHb-fFQ" name="AdvanceDirectivesSectionEntriesOptional2">
     <ownedComment xmi:id="_pViksAFXEeSLIY0bHb-fFQ">
@@ -865,26 +872,20 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
   <CDA:ConstraintValidation xmi:id="_RoXMQKJOEeSOc57SOMra_g" base_Constraint="_qbVzIKJNEeSOc57SOMra_g">
     <ruleId>CONF:1198-32881</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:CodeSystemConstraint xmi:id="_vE_ykKvUEeS-mulaI3YUlw" code="75278-2" displayName="Advance directive status" base_Property="_iRIecLEhEeOtlapy2HWYww">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-32786</ruleId>
-    <ruleId>CONF:1098-32787</ruleId>
-  </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_7saJkKvVEeS-mulaI3YUlw" base_Property="_7HqdwKvVEeS-mulaI3YUlw">
-    <ruleId>CONF:1098-15521</ruleId>
+    <ruleId>CONF:1198-15521</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_MRFAUKvXEeS-mulaI3YUlw" base_Constraint="_FPudcKvXEeS-mulaI3YUlw">
-    <ruleId>CONF:1098-32449</ruleId>
+    <ruleId>CONF:1198-32449</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_jci6AKvaEeS-mulaI3YUlw" memberEnd="_jchr4KvaEeS-mulaI3YUlw _jcjhEKvaEeS-mulaI3YUlw">
     <ownedEnd xmi:id="_jcjhEKvaEeS-mulaI3YUlw" type="_GnllUK-9EeO8duI_7f6kZw" association="_jci6AKvaEeS-mulaI3YUlw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_kLxXgKvaEeS-mulaI3YUlw" severity="WARNING" base_Association="_jci6AKvaEeS-mulaI3YUlw">
-    <ruleId>CONF:1098-32406</ruleId>
+    <ruleId>CONF:1198-32406</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_6MdLAKvbEeS-mulaI3YUlw" message="Consol Verifier SHOULD contain zero or one [0..1] time with @xsi:type=&quot;TS&quot; (CONF:1098-8665, CONF:1098-8666)" severity="WARNING" base_Property="_6Mcj8KvbEeS-mulaI3YUlw">
-    <ruleId>CONF:1098-8665</ruleId>
-    <ruleId>CONF:1098-8666</ruleId>
+    <ruleId>CONF:1198-8665, CONF:1198-8666</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="_qtzP0_mnEeSGHoih4Jm09A" memberEnd="_qtzP0PmnEeSGHoih4Jm09A _qtzP1PmnEeSGHoih4Jm09A">
     <ownedEnd xmi:id="_qtzP1PmnEeSGHoih4Jm09A" type="_Z8VQYIlFEeOJGtGyq_dBbA" association="_qtzP0_mnEeSGHoih4Jm09A"/>
@@ -907,4 +908,20 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
     <ruleId>CONF:1198-32930</ruleId>
     <ruleId>CONF:1198-32931</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="__p-JYExJEeWJ65CktI2ODQ" base_Property="_iRIecLEhEeOtlapy2HWYww" severity="WARNING">
+    <reference href="../consol-vocab.uml#_PDM9OUxKEeWJ65CktI2ODQ"/>
+    <ruleId>CONF:1198-8651</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_RN5dsExLEeWJ65CktI2ODQ" base_Property="_NaJfQExLEeWJ65CktI2ODQ">
+    <ruleId>CONF:1198-32842</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_Y51OoExLEeWJ65CktI2ODQ" code="75320-2" displayName="Advance directive" base_Property="_NaJfQExLEeWJ65CktI2ODQ">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-32843</ruleId>
+    <ruleId>CONF:1198-32844</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_zNvK0ExMEeWJ65CktI2ODQ" base_Class="_mU0BYLFEEeOtlapy2HWYww" templateId="2.16.840.1.113883.10.20.1.58">
+    <ruleId>CONF:1198-8664</ruleId>
+    <ruleId>CONF:1198-10486</ruleId>
+  </CDA:CDATemplate>
 </xmi:XMI>
