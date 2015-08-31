@@ -26,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyConcernAct2Oper
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyProblemActOperations;
 import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
 import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
@@ -39,13 +37,8 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 IVLTS Low</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyConcernAct2IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Concern Act2 IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#getConsolAllergyObservation2s() <em>Get Consol Allergy Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActEffectiveTimeLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Effective Time Low</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActEffectiveTimeHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Effective Time High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActAllergyObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act Allergy Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2#validateAllergyProblemActCDCodeAndCodeSystemValues(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Problem Act CD Code And Code System Values</em>}</li>
@@ -114,78 +107,6 @@ public class AllergyConcernAct2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAllergyConcernAct2IVLTSLow() {
-		OperationsTestCase<AllergyConcernAct2> validateAllergyConcernAct2IVLTSLowTestCase = new OperationsTestCase<AllergyConcernAct2>(
-			"validateAllergyConcernAct2IVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_CONCERN_ACT2_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyConcernAct2 target) {
-				target.init();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.setEffectiveTime(ts);
-			}
-
-			@Override
-			protected void updateToPass(AllergyConcernAct2 target) {
-				IVXB_TS low = DatatypesFactory.eINSTANCE.createIVXB_TS();
-				low.setValue(PRECISE_TO_DAY);
-				target.getEffectiveTime().setLow(low);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyConcernAct2Operations.validateAllergyConcernAct2IVLTSLow(
-					(AllergyConcernAct2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyConcernAct2IVLTSLowTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAllergyConcernAct2IVLTSHigh() {
-		OperationsTestCase<AllergyConcernAct2> validateAllergyConcernAct2IVLTSHighTestCase = new OperationsTestCase<AllergyConcernAct2>(
-			"validateAllergyConcernAct2IVLTSHigh",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_CONCERN_ACT2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyConcernAct2 target) {
-				target.init();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.setEffectiveTime(ts);
-			}
-
-			@Override
-			protected void updateToPass(AllergyConcernAct2 target) {
-				target.getEffectiveTime().setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyConcernAct2Operations.validateAllergyConcernAct2IVLTSHigh(
-					(AllergyConcernAct2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyConcernAct2IVLTSHighTestCase.doValidationTest();
-	}
-
-	/**
-	*
 	* @generated
 	*/
 	@Test
@@ -223,7 +144,7 @@ public class AllergyConcernAct2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyConcernAct2Operations.validateAllergyProblemActEffectiveTimeLow(
+				return AllergyProblemActOperations.validateAllergyProblemActEffectiveTimeLow(
 					(AllergyConcernAct2) objectToTest, diagnostician, map);
 			}
 
@@ -259,7 +180,7 @@ public class AllergyConcernAct2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyConcernAct2Operations.validateAllergyProblemActEffectiveTimeHigh(
+				return AllergyProblemActOperations.validateAllergyProblemActEffectiveTimeHigh(
 					(AllergyConcernAct2) objectToTest, diagnostician, map);
 			}
 
@@ -510,43 +431,6 @@ public class AllergyConcernAct2Test extends CDAValidationTest {
 		};
 
 		validateAllergyProblemActCDCodeSystemTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateAllergyProblemActEffectiveTime() {
-		OperationsTestCase<AllergyConcernAct2> validateAllergyProblemActEffectiveTimeTestCase = new OperationsTestCase<AllergyConcernAct2>(
-			"validateAllergyProblemActEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AllergyConcernAct2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AllergyConcernAct2 target) {
-				target.init();
-
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.setEffectiveTime(ts);
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AllergyConcernAct2Operations.validateAllergyProblemActEffectiveTime(
-					(AllergyConcernAct2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAllergyProblemActEffectiveTimeTestCase.doValidationTest();
 	}
 
 	/**
