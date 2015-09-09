@@ -11028,7 +11028,7 @@ Note: The section/code SHOULD be selected from LOINC or DICOM for sections not l
   <uml:Association xmi:id="_tqUYgCPFEeS4d9o7u1_H3A" memberEnd="_tqUYgiPFEeS4d9o7u1_H3A _tqUYgSPFEeS4d9o7u1_H3A">
     <ownedEnd xmi:id="_tqUYgSPFEeS4d9o7u1_H3A" type="_4JRRsCJnEeSBLYc2hU6GfA" association="_tqUYgCPFEeS4d9o7u1_H3A"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_tqU_kCPFEeS4d9o7u1_H3A" message="SHALL NOT contain [0..0] informant (CONF:1098-8410)" base_Association="_tqUYgCPFEeS4d9o7u1_H3A">
+  <CDA:AssociationValidation xmi:id="_tqU_kCPFEeS4d9o7u1_H3A" message="Consol Diagnostic Imaging Report2 SHALL NOT contain [0..0] informant (CONF:1198-8410)" base_Association="_tqUYgCPFEeS4d9o7u1_H3A">
     <ruleId>CONF:1198-8410</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_tqU_kSPFEeS4d9o7u1_H3A" base_Association="_tqUYgCPFEeS4d9o7u1_H3A">
