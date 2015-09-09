@@ -246,6 +246,7 @@ public class ResultObservation2Test extends CDAValidationTest {
 	*/
 	@Test
 	public void testValidateResultObservation2ReferenceRangeObservationRangeCode() {
+		// Note: Modified operation OCL due to inline OCL 0..0 generation issue
 		OperationsTestCase<ResultObservation2> validateResultObservation2ReferenceRangeObservationRangeCodeTestCase = new OperationsTestCase<ResultObservation2>(
 			"validateResultObservation2ReferenceRangeObservationRangeCode",
 			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
@@ -258,11 +259,12 @@ public class ResultObservation2Test extends CDAValidationTest {
 				ObservationRange or = CDAFactory.eINSTANCE.createObservationRange();
 				rr.setObservationRange(or);
 				target.getReferenceRanges().add(rr);
+				target.getReferenceRanges().get(0).getObservationRange().setCode(DatatypesFactory.eINSTANCE.createCD());
 			}
 
 			@Override
 			protected void updateToPass(ResultObservation2 target) {
-				target.getReferenceRanges().get(0).getObservationRange().setCode(DatatypesFactory.eINSTANCE.createCD());
+				target.getReferenceRanges().get(0).getObservationRange().setCode(null);
 			}
 
 			@Override
