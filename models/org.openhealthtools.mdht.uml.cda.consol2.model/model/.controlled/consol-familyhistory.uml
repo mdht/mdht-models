@@ -435,7 +435,7 @@
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_e0um0IV5EeSRBMdZotACQg" base_Class="_YvV88IV5EeSRBMdZotACQg" templateId="2.16.840.1.113883.10.20.22.4.46" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_e0um0IV5EeSRBMdZotACQg" base_Class="_YvV88IV5EeSRBMdZotACQg" templateId="2.16.840.1.113883.10.20.22.4.46" templateVersion="2015-08-01">
     <ruleId>CONF:1198-8599, CONF:1198-10496, CONF:1198-32605</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_chN2oIV6EeSRBMdZotACQg" base_Generalization="_YvZAQIV5EeSRBMdZotACQg"/>
