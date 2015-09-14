@@ -426,7 +426,7 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
   <CDA:PropertyValidation xmi:id="_rs22QIlGEeOJGtGyq_dBbA" base_Property="_IBSxs4lGEeOJGtGyq_dBbA">
     <ruleId>CONF:1098-28418</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CDATemplate xmi:id="_v_vnwIlGEeOJGtGyq_dBbA" base_Class="_Z8VQYIlFEeOJGtGyq_dBbA" templateId="2.16.840.1.113883.10.20.22.4.108">
+  <CDA:CDATemplate xmi:id="_v_vnwIlGEeOJGtGyq_dBbA" base_Class="_Z8VQYIlFEeOJGtGyq_dBbA" templateId="2.16.840.1.113883.10.20.22.4.108" templateVersion="2015-08-01">
     <ruleId>CONF:1098-28412</ruleId>
     <ruleId>CONF:1098-28413</ruleId>
   </CDA:CDATemplate>

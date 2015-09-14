@@ -464,7 +464,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eLM3oIb4EeSxzopshBnQuw" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_V0HNsIb0EeSxzopshBnQuw" base_Class="_6whQEIbpEeSxzopshBnQuw" templateId="2.16.840.1.113883.10.20.22.4.45" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_V0HNsIb0EeSxzopshBnQuw" base_Class="_6whQEIbpEeSxzopshBnQuw" templateId="2.16.840.1.113883.10.20.22.4.45" templateVersion="2015-08-01">
     <ruleId>CONF:1098-8604</ruleId>
     <ruleId>CONF:1098-10497</ruleId>
     <ruleId>CONF:1098-32606</ruleId>

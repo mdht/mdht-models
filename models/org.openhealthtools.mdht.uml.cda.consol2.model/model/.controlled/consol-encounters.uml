@@ -473,7 +473,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X3uK4Pf_EeOYeZoWJF5yyQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_wJ4rAMzNEeO93sHu8pHB2g" base_Class="_jH6CcMzNEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.80" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_wJ4rAMzNEeO93sHu8pHB2g" base_Class="_jH6CcMzNEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.80" templateVersion="2015-08-01">
     <ruleId>CONF:1098-14895</ruleId>
     <ruleId>CONF:1098-14896</ruleId>
     <ruleId>CONF:1098-32542</ruleId>

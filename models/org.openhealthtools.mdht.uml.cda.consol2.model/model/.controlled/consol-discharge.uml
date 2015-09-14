@@ -882,7 +882,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K8ZxsPgEEeOYeZoWJF5yyQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_ex9owOEMEeOmBMTtnrPqww" base_Class="_Trd1cOEMEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.33" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_ex9owOEMEeOmBMTtnrPqww" base_Class="_Trd1cOEMEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.33" templateVersion="2015-08-01">
     <ruleId>CONF:1098-16764</ruleId>
     <ruleId>CONF:1098-16765</ruleId>
     <ruleId>CONF:1098-32534</ruleId>

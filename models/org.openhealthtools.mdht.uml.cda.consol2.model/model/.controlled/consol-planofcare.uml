@@ -1118,7 +1118,7 @@ Health concerns require intervention(s) to increase the likelihood of achieving 
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_iF4mYI9kEeOB0eBUISUB4Q" base_Class="_An8P8I9kEeOB0eBUISUB4Q" templateId="2.16.840.1.113883.10.20.22.4.132">
+  <CDA:CDATemplate xmi:id="_iF4mYI9kEeOB0eBUISUB4Q" base_Class="_An8P8I9kEeOB0eBUISUB4Q" templateId="2.16.840.1.113883.10.20.22.4.132" templateVersion="2015-08-01">
     <ruleId>CONF:1098-30752</ruleId>
     <ruleId>CONF:1098-30753</ruleId>
   </CDA:CDATemplate>
@@ -1400,7 +1400,7 @@ All interventions referenced in an Intervention Act must have a moodCode of EVN,
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_cpHPEJA9EeOZX935IVJfOg" base_Class="_XD5vgJA8EeOZX935IVJfOg" templateId="2.16.840.1.113883.10.20.22.4.131">
+  <CDA:CDATemplate xmi:id="_cpHPEJA9EeOZX935IVJfOg" base_Class="_XD5vgJA8EeOZX935IVJfOg" templateId="2.16.840.1.113883.10.20.22.4.131" templateVersion="2015-08-01">
     <ruleId>CONF:1098-30973</ruleId>
     <ruleId>CONF:1098-30974</ruleId>
   </CDA:CDATemplate>
@@ -3559,7 +3559,7 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_3D6IYOLTEeS505YV9ux2XA" base_Class="_dGARYOLSEeS505YV9ux2XA" templateId="2.16.840.1.113883.10.20.22.4.146">
+  <CDA:CDATemplate xmi:id="_3D6IYOLTEeS505YV9ux2XA" base_Class="_dGARYOLSEeS505YV9ux2XA" templateId="2.16.840.1.113883.10.20.22.4.146" templateVersion="2015-08-01">
     <ruleId>CONF:1098-32653</ruleId>
     <ruleId>CONF:1098-32680</ruleId>
   </CDA:CDATemplate>
@@ -4052,7 +4052,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
       </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_VZQOkON2EeS_XOr-dz_KWA" base_Class="_mMk3QON1EeS_XOr-dz_KWA" templateId="2.16.840.1.113883.10.20.22.4.136">
+  <CDA:CDATemplate xmi:id="_VZQOkON2EeS_XOr-dz_KWA" base_Class="_mMk3QON1EeS_XOr-dz_KWA" templateId="2.16.840.1.113883.10.20.22.4.136" templateVersion="2015-08-01">
     <ruleId>CONF:1098-32180</ruleId>
     <ruleId>CONF:1098-32222</ruleId>
   </CDA:CDATemplate>

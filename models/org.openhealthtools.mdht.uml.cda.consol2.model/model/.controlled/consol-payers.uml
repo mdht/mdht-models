@@ -1035,7 +1035,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <ruleId>CONF:1098-19160</ruleId>
     <ruleId>CONF:1098-32156</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CDATemplate xmi:id="_sazhQLkxEeODDJAC5t5vpw" base_Class="_aJr6ULkxEeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.60" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_sazhQLkxEeODDJAC5t5vpw" base_Class="_aJr6ULkxEeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.60" templateVersion="2015-08-01">
     <ruleId>CONF:1098-8897</ruleId>
     <ruleId>CONF:1098-10492</ruleId>
     <ruleId>CONF:1098-32596</ruleId>

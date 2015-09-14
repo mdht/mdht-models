@@ -553,7 +553,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     </nestedClassifier>
   </uml:Class>
   <CDA:PropertyValidation xmi:id="_UXrxsJqAEeOK6dzbL4VoTA" base_Property="_D3_FEJqAEeOK6dzbL4VoTA"/>
-  <CDA:CDATemplate xmi:id="_XjgNcJqAEeOK6dzbL4VoTA" base_Class="_09uFMJp_EeOK6dzbL4VoTA" templateId="2.16.840.1.113883.10.20.22.4.114">
+  <CDA:CDATemplate xmi:id="_XjgNcJqAEeOK6dzbL4VoTA" base_Class="_09uFMJp_EeOK6dzbL4VoTA" templateId="2.16.840.1.113883.10.20.22.4.114" templateVersion="2015-08-01">
     <ruleId>CONF:1098-29473</ruleId>
     <ruleId>CONF:1098-29474</ruleId>
   </CDA:CDATemplate>
