@@ -151,6 +151,9 @@
 		<replaceTemplateNames oldTemplateName="Result Observation2" newTemplateName="Result Observation (V3)" />
 		<replaceTemplateNames oldTemplateName="Social History Observation2" newTemplateName="Social History Observation (V3)" />
 		<replaceTemplateNames oldTemplateName="Vital Signs Organizer2" newTemplateName="Vital Signs Organizer (V3)" />
+		<replaceTemplateNames oldTemplateName="Encounter Activity2" newTemplateName="Encounter Activity (V3)" />
+		<replaceTemplateNames oldTemplateName="Problem Concern Act2" newTemplateName="Problem Concern Act (V3)" />
+		<replaceTemplateNames oldTemplateName="Result Organizer2" newTemplateName="Result Organizer (V3)" />
 		<!-- other -->
 		<replaceTemplateNames oldTemplateName="US Realm Header Patient Generated Document" newTemplateName="US Realm Header - Patient Generated Document (V2)" />
 	</target>
