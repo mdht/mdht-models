@@ -2507,7 +2507,7 @@ This clinical statement represents procedures whose immediate and primary outcom
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UwQqcPieEeOXlK95I8tUew" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_EebnEOwvEeOqa975IP2wug" base_Class="__SgUwOwuEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.51" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_EebnEOwvEeOqa975IP2wug" base_Class="__SgUwOwuEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.51" templateVersion="2015-08-01">
     <ruleId>CONF:1098-16766</ruleId>
     <ruleId>CONF:1098-16767</ruleId>
     <ruleId>CONF:1098-32539</ruleId>
@@ -2536,7 +2536,7 @@ This clinical statement represents procedures whose immediate and primary outcom
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5AcfAPieEeOXlK95I8tUew" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_CPNVMOzZEeOnE-G4kptBiw" base_Class="_5l3g0OzYEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.65" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_CPNVMOzZEeOnE-G4kptBiw" base_Class="_5l3g0OzYEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.65" templateVersion="2015-08-01">
     <ruleId>CONF:1098-16770</ruleId>
     <ruleId>CONF:1098-16771</ruleId>
     <ruleId>CONF:1098-32540</ruleId>

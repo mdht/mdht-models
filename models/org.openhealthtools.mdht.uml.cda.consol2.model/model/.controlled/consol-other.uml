@@ -2858,7 +2858,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_stp7IPgDEeOYeZoWJF5yyQ" value="*"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_O0QywOEIEeOmBMTtnrPqww" base_Class="_GM6icOEIEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.34" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_O0QywOEIEeOmBMTtnrPqww" base_Class="_GM6icOEIEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.34" templateVersion="2015-08-01">
     <ruleId>CONF:1098-16767</ruleId>
     <ruleId>CONF:1098-16748</ruleId>
     <ruleId>CONF:1098-32535</ruleId>

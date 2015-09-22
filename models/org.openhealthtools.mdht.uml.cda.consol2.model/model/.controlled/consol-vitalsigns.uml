@@ -424,7 +424,7 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
       <redefinedProperty href="../consol.uml#_U5AysOZlEeGINOJ_SD9_dA"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="__AT6wL86EeOS5KuvmCHHew" base_Class="_4iF6IL86EeOS5KuvmCHHew" templateId="2.16.840.1.113883.10.20.22.4.79" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="__AT6wL86EeOS5KuvmCHHew" base_Class="_4iF6IL86EeOS5KuvmCHHew" templateId="2.16.840.1.113883.10.20.22.4.79" templateVersion="2015-08-01">
     <ruleId>CONF:1098-14871</ruleId>
     <ruleId>CONF:1098-14872</ruleId>
     <ruleId>CONF:1098-32541</ruleId>

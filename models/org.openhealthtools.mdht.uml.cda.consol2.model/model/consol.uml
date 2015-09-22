@@ -4342,10 +4342,10 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:1198-32435</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_kKGBwK11EeS-n_bBhdNjYg" severity="INFO" base_Association="_kKEzoK11EeS-n_bBhdNjYg">
-    <ruleId>CONF:1098-8725</ruleId>
+    <ruleId>CONF:1198-8725</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_AThxoK12EeS-n_bBhdNjYg" base_Association="_AThKkK12EeS-n_bBhdNjYg">
-    <ruleId>CONF:1098-8726</ruleId>
+    <ruleId>CONF:1198-8726</ruleId>
   </CDA:AssociationValidation>
   <CDA:EntryRelationship xmi:id="_Qxds8cnAEeSr1c1X9ACWbg" severity="INFO" base_Association="_QxdF4MnAEeSr1c1X9ACWbg" typeCode="REFR">
     <ruleId>CONF:1198-9063, CONF:1198-9068, CONF:1198-15591</ruleId>
