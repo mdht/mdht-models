@@ -2078,25 +2078,20 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ownedEnd xmi:id="_NaJ980ExEeGdmoWy_aLP0Q" type="_0baBYEEwEeGdmoWy_aLP0Q" association="_NaJ98kExEeGdmoWy_aLP0Q"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_7RNbkEEwEeGdmoWy_aLP0Q" base_Class="_0baBYEEwEeGdmoWy_aLP0Q" templateId="2.16.840.1.113883.10.20.22.4.65">
-    <ruleId>CONF:16770</ruleId>
-    <ruleId>CONF:16771</ruleId>
+    <ruleId>CONF:16770, CONF:16771</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_3j-74EEwEeGdmoWy_aLP0Q" base_Property="_2Q1R8EEwEeGdmoWy_aLP0Q">
-    <ruleId>CONF:10090</ruleId>
-    <ruleId>R2.0=CONF:1098-10090</ruleId>
+    <ruleId>CONF:10090, R2.1=CONF:1198-10090</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_F-zmsEExEeGdmoWy_aLP0Q" code="10219-4" displayName="Preoperative Diagnosis" base_Property="_2Q1R8UEwEeGdmoWy_aLP0Q">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:10092</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_4SnjgEEwEeGdmoWy_aLP0Q" base_Property="_2Q1R8kEwEeGdmoWy_aLP0Q">
-    <ruleId>CONF:10091</ruleId>
-    <ruleId>R2.0=CONF:1098-10091</ruleId>
+    <ruleId>CONF:10091, R2.1=CONF:1198-10091</ruleId>
   </CDA:PropertyValidation>
   <CDA:EntryRelationship xmi:id="_RPbmYEExEeGdmoWy_aLP0Q" base_Association="_NaJ98kExEeGdmoWy_aLP0Q" typeCode="SUBJ">
-    <ruleId>CONF:10093</ruleId>
-    <ruleId>CONF:10094</ruleId>
-    <ruleId>CONF:15605</ruleId>
+    <ruleId>CONF:10093, CONF:10094, CONF:15605</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_0fjXAEEvEeGdmoWy_aLP0Q" name="PostprocedureDiagnosis">
     <ownedComment xmi:id="_rQo48FmwEeGRqYkwoeymcA">
@@ -2129,25 +2124,20 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ownedEnd xmi:id="_IiPpQ0EwEeGdmoWy_aLP0Q" type="_0fjXAEEvEeGdmoWy_aLP0Q" association="_IiPpQkEwEeGdmoWy_aLP0Q"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_ckEjYEExEeGdmoWy_aLP0Q" base_Class="_0fjXAEEvEeGdmoWy_aLP0Q" templateId="2.16.840.1.113883.10.20.22.4.51">
-    <ruleId>CONF:16766</ruleId>
-    <ruleId>CONF:16767</ruleId>
+    <ruleId>CONF:16766, CONF:16767</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_4BTmgEEvEeGdmoWy_aLP0Q" base_Property="_2HQ7sEEvEeGdmoWy_aLP0Q">
-    <ruleId>CONF:8756</ruleId>
-    <ruleId>R2.0=CONF:1098-8756</ruleId>
+    <ruleId>CONF:8756, R2.1=CONF:1198-8756</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="__n-c8EEvEeGdmoWy_aLP0Q" code="59769-0" displayName="Postprocedure Diagnosis" base_Property="_2HQ7sUEvEeGdmoWy_aLP0Q">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:8758</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_4brOUEEvEeGdmoWy_aLP0Q" base_Property="_2HQ7skEvEeGdmoWy_aLP0Q">
-    <ruleId>CONF:8757</ruleId>
-    <ruleId>R2.0=CONF:1098-8757</ruleId>
+    <ruleId>CONF:8757, R2.1=CONF:1198-8757</ruleId>
   </CDA:PropertyValidation>
   <CDA:EntryRelationship xmi:id="_KT8QYEEwEeGdmoWy_aLP0Q" base_Association="_IiPpQkEwEeGdmoWy_aLP0Q" typeCode="SUBJ">
-    <ruleId>CONF:8759</ruleId>
-    <ruleId>CONF:8760</ruleId>
-    <ruleId>CONF:15583</ruleId>
+    <ruleId>CONF:8759, CONF:8760, CONF:15583</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_HSV9EkEvEeGdmoWy_aLP0Q" memberEnd="_HSV9EEEvEeGdmoWy_aLP0Q _HSV9E0EvEeGdmoWy_aLP0Q">
     <ownedEnd xmi:id="_HSV9E0EvEeGdmoWy_aLP0Q" type="_3b6E4DVyEeGaW4kr-GbV8Q" association="_HSV9EkEvEeGdmoWy_aLP0Q"/>
@@ -2492,7 +2482,7 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:7736</ruleId>
     <ruleId>R2.0=CONF:1098-7736</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="__SgUwOwuEeOqa975IP2wug" clientDependency="_Yau9cOwvEeOqa975IP2wug" name="PostprocedureDiagnosis2">
+  <uml:Class xmi:id="__SgUwOwuEeOqa975IP2wug" clientDependency="_Yau9cOwvEeOqa975IP2wug" name="Postprocedure Diagnosis (V3)">
     <ownedComment xmi:id="_Lz0gQOwvEeOqa975IP2wug">
       <body>This template represents the diagnosis or diagnoses discovered or confirmed during the procedure. They may be the same as preprocedure diagnoses or indications.</body>
     </ownedComment>
@@ -2508,20 +2498,17 @@ This clinical statement represents procedures whose immediate and primary outcom
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_EebnEOwvEeOqa975IP2wug" base_Class="__SgUwOwuEeOqa975IP2wug" templateId="2.16.840.1.113883.10.20.22.4.51" templateVersion="2015-08-01">
-    <ruleId>CONF:1098-16766</ruleId>
-    <ruleId>CONF:1098-16767</ruleId>
-    <ruleId>CONF:1098-32539</ruleId>
+    <ruleId>CONF:1198-16766, CONF:1198-16767, CONF:1198-32539</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_VIJyYOwvEeOqa975IP2wug" base_Generalization="__SgUwewuEeOqa975IP2wug"/>
   <CDA:CodeSystemConstraint xmi:id="_O-40MOzWEeOnE-G4kptBiw" code="59769-0" displayName="Postprocedure Diagnosis" base_Property="_O-pjoOzWEeOnE-G4kptBiw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-19152</ruleId>
-    <ruleId>CONF:1098-32166</ruleId>
+    <ruleId>CONF:1198-19152, CONF:1198-32166</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_QAn-AOzWEeOnE-G4kptBiw" base_Property="_O-pjoOzWEeOnE-G4kptBiw">
-    <ruleId>CONF:1098-19151</ruleId>
+    <ruleId>CONF:1198-19151</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_5l3g0OzYEeOnE-G4kptBiw" clientDependency="_GMiQ8OzaEeOnE-G4kptBiw" name="PreoperativeDiagnosis2">
+  <uml:Class xmi:id="_5l3g0OzYEeOnE-G4kptBiw" clientDependency="_GMiQ8OzaEeOnE-G4kptBiw" name="Preoperative Diagnosis (V3)">
     <ownedComment xmi:id="_JXHzEOzZEeOnE-G4kptBiw">
       <body>This template represents the surgical diagnosis or diagnoses assigned to the patient before the surgical procedure and is the reason for the surgery. The preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</body>
     </ownedComment>
@@ -2537,18 +2524,15 @@ This clinical statement represents procedures whose immediate and primary outcom
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_CPNVMOzZEeOnE-G4kptBiw" base_Class="_5l3g0OzYEeOnE-G4kptBiw" templateId="2.16.840.1.113883.10.20.22.4.65" templateVersion="2015-08-01">
-    <ruleId>CONF:1098-16770</ruleId>
-    <ruleId>CONF:1098-16771</ruleId>
-    <ruleId>CONF:1098-32540</ruleId>
+    <ruleId>CONF:1198-16770, CONF:1198-16771, CONF:1198-32540</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_EpHWYOzaEeOnE-G4kptBiw" base_Generalization="_5l4H4OzYEeOnE-G4kptBiw"/>
   <CDA:CodeSystemConstraint xmi:id="_RUUdsOzaEeOnE-G4kptBiw" code="10219-4" displayName="Preoperative Diagnosis" base_Property="_RUT2oOzaEeOnE-G4kptBiw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-19156</ruleId>
-    <ruleId>CONF:1098-32167</ruleId>
+    <ruleId>CONF:1198-19156, CONF:1198-32167</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_TSEj0OzaEeOnE-G4kptBiw" base_Property="_RUT2oOzaEeOnE-G4kptBiw">
-    <ruleId>CONF:1098-19155</ruleId>
+    <ruleId>CONF:1198-19155</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Qs7ewO2kEeOchpob7ipcww" base_Property="_M4tmQO2kEeOchpob7ipcww">
     <ruleId>CONF:8304</ruleId>
@@ -3045,17 +3029,13 @@ This template can be used with a contained Product Instance template to represen
     <ownedEnd xmi:id="_RH3AYPieEeOXlK95I8tUew" type="__SgUwOwuEeOqa975IP2wug" association="_RH2ZUPieEeOXlK95I8tUew"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_TPLSMPieEeOXlK95I8tUew" base_Association="_RH2ZUPieEeOXlK95I8tUew" typeCode="SUBJ">
-    <ruleId>CONF:1098-8759</ruleId>
-    <ruleId>CONF:1098-8760</ruleId>
-    <ruleId>CONF:1098-15583</ruleId>
+    <ruleId>CONF:1198-8759, CONF:1198-8760, CONF:1198-15583</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_3HIM8PieEeOXlK95I8tUew" memberEnd="_3HFwsPieEeOXlK95I8tUew _3HIM8fieEeOXlK95I8tUew">
     <ownedEnd xmi:id="_3HIM8fieEeOXlK95I8tUew" type="_5l3g0OzYEeOnE-G4kptBiw" association="_3HIM8PieEeOXlK95I8tUew"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_9ODu8PieEeOXlK95I8tUew" base_Association="_3HIM8PieEeOXlK95I8tUew" typeCode="SUBJ">
-    <ruleId>CONF:1098-10093</ruleId>
-    <ruleId>CONF:1098-10094</ruleId>
-    <ruleId>CONF:1098-15605</ruleId>
+    <ruleId>CONF:1198-10093, CONF:1198-10094, CONF:1198-15605</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_aetyEPu_EeOyiMEKhdqMGA" clientDependency="_6Mw4MPu_EeOyiMEKhdqMGA" name="AnesthesiaSection2">
     <ownedComment xmi:id="_n-ZDQPu_EeOyiMEKhdqMGA">

@@ -483,8 +483,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     <ownedEnd xmi:id="_V2ah8xUmEeGvPruliC3crg" type="_Cg3pkBUmEeGvPruliC3crg" association="_V2ah8hUmEeGvPruliC3crg"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_HyrhcBUmEeGvPruliC3crg" base_Class="_Cg3pkBUmEeGvPruliC3crg" templateId="2.16.840.1.113883.10.20.22.4.60">
-    <ruleId>CONF:8897</ruleId>
-    <ruleId>CONF:10492</ruleId>
+    <ruleId>CONF:8897, CONF:10492</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_XUoXwBnZEeGs5a462vYX5Q" name="AuthorizationActivity">
     <ownedComment xmi:id="_1yE5QHhuEeGJtvg2iiStYg">
@@ -560,34 +559,24 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <ruleId>CONF:7959, CONF:8905</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_RWFZwDY1EeGUovy31cP2ng" base_Property="_FVBzQBUmEeGvPruliC3crg">
-    <ruleId>CONF:8872</ruleId>
-    <ruleId>R2.0=CONF:1098-8872</ruleId>
+    <ruleId>CONF:8872, R2.1=CONF:1198-8872</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_iRhAIDY1EeGUovy31cP2ng" base_Property="_FVBzSBUmEeGvPruliC3crg">
-    <ruleId>CONF:8873</ruleId>
-    <ruleId>R2.0=CONF:1098-8873</ruleId>
+    <ruleId>CONF:8873, R2.1=CONF:1198-8873</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_mL2uwDY1EeGUovy31cP2ng" base_Property="_FVBzRBUmEeGvPruliC3crg">
-    <ruleId>CONF:8874</ruleId>
-    <ruleId>R2.0=CONF:1098-8874</ruleId>
+    <ruleId>CONF:8874, R2.1=CONF:1198-8874</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_ogDwkDY2EeGUovy31cP2ng" code="completed" base_Property="_FVBzShUmEeGvPruliC3crg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:8875</ruleId>
-    <ruleId>R2.0=CONF:1098-8875</ruleId>
-    <ruleId>R2.0=CONF:1098-19094</ruleId>
+    <ruleId>CONF:8875, R2.1=CONF:1198-8875, R2.1=CONF:1198-19094</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_ymnUYDY3EeGUovy31cP2ng" code="48768-6" displayName="Payment Sources" base_Property="_FVBzQhUmEeGvPruliC3crg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:8876</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:EntryRelationship xmi:id="_GDaIoDZWEeGUovy31cP2ng" base_Association="_V2ah8hUmEeGvPruliC3crg" typeCode="COMP">
-    <ruleId>CONF:8878</ruleId>
-    <ruleId>R2.0=CONF:1098-8878</ruleId>
-    <ruleId>CONF:8879</ruleId>
-    <ruleId>R2.0=CONF:1098-8879</ruleId>
-    <ruleId>CONF:15528</ruleId>
-    <ruleId>R2.0=CONF:1098-15528</ruleId>
+    <ruleId>CONF:8878, R2.1=CONF:1198-8878, CONF:8879, R2.1=CONF:1198-8879, CONF:15528, R2.1=CONF:1198-15528</ruleId>
   </CDA:EntryRelationship>
   <CDA:ConstraintValidation xmi:id="__B5i0DZXEeGUovy31cP2ng" severity="INFO" base_Constraint="_xtqFkDZXEeGUovy31cP2ng">
     <ruleId>CONF:8973</ruleId>
@@ -971,7 +960,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <reference href="../consol-vocab.uml#_8AS78Y9OEeOB0eBUISUB4Q"/>
     <ruleId>CONF:1098-31973</ruleId>
   </CDA:ValueSetConstraint>
-  <uml:Class xmi:id="_aJr6ULkxEeODDJAC5t5vpw" clientDependency="_wiqHcLkxEeODDJAC5t5vpw" name="CoverageActivity2">
+  <uml:Class xmi:id="_aJr6ULkxEeODDJAC5t5vpw" clientDependency="_wiqHcLkxEeODDJAC5t5vpw" name="Coverage Activity (V3)">
     <ownedComment xmi:id="_-FQw0LkxEeODDJAC5t5vpw">
       <body>A Coverage Activity groups the policy and authorization acts within a Payers Section to order the payment sources. A Coverage Activity contains one or more Policy Activities, each of which contains zero or more Authorization Activities. The Coverage Activity id is the ID from the patient's insurance card. The sequenceNumber/@value shows the policy order of preference.</body>
     </ownedComment>
@@ -1032,16 +1021,13 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
   </uml:Class>
   <CDA:CodeSystemConstraint xmi:id="_nD4f4bkxEeODDJAC5t5vpw" code="48768-6" displayName="Payment Sources" base_Property="_nD4f4LkxEeODDJAC5t5vpw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-19160</ruleId>
-    <ruleId>CONF:1098-32156</ruleId>
+    <ruleId>CONF:1198-19160, CONF:1198-32156</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_sazhQLkxEeODDJAC5t5vpw" base_Class="_aJr6ULkxEeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.60" templateVersion="2015-08-01">
-    <ruleId>CONF:1098-8897</ruleId>
-    <ruleId>CONF:1098-10492</ruleId>
-    <ruleId>CONF:1098-32596</ruleId>
+    <ruleId>CONF:1198-8897, CONF:1198-10492, CONF:1198-32596</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_HsH9YLkyEeODDJAC5t5vpw" base_Property="_nD4f4LkxEeODDJAC5t5vpw">
-    <ruleId>CONF:1098-8876</ruleId>
+    <ruleId>CONF:1198-8876</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConformsTo xmi:id="_d3rHoLk0EeODDJAC5t5vpw" base_Generalization="_aJr6UbkxEeODDJAC5t5vpw"/>
   <uml:Class xmi:id="_Q0ODkOwlEeOqa975IP2wug" clientDependency="_of2ycOwlEeOqa975IP2wug" name="PolicyActivity2">
@@ -1285,22 +1271,22 @@ The sources of payment are represented as a Coverage Activity, which identifies 
     <ownedEnd xmi:id="_3ivbEay9EeSB84STE1Ny6A" type="_aJr6ULkxEeODDJAC5t5vpw" association="_3ivbEKy9EeSB84STE1Ny6A"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_6QjsMKy9EeSB84STE1Ny6A" base_Association="_3ivbEKy9EeSB84STE1Ny6A">
-    <ruleId>CONF:1098-8878</ruleId>
+    <ruleId>CONF:1198-8878</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_DM7xUKy-EeSB84STE1Ny6A" memberEnd="_DM6jMKy-EeSB84STE1Ny6A _DM-0oKy-EeSB84STE1Ny6A">
     <ownedEnd xmi:id="_DM-0oKy-EeSB84STE1Ny6A" type="__fVeMKy9EeSB84STE1Ny6A" association="_DM7xUKy-EeSB84STE1Ny6A"/>
   </uml:Association>
   <CDA:PropertyValidation xmi:id="_TpuT4Ky-EeSB84STE1Ny6A" base_Property="_BAIik6y-EeSB84STE1Ny6A">
-    <ruleId>CONF:1098-8879</ruleId>
+    <ruleId>CONF:1198-8879</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Xf_a0Ky-EeSB84STE1Ny6A" severity="INFO" base_Property="_BAIikKy-EeSB84STE1Ny6A">
-    <ruleId>CONF:1098-17174</ruleId>
+    <ruleId>CONF:1198-17174</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_atGQAKy-EeSB84STE1Ny6A" base_Association="_DM7xUKy-EeSB84STE1Ny6A">
-    <ruleId>CONF:1098-15528</ruleId>
+    <ruleId>CONF:1198-15528</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_ck_lwKy-EeSB84STE1Ny6A" base_Property="_Qv0HgKy-EeSB84STE1Ny6A">
-    <ruleId>CONF:1098-17175</ruleId>
+    <ruleId>CONF:1198-17175</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_bh0M0MjeEeSUFZXOgtrJuQ" base_Property="_bhzlwMjeEeSUFZXOgtrJuQ"/>
   <CDA:ValueSetConstraint xmi:id="_bh2pEMjeEeSUFZXOgtrJuQ" base_Property="_bhzlwMjeEeSUFZXOgtrJuQ" severity="WARNING">

@@ -150,25 +150,20 @@
     <ownedEnd xmi:id="_uH22oSULEeGiOPpZVnfEJA" type="_KtwVgCULEeGiOPpZVnfEJA" association="_uH22oCULEeGiOPpZVnfEJA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_OJL6kCULEeGiOPpZVnfEJA" base_Class="_KtwVgCULEeGiOPpZVnfEJA" templateId="2.16.840.1.113883.10.20.22.4.33" assigningAuthorityName="HL7">
-    <ruleId>CONF:16764</ruleId>
-    <ruleId>CONF:16765</ruleId>
+    <ruleId>CONF:16764, CONF:16765</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_em_w0CULEeGiOPpZVnfEJA" base_Property="_MwNVcCULEeGiOPpZVnfEJA">
-    <ruleId>CONF:7663</ruleId>
-    <ruleId>R2.0=CONF:1098-7663</ruleId>
+    <ruleId>CONF:7663, R2.1=CONF:1198-7663</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_hnRD4CULEeGiOPpZVnfEJA" base_Property="_MwPKoCULEeGiOPpZVnfEJA">
-    <ruleId>CONF:7664</ruleId>
-    <ruleId>R2.0=CONF:1098-7664</ruleId>
+    <ruleId>CONF:7664, R2.1=CONF:1198-7664</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_kj3X4CULEeGiOPpZVnfEJA" code="11535-2" displayName="Hospital Discharge Diagnosis" base_Property="_MwOjkCULEeGiOPpZVnfEJA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7665</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:EntryRelationship xmi:id="_w-z1oCULEeGiOPpZVnfEJA" base_Association="_uH22oCULEeGiOPpZVnfEJA" typeCode="SUBJ">
-    <ruleId>CONF:7666</ruleId>
-    <ruleId>CONF:7667</ruleId>
-    <ruleId>CONF:15536</ruleId>
+    <ruleId>CONF:7666, CONF:7667, CONF:15536</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_2PidURSVEeGGzu7fmW9pXw" name="HospitalDischargeDiagnosisSection">
     <ownedComment xmi:id="_2Poj4hSVEeGGzu7fmW9pXw" annotatedElement="_2PidURSVEeGGzu7fmW9pXw">
@@ -867,7 +862,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:PropertyValidation xmi:id="_2XxsQMyvEeO93sHu8pHB2g" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
     <ruleId>CONF:1098-7691</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_Trd1cOEMEeOmBMTtnrPqww" clientDependency="_sVxMAOEMEeOmBMTtnrPqww" name="HospitalDischargeDiagnosis2">
+  <uml:Class xmi:id="_Trd1cOEMEeOmBMTtnrPqww" clientDependency="_sVxMAOEMEeOmBMTtnrPqww" name="Hospital Discharge Diagnosis (V3)">
     <ownedComment xmi:id="_ao5hoOEMEeOmBMTtnrPqww">
       <body>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization or need to be monitored after hospitalization. It requires at least one Problem Observation entry.</body>
     </ownedComment>
@@ -883,18 +878,15 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_ex9owOEMEeOmBMTtnrPqww" base_Class="_Trd1cOEMEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.33" templateVersion="2015-08-01">
-    <ruleId>CONF:1098-16764</ruleId>
-    <ruleId>CONF:1098-16765</ruleId>
-    <ruleId>CONF:1098-32534</ruleId>
+    <ruleId>CONF:1198-16764, CONF:1198-16765, CONF:1198-32534</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_oGRswOEMEeOmBMTtnrPqww" base_Generalization="_Trd1ceEMEeOmBMTtnrPqww"/>
   <CDA:CodeSystemConstraint xmi:id="_Ly9LoeENEeOmBMTtnrPqww" code="11535-2" displayName="Hospital discharge diagnosis" base_Property="_Ly9LoOENEeOmBMTtnrPqww">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-19148</ruleId>
-    <ruleId>CONF:1098-32163</ruleId>
+    <ruleId>CONF:1198-19148, CONF:1198-32163</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_M2LjMOENEeOmBMTtnrPqww" base_Property="_Ly9LoOENEeOmBMTtnrPqww">
-    <ruleId>CONF:1098-19147</ruleId>
+    <ruleId>CONF:1198-19147</ruleId>
   </CDA:PropertyValidation>
   <uml:Association xmi:id="__fTgcPf8EeOYeZoWJF5yyQ" memberEnd="__fREMPf8EeOYeZoWJF5yyQ __fTgcff8EeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="__fTgcff8EeOYeZoWJF5yyQ" type="_EIeu8MyjEeO93sHu8pHB2g" association="__fTgcPf8EeOYeZoWJF5yyQ"/>
@@ -908,9 +900,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <ownedEnd xmi:id="_IZP4cfgEEeOYeZoWJF5yyQ" type="_Trd1cOEMEeOmBMTtnrPqww" association="_IZP4cPgEEeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_LLxDYPgEEeOYeZoWJF5yyQ" base_Association="_IZP4cPgEEeOYeZoWJF5yyQ" typeCode="SUBJ">
-    <ruleId>CONF:1098-7666</ruleId>
-    <ruleId>CONF:1098-7667</ruleId>
-    <ruleId>CONF:1098-15536</ruleId>
+    <ruleId>CONF:1198-7666, CONF:1198-7667, CONF:1198-15536</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_jfuGYPytEeOmn53IDV99zw" clientDependency="_KptZoPyuEeOmn53IDV99zw" name="DischargeDiagnosisSection2">
     <ownedComment xmi:id="_CsRpAPyuEeOmn53IDV99zw">

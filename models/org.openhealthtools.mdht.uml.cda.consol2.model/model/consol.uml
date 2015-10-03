@@ -3891,16 +3891,13 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:8948</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_UdK3kNc4EeGfQ6frO0B-Jg" base_Association="_R9fwINc4EeGfQ6frO0B-Jg">
-    <ruleId>CONF:8609</ruleId>
-    <ruleId>R2.0=CONF:1098-8609</ruleId>
+    <ruleId>CONF:8609, R2.1=CONF:1198-8609</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_eDnNYNc4EeGfQ6frO0B-Jg" base_Association="_c9XXANc4EeGfQ6frO0B-Jg">
-    <ruleId>CONF:15244</ruleId>
-    <ruleId>R2.0=CONF:1098-15244</ruleId>
+    <ruleId>CONF:15244, R2.1=CONF:1198-15244</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_GAwb4Nc5EeGfQ6frO0B-Jg" severity="WARNING" base_Association="_6_PPMNc4EeGfQ6frO0B-Jg">
-    <ruleId>CONF:15248</ruleId>
-    <ruleId>R2.0=CONF:1098-15248</ruleId>
+    <ruleId>CONF:15248, R2.1=CONF:1198-15248</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_J_3-sOJvEeG3cO7ebC3QuA" severity="INFO" base_Association="_JNJhQ-JvEeG3cO7ebC3QuA">
     <ruleId>CONF:7310</ruleId>
@@ -3959,19 +3956,16 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:14268</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_kbOY0OZkEeGINOJ_SD9_dA" base_Property="_f4E9wOZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14851</ruleId>
-    <ruleId>R2.1=CONF:1198-14851</ruleId>
+    <ruleId>CONF:14851, R2.1=CONF:1198-14851</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_oT1CEOZkEeGINOJ_SD9_dA" base_Property="_f4E9yOZkEeGINOJ_SD9_dA">
     <ruleId>CONF:14852, R2.1=CONF:1198-14852</ruleId>
   </CDA:PropertyValidation>
   <CDA:CDATemplate xmi:id="_qga1cOZkEeGINOJ_SD9_dA" base_Class="_lm3boOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.79">
-    <ruleId>CONF:14871</ruleId>
-    <ruleId>CONF:14872</ruleId>
+    <ruleId>CONF:14871, CONF:14872</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_yfngoOZkEeGINOJ_SD9_dA" base_Property="_f4E9xeZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14873</ruleId>
-    <ruleId>R2.0=CONF:1098-14873</ruleId>
+    <ruleId>CONF:14873, R2.1=CONF:1198-14873</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2IcogOZkEeGINOJ_SD9_dA" code="ASSERTION" displayName="Assertion" base_Property="_f4E9weZkEeGINOJ_SD9_dA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
@@ -3980,34 +3974,27 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <ruleId>CONF:14853</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_72ko8OZkEeGINOJ_SD9_dA" base_Property="_f4E9yeZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14854</ruleId>
-    <ruleId>R2.0=CONF:1098-14854</ruleId>
+    <ruleId>CONF:14854, R2.1=CONF:1198-14854</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_8jgncOZkEeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_f4E9yeZkEeGINOJ_SD9_dA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-    <ruleId>R2.0=CONF:1098-19095</ruleId>
+    <ruleId>R2.1=CONF:1198-19095</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_BxzRQOZlEeGINOJ_SD9_dA" base_Property="_f4E9wuZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14855</ruleId>
-    <ruleId>R2.0=CONF:1098-14855</ruleId>
+    <ruleId>CONF:14855, R2.1=CONF:1198-14855</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_JtkN8OZlEeGINOJ_SD9_dA" base_Constraint="_Dk8p4OZlEeGINOJ_SD9_dA">
-    <ruleId>CONF:14874</ruleId>
-    <ruleId>R2.0=CONF:1098-14874</ruleId>
+    <ruleId>CONF:14874, R2.1=CONF:1198-14874</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_NtmU4OZlEeGINOJ_SD9_dA" base_Property="_f4OuwOZkEeGINOJ_SD9_dA">
-    <ruleId>CONF:14857</ruleId>
-    <ruleId>R2.0=CONF:1098-14857</ruleId>
+    <ruleId>CONF:14857, R2.1=CONF:1198-14857</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_OrybcOZlEeGINOJ_SD9_dA" code="419099009" displayName="Dead" base_Property="_f4OuwOZkEeGINOJ_SD9_dA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:15142</ruleId>
-    <ruleId>R2.0=CONF:1098-15142</ruleId>
+    <ruleId>CONF:15142, R2.1=CONF:1198-15142</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:EntryRelationship xmi:id="_WoJ1EOZlEeGINOJ_SD9_dA" severity="WARNING" base_Association="_U5AysuZlEeGINOJ_SD9_dA">
-    <ruleId>CONF:14868</ruleId>
-    <ruleId>CONF:14875</ruleId>
-    <ruleId>CONF:14870</ruleId>
+    <ruleId>CONF:14868, CONF:14875, CONF:14870</ruleId>
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_q19aoObzEeGINOJ_SD9_dA" base_Association="_m656UObzEeGINOJ_SD9_dA">
     <ruleId>CONF:13938</ruleId>
