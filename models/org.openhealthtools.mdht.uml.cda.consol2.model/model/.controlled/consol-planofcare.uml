@@ -826,7 +826,7 @@ A goal may have components consisting of other goals (milestones). These milesto
     <ruleId>CONF:1098-31560</ruleId>
     <ruleId>CONF:1098-31588</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_An8P8I9kEeOB0eBUISUB4Q" name="Health Concern Act (V2)">
+  <uml:Class xmi:id="_An8P8I9kEeOB0eBUISUB4Q" name="HealthConcernAct">
     <ownedComment xmi:id="_f2uAII9kEeOB0eBUISUB4Q">
       <body>&lt;p>&#xD;
 This template represents a health concern.&#xD;
@@ -1207,7 +1207,7 @@ Health concerns require intervention(s) to increase the likelihood of achieving 
   <CDA:EntryRelationship xmi:id="_HPQcAI-BEeOB0eBUISUB4Q" severity="INFO" base_Association="_Fjh6AI-BEeOB0eBUISUB4Q" typeCode="REFR">
     <ruleId>CONF:1198-31549, CONF:1198-31550, CONF:1198-31551</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_XD5vgJA8EeOZX935IVJfOg" name="Intervention Act (V2)">
+  <uml:Class xmi:id="_XD5vgJA8EeOZX935IVJfOg" name="InterventionAct">
     <ownedComment xmi:id="_nULqoJA9EeOZX935IVJfOg">
       <body>&lt;p>&#xD;
 This template represents an Intervention Act. It is a wrapper for intervention-type activities considered to be parts of the same intervention. For example, an activity such as &quot;elevate head of bed&quot; combined with &quot;provide humidified O2 per nasal cannula&quot; may be the interventions performed for a health concern of &quot;respiratory insufficiency&quot; to achieve a goal of &quot;pulse oximetry greater than 92%&quot;. These intervention activities may be newly described or derived from a variety of sources within an EHR.&#xD;
@@ -3288,7 +3288,7 @@ The plan may also indicate that patient education will be provided.</body>
     <ruleId>CONF:1098-32093</ruleId>
     <ruleId>CONF:1098-32096</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_dGARYOLSEeS505YV9ux2XA" name="Planned Intervention Act (V2)">
+  <uml:Class xmi:id="_dGARYOLSEeS505YV9ux2XA" name="PlannedInterventionAct">
     <ownedComment xmi:id="_xyggMOLTEeS505YV9ux2XA">
       <body>&lt;p>&#xD;
 This template represents a Planned Intervention Act. It is a wrapper for planned intervention-type activities considered to be parts of the same intervention. For example, an activity such as &quot;elevate head of bed&quot; combined with &quot;provide humidified O2 per nasal cannula&quot; may be the interventions planned for a health concern of &quot;respiratory insufficiency&quot; in order to attempt to achieve a goal of &quot;pulse oximetry greater than 92%&quot;. These intervention activities may be newly described or derived from a variety of sources within an EHR.&#xD;
@@ -3659,7 +3659,7 @@ All interventions referenced in a Planned Intervention Act must have moodCodes i
   <CDA:AssociationValidation xmi:id="_9beXUOLnEeS505YV9ux2XA" base_Association="_8vCvIOLnEeS505YV9ux2XA">
     <ruleId>CONF:1198-32768</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_mMk3QON1EeS_XOr-dz_KWA" name="Risk Concern Act (V2)">
+  <uml:Class xmi:id="_mMk3QON1EeS_XOr-dz_KWA" name="RiskConcernAct">
     <ownedComment xmi:id="_SdCVEON2EeS_XOr-dz_KWA">
       <body>&lt;p>&#xD;
 This template represents a risk concern.&#xD;

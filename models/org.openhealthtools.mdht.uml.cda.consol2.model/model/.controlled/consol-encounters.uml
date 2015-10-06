@@ -453,7 +453,7 @@
   <CDA:ConstraintValidation xmi:id="_tpYvEMzLEeO93sHu8pHB2g" base_Constraint="_tMxrkMzLEeO93sHu8pHB2g">
     <ruleId>CONF:1198-32177, CONF:1198-32377</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_jH6CcMzNEeO93sHu8pHB2g" clientDependency="_O_CaQMzOEeO93sHu8pHB2g" name="Encounter Diagnosis (V3)">
+  <uml:Class xmi:id="_jH6CcMzNEeO93sHu8pHB2g" clientDependency="_O_CaQMzOEeO93sHu8pHB2g" name="EncounterDiagnosis2">
     <ownedComment xmi:id="_JPYv0MzOEeO93sHu8pHB2g">
       <body>This template wraps relevant problems or diagnoses at the close of a visit or that need to be followed after the visit. If the encounter is associated with a Hospital Discharge, the Hospital Discharge Diagnosis must be used. This entry requires at least one Problem Observation entry.</body>
     </ownedComment>

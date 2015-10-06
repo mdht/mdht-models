@@ -862,7 +862,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:PropertyValidation xmi:id="_2XxsQMyvEeO93sHu8pHB2g" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
     <ruleId>CONF:1098-7691</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_Trd1cOEMEeOmBMTtnrPqww" clientDependency="_sVxMAOEMEeOmBMTtnrPqww" name="Hospital Discharge Diagnosis (V3)">
+  <uml:Class xmi:id="_Trd1cOEMEeOmBMTtnrPqww" clientDependency="_sVxMAOEMEeOmBMTtnrPqww" name="HospitalDischargeDiagnosis2">
     <ownedComment xmi:id="_ao5hoOEMEeOmBMTtnrPqww">
       <body>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization or need to be monitored after hospitalization. It requires at least one Problem Observation entry.</body>
     </ownedComment>

@@ -434,7 +434,7 @@
   <CDA:PropertyValidation xmi:id="_CJtXUIY-EeS7A_69H25Pzw" base_Property="_2IuDkBSVEeGGzu7fmW9pXw">
     <ruleId>R2.1=CONF:1198-8590</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_6whQEIbpEeSxzopshBnQuw" clientDependency="_9xVDsIevEeSBauRYePLghA" name="Family History Organizer (V3)">
+  <uml:Class xmi:id="_6whQEIbpEeSxzopshBnQuw" clientDependency="_9xVDsIevEeSBauRYePLghA" name="FamilyHistoryOrganizer2">
     <ownedComment xmi:id="_2ylZ4Ib0EeSxzopshBnQuw">
       <body>The Family History Organizer associates a set of observations with a family member. For example, the Family History Organizer can group a set of observations about the patient's father.</body>
     </ownedComment>

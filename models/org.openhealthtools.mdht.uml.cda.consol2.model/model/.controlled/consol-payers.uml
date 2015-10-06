@@ -960,7 +960,7 @@ self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and perform
     <reference href="../consol-vocab.uml#_8AS78Y9OEeOB0eBUISUB4Q"/>
     <ruleId>CONF:1098-31973</ruleId>
   </CDA:ValueSetConstraint>
-  <uml:Class xmi:id="_aJr6ULkxEeODDJAC5t5vpw" clientDependency="_wiqHcLkxEeODDJAC5t5vpw" name="Coverage Activity (V3)">
+  <uml:Class xmi:id="_aJr6ULkxEeODDJAC5t5vpw" clientDependency="_wiqHcLkxEeODDJAC5t5vpw" name="CoverageActivity2">
     <ownedComment xmi:id="_-FQw0LkxEeODDJAC5t5vpw">
       <body>A Coverage Activity groups the policy and authorization acts within a Payers Section to order the payment sources. A Coverage Activity contains one or more Policy Activities, each of which contains zero or more Authorization Activities. The Coverage Activity id is the ID from the patient's insurance card. The sequenceNumber/@value shows the policy order of preference.</body>
     </ownedComment>

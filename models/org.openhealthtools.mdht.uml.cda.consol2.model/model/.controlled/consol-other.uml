@@ -2838,7 +2838,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   <CDA:AssociationValidation xmi:id="_yJfKAOD_EeOmBMTtnrPqww" severity="WARNING" base_Association="_xJoPgOD_EeOmBMTtnrPqww">
     <ruleId>CONF:1098-31585</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_GM6icOEIEeOmBMTtnrPqww" clientDependency="_kW7qAOEIEeOmBMTtnrPqww" name="Hospital Admission Diagnosis (V3)">
+  <uml:Class xmi:id="_GM6icOEIEeOmBMTtnrPqww" clientDependency="_kW7qAOEIEeOmBMTtnrPqww" name="HospitalAdmissionDiagnosis2">
     <ownedComment xmi:id="_XfoAYOEIEeOmBMTtnrPqww">
       <body>This template represents problems or diagnoses identified by the clinician at the time of the patient's admission.</body>
     </ownedComment>

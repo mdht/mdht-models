@@ -366,7 +366,7 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
     <ruleId>CONF:15340</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_cliqgO_HEeKbmOFfkMDo7w" base_Property="_2KlE3hSVEeGGzu7fmW9pXw"/>
-  <uml:Class xmi:id="_Z8VQYIlFEeOJGtGyq_dBbA" name="Advance Directive Organizer (V2)">
+  <uml:Class xmi:id="_Z8VQYIlFEeOJGtGyq_dBbA" name="AdvanceDirectiveOrganizer">
     <ownedComment xmi:id="_eflRwIlIEeOJGtGyq_dBbA">
       <body>This clinical statement groups a set of advance directive observations.</body>
     </ownedComment>

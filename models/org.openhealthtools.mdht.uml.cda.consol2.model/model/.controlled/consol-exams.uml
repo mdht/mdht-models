@@ -440,7 +440,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-29934</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Class xmi:id="_09uFMJp_EeOK6dzbL4VoTA" name="Longitudinal Care Wound Observation (V2)">
+  <uml:Class xmi:id="_09uFMJp_EeOK6dzbL4VoTA" name="LongitudinalCareWoundObservation">
     <ownedComment xmi:id="_bkc6YJqAEeOK6dzbL4VoTA">
       <body>This template represents acquired or surgical wounds and is not intended to encompass all wound types. The template applies to wounds such as pressure ulcers, surgical incisions, and deep tissue injury wounds. Information in this template may include information about the wound measurements characteristics.</body>
     </ownedComment>

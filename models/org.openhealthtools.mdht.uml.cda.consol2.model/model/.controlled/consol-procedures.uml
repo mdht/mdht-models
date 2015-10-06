@@ -2482,7 +2482,7 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:7736</ruleId>
     <ruleId>R2.0=CONF:1098-7736</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="__SgUwOwuEeOqa975IP2wug" clientDependency="_Yau9cOwvEeOqa975IP2wug" name="Postprocedure Diagnosis (V3)">
+  <uml:Class xmi:id="__SgUwOwuEeOqa975IP2wug" clientDependency="_Yau9cOwvEeOqa975IP2wug" name="PostprocedureDiagnosis2">
     <ownedComment xmi:id="_Lz0gQOwvEeOqa975IP2wug">
       <body>This template represents the diagnosis or diagnoses discovered or confirmed during the procedure. They may be the same as preprocedure diagnoses or indications.</body>
     </ownedComment>
@@ -2508,7 +2508,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_QAn-AOzWEeOnE-G4kptBiw" base_Property="_O-pjoOzWEeOnE-G4kptBiw">
     <ruleId>CONF:1198-19151</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_5l3g0OzYEeOnE-G4kptBiw" clientDependency="_GMiQ8OzaEeOnE-G4kptBiw" name="Preoperative Diagnosis (V3)">
+  <uml:Class xmi:id="_5l3g0OzYEeOnE-G4kptBiw" clientDependency="_GMiQ8OzaEeOnE-G4kptBiw" name="PreoperativeDiagnosis2">
     <ownedComment xmi:id="_JXHzEOzZEeOnE-G4kptBiw">
       <body>This template represents the surgical diagnosis or diagnoses assigned to the patient before the surgical procedure and is the reason for the surgery. The preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</body>
     </ownedComment>
