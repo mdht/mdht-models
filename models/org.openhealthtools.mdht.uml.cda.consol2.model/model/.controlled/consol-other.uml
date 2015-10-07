@@ -1210,25 +1210,20 @@ Instructions are information or directions to the patient. Use the Instructions 
     <ownedEnd xmi:id="_SgUIA0FIEeGorO80f-Cppg" type="_5K6mAEFHEeGorO80f-Cppg" association="_SgUIAkFIEeGorO80f-Cppg"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="__hRrIEFHEeGorO80f-Cppg" base_Class="_5K6mAEFHEeGorO80f-Cppg" templateId="2.16.840.1.113883.10.20.22.4.34">
-    <ruleId>CONF:16747</ruleId>
-    <ruleId>CONF:16748</ruleId>
+    <ruleId>CONF:16747, CONF:16748</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_CFLyUEFIEeGorO80f-Cppg" base_Property="_7tCkgEFHEeGorO80f-Cppg">
-    <ruleId>CONF:7671</ruleId>
-    <ruleId>R2.0=CONF:1098-7671</ruleId>
+    <ruleId>CONF:7671, R2.1=CONF:1198-7671</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_F24iUEFIEeGorO80f-Cppg" code="46241-6" displayName="Admission diagnosis" base_Property="_7tCkgUFHEeGorO80f-Cppg">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7673</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_C32lYEFIEeGorO80f-Cppg" base_Property="_7tCkgkFHEeGorO80f-Cppg">
-    <ruleId>CONF:7672</ruleId>
-    <ruleId>R2.0=CONF:1098-7672</ruleId>
+    <ruleId>CONF:7672, R2.1=CONF:1198-7672</ruleId>
   </CDA:PropertyValidation>
   <CDA:EntryRelationship xmi:id="_U-aiIEFIEeGorO80f-Cppg" base_Association="_SgUIAkFIEeGorO80f-Cppg" typeCode="SUBJ">
-    <ruleId>CONF:7674</ruleId>
-    <ruleId>CONF:7675</ruleId>
-    <ruleId>CONF:15535</ruleId>
+    <ruleId>CONF:7674, CONF:7675, CONF:15535</ruleId>
   </CDA:EntryRelationship>
   <CDA:TextValue xmi:id="_aPoWcFjpEeGRqYkwoeymcA" base_Property="_V3B-gFjpEeGRqYkwoeymcA">
     <ruleId>CONF:9932, R2.1=CONF:1198-9932</ruleId>
@@ -2859,9 +2854,9 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_O0QywOEIEeOmBMTtnrPqww" base_Class="_GM6icOEIEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.34" templateVersion="2015-08-01">
-    <ruleId>CONF:1098-16767</ruleId>
-    <ruleId>CONF:1098-16748</ruleId>
-    <ruleId>CONF:1098-32535</ruleId>
+    <ruleId>CONF:1198-16747</ruleId>
+    <ruleId>CONF:1198-16748</ruleId>
+    <ruleId>CONF:1198-32535</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_aOvSAOEIEeOmBMTtnrPqww" base_Generalization="_GM6iceEIEeOmBMTtnrPqww"/>
   <CDA:CodeSystemConstraint xmi:id="_JV7sYOEJEeOmBMTtnrPqww" code="11535-2" displayName="Hospital discharge diagnosis">
@@ -2874,11 +2869,10 @@ If the ID isn't referencing an author described elsewhere in the document, then 
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_QFGdoOEKEeOmBMTtnrPqww" code="46241-6" displayName="Admission diagnosis" base_Property="_QFF2kOEKEeOmBMTtnrPqww">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:1098-19146</ruleId>
-    <ruleId>CONF:1098-32162</ruleId>
+    <ruleId>CONF:1198-19146, CONF:1198-32162</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_RqgVMOEKEeOmBMTtnrPqww" base_Property="_QFF2kOEKEeOmBMTtnrPqww">
-    <ruleId>CONF:1098-19145</ruleId>
+    <ruleId>CONF:1198-19145</ruleId>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_PrEOIOHoEeO04sHNODkHmQ" clientDependency="_uREHEOHoEeO04sHNODkHmQ" name="Indication2">
     <ownedComment xmi:id="_b-DpwOHoEeO04sHNODkHmQ">
@@ -2989,9 +2983,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     <ownedEnd xmi:id="_rHKecPgDEeOYeZoWJF5yyQ" type="_GM6icOEIEeOmBMTtnrPqww" association="_rHJ3YPgDEeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_tu3ggPgDEeOYeZoWJF5yyQ" base_Association="_rHJ3YPgDEeOYeZoWJF5yyQ" typeCode="SUBJ">
-    <ruleId>CONF:1098-7674</ruleId>
-    <ruleId>CONF:1098-7675</ruleId>
-    <ruleId>CONF:1098-15535</ruleId>
+    <ruleId>CONF:1198-7674, CONF:1198-7675, CONF:1198-15535</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_q_8twPvVEeOvZJBdQKQrqQ" clientDependency="_BvuRUPvWEeOvZJBdQKQrqQ" name="AssessmentAndPlanSection2">
     <ownedComment xmi:id="_8BIW0PvVEeOvZJBdQKQrqQ">

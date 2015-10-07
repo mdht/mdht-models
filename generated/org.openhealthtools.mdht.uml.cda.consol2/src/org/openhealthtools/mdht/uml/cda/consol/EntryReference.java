@@ -118,7 +118,7 @@ public interface EntryReference extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (isDefined(\'nullFlavor\') )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (nullFlavor.oclIsUndefined() )))'"
 	 * @generated
 	 */
 	boolean validateEntryReferenceIINullFlavor(DiagnosticChain diagnostics, Map<Object, Object> context);

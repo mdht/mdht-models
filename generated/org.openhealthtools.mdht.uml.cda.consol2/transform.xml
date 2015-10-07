@@ -117,8 +117,7 @@
 		<replaceTemplateNames oldTemplateName="Discharge Medications Section Entries Optional2" newTemplateName="Discharge Medications Section (entries optional) (V3)" />
 		<replaceTemplateNames oldTemplateName="Discharge Medications Section2" newTemplateName="Discharge Medications Section (entries required) (V3)" />
 		<replaceTemplateNames oldTemplateName="Encounters Section Entries Optional2" newTemplateName="Encounters Section (entries optional) (V3)" />
-		<replaceTemplateNames oldTemplateName="Encounters Section2" newTemplateName="Encounters Section (entries required) (V3)" />
-		
+		<replaceTemplateNames oldTemplateName="Encounters Section2" newTemplateName="Encounters Section (entries required) (V3)" />		
 		<replaceTemplateNames oldTemplateName="Family History Section2" newTemplateName="Family History Section (V3)" />
 		<replaceTemplateNames oldTemplateName="Health Concerns Section" newTemplateName="Health Concerns Section (V2)" />
 		<replaceTemplateNames oldTemplateName="History Of Past Illness Section2" newTemplateName="History of Past Illness Section (V3)" />
@@ -154,6 +153,21 @@
 		<replaceTemplateNames oldTemplateName="Encounter Activity2" newTemplateName="Encounter Activity (V3)" />
 		<replaceTemplateNames oldTemplateName="Problem Concern Act2" newTemplateName="Problem Concern Act (V3)" />
 		<replaceTemplateNames oldTemplateName="Result Organizer2" newTemplateName="Result Organizer (V3)" />
+ 
+		<replaceTemplateNames oldTemplateName="Consol Advance Directive Organizer" newTemplateName="Advance Directive Organizer (V2)" />
+		<replaceTemplateNames oldTemplateName="Coverage Activity2" newTemplateName="Coverage Activity (V3)" />
+		<replaceTemplateNames oldTemplateName="Deceased Observation2" newTemplateName="Deceased Observation (V3)" />
+		<replaceTemplateNames oldTemplateName="Encounter Diagnosis2" newTemplateName="Encounter Diagnosis (V3)" />
+		<replaceTemplateNames oldTemplateName="Family History Organizer2" newTemplateName="Family History Organizer (V3)" />
+		<replaceTemplateNames oldTemplateName="Consol Health Concern Act" newTemplateName="Consol Health Concern Act (V2)" />
+		<replaceTemplateNames oldTemplateName="Hospital Admission Diagnosis2" newTemplateName="Hospital Admission Diagnosis (V3)" />
+		<replaceTemplateNames oldTemplateName="Hospital Discharge Diagnosis2" newTemplateName="Hospital Discharge Diagnosis (V3)" />
+		<replaceTemplateNames oldTemplateName="Consol Intervention Act" newTemplateName="Consol Intervention Act (V2)" />
+		<replaceTemplateNames oldTemplateName="Consol Longitudinal Care Wound Observation" newTemplateName="Consol Longitudinal Care Wound Observation (V2)" />
+		<replaceTemplateNames oldTemplateName="Consol Planned Intervention Act" newTemplateName="Consol Planned Intervention Act (V2)" />
+		<replaceTemplateNames oldTemplateName="Postprocedure Diagnosis2" newTemplateName="Postprocedure Diagnosis (V3)" />
+		<replaceTemplateNames oldTemplateName="Preoperative Diagnosis2" newTemplateName="Preoperative Diagnosis (V3)" />
+		<replaceTemplateNames oldTemplateName="Consol Risk Concern Act" newTemplateName="Consol Risk Concern Act (V2)" />
 		<!-- other -->
 		<replaceTemplateNames oldTemplateName="US Realm Header Patient Generated Document" newTemplateName="US Realm Header - Patient Generated Document (V2)" />
 	</target>
