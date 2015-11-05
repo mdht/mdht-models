@@ -955,9 +955,21 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nTB7wPy0EeOfAK77IvEBUw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nTB7wfy0EeOfAK77IvEBUw" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_7U7yIKMsEeS3pZBAijm94w" name="code" visibility="private" redefinedProperty="_2Poj-BSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:id="_7U7yIKMsEeS3pZBAijm94w" name="code" visibility="private" type="_8UGJgINOEeWwKJF2wszVog" redefinedProperty="_2Poj-BSVEeGGzu7fmW9pXw"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_8UGJgINOEeWwKJF2wszVog" name="CE">
+      <ownedComment xmi:id="__at8MINOEeWwKJF2wszVog">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_8UGwkINOEeWwKJF2wszVog">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_-O4bMINOEeWwKJF2wszVog" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OAy0wYNPEeWwKJF2wszVog" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OAy0wINPEeWwKJF2wszVog" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_JxnhwPyzEeOfAK77IvEBUw" base_Class="_HlfBYPyzEeOfAK77IvEBUw" templateId="2.16.840.1.113883.10.20.22.2.11" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7816, CONF:1198-10396, CONF:1198-32561</ruleId>
@@ -1001,6 +1013,9 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e05cIQI2EeSRkrs1G7P_XQ" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_3pFqEEKvEeWCWce3kO1aHQ" name="CE">
+      <ownedComment xmi:id="_HGWLIINPEeWwKJF2wszVog">
+        <body>INLINE</body>
+      </ownedComment>
       <generalization xmi:id="_3pGRIEKvEeWCWce3kO1aHQ">
         <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       </generalization>
@@ -1035,7 +1050,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:PropertyValidation xmi:id="_iGRGQAI2EeSRkrs1G7P_XQ" base_Property="_e06DMAI2EeSRkrs1G7P_XQ">
     <ruleId>CONF:1198-7824</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_7U8ZMKMsEeS3pZBAijm94w" code="75311-1" displayName="Discharge medications" base_Property="_7U7yIKMsEeS3pZBAijm94w">
+  <CDA:CodeSystemConstraint xmi:id="_7U8ZMKMsEeS3pZBAijm94w" code="10183-2" displayName="Hospital Discharge Medications" base_Property="_7U7yIKMsEeS3pZBAijm94w">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-15360, CONF:1198-32480</ruleId>
   </CDA:CodeSystemConstraint>
@@ -1114,5 +1129,13 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-32858</ruleId>
     <ruleId>CONF:1198-32859</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_NWy1gINPEeWwKJF2wszVog" base_Property="_-O4bMINOEeWwKJF2wszVog">
+    <ruleId>CONF:1198-32854</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_O5vO8INPEeWwKJF2wszVog" code="75311-1" displayName="Discharge Medications" base_Property="_-O4bMINOEeWwKJF2wszVog">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-32855</ruleId>
+    <ruleId>CONF:1198-32856</ruleId>
   </CDA:CodeSystemConstraint>
 </xmi:XMI>

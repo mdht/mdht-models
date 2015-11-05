@@ -14835,6 +14835,14 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ComplicationsSection2/getConsolProblemObservation2s"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//DischargeMedicationsSectionEntriesOptional2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeMedicationsSectionEntriesOptional2/DischargeMedicationsSectionEntriesOptional2CETranslation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeMedicationsSectionEntriesOptional2/DischargeMedicationsSectionEntriesOptional2CETranslation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeMedicationsSectionEntriesOptional2/DischargeMedicationsSectionEntriesOptional2CETranslation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeMedicationsSectionEntriesOptional2/DischargeMedicationsSectionEntriesOptional2CETranslationP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeMedicationsSectionEntriesOptional2/DischargeMedicationsSectionEntriesOptional2CETranslationP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//DischargeMedicationsSectionEntriesOptional2/DischargeMedicationsSectionEntriesOptional2CETranslationP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//DischargeMedicationsSectionEntriesOptional2/getConsolDischargeMedication2s"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//InstructionsSection2">
