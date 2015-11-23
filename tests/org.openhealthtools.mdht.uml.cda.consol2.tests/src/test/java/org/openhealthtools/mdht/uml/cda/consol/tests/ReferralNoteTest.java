@@ -416,7 +416,9 @@ public class ReferralNoteTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ReferralNote target) {
 				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
+				target.getParticipants().add(par);
 			}
 
 			@Override
@@ -450,7 +452,9 @@ public class ReferralNoteTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ReferralNote target) {
 				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.CALLBCK);
+				target.getParticipants().add(par);
 			}
 
 			@Override
@@ -1530,6 +1534,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
 				target.getParticipants().add(par);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				par.setAssociatedEntity(ae);
@@ -1570,13 +1575,15 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+				for (Participant1 par : target.getParticipants()) {
+					par.setTypeCode(ParticipationType.IND);
+					par.setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+				}
 			}
 
 			@Override
 			protected void updateToPass(ReferralNote target) {
-				// incorrect value but only checking for classCode element
-				target.getParticipants().get(0).getAssociatedEntity().setClassCode(RoleClassAssociative.ACCESS);
+				target.getParticipants().get(0).getAssociatedEntity().setClassCode(RoleClassAssociative.PRS);
 			}
 
 			@Override
@@ -1606,7 +1613,10 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
-				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+				for (Participant1 par : target.getParticipants()) {
+					par.setTypeCode(ParticipationType.IND);
+					par.setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
+				}
 			}
 
 			@Override
@@ -1642,6 +1652,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
 				target.getParticipants().add(par);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				par.setAssociatedEntity(ae);
@@ -1676,15 +1687,27 @@ public class ReferralNoteTest extends CDAValidationTest {
 			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific Participation type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
+
 			@Override
 			protected void updateToFail(ReferralNote target) {
 				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.ADM);
+				target.getParticipants().add(par);
+
 			}
 
 			@Override
 			protected void updateToPass(ReferralNote target) {
-				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
+				target.getParticipants().clear();
+				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
+				target.getParticipants().add(par);
 			}
 
 			@Override
@@ -1714,6 +1737,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
 				target.getParticipants().add(par);
 			}
 
@@ -1749,6 +1773,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().add(par);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				par.setAssociatedEntity(ae);
@@ -1789,6 +1814,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().add(par);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				par.setAssociatedEntity(ae);
@@ -1827,6 +1853,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().add(par);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				par.setAssociatedEntity(ae);
@@ -1865,6 +1892,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().add(par);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				par.setAssociatedEntity(ae);
@@ -1903,6 +1931,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().add(par);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				target.getParticipants().get(0).setAssociatedEntity(ae);
@@ -1940,6 +1969,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().add(par);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				par.setAssociatedEntity(ae);
@@ -1978,6 +2008,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().add(par);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				par.setAssociatedEntity(ae);
@@ -2012,10 +2043,17 @@ public class ReferralNoteTest extends CDAValidationTest {
 			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific Participation type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
+
 			@Override
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.ADM);
 				target.getParticipants().add(par);
 			}
 
@@ -2054,6 +2092,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 			protected void updateToFail(ReferralNote target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().add(par);
 			}
 
