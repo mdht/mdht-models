@@ -7366,7 +7366,7 @@ The information recipient represents the intended recipient of the referral note
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_nwIL0KAMEeOQs7VC4HptuQ" name="ParticipantCaregiver">
       <ownedComment xmi:id="_tn3bQKAMEeOQs7VC4HptuQ">
-        <body>INLINE</body>
+        <body>INLINE&amp;typeCode=vocab::ParticipationType::IND</body>
       </ownedComment>
       <ownedComment xmi:id="_uxq78KAMEeOQs7VC4HptuQ">
         <body>participant&#xD;
@@ -7409,7 +7409,7 @@ The Participants (support) identifies participants who support the patient such 
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_P2_2sKAQEeOQs7VC4HptuQ" name="ParticipantCallbackContact">
       <ownedComment xmi:id="_VJHQkKAQEeOQs7VC4HptuQ">
-        <body>INLINE</body>
+        <body>INLINE&amp;typeCode=vocab::ParticipationType::CALLBCK</body>
       </ownedComment>
       <ownedComment xmi:id="_Wh3MMKAQEeOQs7VC4HptuQ">
         <body>The participants (contact) represent the clinician to contact for questions about the referral summary. This may represent the clinician who made the referral or the referral nurse.&#xD;

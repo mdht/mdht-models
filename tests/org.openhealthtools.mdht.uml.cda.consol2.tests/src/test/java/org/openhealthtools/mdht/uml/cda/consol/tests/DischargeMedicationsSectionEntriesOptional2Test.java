@@ -49,7 +49,7 @@ public class DischargeMedicationsSectionEntriesOptional2Test extends CDAValidati
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateDischargeMedicationsSectionEntriesOptional2CETranslation() {
@@ -89,7 +89,7 @@ public class DischargeMedicationsSectionEntriesOptional2Test extends CDAValidati
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateDischargeMedicationsSectionEntriesOptional2CETranslationP() {
