@@ -1109,7 +1109,7 @@ This information should be included in an Immunization Activity when available. 
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_kL7XcMHyEeST26B_nQ4gxA" name="EntryRelationship">
       <ownedComment xmi:id="_qgSRcMHyEeST26B_nQ4gxA">
-        <body>INLINE</body>
+        <body>INLINE&amp;typeCode=vocab::x_ActRelationshipEntryRelationship::COMP</body>
       </ownedComment>
       <ownedComment xmi:id="_1uRz4MHyEeST26B_nQ4gxA">
         <body>The following entryRelationship is used to indicate a given immunization's order in a series. The nested Substance Administered Act identifies an administration in the series. The entryRelationship/sequenceNumber shows the order of this particular administration in that series.</body>

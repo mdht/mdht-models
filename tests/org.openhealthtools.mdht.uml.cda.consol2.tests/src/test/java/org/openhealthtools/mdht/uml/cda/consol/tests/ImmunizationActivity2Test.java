@@ -172,6 +172,7 @@ public class ImmunizationActivity2Test extends CDAValidationTest {
 			protected void updateToPass(ImmunizationActivity2 target) {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
 				target.getEntryRelationships().add(er);
 			}
 
@@ -197,6 +198,12 @@ public class ImmunizationActivity2Test extends CDAValidationTest {
 			"validateImmunizationActivity2EntryRelationshipTypeCode",
 			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific entryRelationship type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
 
 			@Override
 			protected void updateToFail(ImmunizationActivity2 target) {
@@ -239,6 +246,7 @@ public class ImmunizationActivity2Test extends CDAValidationTest {
 			protected void updateToFail(ImmunizationActivity2 target) {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
 				target.getEntryRelationships().add(er);
 			}
 
@@ -276,6 +284,7 @@ public class ImmunizationActivity2Test extends CDAValidationTest {
 			protected void updateToFail(ImmunizationActivity2 target) {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
 				target.getEntryRelationships().add(er);
 			}
 
@@ -314,16 +323,19 @@ public class ImmunizationActivity2Test extends CDAValidationTest {
 			protected void updateToFail(ImmunizationActivity2 target) {
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
 				target.getEntryRelationships().add(er);
+
 			}
 
 			@Override
 			protected void updateToPass(ImmunizationActivity2 target) {
-				for (EntryRelationship er : target.getEntryRelationships()) {
-					er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
-					er.setAct(ConsolFactory.eINSTANCE.createSubstanceAdministeredAct().init());
-					target.getEntryRelationships().add(er);
-				}
+				target.getEntryRelationships().clear();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				target.getEntryRelationships().add(er);
+				er.setTypeCode(x_ActRelationshipEntryRelationship.COMP);
+				er.setAct(ConsolFactory.eINSTANCE.createSubstanceAdministeredAct().init());
+				target.getEntryRelationships().add(er);
 			}
 
 			@Override
