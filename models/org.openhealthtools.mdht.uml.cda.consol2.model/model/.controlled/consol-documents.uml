@@ -6682,7 +6682,7 @@ This authenticator represents patient agreement or sign-off of the Care Plan</bo
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_z_QYEJ6AEeOr4eM3k36wAg" name="ParticipantCarePlanReview">
       <ownedComment xmi:id="_4M5dMJ6AEeOr4eM3k36wAg">
-        <body>INLINE</body>
+        <body>INLINE&amp;typeCode=vocab::ParticipationType::VRF</body>
       </ownedComment>
       <ownedComment xmi:id="_5BHvcJ6AEeOr4eM3k36wAg">
         <body>participant&#xD;
@@ -6737,7 +6737,7 @@ This participant represents the person who reviewed the Care Plan. If the date i
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fgKZEJ8BEeOr4eM3k36wAg" name="ParticipantCaregiver">
       <ownedComment xmi:id="_lUehEJ8BEeOr4eM3k36wAg">
-        <body>INLINE</body>
+        <body>INLINE&amp;typeCode=vocab::ParticipationType::IND</body>
       </ownedComment>
       <ownedComment xmi:id="_msxJsJ8BEeOr4eM3k36wAg">
         <body>participant&#xD;
