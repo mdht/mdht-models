@@ -100,7 +100,7 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipDocument;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanParticipantCaregiverAssociatedEntity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Participant Caregiver Associated Entity</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event IVLTS High</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Assigned Person Name</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName(org.eclipse.emf.common.util.DiagncosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Assigned Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CarePlan#validateCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Care Plan Documentation Of Service Event Performer Assigned Entity Assigned Person</em>}</li>
@@ -395,6 +395,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToPass(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
 			}
 
 			@Override
@@ -429,6 +430,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToPass(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 			}
 
 			@Override
@@ -1405,6 +1407,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1440,6 +1443,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1476,6 +1480,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1511,6 +1516,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 				target.getParticipants().get(0).getAssociatedEntity().setCode(
 					DatatypesFactory.eINSTANCE.createCE(
@@ -1546,14 +1552,20 @@ public class CarePlanTest extends CDAValidationTest {
 			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific Participation type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
+
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
+				target.init();
+				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
 				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
 			}
 
@@ -1584,6 +1596,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
 			}
 
 			@Override
@@ -1619,6 +1632,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
 			}
 
 			@Override
@@ -1653,6 +1667,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
 			}
 
 			@Override
@@ -1687,6 +1702,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.VRF);
 			}
 
 			@Override
@@ -1721,6 +1737,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 				target.getParticipants().get(0).getAssociatedEntity().setAssociatedPerson(
 					CDAFactory.eINSTANCE.createPerson());
@@ -1759,6 +1776,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1795,6 +1813,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1830,6 +1849,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1862,14 +1882,20 @@ public class CarePlanTest extends CDAValidationTest {
 			operationsForOCL.getOCLValue("VALIDATE_CARE_PLAN_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific Participation type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
+
 			@Override
 			protected void updateToFail(CarePlan target) {
-				target.init();
-				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
 			}
 
 			@Override
 			protected void updateToPass(CarePlan target) {
+				target.init();
+				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
 				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 			}
 
@@ -1900,6 +1926,7 @@ public class CarePlanTest extends CDAValidationTest {
 			protected void updateToFail(CarePlan target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 			}
 
 			@Override
