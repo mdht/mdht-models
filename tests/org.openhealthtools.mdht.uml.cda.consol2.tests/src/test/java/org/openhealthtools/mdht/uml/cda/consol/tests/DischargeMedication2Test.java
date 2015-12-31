@@ -203,7 +203,7 @@ public class DischargeMedication2Test extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateDischargeMedicationCode() {
@@ -214,13 +214,12 @@ public class DischargeMedication2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(DischargeMedication2 target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(DischargeMedication2 target) {
-				target.init();
-
+				target.setCode(DatatypesFactory.eINSTANCE.createCD("75311-1", LOINC_ID));
 			}
 
 			@Override

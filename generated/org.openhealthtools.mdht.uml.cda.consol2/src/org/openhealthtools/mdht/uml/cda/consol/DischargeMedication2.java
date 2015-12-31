@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDischargeMedication2()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DischargeMedicationTemplateId DischargeMedicationCode DischargeMedicationCodeP DischargeMedication2StatusCode DischargeMedication2StatusCodeP DischargeMedicationMedicationActivity' templateId.root='2.16.840.1.113883.10.20.22.4.35' templateId.extension='2014-06-09' code.code='10183-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Discharge Medication' constraints.validation.dependOn.DischargeMedicationCode='DischargeMedicationCodeP' statusCode.code='completed'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DischargeMedicationTemplateId DischargeMedicationCode DischargeMedicationCodeP DischargeMedication2StatusCode DischargeMedication2StatusCodeP DischargeMedicationMedicationActivity' templateId.root='2.16.840.1.113883.10.20.22.4.35' templateId.extension='2014-06-09' code.code='75311-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Discharge Medication' constraints.validation.dependOn.DischargeMedicationCode='DischargeMedicationCodeP' statusCode.code='completed'"
  * @generated
  */
 public interface DischargeMedication2 extends DischargeMedication {

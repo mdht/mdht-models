@@ -854,7 +854,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <ruleId>CONF:1098-32513</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_UCOZYMykEeO93sHu8pHB2g" base_Generalization="_EIhLMMyjEeO93sHu8pHB2g"/>
-  <CDA:CodeSystemConstraint xmi:id="_0SZ7McyvEeO93sHu8pHB2g" code="10183-2" displayName="Discharge Medication" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
+  <CDA:CodeSystemConstraint xmi:id="_0SZ7McyvEeO93sHu8pHB2g" code="75311-1" displayName="Discharge Medication" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-19161</ruleId>
     <ruleId>CONF:1098-32159</ruleId>
