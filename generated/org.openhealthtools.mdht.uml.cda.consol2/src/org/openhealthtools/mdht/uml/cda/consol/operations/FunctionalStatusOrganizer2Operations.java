@@ -44,7 +44,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateFunctionalStatusOrganizer2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Organizer2 Author Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#getConsolFunctionalStatusObservation2s() <em>Get Consol Functional Status Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#getSelfCareActivitiess() <em>Get Self Care Activitiess</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateFunctionalStatusResultOrganizerCodeCodeSystem(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Organizer Code Code System</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateResultOrganizerCodeValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2#validateResultOrganizerStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Status Code P</em>}</li>
@@ -221,7 +221,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2.getEAllOperations().get(68));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2.getEAllOperations().get(67));
 			try {
 				GET_CONSOL_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_FUNCTIONAL_STATUS_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -265,7 +265,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2,
-				ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2.getEAllOperations().get(69));
+				ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2.getEAllOperations().get(68));
 			try {
 				GET_SELF_CARE_ACTIVITIESS__EOCL_QRY = helper.createQuery(GET_SELF_CARE_ACTIVITIESS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -279,25 +279,25 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateFunctionalStatusResultOrganizerCodeCodeSystem(FunctionalStatusOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Organizer Code Code System</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateResultOrganizerCodeValue(FunctionalStatusOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code Value</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateFunctionalStatusResultOrganizerCodeCodeSystem(FunctionalStatusOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateResultOrganizerCodeValue(FunctionalStatusOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FUNCTIONAL_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.254' or self.code.codeSystem = '2.16.840.1.113883.6.1'";
+	protected static final String VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.254' or self.code.codeSystem = '2.16.840.1.113883.6.1'";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateFunctionalStatusResultOrganizerCodeCodeSystem(FunctionalStatusOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Result Organizer Code Code System</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateResultOrganizerCodeValue(FunctionalStatusOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code Value</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateFunctionalStatusResultOrganizerCodeCodeSystem(FunctionalStatusOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateResultOrganizerCodeValue(FunctionalStatusOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -310,28 +310,25 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 	 * @generated
 	 */
 
-	public static boolean validateFunctionalStatusResultOrganizerCodeCodeSystem(
-			FunctionalStatusOrganizer2 functionalStatusOrganizer2, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static boolean validateResultOrganizerCodeValue(FunctionalStatusOrganizer2 functionalStatusOrganizer2,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FUNCTIONAL_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_ORGANIZER2);
 			try {
-				VALIDATE_FUNCTIONAL_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FUNCTIONAL_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_FUNCTIONAL_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			functionalStatusOrganizer2)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__FUNCTIONAL_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM,
-					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2FunctionalStatusResultOrganizerCodeCodeSystem"),
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_CODE_VALUE,
+					ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2ResultOrganizerCodeValue"),
 					new Object[] { functionalStatusOrganizer2 }));
 			}
 

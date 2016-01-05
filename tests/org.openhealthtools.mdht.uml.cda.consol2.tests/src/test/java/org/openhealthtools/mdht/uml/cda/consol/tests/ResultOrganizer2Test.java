@@ -225,41 +225,23 @@ public class ResultOrganizer2Test extends CDAValidationTest {
 				target.setCode(code);
 			}
 
+			private final String cpt4Cs = "2.16.840.1.113883.6.12";
+
+			private final String[] valCodeSystems = { cpt4Cs, CDAValidationTest.SNOMEDCT_ID, CDAValidationTest.LOINC_ID };
+
 			@Override
 			public void addPassTests() {
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(ResultOrganizer2 target) {
-						target.init();
-						CD code = DatatypesFactory.eINSTANCE.createCD();
-						// setting valid codeSystem 1
-						code.setCodeSystem("2.16.840.1.113883.6.1");
-						target.setCode(code);
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(ResultOrganizer2 target) {
-						target.init();
-						CD code = DatatypesFactory.eINSTANCE.createCD();
-						// setting valid codeSystem 2
-						code.setCodeSystem(SNOMEDCT_ID);
-						target.setCode(code);
-					}
-				});
-
-				addPassTest(new PassTest() {
-					@Override
-					public void updateToPass(ResultOrganizer2 target) {
-						target.init();
-						CD code = DatatypesFactory.eINSTANCE.createCD();
-						// setting valid codeSystem 3
-						code.setCodeSystem("2.16.840.1.113883.6.12");
-						target.setCode(code);
-					}
-				});
-			};
+				for (final String cs : valCodeSystems) {
+					addPassTest(new PassTest() {
+						@Override
+						public void updateToPass(ResultOrganizer2 target) {
+							target.init();
+							target.setCode(DatatypesFactory.eINSTANCE.createCD());
+							target.getCode().setCodeSystem(cs);
+						}
+					});
+				}
+			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
