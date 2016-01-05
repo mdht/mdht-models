@@ -4066,10 +4066,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusSection/getHighestPressureUlcerStages"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//FunctionalStatusResultOrganizer">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerCodeCodeSystem">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerCodeCodeSystem/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerCodeCodeSystem/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerFunctionalStatusResultObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerFunctionalStatusResultObservation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//FunctionalStatusResultOrganizer/FunctionalStatusResultOrganizerFunctionalStatusResultObservation/context"/>

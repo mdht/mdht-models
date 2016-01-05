@@ -54,18 +54,6 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateFunctionalStatusResultOrganizerCodeCodeSystem(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerCodeCodeSystem(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
@@ -80,6 +68,16 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	@Override
 	public EList<FunctionalStatusResultObservation> getFunctionalStatusResultObservations() {
 		return FunctionalStatusResultOrganizerOperations.getFunctionalStatusResultObservations(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultOrganizerOperations.validateResultOrganizerCodeValue(this, diagnostics, context);
 	}
 
 	/**

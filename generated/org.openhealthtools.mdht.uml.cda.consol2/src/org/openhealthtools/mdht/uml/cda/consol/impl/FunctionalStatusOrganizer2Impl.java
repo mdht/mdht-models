@@ -105,10 +105,8 @@ public class FunctionalStatusOrganizer2Impl extends FunctionalStatusResultOrgani
 	 * @generated
 	 */
 	@Override
-	public boolean validateFunctionalStatusResultOrganizerCodeCodeSystem(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return FunctionalStatusOrganizer2Operations.validateFunctionalStatusResultOrganizerCodeCodeSystem(
-			this, diagnostics, context);
+	public boolean validateResultOrganizerCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusOrganizer2Operations.validateResultOrganizerCodeValue(this, diagnostics, context);
 	}
 
 	/**
