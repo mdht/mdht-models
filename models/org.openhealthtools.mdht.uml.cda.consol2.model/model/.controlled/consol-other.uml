@@ -1423,7 +1423,7 @@ Instructions are information or directions to the patient. Use the Instructions 
       <body>This clinical statement identifies a set of functional status result observations. It contains information applicable to all of the contained functional status result observations. A functional status organizer may group self-care observations related to a patient's ability to feed, bathe, and dress.&#xD;
 An appropriate nullFlavor can be used when the organizer/code or organizer/id is unknown.</body>
     </ownedComment>
-    <ownedRule xmi:id="_flXasOb0EeGINOJ_SD9_dA" name="codeCodeSystem">
+    <ownedRule xmi:id="_flXasOb0EeGINOJ_SD9_dA" name="codeValue">
       <constrainedElement xmi:type="uml:Class" href="consol-cognitive.uml#_jfoCUOZbEeGINOJ_SD9_dA"/>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_flXaseb0EeGINOJ_SD9_dA">
         <language>Analysis</language>
@@ -1498,7 +1498,7 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
     <ruleId>CONF:14358</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_r1Ki8Ob1EeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_A3WOMOb0EeGINOJ_SD9_dA">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_cHvLUOb2EeGINOJ_SD9_dA" base_Association="_aWvu0Ob2EeGINOJ_SD9_dA">
     <ruleId>CONF:14359</ruleId>
@@ -2765,7 +2765,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     <ownedComment xmi:id="_8KWzAOD0EeOmBMTtnrPqww">
       <body>This template groups related functional status observations into categories (e.g., mobility, self-care).</body>
     </ownedComment>
-    <ownedRule xmi:id="_s7VVAOD9EeOmBMTtnrPqww" name="codeCodeSystem" constrainedElement="_2e1d0OD4EeOmBMTtnrPqww">
+    <ownedRule xmi:id="_s7VVAOD9EeOmBMTtnrPqww" name="codeValue" constrainedElement="_2e1d0OD4EeOmBMTtnrPqww">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_19yM8OD9EeOmBMTtnrPqww">
         <language>Analysis</language>
         <language>OCL</language>
@@ -2829,7 +2829,7 @@ If the ID isn't referencing an author described elsewhere in the document, then 
     <ruleId>CONF:1098-14358</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_YRfRQOD_EeOmBMTtnrPqww" code="completed" displayName="Completed" base_Property="_YReDIOD_EeOmBMTtnrPqww">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31434</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_xJoPgOD_EeOmBMTtnrPqww" memberEnd="_xJnBYOD_EeOmBMTtnrPqww _xJo2kOD_EeOmBMTtnrPqww">
