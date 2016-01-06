@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2NIpgBSVEeGGzu7fmW9pXw" name="MedicationsSection">
     <ownedRule xmi:id="_2NJ3tRSVEeGGzu7fmW9pXw" name="absenceOfMedications">
       <ownedComment xmi:id="_2NJ3thSVEeGGzu7fmW9pXw">
@@ -26,12 +26,25 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ca-EUSUpEeG_gJw2x8CkdQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ca-EUCUpEeG_gJw2x8CkdQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2NIpgxSVEeGGzu7fmW9pXw" name="medication" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_2NJ3oRSVEeGGzu7fmW9pXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NIphRSVEeGGzu7fmW9pXw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NIphBSVEeGGzu7fmW9pXw" value="*"/>
+    <ownedAttribute xmi:id="_wssz4LS3EeWpm8PSOGz-9g" name="entry" type="_wssM0LS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wssz4bS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wssz4rS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wssM07S3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wssM0LS3EeWpm8PSOGz-9g" name="MedicationActivityEntry">
+      <generalization xmi:id="_wssM0bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wsta8bS3EeWpm8PSOGz-9g" name="medication" type="_2GHbgBSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wsta8rS3EeWpm8PSOGz-9g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wsta87S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_qXT58EbuEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wsta8LS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_2NJ3oRSVEeGGzu7fmW9pXw" memberEnd="_2NIpgxSVEeGGzu7fmW9pXw _2NJ3ohSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2NJ3oRSVEeGGzu7fmW9pXw" memberEnd="_2NJ3ohSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2NJ3ohSVEeGGzu7fmW9pXw" type="_2NIpgBSVEeGGzu7fmW9pXw" association="_2NJ3oRSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2NIphhSVEeGGzu7fmW9pXw" base_Class="_2NIpgBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.1.1">
@@ -237,29 +250,6 @@ Medication timing is complex. This template requires that there be a substanceAd
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JnvyMRUREeG6PvUxSTZnaw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JnvyMBUREeG6PvUxSTZnaw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2G8h8hSVEeGGzu7fmW9pXw" name="instructions" association="_2HCokBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S8fa4SAQEeGKirKJsFylGA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S8fa4CAQEeGKirKJsFylGA" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2GHb2BSVEeGGzu7fmW9pXw" name="medicationSupplyOrder" type="_j3aTQBrTEeGo461UQq-B1g" association="_2GjgYxSVEeGGzu7fmW9pXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dOQhUfEkEeGPm_ynmLKd6Q"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dOQhUPEkEeGPm_ynmLKd6Q" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2GHb2xSVEeGGzu7fmW9pXw" name="reactionObservation" association="_2GjgZRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-allergies.uml#_2E_aIRSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2GHb3RSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2GHb3BSVEeGGzu7fmW9pXw" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_7USBsBUSEeG6PvUxSTZnaw" name="indication" association="_7USBshUSEeG6PvUxSTZnaw">
-      <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FuGuASAQEeGKirKJsFylGA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FuGuACAQEeGKirKJsFylGA" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_H7DfgBUUEeG6PvUxSTZnaw" name="medicationDispense" type="_DpoGkBUUEeG6PvUxSTZnaw" association="_H7DfghUUEeG6PvUxSTZnaw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d3RpIfEkEeGPm_ynmLKd6Q"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d3RpIPEkEeGPm_ynmLKd6Q" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_U6R5kBUVEeG6PvUxSTZnaw" name="drugVehicle" type="_VBXq8BUTEeG6PvUxSTZnaw" association="_U6R5khUVEeG6PvUxSTZnaw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r5hacR-zEeGKirKJsFylGA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r5hacB-zEeGKirKJsFylGA" value="*"/>
@@ -287,6 +277,36 @@ Medication timing is complex. This template requires that there be a substanceAd
     <ownedAttribute xmi:id="_kOcWgGYJEeSEPIr_Fd4TVg" name="precondition" type="_uO5HwGYJEeSEPIr_Fd4TVg" association="_kOc9kmYJEeSEPIr_Fd4TVg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kOc9kGYJEeSEPIr_Fd4TVg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kOc9kWYJEeSEPIr_Fd4TVg" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wp3iUbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wp27QLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wp3iUrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wp3iU7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_E7yFoUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wp3iULS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wp6lobS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wp5-kLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wp6lorS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wp6lo7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_E7yFoUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wp6loLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wp9B47S3EeWpm8PSOGz-9g" name="entryRelationship" type="_wp8a0LS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wp9o8LS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wp9o8bS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_E7yFoUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wp9B4rS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wqAFMbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wp_eILS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wqAFMrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wqAFM7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_E7yFoUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wqAFMLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wqChcrS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wqB6YLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wqDIgLS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wqDIgbS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_E7yFoUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wqChcbS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ou3j0G65EeGeVrQbtyMiPg" name="Consumable">
       <ownedComment xmi:id="_Wzk84PEkEeGPm_ynmLKd6Q">
@@ -323,23 +343,81 @@ Medication timing is complex. This template requires that there be a substanceAd
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DpluwGYKEeSEPIr_Fd4TVg" value="1"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wp27QLS3EeWpm8PSOGz-9g" name="InstructionsEntryRelationship">
+      <generalization xmi:id="_wp27QbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wp4wcbS3EeWpm8PSOGz-9g" name="instructions" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wp4wcrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wp4wc7S3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Hop1oUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wp4wcLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wp5-kLS3EeWpm8PSOGz-9g" name="MedicationSupplyOrderEntryRelationship">
+      <generalization xmi:id="_wp5-kbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wp7MsrS3EeWpm8PSOGz-9g" name="medicationSupplyOrder" type="_j3aTQBrTEeGo461UQq-B1g" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wp7zwLS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wp7zwbS3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Nd7m8EcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wp7MsbS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wp8a0LS3EeWpm8PSOGz-9g" name="ReactionObservationEntryRelationship">
+      <generalization xmi:id="_wp9B4LS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wp-QAbS3EeWpm8PSOGz-9g" name="reactionObservation" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-allergies.uml#_2E_aIRSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wp-QArS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wp-QA7S3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wp-QALS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wp_eILS3EeWpm8PSOGz-9g" name="IndicationEntryRelationship">
+      <generalization xmi:id="_wp_eIbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wqBTULS3EeWpm8PSOGz-9g" name="indication" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wqBTUbS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wqBTUrS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wqAsQbS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wqB6YLS3EeWpm8PSOGz-9g" name="MedicationDispenseEntryRelationship">
+      <generalization xmi:id="_wqB6YbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wqEWobS3EeWpm8PSOGz-9g" name="medicationDispense" type="_DpoGkBUUEeG6PvUxSTZnaw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wqEWorS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wqEWo7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Nd7m8EcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wqEWoLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_2G10QxSVEeGGzu7fmW9pXw" memberEnd="_2G10QBSVEeGGzu7fmW9pXw _2G10RBSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2G10RBSVEeGGzu7fmW9pXw" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_2G10QxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2HCokBSVEeGGzu7fmW9pXw" memberEnd="_2G8h8hSVEeGGzu7fmW9pXw _2HCokRSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2HCokBSVEeGGzu7fmW9pXw" memberEnd="_2HCokRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2HCokRSVEeGGzu7fmW9pXw" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_2HCokBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2GjgYxSVEeGGzu7fmW9pXw" memberEnd="_2GHb2BSVEeGGzu7fmW9pXw _2GjgZBSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2GjgYxSVEeGGzu7fmW9pXw" memberEnd="_2GjgZBSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2GjgZBSVEeGGzu7fmW9pXw" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_2GjgYxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2GjgZRSVEeGGzu7fmW9pXw" memberEnd="_2GHb2xSVEeGGzu7fmW9pXw _2GjgZhSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2GjgZRSVEeGGzu7fmW9pXw" memberEnd="_2GjgZhSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2GjgZhSVEeGGzu7fmW9pXw" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_2GjgZRSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_7USBshUSEeG6PvUxSTZnaw" memberEnd="_7USBsBUSEeG6PvUxSTZnaw _7USBsxUSEeG6PvUxSTZnaw">
+  <uml:Association xmi:id="_7USBshUSEeG6PvUxSTZnaw" memberEnd="_7USBsxUSEeG6PvUxSTZnaw">
     <ownedEnd xmi:id="_7USBsxUSEeG6PvUxSTZnaw" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_7USBshUSEeG6PvUxSTZnaw"/>
   </uml:Association>
-  <uml:Association xmi:id="_H7DfghUUEeG6PvUxSTZnaw" memberEnd="_H7DfgBUUEeG6PvUxSTZnaw _H7DfgxUUEeG6PvUxSTZnaw">
+  <uml:Association xmi:id="_H7DfghUUEeG6PvUxSTZnaw" memberEnd="_H7DfgxUUEeG6PvUxSTZnaw">
     <ownedEnd xmi:id="_H7DfgxUUEeG6PvUxSTZnaw" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_H7DfghUUEeG6PvUxSTZnaw"/>
   </uml:Association>
   <uml:Association xmi:id="_U6R5khUVEeG6PvUxSTZnaw" memberEnd="_U6R5kBUVEeG6PvUxSTZnaw _U6R5kxUVEeG6PvUxSTZnaw">
@@ -366,13 +444,13 @@ Medication timing is complex. This template requires that there be a substanceAd
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2GIpoRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbvhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2GJQsBSVEeGGzu7fmW9pXw" base_Property="_2GHbvhSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7514</ruleId>
+    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2GMUABSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbzhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2GX6MBSVEeGGzu7fmW9pXw" base_Property="_2GHbzhSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7515</ruleId>
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2GKe0BSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2GHbwhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7516</ruleId>
@@ -453,9 +531,6 @@ Medication timing is complex. This template requires that there be a substanceAd
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9lEkoEItEeG4bZAl2IGXmQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_42xlUErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_3-zGABrYEeGo461UQq-B1g" name="medicationSupplyOrder" type="_j3aTQBrTEeGo461UQq-B1g" association="_3-ztEBrYEeGo461UQq-B1g">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3-zGARrYEeGo461UQq-B1g"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_IQt9EEIwEeG4bZAl2IGXmQ" name="quantity" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IQt9EkIwEeG4bZAl2IGXmQ"/>
@@ -464,6 +539,12 @@ Medication timing is complex. This template requires that there be a substanceAd
     </ownedAttribute>
     <ownedAttribute xmi:id="_vTfZoOATEeGlGcipF_0y2A" name="performer" type="_VvuEcOATEeGlGcipF_0y2A" association="_vTgnwOATEeGlGcipF_0y2A">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vTfZoeATEeGlGcipF_0y2A"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wvAhAbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wu_58LS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvAhArS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvAhA7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_HiEycUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wvAhALS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_VvuEcOATEeGlGcipF_0y2A" name="Performer">
       <ownedComment xmi:id="_qjToIOATEeGlGcipF_0y2A">
@@ -488,6 +569,17 @@ Medication timing is complex. This template requires that there be a substanceAd
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
       </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wu_58LS3EeWpm8PSOGz-9g" name="MedicationSupplyOrderEntryRelationship">
+      <generalization xmi:id="_wu_58bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wvBIEbS3EeWpm8PSOGz-9g" name="medicationSupplyOrder" type="_j3aTQBrTEeGo461UQq-B1g" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvBIErS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvBIE7S3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Nd7m8EcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wvBIELS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_HlZ-cBncEeGs5a462vYX5Q" base_Class="_DpoGkBUUEeG6PvUxSTZnaw" templateId="2.16.840.1.113883.10.20.22.4.18">
@@ -613,10 +705,23 @@ Medication timing is complex. This template requires that there be a substanceAd
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ehr4sFmsEeGRqYkwoeymcA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_KTZYoFmsEeGRqYkwoeymcA" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_KTbN0FmsEeGRqYkwoeymcA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LUqoYVmsEeGRqYkwoeymcA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LUqoYFmsEeGRqYkwoeymcA" value="*"/>
+    <ownedAttribute xmi:id="_wtooAbS3EeWpm8PSOGz-9g" name="entry" type="_wtoA8LS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtooArS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtooA7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wtooALS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wtoA8LS3EeWpm8PSOGz-9g" name="MedicationActivityEntry">
+      <generalization xmi:id="_wtoA8bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wtp2ILS3EeWpm8PSOGz-9g" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtp2IbS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtp2IrS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_qXT58EbuEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wtpPEbS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2Poj_xSVEeGGzu7fmW9pXw" base_Class="_2Poj_BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.38">
     <ruleId>CONF:8152</ruleId>
@@ -654,10 +759,23 @@ This section requires that there be either an entry indicating the subject is no
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DB3sQSUpEeG_gJw2x8CkdQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DB3sQCUpEeG_gJw2x8CkdQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_FsPZUB-uEeGKirKJsFylGA" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_FsPZUh-uEeGKirKJsFylGA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_805zsSUoEeG_gJw2x8CkdQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_805zsCUoEeG_gJw2x8CkdQ" value="*"/>
+    <ownedAttribute xmi:id="_wvSN0bS3EeWpm8PSOGz-9g" name="entry" type="_wvRmwLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvSN0rS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvSN07S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wvSN0LS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wvRmwLS3EeWpm8PSOGz-9g" name="MedicationActivityEntry">
+      <generalization xmi:id="_wvRmwbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wvS04bS3EeWpm8PSOGz-9g" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvS04rS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvS047S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_qXT58EbuEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wvS04LS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_nvOcIBVeEeGQCvUGzi1kDQ" base_Class="_iAoXEBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.1">
     <ruleId>CONF:7791</ruleId>
@@ -680,12 +798,25 @@ This section requires that there be either an entry indicating the subject is no
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2KHKtBSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2KHKsxSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2KHxwBSVEeGGzu7fmW9pXw" name="nonMedicinalSupplyActivity" type="_2HIvMBSVEeGGzu7fmW9pXw" association="_2KHxwxSVEeGGzu7fmW9pXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2KHxwhSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2KHxwRSVEeGGzu7fmW9pXw" value="*"/>
+    <ownedAttribute xmi:id="_wrf6AbS3EeWpm8PSOGz-9g" name="entry" type="_wrfS8LS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wrf6ArS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wrf6A7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wrf6ALS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wrfS8LS3EeWpm8PSOGz-9g" name="NonMedicinalSupplyActivityEntry">
+      <generalization xmi:id="_wrfS8bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wrghEbS3EeWpm8PSOGz-9g" name="nonMedicinalSupplyActivity" type="_2HIvMBSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wrghErS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wrghE7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_62KSAUbuEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wrghELS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_2KHxwxSVEeGGzu7fmW9pXw" memberEnd="_2KHxwBSVEeGGzu7fmW9pXw _2KHxxBSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2KHxwxSVEeGGzu7fmW9pXw" memberEnd="_2KHxxBSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2KHxxBSVEeGGzu7fmW9pXw" type="_2KEucBSVEeGGzu7fmW9pXw" association="_2KHxwxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2KEucxSVEeGGzu7fmW9pXw" base_Class="_2KEucBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.23">
@@ -943,10 +1074,23 @@ The UDI should be sent in the participantRole/id.</body>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8HikoEFGEeGorO80f-Cppg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_IfrmAEFHEeGorO80f-Cppg" name="admissionMedication" type="_LNP08EFGEeGorO80f-Cppg" association="_IfrmAkFHEeGorO80f-Cppg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ni36gVjqEeGRqYkwoeymcA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ni36gFjqEeGRqYkwoeymcA" value="*"/>
+    <ownedAttribute xmi:id="_wtlksbS3EeWpm8PSOGz-9g" name="entry" type="_wtk9oLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtlksrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtlks7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wtlksLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wtk9oLS3EeWpm8PSOGz-9g" name="AdmissionMedicationEntry">
+      <generalization xmi:id="_wtk9obS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wtmy0bS3EeWpm8PSOGz-9g" name="admissionMedication" type="_LNP08EFGEeGorO80f-Cppg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtmy0rS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtmy07S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wtmy0LS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_IYW3oBnXEeGs5a462vYX5Q" base_Class="_2Poj5BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.44">
     <ruleId>CONF:10098</ruleId>
@@ -973,8 +1117,8 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>CONF:7451</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_JbIaABrZEeGo461UQq-B1g" base_Property="_ThIPFBrYEeGo461UQq-B1g">
-    <reference href="../consol-vocab.uml#_2Hn3YBSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7455</ruleId>
+    <reference href="../consol-vocab.uml#_2Hn3YBSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_j3aTQBrTEeGo461UQq-B1g" name="MedicationSupplyOrder">
     <ownedRule xmi:id="_iZPioB7lEeGEaLkc3UAsAg" name="instructionInversionInd" constrainedElement="_j3aTQBrTEeGo461UQq-B1g">
@@ -1054,15 +1198,29 @@ The UDI should be sent in the participantRole/id.</body>
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IxCtcRrUEeGo461UQq-B1g"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_PrKm8BrUEeGo461UQq-B1g" name="instructions" association="_PrLOARrUEeGo461UQq-B1g">
-      <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PrLOABrUEeGo461UQq-B1g"/>
+    <ownedAttribute xmi:id="_wv88MbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wv8VILS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wv88MrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wv88M7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_HiEycUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wv88MLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wv8VILS3EeWpm8PSOGz-9g" name="InstructionsEntryRelationship">
+      <generalization xmi:id="_wv8VIbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wv9jQbS3EeWpm8PSOGz-9g" name="instructions" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wv9jQrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wv9jQ7S3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Hop1oUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wv9jQLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_IxDUgBrUEeGo461UQq-B1g" memberEnd="_IxCtcBrUEeGo461UQq-B1g _IxDUgRrUEeGo461UQq-B1g">
     <ownedEnd xmi:id="_IxDUgRrUEeGo461UQq-B1g" type="_j3aTQBrTEeGo461UQq-B1g" association="_IxDUgBrUEeGo461UQq-B1g"/>
   </uml:Association>
-  <uml:Association xmi:id="_PrLOARrUEeGo461UQq-B1g" memberEnd="_PrKm8BrUEeGo461UQq-B1g _PrLOAhrUEeGo461UQq-B1g">
+  <uml:Association xmi:id="_PrLOARrUEeGo461UQq-B1g" memberEnd="_PrLOAhrUEeGo461UQq-B1g">
     <ownedEnd xmi:id="_PrLOAhrUEeGo461UQq-B1g" type="_j3aTQBrTEeGo461UQq-B1g" association="_PrLOARrUEeGo461UQq-B1g"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_uFl-gBrTEeGo461UQq-B1g" base_Class="_j3aTQBrTEeGo461UQq-B1g" templateId="2.16.840.1.113883.10.20.22.4.17">
@@ -1090,7 +1248,7 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:AssociationValidation xmi:id="_MwV0kBrUEeGo461UQq-B1g" severity="INFO" base_Association="_IxDUgBrUEeGo461UQq-B1g">
     <ruleId>CONF:7438</ruleId>
   </CDA:AssociationValidation>
-  <uml:Association xmi:id="_3-ztEBrYEeGo461UQq-B1g" memberEnd="_3-zGABrYEeGo461UQq-B1g _3-ztERrYEeGo461UQq-B1g">
+  <uml:Association xmi:id="_3-ztEBrYEeGo461UQq-B1g" memberEnd="_3-ztERrYEeGo461UQq-B1g">
     <ownedEnd xmi:id="_3-ztERrYEeGo461UQq-B1g" type="_DpoGkBUUEeG6PvUxSTZnaw" association="_3-ztEBrYEeGo461UQq-B1g"/>
   </uml:Association>
   <CDA:PropertyValidation xmi:id="_mPn6ABuSEeGnMahsPjlwOw" severity="WARNING" base_Property="_ThGZ4BrYEeGo461UQq-B1g">
@@ -1132,8 +1290,8 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>CONF:7496</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_jT_r4B-vEeGKirKJsFylGA" base_Property="_2GkugRSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
     <ruleId>CONF:7497</ruleId>
+    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:TextValue xmi:id="_zcy7cB-vEeGKirKJsFylGA" severity="WARNING" base_Property="_yhVYwB-vEeGKirKJsFylGA">
     <ruleId>CONF:7501</ruleId>
@@ -1165,15 +1323,13 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:PropertyValidation xmi:id="_oCgAwCAPEeGKirKJsFylGA" base_Property="_2GlVkBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7507</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_FsPZUh-uEeGKirKJsFylGA" memberEnd="_FsPZUB-uEeGKirKJsFylGA _FsPZUx-uEeGKirKJsFylGA">
+  <uml:Association xmi:id="_FsPZUh-uEeGKirKJsFylGA" memberEnd="_FsPZUx-uEeGKirKJsFylGA">
     <ownedEnd xmi:id="_FsPZUx-uEeGKirKJsFylGA" type="_iAoXEBVdEeGQCvUGzi1kDQ" association="_FsPZUh-uEeGKirKJsFylGA"/>
   </uml:Association>
   <uml:Association xmi:id="_f6p3QiAMEeGKirKJsFylGA" memberEnd="_f6p3QCAMEeGKirKJsFylGA _f6p3QyAMEeGKirKJsFylGA">
     <ownedEnd xmi:id="_f6p3QyAMEeGKirKJsFylGA" type="_2T9DQBSVEeGGzu7fmW9pXw" association="_f6p3QiAMEeGKirKJsFylGA"/>
   </uml:Association>
-  <uml:Association xmi:id="_zMF34jWmEeG32vxjh5_fjg">
-    <memberEnd href="consol-procedures.uml#_zMF34DWmEeG32vxjh5_fjg"/>
-    <memberEnd href="#_zMF34zWmEeG32vxjh5_fjg"/>
+  <uml:Association xmi:id="_zMF34jWmEeG32vxjh5_fjg" memberEnd="_zMF34zWmEeG32vxjh5_fjg">
     <ownedEnd xmi:id="_zMF34zWmEeG32vxjh5_fjg" association="_zMF34jWmEeG32vxjh5_fjg">
       <type xmi:type="uml:Class" href="consol-procedures.uml#_OA_Q0DVyEeGaW4kr-GbV8Q"/>
     </ownedEnd>
@@ -1190,8 +1346,8 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>CONF:8745</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_3ny2cDiAEeGSytqLITd2FA" base_Property="_2HTHQBSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
     <ruleId>CONF:8746</ruleId>
+    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_61IfsDiBEeGSytqLITd2FA" severity="WARNING" base_Property="_5f05oDiBEeGSytqLITd2FA">
     <ruleId>CONF:15498</ruleId>
@@ -1244,12 +1400,25 @@ The UDI should be sent in the participantRole/id.</body>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_X3kygEFGEeGorO80f-Cppg" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_lThaQEFGEeGorO80f-Cppg" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" association="_lThaQkFGEeGorO80f-Cppg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XCO5cHuIEeKhK5t8xrm9qQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XCOSYHuIEeKhK5t8xrm9qQ" value="*"/>
+    <ownedAttribute xmi:id="_w034cbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w03RYLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w034crS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w034c7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w034cLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w03RYLS3EeWpm8PSOGz-9g" name="MedicationActivityEntryRelationship">
+      <generalization xmi:id="_w03RYbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w04fg7S3EeWpm8PSOGz-9g" name="medicationActivity" type="_2GHbgBSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w05GkLS3EeWpm8PSOGz-9g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w05GkbS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Px50sUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w04fgrS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_lThaQkFGEeGorO80f-Cppg" memberEnd="_lThaQEFGEeGorO80f-Cppg _lThaQ0FGEeGorO80f-Cppg">
+  <uml:Association xmi:id="_lThaQkFGEeGorO80f-Cppg" memberEnd="_lThaQ0FGEeGorO80f-Cppg">
     <ownedEnd xmi:id="_lThaQ0FGEeGorO80f-Cppg" type="_LNP08EFGEeGorO80f-Cppg" association="_lThaQkFGEeGorO80f-Cppg"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_RCX1QEFGEeGorO80f-Cppg" base_Class="_LNP08EFGEeGorO80f-Cppg" templateId="2.16.840.1.113883.10.20.22.4.36">
@@ -1271,7 +1440,7 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>CONF:7702</ruleId>
     <ruleId>CONF:15520</ruleId>
   </CDA:EntryRelationship>
-  <uml:Association xmi:id="_IfrmAkFHEeGorO80f-Cppg" memberEnd="_IfrmAEFHEeGorO80f-Cppg _IfrmA0FHEeGorO80f-Cppg">
+  <uml:Association xmi:id="_IfrmAkFHEeGorO80f-Cppg" memberEnd="_IfrmA0FHEeGorO80f-Cppg">
     <ownedEnd xmi:id="_IfrmA0FHEeGorO80f-Cppg" type="_2Poj5BSVEeGGzu7fmW9pXw" association="_IfrmAkFHEeGorO80f-Cppg"/>
   </uml:Association>
   <CDA:ConstraintValidation xmi:id="_rnBu8EFiEeG2TLeVPbv7pg" severity="WARNING" base_Constraint="_nSTKYEFiEeG2TLeVPbv7pg">
@@ -1334,7 +1503,7 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:PropertyValidation xmi:id="_GxDTQFmsEeGRqYkwoeymcA" base_Property="_CrfMEFmsEeGRqYkwoeymcA">
     <ruleId>CONF:8155</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_KTbN0FmsEeGRqYkwoeymcA" memberEnd="_KTZYoFmsEeGRqYkwoeymcA _KTb04FmsEeGRqYkwoeymcA">
+  <uml:Association xmi:id="_KTbN0FmsEeGRqYkwoeymcA" memberEnd="_KTb04FmsEeGRqYkwoeymcA">
     <ownedEnd xmi:id="_KTb04FmsEeGRqYkwoeymcA" type="_2Poj_BSVEeGGzu7fmW9pXw" association="_KTbN0FmsEeGRqYkwoeymcA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_NJy-AFmsEeGRqYkwoeymcA" severity="INFO" base_Association="_KTbN0FmsEeGRqYkwoeymcA">
@@ -1349,8 +1518,8 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:ConstraintValidation xmi:id="_nkhuYMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_2NJ3tRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_t5o2UMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_iAoXFhVdEeGQCvUGzi1kDQ"/>
   <CDA:ValueSetConstraint xmi:id="_W_OvoNuhEeGaiuMcT06VUQ" base_Property="_Dh74wCANEeGKirKJsFylGA">
-    <reference href="../consol-vocab.uml#_uPu0oCXZEeGD8_EQPvfzIQ"/>
     <ruleId>CONF:7412</ruleId>
+    <reference href="../consol-vocab.uml#_uPu0oCXZEeGD8_EQPvfzIQ"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_MB6gQNzPEeG4UqssEkZt3w" severity="WARNING" base_Constraint="_GyKRMEIsEeG4bZAl2IGXmQ"/>
   <CDA:ConstraintValidation xmi:id="_M2SjgNzPEeG4UqssEkZt3w" severity="WARNING" base_Constraint="_WONKoCANEeGKirKJsFylGA"/>
@@ -1432,7 +1601,20 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_ijQdQMhEEeSU-Km0iFeHDg" severity="INFO" base_Property="_2GHbxhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_jR-kcMhEEeSU-Km0iFeHDg" base_Property="_2GHbxhSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7519</ruleId>
+    <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
+  <CDA:Inline xmi:id="_wp27QrS3EeWpm8PSOGz-9g" base_Class="_wp27QLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wp5-krS3EeWpm8PSOGz-9g" base_Class="_wp5-kLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wp9B4bS3EeWpm8PSOGz-9g" base_Class="_wp8a0LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wp_eIrS3EeWpm8PSOGz-9g" base_Class="_wp_eILS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wqChcLS3EeWpm8PSOGz-9g" base_Class="_wqB6YLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wrfS8rS3EeWpm8PSOGz-9g" base_Class="_wrfS8LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wssM0rS3EeWpm8PSOGz-9g" base_Class="_wssM0LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wtk9orS3EeWpm8PSOGz-9g" base_Class="_wtk9oLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wtoA8rS3EeWpm8PSOGz-9g" base_Class="_wtoA8LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wu_58rS3EeWpm8PSOGz-9g" base_Class="_wu_58LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wvRmwrS3EeWpm8PSOGz-9g" base_Class="_wvRmwLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wv8VIrS3EeWpm8PSOGz-9g" base_Class="_wv8VILS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w03RYrS3EeWpm8PSOGz-9g" base_Class="_w03RYLS3EeWpm8PSOGz-9g"/>
 </xmi:XMI>

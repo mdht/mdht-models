@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2OAzQRSVEeGGzu7fmW9pXw" name="ProceduresSection">
     <ownedComment xmi:id="_2OfUahSVEeGGzu7fmW9pXw" annotatedElement="_2OAzQRSVEeGGzu7fmW9pXw">
       <body>This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).&#xD;
@@ -26,21 +26,60 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
     </ownedAttribute>
     <ownedAttribute xmi:id="_7eV1s1GkEeG3H6xvuD7Z0Q" name="text" visibility="private" aggregation="composite" redefinedProperty="_s9Ig7BVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7eV1tFGkEeG3H6xvuD7Z0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7eV1tVGkEeG3H6xvuD7Z0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7eV1tFGkEeG3H6xvuD7Z0Q" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_CMyXQOVsEeGpoIKFyl7L7w" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw" association="_CM7hMOVsEeGpoIKFyl7L7w">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GqkxMOVsEeGpoIKFyl7L7w" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GqkxMeVsEeGpoIKFyl7L7w"/>
+    <ownedAttribute xmi:id="_wtGcgbS3EeWpm8PSOGz-9g" name="entry" type="_wtF1cLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtGcgrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtGcg7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wtGcgLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_DyslIOVsEeGpoIKFyl7L7w" name="procedureActivityObservation" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_Dy1vEOVsEeGpoIKFyl7L7w">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HC-qIOVsEeGpoIKFyl7L7w" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HC-qIeVsEeGpoIKFyl7L7w"/>
+    <ownedAttribute xmi:id="_wtJf0bS3EeWpm8PSOGz-9g" name="entry" type="_wtI4wLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtJf0rS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtJf07S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wtJf0LS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_FzYqgOVsEeGpoIKFyl7L7w" name="procedureActivityAct" type="_awdH4Bg4EeGs5a462vYX5Q" association="_FzYqguVsEeGpoIKFyl7L7w">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HcHi4OVsEeGpoIKFyl7L7w" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HcHi4eVsEeGpoIKFyl7L7w"/>
+    <ownedAttribute xmi:id="_wtMjIbS3EeWpm8PSOGz-9g" name="entry" type="_wtL8ELS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtMjIrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtMjI7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wtMjILS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wtF1cLS3EeWpm8PSOGz-9g" name="ProcedureActivityProcedureEntry">
+      <generalization xmi:id="_wtF1cbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wtHqobS3EeWpm8PSOGz-9g" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtHqorS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtHqo7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_XyYJsEbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wtHqoLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wtI4wLS3EeWpm8PSOGz-9g" name="ProcedureActivityObservationEntry">
+      <generalization xmi:id="_wtI4wbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wtKt8bS3EeWpm8PSOGz-9g" name="procedureActivityObservation" type="_Aj7JkBg4EeGs5a462vYX5Q" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtKt8rS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtKt87S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_k2RbsTxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wtKt8LS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wtL8ELS3EeWpm8PSOGz-9g" name="ProcedureActivityActEntry">
+      <generalization xmi:id="_wtL8EbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wtNKMbS3EeWpm8PSOGz-9g" name="procedureActivityAct" type="_awdH4Bg4EeGs5a462vYX5Q" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtNKMrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtNKM7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wtNKMLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2OAzRhSVEeGGzu7fmW9pXw" base_Class="_2OAzQRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.7.1">
     <ruleId>CONF:10447</ruleId>
@@ -72,27 +111,66 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
     </ownedAttribute>
     <ownedAttribute xmi:id="_fTkyIOVqEeGpoIKFyl7L7w" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gvhLsOVqEeGpoIKFyl7L7w" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gvhLseVqEeGpoIKFyl7L7w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gvhLsOVqEeGpoIKFyl7L7w" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_s9Ig7BVdEeGQCvUGzi1kDQ" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s9Ig7RVdEeGQCvUGzi1kDQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s9Ig7hVdEeGQCvUGzi1kDQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s9Ig7RVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_HKgr8Bq9EeGYcL3NfEQErA" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw" association="_HKhTABq9EeGYcL3NfEQErA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KFVeUBq9EeGYcL3NfEQErA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KFVeURq9EeGYcL3NfEQErA"/>
+    <ownedAttribute xmi:id="_wvXGUbS3EeWpm8PSOGz-9g" name="entry" type="_wvWfQLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvXGUrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvXGU7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wvXGULS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_MCAmYBq9EeGYcL3NfEQErA" name="procedureAcivityObservation" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_MCBNcBq9EeGYcL3NfEQErA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qolhkBrSEeGxIZCGAXKxsQ" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qolhkRrSEeGxIZCGAXKxsQ"/>
+    <ownedAttribute xmi:id="_wvZikbS3EeWpm8PSOGz-9g" name="entry" type="_wvY7gLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvZikrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvZik7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wvZikLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_VDYgQBq9EeGYcL3NfEQErA" name="procedureActivityAct" type="_awdH4Bg4EeGs5a462vYX5Q" association="_VDZHUBq9EeGYcL3NfEQErA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rMKIsBrSEeGxIZCGAXKxsQ" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rMKIsRrSEeGxIZCGAXKxsQ"/>
+    <ownedAttribute xmi:id="_wvb-0bS3EeWpm8PSOGz-9g" name="entry" type="_wvbXwLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvb-0rS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvb-07S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wvb-0LS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wvWfQLS3EeWpm8PSOGz-9g" name="ProcedureActivityProcedureEntry">
+      <generalization xmi:id="_wvWfQbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wvYUcbS3EeWpm8PSOGz-9g" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvYUcrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvYUc7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_XyYJsEbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wvYUcLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wvY7gLS3EeWpm8PSOGz-9g" name="ProcedureActivityObservationEntry">
+      <generalization xmi:id="_wvY7gbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wvaJorS3EeWpm8PSOGz-9g" name="procedureAcivityObservation" type="_Aj7JkBg4EeGs5a462vYX5Q" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvawsLS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvawsbS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_k2RbsTxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wvaJobS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wvbXwLS3EeWpm8PSOGz-9g" name="ProcedureActivityActEntry">
+      <generalization xmi:id="_wvbXwbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wvcl4rS3EeWpm8PSOGz-9g" name="procedureActivityAct" type="_awdH4Bg4EeGs5a462vYX5Q" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvdM8LS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvdM8bS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wvcl4bS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_LbH34BVfEeGQCvUGzi1kDQ" base_Class="_s9Ig4BVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.7" assigningAuthorityName="HL7">
     <ruleId>CONF:6271</ruleId>
@@ -180,8 +258,8 @@ This clinical statement represents procedures that result in new information abo
     </generalization>
     <ownedAttribute xmi:id="_NL3hgBg4EeGs5a462vYX5Q" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Vjb8kBxuEeGXP8PxDYviDg" value="OBS"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_NMUNfhg4EeGs5a462vYX5Q" name="moodCode" visibility="private">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
@@ -189,8 +267,8 @@ This clinical statement represents procedures that result in new information abo
     </ownedAttribute>
     <ownedAttribute xmi:id="_NMUNdhg4EeGs5a462vYX5Q" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uDHXgBxuEeGXP8PxDYviDg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uDH-kBxuEeGXP8PxDYviDg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uDHXgBxuEeGXP8PxDYviDg" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_NMUNcBg4EeGs5a462vYX5Q" name="code" visibility="private" aggregation="composite">
@@ -199,66 +277,70 @@ This clinical statement represents procedures that result in new information abo
     </ownedAttribute>
     <ownedAttribute xmi:id="_NMUNhBg4EeGs5a462vYX5Q" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zQ8R0BxvEeGXP8PxDYviDg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zQ8R0RxvEeGXP8PxDYviDg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zQ8R0BxvEeGXP8PxDYviDg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_NMUNjBg4EeGs5a462vYX5Q" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_72VaUBxvEeGXP8PxDYviDg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_72VaURxvEeGXP8PxDYviDg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_72VaUBxvEeGXP8PxDYviDg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_NMUNchg4EeGs5a462vYX5Q" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMUNcxg4EeGs5a462vYX5Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMUNdBg4EeGs5a462vYX5Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMUNcxg4EeGs5a462vYX5Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_NMUNgBg4EeGs5a462vYX5Q" name="priorityCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMUNgRg4EeGs5a462vYX5Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMUNghg4EeGs5a462vYX5Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMUNgRg4EeGs5a462vYX5Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_h3baIEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_NMUNehg4EeGs5a462vYX5Q" name="methodCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EM7R0BxwEeGXP8PxDYviDg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EM7R0RxwEeGXP8PxDYviDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EM7R0BxwEeGXP8PxDYviDg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1jr3cEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_NMUNiBg4EeGs5a462vYX5Q" name="targetSiteCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMUNiRg4EeGs5a462vYX5Q" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMUNihg4EeGs5a462vYX5Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMUNiRg4EeGs5a462vYX5Q" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_x2X70BxwEeGXP8PxDYviDg" name="performer" type="_wveswN_iEeGiie5feaDcRA" association="_x2ZJ8BxwEeGXP8PxDYviDg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1rmg8BxwEeGXP8PxDYviDg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1rnIABxwEeGXP8PxDYviDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1rmg8BxwEeGXP8PxDYviDg" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_5PuH8BxwEeGXP8PxDYviDg" name="serviceDeliveryLocation" association="_5Pv9IBxwEeGXP8PxDYviDg">
       <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7zDAUBxwEeGXP8PxDYviDg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7zDnYBxwEeGXP8PxDYviDg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_VUG_wBxxEeGXP8PxDYviDg" name="instructions" association="_VUIN4BxxEeGXP8PxDYviDg">
-      <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VUHm0BxxEeGXP8PxDYviDg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_cZZAYBxxEeGXP8PxDYviDg" name="indication" association="_cZaOgBxxEeGXP8PxDYviDg">
-      <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evYAUBxxEeGXP8PxDYviDg" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_evYAURxxEeGXP8PxDYviDg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_odtt4BxxEeGXP8PxDYviDg" name="medicationActivity" association="_odu8ABxxEeGXP8PxDYviDg">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cuRLsAzyEeOzhrpyZH51Qg" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cuRLsQzyEeOzhrpyZH51Qg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7zDAUBxwEeGXP8PxDYviDg" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_K3B8QOAWEeGlGcipF_0y2A" name="entryRelationship" type="_sjOmkOAVEeGlGcipF_0y2A" association="_K3DxcOAWEeGlGcipF_0y2A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LsoHgOAWEeGlGcipF_0y2A" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LsoukOAWEeGlGcipF_0y2A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LsoHgOAWEeGlGcipF_0y2A" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wvsdgbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wvr2cLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvsdgrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvsdg7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wvsdgLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wvu5wbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wvuSsLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvu5wrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvu5w7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wvu5wLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wvxWAbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wvwu8LS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvxWArS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvxWA7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wvxWALS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_wveswN_iEeGiie5feaDcRA" name="ProcedureObservationPerformer">
       <ownedComment xmi:id="_WCP_sN_jEeGiie5feaDcRA">
@@ -268,8 +350,8 @@ This clinical statement represents procedures that result in new information abo
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_WMjSwKg3EeK7Iv2PyOPSaQ" name="assignedEntity" visibility="private" type="_j7qHEKg3EeK7Iv2PyOPSaQ" aggregation="composite">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WMjSwag3EeK7Iv2PyOPSaQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WMjSwqg3EeK7Iv2PyOPSaQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WMjSwag3EeK7Iv2PyOPSaQ" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_toc7gUoYEd6c3qsAxlFHaQ"/>
         <association href="../consol.uml#_WMkg4Kg3EeK7Iv2PyOPSaQ"/>
       </ownedAttribute>
@@ -279,25 +361,25 @@ This clinical statement represents procedures that result in new information abo
         </generalization>
         <ownedAttribute xmi:id="_mxLis6g3EeK7Iv2PyOPSaQ" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mxLitKg3EeK7Iv2PyOPSaQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mxLitag3EeK7Iv2PyOPSaQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mxLitKg3EeK7Iv2PyOPSaQ" value="*"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_mxLisKg3EeK7Iv2PyOPSaQ" name="addr" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wVXOsKg3EeK7Iv2PyOPSaQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wVYc0Kg3EeK7Iv2PyOPSaQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wVXOsKg3EeK7Iv2PyOPSaQ" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_mxLitqg3EeK7Iv2PyOPSaQ" name="telecom" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yT2UoKg3EeK7Iv2PyOPSaQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yT4J0Kg3EeK7Iv2PyOPSaQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yT2UoKg3EeK7Iv2PyOPSaQ" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_mxMJwKg3EeK7Iv2PyOPSaQ" name="representedOrganization" visibility="private" type="__kdPEKg3EeK7Iv2PyOPSaQ" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3vFOQKg3EeK7Iv2PyOPSaQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3vF1UKg3EeK7Iv2PyOPSaQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3vFOQKg3EeK7Iv2PyOPSaQ" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_EsyYEUcfEd6besF9iFIJkQ"/>
           <association href="../consol.uml#_mxMw0Kg3EeK7Iv2PyOPSaQ"/>
         </ownedAttribute>
@@ -307,26 +389,26 @@ This clinical statement represents procedures that result in new information abo
           </generalization>
           <ownedAttribute xmi:id="_B7h0I6g4EeK7Iv2PyOPSaQ" name="id" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B7h0JKg4EeK7Iv2PyOPSaQ" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B7h0Jag4EeK7Iv2PyOPSaQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B7h0JKg4EeK7Iv2PyOPSaQ" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#__aP0AEraEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_B7ibMKg4EeK7Iv2PyOPSaQ" name="name" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_yQ9xwD5yEd6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B7ibMag4EeK7Iv2PyOPSaQ" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B7ibMqg4EeK7Iv2PyOPSaQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B7ibMag4EeK7Iv2PyOPSaQ" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_B7ibM6g4EeK7Iv2PyOPSaQ" name="telecom" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_khBogKg4EeK7Iv2PyOPSaQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_khEEwKg4EeK7Iv2PyOPSaQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_khBogKg4EeK7Iv2PyOPSaQ" value="1"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_B7h0IKg4EeK7Iv2PyOPSaQ" name="addr" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lWkJYKg4EeK7Iv2PyOPSaQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lWl-kKg4EeK7Iv2PyOPSaQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lWkJYKg4EeK7Iv2PyOPSaQ" value="1"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_OC77sErbEd6FXKclYGEDCw"/>
           </ownedAttribute>
         </nestedClassifier>
@@ -341,19 +423,19 @@ This clinical statement represents procedures that result in new information abo
       </generalization>
       <ownedAttribute xmi:id="_uRnbAOAVEeGlGcipF_0y2A" name="inversionInd" visibility="private" isReadOnly="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2xTkIOAVEeGlGcipF_0y2A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2xULMOAVEeGlGcipF_0y2A" value="1"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7hBHoEo1Ed6c3qsAxlFHaQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2xTkIOAVEeGlGcipF_0y2A" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_wRnj4OAVEeGlGcipF_0y2A" value="true"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7hBHoEo1Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_uRoCEOAVEeGlGcipF_0y2A" name="typeCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_0mHe8OAVEeGlGcipF_0y2A" value="COMP"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_5gtJoOAVEeGlGcipF_0y2A" name="procedureObservationEncounter" type="_o5XsIN_iEeGiie5feaDcRA" association="_5gu-0OAVEeGlGcipF_0y2A">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6TWukOAVEeGlGcipF_0y2A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6TWukeAVEeGlGcipF_0y2A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6TWukOAVEeGlGcipF_0y2A" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_o5XsIN_iEeGiie5feaDcRA" name="ProcedureObservationEncounter">
         <ownedRule xmi:id="_o5XsId_iEeGiie5feaDcRA" name="sameEncounter" constrainedElement="_o5XsIN_iEeGiie5feaDcRA">
@@ -370,23 +452,59 @@ This clinical statement represents procedures that result in new information abo
         </generalization>
         <ownedAttribute xmi:id="_o5XsJd_iEeGiie5feaDcRA" name="classCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_n4VYQEb9Ed6besF9iFIJkQ"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_o5XsJt_iEeGiie5feaDcRA" value="ENC"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_n4VYQEb9Ed6besF9iFIJkQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_o5XsJ9_iEeGiie5feaDcRA" name="moodCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpnUDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o5XsKN_iEeGiie5feaDcRA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o5XsKd_iEeGiie5feaDcRA" value="1"/>
-          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SaymoEo0Ed6c3qsAxlFHaQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o5XsKN_iEeGiie5feaDcRA" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_o5XsKt_iEeGiie5feaDcRA" value="EVN"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SaymoEo0Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_o5XsK9_iEeGiie5feaDcRA" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o5XsLN_iEeGiie5feaDcRA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o5XsLd_iEeGiie5feaDcRA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o5XsLN_iEeGiie5feaDcRA" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_DKBLQEo0Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
       </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wvr2cLS3EeWpm8PSOGz-9g" name="InstructionsEntryRelationship">
+      <generalization xmi:id="_wvr2cbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wvtEkbS3EeWpm8PSOGz-9g" name="instructions" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvtEkrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvtEk7S3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Hop1oUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wvtEkLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wvuSsLS3EeWpm8PSOGz-9g" name="IndicationEntryRelationship">
+      <generalization xmi:id="_wvuSsbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wvvg0rS3EeWpm8PSOGz-9g" name="indication" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvvg07S3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvvg1LS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wvvg0bS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wvwu8LS3EeWpm8PSOGz-9g" name="MedicationActivityEntryRelationship">
+      <generalization xmi:id="_wvwu8bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wvx9EbS3EeWpm8PSOGz-9g" name="medicationActivity" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvx9ErS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvx9E7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Px50sUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wvx9ELS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_PlWhYBg4EeGs5a462vYX5Q" base_Class="_Aj7JkBg4EeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.22.4.13">
@@ -466,8 +584,8 @@ This clinical statement represents any procedure that cannot be classified as an
     </generalization>
     <ownedAttribute xmi:id="_hPmVkBg4EeGs5a462vYX5Q" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="__ciloBxnEeGXP8PxDYviDg" value="ACT"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hPwGlBg4EeGs5a462vYX5Q" name="moodCode" visibility="private">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
@@ -475,8 +593,8 @@ This clinical statement represents any procedure that cannot be classified as an
     </ownedAttribute>
     <ownedAttribute xmi:id="_hPwGkBg4EeGs5a462vYX5Q" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XhjoYBxpEeGXP8PxDYviDg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XhkPcBxpEeGXP8PxDYviDg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XhjoYBxpEeGXP8PxDYviDg" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hPmVkhg4EeGs5a462vYX5Q" name="code" visibility="private" aggregation="composite">
@@ -485,48 +603,52 @@ This clinical statement represents any procedure that cannot be classified as an
     </ownedAttribute>
     <ownedAttribute xmi:id="_hPwGmhg4EeGs5a462vYX5Q" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hPwGmxg4EeGs5a462vYX5Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hPwGnBg4EeGs5a462vYX5Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hPwGmxg4EeGs5a462vYX5Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_LJu6oBxqEeGXP8PxDYviDg" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LJu6oRxqEeGXP8PxDYviDg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LJu6ohxqEeGXP8PxDYviDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LJu6oRxqEeGXP8PxDYviDg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_hbddYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hPwGlhg4EeGs5a462vYX5Q" name="priorityCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hPwGlxg4EeGs5a462vYX5Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hPwGmBg4EeGs5a462vYX5Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hPwGlxg4EeGs5a462vYX5Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_olrBUEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rDWiIBxrEeGXP8PxDYviDg" name="performer" type="_uu7xUN_iEeGiie5feaDcRA" association="_rDXwQBxrEeGXP8PxDYviDg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uu4_wBxrEeGXP8PxDYviDg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uu4_wRxrEeGXP8PxDYviDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uu4_wBxrEeGXP8PxDYviDg" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Oyk-sBxsEeGXP8PxDYviDg" name="serviceDeliveryLocation" association="_OymM0BxsEeGXP8PxDYviDg">
       <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RarpYBxsEeGXP8PxDYviDg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RarpYRxsEeGXP8PxDYviDg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_D6qkgBxtEeGXP8PxDYviDg" name="instructions" association="_D6ryoBxtEeGXP8PxDYviDg">
-      <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D6qkgRxtEeGXP8PxDYviDg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_MTaYIBxtEeGXP8PxDYviDg" name="indication" association="_MTbmQBxtEeGXP8PxDYviDg">
-      <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RCFGsBxtEeGXP8PxDYviDg" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RCFGsRxtEeGXP8PxDYviDg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_cEQasBxtEeGXP8PxDYviDg" name="medicationActivity" association="_cERBwBxtEeGXP8PxDYviDg">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TlBvQAzyEeOzhrpyZH51Qg" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TlBvQQzyEeOzhrpyZH51Qg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RarpYBxsEeGXP8PxDYviDg" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GZ2mUOAWEeGlGcipF_0y2A" name="entryRelationship" type="_qaIokOAUEeGlGcipF_0y2A" association="_GZ4bgOAWEeGlGcipF_0y2A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HT3-kOAWEeGlGcipF_0y2A" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HT4loOAWEeGlGcipF_0y2A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HT3-kOAWEeGlGcipF_0y2A" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wv0ZVLS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wv0ZULS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wv1AYLS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wv1AYbS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wv0ZU7S3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wv21lLS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wv21kLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wv3coLS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wv3cobS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wv21k7S3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wv5R0bS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wv4qwLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wv5R0rS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wv5R07S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wv5R0LS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_uu7xUN_iEeGiie5feaDcRA" name="ProcedureActPerformer">
       <ownedComment xmi:id="_XtNssN_jEeGiie5feaDcRA">
@@ -536,8 +658,8 @@ This clinical statement represents any procedure that cannot be classified as an
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_4LoWYO2nEeOchpob7ipcww" name="assignedEntity" visibility="private" type="_Cc1gcO2oEeOchpob7ipcww" aggregation="composite">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4LoWYe2nEeOchpob7ipcww" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4LoWYu2nEeOchpob7ipcww" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4LoWYe2nEeOchpob7ipcww" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_toc7gUoYEd6c3qsAxlFHaQ"/>
         <association href="../consol.uml#_4LpkgO2nEeOchpob7ipcww"/>
       </ownedAttribute>
@@ -547,25 +669,25 @@ This clinical statement represents any procedure that cannot be classified as an
         </generalization>
         <ownedAttribute xmi:id="_HbWo4O2oEeOchpob7ipcww" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HbWo4e2oEeOchpob7ipcww" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HbWo4u2oEeOchpob7ipcww" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HbWo4e2oEeOchpob7ipcww" value="*"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_HbWB0O2oEeOchpob7ipcww" name="addr" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S6ciYO2oEeOchpob7ipcww" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S6ciYe2oEeOchpob7ipcww" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S6ciYO2oEeOchpob7ipcww" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_HbXP8O2oEeOchpob7ipcww" name="telecom" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U9cU4O2oEeOchpob7ipcww" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U9c78O2oEeOchpob7ipcww" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U9cU4O2oEeOchpob7ipcww" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_HbXP8-2oEeOchpob7ipcww" name="representedOrganization" visibility="private" type="_maPi8O2oEeOchpob7ipcww" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WOo3AO2oEeOchpob7ipcww" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WOo3Ae2oEeOchpob7ipcww"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WOo3AO2oEeOchpob7ipcww" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_EsyYEUcfEd6besF9iFIJkQ"/>
           <association href="../consol.uml#_HbZFIO2oEeOchpob7ipcww"/>
         </ownedAttribute>
@@ -575,26 +697,26 @@ This clinical statement represents any procedure that cannot be classified as an
           </generalization>
           <ownedAttribute xmi:id="_nsaVcO2oEeOchpob7ipcww" name="id" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nsaVce2oEeOchpob7ipcww" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nsaVcu2oEeOchpob7ipcww"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nsaVce2oEeOchpob7ipcww" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#__aP0AEraEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_nsaVc-2oEeOchpob7ipcww" name="name" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_yQ9xwD5yEd6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nsaVdO2oEeOchpob7ipcww" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nsaVde2oEeOchpob7ipcww"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nsaVdO2oEeOchpob7ipcww" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_nsa8gO2oEeOchpob7ipcww" name="telecom" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1dEo8O2oEeOchpob7ipcww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1dEo8e2oEeOchpob7ipcww" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1dEo8O2oEeOchpob7ipcww" value="1"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_nsZuYO2oEeOchpob7ipcww" name="addr" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EM6YO2oEeOchpob7ipcww" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EM6Ye2oEeOchpob7ipcww" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EM6YO2oEeOchpob7ipcww" value="1"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_OC77sErbEd6FXKclYGEDCw"/>
           </ownedAttribute>
         </nestedClassifier>
@@ -609,19 +731,19 @@ This clinical statement represents any procedure that cannot be classified as an
       </generalization>
       <ownedAttribute xmi:id="_sMSisOAUEeGlGcipF_0y2A" name="inversionInd" visibility="private" isReadOnly="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vVoSMOAUEeGlGcipF_0y2A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vVoSMeAUEeGlGcipF_0y2A" value="1"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7hBHoEo1Ed6c3qsAxlFHaQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vVoSMOAUEeGlGcipF_0y2A" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_990DkOAUEeGlGcipF_0y2A" value="true"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7hBHoEo1Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sMSis-AUEeGlGcipF_0y2A" name="typeCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_6RcfgOAUEeGlGcipF_0y2A" value="COMP"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_QB230OAVEeGlGcipF_0y2A" name="procedureActEncounter" type="_nc01oN_iEeGiie5feaDcRA" association="_QB4F8OAVEeGlGcipF_0y2A">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q9q_0OAVEeGlGcipF_0y2A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q9q_0eAVEeGlGcipF_0y2A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q9q_0OAVEeGlGcipF_0y2A" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_nc01oN_iEeGiie5feaDcRA" name="ProcedureActEncounter">
         <ownedRule xmi:id="_nc01od_iEeGiie5feaDcRA" name="sameEncounter" constrainedElement="_nc01oN_iEeGiie5feaDcRA">
@@ -638,23 +760,59 @@ This clinical statement represents any procedure that cannot be classified as an
         </generalization>
         <ownedAttribute xmi:id="_nc01pd_iEeGiie5feaDcRA" name="classCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_n4VYQEb9Ed6besF9iFIJkQ"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_nc01pt_iEeGiie5feaDcRA" value="ENC"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_n4VYQEb9Ed6besF9iFIJkQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_nc01p9_iEeGiie5feaDcRA" name="moodCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpnUDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nc01qN_iEeGiie5feaDcRA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nc01qd_iEeGiie5feaDcRA" value="1"/>
-          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SaymoEo0Ed6c3qsAxlFHaQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nc01qN_iEeGiie5feaDcRA" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_nc01qt_iEeGiie5feaDcRA" value="EVN"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SaymoEo0Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_nc01q9_iEeGiie5feaDcRA" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nc01rN_iEeGiie5feaDcRA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nc01rd_iEeGiie5feaDcRA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nc01rN_iEeGiie5feaDcRA" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_DKBLQEo0Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
       </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wv0ZULS3EeWpm8PSOGz-9g" name="InstructionsEntryRelationship">
+      <generalization xmi:id="_wv0ZUbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wv1ncbS3EeWpm8PSOGz-9g" name="instructions" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wv1ncrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wv1nc7S3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Hop1oUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wv1ncLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wv21kLS3EeWpm8PSOGz-9g" name="IndicationEntryRelationship">
+      <generalization xmi:id="_wv21kbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wv4DsbS3EeWpm8PSOGz-9g" name="indication" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wv4DsrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wv4Ds7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wv4DsLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wv4qwLS3EeWpm8PSOGz-9g" name="MedicationActivityEntryRelationship">
+      <generalization xmi:id="_wv4qwbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wv6f8bS3EeWpm8PSOGz-9g" name="medicationActivity" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wv6f8rS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wv6f87S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Px50sUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wv6f8LS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_kpdNUBg4EeGs5a462vYX5Q" base_Class="_awdH4Bg4EeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.22.4.12">
@@ -751,8 +909,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_2OG5_hSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Hp3ssEb9Ed6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_2OG5_xSVEeGGzu7fmW9pXw" value="PROC"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Hp3ssEb9Ed6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OTHIxSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOprUDcEd6xYZuu1VKCVw"/>
@@ -760,76 +918,79 @@ This clinical statement represents procedures whose immediate and primary outcom
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OTHJhSVEeGGzu7fmW9pXw" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OTHJxSVEeGGzu7fmW9pXw" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OTHKBSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OTHJxSVEeGGzu7fmW9pXw" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OTHKhSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OG6CBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OG6ChSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OG6CxSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OG6ChSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OTHLBSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OTHLRSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OTHLhSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OTHLRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OTHMBSVEeGGzu7fmW9pXw" name="specimen" type="_JIc0oBxEEeGIELeDlfT77A" association="_2OTHMxSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMTcBrZEeGrncRpaMCqdA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMTcRrZEeGrncRpaMCqdA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMTcBrZEeGrncRpaMCqdA" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OTHNhSVEeGGzu7fmW9pXw" name="serviceDeliveryLocation" association="_2OTHORSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lkq4cBxWEeGXP8PxDYviDg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lkq4cRxWEeGXP8PxDYviDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lkq4cBxWEeGXP8PxDYviDg" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2OTHPBSVEeGGzu7fmW9pXw" name="performer" type="_nbpGUBxEEeGIELeDlfT77A" association="_2OTHPxSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xALH4BxVEeGXP8PxDYviDg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xALH4RxVEeGXP8PxDYviDg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2OZNyhSVEeGGzu7fmW9pXw" name="medicationActivity" association="_2OZNzRSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jzW_EAzyEeOzhrpyZH51Qg" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jzW_EQzyEeOzhrpyZH51Qg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2OZN0BSVEeGGzu7fmW9pXw" name="patientInstruction" association="_2OZN0xSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HkkscBxXEeGXP8PxDYviDg" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HkkscRxXEeGXP8PxDYviDg"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2OG6BRSVEeGGzu7fmW9pXw" name="indication" association="_2OTHIBSVEeGGzu7fmW9pXw">
-      <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t4MiEBrbEeGrncRpaMCqdA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t4MiERrbEeGrncRpaMCqdA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xALH4BxVEeGXP8PxDYviDg" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ozsKlBrUEeGxIZCGAXKxsQ" name="priorityCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ozsKlRrUEeGxIZCGAXKxsQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ozsKlhrUEeGxIZCGAXKxsQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ozsKlRrUEeGxIZCGAXKxsQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9miWgErhEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ozsKkBrUEeGxIZCGAXKxsQ" name="methodCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D1YScBrZEeGrncRpaMCqdA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D1YScRrZEeGrncRpaMCqdA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D1YScBrZEeGrncRpaMCqdA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_DrwBQEriEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ozsKmBrUEeGxIZCGAXKxsQ" name="targetSiteCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ozsKmRrUEeGxIZCGAXKxsQ" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ozsKmhrUEeGxIZCGAXKxsQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ozsKmRrUEeGxIZCGAXKxsQ" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Ia2NoEriEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_F1Cd8BxWEeGXP8PxDYviDg" name="productInstance" association="_F1DsEBxWEeGXP8PxDYviDg">
       <type xmi:type="uml:Class" href="consol-medications.uml#_2G2bUxSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ICzWABxWEeGXP8PxDYviDg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ICzWARxWEeGXP8PxDYviDg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ICzWABxWEeGXP8PxDYviDg" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_tVvMIOAWEeGlGcipF_0y2A" name="entryRelationship" type="_RWdd0OAWEeGlGcipF_0y2A" association="_tVxBUOAWEeGlGcipF_0y2A">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uibBsOAWEeGlGcipF_0y2A" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uibowOAWEeGlGcipF_0y2A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uibBsOAWEeGlGcipF_0y2A" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wtQNgbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wtPmcLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtQNgrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtQNg7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_GXICQUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wtQNgLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wtSpwbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wtSCsLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtSpwrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtSpw7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_GXICQUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wtSpwLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wtVtELS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wtVGALS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtVtEbS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtVtErS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_GXICQUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wtVGA7S3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_JIc0oBxEEeGIELeDlfT77A" name="ProcedureSpecimen">
       <ownedComment xmi:id="_Z47QwBxbEeGXP8PxDYviDg">
@@ -875,8 +1036,8 @@ This clinical statement represents procedures whose immediate and primary outcom
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_-9nJIMMgEeKhp9meU6hZdQ" name="assignedEntity" visibility="private" type="_2dNY4MMhEeKhp9meU6hZdQ" aggregation="composite">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-9nJIcMgEeKhp9meU6hZdQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-9nJIsMgEeKhp9meU6hZdQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-9nJIcMgEeKhp9meU6hZdQ" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_toc7gUoYEd6c3qsAxlFHaQ"/>
         <association href="../consol.uml#_-9nwMMMgEeKhp9meU6hZdQ"/>
       </ownedAttribute>
@@ -886,25 +1047,25 @@ This clinical statement represents procedures whose immediate and primary outcom
         </generalization>
         <ownedAttribute xmi:id="_F6-HYMMiEeKhp9meU6hZdQ" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F6-HYcMiEeKhp9meU6hZdQ" value="*"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F6-HYsMiEeKhp9meU6hZdQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F6-HYcMiEeKhp9meU6hZdQ" value="*"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_F69gUMMiEeKhp9meU6hZdQ" name="addr" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvqO8MMlEeKhp9meU6hZdQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hvq2AMMlEeKhp9meU6hZdQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvqO8MMlEeKhp9meU6hZdQ" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_DBIXAEoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_F6-HY8MiEeKhp9meU6hZdQ" name="telecom" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iqAXUMMlEeKhp9meU6hZdQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iqA-YMMlEeKhp9meU6hZdQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iqAXUMMlEeKhp9meU6hZdQ" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_F6-HZsMiEeKhp9meU6hZdQ" name="representedOrganization" visibility="private" type="_bbXJ4MMmEeKhp9meU6hZdQ" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t3-roMMlEeKhp9meU6hZdQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t3-rocMlEeKhp9meU6hZdQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t3-roMMlEeKhp9meU6hZdQ" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_EsyYEUcfEd6besF9iFIJkQ"/>
           <association href="../consol.uml#_F6-ucMMiEeKhp9meU6hZdQ"/>
         </ownedAttribute>
@@ -914,26 +1075,26 @@ This clinical statement represents procedures whose immediate and primary outcom
           </generalization>
           <ownedAttribute xmi:id="_ibioE8MmEeKhp9meU6hZdQ" name="id" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ibioFMMmEeKhp9meU6hZdQ" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ibioFcMmEeKhp9meU6hZdQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ibioFMMmEeKhp9meU6hZdQ" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#__aP0AEraEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_ibioFsMmEeKhp9meU6hZdQ" name="name" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_yQ9xwD5yEd6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ibioF8MmEeKhp9meU6hZdQ" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ibioGMMmEeKhp9meU6hZdQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ibioF8MmEeKhp9meU6hZdQ" value="*"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_ibioGcMmEeKhp9meU6hZdQ" name="telecom" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5cR_0MMmEeKhp9meU6hZdQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5cSm4MMmEeKhp9meU6hZdQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5cR_0MMmEeKhp9meU6hZdQ" value="1"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_ibioEMMmEeKhp9meU6hZdQ" name="addr" visibility="private" aggregation="composite">
             <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6IDgsMMmEeKhp9meU6hZdQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6IEHwMMmEeKhp9meU6hZdQ" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6IDgsMMmEeKhp9meU6hZdQ" value="1"/>
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_OC77sErbEd6FXKclYGEDCw"/>
           </ownedAttribute>
         </nestedClassifier>
@@ -948,19 +1109,19 @@ This clinical statement represents procedures whose immediate and primary outcom
       </generalization>
       <ownedAttribute xmi:id="_Syf-AOAWEeGlGcipF_0y2A" name="inversionInd" visibility="private" isReadOnly="true">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TvB3sOAWEeGlGcipF_0y2A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TvCewOAWEeGlGcipF_0y2A" value="1"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7hBHoEo1Ed6c3qsAxlFHaQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TvB3sOAWEeGlGcipF_0y2A" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_W6GskOAWEeGlGcipF_0y2A" value="true"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7hBHoEo1Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_SyglEOAWEeGlGcipF_0y2A" name="typeCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_VN0w8OAWEeGlGcipF_0y2A" value="COMP"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_pxebMOAWEeGlGcipF_0y2A" name="procedureActivityEncounter" type="_qeLqQBxEEeGIELeDlfT77A" association="_pxgQYOAWEeGlGcipF_0y2A">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qqNaAOAWEeGlGcipF_0y2A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qqOoIOAWEeGlGcipF_0y2A" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qqNaAOAWEeGlGcipF_0y2A" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_qeLqQBxEEeGIELeDlfT77A" name="ProcedureActivityEncounter">
         <ownedRule xmi:id="_UWwzQBxcEeGXP8PxDYviDg" name="sameEncounter" constrainedElement="_qeLqQBxEEeGIELeDlfT77A">
@@ -977,23 +1138,59 @@ This clinical statement represents procedures whose immediate and primary outcom
         </generalization>
         <ownedAttribute xmi:id="_F7Fz4BxcEeGXP8PxDYviDg" name="classCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
-          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_n4VYQEb9Ed6besF9iFIJkQ"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_IxdkEBxcEeGXP8PxDYviDg" value="ENC"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_n4VYQEb9Ed6besF9iFIJkQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_F7HpEBxcEeGXP8PxDYviDg" name="moodCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpnUDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F7HpERxcEeGXP8PxDYviDg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F7HpEhxcEeGXP8PxDYviDg" value="1"/>
-          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SaymoEo0Ed6c3qsAxlFHaQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F7HpERxcEeGXP8PxDYviDg" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_NKahUBxcEeGXP8PxDYviDg" value="EVN"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SaymoEo0Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_F7HCABxcEeGXP8PxDYviDg" name="id" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QwXUUBxcEeGXP8PxDYviDg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QwX7YBxcEeGXP8PxDYviDg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QwXUUBxcEeGXP8PxDYviDg" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_DKBLQEo0Ed6c3qsAxlFHaQ"/>
         </ownedAttribute>
       </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wtPmcLS3EeWpm8PSOGz-9g" name="MedicationActivityEntryRelationship">
+      <generalization xmi:id="_wtPmcbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wtRboLS3EeWpm8PSOGz-9g" name="medicationActivity" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtRbobS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtRborS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Px50sUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wtQ0kbS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wtSCsLS3EeWpm8PSOGz-9g" name="InstructionsEntryRelationship">
+      <generalization xmi:id="_wtSCsbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wtT34bS3EeWpm8PSOGz-9g" name="patientInstruction" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtT34rS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtT347S3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Hop1oUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wtT34LS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wtVGALS3EeWpm8PSOGz-9g" name="IndicationEntryRelationship">
+      <generalization xmi:id="_wtVGAbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wtWUIbS3EeWpm8PSOGz-9g" name="indication" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtWUIrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtWUI7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wtWUILS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_2OTHMxSVEeGGzu7fmW9pXw" memberEnd="_2OTHMBSVEeGGzu7fmW9pXw _2OTHNBSVEeGGzu7fmW9pXw">
@@ -1008,13 +1205,13 @@ This clinical statement represents procedures whose immediate and primary outcom
   <uml:Association xmi:id="_2OTHPxSVEeGGzu7fmW9pXw" memberEnd="_2OTHPBSVEeGGzu7fmW9pXw _2OTHQBSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2OTHQBSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OTHPxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2OZNzRSVEeGGzu7fmW9pXw" memberEnd="_2OZNyhSVEeGGzu7fmW9pXw _2OZNzhSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2OZNzRSVEeGGzu7fmW9pXw" memberEnd="_2OZNzhSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2OZNzhSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OZNzRSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2OZN0xSVEeGGzu7fmW9pXw" memberEnd="_2OZN0BSVEeGGzu7fmW9pXw _2OZN1BSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2OZN0xSVEeGGzu7fmW9pXw" memberEnd="_2OZN1BSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2OZN1BSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OZN0xSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2OTHIBSVEeGGzu7fmW9pXw" memberEnd="_2OG6BRSVEeGGzu7fmW9pXw _2OTHIRSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2OTHIBSVEeGGzu7fmW9pXw" memberEnd="_2OTHIRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2OTHIRSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OTHIBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2ONAgBSVEeGGzu7fmW9pXw" base_Class="_2OG58RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="IHE PCC">
@@ -1100,8 +1297,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:15910</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_4Aw5EBrREeGxIZCGAXKxsQ" base_Property="_2OG6CBSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
     <ruleId>CONF:7661</ruleId>
+    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_u73CsBrUEeGxIZCGAXKxsQ" severity="INFO" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ"/>
   <CDA:PropertyValidation xmi:id="_EHrjYBrZEeGrncRpaMCqdA" severity="INFO" base_Property="_ozsKkBrUEeGxIZCGAXKxsQ">
@@ -1111,26 +1308,26 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:7683</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_LFtFcBrZEeGrncRpaMCqdA" base_Property="_ozsKmBrUEeGxIZCGAXKxsQ">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:16082</ruleId>
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_nZdHkBrcEeGrncRpaMCqdA" severity="INFO" base_Association="_2OZN0xSVEeGGzu7fmW9pXw" typeCode="SUBJ">
     <ruleId>CONF:7775</ruleId>
     <ruleId>CONF:7776</ruleId>
     <ruleId>CONF:15913</ruleId>
   </CDA:EntryRelationship>
-  <uml:Association xmi:id="_HKhTABq9EeGYcL3NfEQErA" memberEnd="_HKgr8Bq9EeGYcL3NfEQErA _HKh6EBq9EeGYcL3NfEQErA">
+  <uml:Association xmi:id="_HKhTABq9EeGYcL3NfEQErA" memberEnd="_HKh6EBq9EeGYcL3NfEQErA">
     <ownedEnd xmi:id="_HKh6EBq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_HKhTABq9EeGYcL3NfEQErA"/>
   </uml:Association>
-  <uml:Association xmi:id="_MCBNcBq9EeGYcL3NfEQErA" memberEnd="_MCAmYBq9EeGYcL3NfEQErA _MCBNcRq9EeGYcL3NfEQErA">
+  <uml:Association xmi:id="_MCBNcBq9EeGYcL3NfEQErA" memberEnd="_MCBNcRq9EeGYcL3NfEQErA">
     <ownedEnd xmi:id="_MCBNcRq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_MCBNcBq9EeGYcL3NfEQErA"/>
   </uml:Association>
-  <uml:Association xmi:id="_VDZHUBq9EeGYcL3NfEQErA" memberEnd="_VDYgQBq9EeGYcL3NfEQErA _VDZHURq9EeGYcL3NfEQErA">
+  <uml:Association xmi:id="_VDZHUBq9EeGYcL3NfEQErA" memberEnd="_VDZHURq9EeGYcL3NfEQErA">
     <ownedEnd xmi:id="_VDZHURq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_VDZHUBq9EeGYcL3NfEQErA"/>
   </uml:Association>
   <CDA:ValueSetConstraint xmi:id="_e6YP4BxEEeGIELeDlfT77A" base_Property="_2OTHIxSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
     <ruleId>CONF:7653</ruleId>
+    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_wonhUBxGEeGIELeDlfT77A" base_Constraint="_tJGGcBxGEeGIELeDlfT77A">
     <ruleId>CONF:7890</ruleId>
@@ -1148,8 +1345,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:8289</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_R8Hp4BxpEeGXP8PxDYviDg" base_Property="_hPwGlBg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
     <ruleId>CONF:8290</ruleId>
+    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_YBfFoBxpEeGXP8PxDYviDg" base_Property="_hPwGkBg4EeGs5a462vYX5Q">
     <ruleId>CONF:8292</ruleId>
@@ -1170,8 +1367,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:15598</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_46eU4BxpEeGXP8PxDYviDg" base_Property="_hPwGmhg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
     <ruleId>CONF:8298</ruleId>
+    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_MR3AUBxqEeGXP8PxDYviDg" severity="WARNING" base_Property="_LJu6oBxqEeGXP8PxDYviDg">
     <ruleId>CONF:8299</ruleId>
@@ -1193,8 +1390,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:8282</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_aAWMwBxuEeGXP8PxDYviDg" base_Property="_NMUNfhg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
     <ruleId>CONF:8237</ruleId>
+    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_tDr60BxuEeGXP8PxDYviDg" base_Property="_NMUNdhg4EeGs5a462vYX5Q">
     <ruleId>CONF:8239</ruleId>
@@ -1215,8 +1412,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:15903</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_1RgbYBxvEeGXP8PxDYviDg" base_Property="_NMUNhBg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
     <ruleId>CONF:8245</ruleId>
+    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8S1wIBxvEeGXP8PxDYviDg" base_Property="_NMUNjBg4EeGs5a462vYX5Q">
     <ruleId>CONF:16846</ruleId>
@@ -1235,8 +1432,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:8250</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_ZtFAkBxwEeGXP8PxDYviDg" base_Property="_NMUNiBg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:10121</ruleId>
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_s0jAsBxwEeGXP8PxDYviDg" base_Constraint="_oJm7kBxwEeGXP8PxDYviDg">
     <ruleId>CONF:8266</ruleId>
@@ -1256,13 +1453,13 @@ This clinical statement represents procedures whose immediate and primary outcom
   <uml:Association xmi:id="_OymM0BxsEeGXP8PxDYviDg" memberEnd="_Oyk-sBxsEeGXP8PxDYviDg _OymM0RxsEeGXP8PxDYviDg">
     <ownedEnd xmi:id="_OymM0RxsEeGXP8PxDYviDg" type="_awdH4Bg4EeGs5a462vYX5Q" association="_OymM0BxsEeGXP8PxDYviDg"/>
   </uml:Association>
-  <uml:Association xmi:id="_D6ryoBxtEeGXP8PxDYviDg" memberEnd="_D6qkgBxtEeGXP8PxDYviDg _D6ryoRxtEeGXP8PxDYviDg">
+  <uml:Association xmi:id="_D6ryoBxtEeGXP8PxDYviDg" memberEnd="_D6ryoRxtEeGXP8PxDYviDg">
     <ownedEnd xmi:id="_D6ryoRxtEeGXP8PxDYviDg" type="_awdH4Bg4EeGs5a462vYX5Q" association="_D6ryoBxtEeGXP8PxDYviDg"/>
   </uml:Association>
-  <uml:Association xmi:id="_MTbmQBxtEeGXP8PxDYviDg" memberEnd="_MTaYIBxtEeGXP8PxDYviDg _MTbmQRxtEeGXP8PxDYviDg">
+  <uml:Association xmi:id="_MTbmQBxtEeGXP8PxDYviDg" memberEnd="_MTbmQRxtEeGXP8PxDYviDg">
     <ownedEnd xmi:id="_MTbmQRxtEeGXP8PxDYviDg" type="_awdH4Bg4EeGs5a462vYX5Q" association="_MTbmQBxtEeGXP8PxDYviDg"/>
   </uml:Association>
-  <uml:Association xmi:id="_cERBwBxtEeGXP8PxDYviDg" memberEnd="_cEQasBxtEeGXP8PxDYviDg _cERo0BxtEeGXP8PxDYviDg">
+  <uml:Association xmi:id="_cERBwBxtEeGXP8PxDYviDg" memberEnd="_cERo0BxtEeGXP8PxDYviDg">
     <ownedEnd xmi:id="_cERo0BxtEeGXP8PxDYviDg" type="_awdH4Bg4EeGs5a462vYX5Q" association="_cERBwBxtEeGXP8PxDYviDg"/>
   </uml:Association>
   <uml:Association xmi:id="_x2ZJ8BxwEeGXP8PxDYviDg" memberEnd="_x2X70BxwEeGXP8PxDYviDg _x2ZJ8RxwEeGXP8PxDYviDg">
@@ -1271,13 +1468,13 @@ This clinical statement represents procedures whose immediate and primary outcom
   <uml:Association xmi:id="_5Pv9IBxwEeGXP8PxDYviDg" memberEnd="_5PuH8BxwEeGXP8PxDYviDg _5Pv9IRxwEeGXP8PxDYviDg">
     <ownedEnd xmi:id="_5Pv9IRxwEeGXP8PxDYviDg" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_5Pv9IBxwEeGXP8PxDYviDg"/>
   </uml:Association>
-  <uml:Association xmi:id="_VUIN4BxxEeGXP8PxDYviDg" memberEnd="_VUG_wBxxEeGXP8PxDYviDg _VUI08BxxEeGXP8PxDYviDg">
+  <uml:Association xmi:id="_VUIN4BxxEeGXP8PxDYviDg" memberEnd="_VUI08BxxEeGXP8PxDYviDg">
     <ownedEnd xmi:id="_VUI08BxxEeGXP8PxDYviDg" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_VUIN4BxxEeGXP8PxDYviDg"/>
   </uml:Association>
-  <uml:Association xmi:id="_cZaOgBxxEeGXP8PxDYviDg" memberEnd="_cZZAYBxxEeGXP8PxDYviDg _cZaOgRxxEeGXP8PxDYviDg">
+  <uml:Association xmi:id="_cZaOgBxxEeGXP8PxDYviDg" memberEnd="_cZaOgRxxEeGXP8PxDYviDg">
     <ownedEnd xmi:id="_cZaOgRxxEeGXP8PxDYviDg" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_cZaOgBxxEeGXP8PxDYviDg"/>
   </uml:Association>
-  <uml:Association xmi:id="_odu8ABxxEeGXP8PxDYviDg" memberEnd="_odtt4BxxEeGXP8PxDYviDg _odu8ARxxEeGXP8PxDYviDg">
+  <uml:Association xmi:id="_odu8ABxxEeGXP8PxDYviDg" memberEnd="_odu8ARxxEeGXP8PxDYviDg">
     <ownedEnd xmi:id="_odu8ARxxEeGXP8PxDYviDg" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_odu8ABxxEeGXP8PxDYviDg"/>
   </uml:Association>
   <uml:Class xmi:id="_OA_Q0DVyEeGaW4kr-GbV8Q" name="AnesthesiaSection">
@@ -1289,32 +1486,57 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_kPlcUDWmEeG32vxjh5_fjg" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bWiikDWnEeG32vxjh5_fjg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bWiikTWnEeG32vxjh5_fjg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bWiikDWnEeG32vxjh5_fjg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_kPlcUzWmEeG32vxjh5_fjg" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b8iyoDWnEeG32vxjh5_fjg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b8iyoTWnEeG32vxjh5_fjg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b8iyoDWnEeG32vxjh5_fjg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_kPlcVjWmEeG32vxjh5_fjg" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfHUMDWnEeG32vxjh5_fjg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfHUMTWnEeG32vxjh5_fjg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfHUMDWnEeG32vxjh5_fjg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_w85ccDWmEeG32vxjh5_fjg" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw" association="_w85ccjWmEeG32vxjh5_fjg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ewGfYDWnEeG32vxjh5_fjg" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ewGfYTWnEeG32vxjh5_fjg"/>
+    <ownedAttribute xmi:id="_wwMMwbS3EeWpm8PSOGz-9g" name="entry" type="_wwLlsLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwMMwrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwMMw7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wwMMwLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_zMF34DWmEeG32vxjh5_fjg" name="medicationActivity">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOfrkDWnEeG32vxjh5_fjg" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOfrkTWnEeG32vxjh5_fjg"/>
-      <association href="consol-medications.uml#_zMF34jWmEeG32vxjh5_fjg"/>
+    <ownedAttribute xmi:id="_wwOB9LS3EeWpm8PSOGz-9g" name="entry" type="_wwOB8LS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwOB9bS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwOpALS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wwOB87S3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wwLlsLS3EeWpm8PSOGz-9g" name="ProcedureActivityProcedureEntry">
+      <generalization xmi:id="_wwLlsbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wwMz0bS3EeWpm8PSOGz-9g" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwMz0rS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwMz07S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_XyYJsEbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wwMz0LS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wwOB8LS3EeWpm8PSOGz-9g" name="MedicationActivityEntry">
+      <generalization xmi:id="_wwOB8bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wwPQEbS3EeWpm8PSOGz-9g" name="medicationActivity" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwPQErS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwPQE7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_qXT58EbuEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wwPQELS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Class xmi:id="_R1OXcDVyEeGaW4kr-GbV8Q" name="ComplicationsSection">
     <ownedComment xmi:id="_zxyf4FjaEeGRqYkwoeymcA">
@@ -1334,27 +1556,40 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_zwZ0QFjkEeGRqYkwoeymcA" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hPjycFjoEeGRqYkwoeymcA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hPjycVjoEeGRqYkwoeymcA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hPjycFjoEeGRqYkwoeymcA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_zwabUFjkEeGRqYkwoeymcA" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iBgz0FjoEeGRqYkwoeymcA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iBgz0VjoEeGRqYkwoeymcA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iBgz0FjoEeGRqYkwoeymcA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_zwZ0Q1jkEeGRqYkwoeymcA" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hmmZcFjoEeGRqYkwoeymcA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hmmZcVjoEeGRqYkwoeymcA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hmmZcFjoEeGRqYkwoeymcA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_4XdiIFjoEeGRqYkwoeymcA" name="problemObservation" association="_4XfXUFjoEeGRqYkwoeymcA">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Tr-QFjoEeGRqYkwoeymcA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6TslUFjoEeGRqYkwoeymcA"/>
+    <ownedAttribute xmi:id="_wwRFQbS3EeWpm8PSOGz-9g" name="entry" type="_wwQeMLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwRFQrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwRFQ7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wwRFQLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wwQeMLS3EeWpm8PSOGz-9g" name="ProblemObservationEntry">
+      <generalization xmi:id="_wwQeMbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wwRsUrS3EeWpm8PSOGz-9g" name="problemObservation" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwRsU7S3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwRsVLS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_k2RbsTxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wwRsUbS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Class xmi:id="_vHfXoDVyEeGaW4kr-GbV8Q" name="OperativeNoteFluidSection">
     <ownedComment xmi:id="_UgHj8FmvEeGRqYkwoeymcA">
@@ -1374,20 +1609,20 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_ZoVu4EEtEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ab6tQEEuEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ab6tQUEuEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ab6tQEEuEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ZoVu40EtEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A12QMEEuEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A12QMUEuEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A12QMEEuEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ZoVu5kEtEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BNsIcEEuEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BNsIcUEuEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BNsIcEEuEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
@@ -1409,20 +1644,20 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_vJXAUEEtEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BmkigEEuEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BmkigUEuEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BmkigEEuEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_vJXAU0EtEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CBinQEEuEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CBinQUEuEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CBinQEEuEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_vJXAVkEtEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CgsBYEEuEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CgsBYUEuEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CgsBYEEuEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
@@ -1435,27 +1670,40 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_y9eVsEEuEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_60O2kEEuEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_60O2kUEuEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_60O2kEEuEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_y9eVs0EuEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7NkjoEEuEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NkjoUEuEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7NkjoEEuEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_y9eVtkEuEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7npQgEEuEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7npQgUEuEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7npQgEEuEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_HSV9EEEvEeGdmoWy_aLP0Q" name="planOfCareActivityProcedure" association="_HSV9EkEvEeGdmoWy_aLP0Q">
-      <type xmi:type="uml:Class" href="consol-planofcare.uml#_2NiSKhSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VOsEsFmwEeGRqYkwoeymcA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VOsrwFmwEeGRqYkwoeymcA"/>
+    <ownedAttribute xmi:id="_wwWk0bS3EeWpm8PSOGz-9g" name="entry" type="_wwV9wLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwWk0rS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwWk07S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wwWk0LS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wwV9wLS3EeWpm8PSOGz-9g" name="PlanOfCareActivityProcedureEntry">
+      <generalization xmi:id="_wwV9wbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wwXL4rS3EeWpm8PSOGz-9g" name="planOfCareActivityProcedure" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-planofcare.uml#_2NiSKhSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwXL47S3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwXy8LS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_XyYJsEbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wwXL4bS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Class xmi:id="_7UA-4DVyEeGaW4kr-GbV8Q" name="PostoperativeDiagnosisSection">
     <ownedComment xmi:id="_0An7IEE2EeGdmoWy_aLP0Q">
@@ -1466,20 +1714,20 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_d03LMECUEeGELr7uj3LK_Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gUvuAECUEeGELr7uj3LK_Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gUvuAUCUEeGELr7uj3LK_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gUvuAECUEeGELr7uj3LK_Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_d03LM0CUEeGELr7uj3LK_Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gpwUsECUEeGELr7uj3LK_Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gpwUsUCUEeGELr7uj3LK_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gpwUsECUEeGELr7uj3LK_Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_d03LNkCUEeGELr7uj3LK_Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hFxiUECUEeGELr7uj3LK_Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hFxiUUCUEeGELr7uj3LK_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hFxiUECUEeGELr7uj3LK_Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
@@ -1492,25 +1740,39 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_SQVUoEEvEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UffAoMZjEeOZyeUSQqClgg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UffAocZjEeOZyeUSQqClgg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UffAoMZjEeOZyeUSQqClgg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_SQVUo0EvEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nbcUUMZjEeOZyeUSQqClgg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nbcUUcZjEeOZyeUSQqClgg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nbcUUMZjEeOZyeUSQqClgg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_SQVUpkEvEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p1J9sMZjEeOZyeUSQqClgg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p1J9scZjEeOZyeUSQqClgg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p1J9sMZjEeOZyeUSQqClgg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_eZUDMEEwEeGdmoWy_aLP0Q" name="postprocedureDiagnosis" type="_0fjXAEEvEeGdmoWy_aLP0Q" association="_eZUDMkEwEeGdmoWy_aLP0Q">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eZUDMUEwEeGdmoWy_aLP0Q"/>
+    <ownedAttribute xmi:id="_wwZoIbS3EeWpm8PSOGz-9g" name="entry" type="_wwZBELS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwZoIrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwZoI7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wwZoILS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wwZBELS3EeWpm8PSOGz-9g" name="PostprocedureDiagnosisEntry">
+      <generalization xmi:id="_wwZBEbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wwaPMbS3EeWpm8PSOGz-9g" name="postprocedureDiagnosis" type="_0fjXAEEvEeGdmoWy_aLP0Q" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwaPMrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwaPM7S3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wwaPMLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Class xmi:id="_Cu6qMDVzEeGaW4kr-GbV8Q" name="PreoperativeDiagnosisSection">
     <ownedComment xmi:id="_4B0fsEE2EeGdmoWy_aLP0Q">
@@ -1521,25 +1783,39 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_5vgB8FvvEeGxXeivz89y3A" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-GLuUFvvEeGxXeivz89y3A" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-GLuUVvvEeGxXeivz89y3A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-GLuUFvvEeGxXeivz89y3A" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_5vrBEFvvEeGxXeivz89y3A" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-oRHsFvvEeGxXeivz89y3A" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-oRHsVvvEeGxXeivz89y3A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-oRHsFvvEeGxXeivz89y3A" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_5vroIFvvEeGxXeivz89y3A" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__NU8kFvvEeGxXeivz89y3A" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__NU8kVvvEeGxXeivz89y3A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__NU8kFvvEeGxXeivz89y3A" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_0c8yIFwOEeG0y_7i0ygc4g" name="preoperativeDiagnosis" type="_0baBYEEwEeGdmoWy_aLP0Q" association="_0c-nUFwOEeG0y_7i0ygc4g">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0c8yIVwOEeG0y_7i0ygc4g"/>
+    <ownedAttribute xmi:id="_wwcEYbS3EeWpm8PSOGz-9g" name="entry" type="_wwbdULS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwcEYrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwcEY7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wwcEYLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wwbdULS3EeWpm8PSOGz-9g" name="PreoperativeDiagnosisEntry">
+      <generalization xmi:id="_wwbdUbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wwdSgLS3EeWpm8PSOGz-9g" name="preoperativeDiagnosis" type="_0baBYEEwEeGdmoWy_aLP0Q" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwdSgbS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwdSgrS3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wwcrcbS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Class xmi:id="_HNUIIDVzEeGaW4kr-GbV8Q" name="ProcedureDescriptionSection">
     <ownedComment xmi:id="_Fyfh4ECVEeGELr7uj3LK_Q">
@@ -1550,20 +1826,20 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_A-MFYECVEeGELr7uj3LK_Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IcXuMECVEeGELr7uj3LK_Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IcXuMUCVEeGELr7uj3LK_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IcXuMECVEeGELr7uj3LK_Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_A-MFY0CVEeGELr7uj3LK_Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I1QIQECVEeGELr7uj3LK_Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I1QIQUCVEeGELr7uj3LK_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I1QIQECVEeGELr7uj3LK_Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_A-MFZkCVEeGELr7uj3LK_Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JM8PgECVEeGELr7uj3LK_Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JM8PgUCVEeGELr7uj3LK_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JM8PgECVEeGELr7uj3LK_Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
@@ -1576,20 +1852,20 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_bXiXsECVEeGELr7uj3LK_Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qcFU8ECVEeGELr7uj3LK_Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qcFU8UCVEeGELr7uj3LK_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qcFU8ECVEeGELr7uj3LK_Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_bXiXs0CVEeGELr7uj3LK_Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rcm90ECVEeGELr7uj3LK_Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rcm90UCVEeGELr7uj3LK_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rcm90ECVEeGELr7uj3LK_Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_bXiXtkCVEeGELr7uj3LK_Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r05iAECVEeGELr7uj3LK_Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r05iAUCVEeGELr7uj3LK_Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r05iAECVEeGELr7uj3LK_Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
@@ -1611,20 +1887,20 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_0UcBQEExEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__nlwgEExEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__nlwgUExEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__nlwgEExEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_0UcBQ0ExEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AAexoEEyEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AAexoUEyEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AAexoEEyEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_0UcBRkExEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AbmAUEEyEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AbmAUUEyEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AbmAUEEyEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
@@ -1637,27 +1913,40 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_V8xCwEEyEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZUYe0EEyEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZUYe0UEyEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZUYe0EEyEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_V8xCw0EyEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZqvJUEEyEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZqvJUUEyEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZqvJUEEyEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_V86MsEEyEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aBFMwEEyEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aBFMwUEyEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aBFMwEEyEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_oVDosEEyEeGdmoWy_aLP0Q" name="problemObservation" association="_oVNZsEEyEeGdmoWy_aLP0Q">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s1GFYEEyEeGdmoWy_aLP0Q" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s1GFYUEyEeGdmoWy_aLP0Q"/>
+    <ownedAttribute xmi:id="_wwfHsbS3EeWpm8PSOGz-9g" name="entry" type="_wwegoLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwfHsrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwfHs7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wwfHsLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wwegoLS3EeWpm8PSOGz-9g" name="ProblemObservationEntry">
+      <generalization xmi:id="_wwegobS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wwfuwbS3EeWpm8PSOGz-9g" name="problemObservation" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwfuwrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwfuw7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_k2RbsTxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wwfuwLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Class xmi:id="_Z662wDVzEeGaW4kr-GbV8Q" name="ProcedureImplantsSection">
     <ownedComment xmi:id="_F3ZIYEE3EeGdmoWy_aLP0Q">
@@ -1677,20 +1966,20 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_1yMjQEEyEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8h4uYEEyEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8h4uYUEyEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8h4uYEEyEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_1yMjQ0EyEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_84Yi0EEyEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_84Yi0UEyEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_84Yi0EEyEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_1yMjRkEyEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9R3Z0EEyEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9R3Z0UEyEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9R3Z0EEyEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
@@ -1703,27 +1992,40 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_Xia8gEEzEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YXKzMEEzEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YXKzMUEzEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YXKzMEEzEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Xia8g0EzEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxjCEEEzEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxjCEUEzEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxjCEEEzEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Xia8hkEzEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZKbcIEEzEeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZKbcIUEzEeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZKbcIEEzEeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_j8WtoEEzEeGdmoWy_aLP0Q" name="indication" association="_j8WtokEzEeGdmoWy_aLP0Q">
-      <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UsxdsFwREeG0y_7i0ygc4g" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UsxdsVwREeG0y_7i0ygc4g"/>
+    <ownedAttribute xmi:id="_wwhj8rS3EeWpm8PSOGz-9g" name="entry" type="_wwg84LS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwhj87S3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwiLALS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wwhj8bS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wwg84LS3EeWpm8PSOGz-9g" name="IndicationEntry">
+      <generalization xmi:id="_wwg84bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wwiyEbS3EeWpm8PSOGz-9g" name="indication" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwiyErS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwiyE7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_k2RbsTxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wwiyELS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Class xmi:id="_luQh8DVzEeGaW4kr-GbV8Q" name="SurgicalDrainsSection">
     <ownedComment xmi:id="_SOgPAEE3EeGdmoWy_aLP0Q">
@@ -1743,20 +2045,20 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_rYLJgEE0EeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zcWbUEE0EeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zcWbUUE0EeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zcWbUEE0EeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rYLJg0E0EeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z78hYEE0EeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z78hYUE0EeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z78hYEE0EeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rYLJhkE0EeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0gAQsEE0EeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0gAQsUE0EeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0gAQsEE0EeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
@@ -1778,20 +2080,20 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_0OiisEEzEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AXobcEE0EeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AXobcUE0EeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AXobcEE0EeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_0Oiis0EzEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Au4d0EE0EeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Au4d0UE0EeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Au4d0EE0EeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_0OiitkEzEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BHUL8EE0EeGdmoWy_aLP0Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BHUL8UE0EeGdmoWy_aLP0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BHUL8EE0EeGdmoWy_aLP0Q" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
     </ownedAttribute>
   </uml:Class>
@@ -1868,7 +2170,7 @@ This clinical statement represents procedures whose immediate and primary outcom
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:15352</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Association xmi:id="_w85ccjWmEeG32vxjh5_fjg" memberEnd="_w85ccDWmEeG32vxjh5_fjg _w85cczWmEeG32vxjh5_fjg">
+  <uml:Association xmi:id="_w85ccjWmEeG32vxjh5_fjg" memberEnd="_w85cczWmEeG32vxjh5_fjg">
     <ownedEnd xmi:id="_w85cczWmEeG32vxjh5_fjg" type="_OA_Q0DVyEeGaW4kr-GbV8Q" association="_w85ccjWmEeG32vxjh5_fjg"/>
   </uml:Association>
   <CDA:PropertyValidation xmi:id="_fCMhAECUEeGELr7uj3LK_Q" base_Property="_d03LM0CUEeGELr7uj3LK_Q">
@@ -2020,8 +2322,8 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_2Q1R8EEwEeGdmoWy_aLP0Q" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_BzxwsEExEeGdmoWy_aLP0Q" value="ACT"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2Q1R8UEwEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -2029,16 +2331,29 @@ This clinical statement represents procedures whose immediate and primary outcom
     </ownedAttribute>
     <ownedAttribute xmi:id="_2Q1R8kEwEeGdmoWy_aLP0Q" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_J9kHAEFMEeG1jJ6BPjCF7A" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_NaJ98EExEeGdmoWy_aLP0Q" name="problemObservation" association="_NaJ98kExEeGdmoWy_aLP0Q">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fQtFcOZIEeGINOJ_SD9_dA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fQtFceZIEeGINOJ_SD9_dA" value="1"/>
+    <ownedAttribute xmi:id="_w0znAbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w0y_8LS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w0znArS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w0znA7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w0znALS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w0y_8LS3EeWpm8PSOGz-9g" name="ProblemObservationEntryRelationship">
+      <generalization xmi:id="_w0y_8bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w00OEbS3EeWpm8PSOGz-9g" name="problemObservation" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w00OErS3EeWpm8PSOGz-9g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w00OE7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w00OELS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_NaJ98kExEeGdmoWy_aLP0Q" memberEnd="_NaJ98EExEeGdmoWy_aLP0Q _NaJ980ExEeGdmoWy_aLP0Q">
+  <uml:Association xmi:id="_NaJ98kExEeGdmoWy_aLP0Q" memberEnd="_NaJ980ExEeGdmoWy_aLP0Q">
     <ownedEnd xmi:id="_NaJ980ExEeGdmoWy_aLP0Q" type="_0baBYEEwEeGdmoWy_aLP0Q" association="_NaJ98kExEeGdmoWy_aLP0Q"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_7RNbkEEwEeGdmoWy_aLP0Q" base_Class="_0baBYEEwEeGdmoWy_aLP0Q" templateId="2.16.840.1.113883.10.20.22.4.65">
@@ -2069,25 +2384,38 @@ This clinical statement represents procedures whose immediate and primary outcom
     </generalization>
     <ownedAttribute xmi:id="_2HQ7sEEvEeGdmoWy_aLP0Q" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_8unDIEEvEeGdmoWy_aLP0Q" value="ACT"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2HQ7skEvEeGdmoWy_aLP0Q" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_9ghoQEEvEeGdmoWy_aLP0Q" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2HQ7sUEvEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_IiPpQEEwEeGdmoWy_aLP0Q" name="problemObservation" association="_IiPpQkEwEeGdmoWy_aLP0Q">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N8Zk0EEwEeGdmoWy_aLP0Q" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N8Zk0UEwEeGdmoWy_aLP0Q" value="1"/>
+    <ownedAttribute xmi:id="_w0xKwbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w0wjsLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w0xKwrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w0xKw7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w0xKwLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w0wjsLS3EeWpm8PSOGz-9g" name="ProblemObservationEntryRelationship">
+      <generalization xmi:id="_w0wjsbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w0xx0rS3EeWpm8PSOGz-9g" name="problemObservation" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w0xx07S3EeWpm8PSOGz-9g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w0yY4LS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w0xx0bS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_IiPpQkEwEeGdmoWy_aLP0Q" memberEnd="_IiPpQEEwEeGdmoWy_aLP0Q _IiPpQ0EwEeGdmoWy_aLP0Q">
+  <uml:Association xmi:id="_IiPpQkEwEeGdmoWy_aLP0Q" memberEnd="_IiPpQ0EwEeGdmoWy_aLP0Q">
     <ownedEnd xmi:id="_IiPpQ0EwEeGdmoWy_aLP0Q" type="_0fjXAEEvEeGdmoWy_aLP0Q" association="_IiPpQkEwEeGdmoWy_aLP0Q"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_ckEjYEExEeGdmoWy_aLP0Q" base_Class="_0fjXAEEvEeGdmoWy_aLP0Q" templateId="2.16.840.1.113883.10.20.22.4.51">
@@ -2109,16 +2437,16 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:8760</ruleId>
     <ruleId>CONF:15583</ruleId>
   </CDA:EntryRelationship>
-  <uml:Association xmi:id="_HSV9EkEvEeGdmoWy_aLP0Q" memberEnd="_HSV9EEEvEeGdmoWy_aLP0Q _HSV9E0EvEeGdmoWy_aLP0Q">
+  <uml:Association xmi:id="_HSV9EkEvEeGdmoWy_aLP0Q" memberEnd="_HSV9E0EvEeGdmoWy_aLP0Q">
     <ownedEnd xmi:id="_HSV9E0EvEeGdmoWy_aLP0Q" type="_3b6E4DVyEeGaW4kr-GbV8Q" association="_HSV9EkEvEeGdmoWy_aLP0Q"/>
   </uml:Association>
-  <uml:Association xmi:id="_eZUDMkEwEeGdmoWy_aLP0Q" memberEnd="_eZUDMEEwEeGdmoWy_aLP0Q _eZUDM0EwEeGdmoWy_aLP0Q">
+  <uml:Association xmi:id="_eZUDMkEwEeGdmoWy_aLP0Q" memberEnd="_eZUDM0EwEeGdmoWy_aLP0Q">
     <ownedEnd xmi:id="_eZUDM0EwEeGdmoWy_aLP0Q" type="_-jlSMDVyEeGaW4kr-GbV8Q" association="_eZUDMkEwEeGdmoWy_aLP0Q"/>
   </uml:Association>
-  <uml:Association xmi:id="_oVNZsEEyEeGdmoWy_aLP0Q" memberEnd="_oVDosEEyEeGdmoWy_aLP0Q _oVNZsUEyEeGdmoWy_aLP0Q">
+  <uml:Association xmi:id="_oVNZsEEyEeGdmoWy_aLP0Q" memberEnd="_oVNZsUEyEeGdmoWy_aLP0Q">
     <ownedEnd xmi:id="_oVNZsUEyEeGdmoWy_aLP0Q" type="_W4UBYDVzEeGaW4kr-GbV8Q" association="_oVNZsEEyEeGdmoWy_aLP0Q"/>
   </uml:Association>
-  <uml:Association xmi:id="_j8WtokEzEeGdmoWy_aLP0Q" memberEnd="_j8WtoEEzEeGdmoWy_aLP0Q _j8Wto0EzEeGdmoWy_aLP0Q">
+  <uml:Association xmi:id="_j8WtokEzEeGdmoWy_aLP0Q" memberEnd="_j8Wto0EzEeGdmoWy_aLP0Q">
     <ownedEnd xmi:id="_j8Wto0EzEeGdmoWy_aLP0Q" type="_cjmJMDVzEeGaW4kr-GbV8Q" association="_j8WtokEzEeGdmoWy_aLP0Q"/>
   </uml:Association>
   <CDA:CodeSystemConstraint xmi:id="_7eV1slGkEeG3H6xvuD7Z0Q" code="47519-4" displayName="History of procedures" base_Property="_7eV1sFGkEeG3H6xvuD7Z0Q">
@@ -2141,7 +2469,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_2qMIAFjoEeGRqYkwoeymcA" base_Constraint="_z_CwYFjoEeGRqYkwoeymcA">
     <ruleId>CONF:8797</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Association xmi:id="_4XfXUFjoEeGRqYkwoeymcA" memberEnd="_4XdiIFjoEeGRqYkwoeymcA _4Xf-YFjoEeGRqYkwoeymcA">
+  <uml:Association xmi:id="_4XfXUFjoEeGRqYkwoeymcA" memberEnd="_4Xf-YFjoEeGRqYkwoeymcA">
     <ownedEnd xmi:id="_4Xf-YFjoEeGRqYkwoeymcA" type="_R1OXcDVyEeGaW4kr-GbV8Q" association="_4XfXUFjoEeGRqYkwoeymcA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_7wZM0FjoEeGRqYkwoeymcA" severity="INFO" base_Association="_4XfXUFjoEeGRqYkwoeymcA">
@@ -2161,7 +2489,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:TextValue xmi:id="_evZWAFwNEeG0y_7i0ygc4g" base_Property="_5vroIFvvEeGxXeivz89y3A">
     <ruleId>CONF:8099</ruleId>
   </CDA:TextValue>
-  <uml:Association xmi:id="_0c-nUFwOEeG0y_7i0ygc4g" memberEnd="_0c8yIFwOEeG0y_7i0ygc4g _0c_OYFwOEeG0y_7i0ygc4g">
+  <uml:Association xmi:id="_0c-nUFwOEeG0y_7i0ygc4g" memberEnd="_0c_OYFwOEeG0y_7i0ygc4g">
     <ownedEnd xmi:id="_0c_OYFwOEeG0y_7i0ygc4g" type="_Cu6qMDVzEeGaW4kr-GbV8Q" association="_0c-nUFwOEeG0y_7i0ygc4g"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_1fvE0FwOEeG0y_7i0ygc4g" severity="WARNING" base_Association="_0c-nUFwOEeG0y_7i0ygc4g">
@@ -2172,16 +2500,16 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:8769</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_je4HoG1KEeGCevFpokwODw" base_Property="_hPwGlhg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
     <ruleId>CONF:8300</ruleId>
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_lYCBoG1KEeGCevFpokwODw" base_Property="_NMUNgBg4EeGs5a462vYX5Q">
-    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
     <ruleId>CONF:8247</ruleId>
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_m6mnoG1KEeGCevFpokwODw" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ">
-    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
     <ruleId>CONF:7668</ruleId>
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_uFpBsBxbEeGXP8PxDYviDg" base_Constraint="_qp5TkBxbEeGXP8PxDYviDg">
     <ruleId>CONF:7704</ruleId>
@@ -2291,13 +2619,13 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_yCbBcOVrEeGpoIKFyl7L7w" base_Property="_7eV1sFGkEeG3H6xvuD7Z0Q">
     <ruleId>CONF:15425</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_CM7hMOVsEeGpoIKFyl7L7w" memberEnd="_CMyXQOVsEeGpoIKFyl7L7w _CM7hMeVsEeGpoIKFyl7L7w">
+  <uml:Association xmi:id="_CM7hMOVsEeGpoIKFyl7L7w" memberEnd="_CM7hMeVsEeGpoIKFyl7L7w">
     <ownedEnd xmi:id="_CM7hMeVsEeGpoIKFyl7L7w" type="_2OAzQRSVEeGGzu7fmW9pXw" association="_CM7hMOVsEeGpoIKFyl7L7w"/>
   </uml:Association>
-  <uml:Association xmi:id="_Dy1vEOVsEeGpoIKFyl7L7w" memberEnd="_DyslIOVsEeGpoIKFyl7L7w _Dy1vEeVsEeGpoIKFyl7L7w">
+  <uml:Association xmi:id="_Dy1vEOVsEeGpoIKFyl7L7w" memberEnd="_Dy1vEeVsEeGpoIKFyl7L7w">
     <ownedEnd xmi:id="_Dy1vEeVsEeGpoIKFyl7L7w" type="_2OAzQRSVEeGGzu7fmW9pXw" association="_Dy1vEOVsEeGpoIKFyl7L7w"/>
   </uml:Association>
-  <uml:Association xmi:id="_FzYqguVsEeGpoIKFyl7L7w" memberEnd="_FzYqgOVsEeGpoIKFyl7L7w _FzYqg-VsEeGpoIKFyl7L7w">
+  <uml:Association xmi:id="_FzYqguVsEeGpoIKFyl7L7w" memberEnd="_FzYqg-VsEeGpoIKFyl7L7w">
     <ownedEnd xmi:id="_FzYqg-VsEeGpoIKFyl7L7w" type="_2OAzQRSVEeGGzu7fmW9pXw" association="_FzYqguVsEeGpoIKFyl7L7w"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_H3f3UOVsEeGpoIKFyl7L7w" severity="INFO" base_Association="_CM7hMOVsEeGpoIKFyl7L7w">
@@ -2432,4 +2760,29 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_4D46MO2oEeOchpob7ipcww" base_Property="_nsZuYO2oEeOchpob7ipcww">
     <ruleId>CONF:8309</ruleId>
   </CDA:PropertyValidation>
+  <CDA:Inline xmi:id="_wtF1crS3EeWpm8PSOGz-9g" base_Class="_wtF1cLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wtI4wrS3EeWpm8PSOGz-9g" base_Class="_wtI4wLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wtL8ErS3EeWpm8PSOGz-9g" base_Class="_wtL8ELS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wtPmcrS3EeWpm8PSOGz-9g" base_Class="_wtPmcLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wtSCsrS3EeWpm8PSOGz-9g" base_Class="_wtSCsLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wtVGArS3EeWpm8PSOGz-9g" base_Class="_wtVGALS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wvWfQrS3EeWpm8PSOGz-9g" base_Class="_wvWfQLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wvY7grS3EeWpm8PSOGz-9g" base_Class="_wvY7gLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wvbXwrS3EeWpm8PSOGz-9g" base_Class="_wvbXwLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wvr2crS3EeWpm8PSOGz-9g" base_Class="_wvr2cLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wvuSsrS3EeWpm8PSOGz-9g" base_Class="_wvuSsLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wvwu8rS3EeWpm8PSOGz-9g" base_Class="_wvwu8LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wv0ZUrS3EeWpm8PSOGz-9g" base_Class="_wv0ZULS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wv21krS3EeWpm8PSOGz-9g" base_Class="_wv21kLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wv4qwrS3EeWpm8PSOGz-9g" base_Class="_wv4qwLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wwLlsrS3EeWpm8PSOGz-9g" base_Class="_wwLlsLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wwOB8rS3EeWpm8PSOGz-9g" base_Class="_wwOB8LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wwQeMrS3EeWpm8PSOGz-9g" base_Class="_wwQeMLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wwV9wrS3EeWpm8PSOGz-9g" base_Class="_wwV9wLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wwZBErS3EeWpm8PSOGz-9g" base_Class="_wwZBELS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wwbdUrS3EeWpm8PSOGz-9g" base_Class="_wwbdULS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wwegorS3EeWpm8PSOGz-9g" base_Class="_wwegoLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wwhj8LS3EeWpm8PSOGz-9g" base_Class="_wwg84LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w0wjsrS3EeWpm8PSOGz-9g" base_Class="_w0wjsLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w0y_8rS3EeWpm8PSOGz-9g" base_Class="_w0y_8LS3EeWpm8PSOGz-9g"/>
 </xmi:XMI>

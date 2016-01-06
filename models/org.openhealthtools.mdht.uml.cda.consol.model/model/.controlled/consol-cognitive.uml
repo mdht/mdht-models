@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_jfoCUOZbEeGINOJ_SD9_dA" name="CognitiveStatusResultOrganizer">
     <ownedComment xmi:id="_67cIUOZiEeGINOJ_SD9_dA">
       <body>This clinical statement identifies a set of cognitive status result observations. It contains information applicable to all of the contained cognitive status result observations. A result organizer may be used to group questions in a Patient Health Questionaire (PHQ). &#xD;
@@ -18,25 +18,25 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
     </generalization>
     <ownedAttribute xmi:id="_Dku5YOZjEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOnw0DcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_OBLDEOZjEeGINOJ_SD9_dA" value="CLUSTER"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_NjnHQEb9Ed6besF9iFIJkQ"/>
       <redefinedProperty href="consol-results.uml#_eyn08NzJEeG4UqssEkZt3w"/>
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_OBLDEOZjEeGINOJ_SD9_dA" value="CLUSTER"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Dku5auZjEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="consol-results.uml#_2JzBoBSVEeGGzu7fmW9pXw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Dku5a-ZjEeGINOJ_SD9_dA" value="EVN"/>
+      <redefinedProperty href="consol-results.uml#_2JzBoBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Dku5ZuZjEeGINOJ_SD9_dA" name="id" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dku5Z-ZjEeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dku5aOZjEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dku5Z-ZjEeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="consol-results.uml#_2JzBoxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Dku5YuZjEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dku5Y-ZjEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dku5ZOZjEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dku5Y-ZjEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
       <redefinedProperty href="consol-results.uml#_DiXJUB7KEeGaOZtrEokzNQ"/>
     </ownedAttribute>
@@ -44,12 +44,24 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <redefinedProperty href="consol-results.uml#_2JzoshSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_0aKXMOZjEeGINOJ_SD9_dA" name="cognitiveStatusResultObservation" type="_gkBM0OZbEeGINOJ_SD9_dA" association="_0aKXMuZjEeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2AElEOZjEeGINOJ_SD9_dA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2AElEeZjEeGINOJ_SD9_dA" value="1"/>
+    <ownedAttribute xmi:id="_w10TobS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w1zskLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w10TorS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w10To7S3EeWpm8PSOGz-9g" value="1"/>
+      <association href="../consol.uml#_w10ToLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w1zskLS3EeWpm8PSOGz-9g" name="CognitiveStatusResultObservationEntryRelationship">
+      <generalization xmi:id="_w1zskbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w106sbS3EeWpm8PSOGz-9g" name="cognitiveStatusResultObservation" type="_gkBM0OZbEeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w106srS3EeWpm8PSOGz-9g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w106s7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w106sLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_0aKXMuZjEeGINOJ_SD9_dA" memberEnd="_0aKXMOZjEeGINOJ_SD9_dA _0aKXM-ZjEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_0aKXMuZjEeGINOJ_SD9_dA" memberEnd="_0aKXM-ZjEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_0aKXM-ZjEeGINOJ_SD9_dA" type="_jfoCUOZbEeGINOJ_SD9_dA" association="_0aKXMuZjEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_SABeQOZjEeGINOJ_SD9_dA" base_Class="_jfoCUOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.75">
@@ -118,19 +130,19 @@ This is different from a cognitive status problem observation, which is a clinic
     </generalization>
     <ownedAttribute xmi:id="_rPRcUOZgEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_rPRcUeZgEeGINOJ_SD9_dA" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <redefinedProperty href="consol-results.uml#_2J4hMRSVEeGGzu7fmW9pXw"/>
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_rPRcUeZgEeGINOJ_SD9_dA" value="OBS"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcZeZgEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="consol-results.uml#_2J4hMxSVEeGGzu7fmW9pXw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_rPRcZuZgEeGINOJ_SD9_dA" value="EVN"/>
+      <redefinedProperty href="consol-results.uml#_2J4hMxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcWeZgEeGINOJ_SD9_dA" name="id" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPRcWuZgEeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPRcW-ZgEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPRcWuZgEeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="consol-results.uml#_2J5IQBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcU-ZgEeGINOJ_SD9_dA" name="code" visibility="private">
@@ -139,8 +151,8 @@ This is different from a cognitive status problem observation, which is a clinic
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPamROZgEeGINOJ_SD9_dA" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPamReZgEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPamRuZgEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPamReZgEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="consol-results.uml#_JTUuoByWEeGaOZtrEokzNQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcaOZgEeGINOJ_SD9_dA" name="statusCode" visibility="private">
@@ -152,8 +164,8 @@ This is different from a cognitive status problem observation, which is a clinic
         <body>Represents clinically effective time of the measurement, which may be the time the measurement was performed (e.g., a BP measurement), or may be the time the sample was taken (and measured some time afterwards).</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPRcVuZgEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPRcV-ZgEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPRcVuZgEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="consol-results.uml#_2J1d6xSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPamSOZgEeGINOJ_SD9_dA" name="value" visibility="private">
@@ -162,44 +174,49 @@ This is different from a cognitive status problem observation, which is a clinic
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcXeZgEeGINOJ_SD9_dA" name="interpretationCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPRcXuZgEeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPRcX-ZgEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPRcXuZgEeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="consol-results.uml#_2J6WYBSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPRcYeZgEeGINOJ_SD9_dA" name="methodCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPRcYuZgEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPRcY-ZgEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPRcYuZgEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="consol-results.uml#_2J6WZRSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPamQOZgEeGINOJ_SD9_dA" name="targetSiteCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPamQeZgEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rPamQuZgEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rPamQeZgEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="consol-results.uml#_Wwv9wBt9EeG4C_iCHrZZ9w"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_rPamSuZgEeGINOJ_SD9_dA" name="author" visibility="private" aggregation="composite" association="_rPamTeZgEeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0MFYOZhEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x0MFYeZhEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x0MFYOZhEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_1Rt8MOZhEeGINOJ_SD9_dA" name="nonMedicinalSupplyActivity" association="_1R3GIOZhEeGINOJ_SD9_dA">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_2HIvMBSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-FRcgOZhEeGINOJ_SD9_dA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-FamcOZhEeGINOJ_SD9_dA"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2p8TYOZhEeGINOJ_SD9_dA" name="caregiverCharacteristics" type="__pNCUOY-EeGINOJ_SD9_dA" association="_2qFdUOZhEeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-YnPQOZhEeGINOJ_SD9_dA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-YnPQeZhEeGINOJ_SD9_dA"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_5l_NwOZhEeGINOJ_SD9_dA" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_5mI-weZhEeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-vXiYOZhEeGINOJ_SD9_dA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-vhTYOZhEeGINOJ_SD9_dA"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_8m8dUOZhEeGINOJ_SD9_dA" name="referenceRange" type="_SJCs0OZiEeGINOJ_SD9_dA" association="_8m8dUuZhEeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QHdPkOZiEeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QHdPkeZiEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QHdPkOZiEeGINOJ_SD9_dA" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_w1s-4bS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w1sX0LS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1tl8LS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1tl8bS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w1s-4LS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_w1vbIbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w1u0ELS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1vbIrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1vbI7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w1vbILS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_w1x3YbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w1xQULS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1x3YrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1x3Y7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w1x3YLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_SJCs0OZiEeGINOJ_SD9_dA" name="ReferenceRange">
       <ownedComment xmi:id="_ybOakOiuEeGJjcpkERLI4g">
@@ -209,8 +226,8 @@ This is different from a cognitive status problem observation, which is a clinic
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_SifHkOZiEeGINOJ_SD9_dA" name="observationRange" visibility="private" type="_U74A0OZiEeGINOJ_SD9_dA" aggregation="composite">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SifHkeZiEeGINOJ_SD9_dA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SifHkuZiEeGINOJ_SD9_dA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SifHkeZiEeGINOJ_SD9_dA" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fupywUobEd6c3qsAxlFHaQ"/>
         <association href="../consol.uml#_SioRgOZiEeGINOJ_SD9_dA"/>
       </ownedAttribute>
@@ -228,17 +245,51 @@ This is different from a cognitive status problem observation, which is a clinic
         </generalization>
       </nestedClassifier>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w1sX0LS3EeWpm8PSOGz-9g" name="NonMedicinalSupplyActivityEntryRelationship">
+      <generalization xmi:id="_w1sX0bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w1uNAbS3EeWpm8PSOGz-9g" name="nonMedicinalSupplyActivity" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_2HIvMBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1uNArS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1uNA7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Nd7m8EcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w1uNALS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w1u0ELS3EeWpm8PSOGz-9g" name="CaregiverCharacteristicsEntryRelationship">
+      <generalization xmi:id="_w1u0EbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w1wCMrS3EeWpm8PSOGz-9g" name="caregiverCharacteristics" type="__pNCUOY-EeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1wCM7S3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1wpQLS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w1wCMbS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w1xQULS3EeWpm8PSOGz-9g" name="AssessmentScaleObservationEntryRelationship">
+      <generalization xmi:id="_w1xQUbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w1yecbS3EeWpm8PSOGz-9g" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1yecrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1yec7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w1yecLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_rPamTeZgEeGINOJ_SD9_dA" memberEnd="_rPamSuZgEeGINOJ_SD9_dA _rPamTuZgEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_rPamTuZgEeGINOJ_SD9_dA" type="_gkBM0OZbEeGINOJ_SD9_dA" association="_rPamTeZgEeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_1R3GIOZhEeGINOJ_SD9_dA" memberEnd="_1Rt8MOZhEeGINOJ_SD9_dA _1R3GIeZhEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_1R3GIOZhEeGINOJ_SD9_dA" memberEnd="_1R3GIeZhEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_1R3GIeZhEeGINOJ_SD9_dA" type="_gkBM0OZbEeGINOJ_SD9_dA" association="_1R3GIOZhEeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_2qFdUOZhEeGINOJ_SD9_dA" memberEnd="_2p8TYOZhEeGINOJ_SD9_dA _2qFdUeZhEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_2qFdUOZhEeGINOJ_SD9_dA" memberEnd="_2qFdUeZhEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_2qFdUeZhEeGINOJ_SD9_dA" type="_gkBM0OZbEeGINOJ_SD9_dA" association="_2qFdUOZhEeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_5mI-weZhEeGINOJ_SD9_dA" memberEnd="_5l_NwOZhEeGINOJ_SD9_dA _5mI-wuZhEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_5mI-weZhEeGINOJ_SD9_dA" memberEnd="_5mI-wuZhEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_5mI-wuZhEeGINOJ_SD9_dA" type="_gkBM0OZbEeGINOJ_SD9_dA" association="_5mI-weZhEeGINOJ_SD9_dA"/>
   </uml:Association>
   <uml:Association xmi:id="_8m8dUuZhEeGINOJ_SD9_dA" memberEnd="_8m8dUOZhEeGINOJ_SD9_dA _8m8dU-ZhEeGINOJ_SD9_dA">
@@ -381,30 +432,30 @@ A cognitive problem observation is a finding or medical condition. This is diffe
     </generalization>
     <ownedAttribute xmi:id="_aFueQOZcEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_aFueQeZcEeGINOJ_SD9_dA" value="OBS"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <redefinedProperty href="consol-problems.uml#_6-B3UBUyEeGbmN_W114JUw"/>
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_aFueQeZcEeGINOJ_SD9_dA" value="OBS"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueUeZcEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_aFueUuZcEeGINOJ_SD9_dA" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_6-ejRBUyEeGbmN_W114JUw"/>
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_aFueUuZcEeGINOJ_SD9_dA" value="EVN"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueVOZcEeGINOJ_SD9_dA" name="negationInd" visibility="private">
       <ownedComment xmi:id="_mdgTQOZcEeGINOJ_SD9_dA">
         <body>Use negationInd=&quot;true&quot; to indicate that the problem was not observed.</body>
       </ownedComment>
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFueVeZcEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aFueVuZcEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFueVeZcEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_LYVyAExtEd6h-an5IXo-DA"/>
       <redefinedProperty href="consol-problems.uml#_qzvdsCAtEeGetMjKLkqR8g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueSuZcEeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kfHL4AUdEeOAnLCjMscTnA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kfHL4QUdEeOAnLCjMscTnA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kfHL4AUdEeOAnLCjMscTnA" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_6-ejQBUyEeGbmN_W114JUw"/>
     </ownedAttribute>
@@ -415,59 +466,98 @@ A cognitive problem observation is a finding or medical condition. This is diffe
     </ownedAttribute>
     <ownedAttribute xmi:id="_aF4PQOZcEeGINOJ_SD9_dA" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aF4PQeZcEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aF4PQuZcEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aF4PQeZcEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_zGbQJCAuEeGetMjKLkqR8g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueWOZcEeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFueWeZcEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aFueWuZcEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFueWeZcEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_zGbQICAuEeGetMjKLkqR8g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueRuZcEeGINOJ_SD9_dA" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFueR-ZcEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aFueSOZcEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFueR-ZcEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_zGapECAuEeGetMjKLkqR8g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aFueTuZcEeGINOJ_SD9_dA" name="methodCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFueT-ZcEeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aFueUOZcEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aFueT-ZcEeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1jr3cEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aF4PROZcEeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aF4PReZcEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aF4PRuZcEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aF4PReZcEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
       <redefinedProperty href="consol-problems.uml#_zGb3MSAuEeGetMjKLkqR8g"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_FvvKoOZeEeGINOJ_SD9_dA" name="nonMedicinalSupplyActivity" association="_FvvKouZeEeGINOJ_SD9_dA">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_2HIvMBSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LDPEkOZeEeGINOJ_SD9_dA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LDPEkeZeEeGINOJ_SD9_dA"/>
+    <ownedAttribute xmi:id="_w1mRMbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w1lqILS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1mRMrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1mRM7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w1mRMLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_GxfikOZeEeGINOJ_SD9_dA" name="caregiverCharacteristics" type="__pNCUOY-EeGINOJ_SD9_dA" association="_GxfikuZeEeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f7esoGsiEeKMLasV-rp2QA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f7esoWsiEeKMLasV-rp2QA"/>
+    <ownedAttribute xmi:id="_w1oGYbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w1nfULS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1oGYrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1oGY7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w1oGYLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_IM1fMOZeEeGINOJ_SD9_dA" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_IM1fMuZeEeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h1oFIGsiEeKMLasV-rp2QA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h1oFIWsiEeKMLasV-rp2QA"/>
+    <ownedAttribute xmi:id="_w1qiobS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w1p7kLS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1qiorS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1qio7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w1qioLS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w1lqILS3EeWpm8PSOGz-9g" name="NonMedicinalSupplyActivityEntryRelationship">
+      <generalization xmi:id="_w1lqIbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w1m4QbS3EeWpm8PSOGz-9g" name="nonMedicinalSupplyActivity" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_2HIvMBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1m4QrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1m4Q7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Nd7m8EcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w1m4QLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w1nfULS3EeWpm8PSOGz-9g" name="CaregiverCharacteristicsEntryRelationship">
+      <generalization xmi:id="_w1nfUbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w1pUgbS3EeWpm8PSOGz-9g" name="caregiverCharacteristics" type="__pNCUOY-EeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1pUgrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1pUg7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w1pUgLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w1p7kLS3EeWpm8PSOGz-9g" name="AssessmentScaleObservationEntryRelationship">
+      <generalization xmi:id="_w1p7kbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w1rJsbS3EeWpm8PSOGz-9g" name="assessmentScaleObservation" type="_Zi33YOYxEeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1rJsrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1rJs7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w1rJsLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_FvvKouZeEeGINOJ_SD9_dA" memberEnd="_FvvKoOZeEeGINOJ_SD9_dA _Fv4UkOZeEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_FvvKouZeEeGINOJ_SD9_dA" memberEnd="_Fv4UkOZeEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_Fv4UkOZeEeGINOJ_SD9_dA" type="_dXKPQOZbEeGINOJ_SD9_dA" association="_FvvKouZeEeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_GxfikuZeEeGINOJ_SD9_dA" memberEnd="_GxfikOZeEeGINOJ_SD9_dA _Gxfik-ZeEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_GxfikuZeEeGINOJ_SD9_dA" memberEnd="_Gxfik-ZeEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_Gxfik-ZeEeGINOJ_SD9_dA" type="_dXKPQOZbEeGINOJ_SD9_dA" association="_GxfikuZeEeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_IM1fMuZeEeGINOJ_SD9_dA" memberEnd="_IM1fMOZeEeGINOJ_SD9_dA _IM1fM-ZeEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_IM1fMuZeEeGINOJ_SD9_dA" memberEnd="_IM1fM-ZeEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_IM1fM-ZeEeGINOJ_SD9_dA" type="_dXKPQOZbEeGINOJ_SD9_dA" association="_IM1fMuZeEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_rHy4IOZcEeGINOJ_SD9_dA" base_Class="_dXKPQOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.73">
@@ -522,9 +612,9 @@ A cognitive problem observation is a finding or medical condition. This is diffe
   <CDA:PropertyValidation xmi:id="_r7wPMOZdEeGINOJ_SD9_dA" severity="INFO" base_Property="_aFueTuZcEeGINOJ_SD9_dA">
     <ruleId>CONF:14693</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_aF4PR-ZcEeGINOJ_SD9_dA" base_Property="_aF4PROZcEeGINOJ_SD9_dA" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_aF4PR-ZcEeGINOJ_SD9_dA" severity="WARNING" base_Property="_aF4PROZcEeGINOJ_SD9_dA">
     <ruleId>CONF:14349</ruleId>
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_P7LgYOZdEeGINOJ_SD9_dA" base_Property="_aF4PROZcEeGINOJ_SD9_dA"/>
   <CDA:EntryRelationship xmi:id="_OZw7gOZeEeGINOJ_SD9_dA" severity="INFO" base_Association="_FvvKouZeEeGINOJ_SD9_dA" typeCode="REFR">
@@ -567,13 +657,13 @@ A cognitive problem observation is a finding or medical condition. This is diffe
     </generalization>
     <ownedAttribute xmi:id="_aZZWEOY5EeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_LGhMcOY6EeGINOJ_SD9_dA" value="OBS"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aZZWFeY5EeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_Mk_VkOY6EeGINOJ_SD9_dA" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aZZWEeY5EeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -581,20 +671,20 @@ A cognitive problem observation is a finding or medical condition. This is diffe
     </ownedAttribute>
     <ownedAttribute xmi:id="_aZZWEuY5EeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O6XRgOY6EeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O6XRgeY6EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O6XRgOY6EeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aZZWFuY5EeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j61aoOY6EeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j61aoeY6EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j61aoOY6EeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aZZWGeY5EeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ty-kcOY6EeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ty-kceY6EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ty-kcOY6EeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
   </uml:Class>
@@ -657,13 +747,13 @@ A cognitive problem observation is a finding or medical condition. This is diffe
     </generalization>
     <ownedAttribute xmi:id="_hvJ8UOYxEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_c8rZ4OYzEeGINOJ_SD9_dA" value="OBS"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8XuYxEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_fGF9cOYzEeGINOJ_SD9_dA" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8UeYxEeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
@@ -674,8 +764,8 @@ A cognitive problem observation is a finding or medical condition. This is diffe
         <body>The optional derivation expression records text showing how the score was calculated from its component data</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvJ8U-YxEeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hvJ8VOYxEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvJ8U-YxEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_YXKk0Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8VeYxEeGINOJ_SD9_dA" name="effectiveTime" visibility="private" aggregation="composite">
@@ -683,47 +773,49 @@ A cognitive problem observation is a finding or medical condition. This is diffe
         <body>Represents clinically effective time of the measurement, which may be when the measurement was performed (e.g., a BP measurement), or may be when sample was taken (and measured some time afterwards)</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MwdNcOY0EeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MwdNceY0EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MwdNcOY0EeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8WOYxEeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mjdt8OYzEeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mjdt8eYzEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mjdt8OYzEeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8W-YxEeGINOJ_SD9_dA" name="interpretationCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvJ8XOYxEeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hvJ8XeYxEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvJ8XOYxEeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_zHXmAEo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_hvJ8X-YxEeGINOJ_SD9_dA" name="author" visibility="private" aggregation="composite" association="_hvJ8YuYxEeGINOJ_SD9_dA">
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvJ8YOYxEeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hvJ8YeYxEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hvJ8YOYxEeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_-ralYOYzEeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tMS7wOY2EeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tMUJ4OY2EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tMS7wOY2EeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_QifUoOY0EeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RlmXcOY0EeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rlm-gOY0EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RlmXcOY0EeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_y4n3UOY0EeGINOJ_SD9_dA" name="referenceRange" type="_0N8rgOY0EeGINOJ_SD9_dA" association="_y4psgOY0EeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CXjqgOY1EeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CXkRkOY1EeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CXjqgOY1EeGINOJ_SD9_dA" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_JN3eMOY5EeGINOJ_SD9_dA" name="assessmentScaleSupportingObservation" type="_1ZKPgOY2EeGINOJ_SD9_dA" association="_JN4sUOY5EeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PD3BMOY5EeGINOJ_SD9_dA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PD3oQOY5EeGINOJ_SD9_dA"/>
+    <ownedAttribute xmi:id="_w1jN4bS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w1im0LS3EeWpm8PSOGz-9g" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1jN4rS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1jN47S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w1jN4LS3EeWpm8PSOGz-9g"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_0N8rgOY0EeGINOJ_SD9_dA" name="ReferenceRange">
       <ownedComment xmi:id="_Dlx7sOY2EeGINOJ_SD9_dA">
@@ -736,8 +828,8 @@ A cognitive problem observation is a finding or medical condition. This is diffe
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
       </generalization>
       <ownedAttribute xmi:id="_5VNgQOY0EeGINOJ_SD9_dA" name="observationRange" visibility="private" type="_6F7LgOY0EeGINOJ_SD9_dA" aggregation="composite">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5VNgQeY0EeGINOJ_SD9_dA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5VNgQuY0EeGINOJ_SD9_dA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5VNgQeY0EeGINOJ_SD9_dA" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fupywUobEd6c3qsAxlFHaQ"/>
         <association href="../consol.uml#_5VOuYOY0EeGINOJ_SD9_dA"/>
       </ownedAttribute>
@@ -771,11 +863,22 @@ A cognitive problem observation is a finding or medical condition. This is diffe
         </generalization>
         <ownedAttribute xmi:id="_7tF9oOY0EeGINOJ_SD9_dA" name="text" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8mE0EOY0EeGINOJ_SD9_dA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8mFbIOY0EeGINOJ_SD9_dA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8mE0EOY0EeGINOJ_SD9_dA" value="1"/>
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JeqKIErZEd6FXKclYGEDCw"/>
         </ownedAttribute>
       </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w1im0LS3EeWpm8PSOGz-9g" name="AssessmentScaleSupportingObservationEntryRelationship">
+      <generalization xmi:id="_w1im0bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w1j08bS3EeWpm8PSOGz-9g" name="assessmentScaleSupportingObservation" type="_1ZKPgOY2EeGINOJ_SD9_dA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w1j08rS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w1j087S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w1j08LS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
     </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_hvJ8YuYxEeGINOJ_SD9_dA" memberEnd="_hvJ8X-YxEeGINOJ_SD9_dA _hvJ8Y-YxEeGINOJ_SD9_dA">
@@ -784,7 +887,7 @@ A cognitive problem observation is a finding or medical condition. This is diffe
   <uml:Association xmi:id="_y4psgOY0EeGINOJ_SD9_dA" memberEnd="_y4n3UOY0EeGINOJ_SD9_dA _y4psgeY0EeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_y4psgeY0EeGINOJ_SD9_dA" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_y4psgOY0EeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_JN4sUOY5EeGINOJ_SD9_dA" memberEnd="_JN3eMOY5EeGINOJ_SD9_dA _JN4sUeY5EeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_JN4sUOY5EeGINOJ_SD9_dA" memberEnd="_JN4sUeY5EeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_JN4sUeY5EeGINOJ_SD9_dA" type="_Zi33YOYxEeGINOJ_SD9_dA" association="_JN4sUOY5EeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_iPVmUOYzEeGINOJ_SD9_dA" base_Class="_Zi33YOYxEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.69">
@@ -864,18 +967,18 @@ A cognitive problem observation is a finding or medical condition. This is diffe
     </generalization>
     <ownedAttribute xmi:id="_GfC4wOY_EeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_H3tU0OY_EeGINOJ_SD9_dA" value="OBS"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4xeY_EeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_MhQS0OY_EeGINOJ_SD9_dA" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4wuY_EeGINOJ_SD9_dA" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TAyiEOY_EeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TAyiEeY_EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TAyiEOY_EeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4weY_EeGINOJ_SD9_dA" name="code" visibility="private" aggregation="composite">
@@ -884,19 +987,19 @@ A cognitive problem observation is a finding or medical condition. This is diffe
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4xuY_EeGINOJ_SD9_dA" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cjNTgOY_EeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cjNTgeY_EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cjNTgOY_EeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4yeY_EeGINOJ_SD9_dA" name="value" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hXndsOY_EeGINOJ_SD9_dA" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hXndseY_EeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hXndsOY_EeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GfC4zOY_EeGINOJ_SD9_dA" name="participant" visibility="private" type="_FxahQOZAEeGINOJ_SD9_dA" aggregation="composite" association="_GfC4z-Y_EeGINOJ_SD9_dA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LnlDYOZAEeGINOJ_SD9_dA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LnlDYeZAEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LnlDYOZAEeGINOJ_SD9_dA" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_azFbAUxoEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_FxahQOZAEeGINOJ_SD9_dA" name="Participant">
@@ -924,18 +1027,18 @@ A cognitive problem observation is a finding or medical condition. This is diffe
       </generalization>
       <ownedAttribute xmi:id="_yp6noEJ8EeOECfdQ4ITPew" name="typeCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
-        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_9IjJsEJ8EeOECfdQ4ITPew" value="IND"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HlUH0OZAEeGINOJ_SD9_dA" name="time" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HlUH0eZAEeGINOJ_SD9_dA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HlUH0uZAEeGINOJ_SD9_dA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HlUH0eZAEeGINOJ_SD9_dA" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vWA0AErdEd6FXKclYGEDCw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HlUH0-ZAEeGINOJ_SD9_dA" name="participantRole" visibility="private" type="_I2ZVMOZAEeGINOJ_SD9_dA" aggregation="composite">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HlUH1OZAEeGINOJ_SD9_dA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HlUH1eZAEeGINOJ_SD9_dA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HlUH1OZAEeGINOJ_SD9_dA" value="1"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_uuZlAUoaEd6c3qsAxlFHaQ"/>
         <association href="../consol.uml#_HldRwOZAEeGINOJ_SD9_dA"/>
       </ownedAttribute>
@@ -945,10 +1048,10 @@ A cognitive problem observation is a finding or medical condition. This is diffe
         </generalization>
         <ownedAttribute xmi:id="_JnCvAOZAEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aVK5MOZAEeGINOJ_SD9_dA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aVK5MeZAEeGINOJ_SD9_dA" value="1"/>
-          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aVK5MOZAEeGINOJ_SD9_dA" value="1"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_5K_kcEJ7EeOECfdQ4ITPew" value="CAREGIVER"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
@@ -1002,4 +1105,12 @@ A cognitive problem observation is a finding or medical condition. This is diffe
   <CDA:PropertyValidation xmi:id="_0gKXkEJ8EeOECfdQ4ITPew" base_Property="_yp6noEJ8EeOECfdQ4ITPew">
     <ruleId>CONF:26451</ruleId>
   </CDA:PropertyValidation>
+  <CDA:Inline xmi:id="_w1im0rS3EeWpm8PSOGz-9g" base_Class="_w1im0LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w1lqIrS3EeWpm8PSOGz-9g" base_Class="_w1lqILS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w1nfUrS3EeWpm8PSOGz-9g" base_Class="_w1nfULS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w1p7krS3EeWpm8PSOGz-9g" base_Class="_w1p7kLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w1sX0rS3EeWpm8PSOGz-9g" base_Class="_w1sX0LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w1u0ErS3EeWpm8PSOGz-9g" base_Class="_w1u0ELS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w1xQUrS3EeWpm8PSOGz-9g" base_Class="_w1xQULS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w1zskrS3EeWpm8PSOGz-9g" base_Class="_w1zskLS3EeWpm8PSOGz-9g"/>
 </xmi:XMI>
