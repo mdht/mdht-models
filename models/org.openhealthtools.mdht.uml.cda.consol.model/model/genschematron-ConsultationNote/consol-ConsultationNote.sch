@@ -10029,7 +10029,7 @@ value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1'
 			OCL: self.isClassCodeDefined() and (self.classCode = vocab::x_ActClassDocumentEntryOrganizer::CLUSTER or self.classCode = vocab::x_ActClassDocumentEntryOrganizer::BATTERY)
 			Constraint name: ResultOrganizerClassCodeValue
 		-->
-	<assert test="..isClassCodeDefined() and (@classCode = 'CLUSTER' or @classCode = 'BATTERY')">Error: ConsultationNote - 4.66.8 ResultOrganizerClassCodeValue
+	<assert test="(@classCode = 'CLUSTER' or @classCode = 'BATTERY')">Error: ConsultationNote - 4.66.8 ResultOrganizerClassCodeValue
 		Conformance: SHOULD contain zero or one [0..1] @classCode=&quot;CLUSTER&quot; Cluster (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) OR SHOULD contain zero or one [0..1] @classCode=&quot;BATTERY&quot; Battery (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) (CONF:7165)
 		Analysis: SHOULD contain zero or one [0..1] @classCode=&quot;CLUSTER&quot; Cluster (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) OR SHOULD contain zero or one [0..1] @classCode=&quot;BATTERY&quot; Battery (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass)
 		Validation message: n/a	</assert>
