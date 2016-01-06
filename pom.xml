@@ -2,14 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.openhealthtools.mdht</groupId>
-	<artifactId>models</artifactId>
-	<version>${build_version}</version>
+	<groupId>org.openhealthtools.mdht.cda</groupId>
+	<artifactId>org.openhealthtools.mdht.cda.models</artifactId>
+	<version>2.5.7-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
-		<build_version>2.5.4-SNAPSHOT</build_version>
-		<tycho-version>0.22.0</tycho-version>
+		<tycho-version>0.24.0</tycho-version>
 		<org.apache.maven.version>2.4</org.apache.maven.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<release_url>http://52.26.42.198:8081/nexus/content/repositories/releases</release_url>
@@ -46,6 +45,9 @@
 	<profiles>
 		<profile>
 			<id>mdht_build</id>
+			<activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
 			<repositories>
 				<repository>
 					<id>kepler</id>
@@ -123,6 +125,25 @@
 				</plugins>
 			</build>
 		</profile>
+		
+		<profile>
+			<id>cdatools</id>
+			<distributionManagement>
+				<repository>
+					<id>cdatools.com</id>
+					<name>cdatools.com-releases</name>
+					<url>http://www.cdatools.com:8081/artifactory/libs-release-local</url>
+				</repository>
+
+				<snapshotRepository>
+					<id>cdatools.com</id>
+					<name>cdatools.com-snapshots</name>
+					<url>http://www.cdatools.com:8081/artifactory/libs-snapshot-local</url>
+				</snapshotRepository>
+
+			</distributionManagement>
+		</profile>
+		
 	</profiles>
 	
 	<scm>

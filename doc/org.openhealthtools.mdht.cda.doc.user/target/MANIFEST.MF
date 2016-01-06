@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-Vendor: %providerName
-Bundle-Version: 2.5.0.201502222103
+Bundle-Version: 2.5.7.201601061959
 Bundle-Localization: plugin
 Bundle-Name: %pluginName
 Bundle-ManifestVersion: 2
