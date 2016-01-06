@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Class xmi:id="_2MV_UBSVEeGGzu7fmW9pXw" name="PayersSection">
+    <ownedComment xmi:id="_2NICcBSVEeGGzu7fmW9pXw" annotatedElement="_2MV_UBSVEeGGzu7fmW9pXw">
+      <body>&lt;p>&#xD;
+The Payers section contains data on the patient s payers, whether a  third party  insurance, self-pay, &#xD;
+other payer or guarantor, or some combination of payers, and is used to define which entity is the&#xD;
+ responsible fiduciary for the financial aspects of a patient s care.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Each unique instance of a payer and all the pertinent data needed to contact, bill to, and collect from&#xD;
+ that payer should be included. Authorization information that can be used to define pertinent referral, &#xD;
+authorization tracking number, procedure, therapy, intervention, device, or similar authorizations for &#xD;
+the patient or provider, or both should be included. At a minimum, the patient s pertinent current &#xD;
+payment sources should be listed.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The sources of payment are represented as a Coverage Activity, which identifies all of the insurance &#xD;
+policies or government or other programs that cover some or all of the patient s healthcare expenses. &#xD;
+The policies or programs are sequenced by preference. The Coverage Activity has a sequence number &#xD;
+that represents the preference order. Each policy or program identifies the covered party &#xD;
+with respect to the payer, so that the identifiers can be recorded.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_jQErILTBEeWEoeeTdrbyVw" name="PayersSectionTemplateId" constrainedElement="_2MV_UBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jQErIbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.18')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jQHHYLTBEeWEoeeTdrbyVw" name="PayersSectionCode" constrainedElement="_2MXNcRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jQHHYbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jQJjoLTBEeWEoeeTdrbyVw" name="PayersSectionCodeP" constrainedElement="_2MXNcRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jQJjobTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jQMm8LTBEeWEoeeTdrbyVw" name="PayersSectionTitle" constrainedElement="_2MYbkBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jQMm8bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jQOcILTBEeWEoeeTdrbyVw" name="PayersSectionText" constrainedElement="_2MZCoRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jQOcIbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_oQU48LTBEeWEoeeTdrbyVw" name="PayersSectionEntry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wspwkLS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_oQU48bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::PayersSection::CoverageActivityEntry))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_wl5cwLTBEeWEoeeTdrbyVw" name="PayersSectionTemplateId" constrainedElement="_2MV_UBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_wl6D0LTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.18')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_-aKd4LTBEeWEoeeTdrbyVw" name="PayersSectionTemplateId" constrainedElement="_2MV_UBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_-aKd4bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.18')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_BlgYgLTCEeWEoeeTdrbyVw" name="PayersSectionTemplateId" constrainedElement="_2MV_UBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Blg_kLTCEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.18')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_b2QvgLTCEeWEoeeTdrbyVw" name="PayersSectionTemplateId" constrainedElement="_2MV_UBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b2QvgbTCEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.18')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_DLtE0LTDEeWEoeeTdrbyVw" name="PayersSectionTemplateId" constrainedElement="_2MV_UBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_DLtr4LTDEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.18')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_3SBroLTDEeWEoeeTdrbyVw" name="PayersSectionTemplateId" constrainedElement="_2MV_UBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3SBrobTDEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.18')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_PjcoILTEEeWEoeeTdrbyVw" name="PayersSectionTemplateId" constrainedElement="_2MV_UBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_PjcoIbTEEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.18')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_Jd_6kLTJEeWEoeeTdrbyVw" name="PayersSectionTemplateId" constrainedElement="_2MV_UBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Jd_6kbTJEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.18')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_j2whkLTKEeWEoeeTdrbyVw" name="PayersSectionTemplateId" constrainedElement="_2MV_UBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_j2whkbTKEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.18')</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2NICchSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2MXNcRSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2MYbkBSVEeGGzu7fmW9pXw" name="title" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2MZCoRSVEeGGzu7fmW9pXw" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2MZCoxSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2MZCohSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wspwkbS3EeWpm8PSOGz-9g" name="entry" type="_wspJgLS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wspwkrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wspwk7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wspwkLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wspJgLS3EeWpm8PSOGz-9g" name="CoverageActivityEntry">
+      <ownedRule xmi:id="_oRD4wLTBEeWEoeeTdrbyVw" name="PayersSectionCoverageActivityEntryCoverageActivity">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wsqXo7S3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oRD4wbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.act->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::CoverageActivity))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wspJgbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wsq-sLS3EeWpm8PSOGz-9g" name="coverageActivity" type="_Cg3pkBUmEeGvPruliC3crg" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wsq-sbS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wsq-srS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wsqXo7S3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_eyK8AhUmEeGvPruliC3crg" memberEnd="_eyK8AxUmEeGvPruliC3crg">
+    <ownedEnd xmi:id="_eyK8AxUmEeGvPruliC3crg" type="_2MV_UBSVEeGGzu7fmW9pXw" isReadOnly="true" association="_eyK8AhUmEeGvPruliC3crg"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_2MV_VhSVEeGGzu7fmW9pXw" base_Class="_2MV_UBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.18">
+    <ruleId>CONF:7924</ruleId>
+    <ruleId>CONF:10434</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2NHbYxSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-34</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2MX0gBSVEeGGzu7fmW9pXw" code="48768-6" displayName="Payers" base_Property="_2MXNcRSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15396</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_2MZCoBSVEeGGzu7fmW9pXw" base_Property="_2MYbkBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7926</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_2MZpsBSVEeGGzu7fmW9pXw" base_Property="_2MZCoRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7927</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_PZBdMBUlEeGvPruliC3crg" name="PolicyActivity">
+    <ownedComment xmi:id="_p8E5gFzAEeGt2doqSDULjA">
+      <body>A policy activity represents the policy or program providing the coverage.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_jnhh1bTBEeWEoeeTdrbyVw" name="PolicyActivityTemplateId" constrainedElement="_PZBdMBUlEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jniI4LTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.61')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jnjXALTBEeWEoeeTdrbyVw" name="PolicyActivityClassCode" constrainedElement="_Ucq9QBUlEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jnjXAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_joHXsLTBEeWEoeeTdrbyVw" name="PolicyActivityCodeP" constrainedElement="_UdHpMBUlEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_joHXsbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jnlzQLTBEeWEoeeTdrbyVw" name="PolicyActivityCode" constrainedElement="_UdHpMBUlEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jnmaULTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '12' or value.code = '13' or value.code = '14' or value.code = '15' or value.code = '16' or value.code = '41' or value.code = '42' or value.code = '43' or value.code = '47' or value.code = 'AP' or value.code = 'C1' or value.code = 'CO' or value.code = 'CP' or value.code = 'D' or value.code = 'DB' or value.code = 'EP' or value.code = 'FF' or value.code = 'GP' or value.code = 'HM' or value.code = 'HN' or value.code = 'HS' or value.code = 'IN' or value.code = 'IP' or value.code = 'LC' or value.code = 'LD' or value.code = 'LI' or value.code = 'LT' or value.code = 'MA' or value.code = 'MB' or value.code = 'MC' or value.code = 'MH' or value.code = 'MI' or value.code = 'MP' or value.code = 'OT' or value.code = 'PE' or value.code = 'PL' or value.code = 'PP' or value.code = 'PR' or value.code = 'PS' or value.code = 'QM' or value.code = 'RP' or value.code = 'SP' or value.code = 'TF' or value.code = 'WC' or value.code = 'WU'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jofLILTBEeWEoeeTdrbyVw" name="PolicyActivityId" constrainedElement="_UdHpMhUlEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jofLIbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.id->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jogZQLTBEeWEoeeTdrbyVw" name="PolicyActivityMoodCode" constrainedElement="_UdHpNhUlEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jogZQbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jokqsLTBEeWEoeeTdrbyVw" name="PolicyActivityStatusCodeP" constrainedElement="_UdHpOBUlEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jokqsbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_joiOcLTBEeWEoeeTdrbyVw" name="PolicyActivityStatusCode" constrainedElement="_UdHpOBUlEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_joiOcbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_lbhPALTBEeWEoeeTdrbyVw" name="PolicyActivityPayer" constrainedElement="_sLvNAlzWEeGt2doqSDULjA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lbhPAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.performer->select(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))->select(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.87'))->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ldAcwLTBEeWEoeeTdrbyVw" name="PolicyActivityGuarantor" constrainedElement="_e-00oF13EeGt2doqSDULjA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ldAcwbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.performer->select(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))->select(templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.88'))->size() &lt;= 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_lfUw8LTBEeWEoeeTdrbyVw" name="PolicyActivityCoverage" constrainedElement="_UI0Lol-sEeGt2doqSDULjA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lfVYALTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->select(typeCode=vocab::ParticipationType::COV)->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_lhi-gLTBEeWEoeeTdrbyVw" name="PolicyActivityHolder" constrainedElement="_hXzGQmAsEeGt2doqSDULjA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lhi-gbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->select(typeCode=vocab::ParticipationType::HLD)->size() &lt;= 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_lzYVYLTBEeWEoeeTdrbyVw" name="PolicyActivityEntryRelationship" constrainedElement="_wOhAwuWgEeGKmvzED_He2w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lzYVYbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->select(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::REFR)->notEmpty()</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_PZBdMRUlEeGvPruliC3crg">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_Ucq9QBUlEeGvPruliC3crg" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_oqctwDZZEeGUovy31cP2ng" value="ACT"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UdHpMBUlEeGvPruliC3crg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dkbJECefEeKFA9nMp1YYPg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dkaiACefEeKFA9nMp1YYPg" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UdHpMhUlEeGvPruliC3crg" name="id" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedComment xmi:id="_hiS9UF1_EeGt2doqSDULjA">
+        <body>This id is a unique identifier for the policy or program providing the coverage</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YjxvsTZaEeGUovy31cP2ng" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YjxvsDZaEeGUovy31cP2ng" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UdHpNhUlEeGvPruliC3crg" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_1XH0sDZZEeGUovy31cP2ng" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UdHpOBUlEeGvPruliC3crg" name="statusCode" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_89eOYeWaEeGKmvzED_He2w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_89eOYOWaEeGKmvzED_He2w" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_sLvNAFzWEeGt2doqSDULjA" name="payer" type="_ddyK0FzWEeGt2doqSDULjA" isReadOnly="true" association="_sLvNAlzWEeGt2doqSDULjA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1MyWwVzWEeGt2doqSDULjA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1MyWwFzWEeGt2doqSDULjA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_e-rqsF13EeGt2doqSDULjA" name="guarantor" type="_GX8lgF13EeGt2doqSDULjA" isReadOnly="true" association="_e-00oF13EeGt2doqSDULjA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e-rqsV13EeGt2doqSDULjA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UI0LoF-sEeGt2doqSDULjA" name="coverage" type="_G5CNEF-rEeGt2doqSDULjA" isReadOnly="true" association="_UI0Lol-sEeGt2doqSDULjA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XoafAV-sEeGt2doqSDULjA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XoafAF-sEeGt2doqSDULjA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hXzGQGAsEeGt2doqSDULjA" name="holder" type="_kHUdAGArEeGt2doqSDULjA" isReadOnly="true" association="_hXzGQmAsEeGt2doqSDULjA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hXzGQWAsEeGt2doqSDULjA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wOhAwOWgEeGKmvzED_He2w" name="entryRelationship" type="_h_J_EOWgEeGKmvzED_He2w" isReadOnly="true" association="_wOhAwuWgEeGKmvzED_He2w">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zGCAcOWgEeGKmvzED_He2w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zF-9IOWgEeGKmvzED_He2w" value="*"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_ddyK0FzWEeGt2doqSDULjA" name="Payer">
+      <ownedComment xmi:id="_vEDd8FzWEeGt2doqSDULjA">
+        <body>INLINE&amp;templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.87')</body>
+      </ownedComment>
+      <ownedComment xmi:id="_5DImUF0PEeGt2doqSDULjA">
+        <body>This performer represents the Payer</body>
+      </ownedComment>
+      <ownedRule xmi:id="_jomf4LTBEeWEoeeTdrbyVw" name="PolicyActivityPayerTemplateId" constrainedElement="_ddyK0FzWEeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jomf4bTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.87')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jooVELTBEeWEoeeTdrbyVw" name="PolicyActivityPayerTypeCode" constrainedElement="_JGNh0OWbEeGKmvzED_He2w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jooVEbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>isDefined('typeCode') and self.typeCode=vocab::ParticipationPhysicalPerformer::PRF</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_lcQO0LTBEeWEoeeTdrbyVw" name="PolicyActivityPayerPayerAssignedEntity" constrainedElement="_uHcp8l0REeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lcQ14LTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_n5SgYFzWEeGt2doqSDULjA">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_uHcp8F0REeGt2doqSDULjA" name="payerAssignedEntity" type="_deYl8F0REeGt2doqSDULjA" isReadOnly="true" aggregation="composite" association="_uHcp8l0REeGt2doqSDULjA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gbHK4V0TEeGt2doqSDULjA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gbHK4F0TEeGt2doqSDULjA" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_toc7gUoYEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_JGNh0OWbEeGKmvzED_He2w" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BIEDcEd6xYZuu1VKCVw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J-9uweWbEeGKmvzED_He2w" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J-9uwOWbEeGKmvzED_He2w" value="1"/>
+        <defaultValue xmi:type="uml:InstanceValue" xmi:id="_JGNh0-WbEeGKmvzED_He2w" name="PRF">
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BIEDcEd6xYZuu1VKCVw"/>
+          <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BIUDcEd6xYZuu1VKCVw"/>
+        </defaultValue>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_ELlCwErgEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_deYl8F0REeGt2doqSDULjA" name="PayerAssignedEntity">
+        <ownedComment xmi:id="_l7vMwF0REeGt2doqSDULjA">
+          <body>INLINE</body>
+        </ownedComment>
+        <ownedRule xmi:id="_joqKQLTBEeWEoeeTdrbyVw" name="PolicyActivityPayerPayerAssignedEntityId" constrainedElement="_3KQcUF0TEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_joqKQbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>not self.id->isEmpty()</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_jpFBALTBEeWEoeeTdrbyVw" name="PolicyActivityPayerPayerAssignedEntityCodeP" constrainedElement="_HqHhAF0UEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jpFBAbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_josmgLTBEeWEoeeTdrbyVw" name="PolicyActivityPayerPayerAssignedEntityCode" constrainedElement="_HqHhAF0UEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_josmgbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.5.110' and (value.code = 'AFFL' or value.code = 'AGNT' or value.code = 'CIT' or value.code = 'CRINV' or value.code = 'CRSPNSR' or value.code = 'SPNSR' or value.code = 'COVPTY' or value.code = 'EMP' or value.code = 'GUAR' or value.code = 'INVSBJ' or value.code = 'PAYOR' or value.code = 'LIC' or value.code = 'PAT' or value.code = 'PAYEE' or value.code = 'POLHOLD' or value.code = 'QUAL' or value.code = 'STD' or value.code = 'UNDWRT'))</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_jpkJMLTBEeWEoeeTdrbyVw" name="PolicyActivityPayerPayerAssignedEntityAddr" constrainedElement="_s4EMEF0ZEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jpkJMbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>((not self.addr->isEmpty()) and self.addr->exists(element | element.isNullFlavorUndefined())) implies (self.addr->size() &lt;= 1)</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_jpmlcLTBEeWEoeeTdrbyVw" name="PolicyActivityPayerPayerAssignedEntityTelecom" constrainedElement="_87mhIF0ZEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jpmlcbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>((not self.telecom->isEmpty()) and self.telecom->exists(element | element.isNullFlavorUndefined())) implies (self.telecom->size() &lt;= 1)</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_lelxILTBEeWEoeeTdrbyVw" name="PolicyActivityPayerPayerAssignedEntityPayerOrganization" constrainedElement="_eL_LAl2OEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lelxIbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>self.representedOrganization->select(representedOrganization : cda::Organization | not representedOrganization.oclIsUndefined() and representedOrganization.oclIsKindOf(cda::Organization))->size() &lt;= 1</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_hzOfQF0REeGt2doqSDULjA">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_3KQcUF0TEeGt2doqSDULjA" name="id" isReadOnly="true">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-LMvgV0TEeGt2doqSDULjA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-LMvgF0TEeGt2doqSDULjA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_HqHhAF0UEeGt2doqSDULjA" name="code" isReadOnly="true">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z53aIfuPEeKOSuDaDSRIMA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z53aIPuPEeKOSuDaDSRIMA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_s4EMEF0ZEeGt2doqSDULjA" name="addr" isReadOnly="true">
+          <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v6xvIV0ZEeGt2doqSDULjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v6xvIF0ZEeGt2doqSDULjA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_87mhIF0ZEeGt2doqSDULjA" name="telecom" isReadOnly="true">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AX2lkV0aEeGt2doqSDULjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AX2lkF0aEeGt2doqSDULjA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_eL_LAF2OEeGt2doqSDULjA" name="payerOrganization" type="_YJMT0F0aEeGt2doqSDULjA" isReadOnly="true" aggregation="composite" association="_eL_LAl2OEeGt2doqSDULjA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eL_LAV2OEeGt2doqSDULjA"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_EsyYEUcfEd6besF9iFIJkQ"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_YJMT0F0aEeGt2doqSDULjA" name="PayerOrganization">
+          <ownedComment xmi:id="_8igPMF0aEeGt2doqSDULjA">
+            <body>INLINE</body>
+          </ownedComment>
+          <ownedRule xmi:id="_jppBsLTBEeWEoeeTdrbyVw" name="PolicyActivityPayerPayerAssignedEntityPayerOrganizationName" constrainedElement="_CCqsIF0bEeGt2doqSDULjA">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_jppBsbTBEeWEoeeTdrbyVw">
+              <language>OCL</language>
+              <body>((not self.name->isEmpty()) and self.name->exists(element | element.isNullFlavorUndefined())) implies (self.name->size() &lt;= 1)</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:id="_fUTPoF0aEeGt2doqSDULjA">
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_zjKW8EcZEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_CCqsIF0bEeGt2doqSDULjA" name="name" isReadOnly="true">
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_yQ9xwD5yEd6cla2oXsPtlA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G9Gl0F0bEeGt2doqSDULjA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G9AfMF0bEeGt2doqSDULjA" value="1"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_GX8lgF13EeGt2doqSDULjA" name="Guarantor">
+      <ownedComment xmi:id="_KLyDgF13EeGt2doqSDULjA">
+        <body>INLINE&amp;templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.88')</body>
+      </ownedComment>
+      <ownedComment xmi:id="_y3qjgG7fEeGO5JJTinolhw">
+        <body>This performer represents the Guarantor</body>
+      </ownedComment>
+      <ownedRule xmi:id="_jpqP0bTBEeWEoeeTdrbyVw" name="PolicyActivityGuarantorTemplateId" constrainedElement="_GX8lgF13EeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jpqP0rTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.88')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jpsFALTBEeWEoeeTdrbyVw" name="PolicyActivityGuarantorTime" constrainedElement="_HMWMAF15EeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jpsFAbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>((not self.time.oclIsUndefined()) and self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jptTILTBEeWEoeeTdrbyVw" name="PolicyActivityGuarantorTypeCode" constrainedElement="_Wg5iQG7fEeGO5JJTinolhw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jptTIbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>(not self.typeCode.oclIsUndefined()) implies (self.typeCode=vocab::ParticipationPhysicalPerformer::PRF)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ld2KQLTBEeWEoeeTdrbyVw" name="PolicyActivityGuarantorGuarantorAssignedEntity" constrainedElement="_hHSrEl15EeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ld2KQbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_Iw4LwF13EeGt2doqSDULjA">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_HMWMAF15EeGt2doqSDULjA" name="time" isReadOnly="true">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_onWGwMZjEeOZyeUSQqClgg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_onVfsMZjEeOZyeUSQqClgg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_hHSrEF15EeGt2doqSDULjA" name="guarantorAssignedEntity" type="_NgEewF13EeGt2doqSDULjA" isReadOnly="true" aggregation="composite" association="_hHSrEl15EeGt2doqSDULjA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ji5x4V15EeGt2doqSDULjA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ji5x4F15EeGt2doqSDULjA" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_toc7gUoYEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Wg5iQG7fEeGO5JJTinolhw" name="typeCode" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BIEDcEd6xYZuu1VKCVw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sBFCsMZjEeOZyeUSQqClgg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sBEboMZjEeOZyeUSQqClgg" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_orts4G7fEeGO5JJTinolhw" value="PRF"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_NgEewF13EeGt2doqSDULjA" name="GuarantorAssignedEntity">
+        <ownedComment xmi:id="_ZpqvAF2REeGt2doqSDULjA">
+          <body>INLINE</body>
+        </ownedComment>
+        <ownedRule name="PolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName">
+          <constrainedElement xmi:type="uml:Class" href="file:/home/vadi/Programs/mdht-models/models/org.openhealthtools.mdht.uml.cda.consol.model/model/genschematron-ContinuityOfCareDocument/consol-payers.schematron.uml#_NgEewF13EeGt2doqSDULjA"/>
+          <specification xmi:type="uml:OpaqueExpression">
+            <language>Analysis</language>
+            <language>OCL</language>
+            <body>SHOULD include assignedEntity/assignedPerson/name AND/OR assignedEntity/representedOrganization/name</body>
+            <body>(performer.assignedEntity.assignedPerson->exists(not oclIsUndefined()) and performer.assignedEntity.assignedPerson.name->size() >0) or (performer.assignedEntity.representedOrganization->exists(not oclIsUndefined()) and performer.assignedEntity.representedOrganization.name->size() >0 )</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_jpwWcLTBEeWEoeeTdrbyVw" name="PolicyActivityGuarantorGuarantorAssignedEntityCode" constrainedElement="_pRByUF15EeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jpwWcbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = 'GUAR' and value.codeSystem = '2.16.840.1.113883.5.110'</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_jp0n4LTBEeWEoeeTdrbyVw" name="PolicyActivityGuarantorGuarantorAssignedEntityCodeP" constrainedElement="_pRByUF15EeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jp0n4bTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>not self.code.oclIsUndefined()</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_jp3rMLTBEeWEoeeTdrbyVw" name="PolicyActivityGuarantorGuarantorAssignedEntityAddr" constrainedElement="_NIzG4F16EeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jp3rMbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>((not self.addr->isEmpty()) and self.addr->exists(element | element.isNullFlavorUndefined())) implies (self.addr->size() &lt;= 1)</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_jp5gYLTBEeWEoeeTdrbyVw" name="PolicyActivityGuarantorGuarantorAssignedEntityTelecom" constrainedElement="_XTYEgF16EeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jp5gYbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>((not self.telecom->isEmpty()) and self.telecom->exists(element | element.isNullFlavorUndefined())) implies (self.telecom->size() &lt;= 1)</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_RRYNMF13EeGt2doqSDULjA">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_pRByUF15EeGt2doqSDULjA" name="code" isReadOnly="true">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h9Pa4eWdEeGKmvzED_He2w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h9Pa4OWdEeGKmvzED_He2w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_NIzG4F16EeGt2doqSDULjA" name="addr" isReadOnly="true">
+          <ownedComment xmi:id="_mQ0iUG7gEeGO5JJTinolhw">
+            <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:10482)</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RLNzcV16EeGt2doqSDULjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RLNzcF16EeGt2doqSDULjA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_XTYEgF16EeGt2doqSDULjA" name="telecom" isReadOnly="true">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_afNHUV16EeGt2doqSDULjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_afNHUF16EeGt2doqSDULjA" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_G5CNEF-rEeGt2doqSDULjA" name="Coverage">
+      <ownedComment xmi:id="_41bS8F-rEeGt2doqSDULjA">
+        <body>INLINE&amp;typeCode=vocab::ParticipationType::COV</body>
+      </ownedComment>
+      <ownedRule xmi:id="_J4Vk4F-tEeGt2doqSDULjA" name="PolicyActivityCoverageLowTime" constrainedElement="_G5CNEF-rEeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_R9JI0F-tEeGt2doqSDULjA">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The time, if present, SHOULD contain zero or one [0..1] low</body>
+          <body>not self.time.oclIsUndefined() implies not self.time.low.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_Z7L9cF-tEeGt2doqSDULjA" name="PolicyActivityCoverageHighTime" constrainedElement="_G5CNEF-rEeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fRnPkF-tEeGt2doqSDULjA">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The time, if present, SHOULD contain zero or one [0..1] high</body>
+          <body>not self.time.oclIsUndefined() implies not self.time.high.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jp6ugLTBEeWEoeeTdrbyVw" name="PolicyActivityCoverageTemplateId" constrainedElement="_G5CNEF-rEeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jp6ugbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.89')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jp9x0LTBEeWEoeeTdrbyVw" name="PolicyActivityCoverageTypeCode" constrainedElement="_8NlhkF-rEeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jp9x0bTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.typeCode=vocab::ParticipationType::COV</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jp-_8LTBEeWEoeeTdrbyVw" name="PolicyActivityCoverageTime" constrainedElement="_kr3HMF-sEeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jp-_8bTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>((not self.time.oclIsUndefined()) and self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_lgEX0LTBEeWEoeeTdrbyVw" name="PolicyActivityCoverageCoverageRole" constrainedElement="_EsHiMl-uEeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_lgEX0bTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(cda::ParticipantRole))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_KcDA0F-rEeGt2doqSDULjA">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_8NlhkF-rEeGt2doqSDULjA" name="typeCode" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_D-J64F-sEeGt2doqSDULjA" value="COV"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_kr3HMF-sEeGt2doqSDULjA" name="time" isReadOnly="true">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oN6RoV-sEeGt2doqSDULjA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oN6RoF-sEeGt2doqSDULjA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_EsHiMF-uEeGt2doqSDULjA" name="coverageRole" type="_0rzgQF-tEeGt2doqSDULjA" isReadOnly="true" aggregation="composite" association="_EsHiMl-uEeGt2doqSDULjA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Gl_N4V-uEeGt2doqSDULjA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Gl_N4F-uEeGt2doqSDULjA" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_uuZlAUoaEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_0rzgQF-tEeGt2doqSDULjA" name="CoverageRole">
+        <ownedComment xmi:id="_W0XgkGAoEeGt2doqSDULjA">
+          <body>INLINE</body>
+        </ownedComment>
+        <ownedRule xmi:id="_jqAOELTBEeWEoeeTdrbyVw" name="PolicyActivityCoverageCoverageRoleId" constrainedElement="_k5hBUF-vEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jqAOEbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>not self.id->isEmpty()</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_jqCqULTBEeWEoeeTdrbyVw" name="PolicyActivityCoverageCoverageRoleCode" constrainedElement="_nb9TcF-wEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jqCqUbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'FAMDEP' or value.code = 'FSTUD' or value.code = 'HANDIC' or value.code = 'INJ' or value.code = 'PSTUD' or value.code = 'SELF' or value.code = 'SPON' or value.code = 'STUD')</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_jqbE0LTBEeWEoeeTdrbyVw" name="PolicyActivityCoverageCoverageRoleCodeP" constrainedElement="_nb9TcF-wEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jqbE0bTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>not self.code.oclIsUndefined()</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_jq0GYLTBEeWEoeeTdrbyVw" name="PolicyActivityCoverageCoverageRoleAddr" constrainedElement="_YqD1gF_pEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jq0GYbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>((not self.addr->isEmpty()) and self.addr->exists(element | element.isNullFlavorUndefined())) implies (self.addr->size() &lt;= 1)</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_lgz-sLTBEeWEoeeTdrbyVw" name="PolicyActivityCoverageCoverageRoleCoveragePlayingEntity" constrainedElement="_O3tMAmAoEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_lgz-sbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>self.playingEntity->select(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(cda::PlayingEntity))->size() &lt;= 1</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_3TxBAF-tEeGt2doqSDULjA">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_k5hBUF-vEeGt2doqSDULjA" name="id" isReadOnly="true">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m2o1UV-vEeGt2doqSDULjA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m2o1UF-vEeGt2doqSDULjA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_nb9TcF-wEeGt2doqSDULjA" name="code" isReadOnly="true">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-X_kQeWdEeGKmvzED_He2w" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-X_kQOWdEeGKmvzED_He2w" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_YqD1gF_pEeGt2doqSDULjA" name="addr" isReadOnly="true">
+          <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pJeOQV_pEeGt2doqSDULjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pJeOQF_pEeGt2doqSDULjA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_O3tMAGAoEeGt2doqSDULjA" name="coveragePlayingEntity" type="_NHNUMGAnEeGt2doqSDULjA" isReadOnly="true" aggregation="composite" association="_O3tMAmAoEeGt2doqSDULjA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O3tMAWAoEeGt2doqSDULjA"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1ZUk4UoaEd6c3qsAxlFHaQ"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_NHNUMGAnEeGt2doqSDULjA" name="CoveragePlayingEntity">
+          <ownedComment xmi:id="_S4C08GAoEeGt2doqSDULjA">
+            <body>INLINE</body>
+          </ownedComment>
+          <ownedComment xmi:id="_L4Wv0CItEeOR8Z0wSpxaPA">
+            <body>If the covered party's name is recorded differently in the health plan and in the registration/medication summary (due to marriage or for other reasons), use the name as it is recorded in the health plan.</body>
+          </ownedComment>
+          <ownedRule xmi:id="_jq2ioLTBEeWEoeeTdrbyVw" name="PolicyActivityCoverageCoverageRoleCoveragePlayingEntityName" constrainedElement="_ctWtMGAoEeGt2doqSDULjA">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_jq2iobTBEeWEoeeTdrbyVw">
+              <language>OCL</language>
+              <body>self.name->size() = 1</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:id="_P2dvwGAnEeGt2doqSDULjA">
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_ctWtMGAoEeGt2doqSDULjA" name="name" isReadOnly="true">
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_kHUdAGArEeGt2doqSDULjA" name="Holder">
+      <ownedComment xmi:id="_in-7wGAsEeGt2doqSDULjA">
+        <body>INLINE&amp;typeCode=vocab::ParticipationType::HLD</body>
+      </ownedComment>
+      <ownedComment xmi:id="_isMgsOWfEeGKmvzED_He2w">
+        <body>When the Subscriber is the patient, the participant element describing the subscriber SHALL NOT be present. This information will be recorded instead in the data elements used to record member information</body>
+      </ownedComment>
+      <ownedRule xmi:id="_jq3wwbTBEeWEoeeTdrbyVw" name="PolicyActivityHolderTemplateId" constrainedElement="_kHUdAGArEeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jq3wwrTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.90')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jq5l8LTBEeWEoeeTdrbyVw" name="PolicyActivityHolderTypeCode" constrainedElement="_TT5RMGAtEeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jq5l8bTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.typeCode=vocab::ParticipationType::HLD</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jq60ELTBEeWEoeeTdrbyVw" name="PolicyActivityHolderTime" constrainedElement="_1S-l0GAtEeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jq60EbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>((not self.time.oclIsUndefined()) and self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_libvULTBEeWEoeeTdrbyVw" name="PolicyActivityHolderHolderRole" constrainedElement="_o5mY4mAuEeGt2doqSDULjA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_libvUbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(cda::ParticipantRole))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_oN534GArEeGt2doqSDULjA">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_TT5RMGAtEeGt2doqSDULjA" name="typeCode" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_fh3C4GAtEeGt2doqSDULjA" value="HLD"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1S-l0GAtEeGt2doqSDULjA" name="time" isReadOnly="true">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_56cgMWAtEeGt2doqSDULjA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_56cgMGAtEeGt2doqSDULjA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_o5mY4GAuEeGt2doqSDULjA" name="holderRole" type="_jfs8AGAuEeGt2doqSDULjA" isReadOnly="true" aggregation="composite" association="_o5mY4mAuEeGt2doqSDULjA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6RsGEWAuEeGt2doqSDULjA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6RsGEGAuEeGt2doqSDULjA" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_uuZlAUoaEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_jfs8AGAuEeGt2doqSDULjA" name="HolderRole">
+        <ownedComment xmi:id="_BSPXsGAvEeGt2doqSDULjA">
+          <body>INLINE</body>
+        </ownedComment>
+        <ownedRule xmi:id="_jq8pQLTBEeWEoeeTdrbyVw" name="PolicyActivityHolderHolderRoleId" constrainedElement="_FdIq0GAvEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jq8pQbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>not self.id->isEmpty()</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_jq93YLTBEeWEoeeTdrbyVw" name="PolicyActivityHolderHolderRoleAddr" constrainedElement="_Qtp80GAvEeGt2doqSDULjA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_jq93YbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>((not self.addr->isEmpty()) and self.addr->exists(element | element.isNullFlavorUndefined())) implies (self.addr->size() &lt;= 1)</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_lwnOsGAuEeGt2doqSDULjA">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_FdIq0GAvEeGt2doqSDULjA" name="id" isReadOnly="true">
+          <ownedComment xmi:id="_N1n_wGAvEeGt2doqSDULjA">
+            <body>This id is a unique identifier for the subscriber of the coverage (CONF:10120)</body>
+          </ownedComment>
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HwIoMWAvEeGt2doqSDULjA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HwIoMGAvEeGt2doqSDULjA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Qtp80GAvEeGt2doqSDULjA" name="addr" isReadOnly="true">
+          <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S_UdcWAvEeGt2doqSDULjA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S_UdcGAvEeGt2doqSDULjA" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_h_J_EOWgEeGKmvzED_He2w" name="EntryRelationship">
+      <ownedComment xmi:id="_4e3tYOWgEeGKmvzED_He2w">
+        <body>INLINE&amp;typeCode=vocab::x_ActRelationshipEntryRelationship::REFR</body>
+      </ownedComment>
+      <ownedRule xmi:id="_OJBFoOWhEeGKmvzED_He2w" name="PolicyActivityEntryRelationshipTargetActActivity" constrainedElement="_h_J_EOWgEeGKmvzED_He2w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Rr6koOWhEeGKmvzED_He2w">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The target of a policy activity with act/entryRelationship/@typeCode=&quot;REFR&quot; SHALL be an authorization activity (templateId 2.16.840.1.113883.10.20.1.19) OR an act, with act[@classCode=&quot;ACT&quot;] and act[@moodCode=&quot;DEF&quot;], representing a description of the coverage plan</body>
+          <body>self.act->one(a : cda::Act | a.oclIsTypeOf(consol::AuthorizationActivity) or (a.classCode=vocab::x_ActClassDocumentEntryAct::ACT and a.moodCode=vocab::x_DocumentActMood::DEF))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dBOQAOWhEeGKmvzED_He2w" name="PolicyActivityEntryRelationshipDescriptionCoveragePlan" constrainedElement="_h_J_EOWgEeGKmvzED_He2w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ga6vsOWhEeGKmvzED_He2w">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>A description of the coverage plan SHALL contain one or more act/id, to represent the plan identifier, and an act/text with the name of the plan</body>
+          <body>self.act->select(a : cda::Act | a.classCode=vocab::x_ActClassDocumentEntryAct::ACT and (a.moodCode=vocab::x_DocumentActMood::DEF))->forAll(id->size() > 0 and text->size() = 1)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_jrA6sLTBEeWEoeeTdrbyVw" name="PolicyActivityEntryRelationshipTypeCode" constrainedElement="_jx2EsOWgEeGKmvzED_He2w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jrA6sbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.typeCode=vocab::x_ActRelationshipEntryRelationship::REFR</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_iiofkOWgEeGKmvzED_He2w">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_jx2EsOWgEeGKmvzED_He2w" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qXb4oOWgEeGKmvzED_He2w" value="REFR"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_3B4C0Eo1Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_WCTeUBUlEeGvPruliC3crg" base_Class="_PZBdMBUlEeGvPruliC3crg" templateId="2.16.840.1.113883.10.20.22.4.61">
+    <ruleId>CONF:8900</ruleId>
+    <ruleId>CONF:10516</ruleId>
+  </CDA:CDATemplate>
+  <uml:Class xmi:id="_Cg3pkBUmEeGvPruliC3crg" name="CoverageActivity">
+    <ownedRule xmi:id="_xtqFkDZXEeGUovy31cP2ng" name="CoverageActivityCoverageActivityRelationshipSequenceNumber" constrainedElement="_Cg3pkBUmEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_-gLV0DZXEeGUovy31cP2ng">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>MAY contain zero or one [0..1] sequenceNumber/@value (CONF:8973)</body>
+        <body>self.entryRelationship->forAll(er : cda::EntryRelationship | not er.sequenceNumber.oclIsUndefined())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jrCI0LTBEeWEoeeTdrbyVw" name="CoverageActivityTemplateId" constrainedElement="_Cg3pkBUmEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jrCI0bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.60')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jrElELTBEeWEoeeTdrbyVw" name="CoverageActivityClassCode" constrainedElement="_FVBzQBUmEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jrElEbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jrIPcLTBEeWEoeeTdrbyVw" name="CoverageActivityCodeP" constrainedElement="_FVBzQhUmEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jrIPcbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jrGaQLTBEeWEoeeTdrbyVw" name="CoverageActivityCode" constrainedElement="_FVBzQhUmEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jrGaQbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jrKrsLTBEeWEoeeTdrbyVw" name="CoverageActivityId" constrainedElement="_FVBzRBUmEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jrKrsbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.id->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jrL50LTBEeWEoeeTdrbyVw" name="CoverageActivityMoodCode" constrainedElement="_FVBzSBUmEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jrL50bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jrQLQLTBEeWEoeeTdrbyVw" name="CoverageActivityStatusCodeP" constrainedElement="_FVBzShUmEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jrQLQbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jrNvALTBEeWEoeeTdrbyVw" name="CoverageActivityStatusCode" constrainedElement="_FVBzShUmEeGvPruliC3crg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jrNvAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_phrzILTBEeWEoeeTdrbyVw" name="CoverageActivityEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wvELYLS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_phrzIbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::CoverageActivity::PolicyActivityEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_Cg3pkRUmEeGvPruliC3crg">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_FVBzQBUmEeGvPruliC3crg" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_Skd4cDY1EeGUovy31cP2ng" value="ACT"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FVBzQhUmEeGvPruliC3crg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FVBzRBUmEeGvPruliC3crg" name="id" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lPbiwDY1EeGUovy31cP2ng" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lPa7sDY1EeGUovy31cP2ng" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FVBzSBUmEeGvPruliC3crg" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_g9X3sDY1EeGUovy31cP2ng" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FVBzShUmEeGvPruliC3crg" name="statusCode" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0r40QTY2EeGUovy31cP2ng" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0r40QDY2EeGUovy31cP2ng" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wvELYbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wvDkULS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvELYrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvELY7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wvELYLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wvDkULS3EeWpm8PSOGz-9g" name="PolicyActivityEntryRelationship">
+      <ownedRule xmi:id="_pibaALTBEeWEoeeTdrbyVw" name="CoverageActivityPolicyActivityEntryRelationshipPolicyActivity">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wvEyc7S3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_pibaAbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PolicyActivity))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wvDkUbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wvFZgLS3EeWpm8PSOGz-9g" name="policyActivity" type="_PZBdMBUlEeGvPruliC3crg" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvFZgbS3EeWpm8PSOGz-9g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvFZgrS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Hop1oUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wvEyc7S3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_V2ah8hUmEeGvPruliC3crg" memberEnd="_V2ah8xUmEeGvPruliC3crg">
+    <ownedEnd xmi:id="_V2ah8xUmEeGvPruliC3crg" type="_Cg3pkBUmEeGvPruliC3crg" isReadOnly="true" association="_V2ah8hUmEeGvPruliC3crg"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_HyrhcBUmEeGvPruliC3crg" base_Class="_Cg3pkBUmEeGvPruliC3crg" templateId="2.16.840.1.113883.10.20.22.4.60">
+    <ruleId>CONF:8897</ruleId>
+    <ruleId>CONF:10492</ruleId>
+  </CDA:CDATemplate>
+  <uml:Class xmi:id="_XUoXwBnZEeGs5a462vYX5Q" name="AuthorizationActivity">
+    <ownedComment xmi:id="_1yE5QHhuEeGJtvg2iiStYg">
+      <body>An Authorization Activity represents authorizations or pre-authorizations currently active for the patient for the particular payer. &#xD;
+Authorizations are represented using an act subordinate to the policy or program that provided it.  The authorization refers to the policy or program. Authorized treatments can be grouped into an organizer class, where common properties, such as the reason for the authorization, can be expressed. Subordinate acts represent what was authorized.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_j6PCcLTBEeWEoeeTdrbyVw" name="AuthorizationActivityTemplateId" constrainedElement="_XUoXwBnZEeGs5a462vYX5Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_j6PpgLTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.19')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_j6Q3oLTBEeWEoeeTdrbyVw" name="AuthorizationActivityClassCode" constrainedElement="_aZU30BnZEeGs5a462vYX5Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_j6ResLTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_j6Ss0LTBEeWEoeeTdrbyVw" name="AuthorizationActivityId" constrainedElement="_aZU30hnZEeGs5a462vYX5Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_j6Ss0bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.id->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_j6T68LTBEeWEoeeTdrbyVw" name="AuthorizationActivityMoodCode" constrainedElement="_aZU31hnZEeGs5a462vYX5Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_j6T68bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_lnM6kLTBEeWEoeeTdrbyVw" name="AuthorizationActivityEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_rPIpgHhvEeGJtvg2iiStYg"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lnM6kbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->select(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_XUoXwRnZEeGs5a462vYX5Q">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_aZU30BnZEeGs5a462vYX5Q" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_do-V0HhvEeGJtvg2iiStYg" value="ACT"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aZU30hnZEeGs5a462vYX5Q" name="id" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JKxMQXhvEeGJtvg2iiStYg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JKxMQHhvEeGJtvg2iiStYg" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aZU31hnZEeGs5a462vYX5Q" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_ah-IoHhvEeGJtvg2iiStYg" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rPHbYHhvEeGJtvg2iiStYg" name="entryRelationship" visibility="private" type="_sWZMgHhvEeGJtvg2iiStYg" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uA2jMXhvEeGJtvg2iiStYg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uA2jMHhvEeGJtvg2iiStYg" value="1"/>
+      <association href="../consol.uml#_rPIpgHhvEeGJtvg2iiStYg"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_sWZMgHhvEeGJtvg2iiStYg" name="EntryRelationship">
+      <ownedComment xmi:id="_zCcYUHhwEeGJtvg2iiStYg">
+        <body>INLINE&amp;typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ</body>
+      </ownedComment>
+      <ownedRule xmi:id="_Lo6NMHhwEeGJtvg2iiStYg" name="AuthorizationActivityEntryRelationshipHasClinicalStatement" constrainedElement="_sWZMgHhvEeGJtvg2iiStYg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_NLlg4HhwEeGJtvg2iiStYg">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The target of an authorization activity with act/entryRelationship/@typeCode=&quot;SUBJ&quot; SHALL be a clinical statement with moodCode=&quot;PRMS&quot; Promise (CONF:8951).</body>
+          <body>self.act->exists(moodCode = vocab::x_DocumentActMood::PRMS) or  self.encounter->exists(moodCode = vocab::x_DocumentEncounterMood::PRMS) or self.observation->exists(moodCode = vocab::x_ActMoodDocumentObservation::PRMS) or  self.observationMedia->exists(moodCode = vocab::ActMood::PRMS) or self.organizer->exists(moodCode = vocab::ActMood::PRMS) or self.procedure->exists(moodCode = vocab::x_DocumentProcedureMood::PRMS) or  self.regionOfInterest->exists(moodCode = vocab::ActMood::PRMS) or self.substanceAdministration->exists(moodCode = vocab::x_DocumentSubstanceMood::PRMS) or  self.supply->exists(moodCode = vocab::x_DocumentSubstanceMood::PRMS)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_b7HQYHhwEeGJtvg2iiStYg" name="AuthorizationActivityEntryRelationshipHasAuthorizedPerformers" constrainedElement="_sWZMgHhvEeGJtvg2iiStYg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_egCrQHhwEeGJtvg2iiStYg">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>The target of an authorization activity MAY contain one or more performer, to indicate the providers that have been authorized to provide treatment.</body>
+          <body>self.act->forAll( (moodCode = vocab::x_DocumentActMood::PRMS and performer->size() > 0) or moodCode &lt;> vocab::x_DocumentActMood::PRMS ) and &#xD;
+self.encounter->forAll((moodCode = vocab::x_DocumentEncounterMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::x_DocumentEncounterMood::PRMS) and &#xD;
+self.observation->forAll((moodCode = vocab::x_ActMoodDocumentObservation::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_ActMoodDocumentObservation::PRMS) and &#xD;
+self.observationMedia->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;
+self.organizer->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;
+self.procedure->forAll((moodCode = vocab::x_DocumentProcedureMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_DocumentProcedureMood::PRMS) and &#xD;
+self.regionOfInterest->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;
+self.substanceAdministration->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_DocumentSubstanceMood::PRMS) and &#xD;
+self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::x_DocumentSubstanceMood::PRMS)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_j6W-QLTBEeWEoeeTdrbyVw" name="AuthorizationActivityEntryRelationshipTypeCode" constrainedElement="_s4vroHhvEeGJtvg2iiStYg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_j6W-QbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_sWZzkHhvEeGJtvg2iiStYg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_s4vroHhvEeGJtvg2iiStYg" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HfIpgHhyEeGJtvg2iiStYg" value="SUBJ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_cVJrUBnZEeGs5a462vYX5Q" base_Class="_XUoXwBnZEeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.1.19">
+    <ruleId>CONF:8946</ruleId>
+    <ruleId>CONF:10529</ruleId>
+  </CDA:CDATemplate>
+  <CDA:AssociationValidation xmi:id="_XcS_gDY0EeGUovy31cP2ng" severity="WARNING" base_Association="_eyK8AhUmEeGvPruliC3crg">
+    <ruleId>CONF:7959</ruleId>
+    <ruleId>CONF:8905</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_RWFZwDY1EeGUovy31cP2ng" base_Property="_FVBzQBUmEeGvPruliC3crg">
+    <ruleId>CONF:8872</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_iRhAIDY1EeGUovy31cP2ng" base_Property="_FVBzSBUmEeGvPruliC3crg">
+    <ruleId>CONF:8873</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mL2uwDY1EeGUovy31cP2ng" base_Property="_FVBzRBUmEeGvPruliC3crg">
+    <ruleId>CONF:8874</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_ogDwkDY2EeGUovy31cP2ng" code="completed" base_Property="_FVBzShUmEeGvPruliC3crg">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8875</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_ymnUYDY3EeGUovy31cP2ng" code="48768-6" displayName="Payment Sources" base_Property="_FVBzQhUmEeGvPruliC3crg">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8876</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:EntryRelationship xmi:id="_GDaIoDZWEeGUovy31cP2ng" base_Association="_V2ah8hUmEeGvPruliC3crg" typeCode="COMP">
+    <ruleId>CONF:8878</ruleId>
+    <ruleId>CONF:8879</ruleId>
+    <ruleId>CONF:15528</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="__B5i0DZXEeGUovy31cP2ng" severity="INFO" base_Constraint="_xtqFkDZXEeGUovy31cP2ng">
+    <ruleId>CONF:8973</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_gKoBwDZZEeGUovy31cP2ng" base_Property="_Ucq9QBUlEeGvPruliC3crg">
+    <ruleId>CONF:8898</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_xaK28DZZEeGUovy31cP2ng" base_Property="_UdHpNhUlEeGvPruliC3crg">
+    <ruleId>CONF:8899</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_bVBvUDZaEeGUovy31cP2ng" base_Property="_UdHpMhUlEeGvPruliC3crg">
+    <ruleId>CONF:8901</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_s5Fb8DZaEeGUovy31cP2ng" base_Property="_UdHpMBUlEeGvPruliC3crg">
+    <ruleId>CONF:8903</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_sHmwUDaJEeGUovy31cP2ng">
+    <ruleId>CONF:8906</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_HfEbMkrXEeGJpZWiuxRVIw">
+    <memberEnd href="consol-documents.uml#_HfEbMErXEeGJpZWiuxRVIw"/>
+    <memberEnd href="#_HfEbM0rXEeGJpZWiuxRVIw"/>
+    <ownedEnd xmi:id="_HfEbM0rXEeGJpZWiuxRVIw" isReadOnly="true" association="_HfEbMkrXEeGJpZWiuxRVIw">
+      <type xmi:type="uml:Class" href="consol-documents.uml#_lxDCoEVKEeGAh_iQGJvI5w"/>
+    </ownedEnd>
+  </uml:Association>
+  <CDA:ActRelationship xmi:id="_jE9tMFy_EeGt2doqSDULjA" base_Association="_V2ah8hUmEeGvPruliC3crg"/>
+  <CDA:CodeSystemConstraint xmi:id="_RqYlUFzCEeGt2doqSDULjA" code="completed" displayName="Completed" base_Property="_UdHpOBUlEeGvPruliC3crg">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8902</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_NF9QgFzFEeGt2doqSDULjA" severity="WARNING" base_Property="_UdHpMBUlEeGvPruliC3crg">
+    <ruleId>CONF:19185</ruleId>
+    <reference href="../consol-vocab.uml#_F4z3QDrtEeG-aJb2h_4S8w"/>
+  </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_sLvNAlzWEeGt2doqSDULjA" memberEnd="_sLvNAFzWEeGt2doqSDULjA _sLvNA1zWEeGt2doqSDULjA">
+    <ownedEnd xmi:id="_sLvNA1zWEeGt2doqSDULjA" type="_PZBdMBUlEeGvPruliC3crg" isReadOnly="true" association="_sLvNAlzWEeGt2doqSDULjA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_c7p34F0HEeGt2doqSDULjA" base_Association="_sLvNAlzWEeGt2doqSDULjA">
+    <ruleId>CONF:8906</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_uHcp8l0REeGt2doqSDULjA" memberEnd="_uHcp8F0REeGt2doqSDULjA _uHcp810REeGt2doqSDULjA">
+    <ownedEnd xmi:id="_uHcp810REeGt2doqSDULjA" type="_ddyK0FzWEeGt2doqSDULjA" isReadOnly="true" association="_uHcp8l0REeGt2doqSDULjA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_hOJKUF0TEeGt2doqSDULjA" base_Association="_uHcp8l0REeGt2doqSDULjA">
+    <ruleId>CONF:8908</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="__Hv3UF0TEeGt2doqSDULjA" base_Property="_3KQcUF0TEeGt2doqSDULjA">
+    <ruleId>CONF:8909</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_ZEdQ8F0UEeGt2doqSDULjA" severity="WARNING" base_Property="_HqHhAF0UEeGt2doqSDULjA">
+    <ruleId>CONF:15992</ruleId>
+    <reference href="../consol-vocab.uml#_tP6g0V0YEeGt2doqSDULjA"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_zCqtIF0ZEeGt2doqSDULjA" severity="INFO" base_Property="_s4EMEF0ZEeGt2doqSDULjA">
+    <ruleId>CONF:8910</ruleId>
+    <ruleId>CONF:10481</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_DASncF0aEeGt2doqSDULjA" severity="INFO" base_Property="_87mhIF0ZEeGt2doqSDULjA">
+    <ruleId>CONF:8910</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_IYe-sF0bEeGt2doqSDULjA" severity="WARNING" base_Property="_CCqsIF0bEeGt2doqSDULjA">
+    <ruleId>CONF:8913</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_e-00oF13EeGt2doqSDULjA" memberEnd="_e-rqsF13EeGt2doqSDULjA _e-00oV13EeGt2doqSDULjA">
+    <ownedEnd xmi:id="_e-00oV13EeGt2doqSDULjA" type="_PZBdMBUlEeGvPruliC3crg" isReadOnly="true" association="_e-00oF13EeGt2doqSDULjA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_jaiK8F13EeGt2doqSDULjA" severity="WARNING" base_Association="_e-00oF13EeGt2doqSDULjA">
+    <ruleId>CONF:8961</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_RN_3IF15EeGt2doqSDULjA" severity="WARNING" base_Property="_HMWMAF15EeGt2doqSDULjA">
+    <ruleId>CONF:8963</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_hHSrEl15EeGt2doqSDULjA" memberEnd="_hHSrEF15EeGt2doqSDULjA _hHSrE115EeGt2doqSDULjA">
+    <ownedEnd xmi:id="_hHSrE115EeGt2doqSDULjA" type="_GX8lgF13EeGt2doqSDULjA" isReadOnly="true" association="_hHSrEl15EeGt2doqSDULjA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_j59nAF15EeGt2doqSDULjA" base_Association="_hHSrEl15EeGt2doqSDULjA">
+    <ruleId>CONF:8962</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CodeSystemConstraint xmi:id="_1HQZcF15EeGt2doqSDULjA" code="GUAR" displayName="Guarantor" base_Property="_pRByUF15EeGt2doqSDULjA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
+    <ruleId>CONF:16096</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_R1eRYF16EeGt2doqSDULjA" severity="WARNING" base_Property="_NIzG4F16EeGt2doqSDULjA">
+    <ruleId>CONF:8964</ruleId>
+    <ruleId>CONF:10482</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_bBHhkF16EeGt2doqSDULjA" severity="WARNING" base_Property="_XTYEgF16EeGt2doqSDULjA">
+    <ruleId>CONF:8965</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_wXRm0F16EeGt2doqSDULjA" severity="WARNING">
+    <ruleId>CONF:8967</ruleId>
+    <base_Constraint href="file:/home/vadi/Programs/mdht-models/models/org.openhealthtools.mdht.uml.cda.consol.model/model/genschematron-ContinuityOfCareDocument/consol-payers.schematron.uml#_p4NRoF16EeGt2doqSDULjA"/>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_eL_LAl2OEeGt2doqSDULjA" memberEnd="_eL_LAF2OEeGt2doqSDULjA _eL_LA12OEeGt2doqSDULjA">
+    <ownedEnd xmi:id="_eL_LA12OEeGt2doqSDULjA" type="_deYl8F0REeGt2doqSDULjA" isReadOnly="true" association="_eL_LAl2OEeGt2doqSDULjA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_vENsYF2OEeGt2doqSDULjA" severity="WARNING" base_Association="_eL_LAl2OEeGt2doqSDULjA">
+    <ruleId>CONF:8912</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_JoQW8F-sEeGt2doqSDULjA" base_Property="_8NlhkF-rEeGt2doqSDULjA">
+    <ruleId>CONF:8917</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_UI0Lol-sEeGt2doqSDULjA" memberEnd="_UI0LoF-sEeGt2doqSDULjA _UI0Lo1-sEeGt2doqSDULjA">
+    <ownedEnd xmi:id="_UI0Lo1-sEeGt2doqSDULjA" type="_PZBdMBUlEeGvPruliC3crg" isReadOnly="true" association="_UI0Lol-sEeGt2doqSDULjA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_aRjrgF-sEeGt2doqSDULjA" base_Association="_UI0Lol-sEeGt2doqSDULjA">
+    <ruleId>CONF:8916</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_qwgxQF-sEeGt2doqSDULjA" severity="WARNING" base_Property="_kr3HMF-sEeGt2doqSDULjA">
+    <ruleId>CONF:8918</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_Wd5XMF-tEeGt2doqSDULjA" severity="WARNING" base_Constraint="_J4Vk4F-tEeGt2doqSDULjA">
+    <ruleId>CONF:8919</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_fo9YkF-tEeGt2doqSDULjA" severity="WARNING" base_Constraint="_Z7L9cF-tEeGt2doqSDULjA">
+    <ruleId>CONF:8920</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_EsHiMl-uEeGt2doqSDULjA" memberEnd="_EsHiMF-uEeGt2doqSDULjA _EsHiM1-uEeGt2doqSDULjA">
+    <ownedEnd xmi:id="_EsHiM1-uEeGt2doqSDULjA" type="_G5CNEF-rEeGt2doqSDULjA" isReadOnly="true" association="_EsHiMl-uEeGt2doqSDULjA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_HewB4F-uEeGt2doqSDULjA" base_Association="_EsHiMl-uEeGt2doqSDULjA">
+    <ruleId>CONF:8921</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_pMTFIF-vEeGt2doqSDULjA" base_Property="_k5hBUF-vEeGt2doqSDULjA">
+    <ruleId>CONF:8922</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_JH8n8F_oEeGt2doqSDULjA" severity="WARNING" base_Property="_nb9TcF-wEeGt2doqSDULjA">
+    <ruleId>CONF:16078</ruleId>
+    <reference href="../consol-vocab.uml#_pWlaAF_lEeGt2doqSDULjA"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_rcA4oF_pEeGt2doqSDULjA" severity="WARNING" base_Property="_YqD1gF_pEeGt2doqSDULjA">
+    <ruleId>CONF:8956</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_O3tMAmAoEeGt2doqSDULjA" memberEnd="_O3tMAGAoEeGt2doqSDULjA _O3tMA2AoEeGt2doqSDULjA">
+    <ownedEnd xmi:id="_O3tMA2AoEeGt2doqSDULjA" type="_0rzgQF-tEeGt2doqSDULjA" isReadOnly="true" association="_O3tMAmAoEeGt2doqSDULjA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_Q_FvQGAoEeGt2doqSDULjA" severity="WARNING" base_Association="_O3tMAmAoEeGt2doqSDULjA">
+    <ruleId>CONF:8932</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_g5cTIGAoEeGt2doqSDULjA" base_Property="_ctWtMGAoEeGt2doqSDULjA">
+    <ruleId>CONF:8930</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_hXzGQmAsEeGt2doqSDULjA" memberEnd="_hXzGQGAsEeGt2doqSDULjA _hXzGQ2AsEeGt2doqSDULjA">
+    <ownedEnd xmi:id="_hXzGQ2AsEeGt2doqSDULjA" type="_PZBdMBUlEeGvPruliC3crg" isReadOnly="true" association="_hXzGQmAsEeGt2doqSDULjA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_pfBFAGAsEeGt2doqSDULjA" severity="WARNING" base_Association="_hXzGQmAsEeGt2doqSDULjA">
+    <ruleId>CONF:8934</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_jxE1UGAtEeGt2doqSDULjA" base_Property="_TT5RMGAtEeGt2doqSDULjA">
+    <ruleId>CONF:8935</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_7f6CIGAtEeGt2doqSDULjA" severity="INFO" base_Property="_1S-l0GAtEeGt2doqSDULjA">
+    <ruleId>CONF:8938</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_o5mY4mAuEeGt2doqSDULjA" memberEnd="_o5mY4GAuEeGt2doqSDULjA _o5mY42AuEeGt2doqSDULjA">
+    <ownedEnd xmi:id="_o5mY42AuEeGt2doqSDULjA" type="_kHUdAGArEeGt2doqSDULjA" isReadOnly="true" association="_o5mY4mAuEeGt2doqSDULjA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_66TlQGAuEeGt2doqSDULjA" base_Association="_o5mY4mAuEeGt2doqSDULjA">
+    <ruleId>CONF:8936</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_IsimEGAvEeGt2doqSDULjA" base_Property="_FdIq0GAvEeGt2doqSDULjA">
+    <ruleId>CONF:8937</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_T04McGAvEeGt2doqSDULjA" severity="WARNING" base_Property="_Qtp80GAvEeGt2doqSDULjA">
+    <ruleId>CONF:8925</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mSJNcG7fEeGO5JJTinolhw" severity="WARNING" base_Property="_Wg5iQG7fEeGO5JJTinolhw">
+    <ruleId>CONF:8961</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Gi_4wHhvEeGJtvg2iiStYg" base_Property="_aZU30BnZEeGs5a462vYX5Q">
+    <ruleId>CONF:8944</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_G-wnsHhvEeGJtvg2iiStYg" base_Property="_aZU30hnZEeGs5a462vYX5Q">
+    <ruleId>CONF:8947</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_HZ65sHhvEeGJtvg2iiStYg" base_Property="_aZU31hnZEeGs5a462vYX5Q">
+    <ruleId>CONF:8945</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_wbDUwHhvEeGJtvg2iiStYg" base_Property="_s4vroHhvEeGJtvg2iiStYg">
+    <ruleId>CONF:8949</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_kWQQsHhwEeGJtvg2iiStYg" severity="INFO" base_Constraint="_b7HQYHhwEeGJtvg2iiStYg">
+    <ruleId>CONF:8952</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="__3W-8MxnEeGfv7E-ZT7xSw" base_Constraint="_Lo6NMHhwEeGJtvg2iiStYg"/>
+  <CDA:PropertyValidation xmi:id="_Yo_IoOWaEeGKmvzED_He2w" base_Property="_2MXNcRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15395</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_LhM9kOWbEeGKmvzED_He2w" base_Property="_JGNh0OWbEeGKmvzED_He2w">
+    <ruleId>CONF:8907</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_xOUDIOWbEeGKmvzED_He2w" severity="WARNING" base_Property="_HqHhAF0UEeGt2doqSDULjA">
+    <ruleId>CONF:8914</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_cAuZIOWdEeGKmvzED_He2w" base_Class="_GX8lgF13EeGt2doqSDULjA" templateId="2.16.840.1.113883.10.20.22.4.88">
+    <ruleId>CONF:16810</ruleId>
+    <ruleId>CONF:16811</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_mzafoOWdEeGKmvzED_He2w" base_Property="_pRByUF15EeGt2doqSDULjA">
+    <ruleId>CONF:8968</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_3Vr_IOWdEeGKmvzED_He2w" base_Class="_G5CNEF-rEeGt2doqSDULjA" templateId="2.16.840.1.113883.10.20.22.4.89">
+    <ruleId>CONF:16812</ruleId>
+    <ruleId>CONF:16814</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_AINksOWeEeGKmvzED_He2w" base_Property="_nb9TcF-wEeGt2doqSDULjA">
+    <ruleId>CONF:8923</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_pxehUOWfEeGKmvzED_He2w" base_Class="_kHUdAGArEeGt2doqSDULjA" templateId="2.16.840.1.113883.10.20.22.4.90">
+    <ruleId>CONF:16813</ruleId>
+    <ruleId>CONF:16815</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_or480OWgEeGKmvzED_He2w" base_Property="_jx2EsOWgEeGKmvzED_He2w">
+    <ruleId>CONF:8940</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_wOhAwuWgEeGKmvzED_He2w" memberEnd="_wOhAwOWgEeGKmvzED_He2w _wOhAw-WgEeGKmvzED_He2w">
+    <ownedEnd xmi:id="_wOhAw-WgEeGKmvzED_He2w" type="_PZBdMBUlEeGvPruliC3crg" isReadOnly="true" association="_wOhAwuWgEeGKmvzED_He2w"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_1ytpIOWgEeGKmvzED_He2w" base_Association="_wOhAwuWgEeGKmvzED_He2w">
+    <ruleId>CONF:8939</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_SjSRgOWhEeGKmvzED_He2w" base_Constraint="_OJBFoOWhEeGKmvzED_He2w">
+    <ruleId>CONF:8942</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_hHndoOWhEeGKmvzED_He2w" base_Constraint="_dBOQAOWhEeGKmvzED_He2w">
+    <ruleId>CONF:8943</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CDATemplate xmi:id="_JuhoEOvHEeGU4e2Grhba1w" base_Class="_ddyK0FzWEeGt2doqSDULjA" templateId="2.16.840.1.113883.10.20.22.4.87">
+    <ruleId>CONF:16808</ruleId>
+    <ruleId>CONF:16809</ruleId>
+  </CDA:CDATemplate>
+  <CDA:Inline xmi:id="_wspJgrS3EeWpm8PSOGz-9g" base_Class="_wspJgLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wvDkUrS3EeWpm8PSOGz-9g" base_Class="_wvDkULS3EeWpm8PSOGz-9g"/>
+  <Ecore:EClass xmi:id="_jQFSMLTBEeWEoeeTdrbyVw" base_Class="_2MV_UBSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PayersSectionTemplateId PayersSectionCode PayersSectionCodeP PayersSectionTitle PayersSectionText PayersSectionEntry' templateId.root='2.16.840.1.113883.10.20.22.2.18' code.code='48768-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Payers'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jniv8LTBEeWEoeeTdrbyVw" base_Class="_PZBdMBUlEeGvPruliC3crg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityTemplateId PolicyActivityClassCode PolicyActivityCodeP PolicyActivityId PolicyActivityMoodCode PolicyActivityStatusCode PolicyActivityStatusCodeP PolicyActivityPayer PolicyActivityCoverage PolicyActivityEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.61' classCode='ACT' code.codeSystemName='' constraints.validation.warning='PolicyActivityCode PolicyActivityGuarantor PolicyActivityHolder' constraints.validation.dependOn.PolicyActivityCode='PolicyActivityCodeP' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.PolicyActivityStatusCode='PolicyActivityStatusCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jonG8LTBEeWEoeeTdrbyVw" base_Class="_ddyK0FzWEeGt2doqSDULjA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityPayerTemplateId PolicyActivityPayerTypeCode PolicyActivityPayerPayerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.87' typeCode='PRF'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_joqxULTBEeWEoeeTdrbyVw" base_Class="_deYl8F0REeGt2doqSDULjA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityPayerPayerAssignedEntityId' code.codeSystem='2.16.840.1.113883.5.110' code.codeSystemName='HL7RoleClass' constraints.validation.warning='PolicyActivityPayerPayerAssignedEntityCode PolicyActivityPayerPayerAssignedEntityCodeP PolicyActivityPayerPayerAssignedEntityPayerOrganization' constraints.validation.dependOn.PolicyActivityPayerPayerAssignedEntityCode='PolicyActivityPayerPayerAssignedEntityCodeP' constraints.validation.info='PolicyActivityPayerPayerAssignedEntityAddr PolicyActivityPayerPayerAssignedEntityTelecom'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jpqP0LTBEeWEoeeTdrbyVw" base_Class="_YJMT0F0aEeGt2doqSDULjA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='PolicyActivityPayerPayerAssignedEntityPayerOrganizationName'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jpq24LTBEeWEoeeTdrbyVw" base_Class="_GX8lgF13EeGt2doqSDULjA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityGuarantorTemplateId PolicyActivityGuarantorGuarantorAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.4.88' constraints.validation.warning='PolicyActivityGuarantorTime PolicyActivityGuarantorTypeCode' typeCode='PRF'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jpvIULTBEeWEoeeTdrbyVw" base_Class="_NgEewF13EeGt2doqSDULjA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='PolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName PolicyActivityGuarantorGuarantorAssignedEntityAddr PolicyActivityGuarantorGuarantorAssignedEntityTelecom' code.code='GUAR' code.codeSystem='2.16.840.1.113883.5.110' code.codeSystemName='HL7RoleClass' code.displayName='Guarantor' constraints.validation.error='PolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivityGuarantorGuarantorAssignedEntityCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jp7VkLTBEeWEoeeTdrbyVw" base_Class="_G5CNEF-rEeGt2doqSDULjA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityCoverageTemplateId PolicyActivityCoverageTypeCode PolicyActivityCoverageCoverageRole' templateId.root='2.16.840.1.113883.10.20.22.4.89' constraints.validation.warning='PolicyActivityCoverageLowTime PolicyActivityCoverageHighTime PolicyActivityCoverageTime' typeCode='COV'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jqBcMLTBEeWEoeeTdrbyVw" base_Class="_0rzgQF-tEeGt2doqSDULjA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityCoverageCoverageRoleId PolicyActivityCoverageCoverageRoleCodeP' code.codeSystem='2.16.840.1.113883.5.111' code.codeSystemName='RoleCode' constraints.validation.warning='PolicyActivityCoverageCoverageRoleCode PolicyActivityCoverageCoverageRoleAddr PolicyActivityCoverageCoverageRoleCoveragePlayingEntity'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jq3wwLTBEeWEoeeTdrbyVw" base_Class="_NHNUMGAnEeGt2doqSDULjA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityCoverageCoverageRoleCoveragePlayingEntityName'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jq4X0LTBEeWEoeeTdrbyVw" base_Class="_kHUdAGArEeGt2doqSDULjA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityHolderTemplateId PolicyActivityHolderTypeCode PolicyActivityHolderHolderRole' templateId.root='2.16.840.1.113883.10.20.22.4.90' typeCode='HLD' constraints.validation.info='PolicyActivityHolderTime'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jq9QULTBEeWEoeeTdrbyVw" base_Class="_jfs8AGAuEeGt2doqSDULjA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityHolderHolderRoleId' constraints.validation.warning='PolicyActivityHolderHolderRoleAddr'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jq_skLTBEeWEoeeTdrbyVw" base_Class="_h_J_EOWgEeGKmvzED_He2w">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityEntryRelationshipTargetActActivity PolicyActivityEntryRelationshipDescriptionCoveragePlan PolicyActivityEntryRelationshipTypeCode' typeCode='REFR'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jrCv4LTBEeWEoeeTdrbyVw" base_Class="_Cg3pkBUmEeGvPruliC3crg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoverageActivityTemplateId CoverageActivityClassCode CoverageActivityCode CoverageActivityCodeP CoverageActivityId CoverageActivityMoodCode CoverageActivityStatusCode CoverageActivityStatusCodeP CoverageActivityEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.60' constraints.validation.info='CoverageActivityCoverageActivityRelationshipSequenceNumber' classCode='ACT' code.code='48768-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Payment Sources' constraints.validation.dependOn.CoverageActivityCode='CoverageActivityCodeP' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.CoverageActivityStatusCode='CoverageActivityStatusCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_j6QQkLTBEeWEoeeTdrbyVw" base_Class="_XUoXwBnZEeGs5a462vYX5Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AuthorizationActivityTemplateId AuthorizationActivityClassCode AuthorizationActivityId AuthorizationActivityMoodCode AuthorizationActivityEntryRelationship' templateId.root='2.16.840.1.113883.10.20.1.19' classCode='ACT' moodCode='EVN'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_j6VwILTBEeWEoeeTdrbyVw" base_Class="_sWZMgHhvEeGJtvg2iiStYg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AuthorizationActivityEntryRelationshipHasClinicalStatement AuthorizationActivityEntryRelationshipTypeCode' constraints.validation.info='AuthorizationActivityEntryRelationshipHasAuthorizedPerformers' typeCode='SUBJ'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_oRy4kLTBEeWEoeeTdrbyVw" base_Class="_wspJgLS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='PayersSectionCoverageActivityEntryCoverageActivity'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_pjOEMLTBEeWEoeeTdrbyVw" base_Class="_wvDkULS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoverageActivityPolicyActivityEntryRelationshipPolicyActivity'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

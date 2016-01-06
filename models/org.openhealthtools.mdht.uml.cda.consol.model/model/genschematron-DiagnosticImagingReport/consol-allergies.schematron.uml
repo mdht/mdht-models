@@ -1,0 +1,2399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Class xmi:id="_2LMIwBSVEeGGzu7fmW9pXw" name="AllergiesSection">
+    <ownedComment xmi:id="_2LRBQRSVEeGGzu7fmW9pXw" annotatedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_jH8C0bTBEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jH8C0rTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jIA7ULTBEeWEoeeTdrbyVw" name="AllergiesSectionCodeP" constrainedElement="_2LN98BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jIA7UbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jH-fELTBEeWEoeeTdrbyVw" name="AllergiesSectionCode" constrainedElement="_2LN98BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jH-fEbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jID-oLTBEeWEoeeTdrbyVw" name="AllergiesSectionTitle" constrainedElement="_2LPMEBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jID-obTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jIFz0LTBEeWEoeeTdrbyVw" name="AllergiesSectionText" constrainedElement="_2LPzIBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jIFz0bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_n-BA8LTBEeWEoeeTdrbyVw" name="AllergiesSectionEntry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wsHlELS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_n-BA8bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::AllergiesSection::AllergyProblemActEntry))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_wOgQcLTBEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_wOgQcbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_-Gn20LTBEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_-God4LTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_BSc5oLTCEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_BSdgsLTCEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_bhbvALTCEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bhgAcLTCEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_C4oX0LTDEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_C4o-4LTDEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_3C8GwLTDEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3C8t0LTDEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_PW-5cLTEEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_PW-5cbTEEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_JODaELTJEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_JODaEbTJEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jnjn8LTKEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jnkPALTKEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_EEbhsBVgEeGQCvUGzi1kDQ" general="_bGzYgBVdEeGQCvUGzi1kDQ">
+      <ownedComment xmi:id="_l-8SQHauEeGK39q3kclbsA">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
+    <ownedAttribute xmi:id="_2LN98BSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2LPMEBSVEeGGzu7fmW9pXw" name="title" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2LPzIBSVEeGGzu7fmW9pXw" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2LPzIhSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2LPzIRSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wsHlEbS3EeWpm8PSOGz-9g" name="entry" type="_wsG-ALS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wsHlErS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wsIMILS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wsHlELS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wsG-ALS3EeWpm8PSOGz-9g" name="AllergyProblemActEntry">
+      <ownedRule xmi:id="_n-ydALTBEeWEoeeTdrbyVw" name="AllergiesSectionAllergyProblemActEntryAllergyProblemAct">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wsIzMLS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_n-ydAbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyProblemAct))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wsG-AbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wsIzMbS3EeWpm8PSOGz-9g" name="allergyProblemAct" type="_2EAisBSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wsIzMrS3EeWpm8PSOGz-9g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wsIzM7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wsIzMLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_2LNW4RSVEeGGzu7fmW9pXw" memberEnd="_2LNW4hSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2LNW4hSVEeGGzu7fmW9pXw" type="_2LMIwBSVEeGGzu7fmW9pXw" isReadOnly="true" association="_2LNW4RSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_2LMv0BSVEeGGzu7fmW9pXw" base_Class="_2LMIwBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.6.1">
+    <ruleId>CONF:7527</ruleId>
+    <ruleId>CONF:10379</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_2LN98RSVEeGGzu7fmW9pXw" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_2LN98BSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15350</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_2LPMERSVEeGGzu7fmW9pXw" base_Property="_2LPMEBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7534</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2LPzIxSVEeGGzu7fmW9pXw" base_Property="_2LPzIBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7530</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_2LNW4xSVEeGGzu7fmW9pXw" base_Association="_2LNW4RSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7531</ruleId>
+    <ruleId>CONF:7532</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_bGzYgBVdEeGQCvUGzi1kDQ" name="AllergiesSectionEntriesOptional">
+    <ownedComment xmi:id="_bGzYgRVdEeGQCvUGzi1kDQ" annotatedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
+      <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_jxrjYLTBEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jxrjYbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jxtYkLTBEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalCode" constrainedElement="_bGzYihVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jxtYkbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jxv00LTBEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalCodeP" constrainedElement="_bGzYihVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jxv00bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jxyRELTBEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTitle" constrainedElement="_bGzYixVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jxyREbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jx0GQLTBEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalText" constrainedElement="_bGzYjBVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jx0GQbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_pn8MILTBEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalEntry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wvPKgbS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_pn8MIbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::AllergiesSectionEntriesOptional::AllergyProblemActEntry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_FHCOMBVgEeGQCvUGzi1kDQ">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_bGzYihVdEeGQCvUGzi1kDQ" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_bGzYixVdEeGQCvUGzi1kDQ" name="title" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_bGzYjBVdEeGQCvUGzi1kDQ" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bGzYjhVdEeGQCvUGzi1kDQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bGzYjRVdEeGQCvUGzi1kDQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wvPKgrS3EeWpm8PSOGz-9g" name="entry" type="_wvOjcLS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvPxkLS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvPxkbS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wvPKgbS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wvOjcLS3EeWpm8PSOGz-9g" name="AllergyProblemActEntry">
+      <ownedRule xmi:id="_porL8LTBEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalAllergyProblemActEntryAllergyProblemAct">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wvQYoLS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_porL8bTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.act->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyProblemAct))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wvOjcbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wvQYobS3EeWpm8PSOGz-9g" name="allergyProblemAct" type="_2EAisBSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wvQYorS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wvQYo7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wvQYoLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_45wiEBkaEeGs5a462vYX5Q" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.6">
+    <ruleId>CONF:7800</ruleId>
+    <ruleId>CONF:10378</ruleId>
+  </CDA:CDATemplate>
+  <uml:Class xmi:id="_2EaLUBSVEeGGzu7fmW9pXw" name="AllergyObservation">
+    <eAnnotations xmi:id="_2EaLURSVEeGGzu7fmW9pXw" source="uml2.alias">
+      <details xmi:id="_2EaLUhSVEeGGzu7fmW9pXw" key="Allergies and Intolerances"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_2F5ZEBSVEeGGzu7fmW9pXw" annotatedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <body>This clinical statement represents that an allergy or adverse reaction exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a manufactured material participant playing entity in the allergy - intolerance observation. While the agent is often implicit in the alert observation (e.g. &quot;allergy to penicillin&quot;), it should also be asserted explicitly as an entity. The manufactured material participant is used to represent natural and non-natural occurring substances.&#xD;
+NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed. The following constraints reflect limitations in the base CDA R2 specification, and should be used to represent any type of responsible agent.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_ouJssCFKEeG9m6LRl9ardQ" name="AllergyObservationValueOriginalText" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5qNlMCFKEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>value SHOULD contain zero or one [0..1] originalText</body>
+        <body>self.value.oclAsType(datatypes::CD).originalText->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_cf38gCFLEeG9m6LRl9ardQ" name="AllergyObservationOriginalTextReference" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iuCH4CFLEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>originalText, if present, MAY contain zero or one [0..1] reference</body>
+        <body>self.value.oclAsType(datatypes::CD).originalText->size() = 1 implies self.value.oclAsType(datatypes::CD).originalText->one(reference->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_bTC9MOJPEeG3cO7ebC3QuA" name="AllergyObservationOriginalTextReferenceValue" constrainedElement="_cf38gCFLEeG9m6LRl9ardQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_e7dOUOJPEeG3cO7ebC3QuA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>self.value.oclAsType(datatypes::CD).originalText.reference->size() = 1 implies self.value.oclAsType(datatypes::CD).originalText.reference.value->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_nV_8ECFMEeG9m6LRl9ardQ" name="AllergyObservationReferenceValue" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_j5kg4CKeEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative</body>
+        <body>not self.code.originalText.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_8gb1UCFTEeG9m6LRl9ardQ" name="AllergyObservationAllergyStatusInversionIndicator" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_L6csQCFUEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry AllergyStatusObservation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::AllergyStatusObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VBabUCFVEeG9m6LRl9ardQ" name="AllergyObservationReactionInversionIndicator" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_f5vPwCFVEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Reaction Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::ReactionObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2EaLbxSVEeGGzu7fmW9pXw" name="AllergyObservationSeverityInversionIndicator">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLcBSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Severity Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ioZnILTBEeWEoeeTdrbyVw" name="AllergyObservationTemplateId" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioZnIbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.7')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ionCgLTBEeWEoeeTdrbyVw" name="AllergyObservationClassCode" constrainedElement="_2Em_oBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ionCgbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::ActClassObservation::OBS</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ioqF0LTBEeWEoeeTdrbyVw" name="AllergyObservationMoodCode" constrainedElement="_2Em_ohSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioqF0bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iosiELTBEeWEoeeTdrbyVw" name="AllergyObservationId" constrainedElement="_2EnmsBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iosiEbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.id->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_io0d4LTBEeWEoeeTdrbyVw" name="AllergyObservationCodeP" constrainedElement="_2EaLdBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_io0d4bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iowMcLTBEeWEoeeTdrbyVw" name="AllergyObservationCode" constrainedElement="_2EaLdBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iowMcbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_io9AwLTBEeWEoeeTdrbyVw" name="AllergyObservationStatusCodeP" constrainedElement="_2EoNwxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_io9AwbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_io5WYLTBEeWEoeeTdrbyVw" name="AllergyObservationStatusCode" constrainedElement="_2EoNwxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_io5WYbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ipArILTBEeWEoeeTdrbyVw" name="AllergyObservationEffectiveTime" constrainedElement="_2Epb4BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ipArIbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.effectiveTime.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ipvq8LTBEeWEoeeTdrbyVw" name="AllergyObservationValueP" constrainedElement="_2EaLdhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ipvq8bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ipEVgLTBEeWEoeeTdrbyVw" name="AllergyObservationValue" constrainedElement="_2EaLdhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ipEVgbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or value.code = '418038007' or value.code = '419511003' or value.code = '418471000' or value.code = '419199007' or value.code = '416098002' or value.code = '414285001' or value.code = '59037007' or value.code = '235719002' or value.code = '232347008' or value.code = '426232007'))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kVD9QLTBEeWEoeeTdrbyVw" name="AllergyObservationParticipant" constrainedElement="_FQD_EjJDEeG6R8Pb5FT2Ow">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kVD9QbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->size() &lt;= 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_moh0sLTBEeWEoeeTdrbyVw" name="AllergyObservationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wpbdcLS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_moh0sbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::AllergyObservation::AllergyStatusObservationEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_mqEs0LTBEeWEoeeTdrbyVw" name="AllergyObservationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wpfH0LS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mqEs0bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::AllergyObservation::ReactionObservationEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_mrqoQLTBEeWEoeeTdrbyVw" name="AllergyObservationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wpjZQLS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mrqoQbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::AllergyObservation::SeverityObservationEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2F5ZERSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2Em_oBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2Em_oRSVEeGGzu7fmW9pXw" name="OBS">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Em_ohSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2Em_oxSVEeGGzu7fmW9pXw" name="EVN">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EnmsBSVEeGGzu7fmW9pXw" name="id" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EnmsxSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EnmshSVEeGGzu7fmW9pXw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EaLdBSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EoNwxSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Epb4BSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Epb4xSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Epb4hSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EaLdhSVEeGGzu7fmW9pXw" name="value" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_FQD_EDJDEeG6R8Pb5FT2Ow" name="participant" type="_0HgNkDJAEeG6R8Pb5FT2Ow" isReadOnly="true" association="_FQD_EjJDEeG6R8Pb5FT2Ow">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dLIiIMZjEeOZyeUSQqClgg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dLH7EMZjEeOZyeUSQqClgg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wpbdcbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wpa2YLS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wpcEgLS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wpcEgbS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wpbdcLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wpfH0bS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wpegwLS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wpfH0rS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wpfu4LS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wpfH0LS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wpkAULS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wpiyMLS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wpkAUbS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wpkAUrS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wpjZQLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_0HgNkDJAEeG6R8Pb5FT2Ow" name="Participant">
+      <ownedComment xmi:id="_UJ7XoM-GEeG0zqUqBXbhpA">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_iqU5wLTBEeWEoeeTdrbyVw" name="AllergyObservationParticipantTypeCodeP" constrainedElement="_098tYDJAEeG6R8Pb5FT2Ow">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_iqU5wbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>true</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_iqTEkLTBEeWEoeeTdrbyVw" name="AllergyObservationParticipantTypeCode" constrainedElement="_098tYDJAEeG6R8Pb5FT2Ow">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_iqTEkbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>not self.typeCode.oclIsUndefined() and self.typeCode.oclIsKindOf(vocab::ParticipationType) and 
+let value : vocab::ParticipationType = self.typeCode.oclAsType(vocab::ParticipationType) in 
+value = vocab::ParticipationType::CSM</body>
+        </specification>
+      </ownedRule>
+      <ownedRule name="AllergyObservationParticipantParticipantRole">
+        <constrainedElement xmi:type="uml:Association" href="file:/home/vadi/Programs/mdht-models/models/org.openhealthtools.mdht.uml.cda.consol.model/model/genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_Oi4gMjJBEeG6R8Pb5FT2Ow"/>
+        <specification xmi:type="uml:OpaqueExpression">
+          <language>OCL</language>
+          <body>self.participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::AllergyObservation::Participant::ParticipantRole))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_0HgNkTJAEeG6R8Pb5FT2Ow">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_098tYDJAEeG6R8Pb5FT2Ow" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oi4gMDJBEeG6R8Pb5FT2Ow" name="participantRole" type="_4Lj44DJAEeG6R8Pb5FT2Ow" isReadOnly="true" association="_Oi4gMjJBEeG6R8Pb5FT2Ow">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tJrDUTJBEeG6R8Pb5FT2Ow" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tJrDUDJBEeG6R8Pb5FT2Ow" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_4Lj44DJAEeG6R8Pb5FT2Ow" name="ParticipantRole">
+        <ownedRule name="AllergyObservationParticipantParticipantRoleClassCodeP">
+          <constrainedElement xmi:type="uml:Property" href="file:/home/vadi/Programs/mdht-models/models/org.openhealthtools.mdht.uml.cda.consol.model/model/genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_6LgXYDJAEeG6R8Pb5FT2Ow"/>
+          <specification xmi:type="uml:OpaqueExpression">
+            <language>OCL</language>
+            <body>true</body>
+          </specification>
+        </ownedRule>
+        <ownedRule name="AllergyObservationParticipantParticipantRoleClassCode">
+          <constrainedElement xmi:type="uml:Property" href="file:/home/vadi/Programs/mdht-models/models/org.openhealthtools.mdht.uml.cda.consol.model/model/genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_6LgXYDJAEeG6R8Pb5FT2Ow"/>
+          <specification xmi:type="uml:OpaqueExpression">
+            <language>OCL</language>
+            <body>not self.classCode.oclIsUndefined() and self.classCode.oclIsKindOf(vocab::RoleClassRoot) and 
+let value : vocab::RoleClassRoot = self.classCode.oclAsType(vocab::RoleClassRoot) in 
+value = vocab::RoleClassRoot::MANU</body>
+          </specification>
+        </ownedRule>
+        <ownedRule name="AllergyObservationParticipantParticipantRolePlayingEntity">
+          <constrainedElement xmi:type="uml:Association" href="file:/home/vadi/Programs/mdht-models/models/org.openhealthtools.mdht.uml.cda.consol.model/model/genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_QPyG4jJBEeG6R8Pb5FT2Ow"/>
+          <specification xmi:type="uml:OpaqueExpression">
+            <language>OCL</language>
+            <body>self.playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(consol::AllergyObservation::Participant::ParticipantRole::PlayingEntity))</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_4Lj44TJAEeG6R8Pb5FT2Ow">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_6LgXYDJAEeG6R8Pb5FT2Ow" name="classCode" visibility="private" isReadOnly="true">
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uiVfYTJBEeG6R8Pb5FT2Ow" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uiVfYDJBEeG6R8Pb5FT2Ow" value="1"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_QPyG4DJBEeG6R8Pb5FT2Ow" name="playingEntity" type="_E1B60DJBEeG6R8Pb5FT2Ow" isReadOnly="true" association="_QPyG4jJBEeG6R8Pb5FT2Ow">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tvKWATJBEeG6R8Pb5FT2Ow" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tvKWADJBEeG6R8Pb5FT2Ow" value="1"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_E1B60DJBEeG6R8Pb5FT2Ow" name="PlayingEntity">
+          <ownedRule xmi:id="_c0knsDJCEeG6R8Pb5FT2Ow" name="AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue" constrainedElement="_aK9hIDJCEeG6R8Pb5FT2Ow">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_ol9LEDJCEeG6R8Pb5FT2Ow">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1</body>
+              <body>not self.code.originalText.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_WQI8oOJSEeG3cO7ebC3QuA" name="AllergyObservationParticipantParticipantRolePlayingEntityReferenceValue" constrainedElement="_aK9hIDJCEeG6R8Pb5FT2Ow">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_af_oQOJSEeG3cO7ebC3QuA">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>reference, if present, SHOULD contain zero or one [0..1] @value</body>
+              <body>not self.code.originalText.reference.oclIsUndefined() implies self.code.originalText.reference.value->size() = 1</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_aK9hIDJCEeG6R8Pb5FT2Ow" name="AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_uNieoDJCEeG6R8Pb5FT2Ow">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
+              <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.oclIsUndefined()</body>
+            </specification>
+          </ownedRule>
+          <ownedRule name="AllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI">
+            <constrainedElement xmi:type="uml:Class" href="file:/home/vadi/Programs/mdht-models/models/org.openhealthtools.mdht.uml.cda.consol.model/model/genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_E1B60DJBEeG6R8Pb5FT2Ow"/>
+            <specification xmi:type="uml:OpaqueExpression">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>code SHALL be selected from ValueSet Substance-Reactant for Intolerance 2.16.840.1.113762.1.4.1010.1 DYNAMIC. Note: Value set intentionally defined as a GROUPING made up of: Value Set: Medication Drug Class (2.16.840.1.113883.3.88.12.80.18) (NDFRT drug class codes); Value Set: Clinical Drug Ingredient (2.16.840.1.113762.1.4.1010.7) (RxNORM ingredient codes); Value Set: Unique Ingredient Identifier - Complete Set (2.16.840.1.113883.3.88.12.80.20) (UNII ingredient codes); Value Set: Substance Other Than Clinical Drug (2.16.840.1.113762.1.4.1010.9) (SNOMED CT substance codes).</body>
+              <body>( code.oclIsUndefined() or code.isNullFlavorUndefined() ) implies ( not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and ( ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.3.26.1.5' and not value.code.oclIsUndefined() ) or ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.6.88' and not value.code.oclIsUndefined() ) or ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.4.9' and not value.code.oclIsUndefined() ) or ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined() ) ) )</body>
+            </specification>
+          </ownedRule>
+          <ownedRule name="AllergyObservationParticipantParticipantRolePlayingEntityClassCode">
+            <constrainedElement xmi:type="uml:Property" href="file:/home/vadi/Programs/mdht-models/models/org.openhealthtools.mdht.uml.cda.consol.model/model/genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_F56fQDJBEeG6R8Pb5FT2Ow"/>
+            <specification xmi:type="uml:OpaqueExpression">
+              <language>OCL</language>
+              <body>isDefined('classCode') and self.classCode=vocab::EntityClassRoot::MMAT</body>
+            </specification>
+          </ownedRule>
+          <ownedRule name="AllergyObservationParticipantParticipantRolePlayingEntityCode">
+            <constrainedElement xmi:type="uml:Property" href="file:/home/vadi/Programs/mdht-models/models/org.openhealthtools.mdht.uml.cda.consol.model/model/genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_KmLkoDJCEeG6R8Pb5FT2Ow"/>
+            <specification xmi:type="uml:OpaqueExpression">
+              <language>OCL</language>
+              <body>not self.code.oclIsUndefined()</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:id="_E1B60TJBEeG6R8Pb5FT2Ow">
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_F56fQDJBEeG6R8Pb5FT2Ow" name="classCode" visibility="private" isReadOnly="true">
+            <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7gMc8TJBEeG6R8Pb5FT2Ow" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7gMc8DJBEeG6R8Pb5FT2Ow" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_IIVpMDJCEeG6R8Pb5FT2Ow" value="MMAT"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_KmLkoDJCEeG6R8Pb5FT2Ow" name="code" visibility="private" type="_HLPZcNJCEeOj_bXCpQOG9w" isReadOnly="true" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MFs2oTJCEeG6R8Pb5FT2Ow" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MFs2oDJCEeG6R8Pb5FT2Ow" value="1"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_HLPZcNJCEeOj_bXCpQOG9w" name="CE">
+            <ownedRule name="AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText">
+              <constrainedElement xmi:type="uml:Property" href="file:/home/vadi/Programs/mdht-models/models/org.openhealthtools.mdht.uml.cda.consol.model/model/genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_TxNbcNJCEeOj_bXCpQOG9w"/>
+              <specification xmi:type="uml:OpaqueExpression">
+                <language>OCL</language>
+                <body> ( self.isNullFlavorUndefined() implies (((not self.originalText.oclIsUndefined()) and self.originalText.isNullFlavorUndefined()) implies (not self.originalText.oclIsUndefined()) ))</body>
+              </specification>
+            </ownedRule>
+            <ownedRule name="AllergyObservationParticipantParticipantRolePlayingEntityCETranslation">
+              <constrainedElement xmi:type="uml:Property" href="file:/home/vadi/Programs/mdht-models/models/org.openhealthtools.mdht.uml.cda.consol.model/model/genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_VnAfcNJCEeOj_bXCpQOG9w"/>
+              <specification xmi:type="uml:OpaqueExpression">
+                <language>OCL</language>
+                <body> ( self.isNullFlavorUndefined() implies (((not self.translation->isEmpty()) and self.translation->exists(element | element.isNullFlavorUndefined())) implies (not self.translation->isEmpty()) ))</body>
+              </specification>
+            </ownedRule>
+            <generalization xmi:id="_HLQAgNJCEeOj_bXCpQOG9w">
+              <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+            </generalization>
+            <ownedAttribute xmi:id="_TxNbcNJCEeOj_bXCpQOG9w" name="originalText" visibility="private" isReadOnly="true" aggregation="composite">
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TxNbctJCEeOj_bXCpQOG9w"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TxNbcdJCEeOj_bXCpQOG9w" value="1"/>
+              <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_TgJEsD55Ed6cla2oXsPtlA"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_VnAfcNJCEeOj_bXCpQOG9w" name="translation" visibility="private" isReadOnly="true" aggregation="composite">
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VnAfctJCEeOj_bXCpQOG9w"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VnAfcdJCEeOj_bXCpQOG9w" value="*"/>
+              <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wpa2YLS3EeWpm8PSOGz-9g" name="AllergyStatusObservationEntryRelationship">
+      <ownedRule xmi:id="_mpT30LTBEeWEoeeTdrbyVw" name="AllergyObservationAllergyStatusObservationEntryRelationshipAllergyStatusObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wpcrkbS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_mpUe4LTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->size() &lt;= 1</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wpa2YbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wpcrkrS3EeWpm8PSOGz-9g" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wpdSoLS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wpdSobS3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wpcrkbS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wpegwLS3EeWpm8PSOGz-9g" name="ReactionObservationEntryRelationship">
+      <ownedRule xmi:id="_mq1h0LTBEeWEoeeTdrbyVw" name="AllergyObservationReactionObservationEntryRelationshipReactionObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wpg9ALS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_mq1h0bTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wpegwbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wpg9AbS3EeWpm8PSOGz-9g" name="reactionObservation" type="_2E_aIRSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wpg9ArS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wpg9A7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wpg9ALS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wpiyMLS3EeWpm8PSOGz-9g" name="SeverityObservationEntryRelationship">
+      <ownedRule xmi:id="_msa2MLTBEeWEoeeTdrbyVw" name="AllergyObservationSeverityObservationEntryRelationshipSeverityObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wplOcLS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_msa2MbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->size() &lt;= 1</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wpiyMbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wplOcbS3EeWpm8PSOGz-9g" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wplOcrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wplOc7S3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wplOcLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_2Ej8URSVEeGGzu7fmW9pXw" memberEnd="_2Ej8UhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2Ej8UhSVEeGGzu7fmW9pXw" type="_2EaLUBSVEeGGzu7fmW9pXw" isReadOnly="true" association="_2Ej8URSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2EkjYBSVEeGGzu7fmW9pXw" memberEnd="_2EkjYRSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2EkjYRSVEeGGzu7fmW9pXw" type="_2EaLUBSVEeGGzu7fmW9pXw" isReadOnly="true" association="_2EkjYBSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_-xkhwhUvEeGbmN_W114JUw" memberEnd="_-xkhwxUvEeGbmN_W114JUw">
+    <ownedEnd xmi:id="_-xkhwxUvEeGbmN_W114JUw" type="_2EaLUBSVEeGGzu7fmW9pXw" isReadOnly="true" association="_-xkhwhUvEeGbmN_W114JUw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_96YgEBnaEeGs5a462vYX5Q" base_Class="_2EaLUBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.7">
+    <ruleId>CONF:7381</ruleId>
+    <ruleId>CONF:10488</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2F280hSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2F3j4hSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EdOoRSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2Ed1sBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EecwBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EfD0BSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2Efq4BSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF:7402</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2Efq4RSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7403</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2EgR8BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7404</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2Eg5ABSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7405</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2EhgEBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7406</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2EhgERSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7407</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2EiHIBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7419</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2EiuMBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EjVQBSVEeGGzu7fmW9pXw" base_Constraint="_2EaLbxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:9964</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2EjVQRSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2Em_pBSVEeGGzu7fmW9pXw" base_Property="_2Em_ohSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7380</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2EnmtBSVEeGGzu7fmW9pXw" base_Property="_2EnmsBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7382</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2EbZcRSVEeGGzu7fmW9pXw" code="ASSERTION" base_Property="_2EaLdBSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15948</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_2EoNwhSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF:7422</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2EoNxBSVEeGGzu7fmW9pXw" code="completed" base_Property="_2EoNwxSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7386</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_2EqC8BSVEeGGzu7fmW9pXw" base_Property="_2Epb4BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7387</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:EntryRelationship xmi:id="_2Ej8UxSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2Ej8URSVEeGGzu7fmW9pXw" typeCode="MFST">
+    <ruleId>CONF:7447</ruleId>
+    <ruleId>CONF:7907</ruleId>
+    <ruleId>CONF:15955</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_2EkjYhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2EkjYBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
+    <ruleId>CONF:9961</ruleId>
+    <ruleId>CONF:9962</ruleId>
+    <ruleId>CONF:15956</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Class xmi:id="_2EAisBSVEeGGzu7fmW9pXw" name="AllergyProblemAct">
+    <eAnnotations xmi:id="_2EAisRSVEeGGzu7fmW9pXw" source="uml2.alias">
+      <details xmi:id="_2EAishSVEeGGzu7fmW9pXw" key="Allergies and Drug Sensitivities"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_2EAisxSVEeGGzu7fmW9pXw" source="uml2.alias">
+      <details xmi:id="_2EAitBSVEeGGzu7fmW9pXw" key="Allergy and Drug Sensitivity"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_2GDKEBSVEeGGzu7fmW9pXw" annotatedElement="_2EAisBSVEeGGzu7fmW9pXw">
+      <body>This clinical statement act represents a concern relating to a patient's allergies or adverse events. A concern is a term used when referring to patient's problems that are related to one another. Observations of problems or other clinical statements captured at a point in time are wrapped in a Allergy Problem Act, or &quot;Concern&quot; act, which represents the ongoing process tracked over time. This outer Allergy Problem Act (representing the &quot;Concern&quot;) can contain nested problem observations or other nested clinical statements relevant to the allergy concern.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_L5MNcCWFEeGWfpmyutaqOA" name="AllergyProblemActEffectiveTimeLow" constrainedElement="_2EAisBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UD7aQCWFEeGWfpmyutaqOA">
+        <language>OCL</language>
+        <body>(self.statusCode.code = 'active') implies not self.effectiveTime.low.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2F-RkBSVEeGGzu7fmW9pXw" name="AllergyProblemActEffectiveTimeHigh">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F-RkRSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If statusCode = &quot;completed&quot; Completed, then effectiveTime SHALL contain  high [1..1] (CONF:10085).</body>
+        <body>(self.statusCode.code = 'completed') implies not self.effectiveTime.high.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_im8OkLTBEeWEoeeTdrbyVw" name="AllergyProblemActTemplateId" constrainedElement="_2EAisBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_im8OkbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.30')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_inBHELTBEeWEoeeTdrbyVw" name="AllergyProblemActClassCode" constrainedElement="_2ELh0RSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_inBHEbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_inDjULTBEeWEoeeTdrbyVw" name="AllergyProblemActMoodCode" constrainedElement="_2EMI4BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_inDjUbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_inF_kLTBEeWEoeeTdrbyVw" name="AllergyProblemActId" constrainedElement="_2EMv8BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_inF_kbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.id->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_inJC4LTBEeWEoeeTdrbyVw" name="AllergyProblemActCode" constrainedElement="_2EMv9BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_inJC4bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_inscgLTBEeWEoeeTdrbyVw" name="AllergyProblemActStatusCodeP" constrainedElement="_2ENXABSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_inscgbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_inMGMLTBEeWEoeeTdrbyVw" name="AllergyProblemActStatusCode" constrainedElement="_2ENXABSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_inMGMbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'active' or value.code = 'suspended' or value.code = 'aborted' or value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ioRrULTBEeWEoeeTdrbyVw" name="AllergyProblemActEffectiveTime" constrainedElement="_2EPMMBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioRrUbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.effectiveTime.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_mnB_4LTBEeWEoeeTdrbyVw" name="AllergyProblemActEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wpThoLS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mnB_4bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::AllergyProblemAct::AllergyObservationEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2GDKExSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2ELh0RSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2ELh0hSVEeGGzu7fmW9pXw" name="ACT">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYUDcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EMI4BSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2EMI4RSVEeGGzu7fmW9pXw" name="EVN">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EMv8BSVEeGGzu7fmW9pXw" name="id" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EMv8hSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EMv8RSVEeGGzu7fmW9pXw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EMv9BSVEeGGzu7fmW9pXw" name="code" visibility="private" type="_3a3swMSzEeOJR7uiM6mfhA" isReadOnly="true"/>
+    <ownedAttribute xmi:id="_2ENXABSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedComment xmi:id="_2ENXARSVEeGGzu7fmW9pXw">
+        <body>&lt;p>&#xD;
+The statusCode associated with any concern must be one of the following values:&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+&lt;b>active&lt;/b>: A concern that is still being tracked.&#xD;
+&lt;b>suspended&lt;/b>: A concern that is active, but which may be set aside. For example, this value might be used to suspend concern&#xD;
+about a patient problem after some period of remission, but before assumption that the concern has been resolved.&#xD;
+&lt;b>aborted&lt;/b>: A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved.&#xD;
+This value might be used to mark a concern as being aborted after a patient leaves care against medical advice.&#xD;
+&lt;b>completed&lt;/b>:&#xD;
+The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for&#xD;
+historical purposes.&#xD;
+&lt;/p></body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ENXAxSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2ENXAhSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2EPMMBSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedComment xmi:id="_2EPMMRSVEeGGzu7fmW9pXw">
+        <body>The effectiveTime element records the starting and ending times during which the concern was active.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EPMMxSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EPMMhSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wpUIsLS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wpPQMLS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wpUvwLS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wpUvwbS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wpThoLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_3a3swMSzEeOJR7uiM6mfhA" name="CD">
+      <ownedComment xmi:id="_bwC3wMTwEeOPmPJ_yoTVzg">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_pSm8IMS0EeOJR7uiM6mfhA" name="AllergyProblemActCDCodeAndCodeSystemValues" constrainedElement="_3a3swMSzEeOJR7uiM6mfhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_3cPwUMS0EeOJR7uiM6mfhA">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>/@code SHALL=&quot;CONC&quot; Concern (CodeSystem: HL7ActClass 2.16.840.1.113883.5.6) or code/@code SHALL=&quot;48765-2&quot; Allergies, adverse reactions, alerts (CodeSystem: LOINC 2.16.840.1.113883.6.1 STATIC)</body>
+          <body>(code = 'CONC' and codeSystem = '2.16.840.1.113883.5.6') or (code = '48765-2' and codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ioUuoLTBEeWEoeeTdrbyVw" name="AllergyProblemActCDCode" constrainedElement="_AstrkMS0EeOJR7uiM6mfhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioUuobTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body> ( self.isNullFlavorUndefined() implies (not self.code.oclIsUndefined() ))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ioXK4LTBEeWEoeeTdrbyVw" name="AllergyProblemActCDCodeSystem" constrainedElement="_AsuSoMS0EeOJR7uiM6mfhA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioXK4bTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body> ( self.isNullFlavorUndefined() implies (not self.codeSystem.oclIsUndefined() ))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_3a3swcSzEeOJR7uiM6mfhA">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_AstrkMS0EeOJR7uiM6mfhA" name="code" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CuU-AMS0EeOJR7uiM6mfhA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CuUW8MS0EeOJR7uiM6mfhA" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_AsuSoMS0EeOJR7uiM6mfhA" name="codeSystem" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DnjsEcS0EeOJR7uiM6mfhA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DnjsEMS0EeOJR7uiM6mfhA" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_3fx3ADxkEd6JwqSGecoePg"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wpPQMLS3EeWpm8PSOGz-9g" name="AllergyObservationEntryRelationship">
+      <ownedRule xmi:id="_mnxmwLTBEeWEoeeTdrbyVw" name="AllergyProblemActAllergyObservationEntryRelationshipAllergyObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wpXMALS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_mnxmwbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wpPQMbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wpXMAbS3EeWpm8PSOGz-9g" name="allergyObservation" type="_2EaLUBSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wpXMArS3EeWpm8PSOGz-9g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wpXzELS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wpXMALS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_2F6nMBSVEeGGzu7fmW9pXw" memberEnd="_2F6nMRSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2F6nMRSVEeGGzu7fmW9pXw" type="_2EAisBSVEeGGzu7fmW9pXw" isReadOnly="true" association="_2F6nMBSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_09uuIBnaEeGs5a462vYX5Q" base_Class="_2EAisBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.30">
+    <ruleId>CONF:7471</ruleId>
+    <ruleId>CONF:10489</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2F7OQhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7509</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2F71UBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7915</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2F-RkhSVEeGGzu7fmW9pXw" base_Constraint="_2F-RkBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:10085</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2F-4oxSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2F_fsBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2F_ftRSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2GAGwhSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EBw0BSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2ECX4BSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EC-8RSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EDmABSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EENEBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EE0IBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EE0IRSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EFbMBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EGCQBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2EGpUBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EIegBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EJFkBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EJsoBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2EKTsBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:PropertyValidation xmi:id="_2ELh0xSVEeGGzu7fmW9pXw" base_Property="_2ELh0RSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7469</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2EMI4hSVEeGGzu7fmW9pXw" base_Property="_2EMI4BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7470</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2EMv8xSVEeGGzu7fmW9pXw" base_Property="_2EMv8BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7472</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_2EN-ERSVEeGGzu7fmW9pXw" base_Property="_2ENXABSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7485</ruleId>
+    <reference href="../consol-vocab.uml#_2GDxJhSVEeGGzu7fmW9pXw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_2EPMNBSVEeGGzu7fmW9pXw" base_Property="_2EPMMBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7498</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:EntryRelationship xmi:id="_2F6nMhSVEeGGzu7fmW9pXw" base_Association="_2F6nMBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
+    <ruleId>CONF:7509</ruleId>
+    <ruleId>CONF:7915</ruleId>
+    <ruleId>CONF:14925</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Class xmi:id="_2FGu4hSVEeGGzu7fmW9pXw" name="SeverityObservation">
+    <ownedComment xmi:id="_2FGu4xSVEeGGzu7fmW9pXw" annotatedElement="_2FGu4hSVEeGGzu7fmW9pXw">
+      <body>This clinical statement represents the gravity of the problem, such as allergy or reaction, in terms of its actual or potential impact on the patient. The Severity Observation can be associated with an Allergy Obervation, Reaction Observation or both. When the Severity Observation is associated directly with an Allergy it characterizes the Allergy. When the Severity Observation is associated with a Reaction Observation it characterizes a Reaction. A person may manifest many symptoms in a reaction to a single substance, and each reaction to the substance can be represented. However, each reaction observation can have only one severity observation associated with it. For example, someone may have a rash reaction observation as well as an itching reaction observation, but each can have only one level of severity</body>
+    </ownedComment>
+    <ownedRule xmi:id="_sBN0ECK3EeG9m6LRl9ardQ" name="SeverityObservationTextReference" constrainedElement="_2FGu4hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_wsR1ACK3EeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>text, if present, SHOULD contain zero or one [0..1] reference</body>
+        <body>not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_wNrf4OJWEeG3cO7ebC3QuA" name="SeverityObservationTextReferenceValue" constrainedElement="_sBN0ECK3EeG9m6LRl9ardQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ztTocOJWEeG3cO7ebC3QuA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference, if present, SHOULD contain zero or one [0..1] @value</body>
+        <body>self.text->forAll(reference->size() = 1) implies self.text->forAll(reference->one(value->size() = 1))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_0IXhYCK3EeG9m6LRl9ardQ" name="SeverityObservationReferenceValue" constrainedElement="_2FGu4hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3NEBcCK3EeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iu2NYLTBEeWEoeeTdrbyVw" name="SeverityObservationTemplateId" constrainedElement="_2FGu4hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iu2NYbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.8')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iu8UALTBEeWEoeeTdrbyVw" name="SeverityObservationClassCode" constrainedElement="_2FKZQRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iu8UAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::ActClassObservation::OBS</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iu-wQLTBEeWEoeeTdrbyVw" name="SeverityObservationMoodCode" constrainedElement="_2FLAUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iu-wQbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ivDBsLTBEeWEoeeTdrbyVw" name="SeverityObservationCodeP" constrainedElement="_2FLAUxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ivDBsbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ivAlcLTBEeWEoeeTdrbyVw" name="SeverityObservationCode" constrainedElement="_2FLAUxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ivAlcbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'SEV' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ivGFALTBEeWEoeeTdrbyVw" name="SeverityObservationText" constrainedElement="_2FGu5xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ivGFAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ivOA0LTBEeWEoeeTdrbyVw" name="SeverityObservationStatusCodeP" constrainedElement="_2FM1gBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ivOA0bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ivJvYLTBEeWEoeeTdrbyVw" name="SeverityObservationStatusCode" constrainedElement="_2FM1gBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ivKWcLTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iv2S8LTBEeWEoeeTdrbyVw" name="SeverityObservationValueP" constrainedElement="_2FGu6hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iv2S8bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ivS5ULTBEeWEoeeTdrbyVw" name="SeverityObservationValue" constrainedElement="_2FGu6hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ivS5UbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '255604002' or value.code = '371923003' or value.code = '6736007' or value.code = '371924009' or value.code = '24484000' or value.code = '399166001'))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2FODoBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2FKZQRSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2FKZQhSVEeGGzu7fmW9pXw" value="OBS"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FLAUBSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2FLAURSVEeGGzu7fmW9pXw" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FLAUxSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FGu5xSVEeGGzu7fmW9pXw" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rsy1gSKyEeG9m6LRl9ardQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rsy1gCKyEeG9m6LRl9ardQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FM1gBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FGu6hSVEeGGzu7fmW9pXw" name="value" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_cAAIcBneEeGs5a462vYX5Q" base_Class="_2FGu4hSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.8">
+    <ruleId>CONF:7347</ruleId>
+    <ruleId>CONF:10525</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2FJyMBSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2FKZQxSVEeGGzu7fmW9pXw" base_Property="_2FKZQRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7345</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2FLAUhSVEeGGzu7fmW9pXw" base_Property="_2FLAUBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7346</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2FLnYBSVEeGGzu7fmW9pXw" code="SEV" displayName="Severity observation" base_Property="_2FLAUxSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7349</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_2FHV8BSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FGu5xSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7350</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_2FM1gRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FM1gBSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7352</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Class xmi:id="_2E_aIRSVEeGGzu7fmW9pXw" name="ReactionObservation">
+    <ownedComment xmi:id="_j3HUIBraEeGo461UQq-B1g">
+      <body>This clinical statement represents an undesired symptom, finding, etc., due to an administered or exposed substance. A reaction can be defined with respect to its severity, and can have been treated by one or more interventions.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_gBlYICKdEeG9m6LRl9ardQ" name="ReactionObservationTextReference" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_sG9OgCKdEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>text, if present, SHOULD contain zero or one [0..1] reference</body>
+        <body>not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_l-kdAOJVEeG3cO7ebC3QuA" name="ReactionObservationTextReferenceValue" constrainedElement="_gBlYICKdEeG9m6LRl9ardQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qB5IgOJVEeG3cO7ebC3QuA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference, if present, SHOULD contain zero or one [0..1] @value</body>
+        <body>self.text->forAll(reference->size() = 1) implies self.text->forAll(reference->one(value->size() = 1))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_0eDcUCKdEeG9m6LRl9ardQ" name="ReactionObservationReferenceValue" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3rGAECKdEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_1SPc4CKeEeG9m6LRl9ardQ" name="ReactionObservationEffectiveTimeLow" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_7fXGcCKeEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>effectiveTime, if present, SHOULD contain zero or one [0..1] low</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.low.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_3qPPACKeEeG9m6LRl9ardQ" name="ReactionObservationEffectiveTimeHigh" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_8rNOgCKeEeG9m6LRl9ardQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>effectiveTime, if present, SHOULD contain zero or one [0..1] high</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.high.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jm2UICYKEeGWfpmyutaqOA" name="ReactionObservationSeverityObservationInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qNTDsCYKEeGWfpmyutaqOA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Severity Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; TRUE</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_IvIIQBrcEeGo461UQq-B1g" name="ReactionObservationProcedureActivityProcedureInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XcWKoBrcEeGo461UQq-B1g">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry ProcedureActivityProcedure SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True(CONF:7343).</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.procedure.oclIsTypeOf(consol::ProcedureActivityProcedure))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_P3TE0BrcEeGo461UQq-B1g" name="ReactionObservationMedicationActivityInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_U-Q-oBrcEeGo461UQq-B1g">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry MedicationActivity SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True.</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.substanceAdministration.oclIsTypeOf(consol::MedicationActivity))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ispN8LTBEeWEoeeTdrbyVw" name="ReactionObservationTemplateId" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ispN8bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.9')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iszmALTBEeWEoeeTdrbyVw" name="ReactionObservationClassCode" constrainedElement="_2FAoQBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iszmAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::ActClassObservation::OBS</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_is2CQLTBEeWEoeeTdrbyVw" name="ReactionObservationMoodCode" constrainedElement="_2FAoQhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_is2CQbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_is33cLTBEeWEoeeTdrbyVw" name="ReactionObservationId" constrainedElement="_2FBPUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_is33cbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.id->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_is5soLTBEeWEoeeTdrbyVw" name="ReactionObservationCode" constrainedElement="_2FBPVRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_is6TsLTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_is7h0LTBEeWEoeeTdrbyVw" name="ReactionObservationText" constrainedElement="_2FDEgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_is7h0bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_itMnkLTBEeWEoeeTdrbyVw" name="ReactionObservationStatusCodeP" constrainedElement="_2FDrkRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_itMnkbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_itDdoLTBEeWEoeeTdrbyVw" name="ReactionObservationStatusCode" constrainedElement="_2FDrkRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_itDdobTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_itSHILTBEeWEoeeTdrbyVw" name="ReactionObservationEffectiveTime" constrainedElement="_2FE5sBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_itSHIbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iuC8ILTBEeWEoeeTdrbyVw" name="ReactionObservationValueP" constrainedElement="_2FFgwRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iuC8IbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_itXmsLTBEeWEoeeTdrbyVw" name="ReactionObservationValue" constrainedElement="_2FFgwRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_itXmsbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_mtLrMLTBEeWEoeeTdrbyVw" name="ReactionObservationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wprVELS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mtLrMbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ReactionObservation::SeverityObservationEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_muwYgLTBEeWEoeeTdrbyVw" name="ReactionObservationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wpuYYbS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_muwYgbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ReactionObservation::ProcedureActivityProcedureEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_mwPmQLTBEeWEoeeTdrbyVw" name="ReactionObservationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wpyp0LS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mwPmQbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ReactionObservation::MedicationActivityEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2FwPIhSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2FAoQBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2FAoQRSVEeGGzu7fmW9pXw" name="OBS">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FAoQhSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_vhOLMNchEeGfQ6frO0B-Jg" value="EVN"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FBPUBSVEeGGzu7fmW9pXw" name="id" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ky9dsRrbEeGo461UQq-B1g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ky9dsBrbEeGo461UQq-B1g" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FBPVRSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FDEgBSVEeGGzu7fmW9pXw" name="text" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZBorQSIgEeG9m6LRl9ardQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZBorQCIgEeG9m6LRl9ardQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FDrkRSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FE5sBSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ohOT0SIiEeG9m6LRl9ardQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ohOT0CIiEeG9m6LRl9ardQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FFgwRSVEeGGzu7fmW9pXw" name="value" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wprVEbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wpqG8LS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wprVErS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wprVE7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wprVELS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wpuYYrS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wptxULS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wpuYY7S3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wpu_cLS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wpuYYbS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wpyp0bS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wpyCwLS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wpyp0rS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wpyp07S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wpyp0LS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wpqG8LS3EeWpm8PSOGz-9g" name="SeverityObservationEntryRelationship">
+      <ownedRule xmi:id="_mt9HQLTBEeWEoeeTdrbyVw" name="ReactionObservationSeverityObservationEntryRelationshipSeverityObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wpsjMLS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_mt9HQbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->size() &lt;= 1</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wpqG8bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wpsjMbS3EeWpm8PSOGz-9g" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wpsjMrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wpsjM7S3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wpsjMLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wptxULS3EeWpm8PSOGz-9g" name="ProcedureActivityProcedureEntryRelationship">
+      <ownedRule xmi:id="_mvf_YLTBEeWEoeeTdrbyVw" name="ReactionObservationProcedureActivityProcedureEntryRelationshipProcedureActivityProcedure">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wpvmgLS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_mvf_YbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.procedure->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wptxUbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wpvmgbS3EeWpm8PSOGz-9g" name="procedureActivityProcedure" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-procedures.uml#_2OG58RSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wpvmgrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wpvmg7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_MpocMUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wpvmgLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wpyCwLS3EeWpm8PSOGz-9g" name="MedicationActivityEntryRelationship">
+      <ownedRule xmi:id="_mxPr0LTBEeWEoeeTdrbyVw" name="ReactionObservationMedicationActivityEntryRelationshipMedicationActivity">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wpz38LS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_mxPr0bTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.substanceAdministration->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wpyCwbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wpz38bS3EeWpm8PSOGz-9g" name="medicationActivity" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wpz38rS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wpz387S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Px50sUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wpz38LS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_2FRG8RSVEeGGzu7fmW9pXw" memberEnd="_2FRG8hSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2FRG8hSVEeGGzu7fmW9pXw" type="_2E_aIRSVEeGGzu7fmW9pXw" isReadOnly="true" association="_2FRG8RSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_kdmRwBncEeGs5a462vYX5Q" base_Class="_2E_aIRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.9">
+    <ruleId>CONF:7323</ruleId>
+    <ruleId>CONF:10523</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2FvBAxSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2FvoEhSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2FAoRBSVEeGGzu7fmW9pXw" base_Property="_2FAoQhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7326</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2FBPVBSVEeGGzu7fmW9pXw" base_Property="_2FBPUBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7329</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2FB2YBSVEeGGzu7fmW9pXw" base_Property="_2FBPVRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:16851</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2FDrkBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FDEgBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7330</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2FDrkhSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FDrkRSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7328</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_2FFgwBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FE5sBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7332</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_lYTaEBraEeGo461UQq-B1g" base_Property="_2FAoQBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7325</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:EntryRelationship xmi:id="_bF9LEBrbEeGo461UQq-B1g" severity="WARNING" base_Association="_2FRG8RSVEeGGzu7fmW9pXw" typeCode="SUBJ">
+    <ruleId>CONF:7580</ruleId>
+    <ruleId>CONF:7581</ruleId>
+    <ruleId>CONF:15922</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:CodeSystemConstraint xmi:id="_KuCXYBwNEeGlALrr33gUJg" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_bGzYihVdEeGQCvUGzi1kDQ">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15346</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_skqTkBwNEeGlALrr33gUJg" base_Property="_bGzYixVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:7802</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_2GICwBwNEeGlALrr33gUJg" base_Property="_bGzYjBVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:7803</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="__eoqQBwNEeGlALrr33gUJg" severity="WARNING">
+    <ruleId>CONF:7805</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_kWt0YBxSEeGGdsHVD60BZA" base_Property="_2Em_oBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7379</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_eWhS0B0eEeGGdsHVD60BZA" base_Property="_2EaLdhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7390</ruleId>
+    <ruleId>CONF:9139</ruleId>
+    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
+  </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_lqJOQh0aEeGGdsHVD60BZA" memberEnd="_lqJOQx0aEeGGdsHVD60BZA">
+    <ownedEnd xmi:id="_lqJOQx0aEeGGdsHVD60BZA" type="_bGzYgBVdEeGQCvUGzi1kDQ" isReadOnly="true" association="_lqJOQh0aEeGGdsHVD60BZA"/>
+  </uml:Association>
+  <uml:Class xmi:id="_2FRuAhSVEeGGzu7fmW9pXw" name="AllergyStatusObservation">
+    <ownedComment xmi:id="_2FRuAxSVEeGGzu7fmW9pXw" annotatedElement="_2FRuAhSVEeGGzu7fmW9pXw">
+      <body>This template represents the status of the allergy indicating whether it is active, no longer active, or is an historic allergy. There can be only one allergy status observation per alert observation.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_iwXQULTBEeWEoeeTdrbyVw" name="AllergyStatusObservationTemplateId" constrainedElement="_2FRuAhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iwXQUbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.28')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iwZskLTBEeWEoeeTdrbyVw" name="AllergyStatusObservationClassCode" constrainedElement="_2FV_cBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iwaToLTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::ActClassObservation::OBS</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iwcI0LTBEeWEoeeTdrbyVw" name="AllergyStatusObservationMoodCode" constrainedElement="_2FV_cxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iwcI0bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iwhBULTBEeWEoeeTdrbyVw" name="AllergyStatusObservationCodeP" constrainedElement="_2FWmgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iwhBUbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iwelELTBEeWEoeeTdrbyVw" name="AllergyStatusObservationCode" constrainedElement="_2FWmgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iwelEbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '33999-4' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iwnvALTBEeWEoeeTdrbyVw" name="AllergyStatusObservationStatusCodeP" constrainedElement="_2FX0oBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iwnvAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iwlSwLTBEeWEoeeTdrbyVw" name="AllergyStatusObservationStatusCode" constrainedElement="_2FX0oBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iwlSwbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ixkKMLTBEeWEoeeTdrbyVw" name="AllergyStatusObservationValueP" constrainedElement="_2FRuChSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ixkxQLTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iwrZYLTBEeWEoeeTdrbyVw" name="AllergyStatusObservationValue" constrainedElement="_2FRuChSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iwrZYbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '55561003' or value.code = '73425007' or value.code = '413322009'))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2FbfABSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2FV_cBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2FV_cRSVEeGGzu7fmW9pXw" name="OBS">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yVdkkDcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FV_cxSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2FV_dBSVEeGGzu7fmW9pXw" name="EVN">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FWmgBSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FX0oBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2FRuChSVEeGGzu7fmW9pXw" name="value" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_52DvABnaEeGs5a462vYX5Q" base_Class="_2FRuAhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.28">
+    <ruleId>CONF:7317</ruleId>
+    <ruleId>CONF:10490</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2FUxUBSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2FV_chSVEeGGzu7fmW9pXw" base_Property="_2FV_cBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7318</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2FV_dRSVEeGGzu7fmW9pXw" base_Property="_2FV_cxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7319</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2FWmgRSVEeGGzu7fmW9pXw" code="33999-4" displayName="Status" base_Property="_2FWmgBSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7320</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_2FS8IBSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_2FX0oRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2FX0oBSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7321</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_2FTjMRSVEeGGzu7fmW9pXw" base_Property="_2FRuChSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7322</ruleId>
+    <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:AssociationValidation xmi:id="_i7X6oCAqEeGq2sn1dgvG_g" severity="WARNING" base_Association="_lqJOQh0aEeGGdsHVD60BZA">
+    <ruleId>CONF:7804</ruleId>
+    <ruleId>CONF:7805</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:TextValue xmi:id="_iecvoCCOEeGq2sn1dgvG_g"/>
+  <CDA:ConstraintValidation xmi:id="_0KsogCFKEeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_ouJssCFKEeG9m6LRl9ardQ">
+    <ruleId>CONF:7422</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_mSUG8CFLEeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_cf38gCFLEeG9m6LRl9ardQ">
+    <ruleId>CONF:15949</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_xUgzoCFMEeG9m6LRl9ardQ" base_Constraint="_nV_8ECFMEeG9m6LRl9ardQ">
+    <ruleId>CONF:15951</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:EntryRelationship xmi:id="_gj6AYCFQEeG9m6LRl9ardQ" severity="INFO" base_Association="_-xkhwhUvEeGbmN_W114JUw" typeCode="SUBJ">
+    <ruleId>CONF:7440</ruleId>
+    <ruleId>CONF:7906</ruleId>
+    <ruleId>CONF:15954</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ActRelationship xmi:id="_5HFbQCFQEeG9m6LRl9ardQ" base_Association="_-xkhwhUvEeGbmN_W114JUw"/>
+  <CDA:ConstraintValidation xmi:id="_UHQ8sCFUEeG9m6LRl9ardQ" base_Constraint="_8gb1UCFTEeG9m6LRl9ardQ">
+    <ruleId>CONF:7446</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_mLLYoCFVEeG9m6LRl9ardQ" base_Constraint="_VBabUCFVEeG9m6LRl9ardQ">
+    <ruleId>CONF:7449</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ActRelationship xmi:id="_J-iHQCFWEeG9m6LRl9ardQ" base_Association="_2EkjYBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_kAPmECKdEeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_gBlYICKdEeG9m6LRl9ardQ">
+    <ruleId>CONF:15917</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_5EW5ECKdEeG9m6LRl9ardQ" base_Constraint="_0eDcUCKdEeG9m6LRl9ardQ">
+    <ruleId>CONF:15919</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_DpWFUCKfEeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_3qPPACKeEeG9m6LRl9ardQ">
+    <ruleId>CONF:7334</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_ICYiICKfEeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_1SPc4CKeEeG9m6LRl9ardQ">
+    <ruleId>CONF:7333</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_R4ulECKzEeG9m6LRl9ardQ" severity="WARNING">
+    <ruleId>CONF:9117</ruleId>
+    <ruleId>CONF:9118</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_xKFLUCK3EeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_sBN0ECK3EeG9m6LRl9ardQ">
+    <ruleId>CONF:15928</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_3ucQMCK3EeG9m6LRl9ardQ" base_Constraint="_0IXhYCK3EeG9m6LRl9ardQ">
+    <ruleId>CONF:15930</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_gBGW4CWFEeGWfpmyutaqOA" base_Constraint="_L5MNcCWFEeGWfpmyutaqOA">
+    <ruleId>CONF:7504</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_rgdFYCWhEeGWfpmyutaqOA">
+    <ruleId>CONF:7421</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_lGdg0CXKEeGWfpmyutaqOA">
+    <ruleId>CONF:10083</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_7ZihUCXKEeGWfpmyutaqOA">
+    <ruleId>CONF:10084</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_oGz9UCXTEeGWfpmyutaqOA" severity="WARNING">
+    <ruleId>CONF:7424</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_BI13YCXUEeGWfpmyutaqOA" severity="WARNING">
+    <ruleId>CONF:7425</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_XNKqMCXUEeGWfpmyutaqOA">
+    <ruleId>CONF:7426</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_BSGroCXVEeGWfpmyutaqOA" severity="INFO">
+    <ruleId>CONF:7431</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_r9M7ECYKEeGWfpmyutaqOA" base_Constraint="_jm2UICYKEeGWfpmyutaqOA">
+    <ruleId>CONF:10375</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_LPerMCYLEeGWfpmyutaqOA" base_Constraint="_IvIIQBrcEeGo461UQq-B1g">
+    <ruleId>CONF:7343</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_eqOzsCYLEeGWfpmyutaqOA"/>
+  <CDA:ConstraintValidation xmi:id="_QuussCYMEeGWfpmyutaqOA" base_Constraint="_P3TE0BrcEeGo461UQq-B1g">
+    <ruleId>CONF:7344</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_kTFLMCYOEeGWfpmyutaqOA" severity="WARNING">
+    <ruleId>CONF:9118</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ValueSetConstraint xmi:id="_vj2U0CYOEeGWfpmyutaqOA">
+    <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_q-cRgCZyEeGtVbZZHlmnzA" base_Property="_2FGu6hSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7356</ruleId>
+    <reference href="../consol-vocab.uml#_cOR30CXNEeGnSfJ2zNllag"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="__uvHMCnAEeGHDN_aHIiN8Q" severity="WARNING">
+    <ruleId>CONF:9117</ruleId>
+    <ruleId>CONF:9118</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_DrnMcCnBEeGHDN_aHIiN8Q">
+    <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_AIIMsCnDEeGHDN_aHIiN8Q" severity="WARNING">
+    <ruleId>CONF:9117</ruleId>
+    <ruleId>CONF:16038</ruleId>
+    <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ActRelationship xmi:id="_whZe4Cx0EeG6iqE9PBsDjg" base_Association="_2FRG8RSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_j6I_oCzFEeG6iqE9PBsDjg" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7335</ruleId>
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_bVJRwDJBEeG6R8Pb5FT2Ow" code="CSM" displayName="Consumable" base_Property="_098tYDJAEeG6R8Pb5FT2Ow">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_Z0Bk4E6SEeC5ttwajeXVXg"/>
+    <ruleId>CONF:7403</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_j-UHADJBEeG6R8Pb5FT2Ow" code="MANU" displayName="Manufactured Product" base_Property="_6LgXYDJAEeG6R8Pb5FT2Ow">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
+    <ruleId>CONF:7405</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_96euEDJBEeG6R8Pb5FT2Ow" base_Property="_F56fQDJBEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:7407</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_M0Hb0DJCEeG6R8Pb5FT2Ow" base_Property="_KmLkoDJCEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:7419</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_pb9mADJCEeG6R8Pb5FT2Ow" base_Constraint="_c0knsDJCEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:15953</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_uwgBwDJCEeG6R8Pb5FT2Ow" severity="WARNING" base_Constraint="_aK9hIDJCEeG6R8Pb5FT2Ow">
+    <ruleId>CONF:7425</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_Oi4gMjJBEeG6R8Pb5FT2Ow" memberEnd="_Oi4gMDJBEeG6R8Pb5FT2Ow _Oi4gMzJBEeG6R8Pb5FT2Ow">
+    <ownedEnd xmi:id="_Oi4gMzJBEeG6R8Pb5FT2Ow" type="_0HgNkDJAEeG6R8Pb5FT2Ow" isReadOnly="true" association="_Oi4gMjJBEeG6R8Pb5FT2Ow"/>
+  </uml:Association>
+  <uml:Association xmi:id="_QPyG4jJBEeG6R8Pb5FT2Ow" memberEnd="_QPyG4DJBEeG6R8Pb5FT2Ow _QPyG4zJBEeG6R8Pb5FT2Ow">
+    <ownedEnd xmi:id="_QPyG4zJBEeG6R8Pb5FT2Ow" type="_4Lj44DJAEeG6R8Pb5FT2Ow" isReadOnly="true" association="_QPyG4jJBEeG6R8Pb5FT2Ow"/>
+  </uml:Association>
+  <uml:Association xmi:id="_FQD_EjJDEeG6R8Pb5FT2Ow" memberEnd="_FQD_EDJDEeG6R8Pb5FT2Ow _FQD_EzJDEeG6R8Pb5FT2Ow">
+    <ownedEnd xmi:id="_FQD_EzJDEeG6R8Pb5FT2Ow" type="_2EaLUBSVEeGGzu7fmW9pXw" isReadOnly="true" association="_FQD_EjJDEeG6R8Pb5FT2Ow"/>
+  </uml:Association>
+  <CDA:PropertyValidation xmi:id="_lqjE4OJBEeG3cO7ebC3QuA" base_Property="_bGzYihVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:15345</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_cdsB0OJDEeG3cO7ebC3QuA" base_Property="_2LN98BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15349</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Gt6FMOJPEeG3cO7ebC3QuA" base_Property="_2EaLdBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15947</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_fXgRIOJPEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_bTC9MOJPEeG3cO7ebC3QuA">
+    <ruleId>CONF:15950</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_kop6UOJSEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_WQI8oOJSEeG3cO7ebC3QuA">
+    <ruleId>CONF:15952</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_q_Ja8OJVEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_l-kdAOJVEeG3cO7ebC3QuA">
+    <ruleId>CONF:15918</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_0mkLsOJWEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_wNrf4OJWEeG3cO7ebC3QuA">
+    <ruleId>CONF:15929</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_rRzCIMSzEeOJR7uiM6mfhA" base_Property="_2EMv9BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:NEW</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_CNC14MS0EeOJR7uiM6mfhA" base_Property="_AstrkMS0EeOJR7uiM6mfhA">
+    <ruleId>CONF:NEW</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_D4OlUMS0EeOJR7uiM6mfhA" base_Property="_AsuSoMS0EeOJR7uiM6mfhA">
+    <ruleId>CONF:NEW</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_X24PoMS1EeOJR7uiM6mfhA" base_Constraint="_pSm8IMS0EeOJR7uiM6mfhA">
+    <ruleId>CONF:NEW</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_y7aSAM_vEeO3jtTGrg8s3Q" name="SubstanceOrDeviceAllergyObservation">
+    <ownedComment xmi:id="_3CRkQM_wEeO3jtTGrg8s3Q">
+      <body>This clinical statement represents that an allergy or adverse reaction to a substance or device exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a participant in the observation.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_ma6aUM_5EeO3jtTGrg8s3Q" name="SubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator" constrainedElement="_y7aSAM_vEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_xlnYMM_5EeO3jtTGrg8s3Q">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Allergy Status Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::AllergyStatusObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iK3E8M_6EeO3jtTGrg8s3Q" name="SubstanceOrDeviceAllergyObservationReactionInversionIndicator" constrainedElement="_y7aSAM_vEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_nJPDcM_6EeO3jtTGrg8s3Q">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Reaction Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::ReactionObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_n5Q8wM_7EeO3jtTGrg8s3Q" name="SubstanceOrDeviceAllergyObservationSeverityInversionIndicator" constrainedElement="_y7aSAM_vEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_sMSRIM_7EeO3jtTGrg8s3Q">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Severity Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_metxYLTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationTemplateId" constrainedElement="_y7aSAM_vEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_meuYcLTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.24.3.90')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_mexbwLTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationClassCode" constrainedElement="_X9k9IM_wEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mexbwbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::ActClassObservation::OBS</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_mezQ8LTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationMoodCode" constrainedElement="_X9mLQM_wEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mezQ8bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_me0fELTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationId" constrainedElement="_X9lkM8_wEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_me0fEbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.id->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_me4wgLTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationCodeP" constrainedElement="_X9k9Ic_wEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_me4wgbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_me2UQLTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationCode" constrainedElement="_X9k9Ic_wEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_me2UQbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_me8a4LTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationStatusCode" constrainedElement="_X9mLQc_wEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_me8a4bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_me-3ILTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationStatusCodeP" constrainedElement="_X9mLQc_wEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_me-3IbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_mfAsULTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationEffectiveTime" constrainedElement="_X9lkMM_wEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mfAsUbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.effectiveTime.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_mfDvoLTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationValue" constrainedElement="_X9myUM_wEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mfDvobTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or value.code = '418038007' or value.code = '419511003' or value.code = '418471000' or value.code = '419199007' or value.code = '416098002' or value.code = '414285001' or value.code = '59037007' or value.code = '235719002' or value.code = '232347008' or value.code = '426232007'))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_mfemYLTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationValueP" constrainedElement="_X9myUM_wEeO3jtTGrg8s3Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mfemYbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_mgFDULTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipant" constrainedElement="_UIuiUNB7EeOoYJpPV2Fz0g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_mgFDUbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->size() >= 0</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_t8IlMLTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_w2K48LS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_t8IlMbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation::AllergyStatusObservationEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_t9rdULTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_w2MuIbS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_t9rdUbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation::ReactionObservationEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_t_Sm4LTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_w2PKYLS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_t_Sm4bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation::SeverityObservationEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_y7a5EM_vEeO3jtTGrg8s3Q">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_X9k9IM_wEeO3jtTGrg8s3Q" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_v-b4oM_xEeO3jtTGrg8s3Q" value="OBS"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_X9mLQM_wEeO3jtTGrg8s3Q" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2dOhAM_xEeO3jtTGrg8s3Q" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_X9lkM8_wEeO3jtTGrg8s3Q" name="id" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cFk30c_xEeO3jtTGrg8s3Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cFk30M_xEeO3jtTGrg8s3Q" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_X9k9Ic_wEeO3jtTGrg8s3Q" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_X9mLQc_wEeO3jtTGrg8s3Q" name="statusCode" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ctyHUM_xEeO3jtTGrg8s3Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ctxgQM_xEeO3jtTGrg8s3Q" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_X9lkMM_wEeO3jtTGrg8s3Q" name="effectiveTime" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dOC7wc_xEeO3jtTGrg8s3Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dOC7wM_xEeO3jtTGrg8s3Q" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_X9myUM_wEeO3jtTGrg8s3Q" name="value" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d9TOcc_xEeO3jtTGrg8s3Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d9TOcM_xEeO3jtTGrg8s3Q" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_UIq38NB7EeOoYJpPV2Fz0g" name="participant" type="_HOhgQNB8EeOoYJpPV2Fz0g" isReadOnly="true" association="_UIuiUNB7EeOoYJpPV2Fz0g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UItUMNB7EeOoYJpPV2Fz0g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UIt7QNB7EeOoYJpPV2Fz0g" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_w2K48bS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w2KR4LS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w2K48rS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w2K487S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w2K48LS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_w2MuIrS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w2MHEbS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w2NVMLS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w2NVMbS3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w2MuIbS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_w2PKYbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_w2OjULS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w2PKYrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w2PKY7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_w2PKYLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_HOhgQNB8EeOoYJpPV2Fz0g" name="Participant">
+      <ownedComment xmi:id="_jkiE0NCCEeOoYJpPV2Fz0g">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_mf4PAbTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantTypeCode" constrainedElement="_gjVMYNB8EeOoYJpPV2Fz0g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_mf4PArTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.typeCode=vocab::ParticipationType::CSM</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_mg0qMLTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRole" constrainedElement="_8dbYYNB_EeOoYJpPV2Fz0g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_mg0qMbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation::Participant::ParticipantRole))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_HOiHUNB8EeOoYJpPV2Fz0g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_gjVMYNB8EeOoYJpPV2Fz0g" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_OeUncNB_EeOoYJpPV2Fz0g" value="CSM"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_8daKQNB_EeOoYJpPV2Fz0g" name="participantRole" type="_ZQbCoNCAEeOoYJpPV2Fz0g" isReadOnly="true" association="_8dbYYNB_EeOoYJpPV2Fz0g">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-feIodB_EeOoYJpPV2Fz0g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-feIoNB_EeOoYJpPV2Fz0g" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_ZQbCoNCAEeOoYJpPV2Fz0g" name="ParticipantRole">
+        <ownedRule xmi:id="_mf6rQLTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRoleClassCode" constrainedElement="_b3nuYNCAEeOoYJpPV2Fz0g">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_mf6rQbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>isDefined('classCode') and self.classCode=vocab::RoleClassRoot::MANU</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_mhkRELTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity" constrainedElement="_BXqBQNCBEeOoYJpPV2Fz0g">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_mhkREbTBEeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>self.playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation::Participant::ParticipantRole::PlayingEntity))</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_ZQbpsNCAEeOoYJpPV2Fz0g">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_b3nuYNCAEeOoYJpPV2Fz0g" name="classCode" visibility="private" isReadOnly="true">
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kzKtENCAEeOoYJpPV2Fz0g" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kzKGANCAEeOoYJpPV2Fz0g" value="1"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_f0fMkNCAEeOoYJpPV2Fz0g" value="MANU"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_BXpaMNCBEeOoYJpPV2Fz0g" name="playingEntity" type="_HnN60NCBEeOoYJpPV2Fz0g" isReadOnly="true" association="_BXqBQNCBEeOoYJpPV2Fz0g">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CaLOMdCBEeOoYJpPV2Fz0g" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CaLOMNCBEeOoYJpPV2Fz0g" value="1"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_HnN60NCBEeOoYJpPV2Fz0g" name="PlayingEntity">
+          <ownedRule xmi:id="_upVusNCFEeOoYJpPV2Fz0g" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue" constrainedElement="_HnN60NCBEeOoYJpPV2Fz0g">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_0duIINCFEeOoYJpPV2Fz0g">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>code/originalText/reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1</body>
+              <body>not self.code.originalText.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_zGvp4NFQEeOPK7rJ_oNFiA" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue" constrainedElement="_HnN60NCBEeOoYJpPV2Fz0g">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_EqP84NFREeOPK7rJ_oNFiA">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>reference, if present, SHOULD contain zero or one [0..1] @value</body>
+              <body>not self.code.originalText.reference.oclIsUndefined() implies self.code.originalText.reference.value->size() = 1</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_aF8M8NFSEeOPK7rJ_oNFiA" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference" constrainedElement="_HnN60NCBEeOoYJpPV2Fz0g">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_gvAysNFSEeOPK7rJ_oNFiA">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
+              <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.oclIsUndefined()</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_mf_jwLTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode" constrainedElement="_PBfUANCBEeOoYJpPV2Fz0g">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_mf_jwbTBEeWEoeeTdrbyVw">
+              <language>OCL</language>
+              <body>isDefined('classCode') and self.classCode=vocab::EntityClassRoot::MMAT</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_mgAx4LTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode" constrainedElement="_PBf7ENCBEeOoYJpPV2Fz0g">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_mgAx4bTBEeWEoeeTdrbyVw">
+              <language>OCL</language>
+              <body>not self.code.oclIsUndefined()</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:id="_HnOh4NCBEeOoYJpPV2Fz0g">
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_PBfUANCBEeOoYJpPV2Fz0g" name="classCode" visibility="private" isReadOnly="true">
+            <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_U8jkQNCBEeOoYJpPV2Fz0g" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U8i9MNCBEeOoYJpPV2Fz0g" value="1"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_Twn8oNCBEeOoYJpPV2Fz0g" value="MMAT"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_PBf7ENCBEeOoYJpPV2Fz0g" name="code" visibility="private" type="_BNHvwNCCEeOoYJpPV2Fz0g" isReadOnly="true" aggregation="composite">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wLA5oNCBEeOoYJpPV2Fz0g" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wLASkNCBEeOoYJpPV2Fz0g" value="1"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_BNHvwNCCEeOoYJpPV2Fz0g" name="CE">
+            <ownedRule xmi:id="_mgCAALTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText" constrainedElement="_5tv9oNFREeOPK7rJ_oNFiA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_mgCAAbTBEeWEoeeTdrbyVw">
+                <language>OCL</language>
+                <body> ( self.isNullFlavorUndefined() implies (((not self.originalText.oclIsUndefined()) and self.originalText.isNullFlavorUndefined()) implies (not self.originalText.oclIsUndefined()) ))</body>
+              </specification>
+            </ownedRule>
+            <ownedRule xmi:id="_mgD1MLTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation" constrainedElement="_fR3Vw9CCEeOoYJpPV2Fz0g">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_mgD1MbTBEeWEoeeTdrbyVw">
+                <language>OCL</language>
+                <body> ( self.isNullFlavorUndefined() implies (((not self.translation->isEmpty()) and self.translation->exists(element | element.isNullFlavorUndefined())) implies (not self.translation->isEmpty()) ))</body>
+              </specification>
+            </ownedRule>
+            <generalization xmi:id="_BNIW0NCCEeOoYJpPV2Fz0g">
+              <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+            </generalization>
+            <ownedAttribute xmi:id="_5tv9oNFREeOPK7rJ_oNFiA" name="originalText" visibility="private" isReadOnly="true" aggregation="composite">
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5tv9otFREeOPK7rJ_oNFiA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5tv9odFREeOPK7rJ_oNFiA" value="1"/>
+              <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_TgJEsD55Ed6cla2oXsPtlA"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_fR3Vw9CCEeOoYJpPV2Fz0g" name="translation" visibility="private" isReadOnly="true" aggregation="composite">
+              <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fR3VxdCCEeOoYJpPV2Fz0g"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fR3VxNCCEeOoYJpPV2Fz0g" value="*"/>
+              <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w2KR4LS3EeWpm8PSOGz-9g" name="AllergyStatusObservationEntryRelationship">
+      <ownedRule xmi:id="_t84zILTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationAllergyStatusObservationEntryRelationshipAllergyStatusObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_w2LgALS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_t84zIbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->size() &lt;= 1</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_w2KR4bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w2LgAbS3EeWpm8PSOGz-9g" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w2LgArS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w2LgA7S3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w2LgALS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w2MHEbS3EeWpm8PSOGz-9g" name="ReactionObservationEntryRelationship">
+      <ownedRule xmi:id="_t-cSULTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationReactionObservationEntryRelationshipReactionObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_w2N8QLS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_t-cSUbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_w2MHErS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w2N8QbS3EeWpm8PSOGz-9g" name="reactionObservation" type="_2E_aIRSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w2N8QrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w2N8Q7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w2N8QLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_w2OjULS3EeWpm8PSOGz-9g" name="SeverityObservationEntryRelationship">
+      <ownedRule xmi:id="_uAC00LTBEeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationSeverityObservationEntryRelationshipSeverityObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_w2PxcLS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_uAC00bTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->size() &lt;= 1</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_w2OjUbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_w2PxcbS3EeWpm8PSOGz-9g" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w2PxcrS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w2Pxc7S3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_w2PxcLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_gUF8IM_wEeO3jtTGrg8s3Q" base_Class="_y7aSAM_vEeO3jtTGrg8s3Q" templateId="2.16.840.1.113883.10.20.24.3.90">
+    <ruleId>CONF:16305</ruleId>
+    <ruleId>CONF:16306</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_VsRzcM_xEeO3jtTGrg8s3Q" base_Property="_X9k9IM_wEeO3jtTGrg8s3Q">
+    <ruleId>CONF:16303</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_WQ5jcM_xEeO3jtTGrg8s3Q" base_Property="_X9mLQM_wEeO3jtTGrg8s3Q">
+    <ruleId>CONF:16304</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_WsG4wM_xEeO3jtTGrg8s3Q" base_Property="_X9lkM8_wEeO3jtTGrg8s3Q">
+    <ruleId>CONF:16307</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_XD670M_xEeO3jtTGrg8s3Q" base_Property="_X9k9Ic_wEeO3jtTGrg8s3Q">
+    <ruleId>CONF:16345</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Xd7XQM_xEeO3jtTGrg8s3Q" base_Property="_X9mLQc_wEeO3jtTGrg8s3Q">
+    <ruleId>CONF:16308</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_X0rDUM_xEeO3jtTGrg8s3Q" base_Property="_X9lkMM_wEeO3jtTGrg8s3Q">
+    <ruleId>CONF:16309</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_YNoV4M_xEeO3jtTGrg8s3Q" base_Property="_X9myUM_wEeO3jtTGrg8s3Q">
+    <ruleId>CONF:16312</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_OaImEM_yEeO3jtTGrg8s3Q" code="ASSERTION" displayName="Assertion" base_Property="_X9k9Ic_wEeO3jtTGrg8s3Q">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:16346</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_oys1QM_yEeO3jtTGrg8s3Q" code="completed" displayName="Completed" base_Property="_X9mLQc_wEeO3jtTGrg8s3Q">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:26354</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_sy3poM_zEeO3jtTGrg8s3Q" base_Property="_X9myUM_wEeO3jtTGrg8s3Q">
+    <ruleId>CONF:16317</ruleId>
+    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
+  </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_iOE4YM_3EeO3jtTGrg8s3Q" memberEnd="_iOFfcM_3EeO3jtTGrg8s3Q">
+    <ownedEnd xmi:id="_iOFfcM_3EeO3jtTGrg8s3Q" type="_y7aSAM_vEeO3jtTGrg8s3Q" isReadOnly="true" association="_iOE4YM_3EeO3jtTGrg8s3Q"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_qIMPQM_3EeO3jtTGrg8s3Q" severity="INFO" base_Association="_iOE4YM_3EeO3jtTGrg8s3Q" typeCode="SUBJ">
+    <ruleId>CONF:16333</ruleId>
+    <ruleId>CONF:16335</ruleId>
+    <ruleId>CONF:16336</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="_nbV8kM_5EeO3jtTGrg8s3Q" base_Constraint="_ma6aUM_5EeO3jtTGrg8s3Q">
+    <ruleId>CONF:16334</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_RYALwM_6EeO3jtTGrg8s3Q" memberEnd="_RYALwc_6EeO3jtTGrg8s3Q">
+    <ownedEnd xmi:id="_RYALwc_6EeO3jtTGrg8s3Q" type="_y7aSAM_vEeO3jtTGrg8s3Q" isReadOnly="true" association="_RYALwM_6EeO3jtTGrg8s3Q"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_VdFx0M_6EeO3jtTGrg8s3Q" severity="WARNING" base_Association="_RYALwM_6EeO3jtTGrg8s3Q" typeCode="MFST">
+    <ruleId>CONF:16337</ruleId>
+    <ruleId>CONF:16339</ruleId>
+    <ruleId>CONF:16340</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="_ykj3QM_6EeO3jtTGrg8s3Q" base_Constraint="_iK3E8M_6EeO3jtTGrg8s3Q">
+    <ruleId>CONF:16338</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_NbrDoM_7EeO3jtTGrg8s3Q" memberEnd="_NbrDoc_7EeO3jtTGrg8s3Q">
+    <ownedEnd xmi:id="_NbrDoc_7EeO3jtTGrg8s3Q" type="_y7aSAM_vEeO3jtTGrg8s3Q" isReadOnly="true" association="_NbrDoM_7EeO3jtTGrg8s3Q"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_SwVbMM_7EeO3jtTGrg8s3Q" severity="INFO" base_Association="_NbrDoM_7EeO3jtTGrg8s3Q" typeCode="SUBJ">
+    <ruleId>CONF:16341</ruleId>
+    <ruleId>CONF:16342</ruleId>
+    <ruleId>CONF:16344</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="_p73tsM_7EeO3jtTGrg8s3Q" base_Constraint="_n5Q8wM_7EeO3jtTGrg8s3Q">
+    <ruleId>CONF:16343</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_UIuiUNB7EeOoYJpPV2Fz0g" memberEnd="_UIq38NB7EeOoYJpPV2Fz0g _UIuiUdB7EeOoYJpPV2Fz0g">
+    <ownedEnd xmi:id="_UIuiUdB7EeOoYJpPV2Fz0g" type="_y7aSAM_vEeO3jtTGrg8s3Q" isReadOnly="true" association="_UIuiUNB7EeOoYJpPV2Fz0g"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_dAKdENB7EeOoYJpPV2Fz0g" severity="WARNING" base_Association="_UIuiUNB7EeOoYJpPV2Fz0g">
+    <ruleId>CONF:16318</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_Xg5ikNB8EeOoYJpPV2Fz0g">
+    <ruleId>CONF:16319</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_iSvUgNB8EeOoYJpPV2Fz0g" base_Property="_gjVMYNB8EeOoYJpPV2Fz0g">
+    <ruleId>CONF:16319</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_8dbYYNB_EeOoYJpPV2Fz0g" memberEnd="_8daKQNB_EeOoYJpPV2Fz0g _8dbYYdB_EeOoYJpPV2Fz0g">
+    <ownedEnd xmi:id="_8dbYYdB_EeOoYJpPV2Fz0g" type="_HOhgQNB8EeOoYJpPV2Fz0g" isReadOnly="true" association="_8dbYYNB_EeOoYJpPV2Fz0g"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_9VjTMNB_EeOoYJpPV2Fz0g" base_Association="_8dbYYNB_EeOoYJpPV2Fz0g">
+    <ruleId>CONF:16320</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_gzzUgNCAEeOoYJpPV2Fz0g" base_Property="_b3nuYNCAEeOoYJpPV2Fz0g">
+    <ruleId>CONF:16321</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_BXqBQNCBEeOoYJpPV2Fz0g" memberEnd="_BXpaMNCBEeOoYJpPV2Fz0g _BXqBQdCBEeOoYJpPV2Fz0g">
+    <ownedEnd xmi:id="_BXqBQdCBEeOoYJpPV2Fz0g" type="_ZQbCoNCAEeOoYJpPV2Fz0g" isReadOnly="true" association="_BXqBQNCBEeOoYJpPV2Fz0g"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_Ci33MNCBEeOoYJpPV2Fz0g" base_Association="_BXqBQNCBEeOoYJpPV2Fz0g">
+    <ruleId>CONF:16322</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_QOAxgNCBEeOoYJpPV2Fz0g" base_Property="_PBfUANCBEeOoYJpPV2Fz0g">
+    <ruleId>CONF:16323</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_vXaScNCBEeOoYJpPV2Fz0g" base_Property="_PBf7ENCBEeOoYJpPV2Fz0g">
+    <ruleId>CONF:16324</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_tNQ5oNCCEeOoYJpPV2Fz0g" severity="WARNING">
+    <ruleId>CONF:16326</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_0geokNCCEeOoYJpPV2Fz0g" severity="INFO" base_Property="_fR3Vw9CCEeOoYJpPV2Fz0g">
+    <ruleId>CONF:16330</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_4tyPINCFEeOoYJpPV2Fz0g" base_Constraint="_upVusNCFEeOoYJpPV2Fz0g">
+    <ruleId>CONF:16329</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_89PN4NFQEeOPK7rJ_oNFiA" severity="WARNING" base_Constraint="_zGvp4NFQEeOPK7rJ_oNFiA">
+    <ruleId>CONF:16328</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_7rn_kNFREeOPK7rJ_oNFiA" severity="WARNING" base_Property="_5tv9oNFREeOPK7rJ_oNFiA">
+    <ruleId>CONF:16326</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_h_fjINFSEeOPK7rJ_oNFiA" severity="WARNING" base_Constraint="_aF8M8NFSEeOPK7rJ_oNFiA">
+    <ruleId>CONF:16327</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_TxNbc9JCEeOj_bXCpQOG9w" severity="WARNING" base_Property="_TxNbcNJCEeOj_bXCpQOG9w">
+    <ruleId>CONF:7424</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_VnAfc9JCEeOj_bXCpQOG9w" severity="INFO" base_Property="_VnAfcNJCEeOj_bXCpQOG9w">
+    <ruleId>CONF:7431</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_j58HUGFBEeSwtJfyLHwh8Q">
+    <ruleId>CONF:7419</ruleId>
+    <base_Constraint href="file:/home/vadi/Programs/mdht-models/models/org.openhealthtools.mdht.uml.cda.consol.model/model/genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_J6nekGFBEeSwtJfyLHwh8Q"/>
+  </CDA:ConstraintValidation>
+  <CDA:Inline xmi:id="_wpSTgLS3EeWpm8PSOGz-9g" base_Class="_wpPQMLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wpa2YrS3EeWpm8PSOGz-9g" base_Class="_wpa2YLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wpegwrS3EeWpm8PSOGz-9g" base_Class="_wpegwLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wpiyMrS3EeWpm8PSOGz-9g" base_Class="_wpiyMLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wpqG8rS3EeWpm8PSOGz-9g" base_Class="_wpqG8LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wpuYYLS3EeWpm8PSOGz-9g" base_Class="_wptxULS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wpyCwrS3EeWpm8PSOGz-9g" base_Class="_wpyCwLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wsG-ArS3EeWpm8PSOGz-9g" base_Class="_wsG-ALS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wvPKgLS3EeWpm8PSOGz-9g" base_Class="_wvOjcLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w2KR4rS3EeWpm8PSOGz-9g" base_Class="_w2KR4LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w2MuILS3EeWpm8PSOGz-9g" base_Class="_w2MHEbS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_w2OjUrS3EeWpm8PSOGz-9g" base_Class="_w2OjULS3EeWpm8PSOGz-9g"/>
+  <Ecore:EClass xmi:id="_im9csLTBEeWEoeeTdrbyVw" base_Class="_2EAisBSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEffectiveTimeLow AllergyProblemActEffectiveTimeHigh AllergyProblemActClassCode AllergyProblemActMoodCode AllergyProblemActId AllergyProblemActCode AllergyProblemActStatusCode AllergyProblemActStatusCodeP AllergyProblemActEffectiveTime AllergyProblemActEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.30' classCode='ACT' moodCode='EVN' constraints.validation.dependOn.AllergyProblemActStatusCode='AllergyProblemActStatusCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ioUHkLTBEeWEoeeTdrbyVw" base_Class="_3a3swMSzEeOJR7uiM6mfhA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ioa1QLTBEeWEoeeTdrbyVw" base_Class="_2EaLUBSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyObservationTemplateId AllergyObservationReferenceValue AllergyObservationAllergyStatusInversionIndicator AllergyObservationReactionInversionIndicator AllergyObservationSeverityInversionIndicator AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationCodeP AllergyObservationStatusCode AllergyObservationStatusCodeP AllergyObservationEffectiveTime AllergyObservationValue AllergyObservationValueP AllergyObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.7' constraints.validation.warning='AllergyObservationValueOriginalText AllergyObservationOriginalTextReference AllergyObservationOriginalTextReferenceValue AllergyObservationParticipant' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.AllergyObservationCode='AllergyObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.AllergyObservationStatusCode='AllergyObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.AllergyObservationValue='AllergyObservationValueP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_iqR2cLTBEeWEoeeTdrbyVw" base_Class="_0HgNkDJAEeG6R8Pb5FT2Ow">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='CSM' constraints.validation.error='AllergyObservationParticipantTypeCode AllergyObservationParticipantTypeCodeP AllergyObservationParticipantParticipantRole' constraints.validation.dependOn.AllergyObservationParticipantTypeCode='AllergyObservationParticipantTypeCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_iqXWALTBEeWEoeeTdrbyVw" base_Class="_4Lj44DJAEeG6R8Pb5FT2Ow">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='MANU' constraints.validation.error='AllergyObservationParticipantParticipantRoleClassCode AllergyObservationParticipantParticipantRoleClassCodeP AllergyObservationParticipantParticipantRolePlayingEntity' constraints.validation.dependOn.AllergyObservationParticipantParticipantRoleClassCode='AllergyObservationParticipantParticipantRoleClassCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_iqdcoLTBEeWEoeeTdrbyVw" base_Class="_E1B60DJBEeG6R8Pb5FT2Ow">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI AllergyObservationParticipantParticipantRolePlayingEntityClassCode AllergyObservationParticipantParticipantRolePlayingEntityCode' constraints.validation.warning='AllergyObservationParticipantParticipantRolePlayingEntityReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference' classCode='MMAT'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_iqpC0LTBEeWEoeeTdrbyVw" base_Class="_HLPZcNJCEeOj_bXCpQOG9w">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText' constraints.validation.info='AllergyObservationParticipantParticipantRolePlayingEntityCETranslation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_isqcELTBEeWEoeeTdrbyVw" base_Class="_2E_aIRSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReactionObservationTemplateId ReactionObservationReferenceValue ReactionObservationSeverityObservationInversionInd ReactionObservationProcedureActivityProcedureInversionInd ReactionObservationMedicationActivityInversionInd ReactionObservationClassCode ReactionObservationMoodCode ReactionObservationId ReactionObservationCode ReactionObservationStatusCode ReactionObservationStatusCodeP ReactionObservationValue ReactionObservationValueP ReactionObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.9' constraints.validation.warning='ReactionObservationTextReference ReactionObservationTextReferenceValue ReactionObservationEffectiveTimeLow ReactionObservationEffectiveTimeHigh ReactionObservationText ReactionObservationEffectiveTime' classCode='OBS' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.ReactionObservationStatusCode='ReactionObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.ReactionObservationValue='ReactionObservationValueP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_iu3bgLTBEeWEoeeTdrbyVw" base_Class="_2FGu4hSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SeverityObservationTemplateId SeverityObservationReferenceValue SeverityObservationClassCode SeverityObservationMoodCode SeverityObservationCode SeverityObservationCodeP SeverityObservationStatusCode SeverityObservationStatusCodeP SeverityObservationValue SeverityObservationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.8' constraints.validation.warning='SeverityObservationTextReference SeverityObservationTextReferenceValue SeverityObservationText' classCode='OBS' moodCode='EVN' code.code='SEV' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Severity observation' constraints.validation.dependOn.SeverityObservationCode='SeverityObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.SeverityObservationStatusCode='SeverityObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.SeverityObservationValue='SeverityObservationValueP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_iwYecLTBEeWEoeeTdrbyVw" base_Class="_2FRuAhSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyStatusObservationTemplateId AllergyStatusObservationClassCode AllergyStatusObservationMoodCode AllergyStatusObservationCode AllergyStatusObservationCodeP AllergyStatusObservationStatusCode AllergyStatusObservationStatusCodeP AllergyStatusObservationValue AllergyStatusObservationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.28' classCode='OBS' moodCode='EVN' code.code='33999-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Status' constraints.validation.dependOn.AllergyStatusObservationCode='AllergyStatusObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.AllergyStatusObservationStatusCode='AllergyStatusObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.AllergyStatusObservationValue='AllergyStatusObservationValueP'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_jH8C0LTBEeWEoeeTdrbyVw" base_Generalization="_EEbhsBVgEeGQCvUGzi1kDQ"/>
+  <Ecore:EClass xmi:id="_jH8p4LTBEeWEoeeTdrbyVw" base_Class="_2LMIwBSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSectionEntriesOptionalTemplateId AllergiesSectionCode AllergiesSectionCodeP AllergiesSectionTitle AllergiesSectionText AllergiesSectionEntry' templateId.root='2.16.840.1.113883.10.20.22.2.6.1' code.code='48765-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Allergies, adverse reactions, alerts' constraints.validation.dependOn.AllergiesSectionCode='AllergiesSectionCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_jxsKcLTBEeWEoeeTdrbyVw" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSectionEntriesOptionalTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionEntriesOptionalCodeP AllergiesSectionEntriesOptionalTitle AllergiesSectionEntriesOptionalText AllergiesSectionEntriesOptionalEntry' templateId.root='2.16.840.1.113883.10.20.22.2.6' code.code='48765-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Allergies, adverse reactions, alerts'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_meuYcbTBEeWEoeeTdrbyVw" base_Class="_y7aSAM_vEeO3jtTGrg8s3Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservationTemplateId SubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator SubstanceOrDeviceAllergyObservationReactionInversionIndicator SubstanceOrDeviceAllergyObservationSeverityInversionIndicator SubstanceOrDeviceAllergyObservationClassCode SubstanceOrDeviceAllergyObservationMoodCode SubstanceOrDeviceAllergyObservationId SubstanceOrDeviceAllergyObservationCode SubstanceOrDeviceAllergyObservationCodeP SubstanceOrDeviceAllergyObservationStatusCode SubstanceOrDeviceAllergyObservationStatusCodeP SubstanceOrDeviceAllergyObservationEffectiveTime SubstanceOrDeviceAllergyObservationValue SubstanceOrDeviceAllergyObservationValueP SubstanceOrDeviceAllergyObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.24.3.90' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.SubstanceOrDeviceAllergyObservationCode='SubstanceOrDeviceAllergyObservationCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='SubstanceOrDeviceAllergyObservationParticipant'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_mf4PALTBEeWEoeeTdrbyVw" base_Class="_HOhgQNB8EeOoYJpPV2Fz0g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='CSM' constraints.validation.error='SubstanceOrDeviceAllergyObservationParticipantTypeCode SubstanceOrDeviceAllergyObservationParticipantParticipantRole'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_mf6EMLTBEeWEoeeTdrbyVw" base_Class="_ZQbCoNCAEeOoYJpPV2Fz0g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='MANU' constraints.validation.error='SubstanceOrDeviceAllergyObservationParticipantParticipantRoleClassCode SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_mf75YLTBEeWEoeeTdrbyVw" base_Class="_HnN60NCBEeOoYJpPV2Fz0g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode' constraints.validation.warning='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference' classCode='MMAT'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_mgDOILTBEeWEoeeTdrbyVw" base_Class="_BNHvwNCCEeOoYJpPV2Fz0g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText' constraints.validation.info='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_mohNoLTBEeWEoeeTdrbyVw" base_Class="_wpPQMLS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActAllergyObservationEntryRelationshipAllergyObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_mqEFwLTBEeWEoeeTdrbyVw" base_Class="_wpa2YLS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='AllergyObservationAllergyStatusObservationEntryRelationshipAllergyStatusObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_mrqBMLTBEeWEoeeTdrbyVw" base_Class="_wpegwLS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='AllergyObservationReactionObservationEntryRelationshipReactionObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_mtLEILTBEeWEoeeTdrbyVw" base_Class="_wpiyMLS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='AllergyObservationSeverityObservationEntryRelationshipSeverityObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_muvxcLTBEeWEoeeTdrbyVw" base_Class="_wpqG8LS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='ReactionObservationSeverityObservationEntryRelationshipSeverityObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_mwO_MLTBEeWEoeeTdrbyVw" base_Class="_wptxULS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ReactionObservationProcedureActivityProcedureEntryRelationshipProcedureActivityProcedure'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_myDkILTBEeWEoeeTdrbyVw" base_Class="_wpyCwLS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ReactionObservationMedicationActivityEntryRelationshipMedicationActivity'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_n_hc0LTBEeWEoeeTdrbyVw" base_Class="_wsG-ALS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSectionAllergyProblemActEntryAllergyProblemAct'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ppbZ4LTBEeWEoeeTdrbyVw" base_Class="_wvOjcLS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='AllergiesSectionEntriesOptionalAllergyProblemActEntryAllergyProblemAct'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_t9qPMLTBEeWEoeeTdrbyVw" base_Class="_w2KR4LS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='SubstanceOrDeviceAllergyObservationAllergyStatusObservationEntryRelationshipAllergyStatusObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_t_RYwLTBEeWEoeeTdrbyVw" base_Class="_w2MHEbS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='SubstanceOrDeviceAllergyObservationReactionObservationEntryRelationshipReactionObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_uAzCwLTBEeWEoeeTdrbyVw" base_Class="_w2OjULS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='SubstanceOrDeviceAllergyObservationSeverityObservationEntryRelationshipSeverityObservation'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

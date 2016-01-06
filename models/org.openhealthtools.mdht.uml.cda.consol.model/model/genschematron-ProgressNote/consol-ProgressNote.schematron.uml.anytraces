@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="ASCII"?>
+<trc:Traces xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:trc="http://ns.electronichealth.net.au/ci/metamodel/traceability" originalSourceURL="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml" username="vadi" fullName="Schematron" date="2016-01-07T08:59:30.330+1000" location="127.0.1.1">
+  <sourceModel href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_2B30sBSVEeGGzu7fmW9pXw"/>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::MedicationActivity::drugVehicle" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_U6R5khUVEeG6PvUxSTZnaw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::NonMedicinalSupplyActivity::productInstance" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_2HVjgxSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::FamilyHistoryOrganizer::entryRelationship" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wrGRY7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::ResultOrganizer::entryRelationship" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wrc2sLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::EncounterActivities::serviceDeliveryLocation" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2Lg44BSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::ImmunizationActivity::drugVehicle" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-immunizations.uml#_ZljOshU9EeGbmN_W114JUw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::ProcedureActivityProcedure::serviceDeliveryLocation" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OTHORSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::ProcedureActivityProcedure::productInstance" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_F1DsEBxWEeGXP8PxDYviDg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::VitalSignsOrganizer::entryRelationship" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wtcawLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::ProcedureActivityObservation::serviceDeliveryLocation" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_5Pv9IBxwEeGXP8PxDYviDg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::ProcedureActivityAct::serviceDeliveryLocation" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_OymM0BxsEeGXP8PxDYviDg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::CognitiveStatusResultOrganizer::entryRelationship" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w10ToLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::FunctionalStatusResultOrganizer::entryRelationship" severity="1" messageType="13">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w2HOkLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.10: consol::AllergyObservation::AllergyStatusObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_wpa2YLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.11: consol::AllergyObservation::ReactionObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_wpegwLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.63.10: consol::ReactionObservation::SeverityObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_wpqG8LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.63.11: consol::ReactionObservation::ProcedureActivityProcedureEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_wptxULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.37.19: consol::MedicationActivity::InstructionsEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_wp27QLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.37.20: consol::MedicationActivity::MedicationSupplyOrderEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_wp5-kLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.37.21: consol::MedicationActivity::ReactionObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_wp8a0LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.37.22: consol::MedicationActivity::IndicationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_wp_eILS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.2.7.i.f: consol::ContinuityOfCareDocument::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wqgbg7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.2.7.i.g: consol::ContinuityOfCareDocument::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wqkF4bS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.2.7.i.h: consol::ContinuityOfCareDocument::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wqnJMLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.2.7.i.i: consol::ContinuityOfCareDocument::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wqqMgbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.2.7.i.j: consol::ContinuityOfCareDocument::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wqtP0bS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.2.7.i.k: consol::ContinuityOfCareDocument::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wqyIULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.2.7.i.l: consol::ContinuityOfCareDocument::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wq1ysbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.2.7.i.m: consol::ContinuityOfCareDocument::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wq4O9bS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.2.7.i.n: consol::ContinuityOfCareDocument::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wq75ULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.2.7.i.o: consol::ContinuityOfCareDocument::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wq-VkrS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.24.9: consol::FamilyHistoryObservation::AgeObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-familyhistory.uml#_wrJUsLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.66.5: consol::SocialHistorySection::SocialHistoryObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_wrPbULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.66.6: consol::SocialHistorySection::PregnancyObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_wrR3kLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.66.7: consol::SocialHistorySection::SmokingStatusObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_wrUT0LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.17.5: consol::FunctionalStatusSection::FunctionalStatusResultOrganizerEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_wriWQLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.17.6: consol::FunctionalStatusSection::CognitiveStatusResultOrganizerEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_wrkygLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.17.7: consol::FunctionalStatusSection::FunctionalStatusResultObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_wrnOwLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.17.8: consol::FunctionalStatusSection::CognitiveStatusResultObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_wrprALS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.17.9: consol::FunctionalStatusSection::FunctionalStatusProblemObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_wrsHQLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.17.10: consol::FunctionalStatusSection::CognitiveStatusProblemObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_wrujgLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.17.11: consol::FunctionalStatusSection::CaregiverCharacteristicsEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_wrxm0LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.17.12: consol::FunctionalStatusSection::AssessmentScaleObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_wr0DELS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.17.13: consol::FunctionalStatusSection::NonMedicinalSupplyActivityEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_wr2fULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.17.14: consol::FunctionalStatusSection::PressureUlcerObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_wr5ioLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.17.15: consol::FunctionalStatusSection::NumberOfPressureUlcersObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_wr7-4LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.2.8: consol::AdvanceDirectiveObservation::Verifier is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-advancedirectives.uml#_9HiC0CsdEeGQ5rkpDKAt8A"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.20.10: consol::EncounterActivities::IndicationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_wsQH8LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.33.19: consol::ImmunizationActivity::IndicationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-immunizations.uml#_wsZR4LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.33.20: consol::ImmunizationActivity::InstructionsEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-immunizations.uml#_wsbuILS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.33.21: consol::ImmunizationActivity::MedicationDispenseEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-immunizations.uml#_wseKYLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.33.22: consol::ImmunizationActivity::ReactionObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-immunizations.uml#_wsgmoLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.33.23: consol::ImmunizationActivity::ImmunizationRefusalReasonEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-immunizations.uml#_wsjC4LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.46.5: consol::PlanOfCareSection::PlanOfCareActivityActEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_wsvQILS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.46.6: consol::PlanOfCareSection::PlanOfCareActivityEncounterEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_wsxsYLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.46.7: consol::PlanOfCareSection::PlanOfCareActivityObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_ws0IoLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.46.8: consol::PlanOfCareSection::PlanOfCareActivityProcedureEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_ws3L8LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.46.9: consol::PlanOfCareSection::PlanOfCareActivitySubstanceAdministrationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_ws5oMLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.46.10: consol::PlanOfCareSection::PlanOfCareActivitySupplyEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_ws8rgLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.59.6: consol::ProceduresSection::ProcedureActivityProcedureEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wtF1cLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.59.7: consol::ProceduresSection::ProcedureActivityObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wtI4wLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.59.16: consol::ProcedureActivityProcedure::MedicationActivityEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wtPmcLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.59.17: consol::ProcedureActivityProcedure::InstructionsEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wtSCsLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.59.18: consol::ProcedureActivityProcedure::IndicationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wtVGALS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.44.5: consol::PhysicalExamSection::PressureUlcerObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-exams.uml#_wtrEQLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.44.6: consol::PhysicalExamSection::NumberOfPressureUlcersObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-exams.uml#_wtuHkLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.a: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wt9_M7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.b: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuAbdLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.d: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuFT87S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.f: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuKzgLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.g: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuNPwLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.j: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuUkgbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.k: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuXn0LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.l: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuaEEbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.m: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wucgUrS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.n: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wue8kbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.o: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuhY0LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.p: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuj1ELS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.q: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wumRUbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.r: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuotkbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.s: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wurw4LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.t: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuuNILS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.u: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuwpYbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.v: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuzFoLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.w: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wu1h4LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.5.i.y: consol::DischargeSummary::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wu6aZbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.55.11: consol::ProblemObservation::AgeObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-problems.uml#_wvGnoLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.55.12: consol::ProblemObservation::ProblemStatusEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-problems.uml#_wvJD4LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.60.5: consol::ProceduresSectionEntriesOptional::ProcedureActivityProcedureEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wvWfQLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.60.6: consol::ProceduresSectionEntriesOptional::ProcedureActivityObservationEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wvY7gLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.58.15: consol::ProcedureActivityObservation::InstructionsEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wvr2cLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.58.16: consol::ProcedureActivityObservation::IndicationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wvuSsLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.58.17: consol::ProcedureActivityObservation::MedicationActivityEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wvwu8LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.57.12: consol::ProcedureActivityAct::InstructionsEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wv0ZULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.57.13: consol::ProcedureActivityAct::IndicationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wv21kLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.57.14: consol::ProcedureActivityAct::MedicationActivityEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wv4qwLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.5.5: consol::AnesthesiaSection::ProcedureActivityProcedureEntry is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_wwLlsLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.a: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wwoRobS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.b: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wwqt4LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.c: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wwsjF7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.e: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wwxbk7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.f: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wwz31LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.g: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_ww2UFbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.h: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_ww4wVrS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.i: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_ww7MlrS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.j: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_ww-P4LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.k: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxAsIbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.l: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxDIYbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.m: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxFkobS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.n: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxIA4bS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.o: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxKdIrS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.p: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxM5YbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.q: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxP8sbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.r: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxSY8bS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.s: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxU1M7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.t: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxXRd7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.6.i.u: consol::ConsultationNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxaUwLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.6.i.b: consol::HistoryAndPhysicalNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxl68bS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.6.i.c: consol::HistoryAndPhysicalNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxoXNLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.6.i.d: consol::HistoryAndPhysicalNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxqzdbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.6.i.e: consol::HistoryAndPhysicalNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxt2wLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.6.i.f: consol::HistoryAndPhysicalNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxwTAbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.6.i.l: consol::HistoryAndPhysicalNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wx-VdrS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.6.i.p: consol::HistoryAndPhysicalNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wyIGcLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.6.i.q: consol::HistoryAndPhysicalNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wyJ7p7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.6.i.r: consol::HistoryAndPhysicalNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wyM-8LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.6.i.s: consol::HistoryAndPhysicalNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wyPbMLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.6.i.u: consol::HistoryAndPhysicalNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wyTsprS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.7.5.i.i: consol::OperativeNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wyvxhLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.7.5.i.j: consol::OperativeNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wyyNxrS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.7.5.i.k: consol::OperativeNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wy0qAbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.7.5.i.l: consol::OperativeNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wy3GQLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.7.5.i.m: consol::OperativeNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wy5igLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.7.5.i.n: consol::OperativeNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wy7XtrS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.7.5.i.o: consol::OperativeNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wy9z8LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.7.5.i.p: consol::OperativeNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wy_pJrS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.a: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzIMALS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.b: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzKoQbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.c: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzNEgbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.h: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzYDqLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.i: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzaf57S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.j: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzdjMLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.k: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzfYaLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.l: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzh0prS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.m: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzkQ57S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.n: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzmtIbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.o: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzpJYbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.p: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzrlobS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.q: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzuB4LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.r: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzv3F7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.s: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzyTUbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.t: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wz0IiLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.u: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wz2kwbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.v: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wz4Z-LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.w: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wz62M7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.x: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wz9ScLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.y: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wz_usLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.z: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0Bj57S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.{: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0EAIbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.7.i.|: consol::ProcedureNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0GcYLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.a: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0OYOLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.b: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0Q0dLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.c: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0TQsLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.d: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0VF6LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.e: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0XiIbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.f: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0ZXVrS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.g: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0bzk7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.h: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0eP0LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.i: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0gFB7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.j: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0ihQ7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.k: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0k9gbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.l: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0nZwbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.m: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0p2ALS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.6.i.n: consol::ProgressNote::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0rrNLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.3.12.i.b: consol::DiagnosticImagingReport::Component::StructuredBody::Component is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w1CQgLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.71.8: consol::SOPInstanceObservation::SOPInstanceObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_w1JlQLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.71.9: consol::SOPInstanceObservation::PurposeofReferenceObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_w1MBgLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.74.8: consol::TextObservation::SOPInstanceObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_w1TWQLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.12.7: consol::CodeObservations::SOPInstanceObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_w1aD8LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.13.13: consol::CognitiveStatusProblemObservation::NonMedicinalSupplyActivityEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-cognitive.uml#_w1lqILS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.13.14: consol::CognitiveStatusProblemObservation::CaregiverCharacteristicsEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-cognitive.uml#_w1nfULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.14.16: consol::CognitiveStatusResultObservation::NonMedicinalSupplyActivityEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-cognitive.uml#_w1sX0LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.14.17: consol::CognitiveStatusResultObservation::CaregiverCharacteristicsEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-cognitive.uml#_w1u0ELS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.26.13: consol::FunctionalStatusProblemObservation::NonMedicinalSupplyActivityEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_w13-ALS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.26.14: consol::FunctionalStatusProblemObservation::CaregiverCharacteristicsEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_w16aQLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.27.16: consol::FunctionalStatusResultObservation::NonMedicinalSupplyActivityEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_w1_SwLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.27.17: consol::FunctionalStatusResultObservation::CaregiverCharacteristicsEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_w2BvALS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.73.10: consol::SubstanceOrDeviceAllergyObservation::AllergyStatusObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_w2KR4LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.73.11: consol::SubstanceOrDeviceAllergyObservation::ReactionObservationEntryRelationship is missing a OCL filter, template ID, code or classCode definition" severity="1" messageType="15">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_w2MHEbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.3.null.ii.e: consol::GeneralHeaderConstraints::Author::AssignedAuthor::assignedAuthoringDevice has no severity applied, hence this association will have no constraint generated" severity="1" messageType="30">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_G7ZKoSzAEeGMXrZ0DiQwGg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.3.null.ii.f: consol::GeneralHeaderConstraints::Author::AssignedAuthor::assignedPerson has no severity applied, hence this association will have no constraint generated" severity="1" messageType="30">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_BwHQsOxvEeG7k4bbVdXbXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.3.null: consol::GeneralHeaderConstraints::realmCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_2DNR9BSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.3.null.i.d.1: consol::GeneralHeaderConstraints::RecordTarget::PatientRole::Patient::administrativeGenderCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_7OrqsCylEeGMXrZ0DiQwGg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.3.null.ii: consol::GeneralHeaderConstraints::Authenticator::signatureCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_pL6l0CzGEeGMXrZ0DiQwGg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.5.6: consol::AllergyProblemAct::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2ENXABSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.6: consol::AllergyObservation::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2EoNwxSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.8: consol::AllergyObservation::value has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2EaLdhSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.9.i: consol::AllergyObservation::Participant::typeCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_098tYDJAEeG6R8Pb5FT2Ow"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.9.ii.a: consol::AllergyObservation::Participant::ParticipantRole::classCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_6LgXYDJAEeG6R8Pb5FT2Ow"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.6.4: consol::AllergyStatusObservation::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2FWmgBSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.6.5: consol::AllergyStatusObservation::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2FX0oBSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.6.6: consol::AllergyStatusObservation::value has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-allergies.uml#_2FRuChSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.37.3: consol::MedicationActivity::moodCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_2GkugRSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.36.6: consol::Instructions::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2G8h-xSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.41.3: consol::NonMedicinalSupplyActivity::moodCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_2HTHQBSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.54.6: consol::ProblemConcernAct::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-problems.uml#_2H_q0BSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.2.5.i.c.2.i: consol::ContinuityOfCareDocument::DocumentationOf::ServiceEvent::Performer::AssignedEntity::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_BSK5kEIPEeGfG6GbxF_VQQ"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.24.6: consol::FamilyHistoryObservation::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-familyhistory.uml#_2IuDkBSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.24.8: consol::FamilyHistoryObservation::value has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-familyhistory.uml#_2IpyJxSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.70.6: consol::SocialHistoryObservation::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_2JTSYBSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.17.2: consol::FunctionalStatusSection::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2KLcIRSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.2.6: consol::AdvanceDirectiveObservation::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-advancedirectives.uml#_2KuOsBSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.2.10.i: consol::AdvanceDirectiveObservation::Reference::typeCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-advancedirectives.uml#_PfjRECsgEeGQ5rkpDKAt8A"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.20.5: consol::EncounterActivities::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-encounters.uml#_2LayUhSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.59.12.iii: consol::ServiceDeliveryLocation::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_nD_qMB-YEeGtfPlBCjHWkw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.33.3: consol::ImmunizationActivity::moodCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-immunizations.uml#_2MDEYxSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.38.3: consol::MedicationsSection::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_2NJ3pBSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.43.3: consol::PlanOfCareActivityAct::moodCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NWE8hSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.46.3: consol::PlanOfCareActivityProcedure::moodCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-planofcare.uml#_2NiSNRSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.59.3: consol::ProcedureActivityProcedure::moodCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OTHIxSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.59.6: consol::ProcedureActivityProcedure::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2OG6CBSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.77.5: consol::VitalSignsOrganizer::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OlbERSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.77.6: consol::VitalSignsOrganizer::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OlbFhSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.76.6: consol::VitalSignObservation::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-vitalsigns.uml#_2OxoSxSVEeGGzu7fmW9pXw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.37.17.i.e.1: consol::MedicationInformation::MedicationInformationManufacturedMaterial::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_Dh74wCANEeGKirKJsFylGA"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.35.6: consol::Indication::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_2MmWMRUSEeG6PvUxSTZnaw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.37.16.iii: consol::DrugVehicle::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_ZXk2NRUTEeG6PvUxSTZnaw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.49.6: consol::PolicyActivity::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_UdHpOBUlEeGvPruliC3crg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.17.4: consol::CoverageActivity::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_FVBzQhUmEeGvPruliC3crg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.17.6: consol::CoverageActivity::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-payers.uml#_FVBzShUmEeGvPruliC3crg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.55.8: consol::ProblemObservation::statusCode has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-problems.uml#_zGbQICAuEeGetMjKLkqR8g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.33.16.i.e.1: consol::ImmunizationMedicationInformation::ImmunizationMedicationInformationManufacturedMaterial::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-immunizations.uml#_xgWAcEX8EeG6e5lG0YsSyQ"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 3.39.2: consol::MedicationsSectionEntriesOptional::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-medications.uml#_iAoXIxVdEeGQCvUGzi1kDQ"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.19.4: consol::DischargeMedication::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-discharge.uml#_iYcFUCUPEeGiOPpZVnfEJA"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.32.4: consol::HospitalDischargeDiagnosis::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-discharge.uml#_MwOjkCULEeGiOPpZVnfEJA"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.50.4: consol::PostprocedureDiagnosis::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2HQ7sUEvEeGdmoWy_aLP0Q"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.52.4: consol::PreoperativeDiagnosis::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_2Q1R8UEwEeGdmoWy_aLP0Q"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.31.4: consol::HospitalAdmissionDiagnosis::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-other.uml#_7tCkgUFHEeGorO80f-Cppg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.72.5: consol::StudyAct::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_I445sEb5EeGp67IkyTw1fg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.67.4: consol::SeriesAct::code has no severity applied, hence this property will have no constraint generated" severity="1" messageType="31">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-dicom.uml#_6tqhEErdEeGJpZWiuxRVIw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::AllergyObservation::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wpfH0LS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wpbdcLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ReactionObservation::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wpuYYbS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wprVELS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::MedicationActivity::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wp6loLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wp3iULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ContinuityOfCareDocument::Component::StructuredBody::Component" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wqU1UbS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wqRyAbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::FamilyHistoryObservation::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wrMYALS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wrJ7wLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::SocialHistorySection::entry" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wrR3k7S3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wrPbU7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::FunctionalStatusSection::entry" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wrlZkLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wri9ULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::EncounterActivities::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wsTyULS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wsQvALS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ImmunizationActivity::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wscVMLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wsZ48LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::PlanOfCareSection::entry" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wsyTcLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wsv3MLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ProceduresSection::entry" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wtJf0LS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wtGcgLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ProcedureActivityProcedure::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wtQNgLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_tVxBUOAWEeGlGcipF_0y2A"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::PhysicalExamSection::entry" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wtuuoLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wtrrULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::DischargeSummary::Component::StructuredBody::Component" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wuAbdLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wt9_M7S3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ProblemObservation::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wvJq8LS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wvHOsLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ProceduresSectionEntriesOptional::entry" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wvZikLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wvXGULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ProcedureActivityObservation::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wvsdgLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_K3DxcOAWEeGlGcipF_0y2A"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ProcedureActivityAct::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wv0ZU7S3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-procedures.uml#_GZ4bgOAWEeGlGcipF_0y2A"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::AnesthesiaSection::entry" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wwOB87S3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_wwMMwLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ConsultationNote::Component::StructuredBody::Component" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wwqt4LS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wwoRobS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::HistoryAndPhysicalNote::Component::StructuredBody::Component" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxl68bS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wxjesLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::OperativeNote::Component::StructuredBody::Component" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wyfS0LS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wyc2kLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ProcedureNote::ComponentOf::EncompassingEncounter5::Location::HealthCareFacility" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_MHwg4D-PEeGvOdejHZ7dYg"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_644koT-PEeGvOdejHZ7dYg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ProcedureNote::Component::StructuredBody::Component" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzKoQbS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_wzIMALS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::ProgressNote::Component::StructuredBody::Component" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0Q0dLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0OYOLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::DiagnosticImagingReport::Component::StructuredBody::Component" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w1CQgLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_w0_0QbS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::SOPInstanceObservation::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w1MokLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w1KMULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::TextObservation::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w1Vyg7S3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w1T9ULS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::CodeObservations::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w1dHQLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w1arALS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::CognitiveStatusProblemObservation::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w1oGYLS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w1mRMLS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::CognitiveStatusResultObservation::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w1vbILS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w1s-4LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::FunctionalStatusProblemObservation::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w17BULS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w14lELS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::FunctionalStatusResultObservation::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w2CWELS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w1_50LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Two UML elements share the same qualified name: consol::SubstanceOrDeviceAllergyObservation::entryRelationship" severity="1" messageType="32">
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w2MuIbS3EeWpm8PSOGz-9g"/>
+    <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol.model/model/consol.uml#_w2K48LS3EeWpm8PSOGz-9g"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.5.25: Could not transform OCL constraint &quot;GeneralHeaderConstraintsTypeIdRoot&quot;: Unrecognized variable: (root)" messageType="17">
+    <participants href="../genschematron-USRealmHeader/consol-documents.schematron.uml#_jXOYoMa8EeGp28IjMvW3Ag"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.5.26: Could not transform OCL constraint &quot;GeneralHeaderConstraintsTypeIdExtension&quot;: Unrecognized variable: (extension)" messageType="17">
+    <participants href="../genschematron-USRealmHeader/consol-documents.schematron.uml#_meGqAMa8EeGp28IjMvW3Ag"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.5.12.i.d: Could not transform OCL constraint &quot;GeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-USRealmHeader/consol-documents.schematron.uml#_dqXccDVREeGIw7CntkyPQw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.5.12.i.d: Could not transform OCL constraint &quot;GeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-USRealmHeader/consol-documents.schematron.uml#_kIBcYDVREeGIw7CntkyPQw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.5.14.ii.g: Could not transform OCL constraint &quot;GeneralHeaderConstraintsAuthorAssignedAuthorHasOneAssignedPersonOrOneAssignedAuthoringDevice&quot;: Unrecognized variable: (xyz)" messageType="17">
+    <participants href="../genschematron-USRealmHeader/consol-documents.schematron.uml#_LKdzICzAEeGMXrZ0DiQwGg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.5.12.i.e: Could not transform OCL constraint &quot;GeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier&quot;: Unrecognized variable: (xyz)" messageType="17">
+    <participants href="../genschematron-USRealmHeader/consol-documents.schematron.uml#_BEoOQDVVEeGIw7CntkyPQw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.9.ii: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRole&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_kTpA8LTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.9.ii.a: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRoleClassCodeP&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_iqbAYLTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.9.ii.a: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRoleClassCode&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_iqX9ELTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.9.ii.b: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntity&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_kUVkgLTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.9.ii.b.3: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_J6nekGFBEeSwtJfyLHwh8Q"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.9.ii.b.1: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityClassCode&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_iqiVILTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.9.ii.b.2: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCode&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_iqkxYLTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.9.ii.b.2.i: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_iqn0sLTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.4.9.ii.b.2.ii: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCETranslation&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_iqqQ8LTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 4.49.8.iii.d: Could not transform OCL constraint &quot;PolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName&quot;: Unrecognized variable: (performer)" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-payers.schematron.uml#_p4NRoF16EeGt2doqSDULjA"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section ?.xi.a.4: Could not transform OCL constraint &quot;GeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-USRealmHeader/consol-documents.schematron.uml#_dqXccDVREeGIw7CntkyPQw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section ?.xi.a.4: Could not transform OCL constraint &quot;GeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-USRealmHeader/consol-documents.schematron.uml#_kIBcYDVREeGIw7CntkyPQw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.4.4.i.c.2: Could not transform OCL constraint &quot;DischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization&quot;: Unrecognized variable: (xyz)" messageType="17">
+    <participants href="../genschematron-DischargeSummary/consol-documents.schematron.uml#_cALIgTzFEeGMk58Mp9-wVA"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.4.i.c: Could not transform OCL constraint &quot;DischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization&quot;: Unrecognized variable: (xyz)" messageType="17">
+    <participants href="../genschematron-DischargeSummary/consol-documents.schematron.uml#_dTBQcTzFEeGMk58Mp9-wVA"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.1: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRoleClassCodeP&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_iqbAYLTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.1: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRoleClassCode&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_iqX9ELTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.2: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntity&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_kUVkgLTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.2.iii: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_J6nekGFBEeSwtJfyLHwh8Q"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.2.i: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityClassCode&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_iqiVILTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.2.ii: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCode&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_iqkxYLTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.2.ii.a: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_iqn0sLTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.2.ii.b: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCETranslation&quot;: null" messageType="17">
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_iqqQ8LTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section ?.xiii.b.7: Could not transform OCL constraint &quot;GeneralHeaderConstraintsAuthorAssignedAuthorHasOneAssignedPersonOrOneAssignedAuthoringDevice&quot;: Unrecognized variable: (xyz)" messageType="17">
+    <participants href="../genschematron-USRealmHeader/consol-documents.schematron.uml#_LKdzICzAEeGMXrZ0DiQwGg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section ?.xi.a.5: Could not transform OCL constraint &quot;GeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier&quot;: Unrecognized variable: (xyz)" messageType="17">
+    <participants href="../genschematron-USRealmHeader/consol-documents.schematron.uml#_BEoOQDVVEeGIw7CntkyPQw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.4.i.e: Could not transform OCL constraint &quot;ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-ConsultationNote/consol-documents.schematron.uml#_a61tMGatEeOVOfVUed23Tw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.4.i.f: Could not transform OCL constraint &quot;ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-ConsultationNote/consol-documents.schematron.uml#_t1LWoGa1EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.4.i.g: Could not transform OCL constraint &quot;ConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-ConsultationNote/consol-documents.schematron.uml#_u4E-EGa1EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.4.i.h: Could not transform OCL constraint &quot;ConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-ConsultationNote/consol-documents.schematron.uml#_vxJUEGa1EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.4.i.c.2: Could not transform OCL constraint &quot;ConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth&quot;: Unrecognized variable: (xyz)" messageType="17">
+    <participants href="../genschematron-ConsultationNote/consol-documents.schematron.uml#_M0h7UDsxEeGvzMYhXuqAEA"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.4.i.c: Could not transform OCL constraint &quot;ConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth&quot;: Unrecognized variable: (xyz)" messageType="17">
+    <participants href="../genschematron-ConsultationNote/consol-documents.schematron.uml#_ybGekDsyEeGvzMYhXuqAEA"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.5.i.f: Could not transform OCL constraint &quot;HistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheDay&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-HistoryAndPhysicalNote/consol-documents.schematron.uml#_OLqQUGdnEeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.5.i.g: Could not transform OCL constraint &quot;HistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheMinute&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-HistoryAndPhysicalNote/consol-documents.schematron.uml#_QqDlYGdnEeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.5.i.h: Could not transform OCL constraint &quot;HistoryAndPhysicalNoteComponentOfEncompassingEncounter4PreciseToTheSecond&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-HistoryAndPhysicalNote/consol-documents.schematron.uml#_SlG80GdnEeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.5.i.i: Could not transform OCL constraint &quot;HistoryAndPhysicalNoteComponentOfEncompassingEncounter4IfMorePreciseThanDayIncludeTimeZoneOffset&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-HistoryAndPhysicalNote/consol-documents.schematron.uml#_UX8MYGdnEeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.6.5.i.d.2: Could not transform OCL constraint &quot;HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization&quot;: Unrecognized variable: (xyz)" messageType="17">
+    <participants href="../genschematron-HistoryAndPhysicalNote/consol-documents.schematron.uml#__kITgT1lEeG3tde5scYNWA"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.1.4.i.c: Could not transform OCL constraint &quot;HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization&quot;: Unrecognized variable: (xyz)" messageType="17">
+    <participants href="../genschematron-HistoryAndPhysicalNote/consol-documents.schematron.uml#_B9BdgT1mEeG3tde5scYNWA"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.7.4.i.h: Could not transform OCL constraint &quot;OperativeNoteDocumentationOfServiceEventPreciseToTheDay&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-OperativeNote/consol-documents.schematron.uml#_EtNcEGdrEeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.7.4.i.i: Could not transform OCL constraint &quot;OperativeNoteDocumentationOfServiceEventPreciseToTheMinute&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-OperativeNote/consol-documents.schematron.uml#_GxQ-gGdrEeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.7.4.i.j: Could not transform OCL constraint &quot;OperativeNoteDocumentationOfServiceEventPreciseToTheSecond&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-OperativeNote/consol-documents.schematron.uml#_IMowUGdrEeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.7.4.i.k: Could not transform OCL constraint &quot;OperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-OperativeNote/consol-documents.schematron.uml#_KUPWAGdrEeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.4.i.b.1: Could not transform OCL constraint &quot;ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility&quot;: Static reference to non-static attribute &quot;HealthCareFacility&quot;" messageType="17">
+    <participants href="../genschematron-ProcedureNote/consol-documents.schematron.uml#_k0pcQLTBEeWEoeeTdrbyVw"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.6.i.d: Could not transform OCL constraint &quot;ProcedureNoteDocumentationOfServiceEvent1PreciseToTheDay&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-ProcedureNote/consol-documents.schematron.uml#_TNTqoGd6EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.6.i.e: Could not transform OCL constraint &quot;ProcedureNoteDocumentationOfServiceEvent1PreciseToTheMinute&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-ProcedureNote/consol-documents.schematron.uml#_Us51IGd6EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.6.i.f: Could not transform OCL constraint &quot;ProcedureNoteDocumentationOfServiceEvent1PreciseToTheSecond&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-ProcedureNote/consol-documents.schematron.uml#_WfksoGd6EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.8.6.i.g: Could not transform OCL constraint &quot;ProcedureNoteDocumentationOfServiceEvent1IfMorePreciseThanDayIncludeTimeZoneOffset&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="../genschematron-ProcedureNote/consol-documents.schematron.uml#_YhHtoGd6EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.4.i.e: Could not transform OCL constraint &quot;ProgressNoteDocumentationOfServiceEvent2PreciseToTheDay&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="consol-documents.schematron.uml#_0IhrUGd2EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.4.i.f: Could not transform OCL constraint &quot;ProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="consol-documents.schematron.uml#_1sibwGd2EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.4.i.g: Could not transform OCL constraint &quot;ProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="consol-documents.schematron.uml#_265sUGd2EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.4.i.h: Could not transform OCL constraint &quot;ProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="consol-documents.schematron.uml#_4PDb0Gd2EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.5.i.d: Could not transform OCL constraint &quot;ProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="consol-documents.schematron.uml#_8uBsEGd3EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.5.i.e: Could not transform OCL constraint &quot;ProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="consol-documents.schematron.uml#_-YebsGd3EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.5.i.f: Could not transform OCL constraint &quot;ProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="consol-documents.schematron.uml#_APjSEGd4EeO8u4bjJ5HCCg"/>
+  </traces>
+  <traces xsi:type="trc:LogEntry" message="Section 2.9.5.i.g: Could not transform OCL constraint &quot;ProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset&quot;: Cannot find operation (size()) for the type (tsType)" messageType="17">
+    <participants href="consol-documents.schematron.uml#_CmAzIGd4EeO8u4bjJ5HCCg"/>
+  </traces>
+</trc:Traces>

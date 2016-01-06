@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Class xmi:id="_2Uz-4xSVEeGGzu7fmW9pXw" name="DischargeDietSection">
+    <ownedComment xmi:id="_2Uz-5BSVEeGGzu7fmW9pXw" annotatedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
+      <body>This section records a narrative description of the expectations for diet, including proposals, goals, and order requests for monitoring, tracking, or improving the dietary control of the patient, used in a discharge from a facility such as an emergency department, hospital, or nursing home.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_kA2AwLTBEeWEoeeTdrbyVw" name="DischargeDietSectionTemplateId" constrainedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kA2AwbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.33')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kA4dALTBEeWEoeeTdrbyVw" name="DischargeDietSectionCode" constrainedElement="_2Uz-5hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kA4dAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '42344-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kA65QLTBEeWEoeeTdrbyVw" name="DischargeDietSectionCodeP" constrainedElement="_2Uz-5hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kA65QbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kA9VgLTBEeWEoeeTdrbyVw" name="DischargeDietSectionTitle" constrainedElement="_7AqigStVEeGlWN0TVxk9LA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kA9VgbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kA_KsLTBEeWEoeeTdrbyVw" name="DischargeDietSectionText" constrainedElement="_7Ap7cCtVEeGlWN0TVxk9LA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kA_KsbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_BnShMLTCEeWEoeeTdrbyVw" name="DischargeDietSectionTemplateId" constrainedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_BnTIQLTCEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.33')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_b4PFcLTCEeWEoeeTdrbyVw" name="DischargeDietSectionTemplateId" constrainedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b4PFcbTCEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.33')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_DPGXELTDEeWEoeeTdrbyVw" name="DischargeDietSectionTemplateId" constrainedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_DPKogLTDEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.33')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_3TPMkLTDEeWEoeeTdrbyVw" name="DischargeDietSectionTemplateId" constrainedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3TPMkbTDEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.33')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_Pk6AsLTEEeWEoeeTdrbyVw" name="DischargeDietSectionTemplateId" constrainedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pk6AsbTEEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.33')</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2U6FchSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2Uz-5hSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Uz-6BSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Uz-5xSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7AqigStVEeGlWN0TVxk9LA" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-zG5YStVEeGlWN0TVxk9LA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-zG5YCtVEeGlWN0TVxk9LA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7Ap7cCtVEeGlWN0TVxk9LA" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__Nd6IStVEeGlWN0TVxk9LA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__Nd6ICtVEeGlWN0TVxk9LA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_yJUwEBkaEeGs5a462vYX5Q" base_Class="_2Uz-4xSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.33">
+    <ruleId>CONF:10455</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_2U6FcBSVEeGGzu7fmW9pXw" code="42344-2" displayName="Discharge Diet" base_Property="_2Uz-5hSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15460</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Class xmi:id="_hD-z0CUPEeGiOPpZVnfEJA" name="DischargeMedication">
+    <ownedComment xmi:id="_j_-q4CUPEeGiOPpZVnfEJA">
+      <body>The Discharge Medications entry codes medications that the patient is intended to take (or stop) after discharge.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_kBKJ0LTBEeWEoeeTdrbyVw" name="DischargeMedicationTemplateId" constrainedElement="_hD-z0CUPEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBKw4LTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.35')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBL_ALTBEeWEoeeTdrbyVw" name="DischargeMedicationClassCode" constrainedElement="_iYa3MCUPEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBL_AbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBN0MLTBEeWEoeeTdrbyVw" name="DischargeMedicationMoodCode" constrainedElement="_iYdTcCUPEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBN0MbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBRekLTBEeWEoeeTdrbyVw" name="DischargeMedicationCodeP" constrainedElement="_iYcFUCUPEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBRekbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBPpYLTBEeWEoeeTdrbyVw" name="DischargeMedicationCode" constrainedElement="_iYcFUCUPEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBPpYbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '10183-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_qH760LTBEeWEoeeTdrbyVw" name="DischargeMedicationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wwEQ8LS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qH760bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::DischargeMedication::MedicationActivityEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_hD_a4CUPEeGiOPpZVnfEJA">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_iYa3MCUPEeGiOPpZVnfEJA" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_qbpGwCUPEeGiOPpZVnfEJA" value="ACT"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iYdTcCUPEeGiOPpZVnfEJA" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_sLnPkCUPEeGiOPpZVnfEJA" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iYcFUCUPEeGiOPpZVnfEJA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wwEQ8bS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wwDp4LS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwEQ8rS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwEQ87S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wwEQ8LS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wwDp4LS3EeWpm8PSOGz-9g" name="MedicationActivityEntryRelationship">
+      <ownedRule xmi:id="_qI1SsLTBEeWEoeeTdrbyVw" name="DischargeMedicationMedicationActivityEntryRelationshipMedicationActivity">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wwE4AbS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_qI1SsbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.substanceAdministration->exists(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wwDp4bS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wwE4ArS3EeWpm8PSOGz-9g" name="medicationActivity" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwE4A7S3EeWpm8PSOGz-9g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwFfELS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Px50sUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wwE4AbS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_3InvsCUPEeGiOPpZVnfEJA" memberEnd="_3InvsSUPEeGiOPpZVnfEJA">
+    <ownedEnd xmi:id="_3InvsSUPEeGiOPpZVnfEJA" type="_hD-z0CUPEeGiOPpZVnfEJA" isReadOnly="true" association="_3InvsCUPEeGiOPpZVnfEJA"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_lhObMCUPEeGiOPpZVnfEJA" base_Class="_hD-z0CUPEeGiOPpZVnfEJA" templateId="2.16.840.1.113883.10.20.22.4.35" assigningAuthorityName="HL7">
+    <ruleId>CONF:16760</ruleId>
+    <ruleId>CONF:16761</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_pYIbUCUPEeGiOPpZVnfEJA" base_Property="_iYa3MCUPEeGiOPpZVnfEJA">
+    <ruleId>CONF:7689</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_sfKdsCUPEeGiOPpZVnfEJA" base_Property="_iYdTcCUPEeGiOPpZVnfEJA">
+    <ruleId>CONF:7690</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_wW7ZcCUPEeGiOPpZVnfEJA" code="10183-2" displayName="Discharge Medication" base_Property="_iYcFUCUPEeGiOPpZVnfEJA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7691</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:EntryRelationship xmi:id="_49JBUCUPEeGiOPpZVnfEJA" base_Association="_3InvsCUPEeGiOPpZVnfEJA" typeCode="SUBJ">
+    <ruleId>CONF:7692</ruleId>
+    <ruleId>CONF:7693</ruleId>
+    <ruleId>CONF:15525</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Class xmi:id="_2RqkOxSVEeGGzu7fmW9pXw" name="HospitalCourseSection">
+    <ownedComment xmi:id="_2RqkPBSVEeGGzu7fmW9pXw" annotatedElement="_2RqkOxSVEeGGzu7fmW9pXw">
+      <body>The Hospital Course section describes the sequence of events from admission to discharge in a hospital facility.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_kArBoLTBEeWEoeeTdrbyVw" name="HospitalCourseSectionTemplateId" constrainedElement="_2RqkOxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kArosLTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.5')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kAusALTBEeWEoeeTdrbyVw" name="HospitalCourseSectionCode" constrainedElement="_2RqkQBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAusAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '8648-8' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kAxIQLTBEeWEoeeTdrbyVw" name="HospitalCourseSectionCodeP" constrainedElement="_2RqkQBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAxIQbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kAzkgLTBEeWEoeeTdrbyVw" name="HospitalCourseSectionTitle" constrainedElement="_A2FiQCUKEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAzkgbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kA0yoLTBEeWEoeeTdrbyVw" name="HospitalCourseSectionText" constrainedElement="_A1tHwCUKEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kA0yobTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2RqkQxSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2RqkQBSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_A2FiQCUKEeGiOPpZVnfEJA" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CZOI8SUKEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CZOI8CUKEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_A1tHwCUKEeGiOPpZVnfEJA" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C3ag0SUKEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C3ag0CUKEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_55YpcBnSEeGs5a462vYX5Q" base_Class="_2RqkOxSVEeGGzu7fmW9pXw" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.5" assigningAuthorityName="HL7">
+    <ruleId>CONF:10459</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_2RqkQRSVEeGGzu7fmW9pXw" code="8648-8" displayName="Hospital Course" base_Property="_2RqkQBSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15488</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_DWr2wCUKEeGiOPpZVnfEJA" base_Property="_A2FiQCUKEeGiOPpZVnfEJA">
+    <ruleId>CONF:7854</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_FMdsoCUKEeGiOPpZVnfEJA" base_Property="_A1tHwCUKEeGiOPpZVnfEJA">
+    <ruleId>CONF:7855</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_KtwVgCULEeGiOPpZVnfEJA" name="HospitalDischargeDiagnosis">
+    <ownedComment xmi:id="_QGxBkCULEeGiOPpZVnfEJA">
+      <body>The Hospital Discharge Diagnosis act wraps relevant problems or diagnoses at the time of discharge that occurred during the hospitalization or that need to be followed after hospitalization. This entry requires at least one Problem Observation entry.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_kBT60LTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisTemplateId" constrainedElement="_KtwVgCULEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBT60bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.33')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBVwALTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisClassCode" constrainedElement="_MwNVcCULEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBVwAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBW-ILTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisMoodCode" constrainedElement="_MwPKoCULEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBW-IbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBaogLTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisCodeP" constrainedElement="_MwOjkCULEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBaogbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBYzULTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisCode" constrainedElement="_MwOjkCULEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBYzUbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '11535-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_qJrnQLTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wwGtMLS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qJrnQbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::HospitalDischargeDiagnosis::ProblemObservationEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_Ktw8kCULEeGiOPpZVnfEJA">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_MwNVcCULEeGiOPpZVnfEJA" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_izuP8CULEeGiOPpZVnfEJA" value="ACT"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MwPKoCULEeGiOPpZVnfEJA" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_jWJnkCULEeGiOPpZVnfEJA" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MwOjkCULEeGiOPpZVnfEJA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wwGtMbS3EeWpm8PSOGz-9g" name="entryRelationship" type="_wwGGILS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwGtMrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwGtM7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_wwGtMLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wwGGILS3EeWpm8PSOGz-9g" name="ProblemObservationEntryRelationship">
+      <ownedRule xmi:id="_qKe4gLTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisProblemObservationEntryRelationshipProblemObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wwH7ULS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_qKe4gbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wwGGIbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wwH7UbS3EeWpm8PSOGz-9g" name="problemObservation" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwH7UrS3EeWpm8PSOGz-9g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwH7U7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_wwH7ULS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_uH22oCULEeGiOPpZVnfEJA" memberEnd="_uH22oSULEeGiOPpZVnfEJA">
+    <ownedEnd xmi:id="_uH22oSULEeGiOPpZVnfEJA" type="_KtwVgCULEeGiOPpZVnfEJA" isReadOnly="true" association="_uH22oCULEeGiOPpZVnfEJA"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_OJL6kCULEeGiOPpZVnfEJA" base_Class="_KtwVgCULEeGiOPpZVnfEJA" templateId="2.16.840.1.113883.10.20.22.4.33" assigningAuthorityName="HL7">
+    <ruleId>CONF:16764</ruleId>
+    <ruleId>CONF:16765</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_em_w0CULEeGiOPpZVnfEJA" base_Property="_MwNVcCULEeGiOPpZVnfEJA">
+    <ruleId>CONF:7663</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_hnRD4CULEeGiOPpZVnfEJA" base_Property="_MwPKoCULEeGiOPpZVnfEJA">
+    <ruleId>CONF:7664</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_kj3X4CULEeGiOPpZVnfEJA" code="11535-2" displayName="Hospital Discharge Diagnosis" base_Property="_MwOjkCULEeGiOPpZVnfEJA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7665</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:EntryRelationship xmi:id="_w-z1oCULEeGiOPpZVnfEJA" base_Association="_uH22oCULEeGiOPpZVnfEJA" typeCode="SUBJ">
+    <ruleId>CONF:7666</ruleId>
+    <ruleId>CONF:7667</ruleId>
+    <ruleId>CONF:15536</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Class xmi:id="_2PidURSVEeGGzu7fmW9pXw" name="HospitalDischargeDiagnosisSection">
+    <ownedComment xmi:id="_2Poj4hSVEeGGzu7fmW9pXw" annotatedElement="_2PidURSVEeGGzu7fmW9pXw">
+      <body>The Hospital Discharge Diagnosis section describes the relevant problems or diagnoses at the time of discharge that occurred during the hospitalization or that need to be followed after hospitalization. This section includes an optional entry to record patient conditions.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_kAVDYLTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisSectionTemplateId" constrainedElement="_2PidURSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAVqcLTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.24')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kAXfoLTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisSectionCode" constrainedElement="_2Poj4BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAXfobTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '11535-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kAZ74LTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisSectionCodeP" constrainedElement="_2Poj4BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAZ74bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kAcYILTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisSectionTitle" constrainedElement="_wbgJsCUKEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAcYIbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kAeNULTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisSectionText" constrainedElement="_wbe7kCUKEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAeNUbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_qEPGkLTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisSectionEntry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wv_YcLS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qEPGkbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::HospitalDischargeDiagnosisSection::HospitalDischargeDiagnosisEntry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2Poj4xSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2Poj4BSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wbgJsCUKEeGiOPpZVnfEJA" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x6cM4CUKEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x6bl0CUKEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wbe7kCUKEeGiOPpZVnfEJA" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yaMD8CUKEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yaLc4CUKEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wv_YcbS3EeWpm8PSOGz-9g" name="entry" type="_wv-xYLS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wv_YcrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wv_Yc7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wv_YcLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wv-xYLS3EeWpm8PSOGz-9g" name="HospitalDischargeDiagnosisEntry">
+      <ownedRule xmi:id="_qFFbILTBEeWEoeeTdrbyVw" name="HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisEntryHospitalDischargeDiagnosis">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wv__grS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_qFFbIbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.act->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->size() &lt;= 1</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wv-xYbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wv__g7S3EeWpm8PSOGz-9g" name="hospitalDischargeDiagnosis" type="_KtwVgCULEeGiOPpZVnfEJA" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwAmkLS3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwAmkbS3EeWpm8PSOGz-9g" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wv__grS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_41cG4BnXEeGs5a462vYX5Q" base_Class="_2PidURSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.24" assigningAuthorityName="HL7">
+    <ruleId>CONF:7979</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_2Poj4RSVEeGGzu7fmW9pXw" code="11535-2" displayName="Hospital Discharge Diagnosis" base_Property="_2Poj4BSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15356</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_zgAcgCUKEeGiOPpZVnfEJA" base_Property="_wbgJsCUKEeGiOPpZVnfEJA">
+    <ruleId>CONF:7981</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_0U5dICUKEeGiOPpZVnfEJA" base_Property="_wbe7kCUKEeGiOPpZVnfEJA">
+    <ruleId>CONF:7982</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_lBergCUMEeGiOPpZVnfEJA" name="HospitalDischargeInstructionsSection">
+    <ownedComment xmi:id="_YHIqECUOEeGiOPpZVnfEJA">
+      <body>The Hospital Discharge Instructions section records instructions at discharge.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_kBcdsLTBEeWEoeeTdrbyVw" name="HospitalDischargeInstructionsSectionTemplateId" constrainedElement="_lBergCUMEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBdEwLTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.41')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBfhALTBEeWEoeeTdrbyVw" name="HospitalDischargeInstructionsSectionCode" constrainedElement="_mPuAQCUMEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBfhAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '8653-8' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBikULTBEeWEoeeTdrbyVw" name="HospitalDischargeInstructionsSectionCodeP" constrainedElement="_mPuAQCUMEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBikUbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBlAkLTBEeWEoeeTdrbyVw" name="HospitalDischargeInstructionsSectionTitle" constrainedElement="_mPwcgCUMEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBlAkbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBm1wLTBEeWEoeeTdrbyVw" name="HospitalDischargeInstructionsSectionText" constrainedElement="_mPvOYCUMEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBm1wbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_lBfSkCUMEeGiOPpZVnfEJA">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_mPuAQCUMEeGiOPpZVnfEJA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yZAGQSUMEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yZAGQCUMEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_mPwcgCUMEeGiOPpZVnfEJA" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNEngSUMEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNEngCUMEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_mPvOYCUMEeGiOPpZVnfEJA" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yz_ZICUMEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yz-yECUMEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_onB14CUMEeGiOPpZVnfEJA" base_Class="_lBergCUMEeGiOPpZVnfEJA" templateId="2.16.840.1.113883.10.20.22.2.41" assigningAuthorityName="HL7">
+    <ruleId>CONF:10395</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_sPZDsCUMEeGiOPpZVnfEJA" code="8653-8" displayName="Hospital Discharge Instructions" base_Property="_mPuAQCUMEeGiOPpZVnfEJA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15358</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_0SG88CUMEeGiOPpZVnfEJA" base_Property="_mPvOYCUMEeGiOPpZVnfEJA">
+    <ruleId>CONF:9921</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_2S9aYCUMEeGiOPpZVnfEJA" base_Property="_mPwcgCUMEeGiOPpZVnfEJA">
+    <ruleId>CONF:9922</ruleId>
+  </CDA:TextValue>
+  <uml:Class xmi:id="_TytVkCUQEeGiOPpZVnfEJA" name="HospitalDischargeMedicationsSection">
+    <ownedComment xmi:id="_jk0jcCUQEeGiOPpZVnfEJA">
+      <body>The Hospital Discharge Medications section defines the medications that the patient is intended to take (or stop) after discharge. The currently active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list, for example, from a pharmacy system versus from the patient.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_kBoD4bTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntriesOptionalTemplateId" constrainedElement="_TytVkCUQEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBoq8LTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.11.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBtjcLTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntriesOptionalCodeP" constrainedElement="_aAJAkFGkEeG3H6xvuD7Z0Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBtjcbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBrHMLTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntriesOptionalCode" constrainedElement="_aAJAkFGkEeG3H6xvuD7Z0Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBrHMbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '10183-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBwmwLTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntriesOptionalText" constrainedElement="_aAJAklGkEeG3H6xvuD7Z0Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBwmwbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBx04LTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntriesOptionalTitle" constrainedElement="_aAJAllGkEeG3H6xvuD7Z0Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kByb8LTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_qLPtgLTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wwJJcLS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qLPtgbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::HospitalDischargeMedicationsSection::DischargeMedicationEntry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_TytVkSUQEeGiOPpZVnfEJA" general="_2Poj7RSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_qXZq0HavEeGK39q3kclbsA">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
+    <ownedAttribute xmi:id="_aAJAkFGkEeG3H6xvuD7Z0Q" name="code" visibility="private" isReadOnly="true" redefinedProperty="_2Poj-BSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aAJAklGkEeG3H6xvuD7Z0Q" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aAJAlFGkEeG3H6xvuD7Z0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aAJAk1GkEeG3H6xvuD7Z0Q" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      <redefinedProperty href="#_zaJvUCUOEeGiOPpZVnfEJA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_aAJAllGkEeG3H6xvuD7Z0Q" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aAJAmFGkEeG3H6xvuD7Z0Q" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aAJAl1GkEeG3H6xvuD7Z0Q" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+      <redefinedProperty href="#_zaK9cCUOEeGiOPpZVnfEJA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wwJJcbS3EeWpm8PSOGz-9g" name="entry" type="_wwIiYLS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwJJcrS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwJJc7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wwJJcLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wwIiYLS3EeWpm8PSOGz-9g" name="DischargeMedicationEntry">
+      <ownedRule xmi:id="_qMAigLTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionDischargeMedicationEntryDischargeMedication">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wwKXkLS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_qMAigbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::DischargeMedication))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wwIiYbS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wwKXkbS3EeWpm8PSOGz-9g" name="dischargeMedication" type="_hD-z0CUPEeGiOPpZVnfEJA" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwKXkrS3EeWpm8PSOGz-9g" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwKXk7S3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wwKXkLS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:ClassValidation xmi:id="_fQfngCUQEeGiOPpZVnfEJA" base_Class="_TytVkCUQEeGiOPpZVnfEJA">
+    <ruleId>CONF:10397</ruleId>
+  </CDA:ClassValidation>
+  <CDA:CDATemplate xmi:id="_gKw3YCUQEeGiOPpZVnfEJA" base_Class="_TytVkCUQEeGiOPpZVnfEJA" templateId="2.16.840.1.113883.10.20.22.2.11.1" assigningAuthorityName="HL7"/>
+  <uml:Class xmi:id="_2Poj7RSVEeGGzu7fmW9pXw" name="HospitalDischargeMedicationsSectionEntriesOptional">
+    <ownedComment xmi:id="_2Poj-hSVEeGGzu7fmW9pXw" annotatedElement="_2Poj7RSVEeGGzu7fmW9pXw">
+      <body>The Hospital Discharge Medications section defines the medications that the patient is intended to take (or stop) after discharge. The currently active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list, for example, from a pharmacy system versus from the patient.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_kAfbcLTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntriesOptionalTemplateId" constrainedElement="_2Poj7RSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAfbcbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.11')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kAhQoLTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntriesOptionalCode" constrainedElement="_2Poj-BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAhQobTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '10183-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kAjs4LTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntriesOptionalCodeP" constrainedElement="_2Poj-BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAjs4bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kAmJILTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntriesOptionalTitle" constrainedElement="_zaK9cCUOEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kAmJIbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kApMcLTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntriesOptionalText" constrainedElement="_zaJvUCUOEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kApMcbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_qF2QILTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntriesOptionalEntry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wwB0sLS3EeWpm8PSOGz-9g"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qF2QIbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::HospitalDischargeMedicationsSectionEntriesOptional::DischargeMedicationEntry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2Poj-xSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2Poj-BSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zaK9cCUOEeGiOPpZVnfEJA" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Dr48SUOEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Dr48CUOEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zaJvUCUOEeGiOPpZVnfEJA" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1j5DACUOEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1j4b8CUOEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wwB0sbS3EeWpm8PSOGz-9g" name="entry" type="_wwBNoLS3EeWpm8PSOGz-9g" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwB0srS3EeWpm8PSOGz-9g" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwB0s7S3EeWpm8PSOGz-9g" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_wwB0sLS3EeWpm8PSOGz-9g"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wwBNoLS3EeWpm8PSOGz-9g" name="DischargeMedicationEntry">
+      <ownedRule xmi:id="_qGqvgLTBEeWEoeeTdrbyVw" name="HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedicationEntryDischargeMedication">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_wwCbwbS3EeWpm8PSOGz-9g"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_qGqvgbTBEeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.act->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::DischargeMedication))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wwBNobS3EeWpm8PSOGz-9g">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wwCbwrS3EeWpm8PSOGz-9g" name="dischargeMedication" type="_hD-z0CUPEeGiOPpZVnfEJA" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wwCbw7S3EeWpm8PSOGz-9g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wwDC0LS3EeWpm8PSOGz-9g" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_wwCbwbS3EeWpm8PSOGz-9g"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="__7eHsBnSEeGs5a462vYX5Q" base_Class="_2Poj7RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.11" assigningAuthorityName="HL7">
+    <ruleId>CONF:10396</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_2Poj-RSVEeGGzu7fmW9pXw" code="10183-2" displayName="HOSPITAL DISCHARGE MEDICATIONS" base_Property="_2Poj-BSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15360</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_236PoCUOEeGiOPpZVnfEJA" base_Property="_zaK9cCUOEeGiOPpZVnfEJA">
+    <ruleId>CONF:7818</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_4s9swCUOEeGiOPpZVnfEJA" base_Property="_zaJvUCUOEeGiOPpZVnfEJA">
+    <ruleId>CONF:7819</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_WikGsCUTEeGiOPpZVnfEJA" name="HospitalDischargePhysicalSection">
+    <ownedComment xmi:id="_YsVPkCUTEeGiOPpZVnfEJA">
+      <body>The Hospital Discharge Physical section records a narrative description of the patient's physical findings.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_kGsKELTBEeWEoeeTdrbyVw" name="HospitalDischargePhysicalSectionTemplateId" constrainedElement="_WikGsCUTEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kGsxILTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.26')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kGumULTBEeWEoeeTdrbyVw" name="HospitalDischargePhysicalSectionCode" constrainedElement="_Xi_B4CUTEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kGumUbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '10184-0' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kGxCkLTBEeWEoeeTdrbyVw" name="HospitalDischargePhysicalSectionCodeP" constrainedElement="_Xi_B4CUTEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kGxCkbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kGze0LTBEeWEoeeTdrbyVw" name="HospitalDischargePhysicalSectionTitle" constrainedElement="_Xi_B6CUTEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kGze0bTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kG1UALTBEeWEoeeTdrbyVw" name="HospitalDischargePhysicalSectionText" constrainedElement="_Xi_B5CUTEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kG1UAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_WikGsSUTEeGiOPpZVnfEJA">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_Xi_B4CUTEeGiOPpZVnfEJA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fc9O0SUTEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fc9O0CUTEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Xi_B6CUTEeGiOPpZVnfEJA" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nWWM8SUTEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nWWM8CUTEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Xi_B5CUTEeGiOPpZVnfEJA" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m9gPISUTEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m9gPICUTEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_Z5_VgCUTEeGiOPpZVnfEJA" base_Class="_WikGsCUTEeGiOPpZVnfEJA" templateId="1.3.6.1.4.1.19376.1.5.3.1.3.26" assigningAuthorityName="HL7">
+    <ruleId>CONF:10460</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_f0Ul8CUTEeGiOPpZVnfEJA" code="10184-0" displayName="Hospital Discharge Physical" base_Property="_Xi_B4CUTEeGiOPpZVnfEJA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15364</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_o0XqICUTEeGiOPpZVnfEJA" base_Property="_Xi_B6CUTEeGiOPpZVnfEJA">
+    <ruleId>CONF:7973</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_oHJXwCUTEeGiOPpZVnfEJA" base_Property="_Xi_B5CUTEeGiOPpZVnfEJA">
+    <ruleId>CONF:7974</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_38AXoCUTEeGiOPpZVnfEJA" name="HospitalDischargeStudiesSummarySection">
+    <ownedComment xmi:id="_IeLwgCUUEeGiOPpZVnfEJA">
+      <body>This section records the results of observations generated by laboratories, imaging procedures, and other procedures. The scope includes hematology, chemistry, serology, virology, toxicology, microbiology, plain x-ray, ultrasound, CT, MRI, angiography, echocardiography, nuclear medicine, pathology, and procedure observations. This section often includes notable results such as abnormal values or relevant trends, and could record all results for the period of time being documented.&#xD;
+Laboratory results are typically generated by laboratories providing analytic services in areas such as chemistry, hematology, serology, histology, cytology, anatomic pathology, microbiology, and/or virology. These observations are based on analysis of specimens obtained from the patient and submitted to the laboratory.&#xD;
+Imaging results are typically generated by a clinician reviewing the output of an imaging procedure, such as where a cardiologist reports the left ventricular ejection fraction based on the review of an echocardiogram.&#xD;
+Procedure results are typically generated by a clinician wanting to provide more granular information about component observations made during the performance of a procedure, such as when a gastroenterologist reports the size of a polyp observed during a colonoscopy.&#xD;
+Note that there are discrepancies between CCD and the lab domain model, such as the effectiveTime in specimen collection.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_kA_xwLTBEeWEoeeTdrbyVw" name="HospitalDischargeStudiesSummarySectionTemplateId" constrainedElement="_38AXoCUTEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBAY0LTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.16')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBCOALTBEeWEoeeTdrbyVw" name="HospitalDischargeStudiesSummarySectionCode" constrainedElement="_5F8bMCUTEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBCOAbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '11493-4' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBEqQLTBEeWEoeeTdrbyVw" name="HospitalDischargeStudiesSummarySectionCodeP" constrainedElement="_5F8bMCUTEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBEqQbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBHtkLTBEeWEoeeTdrbyVw" name="HospitalDischargeStudiesSummarySectionTitle" constrainedElement="_5F8bOCUTEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBHtkbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kBI7sLTBEeWEoeeTdrbyVw" name="HospitalDischargeStudiesSummarySectionText" constrainedElement="_5F8bNCUTEeGiOPpZVnfEJA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBI7sbTBEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_38JhkCUTEeGiOPpZVnfEJA">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_5F8bMCUTEeGiOPpZVnfEJA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CbyJMSUUEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CbyJMCUUEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5F8bOCUTEeGiOPpZVnfEJA" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DztlcSUUEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DztlcCUUEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5F8bNCUTEeGiOPpZVnfEJA" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DWjIUSUUEeGiOPpZVnfEJA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DWjIUCUUEeGiOPpZVnfEJA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_6g_c4CUTEeGiOPpZVnfEJA" base_Class="_38AXoCUTEeGiOPpZVnfEJA" templateId="2.16.840.1.113883.10.20.22.2.16" assigningAuthorityName="HL7">
+    <ruleId>CONF:10398</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_8-_JUCUTEeGiOPpZVnfEJA" code="11493-4" displayName="Hospital Discharge Studies Summary" base_Property="_5F8bMCUTEeGiOPpZVnfEJA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15366</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_Fa_sUCUUEeGiOPpZVnfEJA" base_Property="_5F8bOCUTEeGiOPpZVnfEJA">
+    <ruleId>CONF:7912</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_GePSACUUEeGiOPpZVnfEJA" base_Property="_5F8bNCUTEeGiOPpZVnfEJA">
+    <ruleId>CONF:7913</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_fU_8giqAEeGiFpKeZIy4Pg" memberEnd="_fU_8gyqAEeGiFpKeZIy4Pg">
+    <ownedEnd xmi:id="_fU_8gyqAEeGiFpKeZIy4Pg" type="_2PidURSVEeGGzu7fmW9pXw" isReadOnly="true" association="_fU_8giqAEeGiFpKeZIy4Pg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_w9kVsiqAEeGiFpKeZIy4Pg" memberEnd="_w9kVsyqAEeGiFpKeZIy4Pg">
+    <ownedEnd xmi:id="_w9kVsyqAEeGiFpKeZIy4Pg" type="_2Poj7RSVEeGGzu7fmW9pXw" isReadOnly="true" association="_w9kVsiqAEeGiFpKeZIy4Pg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_9GB8UCqAEeGiFpKeZIy4Pg" memberEnd="_9GB8USqAEeGiFpKeZIy4Pg">
+    <ownedEnd xmi:id="_9GB8USqAEeGiFpKeZIy4Pg" type="_TytVkCUQEeGiOPpZVnfEJA" isReadOnly="true" association="_9GB8UCqAEeGiFpKeZIy4Pg"/>
+  </uml:Association>
+  <CDA:TextValue xmi:id="_8vajUCtVEeGlWN0TVxk9LA" base_Property="_7AqigStVEeGlWN0TVxk9LA">
+    <ruleId>CONF:7977</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_9QG1kCtVEeGlWN0TVxk9LA" base_Property="_7Ap7cCtVEeGlWN0TVxk9LA">
+    <ruleId>CONF:7978</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_aAJAkVGkEeG3H6xvuD7Z0Q" code="10183-2" displayName="HOSPITAL DISCHARGE MEDICATIONS" base_Property="_aAJAkFGkEeG3H6xvuD7Z0Q">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15362</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_aAJAlVGkEeG3H6xvuD7Z0Q" base_Property="_aAJAklGkEeG3H6xvuD7Z0Q">
+    <ruleId>CONF:7825</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_aAJAmVGkEeG3H6xvuD7Z0Q" base_Property="_aAJAllGkEeG3H6xvuD7Z0Q">
+    <ruleId>CONF:7824</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_kjY8UOYiEeGINOJ_SD9_dA" base_Property="_2Uz-5hSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15459</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qhom8OYjEeGINOJ_SD9_dA" base_Property="_2RqkQBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15487</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_dZv4wOYlEeGINOJ_SD9_dA" base_Property="_2Poj4BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15355</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_kXUu4OYlEeGINOJ_SD9_dA" base_Property="_mPuAQCUMEeGiOPpZVnfEJA">
+    <ruleId>CONF:15357</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_ogKMgOYlEeGINOJ_SD9_dA" base_Property="_aAJAkFGkEeG3H6xvuD7Z0Q">
+    <ruleId>CONF:15361</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_uBMzMOYlEeGINOJ_SD9_dA" base_Property="_2Poj-BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15359</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_5N3f8OYlEeGINOJ_SD9_dA" base_Property="_Xi_B4CUTEeGiOPpZVnfEJA">
+    <ruleId>CONF:15363</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_FT754OYmEeGINOJ_SD9_dA" base_Property="_5F8bMCUTEeGiOPpZVnfEJA">
+    <ruleId>CONF:15365</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:Inline xmi:id="_wv-xYrS3EeWpm8PSOGz-9g" base_Class="_wv-xYLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wwBNorS3EeWpm8PSOGz-9g" base_Class="_wwBNoLS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wwDp4rS3EeWpm8PSOGz-9g" base_Class="_wwDp4LS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wwGGIrS3EeWpm8PSOGz-9g" base_Class="_wwGGILS3EeWpm8PSOGz-9g"/>
+  <CDA:Inline xmi:id="_wwIiYrS3EeWpm8PSOGz-9g" base_Class="_wwIiYLS3EeWpm8PSOGz-9g"/>
+  <Ecore:EClass xmi:id="_kAWRgLTBEeWEoeeTdrbyVw" base_Class="_2PidURSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeDiagnosisSectionTemplateId HospitalDischargeDiagnosisSectionCode HospitalDischargeDiagnosisSectionCodeP HospitalDischargeDiagnosisSectionTitle HospitalDischargeDiagnosisSectionText HospitalDischargeDiagnosisSectionEntry' templateId.root='2.16.840.1.113883.10.20.22.2.24' code.code='11535-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Hospital Discharge Diagnosis'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_kAgCgLTBEeWEoeeTdrbyVw" base_Class="_2Poj7RSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeMedicationsSectionEntriesOptionalTemplateId HospitalDischargeMedicationsSectionEntriesOptionalCode HospitalDischargeMedicationsSectionEntriesOptionalCodeP HospitalDischargeMedicationsSectionEntriesOptionalTitle HospitalDischargeMedicationsSectionEntriesOptionalText HospitalDischargeMedicationsSectionEntriesOptionalEntry' templateId.root='2.16.840.1.113883.10.20.22.2.11' code.code='10183-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='HOSPITAL DISCHARGE MEDICATIONS'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_kAsPwLTBEeWEoeeTdrbyVw" base_Class="_2RqkOxSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalCourseSectionTemplateId HospitalCourseSectionCode HospitalCourseSectionCodeP HospitalCourseSectionTitle HospitalCourseSectionText' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.5' code.code='8648-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Hospital Course'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_kA2n0LTBEeWEoeeTdrbyVw" base_Class="_2Uz-4xSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DischargeDietSectionTemplateId DischargeDietSectionCode DischargeDietSectionCodeP DischargeDietSectionTitle DischargeDietSectionText' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.33' code.code='42344-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Discharge Diet'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_kBA_4LTBEeWEoeeTdrbyVw" base_Class="_38AXoCUTEeGiOPpZVnfEJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeStudiesSummarySectionTemplateId HospitalDischargeStudiesSummarySectionCode HospitalDischargeStudiesSummarySectionCodeP HospitalDischargeStudiesSummarySectionTitle HospitalDischargeStudiesSummarySectionText' templateId.root='2.16.840.1.113883.10.20.22.2.16' code.code='11493-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Hospital Discharge Studies Summary'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_kBLX8LTBEeWEoeeTdrbyVw" base_Class="_hD-z0CUPEeGiOPpZVnfEJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DischargeMedicationTemplateId DischargeMedicationClassCode DischargeMedicationMoodCode DischargeMedicationCode DischargeMedicationCodeP DischargeMedicationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.35' classCode='ACT' moodCode='EVN' code.code='10183-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Discharge Medication' constraints.validation.dependOn.DischargeMedicationCode='DischargeMedicationCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_kBUh4LTBEeWEoeeTdrbyVw" base_Class="_KtwVgCULEeGiOPpZVnfEJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeDiagnosisTemplateId HospitalDischargeDiagnosisClassCode HospitalDischargeDiagnosisMoodCode HospitalDischargeDiagnosisCode HospitalDischargeDiagnosisCodeP HospitalDischargeDiagnosisEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.33' classCode='ACT' moodCode='EVN' code.code='11535-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Hospital Discharge Diagnosis' constraints.validation.dependOn.HospitalDischargeDiagnosisCode='HospitalDischargeDiagnosisCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_kBdr0LTBEeWEoeeTdrbyVw" base_Class="_lBergCUMEeGiOPpZVnfEJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeInstructionsSectionTemplateId HospitalDischargeInstructionsSectionCode HospitalDischargeInstructionsSectionCodeP HospitalDischargeInstructionsSectionTitle HospitalDischargeInstructionsSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.41' code.code='8653-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Hospital Discharge Instructions'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_kBoD4LTBEeWEoeeTdrbyVw" base_Generalization="_TytVkSUQEeGiOPpZVnfEJA"/>
+  <Ecore:EClass xmi:id="_kBpSALTBEeWEoeeTdrbyVw" base_Class="_TytVkCUQEeGiOPpZVnfEJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeMedicationsSectionEntriesOptionalTemplateId HospitalDischargeMedicationsSectionEntriesOptionalCode HospitalDischargeMedicationsSectionEntriesOptionalCodeP HospitalDischargeMedicationsSectionEntriesOptionalText HospitalDischargeMedicationsSectionEntriesOptionalTitle HospitalDischargeMedicationsSectionEntry' templateId.root='2.16.840.1.113883.10.20.22.2.11.1' code.code='10183-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='HOSPITAL DISCHARGE MEDICATIONS' constraints.validation.dependOn.HospitalDischargeMedicationsSectionEntriesOptionalCode='HospitalDischargeMedicationsSectionEntriesOptionalCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_kGtYMLTBEeWEoeeTdrbyVw" base_Class="_WikGsCUTEeGiOPpZVnfEJA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargePhysicalSectionTemplateId HospitalDischargePhysicalSectionCode HospitalDischargePhysicalSectionCodeP HospitalDischargePhysicalSectionTitle HospitalDischargePhysicalSectionText' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.26' code.code='10184-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Hospital Discharge Physical'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_qF1pELTBEeWEoeeTdrbyVw" base_Class="_wv-xYLS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosisEntryHospitalDischargeDiagnosis'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_qH6ssLTBEeWEoeeTdrbyVw" base_Class="_wwBNoLS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedicationEntryDischargeMedication'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_qJqZILTBEeWEoeeTdrbyVw" base_Class="_wwDp4LS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DischargeMedicationMedicationActivityEntryRelationshipMedicationActivity'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_qLPGcLTBEeWEoeeTdrbyVw" base_Class="_wwGGILS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeDiagnosisProblemObservationEntryRelationshipProblemObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_qMviULTBEeWEoeeTdrbyVw" base_Class="_wwIiYLS3EeWpm8PSOGz-9g">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeMedicationsSectionDischargeMedicationEntryDischargeMedication'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>
