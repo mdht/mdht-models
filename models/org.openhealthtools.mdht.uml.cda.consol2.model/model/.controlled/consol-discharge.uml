@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2Uz-4xSVEeGGzu7fmW9pXw" name="DischargeDietSection">
     <ownedComment xmi:id="_2Uz-5BSVEeGGzu7fmW9pXw" annotatedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
       <body>This section records a narrative description of the expectations for diet, including proposals, goals, and order requests for monitoring, tracking, or improving the dietary control of the patient, used in a discharge from a facility such as an emergency department, hospital, or nursing home.</body>
@@ -53,13 +53,26 @@
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_3ImhkCUPEeGiOPpZVnfEJA" name="medicationActivity" association="_3InvsCUPEeGiOPpZVnfEJA">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DIRNYeZDEeGINOJ_SD9_dA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DIRNYOZDEeGINOJ_SD9_dA" value="*"/>
+    <ownedAttribute xmi:id="_fOyEIbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fOw2ALS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOyEIrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOyEI7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fOyEILS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fOw2ALS6EeWcPq3zAthoUQ" name="MedicationActivityEntryRelationship">
+      <generalization xmi:id="_fOw2AbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fOz5UbS6EeWcPq3zAthoUQ" name="medicationActivity" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOz5UrS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOz5U7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Px50sUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fOz5ULS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_3InvsCUPEeGiOPpZVnfEJA" memberEnd="_3ImhkCUPEeGiOPpZVnfEJA _3InvsSUPEeGiOPpZVnfEJA">
+  <uml:Association xmi:id="_3InvsCUPEeGiOPpZVnfEJA" memberEnd="_3InvsSUPEeGiOPpZVnfEJA">
     <ownedEnd xmi:id="_3InvsSUPEeGiOPpZVnfEJA" type="_hD-z0CUPEeGiOPpZVnfEJA" association="_3InvsCUPEeGiOPpZVnfEJA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_lhObMCUPEeGiOPpZVnfEJA" base_Class="_hD-z0CUPEeGiOPpZVnfEJA" templateId="2.16.840.1.113883.10.20.22.4.35" assigningAuthorityName="HL7">
@@ -140,13 +153,26 @@
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_uH2PkCULEeGiOPpZVnfEJA" name="problemObservation" association="_uH22oCULEeGiOPpZVnfEJA">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vYn68SULEeGiOPpZVnfEJA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vYn68CULEeGiOPpZVnfEJA" value="*"/>
+    <ownedAttribute xmi:id="_fO4KwbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fO1ugLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fO4KwrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fO4Kw7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fO4KwLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fO1ugLS6EeWcPq3zAthoUQ" name="ProblemObservationEntryRelationship">
+      <generalization xmi:id="_fO1ugbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fO6nAbS6EeWcPq3zAthoUQ" name="problemObservation" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fO7OELS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fO7OEbS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fO6nALS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_uH22oCULEeGiOPpZVnfEJA" memberEnd="_uH2PkCULEeGiOPpZVnfEJA _uH22oSULEeGiOPpZVnfEJA">
+  <uml:Association xmi:id="_uH22oCULEeGiOPpZVnfEJA" memberEnd="_uH22oSULEeGiOPpZVnfEJA">
     <ownedEnd xmi:id="_uH22oSULEeGiOPpZVnfEJA" type="_KtwVgCULEeGiOPpZVnfEJA" association="_uH22oCULEeGiOPpZVnfEJA"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_OJL6kCULEeGiOPpZVnfEJA" base_Class="_KtwVgCULEeGiOPpZVnfEJA" templateId="2.16.840.1.113883.10.20.22.4.33" assigningAuthorityName="HL7">
@@ -187,9 +213,23 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yaLc4CUKEeGiOPpZVnfEJA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_fU_8gCqAEeGiFpKeZIy4Pg" name="hospitalDischargeDiagnosis" type="_KtwVgCULEeGiOPpZVnfEJA" association="_fU_8giqAEeGiFpKeZIy4Pg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fU_8gSqAEeGiFpKeZIy4Pg"/>
+    <ownedAttribute xmi:id="_fOoTILS6EeWcPq3zAthoUQ" name="entry" type="_fOmd8LS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOoTIbS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOoTIrS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fOnsELS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fOmd8LS6EeWcPq3zAthoUQ" name="HospitalDischargeDiagnosisEntry">
+      <generalization xmi:id="_fOmd8bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fOqIULS6EeWcPq3zAthoUQ" name="hospitalDischargeDiagnosis" type="_KtwVgCULEeGiOPpZVnfEJA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOqIUbS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOqIUrS6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_fOphQLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_41cG4BnXEeGs5a462vYX5Q" base_Class="_2PidURSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.24" assigningAuthorityName="HL7">
     <ruleId>CONF:7979, CONF:10394</ruleId>
@@ -252,10 +292,6 @@
         <body>couple</body>
       </ownedComment>
     </generalization>
-    <ownedAttribute xmi:id="_9F4LUCqAEeGiFpKeZIy4Pg" name="dischargeMedication" type="_hD-z0CUPEeGiOPpZVnfEJA" redefinedProperty="_w9kVsCqAEeGiFpKeZIy4Pg" association="_9GB8UCqAEeGiFpKeZIy4Pg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-dOYwSqAEeGiFpKeZIy4Pg" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-dOYwCqAEeGiFpKeZIy4Pg" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_aAJAkFGkEeG3H6xvuD7Z0Q" name="code" visibility="private" redefinedProperty="_2Poj-BSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
@@ -273,6 +309,23 @@
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
       <redefinedProperty href="#_zaK9cCUOEeGiOPpZVnfEJA"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_fO-4cbS6EeWcPq3zAthoUQ" name="entry" type="_fO9qULS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fO-4crS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fO-4c7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fO-4cLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fO9qULS6EeWcPq3zAthoUQ" name="DischargeMedicationEntry">
+      <generalization xmi:id="_fO9qUbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fPAtobS6EeWcPq3zAthoUQ" name="dischargeMedication" type="_hD-z0CUPEeGiOPpZVnfEJA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fPAtorS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fPAto7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_fPAtoLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:ClassValidation xmi:id="_fQfngCUQEeGiOPpZVnfEJA" base_Class="_TytVkCUQEeGiOPpZVnfEJA">
     <ruleId>CONF:10397</ruleId>
@@ -300,10 +353,23 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1j4b8CUOEeGiOPpZVnfEJA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_w9kVsCqAEeGiFpKeZIy4Pg" name="dischargeMedication" type="_hD-z0CUPEeGiOPpZVnfEJA" association="_w9kVsiqAEeGiFpKeZIy4Pg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zjw74SqAEeGiFpKeZIy4Pg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zjw74CqAEeGiFpKeZIy4Pg" value="*"/>
+    <ownedAttribute xmi:id="_fOtLobS6EeWcPq3zAthoUQ" name="entry" type="_fOr9gLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOtLorS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOtLo7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fOtLoLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fOr9gLS6EeWcPq3zAthoUQ" name="DischargeMedicationEntry">
+      <generalization xmi:id="_fOr9gbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fOvA0bS6EeWcPq3zAthoUQ" name="dischargeMedication" type="_hD-z0CUPEeGiOPpZVnfEJA" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOvA0rS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOvA07S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_fOvA0LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="__7eHsBnSEeGs5a462vYX5Q" base_Class="_2Poj7RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.11" assigningAuthorityName="HL7">
     <ruleId>CONF:7816, CONF:10396</ruleId>
@@ -400,13 +466,13 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
   <CDA:PropertyValidation xmi:id="_GePSACUUEeGiOPpZVnfEJA" base_Property="_5F8bNCUTEeGiOPpZVnfEJA">
     <ruleId>CONF:7913</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_fU_8giqAEeGiFpKeZIy4Pg" memberEnd="_fU_8gCqAEeGiFpKeZIy4Pg _fU_8gyqAEeGiFpKeZIy4Pg">
+  <uml:Association xmi:id="_fU_8giqAEeGiFpKeZIy4Pg" memberEnd="_fU_8gyqAEeGiFpKeZIy4Pg">
     <ownedEnd xmi:id="_fU_8gyqAEeGiFpKeZIy4Pg" type="_2PidURSVEeGGzu7fmW9pXw" association="_fU_8giqAEeGiFpKeZIy4Pg"/>
   </uml:Association>
-  <uml:Association xmi:id="_w9kVsiqAEeGiFpKeZIy4Pg" memberEnd="_w9kVsCqAEeGiFpKeZIy4Pg _w9kVsyqAEeGiFpKeZIy4Pg">
+  <uml:Association xmi:id="_w9kVsiqAEeGiFpKeZIy4Pg" memberEnd="_w9kVsyqAEeGiFpKeZIy4Pg">
     <ownedEnd xmi:id="_w9kVsyqAEeGiFpKeZIy4Pg" type="_2Poj7RSVEeGGzu7fmW9pXw" association="_w9kVsiqAEeGiFpKeZIy4Pg"/>
   </uml:Association>
-  <uml:Association xmi:id="_9GB8UCqAEeGiFpKeZIy4Pg" memberEnd="_9F4LUCqAEeGiFpKeZIy4Pg _9GB8USqAEeGiFpKeZIy4Pg">
+  <uml:Association xmi:id="_9GB8UCqAEeGiFpKeZIy4Pg" memberEnd="_9GB8USqAEeGiFpKeZIy4Pg">
     <ownedEnd xmi:id="_9GB8USqAEeGiFpKeZIy4Pg" type="_TytVkCUQEeGiOPpZVnfEJA" association="_9GB8UCqAEeGiFpKeZIy4Pg"/>
   </uml:Association>
   <CDA:TextValue xmi:id="_8vajUCtVEeGlWN0TVxk9LA" base_Property="_7AqigStVEeGlWN0TVxk9LA">
@@ -594,9 +660,9 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
     <ruleId>CONF:1098-31674</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_LTXdkI0DEeOoMZgUoTghIg" severity="WARNING" base_Property="_Hog8cI0DEeOoMZgUoTghIg"/>
-  <CDA:ValueSetConstraint xmi:id="_ShwW4I0DEeOoMZgUoTghIg" base_Property="_Hog8cI0DEeOoMZgUoTghIg" severity="WARNING">
-    <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+  <CDA:ValueSetConstraint xmi:id="_ShwW4I0DEeOoMZgUoTghIg" severity="WARNING" base_Property="_Hog8cI0DEeOoMZgUoTghIg">
     <ruleId>CONF:1098-31676</ruleId>
+    <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_ihaWkI55EeOB0eBUISUB4Q" name="OutcomeObservation">
     <ownedComment xmi:id="_nN3oMI6FEeOB0eBUISUB4Q">
@@ -607,7 +673,7 @@ This template represents the outcome of care resulting from the interventions us
 Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may be related to goals, progression toward goals, and the associated interventions. For example, an observation outcome of a blood oxygen saturation level of 95% is related to the goal of &quot;Maintain Pulse Ox greater than 92&quot;, which in turn is related to the health concern of respiratory insufficiency and the problem of pneumonia. The template makes use of the Entry Reference (templateId:2.16.840.1.113883.10.20.22.4.122) to reference the interventions and goals defined elsewhere in the Care Plan CDA instance.&#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_vn4UAK4qEeORf5eJaKt1KQ" name="progTowardGoalObsInversionIndIsTrue" constrainedElement="_8HfWsK4nEeORf5eJaKt1KQ">
+    <ownedRule xmi:id="_vn4UAK4qEeORf5eJaKt1KQ" name="progTowardGoalObsInversionIndIsTrue">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_vn4UAa4qEeORf5eJaKt1KQ">
         <language>Analysis</language>
         <language>OCL</language>
@@ -651,30 +717,6 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bph4Ya4nEeORf5eJaKt1KQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Bph4Yq4nEeORf5eJaKt1KQ" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_QjwlwI6bEeOB0eBUISUB4Q" name="entryReferenceGoalObs" association="_Qjxz4I6bEeOB0eBUISUB4Q">
-      <ownedComment xmi:id="_UnlnkI6bEeOB0eBUISUB4Q">
-        <body>The following entryRelationship represents the relationship between an Outcome Observation and a Goal Observation. Because the Goal Observation is already described in the CDA document instance's Goals section, rather than repeating the full content of the Goal Observation, the Entry Reference template can be used to reference this entry.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QjxM0I6bEeOB0eBUISUB4Q"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QjxM0Y6bEeOB0eBUISUB4Q" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_8HfWsK4nEeORf5eJaKt1KQ" name="progressTowardGoalObservation" association="_8Hgk0K4nEeORf5eJaKt1KQ">
-      <ownedComment xmi:id="_PW6Y8K4oEeORf5eJaKt1KQ">
-        <body>The following entryRelationship represents the relationship between an Outcome Observation and a Progress Toward Goal Observation (Outcome Observation SUPPORTS Progress Toward Goal Observation). In the Care Planning workflow, the judgment about how well the person is progressing towards the goal is based on the observations made about the status of the patient with respect to interventions performed in the pursuit of achieving that goal.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="consol-planofcare.uml#_0NewYJmVEeOLJeQez13EkQ"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CsYAAK4oEeORf5eJaKt1KQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CsWx4K4oEeORf5eJaKt1KQ" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_0VarQI6bEeOB0eBUISUB4Q" name="entryReferenceInterventionAct" association="_0Vb5YI6bEeOB0eBUISUB4Q">
-      <ownedComment xmi:id="_B1sZYI6cEeOB0eBUISUB4Q">
-        <body>Where an Outcome Observation needs to reference an Intervention Act already described in the CDA document instance, rather than repeating the full content of the Intervention Act, the Entry Reference template may be used to reference this entry.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0VbSUI6bEeOB0eBUISUB4Q"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0VbSUY6bEeOB0eBUISUB4Q" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_HhH-EP82EeS4jrgU1p4iug" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
@@ -694,6 +736,24 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CqLjoP8-EeS4jrgU1p4iug" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CqK8kP8-EeS4jrgU1p4iug" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_fbEMobS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fbC-gLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fbEMorS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fbEMo7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fbEMoLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fbH3AbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fbGo4LS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fbH3ArS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fbH3A7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fbH3ALS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fbK6UbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fbKTQLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fbLhYLS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fbLhYbS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fbK6ULS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_MWLkUP89EeS4jrgU1p4iug" name="Reference">
       <ownedComment xmi:id="_N7iYkP89EeS4jrgU1p4iug">
         <body>INLINE</body>
@@ -712,6 +772,42 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bIWYIP89EeS4jrgU1p4iug" value="1"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fbC-gLS6EeWcPq3zAthoUQ" name="EntryReferenceEntryRelationship">
+      <generalization xmi:id="_fbC-gbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fbFawbS6EeWcPq3zAthoUQ" name="entryReferenceGoalObs" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fbFawrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fbFaw7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Hop1oUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fbFawLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fbGo4LS6EeWcPq3zAthoUQ" name="ProgressTowardGoalObservationEntryRelationship">
+      <generalization xmi:id="_fbGo4bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fbJFIbS6EeWcPq3zAthoUQ" name="progressTowardGoalObservation" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-planofcare.uml#_0NewYJmVEeOLJeQez13EkQ"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fbJFIrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fbJFI7S6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fbJFILS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fbKTQLS6EeWcPq3zAthoUQ" name="EntryReferenceEntryRelationship">
+      <generalization xmi:id="_fbKTQbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fbMvgLS6EeWcPq3zAthoUQ" name="entryReferenceInterventionAct" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-other.uml#_u_keoIkOEeOJGtGyq_dBbA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fbMvgbS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fbMvgrS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Hop1oUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fbMIcLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_nwaUkI6FEeOB0eBUISUB4Q" base_Class="_ihaWkI55EeOB0eBUISUB4Q" templateId="2.16.840.1.113883.10.20.22.4.144">
     <ruleId>CONF:1098-31221</ruleId>
@@ -726,7 +822,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:PropertyValidation xmi:id="_3hXr4I6FEeOB0eBUISUB4Q" base_Property="_36udgY55EeOB0eBUISUB4Q">
     <ruleId>CONF:1098-31223</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_Qjxz4I6bEeOB0eBUISUB4Q" memberEnd="_QjwlwI6bEeOB0eBUISUB4Q _Qjxz4Y6bEeOB0eBUISUB4Q">
+  <uml:Association xmi:id="_Qjxz4I6bEeOB0eBUISUB4Q" memberEnd="_Qjxz4Y6bEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_Qjxz4Y6bEeOB0eBUISUB4Q" type="_ihaWkI55EeOB0eBUISUB4Q" association="_Qjxz4I6bEeOB0eBUISUB4Q"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_Yu40II6bEeOB0eBUISUB4Q" severity="WARNING" base_Association="_Qjxz4I6bEeOB0eBUISUB4Q" typeCode="GEVL">
@@ -734,7 +830,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <ruleId>CONF:1098-31225</ruleId>
     <ruleId>CONF:1098-32465</ruleId>
   </CDA:EntryRelationship>
-  <uml:Association xmi:id="_0Vb5YI6bEeOB0eBUISUB4Q" memberEnd="_0VarQI6bEeOB0eBUISUB4Q _0Vb5YY6bEeOB0eBUISUB4Q">
+  <uml:Association xmi:id="_0Vb5YI6bEeOB0eBUISUB4Q" memberEnd="_0Vb5YY6bEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_0Vb5YY6bEeOB0eBUISUB4Q" type="_ihaWkI55EeOB0eBUISUB4Q" association="_0Vb5YI6bEeOB0eBUISUB4Q"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_46s0UI6bEeOB0eBUISUB4Q" severity="INFO" base_Association="_0Vb5YI6bEeOB0eBUISUB4Q" typeCode="RSON">
@@ -774,10 +870,23 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_911S8J2AEeORR8_YW0n_jQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_UCC2cJ2BEeORR8_YW0n_jQ" name="outcomeObservation" type="_ihaWkI55EeOB0eBUISUB4Q" association="_UCEroJ2BEeORR8_YW0n_jQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X1y04Z2BEeORR8_YW0n_jQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X1y04J2BEeORR8_YW0n_jQ" value="*"/>
+    <ownedAttribute xmi:id="_ffYE4bS6EeWcPq3zAthoUQ" name="entry" type="_ffW2wLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ffYE4rS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ffYE47S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_ffYE4LS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_ffW2wLS6EeWcPq3zAthoUQ" name="OutcomeObservationEntry">
+      <generalization xmi:id="_ffW2wbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_ffahILS6EeWcPq3zAthoUQ" name="outcomeObservation" type="_ihaWkI55EeOB0eBUISUB4Q" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ffahIbS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ffahIrS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_k2RbsTxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_ffZ6ELS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_KNWesJ2AEeORR8_YW0n_jQ" base_Class="_EHgh0J2AEeORR8_YW0n_jQ" templateId="2.16.840.1.113883.10.20.22.2.61">
     <ruleId>CONF:1098-29578</ruleId>
@@ -797,7 +906,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <ruleId>CONF:1098-29581</ruleId>
     <ruleId>CONF:1098-29582</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Association xmi:id="_UCEroJ2BEeORR8_YW0n_jQ" memberEnd="_UCC2cJ2BEeORR8_YW0n_jQ _UCEroZ2BEeORR8_YW0n_jQ">
+  <uml:Association xmi:id="_UCEroJ2BEeORR8_YW0n_jQ" memberEnd="_UCEroZ2BEeORR8_YW0n_jQ">
     <ownedEnd xmi:id="_UCEroZ2BEeORR8_YW0n_jQ" type="_EHgh0J2AEeORR8_YW0n_jQ" association="_UCEroJ2BEeORR8_YW0n_jQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_U4vN4J2BEeORR8_YW0n_jQ" base_Association="_UCEroJ2BEeORR8_YW0n_jQ">
@@ -816,7 +925,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:AssociationValidation xmi:id="_DwgL8K4nEeORf5eJaKt1KQ" severity="WARNING" base_Association="_Bpk7sK4nEeORf5eJaKt1KQ">
     <ruleId>CONF:1098-31553</ruleId>
   </CDA:AssociationValidation>
-  <uml:Association xmi:id="_8Hgk0K4nEeORf5eJaKt1KQ" memberEnd="_8HfWsK4nEeORf5eJaKt1KQ _8Hgk0a4nEeORf5eJaKt1KQ">
+  <uml:Association xmi:id="_8Hgk0K4nEeORf5eJaKt1KQ" memberEnd="_8Hgk0a4nEeORf5eJaKt1KQ">
     <ownedEnd xmi:id="_8Hgk0a4nEeORf5eJaKt1KQ" type="_ihaWkI55EeOB0eBUISUB4Q" association="_8Hgk0K4nEeORf5eJaKt1KQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_9rjxgK4nEeORf5eJaKt1KQ" severity="WARNING" base_Association="_8Hgk0K4nEeORf5eJaKt1KQ" typeCode="SPRT">
@@ -827,7 +936,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:ConstraintValidation xmi:id="_3jVusK4qEeORf5eJaKt1KQ" base_Constraint="_vn4UAK4qEeORf5eJaKt1KQ">
     <ruleId>CONF:1098-31429</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_EIeu8MyjEeO93sHu8pHB2g" clientDependency="_bl_s0MykEeO93sHu8pHB2g" name="DischargeMedication2">
+  <uml:Class xmi:id="_EIeu8MyjEeO93sHu8pHB2g" name="DischargeMedication2">
     <ownedComment xmi:id="_QIz30MykEeO93sHu8pHB2g">
       <body>This template represents medications that the patient is intended to take (or stop) after discharge.</body>
     </ownedComment>
@@ -836,17 +945,30 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <ownedAttribute xmi:id="_0SZ7MMyvEeO93sHu8pHB2g" name="code" visibility="private" aggregation="composite" redefinedProperty="_iYcFUCUPEeGiOPpZVnfEJA">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="__fREMPf8EeOYeZoWJF5yyQ" name="medicationActivity2" redefinedProperty="_3ImhkCUPEeGiOPpZVnfEJA" association="__fTgcPf8EeOYeZoWJF5yyQ">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_WnSCMOLAEeOc7-TVP7Wi6w"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CWGHYff9EeOYeZoWJF5yyQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CWGHYPf9EeOYeZoWJF5yyQ" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_8lQt8K1mEeS-n_bBhdNjYg" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__G91sa1mEeS-n_bBhdNjYg" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__G91sK1mEeS-n_bBhdNjYg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_fkWEcbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fkU2ULS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkWEcrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkWEc7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fkWEcLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fkU2ULS6EeWcPq3zAthoUQ" name="MedicationActivity2EntryRelationship">
+      <generalization xmi:id="_fkU2UbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fkX5obS6EeWcPq3zAthoUQ" name="medicationActivity2" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_WnSCMOLAEeOc7-TVP7Wi6w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkX5orS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkX5o7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Px50sUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fkX5oLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_DU_AAMykEeO93sHu8pHB2g" base_Class="_EIeu8MyjEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.35" templateVersion="2014-06-09">
     <ruleId>CONF:1098-16760</ruleId>
@@ -862,7 +984,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:PropertyValidation xmi:id="_2XxsQMyvEeO93sHu8pHB2g" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
     <ruleId>CONF:1098-7691</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_Trd1cOEMEeOmBMTtnrPqww" clientDependency="_sVxMAOEMEeOmBMTtnrPqww" name="HospitalDischargeDiagnosis2">
+  <uml:Class xmi:id="_Trd1cOEMEeOmBMTtnrPqww" name="HospitalDischargeDiagnosis2">
     <ownedComment xmi:id="_ao5hoOEMEeOmBMTtnrPqww">
       <body>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization or need to be monitored after hospitalization. It requires at least one Problem Observation entry.</body>
     </ownedComment>
@@ -871,11 +993,24 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <ownedAttribute xmi:id="_Ly9LoOENEeOmBMTtnrPqww" name="code" visibility="private" aggregation="composite" redefinedProperty="_MwOjkCULEeGiOPpZVnfEJA">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_IZODQPgEEeOYeZoWJF5yyQ" name="problemObservation2" redefinedProperty="_uH2PkCULEeGiOPpZVnfEJA" association="_IZP4cPgEEeOYeZoWJF5yyQ">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K8aYwPgEEeOYeZoWJF5yyQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K8ZxsPgEEeOYeZoWJF5yyQ" value="*"/>
+    <ownedAttribute xmi:id="_flG5cbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_flFrULS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_flG5crS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_flG5c7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_flG5cLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_flFrULS6EeWcPq3zAthoUQ" name="ProblemObservation2EntryRelationship">
+      <generalization xmi:id="_flFrUbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_flIuobS6EeWcPq3zAthoUQ" name="problemObservation2" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_flIuorS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_flIuo7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_flIuoLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_ex9owOEMEeOmBMTtnrPqww" base_Class="_Trd1cOEMEeOmBMTtnrPqww" templateId="2.16.840.1.113883.10.20.22.4.33" templateVersion="2015-08-01">
     <ruleId>CONF:1198-16764, CONF:1198-16765, CONF:1198-32534</ruleId>
@@ -888,7 +1023,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:PropertyValidation xmi:id="_M2LjMOENEeOmBMTtnrPqww" base_Property="_Ly9LoOENEeOmBMTtnrPqww">
     <ruleId>CONF:1198-19147</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="__fTgcPf8EeOYeZoWJF5yyQ" memberEnd="__fREMPf8EeOYeZoWJF5yyQ __fTgcff8EeOYeZoWJF5yyQ">
+  <uml:Association xmi:id="__fTgcPf8EeOYeZoWJF5yyQ" memberEnd="__fTgcff8EeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="__fTgcff8EeOYeZoWJF5yyQ" type="_EIeu8MyjEeO93sHu8pHB2g" association="__fTgcPf8EeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_EPbAgPf9EeOYeZoWJF5yyQ" base_Association="__fTgcPf8EeOYeZoWJF5yyQ" typeCode="SUBJ">
@@ -896,22 +1031,24 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <ruleId>CONF:1098-7693</ruleId>
     <ruleId>CONF:1098-15525</ruleId>
   </CDA:EntryRelationship>
-  <uml:Association xmi:id="_IZP4cPgEEeOYeZoWJF5yyQ" memberEnd="_IZODQPgEEeOYeZoWJF5yyQ _IZP4cfgEEeOYeZoWJF5yyQ">
+  <uml:Association xmi:id="_IZP4cPgEEeOYeZoWJF5yyQ" memberEnd="_IZP4cfgEEeOYeZoWJF5yyQ">
     <ownedEnd xmi:id="_IZP4cfgEEeOYeZoWJF5yyQ" type="_Trd1cOEMEeOmBMTtnrPqww" association="_IZP4cPgEEeOYeZoWJF5yyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_LLxDYPgEEeOYeZoWJF5yyQ" base_Association="_IZP4cPgEEeOYeZoWJF5yyQ" typeCode="SUBJ">
     <ruleId>CONF:1198-7666, CONF:1198-7667, CONF:1198-15536</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_jfuGYPytEeOmn53IDV99zw" clientDependency="_KptZoPyuEeOmn53IDV99zw" name="DischargeDiagnosisSection2">
+  <uml:Class xmi:id="_jfuGYPytEeOmn53IDV99zw" name="DischargeDiagnosisSection2">
     <ownedComment xmi:id="_CsRpAPyuEeOmn53IDV99zw">
       <body>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization or need to be monitored after hospitalization. This section includes an optional entry to record patient conditions.</body>
     </ownedComment>
     <generalization xmi:id="_jfv7kPytEeOmn53IDV99zw" general="_2PidURSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_KptZoPyuEeOmn53IDV99zw" name="HospitalDischargeDiagnosisSection" client="_jfuGYPytEeOmn53IDV99zw" supplier="_2PidURSVEeGGzu7fmW9pXw" contract="_2PidURSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="__MeE0PyuEeOmn53IDV99zw" name="code" visibility="private" type="_1ULlAEKrEeWCWce3kO1aHQ" redefinedProperty="_2Poj4BSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="_JZsRUPywEeOmn53IDV99zw" name="hospitalDischargeDiagnosis2" type="_Trd1cOEMEeOmBMTtnrPqww" redefinedProperty="_fU_8gCqAEeGiFpKeZIy4Pg" association="_JZutkPywEeOmn53IDV99zw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NjQuwfywEeOmn53IDV99zw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NjQuwPywEeOmn53IDV99zw" value="1"/>
+    <ownedAttribute xmi:id="_fq-38bS6EeWcPq3zAthoUQ" name="entry" type="_fq9CwLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fq-38rS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fq-387S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fq-38LS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_1ULlAEKrEeWCWce3kO1aHQ" name="CE">
       <ownedComment xmi:id="_3ZDm0EKrEeWCWce3kO1aHQ">
@@ -927,6 +1064,17 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fq9CwLS6EeWcPq3zAthoUQ" name="HospitalDischargeDiagnosis2Entry">
+      <generalization xmi:id="_fq9CwbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_frAtIbS6EeWcPq3zAthoUQ" name="hospitalDischargeDiagnosis2" type="_Trd1cOEMEeOmBMTtnrPqww" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_frAtIrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_frAtI7S6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_frAtILS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_u9a4wPytEeOmn53IDV99zw" base_Class="_jfuGYPytEeOmn53IDV99zw" templateId="2.16.840.1.113883.10.20.22.2.24" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7979, CONF:1198-10394, CONF:1198-15355</ruleId>
@@ -939,23 +1087,25 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:PropertyValidation xmi:id="__MfS8PyuEeOmn53IDV99zw" base_Property="__MeE0PyuEeOmn53IDV99zw">
     <ruleId>CONF:1198-15355</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_JZutkPywEeOmn53IDV99zw" memberEnd="_JZsRUPywEeOmn53IDV99zw _JZvUoPywEeOmn53IDV99zw">
+  <uml:Association xmi:id="_JZutkPywEeOmn53IDV99zw" memberEnd="_JZvUoPywEeOmn53IDV99zw">
     <ownedEnd xmi:id="_JZvUoPywEeOmn53IDV99zw" type="_jfuGYPytEeOmn53IDV99zw" association="_JZutkPywEeOmn53IDV99zw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_MVLyEPywEeOmn53IDV99zw" severity="WARNING" base_Association="_JZutkPywEeOmn53IDV99zw">
     <ruleId>CONF:1198-7983, CONF:1198-15489</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_HlfBYPyzEeOfAK77IvEBUw" clientDependency="_aFs0QPyzEeOfAK77IvEBUw" name="DischargeMedicationsSectionEntriesOptional2">
+  <uml:Class xmi:id="_HlfBYPyzEeOfAK77IvEBUw" name="DischargeMedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_PlPGMPyzEeOfAK77IvEBUw">
       <body>This section contains the medications the patient is intended to take or stop after discharge. Current, active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list.</body>
     </ownedComment>
     <generalization xmi:id="_HlhdoPyzEeOfAK77IvEBUw" general="_2Poj7RSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_aFs0QPyzEeOfAK77IvEBUw" name="HospitalDischargeMedicationsSectionEntriesOptional" client="_HlfBYPyzEeOfAK77IvEBUw" supplier="_2Poj7RSVEeGGzu7fmW9pXw" contract="_2Poj7RSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="_nTBUsPy0EeOfAK77IvEBUw" name="dischargeMedication2" type="_EIeu8MyjEeO93sHu8pHB2g" redefinedProperty="_w9kVsCqAEeGiFpKeZIy4Pg" association="_nTDw8Py0EeOfAK77IvEBUw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nTB7wPy0EeOfAK77IvEBUw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nTB7wfy0EeOfAK77IvEBUw" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_7U7yIKMsEeS3pZBAijm94w" name="code" visibility="private" type="_8UGJgINOEeWwKJF2wszVog" redefinedProperty="_2Poj-BSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_frEXgbS6EeWcPq3zAthoUQ" name="entry" type="_frCiULS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_frEXgrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_frEXg7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_frEXgLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_8UGJgINOEeWwKJF2wszVog" name="CE">
       <ownedComment xmi:id="__at8MINOEeWwKJF2wszVog">
         <body>INLINE</body>
@@ -970,18 +1120,29 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_frCiULS6EeWcPq3zAthoUQ" name="DischargeMedication2Entry">
+      <generalization xmi:id="_frCiUbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_frGMsbS6EeWcPq3zAthoUQ" name="dischargeMedication2" type="_EIeu8MyjEeO93sHu8pHB2g" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_frGMsrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_frGMs7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_frGMsLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_JxnhwPyzEeOfAK77IvEBUw" base_Class="_HlfBYPyzEeOfAK77IvEBUw" templateId="2.16.840.1.113883.10.20.22.2.11" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7816, CONF:1198-10396, CONF:1198-32561</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_Wmtk4PyzEeOfAK77IvEBUw" base_Generalization="_HlhdoPyzEeOfAK77IvEBUw"/>
-  <uml:Association xmi:id="_nTDw8Py0EeOfAK77IvEBUw" memberEnd="_nTBUsPy0EeOfAK77IvEBUw _nTDw8fy0EeOfAK77IvEBUw">
+  <uml:Association xmi:id="_nTDw8Py0EeOfAK77IvEBUw" memberEnd="_nTDw8fy0EeOfAK77IvEBUw">
     <ownedEnd xmi:id="_nTDw8fy0EeOfAK77IvEBUw" type="_HlfBYPyzEeOfAK77IvEBUw" association="_nTDw8Py0EeOfAK77IvEBUw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_oxVFwPy0EeOfAK77IvEBUw" severity="WARNING" base_Association="_nTDw8Py0EeOfAK77IvEBUw">
     <ruleId>CONF:1198-7820, CONF:1198-15490</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_Jt0moAI0EeSRkrs1G7P_XQ" clientDependency="_bZ0uUAI0EeSRkrs1G7P_XQ" name="DischargeMedicationsSection2">
+  <uml:Class xmi:id="_Jt0moAI0EeSRkrs1G7P_XQ" name="DischargeMedicationsSection2">
     <ownedComment xmi:id="_RgJTcAI0EeSRkrs1G7P_XQ">
       <body>This section contains the medications the patient is intended to take or stop after discharge. Current, active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list.</body>
     </ownedComment>
@@ -995,13 +1156,6 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_GqrwUAI1EeSRkrs1G7P_XQ" name="code" visibility="private" type="_3pFqEEKvEeWCWce3kO1aHQ" redefinedProperty="_2Poj-BSVEeGGzu7fmW9pXw"/>
-    <ownedAttribute xmi:id="_GxNZoAI2EeSRkrs1G7P_XQ" name="dischargeMedication2" type="_EIeu8MyjEeO93sHu8pHB2g" redefinedProperty="_nTBUsPy0EeOfAK77IvEBUw" association="_GxP14AI2EeSRkrs1G7P_XQ">
-      <ownedComment xmi:id="_lCe8YKMvEeS3pZBAijm94w">
-        <body>If section/@nullFlavor is not present:</body>
-      </ownedComment>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I5n3oQI2EeSRkrs1G7P_XQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I5n3oAI2EeSRkrs1G7P_XQ" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_e06DMAI2EeSRkrs1G7P_XQ" name="title" visibility="private" aggregation="composite" redefinedProperty="_zaK9cCUOEeGiOPpZVnfEJA">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e06DMgI2EeSRkrs1G7P_XQ" value="1"/>
@@ -1011,6 +1165,12 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e05cIgI2EeSRkrs1G7P_XQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e05cIQI2EeSRkrs1G7P_XQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fvGi8bS6EeWcPq3zAthoUQ" name="entry" type="_fvFU0LS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fvGi8rS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fvGi87S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fvGi8LS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_3pFqEEKvEeWCWce3kO1aHQ" name="CE">
       <ownedComment xmi:id="_HGWLIINPEeWwKJF2wszVog">
@@ -1026,6 +1186,17 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fvFU0LS6EeWcPq3zAthoUQ" name="DischargeMedication2Entry">
+      <generalization xmi:id="_fvFU0bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fvIYIbS6EeWcPq3zAthoUQ" name="dischargeMedication2" type="_EIeu8MyjEeO93sHu8pHB2g" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fvIYIrS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fvIYI7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_fvIYILS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_Pcn8gAI0EeSRkrs1G7P_XQ" base_Class="_Jt0moAI0EeSRkrs1G7P_XQ" templateId="2.16.840.1.113883.10.20.22.2.11.1" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7822, CONF:1198-10397, CONF:1198-32562</ruleId>
@@ -1038,7 +1209,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:PropertyValidation xmi:id="_Gqs-cAI1EeSRkrs1G7P_XQ" base_Property="_GqrwUAI1EeSRkrs1G7P_XQ">
     <ruleId>CONF:1198-15361</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_GxP14AI2EeSRkrs1G7P_XQ" memberEnd="_GxNZoAI2EeSRkrs1G7P_XQ _GxQc8AI2EeSRkrs1G7P_XQ">
+  <uml:Association xmi:id="_GxP14AI2EeSRkrs1G7P_XQ" memberEnd="_GxQc8AI2EeSRkrs1G7P_XQ">
     <ownedEnd xmi:id="_GxQc8AI2EeSRkrs1G7P_XQ" type="_Jt0moAI0EeSRkrs1G7P_XQ" association="_GxP14AI2EeSRkrs1G7P_XQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_HkURkAI2EeSRkrs1G7P_XQ" base_Association="_GxP14AI2EeSRkrs1G7P_XQ">
@@ -1138,4 +1309,18 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <ruleId>CONF:1198-32855</ruleId>
     <ruleId>CONF:1198-32856</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:Inline xmi:id="_fOnFALS6EeWcPq3zAthoUQ" base_Class="_fOmd8LS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fOr9grS6EeWcPq3zAthoUQ" base_Class="_fOr9gLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fOw2ArS6EeWcPq3zAthoUQ" base_Class="_fOw2ALS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fO2VkLS6EeWcPq3zAthoUQ" base_Class="_fO1ugLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fO9qUrS6EeWcPq3zAthoUQ" base_Class="_fO9qULS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fbC-grS6EeWcPq3zAthoUQ" base_Class="_fbC-gLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fbGo4rS6EeWcPq3zAthoUQ" base_Class="_fbGo4LS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fbKTQrS6EeWcPq3zAthoUQ" base_Class="_fbKTQLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_ffW2wrS6EeWcPq3zAthoUQ" base_Class="_ffW2wLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fkU2UrS6EeWcPq3zAthoUQ" base_Class="_fkU2ULS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_flFrUrS6EeWcPq3zAthoUQ" base_Class="_flFrULS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fq9CwrS6EeWcPq3zAthoUQ" base_Class="_fq9CwLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_frCiUrS6EeWcPq3zAthoUQ" base_Class="_frCiULS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fvFU0rS6EeWcPq3zAthoUQ" base_Class="_fvFU0LS6EeWcPq3zAthoUQ"/>
 </xmi:XMI>

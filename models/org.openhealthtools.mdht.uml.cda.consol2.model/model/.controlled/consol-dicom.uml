@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_WPTWEDVyEeGaW4kr-GbV8Q" name="DICOMObjectCatalogSection">
     <ownedComment xmi:id="_K--R4Eb4EeGp67IkyTw1fg">
       <body>DICOM Object Catalog lists all referenced objects and their parent Series and Studies, plus other DICOM attributes required for retrieving the objects.&#xD;
@@ -23,10 +23,23 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cAMMMOYiEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_ANaZMErcEeGJpZWiuxRVIw" name="studyAct" type="_vjf-wEb4EeGp67IkyTw1fg" association="_ANaZMkrcEeGJpZWiuxRVIw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bjLgEeYiEeGINOJ_SD9_dA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bjLgEOYiEeGINOJ_SD9_dA" value="*"/>
+    <ownedAttribute xmi:id="_fPUPobS6EeWcPq3zAthoUQ" name="entry" type="_fPTBgLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fPUPorS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fPUPo7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fPUPoLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fPTBgLS6EeWcPq3zAthoUQ" name="StudyActEntry">
+      <generalization xmi:id="_fPTBgbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fPXS8LS6EeWcPq3zAthoUQ" name="studyAct" type="_vjf-wEb4EeGp67IkyTw1fg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fPXS8bS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fPXS8rS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_fPWr4LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <uml:Class xmi:id="_ZcC-4DVyEeGaW4kr-GbV8Q" name="FindingsSection">
     <ownedRule xmi:id="_oD0Z4ECREeGELr7uj3LK_Q" name="findingSectionText" constrainedElement="_ZcC-4DVyEeGaW4kr-GbV8Q">
@@ -182,14 +195,40 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f1ht8OZBEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_1F57UOZBEeGINOJ_SD9_dA" name="sOPInstanceObservation" type="_9o7WcEb6EeGp67IkyTw1fg" association="_1F57UuZBEeGINOJ_SD9_dA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3cKoEeZBEeGINOJ_SD9_dA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3cKoEOZBEeGINOJ_SD9_dA" value="*"/>
+    <ownedAttribute xmi:id="_fY_wEbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fY-h8LS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fY_wErS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fY_wE7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fY_wELS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2e35YOZBEeGINOJ_SD9_dA" name="quantityMeasurementObservation" type="_Px2t4Eb_EeGp67IkyTw1fg" association="_2e35YuZBEeGINOJ_SD9_dA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3vNf4eZBEeGINOJ_SD9_dA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3vNf4OZBEeGINOJ_SD9_dA" value="*"/>
+    <ownedAttribute xmi:id="_fZCzYbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fZCMULS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fZCzYrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fZDacLS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fZCzYLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fY-h8LS6EeWcPq3zAthoUQ" name="SOPInstanceObservationEntryRelationship">
+      <generalization xmi:id="_fY-h8bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fZA-MbS6EeWcPq3zAthoUQ" name="sOPInstanceObservation" type="_9o7WcEb6EeGp67IkyTw1fg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fZA-MrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fZA-M7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fZA-MLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fZCMULS6EeWcPq3zAthoUQ" name="QuantityMeasurementObservationEntryRelationship">
+      <generalization xmi:id="_fZCMUbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fZEokLS6EeWcPq3zAthoUQ" name="quantityMeasurementObservation" type="_Px2t4Eb_EeGp67IkyTw1fg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fZEokbS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fZEokrS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fZEBgLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_s48Y0Eb_EeGp67IkyTw1fg" base_Class="_pmiz8Eb_EeGp67IkyTw1fg" templateId="2.16.840.1.113883.10.20.6.2.13">
     <ruleId>CONF:15523</ruleId>
@@ -421,10 +460,23 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S9GIUOZUEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_agm9EOZUEeGINOJ_SD9_dA" name="sOPInstanceObservation" type="_9o7WcEb6EeGp67IkyTw1fg" association="_agwuEOZUEeGINOJ_SD9_dA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h6vMUeZUEeGINOJ_SD9_dA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h6vMUOZUEeGINOJ_SD9_dA" value="*"/>
+    <ownedAttribute xmi:id="_fY7eobS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fY63kLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fY7eorS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fY8FsLS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fY7eoLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fY63kLS6EeWcPq3zAthoUQ" name="SOPInstanceObservationEntryRelationship">
+      <generalization xmi:id="_fY63kbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fY9T0LS6EeWcPq3zAthoUQ" name="sOPInstanceObservation" type="_9o7WcEb6EeGp67IkyTw1fg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fY9T0bS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fY9T0rS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fY8swLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_SaY2YEb_EeGp67IkyTw1fg" base_Class="_Px2t4Eb_EeGp67IkyTw1fg" templateId="2.16.840.1.113883.10.20.6.2.14">
     <ruleId>CONF:9319</ruleId>
@@ -451,10 +503,23 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_heiM4EriEeGJpZWiuxRVIw" name="boundaryObservation" type="_9Yv6gEb8EeGp67IkyTw1fg" association="_herW0EriEeGJpZWiuxRVIw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FAzlAVwaEeG0y_7i0ygc4g" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FAzlAFwaEeG0y_7i0ygc4g" value="1"/>
+    <ownedAttribute xmi:id="_fYwfgbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fYv4cLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYwfgrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fYwfg7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fYwfgLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fYv4cLS6EeWcPq3zAthoUQ" name="BoundaryObservationEntryRelationship">
+      <generalization xmi:id="_fYv4cbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fYxtobS6EeWcPq3zAthoUQ" name="boundaryObservation" type="_9Yv6gEb8EeGp67IkyTw1fg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYxtorS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fYyUsLS6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fYxtoLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_3twtoEb8EeGp67IkyTw1fg" base_Class="_1Zyf4Eb8EeGp67IkyTw1fg" templateId="2.16.840.1.113883.10.20.6.2.10"/>
   <uml:Class xmi:id="_N2wscEb6EeGp67IkyTw1fg" name="SeriesAct">
@@ -553,10 +618,23 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6tzrB0rdEeGJpZWiuxRVIw" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Njf0cEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_0dvlsEreEeGJpZWiuxRVIw" name="sOPInstanceObservation" type="_9o7WcEb6EeGp67IkyTw1fg" association="_0dvlskreEeGJpZWiuxRVIw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j5EJUdzUEeGlwYKHyWQyhQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j5EJUNzUEeGlwYKHyWQyhQ" value="*"/>
+    <ownedAttribute xmi:id="_fYgn4LS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fYfZwLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYgn4bS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fYgn4rS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fYgA0LS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fYfZwLS6EeWcPq3zAthoUQ" name="SOPInstanceObservationEntryRelationship">
+      <generalization xmi:id="_fYfZwbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fYh2AbS6EeWcPq3zAthoUQ" name="sOPInstanceObservation" type="_9o7WcEb6EeGp67IkyTw1fg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYh2ArS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fYh2A7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fYh2ALS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_O_B8EEb6EeGp67IkyTw1fg" base_Class="_N2wscEb6EeGp67IkyTw1fg" templateId="2.16.840.1.113883.10.20.22.4.63">
     <ruleId>CONF:10918</ruleId>
@@ -663,22 +741,61 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LbALqErfEeGJpZWiuxRVIw" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_BlAhcErgEeGJpZWiuxRVIw" name="sOPInstanceObservation" type="_9o7WcEb6EeGp67IkyTw1fg" association="_BlKScUrgEeGJpZWiuxRVIw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z56SUVwVEeG0y_7i0ygc4g"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z56SUFwVEeG0y_7i0ygc4g" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_L3fd4ErgEeGJpZWiuxRVIw" name="purposeofReferenceObservation" type="_J-F8UEb7EeGp67IkyTw1fg" association="_L3pO4ErgEeGJpZWiuxRVIw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Cz0EVwVEeG0y_7i0ygc4g"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Cz0EFwVEeG0y_7i0ygc4g" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_c7ACMErgEeGJpZWiuxRVIw" name="referencedFramesObservation" type="_1Zyf4Eb8EeGp67IkyTw1fg" association="_c7ACMkrgEeGJpZWiuxRVIw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3YB_AVwVEeG0y_7i0ygc4g"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YB_AFwVEeG0y_7i0ygc4g" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_g5YnsFwVEeG0y_7i0ygc4g" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_fYkSQbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fYjEILS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYkSQrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fYk5ULS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fYkSQLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fYojsLS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fYmugLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYojsbS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fYojsrS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fYn8oLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fYsOEbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fYq_8LS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYsOErS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fYs1ILS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fYsOELS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fYjEILS6EeWcPq3zAthoUQ" name="SOPInstanceObservationEntryRelationship">
+      <generalization xmi:id="_fYjEIbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fYmHcLS6EeWcPq3zAthoUQ" name="sOPInstanceObservation" type="_9o7WcEb6EeGp67IkyTw1fg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYmHcbS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fYmHcrS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fYlgYLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fYmugLS6EeWcPq3zAthoUQ" name="PurposeofReferenceObservationEntryRelationship">
+      <generalization xmi:id="_fYmugbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fYpx0bS6EeWcPq3zAthoUQ" name="purposeofReferenceObservation" type="_J-F8UEb7EeGp67IkyTw1fg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYpx0rS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fYpx07S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fYpx0LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fYq_8LS6EeWcPq3zAthoUQ" name="ReferencedFramesObservationEntryRelationship">
+      <generalization xmi:id="_fYq_8bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fYuDQbS6EeWcPq3zAthoUQ" name="referencedFramesObservation" type="_1Zyf4Eb8EeGp67IkyTw1fg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYuDQrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fYuDQ7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fYuDQLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_AKJ9EEb7EeGp67IkyTw1fg" base_Class="_9o7WcEb6EeGp67IkyTw1fg" templateId="2.16.840.1.113883.10.20.6.2.8"/>
   <uml:Class xmi:id="_vjf-wEb4EeGp67IkyTw1fg" name="StudyAct">
@@ -769,10 +886,23 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I445tUb5EeGp67IkyTw1fg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Njf0cEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_ZpQE8ErdEeGJpZWiuxRVIw" name="seriesAct" type="_N2wscEb6EeGp67IkyTw1fg" association="_ZpQE8krdEeGJpZWiuxRVIw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_diA8Qc_TEeOGjf7FaidRGw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_diA8QM_TEeOGjf7FaidRGw" value="1"/>
+    <ownedAttribute xmi:id="_fYcWcbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fYbIULS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYcWcrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fYcWc7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fYcWcLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fYbIULS6EeWcPq3zAthoUQ" name="SeriesActEntryRelationship">
+      <generalization xmi:id="_fYbIUbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fYeLoLS6EeWcPq3zAthoUQ" name="seriesAct" type="_N2wscEb6EeGp67IkyTw1fg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fYeLobS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fYeLorS6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Hop1oUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fYdkkLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_xF17QEb4EeGp67IkyTw1fg" base_Class="_vjf-wEb4EeGp67IkyTw1fg" templateId="2.16.840.1.113883.10.20.6.2.6">
     <ruleId>CONF:10533</ruleId>
@@ -860,14 +990,40 @@ A Text Observation is required if the findings in the section text are represent
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7soOUOZaEeGINOJ_SD9_dA" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_BYhaIOZbEeGINOJ_SD9_dA" name="sOPInstanceObservation" type="_9o7WcEb6EeGp67IkyTw1fg" association="_BYhaIuZbEeGINOJ_SD9_dA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EwZU4eZbEeGINOJ_SD9_dA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EwZU4OZbEeGINOJ_SD9_dA" value="*"/>
+    <ownedAttribute xmi:id="_fY0J4bS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fYzi0LS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fY0J4rS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fY0J47S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fY0J4LS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_KEymsOZbEeGINOJ_SD9_dA" name="quantityMeasurementObservation" type="_Px2t4Eb_EeGp67IkyTw1fg" association="_KE7woOZbEeGINOJ_SD9_dA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N218AeZbEeGINOJ_SD9_dA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N218AOZbEeGINOJ_SD9_dA" value="*"/>
+    <ownedAttribute xmi:id="_fY30QbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fY3NMLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fY4bULS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fY4bUbS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fY30QLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fYzi0LS6EeWcPq3zAthoUQ" name="SOPInstanceObservationEntryRelationship">
+      <generalization xmi:id="_fYzi0bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fY1_ELS6EeWcPq3zAthoUQ" name="sOPInstanceObservation" type="_9o7WcEb6EeGp67IkyTw1fg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fY1_EbS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fY1_ErS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fY1YALS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fY3NMLS6EeWcPq3zAthoUQ" name="QuantityMeasurementObservationEntryRelationship">
+      <generalization xmi:id="_fY3NMbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fY5pcLS6EeWcPq3zAthoUQ" name="quantityMeasurementObservation" type="_Px2t4Eb_EeGp67IkyTw1fg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fY5pcbS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fY5pcrS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fY5CYLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_AByucEb_EeGp67IkyTw1fg" base_Class="_9xjKIEb-EeGp67IkyTw1fg" templateId="2.16.840.1.113883.10.20.6.2.12">
     <ruleId>CONF:9290</ruleId>
@@ -1106,9 +1262,9 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:PropertyValidation xmi:id="_zduoQErgEeGJpZWiuxRVIw" base_Property="_vFSoYkrgEeGJpZWiuxRVIw">
     <ruleId>CONF:9265</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_vXDRUErhEeGJpZWiuxRVIw" base_Property="_vFSoY0rgEeGJpZWiuxRVIw" severity="WARNING">
-    <reference href="../consol-vocab.uml#_jyBH4UrhEeGJpZWiuxRVIw"/>
+  <CDA:ValueSetConstraint xmi:id="_vXDRUErhEeGJpZWiuxRVIw" severity="WARNING" base_Property="_vFSoY0rgEeGJpZWiuxRVIw">
     <ruleId>CONF:9273</ruleId>
+    <reference href="../consol-vocab.uml#_jyBH4UrhEeGJpZWiuxRVIw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_LDGhoEriEeGJpZWiuxRVIw" base_Property="_Hv8u0EriEeGJpZWiuxRVIw">
     <ruleId>CONF:9276</ruleId>
@@ -1142,35 +1298,33 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <uml:Association xmi:id="_g5aSIkrYEeGJpZWiuxRVIw" memberEnd="_g5aSIErYEeGJpZWiuxRVIw _g5aSI0rYEeGJpZWiuxRVIw">
     <ownedEnd xmi:id="_g5aSI0rYEeGJpZWiuxRVIw" type="_lCnhUEb1EeGp67IkyTw1fg" association="_g5aSIkrYEeGJpZWiuxRVIw"/>
   </uml:Association>
-  <uml:Association xmi:id="_50ugMkrYEeGJpZWiuxRVIw">
-    <memberEnd href="consol-documents.uml#_50ugMErYEeGJpZWiuxRVIw"/>
-    <memberEnd href="#_50ugM0rYEeGJpZWiuxRVIw"/>
+  <uml:Association xmi:id="_50ugMkrYEeGJpZWiuxRVIw" memberEnd="_50ugM0rYEeGJpZWiuxRVIw">
     <ownedEnd xmi:id="_50ugM0rYEeGJpZWiuxRVIw" association="_50ugMkrYEeGJpZWiuxRVIw">
       <type xmi:type="uml:Class" href="consol-documents.uml#_XwBooEUuEeGdQ4KWAmnbhw"/>
     </ownedEnd>
   </uml:Association>
-  <uml:Association xmi:id="_ANaZMkrcEeGJpZWiuxRVIw" memberEnd="_ANaZMErcEeGJpZWiuxRVIw _ANaZM0rcEeGJpZWiuxRVIw">
+  <uml:Association xmi:id="_ANaZMkrcEeGJpZWiuxRVIw" memberEnd="_ANaZM0rcEeGJpZWiuxRVIw">
     <ownedEnd xmi:id="_ANaZM0rcEeGJpZWiuxRVIw" type="_WPTWEDVyEeGaW4kr-GbV8Q" association="_ANaZMkrcEeGJpZWiuxRVIw"/>
   </uml:Association>
-  <uml:Association xmi:id="_ZpQE8krdEeGJpZWiuxRVIw" memberEnd="_ZpQE8ErdEeGJpZWiuxRVIw _ZpQE80rdEeGJpZWiuxRVIw">
+  <uml:Association xmi:id="_ZpQE8krdEeGJpZWiuxRVIw" memberEnd="_ZpQE80rdEeGJpZWiuxRVIw">
     <ownedEnd xmi:id="_ZpQE80rdEeGJpZWiuxRVIw" type="_vjf-wEb4EeGp67IkyTw1fg" association="_ZpQE8krdEeGJpZWiuxRVIw"/>
   </uml:Association>
-  <uml:Association xmi:id="_0dvlskreEeGJpZWiuxRVIw" memberEnd="_0dvlsEreEeGJpZWiuxRVIw _0dvls0reEeGJpZWiuxRVIw">
+  <uml:Association xmi:id="_0dvlskreEeGJpZWiuxRVIw" memberEnd="_0dvls0reEeGJpZWiuxRVIw">
     <ownedEnd xmi:id="_0dvls0reEeGJpZWiuxRVIw" type="_N2wscEb6EeGp67IkyTw1fg" association="_0dvlskreEeGJpZWiuxRVIw"/>
   </uml:Association>
-  <uml:Association xmi:id="_BlKScUrgEeGJpZWiuxRVIw" memberEnd="_BlAhcErgEeGJpZWiuxRVIw _BlKSckrgEeGJpZWiuxRVIw">
+  <uml:Association xmi:id="_BlKScUrgEeGJpZWiuxRVIw" memberEnd="_BlKSckrgEeGJpZWiuxRVIw">
     <ownedEnd xmi:id="_BlKSckrgEeGJpZWiuxRVIw" type="_9o7WcEb6EeGp67IkyTw1fg" association="_BlKScUrgEeGJpZWiuxRVIw"/>
   </uml:Association>
-  <uml:Association xmi:id="_L3pO4ErgEeGJpZWiuxRVIw" memberEnd="_L3fd4ErgEeGJpZWiuxRVIw _L3pO4UrgEeGJpZWiuxRVIw">
+  <uml:Association xmi:id="_L3pO4ErgEeGJpZWiuxRVIw" memberEnd="_L3pO4UrgEeGJpZWiuxRVIw">
     <ownedEnd xmi:id="_L3pO4UrgEeGJpZWiuxRVIw" type="_9o7WcEb6EeGp67IkyTw1fg" association="_L3pO4ErgEeGJpZWiuxRVIw"/>
   </uml:Association>
-  <uml:Association xmi:id="_c7ACMkrgEeGJpZWiuxRVIw" memberEnd="_c7ACMErgEeGJpZWiuxRVIw _c7JzMErgEeGJpZWiuxRVIw">
+  <uml:Association xmi:id="_c7ACMkrgEeGJpZWiuxRVIw" memberEnd="_c7JzMErgEeGJpZWiuxRVIw">
     <ownedComment xmi:id="_mxxTAErgEeGJpZWiuxRVIw">
       <body>This entryRelationship SHALL be present if the referenced DICOM object is a multiframe object and the reference does not apply to all frames</body>
     </ownedComment>
     <ownedEnd xmi:id="_c7JzMErgEeGJpZWiuxRVIw" type="_9o7WcEb6EeGp67IkyTw1fg" association="_c7ACMkrgEeGJpZWiuxRVIw"/>
   </uml:Association>
-  <uml:Association xmi:id="_herW0EriEeGJpZWiuxRVIw" memberEnd="_heiM4EriEeGJpZWiuxRVIw _herW0UriEeGJpZWiuxRVIw">
+  <uml:Association xmi:id="_herW0EriEeGJpZWiuxRVIw" memberEnd="_herW0UriEeGJpZWiuxRVIw">
     <ownedEnd xmi:id="_herW0UriEeGJpZWiuxRVIw" type="_1Zyf4Eb8EeGp67IkyTw1fg" association="_herW0EriEeGJpZWiuxRVIw"/>
   </uml:Association>
   <CDA:ConstraintValidation xmi:id="_-PCacFwSEeG0y_7i0ygc4g" base_Constraint="_7McMIFwSEeG0y_7i0ygc4g">
@@ -1254,10 +1408,10 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:ConstraintValidation xmi:id="_ldjtcOZBEeGINOJ_SD9_dA" base_Constraint="_ix3jQOZBEeGINOJ_SD9_dA">
     <ruleId>CONF:9310</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Association xmi:id="_1F57UuZBEeGINOJ_SD9_dA" memberEnd="_1F57UOZBEeGINOJ_SD9_dA _1F57U-ZBEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_1F57UuZBEeGINOJ_SD9_dA" memberEnd="_1F57U-ZBEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_1F57U-ZBEeGINOJ_SD9_dA" type="_pmiz8Eb_EeGp67IkyTw1fg" association="_1F57UuZBEeGINOJ_SD9_dA"/>
   </uml:Association>
-  <uml:Association xmi:id="_2e35YuZBEeGINOJ_SD9_dA" memberEnd="_2e35YOZBEeGINOJ_SD9_dA _2e35Y-ZBEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_2e35YuZBEeGINOJ_SD9_dA" memberEnd="_2e35Y-ZBEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_2e35Y-ZBEeGINOJ_SD9_dA" type="_pmiz8Eb_EeGp67IkyTw1fg" association="_2e35YuZBEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_6tyw4OZBEeGINOJ_SD9_dA" severity="INFO" base_Association="_1F57UuZBEeGINOJ_SD9_dA" typeCode="SPRT">
@@ -1302,7 +1456,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
     <ruleId>CONF:9324</ruleId>
     <ruleId>CONF:932</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_agwuEOZUEeGINOJ_SD9_dA" memberEnd="_agm9EOZUEeGINOJ_SD9_dA _agwuEeZUEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_agwuEOZUEeGINOJ_SD9_dA" memberEnd="_agwuEeZUEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_agwuEeZUEeGINOJ_SD9_dA" type="_Px2t4Eb_EeGp67IkyTw1fg" association="_agwuEOZUEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_bSTfwOZUEeGINOJ_SD9_dA" severity="INFO" base_Association="_agwuEOZUEeGINOJ_SD9_dA" typeCode="SPRT">
@@ -1346,7 +1500,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:PropertyValidation xmi:id="_86beMOZaEeGINOJ_SD9_dA" base_Property="__bAhYeZWEeGINOJ_SD9_dA">
     <ruleId>CONF:9291</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_BYhaIuZbEeGINOJ_SD9_dA" memberEnd="_BYhaIOZbEeGINOJ_SD9_dA _BYhaI-ZbEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_BYhaIuZbEeGINOJ_SD9_dA" memberEnd="_BYhaI-ZbEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_BYhaI-ZbEeGINOJ_SD9_dA" type="_9xjKIEb-EeGp67IkyTw1fg" association="_BYhaIuZbEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_DSOGsOZbEeGINOJ_SD9_dA" severity="INFO" base_Association="_BYhaIuZbEeGINOJ_SD9_dA" typeCode="SPRT">
@@ -1354,7 +1508,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
     <ruleId>CONF:9299</ruleId>
     <ruleId>CONF:15941</ruleId>
   </CDA:EntryRelationship>
-  <uml:Association xmi:id="_KE7woOZbEeGINOJ_SD9_dA" memberEnd="_KEymsOZbEeGINOJ_SD9_dA _KE7woeZbEeGINOJ_SD9_dA">
+  <uml:Association xmi:id="_KE7woOZbEeGINOJ_SD9_dA" memberEnd="_KE7woeZbEeGINOJ_SD9_dA">
     <ownedEnd xmi:id="_KE7woeZbEeGINOJ_SD9_dA" type="_9xjKIEb-EeGp67IkyTw1fg" association="_KE7woOZbEeGINOJ_SD9_dA"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_LZvAYOZbEeGINOJ_SD9_dA" severity="INFO" base_Association="_KE7woOZbEeGINOJ_SD9_dA" typeCode="SPRT">
@@ -1371,7 +1525,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:PropertyValidation xmi:id="_-FQOgGQmEeOD5bEp3nNX5w" base_Property="_wUxhMGQmEeOD5bEp3nNX5w">
     <ruleId>CONF:Pending</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_Ao2HkOaHEeOmzetP5oaH3A" clientDependency="_qGW8oOaHEeOmzetP5oaH3A" name="PhysicianofRecordParticipant2">
+  <uml:Class xmi:id="_Ao2HkOaHEeOmzetP5oaH3A" name="PhysicianofRecordParticipant2">
     <ownedComment xmi:id="_Yh-f4OaHEeOmzetP5oaH3A">
       <body>This encounterParticipant is the attending physician and is usually different from the Physician Reading Study Performer defined in documentationOf/serviceEvent.</body>
     </ownedComment>
@@ -1441,7 +1595,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:PropertyValidation xmi:id="_YLzdwOaWEeOmzetP5oaH3A" severity="WARNING" base_Property="_T-xcoOaWEeOmzetP5oaH3A">
     <ruleId>CONF:1098-16075</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_zKKIUIe9EeSBauRYePLghA" clientDependency="_SbKGEIe-EeSBauRYePLghA" name="PhysicianReadingStudyPerformer2">
+  <uml:Class xmi:id="_zKKIUIe9EeSBauRYePLghA" name="PhysicianReadingStudyPerformer2">
     <ownedComment xmi:id="__iuAcIe9EeSBauRYePLghA">
       <body>This participant is the Physician Reading Study Performer defined in documentationOf/serviceEvent. It is usually different from the attending physician. The reading physician interprets the images and evidence of the study (DICOM Definition).</body>
     </ownedComment>
@@ -1454,4 +1608,16 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
     <ruleId>CONF:1098-32564</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_QTsDQIe-EeSBauRYePLghA" base_Generalization="_zKKvYIe9EeSBauRYePLghA"/>
+  <CDA:Inline xmi:id="_fPTBgrS6EeWcPq3zAthoUQ" base_Class="_fPTBgLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fYbIUrS6EeWcPq3zAthoUQ" base_Class="_fYbIULS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fYfZwrS6EeWcPq3zAthoUQ" base_Class="_fYfZwLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fYjrMLS6EeWcPq3zAthoUQ" base_Class="_fYjEILS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fYnVkLS6EeWcPq3zAthoUQ" base_Class="_fYmugLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fYq_8rS6EeWcPq3zAthoUQ" base_Class="_fYq_8LS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fYv4crS6EeWcPq3zAthoUQ" base_Class="_fYv4cLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fYzi0rS6EeWcPq3zAthoUQ" base_Class="_fYzi0LS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fY3NMrS6EeWcPq3zAthoUQ" base_Class="_fY3NMLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fY63krS6EeWcPq3zAthoUQ" base_Class="_fY63kLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fY-h8rS6EeWcPq3zAthoUQ" base_Class="_fY-h8LS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fZCMUrS6EeWcPq3zAthoUQ" base_Class="_fZCMULS6EeWcPq3zAthoUQ"/>
 </xmi:XMI>

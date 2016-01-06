@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2LMIwBSVEeGGzu7fmW9pXw" name="AllergiesSection">
     <ownedComment xmi:id="_2LRBQRSVEeGGzu7fmW9pXw" annotatedElement="_2LMIwBSVEeGGzu7fmW9pXw">
       <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
@@ -20,12 +20,25 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2LPzIhSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2LPzIRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2LMIwxSVEeGGzu7fmW9pXw" name="allergyProblemAct" type="_2EAisBSVEeGGzu7fmW9pXw" association="_2LNW4RSVEeGGzu7fmW9pXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2LMIxRSVEeGGzu7fmW9pXw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2LMIxBSVEeGGzu7fmW9pXw" value="*"/>
+    <ownedAttribute xmi:id="_fG56gLS6EeWcPq3zAthoUQ" name="entry" type="_fG4sYLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fG56gbS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fG56grS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fG5TcLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fG4sYLS6EeWcPq3zAthoUQ" name="AllergyProblemActEntry">
+      <generalization xmi:id="_fG4sYbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fG7vsbS6EeWcPq3zAthoUQ" name="allergyProblemAct" type="_2EAisBSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fG7vsrS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fG7vs7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_fG7vsLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_2LNW4RSVEeGGzu7fmW9pXw" memberEnd="_2LMIwxSVEeGGzu7fmW9pXw _2LNW4hSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2LNW4RSVEeGGzu7fmW9pXw" memberEnd="_2LNW4hSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2LNW4hSVEeGGzu7fmW9pXw" type="_2LMIwBSVEeGGzu7fmW9pXw" association="_2LNW4RSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2LMv0BSVEeGGzu7fmW9pXw" base_Class="_2LMIwBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.6.1">
@@ -64,10 +77,23 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bGzYjhVdEeGQCvUGzi1kDQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bGzYjRVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_lqJOQB0aEeGGdsHVD60BZA" name="allergyProblemAct" type="_2EAisBSVEeGGzu7fmW9pXw" association="_lqJOQh0aEeGGdsHVD60BZA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_66g44X0zEeGvKYp6-l7PnQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_66g44H0zEeGvKYp6-l7PnQ" value="*"/>
+    <ownedAttribute xmi:id="_fNKTgbS6EeWcPq3zAthoUQ" name="entry" type="_fNJFYLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNKTgrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNKTg7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fNKTgLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fNJFYLS6EeWcPq3zAthoUQ" name="AllergyProblemActEntry">
+      <generalization xmi:id="_fNJFYbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fNLhobS6EeWcPq3zAthoUQ" name="allergyProblemAct" type="_2EAisBSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNMIsLS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNMIsbS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_fNLhoLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_45wiEBkaEeGs5a462vYX5Q" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.6">
     <ruleId>CONF:7800, CONF:10378</ruleId>
@@ -188,20 +214,27 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     <ownedAttribute xmi:id="_2EaLdhSVEeGGzu7fmW9pXw" name="value" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_-xkhwBUvEeGbmN_W114JUw" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" association="_-xkhwhUvEeGbmN_W114JUw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-xkhwRUvEeGbmN_W114JUw"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2EaLeBSVEeGGzu7fmW9pXw" name="reactionObservation" type="_2E_aIRSVEeGGzu7fmW9pXw" association="_2Ej8URSVEeGGzu7fmW9pXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0W64EeJUEeG3cO7ebC3QuA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0W64EOJUEeG3cO7ebC3QuA" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_2EaLexSVEeGGzu7fmW9pXw" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2EkjYBSVEeGGzu7fmW9pXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_90gz4eJUEeG3cO7ebC3QuA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_90gz4OJUEeG3cO7ebC3QuA" value="1"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_FQD_EDJDEeG6R8Pb5FT2Ow" name="participant" type="_0HgNkDJAEeG6R8Pb5FT2Ow" association="_FQD_EjJDEeG6R8Pb5FT2Ow">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_APAVMc_TEeOGjf7FaidRGw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_APAVMM_TEeOGjf7FaidRGw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fCtXAbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fCsI4LS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fCtXArS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fCtXA7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fCtXALS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fCzdobS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fCyPgLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fCzdorS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fC0EsLS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fCzdoLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fC49MbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fC3vELS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fC49MrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fC49M7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fC49MLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_0HgNkDJAEeG6R8Pb5FT2Ow" name="Participant">
       <ownedComment xmi:id="_UJ7XoM-GEeG0zqUqBXbhpA">
@@ -318,14 +351,47 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fCsI4LS6EeWcPq3zAthoUQ" name="AllergyStatusObservationEntryRelationship">
+      <generalization xmi:id="_fCsI4bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fCvMMbS6EeWcPq3zAthoUQ" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fCvzQLS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fCvzQbS6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fCvMMLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fCyPgLS6EeWcPq3zAthoUQ" name="ReactionObservationEntryRelationship">
+      <generalization xmi:id="_fCyPgbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fC1S0bS6EeWcPq3zAthoUQ" name="reactionObservation" type="_2E_aIRSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fC154LS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fC154bS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fC1S0LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fC3vELS6EeWcPq3zAthoUQ" name="SeverityObservationEntryRelationship">
+      <generalization xmi:id="_fC3vEbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fC7ZcLS6EeWcPq3zAthoUQ" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fC7ZcbS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fC7ZcrS6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fC6yYLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_2Ej8URSVEeGGzu7fmW9pXw" memberEnd="_2EaLeBSVEeGGzu7fmW9pXw _2Ej8UhSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2Ej8URSVEeGGzu7fmW9pXw" memberEnd="_2Ej8UhSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2Ej8UhSVEeGGzu7fmW9pXw" type="_2EaLUBSVEeGGzu7fmW9pXw" association="_2Ej8URSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_2EkjYBSVEeGGzu7fmW9pXw" memberEnd="_2EaLexSVEeGGzu7fmW9pXw _2EkjYRSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2EkjYBSVEeGGzu7fmW9pXw" memberEnd="_2EkjYRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2EkjYRSVEeGGzu7fmW9pXw" type="_2EaLUBSVEeGGzu7fmW9pXw" association="_2EkjYBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <uml:Association xmi:id="_-xkhwhUvEeGbmN_W114JUw" memberEnd="_-xkhwBUvEeGbmN_W114JUw _-xkhwxUvEeGbmN_W114JUw">
+  <uml:Association xmi:id="_-xkhwhUvEeGbmN_W114JUw" memberEnd="_-xkhwxUvEeGbmN_W114JUw">
     <ownedEnd xmi:id="_-xkhwxUvEeGbmN_W114JUw" type="_2EaLUBSVEeGGzu7fmW9pXw" association="_-xkhwhUvEeGbmN_W114JUw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_96YgEBnaEeGs5a462vYX5Q" base_Class="_2EaLUBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.7">
@@ -473,9 +539,11 @@ historical purposes.&#xD;
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EPMMxSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EPMMhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2EZkQBSVEeGGzu7fmW9pXw" name="allergyObservation" type="_2EaLUBSVEeGGzu7fmW9pXw" association="_2F6nMBSVEeGGzu7fmW9pXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EZkQhSVEeGGzu7fmW9pXw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EZkQRSVEeGGzu7fmW9pXw" value="*"/>
+    <ownedAttribute xmi:id="_fCkNELS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fCf7oLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fCk0ILS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fCk0IbS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fCjmALS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_nG6-gMTyEeOYw6YTCsSKiw" name="CD">
       <ownedComment xmi:id="_3Z9IIMTyEeOYw6YTCsSKiw">
@@ -505,8 +573,19 @@ historical purposes.&#xD;
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_3fx3ADxkEd6JwqSGecoePg"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fCf7oLS6EeWcPq3zAthoUQ" name="AllergyObservationEntryRelationship">
+      <generalization xmi:id="_fCf7obS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fCnQYbS6EeWcPq3zAthoUQ" name="allergyObservation" type="_2EaLUBSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fCnQYrS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fCn3cLS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fCnQYLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_2F6nMBSVEeGGzu7fmW9pXw" memberEnd="_2EZkQBSVEeGGzu7fmW9pXw _2F6nMRSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2F6nMBSVEeGGzu7fmW9pXw" memberEnd="_2F6nMRSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2F6nMRSVEeGGzu7fmW9pXw" type="_2EAisBSVEeGGzu7fmW9pXw" association="_2F6nMBSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_09uuIBnaEeGs5a462vYX5Q" base_Class="_2EAisBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.30">
@@ -550,8 +629,8 @@ historical purposes.&#xD;
     <ruleId>CONF:7472, R2.1=CONF:1198-7472</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2EN-ERSVEeGGzu7fmW9pXw" base_Property="_2ENXABSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2GDxJhSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7485, R2.1=CONF:1198-7485, R2.1=CONF:1198-19086</ruleId>
+    <reference href="../consol-vocab.uml#_2GDxJhSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2EPMNBSVEeGGzu7fmW9pXw" base_Property="_2EPMMBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7498</ruleId>
@@ -755,23 +834,61 @@ historical purposes.&#xD;
     <ownedAttribute xmi:id="_2FFgwRSVEeGGzu7fmW9pXw" name="value" visibility="private">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2FGu4BSVEeGGzu7fmW9pXw" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2FRG8RSVEeGGzu7fmW9pXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2FGu4RSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_fDBgEbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fDAR8LS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fDBgErS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fDBgE7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fDBgELS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_feOy4BrbEeGo461UQq-B1g" name="procedureActivityProcedure">
-      <type xmi:type="uml:Class" href="consol-procedures.uml#_2OG58RSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0W_QgSYKEeGWfpmyutaqOA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0W_QgCYKEeGWfpmyutaqOA" value="*"/>
-      <association href="consol-immunizations.uml#_fePZ8BrbEeGo461UQq-B1g"/>
+    <ownedAttribute xmi:id="_fDGYkbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fDFKcLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fDGYkrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fDGYk7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fDGYkLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_nTmMoBrbEeGo461UQq-B1g" name="medicationActivity">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rrWgoSYLEeGWfpmyutaqOA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rrWgoCYLEeGWfpmyutaqOA" value="*"/>
-      <association href="consol-immunizations.uml#_nTmMohrbEeGo461UQq-B1g"/>
+    <ownedAttribute xmi:id="_fDL4IbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fDKC8LS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fDMfMLS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fDMfMbS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fDL4ILS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fDAR8LS6EeWcPq3zAthoUQ" name="SeverityObservationEntryRelationship">
+      <generalization xmi:id="_fDAR8bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fDDVQbS6EeWcPq3zAthoUQ" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fDDVQrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fDDVQ7S6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fDDVQLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fDFKcLS6EeWcPq3zAthoUQ" name="ProcedureActivityProcedureEntryRelationship">
+      <generalization xmi:id="_fDFKcbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fDINwbS6EeWcPq3zAthoUQ" name="procedureActivityProcedure" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-procedures.uml#_2OG58RSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fDINwrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fDI00LS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_MpocMUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fDINwLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fDKC8LS6EeWcPq3zAthoUQ" name="MedicationActivityEntryRelationship">
+      <generalization xmi:id="_fDKC8bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fDO7cLS6EeWcPq3zAthoUQ" name="medicationActivity" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fDO7cbS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fDO7crS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Px50sUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fDOUYLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_2FRG8RSVEeGGzu7fmW9pXw" memberEnd="_2FGu4BSVEeGGzu7fmW9pXw _2FRG8hSVEeGGzu7fmW9pXw">
+  <uml:Association xmi:id="_2FRG8RSVEeGGzu7fmW9pXw" memberEnd="_2FRG8hSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2FRG8hSVEeGGzu7fmW9pXw" type="_2E_aIRSVEeGGzu7fmW9pXw" association="_2FRG8RSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_kdmRwBncEeGs5a462vYX5Q" base_Class="_2E_aIRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.9">
@@ -828,11 +945,11 @@ historical purposes.&#xD;
     <ruleId>R2.0=CONF:1098-7379</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_eWhS0B0eEeGGdsHVD60BZA" base_Property="_2EaLdhSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
     <ruleId>CONF:7390</ruleId>
     <ruleId>CONF:9139</ruleId>
+    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
   </CDA:ValueSetConstraint>
-  <uml:Association xmi:id="_lqJOQh0aEeGGdsHVD60BZA" memberEnd="_lqJOQB0aEeGGdsHVD60BZA _lqJOQx0aEeGGdsHVD60BZA">
+  <uml:Association xmi:id="_lqJOQh0aEeGGdsHVD60BZA" memberEnd="_lqJOQx0aEeGGdsHVD60BZA">
     <ownedEnd xmi:id="_lqJOQx0aEeGGdsHVD60BZA" type="_bGzYgBVdEeGQCvUGzi1kDQ" association="_lqJOQh0aEeGGdsHVD60BZA"/>
   </uml:Association>
   <uml:Class xmi:id="_2FRuAhSVEeGGzu7fmW9pXw" name="AllergyStatusObservation">
@@ -892,8 +1009,8 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
     <ruleId>CONF:7321</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_2FTjMRSVEeGGzu7fmW9pXw" base_Property="_2FRuChSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7322</ruleId>
+    <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_i7X6oCAqEeGq2sn1dgvG_g" severity="WARNING" base_Association="_lqJOQh0aEeGGdsHVD60BZA">
     <ruleId>CONF:7804, CONF:7805</ruleId>
@@ -996,9 +1113,9 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
     <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_q-cRgCZyEeGtVbZZHlmnzA" base_Property="_2FGu6hSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_cOR30CXNEeGnSfJ2zNllag"/>
     <ruleId>CONF:7356</ruleId>
     <ruleId>R2.0=CONF:1098-7356</ruleId>
+    <reference href="../consol-vocab.uml#_cOR30CXNEeGnSfJ2zNllag"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__uvHMCnAEeGHDN_aHIiN8Q" severity="WARNING">
     <ruleId>CONF:9117</ruleId>
@@ -1008,15 +1125,15 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
     <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_AIIMsCnDEeGHDN_aHIiN8Q" severity="WARNING">
-    <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
     <ruleId>CONF:9117</ruleId>
     <ruleId>CONF:16038</ruleId>
+    <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
   </CDA:ValueSetConstraint>
   <CDA:ActRelationship xmi:id="_whZe4Cx0EeG6iqE9PBsDjg" base_Association="_2FRG8RSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_j6I_oCzFEeG6iqE9PBsDjg" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7335</ruleId>
     <ruleId>R2.0=CONF:1098-7335</ruleId>
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_bVJRwDJBEeG6R8Pb5FT2Ow" code="CSM" displayName="Consumable" base_Property="_098tYDJAEeG6R8Pb5FT2Ow">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_Z0Bk4E6SEeC5ttwajeXVXg"/>
@@ -1080,7 +1197,7 @@ THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF TH
   <CDA:ConstraintValidation xmi:id="_0mkLsOJWEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_wNrf4OJWEeG3cO7ebC3QuA">
     <ruleId>CONF:15929</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_uCiIYLNwEeOtlapy2HWYww" clientDependency="_0f27sLNxEeOtlapy2HWYww" name="AllergyConcernAct2">
+  <uml:Class xmi:id="_uCiIYLNwEeOtlapy2HWYww" name="AllergyConcernAct2">
     <ownedComment xmi:id="_kWCYcLNxEeOtlapy2HWYww">
       <body>&lt;p>&#xD;
 This template reflects an ongoing concern on behalf of the provider that placed the allergy on a patient's allergy list. As long as the underlying condition is of concern to the provider (i.e., as long as the allergy, whether active or resolved, is of ongoing concern and interest to the provider), the statusCode is &quot;active&quot;. Only when the underlying allergy is no longer of concern is the statusCode set to &quot;completed&quot;. The effectiveTime reflects the time that the underlying allergy was felt to be a concern.&#xD;
@@ -1099,11 +1216,13 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lUlkAbN0EeOtlapy2HWYww"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lUlkArN0EeOtlapy2HWYww" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_K9fWoPffEeO297ryy8ptVg" name="allergyObservation2" type="_uVJogLj5EeODDJAC5t5vpw" redefinedProperty="_2EZkQBSVEeGGzu7fmW9pXw" association="_K9gkwPffEeO297ryy8ptVg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QNBWkfffEeO297ryy8ptVg" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QNBWkPffEeO297ryy8ptVg" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_K0IpwKvuEeS-mulaI3YUlw" name="code" visibility="private" type="_LgbIAKvuEeS-mulaI3YUlw" redefinedProperty="_2EMv9BSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_fj2VMbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fj1HELS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fj2VMrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fj2VM7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Dw0uYUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fj2VMLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_LgbIAKvuEeS-mulaI3YUlw" name="CD">
       <ownedComment xmi:id="_MH-kQKy_EeSB84STE1Ny6A">
         <body>INLINE</body>
@@ -1128,6 +1247,17 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MnHqUqvuEeS-mulaI3YUlw" value="1"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fj1HELS6EeWcPq3zAthoUQ" name="AllergyObservation2EntryRelationship">
+      <generalization xmi:id="_fj1HEbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fj3jUbS6EeWcPq3zAthoUQ" name="allergyObservation2" type="_uVJogLj5EeODDJAC5t5vpw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fj3jUrS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fj3jU7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fj3jULS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_ePScoLNxEeOtlapy2HWYww" base_Class="_uCiIYLNwEeOtlapy2HWYww" templateId="2.16.840.1.113883.10.20.22.4.30" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7471, CONF:1198-10489, CONF:1198-32543</ruleId>
@@ -1150,7 +1280,7 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
   <CDA:PropertyValidation xmi:id="_aMz6I7N7EeOtlapy2HWYww">
     <ruleId>CONF:1198-7498</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_uVJogLj5EeODDJAC5t5vpw" clientDependency="_Oapv4Lj7EeODDJAC5t5vpw" name="AllergyObservation2">
+  <uml:Class xmi:id="_uVJogLj5EeODDJAC5t5vpw" name="AllergyObservation2">
     <ownedComment xmi:id="_d2V3QLj6EeODDJAC5t5vpw">
       <body>This template reflects a discrete observation about a patient's allergy or intolerance. Because it is a discrete observation, it will have a statusCode of &quot;completed&quot;. The effectiveTime, also referred to as the &quot;biologically relevant time&quot; is the time at which the observation holds for the patient. For a provider seeing a patient in the clinic today, observing a history of penicillin allergy that developed five years ago, the effectiveTime is five years ago. &#xD;
 The effectiveTime of the Allergy - Intolerance Observation is the definitive indication of whether or not the underlying allergy/intolerance is resolved. If known to be resolved, then an effectiveTime/high would be present. If the date of resolution is not known, then effectiveTime/high will be present with a nullFlavor of &quot;UNK&quot;.&#xD;
@@ -1247,22 +1377,27 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QjUYorkTEeODDJAC5t5vpw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QjUYobkTEeODDJAC5t5vpw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_c0mMAPfoEeO297ryy8ptVg" name="reactionObservation2" type="_U3yosPDxEeOKPKE9au0oug" redefinedProperty="_2EaLeBSVEeGGzu7fmW9pXw" association="_c0oBMPfoEeO297ryy8ptVg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c0mMAffoEeO297ryy8ptVg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c0mMAvfoEeO297ryy8ptVg" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_5r5SAPfpEeO297ryy8ptVg" name="severityObservation2" type="_B0oKYPJdEeO2NaSiicarcg" association="_5r6gIPfpEeO297ryy8ptVg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9eTMoffpEeO297ryy8ptVg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9eTMoPfpEeO297ryy8ptVg" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_FNs1ILkcEeODDJAC5t5vpw" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" redefinedProperty="_-xkhwBUvEeGbmN_W114JUw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q5Wj8LkcEeODDJAC5t5vpw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q5V84LkcEeODDJAC5t5vpw" value="*"/>
-      <association href="../consol.uml#_FNuDQLkcEeODDJAC5t5vpw"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_EB6O4PrwEeO3D4OxHxUkag" name="participant" type="_OIcaAPrwEeO3D4OxHxUkag" redefinedProperty="_FQD_EDJDEeG6R8Pb5FT2Ow" association="_EB7dAPrwEeO3D4OxHxUkag">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZywsfrwEeO3D4OxHxUkag" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZywsPrwEeO3D4OxHxUkag" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fj5_kbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fj4xcLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fj5_krS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fj5_k7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fj5_kLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fj-RAbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fj9C4LS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fj-RArS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fj-RA7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fj-RALS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fkCicbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fkAtQLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkCicrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkCic7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fkCicLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_wqODoLkTEeODDJAC5t5vpw" name="IVLTS">
       <ownedComment xmi:id="_P_7GMKy_EeSB84STE1Ny6A">
@@ -1375,6 +1510,39 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
         </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fj4xcLS6EeWcPq3zAthoUQ" name="ReactionObservation2EntryRelationship">
+      <generalization xmi:id="_fj4xcbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fj70wbS6EeWcPq3zAthoUQ" name="reactionObservation2" type="_U3yosPDxEeOKPKE9au0oug" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fj70wrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fj70w7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fj70wLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fj9C4LS6EeWcPq3zAthoUQ" name="SeverityObservation2EntryRelationship">
+      <generalization xmi:id="_fj9C4bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fkAGMbS6EeWcPq3zAthoUQ" name="severityObservation2" type="_B0oKYPJdEeO2NaSiicarcg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkAGMrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkAGM7S6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fkAGMLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fkAtQLS6EeWcPq3zAthoUQ" name="AllergyStatusObservationEntryRelationship">
+      <generalization xmi:id="_fkAtQbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fkDwkbS6EeWcPq3zAthoUQ" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkDwkrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkDwk7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fkDwkLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_HX1C0Lj6EeODDJAC5t5vpw" base_Class="_uVJogLj5EeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.7" templateVersion="2014-06-09">
     <ruleId>CONF:1098-7381</ruleId>
@@ -1400,8 +1568,8 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>CONF:1098-15947</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_3bHDQbkAEeODDJAC5t5vpw" base_Property="_3bHDQLkAEeODDJAC5t5vpw">
-    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
     <ruleId>CONF:1098-7390</ruleId>
+    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8aRr8LkAEeODDJAC5t5vpw" base_Property="_3bHDQLkAEeODDJAC5t5vpw"/>
   <CDA:PropertyValidation xmi:id="_QjUYo7kTEeODDJAC5t5vpw" base_Property="_QjUYoLkTEeODDJAC5t5vpw">
@@ -1494,21 +1662,27 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mgny-NF8EeOHUokOVP95oQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_w0LGUNF8EeOHUokOVP95oQ" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" association="_w0KfQNF8EeOHUokOVP95oQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w0LGUtF8EeOHUokOVP95oQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w0LGUdF8EeOHUokOVP95oQ" value="1"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_xwchUtF8EeOHUokOVP95oQ" name="reactionObservation" type="_2E_aIRSVEeGGzu7fmW9pXw" association="_xwchUNF8EeOHUokOVP95oQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xwchVNF8EeOHUokOVP95oQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xwchU9F8EeOHUokOVP95oQ" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_zb8Z0tF8EeOHUokOVP95oQ" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_zb8Z0NF8EeOHUokOVP95oQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zb8Z1NF8EeOHUokOVP95oQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zb8Z09F8EeOHUokOVP95oQ" value="1"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_CAVaoNIdEeO-TcA3qYv-cw" name="participant" type="_cBOJoNIdEeO-TcA3qYv-cw" association="_CAWowNIdEeO-TcA3qYv-cw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CAWBsNIdEeO-TcA3qYv-cw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CAWBsdIdEeO-TcA3qYv-cw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fkspwbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fkq0kLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkspwrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkspw7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fkspwLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fkwUIbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fkvGALS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkwUIrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkwUI7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fkwUILS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fk0lkLS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fkywYLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fk0lkbS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fk0lkrS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fkz-gLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_cBOJoNIdEeO-TcA3qYv-cw" name="Participant">
       <ownedComment xmi:id="_tCxmINIdEeO-TcA3qYv-cw">
@@ -1636,6 +1810,39 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
         </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fkq0kLS6EeWcPq3zAthoUQ" name="AllergyStatusObservationEntryRelationship">
+      <generalization xmi:id="_fkq0kbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fkt34bS6EeWcPq3zAthoUQ" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkt34rS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkt347S6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fkt34LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fkvGALS6EeWcPq3zAthoUQ" name="ReactionObservationEntryRelationship">
+      <generalization xmi:id="_fkvGAbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fkyJUbS6EeWcPq3zAthoUQ" name="reactionObservation" type="_2E_aIRSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkyJUrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkyJU7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fkyJULS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fkywYLS6EeWcPq3zAthoUQ" name="SeverityObservationEntryRelationship">
+      <generalization xmi:id="_fkywYbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fk1zsbS6EeWcPq3zAthoUQ" name="severityObservation" type="_2FGu4hSVEeGGzu7fmW9pXw" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fk2awLS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fk2awbS6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fk1zsLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_mgoZ8NF8EeOHUokOVP95oQ" base_Class="_mgny4NF8EeOHUokOVP95oQ" templateId="2.16.840.1.113883.10.20.24.3.90">
     <ruleId>CONF:16305</ruleId>
@@ -1687,11 +1894,11 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>R2.0=CONF:1098-16312</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_mgoZ_dF8EeOHUokOVP95oQ" base_Property="_mgny99F8EeOHUokOVP95oQ">
-    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
     <ruleId>CONF:16317</ruleId>
     <ruleId>R2.0=CONF:1098-16317</ruleId>
+    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
   </CDA:ValueSetConstraint>
-  <uml:Association xmi:id="_w0KfQNF8EeOHUokOVP95oQ" memberEnd="_w0LGUNF8EeOHUokOVP95oQ _w0KfQdF8EeOHUokOVP95oQ">
+  <uml:Association xmi:id="_w0KfQNF8EeOHUokOVP95oQ" memberEnd="_w0KfQdF8EeOHUokOVP95oQ">
     <ownedEnd xmi:id="_w0KfQdF8EeOHUokOVP95oQ" type="_mgny4NF8EeOHUokOVP95oQ" association="_w0KfQNF8EeOHUokOVP95oQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_w0LGU9F8EeOHUokOVP95oQ" severity="INFO" base_Association="_w0KfQNF8EeOHUokOVP95oQ" typeCode="SUBJ">
@@ -1702,7 +1909,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>R2.0=CONF:1098-16335</ruleId>
     <ruleId>R2.0=CONF:1098-16336</ruleId>
   </CDA:EntryRelationship>
-  <uml:Association xmi:id="_xwchUNF8EeOHUokOVP95oQ" memberEnd="_xwchUtF8EeOHUokOVP95oQ _xwchUdF8EeOHUokOVP95oQ">
+  <uml:Association xmi:id="_xwchUNF8EeOHUokOVP95oQ" memberEnd="_xwchUdF8EeOHUokOVP95oQ">
     <ownedEnd xmi:id="_xwchUdF8EeOHUokOVP95oQ" type="_mgny4NF8EeOHUokOVP95oQ" association="_xwchUNF8EeOHUokOVP95oQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_xwdIYNF8EeOHUokOVP95oQ" severity="WARNING" base_Association="_xwchUNF8EeOHUokOVP95oQ" typeCode="MFST">
@@ -1710,7 +1917,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>CONF:16339</ruleId>
     <ruleId>CONF:16340</ruleId>
   </CDA:EntryRelationship>
-  <uml:Association xmi:id="_zb8Z0NF8EeOHUokOVP95oQ" memberEnd="_zb8Z0tF8EeOHUokOVP95oQ _zb8Z0dF8EeOHUokOVP95oQ">
+  <uml:Association xmi:id="_zb8Z0NF8EeOHUokOVP95oQ" memberEnd="_zb8Z0dF8EeOHUokOVP95oQ">
     <ownedEnd xmi:id="_zb8Z0dF8EeOHUokOVP95oQ" type="_mgny4NF8EeOHUokOVP95oQ" association="_zb8Z0NF8EeOHUokOVP95oQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_zb9A4NF8EeOHUokOVP95oQ" severity="INFO" base_Association="_zb8Z0NF8EeOHUokOVP95oQ" typeCode="SUBJ">
@@ -1781,7 +1988,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
   <CDA:PropertyValidation xmi:id="_PrSu89JCEeOj_bXCpQOG9w" severity="INFO" base_Property="_PrSu8NJCEeOj_bXCpQOG9w">
     <ruleId>CONF:7431</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_U3yosPDxEeOKPKE9au0oug" clientDependency="_u_JzIPDxEeOKPKE9au0oug" name="ReactionObservation2">
+  <uml:Class xmi:id="_U3yosPDxEeOKPKE9au0oug" name="ReactionObservation2">
     <ownedComment xmi:id="_clpsQPDxEeOKPKE9au0oug">
       <body>This clinical statement represents the response to an undesired symptom, finding, etc. due to administered or exposed substance. This reaction may be an undesired symptom, finding, etc. or it could be a desired response to a treatment. A reaction can be defined with respect to its severity, and can have been treated by one or more interventions.</body>
     </ownedComment>
@@ -1846,20 +2053,6 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ownedAttribute xmi:id="_QhJjIPDyEeOKPKE9au0oug" name="code" visibility="private" redefinedProperty="_2FBPVRSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_gUHLgPF0EeOmsLWmq5fnqQ" name="procedureActivityProcedure2" redefinedProperty="_feOy4BrbEeGo461UQq-B1g" association="_gULc8PF0EeOmsLWmq5fnqQ">
-      <type xmi:type="uml:Class" href="consol-procedures.uml#_fCVOQPDqEeOKPKE9au0oug"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gUJnwPF0EeOmsLWmq5fnqQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gUJnwfF0EeOmsLWmq5fnqQ" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_uxoIgPF1EeOmsLWmq5fnqQ" name="medicationActivity2" redefinedProperty="_nTmMoBrbEeGo461UQq-B1g" association="_uxp9sPF1EeOmsLWmq5fnqQ">
-      <type xmi:type="uml:Class" href="consol-medications.uml#_WnSCMOLAEeOc7-TVP7Wi6w"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uxoIgfF1EeOmsLWmq5fnqQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uxoIgvF1EeOmsLWmq5fnqQ" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_hOU7YPijEeOXlK95I8tUew" name="severityObservation2" type="_B0oKYPJdEeO2NaSiicarcg" redefinedProperty="_2FGu4BSVEeGGzu7fmW9pXw" association="_hOWwkPijEeOXlK95I8tUew">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_loYE0PijEeOXlK95I8tUew"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_loXdwPijEeOXlK95I8tUew" value="1"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_B1Q8sMzcEeSLqosJ4F90vA" name="id" visibility="private" aggregation="composite" redefinedProperty="_2FBPUBSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DAziwczcEeSLqosJ4F90vA" value="1"/>
@@ -1873,6 +2066,59 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ownedAttribute xmi:id="_xsMx8MzcEeSLqosJ4F90vA" name="statusCode" visibility="private" redefinedProperty="_2FDrkRSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_fpCXMbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fpBJELS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpCXMrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpCXM7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fpCXMLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fpHPsbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fpFagLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpHPsrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpHPs7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fpHPsLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fpLhIbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fpKTALS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpLhIrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpLhI7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fpLhILS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fpBJELS6EeWcPq3zAthoUQ" name="ProcedureActivityProcedure2EntryRelationship">
+      <generalization xmi:id="_fpBJEbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fpEMYbS6EeWcPq3zAthoUQ" name="procedureActivityProcedure2" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-procedures.uml#_fCVOQPDqEeOKPKE9au0oug"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpEMYrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpEMY7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_MpocMUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fpEMYLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fpFagLS6EeWcPq3zAthoUQ" name="MedicationActivity2EntryRelationship">
+      <generalization xmi:id="_fpFagbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fpJE4bS6EeWcPq3zAthoUQ" name="medicationActivity2" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-medications.uml#_WnSCMOLAEeOc7-TVP7Wi6w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpJE4rS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpJE47S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Px50sUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fpJE4LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fpKTALS6EeWcPq3zAthoUQ" name="SeverityObservation2EntryRelationship">
+      <generalization xmi:id="_fpKTAbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fpNWUbS6EeWcPq3zAthoUQ" name="severityObservation2" type="_B0oKYPJdEeO2NaSiicarcg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpNWUrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpNWU7S6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fpNWULS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_XSaRAPDxEeOKPKE9au0oug" base_Class="_U3yosPDxEeOKPKE9au0oug" templateId="2.16.840.1.113883.10.20.22.4.9" templateVersion="2014-06-09">
     <ruleId>CONF:1098-7323</ruleId>
@@ -1888,7 +2134,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
     <ruleId>CONF:1098-31124</ruleId>
     <ruleId>CONF:1098-32169</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Association xmi:id="_gULc8PF0EeOmsLWmq5fnqQ" memberEnd="_gUHLgPF0EeOmsLWmq5fnqQ _gUMEAPF0EeOmsLWmq5fnqQ">
+  <uml:Association xmi:id="_gULc8PF0EeOmsLWmq5fnqQ" memberEnd="_gUMEAPF0EeOmsLWmq5fnqQ">
     <ownedComment xmi:id="_Hw3NQPF2EeOmsLWmq5fnqQ">
       <body>This procedure activity is intended to contain information about procedures that were performed in response to an allergy reaction.</body>
     </ownedComment>
@@ -1902,7 +2148,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
   <CDA:ConstraintValidation xmi:id="_W4OqcvF1EeOmsLWmq5fnqQ" base_Constraint="_W4OqcPF1EeOmsLWmq5fnqQ">
     <ruleId>CONF:1098-7343</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Association xmi:id="_uxp9sPF1EeOmsLWmq5fnqQ" memberEnd="_uxoIgPF1EeOmsLWmq5fnqQ _uxp9sfF1EeOmsLWmq5fnqQ">
+  <uml:Association xmi:id="_uxp9sPF1EeOmsLWmq5fnqQ" memberEnd="_uxp9sfF1EeOmsLWmq5fnqQ">
     <ownedComment xmi:id="_A-HuIPF2EeOmsLWmq5fnqQ">
       <body>This medication activity is intended to contain information about medications that were administered in response to an allergy reaction.</body>
     </ownedComment>
@@ -1916,7 +2162,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
   <CDA:ConstraintValidation xmi:id="_KcqFIvF2EeOmsLWmq5fnqQ" base_Constraint="_KcqFIPF2EeOmsLWmq5fnqQ">
     <ruleId>CONF:1098-7344</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_B0oKYPJdEeO2NaSiicarcg" clientDependency="_d5jNsPJdEeO2NaSiicarcg" name="SeverityObservation2">
+  <uml:Class xmi:id="_B0oKYPJdEeO2NaSiicarcg" name="SeverityObservation2">
     <ownedComment xmi:id="_HSh9gPJdEeO2NaSiicarcg">
       <body>This clinical statement represents the gravity of the problem, such as allergy or reaction, in terms of its actual or potential impact on the patient. The Severity Observation can be associated with an Allergy - Intolerance Observation, Substance or Device Allergy - Intolerance Observation, Reaction Observation or all. When the Severity Observation is associated directly with an allergy it characterizes the allergy. When the Severity Observation is associated with a Reaction Observation it characterizes a reaction. A person may manifest many symptoms in a reaction to a single substance, and each reaction to the substance can be represented. However, each reaction observation can have only one severity observation associated with it. For example, someone may have a rash reaction observation as well as an itching reaction observation, but each can have only one level of severity.</body>
     </ownedComment>
@@ -1972,7 +2218,7 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
   <CDA:PropertyValidation xmi:id="_AtP2IPJeEeO2NaSiicarcg" base_Property="__Z27oPJdEeO2NaSiicarcg">
     <ruleId>CONF:1098-19168</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_K3M6IPKJEeOn7bMsPcStOw" clientDependency="_TbnyQPKJEeOn7bMsPcStOw" name="SubstanceOrDeviceAllergyObservation2">
+  <uml:Class xmi:id="_K3M6IPKJEeOn7bMsPcStOw" name="SubstanceOrDeviceAllergyObservation2">
     <ownedComment xmi:id="_RG4IcPKJEeOn7bMsPcStOw">
       <body>This template reflects a discrete observation about a patient's allergy or intolerance to a substance or device. Because it is a discrete observation, it will have a statusCode of &quot;completed&quot;. The effectiveTime, also referred to as the &quot;biologically relevant time&quot; is the time at which the observation holds for the patient. For a provider seeing a patient in the clinic today, observing a history of penicillin allergy that developed five years ago, the effectiveTime is five years ago. &#xD;
 The effectiveTime of the Substance or Device Allergy - Intolerance Observation is the definitive indication of whether or not the underlying allergy/intolerance is resolved. If known to be resolved, then an effectiveTime/high would be present. If the date of resolution is not known, then effectiveTime/high will be present with a nullFlavor of &quot;UNK&quot;.</body>
@@ -2020,18 +2266,22 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4B2G0PMOEeOrR8IF-aqVyQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4B2G0fMOEeOrR8IF-aqVyQ" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_zLs4cPMoEeOrR8IF-aqVyQ" name="reactionObservation2" type="_U3yosPDxEeOKPKE9au0oug" redefinedProperty="_xwchUtF8EeOHUokOVP95oQ" association="_zLuGkPMoEeOrR8IF-aqVyQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zLs4cfMoEeOrR8IF-aqVyQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zLs4cvMoEeOrR8IF-aqVyQ" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_v9wgUPMpEeOrR8IF-aqVyQ" name="severityObservation2" type="_B0oKYPJdEeO2NaSiicarcg" redefinedProperty="_zb8Z0tF8EeOHUokOVP95oQ" association="_v9yVgPMpEeOrR8IF-aqVyQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0kOVIfMpEeOrR8IF-aqVyQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0kOVIPMpEeOrR8IF-aqVyQ" value="1"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_ynIrcPMrEeOrR8IF-aqVyQ" name="authorParticipation" association="_ynKgoPMrEeOrR8IF-aqVyQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ynIrcfMrEeOrR8IF-aqVyQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ynIrcvMrEeOrR8IF-aqVyQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fpV5MLS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fpUEALS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpV5MbS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpV5MrS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fpVSILS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fpaxsbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fpY8gLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpaxsrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpaxs7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fpaxsLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_nVjxIPKJEeOn7bMsPcStOw" name="IVLTS">
       <ownedComment xmi:id="_AJnxUPMyEeOUvapeh9bVvQ">
@@ -2140,6 +2390,28 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
         </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fpUEALS6EeWcPq3zAthoUQ" name="ReactionObservation2EntryRelationship">
+      <generalization xmi:id="_fpUEAbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fpXuYLS6EeWcPq3zAthoUQ" name="reactionObservation2" type="_U3yosPDxEeOKPKE9au0oug" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpXuYbS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpXuYrS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fpXHULS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fpY8gLS6EeWcPq3zAthoUQ" name="SeverityObservation2EntryRelationship">
+      <generalization xmi:id="_fpY8gbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fpcm4bS6EeWcPq3zAthoUQ" name="severityObservation2" type="_B0oKYPJdEeO2NaSiicarcg" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpcm4rS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpcm47S6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fpcm4LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_Ok8XMPKJEeOn7bMsPcStOw" base_Class="_K3M6IPKJEeOn7bMsPcStOw" templateId="2.16.840.1.113883.10.20.24.3.90" templateVersion="2014-06-09">
     <ruleId>CONF:1098-16305</ruleId>
@@ -2162,8 +2434,8 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>CONF:1098-16312</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_dvw7kPKJEeOn7bMsPcStOw" base_Property="_dvwUgPKJEeOn7bMsPcStOw">
-    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
     <ruleId>CONF:1098-16317</ruleId>
+    <reference href="../consol-vocab.uml#_i0QFQCXYEeGD8_EQPvfzIQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_rWlWkPKJEeOn7bMsPcStOw" base_Property="_nzKTI_KJEeOn7bMsPcStOw">
     <ruleId>CONF:1098-31536</ruleId>
@@ -2180,7 +2452,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:PropertyValidation xmi:id="_EuBMk_MREeOrR8IF-aqVyQ" base_Property="_EuBMkPMREeOrR8IF-aqVyQ">
     <ruleId>CONF:1098-16324</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_zLuGkPMoEeOrR8IF-aqVyQ" memberEnd="_zLs4cPMoEeOrR8IF-aqVyQ _zLutoPMoEeOrR8IF-aqVyQ">
+  <uml:Association xmi:id="_zLuGkPMoEeOrR8IF-aqVyQ" memberEnd="_zLutoPMoEeOrR8IF-aqVyQ">
     <ownedEnd xmi:id="_zLutoPMoEeOrR8IF-aqVyQ" type="_K3M6IPKJEeOn7bMsPcStOw" association="_zLuGkPMoEeOrR8IF-aqVyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_2lxyoPMoEeOrR8IF-aqVyQ" severity="WARNING" base_Association="_zLuGkPMoEeOrR8IF-aqVyQ" typeCode="MFST">
@@ -2191,7 +2463,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:ConstraintValidation xmi:id="_KLMTAvMpEeOrR8IF-aqVyQ" base_Constraint="_KLMTAPMpEeOrR8IF-aqVyQ">
     <ruleId>CONF:1098-16338</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Association xmi:id="_v9yVgPMpEeOrR8IF-aqVyQ" memberEnd="_v9wgUPMpEeOrR8IF-aqVyQ _v9yVgfMpEeOrR8IF-aqVyQ">
+  <uml:Association xmi:id="_v9yVgPMpEeOrR8IF-aqVyQ" memberEnd="_v9yVgfMpEeOrR8IF-aqVyQ">
     <ownedEnd xmi:id="_v9yVgfMpEeOrR8IF-aqVyQ" type="_K3M6IPKJEeOn7bMsPcStOw" association="_v9yVgPMpEeOrR8IF-aqVyQ"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_2yDeoPMpEeOrR8IF-aqVyQ" severity="INFO" base_Association="_v9yVgPMpEeOrR8IF-aqVyQ" typeCode="SUBJ">
@@ -2208,13 +2480,13 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:AssociationValidation xmi:id="_0_MvAPMrEeOrR8IF-aqVyQ" severity="WARNING" base_Association="_ynKgoPMrEeOrR8IF-aqVyQ">
     <ruleId>CONF:1098-31144</ruleId>
   </CDA:AssociationValidation>
-  <uml:Association xmi:id="_K9gkwPffEeO297ryy8ptVg" memberEnd="_K9fWoPffEeO297ryy8ptVg _K9gkwfffEeO297ryy8ptVg">
+  <uml:Association xmi:id="_K9gkwPffEeO297ryy8ptVg" memberEnd="_K9gkwfffEeO297ryy8ptVg">
     <ownedEnd xmi:id="_K9gkwfffEeO297ryy8ptVg" type="_uCiIYLNwEeOtlapy2HWYww" association="_K9gkwPffEeO297ryy8ptVg"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_QluKcPffEeO297ryy8ptVg" base_Association="_K9gkwPffEeO297ryy8ptVg" typeCode="SUBJ">
     <ruleId>CONF:1198-7509, CONF:1198-7915, CONF:1198-14925</ruleId>
   </CDA:EntryRelationship>
-  <uml:Association xmi:id="_c0oBMPfoEeO297ryy8ptVg" memberEnd="_c0mMAPfoEeO297ryy8ptVg _c0oBMffoEeO297ryy8ptVg">
+  <uml:Association xmi:id="_c0oBMPfoEeO297ryy8ptVg" memberEnd="_c0oBMffoEeO297ryy8ptVg">
     <ownedEnd xmi:id="_c0oBMffoEeO297ryy8ptVg" type="_uVJogLj5EeODDJAC5t5vpw" association="_c0oBMPfoEeO297ryy8ptVg"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_jLhR0PfoEeO297ryy8ptVg" severity="WARNING" base_Association="_c0oBMPfoEeO297ryy8ptVg" typeCode="MFST">
@@ -2228,7 +2500,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:ConstraintValidation xmi:id="_uBVvYvfpEeO297ryy8ptVg" base_Constraint="_uBVvYPfpEeO297ryy8ptVg">
     <ruleId>CONF:1098-9964</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Association xmi:id="_5r6gIPfpEeO297ryy8ptVg" memberEnd="_5r5SAPfpEeO297ryy8ptVg _5r6gIffpEeO297ryy8ptVg">
+  <uml:Association xmi:id="_5r6gIPfpEeO297ryy8ptVg" memberEnd="_5r6gIffpEeO297ryy8ptVg">
     <ownedEnd xmi:id="_5r6gIffpEeO297ryy8ptVg" type="_uVJogLj5EeODDJAC5t5vpw" association="_5r6gIPfpEeO297ryy8ptVg"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_-N9H8PfpEeO297ryy8ptVg" severity="INFO" base_Association="_5r6gIPfpEeO297ryy8ptVg" typeCode="SUBJ">
@@ -2236,7 +2508,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ruleId>CONF:1098-9962</ruleId>
     <ruleId>CONF:1098-15956</ruleId>
   </CDA:EntryRelationship>
-  <uml:Association xmi:id="_hOWwkPijEeOXlK95I8tUew" memberEnd="_hOU7YPijEeOXlK95I8tUew _hOWwkfijEeOXlK95I8tUew">
+  <uml:Association xmi:id="_hOWwkPijEeOXlK95I8tUew" memberEnd="_hOWwkfijEeOXlK95I8tUew">
     <ownedEnd xmi:id="_hOWwkfijEeOXlK95I8tUew" type="_U3yosPDxEeOKPKE9au0oug" association="_hOWwkPijEeOXlK95I8tUew"/>
   </uml:Association>
   <CDA:EntryRelationship xmi:id="_jVCJMPijEeOXlK95I8tUew" severity="INFO" base_Association="_hOWwkPijEeOXlK95I8tUew" typeCode="SUBJ">
@@ -2278,7 +2550,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:PropertyValidation xmi:id="_L3BwAPr7EeO3D4OxHxUkag" base_Property="_Kgc-oPr7EeO3D4OxHxUkag">
     <ruleId>CONF:1098-19084</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_nWAcMAIjEeSVzfoPSatgpg" clientDependency="_DdymQAIkEeSVzfoPSatgpg" name="AllergiesSectionEntriesOptional2">
+  <uml:Class xmi:id="_nWAcMAIjEeSVzfoPSatgpg" name="AllergiesSectionEntriesOptional2">
     <ownedComment xmi:id="_w56bYAIjEeSVzfoPSatgpg">
       <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives). At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
     </ownedComment>
@@ -2287,10 +2559,23 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ownedAttribute xmi:id="_UrrOkAIkEeSVzfoPSatgpg" name="code" visibility="private" redefinedProperty="_bGzYihVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_j0EKAAIkEeSVzfoPSatgpg" name="allergyConcernAct2" type="_uCiIYLNwEeOtlapy2HWYww" redefinedProperty="_lqJOQB0aEeGGdsHVD60BZA" association="_j0GmQAIkEeSVzfoPSatgpg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j0ExEAIkEeSVzfoPSatgpg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j0ExEQIkEeSVzfoPSatgpg" value="*"/>
+    <ownedAttribute xmi:id="_fu5uobS6EeWcPq3zAthoUQ" name="entry" type="_fu4ggLS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fu6VsLS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fu6VsbS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fu5uoLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fu4ggLS6EeWcPq3zAthoUQ" name="AllergyConcernAct2Entry">
+      <generalization xmi:id="_fu4ggbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fu7j0bS6EeWcPq3zAthoUQ" name="allergyConcernAct2" type="_uCiIYLNwEeOtlapy2HWYww" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fu7j0rS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fu7j07S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_fu7j0LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_uK0X4AIjEeSVzfoPSatgpg" base_Class="_nWAcMAIjEeSVzfoPSatgpg" templateId="2.16.840.1.113883.10.20.22.2.6" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7800</ruleId>
@@ -2305,13 +2590,13 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:PropertyValidation xmi:id="_UrscsAIkEeSVzfoPSatgpg" base_Property="_UrrOkAIkEeSVzfoPSatgpg">
     <ruleId>CONF:1198-15345</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_j0GmQAIkEeSVzfoPSatgpg" memberEnd="_j0EKAAIkEeSVzfoPSatgpg _j0GmQQIkEeSVzfoPSatgpg">
+  <uml:Association xmi:id="_j0GmQAIkEeSVzfoPSatgpg" memberEnd="_j0GmQQIkEeSVzfoPSatgpg">
     <ownedEnd xmi:id="_j0GmQQIkEeSVzfoPSatgpg" type="_nWAcMAIjEeSVzfoPSatgpg" association="_j0GmQAIkEeSVzfoPSatgpg"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_lrx5kAIkEeSVzfoPSatgpg" severity="WARNING" base_Association="_j0GmQAIkEeSVzfoPSatgpg">
     <ruleId>CONF:1198-7804, CONF:1198-15444</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_EONPMAInEeSr1aKUYorURA" clientDependency="_tTejYAInEeSr1aKUYorURA" name="AllergiesSection2">
+  <uml:Class xmi:id="_EONPMAInEeSr1aKUYorURA" name="AllergiesSection2">
     <ownedComment xmi:id="_MQKTcAInEeSr1aKUYorURA">
       <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives). At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
     </ownedComment>
@@ -2327,13 +2612,6 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ownedAttribute xmi:id="_ENCVEAIoEeSr1aKUYorURA" name="code" visibility="private" redefinedProperty="_UrrOkAIkEeSVzfoPSatgpg">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_kAEB0AIoEeSr1aKUYorURA" name="allergyConcernAct2" type="_uCiIYLNwEeOtlapy2HWYww" redefinedProperty="_j0EKAAIkEeSVzfoPSatgpg" association="_kAF3AAIoEeSr1aKUYorURA">
-      <ownedComment xmi:id="_SZIasKJ2EeSOc57SOMra_g">
-        <body>If section/@nullFlavor is not present</body>
-      </ownedComment>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vqJN4AIpEeSr1aKUYorURA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vqIm0AIpEeSr1aKUYorURA" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:id="_I_93kAIzEeScubSeRE1upQ" name="title" visibility="private" redefinedProperty="_bGzYixVdEeGQCvUGzi1kDQ">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
@@ -2342,6 +2620,23 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I_9QggIzEeScubSeRE1upQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I_9QgQIzEeScubSeRE1upQ" value="1"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_fu-AEbS6EeWcPq3zAthoUQ" name="entry" type="_fu8x8LS6EeWcPq3zAthoUQ" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fu-AErS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fu-AE7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fu-AELS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fu8x8LS6EeWcPq3zAthoUQ" name="AllergyConcernAct2Entry">
+      <generalization xmi:id="_fu8x8bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fu_1QbS6EeWcPq3zAthoUQ" name="allergyConcernAct2" type="_uCiIYLNwEeOtlapy2HWYww" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fu_1QrS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fu_1Q7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_mNS5ATxYEd6JwqSGecoePg"/>
+        <association href="../consol.uml#_fu_1QLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_LXPHYAInEeSr1aKUYorURA" base_Class="_EONPMAInEeSr1aKUYorURA" templateId="2.16.840.1.113883.10.20.22.2.6.1" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7527, CONF:1198-10379, CONF:1198-32545</ruleId>
@@ -2354,7 +2649,7 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:PropertyValidation xmi:id="_ENDjMAIoEeSr1aKUYorURA" base_Property="_ENCVEAIoEeSr1aKUYorURA">
     <ruleId>CONF:1198-15349</ruleId>
   </CDA:PropertyValidation>
-  <uml:Association xmi:id="_kAF3AAIoEeSr1aKUYorURA" memberEnd="_kAEB0AIoEeSr1aKUYorURA _kAF3AQIoEeSr1aKUYorURA">
+  <uml:Association xmi:id="_kAF3AAIoEeSr1aKUYorURA" memberEnd="_kAF3AQIoEeSr1aKUYorURA">
     <ownedEnd xmi:id="_kAF3AQIoEeSr1aKUYorURA" type="_EONPMAInEeSr1aKUYorURA" association="_kAF3AAIoEeSr1aKUYorURA"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_06SuUAIoEeSr1aKUYorURA" base_Association="_kAF3AAIoEeSr1aKUYorURA">
@@ -2431,4 +2726,27 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:ConstraintValidation xmi:id="_k9eKMBaWEeWPafwaDwpzXw" severity="INFO" base_Constraint="_Q6hswM26EeSEZ8MJJ3ZzLg"/>
   <CDA:ConstraintValidation xmi:id="_ligw8BaWEeWPafwaDwpzXw" severity="INFO" base_Constraint="_SS-tcM26EeSEZ8MJJ3ZzLg"/>
   <CDA:ConstraintValidation xmi:id="_mFgwUBaWEeWPafwaDwpzXw" severity="INFO" base_Constraint="_Tnvg8M26EeSEZ8MJJ3ZzLg"/>
+  <CDA:Inline xmi:id="_fChw0LS6EeWcPq3zAthoUQ" base_Class="_fCf7oLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fCsI4rS6EeWcPq3zAthoUQ" base_Class="_fCsI4LS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fCyPgrS6EeWcPq3zAthoUQ" base_Class="_fCyPgLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fC3vErS6EeWcPq3zAthoUQ" base_Class="_fC3vELS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fDAR8rS6EeWcPq3zAthoUQ" base_Class="_fDAR8LS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fDFKcrS6EeWcPq3zAthoUQ" base_Class="_fDFKcLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fDKC8rS6EeWcPq3zAthoUQ" base_Class="_fDKC8LS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fG4sYrS6EeWcPq3zAthoUQ" base_Class="_fG4sYLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fNJFYrS6EeWcPq3zAthoUQ" base_Class="_fNJFYLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fj1HErS6EeWcPq3zAthoUQ" base_Class="_fj1HELS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fj4xcrS6EeWcPq3zAthoUQ" base_Class="_fj4xcLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fj9C4rS6EeWcPq3zAthoUQ" base_Class="_fj9C4LS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fkAtQrS6EeWcPq3zAthoUQ" base_Class="_fkAtQLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fkq0krS6EeWcPq3zAthoUQ" base_Class="_fkq0kLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fkvGArS6EeWcPq3zAthoUQ" base_Class="_fkvGALS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fkywYrS6EeWcPq3zAthoUQ" base_Class="_fkywYLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fpBJErS6EeWcPq3zAthoUQ" base_Class="_fpBJELS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fpFagrS6EeWcPq3zAthoUQ" base_Class="_fpFagLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fpKTArS6EeWcPq3zAthoUQ" base_Class="_fpKTALS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fpUEArS6EeWcPq3zAthoUQ" base_Class="_fpUEALS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fpY8grS6EeWcPq3zAthoUQ" base_Class="_fpY8gLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fu4ggrS6EeWcPq3zAthoUQ" base_Class="_fu4ggLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fu8x8rS6EeWcPq3zAthoUQ" base_Class="_fu8x8LS6EeWcPq3zAthoUQ"/>
 </xmi:XMI>
