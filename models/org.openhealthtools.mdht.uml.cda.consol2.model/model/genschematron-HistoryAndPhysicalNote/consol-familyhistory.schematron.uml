@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Class xmi:id="_2SC-sBSVEeGGzu7fmW9pXw" name="FamilyHistoryDeathObservation">
+    <ownedComment xmi:id="_fqbbcCHkEeGFLIX-2_sWzA">
+      <body>This clinical statement records whether the family member is deceased</body>
+    </ownedComment>
+    <ownedRule xmi:id="_TZjrILTREeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationTemplateId" constrainedElement="_2SC-sBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZjrIbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.47')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TZlgULTREeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationClassCode" constrainedElement="_2SC-tBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZlgUbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::ActClassObservation::OBS</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TZn8kLTREeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationMoodCode" constrainedElement="_2SC-thSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZn8kbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TZwfcLTREeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationCodeP" constrainedElement="_2SC-vRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZwfcbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TZqY0LTREeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationCode" constrainedElement="_2SC-vRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZqY0bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TZ5CULTREeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationStatusCodeP" constrainedElement="_2SC-vxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZ5CUbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TZ1X8LTREeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationStatusCode" constrainedElement="_2SC-vxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZ1X8bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TZ9TwLTREeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationValue" constrainedElement="_8y9tUCHjEeGFLIX-2_sWzA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZ9TwbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.code = '419099009' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TaBlMLTREeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationValueP" constrainedElement="_8y9tUCHjEeGFLIX-2_sWzA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TaBlMbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iUeLQLTREeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationTemplateId" constrainedElement="_2SC-sBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iUeLQbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.47')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2PRs0LTREeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationTemplateId" constrainedElement="_2SC-sBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2PRs0bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.47')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_5GOr0LTREeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationTemplateId" constrainedElement="_2SC-sBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5GOr0bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.47')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_WGxC0LTSEeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationTemplateId" constrainedElement="_2SC-sBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WGxC0bTSEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.47')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_6XUDwLTSEeWEoeeTdrbyVw" name="FamilyHistoryDeathObservationTemplateId" constrainedElement="_2SC-sBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_6XUq0LTSEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.47')</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2SPMABSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2SC-tBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_kthXUCHjEeGFLIX-2_sWzA" value="OBS"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2SC-thSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2SC-txSVEeGGzu7fmW9pXw" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2SC-vRSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2SC-vxSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_8y9tUCHjEeGFLIX-2_sWzA" name="value" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M8WywSHkEeGFLIX-2_sWzA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M8WywCHkEeGFLIX-2_sWzA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_2SC-shSVEeGGzu7fmW9pXw" base_Class="_2SC-sBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.47" assigningAuthorityName="HL7">
+    <ruleId>CONF:8623</ruleId>
+    <ruleId>CONF:10495</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2SJFYxSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2SJFahSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2SJFbRSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2SPL_xSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2SC-uBSVEeGGzu7fmW9pXw" base_Property="_2SC-thSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8622</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2SC-wBSVEeGGzu7fmW9pXw" code="completed" base_Property="_2SC-vxSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8625</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Class xmi:id="_2IpyIxSVEeGGzu7fmW9pXw" name="FamilyHistoryObservation">
+    <ownedComment xmi:id="_nCE7QCHgEeGFLIX-2_sWzA">
+      <body>Family History Observations related to a particular family member are contained within a Family History Organizer. The effectiveTime in the Family History Observation is the biologically or clinically relevant time of the observation. The biologically or clinically relevant time is the time at which the observation holds (is effective) for the family member (the subject of the observation).</body>
+    </ownedComment>
+    <ownedRule xmi:id="_web2ECHiEeGFLIX-2_sWzA" name="FamilyHistoryObservationAgeObservationInversion" constrainedElement="_2IpyIxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_663_wCHiEeGFLIX-2_sWzA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Age Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->forAll(ent : cda::EntryRelationship | ent.observation.oclIsTypeOf(consol::AgeObservation) implies ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TFW8wLTREeWEoeeTdrbyVw" name="FamilyHistoryObservationTemplateId" constrainedElement="_2IpyIxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TFW8wbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.46')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TFZZALTREeWEoeeTdrbyVw" name="FamilyHistoryObservationClassCode" constrainedElement="_2Is1cBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TFZZAbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::ActClassObservation::OBS</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TFanILTREeWEoeeTdrbyVw" name="FamilyHistoryObservationMoodCode" constrainedElement="_2Is1chSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TFanIbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TFb1QLTREeWEoeeTdrbyVw" name="FamilyHistoryObservationId" constrainedElement="_2ItcgRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TFb1QbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.id->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TFnbcLTREeWEoeeTdrbyVw" name="FamilyHistoryObservationCodeP" constrainedElement="_2IpyJhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TFnbcbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TFeRgLTREeWEoeeTdrbyVw" name="FamilyHistoryObservationCode" constrainedElement="_2IpyJhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TFe4kLTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006' or value.code = '373930000')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TFxMcLTREeWEoeeTdrbyVw" name="FamilyHistoryObservationStatusCode" constrainedElement="_2IuDkBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TFxMcbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TF0PwLTREeWEoeeTdrbyVw" name="FamilyHistoryObservationStatusCodeP" constrainedElement="_2IuDkBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TF0PwbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TF2E8LTREeWEoeeTdrbyVw" name="FamilyHistoryObservationEffectiveTime" constrainedElement="_R-FSICHiEeGFLIX-2_sWzA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TF2E8bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TGBrILTREeWEoeeTdrbyVw" name="FamilyHistoryObservationValueP" constrainedElement="_2IpyJxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TGBrIbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TF4hMLTREeWEoeeTdrbyVw" name="FamilyHistoryObservationValue" constrainedElement="_2IpyJxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TF4hMbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_YvWrILTREeWEoeeTdrbyVw" name="FamilyHistoryObservationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fFHx0LS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YvWrIbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::FamilyHistoryObservation::AgeObservationEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_Yv42oLTREeWEoeeTdrbyVw" name="FamilyHistoryObservationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fFMDQLS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yv42obTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::FamilyHistoryObservation::FamilyHistoryDeathObservationEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2I5CsRSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2Is1cBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_8yTtYCHgEeGFLIX-2_sWzA" value="OBS"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Is1chSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_BWV5QCHhEeGFLIX-2_sWzA" value="EVN"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2ItcgRSVEeGGzu7fmW9pXw" name="id" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ItcgxSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2ItcghSVEeGGzu7fmW9pXw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2IpyJhSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2IuDkBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_R-FSICHiEeGFLIX-2_sWzA" name="effectiveTime" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R-FSIiHiEeGFLIX-2_sWzA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R-FSISHiEeGFLIX-2_sWzA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2IpyJxSVEeGGzu7fmW9pXw" name="value" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bL9-ASHiEeGFLIX-2_sWzA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bL9-ACHiEeGFLIX-2_sWzA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fFHx0bS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fFGjsLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fFHx0rS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fFHx07S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fFHx0LS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fFMDQbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fFK1ILS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fFMDQrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fFMDQ7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fFMDQLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fFGjsLS6EeWcPq3zAthoUQ" name="AgeObservationEntryRelationship">
+      <ownedRule xmi:id="_Yvnw4LTREeWEoeeTdrbyVw" name="FamilyHistoryObservationAgeObservationEntryRelationshipAgeObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fFI_8LS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yvnw4bTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->size() &lt;= 1</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fFGjsbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fFJnALS6EeWcPq3zAthoUQ" name="ageObservation" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-problems.uml#_2EqqABSVEeGGzu7fmW9pXw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fFJnAbS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fFJnArS6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fFI_8LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fFK1ILS6EeWcPq3zAthoUQ" name="FamilyHistoryDeathObservationEntryRelationship">
+      <ownedRule xmi:id="_YwIHMLTREeWEoeeTdrbyVw" name="FamilyHistoryObservationFamilyHistoryDeathObservationEntryRelationshipFamilyHistoryDeathObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fFNRYLS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YwIHMbTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FamilyHistoryDeathObservation))->size() &lt;= 1</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fFK1IbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fFNRYbS6EeWcPq3zAthoUQ" name="familyHistoryDeathObservation" type="_2SC-sBSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fFN4cLS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fFN4cbS6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fFNRYLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_2Iv4wBSVEeGGzu7fmW9pXw" memberEnd="_2Iv4wRSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2Iv4wRSVEeGGzu7fmW9pXw" type="_2IpyIxSVEeGGzu7fmW9pXw" isReadOnly="true" association="_2Iv4wBSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_Z-2U8hU8EeGbmN_W114JUw" memberEnd="_Z-2U8xU8EeGbmN_W114JUw">
+    <ownedEnd xmi:id="_Z-2U8xU8EeGbmN_W114JUw" type="_2IpyIxSVEeGGzu7fmW9pXw" isReadOnly="true" association="_Z-2U8hU8EeGbmN_W114JUw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_hWyHQBnbEeGs5a462vYX5Q" base_Class="_2IpyIxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.46" assigningAuthorityName="HL7">
+    <ruleId>CONF:10496</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2IyVAhSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2Iy8EBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2IzjIhSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2I0KMxSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2I0xQhSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2I1YUBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2I4bpxSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2ItchBSVEeGGzu7fmW9pXw" base_Property="_2ItcgRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8592, R2.1=CONF:1198-8592</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_2IrAQBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2IpyJhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8589</ruleId>
+    <reference href="../consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_2IuqoBSVEeGGzu7fmW9pXw" code="completed" base_Property="_2IuDkBSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8590, R2.1=CONF:1198-19098</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:EntryRelationship xmi:id="_2Iv4whSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Iv4wBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
+    <ruleId>CONF:8675, CONF:8676, CONF:15526, R2.1=CONF:1198-8675, R2.1=CONF:1198-8676, R2.1=CONF:1198-15526</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Class xmi:id="_2IbIoBSVEeGGzu7fmW9pXw" name="FamilyHistoryOrganizer">
+    <ownedComment xmi:id="_nxLqwCEhEeGCQOQgxKvcXw">
+      <body>The Family History Oranizer associates a set of observations with a family member. For example, the Family History Organizer can group a set of observations about the patient's father.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_TEbIoLTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerTemplateId" constrainedElement="_2IbIoBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TEbvsLTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.45')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TEc90LTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerClassCode" constrainedElement="_2IlgsBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TEc90bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::x_ActClassDocumentEntryOrganizer::CLUSTER</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TEezALTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerMoodCode" constrainedElement="_2ImHwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TEezAbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::ActMood::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TEjrgLTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerStatusCodeP" constrainedElement="_2IokABSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TEjrgbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TEgoMLTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerStatusCode" constrainedElement="_2IokABSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TEgoMbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_U7uogLTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerSubject">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_R9fwINc4EeGfQ6frO0B-Jg"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_U7uogbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.subject->one(subject : cda::Subject | not subject.oclIsUndefined() and subject.oclIsKindOf(cda::Subject))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2JHFIBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2IlgsBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOnw0DcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2IlgsRSVEeGGzu7fmW9pXw" value="CLUSTER"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_NjnHQEb9Ed6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2ImHwBSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2ImHwhSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2ImHwRSVEeGGzu7fmW9pXw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2ImHwxSVEeGGzu7fmW9pXw" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Z5I4MErcEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2IokABSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_R9eiANc4EeGfQ6frO0B-Jg" name="subject" visibility="private" type="_Yq3AANc4EeGfQ6frO0B-Jg" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JgP3Ec_TEeOGjf7FaidRGw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JgP3EM_TEeOGjf7FaidRGw" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_RDpr0UxpEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_R9fwINc4EeGfQ6frO0B-Jg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fFC5UbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fFBrMLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fFC5UrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fFC5U7S6EeWcPq3zAthoUQ" value="1"/>
+      <association href="../consol.uml#_fFC5ULS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_Yq3AANc4EeGfQ6frO0B-Jg" name="Subject">
+      <ownedComment xmi:id="_0W9owNc6EeGfQ6frO0B-Jg">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_U8A8YLTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerSubjectRelatedSubject">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_c9XXANc4EeGfQ6frO0B-Jg"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_U8A8YbTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.relatedSubject->one(relatedSubject : cda::RelatedSubject | not relatedSubject.oclIsUndefined() and relatedSubject.oclIsKindOf(consol::FamilyHistoryOrganizer::Subject::RelatedSubject))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_Yq3nENc4EeGfQ6frO0B-Jg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_rNlWoEcaEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_c9Wv8Nc4EeGfQ6frO0B-Jg" name="relatedSubject" visibility="private" type="_nSFIENc4EeGfQ6frO0B-Jg" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c9Wv8tc4EeGfQ6frO0B-Jg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c9Wv8dc4EeGfQ6frO0B-Jg" value="1"/>
+        <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_IqmIoUoYEd6c3qsAxlFHaQ"/>
+        <association href="../consol.uml#_c9XXANc4EeGfQ6frO0B-Jg"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_nSFIENc4EeGfQ6frO0B-Jg" name="RelatedSubject">
+        <ownedRule xmi:id="_TEmHwbTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerSubjectRelatedSubjectClassCode" constrainedElement="_uHs8ENc4EeGfQ6frO0B-Jg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_TEmHwrTREeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>isDefined('classCode') and self.classCode=vocab::x_DocumentSubject::PRS</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_TEokALTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerSubjectRelatedSubjectCode" constrainedElement="_6_OoINc4EeGfQ6frO0B-Jg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_TEokAbTREeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.5.111' and (value.code = 'ADOPT' or value.code = 'AUNT' or value.code = 'CHILD' or value.code = 'CHLDINLAW' or value.code = 'COUSN' or value.code = 'DOMPART' or value.code = 'FAMMEMB' or value.code = 'CHLDFOST' or value.code = 'GRNDCHILD' or value.code = 'GPARNT' or value.code = 'GRPRN' or value.code = 'GGRPRN' or value.code = 'HSIB' or value.code = 'MAUNT' or value.code = 'MCOUSN' or value.code = 'MGRPRN' or value.code = 'MGGRPRN' or value.code = 'MUNCLE' or value.code = 'NCHILD' or value.code = 'NPRN' or value.code = 'NSIB' or value.code = 'NIENEPH' or value.code = 'PRN' or value.code = 'PRNINLAW' or value.code = 'PAUNT' or value.code = 'PCOUSN' or value.code = 'PGRPRN' or value.code = 'PGGRPRN' or value.code = 'PUNCLE' or value.code = 'SIB' or value.code = 'SIBINLAW' or value.code = 'SIGOTHR' or value.code = 'SPS' or value.code = 'STEP' or value.code = 'STPPRN' or value.code = 'STPSIB' or value.code = 'UNCLE')</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_TExt8LTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerSubjectRelatedSubjectCodeP" constrainedElement="_6_OoINc4EeGfQ6frO0B-Jg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_TExt8bTREeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>not self.code.oclIsUndefined()</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_U8RbELTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerSubjectRelatedSubjectSubject">
+          <constrainedElement xmi:type="uml:Association" href="../consol.uml#_6_PPMNc4EeGfQ6frO0B-Jg"/>
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_U8RbEbTREeWEoeeTdrbyVw">
+            <language>OCL</language>
+            <body>self.subject->select(subject : cda::SubjectPerson | not subject.oclIsUndefined() and subject.oclIsKindOf(consol::FamilyHistoryOrganizer::Subject::RelatedSubject::SubjectPerson))->size() &lt;= 1</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_nSFvINc4EeGfQ6frO0B-Jg">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_grTqsEcaEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_uHs8ENc4EeGfQ6frO0B-Jg" name="classCode" visibility="private" isReadOnly="true">
+          <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpv0DcEd6xYZuu1VKCVw"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KYaOIM_TEeOGjf7FaidRGw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KYZnEM_TEeOGjf7FaidRGw" value="1"/>
+          <defaultValue xmi:type="uml:InstanceValue" xmi:id="_uHs8E9c4EeGfQ6frO0B-Jg" name="PRS">
+            <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpv0DcEd6xYZuu1VKCVw"/>
+            <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__zOpwUDcEd6xYZuu1VKCVw"/>
+          </defaultValue>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_hCnQwErmEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_6_OoINc4EeGfQ6frO0B-Jg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d3Q-ANc5EeGfQ6frO0B-Jg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d3QW8Nc5EeGfQ6frO0B-Jg" value="1"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_aKlpAErmEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_6_OoI9c4EeGfQ6frO0B-Jg" name="subject" visibility="private" type="_IcmzQNc5EeGfQ6frO0B-Jg" isReadOnly="true" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6_OoJdc4EeGfQ6frO0B-Jg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6_OoJNc4EeGfQ6frO0B-Jg" value="1"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Tn_qUUoYEd6c3qsAxlFHaQ"/>
+          <association href="../consol.uml#_6_PPMNc4EeGfQ6frO0B-Jg"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_IcmzQNc5EeGfQ6frO0B-Jg" name="SubjectPerson">
+          <ownedRule xmi:id="_TE8GALTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode" constrainedElement="_QeGkgNc5EeGfQ6frO0B-Jg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_TE8GAbTREeWEoeeTdrbyVw">
+              <language>OCL</language>
+              <body>not self.administrativeGenderCode.oclIsUndefined() and self.administrativeGenderCode.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.administrativeGenderCode.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.5.1' and (value.code = 'F' or value.code = 'M' or value.code = 'UN')</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_TFF3ALTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP" constrainedElement="_QeGkgNc5EeGfQ6frO0B-Jg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_TFF3AbTREeWEoeeTdrbyVw">
+              <language>OCL</language>
+              <body>not self.administrativeGenderCode.oclIsUndefined()</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_TFQ2ILTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime" constrainedElement="_QeGkg9c5EeGfQ6frO0B-Jg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_TFQ2IbTREeWEoeeTdrbyVw">
+              <language>OCL</language>
+              <body>((not self.birthTime.oclIsUndefined()) and self.birthTime.isNullFlavorUndefined()) implies (not self.birthTime.oclIsUndefined())</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_TFSrULTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd" constrainedElement="_QeHLkNc5EeGfQ6frO0B-Jg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_TFSrUbTREeWEoeeTdrbyVw">
+              <language>OCL</language>
+              <body>((not self.sDTCDeceasedInd.oclIsUndefined()) and self.sDTCDeceasedInd.isNullFlavorUndefined()) implies (not self.sDTCDeceasedInd.oclIsUndefined())</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_TFT5cLTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime" constrainedElement="_QeHLktc5EeGfQ6frO0B-Jg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_TFT5cbTREeWEoeeTdrbyVw">
+              <language>OCL</language>
+              <body>((not self.sDTCDeceasedTime.oclIsUndefined()) and self.sDTCDeceasedTime.isNullFlavorUndefined()) implies (not self.sDTCDeceasedTime.oclIsUndefined())</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_TFVHkLTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId" constrainedElement="_QeHLlNc5EeGfQ6frO0B-Jg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_TFVHkbTREeWEoeeTdrbyVw">
+              <language>OCL</language>
+              <body>((not self.sDTCId->isEmpty()) and self.sDTCId->exists(element | element.isNullFlavorUndefined())) implies (not self.sDTCId->isEmpty())</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:id="_IcmzQdc5EeGfQ6frO0B-Jg">
+            <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r19lQEcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_QeGkgNc5EeGfQ6frO0B-Jg" name="administrativeGenderCode" visibility="private" isReadOnly="true" aggregation="composite">
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dNF_oNc5EeGfQ6frO0B-Jg" value="1"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dNFYkNc5EeGfQ6frO0B-Jg" value="1"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_GGrR8ErqEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_QeGkg9c5EeGfQ6frO0B-Jg" name="birthTime" visibility="private" isReadOnly="true" aggregation="composite">
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QeGkhdc5EeGfQ6frO0B-Jg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QeGkhNc5EeGfQ6frO0B-Jg" value="1"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_v0X4EErqEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_QeHLkNc5EeGfQ6frO0B-Jg" name="sDTCDeceasedInd" visibility="private" isReadOnly="true" aggregation="composite">
+            <ownedComment xmi:id="_5-YtcOMxEeGfv4R-kzpM0g">
+              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element.</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QeHLkdc5EeGfQ6frO0B-Jg"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_rS5VoAPjEeGdM61FsLhcmQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_QeHLktc5EeGfQ6frO0B-Jg" name="sDTCDeceasedTime" visibility="private" isReadOnly="true" aggregation="composite">
+            <ownedComment xmi:id="_FMN30OMyEeGfv4R-kzpM0g">
+              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedTime element.</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QeHLk9c5EeGfQ6frO0B-Jg"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_LJEdAAPkEeGdM61FsLhcmQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_QeHLlNc5EeGfQ6frO0B-Jg" name="sDTCId" visibility="private" isReadOnly="true" aggregation="composite">
+            <ownedComment xmi:id="_Ad0QYKbBEeKAJ7JddNoP1Q">
+              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the id element.</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QeHLltc5EeGfQ6frO0B-Jg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QeHLldc5EeGfQ6frO0B-Jg" value="*"/>
+            <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_jSS_4FZvEeGCdLgBm6VHOQ"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fFBrMLS6EeWcPq3zAthoUQ" name="FamilyHistoryObservationEntryRelationship">
+      <ownedRule xmi:id="_YvHakLTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerFamilyHistoryObservationEntryRelationshipFamilyHistoryObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fFEHcLS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YvHakbTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FamilyHistoryObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fFBrMbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fFEHcbS6EeWcPq3zAthoUQ" name="familyHistoryObservation" type="_2IpyIxSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fFEugLS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fFEugbS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fFEHcLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_2I6Q0BSVEeGGzu7fmW9pXw" memberEnd="_2I6Q0RSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2I6Q0RSVEeGGzu7fmW9pXw" type="_2IbIoBSVEeGGzu7fmW9pXw" isReadOnly="true" association="_2I6Q0BSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_kKyf8BnbEeGs5a462vYX5Q" base_Class="_2IbIoBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.45" assigningAuthorityName="HL7">
+    <ruleId>CONF:10497</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2I634xSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2I_wZBSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2JAXcxSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2JA-gxSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2JBlkxSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2JCMohSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2JCzshSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2IcWwBSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2IeL8BSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2IezARSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2IgBIBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2IhPQBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2Ih2UBSVEeGGzu7fmW9pXw" severity="WARNING"/>
+  <CDA:ConstraintValidation xmi:id="_2Ih2URSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2IidYBSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2IjEcBSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2IjrgBSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:ConstraintValidation xmi:id="_2IkSkBSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:PropertyValidation xmi:id="_2IlgshSVEeGGzu7fmW9pXw" base_Property="_2IlgsBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8600, R2.1=CONF:1198-8600</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2ImHxBSVEeGGzu7fmW9pXw" base_Property="_2ImHwBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8601, R2.1=CONF:1198-8601</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2Imu0xSVEeGGzu7fmW9pXw"/>
+  <CDA:CodeSystemConstraint xmi:id="_2Imu1BSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_2I6Q0hSVEeGGzu7fmW9pXw" base_Association="_2I6Q0BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8607, CONF:16888</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_2IWQIxSVEeGGzu7fmW9pXw" name="FamilyHistorySection">
+    <ownedComment xmi:id="_2JJhYBSVEeGGzu7fmW9pXw" annotatedElement="_2IWQIxSVEeGGzu7fmW9pXw">
+      <body>This section contains data defining the patient's genetic relatives in terms of possible or relevant health risk factors that have a potential impact on the patient's healthcare risk profile.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_TEQwkLTREeWEoeeTdrbyVw" name="FamilyHistorySectionTemplateId" constrainedElement="_2IWQIxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TEQwkbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.15')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TETM0LTREeWEoeeTdrbyVw" name="FamilyHistorySectionCode" constrainedElement="_2IYsYBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TETM0bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '10157-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TEVpELTREeWEoeeTdrbyVw" name="FamilyHistorySectionCodeP" constrainedElement="_2IYsYBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TEVpEbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TEYsYLTREeWEoeeTdrbyVw" name="FamilyHistorySectionTitle" constrainedElement="_2IZ6gBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TEYsYbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TEZ6gLTREeWEoeeTdrbyVw" name="FamilyHistorySectionText" constrainedElement="_2IahkBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TEZ6gbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_YumdMLTREeWEoeeTdrbyVw" name="FamilyHistorySectionEntry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fE-A0LS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YumdMbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::FamilyHistorySection::FamilyHistoryOrganizerEntry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2JJhYhSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2IYsYBSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2IZ6gBSVEeGGzu7fmW9pXw" name="title" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2IahkBSVEeGGzu7fmW9pXw" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2IahkhSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2IahkRSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fE-A0bS6EeWcPq3zAthoUQ" name="entry" type="_fE8ysLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fE-A0rS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fE-A07S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fE-A0LS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fE8ysLS6EeWcPq3zAthoUQ" name="FamilyHistoryOrganizerEntry">
+      <ownedRule xmi:id="_Yu274LTREeWEoeeTdrbyVw" name="FamilyHistorySectionFamilyHistoryOrganizerEntryFamilyHistory">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fE_O8LS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yu274bTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.organizer->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::FamilyHistoryOrganizer))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fE8ysbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fE_2ALS6EeWcPq3zAthoUQ" name="familyHistory" type="_2IbIoBSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fE_2AbS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fE_2ArS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Y3Eg4UbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fE_O8LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_2IYFURSVEeGGzu7fmW9pXw" memberEnd="_2IYFUhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2IYFUhSVEeGGzu7fmW9pXw" type="_2IWQIxSVEeGGzu7fmW9pXw" isReadOnly="true" association="_2IYFURSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_2IWQLRSVEeGGzu7fmW9pXw" base_Class="_2IWQIxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.15" assigningAuthorityName="HL7">
+    <ruleId>CONF:10388</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_2IYsYRSVEeGGzu7fmW9pXw" code="10157-6" displayName="Family History" base_Property="_2IYsYBSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15470, R2.1=CONF:1198-15470, R2.1=CONF:1198-32481</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_2IZ6gRSVEeGGzu7fmW9pXw" base_Property="_2IZ6gBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7934, R2.1=CONF:1198-7934</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2IahkxSVEeGGzu7fmW9pXw" base_Property="_2IahkBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7935, R2.1=CONF:1198-7935</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_2IYFUxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2IYFURSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7955</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_9lVFwCHgEeGFLIX-2_sWzA" base_Property="_2Is1cBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8586, R2.1=CONF:1198-8586</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="__3R6QCHgEeGFLIX-2_sWzA" base_Property="_2Is1chSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8587, R2.1=CONF:1198-8587</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_ULtnUCHiEeGFLIX-2_sWzA" severity="WARNING" base_Property="_R-FSICHiEeGFLIX-2_sWzA">
+    <ruleId>CONF:8593, R2.1=CONF:1198-8593</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_XM-Y4CHiEeGFLIX-2_sWzA" base_Property="_2IpyJxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8591, CONF:1198-8591</ruleId>
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:EntryRelationship xmi:id="_t5S_0CHiEeGFLIX-2_sWzA" severity="INFO" base_Association="_Z-2U8hU8EeGbmN_W114JUw">
+    <ruleId>CONF:8678, CONF:8679, CONF:15527, R2.1=CONF:1198-8678, R2.1=CONF:1198-8679, R2.1=CONF:1198-15527</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:ConstraintValidation xmi:id="_2HqIYCHiEeGFLIX-2_sWzA" base_Constraint="_web2ECHiEeGFLIX-2_sWzA">
+    <ruleId>CONF:8677, R2.1=CONF:1198-8677</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_jDJgMCHjEeGFLIX-2_sWzA" base_Property="_2SC-tBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8621</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_x-uHoCHjEeGFLIX-2_sWzA" code="ASSERTION" displayName="Assertion" base_Property="_2SC-vRSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:16889</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_Ow2PMCHkEeGFLIX-2_sWzA" code="419099009" displayName="Dead" base_Property="_8y9tUCHjEeGFLIX-2_sWzA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:Pending</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_G2dBIHnsEeGgiPp0lBONag" base_Property="_2IpyJhSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_xoDdYNc4EeGfQ6frO0B-Jg" base_Property="_uHs8ENc4EeGfQ6frO0B-Jg">
+    <ruleId>CONF:15245, R2.1=CONF:1198-15245</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_-8ThsNc4EeGfQ6frO0B-Jg" severity="WARNING" base_Property="_6_OoINc4EeGfQ6frO0B-Jg">
+    <ruleId>CONF:15247, R2.1=CONF:1198-15247</ruleId>
+    <reference href="../consol-vocab.uml#_bkwYcW1EEeGCevFpokwODw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_CY-c4Nc5EeGfQ6frO0B-Jg" base_Property="_6_OoINc4EeGfQ6frO0B-Jg">
+    <ruleId>CONF:15246, R2.1=CONF:1198-15246</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_UVIgcNc5EeGfQ6frO0B-Jg" severity="WARNING" base_Property="_QeHLlNc5EeGfQ6frO0B-Jg">
+    <ruleId>CONF:15249, R2.1=CONF:1198-15249</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_VkoZcNc5EeGfQ6frO0B-Jg" base_Property="_QeGkgNc5EeGfQ6frO0B-Jg">
+    <ruleId>CONF:15974, R2.1=CONF:1198-15974</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_WfOZcNc5EeGfQ6frO0B-Jg" severity="WARNING" base_Property="_QeGkg9c5EeGfQ6frO0B-Jg">
+    <ruleId>CONF:15976, R2.1=CONF:1198-15976</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_XHprYNc5EeGfQ6frO0B-Jg" severity="INFO" base_Property="_QeHLkNc5EeGfQ6frO0B-Jg">
+    <ruleId>CONF:15981, R2.1=CONF:1198-15981</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_X9cD4Nc5EeGfQ6frO0B-Jg" severity="INFO" base_Property="_QeHLktc5EeGfQ6frO0B-Jg">
+    <ruleId>CONF:15982, R2.1=CONF:1198-15982</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_BVPq0NdAEeGfQ6frO0B-Jg" base_Property="_QeGkgNc5EeGfQ6frO0B-Jg">
+    <ruleId>CONF:15975, R2.1=CONF:1198-15975</ruleId>
+    <reference href="../consol-vocab.uml#_LGTEUDVREeGIw7CntkyPQw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_CXj0UOMxEeGfv4R-kzpM0g" base_Property="_2IYsYBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15469, R2.1=CONF:1198-15469</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_W_-YIGRSEeOD5bEp3nNX5w" base_Property="_8y9tUCHjEeGFLIX-2_sWzA">
+    <ruleId>CONF:8626</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_YvV88IV5EeSRBMdZotACQg" clientDependency="_fqdfgIV6EeSRBMdZotACQg" name="FamilyHistoryObservation2">
+    <ownedComment xmi:id="_Kb53EIV6EeSRBMdZotACQg">
+      <body>Family History Observations related to a particular family member are contained within a Family History Organizer. The effectiveTime in the Family History Observation is the biologically or clinically relevant time of the observation. The biologically or clinically relevant time is the time at which the observation holds (is effective) for the family member (the subject of the observation).</body>
+    </ownedComment>
+    <ownedRule xmi:id="_YEtLoLTREeWEoeeTdrbyVw" name="FamilyHistoryObservationTemplateId" constrainedElement="_YvV88IV5EeSRBMdZotACQg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YEtysLTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.46' and id.extension = '2015-08-01')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_YFiSELTREeWEoeeTdrbyVw" name="FamilyHistoryObservationCodeP" constrainedElement="_ApNKsIY6EeS7A_69H25Pzw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YFiSEbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_YE71ILTREeWEoeeTdrbyVw" name="FamilyHistoryObservationCode" constrainedElement="_ApNKsIY6EeS7A_69H25Pzw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YE71IbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006' or value.code = '373930000')</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_YvZAQIV5EeSRBMdZotACQg" general="_2IpyIxSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_fqdfgIV6EeSRBMdZotACQg" name="FamilyHistoryObservation" client="_YvV88IV5EeSRBMdZotACQg" supplier="_2IpyIxSVEeGGzu7fmW9pXw" contract="_2IpyIxSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_ApNKsIY6EeS7A_69H25Pzw" name="code" visibility="private" type="_wrDegE0DEeWJ65CktI2ODQ" isReadOnly="true" aggregation="composite" redefinedProperty="_2IpyJhSVEeGGzu7fmW9pXw"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_wrDegE0DEeWJ65CktI2ODQ" name="CD">
+      <ownedComment xmi:id="_ztmCcE0DEeWJ65CktI2ODQ">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_YGHg4LTREeWEoeeTdrbyVw" name="FamilyHistoryObservation2CDTranslation" constrainedElement="_xKInME0DEeWJ65CktI2ODQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YGHg4bTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body> ( self.isNullFlavorUndefined() implies (not self.translation->isEmpty() and self.translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '75326-9' or value.code = '75325-1' or value.code = '75324-4' or value.code = '75323-6' or value.code = '29308-4' or value.code = '75322-8' or value.code = '75275-8' or value.code = '75321-0' or value.code = '75319-4' or value.code = '75318-6' or value.code = '75317-8' or value.code = '75316-0' or value.code = '75315-2' or value.code = '75314-5' or value.code = '75313-7' or value.code = '75312-9')) ))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_YGhJgLTREeWEoeeTdrbyVw" name="FamilyHistoryObservation2CDTranslationP" constrainedElement="_xKInME0DEeWJ65CktI2ODQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YGhJgbTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body> ( self.isNullFlavorUndefined() implies (not self.translation->isEmpty() ))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_wrEFkE0DEeWJ65CktI2ODQ">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_xKInME0DEeWJ65CktI2ODQ" name="translation" visibility="private" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__D8PoU0DEeWJ65CktI2ODQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__D8PoE0DEeWJ65CktI2ODQ" value="*"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_e0um0IV5EeSRBMdZotACQg" base_Class="_YvV88IV5EeSRBMdZotACQg" templateId="2.16.840.1.113883.10.20.22.4.46" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-8599, CONF:1198-10496, CONF:1198-32605</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_chN2oIV6EeSRBMdZotACQg" base_Generalization="_YvZAQIV5EeSRBMdZotACQg"/>
+  <CDA:ValueSetConstraint xmi:id="_ApO_4IY6EeS7A_69H25Pzw" severity="WARNING" base_Property="_ApNKsIY6EeS7A_69H25Pzw">
+    <ruleId>CONF:1198-32427</ruleId>
+    <reference href="../consol-vocab.uml#_ngam0Ez2EeWJ65CktI2ODQ"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_ApQOAIY6EeS7A_69H25Pzw" base_Property="_ApNKsIY6EeS7A_69H25Pzw"/>
+  <CDA:PropertyValidation xmi:id="_CJtXUIY-EeS7A_69H25Pzw" base_Property="_2IuDkBSVEeGGzu7fmW9pXw">
+    <ruleId>R2.1=CONF:1198-8590</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_6whQEIbpEeSxzopshBnQuw" clientDependency="_9xVDsIevEeSBauRYePLghA" name="FamilyHistoryOrganizer2">
+    <ownedComment xmi:id="_2ylZ4Ib0EeSxzopshBnQuw">
+      <body>The Family History Organizer associates a set of observations with a family member. For example, the Family History Organizer can group a set of observations about the patient's father.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_YGxBIbTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizerTemplateId" constrainedElement="_6whQEIbpEeSxzopshBnQuw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YGxoMLTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.45' and id.extension = '2015-08-01')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_YG0rgLTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizer2Id" constrainedElement="_0htuAIb1EeSxzopshBnQuw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YG0rgbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.id->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_6wieMIbpEeSxzopshBnQuw" general="_2IbIoBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_9xVDsIevEeSBauRYePLghA" name="FamilyHistoryOrganizer" client="_6whQEIbpEeSxzopshBnQuw" supplier="_2IbIoBSVEeGGzu7fmW9pXw" contract="_2IbIoBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_0htuAIb1EeSxzopshBnQuw" name="id" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4i65oYb1EeSxzopshBnQuw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4i65oIb1EeSxzopshBnQuw" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_G_dccErcEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_f9K0IbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_f9I-8LS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9K0IrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9K0I7S6EeWcPq3zAthoUQ" value="1"/>
+      <association href="../consol.uml#_f9K0ILS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_f9I-8LS6EeWcPq3zAthoUQ" name="FamilyHistoryObservation2EntryRelationship">
+      <ownedRule xmi:id="_fjq3kLTREeWEoeeTdrbyVw" name="FamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation2">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_f9MpULS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fjq3kbTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FamilyHistoryObservation2))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_f9I-8bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_f9MpUbS6EeWcPq3zAthoUQ" name="familyHistoryObservation2" type="_YvV88IV5EeSRBMdZotACQg" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9MpUrS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9MpU7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_f9MpULS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_V0HNsIb0EeSxzopshBnQuw" base_Class="_6whQEIbpEeSxzopshBnQuw" templateId="2.16.840.1.113883.10.20.22.4.45" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-8604, CONF:1198-10497, CONF:1198-32606</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_3mqFsIb1EeSxzopshBnQuw" base_Property="_0htuAIb1EeSxzopshBnQuw">
+    <ruleId>CONF:1198-32485</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_OjSZgIb2EeSxzopshBnQuw" base_Property="_2IokABSVEeGGzu7fmW9pXw">
+    <ruleId>R2.1=CONF:1198-8602</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_a7MxYIb2EeSxzopshBnQuw" code="completed" displayName="Completed" base_Property="_2IokABSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8602, R2.1=CONF:1198-19099</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_ULPOkIb4EeSxzopshBnQuw" memberEnd="_ULP1oIb4EeSxzopshBnQuw">
+    <ownedEnd xmi:id="_ULP1oIb4EeSxzopshBnQuw" type="_6whQEIbpEeSxzopshBnQuw" isReadOnly="true" association="_ULPOkIb4EeSxzopshBnQuw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_V9PXsIb4EeSxzopshBnQuw" base_Association="_ULPOkIb4EeSxzopshBnQuw">
+    <ruleId>CONF:1198-32428, CONF:1198-32429</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_NGivoIevEeSBauRYePLghA" clientDependency="_vQOKsIevEeSBauRYePLghA" name="FamilyHistorySection2">
+    <ownedComment xmi:id="_q8o1oIevEeSBauRYePLghA">
+      <body>This section contains data defining the patient's genetic relatives in terms of possible or relevant health risk factors that have a potential impact on the patient's healthcare risk profile.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_YG3HwLTREeWEoeeTdrbyVw" name="FamilyHistorySectionTemplateId" constrainedElement="_NGivoIevEeSBauRYePLghA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YG3u0LTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.15' and id.extension = '2015-08-01')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_fj7WQLTREeWEoeeTdrbyVw" name="FamilyHistorySection2Entry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_f9QTsLS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fj7WQbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::FamilyHistorySection2::FamilyHistoryOrganizer2Entry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_NGjWsIevEeSBauRYePLghA" general="_2IWQIxSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_vQOKsIevEeSBauRYePLghA" name="FamilyHistorySection" client="_NGivoIevEeSBauRYePLghA" supplier="_2IWQIxSVEeGGzu7fmW9pXw" contract="_2IWQIxSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_f9QTsbS6EeWcPq3zAthoUQ" name="entry" type="_f9OegLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9QTsrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9QTs7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_f9QTsLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_f9OegLS6EeWcPq3zAthoUQ" name="FamilyHistoryOrganizer2Entry">
+      <ownedRule xmi:id="_fkKm0LTREeWEoeeTdrbyVw" name="FamilyHistorySection2FamilyHistoryOrganizer2EntryFamilyHistoryOrganizer2">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_f9SI4LS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fkKm0bTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.organizer->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::FamilyHistoryOrganizer2))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_f9OegbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_f9SI4bS6EeWcPq3zAthoUQ" name="familyHistoryOrganizer2" type="_6whQEIbpEeSxzopshBnQuw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f9SI4rS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f9SI47S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Y3Eg4UbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_f9SI4LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_XeUbwIevEeSBauRYePLghA" base_Class="_NGivoIevEeSBauRYePLghA" templateId="2.16.840.1.113883.10.20.22.2.15" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7932, CONF:1198-10388, CONF:1198-32607</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_ruNcgIevEeSBauRYePLghA" base_Generalization="_NGjWsIevEeSBauRYePLghA"/>
+  <uml:Association xmi:id="_iHnOUIeyEeSBauRYePLghA" memberEnd="_iHn1YIeyEeSBauRYePLghA">
+    <ownedEnd xmi:id="_iHn1YIeyEeSBauRYePLghA" type="_NGivoIevEeSBauRYePLghA" isReadOnly="true" association="_iHnOUIeyEeSBauRYePLghA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_nmVg0IeyEeSBauRYePLghA" severity="INFO" base_Association="_iHnOUIeyEeSBauRYePLghA">
+    <ruleId>CONF:1198-32430, CONF:1198-32431</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_9x-RcE0DEeWJ65CktI2ODQ" base_Property="_xKInME0DEeWJ65CktI2ODQ"/>
+  <CDA:ValueSetConstraint xmi:id="_AYkgQE0EEeWJ65CktI2ODQ" severity="WARNING" base_Property="_xKInME0DEeWJ65CktI2ODQ">
+    <ruleId>CONF:1198-32847</ruleId>
+    <reference href="../consol-vocab.uml#_hRIUmoY5EeS7A_69H25Pzw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:Inline xmi:id="_fE9ZwLS6EeWcPq3zAthoUQ" base_Class="_fE8ysLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fFBrMrS6EeWcPq3zAthoUQ" base_Class="_fFBrMLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fFGjsrS6EeWcPq3zAthoUQ" base_Class="_fFGjsLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fFK1IrS6EeWcPq3zAthoUQ" base_Class="_fFK1ILS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_f9I-8rS6EeWcPq3zAthoUQ" base_Class="_f9I-8LS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_f9OegrS6EeWcPq3zAthoUQ" base_Class="_f9OegLS6EeWcPq3zAthoUQ"/>
+  <Ecore:EClass xmi:id="_TERXoLTREeWEoeeTdrbyVw" base_Class="_2IWQIxSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistorySectionTemplateId FamilyHistorySectionCode FamilyHistorySectionCodeP FamilyHistorySectionTitle FamilyHistorySectionText FamilyHistorySectionEntry' templateId.root='2.16.840.1.113883.10.20.22.2.15' code.code='10157-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Family History'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_TEcWwLTREeWEoeeTdrbyVw" base_Class="_2IbIoBSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryOrganizerTemplateId FamilyHistoryOrganizerClassCode FamilyHistoryOrganizerMoodCode FamilyHistoryOrganizerStatusCode FamilyHistoryOrganizerStatusCodeP FamilyHistoryOrganizerSubject' templateId.root='2.16.840.1.113883.10.20.22.4.45' classCode='CLUSTER' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.FamilyHistoryOrganizerStatusCode='FamilyHistoryOrganizerStatusCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_TEmHwLTREeWEoeeTdrbyVw" base_Class="_nSFIENc4EeGfQ6frO0B-Jg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='PRS' constraints.validation.error='FamilyHistoryOrganizerSubjectRelatedSubjectClassCode FamilyHistoryOrganizerSubjectRelatedSubjectCodeP' code.codeSystem='2.16.840.1.113883.5.111' code.codeSystemName='RoleCode' constraints.validation.warning='FamilyHistoryOrganizerSubjectRelatedSubjectCode FamilyHistoryOrganizerSubjectRelatedSubjectSubject'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_TE7e8LTREeWEoeeTdrbyVw" base_Class="_IcmzQNc5EeGfQ6frO0B-Jg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation administrativeGenderCode.codeSystem='2.16.840.1.113883.5.1' administrativeGenderCode.codeSystemName='AdministrativeGenderCode' constraints.validation.error='FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP' constraints.validation.warning='FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId' constraints.validation.info='FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_TFXj0LTREeWEoeeTdrbyVw" base_Class="_2IpyIxSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryObservationTemplateId FamilyHistoryObservationAgeObservationInversion FamilyHistoryObservationClassCode FamilyHistoryObservationMoodCode FamilyHistoryObservationId FamilyHistoryObservationCodeP FamilyHistoryObservationStatusCode FamilyHistoryObservationStatusCodeP FamilyHistoryObservationValue FamilyHistoryObservationValueP FamilyHistoryObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.46' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='FamilyHistoryObservationCode FamilyHistoryObservationEffectiveTime' constraints.validation.dependOn.FamilyHistoryObservationCode='FamilyHistoryObservationCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.FamilyHistoryObservationValue='FamilyHistoryObservationValueP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_TZkSMLTREeWEoeeTdrbyVw" base_Class="_2SC-sBSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryDeathObservationTemplateId FamilyHistoryDeathObservationClassCode FamilyHistoryDeathObservationMoodCode FamilyHistoryDeathObservationCode FamilyHistoryDeathObservationCodeP FamilyHistoryDeathObservationStatusCode FamilyHistoryDeathObservationStatusCodeP FamilyHistoryDeathObservationValue FamilyHistoryDeathObservationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.47' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.FamilyHistoryDeathObservationCode='FamilyHistoryDeathObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.FamilyHistoryDeathObservationStatusCode='FamilyHistoryDeathObservationStatusCodeP' value.code='419099009' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' value.displayName='Dead'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_U8Q0ALTREeWEoeeTdrbyVw" base_Class="_Yq3AANc4EeGfQ6frO0B-Jg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryOrganizerSubjectRelatedSubject'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_YE1ugLTREeWEoeeTdrbyVw" base_Class="_YvV88IV5EeSRBMdZotACQg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryObservationTemplateId FamilyHistoryObservationCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.46' templateId.extension='2015-08-01' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='FamilyHistoryObservationCode' constraints.validation.dependOn.FamilyHistoryObservationCode='FamilyHistoryObservationCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_YGBaQLTREeWEoeeTdrbyVw" base_Class="_wrDegE0DEeWJ65CktI2ODQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' constraints.validation.warning='FamilyHistoryObservation2CDTranslation' constraints.validation.error='FamilyHistoryObservation2CDTranslationP'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_YGxBILTREeWEoeeTdrbyVw" base_Generalization="_6wieMIbpEeSxzopshBnQuw"/>
+  <Ecore:EClass xmi:id="_YGy2ULTREeWEoeeTdrbyVw" base_Class="_6whQEIbpEeSxzopshBnQuw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryOrganizerTemplateId FamilyHistoryOrganizer2Id' templateId.root='2.16.840.1.113883.10.20.22.4.45' templateId.extension='2015-08-01'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_YG4V4LTREeWEoeeTdrbyVw" base_Class="_NGivoIevEeSBauRYePLghA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistorySectionTemplateId FamilyHistorySection2Entry' templateId.root='2.16.840.1.113883.10.20.22.2.15' templateId.extension='2015-08-01'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_YvGMcLTREeWEoeeTdrbyVw" base_Class="_fE8ysLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='FamilyHistorySectionFamilyHistoryOrganizerEntryFamilyHistory'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_YvWEELTREeWEoeeTdrbyVw" base_Class="_fFBrMLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryOrganizerFamilyHistoryObservationEntryRelationshipFamilyHistoryObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_Yv4PkLTREeWEoeeTdrbyVw" base_Class="_fFGjsLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='FamilyHistoryObservationAgeObservationEntryRelationshipAgeObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_YwXXwLTREeWEoeeTdrbyVw" base_Class="_fFK1ILS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='FamilyHistoryObservationFamilyHistoryDeathObservationEntryRelationshipFamilyHistoryDeathObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_fj6IILTREeWEoeeTdrbyVw" base_Class="_f9I-8LS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryOrganizer2FamilyHistoryObservation2EntryRelationshipFamilyHistoryObservation2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_fkZQULTREeWEoeeTdrbyVw" base_Class="_f9OegLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='FamilyHistorySection2FamilyHistoryOrganizer2EntryFamilyHistoryOrganizer2'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

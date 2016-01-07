@@ -1,0 +1,1602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Class xmi:id="_2OfUcxSVEeGGzu7fmW9pXw" name="VitalSignsSection">
+    <ownedRule xmi:id="_TWNcMLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTemplateId" constrainedElement="_2OfUcxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWNcMbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWUJ4LTREeWEoeeTdrbyVw" name="VitalSignsSectionCodeP" constrainedElement="_2OfUexSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWUJ4bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWP4cLTREeWEoeeTdrbyVw" name="VitalSignsSectionCode" constrainedElement="_2OfUexSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWP4cbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '8716-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWXNMLTREeWEoeeTdrbyVw" name="VitalSignsSectionText" constrainedElement="_2OlbAhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWXNMbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWZCYLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTitle" constrainedElement="_5h_p0B0XEeGYy5bW_e08gQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWZCYbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZLMSkLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fJy2cLS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZLMSkbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::VitalSignsSection::VitalSignsOrganizerEntry))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ieJrsLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTemplateId" constrainedElement="_2OfUcxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ieJrsbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2TrEoLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTemplateId" constrainedElement="_2OfUcxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2TrrsLTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_5KQQMLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTemplateId" constrainedElement="_2OfUcxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5KQQMbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_WJm7cLTSEeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTemplateId" constrainedElement="_2OfUcxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WJm7cbTSEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_6cs6ELTSEeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTemplateId" constrainedElement="_2OfUcxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_6cs6EbTSEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_xx87ALTTEeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTemplateId" constrainedElement="_2OfUcxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_xx9iELTTEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_F_ub4LTUEeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTemplateId" constrainedElement="_2OfUcxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_F_ub4bTUEeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.4.1')</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_px07IBVgEeGQCvUGzi1kDQ" general="_bRH8sBVeEeGQCvUGzi1kDQ">
+      <ownedComment xmi:id="_GRGhIBxREeG8X6LmnKJ43Q">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
+    <ownedAttribute xmi:id="_2OfUexSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OlbAhSVEeGGzu7fmW9pXw" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OlbBBSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OlbAxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5h_p0B0XEeGYy5bW_e08gQ" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zvtWoR7OEeGrB4pbKFQ9Sg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zvtWoB7OEeGrB4pbKFQ9Sg" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+      <redefinedProperty href="#_3RkfUB0XEeGYy5bW_e08gQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fJy2cbS6EeWcPq3zAthoUQ" name="entry" type="_fJxBQLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fJy2crS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fJzdgLS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fJy2cLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fJxBQLS6EeWcPq3zAthoUQ" name="VitalSignsOrganizerEntry">
+      <ownedRule xmi:id="_ZLcKMLTREeWEoeeTdrbyVw" name="VitalSignsSectionVitalSignsOrganizerEntryVitalSignsOrganizer">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fJ1SsLS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZLcKMbTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.organizer->exists(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::VitalSignsOrganizer))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fJxBQbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fJ15wLS6EeWcPq3zAthoUQ" name="vitalSignsOrganizer" type="_2OlbCRSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fJ15wbS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fJ15wrS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Y3Eg4UbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fJ1SsLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_2PD8IBSVEeGGzu7fmW9pXw" memberEnd="_2PD8IRSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2PD8IRSVEeGGzu7fmW9pXw" type="_2OfUcxSVEeGGzu7fmW9pXw" isReadOnly="true" association="_2PD8IBSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_2OfUeBSVEeGGzu7fmW9pXw" base_Class="_2OfUcxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.4.1">
+    <ruleId>CONF:7273</ruleId>
+    <ruleId>CONF:10452</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2PD8JhSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-385</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OfUeRSVEeGGzu7fmW9pXw">
+    <ruleId>C83-[CT-119-2]</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:TextValue xmi:id="_2OlbARSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-384</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_2OlbBRSVEeGGzu7fmW9pXw" base_Property="_2OlbAhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7275</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_2PD8IhSVEeGGzu7fmW9pXw" base_Association="_2PD8IBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7276</ruleId>
+    <ruleId>CONF:7277</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_bRH8sBVeEeGQCvUGzi1kDQ" name="VitalSignsSectionEntriesOptional">
+    <ownedComment xmi:id="_LjYecBwiEeG_RY8fzJjtMw">
+      <body>&lt;p>The Vital Signs section contains relevant vital signs for the context and use case of the document type, such as blood pressure, heart rate, respiratory rate, height, weight, body mass index, head circumference, and pulse oximetry. The section should include notable vital signs such as the most recent, maximum and/or minimum, baseline, or relevant trends.&lt;/p>
+
+&lt;p>Vital signs are represented in the same way as other results, but are aggregated into their own section to follow clinical conventions.&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_TmFEMLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTemplateId" constrainedElement="_bRH8sBVeEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TmFEMbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.4')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TmHgcLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalCode" constrainedElement="_bRH8uxVeEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TmHgcbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '8716-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TmJ8sLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalCodeP" constrainedElement="_bRH8uxVeEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TmJ8sbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TmNAALTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTitle" constrainedElement="_3RkfUB0XEeGYy5bW_e08gQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TmNAAbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TmO1MLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalText" constrainedElement="_bRH8vRVeEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TmO1MbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZmThQLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalEntry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fN56YLS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZmThQbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::VitalSignsSectionEntriesOptional::VitalSignsOrganizerEntry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_bRH8uhVeEeGQCvUGzi1kDQ">
+      <ownedComment xmi:id="_sTsugBxREeG8X6LmnKJ43Q">
+        <body>skip</body>
+      </ownedComment>
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_bRH8uxVeEeGQCvUGzi1kDQ" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_3RkfUB0XEeGYy5bW_e08gQ" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W42gER7OEeGrB4pbKFQ9Sg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W42gEB7OEeGrB4pbKFQ9Sg" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_bRH8vRVeEeGQCvUGzi1kDQ" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bRH8vxVeEeGQCvUGzi1kDQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bRH8vhVeEeGQCvUGzi1kDQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fN56YbS6EeWcPq3zAthoUQ" name="entry" type="_fN5TULS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fN6hcLS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fN6hcbS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fN56YLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fN5TULS6EeWcPq3zAthoUQ" name="VitalSignsOrganizerEntry">
+      <ownedRule xmi:id="_ZmlOELTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalVitalSignsOrganizerEntryVitalSignsOrganizer">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fN7vkLS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZmlOEbTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.organizer->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::VitalSignsOrganizer))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fN5TUbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fN7vkbS6EeWcPq3zAthoUQ" name="vitalSignsOrganizer" type="_2OlbCRSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fN7vkrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fN8WoLS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Y3Eg4UbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fN7vkLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_4L3_UBVfEeGQCvUGzi1kDQ" base_Class="_bRH8sBVeEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.4">
+    <ruleId>CONF:7268, CONF:10451</ruleId>
+  </CDA:CDATemplate>
+  <uml:Class xmi:id="_2OrhsRSVEeGGzu7fmW9pXw" name="VitalSignObservation">
+    <ownedComment xmi:id="_y1fL4BwiEeG_RY8fzJjtMw">
+      <body>Vital signs are represented as are other results, with additional vocabulary constraints.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_X1YV8OJvEeG3cO7ebC3QuA" name="VitalSignObservationTextReference" constrainedElement="_2OrhsRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gOTIsOJvEeG3cO7ebC3QuA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>text, if present, SHOULD contain zero or one [0..1] reference</body>
+        <body>not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_acAZ8OJvEeG3cO7ebC3QuA" name="VitalSignObservationReferenceValue" constrainedElement="_X1YV8OJvEeG3cO7ebC3QuA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kVC7oOJvEeG3cO7ebC3QuA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference, if present, SHOULD contain zero or one [0..1] @value</body>
+        <body>self.text->forAll(reference->size() = 1) implies self.text->forAll(reference->one(value->size() = 1))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_cfXY0OJvEeG3cO7ebC3QuA" name="VitalSignObservationTextReferenceValue" constrainedElement="_acAZ8OJvEeG3cO7ebC3QuA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lumvkOJvEeG3cO7ebC3QuA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWvAoLTREeWEoeeTdrbyVw" name="VitalSignObservationTemplateId" constrainedElement="_2OrhsRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWvAobTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.27')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWyrALTREeWEoeeTdrbyVw" name="VitalSignObservationClassCode" constrainedElement="_2OxoQhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWyrAbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::ActClassObservation::OBS</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWz5ILTREeWEoeeTdrbyVw" name="VitalSignObservationMoodCode" constrainedElement="_2OxoRBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWz5IbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TW1uULTREeWEoeeTdrbyVw" name="VitalSignObservationId" constrainedElement="_2OxoRxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TW1uUbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.id->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TXBUgLTREeWEoeeTdrbyVw" name="VitalSignObservationCodeP" constrainedElement="_2OrhuBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TXBUgbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TW4KkLTREeWEoeeTdrbyVw" name="VitalSignObservationCode" constrainedElement="_2OrhuBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TW4KkbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '9279-1' or value.code = '8867-4' or value.code = '2710-2' or value.code = '8480-6' or value.code = '8462-4' or value.code = '8310-5' or value.code = '8302-2' or value.code = '8306-3' or value.code = '8287-5' or value.code = '3141-9' or value.code = '39156-5' or value.code = '3140-1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TXM6sLTREeWEoeeTdrbyVw" name="VitalSignObservationStatusCode" constrainedElement="_2OxoSxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TXM6sbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TXRMILTREeWEoeeTdrbyVw" name="VitalSignObservationStatusCodeP" constrainedElement="_2OxoSxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TXRMIbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TXUPcLTREeWEoeeTdrbyVw" name="VitalSignObservationEffectiveTime" constrainedElement="_2OxoTRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TXUPcbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.effectiveTime.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TXWEoLTREeWEoeeTdrbyVw" name="VitalSignObservationValue" constrainedElement="_2OxoUhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TXWEobTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::PQ))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TXXSwLTREeWEoeeTdrbyVw" name="VitalSignObservationInterpretationCode" constrainedElement="_2OxoVBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TXXSwbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>((not self.interpretationCode->isEmpty()) and self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (self.interpretationCode->size() &lt;= 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TXZH8LTREeWEoeeTdrbyVw" name="VitalSignObservationMethodCode" constrainedElement="_2OxoWRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TXZH8bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>((not self.methodCode->isEmpty()) and self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() &lt;= 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TXaWELTREeWEoeeTdrbyVw" name="VitalSignObservationTargetSiteCode" constrainedElement="_2OxoXhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TXaWEbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>((not self.targetSiteCode->isEmpty()) and self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->size() &lt;= 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TXcLQLTREeWEoeeTdrbyVw" name="VitalSignObservationText" constrainedElement="_21P6QB0YEeGYy5bW_e08gQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TXcLQbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_U-ZiALTREeWEoeeTdrbyVw" name="VitalSignObservationAuthor">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_JNJhQ-JvEeG3cO7ebC3QuA"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_U-ZiAbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))->size() &lt;= 1</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2O3u6BSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2OxoQhSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2OxoQxSVEeGGzu7fmW9pXw" value="OBS"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OxoRBSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2OxoRRSVEeGGzu7fmW9pXw" name="EVN">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OxoRxSVEeGGzu7fmW9pXw" name="id" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OxoSRSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OxoSBSVEeGGzu7fmW9pXw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OrhuBSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OxoSxSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OxoTRSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedComment xmi:id="_2OxoThSVEeGGzu7fmW9pXw">
+        <body>Represents the biologically relevant time (e.g. time the specimen was obtained from the patient).</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OxoUBSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OxoTxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OxoUhSVEeGGzu7fmW9pXw" name="value" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OxoVBSVEeGGzu7fmW9pXw" name="interpretationCode" visibility="private" isReadOnly="true">
+      <ownedComment xmi:id="_2OxoVRSVEeGGzu7fmW9pXw">
+        <body>The interpretation code may be present to provide an interpretation of the vital signs measure (e.g., High, Normal, Low, et cetera).</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_srxI0R0YEeGYy5bW_e08gQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_srxI0B0YEeGYy5bW_e08gQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OxoWRSVEeGGzu7fmW9pXw" name="methodCode" visibility="private" isReadOnly="true">
+      <ownedComment xmi:id="_2OxoWhSVEeGGzu7fmW9pXw">
+        <body>The method code element may be present to indicate the method used to obtain the measure. Note that method used is distinct from, but possibly related to the target site.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OxoXBSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OxoWxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OxoXhSVEeGGzu7fmW9pXw" name="targetSiteCode" visibility="private" isReadOnly="true">
+      <ownedComment xmi:id="_2OxoXxSVEeGGzu7fmW9pXw">
+        <body>The target site of the measure may be identified in the targetSiteCode element (e.g., Left arm [blood pressure], oral [temperature], et cetera).</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uq350R0YEeGYy5bW_e08gQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uq350B0YEeGYy5bW_e08gQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_21P6QB0YEeGYy5bW_e08gQ" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_21P6Qh0YEeGYy5bW_e08gQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_21P6QR0YEeGYy5bW_e08gQ" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bHcUEEo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JNJhQOJvEeG3cO7ebC3QuA" name="author" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Kve2seJvEeG3cO7ebC3QuA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Kve2sOJvEeG3cO7ebC3QuA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_7TcH0ExoEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_JNJhQ-JvEeG3cO7ebC3QuA"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_shioIBneEeGs5a462vYX5Q" base_Class="_2OrhsRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.27">
+    <ruleId>(CONF:7299</ruleId>
+    <ruleId>CONF:10527</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2OxoZRSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-413</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OxoaRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-415</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OxobRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-417</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OxocBSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-419</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O3u4hSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-420</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O3u5RSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-421</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OxoQBSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2OxoRhSVEeGGzu7fmW9pXw" base_Property="_2OxoRBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7298</ruleId>
+    <ruleId>R2.0=CONF:1098-7298</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2OxoShSVEeGGzu7fmW9pXw" base_Property="_2OxoRxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7300</ruleId>
+    <ruleId>R2.0=CONF:1098-7300</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2OrhuBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7301</ruleId>
+    <ruleId>R2.0=CONF:1098-7301</ruleId>
+    <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_2OxoURSVEeGGzu7fmW9pXw" base_Property="_2OxoTRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7304</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2OxoUxSVEeGGzu7fmW9pXw" base_Property="_2OxoUhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7305</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2OxoWBSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2OxoVBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7307</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2OxoXRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2OxoWRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7308</ruleId>
+    <ruleId>R2.0=CONF:1098-7308</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2OxoYhSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2OxoXhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7309</ruleId>
+    <ruleId>R2.0=CONF:1098-7309</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_2OlbCRSVEeGGzu7fmW9pXw" name="VitalSignsOrganizer">
+    <ownedComment xmi:id="_YFDPQBwiEeG_RY8fzJjtMw">
+      <body>&lt;p>The Vital Signs Organizer groups vital signs, which is similar to the Result Organizer, but with further constraints. &lt;/p>&#xD;
+&#xD;
+&lt;p>An appropriate nullFlavor can be used when organizer/code or organizer/id is unknown.&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_TWa3kLTREeWEoeeTdrbyVw" name="VitalSignsOrganizerTemplateId" constrainedElement="_2OlbCRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWa3kbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.26')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWcswLTREeWEoeeTdrbyVw" name="VitalSignsOrganizerClassCode" constrainedElement="_2OlbDhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWcswbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::x_ActClassDocumentEntryOrganizer::CLUSTER</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWeh8LTREeWEoeeTdrbyVw" name="VitalSignsOrganizerMoodCode" constrainedElement="_2OrhqBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWeh8bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::ActMood::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWfwELTREeWEoeeTdrbyVw" name="VitalSignsOrganizerId" constrainedElement="_2OlbHhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWfwEbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.id->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWiMULTREeWEoeeTdrbyVw" name="VitalSignsOrganizerCode" constrainedElement="_2OlbERSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWiMUbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '46680005' and value.codeSystem = '2.16.840.1.113883.6.96'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWkokLTREeWEoeeTdrbyVw" name="VitalSignsOrganizerCodeP" constrainedElement="_2OlbERSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWkokbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWqvMLTREeWEoeeTdrbyVw" name="VitalSignsOrganizerStatusCodeP" constrainedElement="_2OlbFhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWqvMbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWnr4LTREeWEoeeTdrbyVw" name="VitalSignsOrganizerStatusCode" constrainedElement="_2OlbFhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWnr4bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TWtLcLTREeWEoeeTdrbyVw" name="VitalSignsOrganizerEffectiveTime" constrainedElement="_2OlbEhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TWtLcbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.effectiveTime.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2O91oRSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2OlbDhSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <ownedComment xmi:id="_2OlbDxSVEeGGzu7fmW9pXw">
+        <body>&lt;p>&#xD;
+The vital signs organizer is a cluster of vital signs observations.&#xD;
+&lt;/p></body>
+      </ownedComment>
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOnw0DcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2OlbEBSVEeGGzu7fmW9pXw" value="CLUSTER"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_NjnHQEb9Ed6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OrhqBSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2OrhqRSVEeGGzu7fmW9pXw" name="EVN">
+        <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+        <instance xmi:type="uml:EnumerationLiteral" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OlbHhSVEeGGzu7fmW9pXw" name="id" visibility="private" isReadOnly="true">
+      <ownedComment xmi:id="_2OlbHxSVEeGGzu7fmW9pXw">
+        <body>The organizer shall have an &amp;lt;id> element.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fdrW4R0YEeGYy5bW_e08gQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fdrW4B0YEeGYy5bW_e08gQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OlbERSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OlbFhSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true">
+      <ownedComment xmi:id="_2OlbFxSVEeGGzu7fmW9pXw">
+        <body>The observations have all been completed.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OlbEhSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedComment xmi:id="_2OlbExSVEeGGzu7fmW9pXw">
+        <body>represents clinically effective time of the measurement, which is most likely when the measurement was performed (e.g., a BP measurement). (CONF:7289).</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OlbFRSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OlbFBSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fJ5kIbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fJ3u8LS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fJ5kIrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fJ5kI7S6EeWcPq3zAthoUQ" value="1"/>
+      <association href="../consol.uml#_fJ5kILS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fJ3u8LS6EeWcPq3zAthoUQ" name="VitalSignObservationEntryRelationship">
+      <ownedRule xmi:id="_ZLtP8LTREeWEoeeTdrbyVw" name="VitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fJ7ZULS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZLtP8bTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::VitalSignObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fJ3u8bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fJ8AYLS6EeWcPq3zAthoUQ" name="vitalSignObservation" type="_2OrhsRSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fJ8AYbS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fJ8AYrS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fJ7ZULS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_2OrhohSVEeGGzu7fmW9pXw" memberEnd="_2OrhoxSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2OrhoxSVEeGGzu7fmW9pXw" type="_2OlbCRSVEeGGzu7fmW9pXw" isReadOnly="true" association="_2OrhohSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_vIk70BneEeGs5a462vYX5Q" base_Class="_2OlbCRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.26">
+    <ruleId>CONF:7281, CONF:10528</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2O91hRSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-398</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O91iRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-400</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O91jRSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-401</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O91kBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-402</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O91lBSVEeGGzu7fmW9pXw" severity="INFO">
+    <ruleId>CONF-403</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O91mBSVEeGGzu7fmW9pXw" severity="INFO">
+    <ruleId>CONF-404</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2O91nxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-387</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OrhoBSVEeGGzu7fmW9pXw">
+    <ruleId>6.3.4.21.3</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2OlbJBSVEeGGzu7fmW9pXw" code="46680005" displayName="Vital signs" base_Property="_2OlbERSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7283</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_2OlbJhSVEeGGzu7fmW9pXw" code="completed" base_Property="_2OlbFhSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7284, R2.1=CONF:1198-19120</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_2OlbJRSVEeGGzu7fmW9pXw" base_Property="_2OlbEhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7288</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_2OrhpBSVEeGGzu7fmW9pXw" base_Association="_2OrhohSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7285, CONF:15946</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:TextValue xmi:id="__bdqYBwhEeG_RY8fzJjtMw"/>
+  <CDA:PropertyValidation xmi:id="_ALh1YBwiEeG_RY8fzJjtMw" base_Property="_bRH8vRVeEeGQCvUGzi1kDQ">
+    <ruleId>CONF:7270, R2.1=CONF:1198-7270</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_BKszYBwiEeG_RY8fzJjtMw" severity="WARNING">
+    <ruleId>CONF:7271</ruleId>
+    <ruleId>CONF:7272</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_0NTTYBwiEeG_RY8fzJjtMw" base_Property="_2OxoQhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7297</ruleId>
+    <ruleId>R2.0=CONF:1098-7297</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_7-leYBwiEeG_RY8fzJjtMw" code="completed" base_Property="_2OxoSxSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7303</ruleId>
+    <ruleId>R2.0=CONF:1098-19119</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_uBdeYBwxEeG_RY8fzJjtMw" code="8716-3" displayName="Vital Signs" base_Property="_bRH8uxVeEeGQCvUGzi1kDQ">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15243</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_5wyhkBxYEeG8X6LmnKJ43Q" code="8716-3" displayName="Vital Signs" base_Property="_2OfUexSVEeGGzu7fmW9pXw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15963</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_XgAY8BxYEeG8X6LmnKJ43Q" memberEnd="_XgAY8RxYEeG8X6LmnKJ43Q">
+    <ownedEnd xmi:id="_XgAY8RxYEeG8X6LmnKJ43Q" type="_bRH8sBVeEeGQCvUGzi1kDQ" isReadOnly="true" association="_XgAY8BxYEeG8X6LmnKJ43Q"/>
+  </uml:Association>
+  <CDA:TextValue xmi:id="_5PLmEB0YEeGYy5bW_e08gQ" severity="WARNING" base_Property="_21P6QB0YEeGYy5bW_e08gQ">
+    <ruleId>CONF:7302</ruleId>
+  </CDA:TextValue>
+  <CDA:TextValue xmi:id="_ZHKKsB7OEeGrB4pbKFQ9Sg" base_Property="_3RkfUB0XEeGYy5bW_e08gQ">
+    <ruleId>CONF:9966, R2.1=CONF:1198-9966</ruleId>
+  </CDA:TextValue>
+  <CDA:TextValue xmi:id="_0JoSgB7OEeGrB4pbKFQ9Sg" base_Property="_5h_p0B0XEeGYy5bW_e08gQ">
+    <ruleId>CONF:9967</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_AnloAB7PEeGrB4pbKFQ9Sg" base_Property="_2OlbDhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7279, R2.1=CONF:1198-7279</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_BBhK8B7PEeGrB4pbKFQ9Sg" base_Property="_2OrhqBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7280, R2.1=CONF:1198-7280</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_KLIa0B7PEeGrB4pbKFQ9Sg" base_Property="_2OlbHhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7282, R2.1=CONF:1198-7282</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_RYfngOJuEeG3cO7ebC3QuA" base_Property="_bRH8uxVeEeGQCvUGzi1kDQ">
+    <ruleId>CONF:15242</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_cp5DQOJuEeG3cO7ebC3QuA" base_Property="_2OfUexSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15962</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_AVlDoOJvEeG3cO7ebC3QuA" base_Property="_2OrhuBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_hH31AOJvEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_X1YV8OJvEeG3cO7ebC3QuA">
+    <ruleId>CONF:15943</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_mlpsUOJvEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_acAZ8OJvEeG3cO7ebC3QuA">
+    <ruleId>CONF:15944</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_pIQzAOJvEeG3cO7ebC3QuA" base_Constraint="_cfXY0OJvEeG3cO7ebC3QuA">
+    <ruleId>CONF:15945</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_4iF6IL86EeOS5KuvmCHHew" clientDependency="_PvyIwL87EeOS5KuvmCHHew" name="DeceasedObservation2">
+    <ownedComment xmi:id="_A79IEL87EeOS5KuvmCHHew">
+      <body>This template represents the observation that a patient has died. It also represents the cause of death, indicated by an entryRelationship type of 'CAUS'. This template allows for more specific representation of data than is available with the use of dischargeDispositionCode.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_WT5VULTREeWEoeeTdrbyVw" name="DeceasedObservationTemplateId" constrainedElement="_4iF6IL86EeOS5KuvmCHHew">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WT58YLTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.79' and id.extension = '2015-08-01')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_WUADALTREeWEoeeTdrbyVw" name="DeceasedObservationCodeP" constrainedElement="_tcTcAL87EeOS5KuvmCHHew">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WUADAbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_WT8YoLTREeWEoeeTdrbyVw" name="DeceasedObservationCode" constrainedElement="_tcTcAL87EeOS5KuvmCHHew">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WT8YobTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_cpwrMLTREeWEoeeTdrbyVw" name="DeceasedObservation2EntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fkRzALS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cpwrMbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::DeceasedObservation2::ProblemObservation2EntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_4iIWYL86EeOS5KuvmCHHew" general="_lm3boOZbEeGINOJ_SD9_dA"/>
+    <substitution xmi:id="_PvyIwL87EeOS5KuvmCHHew" name="DeceasedObservation" client="_4iF6IL86EeOS5KuvmCHHew" supplier="_lm3boOZbEeGINOJ_SD9_dA" contract="_lm3boOZbEeGINOJ_SD9_dA"/>
+    <ownedAttribute xmi:id="_tcTcAL87EeOS5KuvmCHHew" name="code" visibility="private" isReadOnly="true" aggregation="composite" redefinedProperty="_f4E9weZkEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fkRzAbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fkPWwLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkRzArS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkRzA7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fkRzALS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fkPWwLS6EeWcPq3zAthoUQ" name="ProblemObservation2EntryRelationship">
+      <ownedRule xmi:id="_cp_7wLTREeWEoeeTdrbyVw" name="DeceasedObservation2ProblemObservation2EntryRelationshipProblemObservation2">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fkTBILS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cp_7wbTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation2))->size() &lt;= 1</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fkPWwbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fkToMLS6EeWcPq3zAthoUQ" name="problemObservation2" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-problems.uml#_prDAkPDCEeOKPKE9au0oug"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fkToMbS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fkToMrS6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fkTBILS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="__AT6wL86EeOS5KuvmCHHew" base_Class="_4iF6IL86EeOS5KuvmCHHew" templateId="2.16.840.1.113883.10.20.22.4.79" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-14871, CONF:1198-14872, CONF:1198-32541</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_JY_l0L87EeOS5KuvmCHHew" base_Generalization="_4iIWYL86EeOS5KuvmCHHew"/>
+  <CDA:CodeSystemConstraint xmi:id="_tcUDEL87EeOS5KuvmCHHew" code="ASSERTION" displayName="Assertion" base_Property="_tcTcAL87EeOS5KuvmCHHew">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-19135, CONF:1198-32158</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_tcWfUL87EeOS5KuvmCHHew" base_Property="_tcTcAL87EeOS5KuvmCHHew">
+    <ruleId>CONF:1198-14853</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="__zeTcPM3EeOUvapeh9bVvQ" clientDependency="_agM0wPM4EeOUvapeh9bVvQ" name="VitalSignObservation2">
+    <ownedComment xmi:id="_PYxNUPM4EeOUvapeh9bVvQ">
+      <body>This template represents measurement of common vital signs. Vital signs are represented with additional vocabulary constraints for type of vital sign and unit of measure.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_finGcM85EeSJsu9BbhWxmQ" name="VitalSignObservationTextReference">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_finGcc85EeSJsu9BbhWxmQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_gt-tYM85EeSJsu9BbhWxmQ" name="VitalSignObservationReferenceValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gt-tYc85EeSJsu9BbhWxmQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_h4JacM85EeSJsu9BbhWxmQ" name="VitalSignObservationTextReferenceValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_h4Jacc85EeSJsu9BbhWxmQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W-0hoLTREeWEoeeTdrbyVw" name="VitalSignObservationTemplateId" constrainedElement="__zeTcPM3EeOUvapeh9bVvQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W-0hobTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.27' and id.extension = '2014-06-09')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W-5aILTREeWEoeeTdrbyVw" name="VitalSignObservationEffectiveTime" constrainedElement="_7j7RkM84EeSJsu9BbhWxmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W-5aIbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.effectiveTime.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W-7PULTREeWEoeeTdrbyVw" name="VitalSignObservationValue" constrainedElement="_qsjuoPM4EeOUvapeh9bVvQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W-7PUbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.value->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W-9rkLTREeWEoeeTdrbyVw" name="VitalSignObservationText" constrainedElement="_Z4Sn8M85EeSJsu9BbhWxmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W-9rkbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W_LuALTREeWEoeeTdrbyVw" name="VitalSignObservationInterpretationCodeP" constrainedElement="_eEbiIM9CEeSJsu9BbhWxmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W_LuAbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>((not self.interpretationCode->isEmpty()) and self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W_Au4LTREeWEoeeTdrbyVw" name="VitalSignObservationInterpretationCode" constrainedElement="_eEbiIM9CEeSJsu9BbhWxmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W_Au4bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>((not self.interpretationCode->isEmpty()) and self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (self.interpretationCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.5.83' and (value.code = 'A' or value.code = 'HX' or value.code = 'LX' or value.code = 'B' or value.code = 'Carrier' or value.code = 'D' or value.code = 'U' or value.code = 'IND' or value.code = 'I' or value.code = 'MS' or value.code = 'NEG' or value.code = 'N' or value.code = 'POS' or value.code = 'R' or value.code = 'S' or value.code = 'VS' or value.code = 'W')))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W_a-kLTREeWEoeeTdrbyVw" name="VitalSignObservation2AuthorParticipation" constrainedElement="_tt_C0PM5EeOUvapeh9bVvQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W_a-kbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))->size() >= 0</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="__ze6gPM3EeOUvapeh9bVvQ" general="_2OrhsRSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_agM0wPM4EeOUvapeh9bVvQ" name="VitalSignObservation" client="__zeTcPM3EeOUvapeh9bVvQ" supplier="_2OrhsRSVEeGGzu7fmW9pXw" contract="_2OrhsRSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_7j7RkM84EeSJsu9BbhWxmQ" name="effectiveTime" visibility="private" isReadOnly="true" aggregation="composite" redefinedProperty="_2OxoTRSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_CrGvoM85EeSJsu9BbhWxmQ"/>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7j7Rkc84EeSJsu9BbhWxmQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7j7Rks84EeSJsu9BbhWxmQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_qsjuoPM4EeOUvapeh9bVvQ" name="value" visibility="private" type="_vvXhMPM4EeOUvapeh9bVvQ" isReadOnly="true" redefinedProperty="_2OxoUhSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_tt9NoPM5EeOUvapeh9bVvQ" name="authorParticipation" isReadOnly="true" association="_tt_C0PM5EeOUvapeh9bVvQ">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tt90sPM5EeOUvapeh9bVvQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tt90sfM5EeOUvapeh9bVvQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0--kMPM5EeOUvapeh9bVvQ" name="author" visibility="private" isReadOnly="true" aggregation="composite" redefinedProperty="_JNJhQOJvEeG3cO7ebC3QuA">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0--kMvM5EeOUvapeh9bVvQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0--kMfM5EeOUvapeh9bVvQ" value="1"/>
+      <association href="../consol.uml#_0-_yUPM5EeOUvapeh9bVvQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Z4Sn8M85EeSJsu9BbhWxmQ" name="text" visibility="private" isReadOnly="true" aggregation="composite" redefinedProperty="_21P6QB0YEeGYy5bW_e08gQ">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z4Sn8c85EeSJsu9BbhWxmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z4Sn8s85EeSJsu9BbhWxmQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_eEbiIM9CEeSJsu9BbhWxmQ" name="interpretationCode" visibility="private" isReadOnly="true" redefinedProperty="_2OxoVBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eEbiIc9CEeSJsu9BbhWxmQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eEbiIs9CEeSJsu9BbhWxmQ" value="1"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_vvXhMPM4EeOUvapeh9bVvQ" name="PQ">
+      <ownedComment xmi:id="_NyE5gM84EeSJsu9BbhWxmQ">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_W_ZJYbTREeWEoeeTdrbyVw" name="VitalSignObservation2PQUnit" constrainedElement="_wF3VoPM4EeOUvapeh9bVvQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W_ZJYrTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body> ( self.isNullFlavorUndefined() implies (not self.unit.oclIsUndefined() and self.unit='1' ))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_vvXhMfM4EeOUvapeh9bVvQ">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_wF3VoPM4EeOUvapeh9bVvQ" name="unit" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yuOfAfM4EeOUvapeh9bVvQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yuOfAPM4EeOUvapeh9bVvQ" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_wF3Vo_M4EeOUvapeh9bVvQ" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_8uEo0D59Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_D6_icPM4EeOUvapeh9bVvQ" base_Class="__zeTcPM3EeOUvapeh9bVvQ" templateId="2.16.840.1.113883.10.20.22.4.27" templateVersion="2014-06-09">
+    <ruleId>CONF:1098-7299</ruleId>
+    <ruleId>CONF:1098-10527</ruleId>
+    <ruleId>CONF:1098-32574</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_NJM-cPM4EeOUvapeh9bVvQ" base_Generalization="__ze6gPM3EeOUvapeh9bVvQ"/>
+  <CDA:PropertyValidation xmi:id="_qskVsPM4EeOUvapeh9bVvQ" base_Property="_qsjuoPM4EeOUvapeh9bVvQ">
+    <ruleId>CONF:1098-7305</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_xXOP0PM4EeOUvapeh9bVvQ" base_Property="_wF3VoPM4EeOUvapeh9bVvQ">
+    <ruleId>CONF:1098-31579</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_tt_C0PM5EeOUvapeh9bVvQ" memberEnd="_tt9NoPM5EeOUvapeh9bVvQ _tt_C0fM5EeOUvapeh9bVvQ">
+    <ownedEnd xmi:id="_tt_C0fM5EeOUvapeh9bVvQ" type="__zeTcPM3EeOUvapeh9bVvQ" isReadOnly="true" association="_tt_C0PM5EeOUvapeh9bVvQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_ueCmwPM5EeOUvapeh9bVvQ" severity="WARNING" base_Association="_tt_C0PM5EeOUvapeh9bVvQ">
+    <ruleId>CONF:1098-7310</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_dDupoPV2EeONioZkBKP8eQ" clientDependency="_vMY4IPV2EeONioZkBKP8eQ" name="VitalSignsOrganizer2">
+    <ownedComment xmi:id="_jK-7wPV2EeONioZkBKP8eQ">
+      <body>This template provides a mechanism for grouping vital signs (e.g., grouping systolic blood pressure and diastolic blood pressure).</body>
+    </ownedComment>
+    <ownedRule xmi:id="_W_ugkLTREeWEoeeTdrbyVw" name="VitalSignsOrganizerTemplateId" constrainedElement="_dDupoPV2EeONioZkBKP8eQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W_ugkbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.26' and id.extension = '2015-08-01')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W_0nMLTREeWEoeeTdrbyVw" name="VitalSignsOrganizerCodeP" constrainedElement="_74bwIPV6EeONioZkBKP8eQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W_0nMbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W_xj4LTREeWEoeeTdrbyVw" name="VitalSignsOrganizerCode" constrainedElement="_74bwIPV6EeONioZkBKP8eQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W_xj4bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = '46680005' and value.codeSystem = '2.16.840.1.113883.6.96'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W_4RkLTREeWEoeeTdrbyVw" name="VitalSignsOrganizerEffectiveTime" constrainedElement="_yESK8PV5EeONioZkBKP8eQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W_4RkbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.effectiveTime.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XABbgLTREeWEoeeTdrbyVw" name="VitalSignsOrganizer2AuthorParticipation" constrainedElement="_QGEuIPV7EeONioZkBKP8eQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XABbgbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))->size() >= 0</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_dDxF4PV2EeONioZkBKP8eQ" general="_2OlbCRSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_vMY4IPV2EeONioZkBKP8eQ" name="VitalSignsOrganizer" client="_dDupoPV2EeONioZkBKP8eQ" supplier="_2OlbCRSVEeGGzu7fmW9pXw" contract="_2OlbCRSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_74bwIPV6EeONioZkBKP8eQ" name="code" visibility="private" type="_QqaecE9yEeWsIc5CMrI4GA" isReadOnly="true" redefinedProperty="_2OlbERSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_8QzhAE9xEeWsIc5CMrI4GA">
+        <body>Compatibility support for C-CDA R1.1 and C-CDA 2.1: A vitals organizer conformant to both C-CDA 1.1 and C-CDA 2.1 would contain the SNOMED code (46680005) from R1.1 in the root code and a LOINC code in the translation. A vitals organizer conformant to only C-CDA 2.1 would only contain the LOINC code in the root code.</body>
+      </ownedComment>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5mhsEE9xEeWsIc5CMrI4GA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5mhFAE9xEeWsIc5CMrI4GA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_yESK8PV5EeONioZkBKP8eQ" name="effectiveTime" visibility="private" isReadOnly="true" aggregation="composite" redefinedProperty="_2OlbEhSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_JH_-MPV6EeONioZkBKP8eQ">
+        <body>Note: The effectiveTime is an interval that spans the effectiveTimes of the contained vital signs observations.</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B0gksE9zEeWsIc5CMrI4GA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B0f9oE9zEeWsIc5CMrI4GA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_QGDgAPV7EeONioZkBKP8eQ" name="authorParticipation" isReadOnly="true" association="_QGEuIPV7EeONioZkBKP8eQ">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QGEHEPV7EeONioZkBKP8eQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QGEHEfV7EeONioZkBKP8eQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fpgRQbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fpecELS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpg4ULS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpg4UbS6EeWcPq3zAthoUQ" value="1"/>
+      <association href="../consol.uml#_fpgRQLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_QqaecE9yEeWsIc5CMrI4GA" name="CD">
+      <ownedComment xmi:id="_SPtoUE9yEeWsIc5CMrI4GA">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_W_7U4LTREeWEoeeTdrbyVw" name="VitalSignsOrganizer2CDTranslation" constrainedElement="_RIOb0E9yEeWsIc5CMrI4GA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W_7U4bTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body> ( self.isNullFlavorUndefined() implies (self.translation->size() = 1 and self.translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.code = '74728-7' and value.codeSystem = '2.16.840.1.113883.6.1') ))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_W_-YMLTREeWEoeeTdrbyVw" name="VitalSignsOrganizer2CDTranslationP" constrainedElement="_RIOb0E9yEeWsIc5CMrI4GA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W_-YMbTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body> ( self.isNullFlavorUndefined() implies (self.translation->size() = 1 ))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_QqbskE9yEeWsIc5CMrI4GA">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_RIOb0E9yEeWsIc5CMrI4GA" name="translation" visibility="private" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jvSdkU9yEeWsIc5CMrI4GA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jvSdkE9yEeWsIc5CMrI4GA" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fpecELS6EeWcPq3zAthoUQ" name="VitalSignObservation2EntryRelationship">
+      <ownedRule xmi:id="_dZLV8LTREeWEoeeTdrbyVw" name="VitalSignsOrganizer2VitalSignObservation2EntryRelationshipVitalSignObservation2">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fpiGcLS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dZLV8bTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::VitalSignObservation2))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fpecEbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fpiGcbS6EeWcPq3zAthoUQ" name="vitalSignObservation2" type="__zeTcPM3EeOUvapeh9bVvQ" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpiGcrS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpiGc7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fpiGcLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_hsMpkPV2EeONioZkBKP8eQ" base_Class="_dDupoPV2EeONioZkBKP8eQ" templateId="2.16.840.1.113883.10.20.22.4.26" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7281, CONF:1198-10528, CONF:1198-32582</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_tTeOsPV2EeONioZkBKP8eQ" base_Generalization="_dDxF4PV2EeONioZkBKP8eQ"/>
+  <CDA:PropertyValidation xmi:id="_yESK8_V5EeONioZkBKP8eQ" base_Property="_yESK8PV5EeONioZkBKP8eQ">
+    <ruleId>CONF:1198-7288</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_cqZm0PV6EeONioZkBKP8eQ" memberEnd="_cqaN4PV6EeONioZkBKP8eQ">
+    <ownedEnd xmi:id="_cqaN4PV6EeONioZkBKP8eQ" type="_dDupoPV2EeONioZkBKP8eQ" isReadOnly="true" association="_cqZm0PV6EeONioZkBKP8eQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_dXDRcPV6EeONioZkBKP8eQ" base_Association="_cqZm0PV6EeONioZkBKP8eQ">
+    <ruleId>CONF:1198-7285, CONF:1198-15946</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CodeSystemConstraint xmi:id="_74bwIfV6EeONioZkBKP8eQ" code="46680005" displayName="Vital Signs" base_Property="_74bwIPV6EeONioZkBKP8eQ">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-32741, CONF:1198-32742</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_9vc8IPV6EeONioZkBKP8eQ" base_Property="_74bwIPV6EeONioZkBKP8eQ">
+    <ruleId>CONF:1198-32740</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_QGEuIPV7EeONioZkBKP8eQ" memberEnd="_QGDgAPV7EeONioZkBKP8eQ _QGFVMPV7EeONioZkBKP8eQ">
+    <ownedEnd xmi:id="_QGFVMPV7EeONioZkBKP8eQ" type="_dDupoPV2EeONioZkBKP8eQ" isReadOnly="true" association="_QGEuIPV7EeONioZkBKP8eQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_QlZHYPV7EeONioZkBKP8eQ" severity="WARNING" base_Association="_QGEuIPV7EeONioZkBKP8eQ">
+    <ruleId>CONF:1198-31153</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_AngxkPfwEeO297ryy8ptVg" memberEnd="_AngxkffwEeO297ryy8ptVg">
+    <ownedEnd xmi:id="_AngxkffwEeO297ryy8ptVg" type="_4iF6IL86EeOS5KuvmCHHew" isReadOnly="true" association="_AngxkPfwEeO297ryy8ptVg"/>
+  </uml:Association>
+  <CDA:EntryRelationship xmi:id="_D-WxkPfwEeO297ryy8ptVg" severity="WARNING" base_Association="_AngxkPfwEeO297ryy8ptVg">
+    <ruleId>CONF:1198-14868, CONF:1198-14875, CONF:1198-14870</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Class xmi:id="_8LkzYAFTEeSmasYc71ZgMQ" clientDependency="_6SqUgAFUEeSmasYc71ZgMQ" name="VitalSignsSectionEntriesOptional2">
+    <ownedComment xmi:id="_MeZhoAFUEeSmasYc71ZgMQ">
+      <body>&lt;p>&#xD;
+The Vital Signs Section contains relevant vital signs for the context and use case of the document type, such as blood pressure, heart rate, respiratory rate, height, weight, body mass index, head circumference, pulse oximetry, temperature, and body surface area. The section should include notable vital signs such as the most recent, maximum and/or minimum, baseline, or relevant trends.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Vital signs are represented in the same way as other results, but are aggregated into their own section to follow clinical conventions.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_XHxpULTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTemplateId" constrainedElement="_8LkzYAFTEeSmasYc71ZgMQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XHxpUbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.4' and id.extension = '2015-08-01')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH2h0LTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalCodeP" constrainedElement="_I4risAFVEeSmasYc71ZgMQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH2h0bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XH0FkLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalCode" constrainedElement="_I4risAFVEeSmasYc71ZgMQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH0FkbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '8716-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_d4iygLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptional2Entry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fuSqoLS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_d4iygbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::VitalSignsSectionEntriesOptional2::VitalSignsOrganizer2Entry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_8LnPoAFTEeSmasYc71ZgMQ" general="_bRH8sBVeEeGQCvUGzi1kDQ"/>
+    <substitution xmi:id="_6SqUgAFUEeSmasYc71ZgMQ" name="VitalSignsSectionEntriesOptional" client="_8LkzYAFTEeSmasYc71ZgMQ" supplier="_bRH8sBVeEeGQCvUGzi1kDQ" contract="_bRH8sBVeEeGQCvUGzi1kDQ"/>
+    <ownedAttribute xmi:id="_I4risAFVEeSmasYc71ZgMQ" name="code" visibility="private" isReadOnly="true" redefinedProperty="_bRH8uxVeEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fuSqobS6EeWcPq3zAthoUQ" name="entry" type="_fuQ1cLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fuSqorS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fuSqo7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fuSqoLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fuQ1cLS6EeWcPq3zAthoUQ" name="VitalSignsOrganizer2Entry">
+      <ownedRule xmi:id="_d4yqILTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptional2VitalSignsOrganizer2EntryVitalSignsOrganizer2">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fuUf0LS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d4yqIbTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.organizer->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::VitalSignsOrganizer2))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fuQ1cbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fuUf0bS6EeWcPq3zAthoUQ" name="vitalSignsOrganizer2" type="_dDupoPV2EeONioZkBKP8eQ" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fuUf0rS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fuUf07S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Y3Eg4UbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fuUf0LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_L4h0cAFUEeSmasYc71ZgMQ" base_Class="_8LkzYAFTEeSmasYc71ZgMQ" templateId="2.16.840.1.113883.10.20.22.2.4" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7268, CONF:1198-10451, CONF:1198-32584</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_43ldoAFUEeSmasYc71ZgMQ" base_Generalization="_8LnPoAFTEeSmasYc71ZgMQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_I4sJwAFVEeSmasYc71ZgMQ" code="8716-3" displayName="Vital Signs" base_Property="_I4risAFVEeSmasYc71ZgMQ">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-15243, CONF:1198-30902</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_I4sw0AFVEeSmasYc71ZgMQ" base_Property="_I4risAFVEeSmasYc71ZgMQ">
+    <ruleId>CONF:1198-15242</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_TrHxkAFVEeSmasYc71ZgMQ" memberEnd="_TrHxkQFVEeSmasYc71ZgMQ">
+    <ownedEnd xmi:id="_TrHxkQFVEeSmasYc71ZgMQ" type="_8LkzYAFTEeSmasYc71ZgMQ" isReadOnly="true" association="_TrHxkAFVEeSmasYc71ZgMQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_W2oEQAFVEeSmasYc71ZgMQ" severity="WARNING" base_Association="_TrHxkAFVEeSmasYc71ZgMQ">
+    <ruleId>CONF:1198-7271, CONF:1198-15517</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_D3010ALzEeSM0Jd2D1FgKw" clientDependency="_ZW8CwALzEeSM0Jd2D1FgKw" name="VitalSignsSection2">
+    <ownedComment xmi:id="_KuBRkALzEeSM0Jd2D1FgKw">
+      <body>&lt;p>&#xD;
+The Vital Signs Section contains relevant vital signs for the context and use case of the document type, such as blood pressure, heart rate, respiratory rate, height, weight, body mass index, head circumference, pulse oximetry, temperature, and body surface area. The section should include notable vital signs such as the most recent, maximum and/or minimum, baseline, or relevant trends.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Vital signs are represented in the same way as other results, but are aggregated into their own section to follow clinical conventions.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_XKdJ4LTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTemplateId" constrainedElement="_D3010ALzEeSM0Jd2D1FgKw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XKdJ4bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.4.1' and id.extension = '2015-08-01')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XKe_ELTREeWEoeeTdrbyVw" name="VitalSignsSection2NullFlavor" constrainedElement="_Mq6TkKgcEeSoILDCw_oFwA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XKe_EbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>(not self.nullFlavor.oclIsUndefined()) implies (self.nullFlavor=vocab::NullFlavor::NI)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XKj3kLTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalCodeP" constrainedElement="_wYuG4AL0EeSM0Jd2D1FgKw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XKj3kbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XKhbULTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalCode" constrainedElement="_wYuG4AL0EeSM0Jd2D1FgKw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XKhbUbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '8716-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XKm64LTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalTitle" constrainedElement="_TitIYQL1EeSM0Jd2D1FgKw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XKm64bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_XKoJALTREeWEoeeTdrbyVw" name="VitalSignsSectionEntriesOptionalText" constrainedElement="_TishUAL1EeSM0Jd2D1FgKw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XKoJAbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_eCpwwLTREeWEoeeTdrbyVw" name="VitalSignsSection2Entry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fv07sLS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_eCpwwbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::VitalSignsSection2::VitalSignsOrganizer2Entry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_D33SEALzEeSM0Jd2D1FgKw" general="_8LkzYAFTEeSmasYc71ZgMQ"/>
+    <substitution xmi:id="_ZW8CwALzEeSM0Jd2D1FgKw" name="VitalSignsSection" client="_D3010ALzEeSM0Jd2D1FgKw" supplier="_2OfUcxSVEeGGzu7fmW9pXw" contract="_2OfUcxSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_Mq6TkKgcEeSoILDCw_oFwA" name="nullFlavor" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mq6TkagcEeSoILDCw_oFwA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Mq6TkqgcEeSoILDCw_oFwA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_Oa_xIKgcEeSoILDCw_oFwA" value="NI"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wYuG4AL0EeSM0Jd2D1FgKw" name="code" visibility="private" isReadOnly="true" redefinedProperty="_I4risAFVEeSmasYc71ZgMQ">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_TitIYQL1EeSM0Jd2D1FgKw" name="title" visibility="private" isReadOnly="true" aggregation="composite" redefinedProperty="_3RkfUB0XEeGYy5bW_e08gQ">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TitIYwL1EeSM0Jd2D1FgKw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TitIYgL1EeSM0Jd2D1FgKw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_TishUAL1EeSM0Jd2D1FgKw" name="text" visibility="private" isReadOnly="true" aggregation="composite" redefinedProperty="_bRH8vRVeEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TishUgL1EeSM0Jd2D1FgKw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TishUQL1EeSM0Jd2D1FgKw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fv07sbS6EeWcPq3zAthoUQ" name="entry" type="_fvzGgLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fv07srS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fv07s7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fv07sLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fvzGgLS6EeWcPq3zAthoUQ" name="VitalSignsOrganizer2Entry">
+      <ownedRule xmi:id="_eC6PcLTREeWEoeeTdrbyVw" name="VitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer2">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fv2w4LS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_eC6PcbTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.organizer->exists(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::VitalSignsOrganizer2))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fvzGgbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fv2w4bS6EeWcPq3zAthoUQ" name="vitalSignsOrganizer2" type="_dDupoPV2EeONioZkBKP8eQ" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fv2w4rS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fv2w47S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Y3Eg4UbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fv2w4LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_G02AkALzEeSM0Jd2D1FgKw" base_Class="_D3010ALzEeSM0Jd2D1FgKw" templateId="2.16.840.1.113883.10.20.22.2.4.1" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7273, CONF:1198-10452, CONF:1198-32585</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_X5hCgALzEeSM0Jd2D1FgKw" base_Generalization="_D33SEALzEeSM0Jd2D1FgKw"/>
+  <CDA:CodeSystemConstraint xmi:id="_wYuG4QL0EeSM0Jd2D1FgKw" code="8716-3" displayName="Vital Signs" base_Property="_wYuG4AL0EeSM0Jd2D1FgKw">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-15963, CONF:1198-30903</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_wYwjIAL0EeSM0Jd2D1FgKw" base_Property="_wYuG4AL0EeSM0Jd2D1FgKw">
+    <ruleId>CONF:1198-15962</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_8tj8oAL0EeSM0Jd2D1FgKw" memberEnd="_8tkjsAL0EeSM0Jd2D1FgKw">
+    <ownedEnd xmi:id="_8tkjsAL0EeSM0Jd2D1FgKw" type="_D3010ALzEeSM0Jd2D1FgKw" isReadOnly="true" association="_8tj8oAL0EeSM0Jd2D1FgKw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="__jRlgAL0EeSM0Jd2D1FgKw" base_Association="_8tj8oAL0EeSM0Jd2D1FgKw">
+    <ruleId>CONF:1198-7276, CONF:1198-15964</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_TitIYAL1EeSM0Jd2D1FgKw" base_Property="_TishUAL1EeSM0Jd2D1FgKw">
+    <ruleId>CONF:1198-7275</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_VUICsAL1EeSM0Jd2D1FgKw" base_Property="_TitIYQL1EeSM0Jd2D1FgKw">
+    <ruleId>CONF:1198-9967</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_O1iYEKgcEeSoILDCw_oFwA" severity="INFO" base_Property="_Mq6TkKgcEeSoILDCw_oFwA">
+    <ruleId>CONF:1198-32874</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_y0jtsM84EeSJsu9BbhWxmQ" base_Property="_2OxoSxSVEeGGzu7fmW9pXw">
+    <ruleId>R2.0=CONF:1098-7303</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_7j74oM84EeSJsu9BbhWxmQ" base_Property="_7j7RkM84EeSJsu9BbhWxmQ">
+    <ruleId>CONF:1098-7304</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_eEbiI89CEeSJsu9BbhWxmQ" severity="INFO" base_Property="_eEbiIM9CEeSJsu9BbhWxmQ">
+    <ruleId>CONF:1098-7307</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_nkHIoM9CEeSJsu9BbhWxmQ" base_Property="_eEbiIM9CEeSJsu9BbhWxmQ">
+    <ruleId>CONF:1098-32886</ruleId>
+    <reference href="../consol-vocab.uml#_UnwpwM2JEeSEZ8MJJ3ZzLg"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_fH50gM9GEeSJsu9BbhWxmQ" base_Property="_2OlbERSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_sClFwM9HEeSJsu9BbhWxmQ" base_Property="_2OlbFhSVEeGGzu7fmW9pXw">
+    <ruleId>R2.1=CONF:1198-7284</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_SjXJ4BaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_finGcM85EeSJsu9BbhWxmQ"/>
+  <CDA:ConstraintValidation xmi:id="_S7QFcBaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_gt-tYM85EeSJsu9BbhWxmQ"/>
+  <CDA:ConstraintValidation xmi:id="_TTcjABaXEeWPafwaDwpzXw" severity="INFO" base_Constraint="_h4JacM85EeSJsu9BbhWxmQ"/>
+  <CDA:PropertyValidation xmi:id="_TOtAIE9yEeWsIc5CMrI4GA" base_Property="_RIOb0E9yEeWsIc5CMrI4GA">
+    <ruleId>CONF:1198-32743</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_U67RYE9yEeWsIc5CMrI4GA" code="74728-7" displayName="Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1" base_Property="_RIOb0E9yEeWsIc5CMrI4GA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-32744</ruleId>
+    <ruleId>CONF:1198-32746</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Class xmi:id="_lm3boOZbEeGINOJ_SD9_dA" name="DeceasedObservation">
+    <ownedComment xmi:id="_ZtiHEOZkEeGINOJ_SD9_dA">
+      <body>This clinical statement represents the observation that a patient has expired. It also represents the cause of death, indicated by an entryRelationship type of &quot;CAUS&quot;.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_Dk8p4OZlEeGINOJ_SD9_dA" name="DeceasedObservationEffectiveTimeLow" constrainedElement="_lm3boOZbEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_E9UyEOZlEeGINOJ_SD9_dA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>effectiveTime SHALL contain exactly one [1..1] low</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.low->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VF-JoLTREeWEoeeTdrbyVw" name="DeceasedObservationTemplateId" constrainedElement="_lm3boOZbEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VF-wsLTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.79')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VGCbELTREeWEoeeTdrbyVw" name="DeceasedObservationClassCode" constrainedElement="_f4E9wOZkEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VGCbEbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::ActClassObservation::OBS</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VGE3ULTREeWEoeeTdrbyVw" name="DeceasedObservationMoodCode" constrainedElement="_f4E9yOZkEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VGE3UbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VGHTkLTREeWEoeeTdrbyVw" name="DeceasedObservationId" constrainedElement="_f4E9xeZkEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VGHTkbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.id->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VGP2cLTREeWEoeeTdrbyVw" name="DeceasedObservationCodeP" constrainedElement="_f4E9weZkEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VGP2cbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VGK98LTREeWEoeeTdrbyVw" name="DeceasedObservationCode" constrainedElement="_f4E9weZkEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VGK98bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VGVWALTREeWEoeeTdrbyVw" name="DeceasedObservationStatusCode" constrainedElement="_f4E9yeZkEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VGVWAbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'completed'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VGaOgLTREeWEoeeTdrbyVw" name="DeceasedObservationStatusCodeP" constrainedElement="_f4E9yeZkEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VGaOgbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VGdR0LTREeWEoeeTdrbyVw" name="DeceasedObservationEffectiveTime" constrainedElement="_f4E9wuZkEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VGdR0bTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>not self.effectiveTime.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VGg8MLTREeWEoeeTdrbyVw" name="DeceasedObservationValue" constrainedElement="_f4OuwOZkEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VGhjQLTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+value.code = '419099009' and value.codeSystem = '2.16.840.1.113883.6.96')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VGlNoLTREeWEoeeTdrbyVw" name="DeceasedObservationValueP" constrainedElement="_f4OuwOZkEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VGlNobTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_bErjwLTREeWEoeeTdrbyVw" name="DeceasedObservationEntryRelationship">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fZs6sLS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bErjwbTREeWEoeeTdrbyVw">
+        <language>OCL</language>
+        <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::DeceasedObservation::ProblemObservationEntryRelationship))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_lm3boeZbEeGINOJ_SD9_dA">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_f4E9wOZkEeGINOJ_SD9_dA" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_hrO9cOZkEeGINOJ_SD9_dA" value="OBS"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_f4E9yOZkEeGINOJ_SD9_dA" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_o6qYkOZkEeGINOJ_SD9_dA" value="EVN"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_f4E9xeZkEeGINOJ_SD9_dA" name="id" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zsFTweZkEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zsFTwOZkEeGINOJ_SD9_dA" value="*"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_f4E9weZkEeGINOJ_SD9_dA" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_f4E9yeZkEeGINOJ_SD9_dA" name="statusCode" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AD3IweZlEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AD3IwOZlEeGINOJ_SD9_dA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_f4E9wuZkEeGINOJ_SD9_dA" name="effectiveTime" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AcaLoeZlEeGINOJ_SD9_dA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AcaLoOZlEeGINOJ_SD9_dA" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_f4OuwOZkEeGINOJ_SD9_dA" name="value" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X0Wtkeu3EeGU4e2Grhba1w" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X0WtkOu3EeGU4e2Grhba1w" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fZs6sbS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fZrskLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fZs6srS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fZs6s7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_EV7mkUxqEd6h-an5IXo-DA"/>
+      <association href="../consol.uml#_fZs6sLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fZrskLS6EeWcPq3zAthoUQ" name="ProblemObservationEntryRelationship">
+      <ownedRule xmi:id="_bE8CcLTREeWEoeeTdrbyVw" name="DeceasedObservationProblemObservationEntryRelationshipProblemObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fZuI0LS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bE8CcbTREeWEoeeTdrbyVw">
+          <language>OCL</language>
+          <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->size() &lt;= 1</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fZrskbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fZuI0bS6EeWcPq3zAthoUQ" name="problemObservation" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fZuI0rS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fZuI07S6EeWcPq3zAthoUQ" value="1"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fZuI0LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_U5AysuZlEeGINOJ_SD9_dA" memberEnd="_U5Ays-ZlEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_U5Ays-ZlEeGINOJ_SD9_dA" type="_lm3boOZbEeGINOJ_SD9_dA" isReadOnly="true" association="_U5AysuZlEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_qga1cOZkEeGINOJ_SD9_dA" base_Class="_lm3boOZbEeGINOJ_SD9_dA" templateId="2.16.840.1.113883.10.20.22.4.79">
+    <ruleId>CONF:14871, CONF:14872</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_JtkN8OZlEeGINOJ_SD9_dA" base_Constraint="_Dk8p4OZlEeGINOJ_SD9_dA">
+    <ruleId>CONF:14874, R2.1=CONF:1198-14874</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_kbOY0OZkEeGINOJ_SD9_dA" base_Property="_f4E9wOZkEeGINOJ_SD9_dA">
+    <ruleId>CONF:14851, R2.1=CONF:1198-14851</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_oT1CEOZkEeGINOJ_SD9_dA" base_Property="_f4E9yOZkEeGINOJ_SD9_dA">
+    <ruleId>CONF:14852, R2.1=CONF:1198-14852</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_yfngoOZkEeGINOJ_SD9_dA" base_Property="_f4E9xeZkEeGINOJ_SD9_dA">
+    <ruleId>CONF:14873, R2.1=CONF:1198-14873</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2IcogOZkEeGINOJ_SD9_dA" code="ASSERTION" displayName="Assertion" base_Property="_f4E9weZkEeGINOJ_SD9_dA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_5k7WcOZkEeGINOJ_SD9_dA" base_Property="_f4E9weZkEeGINOJ_SD9_dA">
+    <ruleId>CONF:14853</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_72ko8OZkEeGINOJ_SD9_dA" base_Property="_f4E9yeZkEeGINOJ_SD9_dA">
+    <ruleId>CONF:14854, R2.1=CONF:1198-14854</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_8jgncOZkEeGINOJ_SD9_dA" code="completed" displayName="Completed" base_Property="_f4E9yeZkEeGINOJ_SD9_dA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>R2.1=CONF:1198-19095</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_BxzRQOZlEeGINOJ_SD9_dA" base_Property="_f4E9wuZkEeGINOJ_SD9_dA">
+    <ruleId>CONF:14855, R2.1=CONF:1198-14855</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_NtmU4OZlEeGINOJ_SD9_dA" base_Property="_f4OuwOZkEeGINOJ_SD9_dA">
+    <ruleId>CONF:14857, R2.1=CONF:1198-14857</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_OrybcOZlEeGINOJ_SD9_dA" code="419099009" displayName="Dead" base_Property="_f4OuwOZkEeGINOJ_SD9_dA">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15142, R2.1=CONF:1198-15142</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:EntryRelationship xmi:id="_WoJ1EOZlEeGINOJ_SD9_dA" severity="WARNING" base_Association="_U5AysuZlEeGINOJ_SD9_dA">
+    <ruleId>CONF:14868, CONF:14875, CONF:14870</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:Inline xmi:id="_fJxBQrS6EeWcPq3zAthoUQ" base_Class="_fJxBQLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fJ4WALS6EeWcPq3zAthoUQ" base_Class="_fJ3u8LS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fN5TUrS6EeWcPq3zAthoUQ" base_Class="_fN5TULS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fZrskrS6EeWcPq3zAthoUQ" base_Class="_fZrskLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fkPWwrS6EeWcPq3zAthoUQ" base_Class="_fkPWwLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fpfDILS6EeWcPq3zAthoUQ" base_Class="_fpecELS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fuQ1crS6EeWcPq3zAthoUQ" base_Class="_fuQ1cLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fvzGgrS6EeWcPq3zAthoUQ" base_Class="_fvzGgLS6EeWcPq3zAthoUQ"/>
+  <CDA:ConformsTo xmi:id="_TWM1ILTREeWEoeeTdrbyVw" base_Generalization="_px07IBVgEeGQCvUGzi1kDQ"/>
+  <Ecore:EClass xmi:id="_TWODQLTREeWEoeeTdrbyVw" base_Class="_2OfUcxSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionCode VitalSignsSectionCodeP VitalSignsSectionText VitalSignsSectionEntriesOptionalTitle VitalSignsSectionEntry' templateId.root='2.16.840.1.113883.10.20.22.2.4.1' code.code='8716-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Vital Signs' constraints.validation.dependOn.VitalSignsSectionCode='VitalSignsSectionCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_TWcFsLTREeWEoeeTdrbyVw" base_Class="_2OlbCRSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsOrganizerTemplateId VitalSignsOrganizerClassCode VitalSignsOrganizerMoodCode VitalSignsOrganizerId VitalSignsOrganizerCode VitalSignsOrganizerCodeP VitalSignsOrganizerStatusCode VitalSignsOrganizerStatusCodeP VitalSignsOrganizerEffectiveTime' templateId.root='2.16.840.1.113883.10.20.22.4.26' classCode='CLUSTER' moodCode='EVN' code.code='46680005' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Vital signs' statusCode.code='completed' constraints.validation.dependOn.VitalSignsOrganizerStatusCode='VitalSignsOrganizerStatusCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_TWvnsLTREeWEoeeTdrbyVw" base_Class="_2OrhsRSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationTextReferenceValue VitalSignObservationClassCode VitalSignObservationMoodCode VitalSignObservationId VitalSignObservationCodeP VitalSignObservationStatusCode VitalSignObservationStatusCodeP VitalSignObservationEffectiveTime VitalSignObservationValue' templateId.root='2.16.840.1.113883.10.20.22.4.27' constraints.validation.warning='VitalSignObservationTextReference VitalSignObservationReferenceValue VitalSignObservationCode VitalSignObservationText' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.VitalSignObservationCode='VitalSignObservationCodeP' statusCode.code='completed' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode VitalSignObservationAuthor'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_TmFrQLTREeWEoeeTdrbyVw" base_Class="_bRH8sBVeEeGQCvUGzi1kDQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionEntriesOptionalCodeP VitalSignsSectionEntriesOptionalTitle VitalSignsSectionEntriesOptionalText VitalSignsSectionEntriesOptionalEntry' templateId.root='2.16.840.1.113883.10.20.22.2.4' code.code='8716-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Vital Signs'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_VF_-0LTREeWEoeeTdrbyVw" base_Class="_lm3boOZbEeGINOJ_SD9_dA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DeceasedObservationTemplateId DeceasedObservationEffectiveTimeLow DeceasedObservationClassCode DeceasedObservationMoodCode DeceasedObservationId DeceasedObservationCode DeceasedObservationCodeP DeceasedObservationStatusCode DeceasedObservationStatusCodeP DeceasedObservationEffectiveTime DeceasedObservationValue DeceasedObservationValueP DeceasedObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.79' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.DeceasedObservationCode='DeceasedObservationCodeP' statusCode.code='completed' value.code='419099009' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' value.displayName='Dead'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_WT6jcLTREeWEoeeTdrbyVw" base_Class="_4iF6IL86EeOS5KuvmCHHew">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DeceasedObservationTemplateId DeceasedObservationCode DeceasedObservationCodeP DeceasedObservation2EntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.79' templateId.extension='2015-08-01' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.DeceasedObservationCode='DeceasedObservationCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_W-1vwLTREeWEoeeTdrbyVw" base_Class="__zeTcPM3EeOUvapeh9bVvQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignObservationTemplateId VitalSignObservationEffectiveTime VitalSignObservationValue VitalSignObservationText VitalSignObservationInterpretationCode' templateId.root='2.16.840.1.113883.10.20.22.4.27' templateId.extension='2014-06-09' constraints.validation.info='VitalSignObservationTextReference VitalSignObservationReferenceValue VitalSignObservationTextReferenceValue VitalSignObservationInterpretationCodeP' interpretationCode.codeSystem='2.16.840.1.113883.5.83' interpretationCode.codeSystemName='ObservationInterpretation' constraints.validation.dependOn.VitalSignObservationInterpretationCode='VitalSignObservationInterpretationCodeP' constraints.validation.warning='VitalSignObservation2AuthorParticipation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_W_ZJYLTREeWEoeeTdrbyVw" base_Class="_vvXhMPM4EeOUvapeh9bVvQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation unit='1' constraints.validation.error='VitalSignObservation2PQUnit'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_W_vHoLTREeWEoeeTdrbyVw" base_Class="_dDupoPV2EeONioZkBKP8eQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsOrganizerTemplateId VitalSignsOrganizerCode VitalSignsOrganizerCodeP VitalSignsOrganizerEffectiveTime' templateId.root='2.16.840.1.113883.10.20.22.4.26' templateId.extension='2015-08-01' code.code='46680005' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Vital Signs' constraints.validation.dependOn.VitalSignsOrganizerCode='VitalSignsOrganizerCodeP' constraints.validation.warning='VitalSignsOrganizer2AuthorParticipation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_W_6GwLTREeWEoeeTdrbyVw" base_Class="_QqaecE9yEeWsIc5CMrI4GA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation translation.code='74728-7' translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' translation.displayName='Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1' constraints.validation.error='VitalSignsOrganizer2CDTranslation VitalSignsOrganizer2CDTranslationP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_XHyQYLTREeWEoeeTdrbyVw" base_Class="_8LkzYAFTEeSmasYc71ZgMQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionEntriesOptionalCodeP VitalSignsSectionEntriesOptional2Entry' templateId.root='2.16.840.1.113883.10.20.22.2.4' templateId.extension='2015-08-01' code.code='8716-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Vital Signs' constraints.validation.dependOn.VitalSignsSectionEntriesOptionalCode='VitalSignsSectionEntriesOptionalCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_XKeYALTREeWEoeeTdrbyVw" base_Class="_D3010ALzEeSM0Jd2D1FgKw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionEntriesOptionalCodeP VitalSignsSectionEntriesOptionalTitle VitalSignsSectionEntriesOptionalText VitalSignsSection2Entry' templateId.root='2.16.840.1.113883.10.20.22.2.4.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='VitalSignsSection2NullFlavor' code.code='8716-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Vital Signs' constraints.validation.dependOn.VitalSignsSectionEntriesOptionalCode='VitalSignsSectionEntriesOptionalCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ZLso4LTREeWEoeeTdrbyVw" base_Class="_fJxBQLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsSectionVitalSignsOrganizerEntryVitalSignsOrganizer'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ZL9uoLTREeWEoeeTdrbyVw" base_Class="_fJ3u8LS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsOrganizerVitalSignObservationEntryRelationshipVitalSignObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_Zm264LTREeWEoeeTdrbyVw" base_Class="_fN5TULS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='VitalSignsSectionEntriesOptionalVitalSignsOrganizerEntryVitalSignsOrganizer'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_bFL6ELTREeWEoeeTdrbyVw" base_Class="_fZrskLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='DeceasedObservationProblemObservationEntryRelationshipProblemObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_cqPMULTREeWEoeeTdrbyVw" base_Class="_fkPWwLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='DeceasedObservation2ProblemObservation2EntryRelationshipProblemObservation2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_dZZ_cLTREeWEoeeTdrbyVw" base_Class="_fpecELS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsOrganizer2VitalSignObservation2EntryRelationshipVitalSignObservation2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_d5ChwLTREeWEoeeTdrbyVw" base_Class="_fuQ1cLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='VitalSignsSectionEntriesOptional2VitalSignsOrganizer2EntryVitalSignsOrganizer2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_eDKHELTREeWEoeeTdrbyVw" base_Class="_fvzGgLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsSection2VitalSignsOrganizer2EntryVitalSignsOrganizer2'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>
