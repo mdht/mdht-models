@@ -501,6 +501,8 @@
       <ownedLiteral xmi:id="_m61JkRMsEeK4go_VqYg1Bw" name="37"/>
       <ownedLiteral xmi:id="_m61JkxMsEeK4go_VqYg1Bw" name="121"/>
       <ownedLiteral xmi:id="_rF7WEMmlEeORzvZavFqkkg" name="155"/>
+      <ownedLiteral xmi:id="_yTSB8LY9EeWyGNoqJ3PYyg" name="150"/>
+      <ownedLiteral xmi:id="_0sZOYLY9EeWyGNoqJ3PYyg" name="163"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2O3u6RSVEeGGzu7fmW9pXw" name="HITSP Vital Sign Result Type">
       <ownedLiteral xmi:id="_2O3u8hSVEeGGzu7fmW9pXw" name="9279-1"/>
@@ -2538,4 +2540,6 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetCode xmi:id="_FSrT4GBhEeSANuG0qM3tjw" conceptName="Dander (animal) allergy" base_EnumerationLiteral="_FSqs0GBhEeSANuG0qM3tjw"/>
   <term:ValueSetCode xmi:id="_HncL0GBhEeSANuG0qM3tjw" conceptName="Environmental allergy" base_EnumerationLiteral="_HnbkwGBhEeSANuG0qM3tjw"/>
   <term:ValueSetVersion xmi:id="_oX3U8GBhEeSANuG0qM3tjw" identifier="2.16.840.1.113762.1.4.1010.1" binding="Dynamic" base_Enumeration="_oX2t4GBhEeSANuG0qM3tjw"/>
+  <term:ValueSetCode xmi:id="_yTSpALY9EeWyGNoqJ3PYyg" conceptName="influenza, injectable, quadrivalent, preservative free" base_EnumerationLiteral="_yTSB8LY9EeWyGNoqJ3PYyg"/>
+  <term:ValueSetCode xmi:id="_0sZ1cLY9EeWyGNoqJ3PYyg" conceptName="meningococcal B, OMV" base_EnumerationLiteral="_0sZOYLY9EeWyGNoqJ3PYyg"/>
 </xmi:XMI>
