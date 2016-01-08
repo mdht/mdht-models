@@ -516,6 +516,8 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       <ownedLiteral xmi:id="_m61JkRMsEeK4go_VqYg1Bw" name="37"/>
       <ownedLiteral xmi:id="_m61JkxMsEeK4go_VqYg1Bw" name="121"/>
       <ownedLiteral xmi:id="_NbVZoMmeEeOr5NJDZPPjZA" name="155"/>
+      <ownedLiteral xmi:id="_evhZULY7EeWyGNoqJ3PYyg" name="150"/>
+      <ownedLiteral xmi:id="_uo8wILY7EeWyGNoqJ3PYyg" name="163"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2O3u6RSVEeGGzu7fmW9pXw" name="HITSP Vital Sign Result Type">
       <ownedLiteral xmi:id="_2O3u8hSVEeGGzu7fmW9pXw" name="9279-1"/>
@@ -3711,4 +3713,6 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_xhC6KE9uEeWsIc5CMrI4GA" conceptName="Details of drug misuse behavior" usageNote="SNOMED-CT" base_EnumerationLiteral="_xhC6GE9uEeWsIc5CMrI4GA"/>
   <term:ValueSetCode xmi:id="_xhC6KU9uEeWsIc5CMrI4GA" conceptName="Health-related behavior" usageNote="SNOMED-CT" base_EnumerationLiteral="_xhC6GU9uEeWsIc5CMrI4GA"/>
   <term:ValueSetCode xmi:id="_xhC6Kk9uEeWsIc5CMrI4GA" conceptName="Educational Achievement" base_EnumerationLiteral="_xhC6Gk9uEeWsIc5CMrI4GA"/>
+  <term:ValueSetCode xmi:id="_evwC0LY7EeWyGNoqJ3PYyg" conceptName="influenza, injectable, quadrivalent, preservative free" base_EnumerationLiteral="_evhZULY7EeWyGNoqJ3PYyg"/>
+  <term:ValueSetCode xmi:id="_uo8wIbY7EeWyGNoqJ3PYyg" conceptName="meningococcal B, OMV" base_EnumerationLiteral="_uo8wILY7EeWyGNoqJ3PYyg"/>
 </xmi:XMI>
