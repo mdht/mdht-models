@@ -4,143 +4,143 @@
     <ownedComment xmi:id="_2LRBQRSVEeGGzu7fmW9pXw" annotatedElement="_2LMIwBSVEeGGzu7fmW9pXw">
       <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
     </ownedComment>
-    <ownedRule xmi:id="_TJsDIbTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJsDIrTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V6kyobbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6kyorbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TJxisLTREeWEoeeTdrbyVw" name="AllergiesSectionCodeP" constrainedElement="_2LN98BSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJxisbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V6q5QLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionCodeP" constrainedElement="_2LN98BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6q5QbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TJufYLTREeWEoeeTdrbyVw" name="AllergiesSectionCode" constrainedElement="_2LN98BSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJufYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V6nO4LbPEeWQ25S2Lv5Ssw" name="AllergiesSectionCode" constrainedElement="_2LN98BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6nO4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TJz-8LTREeWEoeeTdrbyVw" name="AllergiesSectionTitle" constrainedElement="_2LPMEBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJz-8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V6tVgLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionTitle" constrainedElement="_2LPMEBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6tVgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TJ10ILTREeWEoeeTdrbyVw" name="AllergiesSectionText" constrainedElement="_2LPzIBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJ10IbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V6vKsLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionText" constrainedElement="_2LPzIBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6vKsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Y7lwULTREeWEoeeTdrbyVw" name="AllergiesSectionEntry">
+    <ownedRule xmi:id="_cirvELbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fG5TcLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y7lwUbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cirvEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::AllergiesSection::AllergyProblemActEntry))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_iJb_8LTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iJcnALTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_qRCVcLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qRC8gLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2C42oLTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2C5dsLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_44BM8LbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_44CbELbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_4_PTALTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_4_P6ELTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_621qELbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_6224MLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WDYXoLTSEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WDY-sLTSEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Sp-IELbQEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Sp-vILbQEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_6N7eQLTSEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_6N8FULTSEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Kq48MLbREeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Kq6KULbREeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_xkjYMLTTEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_xkj_QLTTEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WR6NMLbSEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WR7bULbSEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_FxE74LTUEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_FxGKALTUEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_26zK8LbSEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_260ZELbSEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_3KkJALTUEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3KlXILTUEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_lG-ukLbTEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lG_8sLbTEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_jC8eALTVEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jC9FELTVEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Oy-rkLbUEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Oy_SoLbUEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_yqjsELTVEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_yqkTILTVEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_efkgQLbUEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_efluYLbUEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_IMwCMLTWEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMwpQLTWEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_t9cjgLbUEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_t9dKkLbUEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_tZ5OQLTWEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_tZ51ULTWEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Ve9P0LbeEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Ve9P0bbeEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_-Oyc4LTYEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_-OzD8LTYEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_W6XzALbgEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6YaELbgEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UxBzYLTcEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UxCacLTcEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_izRMQLbjEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_izSaYLbjEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_nTisULTcEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_nTjTYLTcEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_yKQkYLbjEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_yKQkYbbjEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Lqaa4LThEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_LqbpALThEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_RH4LwLbnEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_RH4y0LbnEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_EFaJoLTnEeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_EFawsLTnEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_gG4k4LbrEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_2LMIwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gG5L8LbrEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')</body>
       </specification>
@@ -168,9 +168,9 @@ value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_fG5TcLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fG4sYLS6EeWcPq3zAthoUQ" name="AllergyProblemActEntry">
-      <ownedRule xmi:id="_Y71n8LTREeWEoeeTdrbyVw" name="AllergiesSectionAllergyProblemActEntryAllergyProblemAct">
+      <ownedRule xmi:id="_cjCUYLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionAllergyProblemActEntryAllergyProblemAct">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fG7vsLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y71n8bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cjCUYbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyProblemAct))</body>
         </specification>
@@ -211,41 +211,41 @@ value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
     <ownedComment xmi:id="_bGzYgRVdEeGQCvUGzi1kDQ" annotatedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
       <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
     </ownedComment>
-    <ownedRule xmi:id="_TkqH4LTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TkqH4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WY5tYLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_bGzYgBVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WY5tYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TkskILTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalCode" constrainedElement="_bGzYihVdEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TkskIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WY8JoLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalCode" constrainedElement="_bGzYihVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WY8JobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TkvAYLTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalCodeP" constrainedElement="_bGzYihVdEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TkvAYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WY-l4LbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalCodeP" constrainedElement="_bGzYihVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WY-l4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TkyDsLTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTitle" constrainedElement="_bGzYixVdEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TkyDsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WZBCILbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTitle" constrainedElement="_bGzYixVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZBCIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Tkz44LTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalText" constrainedElement="_bGzYjBVdEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Tkz44bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WZC3ULbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalText" constrainedElement="_bGzYjBVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZC3UbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ZhEb8LTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalEntry">
+    <ownedRule xmi:id="_dc4GcbbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalEntry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fNKTgLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZhEb8bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dc4Gc7bPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::AllergiesSectionEntriesOptional::AllergyProblemActEntry))</body>
       </specification>
@@ -271,9 +271,9 @@ value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_fNKTgLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fNJFYLS6EeWcPq3zAthoUQ" name="AllergyProblemActEntry">
-      <ownedRule xmi:id="_ZhTFcLTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalAllergyProblemActEntryAllergyProblemAct">
+      <ownedRule xmi:id="_ddiNwLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalAllergyProblemActEntryAllergyProblemAct">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fNLhoLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZhTFcbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ddiNwbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.act->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyProblemAct))->size() >= 0</body>
         </specification>
@@ -356,101 +356,101 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6ODwLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationTemplateId" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6ODwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Vk2aQbbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationTemplateId" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vk2aQrbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.7')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6VYgLTREeWEoeeTdrbyVw" name="AllergyObservationClassCode" constrainedElement="_2Em_oBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6VYgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Vk_kMLbPEeWQ25S2Lv5Ssw" name="AllergyObservationClassCode" constrainedElement="_2Em_oBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vk_kMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6XNsLTREeWEoeeTdrbyVw" name="AllergyObservationMoodCode" constrainedElement="_2Em_ohSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6XNsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VlCAcLbPEeWQ25S2Lv5Ssw" name="AllergyObservationMoodCode" constrainedElement="_2Em_ohSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VlCAcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6Yb0LTREeWEoeeTdrbyVw" name="AllergyObservationId" constrainedElement="_2EnmsBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6Yb0bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VlDOkLbPEeWQ25S2Lv5Ssw" name="AllergyObservationId" constrainedElement="_2EnmsBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VlDOkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6d7YLTREeWEoeeTdrbyVw" name="AllergyObservationCodeP" constrainedElement="_2EaLdBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6d7YbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VlJ8QLbPEeWQ25S2Lv5Ssw" name="AllergyObservationCodeP" constrainedElement="_2EaLdBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VlJ8QbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6a4ELTREeWEoeeTdrbyVw" name="AllergyObservationCode" constrainedElement="_2EaLdBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6a4EbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VlGR4LbPEeWQ25S2Lv5Ssw" name="AllergyObservationCode" constrainedElement="_2EaLdBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VlG48LbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6ja8LTREeWEoeeTdrbyVw" name="AllergyObservationStatusCodeP" constrainedElement="_2EoNwxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6ja8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VlQC4LbPEeWQ25S2Lv5Ssw" name="AllergyObservationStatusCodeP" constrainedElement="_2EoNwxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VlQC4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6g-sLTREeWEoeeTdrbyVw" name="AllergyObservationStatusCode" constrainedElement="_2EoNwxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6g-sbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VlNmoLbPEeWQ25S2Lv5Ssw" name="AllergyObservationStatusCode" constrainedElement="_2EoNwxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VlNmobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'completed'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6lQILTREeWEoeeTdrbyVw" name="AllergyObservationEffectiveTime" constrainedElement="_2Epb4BSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6lQIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VlSfILbPEeWQ25S2Lv5Ssw" name="AllergyObservationEffectiveTime" constrainedElement="_2Epb4BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VlSfIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.effectiveTime.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6xdYLTREeWEoeeTdrbyVw" name="AllergyObservationValueP" constrainedElement="_2EaLdhSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6xdYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VlkzALbPEeWQ25S2Lv5Ssw" name="AllergyObservationValueP" constrainedElement="_2EaLdhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VlkzAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6nsYLTREeWEoeeTdrbyVw" name="AllergyObservationValue" constrainedElement="_2EaLdhSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6nsYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VlVicLbPEeWQ25S2Lv5Ssw" name="AllergyObservationValue" constrainedElement="_2EaLdhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VlVicbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or value.code = '418038007' or value.code = '419511003' or value.code = '418471000' or value.code = '419199007' or value.code = '416098002' or value.code = '414285001' or value.code = '59037007' or value.code = '235719002' or value.code = '232347008' or value.code = '426232007'))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_T1TL8LTREeWEoeeTdrbyVw" name="AllergyObservationParticipant" constrainedElement="_FQD_EjJDEeG6R8Pb5FT2Ow">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_T1TL8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WsSjcLbPEeWQ25S2Lv5Ssw" name="AllergyObservationParticipant" constrainedElement="_FQD_EjJDEeG6R8Pb5FT2Ow">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WsSjcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->size() &lt;= 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Yf1BYLTREeWEoeeTdrbyVw" name="AllergyObservationEntryRelationship">
+    <ownedRule xmi:id="_bysckLbPEeWQ25S2Lv5Ssw" name="AllergyObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fCtXALS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yf1BYbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bysckbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::AllergyObservation::AllergyStatusObservationEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_YgVXsLTREeWEoeeTdrbyVw" name="AllergyObservationEntryRelationship">
+    <ownedRule xmi:id="_bzd4obbPEeWQ25S2Lv5Ssw" name="AllergyObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fCzdoLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YgVXsbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bzd4orbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::AllergyObservation::ReactionObservationEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Yg28ILTREeWEoeeTdrbyVw" name="AllergyObservationEntryRelationship">
+    <ownedRule xmi:id="_b0nvMLbPEeWQ25S2Lv5Ssw" name="AllergyObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fC49MLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yg28IbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b0nvMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::AllergyObservation::SeverityObservationEntryRelationship))</body>
       </specification>
@@ -515,14 +515,14 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or val
       <ownedComment xmi:id="_UJ7XoM-GEeG0zqUqBXbhpA">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_S6-RsLTREeWEoeeTdrbyVw" name="AllergyObservationParticipantTypeCodeP" constrainedElement="_098tYDJAEeG6R8Pb5FT2Ow">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6-RsbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_Vl0DkLbPEeWQ25S2Lv5Ssw" name="AllergyObservationParticipantTypeCodeP" constrainedElement="_098tYDJAEeG6R8Pb5FT2Ow">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vl0DkbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>true</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_S67OYLTREeWEoeeTdrbyVw" name="AllergyObservationParticipantTypeCode" constrainedElement="_098tYDJAEeG6R8Pb5FT2Ow">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S671cLTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_VlyOYLbPEeWQ25S2Lv5Ssw" name="AllergyObservationParticipantTypeCode" constrainedElement="_098tYDJAEeG6R8Pb5FT2Ow">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_VlyOYbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>not self.typeCode.oclIsUndefined() and self.typeCode.oclIsKindOf(vocab::ParticipationType) and 
 let value : vocab::ParticipationType = self.typeCode.oclAsType(vocab::ParticipationType) in 
@@ -682,9 +682,9 @@ value = vocab::RoleClassRoot::MANU</body>
       </nestedClassifier>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fCsI4LS6EeWcPq3zAthoUQ" name="AllergyStatusObservationEntryRelationship">
-      <ownedRule xmi:id="_YgER8LTREeWEoeeTdrbyVw" name="AllergyObservationAllergyStatusObservationEntryRelationshipAllergyStatusObservation">
+      <ownedRule xmi:id="_bzEQALbPEeWQ25S2Lv5Ssw" name="AllergyObservationAllergyStatusObservationEntryRelationshipAllergyStatusObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fCvMMLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YgER8bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bzEQAbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->size() &lt;= 1</body>
         </specification>
@@ -700,9 +700,9 @@ value = vocab::RoleClassRoot::MANU</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fCyPgLS6EeWcPq3zAthoUQ" name="ReactionObservationEntryRelationship">
-      <ownedRule xmi:id="_Ygl2YLTREeWEoeeTdrbyVw" name="AllergyObservationReactionObservationEntryRelationshipReactionObservation">
+      <ownedRule xmi:id="_bz26MLbPEeWQ25S2Lv5Ssw" name="AllergyObservationReactionObservationEntryRelationshipReactionObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fC1S0LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Ygl2YbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bz26MbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation))->size() >= 0</body>
         </specification>
@@ -718,9 +718,9 @@ value = vocab::RoleClassRoot::MANU</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fC3vELS6EeWcPq3zAthoUQ" name="SeverityObservationEntryRelationship">
-      <ownedRule xmi:id="_YhGMsLTREeWEoeeTdrbyVw" name="AllergyObservationSeverityObservationEntryRelationshipSeverityObservation">
+      <ownedRule xmi:id="_b1Cl8bbPEeWQ25S2Lv5Ssw" name="AllergyObservationSeverityObservationEntryRelationshipSeverityObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fC6yYLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YhGMsbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_b1Cl8rbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->size() &lt;= 1</body>
         </specification>
@@ -837,59 +837,59 @@ value = vocab::RoleClassRoot::MANU</body>
         <body>(self.statusCode.code = 'completed') implies not self.effectiveTime.high.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S5tGYLTREeWEoeeTdrbyVw" name="AllergyProblemActTemplateId" constrainedElement="_2EAisBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5tGYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VkAFsLbPEeWQ25S2Lv5Ssw" name="AllergyProblemActTemplateId" constrainedElement="_2EAisBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VkAFsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.30')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S5wJsLTREeWEoeeTdrbyVw" name="AllergyProblemActClassCode" constrainedElement="_2ELh0RSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5wJsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VkEXILbPEeWQ25S2Lv5Ssw" name="AllergyProblemActClassCode" constrainedElement="_2ELh0RSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VkEXIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S5x-4LTREeWEoeeTdrbyVw" name="AllergyProblemActMoodCode" constrainedElement="_2EMI4BSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5x-4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VkGMULbPEeWQ25S2Lv5Ssw" name="AllergyProblemActMoodCode" constrainedElement="_2EMI4BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VkGMUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S5zNALTREeWEoeeTdrbyVw" name="AllergyProblemActId" constrainedElement="_2EMv8BSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5zNAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VkHacLbPEeWQ25S2Lv5Ssw" name="AllergyProblemActId" constrainedElement="_2EMv8BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VkHacbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S50bILTREeWEoeeTdrbyVw" name="AllergyProblemActCode" constrainedElement="_2EMv9BSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S50bIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VkJPoLbPEeWQ25S2Lv5Ssw" name="AllergyProblemActCode" constrainedElement="_2EMv9BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VkJPobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S5_aQLTREeWEoeeTdrbyVw" name="AllergyProblemActStatusCodeP" constrainedElement="_2ENXABSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5_aQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VkjfULbPEeWQ25S2Lv5Ssw" name="AllergyProblemActStatusCodeP" constrainedElement="_2ENXABSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VkjfUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S523YLTREeWEoeeTdrbyVw" name="AllergyProblemActStatusCode" constrainedElement="_2ENXABSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S523YbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VkNhELbPEeWQ25S2Lv5Ssw" name="AllergyProblemActStatusCode" constrainedElement="_2ENXABSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VkNhEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'active' or value.code = 'suspended' or value.code = 'aborted' or value.code = 'completed'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S6JLQLTREeWEoeeTdrbyVw" name="AllergyProblemActEffectiveTime" constrainedElement="_2EPMMBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6JLQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VkwToLbPEeWQ25S2Lv5Ssw" name="AllergyProblemActEffectiveTime" constrainedElement="_2EPMMBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VkwTobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.effectiveTime.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_YfVSILTREeWEoeeTdrbyVw" name="AllergyProblemActEntryRelationship">
+    <ownedRule xmi:id="_bx1g8LbPEeWQ25S2Lv5Ssw" name="AllergyProblemActEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fCjmALS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YfVSIbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bx1g8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::AllergyProblemAct::AllergyObservationEntryRelationship))</body>
       </specification>
@@ -963,14 +963,14 @@ historical purposes.&#xD;
           <body>(code = 'CONC' and codeSystem = '2.16.840.1.113883.5.6') or (code = '48765-2' and codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_S6LAcbTREeWEoeeTdrbyVw" name="AllergyProblemActCDCode" constrainedElement="_nl9D4MTyEeOYw6YTCsSKiw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6LngLTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_VkzW8LbPEeWQ25S2Lv5Ssw" name="AllergyProblemActCDCode" constrainedElement="_nl9D4MTyEeOYw6YTCsSKiw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_VkzW8bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (not self.code.oclIsUndefined() ))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_S6MOkLTREeWEoeeTdrbyVw" name="AllergyProblemActCDCodeSystem" constrainedElement="_nl9q8MTyEeOYw6YTCsSKiw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6MOkbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_Vk0lELbPEeWQ25S2Lv5Ssw" name="AllergyProblemActCDCodeSystem" constrainedElement="_nl9q8MTyEeOYw6YTCsSKiw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vk0lEbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (not self.codeSystem.oclIsUndefined() ))</body>
         </specification>
@@ -992,9 +992,9 @@ historical purposes.&#xD;
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fCf7oLS6EeWcPq3zAthoUQ" name="AllergyObservationEntryRelationship">
-      <ownedRule xmi:id="_YfkisLTREeWEoeeTdrbyVw" name="AllergyProblemActAllergyObservationEntryRelationshipAllergyObservation">
+      <ownedRule xmi:id="_byQ-wLbPEeWQ25S2Lv5Ssw" name="AllergyProblemActAllergyObservationEntryRelationshipAllergyObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fCnQYLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YfkisbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_byQ-wbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyObservation))</body>
         </specification>
@@ -1092,68 +1092,68 @@ historical purposes.&#xD;
         <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9ZTkLTREeWEoeeTdrbyVw" name="SeverityObservationTemplateId" constrainedElement="_2FGu4hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9ZTkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VolDsLbPEeWQ25S2Lv5Ssw" name="SeverityObservationTemplateId" constrainedElement="_2FGu4hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VolDsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.8')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9c98LTREeWEoeeTdrbyVw" name="SeverityObservationClassCode" constrainedElement="_2FKZQRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9c98bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VopVILbPEeWQ25S2Lv5Ssw" name="SeverityObservationClassCode" constrainedElement="_2FKZQRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VopVIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9ezILTREeWEoeeTdrbyVw" name="SeverityObservationMoodCode" constrainedElement="_2FLAUBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9ezIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VoqjQLbPEeWQ25S2Lv5Ssw" name="SeverityObservationMoodCode" constrainedElement="_2FLAUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VorKULbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9idgLTREeWEoeeTdrbyVw" name="SeverityObservationCodeP" constrainedElement="_2FLAUxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9idgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Vou0sLbPEeWQ25S2Lv5Ssw" name="SeverityObservationCodeP" constrainedElement="_2FLAUxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vou0sbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9goULTREeWEoeeTdrbyVw" name="SeverityObservationCode" constrainedElement="_2FLAUxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9goUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Vos_gLbPEeWQ25S2Lv5Ssw" name="SeverityObservationCode" constrainedElement="_2FLAUxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vos_gbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = 'SEV' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9k5wLTREeWEoeeTdrbyVw" name="SeverityObservationText" constrainedElement="_2FGu5xSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9k5wbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VoxQ8LbPEeWQ25S2Lv5Ssw" name="SeverityObservationText" constrainedElement="_2FGu5xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoxQ8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9pyQLTREeWEoeeTdrbyVw" name="SeverityObservationStatusCodeP" constrainedElement="_2FM1gBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9pyQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Vo1iYLbPEeWQ25S2Lv5Ssw" name="SeverityObservationStatusCodeP" constrainedElement="_2FM1gBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vo1iYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9nWALTREeWEoeeTdrbyVw" name="SeverityObservationStatusCode" constrainedElement="_2FM1gBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9nWAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VozGILbPEeWQ25S2Lv5Ssw" name="SeverityObservationStatusCode" constrainedElement="_2FM1gBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VozGIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'completed'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9tcoLTREeWEoeeTdrbyVw" name="SeverityObservationValue" constrainedElement="_2FGu6hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9tcobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Vo5MwLbPEeWQ25S2Lv5Ssw" name="SeverityObservationValue" constrainedElement="_2FGu6hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vo5MwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '255604002' or value.code = '371923003' or value.code = '6736007' or value.code = '371924009' or value.code = '24484000' or value.code = '399166001'))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S91_gLTREeWEoeeTdrbyVw" name="SeverityObservationValueP" constrainedElement="_2FGu6hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S91_gbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VpEy8LbPEeWQ25S2Lv5Ssw" name="SeverityObservationValueP" constrainedElement="_2FGu6hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpEy8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))</body>
       </specification>
@@ -1278,93 +1278,93 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '255604002' or val
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.substanceAdministration.oclIsTypeOf(consol::MedicationActivity))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S8swALTREeWEoeeTdrbyVw" name="ReactionObservationTemplateId" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S8swAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VnxLYLbPEeWQ25S2Lv5Ssw" name="ReactionObservationTemplateId" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VnxycLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.9')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S81S4LTREeWEoeeTdrbyVw" name="ReactionObservationClassCode" constrainedElement="_2FAoQBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S81S4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Vn6VULbPEeWQ25S2Lv5Ssw" name="ReactionObservationClassCode" constrainedElement="_2FAoQBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vn6VUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S83IELTREeWEoeeTdrbyVw" name="ReactionObservationMoodCode" constrainedElement="_2FAoQhSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S83IEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Vn7jcLbPEeWQ25S2Lv5Ssw" name="ReactionObservationMoodCode" constrainedElement="_2FAoQhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vn8KgLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S84WMLTREeWEoeeTdrbyVw" name="ReactionObservationId" constrainedElement="_2FBPUBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S84WMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Vn9YoLbPEeWQ25S2Lv5Ssw" name="ReactionObservationId" constrainedElement="_2FBPUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vn9YobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.id->size() = 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S86LYLTREeWEoeeTdrbyVw" name="ReactionObservationCode" constrainedElement="_2FBPVRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S86LYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Vn_N0LbPEeWQ25S2Lv5Ssw" name="ReactionObservationCode" constrainedElement="_2FBPVRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vn_N0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S87ZgLTREeWEoeeTdrbyVw" name="ReactionObservationText" constrainedElement="_2FDEgBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S87ZgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VoBqELbPEeWQ25S2Lv5Ssw" name="ReactionObservationText" constrainedElement="_2FDEgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoBqEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9ASALTREeWEoeeTdrbyVw" name="ReactionObservationStatusCodeP" constrainedElement="_2FDrkRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9ASAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VoF7gLbPEeWQ25S2Lv5Ssw" name="ReactionObservationStatusCodeP" constrainedElement="_2FDrkRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoF7gbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S891wLTREeWEoeeTdrbyVw" name="ReactionObservationStatusCode" constrainedElement="_2FDrkRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S891wbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VoDfQLbPEeWQ25S2Lv5Ssw" name="ReactionObservationStatusCode" constrainedElement="_2FDrkRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoEGULbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'completed'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9CuQLTREeWEoeeTdrbyVw" name="ReactionObservationEffectiveTime" constrainedElement="_2FE5sBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9CuQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VoIXwLbPEeWQ25S2Lv5Ssw" name="ReactionObservationEffectiveTime" constrainedElement="_2FE5sBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoIXwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9FxkLTREeWEoeeTdrbyVw" name="ReactionObservationValue" constrainedElement="_2FFgwRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9FxkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VoMpMLbPEeWQ25S2Lv5Ssw" name="ReactionObservationValue" constrainedElement="_2FFgwRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoMpMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S9PikLTREeWEoeeTdrbyVw" name="ReactionObservationValueP" constrainedElement="_2FFgwRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9PikbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VoY2cLbPEeWQ25S2Lv5Ssw" name="ReactionObservationValueP" constrainedElement="_2FFgwRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoY2cbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_YhYgkLTREeWEoeeTdrbyVw" name="ReactionObservationEntryRelationship">
+    <ownedRule xmi:id="_b1kxcLbPEeWQ25S2Lv5Ssw" name="ReactionObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fDBgELS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YhYgkbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b1kxcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ReactionObservation::SeverityObservationEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Yh6FALTREeWEoeeTdrbyVw" name="ReactionObservationEntryRelationship">
+    <ownedRule xmi:id="_b2msMLbPEeWQ25S2Lv5Ssw" name="ReactionObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fDGYkLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yh6FAbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b2msMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ReactionObservation::ProcedureActivityProcedureEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_YiabULTREeWEoeeTdrbyVw" name="ReactionObservationEntryRelationship">
+    <ownedRule xmi:id="_b35FoLbPEeWQ25S2Lv5Ssw" name="ReactionObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fDL4ILS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YiabUbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b35FobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ReactionObservation::MedicationActivityEntryRelationship))</body>
       </specification>
@@ -1426,9 +1426,9 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       <association href="../consol.uml#_fDL4ILS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fDAR8LS6EeWcPq3zAthoUQ" name="SeverityObservationEntryRelationship">
-      <ownedRule xmi:id="_YhoYMLTREeWEoeeTdrbyVw" name="ReactionObservationSeverityObservationEntryRelationshipSeverityObservation">
+      <ownedRule xmi:id="_b2APQLbPEeWQ25S2Lv5Ssw" name="ReactionObservationSeverityObservationEntryRelationshipSeverityObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fDDVQLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YhoYMbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_b2APQbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->size() &lt;= 1</body>
         </specification>
@@ -1444,9 +1444,9 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fDFKcLS6EeWcPq3zAthoUQ" name="ProcedureActivityProcedureEntryRelationship">
-      <ownedRule xmi:id="_YiJ8oLTREeWEoeeTdrbyVw" name="ReactionObservationProcedureActivityProcedureEntryRelationshipProcedureActivityProcedure">
+      <ownedRule xmi:id="_b3RakLbPEeWQ25S2Lv5Ssw" name="ReactionObservationProcedureActivityProcedureEntryRelationshipProcedureActivityProcedure">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fDINwLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YiJ8obTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_b3RakbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.procedure->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure))->size() >= 0</body>
         </specification>
@@ -1463,9 +1463,9 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fDKC8LS6EeWcPq3zAthoUQ" name="MedicationActivityEntryRelationship">
-      <ownedRule xmi:id="_YixnsLTREeWEoeeTdrbyVw" name="ReactionObservationMedicationActivityEntryRelationshipMedicationActivity">
+      <ownedRule xmi:id="_b4XmwLbPEeWQ25S2Lv5Ssw" name="ReactionObservationMedicationActivityEntryRelationshipMedicationActivity">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fDOUYLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YixnsbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_b4XmwbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.substanceAdministration->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->size() >= 0</body>
         </specification>
@@ -1555,60 +1555,60 @@ This template represents the status of the allergy indicating whether it is acti
 THIS TEMPLATE HAS BEEN DEPRECATED AND MAY BE DELETED FROM A FUTURE RELEASE OF THIS IMPLEMENTATION GUIDE. USE OF THIS TEMPLATE IS NOT RECOMMENDED.&#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_S9_wgLTREeWEoeeTdrbyVw" name="AllergyStatusObservationTemplateId" constrainedElement="_2FRuAhSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S9_wgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VpRnQLbPEeWQ25S2Lv5Ssw" name="AllergyStatusObservationTemplateId" constrainedElement="_2FRuAhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpSOULbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.28')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S-BlsLTREeWEoeeTdrbyVw" name="AllergyStatusObservationClassCode" constrainedElement="_2FV_cBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S-BlsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VpUDgLbPEeWQ25S2Lv5Ssw" name="AllergyStatusObservationClassCode" constrainedElement="_2FV_cBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpUDgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S-Da4LTREeWEoeeTdrbyVw" name="AllergyStatusObservationMoodCode" constrainedElement="_2FV_cxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S-Da4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VpV4sLbPEeWQ25S2Lv5Ssw" name="AllergyStatusObservationMoodCode" constrainedElement="_2FV_cxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpV4sbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S-ITYLTREeWEoeeTdrbyVw" name="AllergyStatusObservationCodeP" constrainedElement="_2FWmgBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S-ITYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VpaxMLbPEeWQ25S2Lv5Ssw" name="AllergyStatusObservationCodeP" constrainedElement="_2FWmgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpaxMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S-FQELTREeWEoeeTdrbyVw" name="AllergyStatusObservationCode" constrainedElement="_2FWmgBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S-FQEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VpXt4LbPEeWQ25S2Lv5Ssw" name="AllergyStatusObservationCode" constrainedElement="_2FWmgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpXt4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = '33999-4' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S-NL4LTREeWEoeeTdrbyVw" name="AllergyStatusObservationStatusCodeP" constrainedElement="_2FX0oBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S-NL4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Vpg30LbPEeWQ25S2Lv5Ssw" name="AllergyStatusObservationStatusCodeP" constrainedElement="_2FX0oBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vpg30bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S-KvoLTREeWEoeeTdrbyVw" name="AllergyStatusObservationStatusCode" constrainedElement="_2FX0oBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S-KvobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VpebkLbPEeWQ25S2Lv5Ssw" name="AllergyStatusObservationStatusCode" constrainedElement="_2FX0oBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpebkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'completed'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S-YyELTREeWEoeeTdrbyVw" name="AllergyStatusObservationValueP" constrainedElement="_2FRuChSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S-YyEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VpvhULbPEeWQ25S2Lv5Ssw" name="AllergyStatusObservationValueP" constrainedElement="_2FRuChSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpvhUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_S-QPMLTREeWEoeeTdrbyVw" name="AllergyStatusObservationValue" constrainedElement="_2FRuChSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S-QPMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Vpj7ILbPEeWQ25S2Lv5Ssw" name="AllergyStatusObservationValue" constrainedElement="_2FRuChSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vpj7IbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
@@ -1845,27 +1845,27 @@ The statusCode of the Allergy Concern Act is the definitive indication of the st
 The effectiveTime/low of the Allergy Concern Act asserts when the concern became active. This equates to the time the concern was authored in the patient's chart. The effectiveTime/high asserts when the concern was completed (e.g., when the clinician deemed there is no longer any need to track the underlying condition).&#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_WQxv4LTREeWEoeeTdrbyVw" name="AllergyProblemActTemplateId" constrainedElement="_uCiIYLNwEeOtlapy2HWYww">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WQxv4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y4TvELbPEeWQ25S2Lv5Ssw" name="AllergyProblemActTemplateId" constrainedElement="_uCiIYLNwEeOtlapy2HWYww">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y4TvEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.30' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WQzlELTREeWEoeeTdrbyVw" name="AllergyProblemActCode" constrainedElement="_K0IpwKvuEeS-mulaI3YUlw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WQzlEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y4XZcLbPEeWQ25S2Lv5Ssw" name="AllergyProblemActCode" constrainedElement="_K0IpwKvuEeS-mulaI3YUlw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y4XZcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WQ6SwLTREeWEoeeTdrbyVw" name="AllergyConcernAct2AuthorParticipation" constrainedElement="_lUnZMLN0EeOtlapy2HWYww">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WQ6SwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y4gjYLbPEeWQ25S2Lv5Ssw" name="AllergyConcernAct2AuthorParticipation" constrainedElement="_lUnZMLN0EeOtlapy2HWYww">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y4gjYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_cnBgQLTREeWEoeeTdrbyVw" name="AllergyConcernAct2EntryRelationship">
+    <ownedRule xmi:id="_hmiDcLbPEeWQ25S2Lv5Ssw" name="AllergyConcernAct2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fj2VMLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cnBgQbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_hmiDcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::AllergyConcernAct2::AllergyObservation2EntryRelationship))</body>
       </specification>
@@ -1896,14 +1896,14 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
           <body>(code = 'CONC' and codeSystem = '2.16.840.1.113883.5.6') or (code = '48765-2' and codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WQ3PcLTREeWEoeeTdrbyVw" name="AllergyProblemActCDCode" constrainedElement="_MnGcMKvuEeS-mulaI3YUlw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WQ3PcbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_Y4bq4LbPEeWQ25S2Lv5Ssw" name="AllergyProblemActCDCode" constrainedElement="_MnGcMKvuEeS-mulaI3YUlw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y4bq4bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (not self.code.oclIsUndefined() ))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WQ5EoLTREeWEoeeTdrbyVw" name="AllergyProblemActCDCodeSystem" constrainedElement="_MnHqUKvuEeS-mulaI3YUlw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WQ5EobTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_Y4eHILbPEeWQ25S2Lv5Ssw" name="AllergyProblemActCDCodeSystem" constrainedElement="_MnHqUKvuEeS-mulaI3YUlw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y4eHIbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (not self.codeSystem.oclIsUndefined() ))</body>
         </specification>
@@ -1921,9 +1921,9 @@ The effectiveTime/low of the Allergy Concern Act asserts when the concern became
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fj1HELS6EeWcPq3zAthoUQ" name="AllergyObservation2EntryRelationship">
-      <ownedRule xmi:id="_cnRX4LTREeWEoeeTdrbyVw" name="AllergyConcernAct2AllergyObservation2EntryRelationshipAllergyObservation2">
+      <ownedRule xmi:id="_hm7FALbPEeWQ25S2Lv5Ssw" name="AllergyConcernAct2AllergyObservation2EntryRelationshipAllergyObservation2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fj3jULS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cnRX4bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_hm7FAbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyObservation2))</body>
         </specification>
@@ -2022,95 +2022,95 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::SeverityObservation2))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WRKxcLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationTemplateId" constrainedElement="_uVJogLj5EeODDJAC5t5vpw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WRLYgLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y5DV8LbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationTemplateId" constrainedElement="_uVJogLj5EeODDJAC5t5vpw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y5D9ALbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.7' and id.extension = '2014-06-09')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WRTUULTREeWEoeeTdrbyVw" name="AllergyObservation2NegationInd" constrainedElement="_Xu9-cLj8EeODDJAC5t5vpw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WRTUUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y5O8ILbPEeWQ25S2Lv5Ssw" name="AllergyObservation2NegationInd" constrainedElement="_Xu9-cLj8EeODDJAC5t5vpw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y5O8IbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>(not self.negationInd.oclIsUndefined()) implies (not self.negationInd.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WRaCALTREeWEoeeTdrbyVw" name="AllergyObservationCodeP" constrainedElement="_PWM_4LkAEeODDJAC5t5vpw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WRaCAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y5Vp0LbPEeWQ25S2Lv5Ssw" name="AllergyObservationCodeP" constrainedElement="_PWM_4LkAEeODDJAC5t5vpw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y5Vp0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WRVwkLTREeWEoeeTdrbyVw" name="AllergyObservationCode" constrainedElement="_PWM_4LkAEeODDJAC5t5vpw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WRVwkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y5SmgLbPEeWQ25S2Lv5Ssw" name="AllergyObservationCode" constrainedElement="_PWM_4LkAEeODDJAC5t5vpw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y5SmgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WRuyILTREeWEoeeTdrbyVw" name="AllergyObservationValueP" constrainedElement="_3bHDQLkAEeODDJAC5t5vpw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WRuyIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y5uEULbPEeWQ25S2Lv5Ssw" name="AllergyObservationValueP" constrainedElement="_3bHDQLkAEeODDJAC5t5vpw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y5uEUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.value->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WRgIoLTREeWEoeeTdrbyVw" name="AllergyObservationValue" constrainedElement="_3bHDQLkAEeODDJAC5t5vpw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WRgIobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y5cXgLbPEeWQ25S2Lv5Ssw" name="AllergyObservationValue" constrainedElement="_3bHDQLkAEeODDJAC5t5vpw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y5cXgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or value.code = '418038007' or value.code = '419511003' or value.code = '418471000' or value.code = '419199007' or value.code = '416098002' or value.code = '414285001' or value.code = '59037007' or value.code = '235719002' or value.code = '232347008' or value.code = '426232007'))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WSEJULTREeWEoeeTdrbyVw" name="AllergyObservationStatusCodeP" constrainedElement="_Kgc-oPr7EeO3D4OxHxUkag">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WSEJUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y6L-YLbPEeWQ25S2Lv5Ssw" name="AllergyObservationStatusCodeP" constrainedElement="_Kgc-oPr7EeO3D4OxHxUkag">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y6L-YbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WR-pwLTREeWEoeeTdrbyVw" name="AllergyObservationStatusCode" constrainedElement="_Kgc-oPr7EeO3D4OxHxUkag">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WR_Q0LTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y6Ge0LbPEeWQ25S2Lv5Ssw" name="AllergyObservationStatusCode" constrainedElement="_Kgc-oPr7EeO3D4OxHxUkag">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y6Ge0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'completed'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WSHMoLTREeWEoeeTdrbyVw" name="AllergyObservationEffectiveTime" constrainedElement="_QjUYoLkTEeODDJAC5t5vpw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WSHMobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y6Rd8LbPEeWQ25S2Lv5Ssw" name="AllergyObservationEffectiveTime" constrainedElement="_QjUYoLkTEeODDJAC5t5vpw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y6Rd8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.effectiveTime.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WSY5cLTREeWEoeeTdrbyVw" name="AllergyObservation2AuthorParticipation" constrainedElement="_Gwg5QLj8EeODDJAC5t5vpw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WSY5cbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y6lnALbPEeWQ25S2Lv5Ssw" name="AllergyObservation2AuthorParticipation" constrainedElement="_Gwg5QLj8EeODDJAC5t5vpw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y6lnAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XCfgsLTREeWEoeeTdrbyVw" name="AllergyObservationParticipant" constrainedElement="_EB7dAPrwEeO3D4OxHxUkag">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XCfgsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zpkz8LbPEeWQ25S2Lv5Ssw" name="AllergyObservationParticipant" constrainedElement="_EB7dAPrwEeO3D4OxHxUkag">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zpkz8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_cnhPgLTREeWEoeeTdrbyVw" name="AllergyObservation2EntryRelationship">
+    <ownedRule xmi:id="_hnSRYLbPEeWQ25S2Lv5Ssw" name="AllergyObservation2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fj5_kLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cnhPgbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_hnSRYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::AllergyObservation2::ReactionObservation2EntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_coAXsLTREeWEoeeTdrbyVw" name="AllergyObservation2EntryRelationship">
+    <ownedRule xmi:id="_hoADELbPEeWQ25S2Lv5Ssw" name="AllergyObservation2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fj-RALS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_coAXsbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_hoADEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::AllergyObservation2::SeverityObservation2EntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_coguALTREeWEoeeTdrbyVw" name="AllergyObservation2EntryRelationship">
+    <ownedRule xmi:id="_howRALbPEeWQ25S2Lv5Ssw" name="AllergyObservation2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fkCicLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_coguAbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_howRAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::AllergyObservation2::AllergyStatusObservationEntryRelationship))</body>
       </specification>
@@ -2176,14 +2176,14 @@ value.code = 'completed'</body>
       <ownedComment xmi:id="_P_7GMKy_EeSB84STE1Ny6A">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_WSKP8LTREeWEoeeTdrbyVw" name="AllergyObservation2IVLTSLow" constrainedElement="_xrzccLkTEeODDJAC5t5vpw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WSKP8bTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_Y6WWcLbPEeWQ25S2Lv5Ssw" name="AllergyObservation2IVLTSLow" constrainedElement="_xrzccLkTEeODDJAC5t5vpw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y6WWcbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (not self.low.oclIsUndefined() ))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WSMsMLTREeWEoeeTdrbyVw" name="AllergyObservation2IVLTSHigh" constrainedElement="_xry1YLkTEeODDJAC5t5vpw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WSMsMbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_Y6ZZwLbPEeWQ25S2Lv5Ssw" name="AllergyObservation2IVLTSHigh" constrainedElement="_xry1YLkTEeODDJAC5t5vpw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y6ZZwbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (((not self.high.oclIsUndefined()) and self.high.isNullFlavorUndefined()) implies (not self.high.oclIsUndefined()) ))</body>
         </specification>
@@ -2331,9 +2331,9 @@ value.code = 'completed'</body>
       </nestedClassifier>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fj4xcLS6EeWcPq3zAthoUQ" name="ReactionObservation2EntryRelationship">
-      <ownedRule xmi:id="_cnwgELTREeWEoeeTdrbyVw" name="AllergyObservation2ReactionObservation2EntryRelationshipReactionObservation2">
+      <ownedRule xmi:id="_hnoPoLbPEeWQ25S2Lv5Ssw" name="AllergyObservation2ReactionObservation2EntryRelationshipReactionObservation2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fj70wLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cnwgEbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_hnoPobbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation2))->size() >= 0</body>
         </specification>
@@ -2349,9 +2349,9 @@ value.code = 'completed'</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fj9C4LS6EeWcPq3zAthoUQ" name="SeverityObservation2EntryRelationship">
-      <ownedRule xmi:id="_coQPULTREeWEoeeTdrbyVw" name="AllergyObservation2SeverityObservation2EntryRelationshipSeverityObservation2">
+      <ownedRule xmi:id="_hoWoYLbPEeWQ25S2Lv5Ssw" name="AllergyObservation2SeverityObservation2EntryRelationshipSeverityObservation2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fkAGMLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_coQPUbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_hoWoYbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation2))->size() &lt;= 1</body>
         </specification>
@@ -2367,9 +2367,9 @@ value.code = 'completed'</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fkAtQLS6EeWcPq3zAthoUQ" name="AllergyStatusObservationEntryRelationship">
-      <ownedRule xmi:id="_cowloLTREeWEoeeTdrbyVw" name="AllergyObservation2AllergyStatusObservationEntryRelationshipAllergyStatusObservation">
+      <ownedRule xmi:id="_hpNkALbPEeWQ25S2Lv5Ssw" name="AllergyObservation2AllergyStatusObservationEntryRelationshipAllergyStatusObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fkDwkLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cowlobTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_hpNkAbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->size() >= 0</body>
         </specification>
@@ -2462,101 +2462,101 @@ value.code = 'completed'</body>
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WWSiALTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationTemplateId" constrainedElement="_mgny4NF8EeOHUokOVP95oQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WWSiAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y_0FQLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationTemplateId" constrainedElement="_mgny4NF8EeOHUokOVP95oQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y_0FQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.24.3.90')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WWWzcLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationClassCode" constrainedElement="_mgny6dF8EeOHUokOVP95oQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WWWzcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y_3voLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationClassCode" constrainedElement="_mgny6dF8EeOHUokOVP95oQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y_3vobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WWYooLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationMoodCode" constrainedElement="_mgny69F8EeOHUokOVP95oQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WWYoobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y_49wLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationMoodCode" constrainedElement="_mgny69F8EeOHUokOVP95oQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y_49wbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WWad0LTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationId" constrainedElement="_mgny7dF8EeOHUokOVP95oQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WWad0bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y_6L4LbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationId" constrainedElement="_mgny7dF8EeOHUokOVP95oQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y_6L4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WWf9YLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationCodeP" constrainedElement="_mgny8NF8EeOHUokOVP95oQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WWf9YbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y_-dULbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationCodeP" constrainedElement="_mgny8NF8EeOHUokOVP95oQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y_-dUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WWc6ELTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationCode" constrainedElement="_mgny8NF8EeOHUokOVP95oQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WWc6EbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Y_8BELbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationCode" constrainedElement="_mgny8NF8EeOHUokOVP95oQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y_8BEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WWjnwLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationStatusCode" constrainedElement="_mgny8dF8EeOHUokOVP95oQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WWjnwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZABgoLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationStatusCode" constrainedElement="_mgny8dF8EeOHUokOVP95oQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZABgobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'completed'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WWmrELTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationStatusCodeP" constrainedElement="_mgny8dF8EeOHUokOVP95oQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WWmrEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZAD84LbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationStatusCodeP" constrainedElement="_mgny8dF8EeOHUokOVP95oQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAD84bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WWpHULTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationEffectiveTime" constrainedElement="_mgny9NF8EeOHUokOVP95oQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WWpHUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZAFyELbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationEffectiveTime" constrainedElement="_mgny9NF8EeOHUokOVP95oQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAFyEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.effectiveTime.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WWsKoLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationValue" constrainedElement="_mgny99F8EeOHUokOVP95oQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WWsKobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZAIOULbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationValue" constrainedElement="_mgny99F8EeOHUokOVP95oQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAIOUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or value.code = '418038007' or value.code = '419511003' or value.code = '418471000' or value.code = '419199007' or value.code = '416098002' or value.code = '414285001' or value.code = '59037007' or value.code = '235719002' or value.code = '232347008' or value.code = '426232007'))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WW3JwLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationValueP" constrainedElement="_mgny99F8EeOHUokOVP95oQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WW3JwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZATNcLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationValueP" constrainedElement="_mgny99F8EeOHUokOVP95oQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZATNcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WXSAgLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipant" constrainedElement="_CAWowNIdEeO-TcA3qYv-cw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXSAgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZAxHgLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipant" constrainedElement="_CAWowNIdEeO-TcA3qYv-cw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAxHgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_cs10YLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationEntryRelationship">
+    <ownedRule xmi:id="_hvUMALbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fkspwLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cs10YbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_hvUMAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation::AllergyStatusObservationEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ctWKsLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationEntryRelationship">
+    <ownedRule xmi:id="_hwJ5gLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fkwUILS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ctWKsbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_hwJ5gbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation::ReactionObservationEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ct158LTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationEntryRelationship">
+    <ownedRule xmi:id="_hw6HcrbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fkz-gLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ct158bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_hw6Hc7bPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation::SeverityObservationEntryRelationship))</body>
       </specification>
@@ -2628,14 +2628,14 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or val
       <ownedComment xmi:id="_tCxmINIdEeO-TcA3qYv-cw">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_WXCv8bTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantTypeCode" constrainedElement="_v4zYENIdEeO-TcA3qYv-cw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXCv8rTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_ZAdlgbbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantTypeCode" constrainedElement="_v4zYENIdEeO-TcA3qYv-cw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAdlgrbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.typeCode=vocab::ParticipationType::CSM</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WXjGQLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRole" constrainedElement="_FB4qoNIeEeO-TcA3qYv-cw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXjGQbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_ZBKJELbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRole" constrainedElement="_FB4qoNIeEeO-TcA3qYv-cw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZBKJEbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation::Participant::ParticipantRole))</body>
         </specification>
@@ -2653,14 +2653,14 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or val
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NxmMwNIeEeO-TcA3qYv-cw" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_PzEVQNIeEeO-TcA3qYv-cw" name="ParticipantRole">
-        <ownedRule xmi:id="_WXElIbTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRoleClassCode" constrainedElement="_V0yAENIeEeO-TcA3qYv-cw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXElIrTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_ZAfasLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRoleClassCode" constrainedElement="_V0yAENIeEeO-TcA3qYv-cw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAfasbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>isDefined('classCode') and self.classCode=vocab::RoleClassRoot::MANU</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_WX0MALTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity" constrainedElement="_chjaENIeEeO-TcA3qYv-cw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WX0MAbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_ZBdrELbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity" constrainedElement="_chjaENIeEeO-TcA3qYv-cw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZBdrEbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation::Participant::ParticipantRole::PlayingEntity))</body>
           </specification>
@@ -2712,14 +2712,14 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or val
               <body>( code.oclIsUndefined() or code.isNullFlavorUndefined() ) implies ( not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and ( ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.3.26.1.5' and not value.code.oclIsUndefined() ) or ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.6.88' and not value.code.oclIsUndefined() ) or ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.4.9' and not value.code.oclIsUndefined() ) or ( let value : datatypes::CE = code.oclAsType(datatypes::CE) in value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined() ) ) )</body>
             </specification>
           </ownedRule>
-          <ownedRule xmi:id="_WXKrwLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode" constrainedElement="_ArBioNIfEeO-TcA3qYv-cw">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXKrwbTREeWEoeeTdrbyVw">
+          <ownedRule xmi:id="_ZAn9kLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode" constrainedElement="_ArBioNIfEeO-TcA3qYv-cw">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAn9kbbPEeWQ25S2Lv5Ssw">
               <language>OCL</language>
               <body>isDefined('classCode') and self.classCode=vocab::EntityClassRoot::MMAT</body>
             </specification>
           </ownedRule>
-          <ownedRule xmi:id="_WXL54LTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode" constrainedElement="_6NgQINIfEeO-TcA3qYv-cw">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXL54bTREeWEoeeTdrbyVw">
+          <ownedRule xmi:id="_ZApywLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode" constrainedElement="_6NgQINIfEeO-TcA3qYv-cw">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZApywbbPEeWQ25S2Lv5Ssw">
               <language>OCL</language>
               <body>not self.code.oclIsUndefined()</body>
             </specification>
@@ -2740,14 +2740,14 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or val
             <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_DNj7YNIgEeO-TcA3qYv-cw" name="CE">
-            <ownedRule xmi:id="_WXNvELTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText" constrainedElement="_H48FYNIgEeO-TcA3qYv-cw">
-              <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXNvEbTREeWEoeeTdrbyVw">
+            <ownedRule xmi:id="_ZAsPALbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText" constrainedElement="_H48FYNIgEeO-TcA3qYv-cw">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAsPAbbPEeWQ25S2Lv5Ssw">
                 <language>OCL</language>
                 <body> ( self.isNullFlavorUndefined() implies (((not self.originalText.oclIsUndefined()) and self.originalText.isNullFlavorUndefined()) implies (not self.originalText.oclIsUndefined()) ))</body>
               </specification>
             </ownedRule>
-            <ownedRule xmi:id="_WXPkQLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation" constrainedElement="_IvlZgNIgEeO-TcA3qYv-cw">
-              <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXPkQbTREeWEoeeTdrbyVw">
+            <ownedRule xmi:id="_ZAurQLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation" constrainedElement="_IvlZgNIgEeO-TcA3qYv-cw">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAurQbbPEeWQ25S2Lv5Ssw">
                 <language>OCL</language>
                 <body> ( self.isNullFlavorUndefined() implies (((not self.translation->isEmpty()) and self.translation->exists(element | element.isNullFlavorUndefined())) implies (not self.translation->isEmpty()) ))</body>
               </specification>
@@ -2772,9 +2772,9 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or val
       </nestedClassifier>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fkq0kLS6EeWcPq3zAthoUQ" name="AllergyStatusObservationEntryRelationship">
-      <ownedRule xmi:id="_ctFsALTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationAllergyStatusObservationEntryRelationshipAllergyStatusObservation">
+      <ownedRule xmi:id="_hvxfALbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationAllergyStatusObservationEntryRelationshipAllergyStatusObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fkt34LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ctFsAbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_hvxfArbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->size() &lt;= 1</body>
         </specification>
@@ -2790,9 +2790,9 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or val
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fkvGALS6EeWcPq3zAthoUQ" name="ReactionObservationEntryRelationship">
-      <ownedRule xmi:id="_ctmCULTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationReactionObservationEntryRelationshipReactionObservation">
+      <ownedRule xmi:id="_hwhs8LbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationReactionObservationEntryRelationshipReactionObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fkyJULS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ctmCUbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_hwhs8bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation))->size() >= 0</body>
         </specification>
@@ -2808,9 +2808,9 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or val
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fkywYLS6EeWcPq3zAthoUQ" name="SeverityObservationEntryRelationship">
-      <ownedRule xmi:id="_cuFKgLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationSeverityObservationEntryRelationshipSeverityObservation">
+      <ownedRule xmi:id="_hxRT0LbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationSeverityObservationEntryRelationshipSeverityObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fk1zsLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cuFKgbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_hxRT0bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->size() &lt;= 1</body>
         </specification>
@@ -3021,69 +3021,69 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or val
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W3tNALTREeWEoeeTdrbyVw" name="ReactionObservationTemplateId" constrainedElement="_U3yosPDxEeOKPKE9au0oug">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3tNAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zfzz8LbPEeWQ25S2Lv5Ssw" name="ReactionObservationTemplateId" constrainedElement="_U3yosPDxEeOKPKE9au0oug">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zfzz8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.9' and id.extension = '2014-06-09')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W37PcLTREeWEoeeTdrbyVw" name="ReactionObservationCodeP" constrainedElement="_QhJjIPDyEeOKPKE9au0oug">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W37PcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zf-MALbPEeWQ25S2Lv5Ssw" name="ReactionObservationCodeP" constrainedElement="_QhJjIPDyEeOKPKE9au0oug">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zf-MAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W33lELTREeWEoeeTdrbyVw" name="ReactionObservationCode" constrainedElement="_QhJjIPDyEeOKPKE9au0oug">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W33lEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zf7IsLbPEeWQ25S2Lv5Ssw" name="ReactionObservationCode" constrainedElement="_QhJjIPDyEeOKPKE9au0oug">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zf7IsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W3_g4LTREeWEoeeTdrbyVw" name="ReactionObservationId" constrainedElement="_B1Q8sMzcEeSLqosJ4F90vA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W3_g4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZgAoQLbPEeWQ25S2Lv5Ssw" name="ReactionObservationId" constrainedElement="_B1Q8sMzcEeSLqosJ4F90vA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZgAoQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W4BWELTREeWEoeeTdrbyVw" name="ReactionObservationText" constrainedElement="_c7bRsMzcEeSLqosJ4F90vA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W4BWEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZgCdcLbPEeWQ25S2Lv5Ssw" name="ReactionObservationText" constrainedElement="_c7bRsMzcEeSLqosJ4F90vA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZgCdcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (true)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W4JR4LTREeWEoeeTdrbyVw" name="ReactionObservationStatusCodeP" constrainedElement="_xsMx8MzcEeSLqosJ4F90vA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W4JR4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZgGu4LbPEeWQ25S2Lv5Ssw" name="ReactionObservationStatusCodeP" constrainedElement="_xsMx8MzcEeSLqosJ4F90vA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZgGu4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W4EZYLTREeWEoeeTdrbyVw" name="ReactionObservationStatusCode" constrainedElement="_xsMx8MzcEeSLqosJ4F90vA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W4EZYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZgDrkLbPEeWQ25S2Lv5Ssw" name="ReactionObservationStatusCode" constrainedElement="_xsMx8MzcEeSLqosJ4F90vA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZgDrkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'completed'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_dWcLALTREeWEoeeTdrbyVw" name="ReactionObservation2EntryRelationship">
+    <ownedRule xmi:id="_iiXZkLbPEeWQ25S2Lv5Ssw" name="ReactionObservation2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fpCXMLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dWcLAbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iiXZkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ReactionObservation2::ProcedureActivityProcedure2EntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_dW8hULTREeWEoeeTdrbyVw" name="ReactionObservation2EntryRelationship">
+    <ownedRule xmi:id="_ijSmoLbPEeWQ25S2Lv5Ssw" name="ReactionObservation2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fpHPsLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dW8hUbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ijSmobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ReactionObservation2::MedicationActivity2EntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_dXbpgLTREeWEoeeTdrbyVw" name="ReactionObservation2EntryRelationship">
+    <ownedRule xmi:id="_ikeSYLbPEeWQ25S2Lv5Ssw" name="ReactionObservation2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fpLhILS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dXbpgbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ikeSYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ReactionObservation2::SeverityObservation2EntryRelationship))</body>
       </specification>
@@ -3125,9 +3125,9 @@ value.code = 'completed'</body>
       <association href="../consol.uml#_fpLhILS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fpBJELS6EeWcPq3zAthoUQ" name="ProcedureActivityProcedure2EntryRelationship">
-      <ownedRule xmi:id="_dWsCoLTREeWEoeeTdrbyVw" name="ReactionObservation2ProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure2">
+      <ownedRule xmi:id="_ii0FgLbPEeWQ25S2Lv5Ssw" name="ReactionObservation2ProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fpEMYLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dWsCobTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ii0FgbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.procedure->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::ProcedureActivityProcedure2))->size() >= 0</body>
         </specification>
@@ -3144,9 +3144,9 @@ value.code = 'completed'</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fpFagLS6EeWcPq3zAthoUQ" name="MedicationActivity2EntryRelationship">
-      <ownedRule xmi:id="_dXMY8LTREeWEoeeTdrbyVw" name="ReactionObservation2MedicationActivity2EntryRelationshipMedicationActivity2">
+      <ownedRule xmi:id="_ijwgsLbPEeWQ25S2Lv5Ssw" name="ReactionObservation2MedicationActivity2EntryRelationshipMedicationActivity2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fpJE4LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dXMY8bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ijwgsbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.substanceAdministration->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity2))->size() >= 0</body>
         </specification>
@@ -3163,9 +3163,9 @@ value.code = 'completed'</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fpKTALS6EeWcPq3zAthoUQ" name="SeverityObservation2EntryRelationship">
-      <ownedRule xmi:id="_dXq6ELTREeWEoeeTdrbyVw" name="ReactionObservation2SeverityObservation2EntryRelationshipSeverityObservation2">
+      <ownedRule xmi:id="_ik4iELbPEeWQ25S2Lv5Ssw" name="ReactionObservation2SeverityObservation2EntryRelationshipSeverityObservation2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fpNWULS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dXq6EbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ik5JILbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation2))->size() &lt;= 1</body>
         </specification>
@@ -3251,40 +3251,40 @@ value.code = 'completed'</body>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W6ATELTREeWEoeeTdrbyVw" name="SeverityObservationTemplateId" constrainedElement="_B0oKYPJdEeO2NaSiicarcg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6ATEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZhoY4LbPEeWQ25S2Lv5Ssw" name="SeverityObservationTemplateId" constrainedElement="_B0oKYPJdEeO2NaSiicarcg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZhoY4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.8' and id.extension = '2014-06-09')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W6KEELTREeWEoeeTdrbyVw" name="SeverityObservationCodeP" constrainedElement="__Z27oPJdEeO2NaSiicarcg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6KEEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZhvtoLbPEeWQ25S2Lv5Ssw" name="SeverityObservationCodeP" constrainedElement="__Z27oPJdEeO2NaSiicarcg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZhvtobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W6GZsLTREeWEoeeTdrbyVw" name="SeverityObservationCode" constrainedElement="__Z27oPJdEeO2NaSiicarcg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6GZsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZhsqULbPEeWQ25S2Lv5Ssw" name="SeverityObservationCode" constrainedElement="__Z27oPJdEeO2NaSiicarcg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZhsqUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = 'SEV' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W6OVgLTREeWEoeeTdrbyVw" name="SeverityObservationText" constrainedElement="_LNTEMM26EeSEZ8MJJ3ZzLg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6OVgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZhyJ4LbPEeWQ25S2Lv5Ssw" name="SeverityObservationText" constrainedElement="_LNTEMM26EeSEZ8MJJ3ZzLg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZhyJ4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (true)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W6UcILTREeWEoeeTdrbyVw" name="SeverityObservationStatusCodeP" constrainedElement="_tlNvkM26EeSEZ8MJJ3ZzLg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6UcIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zh3pcLbPEeWQ25S2Lv5Ssw" name="SeverityObservationStatusCodeP" constrainedElement="_tlNvkM26EeSEZ8MJJ3ZzLg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zh3pcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W6QxwLTREeWEoeeTdrbyVw" name="SeverityObservationStatusCode" constrainedElement="_tlNvkM26EeSEZ8MJJ3ZzLg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W6QxwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zhz_ELbPEeWQ25S2Lv5Ssw" name="SeverityObservationStatusCode" constrainedElement="_tlNvkM26EeSEZ8MJJ3ZzLg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zhz_EbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
@@ -3340,68 +3340,68 @@ The effectiveTime of the Substance or Device Allergy - Intolerance Observation i
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::SeverityObservation2))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W7wmkLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationTemplateId" constrainedElement="_K3M6IPKJEeOn7bMsPcStOw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W7wmkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zi150LbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationTemplateId" constrainedElement="_K3M6IPKJEeOn7bMsPcStOw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zi2g4LbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.24.3.90' and id.extension = '2014-06-09')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W70Q8LTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationEffectiveTime" constrainedElement="_dvvGYPKJEeOn7bMsPcStOw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W70Q8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zi5kMLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationEffectiveTime" constrainedElement="_dvvGYPKJEeOn7bMsPcStOw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zi5kMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.effectiveTime.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W8LdULTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationValueP" constrainedElement="_dvwUgPKJEeOn7bMsPcStOw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8LdUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZjHmoLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationValueP" constrainedElement="_dvwUgPKJEeOn7bMsPcStOw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZjHmobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.value->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W74iYLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationValue" constrainedElement="_dvwUgPKJEeOn7bMsPcStOw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W74iYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zi8ngLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationValue" constrainedElement="_dvwUgPKJEeOn7bMsPcStOw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zi8ngbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '420134006' or value.code = '418038007' or value.code = '419511003' or value.code = '418471000' or value.code = '419199007' or value.code = '416098002' or value.code = '414285001' or value.code = '59037007' or value.code = '235719002' or value.code = '232347008' or value.code = '426232007'))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W8UAMLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationCodeP" constrainedElement="_dvqN4PKJEeOn7bMsPcStOw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8UAMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZjLRALbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationCodeP" constrainedElement="_dvqN4PKJEeOn7bMsPcStOw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZjLRAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W8PHsLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationCode" constrainedElement="_dvqN4PKJEeOn7bMsPcStOw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8PHsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZjI0wLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationCode" constrainedElement="_dvqN4PKJEeOn7bMsPcStOw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZjI0wbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W8owULTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipant" constrainedElement="_4B3U8PMOEeOrR8IF-aqVyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8owUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZjahkLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipant" constrainedElement="_4B3U8PMOEeOrR8IF-aqVyQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZjahkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_W9ym4LTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservation2AuthorParticipation" constrainedElement="_ynKgoPMrEeOrR8IF-aqVyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W9ym4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZkhU0LbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservation2AuthorParticipation" constrainedElement="_ynKgoPMrEeOrR8IF-aqVyQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZkhU0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_dYMegLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservation2EntryRelationship">
+    <ownedRule xmi:id="_il-uQLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservation2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fpVSILS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dYMegbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_il-uQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation2::ReactionObservation2EntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_dYsNwLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservation2EntryRelationship">
+    <ownedRule xmi:id="_inWnQLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservation2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fpaxsLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dYsNwbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_inWnQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation2::SeverityObservation2EntryRelationship))</body>
       </specification>
@@ -3454,14 +3454,14 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       <ownedComment xmi:id="_AJnxUPMyEeOUvapeh9bVvQ">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_W8Y4sLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservation2IVLTSLow" constrainedElement="_nzKTI_KJEeOn7bMsPcStOw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8Y4sbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_ZjNtQLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservation2IVLTSLow" constrainedElement="_nzKTI_KJEeOn7bMsPcStOw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZjNtQbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (not self.low.oclIsUndefined() ))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_W8at4LTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservation2IVLTSHigh" constrainedElement="_nzKTIPKJEeOn7bMsPcStOw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8at4bTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_ZjO7YLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservation2IVLTSHigh" constrainedElement="_nzKTIPKJEeOn7bMsPcStOw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZjO7YbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (((not self.high.oclIsUndefined()) and self.high.isNullFlavorUndefined()) implies (not self.high.oclIsUndefined()) ))</body>
         </specification>
@@ -3486,9 +3486,9 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       <ownedComment xmi:id="_FmvPMPMPEeOrR8IF-aqVyQ">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_W9Bx4LTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRole">
+      <ownedRule xmi:id="_ZjxG4LbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRole">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_mXONQPMQEeOrR8IF-aqVyQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_W9Bx4bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZjxG4bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation2::Participant::ParticipantRole))</body>
         </specification>
@@ -3500,9 +3500,9 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
         <association href="../consol.uml#_mXONQPMQEeOrR8IF-aqVyQ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_2SYCYPMQEeOrR8IF-aqVyQ" name="ParticipantRole">
-        <ownedRule xmi:id="_W9Y-QLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity">
+        <ownedRule xmi:id="_ZkI6ULbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity">
           <constrainedElement xmi:type="uml:Association" href="../consol.uml#_42BD0PMQEeOrR8IF-aqVyQ"/>
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_W9Y-QbTREeWEoeeTdrbyVw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZkI6UbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(consol::SubstanceOrDeviceAllergyObservation2::Participant::ParticipantRole::PlayingEntity))</body>
           </specification>
@@ -3562,8 +3562,8 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
               <body>true</body>
             </specification>
           </ownedRule>
-          <ownedRule xmi:id="_W8ipsLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode" constrainedElement="_EuBMkPMREeOrR8IF-aqVyQ">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8ipsbTREeWEoeeTdrbyVw">
+          <ownedRule xmi:id="_ZjVCALbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode" constrainedElement="_EuBMkPMREeOrR8IF-aqVyQ">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZjVCAbbPEeWQ25S2Lv5Ssw">
               <language>OCL</language>
               <body>not self.code.oclIsUndefined()</body>
             </specification>
@@ -3574,14 +3574,14 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EuBMkfMREeOrR8IF-aqVyQ" value="1"/>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_ceo4YPMtEeOrR8IF-aqVyQ" name="CE">
-            <ownedRule xmi:id="_W8lF8LTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText" constrainedElement="_doXgkPMtEeOrR8IF-aqVyQ">
-              <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8lF8bTREeWEoeeTdrbyVw">
+            <ownedRule xmi:id="_ZjXeQLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText" constrainedElement="_doXgkPMtEeOrR8IF-aqVyQ">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZjXeQbbPEeWQ25S2Lv5Ssw">
                 <language>OCL</language>
                 <body> ( self.isNullFlavorUndefined() implies (((not self.originalText.oclIsUndefined()) and self.originalText.isNullFlavorUndefined()) implies (true) ))</body>
               </specification>
             </ownedRule>
-            <ownedRule xmi:id="_W8m7ILTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation" constrainedElement="_WtnfgPMuEeOrR8IF-aqVyQ">
-              <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8m7IbTREeWEoeeTdrbyVw">
+            <ownedRule xmi:id="_ZjYFUbbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation" constrainedElement="_WtnfgPMuEeOrR8IF-aqVyQ">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZjYFUrbPEeWQ25S2Lv5Ssw">
                 <language>OCL</language>
                 <body> ( self.isNullFlavorUndefined() implies (((not self.translation->isEmpty()) and self.translation->exists(element | element.isNullFlavorUndefined())) implies (true) ))</body>
               </specification>
@@ -3602,9 +3602,9 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       </nestedClassifier>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fpUEALS6EeWcPq3zAthoUQ" name="ReactionObservation2EntryRelationship">
-      <ownedRule xmi:id="_dYbvELTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservation2ReactionObservation2EntryRelationshipReactionObservation2">
+      <ownedRule xmi:id="_imo1kLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservation2ReactionObservation2EntryRelationshipReactionObservation2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fpXHULS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dYbvEbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_impcoLbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation2))->size() >= 0</body>
         </specification>
@@ -3620,9 +3620,9 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fpY8gLS6EeWcPq3zAthoUQ" name="SeverityObservation2EntryRelationship">
-      <ownedRule xmi:id="_dY63QLTREeWEoeeTdrbyVw" name="SubstanceOrDeviceAllergyObservation2SeverityObservation2EntryRelationshipSeverityObservation2">
+      <ownedRule xmi:id="_ioAHgLbPEeWQ25S2Lv5Ssw" name="SubstanceOrDeviceAllergyObservation2SeverityObservation2EntryRelationshipSeverityObservation2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fpcm4LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dY63QbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ioAHgbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation2))->size() &lt;= 1</body>
         </specification>
@@ -3779,29 +3779,29 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
     <ownedComment xmi:id="_w56bYAIjEeSVzfoPSatgpg">
       <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives). At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
     </ownedComment>
-    <ownedRule xmi:id="_XIieULTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_nWAcMAIjEeSVzfoPSatgpg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIieUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zwt9wLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_nWAcMAIjEeSVzfoPSatgpg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zwt9wbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XInW0LTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalCodeP" constrainedElement="_UrrOkAIkEeSVzfoPSatgpg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XInW0bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zw0EYLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalCodeP" constrainedElement="_UrrOkAIkEeSVzfoPSatgpg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zw0EYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XIk6kLTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalCode" constrainedElement="_UrrOkAIkEeSVzfoPSatgpg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIk6kbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZwxBELbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalCode" constrainedElement="_UrrOkAIkEeSVzfoPSatgpg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZwxBEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_d8mMELTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptional2Entry">
+    <ownedRule xmi:id="_kFIz4LbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptional2Entry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fu5uoLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_d8mMEbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kFIz4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::AllergiesSectionEntriesOptional2::AllergyConcernAct2Entry))</body>
       </specification>
@@ -3818,9 +3818,9 @@ value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_fu5uoLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fu4ggLS6EeWcPq3zAthoUQ" name="AllergyConcernAct2Entry">
-      <ownedRule xmi:id="_d82DsLTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptional2AllergyConcernAct2EntryAllergyConcernAct2">
+      <ownedRule xmi:id="_kGmzgLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptional2AllergyConcernAct2EntryAllergyConcernAct2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fu7j0LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d82DsbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kGpPwLbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.act->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyConcernAct2))->size() >= 0</body>
         </specification>
@@ -3859,47 +3859,47 @@ value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
     <ownedComment xmi:id="_MQKTcAInEeSr1aKUYorURA">
       <body>This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives). At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.</body>
     </ownedComment>
-    <ownedRule xmi:id="_XIrBMLTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_EONPMAInEeSr1aKUYorURA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIrBMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zw4V0LbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTemplateId" constrainedElement="_EONPMAInEeSr1aKUYorURA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zw4V0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XIs2YLTREeWEoeeTdrbyVw" name="AllergiesSection2NullFlavor" constrainedElement="_Blpr4KJ1EeSOc57SOMra_g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIs2YbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zw6yELbPEeWQ25S2Lv5Ssw" name="AllergiesSection2NullFlavor" constrainedElement="_Blpr4KJ1EeSOc57SOMra_g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zw7ZILbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>(not self.nullFlavor.oclIsUndefined()) implies (self.nullFlavor=vocab::NullFlavor::NI)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XIxu4LTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalCodeP" constrainedElement="_ENCVEAIoEeSr1aKUYorURA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIxu4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZxCG0LbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalCodeP" constrainedElement="_ENCVEAIoEeSr1aKUYorURA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZxCG0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XIurkLTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalCode" constrainedElement="_ENCVEAIoEeSr1aKUYorURA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIurkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zw-ccLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalCode" constrainedElement="_ENCVEAIoEeSr1aKUYorURA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zw-ccbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XI0LILTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalTitle" constrainedElement="_I_93kAIzEeScubSeRE1upQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI0LIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZxFKILbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalTitle" constrainedElement="_I_93kAIzEeScubSeRE1upQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZxFxMLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XI2AULTREeWEoeeTdrbyVw" name="AllergiesSectionEntriesOptionalText" constrainedElement="_I_9QgAIzEeScubSeRE1upQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XI2AUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZxI0gLbPEeWQ25S2Lv5Ssw" name="AllergiesSectionEntriesOptionalText" constrainedElement="_I_9QgAIzEeScubSeRE1upQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZxI0gbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_d9F7ULTREeWEoeeTdrbyVw" name="AllergiesSection2Entry">
+    <ownedRule xmi:id="_kIGoULbPEeWQ25S2Lv5Ssw" name="AllergiesSection2Entry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fu-AELS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9F7UbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kIGoUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::AllergiesSection2::AllergyConcernAct2Entry))</body>
       </specification>
@@ -3931,9 +3931,9 @@ value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_fu-AELS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fu8x8LS6EeWcPq3zAthoUQ" name="AllergyConcernAct2Entry">
-      <ownedRule xmi:id="_d9Vy8LTREeWEoeeTdrbyVw" name="AllergiesSection2AllergyConcernAct2EntryAllergyConcernAct2">
+      <ownedRule xmi:id="_kJd6QLbPEeWQ25S2Lv5Ssw" name="AllergiesSection2AllergyConcernAct2EntryAllergyConcernAct2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fu_1QLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d9Vy8bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kJd6QbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyConcernAct2))</body>
         </specification>
@@ -4061,180 +4061,180 @@ value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
   <CDA:Inline xmi:id="_fpY8grS6EeWcPq3zAthoUQ" base_Class="_fpY8gLS6EeWcPq3zAthoUQ"/>
   <CDA:Inline xmi:id="_fu4ggrS6EeWcPq3zAthoUQ" base_Class="_fu4ggLS6EeWcPq3zAthoUQ"/>
   <CDA:Inline xmi:id="_fu8x8rS6EeWcPq3zAthoUQ" base_Class="_fu8x8LS6EeWcPq3zAthoUQ"/>
-  <Ecore:EClass xmi:id="_S5ttcLTREeWEoeeTdrbyVw" base_Class="_2EAisBSVEeGGzu7fmW9pXw">
+  <Ecore:EClass xmi:id="_VkAswLbPEeWQ25S2Lv5Ssw" base_Class="_2EAisBSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActEffectiveTimeLow AllergyProblemActEffectiveTimeHigh AllergyProblemActClassCode AllergyProblemActMoodCode AllergyProblemActId AllergyProblemActCode AllergyProblemActStatusCode AllergyProblemActStatusCodeP AllergyProblemActEffectiveTime AllergyProblemActEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.30' classCode='ACT' moodCode='EVN' constraints.validation.dependOn.AllergyProblemActStatusCode='AllergyProblemActStatusCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_S6LAcLTREeWEoeeTdrbyVw" base_Class="_nG6-gMTyEeOYw6YTCsSKiw">
+  <Ecore:EClass xmi:id="_VkyI0LbPEeWQ25S2Lv5Ssw" base_Class="_nG6-gMTyEeOYw6YTCsSKiw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_S6NcsLTREeWEoeeTdrbyVw" base_Generalization="_2F5ZERSVEeGGzu7fmW9pXw"/>
-  <Ecore:EClass xmi:id="_S6Oq0LTREeWEoeeTdrbyVw" base_Class="_2EaLUBSVEeGGzu7fmW9pXw">
+  <CDA:ConformsTo xmi:id="_Vk2aQLbPEeWQ25S2Lv5Ssw" base_Generalization="_2F5ZERSVEeGGzu7fmW9pXw"/>
+  <Ecore:EClass xmi:id="_Vk3oYLbPEeWQ25S2Lv5Ssw" base_Class="_2EaLUBSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservationTemplateId AllergyObservationReferenceValue SubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator SubstanceOrDeviceAllergyObservationReactionInversionIndicator SubstanceOrDeviceAllergyObservationSeverityInversionIndicator AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationCodeP AllergyObservationStatusCode AllergyObservationStatusCodeP AllergyObservationEffectiveTime AllergyObservationValue AllergyObservationValueP AllergyObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.7' constraints.validation.warning='AllergyObservationValueOriginalText AllergyObservationOriginalTextReference AllergyObservationOriginalTextReferenceValue AllergyObservationParticipant' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.AllergyObservationCode='AllergyObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.AllergyObservationStatusCode='AllergyObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.AllergyObservationValue='AllergyObservationValueP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_S66nULTREeWEoeeTdrbyVw" base_Class="_0HgNkDJAEeG6R8Pb5FT2Ow">
+  <Ecore:EClass xmi:id="_VlxAQLbPEeWQ25S2Lv5Ssw" base_Class="_0HgNkDJAEeG6R8Pb5FT2Ow">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='CSM' constraints.validation.error='AllergyObservationParticipantTypeCode AllergyObservationParticipantTypeCodeP AllergyObservationParticipantParticipantRole' constraints.validation.dependOn.AllergyObservationParticipantTypeCode='AllergyObservationParticipantTypeCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_S7AG4LTREeWEoeeTdrbyVw" base_Class="_4Lj44DJAEeG6R8Pb5FT2Ow">
+  <Ecore:EClass xmi:id="_Vl2f0LbPEeWQ25S2Lv5Ssw" base_Class="_4Lj44DJAEeG6R8Pb5FT2Ow">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='MANU' constraints.validation.error='AllergyObservationParticipantParticipantRoleClassCode AllergyObservationParticipantParticipantRoleClassCodeP AllergyObservationParticipantParticipantRolePlayingEntity' constraints.validation.dependOn.AllergyObservationParticipantParticipantRoleClassCode='AllergyObservationParticipantParticipantRoleClassCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_S7FmcLTREeWEoeeTdrbyVw" base_Class="_E1B60DJBEeG6R8Pb5FT2Ow">
+  <Ecore:EClass xmi:id="_Vl6xQLbPEeWQ25S2Lv5Ssw" base_Class="_E1B60DJBEeG6R8Pb5FT2Ow">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI AllergyObservationParticipantParticipantRolePlayingEntityClassCode AllergyObservationParticipantParticipantRolePlayingEntityCode' constraints.validation.warning='AllergyObservationParticipantParticipantRolePlayingEntityReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference' classCode='MMAT'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_S7QlkLTREeWEoeeTdrbyVw" base_Class="_C4w3oNJCEeOj_bXCpQOG9w">
+  <Ecore:EClass xmi:id="_VmHlkLbPEeWQ25S2Lv5Ssw" base_Class="_C4w3oNJCEeOj_bXCpQOG9w">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText' constraints.validation.info='AllergyObservationParticipantParticipantRolePlayingEntityCETranslation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_S8t-ILTREeWEoeeTdrbyVw" base_Class="_2E_aIRSVEeGGzu7fmW9pXw">
+  <Ecore:EClass xmi:id="_VnyZgLbPEeWQ25S2Lv5Ssw" base_Class="_2E_aIRSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReactionObservationTemplateId ReactionObservationReferenceValue ReactionObservationSeverityObservationInversionInd ReactionObservationProcedureActivityProcedureInversionInd ReactionObservationMedicationActivityInversionInd ReactionObservationClassCode ReactionObservationMoodCode ReactionObservationId ReactionObservationCode ReactionObservationStatusCode ReactionObservationStatusCodeP ReactionObservationValue ReactionObservationValueP ReactionObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.9' constraints.validation.warning='ReactionObservationTextReference ReactionObservationTextReferenceValue ReactionObservationEffectiveTimeLow ReactionObservationEffectiveTimeHigh ReactionObservationText ReactionObservationEffectiveTime' classCode='OBS' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.ReactionObservationStatusCode='ReactionObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_S9Z6oLTREeWEoeeTdrbyVw" base_Class="_2FGu4hSVEeGGzu7fmW9pXw">
+  <Ecore:EClass xmi:id="_VolqwLbPEeWQ25S2Lv5Ssw" base_Class="_2FGu4hSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SeverityObservationTemplateId SeverityObservationReferenceValue SeverityObservationClassCode SeverityObservationMoodCode SeverityObservationCode SeverityObservationCodeP SeverityObservationStatusCode SeverityObservationStatusCodeP SeverityObservationValue SeverityObservationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.8' constraints.validation.warning='SeverityObservationTextReference SeverityObservationTextReferenceValue SeverityObservationText' classCode='OBS' moodCode='EVN' code.code='SEV' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Severity observation' constraints.validation.dependOn.SeverityObservationCode='SeverityObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.SeverityObservationStatusCode='SeverityObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_S-AXkLTREeWEoeeTdrbyVw" base_Class="_2FRuAhSVEeGGzu7fmW9pXw">
+  <Ecore:EClass xmi:id="_VpS1YLbPEeWQ25S2Lv5Ssw" base_Class="_2FRuAhSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyStatusObservationTemplateId AllergyStatusObservationClassCode AllergyStatusObservationMoodCode AllergyStatusObservationCode AllergyStatusObservationCodeP AllergyStatusObservationStatusCode AllergyStatusObservationStatusCodeP AllergyStatusObservationValue AllergyStatusObservationValueP' templateId.root='2.16.840.1.113883.10.20.22.4.28' classCode='OBS' moodCode='EVN' code.code='33999-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Status' constraints.validation.dependOn.AllergyStatusObservationCode='AllergyStatusObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.AllergyStatusObservationStatusCode='AllergyStatusObservationStatusCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.AllergyStatusObservationValue='AllergyStatusObservationValueP'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_TJsDILTREeWEoeeTdrbyVw" base_Generalization="_EEbhsBVgEeGQCvUGzi1kDQ"/>
-  <Ecore:EClass xmi:id="_TJsqMLTREeWEoeeTdrbyVw" base_Class="_2LMIwBSVEeGGzu7fmW9pXw">
+  <CDA:ConformsTo xmi:id="_V6kyoLbPEeWQ25S2Lv5Ssw" base_Generalization="_EEbhsBVgEeGQCvUGzi1kDQ"/>
+  <Ecore:EClass xmi:id="_V6lZsLbPEeWQ25S2Lv5Ssw" base_Class="_2LMIwBSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSectionEntriesOptionalTemplateId AllergiesSectionCode AllergiesSectionCodeP AllergiesSectionTitle AllergiesSectionText AllergiesSectionEntry' templateId.root='2.16.840.1.113883.10.20.22.2.6.1' code.code='48765-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Allergies, adverse reactions, alerts' constraints.validation.dependOn.AllergiesSectionCode='AllergiesSectionCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Tkqu8LTREeWEoeeTdrbyVw" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ">
+  <Ecore:EClass xmi:id="_WY6UcLbPEeWQ25S2Lv5Ssw" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSectionEntriesOptionalTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionEntriesOptionalCodeP AllergiesSectionEntriesOptionalTitle AllergiesSectionEntriesOptionalText AllergiesSectionEntriesOptionalEntry' templateId.root='2.16.840.1.113883.10.20.22.2.6' code.code='48765-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Allergies, adverse reactions, alerts'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WQyW8LTREeWEoeeTdrbyVw" base_Class="_uCiIYLNwEeOtlapy2HWYww">
+  <Ecore:EClass xmi:id="_Y4U9MLbPEeWQ25S2Lv5Ssw" base_Class="_uCiIYLNwEeOtlapy2HWYww">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActTemplateId AllergyProblemActCode AllergyConcernAct2EntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.30' templateId.extension='2015-08-01' constraints.validation.warning='AllergyConcernAct2AuthorParticipation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WQ2BULTREeWEoeeTdrbyVw" base_Class="_LgbIAKvuEeS-mulaI3YUlw">
+  <Ecore:EClass xmi:id="_Y4acwLbPEeWQ25S2Lv5Ssw" base_Class="_LgbIAKvuEeS-mulaI3YUlw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActCDCodeAndCodeSystemValues AllergyProblemActCDCode AllergyProblemActCDCodeSystem'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WRL_kLTREeWEoeeTdrbyVw" base_Class="_uVJogLj5EeODDJAC5t5vpw">
+  <Ecore:EClass xmi:id="_Y5FLILbPEeWQ25S2Lv5Ssw" base_Class="_uVJogLj5EeODDJAC5t5vpw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservationTemplateId SubstanceOrDeviceAllergyObservationReactionInversionIndicator SubstanceOrDeviceAllergyObservationSeverityInversionIndicator AllergyObservationCode AllergyObservationCodeP AllergyObservationValue AllergyObservationValueP AllergyObservationStatusCode AllergyObservationStatusCodeP AllergyObservationEffectiveTime AllergyObservationParticipant AllergyObservation2EntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.7' templateId.extension='2014-06-09' constraints.validation.info='AllergyObservationValueOriginalText AllergyObservationOriginalTextReference AllergyObservationOriginalTextReferenceValue AllergyObservationReferenceValue SubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator AllergyObservation2NegationInd' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.AllergyObservationCode='AllergyObservationCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.AllergyObservationValue='AllergyObservationValueP' statusCode.code='completed' constraints.validation.dependOn.AllergyObservationStatusCode='AllergyObservationStatusCodeP' constraints.validation.warning='AllergyObservation2AuthorParticipation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WSMFILTREeWEoeeTdrbyVw" base_Class="_wqODoLkTEeODDJAC5t5vpw">
+  <Ecore:EClass xmi:id="_Y6YLoLbPEeWQ25S2Lv5Ssw" base_Class="_wqODoLkTEeODDJAC5t5vpw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyObservation2IVLTSLow' constraints.validation.info='AllergyObservation2IVLTSHigh'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WSPIcLTREeWEoeeTdrbyVw" base_Class="_dcuKcPryEeO3D4OxHxUkag">
+  <Ecore:EClass xmi:id="_Y6b2ALbPEeWQ25S2Lv5Ssw" base_Class="_dcuKcPryEeO3D4OxHxUkag">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityAllergySpecificMedication AllergyObservationParticipantParticipantRolePlayingEntityAllergyClassMedication AllergyObservationParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance AllergyObservationParticipantParticipantRolePlayingEntityReferenceValue AllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference' constraints.validation.error='AllergyObservationParticipantParticipantRolePlayingEntityCode'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WSWdMLTREeWEoeeTdrbyVw" base_Class="_BGJEgPr0EeO3D4OxHxUkag">
+  <Ecore:EClass xmi:id="_Y6jKwLbPEeWQ25S2Lv5Ssw" base_Class="_BGJEgPr0EeO3D4OxHxUkag">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText AllergyObservationParticipantParticipantRolePlayingEntityCETranslation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WWTwILTREeWEoeeTdrbyVw" base_Class="_mgny4NF8EeOHUokOVP95oQ">
+  <Ecore:EClass xmi:id="_Y_0sULbPEeWQ25S2Lv5Ssw" base_Class="_mgny4NF8EeOHUokOVP95oQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservationTemplateId SubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator SubstanceOrDeviceAllergyObservationReactionInversionIndicator SubstanceOrDeviceAllergyObservationSeverityInversionIndicator SubstanceOrDeviceAllergyObservationClassCode SubstanceOrDeviceAllergyObservationMoodCode SubstanceOrDeviceAllergyObservationId SubstanceOrDeviceAllergyObservationCode SubstanceOrDeviceAllergyObservationCodeP SubstanceOrDeviceAllergyObservationStatusCode SubstanceOrDeviceAllergyObservationStatusCodeP SubstanceOrDeviceAllergyObservationEffectiveTime SubstanceOrDeviceAllergyObservationValue SubstanceOrDeviceAllergyObservationValueP SubstanceOrDeviceAllergyObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.24.3.90' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.SubstanceOrDeviceAllergyObservationCode='SubstanceOrDeviceAllergyObservationCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='SubstanceOrDeviceAllergyObservationParticipant'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WXCv8LTREeWEoeeTdrbyVw" base_Class="_cBOJoNIdEeO-TcA3qYv-cw">
+  <Ecore:EClass xmi:id="_ZAdlgLbPEeWQ25S2Lv5Ssw" base_Class="_cBOJoNIdEeO-TcA3qYv-cw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='CSM' constraints.validation.error='SubstanceOrDeviceAllergyObservationParticipantTypeCode SubstanceOrDeviceAllergyObservationParticipantParticipantRole'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WXElILTREeWEoeeTdrbyVw" base_Class="_PzEVQNIeEeO-TcA3qYv-cw">
+  <Ecore:EClass xmi:id="_ZAezoLbPEeWQ25S2Lv5Ssw" base_Class="_PzEVQNIeEeO-TcA3qYv-cw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='MANU' constraints.validation.error='SubstanceOrDeviceAllergyObservationParticipantParticipantRoleClassCode SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WXGaULTREeWEoeeTdrbyVw" base_Class="_3jqVgNIeEeO-TcA3qYv-cw">
+  <Ecore:EClass xmi:id="_ZAhP4LbPEeWQ25S2Lv5Ssw" base_Class="_3jqVgNIeEeO-TcA3qYv-cw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode' constraints.validation.warning='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference' constraints.validation.info='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI' classCode='MMAT'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WXO9MLTREeWEoeeTdrbyVw" base_Class="_DNj7YNIgEeO-TcA3qYv-cw">
+  <Ecore:EClass xmi:id="_ZAtdILbPEeWQ25S2Lv5Ssw" base_Class="_DNj7YNIgEeO-TcA3qYv-cw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText' constraints.validation.info='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_W3ubILTREeWEoeeTdrbyVw" base_Class="_U3yosPDxEeOKPKE9au0oug">
+  <Ecore:EClass xmi:id="_Zf0bALbPEeWQ25S2Lv5Ssw" base_Class="_U3yosPDxEeOKPKE9au0oug">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReactionObservationTemplateId ReactionObservationProcedureActivityProcedureInversionInd ReactionObservationMedicationActivityInversionInd ReactionObservationSeverityObservationInversionInd ReactionObservationCode ReactionObservationCodeP ReactionObservationId ReactionObservationText ReactionObservationStatusCode ReactionObservationStatusCodeP ReactionObservation2EntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.9' templateId.extension='2014-06-09' constraints.validation.info='ReactionObservationCodeValueSet ReactionObservationTextReference ReactionObservationTextReferenceValue ReactionObservationReferenceValue' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' constraints.validation.dependOn.ReactionObservationCode='ReactionObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.ReactionObservationStatusCode='ReactionObservationStatusCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_W6BhMLTREeWEoeeTdrbyVw" base_Class="_B0oKYPJdEeO2NaSiicarcg">
+  <Ecore:EClass xmi:id="_Zho_8LbPEeWQ25S2Lv5Ssw" base_Class="_B0oKYPJdEeO2NaSiicarcg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SeverityObservationTemplateId SeverityObservationCode SeverityObservationCodeP SeverityObservationText SeverityObservationStatusCode SeverityObservationStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.8' templateId.extension='2014-06-09' constraints.validation.info='SeverityObservationTextReference SeverityObservationTextReferenceValue SeverityObservationReferenceValue' code.code='SEV' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Severity' constraints.validation.dependOn.SeverityObservationCode='SeverityObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.SeverityObservationStatusCode='SeverityObservationStatusCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_W7xNoLTREeWEoeeTdrbyVw" base_Class="_K3M6IPKJEeOn7bMsPcStOw">
+  <Ecore:EClass xmi:id="_Zi3H8LbPEeWQ25S2Lv5Ssw" base_Class="_K3M6IPKJEeOn7bMsPcStOw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservationTemplateId SubstanceOrDeviceAllergyObservationReactionInversionIndicator SubstanceOrDeviceAllergyObservationSeverityInversionIndicator SubstanceOrDeviceAllergyObservationEffectiveTime SubstanceOrDeviceAllergyObservationValue SubstanceOrDeviceAllergyObservationValueP SubstanceOrDeviceAllergyObservationCode SubstanceOrDeviceAllergyObservationCodeP SubstanceOrDeviceAllergyObservation2EntryRelationship' templateId.root='2.16.840.1.113883.10.20.24.3.90' templateId.extension='2014-06-09' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.dependOn.SubstanceOrDeviceAllergyObservationValue='SubstanceOrDeviceAllergyObservationValueP' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.SubstanceOrDeviceAllergyObservationCode='SubstanceOrDeviceAllergyObservationCodeP' constraints.validation.warning='SubstanceOrDeviceAllergyObservationParticipant SubstanceOrDeviceAllergyObservation2AuthorParticipation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_W8aG0LTREeWEoeeTdrbyVw" base_Class="_nVjxIPKJEeOn7bMsPcStOw">
+  <Ecore:EClass xmi:id="_ZjOUULbPEeWQ25S2Lv5Ssw" base_Class="_nVjxIPKJEeOn7bMsPcStOw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservation2IVLTSLow' constraints.validation.info='SubstanceOrDeviceAllergyObservation2IVLTSHigh'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_W8dKILTREeWEoeeTdrbyVw" base_Class="_DutrsPMREeOrR8IF-aqVyQ">
+  <Ecore:EClass xmi:id="_ZjQJgLbPEeWQ25S2Lv5Ssw" base_Class="_DutrsPMREeOrR8IF-aqVyQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergySpecificMedication SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergyClassMedication SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance' constraints.validation.error='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_W8mUELTREeWEoeeTdrbyVw" base_Class="_ceo4YPMtEeOrR8IF-aqVyQ">
+  <Ecore:EClass xmi:id="_ZjYFULbPEeWQ25S2Lv5Ssw" base_Class="_ceo4YPMtEeOrR8IF-aqVyQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_W9YXMLTREeWEoeeTdrbyVw" base_Class="_DyEzoPMPEeOrR8IF-aqVyQ">
+  <Ecore:EClass xmi:id="_ZkITQLbPEeWQ25S2Lv5Ssw" base_Class="_DyEzoPMPEeOrR8IF-aqVyQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservationParticipantParticipantRole'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_W9x_0LTREeWEoeeTdrbyVw" base_Class="_2SYCYPMQEeOrR8IF-aqVyQ">
+  <Ecore:EClass xmi:id="_ZkgtwLbPEeWQ25S2Lv5Ssw" base_Class="_2SYCYPMQEeOrR8IF-aqVyQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_XDNSYLTREeWEoeeTdrbyVw" base_Class="_OIcaAPrwEeO3D4OxHxUkag">
+  <Ecore:EClass xmi:id="_Zqn80LbPEeWQ25S2Lv5Ssw" base_Class="_OIcaAPrwEeO3D4OxHxUkag">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyObservationParticipantParticipantRole'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_XDg0YLTREeWEoeeTdrbyVw" base_Class="_OOs9kPrxEeO3D4OxHxUkag">
+  <Ecore:EClass xmi:id="_ZrDaoLbPEeWQ25S2Lv5Ssw" base_Class="_OOs9kPrxEeO3D4OxHxUkag">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyObservationParticipantParticipantRolePlayingEntity'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_XIjFYLTREeWEoeeTdrbyVw" base_Class="_nWAcMAIjEeSVzfoPSatgpg">
+  <Ecore:EClass xmi:id="_Zwuk0LbPEeWQ25S2Lv5Ssw" base_Class="_nWAcMAIjEeSVzfoPSatgpg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSectionEntriesOptionalTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionEntriesOptionalCodeP AllergiesSectionEntriesOptional2Entry' templateId.root='2.16.840.1.113883.10.20.22.2.6' templateId.extension='2015-08-01' code.code='48765-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Allergies, adverse reactions, alerts' constraints.validation.dependOn.AllergiesSectionEntriesOptionalCode='AllergiesSectionEntriesOptionalCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_XIroQLTREeWEoeeTdrbyVw" base_Class="_EONPMAInEeSr1aKUYorURA">
+  <Ecore:EClass xmi:id="_Zw484LbPEeWQ25S2Lv5Ssw" base_Class="_EONPMAInEeSr1aKUYorURA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSectionEntriesOptionalTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionEntriesOptionalCodeP AllergiesSectionEntriesOptionalTitle AllergiesSectionEntriesOptionalText AllergiesSection2Entry' templateId.root='2.16.840.1.113883.10.20.22.2.6.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='AllergiesSection2NullFlavor' code.code='48765-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Allergies, adverse reactions, alerts' constraints.validation.dependOn.AllergiesSectionEntriesOptionalCode='AllergiesSectionEntriesOptionalCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Yf0aULTREeWEoeeTdrbyVw" base_Class="_fCf7oLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_byqnYLbPEeWQ25S2Lv5Ssw" base_Class="_fCf7oLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyProblemActAllergyObservationEntryRelationshipAllergyObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_YgUwoLTREeWEoeeTdrbyVw" base_Class="_fCsI4LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_bzcqgLbPEeWQ25S2Lv5Ssw" base_Class="_fCsI4LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='AllergyObservationAllergyStatusObservationEntryRelationshipAllergyStatusObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Yg1uALTREeWEoeeTdrbyVw" base_Class="_fCyPgLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_b0mhELbPEeWQ25S2Lv5Ssw" base_Class="_fCyPgLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='AllergyObservationReactionObservationEntryRelationshipReactionObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_YhX5gLTREeWEoeeTdrbyVw" base_Class="_fC3vELS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_b1jjULbPEeWQ25S2Lv5Ssw" base_Class="_fC3vELS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='AllergyObservationSeverityObservationEntryRelationshipSeverityObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Yh424LTREeWEoeeTdrbyVw" base_Class="_fDAR8LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_b2k3ALbPEeWQ25S2Lv5Ssw" base_Class="_fDAR8LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='ReactionObservationSeverityObservationEntryRelationshipSeverityObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_YiZ0QLTREeWEoeeTdrbyVw" base_Class="_fDFKcLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_b333gLbPEeWQ25S2Lv5Ssw" base_Class="_fDFKcLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ReactionObservationProcedureActivityProcedureEntryRelationshipProcedureActivityProcedure'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_YjBfULTREeWEoeeTdrbyVw" base_Class="_fDKC8LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_b4zEkLbPEeWQ25S2Lv5Ssw" base_Class="_fDKC8LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ReactionObservationMedicationActivityEntryRelationshipMedicationActivity'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Y8GGoLTREeWEoeeTdrbyVw" base_Class="_fG4sYLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_cjYSoLbPEeWQ25S2Lv5Ssw" base_Class="_fG4sYLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSectionAllergyProblemActEntryAllergyProblemAct'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZhiWALTREeWEoeeTdrbyVw" base_Class="_fNJFYLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_deJRwLbPEeWQ25S2Lv5Ssw" base_Class="_fNJFYLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='AllergiesSectionEntriesOptionalAllergyProblemActEntryAllergyProblemAct'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_cngBYLTREeWEoeeTdrbyVw" base_Class="_fj1HELS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_hnRDQLbPEeWQ25S2Lv5Ssw" base_Class="_fj1HELS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyConcernAct2AllergyObservation2EntryRelationshipAllergyObservation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_cn_woLTREeWEoeeTdrbyVw" base_Class="_fj4xcLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_hn_cALbPEeWQ25S2Lv5Ssw" base_Class="_fj4xcLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='AllergyObservation2ReactionObservation2EntryRelationshipReactionObservation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_cogG8LTREeWEoeeTdrbyVw" base_Class="_fj9C4LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_hovC4LbPEeWQ25S2Lv5Ssw" base_Class="_fj9C4LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='AllergyObservation2SeverityObservation2EntryRelationshipSeverityObservation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_cpAdQLTREeWEoeeTdrbyVw" base_Class="_fkAtQLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_hpkwYLbPEeWQ25S2Lv5Ssw" base_Class="_fkAtQLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyObservation2AllergyStatusObservationEntryRelationshipAllergyStatusObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ctVjoLTREeWEoeeTdrbyVw" base_Class="_fkq0kLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_hwIrYbbPEeWQ25S2Lv5Ssw" base_Class="_fkq0kLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='SubstanceOrDeviceAllergyObservationAllergyStatusObservationEntryRelationshipAllergyStatusObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ct1S4LTREeWEoeeTdrbyVw" base_Class="_fkvGALS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_hw5gYLbPEeWQ25S2Lv5Ssw" base_Class="_fkvGALS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='SubstanceOrDeviceAllergyObservationReactionObservationEntryRelationshipReactionObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_cuUbELTREeWEoeeTdrbyVw" base_Class="_fkywYLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_hxnSELbPEeWQ25S2Lv5Ssw" base_Class="_fkywYLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='SubstanceOrDeviceAllergyObservationSeverityObservationEntryRelationshipSeverityObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_dW7TMLTREeWEoeeTdrbyVw" base_Class="_fpBJELS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_ijRYgLbPEeWQ25S2Lv5Ssw" base_Class="_fpBJELS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ReactionObservation2ProcedureActivityProcedure2EntryRelationshipProcedureActivityProcedure2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_dXbCcLTREeWEoeeTdrbyVw" base_Class="_fpFagLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_ikdEQLbPEeWQ25S2Lv5Ssw" base_Class="_fpFagLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ReactionObservation2MedicationActivity2EntryRelationshipMedicationActivity2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_dX6xsLTREeWEoeeTdrbyVw" base_Class="_fpKTALS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_ilUm8LbPEeWQ25S2Lv5Ssw" base_Class="_fpKTALS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ReactionObservation2SeverityObservation2EntryRelationshipSeverityObservation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_dYq_oLTREeWEoeeTdrbyVw" base_Class="_fpUEALS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_inULALbPEeWQ25S2Lv5Ssw" base_Class="_fpUEALS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='SubstanceOrDeviceAllergyObservation2ReactionObservation2EntryRelationshipReactionObservation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_dZKu4LTREeWEoeeTdrbyVw" base_Class="_fpY8gLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_ioz_0LbPEeWQ25S2Lv5Ssw" base_Class="_fpY8gLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='SubstanceOrDeviceAllergyObservation2SeverityObservation2EntryRelationshipSeverityObservation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_d9EtMLTREeWEoeeTdrbyVw" base_Class="_fu4ggLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_kH3-0LbPEeWQ25S2Lv5Ssw" base_Class="_fu4ggLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='AllergiesSectionEntriesOptional2AllergyConcernAct2EntryAllergyConcernAct2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_d9lDgLTREeWEoeeTdrbyVw" base_Class="_fu8x8LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_kKnJwLbPEeWQ25S2Lv5Ssw" base_Class="_fu8x8LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSection2AllergyConcernAct2EntryAllergyConcernAct2'</annotation>
   </Ecore:EClass>
 </xmi:XMI>

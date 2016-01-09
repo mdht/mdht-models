@@ -5,35 +5,35 @@
       <body>DICOM Object Catalog lists all referenced objects and their parent Series and Studies, plus other DICOM attributes required for retrieving the objects.&#xD;
 DICOM Object Catalog sections are not intended for viewing and contain empty section text.</body>
     </ownedComment>
-    <ownedRule xmi:id="_T2k-ULTREeWEoeeTdrbyVw" name="DICOMObjectCatalogSectionTemplateId" constrainedElement="_WPTWEDVyEeGaW4kr-GbV8Q">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_T2k-UbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Wt3QwLbPEeWQ25S2Lv5Ssw" name="DICOMObjectCatalogSectionTemplateId" constrainedElement="_WPTWEDVyEeGaW4kr-GbV8Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Wt3QwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.1.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_T2nakLTREeWEoeeTdrbyVw" name="DICOMObjectCatalogSectionCode" constrainedElement="_eLH9sEb4EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_T2nakbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Wt5tALbPEeWQ25S2Lv5Ssw" name="DICOMObjectCatalogSectionCode" constrainedElement="_eLH9sEb4EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Wt5tAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_T2p20LTREeWEoeeTdrbyVw" name="DICOMObjectCatalogSectionCodeP" constrainedElement="_eLH9sEb4EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_T2p20bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Wt8JQLbPEeWQ25S2Lv5Ssw" name="DICOMObjectCatalogSectionCodeP" constrainedElement="_eLH9sEb4EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Wt8JQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ZviVwLTREeWEoeeTdrbyVw" name="DICOMObjectCatalogSectionEntry">
+    <ownedRule xmi:id="_d3lsgLbPEeWQ25S2Lv5Ssw" name="DICOMObjectCatalogSectionEntry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fPUPoLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZviVwbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_d3lsgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::DICOMObjectCatalogSection::StudyActEntry))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_jWK8ALTVEeWEoeeTdrbyVw" name="DICOMObjectCatalogSectionTemplateId" constrainedElement="_WPTWEDVyEeGaW4kr-GbV8Q">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jWK8AbTVEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_PLsGgLbUEeWQ25S2Lv5Ssw" name="DICOMObjectCatalogSectionTemplateId" constrainedElement="_WPTWEDVyEeGaW4kr-GbV8Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_PLstkLbUEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.1.1')</body>
       </specification>
@@ -54,9 +54,9 @@ value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
       <association href="../consol.uml#_fPUPoLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fPTBgLS6EeWcPq3zAthoUQ" name="StudyActEntry">
-      <ownedRule xmi:id="_Zv6wQLTREeWEoeeTdrbyVw" name="DICOMObjectCatalogSectionStudyActEntryStudyAct">
+      <ownedRule xmi:id="_d39f8LbPEeWQ25S2Lv5Ssw" name="DICOMObjectCatalogSectionStudyActEntryStudyAct">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fPWr4LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zv6wQbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d3-HALbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.act->exists(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::StudyAct))</body>
         </specification>
@@ -73,8 +73,8 @@ value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
     </nestedClassifier>
   </uml:Class>
   <uml:Class xmi:id="_ZcC-4DVyEeGaW4kr-GbV8Q" name="FindingsSection">
-    <ownedRule xmi:id="_T2sTELTREeWEoeeTdrbyVw" name="FindingsSectionTemplateId" constrainedElement="_ZcC-4DVyEeGaW4kr-GbV8Q">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_T2s6ILTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Wt-lgLbPEeWQ25S2Lv5Ssw" name="FindingsSectionTemplateId" constrainedElement="_ZcC-4DVyEeGaW4kr-GbV8Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Wt-lgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.1.2')</body>
       </specification>
@@ -95,26 +95,26 @@ value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
     <ownedComment xmi:id="_s137QIfHEeSBauRYePLghA">
       <body>This participant is the Physician Reading Study Performer defined in documentationOf/serviceEvent and is usually different from the attending physician. The reading physician??interprets the images and evidence of the study (DICOM Definition)</body>
     </ownedComment>
-    <ownedRule xmi:id="_UPhCwbTREeWEoeeTdrbyVw" name="PhysicianReadingStudyPerformerTemplateId" constrainedElement="_H1UdcEVEEeGAh_iQGJvI5w">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UPhp0LTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XKaC0LbPEeWQ25S2Lv5Ssw" name="PhysicianReadingStudyPerformerTemplateId" constrainedElement="_H1UdcEVEEeGAh_iQGJvI5w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XKaC0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UPi38LTREeWEoeeTdrbyVw" name="PhysicianReadingStudyPerformerTime" constrainedElement="_L0RmUEVEEeGAh_iQGJvI5w">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UPi38bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XKbQ8LbPEeWQ25S2Lv5Ssw" name="PhysicianReadingStudyPerformerTime" constrainedElement="_L0RmUEVEEeGAh_iQGJvI5w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XKbQ8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.time.oclIsUndefined()) and self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UPktILTREeWEoeeTdrbyVw" name="PhysicianReadingStudyPerformerTypeCode" constrainedElement="_L0RmU0VEEeGAh_iQGJvI5w">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UPktIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XKdGILbPEeWQ25S2Lv5Ssw" name="PhysicianReadingStudyPerformerTypeCode" constrainedElement="_L0RmU0VEEeGAh_iQGJvI5w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XKdGIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.typeCode=vocab::x_ServiceEventPerformer::PRF</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UURm8LTREeWEoeeTdrbyVw" name="PhysicianReadingStudyPerformerAssignedEntity" constrainedElement="_1B44wkrXEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UURm8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XPmE0LbPEeWQ25S2Lv5Ssw" name="PhysicianReadingStudyPerformerAssignedEntity" constrainedElement="_1B44wkrXEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPmE0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))</body>
       </specification>
@@ -165,14 +165,14 @@ value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
           <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_UPnwcLTREeWEoeeTdrbyVw" name="PhysicianReadingStudyPerformerAssignedEntityId" constrainedElement="_xNHFA0VEEeGAh_iQGJvI5w">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UPnwcbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_XKgJcLbPEeWQ25S2Lv5Ssw" name="PhysicianReadingStudyPerformerAssignedEntityId" constrainedElement="_xNHFA0VEEeGAh_iQGJvI5w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XKgJcbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>not self.id->isEmpty()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_UPo-kLTREeWEoeeTdrbyVw" name="PhysicianReadingStudyPerformerAssignedEntityCode" constrainedElement="_xNHFAEVEEeGAh_iQGJvI5w">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UPo-kbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_XKhXkLbPEeWQ25S2Lv5Ssw" name="PhysicianReadingStudyPerformerAssignedEntityCode" constrainedElement="_xNHFAEVEEeGAh_iQGJvI5w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XKhXkbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>not self.code.oclIsUndefined()</body>
         </specification>
@@ -221,52 +221,52 @@ value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
     <ownedComment xmi:id="_uqo_8Eb_EeGp67IkyTw1fg">
       <body>DICOM Template 2000 specifies that Imaging Report Elements of Value Type Code are contained in sections. The Imaging Report Elements are inferred from Basic Diagnostic Imaging Report Observations that consist of image references and measurements (linear, area, volume, and numeric). Coded DICOM Imaging Report Elements in this context are mapped to CDA-coded observations that are section components and are related to the SOP Instance Observations (templateId 2.16.840.1.113883.10.20.6.2.8) or Quantity Measurement Observations (templateId 2.16.840.1.113883.10.20.6.2.14) by the SPRT (Support) act relationship.</body>
     </ownedComment>
-    <ownedRule xmi:id="_UTqi8LTREeWEoeeTdrbyVw" name="CodeObservationsTemplateId" constrainedElement="_pmiz8Eb_EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTqi8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XO9LoLbPEeWQ25S2Lv5Ssw" name="CodeObservationsTemplateId" constrainedElement="_pmiz8Eb_EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO9LobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.13')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTs_MLTREeWEoeeTdrbyVw" name="CodeObservationsClassCode" constrainedElement="_K7m4wOZBEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTs_MbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XPAO8LbPEeWQ25S2Lv5Ssw" name="CodeObservationsClassCode" constrainedElement="_K7m4wOZBEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPAO8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTu0YLTREeWEoeeTdrbyVw" name="CodeObservationsMoodCode" constrainedElement="_K7m4xeZBEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTu0YbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XPDSQLbPEeWQ25S2Lv5Ssw" name="CodeObservationsMoodCode" constrainedElement="_K7m4xeZBEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPDSQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTwCgLTREeWEoeeTdrbyVw" name="CodeObservationsCode" constrainedElement="_K7m4weZBEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTwCgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XPEgYLbPEeWQ25S2Lv5Ssw" name="CodeObservationsCode" constrainedElement="_K7m4weZBEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPEgYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTx3sLTREeWEoeeTdrbyVw" name="CodeObservationsEffectiveTime" constrainedElement="_K7m4wuZBEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTx3sbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XPFugLbPEeWQ25S2Lv5Ssw" name="CodeObservationsEffectiveTime" constrainedElement="_K7m4wuZBEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPFugbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTzs4LTREeWEoeeTdrbyVw" name="CodeObservationsValue" constrainedElement="_K7m4xuZBEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTzs4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XPG8oLbPEeWQ25S2Lv5Ssw" name="CodeObservationsValue" constrainedElement="_K7m4xuZBEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPHjsLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_a-UdELTREeWEoeeTdrbyVw" name="CodeObservationsEntryRelationship">
+    <ownedRule xmi:id="_felfgLbPEeWQ25S2Lv5Ssw" name="CodeObservationsEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fY_wELS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a-UdEbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_felfgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::CodeObservations::SOPInstanceObservationEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_a-0zYLTREeWEoeeTdrbyVw" name="CodeObservationsEntryRelationship">
+    <ownedRule xmi:id="_ffSqILbPEeWQ25S2Lv5Ssw" name="CodeObservationsEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fZCzYLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a-0zYbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ffSqIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::CodeObservations::QuantityMeasurementObservationEntryRelationship))</body>
       </specification>
@@ -313,9 +313,9 @@ value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
       <association href="../consol.uml#_fZCzYLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fY-h8LS6EeWcPq3zAthoUQ" name="SOPInstanceObservationEntryRelationship">
-      <ownedRule xmi:id="_a-kUsLTREeWEoeeTdrbyVw" name="CodeObservationsSOPInstanceObservationEntryRelationshipSOPInstanceObservation">
+      <ownedRule xmi:id="_fe8r4LbPEeWQ25S2Lv5Ssw" name="CodeObservationsSOPInstanceObservationEntryRelationshipSOPInstanceObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fZA-MLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a-kUsbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fe8r4bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->size() >= 0</body>
         </specification>
@@ -331,9 +331,9 @@ value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fZCMULS6EeWcPq3zAthoUQ" name="QuantityMeasurementObservationEntryRelationship">
-      <ownedRule xmi:id="_a_L_wLTREeWEoeeTdrbyVw" name="CodeObservationsQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation">
+      <ownedRule xmi:id="_fftg4LbPEeWQ25S2Lv5Ssw" name="CodeObservationsQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fZEBgLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a_L_wbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fftg4bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::QuantityMeasurementObservation))->size() >= 0</body>
         </specification>
@@ -357,20 +357,20 @@ value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
     <ownedComment xmi:id="_TthdwEb1EeGp67IkyTw1fg">
       <body>This encounterParticipant is the attending physician and is usually different from the Physician Reading Study Performer defined in documentationOf/serviceEvent.</body>
     </ownedComment>
-    <ownedRule xmi:id="_UQIt0LTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipantTemplateId" constrainedElement="_H_izsEb1EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UQIt0bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XLIbkLbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipantTemplateId" constrainedElement="_H_izsEb1EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XLIbkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.2')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UQKjALTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipantTypeCode" constrainedElement="_eSxlMEb1EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UQKjAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XLK30LbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipantTypeCode" constrainedElement="_eSxlMEb1EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XLK30bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.typeCode=vocab::x_EncounterParticipant::ATND</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UUj60LTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipantAssignedEntity" constrainedElement="_QLNPckrYEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UUj60bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XP5m0LbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipantAssignedEntity" constrainedElement="_QLNPckrYEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XP5m0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))</body>
       </specification>
@@ -407,20 +407,20 @@ value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
           <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_UQM_QLTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipantAssignedEntityCode" constrainedElement="_r84kwEb1EeGp67IkyTw1fg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UQM_QbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_XLN7ILbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipantAssignedEntityCode" constrainedElement="_r84kwEb1EeGp67IkyTw1fg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XLN7IbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>not self.code.oclIsUndefined()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_UQONYLTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipantAssignedEntityId" constrainedElement="_r84kw0b1EeGp67IkyTw1fg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UQONYbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_XLPJQLbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipantAssignedEntityId" constrainedElement="_r84kw0b1EeGp67IkyTw1fg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XLPJQbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>not self.id->isEmpty()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_UU0ZgLTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipantAssignedEntityAssignedPerson" constrainedElement="_g5aSIkrYEeGJpZWiuxRVIw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UU0ZgbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_XQNI0LbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipantAssignedEntityAssignedPerson" constrainedElement="_g5aSIkrYEeGJpZWiuxRVIw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XQNI0bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.assignedPerson->select(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(consol::PhysicianofRecordParticipant::AssignedEntity::AssignedPerson))->size() &lt;= 1</body>
         </specification>
@@ -444,8 +444,8 @@ value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g5aSIUrYEeGJpZWiuxRVIw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_eq8_MEb2EeGp67IkyTw1fg" name="AssignedPerson">
-        <ownedRule xmi:id="_UQPbgLTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipantAssignedEntityAssignedPersonName" constrainedElement="_ir_ywEb2EeGp67IkyTw1fg">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_UQPbgbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_XLQ-cLbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipantAssignedEntityAssignedPersonName" constrainedElement="_ir_ywEb2EeGp67IkyTw1fg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_XLQ-cbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>((not self.name->isEmpty()) and self.name->exists(element | element.isNullFlavorUndefined())) implies (self.name->size() &lt;= 1)</body>
           </specification>
@@ -492,32 +492,32 @@ value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
         <body>not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.value->size() = 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UT2wMLTREeWEoeeTdrbyVw" name="ProcedureContextTemplateId" constrainedElement="_crHC0EcAEeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UT2wMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XPIx0LbPEeWQ25S2Lv5Ssw" name="ProcedureContextTemplateId" constrainedElement="_crHC0EcAEeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPJY4LbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.5')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UT5zgLTREeWEoeeTdrbyVw" name="ProcedureContextClassCode" constrainedElement="_wUw6IGQmEeOD5bEp3nNX5w">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UT5zgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XPL1ILbPEeWQ25S2Lv5Ssw" name="ProcedureContextClassCode" constrainedElement="_wUw6IGQmEeOD5bEp3nNX5w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPL1IbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UT7BoLTREeWEoeeTdrbyVw" name="ProcedureContextMoodCode" constrainedElement="_wUxhMGQmEeOD5bEp3nNX5w">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UT7BobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XPNDQLbPEeWQ25S2Lv5Ssw" name="ProcedureContextMoodCode" constrainedElement="_wUxhMGQmEeOD5bEp3nNX5w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPNDQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UT820LTREeWEoeeTdrbyVw" name="ProcedureContextCode" constrainedElement="_FyeiIOZJEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UT820bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XPORYLbPEeWQ25S2Lv5Ssw" name="ProcedureContextCode" constrainedElement="_FyeiIOZJEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPORYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UT-E8LTREeWEoeeTdrbyVw" name="ProcedureContextEffectiveTime" constrainedElement="_FyeiIeZJEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UT-E8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XPQGkLbPEeWQ25S2Lv5Ssw" name="ProcedureContextEffectiveTime" constrainedElement="_FyeiIeZJEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XPQGkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
       </specification>
@@ -565,38 +565,38 @@ value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
         <body>self.code.isNullFlavorDefined() or (self.code.code = 'ASSERTION' and self.code.codeSystem = '2.16.840.1.113883.5.4')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_USNKYLTREeWEoeeTdrbyVw" name="PurposeofReferenceObservationTemplateId" constrainedElement="_J-F8UEb7EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_USNKYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNt1gLbPEeWQ25S2Lv5Ssw" name="PurposeofReferenceObservationTemplateId" constrainedElement="_J-F8UEb7EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNt1gbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.9')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_USRb0LTREeWEoeeTdrbyVw" name="PurposeofReferenceObservationClassCode" constrainedElement="_vFSoYErgEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_USRb0bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNwRwLbPEeWQ25S2Lv5Ssw" name="PurposeofReferenceObservationClassCode" constrainedElement="_vFSoYErgEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNwRwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UST4ELTREeWEoeeTdrbyVw" name="PurposeofReferenceObservationCode" constrainedElement="_vFSoYUrgEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UST4EbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNyG8LbPEeWQ25S2Lv5Ssw" name="PurposeofReferenceObservationCode" constrainedElement="_vFSoYUrgEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNyG8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_USW7YLTREeWEoeeTdrbyVw" name="PurposeofReferenceObservationMoodCode" constrainedElement="_vFSoYkrgEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_USW7YbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNz8ILbPEeWQ25S2Lv5Ssw" name="PurposeofReferenceObservationMoodCode" constrainedElement="_vFSoYkrgEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNz8IbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_USnaELTREeWEoeeTdrbyVw" name="PurposeofReferenceObservationValueP" constrainedElement="_vFSoY0rgEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_USnaEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOCloLbPEeWQ25S2Lv5Ssw" name="PurposeofReferenceObservationValueP" constrainedElement="_vFSoY0rgEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOClobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.value->isEmpty()) and self.value->exists(element | element.isNullFlavorUndefined())) implies (true)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_USalwLTREeWEoeeTdrbyVw" name="PurposeofReferenceObservationValue" constrainedElement="_vFSoY0rgEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_USalwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XN2_cLbPEeWQ25S2Lv5Ssw" name="PurposeofReferenceObservationValue" constrainedElement="_vFSoY0rgEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XN2_cbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.value->isEmpty()) and self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
@@ -654,45 +654,45 @@ value.codeSystem = '1.2.840.10008.2.16.4' and (value.code = '121079' or value.co
         <body>self.code.isNullFlavorDefined() or self.code.codeSystem='1.2.840.10008.2.16.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTduoLTREeWEoeeTdrbyVw" name="QuantityMeasurementObservationTemplateId" constrainedElement="_Px2t4Eb_EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTduobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOvwQLbPEeWQ25S2Lv5Ssw" name="QuantityMeasurementObservationTemplateId" constrainedElement="_Px2t4Eb_EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOvwQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.14')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTiAELTREeWEoeeTdrbyVw" name="QuantityMeasurementObservationClassCode" constrainedElement="_x3muIOZTEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTiAEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XO0owLbPEeWQ25S2Lv5Ssw" name="QuantityMeasurementObservationClassCode" constrainedElement="_x3muIOZTEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO0owbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTj1QLTREeWEoeeTdrbyVw" name="QuantityMeasurementObservationMoodCode" constrainedElement="_x3muJeZTEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTj1QbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XO124LbPEeWQ25S2Lv5Ssw" name="QuantityMeasurementObservationMoodCode" constrainedElement="_x3muJeZTEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO124bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTlDYLTREeWEoeeTdrbyVw" name="QuantityMeasurementObservationCode" constrainedElement="_x3muIeZTEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTlDYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XO3sELbPEeWQ25S2Lv5Ssw" name="QuantityMeasurementObservationCode" constrainedElement="_x3muIeZTEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO3sEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTm4kLTREeWEoeeTdrbyVw" name="QuantityMeasurementObservationEffectiveTime" constrainedElement="_x3muIuZTEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTm4kbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XO6IULbPEeWQ25S2Lv5Ssw" name="QuantityMeasurementObservationEffectiveTime" constrainedElement="_x3muIuZTEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO6IUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTotwLTREeWEoeeTdrbyVw" name="QuantityMeasurementObservationValue" constrainedElement="_x3muJuZTEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTotwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XO79gLbPEeWQ25S2Lv5Ssw" name="QuantityMeasurementObservationValue" constrainedElement="_x3muJuZTEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XO79gbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::PQ))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_a9zfsLTREeWEoeeTdrbyVw" name="QuantityMeasurementObservationEntryRelationship">
+    <ownedRule xmi:id="_fd3GwLbPEeWQ25S2Lv5Ssw" name="QuantityMeasurementObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fY7eoLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a9zfsbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fd3t0LbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::QuantityMeasurementObservation::SOPInstanceObservationEntryRelationship))</body>
       </specification>
@@ -733,9 +733,9 @@ value.codeSystem = '1.2.840.10008.2.16.4' and (value.code = '121079' or value.co
       <association href="../consol.uml#_fY7eoLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fY63kLS6EeWcPq3zAthoUQ" name="SOPInstanceObservationEntryRelationship">
-      <ownedRule xmi:id="_a-CwQLTREeWEoeeTdrbyVw" name="QuantityMeasurementObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation">
+      <ownedRule xmi:id="_feOTILbPEeWQ25S2Lv5Ssw" name="QuantityMeasurementObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fY8swLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a-CwQbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_feOTIbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->size() >= 0</body>
         </specification>
@@ -759,41 +759,41 @@ value.codeSystem = '1.2.840.10008.2.16.4' and (value.code = '121079' or value.co
     <ownedComment xmi:id="_E1-4EEriEeGJpZWiuxRVIw">
       <body>A Referenced Frames Observation is used if the referenced DICOM SOP instance is a multiframe image and the reference does not apply to all frames. The list of integer values for the referenced frames of a DICOM multiframe image SOP instance is contained in a Boundary Observation nested inside this class.</body>
     </ownedComment>
-    <ownedRule xmi:id="_USxyILTREeWEoeeTdrbyVw" name="ReferencedFramesObservationTemplateId" constrainedElement="_1Zyf4Eb8EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_USyZMLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XONkwLbPEeWQ25S2Lv5Ssw" name="ReferencedFramesObservationTemplateId" constrainedElement="_1Zyf4Eb8EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOOL0LbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.10')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_US0OYLTREeWEoeeTdrbyVw" name="ReferencedFramesObservationClassCode" constrainedElement="_Hv8u0EriEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_US0OYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOPZ8LbPEeWQ25S2Lv5Ssw" name="ReferencedFramesObservationClassCode" constrainedElement="_Hv8u0EriEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOPZ8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::ROIBND</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_US2DkLTREeWEoeeTdrbyVw" name="ReferencedFramesObservationMoodCode" constrainedElement="_Hv8u0kriEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_US2DkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XORPILbPEeWQ25S2Lv5Ssw" name="ReferencedFramesObservationMoodCode" constrainedElement="_Hv8u0kriEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XORPIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_US6VALTREeWEoeeTdrbyVw" name="ReferencedFramesObservationCodeP" constrainedElement="_Hv8u0UriEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_US6VAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOU5gLbPEeWQ25S2Lv5Ssw" name="ReferencedFramesObservationCodeP" constrainedElement="_Hv8u0UriEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOU5gbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_US34wLTREeWEoeeTdrbyVw" name="ReferencedFramesObservationCode" constrainedElement="_Hv8u0UriEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_US34wbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOTEULbPEeWQ25S2Lv5Ssw" name="ReferencedFramesObservationCode" constrainedElement="_Hv8u0UriEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOTEUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = '121190' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_a8TD0LTREeWEoeeTdrbyVw" name="ReferencedFramesObservationEntryRelationship">
+    <ownedRule xmi:id="_fbd6ELbPEeWQ25S2Lv5Ssw" name="ReferencedFramesObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fYwfgLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a8TD0bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fbd6EbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ReferencedFramesObservation::BoundaryObservationEntryRelationship))</body>
       </specification>
@@ -822,9 +822,9 @@ value.code = '121190' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
       <association href="../consol.uml#_fYwfgLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fYv4cLS6EeWcPq3zAthoUQ" name="BoundaryObservationEntryRelationship">
-      <ownedRule xmi:id="_a8i7cLTREeWEoeeTdrbyVw" name="ReferencedFramesObservationBoundaryObservationEntryRelationshipBoundaryObservation">
+      <ownedRule xmi:id="_fb27oLbPEeWQ25S2Lv5Ssw" name="ReferencedFramesObservationBoundaryObservationEntryRelationshipBoundaryObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fYxtoLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a8i7cbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fb27obbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BoundaryObservation))</body>
         </specification>
@@ -896,59 +896,59 @@ value.code = '121190' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
         <body>self.code.qualifier.value->one(val | (not val.oclIsUndefined() or val.isNullFlavorUndefined()) implies val.oclIsKindOf(datatypes::ANY) and val.codeSystem = '1.2.840.10008.2.16.4')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URexoLTREeWEoeeTdrbyVw" name="SeriesActTemplateId" constrainedElement="_N2wscEb6EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URfYsLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XM3g8LbPEeWQ25S2Lv5Ssw" name="SeriesActTemplateId" constrainedElement="_N2wscEb6EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XM3g8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.63')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URk4QLTREeWEoeeTdrbyVw" name="SeriesActClassCode" constrainedElement="_edhDUEb6EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URk4QbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XM-OoLbPEeWQ25S2Lv5Ssw" name="SeriesActClassCode" constrainedElement="_edhDUEb6EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XM-OobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URmGYLTREeWEoeeTdrbyVw" name="SeriesActMoodCode" constrainedElement="_edhDUUb6EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URmGYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNAD0LbPEeWQ25S2Lv5Ssw" name="SeriesActMoodCode" constrainedElement="_edhDUUb6EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNAD0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URpwwLTREeWEoeeTdrbyVw" name="SeriesActCodeP" constrainedElement="_6tqhEErdEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URqX0LTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNFjYLbPEeWQ25S2Lv5Ssw" name="SeriesActCodeP" constrainedElement="_6tqhEErdEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNFjYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URn7kLTREeWEoeeTdrbyVw" name="SeriesActCode" constrainedElement="_6tqhEErdEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URn7kbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNCgELbPEeWQ25S2Lv5Ssw" name="SeriesActCode" constrainedElement="_6tqhEErdEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNCgEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = '113015' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URsNALTREeWEoeeTdrbyVw" name="SeriesActEffectiveTime" constrainedElement="_6tzrAErdEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URsNAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNImsLbPEeWQ25S2Lv5Ssw" name="SeriesActEffectiveTime" constrainedElement="_6tzrAErdEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNJNwLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URtbILTREeWEoeeTdrbyVw" name="SeriesActId" constrainedElement="_6tzrA0rdEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URtbIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNKb4LbPEeWQ25S2Lv5Ssw" name="SeriesActId" constrainedElement="_6tzrA0rdEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNLC8LbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URvQULTREeWEoeeTdrbyVw" name="SeriesActText" constrainedElement="_6tzrBkrdEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URvQUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNM4ILbPEeWQ25S2Lv5Ssw" name="SeriesActText" constrainedElement="_6tzrBkrdEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNM4IbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_a5uQ8LTREeWEoeeTdrbyVw" name="SeriesActEntryRelationship">
+    <ownedRule xmi:id="_fYhTwLbPEeWQ25S2Lv5Ssw" name="SeriesActEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fYgA0LS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5uQ8bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fYhTwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::SeriesAct::SOPInstanceObservationEntryRelationship))</body>
       </specification>
@@ -1001,9 +1001,9 @@ value.code = '113015' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
       <association href="../consol.uml#_fYgA0LS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fYfZwLS6EeWcPq3zAthoUQ" name="SOPInstanceObservationEntryRelationship">
-      <ownedRule xmi:id="_a5_WsLTREeWEoeeTdrbyVw" name="SeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation">
+      <ownedRule xmi:id="_fY4gILbPEeWQ25S2Lv5Ssw" name="SeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fYh2ALS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5_WsbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fY4gIbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))</body>
         </specification>
@@ -1081,73 +1081,73 @@ value.code = '113015' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
         <body>not self.text.oclIsUndefined() implies self.text.reference.value->size() = 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URxFgLTREeWEoeeTdrbyVw" name="SOPInstanceObservationTemplateId" constrainedElement="_9o7WcEb6EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URxFgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNOtULbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationTemplateId" constrainedElement="_9o7WcEb6EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNOtUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.8')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UR3MILTREeWEoeeTdrbyVw" name="SOPInstanceObservationClassCode" constrainedElement="_La2aoErfEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UR3MIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNYeULbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationClassCode" constrainedElement="_La2aoErfEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNYeUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::DGIMG</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UR4aQLTREeWEoeeTdrbyVw" name="SOPInstanceObservationEffectiveTime" constrainedElement="_LbALoErfEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UR4aQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNa6kLbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationEffectiveTime" constrainedElement="_LbALoErfEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNa6kbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UR62gLTREeWEoeeTdrbyVw" name="SOPInstanceObservationId" constrainedElement="_LbALo0rfEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UR62gbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNdW0LbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationId" constrainedElement="_LbALo0rfEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNdW0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UR950LTREeWEoeeTdrbyVw" name="SOPInstanceObservationMoodCode" constrainedElement="_LbALpkrfEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UR950bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNgaILbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationMoodCode" constrainedElement="_LbALpkrfEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNgaIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_USAWELTREeWEoeeTdrbyVw" name="SOPInstanceObservationText" constrainedElement="_LbALp0rfEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_USAWEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNjdcLbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationText" constrainedElement="_LbALp0rfEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNjdcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_USI48LTREeWEoeeTdrbyVw" name="SOPInstanceObservationCodeP" constrainedElement="_g5YnsFwVEeG0y_7i0ygc4g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_USI48bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNqLILbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationCodeP" constrainedElement="_g5YnsFwVEeG0y_7i0ygc4g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNqLIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_USEngLTREeWEoeeTdrbyVw" name="SOPInstanceObservationCode" constrainedElement="_g5YnsFwVEeG0y_7i0ygc4g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_USEngbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XNnu4LbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationCode" constrainedElement="_g5YnsFwVEeG0y_7i0ygc4g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XNnu4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.codeSystem = '1.2.840.10008.2.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_a6UG0LTREeWEoeeTdrbyVw" name="SOPInstanceObservationEntryRelationship">
+    <ownedRule xmi:id="_fZPsgLbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fYkSQLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6UG0bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fZPsgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::SOPInstanceObservation::SOPInstanceObservationEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_a7EUwLTREeWEoeeTdrbyVw" name="SOPInstanceObservationEntryRelationship">
+    <ownedRule xmi:id="_fZ_6cLbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fYn8oLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a7EUwbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_faAhgLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::SOPInstanceObservation::PurposeofReferenceObservationEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_a7ytgLTREeWEoeeTdrbyVw" name="SOPInstanceObservationEntryRelationship">
+    <ownedRule xmi:id="_fawvcLbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fYsOELS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a7ytgbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fawvcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::SOPInstanceObservation::ReferencedFramesObservationEntryRelationship))</body>
       </specification>
@@ -1209,9 +1209,9 @@ value.codeSystem = '1.2.840.10008.2.6.1'</body>
       <association href="../consol.uml#_fYsOELS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fYjEILS6EeWcPq3zAthoUQ" name="SOPInstanceObservationEntryRelationship">
-      <ownedRule xmi:id="_a6rTMLTREeWEoeeTdrbyVw" name="SOPInstanceObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation">
+      <ownedRule xmi:id="_fZkcoLbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fYlgYLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a6rTMbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fZkcobbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->size() >= 0</body>
         </specification>
@@ -1227,9 +1227,9 @@ value.codeSystem = '1.2.840.10008.2.6.1'</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fYmugLS6EeWcPq3zAthoUQ" name="PurposeofReferenceObservationEntryRelationship">
-      <ownedRule xmi:id="_a7hAsLTREeWEoeeTdrbyVw" name="SOPInstanceObservationPurposeofReferenceObservationEntryRelationshipPurposeofReferenceObservation">
+      <ownedRule xmi:id="_faYU8LbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationPurposeofReferenceObservationEntryRelationshipPurposeofReferenceObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fYpx0LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a7hAsbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_faYU8bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PurposeofReferenceObservation))->size() >= 0</body>
         </specification>
@@ -1245,9 +1245,9 @@ value.codeSystem = '1.2.840.10008.2.6.1'</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fYq_8LS6EeWcPq3zAthoUQ" name="ReferencedFramesObservationEntryRelationship">
-      <ownedRule xmi:id="_a8ClILTREeWEoeeTdrbyVw" name="SOPInstanceObservationReferencedFramesObservationEntryRelationshipReferencedFramesObservation">
+      <ownedRule xmi:id="_fbH70LbPEeWQ25S2Lv5Ssw" name="SOPInstanceObservationReferencedFramesObservationEntryRelationshipReferencedFramesObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fYuDQLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a8ClIbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fbH70bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReferencedFramesObservation))->size() >= 0</body>
         </specification>
@@ -1311,59 +1311,59 @@ value.codeSystem = '1.2.840.10008.2.6.1'</body>
         <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URNE0LTREeWEoeeTdrbyVw" name="StudyActTemplateId" constrainedElement="_vjf-wEb4EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URNE0bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XMhisbbPEeWQ25S2Lv5Ssw" name="StudyActTemplateId" constrainedElement="_vjf-wEb4EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XMhisrbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.6')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URR9ULTREeWEoeeTdrbyVw" name="StudyActClassCode" constrainedElement="_5xNI4Eb4EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URR9UbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XMnCQLbPEeWQ25S2Lv5Ssw" name="StudyActClassCode" constrainedElement="_5xNI4Eb4EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XMnCQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URTygLTREeWEoeeTdrbyVw" name="StudyActMoodCode" constrainedElement="_5xNI4Ub4EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URTygbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XMpegLbPEeWQ25S2Lv5Ssw" name="StudyActMoodCode" constrainedElement="_5xNI4Ub4EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XMpegbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URVnsLTREeWEoeeTdrbyVw" name="StudyActId" constrainedElement="_FEXfMEb5EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URVnsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XMqsoLbPEeWQ25S2Lv5Ssw" name="StudyActId" constrainedElement="_FEXfMEb5EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XMqsobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URZSELTREeWEoeeTdrbyVw" name="StudyActCodeP" constrainedElement="_I445sEb5EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URZSEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XMvlILbPEeWQ25S2Lv5Ssw" name="StudyActCodeP" constrainedElement="_I445sEb5EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XMvlIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URXc4LTREeWEoeeTdrbyVw" name="StudyActCode" constrainedElement="_I445sEb5EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URXc4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XMsh0LbPEeWQ25S2Lv5Ssw" name="StudyActCode" constrainedElement="_I445sEb5EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XMtI4LbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = '113014' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URbuULTREeWEoeeTdrbyVw" name="StudyActEffectiveTime" constrainedElement="_I445sUb5EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URbuUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XMxaULbPEeWQ25S2Lv5Ssw" name="StudyActEffectiveTime" constrainedElement="_I445sUb5EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XMxaUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_URdjgLTREeWEoeeTdrbyVw" name="StudyActText" constrainedElement="_I445tEb5EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_URdjgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XM0doLbPEeWQ25S2Lv5Ssw" name="StudyActText" constrainedElement="_I445tEb5EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XM0dobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_a5NTkLTREeWEoeeTdrbyVw" name="StudyActEntryRelationship">
+    <ownedRule xmi:id="_fXy7ALbPEeWQ25S2Lv5Ssw" name="StudyActEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fYcWcLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5NTkbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fXy7AbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::StudyAct::SeriesActEntryRelationship))</body>
       </specification>
@@ -1416,9 +1416,9 @@ value.code = '113014' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
       <association href="../consol.uml#_fYcWcLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fYbIULS6EeWcPq3zAthoUQ" name="SeriesActEntryRelationship">
-      <ownedRule xmi:id="_a5dLMLTREeWEoeeTdrbyVw" name="StudyActSeriesActEntryRelationshipSeriesAct">
+      <ownedRule xmi:id="_fYKucLbPEeWQ25S2Lv5Ssw" name="StudyActSeriesActEntryRelationshipSeriesAct">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fYdkkLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a5dLMbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fYKucbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::SeriesAct))</body>
         </specification>
@@ -1485,58 +1485,58 @@ A Text Observation is required if the findings in the section text are represent
         <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTJlkLTREeWEoeeTdrbyVw" name="TextObservationTemplateId" constrainedElement="_9xjKIEb-EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTJlkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOiU4LbPEeWQ25S2Lv5Ssw" name="TextObservationTemplateId" constrainedElement="_9xjKIEb-EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOiU4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.12')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTQTQLTREeWEoeeTdrbyVw" name="TextObservationClassCode" constrainedElement="__bAhYOZWEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTQTQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOl_QLbPEeWQ25S2Lv5Ssw" name="TextObservationClassCode" constrainedElement="__bAhYOZWEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOl_QbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTTWkLTREeWEoeeTdrbyVw" name="TextObservationMoodCode" constrainedElement="__bAhZeZWEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTTWkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOnNYLbPEeWQ25S2Lv5Ssw" name="TextObservationMoodCode" constrainedElement="__bAhZeZWEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOnNYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTVy0LTREeWEoeeTdrbyVw" name="TextObservationCode" constrainedElement="__bAhYeZWEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTVy0bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOobgLbPEeWQ25S2Lv5Ssw" name="TextObservationCode" constrainedElement="__bAhYeZWEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOpCkLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTYPELTREeWEoeeTdrbyVw" name="TextObservationEffectiveTime" constrainedElement="__bAhYuZWEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTYPEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOqQsLbPEeWQ25S2Lv5Ssw" name="TextObservationEffectiveTime" constrainedElement="__bAhYuZWEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOqQsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTaEQLTREeWEoeeTdrbyVw" name="TextObservationText" constrainedElement="__bAhZuZWEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTaEQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOsF4LbPEeWQ25S2Lv5Ssw" name="TextObservationText" constrainedElement="__bAhZuZWEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOsF4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTb5cLTREeWEoeeTdrbyVw" name="TextObservationValue" constrainedElement="__bAhaeZWEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTb5cbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOtUALbPEeWQ25S2Lv5Ssw" name="TextObservationValue" constrainedElement="__bAhaeZWEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOtUAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::ED))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_a80oQLTREeWEoeeTdrbyVw" name="TextObservationEntryRelationship">
+    <ownedRule xmi:id="_fcUOoLbPEeWQ25S2Lv5Ssw" name="TextObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fY0J4LS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a80oQbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fcUOobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::TextObservation::SOPInstanceObservationEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_a9UXgLTREeWEoeeTdrbyVw" name="TextObservationEntryRelationship">
+    <ownedRule xmi:id="_fdHf4LbPEeWQ25S2Lv5Ssw" name="TextObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fY30QLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a9UXgbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fdHf4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::TextObservation::QuantityMeasurementObservationEntryRelationship))</body>
       </specification>
@@ -1589,9 +1589,9 @@ A Text Observation is required if the findings in the section text are represent
       <association href="../consol.uml#_fY30QLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fYzi0LS6EeWcPq3zAthoUQ" name="SOPInstanceObservationEntryRelationship">
-      <ownedRule xmi:id="_a9Ef4LTREeWEoeeTdrbyVw" name="TextObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation">
+      <ownedRule xmi:id="_fcwTgLbPEeWQ25S2Lv5Ssw" name="TextObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fY1YALS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a9Ef4bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fcwTgbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->size() >= 0</body>
         </specification>
@@ -1607,9 +1607,9 @@ A Text Observation is required if the findings in the section text are represent
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fY3NMLS6EeWcPq3zAthoUQ" name="QuantityMeasurementObservationEntryRelationship">
-      <ownedRule xmi:id="_a9joELTREeWEoeeTdrbyVw" name="TextObservationQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation">
+      <ownedRule xmi:id="_fddeILbPEeWQ25S2Lv5Ssw" name="TextObservationQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fY5CYLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a9joEbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fddeIbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::QuantityMeasurementObservation))->size() >= 0</body>
         </specification>
@@ -1746,40 +1746,40 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
     <ownedComment xmi:id="_xkMo4EriEeGJpZWiuxRVIw">
       <body>A Boundary Observation contains a list of integer values for the referenced frames of a DICOM multiframe image SOP instance. It identifies the frame numbers within the referenced SOP instance to which the reference applies. The CDA Boundary Observation numbers frames using the same convention as DICOM, with the first frame in the referenced object being Frame 1. A Boundary Observation must be used if a referenced DICOM SOP instance is a multiframe image and the reference does not apply to all frames.</body>
     </ownedComment>
-    <ownedRule xmi:id="_US8xQLTREeWEoeeTdrbyVw" name="BoundaryObservationTemplateId" constrainedElement="_9Yv6gEb8EeGp67IkyTw1fg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_US8xQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOXVwLbPEeWQ25S2Lv5Ssw" name="BoundaryObservationTemplateId" constrainedElement="_9Yv6gEb8EeGp67IkyTw1fg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOXVwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.11')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_US_NgLTREeWEoeeTdrbyVw" name="BoundaryObservationClassCode" constrainedElement="_21tl0EriEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_US_NgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOZK8LbPEeWQ25S2Lv5Ssw" name="BoundaryObservationClassCode" constrainedElement="_21tl0EriEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOZK8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTDe8LTREeWEoeeTdrbyVw" name="BoundaryObservationCodeP" constrainedElement="_21tl0UriEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTDe8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOc1ULbPEeWQ25S2Lv5Ssw" name="BoundaryObservationCodeP" constrainedElement="_21tl0UriEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOc1UbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTBCsLTREeWEoeeTdrbyVw" name="BoundaryObservationCode" constrainedElement="_21tl0UriEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTBCsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOaZELbPEeWQ25S2Lv5Ssw" name="BoundaryObservationCode" constrainedElement="_21tl0UriEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOaZEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = '113036' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTF7MLTREeWEoeeTdrbyVw" name="BoundaryObservationMoodCode" constrainedElement="_21tl0kriEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTF7MbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOfRkLbPEeWQ25S2Lv5Ssw" name="BoundaryObservationMoodCode" constrainedElement="_21tl0kriEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOfRkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UTHwYLTREeWEoeeTdrbyVw" name="BoundaryObservationValue" constrainedElement="_21tl00riEeGJpZWiuxRVIw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UTHwYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XOgfsLbPEeWQ25S2Lv5Ssw" name="BoundaryObservationValue" constrainedElement="_21tl00riEeGJpZWiuxRVIw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XOgfsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.value->isEmpty() and self.value->forAll(element | element.oclIsTypeOf(datatypes::INT))</body>
       </specification>
@@ -2157,15 +2157,15 @@ value.code = '113036' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
     <ownedComment xmi:id="_Yh-f4OaHEeOmzetP5oaH3A">
       <body>This encounterParticipant is the attending physician and is usually different from the Physician Reading Study Performer defined in documentationOf/serviceEvent.</body>
     </ownedComment>
-    <ownedRule xmi:id="_WgWc8LTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipantTemplateId" constrainedElement="_Ao2HkOaHEeOmzetP5oaH3A">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WgXEALTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZKIe4LbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipantTemplateId" constrainedElement="_Ao2HkOaHEeOmzetP5oaH3A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZKIe4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.2' and id.extension = '2014-06-09')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WgbVcbTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipantAssignedEntity">
+    <ownedRule xmi:id="_ZKMwUbbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipantAssignedEntity">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_vp88gOaREeOmzetP5oaH3A"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WgbVcrTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZKMwUrbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))</body>
       </specification>
@@ -2189,16 +2189,16 @@ value.code = '113036' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
           <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WgrNELTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipantAssignedEntityAssignedPerson">
+      <ownedRule xmi:id="_ZKfEMLbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipantAssignedEntityAssignedPerson">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_1DqzMOaREeOmzetP5oaH3A"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WgrNEbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZKfEMbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.assignedPerson->select(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(consol::PhysicianofRecordParticipant2::AssignedEntity::AssignedPerson))->size() &lt;= 1</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Wg6doLTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization">
+      <ownedRule xmi:id="_ZKx_ILbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_GNjvgOaWEeOmzetP5oaH3A"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Wg6dobTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZKx_IbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.representedOrganization->select(representedOrganization : cda::Organization | not representedOrganization.oclIsUndefined() and representedOrganization.oclIsKindOf(consol::PhysicianofRecordParticipant2::AssignedEntity::RepresentedOrganization))->size() &lt;= 1</body>
         </specification>
@@ -2215,8 +2215,8 @@ value.code = '113036' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
         <association href="../consol.uml#_GNjvgOaWEeOmzetP5oaH3A"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_yGtn8OaTEeOmzetP5oaH3A" name="AssignedPerson">
-        <ownedRule xmi:id="_WgZgQLTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipantAssignedEntityAssignedPersonName" constrainedElement="_y1dkUOaTEeOmzetP5oaH3A">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WgZgQbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_ZKK7ILbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipantAssignedEntityAssignedPersonName" constrainedElement="_y1dkUOaTEeOmzetP5oaH3A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZKK7IbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.name->size() = 1</body>
           </specification>
@@ -2229,8 +2229,8 @@ value.code = '113036' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
         </ownedAttribute>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_TglEwOaWEeOmzetP5oaH3A" name="RepresentedOrganization">
-        <ownedRule xmi:id="_WgaHULTREeWEoeeTdrbyVw" name="PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName" constrainedElement="_T-xcoOaWEeOmzetP5oaH3A">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WgaHUbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_ZKLiMLbPEeWQ25S2Lv5Ssw" name="PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName" constrainedElement="_T-xcoOaWEeOmzetP5oaH3A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZKLiMbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>((not self.name->isEmpty()) and self.name->exists(element | element.isNullFlavorUndefined())) implies (self.name->size() &lt;= 1)</body>
           </specification>
@@ -2266,8 +2266,8 @@ value.code = '113036' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
     <ownedComment xmi:id="__iuAcIe9EeSBauRYePLghA">
       <body>This participant is the Physician Reading Study Performer defined in documentationOf/serviceEvent. It is usually different from the attending physician. The reading physician interprets the images and evidence of the study (DICOM Definition).</body>
     </ownedComment>
-    <ownedRule xmi:id="_YG6yILTREeWEoeeTdrbyVw" name="PhysicianReadingStudyPerformerTemplateId" constrainedElement="_zKKIUIe9EeSBauRYePLghA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YG6yIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_bLrf4LbPEeWQ25S2Lv5Ssw" name="PhysicianReadingStudyPerformerTemplateId" constrainedElement="_zKKIUIe9EeSBauRYePLghA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bLsG8LbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.1' and id.extension = '2014-06-09')</body>
       </specification>
@@ -2293,106 +2293,106 @@ value.code = '113036' and value.codeSystem = '1.2.840.10008.2.16.4'</body>
   <CDA:Inline xmi:id="_fY63krS6EeWcPq3zAthoUQ" base_Class="_fY63kLS6EeWcPq3zAthoUQ"/>
   <CDA:Inline xmi:id="_fY-h8rS6EeWcPq3zAthoUQ" base_Class="_fY-h8LS6EeWcPq3zAthoUQ"/>
   <CDA:Inline xmi:id="_fZCMUrS6EeWcPq3zAthoUQ" base_Class="_fZCMULS6EeWcPq3zAthoUQ"/>
-  <Ecore:EClass xmi:id="_T2llYLTREeWEoeeTdrbyVw" base_Class="_WPTWEDVyEeGaW4kr-GbV8Q">
+  <Ecore:EClass xmi:id="_Wt330LbPEeWQ25S2Lv5Ssw" base_Class="_WPTWEDVyEeGaW4kr-GbV8Q">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DICOMObjectCatalogSectionTemplateId DICOMObjectCatalogSectionCode DICOMObjectCatalogSectionCodeP DICOMObjectCatalogSectionEntry' templateId.root='2.16.840.1.113883.10.20.6.1.1' code.code='121181' code.codeSystem='1.2.840.10008.2.16.4' code.codeSystemName='DCM' code.displayName='Dicom Object Catalog'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_T2s6IbTREeWEoeeTdrbyVw" base_Class="_ZcC-4DVyEeGaW4kr-GbV8Q">
+  <Ecore:EClass xmi:id="_Wt_MkLbPEeWQ25S2Lv5Ssw" base_Class="_ZcC-4DVyEeGaW4kr-GbV8Q">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FindingsSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.6.1.2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_UPiQ4LTREeWEoeeTdrbyVw" base_Class="_H1UdcEVEEeGAh_iQGJvI5w">
+  <Ecore:EClass xmi:id="_XKap4LbPEeWQ25S2Lv5Ssw" base_Class="_H1UdcEVEEeGAh_iQGJvI5w">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicianReadingStudyPerformerTemplateId PhysicianReadingStudyPerformerTypeCode PhysicianReadingStudyPerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.6.2.1' constraints.validation.info='PhysicianReadingStudyPerformerTime' typeCode='PRF'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_UPl7QLTREeWEoeeTdrbyVw" base_Class="_kAWv0EVEEeGAh_iQGJvI5w">
+  <Ecore:EClass xmi:id="_XKe7ULbPEeWQ25S2Lv5Ssw" base_Class="_kAWv0EVEEeGAh_iQGJvI5w">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicianReadingStudyPerformerAssignedEntityHasDICOM PhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization PhysicianReadingStudyPerformerAssignedEntityId PhysicianReadingStudyPerformerAssignedEntityCode' constraints.validation.warning='PhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_UQJU4LTREeWEoeeTdrbyVw" base_Class="_H_izsEb1EeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XLJCoLbPEeWQ25S2Lv5Ssw" base_Class="_H_izsEb1EeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicianofRecordParticipantTemplateId PhysicianofRecordParticipantTypeCode PhysicianofRecordParticipantAssignedEntity' templateId.root='2.16.840.1.113883.10.20.6.2.2' typeCode='ATND'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_UQLxILTREeWEoeeTdrbyVw" base_Class="_lCnhUEb1EeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XLMtALbPEeWQ25S2Lv5Ssw" base_Class="_lCnhUEb1EeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode PhysicianofRecordParticipantAssignedEntityCode PhysicianofRecordParticipantAssignedEntityId' constraints.validation.warning='PhysicianofRecordParticipantAssignedEntityHasNationalProviderId PhysicianofRecordParticipantAssignedEntityAssignedPerson'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_UQQpoLTREeWEoeeTdrbyVw" base_Class="_eq8_MEb2EeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XLRlgLbPEeWQ25S2Lv5Ssw" base_Class="_eq8_MEb2EeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='PhysicianofRecordParticipantAssignedEntityAssignedPersonName'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_URNr4LTREeWEoeeTdrbyVw" base_Class="_vjf-wEb4EeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XMiJwLbPEeWQ25S2Lv5Ssw" base_Class="_vjf-wEb4EeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='StudyActTemplateId StudyActIdsHaveRoot StudyActNoIdExtension StudyActReferenceValue StudyActClassCode StudyActMoodCode StudyActId StudyActCode StudyActCodeP StudyActEntryRelationship' templateId.root='2.16.840.1.113883.10.20.6.2.6' constraints.validation.warning='StudyActTextReference StudyActTextReferenceValue StudyActEffectiveTime' classCode='ACT' moodCode='EVN' code.code='113014' code.codeSystem='1.2.840.10008.2.16.4' code.codeSystemName='DCM' constraints.validation.dependOn.StudyActCode='StudyActCodeP' constraints.validation.info='StudyActText'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_URf_wLTREeWEoeeTdrbyVw" base_Class="_N2wscEb6EeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XM4IALbPEeWQ25S2Lv5Ssw" base_Class="_N2wscEb6EeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SeriesActTemplateId SeriesActIdHasRoot SeriesActIdNoExtension SeriesActCodeQualifier SeriesActCodeQualifierCode SeriesActCodeQualifierValue SeriesActCodeQualifierValueCode SeriesActClassCode SeriesActMoodCode SeriesActCode SeriesActCodeP SeriesActId SeriesActEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.63' classCode='ACT' moodCode='EVN' code.code='113015' code.codeSystem='1.2.840.10008.2.16.4' code.codeSystemName='DCM' constraints.validation.dependOn.SeriesActCode='SeriesActCodeP' constraints.validation.warning='SeriesActEffectiveTime' constraints.validation.info='SeriesActText'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_URxskLTREeWEoeeTdrbyVw" base_Class="_9o7WcEb6EeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XNPUYLbPEeWQ25S2Lv5Ssw" base_Class="_9o7WcEb6EeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SOPInstanceObservationTemplateId SOPInstanceObservationEffectiveTimeHasValue SOPInstanceObservationEffectiveTimeNoLow SOPInstanceObservationEffectiveTimeNoHigh SOPInstanceObservationTextMediaType SOPInstanceObservationTextReference SOPInstanceObservationTextReferenceValue SOPInstanceObservationClassCode SOPInstanceObservationId SOPInstanceObservationMoodCode SOPInstanceObservationCode SOPInstanceObservationCodeP SOPInstanceObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.6.2.8' classCode='DGIMG' constraints.validation.warning='SOPInstanceObservationEffectiveTime SOPInstanceObservationText' moodCode='EVN' code.codeSystem='1.2.840.10008.2.6.1' code.codeSystemName='DCMUID' constraints.validation.dependOn.SOPInstanceObservationCode='SOPInstanceObservationCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_USOYgLTREeWEoeeTdrbyVw" base_Class="_J-F8UEb7EeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XNuckLbPEeWQ25S2Lv5Ssw" base_Class="_J-F8UEb7EeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PurposeofReferenceObservationTemplateId PurposeofReferenceObservationClassCode PurposeofReferenceObservationCode PurposeofReferenceObservationMoodCode PurposeofReferenceObservationValueP' templateId.root='2.16.840.1.113883.10.20.6.2.9' constraints.validation.warning='PurposeofReferenceObservationCodeCodeSystem PurposeofReferenceObservationValue' classCode='OBS' moodCode='EVN' value.codeSystem='1.2.840.10008.2.16.4' value.codeSystemName='DCM' constraints.validation.dependOn.PurposeofReferenceObservationValue='PurposeofReferenceObservationValueP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_USzAQLTREeWEoeeTdrbyVw" base_Class="_1Zyf4Eb8EeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XOOy4LbPEeWQ25S2Lv5Ssw" base_Class="_1Zyf4Eb8EeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReferencedFramesObservationTemplateId ReferencedFramesObservationClassCode ReferencedFramesObservationMoodCode ReferencedFramesObservationCode ReferencedFramesObservationCodeP ReferencedFramesObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.6.2.10' classCode='ROIBND' moodCode='EVN' code.code='121190' code.codeSystem='1.2.840.10008.2.16.4' code.codeSystemName='DCM' code.displayName='Referenced Frames' constraints.validation.dependOn.ReferencedFramesObservationCode='ReferencedFramesObservationCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_US9_YLTREeWEoeeTdrbyVw" base_Class="_9Yv6gEb8EeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XOX80LbPEeWQ25S2Lv5Ssw" base_Class="_9Yv6gEb8EeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='BoundaryObservationTemplateId BoundaryObservationClassCode BoundaryObservationCode BoundaryObservationCodeP BoundaryObservationMoodCode BoundaryObservationValue' templateId.root='2.16.840.1.113883.10.20.6.2.11' classCode='OBS' code.code='113036' code.codeSystem='1.2.840.10008.2.16.4' code.codeSystemName='DCM' code.displayName='Frames for Display' constraints.validation.dependOn.BoundaryObservationCode='BoundaryObservationCodeP' moodCode='EVN'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_UTKMoLTREeWEoeeTdrbyVw" base_Class="_9xjKIEb-EeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XOi78LbPEeWQ25S2Lv5Ssw" base_Class="_9xjKIEb-EeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TextObservationTemplateId TextObservationReferenceValue TextObservationClassCode TextObservationMoodCode TextObservationCode TextObservationValue TextObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.6.2.12' constraints.validation.warning='TextObservationTextReference TextObservationTextReferenceValue TextObservationEffectiveTime' classCode='OBS' moodCode='EVN' constraints.validation.info='TextObservationText'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_UTe8wLTREeWEoeeTdrbyVw" base_Class="_Px2t4Eb_EeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XOwXULbPEeWQ25S2Lv5Ssw" base_Class="_Px2t4Eb_EeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='QuantityMeasurementObservationTemplateId QuantityMeasurementObservationClassCode QuantityMeasurementObservationMoodCode QuantityMeasurementObservationCode QuantityMeasurementObservationValue QuantityMeasurementObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.6.2.14' constraints.validation.warning='QuantityMeasurementObservationCodeCodeSystemDIR QuantityMeasurementObservationCodeCodeSystemDICOM QuantityMeasurementObservationEffectiveTime' classCode='OBS' moodCode='EVN'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_UTrKALTREeWEoeeTdrbyVw" base_Class="_pmiz8Eb_EeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XO9ysLbPEeWQ25S2Lv5Ssw" base_Class="_pmiz8Eb_EeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CodeObservationsTemplateId CodeObservationsClassCode CodeObservationsMoodCode CodeObservationsCode CodeObservationsValue CodeObservationsEntryRelationship' templateId.root='2.16.840.1.113883.10.20.6.2.13' classCode='OBS' moodCode='EVN' constraints.validation.warning='CodeObservationsEffectiveTime'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_UT3XQLTREeWEoeeTdrbyVw" base_Class="_crHC0EcAEeGp67IkyTw1fg">
+  <Ecore:EClass xmi:id="_XPJY4bbPEeWQ25S2Lv5Ssw" base_Class="_crHC0EcAEeGp67IkyTw1fg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureContextTemplateId ProcedureContextEffectiveTimeValue ProcedureContextClassCode ProcedureContextMoodCode ProcedureContextCode' templateId.root='2.16.840.1.113883.10.20.6.2.5' classCode='ACT' moodCode='EVN' constraints.validation.warning='ProcedureContextEffectiveTime'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WgXrELTREeWEoeeTdrbyVw" base_Class="_Ao2HkOaHEeOmzetP5oaH3A">
+  <Ecore:EClass xmi:id="_ZKJF8LbPEeWQ25S2Lv5Ssw" base_Class="_Ao2HkOaHEeOmzetP5oaH3A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicianofRecordParticipantTemplateId PhysicianofRecordParticipantAssignedEntity' templateId.root='2.16.840.1.113883.10.20.6.2.2' templateId.extension='2014-06-09'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WgY5MLTREeWEoeeTdrbyVw" base_Class="_yuz0oOaREeOmzetP5oaH3A">
+  <Ecore:EClass xmi:id="_ZKKUELbPEeWQ25S2Lv5Ssw" base_Class="_yuz0oOaREeOmzetP5oaH3A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='PhysicianofRecordParticipantAssignedEntityHasNationalProviderId PhysicianofRecordParticipantAssignedEntityAssignedPerson' constraints.validation.info='PhysicianofRecordParticipant2AssignedEntityRepresentedOrganization'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WgZgQrTREeWEoeeTdrbyVw" base_Class="_yGtn8OaTEeOmzetP5oaH3A">
+  <Ecore:EClass xmi:id="_ZKK7IrbPEeWQ25S2Lv5Ssw" base_Class="_yGtn8OaTEeOmzetP5oaH3A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicianofRecordParticipantAssignedEntityAssignedPersonName'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WgbVcLTREeWEoeeTdrbyVw" base_Class="_TglEwOaWEeOmzetP5oaH3A">
+  <Ecore:EClass xmi:id="_ZKMwULbPEeWQ25S2Lv5Ssw" base_Class="_TglEwOaWEeOmzetP5oaH3A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='PhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_YG8AQLTREeWEoeeTdrbyVw" base_Class="_zKKIUIe9EeSBauRYePLghA">
+  <Ecore:EClass xmi:id="_bLtVELbPEeWQ25S2Lv5Ssw" base_Class="_zKKIUIe9EeSBauRYePLghA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicianReadingStudyPerformerTemplateId' templateId.root='2.16.840.1.113883.10.20.6.2.1' templateId.extension='2014-06-09'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZwL2ALTREeWEoeeTdrbyVw" base_Class="_fPTBgLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_d4S3ILbPEeWQ25S2Lv5Ssw" base_Class="_fPTBgLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DICOMObjectCatalogSectionStudyActEntryStudyAct'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_a5tC0LTREeWEoeeTdrbyVw" base_Class="_fYbIULS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_fYgssLbPEeWQ25S2Lv5Ssw" base_Class="_fYbIULS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='StudyActSeriesActEntryRelationshipSeriesAct'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_a6TfwLTREeWEoeeTdrbyVw" base_Class="_fYfZwLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_fZOeYLbPEeWQ25S2Lv5Ssw" base_Class="_fYfZwLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SeriesActSOPInstanceObservationEntryRelationshipSOPInstanceObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_a7DGoLTREeWEoeeTdrbyVw" base_Class="_fYjEILS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_fZ_TYLbPEeWQ25S2Lv5Ssw" base_Class="_fYjEILS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='SOPInstanceObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_a7xfYLTREeWEoeeTdrbyVw" base_Class="_fYmugLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_favhULbPEeWQ25S2Lv5Ssw" base_Class="_fYmugLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='SOPInstanceObservationPurposeofReferenceObservationEntryRelationshipPurposeofReferenceObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_a8ScwLTREeWEoeeTdrbyVw" base_Class="_fYq_8LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_fbdTALbPEeWQ25S2Lv5Ssw" base_Class="_fYq_8LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='SOPInstanceObservationReferencedFramesObservationEntryRelationshipReferencedFramesObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_a8zaILTREeWEoeeTdrbyVw" base_Class="_fYv4cLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_fcTnkLbPEeWQ25S2Lv5Ssw" base_Class="_fYv4cLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReferencedFramesObservationBoundaryObservationEntryRelationshipBoundaryObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_a9TwcLTREeWEoeeTdrbyVw" base_Class="_fYzi0LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_fdG40LbPEeWQ25S2Lv5Ssw" base_Class="_fYzi0LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='TextObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_a9y4oLTREeWEoeeTdrbyVw" base_Class="_fY3NMLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_fd2fsLbPEeWQ25S2Lv5Ssw" base_Class="_fY3NMLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='TextObservationQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_a-T2ALTREeWEoeeTdrbyVw" base_Class="_fY63kLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_fekRYLbPEeWQ25S2Lv5Ssw" base_Class="_fY63kLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='QuantityMeasurementObservationSOPInstanceObservationEntryRelationshipSOPInstanceObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_a-0MULTREeWEoeeTdrbyVw" base_Class="_fY-h8LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_ffRcALbPEeWQ25S2Lv5Ssw" base_Class="_fY-h8LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='CodeObservationsSOPInstanceObservationEntryRelationshipSOPInstanceObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_a_s9ILTREeWEoeeTdrbyVw" base_Class="_fZCMULS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_fgGicLbPEeWQ25S2Lv5Ssw" base_Class="_fZCMULS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='CodeObservationsQuantityMeasurementObservationEntryRelationshipQuantityMeasurementObservation'</annotation>
   </Ecore:EClass>
 </xmi:XMI>

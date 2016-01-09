@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<trc:Traces xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:trc="http://ns.electronichealth.net.au/ci/metamodel/traceability" originalSourceURL="platform:/resource/org.openhealthtools.mdht.uml.cda.consol2.model/model/consol.uml" username="vadi" fullName="Schematron" date="2016-01-07T09:57:48.770+1000" location="127.0.1.1">
+<trc:Traces xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:trc="http://ns.electronichealth.net.au/ci/metamodel/traceability" originalSourceURL="platform:/resource/org.openhealthtools.mdht.uml.cda.consol2.model/model/consol.uml" username="vadi" fullName="Schematron" date="2016-01-09T07:48:49.769-0500" location="127.0.1.1">
   <sourceModel href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol2.model/model/consol.uml#_2B30sBSVEeGGzu7fmW9pXw"/>
   <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::MedicationActivity::drugVehicle" severity="1" messageType="13">
     <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol2.model/model/.controlled/consol-medications.uml#_U6R5khUVEeG6PvUxSTZnaw"/>

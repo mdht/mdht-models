@@ -73,196 +73,196 @@
         <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::DrugVehicle))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::CSM)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TLn80LTREeWEoeeTdrbyVw" name="ImmunizationActivityTemplateId" constrainedElement="_2MAoIBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TLn80bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V8yZILbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityTemplateId" constrainedElement="_2MAoIBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V8zAMLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.52')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TLuDcLTREeWEoeeTdrbyVw" name="ImmunizationActivityClassCode" constrainedElement="_2MDEYBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TLuDcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V84fwLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityClassCode" constrainedElement="_2MDEYBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V84fwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClass::SBADM</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TL5poLTREeWEoeeTdrbyVw" name="ImmunizationActivityMoodCodeP" constrainedElement="_2MDEYxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TL5pobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V9GiMLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityMoodCodeP" constrainedElement="_2MDEYxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V9GiMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TLwfsLTREeWEoeeTdrbyVw" name="ImmunizationActivityMoodCode" constrainedElement="_2MDEYxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TLwfsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V86U8LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityMoodCode" constrainedElement="_2MDEYxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V86U8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and 
 let value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in 
 value = vocab::x_DocumentSubstanceMood::EVN or value = vocab::x_DocumentSubstanceMood::INT</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TMEowLTREeWEoeeTdrbyVw" name="ImmunizationActivityNegationInd" constrainedElement="_1GG0sBqjEeGo461UQq-B1g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TMEowbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V9ZdILbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityNegationInd" constrainedElement="_1GG0sBqjEeGo461UQq-B1g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V9ZdIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.negationInd.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TMGd8LTREeWEoeeTdrbyVw" name="ImmunizationActivityId" constrainedElement="_2MDrcBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TMGd8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V9dHgLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityId" constrainedElement="_2MDrcBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V9dHgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TMHsELTREeWEoeeTdrbyVw" name="ImmunizationActivityCode" constrainedElement="_2MAoJBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TMITILTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V9gK0LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityCode" constrainedElement="_2MAoJBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V9gK0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TMJhQLTREeWEoeeTdrbyVw" name="ImmunizationActivityText" constrainedElement="_b0iNUBqkEeGo461UQq-B1g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TMJhQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V9j1MLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityText" constrainedElement="_b0iNUBqkEeGo461UQq-B1g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V9j1MbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TMLWcLTREeWEoeeTdrbyVw" name="ImmunizationActivityStatusCode" constrainedElement="_2MESgBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TMLWcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V9nfkLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityStatusCode" constrainedElement="_2MESgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V9nfkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TMNLoLTREeWEoeeTdrbyVw" name="ImmunizationActivityEffectiveTime" constrainedElement="_2MEShRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TMNLobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V9qi4LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityEffectiveTime" constrainedElement="_2MEShRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V9rJ8LbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.effectiveTime->size() = 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TMOZwLTREeWEoeeTdrbyVw" name="ImmunizationActivityRepeatNumber" constrainedElement="_s20CkBqkEeGo461UQq-B1g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TMOZwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V9uNQLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityRepeatNumber" constrainedElement="_s20CkBqkEeGo461UQq-B1g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V9uNQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.repeatNumber.oclIsUndefined()) and self.repeatNumber.isNullFlavorUndefined()) implies (not self.repeatNumber.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TMZ_8LTREeWEoeeTdrbyVw" name="ImmunizationActivityRouteCodeP" constrainedElement="_2ME5kRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TMZ_8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V-EykLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityRouteCodeP" constrainedElement="_2ME5kRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V-EykbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.routeCode.oclIsUndefined()) and self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TMRdELTREeWEoeeTdrbyVw" name="ImmunizationActivityRouteCode" constrainedElement="_2ME5kRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TMRdEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V9zs0LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityRouteCode" constrainedElement="_2ME5kRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V9zs0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.routeCode.oclIsUndefined()) and self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in 
 value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C38192' or value.code = 'C38193' or value.code = 'C38194' or value.code = 'C38675' or value.code = 'C38197' or value.code = 'C38633' or value.code = 'C38205' or value.code = 'C38206' or value.code = 'C38208' or value.code = 'C38209' or value.code = 'C38210' or value.code = 'C38211' or value.code = 'C38212' or value.code = 'C38200' or value.code = 'C38215' or value.code = 'C38219' or value.code = 'C38220' or value.code = 'C38221' or value.code = 'C38222' or value.code = 'C38223' or value.code = 'C38224' or value.code = 'C38225' or value.code = 'C38226' or value.code = 'C38227' or value.code = 'C38228' or value.code = 'C38229' or value.code = 'C38230' or value.code = 'C38231' or value.code = 'C38232' or value.code = 'C38233' or value.code = 'C38234' or value.code = 'C38217' or value.code = 'C38218' or value.code = 'C38235' or value.code = 'C38238' or value.code = 'C38239' or value.code = 'C38240' or value.code = 'C38241' or value.code = 'C38242' or value.code = 'C38243' or value.code = 'C38245' or value.code = 'C38246' or value.code = 'C38247' or value.code = 'C38249' or value.code = 'C38250' or value.code = 'C38251' or value.code = 'C38252' or value.code = 'C38253' or value.code = 'C38254' or value.code = 'C28161' or value.code = 'C38255' or value.code = 'C38256' or value.code = 'C38257' or value.code = 'C38258' or value.code = 'C38259' or value.code = 'C38260' or value.code = 'C38261' or value.code = 'C38262' or value.code = 'C38263' or value.code = 'C38264' or value.code = 'C38265' or value.code = 'C38266' or value.code = 'C38267' or value.code = 'C38207' or value.code = 'C38268' or value.code = 'C38269' or value.code = 'C38270' or value.code = 'C38272' or value.code = 'C38273' or value.code = 'C38276' or value.code = 'C38277' or value.code = 'C38278' or value.code = 'C38280' or value.code = 'C38203' or value.code = 'C38281' or value.code = 'C38282' or value.code = 'C38284' or value.code = 'C38285' or value.code = 'C48623' or value.code = 'C38286' or value.code = 'C38287' or value.code = 'C38288' or value.code = 'C38289' or value.code = 'C38291' or value.code = 'C38676' or value.code = 'C38292' or value.code = 'C38677' or value.code = 'C38293' or value.code = 'C38294' or value.code = 'C38295' or value.code = 'C38216' or value.code = 'C38296' or value.code = 'C38198' or value.code = 'C38297' or value.code = 'C38298' or value.code = 'C38299' or value.code = 'C38300' or value.code = 'C38301' or value.code = 'C38304' or value.code = 'C38305' or value.code = 'C38283' or value.code = 'C38307' or value.code = 'C38308' or value.code = 'C38309' or value.code = 'C38312' or value.code = 'C38271'))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TMkYALTREeWEoeeTdrbyVw" name="ImmunizationActivityApproachSiteCode" constrainedElement="_2MHV0BSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TMkYAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V-cmALbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityApproachSiteCode" constrainedElement="_2MHV0BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V-cmAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.approachSiteCode->isEmpty()) and self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TNgzMLTREeWEoeeTdrbyVw" name="ImmunizationActivityApproachSiteCodeP" constrainedElement="_2MHV0BSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TNgzMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V-x9MLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityApproachSiteCodeP" constrainedElement="_2MHV0BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V-x9MbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.approachSiteCode->isEmpty()) and self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->size() &lt;= 1)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TNp9ILTREeWEoeeTdrbyVw" name="ImmunizationActivityDoseQuantity" constrainedElement="_2MHV1BSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TNp9IbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V_H7cLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityDoseQuantity" constrainedElement="_2MHV1BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V_H7cbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.doseQuantity.oclIsUndefined()) and self.doseQuantity.isNullFlavorUndefined()) implies (not self.doseQuantity.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TN2KYLTREeWEoeeTdrbyVw" name="ImmunizationActivityAdministrationUnitCodeP" constrainedElement="_ESwTIBqmEeGo461UQq-B1g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TN2KYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V_jZQLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityAdministrationUnitCodeP" constrainedElement="_ESwTIBqmEeGo461UQq-B1g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V_jZQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.administrationUnitCode.oclIsUndefined()) and self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TNtAcLTREeWEoeeTdrbyVw" name="ImmunizationActivityAdministrationUnitCode" constrainedElement="_ESwTIBqmEeGo461UQq-B1g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TNtAcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V_NbALbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityAdministrationUnitCode" constrainedElement="_ESwTIBqmEeGo461UQq-B1g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V_NbAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.administrationUnitCode.oclIsUndefined()) and self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in 
 value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or value.code = 'C42888' or value.code = 'C42960' or value.code = 'C42971' or value.code = 'C42889' or value.code = 'C42892' or value.code = 'C42890' or value.code = 'C43451' or value.code = 'C42891' or value.code = 'C25158' or value.code = 'C42895' or value.code = 'C42896' or value.code = 'C42917' or value.code = 'C42902' or value.code = 'C42904' or value.code = 'C42916' or value.code = 'C42928' or value.code = 'C42936' or value.code = 'C42954' or value.code = 'C45414' or value.code = 'C42678' or value.code = 'C60884' or value.code = 'C60891' or value.code = 'C42900' or value.code = 'C42919' or value.code = 'C28944' or value.code = 'C60897' or value.code = 'C42901' or value.code = 'C45415' or value.code = 'C47890' or value.code = 'C43525' or value.code = 'C42679' or value.code = 'C42763' or value.code = 'C17423' or value.code = 'C42912' or value.code = 'C42913' or value.code = 'C42915' or value.code = 'C42929' or value.code = 'C60926' or value.code = 'C42932' or value.code = 'C42920' or value.code = 'C42984' or value.code = 'C60927' or value.code = 'C60928' or value.code = 'C60929' or value.code = 'C42933' or value.code = 'C42934' or value.code = 'C42906' or value.code = 'C60930' or value.code = 'C48193' or value.code = 'C42937' or value.code = 'C45416' or value.code = 'C42938' or value.code = 'C42903' or value.code = 'C42909' or value.code = 'C42939' or value.code = 'C42940' or value.code = 'C42921' or value.code = 'C42941' or value.code = 'C42894' or value.code = 'C42978' or value.code = 'C42942' or value.code = 'C42944' or value.code = 'C60931' or value.code = 'C42946' or value.code = 'C42914' or value.code = 'C42950' or value.code = 'C42974' or value.code = 'C42976' or value.code = 'C42977' or value.code = 'C42959' or value.code = 'C42957' or value.code = 'C42958' or value.code = 'C42956' or value.code = 'C42945' or value.code = 'C42899' or value.code = 'C42995' or value.code = 'C42926' or value.code = 'C42951' or value.code = 'C42988' or value.code = 'C60933' or value.code = 'C42922' or value.code = 'C47915' or value.code = 'C42947' or value.code = 'C42948' or value.code = 'C47916' or value.code = 'C45413' or value.code = 'C42949' or value.code = 'C42952' or value.code = 'C42953' or value.code = 'C60934' or value.code = 'C29167' or value.code = 'C60957' or value.code = 'C60958' or value.code = 'C42955' or value.code = 'C29269' or value.code = 'C42965' or value.code = 'C42966' or value.code = 'C60984' or value.code = 'C47887' or value.code = 'C42967' or value.code = 'C42907' or value.code = 'C60985' or value.code = 'C42968' or value.code = 'C42923' or value.code = 'C42911' or value.code = 'C42969' or value.code = 'C42943' or value.code = 'C42918' or value.code = 'C25394' or value.code = 'C42970' or value.code = 'C47913' or value.code = 'C42972' or value.code = 'C42908' or value.code = 'C42973' or value.code = 'C42975' or value.code = 'C42961' or value.code = 'C60988' or value.code = 'C42979' or value.code = 'C42980' or value.code = 'C42981' or value.code = 'C42982' or value.code = 'C42983' or value.code = 'C42986' or value.code = 'C42898' or value.code = 'C42987' or value.code = 'C60994' or value.code = 'C42935' or value.code = 'C60992' or value.code = 'C47912' or value.code = 'C42989' or value.code = 'C42962' or value.code = 'C42990' or value.code = 'C42991' or value.code = 'C47914' or value.code = 'C42993' or value.code = 'C42924' or value.code = 'C42994' or value.code = 'C42925' or value.code = 'C60995' or value.code = 'C47889' or value.code = 'C47898' or value.code = 'C42996' or value.code = 'C42998' or value.code = 'C42893' or value.code = 'C42897' or value.code = 'C60997' or value.code = 'C42905' or value.code = 'C42997' or value.code = 'C42910' or value.code = 'C42927' or value.code = 'C42931' or value.code = 'C42930' or value.code = 'C61004' or value.code = 'C61005' or value.code = 'C42964' or value.code = 'C42963' or value.code = 'C42999' or value.code = 'C61006' or value.code = 'C42985' or value.code = 'C42992' or value.code = 'C47892' or value.code = 'C47897' or value.code = 'C43000' or value.code = 'C43001' or value.code = 'C43002' or value.code = 'C43003'))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TjJsALTREeWEoeeTdrbyVw" name="ImmunizationActivityDrugVehicle" constrainedElement="_ZljOshU9EeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TjJsAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WXCFILbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityDrugVehicle" constrainedElement="_ZljOshU9EeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXCFIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.participant->select(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(consol::DrugVehicle))->size() &lt;= 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TkZCILTREeWEoeeTdrbyVw" name="ImmunizationActivityConsumable" constrainedElement="_o-v9khVOEeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TkZCIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WYnZgLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityConsumable" constrainedElement="_o-v9khVOEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WYnZgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TplrMLTREeWEoeeTdrbyVw" name="ImmunizationActivityPerformer" constrainedElement="_CtfWwRqsEeGo461UQq-B1g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TplrMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WfKGYLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityPerformer" constrainedElement="_CtfWwRqsEeGo461UQq-B1g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WfKGYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.performer->select(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))->size() &lt;= 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_X6nbgLTREeWEoeeTdrbyVw" name="ImmunizationActivityPrecondition" constrainedElement="_u501sDhXEeS1WeMhbm6GZw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X6nbgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_a9GRULbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityPrecondition" constrainedElement="_u501sDhXEeS1WeMhbm6GZw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a9GRUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.precondition->select(precondition : cda::Precondition | not precondition.oclIsUndefined() and precondition.oclIsKindOf(cda::Precondition))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Y-4U4LTREeWEoeeTdrbyVw" name="ImmunizationActivityEntryRelationship">
+    <ownedRule xmi:id="_cn0GsLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fHgXcLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y-4U4bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cn0GsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ImmunizationActivity::IndicationEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Y_djsLTREeWEoeeTdrbyVw" name="ImmunizationActivityEntryRelationship">
+    <ownedRule xmi:id="_comw4LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fHl3ALS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y_djsbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_comw4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ImmunizationActivity::InstructionsEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Y_9S8LTREeWEoeeTdrbyVw" name="ImmunizationActivityEntryRelationship">
+    <ownedRule xmi:id="_cpY0ALbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fHqvgLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y_9S8bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cpY0AbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ImmunizationActivity::MedicationDispenseEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ZAcbILTREeWEoeeTdrbyVw" name="ImmunizationActivityEntryRelationship">
+    <ownedRule xmi:id="_cqQWsLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fHw2ILS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAcbIbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cqQWsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ImmunizationActivity::ReactionObservationEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ZBDfILTREeWEoeeTdrbyVw" name="ImmunizationActivityEntryRelationship">
+    <ownedRule xmi:id="_crAkoLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fH2VsLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZBDfIbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_crAkobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ImmunizationActivity::ImmunizationRefusalReasonEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ZBiAQLTREeWEoeeTdrbyVw" name="ImmunizationActivityEntryRelationship">
+    <ownedRule xmi:id="_cryAsLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fH8cULS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZBiAQbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cryAsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ImmunizationActivity::MedicationSupplyOrderEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_iVKu0LTREeWEoeeTdrbyVw" name="ImmunizationActivityTemplateId" constrainedElement="_2MAoIBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iVLV4LTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_qePD8LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityTemplateId" constrainedElement="_2MAoIBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qePrALbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.52')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2PyDILTREeWEoeeTdrbyVw" name="ImmunizationActivityTemplateId" constrainedElement="_2MAoIBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2PyqMLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_5EWYxbbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityTemplateId" constrainedElement="_2MAoIBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5EW_0LbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.52')</body>
       </specification>
@@ -398,24 +398,24 @@ value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or va
       <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_E7yFoUxqEd6h-an5IXo-DA"/>
       <association href="../consol.uml#_fH8cULS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
-    <ownedOperation xmi:id="_TjaxwLTREeWEoeeTdrbyVw" name="getDrugVehicle" bodyCondition="_Tjaxw7TREeWEoeeTdrbyVw" isQuery="true">
-      <ownedRule xmi:id="_Tjaxw7TREeWEoeeTdrbyVw" name="body" constrainedElement="_TjaxwLTREeWEoeeTdrbyVw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TjaxxLTREeWEoeeTdrbyVw">
+    <ownedOperation xmi:id="_WXc74LbPEeWQ25S2Lv5Ssw" name="getDrugVehicle" bodyCondition="_WXdi8rbPEeWQ25S2Lv5Ssw" isQuery="true">
+      <ownedRule xmi:id="_WXdi8rbPEeWQ25S2Lv5Ssw" name="body" constrainedElement="_WXc74LbPEeWQ25S2Lv5Ssw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXdi87bPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::DrugVehicle))->asSequence()->any(true).oclAsType(consol::DrugVehicle)</body>
         </specification>
       </ownedRule>
-      <ownedParameter xmi:id="_TjaxwbTREeWEoeeTdrbyVw" direction="return">
+      <ownedParameter xmi:id="_WXdi8LbPEeWQ25S2Lv5Ssw" direction="return">
         <type xmi:type="uml:Class" href="consol-medications.uml#_VBXq8BUTEeG6PvUxSTZnaw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TjaxwrTREeWEoeeTdrbyVw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WXdi8bbPEeWQ25S2Lv5Ssw" value="1"/>
       </ownedParameter>
     </ownedOperation>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_VboYkG65EeGeVrQbtyMiPg" name="Consumable">
       <ownedComment xmi:id="_RofYEPEkEeGPm_ynmLKd6Q">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_UYweULTREeWEoeeTdrbyVw" name="ImmunizationActivityConsumableImmunizationMedicationInformation" constrainedElement="_efdwkG65EeGeVrQbtyMiPg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_UYweUbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_XTkl4LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityConsumableImmunizationMedicationInformation" constrainedElement="_efdwkG65EeGeVrQbtyMiPg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XTkl4bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.manufacturedProduct->one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(consol::ImmunizationMedicationInformation))</body>
         </specification>
@@ -433,14 +433,14 @@ value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or va
       <ownedComment xmi:id="_tMOZgDhZEeS1WeMhbm6GZw">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_TOOk4bTREeWEoeeTdrbyVw" name="ImmunizationActivityPreconditionTypeCode" constrainedElement="_ZbJ4MDhYEeS1WeMhbm6GZw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TOOk4rTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_V_7zwLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityPreconditionTypeCode" constrainedElement="_ZbJ4MDhYEeS1WeMhbm6GZw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_V_7zwbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>isDefined('typeCode') and self.typeCode=vocab::ActRelationshipType::PRCN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_X6_2ALTREeWEoeeTdrbyVw" name="ImmunizationActivityPreconditionPreconditionForSubstanceAdministration" constrainedElement="_xPhFQDhYEeS1WeMhbm6GZw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_X6_2AbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_a9qSALbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityPreconditionPreconditionForSubstanceAdministration" constrainedElement="_xPhFQDhYEeS1WeMhbm6GZw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_a9qSAbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.criterion->one(criterion : cda::Criterion | not criterion.oclIsUndefined() and criterion.oclIsKindOf(consol::PreconditionForSubstanceAdministration))</body>
         </specification>
@@ -465,9 +465,9 @@ value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or va
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fHeiQLS6EeWcPq3zAthoUQ" name="IndicationEntryRelationship">
-      <ownedRule xmi:id="_Y_Md8LTREeWEoeeTdrbyVw" name="ImmunizationActivityIndicationEntryRelationshipIndication">
+      <ownedRule xmi:id="_coNIQLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityIndicationEntryRelationshipIndication">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fHizsLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y_Md8bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_coNIQbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication))->size() &lt;= 1</body>
         </specification>
@@ -484,9 +484,9 @@ value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or va
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fHko4LS6EeWcPq3zAthoUQ" name="InstructionsEntryRelationship">
-      <ownedRule xmi:id="_Y_tbULTREeWEoeeTdrbyVw" name="ImmunizationActivityInstructionsEntryRelationshipInstructions">
+      <ownedRule xmi:id="_co99QLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityInstructionsEntryRelationshipInstructions">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fHnsMLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y_tbUbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_co99QbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.act->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->size() &lt;= 1</body>
         </specification>
@@ -503,9 +503,9 @@ value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or va
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fHphYLS6EeWcPq3zAthoUQ" name="MedicationDispenseEntryRelationship">
-      <ownedRule xmi:id="_ZAMjgLTREeWEoeeTdrbyVw" name="ImmunizationActivityMedicationDispenseEntryRelationshipMedicationDispense">
+      <ownedRule xmi:id="_cp1f8LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityMedicationDispenseEntryRelationshipMedicationDispense">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fHsksLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAMjgbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cp1f8bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.supply->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationDispense))->size() &lt;= 1</body>
         </specification>
@@ -522,9 +522,9 @@ value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or va
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fHvoALS6EeWcPq3zAthoUQ" name="ReactionObservationEntryRelationship">
-      <ownedRule xmi:id="_ZAzngLTREeWEoeeTdrbyVw" name="ImmunizationActivityReactionObservationEntryRelationshipReactionObservation">
+      <ownedRule xmi:id="_cqoKILbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityReactionObservationEntryRelationshipReactionObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fHzSYLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAzngbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cqoKIbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation))->size() &lt;= 1</body>
         </specification>
@@ -541,9 +541,9 @@ value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or va
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fH1HkLS6EeWcPq3zAthoUQ" name="ImmunizationRefusalReasonEntryRelationship">
-      <ownedRule xmi:id="_ZBSvsLTREeWEoeeTdrbyVw" name="ImmunizationActivityImmunizationRefusalReasonEntryRelationshipImmunizationRefusalReason">
+      <ownedRule xmi:id="_crYYELbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityImmunizationRefusalReasonEntryRelationshipImmunizationRefusalReason">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fH4x8LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZBSvsbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_crYYEbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ImmunizationRefusalReason))->size() &lt;= 1</body>
         </specification>
@@ -559,9 +559,9 @@ value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or va
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fH7OMLS6EeWcPq3zAthoUQ" name="MedicationSupplyOrderEntryRelationship">
-      <ownedRule xmi:id="_ZBye8LTREeWEoeeTdrbyVw" name="ImmunizationActivityMedicationSupplyOrderEntryRelationshipMedicationSupplyOrder">
+      <ownedRule xmi:id="_csJ0ILbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityMedicationSupplyOrderEntryRelationshipMedicationSupplyOrder">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fH-4kLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZBye8bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_csJ0IbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.supply->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationSupplyOrder))->size() &lt;= 1</body>
         </specification>
@@ -647,33 +647,33 @@ value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or va
     <ownedComment xmi:id="_JOE1QBq0EeGo461UQq-B1g">
       <body>The Immunization Medication Information represents product information about the immunization substance. The vaccine manufacturer and vaccine lot number are typically recorded in the medical record and should be included if known.</body>
     </ownedComment>
-    <ownedRule xmi:id="_Tj8WMLTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationTemplateId" constrainedElement="_daTqABVOEeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Tj89QLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WYHDMLbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationTemplateId" constrainedElement="_daTqABVOEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WYHDMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.54')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Tj-ycLTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationClassCode" constrainedElement="_jQ64EBVOEeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Tj-ycbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WYI4YLbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationClassCode" constrainedElement="_jQ64EBVOEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WYI4YbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>isDefined('classCode') and self.classCode=vocab::RoleClassManufacturedProduct::MANU</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TkAAkLTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationId" constrainedElement="_jQ64FRVOEeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TkAAkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WYKtkLbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationId" constrainedElement="_jQ64FRVOEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WYKtkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.id->isEmpty()) and self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TqMvMLTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationManufacturerOrganization" constrainedElement="_0bKfkRt6EeGnMahsPjlwOw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TqMvMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Wf67YLbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationManufacturerOrganization" constrainedElement="_0bKfkRt6EeGnMahsPjlwOw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Wf67YbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.manufacturerOrganization->select(manufacturerOrganization : cda::Organization | not manufacturerOrganization.oclIsUndefined() and manufacturerOrganization.oclIsKindOf(cda::Organization))->size() &lt;= 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_UMQTYLTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationManufacturedMaterial">
+    <ownedRule xmi:id="_XGoWELbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationManufacturedMaterial">
       <constrainedElement xmi:type="uml:Association" href="consol-medications.uml#_ooc9QEX9EeG6e5lG0YsSyQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UMQTYbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGoWEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.manufacturedMaterial->one(manufacturedMaterial : cda::Material | not manufacturedMaterial.oclIsUndefined() and manufacturedMaterial.oclIsKindOf(cda::Material))</body>
       </specification>
@@ -745,22 +745,22 @@ value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C42887' or va
           <body>self.code->size() = 1 implies self.code.translation->size() > 0</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_TkOqELTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP" constrainedElement="_xgWAcEX8EeG6e5lG0YsSyQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TkOqEbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_WYbMQLbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP" constrainedElement="_xgWAcEX8EeG6e5lG0YsSyQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WYbMQbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>true</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_TkFgILTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode" constrainedElement="_xgWAcEX8EeG6e5lG0YsSyQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TkFgIbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_WYQNILbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode" constrainedElement="_xgWAcEX8EeG6e5lG0YsSyQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WYQNIbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.codeSystem = '2.16.840.1.113883.12.292' and (value.code = '143' or value.code = '54' or value.code = '55' or value.code = '82' or value.code = '24' or value.code = '19' or value.code = '27' or value.code = '26' or value.code = '29' or value.code = '56' or value.code = '12' or value.code = '28' or value.code = '20' or value.code = '106' or value.code = '107' or value.code = '146' or value.code = '110' or value.code = '50' or value.code = '120' or value.code = '130' or value.code = '132' or value.code = '01' or value.code = '22' or value.code = '102' or value.code = '57' or value.code = '30' or value.code = '52' or value.code = '83' or value.code = '84' or value.code = '31' or value.code = '85' or value.code = '104' or value.code = '08' or value.code = '42' or value.code = '43' or value.code = '44' or value.code = '45' or value.code = '58' or value.code = '59' or value.code = '60' or value.code = '47' or value.code = '46' or value.code = '49' or value.code = '48' or value.code = '17' or value.code = '51' or value.code = '61' or value.code = '118' or value.code = '62' or value.code = '137' or value.code = '86' or value.code = '14' or value.code = '87' or value.code = '123' or value.code = '135' or value.code = '111' or value.code = '149' or value.code = '141' or value.code = '140' or value.code = '144' or value.code = '15' or value.code = '88' or value.code = '16' or value.code = '10' or value.code = '134' or value.code = '39' or value.code = '129' or value.code = '63' or value.code = '64' or value.code = '65' or value.code = '66' or value.code = '04' or value.code = '67' or value.code = '05' or value.code = '68' or value.code = '103' or value.code = '148' or value.code = '147' or value.code = '136' or value.code = '114' or value.code = '32' or value.code = '108' or value.code = '03' or value.code = '94' or value.code = '07' or value.code = '998' or value.code = '127' or value.code = '128' or value.code = '125' or value.code = '126' or value.code = '02' or value.code = '69' or value.code = '11' or value.code = '23' or value.code = '133' or value.code = '100' or value.code = '33' or value.code = '109' or value.code = '89' or value.code = '70' or value.code = '40' or value.code = '18' or value.code = '90' or value.code = '99' or value.code = '72' or value.code = '73' or value.code = '34' or value.code = '119' or value.code = '116' or value.code = '74' or value.code = '122' or value.code = '71' or value.code = '93' or value.code = '145' or value.code = '06' or value.code = '38' or value.code = '76' or value.code = '138' or value.code = '113' or value.code = '09' or value.code = '139' or value.code = '115' or value.code = '35' or value.code = '142' or value.code = '112' or value.code = '77' or value.code = '13' or value.code = '98' or value.code = '95' or value.code = '96' or value.code = '97' or value.code = '78' or value.code = '25' or value.code = '41' or value.code = '53' or value.code = '91' or value.code = '101' or value.code = '131' or value.code = '999' or value.code = '75' or value.code = '105' or value.code = '79' or value.code = '21' or value.code = '81' or value.code = '80' or value.code = '92' or value.code = '36' or value.code = '117' or value.code = '37' or value.code = '121' or value.code = '155')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_TkX0ALTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText" constrainedElement="_xgWngEX8EeG6e5lG0YsSyQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TkX0AbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_WYlkULbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText" constrainedElement="_xgWngEX8EeG6e5lG0YsSyQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WYlkUbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>((not self.lotNumberText.oclIsUndefined()) and self.lotNumberText.isNullFlavorUndefined()) implies (not self.lotNumberText.oclIsUndefined())</body>
         </specification>
@@ -787,52 +787,52 @@ value.codeSystem = '2.16.840.1.113883.12.292' and (value.code = '143' or value.c
     <ruleId>CONF:10499</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="__qYdcBVNEeGbmN_W114JUw" name="ImmunizationRefusalReason">
-    <ownedRule xmi:id="_TjbY0LTREeWEoeeTdrbyVw" name="ImmunizationRefusalReasonTemplateId" constrainedElement="__qYdcBVNEeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TjbY0bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WXdi9LbPEeWQ25S2Lv5Ssw" name="ImmunizationRefusalReasonTemplateId" constrainedElement="__qYdcBVNEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXdi9bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.53')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TjdOALTREeWEoeeTdrbyVw" name="ImmunizationRefusalReasonClassCode" constrainedElement="_DrIWEBVOEeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TjdOAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WXfYILbPEeWQ25S2Lv5Ssw" name="ImmunizationRefusalReasonClassCode" constrainedElement="_DrIWEBVOEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXfYIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TjnmELTREeWEoeeTdrbyVw" name="ImmunizationRefusalReasonCodeP" constrainedElement="_DruzARVOEeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TjnmEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WXwd4LbPEeWQ25S2Lv5Ssw" name="ImmunizationRefusalReasonCodeP" constrainedElement="_DruzARVOEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXwd4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TjfDMLTREeWEoeeTdrbyVw" name="ImmunizationRefusalReasonCode" constrainedElement="_DruzARVOEeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TjfDMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WXibcLbPEeWQ25S2Lv5Ssw" name="ImmunizationRefusalReasonCode" constrainedElement="_DruzARVOEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WXibcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.5.8' and (value.code = 'IMMUNE' or value.code = 'MEDPREC' or value.code = 'OSTOCK' or value.code = 'PATOBJ' or value.code = 'PHILISOP' or value.code = 'RELIG' or value.code = 'VACEFF' or value.code = 'VACSAF')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TjxXELTREeWEoeeTdrbyVw" name="ImmunizationRefusalReasonId" constrainedElement="_Dr388BVOEeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TjxXEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WX9SMLbPEeWQ25S2Lv5Ssw" name="ImmunizationRefusalReasonId" constrainedElement="_Dr388BVOEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WX9SMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TjzMQLTREeWEoeeTdrbyVw" name="ImmunizationRefusalReasonMoodCode" constrainedElement="_Dr389BVOEeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TjzMQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WX_ucLbPEeWQ25S2Lv5Ssw" name="ImmunizationRefusalReasonMoodCode" constrainedElement="_Dr389BVOEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WX_ucbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Tj558LTREeWEoeeTdrbyVw" name="ImmunizationRefusalReasonStatusCodeP" constrainedElement="_Dr389hVOEeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Tj558bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WYFOALbPEeWQ25S2Lv5Ssw" name="ImmunizationRefusalReasonStatusCodeP" constrainedElement="_Dr389hVOEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WYFOAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Tj2PkLTREeWEoeeTdrbyVw" name="ImmunizationRefusalReasonStatusCode" constrainedElement="_Dr389hVOEeGbmN_W114JUw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Tj2PkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WYCKsLbPEeWQ25S2Lv5Ssw" name="ImmunizationRefusalReasonStatusCode" constrainedElement="_Dr389hVOEeGbmN_W114JUw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WYCKsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
@@ -874,41 +874,41 @@ value.code = 'completed'</body>
     <ruleId>CONF:10500</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_2L7voBSVEeGGzu7fmW9pXw" name="ImmunizationsSection">
-    <ownedRule xmi:id="_TLbvkLTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalTemplateId" constrainedElement="_2L7voBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TLcWoLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V8naALbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalTemplateId" constrainedElement="_2L7voBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V8oBELbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.2.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TLh2MLTREeWEoeeTdrbyVw" name="ImmunizationsSectionCodeP" constrainedElement="_2L9k0BSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TLh2MbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V8s5kLbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionCodeP" constrainedElement="_2L9k0BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V8s5kbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TLey4LTREeWEoeeTdrbyVw" name="ImmunizationsSectionCode" constrainedElement="_2L9k0BSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TLey4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V8p2QLbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionCode" constrainedElement="_2L9k0BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V8p2QbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TLk5gLTREeWEoeeTdrbyVw" name="ImmunizationsSectionTitle" constrainedElement="_2L-y8BSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TLk5gbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V8vV0LbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionTitle" constrainedElement="_2L-y8BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V8vV0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TLmusLTREeWEoeeTdrbyVw" name="ImmunizationsSectionText" constrainedElement="_2L_aABSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TLmusbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V8xLALbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionText" constrainedElement="_2L_aABSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V8xLAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Y-WwcLTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntry">
+    <ownedRule xmi:id="_cnD4wLbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fHYboLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y-WwcbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cnD4wbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::ImmunizationsSection::ImmunizationActivityEntry))</body>
       </specification>
@@ -936,9 +936,9 @@ value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_fHYboLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fHXNgLS6EeWcPq3zAthoUQ" name="ImmunizationActivityEntry">
-      <ownedRule xmi:id="_Y-nPILTREeWEoeeTdrbyVw" name="ImmunizationsSectionImmunizationActivityEntryImmunization">
+      <ownedRule xmi:id="_cnbsMLbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionImmunizationActivityEntryImmunization">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fHa34LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y-nPIbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cnbsMbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.substanceAdministration->exists(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity))</body>
         </specification>
@@ -984,41 +984,41 @@ value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
     <ownedComment xmi:id="_eb3_0BqgEeGo461UQq-B1g">
       <body>The Immunizations section defines a patient's current immunization status and pertinent immunization history. The primary use case for the Immunization section is to enable communication of a patient's immunization status. The section should include current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.</body>
     </ownedComment>
-    <ownedRule xmi:id="_Tl5eALTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalTemplateId" constrainedElement="_EuPloBVeEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Tl5eAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WaHOULbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalTemplateId" constrainedElement="_EuPloBVeEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WaHOUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.2')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Tl76QLTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalCode" constrainedElement="_EuPlsRVeEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Tl76QbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WaJqkLbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalCode" constrainedElement="_EuPlsRVeEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WaJqkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Tl-9kLTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalCodeP" constrainedElement="_EuPlsRVeEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Tl-9kbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WaMt4LbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalCodeP" constrainedElement="_EuPlsRVeEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WaMt4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TmBZ0LTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalTitle" constrainedElement="_EuPlshVeEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TmBZ0bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WaPKILbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalTitle" constrainedElement="_EuPlshVeEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WaPKIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TmDPALTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalText" constrainedElement="_EuPlsxVeEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TmDPAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WaQ_ULbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalText" constrainedElement="_EuPlsxVeEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WaQ_UbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ZlrPILTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalEntry">
+    <ownedRule xmi:id="_dpQ8oLbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalEntry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fN1B4LS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZlrPIbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dpQ8obbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional::ImmunizationActivityEntry))</body>
       </specification>
@@ -1044,9 +1044,9 @@ value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_fN1B4LS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fNzMsLS6EeWcPq3zAthoUQ" name="ImmunizationActivityEntry">
-      <ownedRule xmi:id="_ZmCbgLTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalImmunizationActivityEntryImmunizationActivity">
+      <ownedRule xmi:id="_dp09UrbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalImmunizationActivityEntryImmunizationActivity">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fN23ELS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZmCbgbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dp09U7bPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.substanceAdministration->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity))->size() >= 0</body>
         </specification>
@@ -1262,139 +1262,139 @@ This template represents planned immunizations. Planned Immunization Activity is
 The priority of the immunization activity to the patient and provider is communicated through Priority Preference. The effectiveTime indicates the time when the immunization activity is intended to take place and authorTime indicates when the documentation of the plan occurred.&#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_ViPO4LTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityTemplateId" constrainedElement="_KRcPwJXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ViPO4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YFr_ULbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityTemplateId" constrainedElement="_KRcPwJXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YFr_UbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.120')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ViQdALTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityClassCode" constrainedElement="_roqTIJXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ViQdAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YFtNcLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityClassCode" constrainedElement="_roqTIJXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YFtNcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClass::SBADM</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VicqQLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityMoodCodeP" constrainedElement="_rorhQJXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VicqQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YF9FELbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityMoodCodeP" constrainedElement="_rorhQJXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YF9FEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>isDefined('moodCode')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ViTgULTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityMoodCode" constrainedElement="_rorhQJXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ViTgUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YFvpsLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityMoodCode" constrainedElement="_rorhQJXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YFvpsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and 
 let value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in 
 value = vocab::x_DocumentSubstanceMood::INT or value = vocab::x_DocumentSubstanceMood::PRMS or value = vocab::x_DocumentSubstanceMood::PRP or value = vocab::x_DocumentSubstanceMood::RQO</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VimbQLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityId" constrainedElement="_roq6MJXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VimbQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YGIrQLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityId" constrainedElement="_roq6MJXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YGIrQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Vio3gLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityStatusCode" constrainedElement="_rosIUJXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vio3gbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YGKgcLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityStatusCode" constrainedElement="_rosIUJXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YGKgcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'active'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VirTwLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityStatusCodeP" constrainedElement="_rosIUJXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VirTwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YGM8sLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityStatusCodeP" constrainedElement="_rosIUJXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YGM8sbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VitI8LTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityEffectiveTime" constrainedElement="_roqTJZXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VitI8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YGOx4LbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityEffectiveTime" constrainedElement="_roqTJZXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YGOx4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.effectiveTime->size() = 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ViuXELTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityRepeatNumber" constrainedElement="_rorhQZXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ViuXEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YGQAALbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityRepeatNumber" constrainedElement="_rorhQZXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YGQAAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.repeatNumber.oclIsUndefined()) and self.repeatNumber.isNullFlavorUndefined()) implies (not self.repeatNumber.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Vi7LYLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityRouteCodeP" constrainedElement="_rorhRJXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vi7LYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YGc0ULbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityRouteCodeP" constrainedElement="_rorhRJXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YGc0UbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.routeCode.oclIsUndefined()) and self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VixaYLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityRouteCode" constrainedElement="_rorhRJXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VixaYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YGScQLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityRouteCode" constrainedElement="_rorhRJXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YGScQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.routeCode.oclIsUndefined()) and self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in 
 value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C38192' or value.code = 'C38193' or value.code = 'C38194' or value.code = 'C38675' or value.code = 'C38197' or value.code = 'C38633' or value.code = 'C38205' or value.code = 'C38206' or value.code = 'C38208' or value.code = 'C38209' or value.code = 'C38210' or value.code = 'C38211' or value.code = 'C38212' or value.code = 'C38200' or value.code = 'C38215' or value.code = 'C38219' or value.code = 'C38220' or value.code = 'C38221' or value.code = 'C38222' or value.code = 'C38223' or value.code = 'C38224' or value.code = 'C38225' or value.code = 'C38226' or value.code = 'C38227' or value.code = 'C38228' or value.code = 'C38229' or value.code = 'C38230' or value.code = 'C38231' or value.code = 'C38232' or value.code = 'C38233' or value.code = 'C38234' or value.code = 'C38217' or value.code = 'C38218' or value.code = 'C38235' or value.code = 'C38238' or value.code = 'C38239' or value.code = 'C38240' or value.code = 'C38241' or value.code = 'C38242' or value.code = 'C38243' or value.code = 'C38245' or value.code = 'C38246' or value.code = 'C38247' or value.code = 'C38249' or value.code = 'C38250' or value.code = 'C38251' or value.code = 'C38252' or value.code = 'C38253' or value.code = 'C38254' or value.code = 'C28161' or value.code = 'C38255' or value.code = 'C38256' or value.code = 'C38257' or value.code = 'C38258' or value.code = 'C38259' or value.code = 'C38260' or value.code = 'C38261' or value.code = 'C38262' or value.code = 'C38263' or value.code = 'C38264' or value.code = 'C38265' or value.code = 'C38266' or value.code = 'C38267' or value.code = 'C38207' or value.code = 'C38268' or value.code = 'C38269' or value.code = 'C38270' or value.code = 'C38272' or value.code = 'C38273' or value.code = 'C38276' or value.code = 'C38277' or value.code = 'C38278' or value.code = 'C38280' or value.code = 'C38203' or value.code = 'C38281' or value.code = 'C38282' or value.code = 'C38284' or value.code = 'C38285' or value.code = 'C48623' or value.code = 'C38286' or value.code = 'C38287' or value.code = 'C38288' or value.code = 'C38289' or value.code = 'C38291' or value.code = 'C38676' or value.code = 'C38292' or value.code = 'C38677' or value.code = 'C38293' or value.code = 'C38294' or value.code = 'C38295' or value.code = 'C38216' or value.code = 'C38296' or value.code = 'C38198' or value.code = 'C38297' or value.code = 'C38298' or value.code = 'C38299' or value.code = 'C38300' or value.code = 'C38301' or value.code = 'C38304' or value.code = 'C38305' or value.code = 'C38283' or value.code = 'C38307' or value.code = 'C38308' or value.code = 'C38309' or value.code = 'C38312' or value.code = 'C38271'))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VjP7gLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityApproachSiteCodeP" constrainedElement="_romowJXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VjP7gbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YG2c8LbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityApproachSiteCodeP" constrainedElement="_romowJXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YG2c8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.approachSiteCode->isEmpty()) and self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode->isEmpty())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VjGKgLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityApproachSiteCode" constrainedElement="_romowJXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VjGKgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YGq2wLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityApproachSiteCode" constrainedElement="_romowJXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YGq2wbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.approachSiteCode->isEmpty()) and self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VjZFcLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityDoseQuantity" constrainedElement="_roqTIpXFEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VjZFcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YHCDILbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityDoseQuantity" constrainedElement="_roqTIpXFEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YHCqMLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.doseQuantity.oclIsUndefined()) and self.doseQuantity.isNullFlavorUndefined()) implies (not self.doseQuantity.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VjfzILTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityPerformer" constrainedElement="_n2J7wJXOEeOgXcDbh8Igkw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VjfzIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YHIw0LbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityPerformer" constrainedElement="_n2J7wJXOEeOgXcDbh8Igkw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YHIw0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.performer->select(performer : cda::Performer2 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer2))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WLoxMLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityAuthorParticipation" constrainedElement="_F4Z9cK70EeORf5eJaKt1KQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WLoxMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YwjhQLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityAuthorParticipation" constrainedElement="_F4Z9cK70EeORf5eJaKt1KQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YwkIULbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_X8Y9ILTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityPrecondition" constrainedElement="_AxfnYDq0EeSyGa6KC25kiw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X8Y9IbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_a_casLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityPrecondition" constrainedElement="_AxfnYDq0EeSyGa6KC25kiw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_a_casbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.precondition->select(precondition : cda::Precondition | not precondition.oclIsUndefined() and precondition.oclIsKindOf(cda::Precondition))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_X9V_YLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityConsumable" constrainedElement="_tmjVIDq2EeSyGa6KC25kiw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X9V_YbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_bAtmALbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityConsumable" constrainedElement="_tmjVIDq2EeSyGa6KC25kiw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bAtmAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_b7rdMLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityEntryRelationship">
+    <ownedRule xmi:id="_gmb4YLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_felasLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b7rdMbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gmb4YbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::PlannedImmunizationActivity::PriorityPreferenceEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_b8NBoLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityEntryRelationship">
+    <ownedRule xmi:id="_gnMtYLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fepFELS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b8NosLTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gnMtYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::PlannedImmunizationActivity::Indication2EntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_b8v0MLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityEntryRelationship">
+    <ownedRule xmi:id="_gn_-oLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fetWgLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b8v0MbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gn_-obbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::PlannedImmunizationActivity::Instruction2EntryRelationship))</body>
       </specification>
@@ -1503,8 +1503,8 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       <ownedComment xmi:id="_DTlwwJs_EeO4UfbpzV0RLg">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_VjcIwbTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityIVLPQUnit" constrainedElement="_8MbYsJXLEeOgXcDbh8Igkw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_VjcIwrTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_YHFGcLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityIVLPQUnit" constrainedElement="_8MbYsJXLEeOgXcDbh8Igkw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YHFGcbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies ((not self.unit.oclIsUndefined()) implies (self.unit='1') ))</body>
         </specification>
@@ -1524,14 +1524,14 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       <ownedComment xmi:id="_HY4yIDq0EeSyGa6KC25kiw">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_Vjd98LTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityPreconditionTypeCode" constrainedElement="_JxWeUDq0EeSyGa6KC25kiw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vjd98bTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_YHGUkbbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityPreconditionTypeCode" constrainedElement="_JxWeUDq0EeSyGa6KC25kiw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YHGUkrbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>isDefined('typeCode') and self.typeCode=vocab::ActRelationshipType::PRCN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_X81CALTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2" constrainedElement="_d3xaADq0EeSyGa6KC25kiw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_X81CAbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_bACQkLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2" constrainedElement="_d3xaADq0EeSyGa6KC25kiw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bACQkbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.criterion->one(criterion : cda::Criterion | not criterion.oclIsUndefined() and criterion.oclIsKindOf(consol::PreconditionForSubstanceAdministration2))</body>
         </specification>
@@ -1559,8 +1559,8 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       <ownedComment xmi:id="_AHAYkDq3EeSyGa6KC25kiw">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_X92VsLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityConsumableImmunizationMedicationInformation2" constrainedElement="_KzGu4Dq3EeSyGa6KC25kiw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_X92VsbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_bBWfMLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityConsumableImmunizationMedicationInformation2" constrainedElement="_KzGu4Dq3EeSyGa6KC25kiw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bBWfMbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.manufacturedProduct->one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(consol::ImmunizationMedicationInformation2))</body>
         </specification>
@@ -1574,9 +1574,9 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fekMkLS6EeWcPq3zAthoUQ" name="PriorityPreferenceEntryRelationship">
-      <ownedRule xmi:id="_b7774LTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityPriorityPreferenceEntryRelationshipPriorityPreference">
+      <ownedRule xmi:id="_gmydsLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityPriorityPreferenceEntryRelationshipPriorityPreference">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fenP4LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_b7774bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_gmydsbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PriorityPreference))->size() >= 0</body>
         </specification>
@@ -1593,9 +1593,9 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_feoeALS6EeWcPq3zAthoUQ" name="Indication2EntryRelationship">
-      <ownedRule xmi:id="_b8eHYLTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityIndication2EntryRelationshipIndication2">
+      <ownedRule xmi:id="_gnmWALbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityIndication2EntryRelationshipIndication2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_feq6QLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_b8eHYbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_gnmWAbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication2))->size() >= 0</body>
         </specification>
@@ -1612,9 +1612,9 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fesIYLS6EeWcPq3zAthoUQ" name="Instruction2EntryRelationship">
-      <ownedRule xmi:id="_b9A58LTREeWEoeeTdrbyVw" name="PlannedImmunizationActivityInstruction2EntryRelationshipInstruction2">
+      <ownedRule xmi:id="_goZAMLbPEeWQ25S2Lv5Ssw" name="PlannedImmunizationActivityInstruction2EntryRelationshipInstruction2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_feukoLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_b9A58bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_goZAMbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.act->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instruction2))->size() >= 0</body>
         </specification>
@@ -1753,120 +1753,120 @@ This information should be included in an Immunization Activity when available. 
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instruction2))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WZLd8LTREeWEoeeTdrbyVw" name="ImmunizationActivityTemplateId" constrainedElement="_zI6vcOE7EeOTq9XEMvvkWw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZMFALTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZCwEgLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityTemplateId" constrainedElement="_zI6vcOE7EeOTq9XEMvvkWw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZCwEgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.52' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WZQ9gLTREeWEoeeTdrbyVw" name="ImmunizationActivityCode" constrainedElement="_3izGEOHFEeO04sHNODkHmQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZQ9gbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZC3ZQLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityCode" constrainedElement="_3izGEOHFEeO04sHNODkHmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZC3ZQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WZeY4LTREeWEoeeTdrbyVw" name="ImmunizationActivityStatusCodeP" constrainedElement="_BHNbkOHGEeO04sHNODkHmQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZeY4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZDMJYLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityStatusCodeP" constrainedElement="_BHNbkOHGEeO04sHNODkHmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZDMJYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WZTZwLTREeWEoeeTdrbyVw" name="ImmunizationActivityStatusCode" constrainedElement="_BHNbkOHGEeO04sHNODkHmQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZTZwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZC7qsLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityStatusCode" constrainedElement="_BHNbkOHGEeO04sHNODkHmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZC7qsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'normal' or value.code = 'aborted' or value.code = 'active' or value.code = 'cancelled' or value.code = 'completed' or value.code = 'held' or value.code = 'new' or value.code = 'suspended' or value.code = 'nullified' or value.code = 'obsolete'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WZoJ4LTREeWEoeeTdrbyVw" name="ImmunizationActivityRepeatNumber" constrainedElement="_CXurcOHKEeO04sHNODkHmQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZoJ4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZDXIgLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityRepeatNumber" constrainedElement="_CXurcOHKEeO04sHNODkHmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZDXIgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.repeatNumber.oclIsUndefined()) and self.repeatNumber.isNullFlavorUndefined()) implies (not self.repeatNumber.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WZ1lQLTREeWEoeeTdrbyVw" name="ImmunizationActivityAdministrationUnitCodeP" constrainedElement="_Z9QLQOHKEeO04sHNODkHmQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZ1lQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZDkj4LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityAdministrationUnitCodeP" constrainedElement="_Z9QLQOHKEeO04sHNODkHmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZDkj4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.administrationUnitCode.oclIsUndefined()) and self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WZrNMLTREeWEoeeTdrbyVw" name="ImmunizationActivityAdministrationUnitCode" constrainedElement="_Z9QLQOHKEeO04sHNODkHmQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZrNMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZDaL0LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityAdministrationUnitCode" constrainedElement="_Z9QLQOHKEeO04sHNODkHmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZDaL0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.administrationUnitCode.oclIsUndefined()) and self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in 
 value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.code = 'OPDROP' or value.code = 'ORDROP' or value.code = 'OTDROP' or value.code = 'PUFF' or value.code = 'SCOOP' or value.code = 'SPRY')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WZ_WQLTREeWEoeeTdrbyVw" name="ImmunizationActivityText" constrainedElement="_fpU7gMHdEeST26B_nQ4gxA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZ_WQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZDvjALbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityText" constrainedElement="_fpU7gMHdEeST26B_nQ4gxA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZDvjAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (true)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WaIgMLTREeWEoeeTdrbyVw" name="ImmunizationActivity2AuthorParticipation" constrainedElement="_OFgNEOG9EeO04sHNODkHmQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WaIgMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZD4F4LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2AuthorParticipation" constrainedElement="_OFgNEOG9EeO04sHNODkHmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZD4F4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WaYX0LTREeWEoeeTdrbyVw" name="ImmunizationActivityDrugVehicle">
+    <ownedRule xmi:id="_ZELA0LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityDrugVehicle">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_xbTX0OHPEeO04sHNODkHmQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WaYX0bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZELA0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.participant->select(participant : cda::Participant2 | not participant.participantRole.oclIsUndefined() and participant.participantRole.oclIsKindOf(consol::DrugVehicle))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XAUWcLTREeWEoeeTdrbyVw" name="ImmunizationActivityConsumable" constrainedElement="_3ZCbkPgKEeOYeZoWJF5yyQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XAUWcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZnB2QLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityConsumable" constrainedElement="_3ZCbkPgKEeOYeZoWJF5yyQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZnB2QbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.consumable->one(consumable : cda::Consumable | not consumable.oclIsUndefined() and consumable.oclIsKindOf(cda::Consumable))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_X-WsALTREeWEoeeTdrbyVw" name="ImmunizationActivityPrecondition" constrainedElement="_6Lje0D3MEeSyGa6KC25kiw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X-XTELTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_bB__cLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityPrecondition" constrainedElement="_6Lje0D3MEeSyGa6KC25kiw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bCAmgLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.precondition->select(precondition : cda::Precondition | not precondition.oclIsUndefined() and precondition.oclIsKindOf(cda::Precondition))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_YPuv4bTREeWEoeeTdrbyVw" name="ImmunizationActivity2EntryRelationshipForSubAdminAct" constrainedElement="_X5kN8MHyEeST26B_nQ4gxA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YPuv4rTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_bXiKkLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2EntryRelationshipForSubAdminAct" constrainedElement="_X5kN8MHyEeST26B_nQ4gxA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bXiKkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->select(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_cv3TMLTREeWEoeeTdrbyVw" name="ImmunizationActivity2EntryRelationship">
+    <ownedRule xmi:id="_hz7mQLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_flLx8LS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cv3TMbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_hz7mQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ImmunizationActivity2::Indication2EntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_cwV0ULTREeWEoeeTdrbyVw" name="ImmunizationActivity2EntryRelationship">
+    <ownedRule xmi:id="_h0tCULbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_flPcULS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cwV0UbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_h0tCUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ImmunizationActivity2::Instruction2EntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_cw-tgLTREeWEoeeTdrbyVw" name="ImmunizationActivity2EntryRelationship">
+    <ownedRule xmi:id="_h1aM8LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_flTGsLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cw-tgbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_h1aM8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ImmunizationActivity2::MedicationSupplyOrder2EntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_cxiHILTREeWEoeeTdrbyVw" name="ImmunizationActivity2EntryRelationship">
+    <ownedRule xmi:id="_h2X2QLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_flXYILS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cxiHIbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_h2X2QbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ImmunizationActivity2::MedicationDispense2EntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_cyDrkLTREeWEoeeTdrbyVw" name="ImmunizationActivity2EntryRelationship">
+    <ownedRule xmi:id="_h3GPALbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2EntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_flbCgLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cyDrkbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_h3GPAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::ImmunizationActivity2::ReactionObservation2EntryRelationship))</body>
       </specification>
@@ -1958,24 +1958,24 @@ value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.co
       <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_E7yFoUxqEd6h-an5IXo-DA"/>
       <association href="../consol.uml#_flbCgLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
-    <ownedOperation xmi:id="_Wao2gLTREeWEoeeTdrbyVw" name="getConsolDrugVehicles" bodyCondition="_Wao2g7TREeWEoeeTdrbyVw" isQuery="true">
-      <ownedRule xmi:id="_Wao2g7TREeWEoeeTdrbyVw" name="body" constrainedElement="_Wao2gLTREeWEoeeTdrbyVw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Wao2hLTREeWEoeeTdrbyVw">
+    <ownedOperation xmi:id="_ZEctoLbPEeWQ25S2Lv5Ssw" name="getConsolDrugVehicles" bodyCondition="_ZEdUsbbPEeWQ25S2Lv5Ssw" isQuery="true">
+      <ownedRule xmi:id="_ZEdUsbbPEeWQ25S2Lv5Ssw" name="body" constrainedElement="_ZEctoLbPEeWQ25S2Lv5Ssw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZEdUsrbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::DrugVehicle)).oclAsType(consol::DrugVehicle)</body>
         </specification>
       </ownedRule>
-      <ownedParameter xmi:id="_Wao2gbTREeWEoeeTdrbyVw" direction="return">
+      <ownedParameter xmi:id="_ZEctobbPEeWQ25S2Lv5Ssw" direction="return">
         <type xmi:type="uml:Class" href="consol-medications.uml#_VBXq8BUTEeG6PvUxSTZnaw"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wao2grTREeWEoeeTdrbyVw" value="*"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZEdUsLbPEeWQ25S2Lv5Ssw" value="*"/>
       </ownedParameter>
     </ownedOperation>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_Bpk3QPgLEeOYeZoWJF5yyQ" name="Consumable">
       <ownedComment xmi:id="_dCZZYPiWEeOXlK95I8tUew">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_XAlcMLTREeWEoeeTdrbyVw" name="ImmunizationActivityConsumableImmunizationMedicationInformation" constrainedElement="_Vq0YAPgLEeOYeZoWJF5yyQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XAlcMbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_ZnaQwLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityConsumableImmunizationMedicationInformation" constrainedElement="_Vq0YAPgLEeOYeZoWJF5yyQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZnaQwbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.manufacturedProduct->one(manufacturedProduct : cda::ManufacturedProduct | not manufacturedProduct.oclIsUndefined() and manufacturedProduct.oclIsKindOf(consol::ImmunizationMedicationInformation2))</body>
         </specification>
@@ -1990,14 +1990,14 @@ value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.co
       <ownedComment xmi:id="_Rkde8D3NEeSyGa6KC25kiw">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_WaBygLTREeWEoeeTdrbyVw" name="ImmunizationActivityPreconditionTypeCode" constrainedElement="_Qr3DAD3NEeSyGa6KC25kiw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WaBygbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_ZDxYMbbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityPreconditionTypeCode" constrainedElement="_Qr3DAD3NEeSyGa6KC25kiw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZDxYMrbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.typeCode=vocab::ActRelationshipType::PRCN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_X-yw4LTREeWEoeeTdrbyVw" name="ImmunizationActivityPreconditionPreconditionForSubstanceAdministration" constrainedElement="_O0YHgD3OEeSyGa6KC25kiw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_X-yw4bTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_bCoRkLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivityPreconditionPreconditionForSubstanceAdministration" constrainedElement="_O0YHgD3OEeSyGa6KC25kiw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bCoRkbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.criterion->one(criterion : cda::Criterion | not criterion.oclIsUndefined() and criterion.oclIsKindOf(consol::PreconditionForSubstanceAdministration2))</body>
         </specification>
@@ -2025,26 +2025,26 @@ value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.co
       <ownedComment xmi:id="_1uRz4MHyEeST26B_nQ4gxA">
         <body>The following entryRelationship is used to indicate a given immunization's order in a series. The nested Substance Administered Act identifies an administration in the series. The entryRelationship/sequenceNumber shows the order of this particular administration in that series.</body>
       </ownedComment>
-      <ownedRule xmi:id="_WaDnsLTREeWEoeeTdrbyVw" name="ImmunizationActivity2EntryRelationshipTypeCode" constrainedElement="_pBFIgMHyEeST26B_nQ4gxA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WaDnsbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_ZDymUbbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2EntryRelationshipTypeCode" constrainedElement="_pBFIgMHyEeST26B_nQ4gxA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZDymUrbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WaE10LTREeWEoeeTdrbyVw" name="ImmunizationActivity2EntryRelationshipInversionInd" constrainedElement="_pBEhcMHyEeST26B_nQ4gxA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WaE10bTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_ZDz0cLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2EntryRelationshipInversionInd" constrainedElement="_pBEhcMHyEeST26B_nQ4gxA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZDz0cbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>not self.inversionInd.oclIsUndefined() and self.inversionInd=true</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WaGD8LTREeWEoeeTdrbyVw" name="ImmunizationActivity2EntryRelationshipSequenceNumber" constrainedElement="_pBEhc8HyEeST26B_nQ4gxA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WaGrALTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_ZD1CkLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2EntryRelationshipSequenceNumber" constrainedElement="_pBEhc8HyEeST26B_nQ4gxA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZD1CkbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>((not self.sequenceNumber.oclIsUndefined()) and self.sequenceNumber.isNullFlavorUndefined()) implies (not self.sequenceNumber.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_YP-AcLTREeWEoeeTdrbyVw" name="ImmunizationActivity2EntryRelationshipSubstanceAdministeredAct" constrainedElement="_yQQYYMHzEeST26B_nQ4gxA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YP-AcbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_bX7zMLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2EntryRelationshipSubstanceAdministeredAct" constrainedElement="_yQQYYMHzEeST26B_nQ4gxA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bX7zMbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.act->one(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::SubstanceAdministeredAct))</body>
         </specification>
@@ -2077,9 +2077,9 @@ value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.co
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_flKj0LS6EeWcPq3zAthoUQ" name="Indication2EntryRelationship">
-      <ownedRule xmi:id="_cwGjwLTREeWEoeeTdrbyVw" name="ImmunizationActivity2Indication2EntryRelationshipIndication2">
+      <ownedRule xmi:id="_h0Un0LbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2Indication2EntryRelationshipIndication2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_flNAELS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cwGjwbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_h0Un0bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::Indication2))->size() >= 0</body>
         </specification>
@@ -2096,9 +2096,9 @@ value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.co
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_flOOMLS6EeWcPq3zAthoUQ" name="Instruction2EntryRelationship">
-      <ownedRule xmi:id="_cwrLgLTREeWEoeeTdrbyVw" name="ImmunizationActivity2Instruction2EntryRelationshipInstruction2">
+      <ownedRule xmi:id="_h1CZgLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2Instruction2EntryRelationshipInstruction2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_flRRgLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cwrLgbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_h1CZgbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.act->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instruction2))->size() &lt;= 1</body>
         </specification>
@@ -2115,9 +2115,9 @@ value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.co
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_flR4kLS6EeWcPq3zAthoUQ" name="MedicationSupplyOrder2EntryRelationship">
-      <ownedRule xmi:id="_cxOlILTREeWEoeeTdrbyVw" name="ImmunizationActivity2MedicationSupplyOrder2EntryRelationshipMedicationSupplyOrder2">
+      <ownedRule xmi:id="_h1xZULbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2MedicationSupplyOrder2EntryRelationshipMedicationSupplyOrder2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_flU74LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cxOlIbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_h1xZUbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.supply->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationSupplyOrder2))->size() &lt;= 1</body>
         </specification>
@@ -2134,9 +2134,9 @@ value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.co
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_flWKALS6EeWcPq3zAthoUQ" name="MedicationDispense2EntryRelationship">
-      <ownedRule xmi:id="_cxzM4LTREeWEoeeTdrbyVw" name="ImmunizationActivity2MedicationDispense2EntryRelationshipMedicationDispense2">
+      <ownedRule xmi:id="_h2ubkLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2MedicationDispense2EntryRelationshipMedicationDispense2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_flYmQLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cxzM4bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_h2ubkbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.supply->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationDispense2))->size() &lt;= 1</body>
         </specification>
@@ -2153,9 +2153,9 @@ value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.co
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_flZ0YLS6EeWcPq3zAthoUQ" name="ReactionObservation2EntryRelationship">
-      <ownedRule xmi:id="_cyUKQLTREeWEoeeTdrbyVw" name="ImmunizationActivity2ReactionObservation2EntryRelationshipReactionObservation2">
+      <ownedRule xmi:id="_h3cNQLbPEeWQ25S2Lv5Ssw" name="ImmunizationActivity2ReactionObservation2EntryRelationshipReactionObservation2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_flc3sLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cyUKQbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_h3c0ULbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ReactionObservation2))->size() &lt;= 1</body>
         </specification>
@@ -2207,15 +2207,15 @@ value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.co
     <ownedComment xmi:id="_xLRlgOHUEeO04sHNODkHmQ">
       <body>The Immunization Medication Information represents product information about the immunization substance. The vaccine manufacturer and vaccine lot number are typically recorded in the medical record and should be included if known.</body>
     </ownedComment>
-    <ownedRule xmi:id="_WaqEoLTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationTemplateId" constrainedElement="_Rx8LIOHUEeO04sHNODkHmQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WaqEobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZEd7wLbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationTemplateId" constrainedElement="_Rx8LIOHUEeO04sHNODkHmQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZEd7wbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.54' and id.extension = '2014-06-09')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WbX2ULTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationManufacturedMaterial">
+    <ownedRule xmi:id="_ZFAuULbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationManufacturedMaterial">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_b88KEOHVEeO04sHNODkHmQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WbX2UbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZFAuUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.manufacturedMaterial->one(manufacturedMaterial : cda::Material | not manufacturedMaterial.oclIsUndefined() and manufacturedMaterial.oclIsKindOf(cda::Material))</body>
       </specification>
@@ -2271,22 +2271,22 @@ value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.co
           <body>true</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Wa7xcLTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP" constrainedElement="_sCU5QOHVEeO04sHNODkHmQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Wa7xcbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_ZEvBgLbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP" constrainedElement="_sCU5QOHVEeO04sHNODkHmQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZEvokLbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>not self.code.oclIsUndefined()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WawyULTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode" constrainedElement="_sCU5QOHVEeO04sHNODkHmQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WawyUbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_ZEjbULbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode" constrainedElement="_sCU5QOHVEeO04sHNODkHmQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZEjbUbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 not value.code.oclIsUndefined()</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WbOsYLTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText" constrainedElement="_2daj0MKMEeSqg-Exmsy2kg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WbOsYbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_ZE7OwLbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText" constrainedElement="_2daj0MKMEeSqg-Exmsy2kg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZE7OwbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>not self.lotNumberText.oclIsUndefined()</body>
         </specification>
@@ -2302,14 +2302,14 @@ not value.code.oclIsUndefined()</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_76a_EMKMEeSqg-Exmsy2kg" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Ft3skOHlEeO04sHNODkHmQ" name="CE">
-        <ownedRule xmi:id="_WbUL8LTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP" constrainedElement="_PMPEcOHlEeO04sHNODkHmQ">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WbUL8bTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_ZE-5ILbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP" constrainedElement="_PMPEcOHlEeO04sHNODkHmQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZE-5IbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body> ( self.isNullFlavorUndefined() implies (((not self.translation->isEmpty()) and self.translation->exists(element | element.isNullFlavorUndefined())) implies (not self.translation->isEmpty()) ))</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_WbRvsLTREeWEoeeTdrbyVw" name="ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation" constrainedElement="_PMPEcOHlEeO04sHNODkHmQ">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WbRvsbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_ZE9rALbPEeWQ25S2Lv5Ssw" name="ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation" constrainedElement="_PMPEcOHlEeO04sHNODkHmQ">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZE9rAbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body> ( self.isNullFlavorUndefined() implies (((not self.translation->isEmpty()) and self.translation->exists(element | element.isNullFlavorUndefined())) implies (self.translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
@@ -2387,29 +2387,29 @@ not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined
     <ownedComment xmi:id="_5M3jwPy3EeO1SvUcmWeLDQ">
       <body>The Immunizations Section defines a patient's current immunization status and pertinent immunization history. The primary use case for the Immunization Section is to enable communication of a patient's immunization status. The section should include current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.</body>
     </ownedComment>
-    <ownedRule xmi:id="_XFH98LTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalTemplateId" constrainedElement="_kdQhIPy3EeO1SvUcmWeLDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFIlALTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zs1jULbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalTemplateId" constrainedElement="_kdQhIPy3EeO1SvUcmWeLDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zs2KYLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.2' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XFNdgLTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalCodeP" constrainedElement="_DNVjIPy4EeO1SvUcmWeLDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFNdgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zs7p8LbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalCodeP" constrainedElement="_DNVjIPy4EeO1SvUcmWeLDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zs7p8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XFKaMLTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalCode" constrainedElement="_DNVjIPy4EeO1SvUcmWeLDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XFKaMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zs4moLbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalCode" constrainedElement="_DNVjIPy4EeO1SvUcmWeLDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zs4mobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_djkBALTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptional2Entry">
+    <ownedRule xmi:id="_jEfPMLbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptional2Entry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_frJQALS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_djkBAbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jEfPMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional2::ImmunizationActivity2Entry))</body>
       </specification>
@@ -2426,9 +2426,9 @@ value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_frJQALS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_frHa0LS6EeWcPq3zAthoUQ" name="ImmunizationActivity2Entry">
-      <ownedRule xmi:id="_dj1t0LTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptional2ImmunizationActivity2EntryImmunizationActivity2">
+      <ownedRule xmi:id="_jFCo0LbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptional2ImmunizationActivity2EntryImmunizationActivity2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_frLFMLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dj1t0bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jFCo0bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.substanceAdministration->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity2))->size() >= 0</body>
         </specification>
@@ -2465,47 +2465,47 @@ value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
     <ownedComment xmi:id="_64PrgALNEeSIPYXg7AgJzw">
       <body>The Immunizations Section defines a patient's current immunization status and pertinent immunization history. The primary use case for the Immunization Section is to enable communication of a patient's immunization status. The section should include current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.</body>
     </ownedComment>
-    <ownedRule xmi:id="_XJYL0LTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalTemplateId" constrainedElement="_14bikALNEeSIPYXg7AgJzw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XJYL0bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zx968LbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalTemplateId" constrainedElement="_14bikALNEeSIPYXg7AgJzw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zx968bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.2.1' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XJaBALTREeWEoeeTdrbyVw" name="ImmunizationsSection2NullFlavor" constrainedElement="_Stc7QKWfEeSPMaiGDG98Yg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XJaBAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZyA-QLbPEeWQ25S2Lv5Ssw" name="ImmunizationsSection2NullFlavor" constrainedElement="_Stc7QKWfEeSPMaiGDG98Yg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZyA-QbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>(not self.nullFlavor.oclIsUndefined()) implies (self.nullFlavor=vocab::NullFlavor::NI)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XJe5gLTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalCodeP" constrainedElement="_SpnO8ALOEeSIPYXg7AgJzw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XJe5gbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZyKvQLbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalCodeP" constrainedElement="_SpnO8ALOEeSIPYXg7AgJzw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZyKvQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XJb2MLTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalCode" constrainedElement="_SpnO8ALOEeSIPYXg7AgJzw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XJb2MbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZyFPsLbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalCode" constrainedElement="_SpnO8ALOEeSIPYXg7AgJzw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZyFPsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XJh80LTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalTitle" constrainedElement="_4abv0QLOEeSIPYXg7AgJzw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XJh80bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZyPnwLbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalTitle" constrainedElement="_4abv0QLOEeSIPYXg7AgJzw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZyPnwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XJjyALTREeWEoeeTdrbyVw" name="ImmunizationsSectionEntriesOptionalText" constrainedElement="_4abIwALOEeSIPYXg7AgJzw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XJjyAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZySrELbPEeWQ25S2Lv5Ssw" name="ImmunizationsSectionEntriesOptionalText" constrainedElement="_4abIwALOEeSIPYXg7AgJzw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZySrEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_d-lwILTREeWEoeeTdrbyVw" name="ImmunizationsSection2Entry">
+    <ownedRule xmi:id="_kNsS8LbPEeWQ25S2Lv5Ssw" name="ImmunizationsSection2Entry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fvLbcLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-lwIbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kNsS8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::ImmunizationsSection2::ImmunizationActivity2Entry))</body>
       </specification>
@@ -2537,9 +2537,9 @@ value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_fvLbcLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fvKNULS6EeWcPq3zAthoUQ" name="ImmunizationActivity2Entry">
-      <ownedRule xmi:id="_d-1AsLTREeWEoeeTdrbyVw" name="ImmunizationsSection2ImmunizationActivity2EntryImmunizationActivity2">
+      <ownedRule xmi:id="_kOgyULbPEeWQ25S2Lv5Ssw" name="ImmunizationsSection2ImmunizationActivity2EntryImmunizationActivity2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fvNQoLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d-1AsbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kOhZYLbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.substanceAdministration->exists(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::ImmunizationActivity2))</body>
         </specification>
@@ -2712,121 +2712,121 @@ value.code = '11369-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
   <CDA:Inline xmi:id="_flZ0YrS6EeWcPq3zAthoUQ" base_Class="_flZ0YLS6EeWcPq3zAthoUQ"/>
   <CDA:Inline xmi:id="_frHa0rS6EeWcPq3zAthoUQ" base_Class="_frHa0LS6EeWcPq3zAthoUQ"/>
   <CDA:Inline xmi:id="_fvKNUrS6EeWcPq3zAthoUQ" base_Class="_fvKNULS6EeWcPq3zAthoUQ"/>
-  <Ecore:EClass xmi:id="_TLc9sLTREeWEoeeTdrbyVw" base_Class="_2L7voBSVEeGGzu7fmW9pXw">
+  <Ecore:EClass xmi:id="_V8ooILbPEeWQ25S2Lv5Ssw" base_Class="_2L7voBSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionCode ImmunizationsSectionCodeP ImmunizationsSectionTitle ImmunizationsSectionText ImmunizationsSectionEntry' templateId.root='2.16.840.1.113883.10.20.22.2.2.1' code.code='11369-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.ImmunizationsSectionCode='ImmunizationsSectionCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TLoj4LTREeWEoeeTdrbyVw" base_Class="_2MAoIBSVEeGGzu7fmW9pXw">
+  <Ecore:EClass xmi:id="_V8znQLbPEeWQ25S2Lv5Ssw" base_Class="_2MAoIBSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationActivityTemplateId ImmunizationActivityTextReferenceValue ImmunizationActivityInstructionInversion ImmunizationActivityDrugVehicleTypeCode ImmunizationActivityClassCode ImmunizationActivityMoodCode ImmunizationActivityMoodCodeP ImmunizationActivityNegationInd ImmunizationActivityId ImmunizationActivityStatusCode ImmunizationActivityEffectiveTime ImmunizationActivityRouteCode ImmunizationActivityApproachSiteCode ImmunizationActivityAdministrationUnitCode ImmunizationActivityConsumable ImmunizationActivityEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.52' constraints.validation.warning='ImmunizationActivityTextReference ImmunizationActivityReferenceValue ImmunizationActivityDoseQuantityUnit ImmunizationActivityText ImmunizationActivityDoseQuantity ImmunizationActivityPerformer' classCode='SBADM' constraints.validation.dependOn.ImmunizationActivityMoodCode='ImmunizationActivityMoodCodeP' constraints.validation.info='ImmunizationActivityCode ImmunizationActivityRepeatNumber ImmunizationActivityRouteCodeP ImmunizationActivityApproachSiteCodeP ImmunizationActivityAdministrationUnitCodeP ImmunizationActivityDrugVehicle ImmunizationActivityPrecondition' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1' routeCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.ImmunizationActivityRouteCode='ImmunizationActivityRouteCodeP' approachSiteCode.codeSystem='2.16.840.1.113883.6.96' approachSiteCode.codeSystemName='SNOMEDCT' administrationUnitCode.codeSystem='2.16.840.1.113883.3.26.1.1' administrationUnitCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.ImmunizationActivityAdministrationUnitCode='ImmunizationActivityAdministrationUnitCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TOOk4LTREeWEoeeTdrbyVw" base_Class="_VT5u8DhYEeS1WeMhbm6GZw">
+  <Ecore:EClass xmi:id="_V_7MsLbPEeWQ25S2Lv5Ssw" base_Class="_VT5u8DhYEeS1WeMhbm6GZw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='PRCN' constraints.validation.error='ImmunizationActivityPreconditionTypeCode ImmunizationActivityPreconditionPreconditionForSubstanceAdministration'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Tjb_4LTREeWEoeeTdrbyVw" base_Class="__qYdcBVNEeGbmN_W114JUw">
+  <Ecore:EClass xmi:id="_WXeKALbPEeWQ25S2Lv5Ssw" base_Class="__qYdcBVNEeGbmN_W114JUw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationRefusalReasonTemplateId ImmunizationRefusalReasonClassCode ImmunizationRefusalReasonCode ImmunizationRefusalReasonCodeP ImmunizationRefusalReasonId ImmunizationRefusalReasonMoodCode ImmunizationRefusalReasonStatusCode ImmunizationRefusalReasonStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.53' classCode='OBS' code.codeSystem='2.16.840.1.113883.5.8' code.codeSystemName='ActReason' constraints.validation.dependOn.ImmunizationRefusalReasonCode='ImmunizationRefusalReasonCodeP' moodCode='EVN' statusCode.code='completed' constraints.validation.dependOn.ImmunizationRefusalReasonStatusCode='ImmunizationRefusalReasonStatusCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Tj9kULTREeWEoeeTdrbyVw" base_Class="_daTqABVOEeGbmN_W114JUw">
+  <Ecore:EClass xmi:id="_WYHqQLbPEeWQ25S2Lv5Ssw" base_Class="_daTqABVOEeGbmN_W114JUw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationMedicationInformationTemplateId ImmunizationMedicationInformationClassCode ImmunizationMedicationInformationManufacturedMaterial' templateId.root='2.16.840.1.113883.10.20.22.4.54' classCode='MANU' constraints.validation.info='ImmunizationMedicationInformationId' constraints.validation.warning='ImmunizationMedicationInformationManufacturerOrganization'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TkB1wLTREeWEoeeTdrbyVw" base_Class="_wJHu0EX8EeG6e5lG0YsSyQ">
+  <Ecore:EClass xmi:id="_WYNJ0LbPEeWQ25S2Lv5Ssw" base_Class="_wJHu0EX8EeG6e5lG0YsSyQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText' constraints.validation.info='ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation' code.codeSystem='2.16.840.1.113883.12.292' code.codeSystemName='Vaccines administered (CVX)' constraints.validation.error='ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP' constraints.validation.dependOn.ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode='ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Tl6FELTREeWEoeeTdrbyVw" base_Class="_EuPloBVeEeGQCvUGzi1kDQ">
+  <Ecore:EClass xmi:id="_WaH1YLbPEeWQ25S2Lv5Ssw" base_Class="_EuPloBVeEeGQCvUGzi1kDQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionEntriesOptionalCode ImmunizationsSectionEntriesOptionalCodeP ImmunizationsSectionEntriesOptionalTitle ImmunizationsSectionEntriesOptionalText ImmunizationsSectionEntriesOptionalEntry' templateId.root='2.16.840.1.113883.10.20.22.2.2' code.code='11369-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_UZEAULTREeWEoeeTdrbyVw" base_Class="_VboYkG65EeGeVrQbtyMiPg">
+  <Ecore:EClass xmi:id="_XUFjQLbPEeWQ25S2Lv5Ssw" base_Class="_VboYkG65EeGeVrQbtyMiPg">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationActivityConsumableImmunizationMedicationInformation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ViP18LTREeWEoeeTdrbyVw" base_Class="_KRcPwJXFEeOgXcDbh8Igkw">
+  <Ecore:EClass xmi:id="_YFsmYLbPEeWQ25S2Lv5Ssw" base_Class="_KRcPwJXFEeOgXcDbh8Igkw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedImmunizationActivityTemplateId PlannedImmunizationActivityClassCode PlannedImmunizationActivityMoodCode PlannedImmunizationActivityMoodCodeP PlannedImmunizationActivityId PlannedImmunizationActivityStatusCode PlannedImmunizationActivityStatusCodeP PlannedImmunizationActivityEffectiveTime PlannedImmunizationActivityRouteCode PlannedImmunizationActivityApproachSiteCode PlannedImmunizationActivityConsumable PlannedImmunizationActivityEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.120' classCode='SBADM' constraints.validation.dependOn.PlannedImmunizationActivityMoodCode='PlannedImmunizationActivityMoodCodeP' statusCode.code='active' constraints.validation.info='PlannedImmunizationActivityRepeatNumber PlannedImmunizationActivityRouteCodeP PlannedImmunizationActivityApproachSiteCodeP PlannedImmunizationActivityDoseQuantity PlannedImmunizationActivityPerformer PlannedImmunizationActivityAuthorParticipation PlannedImmunizationActivityPrecondition' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1' routeCode.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.PlannedImmunizationActivityRouteCode='PlannedImmunizationActivityRouteCodeP' approachSiteCode.codeSystem='2.16.840.1.113883.6.96' approachSiteCode.codeSystemName='SNOMEDCT' constraints.validation.dependOn.PlannedImmunizationActivityApproachSiteCode='PlannedImmunizationActivityApproachSiteCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_VjcIwLTREeWEoeeTdrbyVw" base_Class="_5NpTYJXLEeOgXcDbh8Igkw">
+  <Ecore:EClass xmi:id="_YHEfYLbPEeWQ25S2Lv5Ssw" base_Class="_5NpTYJXLEeOgXcDbh8Igkw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation unit='1' constraints.validation.warning='PlannedImmunizationActivityIVLPQUnit'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_VjdW4LTREeWEoeeTdrbyVw" base_Class="_F3AvsDq0EeSyGa6KC25kiw">
+  <Ecore:EClass xmi:id="_YHGUkLbPEeWQ25S2Lv5Ssw" base_Class="_F3AvsDq0EeSyGa6KC25kiw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='PRCN' constraints.validation.error='PlannedImmunizationActivityPreconditionTypeCode PlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WZMsELTREeWEoeeTdrbyVw" base_Class="_zI6vcOE7EeOTq9XEMvvkWw">
+  <Ecore:EClass xmi:id="_ZCwrkLbPEeWQ25S2Lv5Ssw" base_Class="_zI6vcOE7EeOTq9XEMvvkWw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationActivityTemplateId ImmunizationActivityInstructionInversion ImmunizationActivityStatusCode ImmunizationActivityStatusCodeP ImmunizationActivityAdministrationUnitCode ImmunizationActivityText ImmunizationActivityConsumable ImmunizationActivity2EntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.52' templateId.extension='2015-08-01' constraints.validation.info='ImmunizationActivityTextReference ImmunizationActivityReferenceValue ImmunizationActivityTextReferenceValue ImmunizationActivityCode ImmunizationActivityRepeatNumber ImmunizationActivityAdministrationUnitCodeP ImmunizationActivityDrugVehicle ImmunizationActivityPrecondition' constraints.validation.dependOn.ImmunizationActivityStatusCode='ImmunizationActivityStatusCodeP' administrationUnitCode.codeSystemName='' constraints.validation.dependOn.ImmunizationActivityAdministrationUnitCode='ImmunizationActivityAdministrationUnitCodeP' constraints.validation.warning='ImmunizationActivity2AuthorParticipation ImmunizationActivity2EntryRelationshipForSubAdminAct'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WaBLcLTREeWEoeeTdrbyVw" base_Class="_Psw9gD3NEeSyGa6KC25kiw">
+  <Ecore:EClass xmi:id="_ZDxYMLbPEeWQ25S2Lv5Ssw" base_Class="_Psw9gD3NEeSyGa6KC25kiw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='PRCN' constraints.validation.error='ImmunizationActivityPreconditionTypeCode ImmunizationActivityPreconditionPreconditionForSubstanceAdministration'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WaDAoLTREeWEoeeTdrbyVw" base_Class="_kL7XcMHyEeST26B_nQ4gxA">
+  <Ecore:EClass xmi:id="_ZDymULbPEeWQ25S2Lv5Ssw" base_Class="_kL7XcMHyEeST26B_nQ4gxA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='COMP' constraints.validation.error='ImmunizationActivity2EntryRelationshipTypeCode ImmunizationActivity2EntryRelationshipInversionInd ImmunizationActivity2EntryRelationshipSubstanceAdministeredAct' inversionInd='true' constraints.validation.info='ImmunizationActivity2EntryRelationshipSequenceNumber'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WaqrsLTREeWEoeeTdrbyVw" base_Class="_Rx8LIOHUEeO04sHNODkHmQ">
+  <Ecore:EClass xmi:id="_ZEei0LbPEeWQ25S2Lv5Ssw" base_Class="_Rx8LIOHUEeO04sHNODkHmQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationMedicationInformationTemplateId ImmunizationMedicationInformationManufacturedMaterial' templateId.root='2.16.840.1.113883.10.20.22.4.54' templateId.extension='2014-06-09'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_War50LTREeWEoeeTdrbyVw" base_Class="_kAfJwOHVEeO04sHNODkHmQ">
+  <Ecore:EClass xmi:id="_ZEfw8LbPEeWQ25S2Lv5Ssw" base_Class="_kAfJwOHVEeO04sHNODkHmQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceValue ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation' code.codeSystemName='' constraints.validation.error='ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText' constraints.validation.dependOn.ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode='ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WbSWwLTREeWEoeeTdrbyVw" base_Class="_Ft3skOHlEeO04sHNODkHmQ">
+  <Ecore:EClass xmi:id="_ZE-SELbPEeWQ25S2Lv5Ssw" base_Class="_Ft3skOHlEeO04sHNODkHmQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP' constraints.validation.dependOn.ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation='ImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_XA2h8LTREeWEoeeTdrbyVw" base_Class="_Bpk3QPgLEeOYeZoWJF5yyQ">
+  <Ecore:EClass xmi:id="_Znw2ELbPEeWQ25S2Lv5Ssw" base_Class="_Bpk3QPgLEeOYeZoWJF5yyQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationActivityConsumableImmunizationMedicationInformation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_XFJMELTREeWEoeeTdrbyVw" base_Class="_kdQhIPy3EeO1SvUcmWeLDQ">
+  <Ecore:EClass xmi:id="_Zs2xcLbPEeWQ25S2Lv5Ssw" base_Class="_kdQhIPy3EeO1SvUcmWeLDQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionEntriesOptionalCode ImmunizationsSectionEntriesOptionalCodeP ImmunizationsSectionEntriesOptional2Entry' templateId.root='2.16.840.1.113883.10.20.22.2.2' templateId.extension='2015-08-01' code.code='11369-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Immunizations' constraints.validation.dependOn.ImmunizationsSectionEntriesOptionalCode='ImmunizationsSectionEntriesOptionalCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_XJYy4LTREeWEoeeTdrbyVw" base_Class="_14bikALNEeSIPYXg7AgJzw">
+  <Ecore:EClass xmi:id="_Zx_JELbPEeWQ25S2Lv5Ssw" base_Class="_14bikALNEeSIPYXg7AgJzw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionEntriesOptionalCode ImmunizationsSectionEntriesOptionalCodeP ImmunizationsSectionEntriesOptionalTitle ImmunizationsSectionEntriesOptionalText ImmunizationsSection2Entry' templateId.root='2.16.840.1.113883.10.20.22.2.2.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='ImmunizationsSection2NullFlavor' code.code='11369-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Immunizations' constraints.validation.dependOn.ImmunizationsSectionEntriesOptionalCode='ImmunizationsSectionEntriesOptionalCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_X-U20LTREeWEoeeTdrbyVw" base_Class="_8qRzADq2EeSyGa6KC25kiw">
+  <Ecore:EClass xmi:id="_bB-xULbPEeWQ25S2Lv5Ssw" base_Class="_8qRzADq2EeSyGa6KC25kiw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlannedImmunizationActivityConsumableImmunizationMedicationInformation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Y-3GwLTREeWEoeeTdrbyVw" base_Class="_fHXNgLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_cnzfoLbPEeWQ25S2Lv5Ssw" base_Class="_fHXNgLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSectionImmunizationActivityEntryImmunization'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Y_c8oLTREeWEoeeTdrbyVw" base_Class="_fHeiQLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_coliwLbPEeWQ25S2Lv5Ssw" base_Class="_fHeiQLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationActivityIndicationEntryRelationshipIndication'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Y_8r4LTREeWEoeeTdrbyVw" base_Class="_fHko4LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_cpXl4LbPEeWQ25S2Lv5Ssw" base_Class="_fHko4LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationActivityInstructionsEntryRelationshipInstructions'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZAb0ELTREeWEoeeTdrbyVw" base_Class="_fHphYLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_cqPIkLbPEeWQ25S2Lv5Ssw" base_Class="_fHphYLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationActivityMedicationDispenseEntryRelationshipMedicationDispense'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZBC4ELTREeWEoeeTdrbyVw" base_Class="_fHvoALS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_cq_WgrbPEeWQ25S2Lv5Ssw" base_Class="_fHvoALS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationActivityReactionObservationEntryRelationshipReactionObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZBhZMLTREeWEoeeTdrbyVw" base_Class="_fH1HkLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_crxZoLbPEeWQ25S2Lv5Ssw" base_Class="_fH1HkLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationActivityImmunizationRefusalReasonEntryRelationshipImmunizationRefusalReason'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZCHPELTREeWEoeeTdrbyVw" base_Class="_fH7OMLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_csi1sLbPEeWQ25S2Lv5Ssw" base_Class="_fH7OMLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationActivityMedicationSupplyOrderEntryRelationshipMedicationSupplyOrder'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZmSTILTREeWEoeeTdrbyVw" base_Class="_fNzMsLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_dqWhwLbPEeWQ25S2Lv5Ssw" base_Class="_fNzMsLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='ImmunizationsSectionEntriesOptionalImmunizationActivityEntryImmunizationActivity'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_b8MakLTREeWEoeeTdrbyVw" base_Class="_fekMkLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_gnMGULbPEeWQ25S2Lv5Ssw" base_Class="_fekMkLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='PlannedImmunizationActivityPriorityPreferenceEntryRelationshipPriorityPreference'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_b8umELTREeWEoeeTdrbyVw" base_Class="_feoeALS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_gn_XkLbPEeWQ25S2Lv5Ssw" base_Class="_feoeALS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='PlannedImmunizationActivityIndication2EntryRelationshipIndication2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_b9T04LTREeWEoeeTdrbyVw" base_Class="_fesIYLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_goxasLbPEeWQ25S2Lv5Ssw" base_Class="_fesIYLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='PlannedImmunizationActivityInstruction2EntryRelationshipInstruction2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_cwVNQLTREeWEoeeTdrbyVw" base_Class="_flKj0LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_h0r0MLbPEeWQ25S2Lv5Ssw" base_Class="_flKj0LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationActivity2Indication2EntryRelationshipIndication2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_cw-GcLTREeWEoeeTdrbyVw" base_Class="_flOOMLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_h1Zl4LbPEeWQ25S2Lv5Ssw" base_Class="_flOOMLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationActivity2Instruction2EntryRelationshipInstruction2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_cxg5ALTREeWEoeeTdrbyVw" base_Class="_flR4kLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_h2WoILbPEeWQ25S2Lv5Ssw" base_Class="_flR4kLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationActivity2MedicationSupplyOrder2EntryRelationshipMedicationSupplyOrder2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_cyDEgLTREeWEoeeTdrbyVw" base_Class="_flWKALS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_h3FA4LbPEeWQ25S2Lv5Ssw" base_Class="_flWKALS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationActivity2MedicationDispense2EntryRelationshipMedicationDispense2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_cymeILTREeWEoeeTdrbyVw" base_Class="_flZ0YLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_h3114LbPEeWQ25S2Lv5Ssw" base_Class="_flZ0YLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ImmunizationActivity2ReactionObservation2EntryRelationshipReactionObservation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_dkGMgLTREeWEoeeTdrbyVw" base_Class="_frHa0LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_jFvzcLbPEeWQ25S2Lv5Ssw" base_Class="_frHa0LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='ImmunizationsSectionEntriesOptional2ImmunizationActivity2EntryImmunizationActivity2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_d_ERQLTREeWEoeeTdrbyVw" base_Class="_fvKNULS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_kP55cLbPEeWQ25S2Lv5Ssw" base_Class="_fvKNULS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSection2ImmunizationActivity2EntryImmunizationActivity2'</annotation>
   </Ecore:EClass>
 </xmi:XMI>

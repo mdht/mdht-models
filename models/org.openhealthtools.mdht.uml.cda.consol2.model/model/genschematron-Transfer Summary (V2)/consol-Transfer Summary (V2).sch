@@ -1154,7 +1154,7 @@ value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()
 
 <!-- StructuredBody -->
 
-<pattern id="p-TransferSummaryV2_2_StructuredBody_courseOfCareSection_2_20_8_i_}-error_mdht" see="#p-TransferSummaryV2_2_StructuredBody_courseOfCareSection_2_20_8_i_}-error_mdht" name="p-TransferSummaryV2_2_StructuredBody_courseOfCareSection_2_20_8_i_}-error_mdht">
+<pattern id="p-TransferSummaryV2_2_StructuredBody_courseOfCareSection_2_20_8_i_-error_mdht" see="#p-TransferSummaryV2_2_StructuredBody_courseOfCareSection_2_20_8_i_-error_mdht" name="p-TransferSummaryV2_2_StructuredBody_courseOfCareSection_2_20_8_i_-error_mdht">
 		<!--
 			UML path: /TransferSummary/component/structuredBody
 			UML root path: /TransferSummary/component/structuredBody
@@ -1439,7 +1439,7 @@ value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()
 
 <!-- StructuredBody -->
 
-<pattern id="p-TransferSummaryV2_2_StructuredBody_admissionMedicationsSectionEntriesOptional2_2_20_8_i_{-error_mdht" see="#p-TransferSummaryV2_2_StructuredBody_admissionMedicationsSectionEntriesOptional2_2_20_8_i_{-error_mdht" name="p-TransferSummaryV2_2_StructuredBody_admissionMedicationsSectionEntriesOptional2_2_20_8_i_{-error_mdht">
+<pattern id="p-TransferSummaryV2_2_StructuredBody_admissionMedicationsSectionEntriesOptional2_2_20_8_i_-error_mdht" see="#p-TransferSummaryV2_2_StructuredBody_admissionMedicationsSectionEntriesOptional2_2_20_8_i_-error_mdht" name="p-TransferSummaryV2_2_StructuredBody_admissionMedicationsSectionEntriesOptional2_2_20_8_i_-error_mdht">
 		<!--
 			UML path: /TransferSummary/component/structuredBody
 			UML root path: /TransferSummary/component/structuredBody
@@ -22154,7 +22154,7 @@ value.code = '51848-0' and value.codeSystem = '2.16.840.1.113883.6.1'
 
 <!-- Component -->
 
-<pattern id="p-TransferSummaryV2_2_Component_admissionMedicationsSectionEntriesOptional2_2_20_8_i_{_1-error_mdht" see="#p-TransferSummaryV2_2_Component_admissionMedicationsSectionEntriesOptional2_2_20_8_i_{_1-error_mdht" name="p-TransferSummaryV2_2_Component_admissionMedicationsSectionEntriesOptional2_2_20_8_i_{_1-error_mdht">
+<pattern id="p-TransferSummaryV2_2_Component_admissionMedicationsSectionEntriesOptional2_2_20_8_i__1-error_mdht" see="#p-TransferSummaryV2_2_Component_admissionMedicationsSectionEntriesOptional2_2_20_8_i__1-error_mdht" name="p-TransferSummaryV2_2_Component_admissionMedicationsSectionEntriesOptional2_2_20_8_i__1-error_mdht">
 		<!--
 			UML path: /TransferSummary/component/structuredBody/admissionMedicationsSectionEntriesOptional2
 			UML root path: /TransferSummary/component/structuredBody/admissionMedicationsSectionEntriesOptional2
@@ -22717,7 +22717,7 @@ value.code = '46241-6' and value.codeSystem = '2.16.840.1.113883.6.1'
 
 <!-- Component -->
 
-<pattern id="p-TransferSummaryV2_2_Component_courseOfCareSection_2_20_8_i_}_1-error_mdht" see="#p-TransferSummaryV2_2_Component_courseOfCareSection_2_20_8_i_}_1-error_mdht" name="p-TransferSummaryV2_2_Component_courseOfCareSection_2_20_8_i_}_1-error_mdht">
+<pattern id="p-TransferSummaryV2_2_Component_courseOfCareSection_2_20_8_i__1-error_mdht" see="#p-TransferSummaryV2_2_Component_courseOfCareSection_2_20_8_i__1-error_mdht" name="p-TransferSummaryV2_2_Component_courseOfCareSection_2_20_8_i__1-error_mdht">
 		<!--
 			UML path: /TransferSummary/component/structuredBody/courseOfCareSection
 			UML root path: /TransferSummary/component/structuredBody/courseOfCareSection
@@ -26474,7 +26474,7 @@ value.code = 'completed'
 	<active pattern = "p-TransferSummaryV2_2_StructuredBody_reviewOfSystemsSection_2_20_8_i_t-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_StructuredBody_resultsSection2_2_20_8_i_o-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_StructuredBody_nutritionSection_2_20_8_i_u-error_mdht"/>
-	<active pattern = "p-TransferSummaryV2_2_StructuredBody_courseOfCareSection_2_20_8_i_}-error_mdht"/>
+	<active pattern = "p-TransferSummaryV2_2_StructuredBody_courseOfCareSection_2_20_8_i_-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_StructuredBody_problemSection2_2_20_8_i_m-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_StructuredBody_medicationsSection2_2_20_8_i_j-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_StructuredBody_assessmentSection_2_20_8_i_z-error_mdht"/>
@@ -26489,7 +26489,7 @@ value.code = 'completed'
 	<active pattern = "p-TransferSummaryV2_2_StructuredBody_admissionDiagnosisSection2_2_20_8_i_-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_StructuredBody_planOfTreatmentSection2_2_20_8_i_l-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_StructuredBody_reasonForReferralSection2_2_20_8_i_v-error_mdht"/>
-	<active pattern = "p-TransferSummaryV2_2_StructuredBody_admissionMedicationsSectionEntriesOptional2_2_20_8_i_{-error_mdht"/>
+	<active pattern = "p-TransferSummaryV2_2_StructuredBody_admissionMedicationsSectionEntriesOptional2_2_20_8_i_-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_StructuredBody_advanceDirectivesSection2_2_20_8_i_a-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_StructuredBody_generalStatusSection_2_20_8_i_s-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_StructuredBody_dischargeDiagnosisSection2_2_20_8_i_g-error_mdht"/>
@@ -27486,7 +27486,7 @@ value.code = 'completed'
 	<active pattern = "p-TransferSummaryV2_2_AssessmentSection_text_3_15_3-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_AssessmentSection_code_3_15_2-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_AssessmentSection_templateId_3_15_1-error_mdht"/>
-	<active pattern = "p-TransferSummaryV2_2_Component_admissionMedicationsSectionEntriesOptional2_2_20_8_i_{_1-error_mdht"/>
+	<active pattern = "p-TransferSummaryV2_2_Component_admissionMedicationsSectionEntriesOptional2_2_20_8_i__1-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_AdmissionMedicationsSectionentriesoptionalV3_templateId_3_2_1-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_3A_AdmissionMedicationsSectionentriesoptionalV3_entry_3_2_4-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_AdmissionMedicationsSectionentriesoptionalV3_title_3_2_3-error_mdht"/>
@@ -27513,7 +27513,7 @@ value.code = 'completed'
 	<active pattern = "p-TransferSummaryV2_3A_HospitalAdmissionDiagnosisV3_moodCode_4_55_3-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_3A_HospitalAdmissionDiagnosisV3_templateId_4_55_1-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_3A_ProblemObservation2EntryRelationship_problemObservation2_4_55_4_i-error_mdht"/>
-	<active pattern = "p-TransferSummaryV2_2_Component_courseOfCareSection_2_20_8_i_}_1-error_mdht"/>
+	<active pattern = "p-TransferSummaryV2_2_Component_courseOfCareSection_2_20_8_i__1-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_CourseOfCareSection_templateId_3_20_1-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_CourseOfCareSection_title_3_20_3-error_mdht"/>
 	<active pattern = "p-TransferSummaryV2_2_CourseOfCareSection_text_3_20_4-error_mdht"/>

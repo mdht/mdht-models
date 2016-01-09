@@ -1317,7 +1317,7 @@ value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()
 
 <!-- StructuredBody -->
 
-<pattern id="p-ProcedureNote_2_StructuredBody_reviewOfSystemsSection_2_15_7_i_{-error_mdht" see="#p-ProcedureNote_2_StructuredBody_reviewOfSystemsSection_2_15_7_i_{-error_mdht" name="p-ProcedureNote_2_StructuredBody_reviewOfSystemsSection_2_15_7_i_{-error_mdht">
+<pattern id="p-ProcedureNote_2_StructuredBody_reviewOfSystemsSection_2_15_7_i_-error_mdht" see="#p-ProcedureNote_2_StructuredBody_reviewOfSystemsSection_2_15_7_i_-error_mdht" name="p-ProcedureNote_2_StructuredBody_reviewOfSystemsSection_2_15_7_i_-error_mdht">
 		<!--
 			UML path: /ProcedureNote/component/structuredBody
 			UML root path: /ProcedureNote/component/structuredBody
@@ -10507,7 +10507,7 @@ value.code = '29299-5' and value.codeSystem = '2.16.840.1.113883.6.1'
 
 <!-- Component -->
 
-<pattern id="p-ProcedureNote_2_Component_reviewOfSystemsSection_2_15_7_i_{_1-error_mdht" see="#p-ProcedureNote_2_Component_reviewOfSystemsSection_2_15_7_i_{_1-error_mdht" name="p-ProcedureNote_2_Component_reviewOfSystemsSection_2_15_7_i_{_1-error_mdht">
+<pattern id="p-ProcedureNote_2_Component_reviewOfSystemsSection_2_15_7_i__1-error_mdht" see="#p-ProcedureNote_2_Component_reviewOfSystemsSection_2_15_7_i__1-error_mdht" name="p-ProcedureNote_2_Component_reviewOfSystemsSection_2_15_7_i__1-error_mdht">
 		<!--
 			UML path: /ProcedureNote/component/structuredBody/reviewOfSystemsSection
 			UML root path: /ProcedureNote/component/structuredBody/reviewOfSystemsSection
@@ -12574,7 +12574,7 @@ not value.code.oclIsUndefined()
 	<active pattern = "p-ProcedureNote_2_StructuredBody_procedureImplantsSection_2_15_7_i_w-error_mdht"/>
 	<active pattern = "p-ProcedureNote_2_StructuredBody_planOfCareSection_2_15_7_i_b-error_mdht"/>
 	<active pattern = "p-ProcedureNote_2_StructuredBody_historyOfPastIllnessSection_2_15_7_i_m-error_mdht"/>
-	<active pattern = "p-ProcedureNote_2_StructuredBody_reviewOfSystemsSection_2_15_7_i_{-error_mdht"/>
+	<active pattern = "p-ProcedureNote_2_StructuredBody_reviewOfSystemsSection_2_15_7_i_-error_mdht"/>
 	<active pattern = "p-ProcedureNote_2_StructuredBody_procedureEstimatedBloodLossSection_2_15_7_i_u-error_mdht"/>
 	<active pattern = "p-ProcedureNote_2_StructuredBody_assessmentAndPlanSection_2_15_7_i_c-error_mdht"/>
 	<active pattern = "p-ProcedureNote_2_StructuredBody_assessmentSection_2_15_7_i_a-error_mdht"/>
@@ -13008,7 +13008,7 @@ not value.code.oclIsUndefined()
 	<active pattern = "p-ProcedureNote_2_ReasonForVisitSection_code_3_107_2-error_mdht"/>
 	<active pattern = "p-ProcedureNote_2_ReasonForVisitSection_title_3_107_4-error_mdht"/>
 	<active pattern = "p-ProcedureNote_2_ReasonForVisitSection_text_3_107_3-error_mdht"/>
-	<active pattern = "p-ProcedureNote_2_Component_reviewOfSystemsSection_2_15_7_i_{_1-error_mdht"/>
+	<active pattern = "p-ProcedureNote_2_Component_reviewOfSystemsSection_2_15_7_i__1-error_mdht"/>
 	<active pattern = "p-ProcedureNote_2_ReviewOfSystemsSection_templateId_3_112_1-error_mdht"/>
 	<active pattern = "p-ProcedureNote_2_ReviewOfSystemsSection_code_3_112_2-error_mdht"/>
 	<active pattern = "p-ProcedureNote_2_ReviewOfSystemsSection_text_3_112_4-error_mdht"/>

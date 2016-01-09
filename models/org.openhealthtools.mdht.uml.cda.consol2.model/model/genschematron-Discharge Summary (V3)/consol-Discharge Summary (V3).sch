@@ -1163,7 +1163,7 @@ value.codeSystem = '2.16.840.1.113883.6.301.5' and not value.code.oclIsUndefined
 
 <!-- StructuredBody -->
 
-<pattern id="p-DischargeSummaryV3_2_StructuredBody_dischargeDietSection_2_9_6_i_{-error_mdht" see="#p-DischargeSummaryV3_2_StructuredBody_dischargeDietSection_2_9_6_i_{-error_mdht" name="p-DischargeSummaryV3_2_StructuredBody_dischargeDietSection_2_9_6_i_{-error_mdht">
+<pattern id="p-DischargeSummaryV3_2_StructuredBody_dischargeDietSection_2_9_6_i_-error_mdht" see="#p-DischargeSummaryV3_2_StructuredBody_dischargeDietSection_2_9_6_i_-error_mdht" name="p-DischargeSummaryV3_2_StructuredBody_dischargeDietSection_2_9_6_i_-error_mdht">
 		<!--
 			UML path: /DischargeSummary2/component/structuredBody
 			UML root path: /DischargeSummary2/component/structuredBody
@@ -14517,7 +14517,7 @@ value.code = '75311-1' and value.codeSystem = '2.16.840.1.113883.6.1') ))
 
 <!-- Component -->
 
-<pattern id="p-DischargeSummaryV3_2_Component_dischargeDietSection_2_9_6_i_{_1-error_mdht" see="#p-DischargeSummaryV3_2_Component_dischargeDietSection_2_9_6_i_{_1-error_mdht" name="p-DischargeSummaryV3_2_Component_dischargeDietSection_2_9_6_i_{_1-error_mdht">
+<pattern id="p-DischargeSummaryV3_2_Component_dischargeDietSection_2_9_6_i__1-error_mdht" see="#p-DischargeSummaryV3_2_Component_dischargeDietSection_2_9_6_i__1-error_mdht" name="p-DischargeSummaryV3_2_Component_dischargeDietSection_2_9_6_i__1-error_mdht">
 		<!--
 			UML path: /DischargeSummary2/component/structuredBody/dischargeDietSection
 			UML root path: /DischargeSummary2/component/structuredBody/dischargeDietSection
@@ -18275,7 +18275,7 @@ value.code = 'completed'
 	<active pattern = "p-DischargeSummaryV3_2_StructuredBody_reasonForVisitSection_2_9_6_i_v-error_mdht"/>
 	<active pattern = "p-DischargeSummaryV3_2_StructuredBody_hospitalDischargePhysicalSection_2_9_6_i_q-error_mdht"/>
 	<active pattern = "p-DischargeSummaryV3_2_StructuredBody_proceduresSectionEntriesOptional2_2_9_6_i_u-error_mdht"/>
-	<active pattern = "p-DischargeSummaryV3_2_StructuredBody_dischargeDietSection_2_9_6_i_{-error_mdht"/>
+	<active pattern = "p-DischargeSummaryV3_2_StructuredBody_dischargeDietSection_2_9_6_i_-error_mdht"/>
 	<active pattern = "p-DischargeSummaryV3_2_StructuredBody_hospitalConsultationsSection_2_9_6_i_o-error_mdht"/>
 	<active pattern = "p-DischargeSummaryV3_2_StructuredBody_admissionDiagnosisSection2_2_9_6_i_m-error_mdht"/>
 	<active pattern = "p-DischargeSummaryV3_2_StructuredBody_historyOfPresentIllnessSection_2_9_6_i_l-error_mdht"/>
@@ -18915,7 +18915,7 @@ value.code = 'completed'
 	<active pattern = "p-DischargeSummaryV3_2_DischargeMedicationsSectionentriesrequiredV3_text_3_24_6-error_mdht"/>
 	<active pattern = "p-DischargeSummaryV3_2_CE_translation_3_24_4_i-error_mdht"/>
 	<active pattern = "p-DischargeSummaryV3_3A_DischargeMedication2Entry_dischargeMedication2_3_24_7_i-error_mdht"/>
-	<active pattern = "p-DischargeSummaryV3_2_Component_dischargeDietSection_2_9_6_i_{_1-error_mdht"/>
+	<active pattern = "p-DischargeSummaryV3_2_Component_dischargeDietSection_2_9_6_i__1-error_mdht"/>
 	<active pattern = "p-DischargeSummaryV3_2_DischargeDietSection_templateId_3_23_1-error_mdht"/>
 	<active pattern = "p-DischargeSummaryV3_2_DischargeDietSection_title_3_23_3-error_mdht"/>
 	<active pattern = "p-DischargeSummaryV3_2_DischargeDietSection_code_3_23_2-error_mdht"/>

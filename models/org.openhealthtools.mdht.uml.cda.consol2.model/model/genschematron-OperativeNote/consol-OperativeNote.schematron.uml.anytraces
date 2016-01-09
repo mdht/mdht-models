@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<trc:Traces xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:trc="http://ns.electronichealth.net.au/ci/metamodel/traceability" originalSourceURL="platform:/resource/org.openhealthtools.mdht.uml.cda.consol2.model/model/consol.uml" username="vadi" fullName="Schematron" date="2016-01-07T10:15:36.000+1000" location="127.0.1.1">
+<trc:Traces xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:trc="http://ns.electronichealth.net.au/ci/metamodel/traceability" originalSourceURL="platform:/resource/org.openhealthtools.mdht.uml.cda.consol2.model/model/consol.uml" username="vadi" fullName="Schematron" date="2016-01-09T08:10:25.546-0500" location="127.0.1.1">
   <sourceModel href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol2.model/model/consol.uml#_2B30sBSVEeGGzu7fmW9pXw"/>
   <traces xsi:type="trc:LogEntry" message="Found no CDA base property for consol::MedicationActivity::drugVehicle" severity="1" messageType="13">
     <participants href="platform:/resource/org.openhealthtools.mdht.uml.cda.consol2.model/model/.controlled/consol-medications.uml#_U6R5khUVEeG6PvUxSTZnaw"/>
@@ -2425,31 +2425,31 @@
     <participants href="../genschematron-USRealmHeader/consol-documents.schematron.uml#_LKdzICzAEeGMXrZ0DiQwGg"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section 4.8.10.ii: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRole&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_T03HELTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_WrrfcLbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section 4.9.9.ii.a: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRoleClassCodeP&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_S7DKMLTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_Vl48ELbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section 4.9.9.ii.a: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRoleClassCode&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_S7At8LTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_Vl3G4LbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section 4.8.10.ii.b: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntity&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_T1FJgLTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_Wr_BcLbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section 4.8.10.ii.b.3: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI&quot;: null" messageType="17">
     <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_tYfO8GFNEeSNI6leTohBaQ"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section 4.9.9.ii.b.1: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityClassCode&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_S7Ke8LTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_VmAQ0LbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section 4.8.10.ii.b.2: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCode&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_S7MUILTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_VmCtELbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section 4.8.10.ii.b.2.i: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_S7OwYLTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_VmFwYLbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section 4.8.10.ii.b.2.ii: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCETranslation&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_S7RMoLTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_VmIzsLbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section 4.103.8.iii.d: Could not transform OCL constraint &quot;PolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName&quot;: Unrecognized variable: (xyz)" messageType="17">
     <participants href="../genschematron-ContinuityOfCareDocument/consol-payers.schematron.uml#_p4NRoF16EeGt2doqSDULjA"/>
@@ -2467,28 +2467,28 @@
     <participants href="../genschematron-DischargeSummary/consol-documents.schematron.uml#_dTBQcTzFEeGMk58Mp9-wVA"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.1: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRoleClassCodeP&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_S7DKMLTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_Vl48ELbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.1: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRoleClassCode&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_S7At8LTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_Vl3G4LbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.2: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntity&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_T1FJgLTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_Wr_BcLbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.2.iii: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI&quot;: null" messageType="17">
     <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_tYfO8GFNEeSNI6leTohBaQ"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.2.i: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityClassCode&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_S7Ke8LTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_VmAQ0LbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.2.ii: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCode&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_S7MUILTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_VmCtELbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.2.ii.a: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_S7OwYLTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_VmFwYLbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section ?.viii.b.2.ii.b: Could not transform OCL constraint &quot;AllergyObservationParticipantParticipantRolePlayingEntityCETranslation&quot;: null" messageType="17">
-    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_S7RMoLTREeWEoeeTdrbyVw"/>
+    <participants href="../genschematron-ContinuityOfCareDocument/consol-allergies.schematron.uml#_VmIzsLbPEeWQ25S2Lv5Ssw"/>
   </traces>
   <traces xsi:type="trc:LogEntry" message="Section ?.xiii.b.7: Could not transform OCL constraint &quot;GeneralHeaderConstraintsAuthorAssignedAuthorHasOneAssignedPersonOrOneAssignedAuthoringDevice&quot;: Unrecognized variable: (xyz)" messageType="17">
     <participants href="../genschematron-USRealmHeader/consol-documents.schematron.uml#_LKdzICzAEeGMXrZ0DiQwGg"/>

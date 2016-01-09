@@ -20,162 +20,162 @@ ii. If the Advance Directive does not have a specified ending time, the &lt;high
         <body>self.effectiveTime.high.hasContent() or self.effectiveTime.high.isNullFlavorDefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TI1HgLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TI1ukLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V4-3MLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V4_eQLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TI4x4LTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationClassCode" constrainedElement="_2KtAkBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TI4x4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V5E90LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationClassCode" constrainedElement="_2KtAkBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V5E90bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TI6AALTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationMoodCode" constrainedElement="_2KtnoBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TI6AAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V5IBILbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationMoodCode" constrainedElement="_2KtnoBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V5IBIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TI7OILTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationId" constrainedElement="_2KtnoxSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TI71MLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V5KdYLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationId" constrainedElement="_2KtnoxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V5KdYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TJHbYLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCodeP" constrainedElement="_2KlE3hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJHbYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V5nwYLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCodeP" constrainedElement="_2KlE3hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V5nwYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TI-RcLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCode" constrainedElement="_2KlE3hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TI-RcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V5PV4LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCode" constrainedElement="_2KlE3hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V5PV4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '281789004' or value.code = '89666000' or value.code = '225204009' or value.code = '52765003' or value.code = '78823007' or value.code = '304251008' or value.code = '61420007' or value.code = '71388002')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TJUPsLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationStatusCodeP" constrainedElement="_2KuOsBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJUPsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V6BZALbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationStatusCodeP" constrainedElement="_2KuOsBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6BZAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>true</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TJRzcLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationStatusCode" constrainedElement="_2KuOsBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJRzcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V5-VsLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationStatusCode" constrainedElement="_2KuOsBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V5-VsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'completed'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TJWr8LTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationEffectiveTime" constrainedElement="_2KlE3xSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJWr8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V6D1QLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationEffectiveTime" constrainedElement="_2KlE3xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6D1QbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.effectiveTime.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TtiXELTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationVerifier" constrainedElement="_jmCJECseEeGQ5rkpDKAt8A">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TtiXEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WkLwULbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationVerifier" constrainedElement="_jmCJECseEeGQ5rkpDKAt8A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WkLwUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->select(typeCode=vocab::ParticipationType::VRF)->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TvgF8LTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodian" constrainedElement="_PGnpICsfEeGQ5rkpDKAt8A">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TvgF8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WlD6ELbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodian" constrainedElement="_PGnpICsfEeGQ5rkpDKAt8A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WlD6EbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->select(typeCode=vocab::ParticipationType::CST)->size() &lt;= 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TvwkoLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationReference" constrainedElement="_GTulQCshEeGQ5rkpDKAt8A">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TvwkobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WlVm4LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationReference" constrainedElement="_GTulQCshEeGQ5rkpDKAt8A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WlVm4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.reference->select(reference : cda::Reference | not reference.oclIsUndefined() and reference.oclIsKindOf(cda::Reference))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_iP50ULTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iP6bYLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_qXvaYLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qXxPkLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_2LNsMLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2LOTQLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_4-8UULbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_4-8UUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_5E_8wLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5E_8wbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_69sgALbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_69tHELbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WFROALTSEeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WFR1ELTSEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_SxE1oLbQEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_SxFcsLbQEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_6VI5gLTSEeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_6VJgkLTSEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_KzhTwLbREeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Kzih4LbREeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_xq-wULTTEeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_xq_XYLTTEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Wb0XILbSEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Wb1lQLbSEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_F4AqULTUEeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_F4B4cLTUEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_3B__ILbSEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3B__IbbSEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_3SsKQLTUEeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3StYYLTUEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_lN_8kLbTEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lOBKsLbTEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_jJApwLTVEeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jJBQ0LTVEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_O6m9kLbUEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_O6nkoLbUEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_yxUbYLTVEeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_yxVCcLTVEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_emUBcLbUEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_emUogLbUEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_IWLD8LTWEeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_IWMSELTWEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_uFKVELbUEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_uFK8ILbUEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_tgLccLTWEeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_tgLccbTWEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_VlZ2ILbeEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VladILbeEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_-RXPwLTYEeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_-RXPwbTYEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_W8J7sLbgEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W8J7sbbgEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_U4jXsLTcEeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_U4j-wLTcEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_i6B7kLbjEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_2KlEwBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_i6CioLbjEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48')</body>
       </specification>
@@ -229,23 +229,23 @@ value.code = 'completed'</body>
       <ownedComment xmi:id="_EPFBMDJZEeGpkfTDauvIVQ">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_TJa9YLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationReferenceTypeCodeP" constrainedElement="_PfjRECsgEeGQ5rkpDKAt8A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJa9YbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_V6J74LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationReferenceTypeCodeP" constrainedElement="_PfjRECsgEeGQ5rkpDKAt8A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6J74bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>true</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_TJYhILTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationReferenceTypeCode" constrainedElement="_PfjRECsgEeGQ5rkpDKAt8A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJYhIbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_V6GRgLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationReferenceTypeCode" constrainedElement="_PfjRECsgEeGQ5rkpDKAt8A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6GRgbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>not self.typeCode.oclIsUndefined() and self.typeCode.oclIsKindOf(vocab::x_ActRelationshipExternalReference) and 
 let value : vocab::x_ActRelationshipExternalReference = self.typeCode.oclAsType(vocab::x_ActRelationshipExternalReference) in 
 value = vocab::x_ActRelationshipExternalReference::REFR</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Tv_1MLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationReferenceExternalDocument">
+      <ownedRule xmi:id="_Wloh0LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationReferenceExternalDocument">
         <constrainedElement xmi:type="uml:Association" href="consol-documents.uml#_SYpvsSshEeGQ5rkpDKAt8A"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Tv_1MbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Wloh0bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.externalDocument->one(externalDocument : cda::ExternalDocument | not externalDocument.oclIsUndefined() and externalDocument.oclIsKindOf(consol::AdvanceDirectiveObservation::Reference::ExternalDocument))</body>
         </specification>
@@ -281,14 +281,14 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
             <body>not self.text.oclIsUndefined() implies not self.text.reference.oclIsUndefined()</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_TJeAsLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationReferenceExternalDocumentId" constrainedElement="_WJKCUCsgEeGQ5rkpDKAt8A">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJeAsbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_V6ONULbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationReferenceExternalDocumentId" constrainedElement="_WJKCUCsgEeGQ5rkpDKAt8A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6ONUbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>not self.id->isEmpty()</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_TJf14LTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationReferenceExternalDocumentText" constrainedElement="_WJKpYCsgEeGQ5rkpDKAt8A">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJf14bTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_V6R3sLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationReferenceExternalDocumentText" constrainedElement="_WJKpYCsgEeGQ5rkpDKAt8A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6R3sbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
           </specification>
@@ -314,15 +314,15 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
       <ownedComment xmi:id="_CQRaECslEeGQ5rkpDKAt8A">
         <body>INLINE&amp;typeCode=vocab::ParticipationType::CST</body>
       </ownedComment>
-      <ownedRule xmi:id="_TJhrEbTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodianTypeCode" constrainedElement="_yVu3sCseEeGQ5rkpDKAt8A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJhrErTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_V6Ts4bbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodianTypeCode" constrainedElement="_yVu3sCseEeGQ5rkpDKAt8A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6Ts4rbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.typeCode=vocab::ParticipationType::CST</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_Tu8FQLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole">
+      <ownedRule xmi:id="_WkerQLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole">
         <constrainedElement xmi:type="uml:Association" href="consol-documents.uml#_HG1IECsfEeGQ5rkpDKAt8A"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Tu8FQbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WkerQbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::AdvanceDirectiveObservation::Custodian::CustodianRole))</body>
         </specification>
@@ -342,27 +342,27 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
         <association href="consol-documents.uml#_HG1IECsfEeGQ5rkpDKAt8A"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_4vBVACseEeGQ5rkpDKAt8A" name="CustodianRole">
-        <ownedRule xmi:id="_TJi5MLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodianCustodianRoleAddr" constrainedElement="_7kDBYCseEeGQ5rkpDKAt8A">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJi5MbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_V6ViELbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodianCustodianRoleAddr" constrainedElement="_7kDBYCseEeGQ5rkpDKAt8A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6ViEbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>((not self.addr->isEmpty()) and self.addr->exists(element | element.isNullFlavorUndefined())) implies (self.addr->size() &lt;= 1)</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_TJkuYLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodianCustodianRoleClassCode" constrainedElement="_7kDocCseEeGQ5rkpDKAt8A">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJkuYbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_V6XXQLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodianCustodianRoleClassCode" constrainedElement="_7kDocCseEeGQ5rkpDKAt8A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6XXQbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>isDefined('classCode') and self.classCode=vocab::RoleClassRoot::AGNT</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_TJl8gLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodianCustodianRoleTelecom" constrainedElement="_7kEPgSseEeGQ5rkpDKAt8A">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJl8gbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_V6ZzgLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodianCustodianRoleTelecom" constrainedElement="_7kEPgSseEeGQ5rkpDKAt8A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6ZzgbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>((not self.telecom->isEmpty()) and self.telecom->exists(element | element.isNullFlavorUndefined())) implies (self.telecom->size() &lt;= 1)</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_TvPnQLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity">
+        <ownedRule xmi:id="_Wkw_ILbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity">
           <constrainedElement xmi:type="uml:Association" href="consol-documents.uml#_Kn6CICsfEeGQ5rkpDKAt8A"/>
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_TvPnQbTREeWEoeeTdrbyVw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Wkw_IbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(consol::AdvanceDirectiveObservation::Custodian::CustodianRole::CustodianEntity))</body>
           </specification>
@@ -395,8 +395,8 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
           <association href="consol-documents.uml#_Kn6CICsfEeGQ5rkpDKAt8A"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="__8j5wCseEeGQ5rkpDKAt8A" name="CustodianEntity">
-          <ownedRule xmi:id="_TJnxsLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName" constrainedElement="_CkF8sCsfEeGQ5rkpDKAt8A">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJnxsbTREeWEoeeTdrbyVw">
+          <ownedRule xmi:id="_V6eE8LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName" constrainedElement="_CkF8sCsfEeGQ5rkpDKAt8A">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6eE8bbPEeWQ25S2Lv5Ssw">
               <language>OCL</language>
               <body>not self.name->isEmpty()</body>
             </specification>
@@ -417,21 +417,21 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
       <ownedComment xmi:id="_FcCygCslEeGQ5rkpDKAt8A">
         <body>INLINE&amp;typeCode=vocab::ParticipationType::VRF</body>
       </ownedComment>
-      <ownedRule xmi:id="_TJo_0LTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationVerifierTime" constrainedElement="_EudX8CseEeGQ5rkpDKAt8A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJo_0bTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_V6hIQLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationVerifierTime" constrainedElement="_EudX8CseEeGQ5rkpDKAt8A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6hIQbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>((not self.time.oclIsUndefined()) and self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_TJq1ALTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationVerifierTypeCode" constrainedElement="_EuemECseEeGQ5rkpDKAt8A">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TJq1AbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_V6i9cLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationVerifierTypeCode" constrainedElement="_EuemECseEeGQ5rkpDKAt8A">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_V6i9cbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.typeCode=vocab::ParticipationType::VRF</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_TtbCULTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationVerifierParticipantRole">
+      <ownedRule xmi:id="_WkB_ULbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationVerifierParticipantRole">
         <constrainedElement xmi:type="uml:Association" href="consol-documents.uml#_dAIMESseEeGQ5rkpDKAt8A"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_TtbCUbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WkB_UbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(cda::ParticipantRole))</body>
         </specification>
@@ -504,41 +504,41 @@ b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element 
   <CDA:PropertyValidation xmi:id="_2KwD5xSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2Kwq8xSVEeGGzu7fmW9pXw"/>
   <uml:Class xmi:id="_2KgzUBSVEeGGzu7fmW9pXw" name="AdvanceDirectivesSection">
-    <ownedRule xmi:id="_TIo6QbTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalTemplateId" constrainedElement="_2KgzUBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TIphULTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V4o48LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalTemplateId" constrainedElement="_2KgzUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V4o48bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.21.1')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TIuZ0LTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionCodeP" constrainedElement="_2KiBcBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TIuZ0bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V4yC4LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionCodeP" constrainedElement="_2KiBcBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V4yC4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TIrWgLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionCode" constrainedElement="_2KiBcBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TIrWgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V4tKYLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionCode" constrainedElement="_2KiBcBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V4tKYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TIxdILTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionTitle" constrainedElement="_2KjPkBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TIxdIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V44JgLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionTitle" constrainedElement="_2KjPkBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V44JgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TIz5YLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionText" constrainedElement="_2Kj2oRSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TIz5YbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_V47z4LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionText" constrainedElement="_2Kj2oRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V47z4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Y7AhgLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntry">
+    <ownedRule xmi:id="_ch5E4LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fGx-sLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y7AhgbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ch5E4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::AdvanceDirectivesSection::AdvanceDirectiveObservationEntry))</body>
       </specification>
@@ -566,9 +566,9 @@ value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_fGx-sLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fGwJgLS6EeWcPq3zAthoUQ" name="AdvanceDirectiveObservationEntry">
-      <ownedRule xmi:id="_Y7UDgLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionAdvanceDirectiveObservationEntryAdvanceDirectiveObservation">
+      <ownedRule xmi:id="_ciStgLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionAdvanceDirectiveObservationEntryAdvanceDirectiveObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fG0a8LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y7UDgbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ciStgbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation))</body>
         </specification>
@@ -612,41 +612,41 @@ This section contains data defining the patient's advance directives and any ref
 NOTE: The descriptions in this section differentiate between &quot;advance directives&quot; and &quot;advance directive documents&quot;. The former are the directions whereas the latter are legal documents containing those directions. Thus, an advance directive might be &quot;no cardiopulmonary resuscitation&quot;, and this directive might be stated in a legal advance directive document.
 &lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_TliRoLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalTemplateId" constrainedElement="_1RZdIBVdEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Tli4sLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WZxQELbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalTemplateId" constrainedElement="_1RZdIBVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZxQEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.21')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TllU8LTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalCode" constrainedElement="_1RZdJxVdEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TllU8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WZzsULbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalCode" constrainedElement="_1RZdJxVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZzsUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TlnxMLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalCodeP" constrainedElement="_1RZdJxVdEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TlnxMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WZ2IkLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalCodeP" constrainedElement="_1RZdJxVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZ2IkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TlqNcLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalTitle" constrainedElement="_1RZdKBVdEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TlqNcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WZ4k0LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalTitle" constrainedElement="_1RZdKBVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZ4k0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TlsCoLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalText" constrainedElement="_1RZdKRVdEeGQCvUGzi1kDQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TlsCobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WZ6aALbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalText" constrainedElement="_1RZdKRVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZ6aAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ZkotULTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalEntry">
+    <ownedRule xmi:id="_dm5lILbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalEntry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fNqp0LS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZkotUbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dm5lIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional::AdvanceDirectiveObservationEntry))</body>
       </specification>
@@ -672,9 +672,9 @@ value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_fNqp0LS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fNpbsLS6EeWcPq3zAthoUQ" name="AdvanceDirectiveObservationEntry">
-      <ownedRule xmi:id="_Zk7BMLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservationEntryAdvanceDirectiveObservation">
+      <ownedRule xmi:id="_dnbJkLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservationEntryAdvanceDirectiveObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fNsfALS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zk7BMbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dnbJkbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation))->size() >= 0</body>
         </specification>
@@ -732,60 +732,60 @@ value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
     <ownedComment xmi:id="_eflRwIlIEeOJGtGyq_dBbA">
       <body>This clinical statement groups a set of advance directive observations.</body>
     </ownedComment>
-    <ownedRule xmi:id="_VU59g7TREeWEoeeTdrbyVw" name="AdvanceDirectiveOrganizerTemplateId" constrainedElement="_Z8VQYIlFEeOJGtGyq_dBbA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VU6kkLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_X0b3Q7bPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveOrganizerTemplateId" constrainedElement="_Z8VQYIlFEeOJGtGyq_dBbA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X0ceULbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.108' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VU7ysLTREeWEoeeTdrbyVw" name="AdvanceDirectiveOrganizerClassCode" constrainedElement="_IBSKoIlGEeOJGtGyq_dBbA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VU7ysbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_X0eTgLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveOrganizerClassCode" constrainedElement="_IBSKoIlGEeOJGtGyq_dBbA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X0eTgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::x_ActClassDocumentEntryOrganizer::CLUSTER</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VU9n4LTREeWEoeeTdrbyVw" name="AdvanceDirectiveOrganizerMoodCode" constrainedElement="_IBSxsIlGEeOJGtGyq_dBbA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VU9n4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_X0fhoLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveOrganizerMoodCode" constrainedElement="_IBSxsIlGEeOJGtGyq_dBbA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X0fhobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::ActMood::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VU-2ALTREeWEoeeTdrbyVw" name="AdvanceDirectiveOrganizerId" constrainedElement="_IBSKpIlGEeOJGtGyq_dBbA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VU-2AbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_X0hW0LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveOrganizerId" constrainedElement="_IBSKpIlGEeOJGtGyq_dBbA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X0hW0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VVArMLTREeWEoeeTdrbyVw" name="AdvanceDirectiveOrganizerCode" constrainedElement="_IBSKoYlGEeOJGtGyq_dBbA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VVArMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_X0jMALbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveOrganizerCode" constrainedElement="_IBSKoYlGEeOJGtGyq_dBbA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X0jMAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = '45473-6' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VVDHcLTREeWEoeeTdrbyVw" name="AdvanceDirectiveOrganizerCodeP" constrainedElement="_IBSKoYlGEeOJGtGyq_dBbA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VVDHcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_X0m2YLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveOrganizerCodeP" constrainedElement="_IBSKoYlGEeOJGtGyq_dBbA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X0m2YbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VVInALTREeWEoeeTdrbyVw" name="AdvanceDirectiveOrganizerStatusCodeP" constrainedElement="_IBSxs4lGEeOJGtGyq_dBbA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VVInAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_X0tkELbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveOrganizerStatusCodeP" constrainedElement="_IBSxs4lGEeOJGtGyq_dBbA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X0tkEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VVGKwLTREeWEoeeTdrbyVw" name="AdvanceDirectiveOrganizerStatusCode" constrainedElement="_IBSxs4lGEeOJGtGyq_dBbA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VVGKwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_X0qgwLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveOrganizerStatusCode" constrainedElement="_IBSxs4lGEeOJGtGyq_dBbA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X0qgwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'completed'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_YYjUsLTREeWEoeeTdrbyVw" name="AdvanceDirectiveOrganizerAuthorParticipation" constrainedElement="_qtzP0_mnEeSGHoih4Jm09A">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YYjUsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_blZncLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveOrganizerAuthorParticipation" constrainedElement="_qtzP0_mnEeSGHoih4Jm09A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_blZncbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))->size() >= 0</body>
       </specification>
@@ -832,9 +832,9 @@ value.code = 'completed'</body>
       <association href="../consol.uml#_faQUULS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_faPGMLS6EeWcPq3zAthoUQ" name="AdvanceDirectiveObservation2EntryRelationship">
-      <ownedRule xmi:id="_bInBgLTREeWEoeeTdrbyVw" name="AdvanceDirectiveOrganizerAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation2">
+      <ownedRule xmi:id="_fsk4MLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveOrganizerAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_faSJgLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bInBgbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_fsk4MbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation2))</body>
         </specification>
@@ -921,61 +921,61 @@ The observation/value element contains the detailed patient directive which may 
         <body>self.effectiveTime.high.hasContent() or self.effectiveTime.high.nullFlavor = vocab::NullFlavor::NA</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WMklULTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_GnllUK-9EeO8duI_7f6kZw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WMklUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YxkN4LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationTemplateId" constrainedElement="_GnllUK-9EeO8duI_7f6kZw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YxkN4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.48' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WM1EALTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCodeP" constrainedElement="_iRIecLEhEeOtlapy2HWYww">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WM1EAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Yx0FgLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCodeP" constrainedElement="_iRIecLEhEeOtlapy2HWYww">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yx0FgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WMqE4LTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCode" constrainedElement="_iRIecLEhEeOtlapy2HWYww">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WMqE4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YxofULbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCode" constrainedElement="_iRIecLEhEeOtlapy2HWYww">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YxofUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '52765003' or value.code = '61420007' or value.code = '71388002' or value.code = '78823007' or value.code = '89666000' or value.code = '225204009' or value.code = '281789004' or value.code = '304251008')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WNB4ULTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationEffectiveTime" constrainedElement="_3KFfwLEgEeOtlapy2HWYww">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNB4UbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Yx_EoLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationEffectiveTime" constrainedElement="_3KFfwLEgEeOtlapy2HWYww">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yx_EobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.effectiveTime.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WNDtgLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2Value" constrainedElement="_AKj3MLEgEeOtlapy2HWYww">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNDtgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YyASwLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2Value" constrainedElement="_AKj3MLEgEeOtlapy2HWYww">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YyASwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WPCDcLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationVerifier">
+    <ownedRule xmi:id="_Yz5JILbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationVerifier">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_uDTaELEjEeOtlapy2HWYww"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WPCDcbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yz5JIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->select(typeCode=vocab::ParticipationType::VRF)->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WPSiILTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodian">
+    <ownedRule xmi:id="_Y0ciwLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodian">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_e8gNgLE4EeOtlapy2HWYww"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WPSiIbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y0ciwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.participant->select(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))->select(typeCode=vocab::ParticipationType::CST)->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WPxqULTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationReference">
+    <ownedRule xmi:id="_Y1pcoLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationReference">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_TOPA0LE-EeOtlapy2HWYww"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WPxqUbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y1pcobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.reference->exists(reference : cda::Reference | not reference.oclIsUndefined() and reference.oclIsKindOf(cda::Reference))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_YOPiILTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2AuthorParticipation" constrainedElement="_jci6AKvaEeS-mulaI3YUlw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YOPiIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_bVKzELbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2AuthorParticipation" constrainedElement="_jci6AKvaEeS-mulaI3YUlw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bVKzEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))->size() >= 0</body>
       </specification>
@@ -1020,14 +1020,14 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '52765003' or valu
       <ownedComment xmi:id="_7YsD0LFEEeOtlapy2HWYww">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_WNGJwLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2IVLTSLow" constrainedElement="_BVzs4LEhEeOtlapy2HWYww">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNGJwbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_YyCH8LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2IVLTSLow" constrainedElement="_BVzs4LEhEeOtlapy2HWYww">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YyCH8bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (not self.low.oclIsUndefined() ))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WNH-8LTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2IVLTSHigh" constrainedElement="_7HqdwKvVEeS-mulaI3YUlw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNH-8bTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_YyDWEbbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2IVLTSHigh" constrainedElement="_7HqdwKvVEeS-mulaI3YUlw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YyDWErbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (not self.high.oclIsUndefined() ))</body>
         </specification>
@@ -1055,9 +1055,9 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '52765003' or valu
       <ownedComment xmi:id="_BXgtgLFXEeOtlapy2HWYww">
         <body>This custodian (CST) participant identifies a legal representative for the patient's advanced directive. Examples of such????individuals are called health care agents, substitute decision makers and/or health care proxies.????If there is more than one????legal representative, a qualifier may be used to designate the????legal representative as primary or secondary.</body>
       </ownedComment>
-      <ownedRule xmi:id="_WPhysLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole">
+      <ownedRule xmi:id="_Y1BxkLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_qh5xELE9EeOtlapy2HWYww"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WPhysbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y1BxkbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::AdvanceDirectiveObservation2::Custodian::CustodianRole))</body>
         </specification>
@@ -1069,35 +1069,35 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '52765003' or valu
         <association href="../consol.uml#_qh5xELE9EeOtlapy2HWYww"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_woCB0LE9EeOtlapy2HWYww" name="CustodianRole">
-        <ownedRule xmi:id="_WNYdoLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2CustodianCustodianRoleCodeP" constrainedElement="_8ej-YLFSEeOtlapy2HWYww">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNYdobTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_YySmoLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2CustodianCustodianRoleCodeP" constrainedElement="_8ej-YLFSEeOtlapy2HWYww">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YySmobbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_WNLCQLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2CustodianCustodianRoleCode" constrainedElement="_8ej-YLFSEeOtlapy2HWYww">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNLCQbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_YyGZYLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2CustodianCustodianRoleCode" constrainedElement="_8ej-YLFSEeOtlapy2HWYww">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YyGZYbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.codeSystem = '2.16.840.1.113883.5.111' and not value.code.oclIsUndefined())</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_WNnuMLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodianCustodianRoleAddr" constrainedElement="_XXUwkLFTEeOtlapy2HWYww">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNnuMbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_Yyez4LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodianCustodianRoleAddr" constrainedElement="_XXUwkLFTEeOtlapy2HWYww">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yyez4bbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>((not self.addr->isEmpty()) and self.addr->exists(element | element.isNullFlavorUndefined())) implies (not self.addr->isEmpty())</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_WNqxgLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodianCustodianRoleTelecom" constrainedElement="_2xJVILE9EeOtlapy2HWYww">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNqxgbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_YygpELbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodianCustodianRoleTelecom" constrainedElement="_2xJVILE9EeOtlapy2HWYww">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YygpEbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>((not self.telecom->isEmpty()) and self.telecom->exists(element | element.isNullFlavorUndefined())) implies (not self.telecom->isEmpty())</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_WQh4QLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity">
+        <ownedRule xmi:id="_Y37UkLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity">
           <constrainedElement xmi:type="uml:Association" href="../consol.uml#_KcZ80LFUEeOtlapy2HWYww"/>
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WQh4QbTREeWEoeeTdrbyVw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y37UkbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(consol::AdvanceDirectiveObservation2::Custodian::CustodianRole::CustodianEntity))</body>
           </specification>
@@ -1125,22 +1125,22 @@ value.codeSystem = '2.16.840.1.113883.5.111' and not value.code.oclIsUndefined()
           <association href="../consol.uml#_KcZ80LFUEeOtlapy2HWYww"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_STHaYLFUEeOtlapy2HWYww" name="CustodianEntity">
-          <ownedRule xmi:id="_WN8eULTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP" constrainedElement="_iHQBgLFUEeOtlapy2HWYww">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_WN8eUbTREeWEoeeTdrbyVw">
+          <ownedRule xmi:id="_Yyxu0LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP" constrainedElement="_iHQBgLFUEeOtlapy2HWYww">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yyxu0bbPEeWQ25S2Lv5Ssw">
               <language>OCL</language>
               <body>((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
             </specification>
           </ownedRule>
-          <ownedRule xmi:id="_WNvC8LTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCode" constrainedElement="_iHQBgLFUEeOtlapy2HWYww">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNvC8bTREeWEoeeTdrbyVw">
+          <ownedRule xmi:id="_YyjsYLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCode" constrainedElement="_iHQBgLFUEeOtlapy2HWYww">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_YyjsYbbPEeWQ25S2Lv5Ssw">
               <language>OCL</language>
               <body>((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '63161005' or value.code = '2603003'))</body>
             </specification>
           </ownedRule>
-          <ownedRule xmi:id="_WOIrkLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName" constrainedElement="_iHQBg7FUEeOtlapy2HWYww">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_WOIrkbTREeWEoeeTdrbyVw">
+          <ownedRule xmi:id="_Yy98ELbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName" constrainedElement="_iHQBg7FUEeOtlapy2HWYww">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yy98EbbPEeWQ25S2Lv5Ssw">
               <language>OCL</language>
               <body>self.name->size() = 1</body>
             </specification>
@@ -1170,21 +1170,21 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '63161005' or valu
       <ownedComment xmi:id="_F45OALFXEeOtlapy2HWYww">
         <body>The participant &quot;VRF&quot; represents the clinician(s) who verified the patient advance directive observation.</body>
       </ownedComment>
-      <ownedRule xmi:id="_WOJ5sLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2VerifierTemplateId" constrainedElement="_mU0BYLFEEeOtlapy2HWYww">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WOKgwLTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_Yy_KMLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2VerifierTemplateId" constrainedElement="_mU0BYLFEEeOtlapy2HWYww">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yy_KMbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.1.58')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WOMV8LTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationVerifierTime" constrainedElement="_6Mcj8KvbEeS-mulaI3YUlw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WOMV8bTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_YzA_YLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationVerifierTime" constrainedElement="_6Mcj8KvbEeS-mulaI3YUlw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YzA_YbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>((not self.time.oclIsUndefined()) and self.time.isNullFlavorUndefined()) implies (not self.time.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WQA64LTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservationVerifierParticipantRole">
+      <ownedRule xmi:id="_Y2WnQLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservationVerifierParticipantRole">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_zD1RsLFEEeOtlapy2HWYww"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WQA64bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y2WnQbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::AdvanceDirectiveObservation2::Verifier::ParticipantRole))</body>
         </specification>
@@ -1201,29 +1201,29 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '63161005' or valu
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Mcj8qvbEeS-mulaI3YUlw" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_KmOlALFFEeOtlapy2HWYww" name="ParticipantRole">
-        <ownedRule xmi:id="_WOZKQLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2VerifierParticipantRoleCodeP" constrainedElement="_EnlzoLFWEeOtlapy2HWYww">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WOZKQbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_YzOawLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2VerifierParticipantRoleCodeP" constrainedElement="_EnlzoLFWEeOtlapy2HWYww">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YzOawbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_WOOLILTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2VerifierParticipantRoleCode" constrainedElement="_EnlzoLFWEeOtlapy2HWYww">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WOOLIbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_YzC0kLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2VerifierParticipantRoleCode" constrainedElement="_EnlzoLFWEeOtlapy2HWYww">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YzC0kbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined())</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_WOjiULTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2VerifierParticipantRoleAddr" constrainedElement="_EnlMkLFWEeOtlapy2HWYww">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WOjiUbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_YzZZ4LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2VerifierParticipantRoleAddr" constrainedElement="_EnlMkLFWEeOtlapy2HWYww">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YzZZ4bbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>((not self.addr->isEmpty()) and self.addr->exists(element | element.isNullFlavorUndefined())) implies (not self.addr->isEmpty())</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_WQSAoLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity">
+        <ownedRule xmi:id="_Y3X68LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity">
           <constrainedElement xmi:type="uml:Association" href="../consol.uml#_LX5SgLFFEeOtlapy2HWYww"/>
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_WQSAobTREeWEoeeTdrbyVw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y3X68bbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.playingEntity->select(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(consol::AdvanceDirectiveObservation2::Verifier::ParticipantRole::PlayingEntity))->size() &lt;= 1</body>
           </specification>
@@ -1250,22 +1250,22 @@ value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()
           <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_TCqdsEreEd6FXKclYGEDCw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_gBWCwLFFEeOtlapy2HWYww" name="PlayingEntity">
-          <ownedRule xmi:id="_WOwWoLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP" constrainedElement="_3ZLE0LFFEeOtlapy2HWYww">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_WOwWobTREeWEoeeTdrbyVw">
+          <ownedRule xmi:id="_YzncULbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP" constrainedElement="_3ZLE0LFFEeOtlapy2HWYww">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_YzncUbbPEeWQ25S2Lv5Ssw">
               <language>OCL</language>
               <body>((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
             </specification>
           </ownedRule>
-          <ownedRule xmi:id="_WOmloLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode" constrainedElement="_3ZLE0LFFEeOtlapy2HWYww">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_WOmlobTREeWEoeeTdrbyVw">
+          <ownedRule xmi:id="_YzcdMLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode" constrainedElement="_3ZLE0LFFEeOtlapy2HWYww">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_YzcdMbbPEeWQ25S2Lv5Ssw">
               <language>OCL</language>
               <body>((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '63161005' or value.code = '2603003'))</body>
             </specification>
           </ownedRule>
-          <ownedRule xmi:id="_WO6usLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityName" constrainedElement="_3ZLE07FFEeOtlapy2HWYww">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_WO6usbTREeWEoeeTdrbyVw">
+          <ownedRule xmi:id="_Yzx0YLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityName" constrainedElement="_3ZLE07FFEeOtlapy2HWYww">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_YzybcLbPEeWQ25S2Lv5Ssw">
               <language>OCL</language>
               <body>((not self.name->isEmpty()) and self.name->exists(element | element.isNullFlavorUndefined())) implies (not self.name->isEmpty())</body>
             </specification>
@@ -1295,16 +1295,16 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '63161005' or valu
       <ownedComment xmi:id="_K1w28ExLEeWJ65CktI2ODQ">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_WO9K8LTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2CDTranslation" constrainedElement="_NaJfQExLEeWJ65CktI2ODQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WO9K8bTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_Yz0QoLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2CDTranslation" constrainedElement="_NaJfQExLEeWJ65CktI2ODQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yz0QobbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (self.translation->size() = 1 and self.translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.code = '75320-2' and value.codeSystem = '2.16.840.1.113883.6.1') ))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_WO_nMLTREeWEoeeTdrbyVw" name="AdvanceDirectiveObservation2CDTranslationP" constrainedElement="_NaJfQExLEeWJ65CktI2ODQ">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WO_nMbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_Yz2s4LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectiveObservation2CDTranslationP" constrainedElement="_NaJfQExLEeWJ65CktI2ODQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Yz2s4bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (self.translation->size() = 1 ))</body>
         </specification>
@@ -1381,36 +1381,36 @@ The most recent directives are required, if known, and should be listed in as mu
 This section differentiates between &quot;advance directives&quot; and &quot;advance directive documents&quot;. The former is the directions to be followed whereas the latter refers to a legal document containing those directions.&#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_XH5lILTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalTemplateId" constrainedElement="_jsKhYAFXEeSLIY0bHb-fFQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH6MMLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZvufQLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalTemplateId" constrainedElement="_jsKhYAFXEeSLIY0bHb-fFQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZvvGULbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.21' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XH_EsLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalCodeP" constrainedElement="_ERTAgAFYEeSLIY0bHb-fFQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH_EsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zvz-0LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalCodeP" constrainedElement="_ERTAgAFYEeSLIY0bHb-fFQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zvz-0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XH8BYLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalCode" constrainedElement="_ERTAgAFYEeSLIY0bHb-fFQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XH8BYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZvxikLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalCode" constrainedElement="_ERTAgAFYEeSLIY0bHb-fFQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZvxikbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_d5DI0LTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptional2Entry">
+    <ownedRule xmi:id="_j7UwkLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptional2Entry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fuW8ELS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_d5DI0bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_j7UwkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional2::AdvanceDirectiveObservation2Entry))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_d5kGMLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptional2Entry">
+    <ownedRule xmi:id="_j8XSYLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptional2Entry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fub0kLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_d5kGMbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_j8XSYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional2::AdvanceDirectiveOrganizerEntry))</body>
       </specification>
@@ -1433,9 +1433,9 @@ value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_fub0kLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fuVt8LS6EeWcPq3zAthoUQ" name="AdvanceDirectiveObservation2Entry">
-      <ownedRule xmi:id="_d5TAcLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation2">
+      <ownedRule xmi:id="_j79CsLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fuYxQLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d5TAcbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_j79CsbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation2))->size() >= 0</body>
         </specification>
@@ -1451,9 +1451,9 @@ value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fuamcLS6EeWcPq3zAthoUQ" name="AdvanceDirectiveOrganizerEntry">
-      <ownedRule xmi:id="_d5z90LTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer">
+      <ownedRule xmi:id="_j8wT8rbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fudpwLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d5z90bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_j8wT87bPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.organizer->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::AdvanceDirectiveOrganizer))->size() >= 0</body>
         </specification>
@@ -1506,60 +1506,60 @@ This section differentiates between &quot;advance directives&quot; and &quot;adv
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies self.getObservations()->exists(obs : cda::Observation | obs.oclIsKindOf(consol::AdvanceDirectiveObservation2)) xor self.getOrganizers()->exists(org : cda::Organizer | org.oclIsKindOf(consol::AdvanceDirectiveOrganizer))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XITNwLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalTemplateId" constrainedElement="_ZFbCkAIPEeS-F85KYVlDyA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIT00LTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZwUVILbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalTemplateId" constrainedElement="_ZFbCkAIPEeS-F85KYVlDyA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZwUVIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.21.1' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XIZUYLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalCodeP" constrainedElement="_udqOoAITEeS-F85KYVlDyA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIZUYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zwc4ALbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalCodeP" constrainedElement="_udqOoAITEeS-F85KYVlDyA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zwc4AbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XIW4ILTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalCode" constrainedElement="_udqOoAITEeS-F85KYVlDyA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIW4IbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZwZNoLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalCode" constrainedElement="_udqOoAITEeS-F85KYVlDyA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZwZNobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XIcXsLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalTitle" constrainedElement="_VBvrkAIsEeSr1aKUYorURA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIcXsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zwkz0LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalTitle" constrainedElement="_VBvrkAIsEeSr1aKUYorURA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zwkz0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XIeM4LTREeWEoeeTdrbyVw" name="AdvanceDirectivesSectionEntriesOptionalText" constrainedElement="_VBvEgAIsEeSr1aKUYorURA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIeM4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zwn3ILbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSectionEntriesOptionalText" constrainedElement="_VBvEgAIsEeSr1aKUYorURA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zwn3IbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XIgCELTREeWEoeeTdrbyVw" name="AdvanceDirectivesSection2NullFlavor" constrainedElement="_IXp24KJDEeSOc57SOMra_g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XIgCEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zwq6cLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSection2NullFlavor" constrainedElement="_IXp24KJDEeSOc57SOMra_g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zwq6cbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>(not self.nullFlavor.oclIsUndefined()) implies (self.nullFlavor=vocab::NullFlavor::NI)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_YLfJELTREeWEoeeTdrbyVw" name="AdvanceDirectivesSection2Entry" constrainedElement="_q6ZK0KJGEeSOc57SOMra_g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YLfJEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_bRSYoLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSection2Entry" constrainedElement="_q6ZK0KJGEeSOc57SOMra_g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bRSYobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(cda::Entry))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_d7mtkLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSection2Entry">
+    <ownedRule xmi:id="_kBqpILbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSection2Entry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fuv9oLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_d7mtkbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kBqpIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::AdvanceDirectivesSection2::AdvanceDirectiveObservation2Entry))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_d8Gc0LTREeWEoeeTdrbyVw" name="AdvanceDirectivesSection2Entry">
+    <ownedRule xmi:id="_kDcKwLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSection2Entry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fu02ILS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_d8Gc0bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kDcKwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::AdvanceDirectivesSection2::AdvanceDirectiveOrganizerEntry))</body>
       </specification>
@@ -1604,14 +1604,14 @@ value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <ownedComment xmi:id="_ZZFQYKJrEeSOc57SOMra_g">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_YLxc8LTREeWEoeeTdrbyVw" name="AdvanceDirectivesSection2EntryAdvanceDirectiveOrganizer" constrainedElement="_WvBO8KJMEeSOc57SOMra_g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YLxc8bTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_bRtPYLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSection2EntryAdvanceDirectiveOrganizer" constrainedElement="_WvBO8KJMEeSOc57SOMra_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bRtPYbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.organizer->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::AdvanceDirectiveOrganizer))->size() &lt;= 1</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_YMHbMLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSection2EntryAdvanceDirectiveObservation2" constrainedElement="_ZOAZ4KJMEeSOc57SOMra_g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YMHbMbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_bSFp4LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSection2EntryAdvanceDirectiveObservation2" constrainedElement="_ZOAZ4KJMEeSOc57SOMra_g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bSFp4bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation2))->size() &lt;= 1</body>
         </specification>
@@ -1629,9 +1629,9 @@ value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fuuvgLS6EeWcPq3zAthoUQ" name="AdvanceDirectiveObservation2Entry">
-      <ownedRule xmi:id="_d72lMLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSection2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation2">
+      <ownedRule xmi:id="_kCP38LbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSection2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fuxy0LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d72lMbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kCP38bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation2))->size() >= 0</body>
         </specification>
@@ -1647,9 +1647,9 @@ value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fuzoALS6EeWcPq3zAthoUQ" name="AdvanceDirectiveOrganizerEntry">
-      <ownedRule xmi:id="_d8WUcLTREeWEoeeTdrbyVw" name="AdvanceDirectivesSection2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer">
+      <ownedRule xmi:id="_kEUUgLbPEeWQ25S2Lv5Ssw" name="AdvanceDirectivesSection2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fu2rULS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_d8WUcbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kEUUgbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.organizer->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::AdvanceDirectiveOrganizer))->size() >= 0</body>
         </specification>
@@ -1764,92 +1764,95 @@ value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
   <CDA:Inline xmi:id="_fuamcrS6EeWcPq3zAthoUQ" base_Class="_fuamcLS6EeWcPq3zAthoUQ"/>
   <CDA:Inline xmi:id="_fuuvgrS6EeWcPq3zAthoUQ" base_Class="_fuuvgLS6EeWcPq3zAthoUQ"/>
   <CDA:Inline xmi:id="_fuzoArS6EeWcPq3zAthoUQ" base_Class="_fuzoALS6EeWcPq3zAthoUQ"/>
-  <CDA:ConformsTo xmi:id="_TIo6QLTREeWEoeeTdrbyVw" base_Generalization="_8UhPsBVfEeGQCvUGzi1kDQ"/>
-  <Ecore:EClass xmi:id="_TIqIYLTREeWEoeeTdrbyVw" base_Class="_2KgzUBSVEeGGzu7fmW9pXw">
+  <CDA:ConformsTo xmi:id="_V4oR4LbPEeWQ25S2Lv5Ssw" base_Generalization="_8UhPsBVfEeGQCvUGzi1kDQ"/>
+  <Ecore:EClass xmi:id="_V4qHELbPEeWQ25S2Lv5Ssw" base_Class="_2KgzUBSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionCode AdvanceDirectivesSectionCodeP AdvanceDirectivesSectionTitle AdvanceDirectivesSectionText AdvanceDirectivesSectionEntry' templateId.root='2.16.840.1.113883.10.20.22.2.21.1' code.code='42348-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Advance directives' constraints.validation.dependOn.AdvanceDirectivesSectionCode='AdvanceDirectivesSectionCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TI2VoLTREeWEoeeTdrbyVw" base_Class="_2KlEwBSVEeGGzu7fmW9pXw">
+  <Ecore:EClass xmi:id="_V5AFULbPEeWQ25S2Lv5Ssw" base_Class="_2KlEwBSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationHasStartingTime AdvanceDirectiveObservationHasEndingTime AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationCodeP AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationStatusCodeP AdvanceDirectiveObservationEffectiveTime' templateId.root='2.16.840.1.113883.10.20.22.4.48' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='AdvanceDirectiveObservationCode AdvanceDirectiveObservationVerifier AdvanceDirectiveObservationCustodian AdvanceDirectiveObservationReference' constraints.validation.dependOn.AdvanceDirectiveObservationCode='AdvanceDirectiveObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.AdvanceDirectiveObservationStatusCode='AdvanceDirectiveObservationStatusCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TJX6ELTREeWEoeeTdrbyVw" base_Class="_N9j54CsgEeGQ5rkpDKAt8A">
+  <Ecore:EClass xmi:id="_V6FqcLbPEeWQ25S2Lv5Ssw" base_Class="_N9j54CsgEeGQ5rkpDKAt8A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='REFR' constraints.validation.error='AdvanceDirectiveObservationReferenceTypeCode AdvanceDirectiveObservationReferenceTypeCodeP AdvanceDirectiveObservationReferenceExternalDocument' constraints.validation.dependOn.AdvanceDirectiveObservationReferenceTypeCode='AdvanceDirectiveObservationReferenceTypeCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TJcykLTREeWEoeeTdrbyVw" base_Class="_TrqsMCsgEeGQ5rkpDKAt8A">
+  <Ecore:EClass xmi:id="_V6M_MLbPEeWQ25S2Lv5Ssw" base_Class="_TrqsMCsgEeGQ5rkpDKAt8A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='AdvanceDirectiveObservationReferenceExternalDocumentTextMediaType AdvanceDirectiveObservationReferenceExternalDocumentTextReference AdvanceDirectiveObservationReferenceExternalDocumentText' constraints.validation.error='AdvanceDirectiveObservationReferenceExternalDocumentId'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TJhrELTREeWEoeeTdrbyVw" base_Class="_xSLI8CseEeGQ5rkpDKAt8A">
+  <Ecore:EClass xmi:id="_V6Ts4LbPEeWQ25S2Lv5Ssw" base_Class="_xSLI8CseEeGQ5rkpDKAt8A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='CST' constraints.validation.error='AdvanceDirectiveObservationCustodianTypeCode AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TJkHULTREeWEoeeTdrbyVw" base_Class="_4vBVACseEeGQ5rkpDKAt8A">
+  <Ecore:EClass xmi:id="_V6WJILbPEeWQ25S2Lv5Ssw" base_Class="_4vBVACseEeGQ5rkpDKAt8A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='AdvanceDirectiveObservationCustodianCustodianRoleAddr AdvanceDirectiveObservationCustodianCustodianRoleTelecom' classCode='AGNT' constraints.validation.error='AdvanceDirectiveObservationCustodianCustodianRoleClassCode AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TJoYwLTREeWEoeeTdrbyVw" base_Class="__8j5wCseEeGQ5rkpDKAt8A">
+  <Ecore:EClass xmi:id="_V6f6ILbPEeWQ25S2Lv5Ssw" base_Class="__8j5wCseEeGQ5rkpDKAt8A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TJqN8LTREeWEoeeTdrbyVw" base_Class="_9HiC0CsdEeGQ5rkpDKAt8A">
+  <Ecore:EClass xmi:id="_V6iWYLbPEeWQ25S2Lv5Ssw" base_Class="_9HiC0CsdEeGQ5rkpDKAt8A">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='AdvanceDirectiveObservationVerifierTime' typeCode='VRF' constraints.validation.error='AdvanceDirectiveObservationVerifierTypeCode AdvanceDirectiveObservationVerifierParticipantRole'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TljfwLTREeWEoeeTdrbyVw" base_Class="_1RZdIBVdEeGQCvUGzi1kDQ">
+  <Ecore:EClass xmi:id="_WZx3ILbPEeWQ25S2Lv5Ssw" base_Class="_1RZdIBVdEeGQCvUGzi1kDQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionEntriesOptionalCodeP AdvanceDirectivesSectionEntriesOptionalTitle AdvanceDirectivesSectionEntriesOptionalText AdvanceDirectivesSectionEntriesOptionalEntry' templateId.root='2.16.840.1.113883.10.20.22.2.21' code.code='42348-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Advance Directives'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_VU7LoLTREeWEoeeTdrbyVw" base_Class="_Z8VQYIlFEeOJGtGyq_dBbA">
+  <Ecore:EClass xmi:id="_X0dFYLbPEeWQ25S2Lv5Ssw" base_Class="_Z8VQYIlFEeOJGtGyq_dBbA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveOrganizerTemplateId AdvanceDirectiveOrganizerClassCode AdvanceDirectiveOrganizerMoodCode AdvanceDirectiveOrganizerId AdvanceDirectiveOrganizerCode AdvanceDirectiveOrganizerCodeP AdvanceDirectiveOrganizerStatusCode AdvanceDirectiveOrganizerStatusCodeP' templateId.root='2.16.840.1.113883.10.20.22.4.108' templateId.extension='2015-08-01' classCode='CLUSTER' moodCode='EVN' code.code='45473-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Advance directive - living will' statusCode.code='completed' constraints.validation.dependOn.AdvanceDirectiveOrganizerStatusCode='AdvanceDirectiveOrganizerStatusCodeP' constraints.validation.warning='AdvanceDirectiveOrganizerAuthorParticipation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WMlMYLTREeWEoeeTdrbyVw" base_Class="_GnllUK-9EeO8duI_7f6kZw">
+  <Ecore:EClass xmi:id="_Yxk08LbPEeWQ25S2Lv5Ssw" base_Class="_GnllUK-9EeO8duI_7f6kZw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationHasEndingTime AdvanceDirectiveObservationCodeP AdvanceDirectiveObservationEffectiveTime AdvanceDirectiveObservation2Value' templateId.root='2.16.840.1.113883.10.20.22.4.48' templateId.extension='2015-08-01' constraints.validation.info='AdvanceDirectiveObservationHasStartingTime' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='AdvanceDirectiveObservationCode AdvanceDirectiveObservationVerifier AdvanceDirectiveObservationCustodian AdvanceDirectiveObservationReference AdvanceDirectiveObservation2AuthorParticipation' constraints.validation.dependOn.AdvanceDirectiveObservationCode='AdvanceDirectiveObservationCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WNHX4LTREeWEoeeTdrbyVw" base_Class="_9grOYLEgEeOtlapy2HWYww">
+  <Ecore:EClass xmi:id="_YyDWELbPEeWQ25S2Lv5Ssw" base_Class="_9grOYLEgEeOtlapy2HWYww">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveObservation2IVLTSLow AdvanceDirectiveObservation2IVLTSHigh'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WNKbMLTREeWEoeeTdrbyVw" base_Class="_woCB0LE9EeOtlapy2HWYww">
+  <Ecore:EClass xmi:id="_YyFyULbPEeWQ25S2Lv5Ssw" base_Class="_woCB0LE9EeOtlapy2HWYww">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.5.111' code.codeSystemName='RoleCode' constraints.validation.warning='AdvanceDirectiveObservation2CustodianCustodianRoleCode AdvanceDirectiveObservation2CustodianCustodianRoleCodeP AdvanceDirectiveObservationCustodianCustodianRoleAddr AdvanceDirectiveObservationCustodianCustodianRoleTelecom' constraints.validation.dependOn.AdvanceDirectiveObservation2CustodianCustodianRoleCode='AdvanceDirectiveObservation2CustodianCustodianRoleCodeP' constraints.validation.error='AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WNt00LTREeWEoeeTdrbyVw" base_Class="_STHaYLFUEeOtlapy2HWYww">
+  <Ecore:EClass xmi:id="_YyjFULbPEeWQ25S2Lv5Ssw" base_Class="_STHaYLFUEeOtlapy2HWYww">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCode AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP' constraints.validation.dependOn.AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCode='AdvanceDirectiveObservation2CustodianCustodianRoleCustodianEntityCodeP' constraints.validation.error='AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WOLH0LTREeWEoeeTdrbyVw" base_Class="_mU0BYLFEEeOtlapy2HWYww">
+  <Ecore:EClass xmi:id="_Yy_xQLbPEeWQ25S2Lv5Ssw" base_Class="_mU0BYLFEEeOtlapy2HWYww">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveObservation2VerifierTemplateId AdvanceDirectiveObservationVerifierParticipantRole' templateId.root='2.16.840.1.113883.10.20.1.58' constraints.validation.warning='AdvanceDirectiveObservationVerifierTime'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WONkELTREeWEoeeTdrbyVw" base_Class="_KmOlALFFEeOtlapy2HWYww">
+  <Ecore:EClass xmi:id="_YzCNgLbPEeWQ25S2Lv5Ssw" base_Class="_KmOlALFFEeOtlapy2HWYww">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.101' code.codeSystemName='NUCC Health Care Provider Taxonomy' constraints.validation.warning='AdvanceDirectiveObservation2VerifierParticipantRoleCode AdvanceDirectiveObservation2VerifierParticipantRoleCodeP' constraints.validation.dependOn.AdvanceDirectiveObservation2VerifierParticipantRoleCode='AdvanceDirectiveObservation2VerifierParticipantRoleCodeP' constraints.validation.info='AdvanceDirectiveObservation2VerifierParticipantRoleAddr AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WOlXgLTREeWEoeeTdrbyVw" base_Class="_gBWCwLFFEeOtlapy2HWYww">
+  <Ecore:EClass xmi:id="_Yzb2ILbPEeWQ25S2Lv5Ssw" base_Class="_gBWCwLFFEeOtlapy2HWYww">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP' constraints.validation.dependOn.AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCode='AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityCodeP' constraints.validation.info='AdvanceDirectiveObservation2VerifierParticipantRolePlayingEntityName'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WO8j4LTREeWEoeeTdrbyVw" base_Class="_I-YekExLEeWJ65CktI2ODQ">
+  <Ecore:EClass xmi:id="_YzzpkLbPEeWQ25S2Lv5Ssw" base_Class="_I-YekExLEeWJ65CktI2ODQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation translation.code='75320-2' translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' translation.displayName='Advance directive' constraints.validation.error='AdvanceDirectiveObservation2CDTranslation AdvanceDirectiveObservation2CDTranslationP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_WPxDQLTREeWEoeeTdrbyVw" base_Class="_eB8QcLE9EeOtlapy2HWYww">
+  <Ecore:EClass xmi:id="_Y1o1kLbPEeWQ25S2Lv5Ssw" base_Class="_eB8QcLE9EeOtlapy2HWYww">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_XH6zQLTREeWEoeeTdrbyVw" base_Class="_jsKhYAFXEeSLIY0bHb-fFQ">
+  <Ecore:EClass xmi:id="_ZvvtYLbPEeWQ25S2Lv5Ssw" base_Class="_jsKhYAFXEeSLIY0bHb-fFQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionEntriesOptionalCodeP AdvanceDirectivesSectionEntriesOptional2Entry' templateId.root='2.16.840.1.113883.10.20.22.2.21' templateId.extension='2015-08-01' code.code='42348-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Advance Directives' constraints.validation.dependOn.AdvanceDirectivesSectionEntriesOptionalCode='AdvanceDirectivesSectionEntriesOptionalCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_XIUb4LTREeWEoeeTdrbyVw" base_Class="_ZFbCkAIPEeS-F85KYVlDyA">
+  <Ecore:EClass xmi:id="_ZwVjQLbPEeWQ25S2Lv5Ssw" base_Class="_ZFbCkAIPEeS-F85KYVlDyA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSection2HasAdvanceDirectiveObservation2XorAdvanceDirectiveOrganizer AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionEntriesOptionalCodeP AdvanceDirectivesSectionEntriesOptionalTitle AdvanceDirectivesSectionEntriesOptionalText AdvanceDirectivesSection2Entry' templateId.root='2.16.840.1.113883.10.20.22.2.21.1' templateId.extension='2015-08-01' code.code='42348-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Advance Directives' constraints.validation.dependOn.AdvanceDirectivesSectionEntriesOptionalCode='AdvanceDirectivesSectionEntriesOptionalCodeP' nullFlavor='NI' constraints.validation.info='AdvanceDirectivesSection2NullFlavor'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_YMG0ILTREeWEoeeTdrbyVw" base_Class="_8RsYYKJHEeSOc57SOMra_g">
+  <Ecore:EClass xmi:id="_bSFC0LbPEeWQ25S2Lv5Ssw" base_Class="_8RsYYKJHEeSOc57SOMra_g">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='AdvanceDirectivesSection2EntryAdvanceDirectiveOrganizer AdvanceDirectivesSection2EntryAdvanceDirectiveObservation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_Y7lJQLTREeWEoeeTdrbyVw" base_Class="_fGwJgLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_ciqg8LbPEeWQ25S2Lv5Ssw" base_Class="_fGwJgLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectivesSectionAdvanceDirectiveObservationEntryAdvanceDirectiveObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZlK40LTREeWEoeeTdrbyVw" base_Class="_fNpbsLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_dn640LbPEeWQ25S2Lv5Ssw" base_Class="_fNpbsLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservationEntryAdvanceDirectiveObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_bJBRMLTREeWEoeeTdrbyVw" base_Class="_faPGMLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_fs_H4LbPEeWQ25S2Lv5Ssw" base_Class="_faPGMLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveOrganizerAdvanceDirectiveObservation2EntryRelationshipAdvanceDirectiveObservation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_d5i4ELTREeWEoeeTdrbyVw" base_Class="_fuVt8LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_j8WEQLbPEeWQ25S2Lv5Ssw" base_Class="_fuVt8LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_d6EcgLTREeWEoeeTdrbyVw" base_Class="_fuamcLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_j9ViwLbPEeWQ25S2Lv5Ssw" base_Class="_fuamcLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_d8F1wLTREeWEoeeTdrbyVw" base_Class="_fuuvgLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_kDa8oLbPEeWQ25S2Lv5Ssw" base_Class="_fuuvgLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectivesSection2AdvanceDirectiveObservation2EntryAdvanceDirectiveObservation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_d8llALTREeWEoeeTdrbyVw" base_Class="_fuzoALS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_kFGXoLbPEeWQ25S2Lv5Ssw" base_Class="_fuzoALS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectivesSection2AdvanceDirectiveOrganizerEntryAdvanceDirectiveOrganizer'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_3CLlULbSEeWQ25S2Lv5Ssw" base_Class="_2KlEwBSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationHasStartingTime AdvanceDirectiveObservationHasEndingTime AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationCodeP AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationStatusCodeP AdvanceDirectiveObservationEffectiveTime' templateId.root='2.16.840.1.113883.10.20.22.4.48' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='AdvanceDirectiveObservationCode AdvanceDirectiveObservationVerifier AdvanceDirectiveObservationCustodian AdvanceDirectiveObservationReference' constraints.validation.dependOn.AdvanceDirectiveObservationCode='AdvanceDirectiveObservationCodeP' statusCode.code='completed' constraints.validation.dependOn.AdvanceDirectiveObservationStatusCode='AdvanceDirectiveObservationStatusCodeP'</annotation>
   </Ecore:EClass>
 </xmi:XMI>

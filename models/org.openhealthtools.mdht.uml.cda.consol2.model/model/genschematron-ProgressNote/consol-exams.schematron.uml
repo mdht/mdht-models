@@ -4,70 +4,70 @@
     <ownedComment xmi:id="_2Pxt7BSVEeGGzu7fmW9pXw" annotatedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
       <body>The General Status section describes general observations and readily observable attributes of the patient, including affect and demeanor, apparent age compared to actual age, gender, ethnicity, nutritional status based on appearance, body build and habitus (e.g., muscular, cachectic, obese), developmental or other deformities, gait and mobility, personal hygiene, evidence of distress, and voice quality and speech.</body>
     </ownedComment>
-    <ownedRule xmi:id="_TY4VsLTREeWEoeeTdrbyVw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TY4VsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WNpfoLbPEeWQ25S2Lv5Ssw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNpfobbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.2.5')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TY8AELTREeWEoeeTdrbyVw" name="GeneralStatusSectionCode" constrainedElement="_2Pxt7hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TY8AEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WNrU0LbPEeWQ25S2Lv5Ssw" name="GeneralStatusSectionCode" constrainedElement="_2Pxt7hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNrU0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '10210-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TZARgLTREeWEoeeTdrbyVw" name="GeneralStatusSectionCodeP" constrainedElement="_2Pxt7hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZARgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WNuYILbPEeWQ25S2Lv5Ssw" name="GeneralStatusSectionCodeP" constrainedElement="_2Pxt7hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNuYIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TZEi8LTREeWEoeeTdrbyVw" name="GeneralStatusSectionTitle" constrainedElement="_qrBvsCzoEeG29eivM7bhbw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZEi8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WNxbcLbPEeWQ25S2Lv5Ssw" name="GeneralStatusSectionTitle" constrainedElement="_qrBvsCzoEeG29eivM7bhbw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNxbcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TZG_MLTREeWEoeeTdrbyVw" name="GeneralStatusSectionText" constrainedElement="_qrBIoCzoEeG29eivM7bhbw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZG_MbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WNypkLbPEeWQ25S2Lv5Ssw" name="GeneralStatusSectionText" constrainedElement="_qrBIoCzoEeG29eivM7bhbw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNzQoLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_5KpRwLTREeWEoeeTdrbyVw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5KpRwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_7LbaALbPEeWQ25S2Lv5Ssw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_7LbaAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.2.5')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WKAkELTSEeWEoeeTdrbyVw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WKAkEbTSEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_S-SLMLbQEeWQ25S2Lv5Ssw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_S-SLMbbQEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.2.5')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_6dK0ILTSEeWEoeeTdrbyVw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_6dK0IbTSEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_LCzF4LbREeWQ25S2Lv5Ssw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_LCzF4bbREeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.2.5')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_xyY_4LTTEeWEoeeTdrbyVw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_xyY_4bTTEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WtUW0LbSEeWQ25S2Lv5Ssw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WtU94LbSEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.2.5')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_GAIEgLTUEeWEoeeTdrbyVw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_GAIEgbTUEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_3UTQELbSEeWQ25S2Lv5Ssw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3UT3ILbSEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.2.5')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_3bmOoLTUEeWEoeeTdrbyVw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_3bmOobTUEeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_la5JELbTEeWQ25S2Lv5Ssw" name="GeneralStatusSectionTemplateId" constrainedElement="_2Pxt6xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_la5JEbbTEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.2.5')</body>
       </specification>
@@ -105,55 +105,55 @@ value.code = '10210-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <body>The Physical Exam section includes direct observations made by the clinician. The examination may include the use of simple instruments and may also describe simple maneuvers performed directly on the patient's body. This section includes only observations made by the examining clinician using inspection, palpation, auscultation, and percussion; it does not include laboratory or imaging findings. The exam may be limited to pertinent body systems based on the patient's chief complaint or it may include a comprehensive examination. The examination may be reported as a collection of random clinical statements or it may be reported categorically. &#xD;
 The Physical Exam section may contain multiple nested subsections: Vital Signs, General Status, and those listed in the Additional Physical Examination Subsections appendix.</body>
     </ownedComment>
-    <ownedRule xmi:id="_TYpFILTREeWEoeeTdrbyVw" name="PhysicalExamSectionTemplateId" constrainedElement="_2Pxt0hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TYpsMLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WNaPELbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionTemplateId" constrainedElement="_2Pxt0hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNaPEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.2.10')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TYrhYLTREeWEoeeTdrbyVw" name="PhysicalExamSectionCode" constrainedElement="_2Pxt4hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TYrhYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WNd5cLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionCode" constrainedElement="_2Pxt4hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNeggLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TYuksLTREeWEoeeTdrbyVw" name="PhysicalExamSectionCodeP" constrainedElement="_2Pxt4hSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TYuksbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WNix8LbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionCodeP" constrainedElement="_2Pxt4hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNix8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TYyPELTREeWEoeeTdrbyVw" name="PhysicalExamSectionTitle" constrainedElement="_fHjFcCzoEeG29eivM7bhbw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TYyPEbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WNl1QLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionTitle" constrainedElement="_fHjFcCzoEeG29eivM7bhbw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNl1QbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TY1SYLTREeWEoeeTdrbyVw" name="PhysicalExamSectionText" constrainedElement="_fHgpMCzoEeG29eivM7bhbw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TY1SYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WNnqcLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionText" constrainedElement="_fHgpMCzoEeG29eivM7bhbw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WNnqcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ZOKHALTREeWEoeeTdrbyVw" name="PhysicalExamSectionEntry">
+    <ownedRule xmi:id="_c91aALbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionEntry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fKdk0LS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZOKHAbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_c91aAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::PhysicalExamSection::PressureUlcerObservationEntry))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ZOpPMLTREeWEoeeTdrbyVw" name="PhysicalExamSectionEntry">
+    <ownedRule xmi:id="_c-2tsLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionEntry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fKkSgLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZOpPMbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_c-2tsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::PhysicalExamSection::NumberOfPressureUlcersObservationEntry))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_ZPHwULTREeWEoeeTdrbyVw" name="PhysicalExamSectionEntry">
+    <ownedRule xmi:id="_c_m7oLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionEntry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fKrAMLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZPHwUbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_c_nisLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::PhysicalExamSection::HighestPressureUlcerStageEntry))</body>
       </specification>
@@ -195,9 +195,9 @@ value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_fKrAMLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fKbvoLS6EeWcPq3zAthoUQ" name="PressureUlcerObservationEntry">
-      <ownedRule xmi:id="_ZOZXkLTREeWEoeeTdrbyVw" name="PhysicalExamSectionPressureUlcerObservationEntryPressureUlcerObservation">
+      <ownedRule xmi:id="_c-dsILbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionPressureUlcerObservationEntryPressureUlcerObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fKgBELS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZOZXkbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_c-dsIbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PressureUlcerObservation))->size() >= 0</body>
         </specification>
@@ -214,9 +214,9 @@ value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fKidULS6EeWcPq3zAthoUQ" name="NumberOfPressureUlcersObservationEntry">
-      <ownedRule xmi:id="_ZO4fwLTREeWEoeeTdrbyVw" name="PhysicalExamSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation">
+      <ownedRule xmi:id="_c_N6ELbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fKmuwLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZO4fwbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_c_N6EbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation))->size() >= 0</body>
         </specification>
@@ -232,9 +232,9 @@ value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fKpLALS6EeWcPq3zAthoUQ" name="HighestPressureUlcerStageEntry">
-      <ownedRule xmi:id="_ZPXA4LTREeWEoeeTdrbyVw" name="PhysicalExamSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage">
+      <ownedRule xmi:id="_c_-IALbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fKtccLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZPXA4bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_c_-IAbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage))->size() >= 0</body>
         </specification>
@@ -262,34 +262,34 @@ value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
     <ownedComment xmi:id="_2RqkOBSVEeGGzu7fmW9pXw" annotatedElement="_2RqkMBSVEeGGzu7fmW9pXw">
       <body>The Review of Systems section contains a relevant collection of symptoms and functions systematically gathered by a clinician. It includes symptoms the patient is currently experiencing, some of which were not elicited during the history of present illness, as well as a potentially large number of pertinent negatives, for example, symptoms that the patient denied experiencing.</body>
     </ownedComment>
-    <ownedRule xmi:id="_TZI0YLTREeWEoeeTdrbyVw" name="ReviewOfSystemsSectionTemplateId" constrainedElement="_2RqkMBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZJbcLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WNz3sLbPEeWQ25S2Lv5Ssw" name="ReviewOfSystemsSectionTemplateId" constrainedElement="_2RqkMBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WN0ewLbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.3.18')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TZNF0LTREeWEoeeTdrbyVw" name="ReviewOfSystemsSectionCode" constrainedElement="_2RqkNhSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZNF0bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WN2T8LbPEeWQ25S2Lv5Ssw" name="ReviewOfSystemsSectionCode" constrainedElement="_2RqkNhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WN2T8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '10187-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TZQwMLTREeWEoeeTdrbyVw" name="ReviewOfSystemsSectionCodeP" constrainedElement="_2RqkNhSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZQwMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WN4wMLbPEeWQ25S2Lv5Ssw" name="ReviewOfSystemsSectionCodeP" constrainedElement="_2RqkNhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WN4wMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TZVBoLTREeWEoeeTdrbyVw" name="ReviewOfSystemsSectionTitle" constrainedElement="_VzwKhCtWEeGlWN0TVxk9LA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZVBobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WN7zgLbPEeWQ25S2Lv5Ssw" name="ReviewOfSystemsSectionTitle" constrainedElement="_VzwKhCtWEeGlWN0TVxk9LA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WN7zgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_TZYE8LTREeWEoeeTdrbyVw" name="ReviewOfSystemsSectionText" constrainedElement="_VzwKgCtWEeGlWN0TVxk9LA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TZYE8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_WN-PwLbPEeWQ25S2Lv5Ssw" name="ReviewOfSystemsSectionText" constrainedElement="_VzwKgCtWEeGlWN0TVxk9LA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WN-PwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
@@ -369,46 +369,46 @@ value.code = '10187-3' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
     <ownedComment xmi:id="_lI9UMOb2EeGINOJ_SD9_dA">
       <body>This observation contains a description of the wound tissue of the most severe or highest staged pressure ulcer observed on a patient.</body>
     </ownedComment>
-    <ownedRule xmi:id="_VIiVcLTREeWEoeeTdrbyVw" name="HighestPressureUlcerStageTemplateId" constrainedElement="_4YgVsOZbEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VIiVcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjMWQLbPEeWQ25S2Lv5Ssw" name="HighestPressureUlcerStageTemplateId" constrainedElement="_4YgVsOZbEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjM9ULbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.77')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VIkKoLTREeWEoeeTdrbyVw" name="HighestPressureUlcerStageClassCode" constrainedElement="_qBIkEOb2EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VIkKobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjOygLbPEeWQ25S2Lv5Ssw" name="HighestPressureUlcerStageClassCode" constrainedElement="_qBIkEOb2EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjOygbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VIlYwLTREeWEoeeTdrbyVw" name="HighestPressureUlcerStageMoodCode" constrainedElement="_qBLnYOb2EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VIlYwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjQnsLbPEeWQ25S2Lv5Ssw" name="HighestPressureUlcerStageMoodCode" constrainedElement="_qBLnYOb2EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjQnsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VImm4LTREeWEoeeTdrbyVw" name="HighestPressureUlcerStageId" constrainedElement="_qBLAUOb2EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VImm4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjR10LbPEeWQ25S2Lv5Ssw" name="HighestPressureUlcerStageId" constrainedElement="_qBLAUOb2EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjR10bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VIrfYLTREeWEoeeTdrbyVw" name="HighestPressureUlcerStageCodeP" constrainedElement="_qBJyMOb2EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VIrfYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjYjgLbPEeWQ25S2Lv5Ssw" name="HighestPressureUlcerStageCodeP" constrainedElement="_qBJyMOb2EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjYjgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VIpDILTREeWEoeeTdrbyVw" name="HighestPressureUlcerStageCode" constrainedElement="_qBJyMOb2EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VIpDIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjU5ILbPEeWQ25S2Lv5Ssw" name="HighestPressureUlcerStageCode" constrainedElement="_qBJyMOb2EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjU5IbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = '420905001' and value.codeSystem = '2.16.840.1.113883.6.96'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VItUkLTREeWEoeeTdrbyVw" name="HighestPressureUlcerStageValue" constrainedElement="_qBMOcOb2EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VItUkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Xjbm0LbPEeWQ25S2Lv5Ssw" name="HighestPressureUlcerStageValue" constrainedElement="_qBMOcOb2EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xjbm0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1</body>
       </specification>
@@ -470,78 +470,78 @@ value.code = '420905001' and value.codeSystem = '2.16.840.1.113883.6.96'</body>
     <ownedComment xmi:id="_z95uMOcBEeGINOJ_SD9_dA">
       <body>This clinical statement enumerates the number of pressure ulcers observed in a particular stage.</body>
     </ownedComment>
-    <ownedRule xmi:id="_VIuisLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationTemplateId" constrainedElement="_7c4ssOZbEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VIuisbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Xjc08LbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationTemplateId" constrainedElement="_7c4ssOZbEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xjc08bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.76')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VIwX4LTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationClassCode" constrainedElement="_4rvdsOb-EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VIwX4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjfRMLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationClassCode" constrainedElement="_4rvdsOb-EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjfRMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VIxmALTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationMoodCode" constrainedElement="_4rvduOb-EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VIxmAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjhGYLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationMoodCode" constrainedElement="_4rvduOb-EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjhGYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VIzbMLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationId" constrainedElement="_4rvdteb-EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VIzbMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Xji7kLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationId" constrainedElement="_4rvdteb-EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xji7kbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VI3soLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationCodeP" constrainedElement="_4rvdseb-EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VI3sobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjpCMLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationCodeP" constrainedElement="_4rvdseb-EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjpCMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VI1QYLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationCode" constrainedElement="_4rvdseb-EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VI1QYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Xjl-4LbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationCode" constrainedElement="_4rvdseb-EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xjl-4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = '2264892003' and value.codeSystem = '2.16.840.1.113883.6.96'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VI6v8LTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationStatusCode" constrainedElement="_4rvdueb-EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VI6v8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjsFgLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationStatusCode" constrainedElement="_4rvdueb-EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjsFgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'completed'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VI9MMLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationStatusCodeP" constrainedElement="_4rvdueb-EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VI9MMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjuhwLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationStatusCodeP" constrainedElement="_4rvdueb-EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjuhwbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VI_BYLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEffectiveTime" constrainedElement="_4rvdsub-EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VI_BYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjwW8LbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEffectiveTime" constrainedElement="_4rvdsub-EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjwW8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.effectiveTime.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VJAPgLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationValue" constrainedElement="_4rvdvOb-EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VJAPgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XjxlELbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationValue" constrainedElement="_4rvdvOb-EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjxlEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::INT))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VMS0EbTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationAuthor" constrainedElement="_4rvdwub-EeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VMS0ErTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XnoKUbbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationAuthor" constrainedElement="_4rvdwub-EeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XnoKUrbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))->size() &lt;= 1</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VMav4LTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationship" constrainedElement="_DxKLkecCEeGINOJ_SD9_dA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VMav4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_XnxUQLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationship" constrainedElement="_DxKLkecCEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XnxUQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->select(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->size() = 1</body>
       </specification>
@@ -601,15 +601,15 @@ value.code = 'completed'</body>
       <ownedComment xmi:id="_T5qgMOcCEeGINOJ_SD9_dA">
         <body>INLINE&amp;typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ</body>
       </ownedComment>
-      <ownedRule xmi:id="_VJCEsbTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationshipTypeCode" constrainedElement="_FQgecOcCEeGINOJ_SD9_dA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_VJCEsrTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_XjzaQLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationshipTypeCode" constrainedElement="_FQgecOcCEeGINOJ_SD9_dA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XjzaQbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_VMqngLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationshipObservation">
+      <ownedRule xmi:id="_XoDoILbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationshipObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_IRUkEucCEeGINOJ_SD9_dA"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_VMqngbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_XoDoIbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation::EntryRelationship::Observation))</body>
         </specification>
@@ -628,28 +628,28 @@ value.code = 'completed'</body>
         <association href="../consol.uml#_IRUkEucCEeGINOJ_SD9_dA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_lwnlkOcAEeGINOJ_SD9_dA" name="Observation">
-        <ownedRule xmi:id="_VJDS0bTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationClassCode" constrainedElement="_ng0-8OcAEeGINOJ_SD9_dA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_VJDS0rTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_Xj0oYbbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationClassCode" constrainedElement="_ng0-8OcAEeGINOJ_SD9_dA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xj0oYrbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.classCode=vocab::ActClassObservation::OBS</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_VJFIALTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode" constrainedElement="_ng1mAOcAEeGINOJ_SD9_dA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_VJFIAbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_Xj12gLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode" constrainedElement="_ng1mAOcAEeGINOJ_SD9_dA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xj12gbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_VJG9MLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationValue" constrainedElement="_ng1mAecAEeGINOJ_SD9_dA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_VJG9MbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_Xj3rsLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationValue" constrainedElement="_ng1mAecAEeGINOJ_SD9_dA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Xj3rsbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '421076008' or value.code = '420324007' or value.code = '421927004' or value.code = '420597008' or value.code = '421594008'))</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_VJQuMLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationValueP" constrainedElement="_ng1mAecAEeGINOJ_SD9_dA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_VJQuMbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_XkDR4LbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationValueP" constrainedElement="_ng1mAecAEeGINOJ_SD9_dA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_XkDR4bbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD))</body>
           </specification>
@@ -739,66 +739,66 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '421076008' or val
     <ownedComment xmi:id="_Ul6XwJp8EeOK6dzbL4VoTA">
       <body>This template represents the Wound Measurement Observations of wound width, depth and length.</body>
     </ownedComment>
-    <ownedRule xmi:id="_VoHNYLTREeWEoeeTdrbyVw" name="WoundMeasurementObservationTemplateId" constrainedElement="_94MpsJp7EeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoHNYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YLV7YLbPEeWQ25S2Lv5Ssw" name="WoundMeasurementObservationTemplateId" constrainedElement="_94MpsJp7EeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YLV7YbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.133')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VoJCkLTREeWEoeeTdrbyVw" name="WoundMeasurementObservationClassCode" constrainedElement="_Bs8GoJp8EeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoJCkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YLXwkLbPEeWQ25S2Lv5Ssw" name="WoundMeasurementObservationClassCode" constrainedElement="_Bs8GoJp8EeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YLXwkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VoK3wLTREeWEoeeTdrbyVw" name="WoundMeasurementObservationMoodCode" constrainedElement="_Bs8tsJp8EeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoK3wbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YLY-sLbPEeWQ25S2Lv5Ssw" name="WoundMeasurementObservationMoodCode" constrainedElement="_Bs8tsJp8EeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YLY-sbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VoMF4LTREeWEoeeTdrbyVw" name="WoundMeasurementObservationId" constrainedElement="_Bs8GpZp8EeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoMF4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YLaz4LbPEeWQ25S2Lv5Ssw" name="WoundMeasurementObservationId" constrainedElement="_Bs8GpZp8EeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YLaz4bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.id->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VoYTILTREeWEoeeTdrbyVw" name="WoundMeasurementObservationCodeP" constrainedElement="_Bs8GoZp8EeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoYTIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YLo2ULbPEeWQ25S2Lv5Ssw" name="WoundMeasurementObservationCodeP" constrainedElement="_Bs8GoZp8EeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YLo2UbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VoPJMLTREeWEoeeTdrbyVw" name="WoundMeasurementObservationCode" constrainedElement="_Bs8GoZp8EeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoPJMbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YLd3MLbPEeWQ25S2Lv5Ssw" name="WoundMeasurementObservationCode" constrainedElement="_Bs8GoZp8EeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YLd3MbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '39125-0' or value.code = '39127-6' or value.code = '39126-8')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VoiEILTREeWEoeeTdrbyVw" name="WoundMeasurementObservationStatusCode" constrainedElement="_Bs8tsZp8EeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoiEIbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YL0cgLbPEeWQ25S2Lv5Ssw" name="WoundMeasurementObservationStatusCode" constrainedElement="_Bs8tsZp8EeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YL0cgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
 let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
 value.code = 'completed'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VokgYLTREeWEoeeTdrbyVw" name="WoundMeasurementObservationStatusCodeP" constrainedElement="_Bs8tsZp8EeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VokgYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YL24wLbPEeWQ25S2Lv5Ssw" name="WoundMeasurementObservationStatusCodeP" constrainedElement="_Bs8tsZp8EeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YL24wbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.statusCode.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VomVkLTREeWEoeeTdrbyVw" name="WoundMeasurementObservationEffectiveTime" constrainedElement="_Bs8Gopp8EeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VomVkbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YL5VALbPEeWQ25S2Lv5Ssw" name="WoundMeasurementObservationEffectiveTime" constrainedElement="_Bs8Gopp8EeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YL5VAbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.effectiveTime.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VooKwLTREeWEoeeTdrbyVw" name="WoundMeasurementObservationValue" constrainedElement="_Bs9UwJp8EeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VooKwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YL6jILbPEeWQ25S2Lv5Ssw" name="WoundMeasurementObservationValue" constrainedElement="_Bs9UwJp8EeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YL6jIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::PQ))</body>
       </specification>
@@ -880,96 +880,96 @@ value.code = 'completed'</body>
     <ownedComment xmi:id="_bkc6YJqAEeOK6dzbL4VoTA">
       <body>This template represents acquired or surgical wounds and is not intended to encompass all wound types. The template applies to wounds such as pressure ulcers, surgical incisions, and deep tissue injury wounds. Information in this template may include information about the wound measurements characteristics.</body>
     </ownedComment>
-    <ownedRule xmi:id="_Vop_8LTREeWEoeeTdrbyVw" name="ProblemObservationTemplateId" constrainedElement="_09uFMJp_EeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vop_8bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YL8YULbPEeWQ25S2Lv5Ssw" name="ProblemObservationTemplateId" constrainedElement="_09uFMJp_EeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YL8YUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.114' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Vor1ILTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationClassCode" constrainedElement="_D3928JqAEeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vor1IbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YL-NgLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationClassCode" constrainedElement="_D3928JqAEeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YL-NgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.classCode=vocab::ActClassObservation::OBS</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VouRYLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationMoodCode" constrainedElement="_D3928pqAEeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VouRYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YMACsLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationMoodCode" constrainedElement="_D3928pqAEeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YMACsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Vo0YALTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationCodeP" constrainedElement="_D3928ZqAEeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vo0YAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YME7MLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationCodeP" constrainedElement="_D3928ZqAEeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YME7MbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VoxUsLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationCode" constrainedElement="_D3928ZqAEeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VoxUsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YMCe8LbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationCode" constrainedElement="_D3928ZqAEeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YMCe8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VpBMULTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationValueP" constrainedElement="_D3_FEJqAEeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpBMUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YMTksLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationValueP" constrainedElement="_D3_FEJqAEeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YMTksbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.value->isEmpty()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_Vo4CYLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationValue" constrainedElement="_D3_FEJqAEeOK6dzbL4VoTA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vo4CYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YMIlkLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationValue" constrainedElement="_D3_FEJqAEeOK6dzbL4VoTA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YMIlkbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VpMLcLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationTargetSiteCode" constrainedElement="_FCpMAD6wEeSQrqXAgqtM5g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpMLcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YMpi8LbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationTargetSiteCode" constrainedElement="_FCpMAD6wEeSQrqXAgqtM5g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YMpi8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.targetSiteCode->isEmpty()) and self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VpVVYLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationTargetSiteCodeP" constrainedElement="_FCpMAD6wEeSQrqXAgqtM5g">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpVVYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YM0iELbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationTargetSiteCodeP" constrainedElement="_FCpMAD6wEeSQrqXAgqtM5g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YM0iEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>((not self.targetSiteCode->isEmpty()) and self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->size() &lt;= 1)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_WMHSULTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationAuthorParticipation" constrainedElement="_b7XsEK75EeORf5eJaKt1KQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WMHSUbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YxIwELbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationAuthorParticipation" constrainedElement="_b7XsEK75EeORf5eJaKt1KQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YxIwEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_b9_xYLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationEntryRelationship">
+    <ownedRule xmi:id="_gpoWULbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fe3HgLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b9_xYbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gpoWUbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::LongitudinalCareWoundObservation::WoundMeasurementObservationEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_b-h84LTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationEntryRelationship">
+    <ownedRule xmi:id="_gqc1sLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fe6K0LS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b-h84bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gqc1sbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::LongitudinalCareWoundObservation::WoundCharacteristicEntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_b_Jn8LTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationEntryRelationship">
+    <ownedRule xmi:id="_grv2MLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fe91MLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b_Jn8bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_grv2MbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::LongitudinalCareWoundObservation::NumberOfPressureUlcersObservation2EntryRelationship))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_b_rzcLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationEntryRelationship">
+    <ownedRule xmi:id="_gshSQLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationEntryRelationship">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_ffCGoLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_b_rzcbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gshSQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(consol::LongitudinalCareWoundObservation::HighestPressureUlcerStageEntryRelationship))</body>
       </specification>
@@ -1035,8 +1035,8 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
       <ownedComment xmi:id="_yfKNQD6wEeSQrqXAgqtM5g">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_VpfGYLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationCDQualifier" constrainedElement="_uVvg0D6wEeSQrqXAgqtM5g">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpfGYbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_YNAvULbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationCDQualifier" constrainedElement="_uVvg0D6wEeSQrqXAgqtM5g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YNAvUbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (((not self.qualifier->isEmpty()) and self.qualifier->exists(element | element.isNullFlavorUndefined())) implies (not self.qualifier->isEmpty()) ))</body>
         </specification>
@@ -1053,22 +1053,22 @@ value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#__CseMD56Ed6cla2oXsPtlA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="__nvNED6wEeSQrqXAgqtM5g" name="CR">
-        <ownedRule xmi:id="_VphioLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationCDCRName" constrainedElement="_A9KH4D6xEeSQrqXAgqtM5g">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_VphiobTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_YNDLkLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationCDCRName" constrainedElement="_A9KH4D6xEeSQrqXAgqtM5g">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YNDLkbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body> ( self.isNullFlavorUndefined() implies (not self.name.oclIsUndefined() and self.name.oclIsKindOf(datatypes::CV) and 
 let value : datatypes::CV = self.name.oclAsType(datatypes::CV) in 
 value.code = '272741003' and value.codeSystem = '2.16.840.1.113883.6.96' ))</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_VpjX0LTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationCDCRNameP" constrainedElement="_A9KH4D6xEeSQrqXAgqtM5g">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpjX0bTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_YNFn0LbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationCDCRNameP" constrainedElement="_A9KH4D6xEeSQrqXAgqtM5g">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YNFn0bbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body> ( self.isNullFlavorUndefined() implies (not self.name.oclIsUndefined() ))</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_Vpl0ELTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationCDCRValue" constrainedElement="_A9KH4z6xEeSQrqXAgqtM5g">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vpl0EbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_YNHdALbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationCDCRValue" constrainedElement="_A9KH4z6xEeSQrqXAgqtM5g">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YNHdAbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body> ( self.isNullFlavorUndefined() implies (not self.value.oclIsUndefined() ))</body>
           </specification>
@@ -1096,8 +1096,8 @@ value.code = '272741003' and value.codeSystem = '2.16.840.1.113883.6.96' ))</bod
               <body>code = '2.16.840.1.113883.6.96'</body>
             </specification>
           </ownedRule>
-          <ownedRule xmi:id="_VpnpQLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationCDCRCDCode" constrainedElement="_T9TYAD6xEeSQrqXAgqtM5g">
-            <specification xmi:type="uml:OpaqueExpression" xmi:id="_VpnpQbTREeWEoeeTdrbyVw">
+          <ownedRule xmi:id="_YNJSMLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationCDCRCDCode" constrainedElement="_T9TYAD6xEeSQrqXAgqtM5g">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_YNJSMbbPEeWQ25S2Lv5Ssw">
               <language>OCL</language>
               <body> ( self.isNullFlavorUndefined() implies (not self.code.oclIsUndefined() ))</body>
             </specification>
@@ -1115,9 +1115,9 @@ value.code = '272741003' and value.codeSystem = '2.16.840.1.113883.6.96' ))</bod
       </nestedClassifier>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fe1SULS6EeWcPq3zAthoUQ" name="WoundMeasurementObservationEntryRelationship">
-      <ownedRule xmi:id="_b-QQELTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationWoundMeasurementObservationEntryRelationshipWoundMeasurementObservation">
+      <ownedRule xmi:id="_gqBX4LbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationWoundMeasurementObservationEntryRelationshipWoundMeasurementObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fe4VoLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_b-QQEbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_gqBX4bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::WoundMeasurementObservation))->size() >= 0</body>
         </specification>
@@ -1133,9 +1133,9 @@ value.code = '272741003' and value.codeSystem = '2.16.840.1.113883.6.96' ))</bod
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fe5jwLS6EeWcPq3zAthoUQ" name="WoundCharacteristicEntryRelationship">
-      <ownedRule xmi:id="_b-zpsLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationWoundCharacteristicEntryRelationshipWoundCharacteristics">
+      <ownedRule xmi:id="_grBdcLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationWoundCharacteristicEntryRelationshipWoundCharacteristics">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fe8AALS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_b-zpsbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_grBdcbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::WoundCharacteristic))->size() >= 0</body>
         </specification>
@@ -1152,9 +1152,9 @@ value.code = '272741003' and value.codeSystem = '2.16.840.1.113883.6.96' ))</bod
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fe8nELS6EeWcPq3zAthoUQ" name="NumberOfPressureUlcersObservation2EntryRelationship">
-      <ownedRule xmi:id="_b_atsLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservation2">
+      <ownedRule xmi:id="_gsHpoLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservation2">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fe_qYLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_b_atsbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_gsHpobbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation2))->size() >= 0</body>
         </specification>
@@ -1170,9 +1170,9 @@ value.code = '272741003' and value.codeSystem = '2.16.840.1.113883.6.96' ))</bod
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ffA4gLS6EeWcPq3zAthoUQ" name="HighestPressureUlcerStageEntryRelationship">
-      <ownedRule xmi:id="_b_85MLTREeWEoeeTdrbyVw" name="LongitudinalCareWoundObservationHighestPressureUlcerStageEntryRelationshipHighestPressureUlcerStage">
+      <ownedRule xmi:id="_gs5FsLbPEeWQ25S2Lv5Ssw" name="LongitudinalCareWoundObservationHighestPressureUlcerStageEntryRelationshipHighestPressureUlcerStage">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_ffDUwLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_b_85MbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_gs5FsbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage))->size() &lt;= 1</body>
         </specification>
@@ -1241,41 +1241,41 @@ value.code = '272741003' and value.codeSystem = '2.16.840.1.113883.6.96' ))</bod
     <ownedComment xmi:id="_k98SkPm-EeSGHoih4Jm09A">
       <body>REMOVED</body>
     </ownedComment>
-    <ownedRule xmi:id="_VqfzALTREeWEoeeTdrbyVw" name="PhysicalFindingsOfSkinSectionTemplateId" constrainedElement="_CDn9gJ2LEeORR8_YW0n_jQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VqfzAbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YOAN0LbPEeWQ25S2Lv5Ssw" name="PhysicalFindingsOfSkinSectionTemplateId" constrainedElement="_CDn9gJ2LEeORR8_YW0n_jQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YOAN0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.62')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VqiPQLTREeWEoeeTdrbyVw" name="PhysicalFindingsOfSkinSectionCode" constrainedElement="_HoxBEJ2LEeORR8_YW0n_jQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VqiPQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YOCqELbPEeWQ25S2Lv5Ssw" name="PhysicalFindingsOfSkinSectionCode" constrainedElement="_HoxBEJ2LEeORR8_YW0n_jQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YOCqEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '10206-1' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VqkrgLTREeWEoeeTdrbyVw" name="PhysicalFindingsOfSkinSectionCodeP" constrainedElement="_HoxBEJ2LEeORR8_YW0n_jQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VqkrgbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YOEfQLbPEeWQ25S2Lv5Ssw" name="PhysicalFindingsOfSkinSectionCodeP" constrainedElement="_HoxBEJ2LEeORR8_YW0n_jQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YOEfQbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VqnHwLTREeWEoeeTdrbyVw" name="PhysicalFindingsOfSkinSectionTitle" constrainedElement="_HoxoIJ2LEeORR8_YW0n_jQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VqnHwbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YOGUcLbPEeWQ25S2Lv5Ssw" name="PhysicalFindingsOfSkinSectionTitle" constrainedElement="_HoxoIJ2LEeORR8_YW0n_jQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YOGUcbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.title.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_VqoV4LTREeWEoeeTdrbyVw" name="PhysicalFindingsOfSkinSectionText" constrainedElement="_HoxBE52LEeORR8_YW0n_jQ">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VqoV4bTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_YOHikLbPEeWQ25S2Lv5Ssw" name="PhysicalFindingsOfSkinSectionText" constrainedElement="_HoxBE52LEeORR8_YW0n_jQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YOHikbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.text.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_cFb2ILTREeWEoeeTdrbyVw" name="PhysicalFindingsOfSkinSectionEntry">
+    <ownedRule xmi:id="_g2HTILbPEeWQ25S2Lv5Ssw" name="PhysicalFindingsOfSkinSectionEntry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_ffuqMLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cFb2IbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_g2HTIbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::PhysicalFindingsOfSkinSection::LongitudinalCareWoundObservationEntry))</body>
       </specification>
@@ -1308,9 +1308,9 @@ value.code = '10206-1' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <association href="../consol.uml#_ffuqMLS6EeWcPq3zAthoUQ"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fftcELS6EeWcPq3zAthoUQ" name="LongitudinalCareWoundObservationEntry">
-      <ownedRule xmi:id="_cFs74LTREeWEoeeTdrbyVw" name="PhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation">
+      <ownedRule xmi:id="_g2d4cLbPEeWQ25S2Lv5Ssw" name="PhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_ffwfYLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cFs74bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_g2d4cbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::LongitudinalCareWoundObservation))->size() >= 0</body>
         </specification>
@@ -1372,56 +1372,56 @@ The exam may be limited to pertinent body systems based on the patient's chief c
 The Physical Exam Section may contain multiple nested subsections.&#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_XF6oILTREeWEoeeTdrbyVw" name="PhysicalExamSectionTemplateId" constrainedElement="_-nZiYP4uEeObaveuCI77uA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XF7PMLTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_Zto0kLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionTemplateId" constrainedElement="_-nZiYP4uEeObaveuCI77uA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zto0kbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.2.10' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XGAHsLTREeWEoeeTdrbyVw" name="PhysicalExamSectionCodeP" constrainedElement="_buWDYP4vEeObaveuCI77uA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGAHsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZtttELbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionCodeP" constrainedElement="_buWDYP4vEeObaveuCI77uA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZtttEbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_XF9EYLTREeWEoeeTdrbyVw" name="PhysicalExamSectionCode" constrainedElement="_buWDYP4vEeObaveuCI77uA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_XF9EYbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_ZtrQ0LbPEeWQ25S2Lv5Ssw" name="PhysicalExamSectionCode" constrainedElement="_buWDYP4vEeObaveuCI77uA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZtrQ0bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_YMfOoLTREeWEoeeTdrbyVw" name="PhysicalExamSection2Component" constrainedElement="_07jiEKZJEeSy2PrVxD6riw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YMfOobTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_bScPMLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2Component" constrainedElement="_07jiEKZJEeSy2PrVxD6riw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bScPMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies component->select(component : cda::Component5 | not component.oclIsUndefined() and component.oclIsKindOf(cda::Component5))->size() >= 0</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_do2JoLTREeWEoeeTdrbyVw" name="PhysicalExamSection2Entry">
+    <ownedRule xmi:id="_jRDEgLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2Entry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fr6sELS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_do2JobTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jRDEgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::PhysicalExamSection2::LongitudinalCareWoundObservationEntry))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_dpVR0LTREeWEoeeTdrbyVw" name="PhysicalExamSection2Entry">
+    <ownedRule xmi:id="_jThJsLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2Entry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fsALoLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dpVR0bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jThJsbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::PhysicalExamSection2::PressureUlcerObservationEntry))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_dpzy8LTREeWEoeeTdrbyVw" name="PhysicalExamSection2Entry">
+    <ownedRule xmi:id="_jVJhYLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2Entry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fsEdELS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dpzy8bTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jVJhYbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::PhysicalExamSection2::NumberOfPressureUlcersObservationEntry))</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_dqXMkLTREeWEoeeTdrbyVw" name="PhysicalExamSection2Entry">
+    <ownedRule xmi:id="_jWflMLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2Entry">
       <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fsJVkLS6EeWcPq3zAthoUQ"/>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dqXMkbTREeWEoeeTdrbyVw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jWflMbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::PhysicalExamSection2::HighestPressureUlcerStageEntry))</body>
       </specification>
@@ -1463,9 +1463,9 @@ value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
       <ownedComment xmi:id="_G7_osKZKEeSy2PrVxD6riw">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_YM6scLTREeWEoeeTdrbyVw" name="PhysicalExamSection2ComponentSection">
+      <ownedRule xmi:id="_bS1QwLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2ComponentSection">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_FSEdgKZKEeSy2PrVxD6riw"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YM6scbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bS1QwbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.section->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection2::Component::Section))</body>
         </specification>
@@ -1480,28 +1480,28 @@ value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
         <association href="../consol.uml#_FSEdgKZKEeSy2PrVxD6riw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Tk0xcKZKEeSy2PrVxD6riw" name="Section">
-        <ownedRule xmi:id="_XGEZILTREeWEoeeTdrbyVw" name="PhysicalExamSection2ComponentSectionCode" constrainedElement="_VSB6IKZKEeSy2PrVxD6riw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGFAMLTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_ZtylkLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2ComponentSectionCode" constrainedElement="_VSB6IKZKEeSy2PrVxD6riw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZtzMoLbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_XGNjELTREeWEoeeTdrbyVw" name="PhysicalExamSection2ComponentSectionCodeP" constrainedElement="_VSB6IKZKEeSy2PrVxD6riw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGNjEbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_Zt-y0LbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2ComponentSectionCodeP" constrainedElement="_VSB6IKZKEeSy2PrVxD6riw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zt-y0bbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>not self.code.oclIsUndefined()</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_XGXUELTREeWEoeeTdrbyVw" name="PhysicalExamSection2ComponentSectionTitle" constrainedElement="_VSB6JqZKEeSy2PrVxD6riw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGXUEbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_ZuJK4LbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2ComponentSectionTitle" constrainedElement="_VSB6JqZKEeSy2PrVxD6riw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZuJK4bbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>not self.title.oclIsUndefined()</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_XGZJQLTREeWEoeeTdrbyVw" name="PhysicalExamSection2ComponentSectionText" constrainedElement="_VSB6I6ZKEeSy2PrVxD6riw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_XGZJQbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_ZuLAELbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2ComponentSectionText" constrainedElement="_VSB6I6ZKEeSy2PrVxD6riw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZuLAEbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>not self.text.oclIsUndefined()</body>
           </specification>
@@ -1530,9 +1530,9 @@ value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()</
       </nestedClassifier>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fr5d8LS6EeWcPq3zAthoUQ" name="LongitudinalCareWoundObservationEntry">
-      <ownedRule xmi:id="_dpFaMLTREeWEoeeTdrbyVw" name="PhysicalExamSection2LongitudinalCareWoundObservationEntryWoundObservation">
+      <ownedRule xmi:id="_jSUP0LbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2LongitudinalCareWoundObservationEntryWoundObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fr8hQLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dpFaMbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jSUP0bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::LongitudinalCareWoundObservation))->size() >= 0</body>
         </specification>
@@ -1548,9 +1548,9 @@ value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()</
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fr-WcLS6EeWcPq3zAthoUQ" name="PressureUlcerObservationEntry">
-      <ownedRule xmi:id="_dpj7ULTREeWEoeeTdrbyVw" name="PhysicalExamSection2PressureUlcerObservationEntryPressureUlcerObservation">
+      <ownedRule xmi:id="_jUgoMLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2PressureUlcerObservationEntryPressureUlcerObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fsCA0LS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dpj7UbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jUgoMbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PressureUlcerObservation))->size() >= 0</body>
         </specification>
@@ -1567,9 +1567,9 @@ value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()</
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fsDO8LS6EeWcPq3zAthoUQ" name="NumberOfPressureUlcersObservationEntry">
-      <ownedRule xmi:id="_dqGG0LTREeWEoeeTdrbyVw" name="PhysicalExamSection2NumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation">
+      <ownedRule xmi:id="_jVv-YbbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2NumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fsGSQLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dqGG0bTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jVwlYLbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation))->size() >= 0</body>
         </specification>
@@ -1585,9 +1585,9 @@ value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()</
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_fsHgYLS6EeWcPq3zAthoUQ" name="HighestPressureUlcerStageEntry">
-      <ownedRule xmi:id="_dqmdILTREeWEoeeTdrbyVw" name="PhysicalExamSection2HighestPressureUlcerStageEntryHighestPressureUlcerStage">
+      <ownedRule xmi:id="_jXLhsLbPEeWQ25S2Lv5Ssw" name="PhysicalExamSection2HighestPressureUlcerStageEntryHighestPressureUlcerStage">
         <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fsLKwLS6EeWcPq3zAthoUQ"/>
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dqmdIbTREeWEoeeTdrbyVw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jXLhsbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HighestPressureUlcerStage))->size() >= 0</body>
         </specification>
@@ -1648,28 +1648,28 @@ value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()</
     <ownedComment xmi:id="_awOMkIC4EeS108flGLVEBA">
       <body>This template represents the number of pressure ulcers observed at a particular stage.</body>
     </ownedComment>
-    <ownedRule xmi:id="_YCDgQLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationTemplateId" constrainedElement="_YYgjwIC3EeS108flGLVEBA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YCDgQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_bHxQQLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationTemplateId" constrainedElement="_YYgjwIC3EeS108flGLVEBA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bHx3ULbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.76' and id.extension = '2015-08-01')</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_YCNRQLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationCodeP" constrainedElement="_nvQ5EIC8EeS108flGLVEBA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YCNRQbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_bIBu8LbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationCodeP" constrainedElement="_nvQ5EIC8EeS108flGLVEBA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bIBu8bbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined()</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_YCHxsLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationCode" constrainedElement="_nvQ5EIC8EeS108flGLVEBA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YCHxsbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_bH398LbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationCode" constrainedElement="_nvQ5EIC8EeS108flGLVEBA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bH4lALbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = '2264892003' and value.codeSystem = '2.16.840.1.113883.6.96'</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_YDTdcLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationship" constrainedElement="_sApxk4DDEeS108flGLVEBA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YDTdcbTREeWEoeeTdrbyVw">
+    <ownedRule xmi:id="_bJVWgLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationship" constrainedElement="_sApxk4DDEeS108flGLVEBA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bJVWgbbPEeWQ25S2Lv5Ssw">
         <language>OCL</language>
         <body>self.entryRelationship->select(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->size() = 1</body>
       </specification>
@@ -1685,14 +1685,14 @@ value.code = '2264892003' and value.codeSystem = '2.16.840.1.113883.6.96'</body>
       <ownedComment xmi:id="_Mkbl0IDEEeS108flGLVEBA">
         <body>INLINE&amp;typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ</body>
       </ownedComment>
-      <ownedRule xmi:id="_YCSJwLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationshipTypeCode" constrainedElement="_Jq83QIDEEeS108flGLVEBA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YCSJwbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_bIH1kLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationshipTypeCode" constrainedElement="_Jq83QIDEEeS108flGLVEBA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bIH1kbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_YERt0LTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationshipObservation" constrainedElement="_AvXm44DFEeS108flGLVEBA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YERt0bTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_bJuYELbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationshipObservation" constrainedElement="_AvXm44DFEeS108flGLVEBA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bJuYEbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body>self.observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::NumberOfPressureUlcersObservation2::EntryRelationship::Observation))</body>
         </specification>
@@ -1707,40 +1707,40 @@ value.code = '2264892003' and value.codeSystem = '2.16.840.1.113883.6.96'</body>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gzfDoIDFEeS108flGLVEBA" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_vE1pYIDFEeS108flGLVEBA" name="Observation">
-        <ownedRule xmi:id="_YCVNEbTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationClassCode" constrainedElement="_0jK6UIDFEeS108flGLVEBA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YCVNErTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_bIK44bbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationClassCode" constrainedElement="_0jK6UIDFEeS108flGLVEBA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bILf8LbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.classCode=vocab::ActClassObservation::OBS</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_YCYQYLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode" constrainedElement="_0jK6UoDFEeS108flGLVEBA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YCYQYbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_bIN8MLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode" constrainedElement="_0jK6UoDFEeS108flGLVEBA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bIN8MbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_YCgzQLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP" constrainedElement="_0jK6UYDFEeS108flGLVEBA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YCgzQbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_bIawgLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP" constrainedElement="_0jK6UYDFEeS108flGLVEBA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bIawgbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>not self.code.oclIsUndefined()</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_YCb6wLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservation2EntryRelationshipObservationCode" constrainedElement="_0jK6UYDFEeS108flGLVEBA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YCb6wbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_bIRmkLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservation2EntryRelationshipObservationCode" constrainedElement="_0jK6UYDFEeS108flGLVEBA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bIRmkbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_YC84ILTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationValueP" constrainedElement="_0jK6U4DFEeS108flGLVEBA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YC84IbTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_bI-xMLbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationValueP" constrainedElement="_0jK6U4DFEeS108flGLVEBA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bI-xMbbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>not self.value->isEmpty()</body>
           </specification>
         </ownedRule>
-        <ownedRule xmi:id="_YCm54LTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationValue" constrainedElement="_0jK6U4DFEeS108flGLVEBA">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YCm54bTREeWEoeeTdrbyVw">
+        <ownedRule xmi:id="_bIg3ILbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservationEntryRelationshipObservationValue" constrainedElement="_0jK6U4DFEeS108flGLVEBA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bIheMLbPEeWQ25S2Lv5Ssw">
             <language>OCL</language>
             <body>self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
@@ -1771,16 +1771,16 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '421076008' or val
       <ownedComment xmi:id="_OgMHwE9gEeWsIc5CMrI4GA">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_YDNW0LTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservation2CDTranslation" constrainedElement="_KuxroE9gEeWsIc5CMrI4GA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YDNW0bTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_bJP28LbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservation2CDTranslation" constrainedElement="_KuxroE9gEeWsIc5CMrI4GA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bJP28bbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (self.translation->size() = 1 and self.translation->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
 value.code = '75277-4' and value.codeSystem = '2.16.840.1.113883.6.1') ))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_YDRBMLTREeWEoeeTdrbyVw" name="NumberOfPressureUlcersObservation2CDTranslationP" constrainedElement="_KuxroE9gEeWsIc5CMrI4GA">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YDRBMbTREeWEoeeTdrbyVw">
+      <ownedRule xmi:id="_bJThULbPEeWQ25S2Lv5Ssw" name="NumberOfPressureUlcersObservation2CDTranslationP" constrainedElement="_KuxroE9gEeWsIc5CMrI4GA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bJThUbbPEeWQ25S2Lv5Ssw">
           <language>OCL</language>
           <body> ( self.isNullFlavorUndefined() implies (self.translation->size() = 1 ))</body>
         </specification>
@@ -1881,101 +1881,101 @@ value.code = '75277-4' and value.codeSystem = '2.16.840.1.113883.6.1') ))</body>
   <CDA:Inline xmi:id="_fr-WcrS6EeWcPq3zAthoUQ" base_Class="_fr-WcLS6EeWcPq3zAthoUQ"/>
   <CDA:Inline xmi:id="_fsDO8rS6EeWcPq3zAthoUQ" base_Class="_fsDO8LS6EeWcPq3zAthoUQ"/>
   <CDA:Inline xmi:id="_fsIHcLS6EeWcPq3zAthoUQ" base_Class="_fsHgYLS6EeWcPq3zAthoUQ"/>
-  <Ecore:EClass xmi:id="_TYpsMbTREeWEoeeTdrbyVw" base_Class="_2Pxt0hSVEeGGzu7fmW9pXw">
+  <Ecore:EClass xmi:id="_WNbdMLbPEeWQ25S2Lv5Ssw" base_Class="_2Pxt0hSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalExamSectionTemplateId PhysicalExamSectionCode PhysicalExamSectionCodeP PhysicalExamSectionTitle PhysicalExamSectionText PhysicalExamSectionEntry' templateId.root='2.16.840.1.113883.10.20.2.10' code.code='29545-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='PHYSICAL EXAMINATION'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TY5j0LTREeWEoeeTdrbyVw" base_Class="_2Pxt6xSVEeGGzu7fmW9pXw">
+  <Ecore:EClass xmi:id="_WNqGsLbPEeWQ25S2Lv5Ssw" base_Class="_2Pxt6xSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralStatusSectionTemplateId GeneralStatusSectionCode GeneralStatusSectionCodeP GeneralStatusSectionTitle GeneralStatusSectionText' templateId.root='2.16.840.1.113883.10.20.2.5' code.code='10210-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='GENERAL STATUS'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_TZKpkLTREeWEoeeTdrbyVw" base_Class="_2RqkMBSVEeGGzu7fmW9pXw">
+  <Ecore:EClass xmi:id="_WN1F0LbPEeWQ25S2Lv5Ssw" base_Class="_2RqkMBSVEeGGzu7fmW9pXw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReviewOfSystemsSectionTemplateId ReviewOfSystemsSectionCode ReviewOfSystemsSectionCodeP ReviewOfSystemsSectionTitle ReviewOfSystemsSectionText' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.18' code.code='10187-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='REVIEW OF SYSTEMS'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_VIi8gLTREeWEoeeTdrbyVw" base_Class="_4YgVsOZbEeGINOJ_SD9_dA">
+  <Ecore:EClass xmi:id="_XjNkYLbPEeWQ25S2Lv5Ssw" base_Class="_4YgVsOZbEeGINOJ_SD9_dA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HighestPressureUlcerStageTemplateId HighestPressureUlcerStageClassCode HighestPressureUlcerStageMoodCode HighestPressureUlcerStageId HighestPressureUlcerStageCode HighestPressureUlcerStageCodeP HighestPressureUlcerStageValue' templateId.root='2.16.840.1.113883.10.20.22.4.77' classCode='OBS' moodCode='EVN' code.code='420905001' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Highest Pressure Ulcer Stage' constraints.validation.dependOn.HighestPressureUlcerStageCode='HighestPressureUlcerStageCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_VIvJwLTREeWEoeeTdrbyVw" base_Class="_7c4ssOZbEeGINOJ_SD9_dA">
+  <Ecore:EClass xmi:id="_XjdcALbPEeWQ25S2Lv5Ssw" base_Class="_7c4ssOZbEeGINOJ_SD9_dA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NumberOfPressureUlcersObservationTemplateId NumberOfPressureUlcersObservationClassCode NumberOfPressureUlcersObservationMoodCode NumberOfPressureUlcersObservationId NumberOfPressureUlcersObservationCode NumberOfPressureUlcersObservationCodeP NumberOfPressureUlcersObservationStatusCode NumberOfPressureUlcersObservationStatusCodeP NumberOfPressureUlcersObservationEffectiveTime NumberOfPressureUlcersObservationValue NumberOfPressureUlcersObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.76' classCode='OBS' moodCode='EVN' code.code='2264892003' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='number of pressure ulcers' constraints.validation.dependOn.NumberOfPressureUlcersObservationCode='NumberOfPressureUlcersObservationCodeP' statusCode.code='completed' constraints.validation.info='NumberOfPressureUlcersObservationAuthor'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_VJCEsLTREeWEoeeTdrbyVw" base_Class="_EuSiMOcCEeGINOJ_SD9_dA">
+  <Ecore:EClass xmi:id="_XjyzMLbPEeWQ25S2Lv5Ssw" base_Class="_EuSiMOcCEeGINOJ_SD9_dA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='SUBJ' constraints.validation.error='NumberOfPressureUlcersObservationEntryRelationshipTypeCode NumberOfPressureUlcersObservationEntryRelationshipObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_VJDS0LTREeWEoeeTdrbyVw" base_Class="_lwnlkOcAEeGINOJ_SD9_dA">
+  <Ecore:EClass xmi:id="_Xj0oYLbPEeWQ25S2Lv5Ssw" base_Class="_lwnlkOcAEeGINOJ_SD9_dA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='OBS' constraints.validation.error='NumberOfPressureUlcersObservationEntryRelationshipObservationClassCode NumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode NumberOfPressureUlcersObservationEntryRelationshipObservationValueP' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='NumberOfPressureUlcersObservationEntryRelationshipObservationValue'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_VoH0cLTREeWEoeeTdrbyVw" base_Class="_94MpsJp7EeOK6dzbL4VoTA">
+  <Ecore:EClass xmi:id="_YLWicLbPEeWQ25S2Lv5Ssw" base_Class="_94MpsJp7EeOK6dzbL4VoTA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='WoundMeasurementObservationTemplateId WoundMeasurementObservationClassCode WoundMeasurementObservationMoodCode WoundMeasurementObservationId WoundMeasurementObservationCode WoundMeasurementObservationCodeP WoundMeasurementObservationStatusCode WoundMeasurementObservationStatusCodeP WoundMeasurementObservationEffectiveTime WoundMeasurementObservationValue' templateId.root='2.16.840.1.113883.10.20.22.4.133' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.dependOn.WoundMeasurementObservationCode='WoundMeasurementObservationCodeP' statusCode.code='completed'</annotation>
   </Ecore:EClass>
-  <CDA:ConformsTo xmi:id="_VopY4LTREeWEoeeTdrbyVw" base_Generalization="_09uFMZp_EeOK6dzbL4VoTA"/>
-  <Ecore:EClass xmi:id="_VoqnALTREeWEoeeTdrbyVw" base_Class="_09uFMJp_EeOK6dzbL4VoTA">
+  <CDA:ConformsTo xmi:id="_YL7xQLbPEeWQ25S2Lv5Ssw" base_Generalization="_09uFMZp_EeOK6dzbL4VoTA"/>
+  <Ecore:EClass xmi:id="_YL8_YLbPEeWQ25S2Lv5Ssw" base_Class="_09uFMJp_EeOK6dzbL4VoTA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationTemplateId LongitudinalCareWoundObservationClassCode LongitudinalCareWoundObservationMoodCode LongitudinalCareWoundObservationCode LongitudinalCareWoundObservationCodeP LongitudinalCareWoundObservationValueP LongitudinalCareWoundObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.114' templateId.extension='2015-08-01' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='assertion' constraints.validation.dependOn.LongitudinalCareWoundObservationCode='LongitudinalCareWoundObservationCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='LongitudinalCareWoundObservationValue LongitudinalCareWoundObservationTargetSiteCode LongitudinalCareWoundObservationTargetSiteCodeP LongitudinalCareWoundObservationAuthorParticipation' constraints.validation.dependOn.LongitudinalCareWoundObservationValue='LongitudinalCareWoundObservationValueP' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' targetSiteCode.codeSystemName='SNOMEDCT'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_VpftcLTREeWEoeeTdrbyVw" base_Class="_tJODUD6wEeSQrqXAgqtM5g">
+  <Ecore:EClass xmi:id="_YNBWYLbPEeWQ25S2Lv5Ssw" base_Class="_tJODUD6wEeSQrqXAgqtM5g">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='LongitudinalCareWoundObservationCDQualifier'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_VpgUgLTREeWEoeeTdrbyVw" base_Class="__nvNED6wEeSQrqXAgqtM5g">
+  <Ecore:EClass xmi:id="_YNB9cLbPEeWQ25S2Lv5Ssw" base_Class="__nvNED6wEeSQrqXAgqtM5g">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation name.code='272741003' name.codeSystem='2.16.840.1.113883.6.96' name.codeSystemName='SNOMEDCT' name.displayName='laterality' constraints.validation.error='LongitudinalCareWoundObservationCDCRName LongitudinalCareWoundObservationCDCRNameP LongitudinalCareWoundObservationCDCRValue'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_VpnCMLTREeWEoeeTdrbyVw" base_Class="_TLQ3ED6xEeSQrqXAgqtM5g">
+  <Ecore:EClass xmi:id="_YNIrILbPEeWQ25S2Lv5Ssw" base_Class="_TLQ3ED6xEeSQrqXAgqtM5g">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='LongitudinalCareWoundObservationCDCRCDValueTerminology' constraints.validation.error='LongitudinalCareWoundObservationCDCRCDCode'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_VqgaELTREeWEoeeTdrbyVw" base_Class="_CDn9gJ2LEeORR8_YW0n_jQ">
+  <Ecore:EClass xmi:id="_YOA04LbPEeWQ25S2Lv5Ssw" base_Class="_CDn9gJ2LEeORR8_YW0n_jQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalFindingsOfSkinSectionTemplateId PhysicalFindingsOfSkinSectionCode PhysicalFindingsOfSkinSectionCodeP PhysicalFindingsOfSkinSectionTitle PhysicalFindingsOfSkinSectionText PhysicalFindingsOfSkinSectionEntry' templateId.root='2.16.840.1.113883.10.20.22.2.62' code.code='10206-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Physical findings of Skin Narrative'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_XF72QLTREeWEoeeTdrbyVw" base_Class="_-nZiYP4uEeObaveuCI77uA">
+  <Ecore:EClass xmi:id="_ZtpboLbPEeWQ25S2Lv5Ssw" base_Class="_-nZiYP4uEeObaveuCI77uA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalExamSectionTemplateId PhysicalExamSectionCode PhysicalExamSectionCodeP PhysicalExamSection2Entry' templateId.root='2.16.840.1.113883.10.20.2.10' templateId.extension='2015-08-01' code.code='29545-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Physical Findings' constraints.validation.dependOn.PhysicalExamSectionCode='PhysicalExamSectionCodeP' constraints.validation.info='PhysicalExamSection2Component'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_XGDyELTREeWEoeeTdrbyVw" base_Class="_Tk0xcKZKEeSy2PrVxD6riw">
+  <Ecore:EClass xmi:id="_Ztx-gLbPEeWQ25S2Lv5Ssw" base_Class="_Tk0xcKZKEeSy2PrVxD6riw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.error='PhysicalExamSection2ComponentSectionCode PhysicalExamSection2ComponentSectionCodeP PhysicalExamSection2ComponentSectionTitle PhysicalExamSection2ComponentSectionText'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_YCEuYLTREeWEoeeTdrbyVw" base_Class="_YYgjwIC3EeS108flGLVEBA">
+  <Ecore:EClass xmi:id="_bHzFcLbPEeWQ25S2Lv5Ssw" base_Class="_YYgjwIC3EeS108flGLVEBA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NumberOfPressureUlcersObservationTemplateId NumberOfPressureUlcersObservationCode NumberOfPressureUlcersObservationCodeP NumberOfPressureUlcersObservationEntryRelationship' templateId.root='2.16.840.1.113883.10.20.22.4.76' templateId.extension='2015-08-01' code.code='2264892003' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' code.displayName='Number of pressure ulcers' constraints.validation.dependOn.NumberOfPressureUlcersObservationCode='NumberOfPressureUlcersObservationCodeP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_YCRisLTREeWEoeeTdrbyVw" base_Class="_H1WAgIDEEeS108flGLVEBA">
+  <Ecore:EClass xmi:id="_bIHOgLbPEeWQ25S2Lv5Ssw" base_Class="_H1WAgIDEEeS108flGLVEBA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='SUBJ' constraints.validation.error='NumberOfPressureUlcersObservationEntryRelationshipTypeCode NumberOfPressureUlcersObservationEntryRelationshipObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_YCVNELTREeWEoeeTdrbyVw" base_Class="_vE1pYIDFEeS108flGLVEBA">
+  <Ecore:EClass xmi:id="_bIK44LbPEeWQ25S2Lv5Ssw" base_Class="_vE1pYIDFEeS108flGLVEBA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='OBS' constraints.validation.error='NumberOfPressureUlcersObservationEntryRelationshipObservationClassCode NumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode NumberOfPressureUlcersObservation2EntryRelationshipObservationCode NumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP NumberOfPressureUlcersObservationEntryRelationshipObservationValueP' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.NumberOfPressureUlcersObservation2EntryRelationshipObservationCode='NumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.warning='NumberOfPressureUlcersObservationEntryRelationshipObservationValue' constraints.validation.dependOn.NumberOfPressureUlcersObservationEntryRelationshipObservationValue='NumberOfPressureUlcersObservationEntryRelationshipObservationValueP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_YDMIsLTREeWEoeeTdrbyVw" base_Class="_KMZXUE9gEeWsIc5CMrI4GA">
+  <Ecore:EClass xmi:id="_bJOo0LbPEeWQ25S2Lv5Ssw" base_Class="_KMZXUE9gEeWsIc5CMrI4GA">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation translation.code='75277-4' translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' translation.displayName='Number of pressure ulcers' constraints.validation.error='NumberOfPressureUlcersObservation2CDTranslation NumberOfPressureUlcersObservation2CDTranslationP'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_YNNAULTREeWEoeeTdrbyVw" base_Class="_ASUmAKZKEeSy2PrVxD6riw">
+  <Ecore:EClass xmi:id="_bTMdILbPEeWQ25S2Lv5Ssw" base_Class="_ASUmAKZKEeSy2PrVxD6riw">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalExamSection2ComponentSection'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZOooILTREeWEoeeTdrbyVw" base_Class="_fKbvoLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_c-1fkLbPEeWQ25S2Lv5Ssw" base_Class="_fKbvoLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='PhysicalExamSectionPressureUlcerObservationEntryPressureUlcerObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZPHJQLTREeWEoeeTdrbyVw" base_Class="_fKidULS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_c_mUkLbPEeWQ25S2Lv5Ssw" base_Class="_fKidULS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='PhysicalExamSectionNumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_ZPmRcLTREeWEoeeTdrbyVw" base_Class="_fKpLALS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_dAUGQLbPEeWQ25S2Lv5Ssw" base_Class="_fKpLALS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='PhysicalExamSectionHighestPressureUlcerStageEntryHighestPressureUlcerStage'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_b-hV0LTREeWEoeeTdrbyVw" base_Class="_fe1SULS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_gqbnkLbPEeWQ25S2Lv5Ssw" base_Class="_fe1SULS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='LongitudinalCareWoundObservationWoundMeasurementObservationEntryRelationshipWoundMeasurementObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_b_IZ0LTREeWEoeeTdrbyVw" base_Class="_fe5jwLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_gruBALbPEeWQ25S2Lv5Ssw" base_Class="_fe5jwLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='LongitudinalCareWoundObservationWoundCharacteristicEntryRelationshipWoundCharacteristics'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_b_rMYLTREeWEoeeTdrbyVw" base_Class="_fe8nELS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_gsgrMLbPEeWQ25S2Lv5Ssw" base_Class="_fe8nELS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='LongitudinalCareWoundObservationNumberOfPressureUlcersObservation2EntryRelationshipNumberOfPressureUlcersObservation2'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_cANX4LTREeWEoeeTdrbyVw" base_Class="_ffA4gLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_gtPrALbPEeWQ25S2Lv5Ssw" base_Class="_ffA4gLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='LongitudinalCareWoundObservationHighestPressureUlcerStageEntryRelationshipHighestPressureUlcerStage'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_cF-osLTREeWEoeeTdrbyVw" base_Class="_fftcELS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_g21E0LbPEeWQ25S2Lv5Ssw" base_Class="_fftcELS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='PhysicalFindingsOfSkinSectionLongitudinalCareWoundObservationEntryWoundObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_dpUqwLTREeWEoeeTdrbyVw" base_Class="_fr5d8LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_jTZ08LbPEeWQ25S2Lv5Ssw" base_Class="_fr5d8LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='PhysicalExamSection2LongitudinalCareWoundObservationEntryWoundObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_dpzL4LTREeWEoeeTdrbyVw" base_Class="_fr-WcLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_jVHsMLbPEeWQ25S2Lv5Ssw" base_Class="_fr-WcLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalExamSection2PressureUlcerObservationEntryPressureUlcerObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_dqWlgLTREeWEoeeTdrbyVw" base_Class="_fsDO8LS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_jWeXELbPEeWQ25S2Lv5Ssw" base_Class="_fsDO8LS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalExamSection2NumberOfPressureUlcersObservationEntryNumberOfPressureUlcersObservation'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_dq1tsLTREeWEoeeTdrbyVw" base_Class="_fsHgYLS6EeWcPq3zAthoUQ">
+  <Ecore:EClass xmi:id="_jX8WsLbPEeWQ25S2Lv5Ssw" base_Class="_fsHgYLS6EeWcPq3zAthoUQ">
     <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalExamSection2HighestPressureUlcerStageEntryHighestPressureUlcerStage'</annotation>
   </Ecore:EClass>
 </xmi:XMI>

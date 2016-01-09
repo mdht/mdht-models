@@ -1,0 +1,1517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Class xmi:id="_2JxzgBSVEeGGzu7fmW9pXw" name="ResultOrganizer">
+    <ownedComment xmi:id="_MrZPsCvWEeGz1sWhj323cg">
+      <body>&lt;p>&#xD;
+This clinical statement identifies set of result observations. It contains information applicable to all of the contained result observations. Result type codes categorize a result into one of several commonly accepted values (e.g., &quot;Hematology&quot;, &quot;Chemistry&quot;, &quot;Nuclear Medicine&quot;). These values are often implicit in the Organizer/code (e.g., an Organizer/code of &quot;complete blood count&quot; implies a ResultTypeCode of &quot;Hematology&quot;). This template requires Organizer/code to include a ResultTypeCode either directly or as a translation of a code from some other code system.&#xD;
+&lt;/p>&#xD;
+&#xD;
+&lt;p>&#xD;
+An appropriate nullFlavor can be used when the organizer/code or organizer/id is unknown.&#xD;
+&lt;/p>&#xD;
+&#xD;
+&lt;p>&#xD;
+If any Results Observation within the organizer has a statusCode of 'active', the Result Organizer must also have as statusCode of 'active.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_2J_O4BSVEeGGzu7fmW9pXw" name="ResultOrganizerCodeValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J_O4RSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>The value for 'code' in a result organizer SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12).  Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or other constrained terminology named by the US Department of Health and Human Services Office of National Coordinator or other federal agency. Local and/or regional codes for laboratory results SHOULD also be allowed.</body>
+        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96' or self.code.codeSystem = '2.16.840.1.113883.6.12'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_1dxCgBtuEeG4C_iCHrZZ9w" name="ResultOrganizerClassCodeValue" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="__kVC0BtuEeG4C_iCHrZZ9w">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHOULD contain zero or one [0..1] @classCode=&quot;CLUSTER&quot; Cluster (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) OR SHOULD contain zero or one [0..1] @classCode=&quot;BATTERY&quot; Battery (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass)</body>
+        <body>self.isClassCodeDefined() and (self.classCode = vocab::x_ActClassDocumentEntryOrganizer::CLUSTER or self.classCode = vocab::x_ActClassDocumentEntryOrganizer::BATTERY)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V14f4LbPEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V15G8LbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V18xULbPEeWQ25S2Lv5Ssw" name="ResultOrganizerClassCode" constrainedElement="_eyn08NzJEeG4UqssEkZt3w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V18xUbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>isDefined('classCode')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V1-mgLbPEeWQ25S2Lv5Ssw" name="ResultOrganizerMoodCode" constrainedElement="_2JzBoBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V1-mgbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::ActMood::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V2BCwLbPEeWQ25S2Lv5Ssw" name="ResultOrganizerId" constrainedElement="_2JzBoxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V2Bp0LbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.id->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V2arYLbPEeWQ25S2Lv5Ssw" name="ResultOrganizerStatusCodeP" constrainedElement="_2JzoshSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V2arYbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V2F7QLbPEeWQ25S2Lv5Ssw" name="ResultOrganizerStatusCode" constrainedElement="_2JzoshSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V2F7QbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'aborted' or value.code = 'active' or value.code = 'cancelled' or value.code = 'completed' or value.code = 'held' or value.code = 'suspended'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V2sYMLbPEeWQ25S2Lv5Ssw" name="ResultOrganizerCode" constrainedElement="_DiXJUB7KEeGaOZtrEokzNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V2sYMbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_qUZygLbPEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qUbAoLbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_49Mn4LbPEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_49Mn4bbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_68eYALbPEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_68eYAbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_Svv_8LbQEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_SvwnALbQEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_KxUUULbREeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_KxU7YLbREeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_WY8pULbSEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WY9QYLbSEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2_k9QLbSEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2_rq8LbSEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_lMPpELbTEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lMQQILbTEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_O4uHMLbUEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_O4vVULbUEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ekgDkLbUEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ekgqoLbUEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_uDGfkLbUEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_uDHGoLbUEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_Vj1v3LbeEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vj2W4LbeEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_W7lT8LbgEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_W7lT8bbgEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_i4aK8LbjEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_i4ayALbjEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_yPkiMLbjEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_yPlJQLbjEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_RM7D0LbnEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_RM7q4LbnEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_gL_HULbrEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gL_uYLbrEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ifb7MLbsEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ifb7MbbsEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_5YhO8LbwEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5Yh2ALbwEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_C8e7sLb1EeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_C8fiwLb1EeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_TF910Lb3EeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_TF_D8Lb3EeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_FJJjYLb8EeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_FJKKcLb8EeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_-tU9MLcAEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_2JxzgBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_-tVkQLcAEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2KCSNBSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_B6aX4EbvEd6besF9iFIJkQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_eyn08NzJEeG4UqssEkZt3w" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOnw0DcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_NjnHQEb9Ed6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2JzBoBSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_0UpRINy3EeG3d7pEoxuOZA" value="EVN"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2JzBoxSVEeGGzu7fmW9pXw" name="id" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2JzBpRSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2JzBpBSVEeGGzu7fmW9pXw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2JzoshSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_DiXJUB7KEeGaOZtrEokzNQ" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nzWGYSXhEeGmGonM_wRfcQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nzWGYCXhEeGmGonM_wRfcQ" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_JKfJkErcEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fFp9ULS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fFovMLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fFp9UbS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fFp9UrS6EeWcPq3zAthoUQ" value="1"/>
+      <association href="../consol.uml#_fFpWQLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fFovMLS6EeWcPq3zAthoUQ" name="ResultObservationEntryRelationship">
+      <ownedRule xmi:id="_cVfAkLbPEeWQ25S2Lv5Ssw" name="ResultOrganizerResultObservationEntryRelationshipResultObservation">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fFrLcLS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cVfAkbbPEeWQ25S2Lv5Ssw">
+          <language>OCL</language>
+          <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ResultObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fFovMbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fFrLcbS6EeWcPq3zAthoUQ" name="resultObservation" type="_2J1d4BSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fFrLcrS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fFrLc7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fFrLcLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <uml:Association xmi:id="_2JxzhxSVEeGGzu7fmW9pXw" memberEnd="_2JxziBSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2JxziBSVEeGGzu7fmW9pXw" type="_2JxzgBSVEeGGzu7fmW9pXw" isReadOnly="true" association="_2JxzhxSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_2KC5QBSVEeGGzu7fmW9pXw" base_Class="_2JxzgBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.1">
+    <ruleId>CONF:7126, CONF:9134</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2J_O4hSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J_O4BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7164</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2J_18BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:400</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2J_19BSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF:401</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2KAdAhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:402</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2KBEExSVEeGGzu7fmW9pXw" severity="INFO">
+    <ruleId>CONF:403</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2KBrIxSVEeGGzu7fmW9pXw" severity="INFO">
+    <ruleId>CONF:404</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2KCSMhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:406</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_2JzBphSVEeGGzu7fmW9pXw" base_Property="_2JzBoxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7127, R2.1=CONF:1198-7127</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2JzosRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7128</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_2J020BSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF:399</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_2JxziRSVEeGGzu7fmW9pXw" base_Association="_2JxzhxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7124, CONF:14850</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_2J1d4BSVEeGGzu7fmW9pXw" name="ResultObservation">
+    <ownedComment xmi:id="_JIcp4CXiEeGmGonM_wRfcQ">
+      <body>This clinical statement represents details of a lab, radiology, or other study performed on a patient.&#xD;
+&#xD;
+&lt;p>&#xD;
+The result observation includes a statusCode to allow recording the status of an observation. If a Results Observation is not completed, the Result Organizer must include corresponding statusCode. &quot;Pending&quot; results (e.g., a test has been run but results have not been reported yet) should be represented as &quot;active&quot; ActStatus.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_tjUmsB7rEeGaOZtrEokzNQ" name="ResultObservationTextReference" constrainedElement="_JTUuoByWEeGaOZtrEokzNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_1j5x8B7rEeGaOZtrEokzNQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>text, if present, SHOULD contain zero or one [0..1] reference</body>
+        <body>not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_VTuBkOJbEeG3cO7ebC3QuA" name="ResultObservationReferenceValue" constrainedElement="_tjUmsB7rEeGaOZtrEokzNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YA29QOJbEeG3cO7ebC3QuA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference, if present, SHOULD contain zero or one [0..1] @value</body>
+        <body>self.text->forAll(reference->size() = 1) implies self.text->forAll(reference->one(value->size() = 1))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_sq16gDsOEeGVevaNZNc6DA" name="ResultObservationTextReferenceValue" constrainedElement="_tjUmsB7rEeGaOZtrEokzNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_wwPCkDsOEeGVevaNZNc6DA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_2J69cBSVEeGGzu7fmW9pXw" name="ResultObservationCodeValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2J69cRSVEeGGzu7fmW9pXw">
+        <language>OCL</language>
+        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jXJw0B7vEeGDhvvzMMgVgQ" name="ResultObservationNoObservationRangeCode" constrainedElement="_2J1d4BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2eEXUB7vEeGDhvvzMMgVgQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHOULD contain zero or more [0..*] referenceRange. Such referenceRanges, if present, SHALL contain exactly one [1..1] observationRange. This observationRange SHALL NOT contain [0..0] code</body>
+        <body>self.referenceRange->forAll(range : cda::ReferenceRange | range.observationRange.code.code.oclIsUndefined())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_OYDHUB-4EeGZsIzHpWxp_Q" name="ResultObservationAuthorMultiplicity" constrainedElement="_2J1d4BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_UtV1cB-4EeGZsIzHpWxp_Q">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>MAY contain zero or one [0..1] author</body>
+        <body>self.author->size()&lt;2</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V2u0cLbPEeWQ25S2Lv5Ssw" name="ResultObservationTemplateId" constrainedElement="_2J1d4BSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V2u0cbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.2')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V25MgLbPEeWQ25S2Lv5Ssw" name="ResultObservationClassCode" constrainedElement="_2J4hMRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V25MgbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.classCode=vocab::ActClassObservation::OBS</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V28P0LbPEeWQ25S2Lv5Ssw" name="ResultObservationMoodCode" constrainedElement="_2J4hMxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V28P0bbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.moodCode=vocab::x_ActMoodDocumentObservation::EVN</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V2-sELbPEeWQ25S2Lv5Ssw" name="ResultObservationId" constrainedElement="_2J5IQBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V2-sEbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.id->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V3AhQLbPEeWQ25S2Lv5Ssw" name="ResultObservationCode" constrainedElement="_2J1d6hSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V3AhQbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V3CWcLbPEeWQ25S2Lv5Ssw" name="ResultObservationText" constrainedElement="_JTUuoByWEeGaOZtrEokzNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V3CWcbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V3GA0LbPEeWQ25S2Lv5Ssw" name="ResultObservationStatusCode" constrainedElement="_2J5vUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V3GA0bbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+value.code = 'aborted' or value.code = 'active' or value.code = 'cancelled' or value.code = 'completed' or value.code = 'held' or value.code = 'suspended'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V3XGkLbPEeWQ25S2Lv5Ssw" name="ResultObservationStatusCodeP" constrainedElement="_2J5vUBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V3XGkbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.statusCode.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V3tr4LbPEeWQ25S2Lv5Ssw" name="ResultObservationEffectiveTime" constrainedElement="_2J1d6xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V3tr4bbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.effectiveTime.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V3wvMLbPEeWQ25S2Lv5Ssw" name="ResultObservationValue" constrainedElement="_2J1d7xSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V3wvMbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.value->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V3zygLbPEeWQ25S2Lv5Ssw" name="ResultObservationInterpretationCode" constrainedElement="_2J6WYBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V3zygbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>((not self.interpretationCode->isEmpty()) and self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V3210LbPEeWQ25S2Lv5Ssw" name="ResultObservationMethodCode" constrainedElement="_2J6WZRSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V3210bbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>((not self.methodCode->isEmpty()) and self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() &lt;= 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V355ILbPEeWQ25S2Lv5Ssw" name="ResultObservationTargetSiteCode" constrainedElement="_Wwv9wBt9EeG4C_iCHrZZ9w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V355IbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>((not self.targetSiteCode->isEmpty()) and self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->size() &lt;= 1 and self.targetSiteCode->forAll(element | element.oclIsTypeOf(datatypes::CE)))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2J-AwRSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2J4hMRSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2J4hMhSVEeGGzu7fmW9pXw" value="OBS"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2J4hMxSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_y5yjINcZEeGfQ6frO0B-Jg" value="EVN"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2J5IQBSVEeGGzu7fmW9pXw" name="id" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2J5IQhSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J5IQRSVEeGGzu7fmW9pXw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2J1d6hSVEeGGzu7fmW9pXw" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_JTUuoByWEeGaOZtrEokzNQ" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JTUuohyWEeGaOZtrEokzNQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JTUuoRyWEeGaOZtrEokzNQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2J5vUBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2J1d6xSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" isReadOnly="true" aggregation="composite">
+      <ownedComment xmi:id="_AlBP0ByYEeGaOZtrEokzNQ">
+        <body>Represents clinically effective time of the measurement, which may be when the measurement was performed (e.g., a BP measurement), or may be when sample was taken (and measured some time afterwards) CONF:16838</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2J1d7hSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J1d7RSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2J1d7xSVEeGGzu7fmW9pXw" name="value" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2J6WYBSVEeGGzu7fmW9pXw" name="interpretationCode" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2J6WYxSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J6WYhSVEeGGzu7fmW9pXw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2J6WZRSVEeGGzu7fmW9pXw" name="methodCode" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2J6WaBSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2J6WZxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Wwv9wBt9EeG4C_iCHrZZ9w" name="targetSiteCode" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wwv9wxt9EeG4C_iCHrZZ9w"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wwv9wht9EeG4C_iCHrZZ9w" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:ConstraintValidation xmi:id="_2J69chSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2J69cBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7166</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2J7kgxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:415</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2J8LkxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:417</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2J8LlhSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF:419</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2J8yohSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:420</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2J9ZshSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:421</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_2J5IQxSVEeGGzu7fmW9pXw" base_Property="_2J5IQBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7137, R2.1=CONF:1198-7137</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2J2E8BSVEeGGzu7fmW9pXw" base_Property="_2J1d6hSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7133, R2.1=CONF:1198-7133</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2J2E8RSVEeGGzu7fmW9pXw" base_Property="_2J1d6xSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7140</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2J2sABSVEeGGzu7fmW9pXw" base_Property="_2J1d7xSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7143</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2J6WZBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2J6WYBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7147</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2J6WaRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2J6WZRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7148, R2.1=CONF:1198-7148</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_TIHhwBneEeGs5a462vYX5Q" base_Class="_2J1d4BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.2">
+    <ruleId>CONF:9138</ruleId>
+  </CDA:CDATemplate>
+  <uml:Class xmi:id="_2Js7AxSVEeGGzu7fmW9pXw" name="ResultsSection">
+    <ownedComment xmi:id="_XjcvMDr8EeGVevaNZNc6DA">
+      <body>The Results section contains the results of observations generated by laboratories, imaging procedures, and other procedures. The scope includes observations such as hematology, chemistry, serology, virology, toxicology, microbiology, plain x-ray, ultrasound, CT, MRI, angiography, echocardiography, nuclear medicine, pathology, and procedure observations. The section often includes notable results such as abnormal values or relevant trends, and could contain all results for the period of time being documented.&#xD;
+Laboratory results are typically generated by laboratories providing analytic services in areas such as chemistry, hematology, serology, histology, cytology, anatomic pathology, microbiology, and/or virology. These observations are based on analysis of specimens obtained from the patient and submitted to the laboratory.&#xD;
+Imaging results are typically generated by a clinician reviewing the output of an imaging procedure, such as where a cardiologist reports the left ventricular ejection fraction based on the review of a cardiac echocardiogram.&#xD;
+Procedure results are typically generated by a clinician to provide more granular information about component observations made during  a procedure, such as where a gastroenterologist reports the size of a polyp observed during a colonoscopy.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_V1p2YLbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalTemplateId" constrainedElement="_2Js7AxSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V1p2YbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.3.1')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V1v9ALbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalCodeP" constrainedElement="_7vUnoB7FEeGaOZtrEokzNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V1v9AbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V1sSoLbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalCode" constrainedElement="_7vUnoB7FEeGaOZtrEokzNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V1sSobbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V1znYLbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalTitle" constrainedElement="_7vYSAB7FEeGaOZtrEokzNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V1znYbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_V12DoLbPEeWQ25S2Lv5Ssw" name="ResultsSectionText" constrainedElement="_2Js7DhSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_V12DobbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_cUOcULbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fFlE0LS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cUPDYLbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::ResultsSection::ResultOrganizerEntry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_ksO6UBVgEeGQCvUGzi1kDQ" general="_xGqiEBVdEeGQCvUGzi1kDQ">
+      <ownedComment xmi:id="_IxQaoHavEeGK39q3kclbsA">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
+    <ownedAttribute xmi:id="_7vUnoB7FEeGaOZtrEokzNQ" name="code" visibility="private" isReadOnly="true" redefinedProperty="_xGqiFhVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7vYSAB7FEeGaOZtrEokzNQ" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7vYSAh7FEeGaOZtrEokzNQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7vYSAR7FEeGaOZtrEokzNQ" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+      <redefinedProperty href="#_gwkXoB7EEeGaOZtrEokzNQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Js7DhSVEeGGzu7fmW9pXw" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2Js7EBSVEeGGzu7fmW9pXw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Js7DxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fFlE0bS6EeWcPq3zAthoUQ" name="entry" type="_fFj2sLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fFlE0rS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fFlr4LS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fFlE0LS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fFj2sLS6EeWcPq3zAthoUQ" name="ResultOrganizerEntry">
+      <ownedRule xmi:id="_cU1gULbPEeWQ25S2Lv5Ssw" name="ResultsSectionResultOrganizerEntryResultOrganizer">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fFm6ALS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cU1gUbbPEeWQ25S2Lv5Ssw">
+          <language>OCL</language>
+          <body>self.organizer->exists(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::ResultOrganizer))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fFj2sbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fFm6AbS6EeWcPq3zAthoUQ" name="resultOrganizer" type="_2JxzgBSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fFm6ArS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fFm6A7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Y3Eg4UbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fFm6ALS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_2JtiEBSVEeGGzu7fmW9pXw" base_Class="_2Js7AxSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.3.1" assigningAuthorityName="">
+    <ruleId>CONF:7108</ruleId>
+    <ruleId>CONF:9137</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2Jv-URSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF:392</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2JuJIBSVEeGGzu7fmW9pXw" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:389</ruleId>
+    <ruleId>CONF:390</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_2JvXQBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:391</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_2Jv-UBSVEeGGzu7fmW9pXw" base_Property="_2Js7DhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7111</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_2JwlYxSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF:388</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_xGqiEBVdEeGQCvUGzi1kDQ" name="ResultsSectionEntriesOptional">
+    <ownedComment xmi:id="_xGqiERVdEeGQCvUGzi1kDQ" annotatedElement="_xGqiEBVdEeGQCvUGzi1kDQ">
+      <body>&lt;p>
+The Results section contains the results of observations generated by laboratories, imaging procedures, and other procedures. The scope includes observations such as hematology, chemistry, serology, virology, toxicology, microbiology, plain x-ray, ultrasound, CT, MRI, angiography, echocardiography, nuclear medicine, pathology, and procedure observations. The section often includes notable results such as abnormal values or relevant trends, and could contain all results for the period of time being documented.
+&lt;/p>
+&lt;p>
+Laboratory results are typically generated by laboratories providing analytic services in areas such as chemistry, hematology, serology, histology, cytology, anatomic pathology, microbiology, and/or virology. These observations are based on analysis of specimens obtained from the patient and submitted to the laboratory.
+&lt;/p>
+&lt;p>
+Imaging results are typically generated by a clinician reviewing the output of an imaging procedure, such as where a cardiologist reports the left ventricular ejection fraction based on the review of a cardiac echocardiogram.
+Procedure results are typically generated by a clinician to provide more granular information about component observations made during  a procedure, such as where a gastroenterologist reports the size of a polyp observed during a colonoscopy.
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_WZlC0LbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalTemplateId" constrainedElement="_xGqiEBVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZlp4LbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.3')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_WZoGILbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalCode" constrainedElement="_xGqiFhVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZoGIbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_WZrJcLbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalCodeP" constrainedElement="_xGqiFhVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZrJcbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_WZuMwLbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalTitle" constrainedElement="_gwkXoB7EEeGaOZtrEokzNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZuMwbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_WZwB8LbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalText" constrainedElement="_xGqiGBVdEeGQCvUGzi1kDQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WZwB8bbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_dlX7ILbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalEntry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fNlxULS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_dlYiMLbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::ResultsSectionEntriesOptional::ResultOrganizerEntry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_xGqiFRVdEeGQCvUGzi1kDQ">
+      <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_xGqiFhVdEeGQCvUGzi1kDQ" name="code" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_gwkXoB7EEeGaOZtrEokzNQ" name="title" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lZ-LsB7EEeGaOZtrEokzNQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lZ9koB7EEeGaOZtrEokzNQ" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xGqiGBVdEeGQCvUGzi1kDQ" name="text" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xGqiGhVdEeGQCvUGzi1kDQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xGqiGRVdEeGQCvUGzi1kDQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNlxUbS6EeWcPq3zAthoUQ" name="entry" type="_fNlKQLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNmYYLS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNmYYbS6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fNlxULS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fNlKQLS6EeWcPq3zAthoUQ" name="ResultOrganizerEntry">
+      <ownedRule xmi:id="_dmIwILbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalResultOrganizerEntryResultOrganizer">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fNnmgLS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dmIwIbbPEeWQ25S2Lv5Ssw">
+          <language>OCL</language>
+          <body>self.organizer->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::ResultOrganizer))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fNlKQbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fNnmgbS6EeWcPq3zAthoUQ" name="resultOrganizer" type="_2JxzgBSVEeGGzu7fmW9pXw" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fNnmgrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fNnmg7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Y3Eg4UbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fNnmgLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_OydAEBVfEeGQCvUGzi1kDQ" base_Class="_xGqiEBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.3">
+    <ruleId>CONF:7116, CONF:9136</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CodeSystemConstraint xmi:id="_sMASkBrGEeGZ46SdiDZtPQ" identifier="" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" base_Property="_xGqiFhVdEeGQCvUGzi1kDQ">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15432</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_ulYIQBrHEeGZ46SdiDZtPQ" base_Property="_xGqiGBVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:7118, R2.1=CONF:1198-7118</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_76siUBtxEeG4C_iCHrZZ9w" severity="WARNING" base_Constraint="_1dxCgBtuEeG4C_iCHrZZ9w">
+    <ruleId>CONF:7165</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_eaFnUBt1EeG4C_iCHrZZ9w" severity="WARNING">
+    <ruleId>CONF:9108</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_s1du8Bt5EeG4C_iCHrZZ9w" severity="WARNING">
+    <ruleId>CONF:9109</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_h3mWYBt9EeG4C_iCHrZZ9w" severity="INFO" base_Property="_Wwv9wBt9EeG4C_iCHrZZ9w">
+    <ruleId>CONF:7153, R2.1=CONF:1198-7153</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_B0fw0Bt-EeG4C_iCHrZZ9w" severity="INFO">
+    <ruleId>CONF:7149</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_KgrSkByWEeGaOZtrEokzNQ" severity="WARNING" base_Property="_JTUuoByWEeGaOZtrEokzNQ">
+    <ruleId>CONF:7138</ruleId>
+  </CDA:TextValue>
+  <CDA:TextValue xmi:id="_ojp5cB7EEeGaOZtrEokzNQ" base_Property="_gwkXoB7EEeGaOZtrEokzNQ">
+    <ruleId>CONF:8891, R2.1=CONF:1198-8891</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_7vV1wB7FEeGaOZtrEokzNQ" identifier="" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" base_Property="_7vUnoB7FEeGaOZtrEokzNQ">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15434</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_7vY5EB7FEeGaOZtrEokzNQ" base_Property="_7vYSAB7FEeGaOZtrEokzNQ">
+    <ruleId>CONF:8892</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_1-sa4B7HEeGaOZtrEokzNQ"/>
+  <CDA:ConstraintValidation xmi:id="_1-YHcB7rEeGaOZtrEokzNQ" severity="WARNING" base_Constraint="_tjUmsB7rEeGaOZtrEokzNQ">
+    <ruleId>CONF:15924</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_4nrIIB7vEeGDhvvzMMgVgQ" base_Constraint="_jXJw0B7vEeGDhvvzMMgVgQ">
+    <ruleId>CONF:7152</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_VKBKYB-4EeGZsIzHpWxp_Q" severity="INFO" base_Constraint="_OYDHUB-4EeGZsIzHpWxp_Q">
+    <ruleId>CONF:7149</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_GXXWwBrIEeGZ46SdiDZtPQ" memberEnd="_GXX90BrIEeGZ46SdiDZtPQ">
+    <ownedEnd xmi:id="_GXX90BrIEeGZ46SdiDZtPQ" type="_xGqiEBVdEeGQCvUGzi1kDQ" isReadOnly="true" association="_GXXWwBrIEeGZ46SdiDZtPQ"/>
+  </uml:Association>
+  <uml:Association xmi:id="_wGY9IBrJEeGZ46SdiDZtPQ" memberEnd="_wGY9IRrJEeGZ46SdiDZtPQ">
+    <ownedEnd xmi:id="_wGY9IRrJEeGZ46SdiDZtPQ" type="_2Js7AxSVEeGGzu7fmW9pXw" isReadOnly="true" association="_wGY9IBrJEeGZ46SdiDZtPQ"/>
+  </uml:Association>
+  <CDA:PropertyValidation xmi:id="_ukUD4CXhEeGmGonM_wRfcQ" base_Property="_DiXJUB7KEeGaOZtrEokzNQ">
+    <ruleId>CONF:7128, R2.1=CONF:1198-7128</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_yL4hMDsOEeGVevaNZNc6DA" base_Constraint="_sq16gDsOEeGVevaNZNc6DA">
+    <ruleId>CONF:15926</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_wnR5cNy1EeG3d7pEoxuOZA" base_Property="_2J4hMRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7130, R2.1=CONF:1198-7130</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_0AMWANy1EeG3d7pEoxuOZA" base_Property="_2J4hMxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7131, R2.1=CONF:1198-7131</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_4iqwwNy3EeG3d7pEoxuOZA" base_Property="_2JzBoBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7122, R2.1=CONF:1198-7122</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_glVIsNzJEeG4UqssEkZt3w" base_Property="_eyn08NzJEeG4UqssEkZt3w">
+    <ruleId>CONF:7121, R2.1=CONF:1198-7121</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_3q3_UOJYEeG3cO7ebC3QuA" base_Property="_xGqiFhVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:15431</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_7tYygOJYEeG3cO7ebC3QuA" base_Property="_7vUnoB7FEeGaOZtrEokzNQ">
+    <ruleId>CONF:15433</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_5JigQOJZEeG3cO7ebC3QuA" base_Property="_2JzoshSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:14848, R2.1=CONF:1198-14848</ruleId>
+    <reference href="../consol-vocab.uml#_NOFzsOJaEeG3cO7ebC3QuA"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_6p0AMOJZEeG3cO7ebC3QuA" base_Property="_2JzoshSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7123, R2.1=CONF:1198-7123</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_YUIekOJbEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_VTuBkOJbEeG3cO7ebC3QuA">
+    <ruleId>CONF:15925</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_uxrCoOJbEeG3cO7ebC3QuA" base_Property="_2J5vUBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7134, R2.1=CONF:1198-7134</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_yZSpkOJbEeG3cO7ebC3QuA" base_Property="_2J5vUBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:14849, R2.1=CONF:1198-14849</ruleId>
+    <reference href="../consol-vocab.uml#_NOFzsOJaEeG3cO7ebC3QuA"/>
+  </CDA:ValueSetConstraint>
+  <uml:Class xmi:id="_H85E0PF7EeOmsLWmq5fnqQ" clientDependency="_fO4koPF7EeOmsLWmq5fnqQ" name="ResultObservation2">
+    <ownedComment xmi:id="_TU3CoPF7EeOmsLWmq5fnqQ">
+      <body>&lt;/p>&#xD;
+This template represents the results of a laboratory, radiology, or other study performed on a patient.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+The result observation includes a statusCode to allow recording the status of an observation. &quot;Pending&quot; results (e.g., a test has been run but results have not been reported yet) should be represented as &quot;active&quot; ActStatus.&#xD;
+&lt;p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_PX_vAPF8EeOmsLWmq5fnqQ" name="ResultObservationAuthorMultiplicity">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_PX_vAfF8EeOmsLWmq5fnqQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_7FLrMPF9EeOmsLWmq5fnqQ" name="ResultObservationCodeValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_7FLrMfF9EeOmsLWmq5fnqQ">
+        <language>OCL</language>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_lFBDcMzmEeSLqosJ4F90vA" name="ResultObservationTextReference" constrainedElement="_JTUuoByWEeGaOZtrEokzNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lFBDcczmEeSLqosJ4F90vA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_tDNpEMzmEeSLqosJ4F90vA" name="ResultObservationReferenceValue" constrainedElement="_tjUmsB7rEeGaOZtrEokzNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_tDNpEczmEeSLqosJ4F90vA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_pSGH4MzmEeSLqosJ4F90vA" name="ResultObservationTextReferenceValue" constrainedElement="_tjUmsB7rEeGaOZtrEokzNQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_pSGH4czmEeSLqosJ4F90vA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_fNQT4M2sEeSEZ8MJJ3ZzLg" name="ResultObservationNoObservationRangeCode">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fNQT4c2sEeSEZ8MJJ3ZzLg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZgKZQLbPEeWQ25S2Lv5Ssw" name="ResultObservationTemplateId" constrainedElement="_H85E0PF7EeOmsLWmq5fnqQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZgKZQbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.2' and id.extension = '2015-08-01')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZgRuALbPEeWQ25S2Lv5Ssw" name="ResultObservationEffectiveTime" constrainedElement="_wzr4IPF7EeOmsLWmq5fnqQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZgRuAbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.effectiveTime.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZgS8ILbPEeWQ25S2Lv5Ssw" name="ResultObservationText" constrainedElement="_hgQjQMzmEeSLqosJ4F90vA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZgS8IbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>((not self.text.oclIsUndefined()) and self.text.isNullFlavorUndefined()) implies (true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZgXNkLbPEeWQ25S2Lv5Ssw" name="ResultObservationCodeP" constrainedElement="_srfQIMznEeSLqosJ4F90vA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZgXNkbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZgUxULbPEeWQ25S2Lv5Ssw" name="ResultObservationCode" constrainedElement="_srfQIMznEeSLqosJ4F90vA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZgUxUbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZgZCwLbPEeWQ25S2Lv5Ssw" name="ResultObservationValue" constrainedElement="_fBSjAM2BEeSEZ8MJJ3ZzLg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZgZp0LbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.value->isEmpty()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZgnFMLbPEeWQ25S2Lv5Ssw" name="ResultObservationInterpretationCodeP" constrainedElement="_tJS7UM2IEeSEZ8MJJ3ZzLg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZgnFMbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>((not self.interpretationCode->isEmpty()) and self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZgcGELbPEeWQ25S2Lv5Ssw" name="ResultObservationInterpretationCode" constrainedElement="_tJS7UM2IEeSEZ8MJJ3ZzLg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZgcGEbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>((not self.interpretationCode->isEmpty()) and self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (self.interpretationCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+value.codeSystem = '2.16.840.1.113883.5.83' and (value.code = 'A' or value.code = 'HX' or value.code = 'LX' or value.code = 'B' or value.code = 'Carrier' or value.code = 'D' or value.code = 'U' or value.code = 'IND' or value.code = 'I' or value.code = 'MS' or value.code = 'NEG' or value.code = 'N' or value.code = 'POS' or value.code = 'R' or value.code = 'S' or value.code = 'VS' or value.code = 'W')))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_Zg4K8LbPEeWQ25S2Lv5Ssw" name="ResultObservation2AuthorParticipation" constrainedElement="_kQZhQPF8EeOmsLWmq5fnqQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zg4K8bbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))->size() >= 0</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_bfJ1gLbPEeWQ25S2Lv5Ssw" name="ResultObservation2ReferenceRange" constrainedElement="_YnbSYM2LEeSEZ8MJJ3ZzLg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_bfJ1gbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.referenceRange->select(referenceRange : cda::ReferenceRange | not referenceRange.oclIsUndefined() and referenceRange.oclIsKindOf(cda::ReferenceRange))->size() >= 0</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_H85E0fF7EeOmsLWmq5fnqQ" general="_2J1d4BSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_fO4koPF7EeOmsLWmq5fnqQ" name="ResultObservation" client="_H85E0PF7EeOmsLWmq5fnqQ" supplier="_2J1d4BSVEeGGzu7fmW9pXw" contract="_2J1d4BSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_wzr4IPF7EeOmsLWmq5fnqQ" name="effectiveTime" visibility="private" isReadOnly="true" aggregation="composite" redefinedProperty="_2J1d6xSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_3qILgPF7EeOmsLWmq5fnqQ">
+        <body>Note: Represents the biologically relevant time of the measurement (e.g., the time a blood pressure reading is obtained, the time the blood sample was obtained for a chemistry test).</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wzr4IvF7EeOmsLWmq5fnqQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wzr4IfF7EeOmsLWmq5fnqQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_kQYTIPF8EeOmsLWmq5fnqQ" name="authorParticipation" isReadOnly="true" association="_kQZhQPF8EeOmsLWmq5fnqQ">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kQY6MPF8EeOmsLWmq5fnqQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kQY6MfF8EeOmsLWmq5fnqQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hgQjQMzmEeSLqosJ4F90vA" name="text" visibility="private" isReadOnly="true" aggregation="composite" redefinedProperty="_JTUuoByWEeGaOZtrEokzNQ">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hgQjQczmEeSLqosJ4F90vA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hgQjQszmEeSLqosJ4F90vA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_srfQIMznEeSLqosJ4F90vA" name="code" visibility="private" isReadOnly="true" redefinedProperty="_2J1d6hSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_CXu6IMzoEeSLqosJ4F90vA">
+        <body>This code SHOULD be a code from the LOINC that identifies the result observation. If an appropriate LOINC code does not exist, then the local code for this result SHALL be sent (CONF:1098-19212).</body>
+      </ownedComment>
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fBSjAM2BEeSEZ8MJJ3ZzLg" name="value" visibility="private" isReadOnly="true" redefinedProperty="_2J1d7xSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S-rO0U9sEeWsIc5CMrI4GA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S-rO0E9sEeWsIc5CMrI4GA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_tJS7UM2IEeSEZ8MJJ3ZzLg" name="interpretationCode" visibility="private" isReadOnly="true" aggregation="composite" redefinedProperty="_2J6WYBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tJS7Uc2IEeSEZ8MJJ3ZzLg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tJS7Us2IEeSEZ8MJJ3ZzLg" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_YnaEQM2LEeSEZ8MJJ3ZzLg" name="referenceRange" type="_ln_lsM2LEeSEZ8MJJ3ZzLg" isReadOnly="true" association="_YnbSYM2LEeSEZ8MJJ3ZzLg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YnaEQc2LEeSEZ8MJJ3ZzLg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YnarUM2LEeSEZ8MJJ3ZzLg" value="*"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_ln_lsM2LEeSEZ8MJJ3ZzLg" name="ReferenceRange">
+      <ownedComment xmi:id="_nl6q8M2LEeSEZ8MJJ3ZzLg">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_bfksQLbPEeWQ25S2Lv5Ssw" name="ResultObservation2ReferenceRangeObservationRange" constrainedElement="_p-V64M2LEeSEZ8MJJ3ZzLg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bfksQbbPEeWQ25S2Lv5Ssw">
+          <language>OCL</language>
+          <body>self.observationRange->one(observationRange : cda::ObservationRange | not observationRange.oclIsUndefined() and observationRange.oclIsKindOf(consol::ResultObservation2::ReferenceRange::ObservationRange))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_ln_lsc2LEeSEZ8MJJ3ZzLg">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_XFrNMEcaEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_p-UFsM2LEeSEZ8MJJ3ZzLg" name="observationRange" type="_zhK8AM2LEeSEZ8MJJ3ZzLg" isReadOnly="true" association="_p-V64M2LEeSEZ8MJJ3ZzLg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rjkzUM2LEeSEZ8MJJ3ZzLg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rjkMQM2LEeSEZ8MJJ3ZzLg" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_zhK8AM2LEeSEZ8MJJ3ZzLg" name="ObservationRange">
+        <ownedRule xmi:id="_Zg1HoLbPEeWQ25S2Lv5Ssw" name="ResultObservation2ReferenceRangeObservationRangeValue" constrainedElement="_0S-MYM2LEeSEZ8MJJ3ZzLg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zg1HobbPEeWQ25S2Lv5Ssw">
+            <language>OCL</language>
+            <body>not self.value.oclIsUndefined()</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_Zg2VwbbPEeWQ25S2Lv5Ssw" name="ResultObservation2ReferenceRangeObservationRangeCode" constrainedElement="_LEkU4M2MEeSEZ8MJJ3ZzLg">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zg280LbPEeWQ25S2Lv5Ssw">
+            <language>OCL</language>
+            <body>(not ((not self.code.oclIsUndefined()) and self.code.isNullFlavorUndefined()))</body>
+          </specification>
+        </ownedRule>
+        <generalization xmi:id="_zhK8Ac2LEeSEZ8MJJ3ZzLg">
+          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ujrlMEcZEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_0S-MYM2LEeSEZ8MJJ3ZzLg" name="value" visibility="private" isReadOnly="true" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1cjDkc2LEeSEZ8MJJ3ZzLg" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1cjDkM2LEeSEZ8MJJ3ZzLg" value="1"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_MUmcgErZEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LEkU4M2MEeSEZ8MJJ3ZzLg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OcWwEc2MEeSEZ8MJJ3ZzLg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OcWwEM2MEeSEZ8MJJ3ZzLg"/>
+          <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_NUzKsErYEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_OdUE4PF7EeOmsLWmq5fnqQ" base_Class="_H85E0PF7EeOmsLWmq5fnqQ" templateId="2.16.840.1.113883.10.20.22.4.2" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7136, CONF:1198-9138, CONF:1198-32575</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_dbBaUPF7EeOmsLWmq5fnqQ" base_Generalization="_H85E0fF7EeOmsLWmq5fnqQ"/>
+  <CDA:PropertyValidation xmi:id="_wzr4I_F7EeOmsLWmq5fnqQ" base_Property="_wzr4IPF7EeOmsLWmq5fnqQ">
+    <ruleId>CONF:1198-7140</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_kQZhQPF8EeOmsLWmq5fnqQ" memberEnd="_kQYTIPF8EeOmsLWmq5fnqQ _kQaIUPF8EeOmsLWmq5fnqQ">
+    <ownedEnd xmi:id="_kQaIUPF8EeOmsLWmq5fnqQ" type="_H85E0PF7EeOmsLWmq5fnqQ" isReadOnly="true" association="_kQZhQPF8EeOmsLWmq5fnqQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_lsTekPF8EeOmsLWmq5fnqQ" severity="WARNING" base_Association="_kQZhQPF8EeOmsLWmq5fnqQ">
+    <ruleId>CONF:1198-7149</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_gU40UPGEEeOmsLWmq5fnqQ" clientDependency="_7ztg8PGEEeOmsLWmq5fnqQ" name="ResultOrganizer2">
+    <ownedComment xmi:id="_r11vAPGEEeOmsLWmq5fnqQ">
+      <body>&lt;p>&#xD;
+This template provides a mechanism for grouping result observations. It contains information applicable to all of the contained result observations. The Result Organizer code categorizes the contained results into one of several commonly accepted values (e.g., &quot;Hematology&quot;, &quot;Chemistry&quot;, &quot;Nuclear Medicine&quot;).&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+If any Result Observation within the organizer has a statusCode of &quot;active&quot;, the Result Organizer must also have a statusCode of &quot;active&quot;.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_6J9xUPJHEeOA6ZIOnFjrYQ" name="ResultOrganizerCodeValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_6J9xUfJHEeOA6ZIOnFjrYQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>The value for 'code' in a result organizer SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) OR SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12). Laboratory results SHOULD be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or other constrained terminology named by the US Department of Health and Human Services Office of National Coordinator or other federal agency</body>
+        <body>self.code.isNullFlavorDefined() or self.code.codeSystem = '2.16.840.1.113883.6.1' or self.code.codeSystem = '2.16.840.1.113883.6.96' or self.code.codeSystem = '2.16.840.1.113883.6.12'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_IXgb0PJNEeOA6ZIOnFjrYQ" name="ResultOrganizerClassCodeValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_IXgb0fJNEeOA6ZIOnFjrYQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>This constraint is being overridden as it has been removed in v2 and should never fire</body>
+        <body>true</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZhLs8LbPEeWQ25S2Lv5Ssw" name="ResultOrganizerTemplateId" constrainedElement="_gU40UPGEEeOmsLWmq5fnqQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZhLs8bbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1' and id.extension = '2015-08-01')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZhOwQLbPEeWQ25S2Lv5Ssw" name="ResultOrganizer2EffectiveTime" constrainedElement="_TLSSAPJOEeOA6ZIOnFjrYQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZhOwQbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>((not self.effectiveTime.oclIsUndefined()) and self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZhTBsLbPEeWQ25S2Lv5Ssw" name="ResultOrganizer2AuthorParticipation" constrainedElement="_Q40qsPJPEeOA6ZIOnFjrYQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZhTBsbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.author->select(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(consol::AuthorParticipation))->size() >= 0</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_gU40UfGEEeOmsLWmq5fnqQ" general="_2JxzgBSVEeGGzu7fmW9pXw"/>
+    <substitution xmi:id="_7ztg8PGEEeOmsLWmq5fnqQ" name="ResultOrganizer" client="_gU40UPGEEeOmsLWmq5fnqQ" supplier="_2JxzgBSVEeGGzu7fmW9pXw" contract="_2JxzgBSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_TLSSAPJOEeOA6ZIOnFjrYQ" name="effectiveTime" visibility="private" type="_-aBi0M21EeSEZ8MJJ3ZzLg" isReadOnly="true" aggregation="composite">
+      <ownedComment xmi:id="_AK_bcPJPEeOA6ZIOnFjrYQ">
+        <body>Note: The effectiveTime is an interval that spans the effectiveTimes of the contained result observations. Because all contained result observations have a required time stamp, it is not required that this effectiveTime be populated.</body>
+      </ownedComment>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TLSSAvJOEeOA6ZIOnFjrYQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TLSSAfJOEeOA6ZIOnFjrYQ" value="1"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_VIaUIErcEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Q4zckPJPEeOA6ZIOnFjrYQ" name="authorParticipation" isReadOnly="true" association="_Q40qsPJPEeOA6ZIOnFjrYQ">
+      <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q4zckfJPEeOA6ZIOnFjrYQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q4zckvJPEeOA6ZIOnFjrYQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fpQZobS6EeWcPq3zAthoUQ" name="entryRelationship" type="_fpPLgLS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpQZorS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpQZo7S6EeWcPq3zAthoUQ" value="1"/>
+      <association href="../consol.uml#_fpQZoLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_-aBi0M21EeSEZ8MJJ3ZzLg" name="IVLTS">
+      <ownedComment xmi:id="_Kj7T4M22EeSEZ8MJJ3ZzLg">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_ZhQlcLbPEeWQ25S2Lv5Ssw" name="ResultOrganizer2IVLTSLow" constrainedElement="_IjhiY822EeSEZ8MJJ3ZzLg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZhQlcbbPEeWQ25S2Lv5Ssw">
+          <language>OCL</language>
+          <body> ( self.isNullFlavorUndefined() implies (not self.low.oclIsUndefined() ))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ZhRzkLbPEeWQ25S2Lv5Ssw" name="ResultOrganizer2IVLTSHigh" constrainedElement="_IjhiYM22EeSEZ8MJJ3ZzLg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZhRzkbbPEeWQ25S2Lv5Ssw">
+          <language>OCL</language>
+          <body> ( self.isNullFlavorUndefined() implies (not self.high.oclIsUndefined() ))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_-aCJ4M21EeSEZ8MJJ3ZzLg">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      </generalization>
+      <ownedAttribute xmi:id="_IjhiY822EeSEZ8MJJ3ZzLg" name="low" visibility="private" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WYcq0c22EeSEZ8MJJ3ZzLg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WYcq0M22EeSEZ8MJJ3ZzLg" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_IjhiYM22EeSEZ8MJJ3ZzLg" name="high" visibility="private" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vp1RUc22EeSEZ8MJJ3ZzLg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vp1RUM22EeSEZ8MJJ3ZzLg" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fpPLgLS6EeWcPq3zAthoUQ" name="ResultObservation2EntryRelationship">
+      <ownedRule xmi:id="_ildw4LbPEeWQ25S2Lv5Ssw" name="ResultOrganizer2ResultObservation2EntryRelationshipResultObservation2">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fpSO0LS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ildw4bbPEeWQ25S2Lv5Ssw">
+          <language>OCL</language>
+          <body>self.observation->exists(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ResultObservation2))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fpPLgbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fpSO0bS6EeWcPq3zAthoUQ" name="resultObservation2" type="_H85E0PF7EeOmsLWmq5fnqQ" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fpSO0rS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fpSO07S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fpSO0LS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_jSlUgPGEEeOmsLWmq5fnqQ" base_Class="_gU40UPGEEeOmsLWmq5fnqQ" templateId="2.16.840.1.113883.10.20.22.4.1" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7126, CONF:1198-9134, CONF:1198-32588</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_4LYIUPGEEeOmsLWmq5fnqQ" base_Generalization="_gU40UfGEEeOmsLWmq5fnqQ"/>
+  <uml:Association xmi:id="__AWn0PGfEeOmsLWmq5fnqQ" memberEnd="__AXO4PGfEeOmsLWmq5fnqQ">
+    <ownedEnd xmi:id="__AXO4PGfEeOmsLWmq5fnqQ" type="_gU40UPGEEeOmsLWmq5fnqQ" isReadOnly="true" association="__AWn0PGfEeOmsLWmq5fnqQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_BqHfYPGgEeOmsLWmq5fnqQ" base_Association="__AWn0PGfEeOmsLWmq5fnqQ">
+    <ruleId>CONF:1198-7124, CONF:1198-14850</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_6J_mgPJHEeOA6ZIOnFjrYQ" severity="WARNING" base_Constraint="_6J9xUPJHEeOA6ZIOnFjrYQ">
+    <ruleId>CONF:1198-19218, CONF:1198-19219</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_Tx7bQPJOEeOA6ZIOnFjrYQ" severity="INFO" base_Property="_TLSSAPJOEeOA6ZIOnFjrYQ">
+    <ruleId>CONF:1198-31865</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_Q40qsPJPEeOA6ZIOnFjrYQ" memberEnd="_Q4zckPJPEeOA6ZIOnFjrYQ _Q41RwPJPEeOA6ZIOnFjrYQ">
+    <ownedEnd xmi:id="_Q41RwPJPEeOA6ZIOnFjrYQ" type="_gU40UPGEEeOmsLWmq5fnqQ" isReadOnly="true" association="_Q40qsPJPEeOA6ZIOnFjrYQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_R8VWIPJPEeOA6ZIOnFjrYQ" severity="WARNING" base_Association="_Q40qsPJPEeOA6ZIOnFjrYQ">
+    <ruleId>CONF:1198-31149</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_yaJ3QAFAEeSaVZ5WxWd94w" clientDependency="_-lsnEAFAEeSaVZ5WxWd94w" name="ResultsSectionEntriesOptional2">
+    <ownedComment xmi:id="_4GquIAFAEeSaVZ5WxWd94w">
+      <body>&lt;p>&#xD;
+This section contains the results of observations generated by laboratories, imaging and other procedures. The scope includes observations of hematology, chemistry, serology, virology, toxicology, microbiology, plain x-ray, ultrasound, CT, MRI, angiography, echocardiography, nuclear medicine, pathology, and procedure observations.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+This section often includes notable results such as abnormal values or relevant trends. It can contain all results for the period of time being documented.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Laboratory results are typically generated by laboratories providing analytic services in areas such as chemistry, hematology, serology, histology, cytology, anatomic pathology, microbiology, and/or virology. These observations are based on analysis of specimens obtained from the patient and submitted to the laboratory.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Imaging results are typically generated by a clinician reviewing the output of an imaging procedure, such as where a cardiologist reports the left ventricular ejection fraction based on the review of a cardiac echocardiogram.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Procedure results are typically generated by a clinician to provide more granular information about component observations made during a procedure, such as where a gastroenterologist reports the size of a polyp observed during a colonoscopy.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_ZvU2oLbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalTemplateId" constrainedElement="_yaJ3QAFAEeSaVZ5WxWd94w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZvU2obbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.3' and id.extension = '2015-08-01')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZvZvILbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalCodeP" constrainedElement="_eNpvcAFFEeSaVZ5WxWd94w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZvaWMLbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZvXS4LbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalCode" constrainedElement="_eNpvcAFFEeSaVZ5WxWd94w">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZvXS4bbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_j0DD4LbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptional2Entry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_ftxGMLS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_j0DD4bbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::ResultsSectionEntriesOptional2::ResultOrganizer2Entry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_yaM6kAFAEeSaVZ5WxWd94w" general="_xGqiEBVdEeGQCvUGzi1kDQ"/>
+    <substitution xmi:id="_-lsnEAFAEeSaVZ5WxWd94w" name="ResultsSectionEntriesOptional" client="_yaJ3QAFAEeSaVZ5WxWd94w" supplier="_xGqiEBVdEeGQCvUGzi1kDQ" contract="_xGqiEBVdEeGQCvUGzi1kDQ"/>
+    <ownedAttribute xmi:id="_eNpvcAFFEeSaVZ5WxWd94w" name="code" visibility="private" isReadOnly="true" redefinedProperty="_xGqiFhVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ftxGMbS6EeWcPq3zAthoUQ" name="entry" type="_ftvRALS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ftxGMrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ftxGM7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_ftxGMLS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_ftvRALS6EeWcPq3zAthoUQ" name="ResultOrganizer2Entry">
+      <ownedRule xmi:id="_j0ZpMLbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptional2ResultOrganizer2EntryResultOrganizer2">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fty7YLS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_j0ZpMbbPEeWQ25S2Lv5Ssw">
+          <language>OCL</language>
+          <body>self.organizer->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::ResultOrganizer2))->size() >= 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_ftvRAbS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fty7YbS6EeWcPq3zAthoUQ" name="resultOrganizer2" type="_gU40UPGEEeOmsLWmq5fnqQ" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fty7YrS6EeWcPq3zAthoUQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fty7Y7S6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Y3Eg4UbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fty7YLS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_2-WbMAFAEeSaVZ5WxWd94w" base_Class="_yaJ3QAFAEeSaVZ5WxWd94w" templateId="2.16.840.1.113883.10.20.22.2.3" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7116, CONF:1198-9136, CONF:1198-32591</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_9nLJUAFAEeSaVZ5WxWd94w" base_Generalization="_yaM6kAFAEeSaVZ5WxWd94w"/>
+  <CDA:CodeSystemConstraint xmi:id="_eNqWgAFFEeSaVZ5WxWd94w" identifier="" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" base_Property="_eNpvcAFFEeSaVZ5WxWd94w">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-15432, CONF:1198-31041</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_eNrkoAFFEeSaVZ5WxWd94w" base_Property="_eNpvcAFFEeSaVZ5WxWd94w">
+    <ruleId>CONF:1198-15431</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_m7FZoAFFEeSaVZ5WxWd94w" memberEnd="_m7FZoQFFEeSaVZ5WxWd94w">
+    <ownedEnd xmi:id="_m7FZoQFFEeSaVZ5WxWd94w" type="_yaJ3QAFAEeSaVZ5WxWd94w" isReadOnly="true" association="_m7FZoAFFEeSaVZ5WxWd94w"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_oUe1gAFFEeSaVZ5WxWd94w" severity="WARNING" base_Association="_m7FZoAFFEeSaVZ5WxWd94w">
+    <ruleId>CONF:1198-7119, CONF:1198-15515</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Class xmi:id="_bAAhEALtEeSueJWOLw5iaQ" clientDependency="_tU0VMALtEeSueJWOLw5iaQ" name="ResultsSection2">
+    <ownedComment xmi:id="_gHqXYALtEeSueJWOLw5iaQ">
+      <body>&lt;p>&#xD;
+The Results Section contains observations of results generated by laboratories, imaging procedures, and other procedures. These coded result observations are contained within a Results Organizer in the Results Section. The scope includes observations such as hematology, chemistry, serology, virology, toxicology, microbiology, plain x-ray, ultrasound, CT, MRI, angiography, echocardiography, nuclear medicine, pathology, and procedure observations. The section often includes notable results such as abnormal values or relevant trends, and could contain all results for the period of time being documented.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Laboratory results are typically generated by laboratories providing analytic services in areas such as chemistry, hematology, serology, histology, cytology, anatomic pathology, microbiology, and/or virology. These observations are based on analysis of specimens obtained from the patient and submitted to the laboratory.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Imaging results are typically generated by a clinician reviewing the output of an imaging procedure, such as where a cardiologist reports the left ventricular ejection fraction based on the review of a cardiac echocardiogram.&#xD;
+&lt;/p>&#xD;
+&lt;p>&#xD;
+Procedure results are typically generated by a clinician to provide more granular information about component observations made during a procedure, such as where a gastroenterologist reports the size of a polyp observed during a colonoscopy.&#xD;
+&lt;/p></body>
+    </ownedComment>
+    <ownedRule xmi:id="_ZzdvwLbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalTemplateId" constrainedElement="_bAAhEALtEeSueJWOLw5iaQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZzdvwbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.3.1' and id.extension = '2015-08-01')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZzgzELbPEeWQ25S2Lv5Ssw" name="ResultsSection2NullFlavor" constrainedElement="_9GaaAKgSEeSoILDCw_oFwA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZzgzEbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>(not self.nullFlavor.oclIsUndefined()) implies (self.nullFlavor=vocab::NullFlavor::NI)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZzpV8LbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalCodeP" constrainedElement="_0-RkcALuEeSueJWOLw5iaQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZzpV8bbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZzkdcLbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalCode" constrainedElement="_0-RkcALuEeSueJWOLw5iaQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZzkdcbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ZzuOcLbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalTitle" constrainedElement="_WU_RgALvEeSueJWOLw5iaQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZzuOcbbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.title.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_Zzx40LbPEeWQ25S2Lv5Ssw" name="ResultsSectionEntriesOptionalText" constrainedElement="_WU-qcALvEeSueJWOLw5iaQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Zzx40bbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>not self.text.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_kcPFQLbPEeWQ25S2Lv5Ssw" name="ResultsSection2Entry">
+      <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fvvcILS6EeWcPq3zAthoUQ"/>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kcPFQrbPEeWQ25S2Lv5Ssw">
+        <language>OCL</language>
+        <body>self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(consol::ResultsSection2::ResultOrganizer2Entry))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_bAC9UALtEeSueJWOLw5iaQ" general="_yaJ3QAFAEeSaVZ5WxWd94w"/>
+    <substitution xmi:id="_tU0VMALtEeSueJWOLw5iaQ" name="ResultsSection" client="_bAAhEALtEeSueJWOLw5iaQ" supplier="_2Js7AxSVEeGGzu7fmW9pXw" contract="_2Js7AxSVEeGGzu7fmW9pXw"/>
+    <ownedAttribute xmi:id="_9GaaAKgSEeSoILDCw_oFwA" name="nullFlavor" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__yyDSUDcEd6xYZuu1VKCVw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9GaaAagSEeSoILDCw_oFwA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9GaaAqgSEeSoILDCw_oFwA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_A-WU4KgTEeSoILDCw_oFwA" value="NI"/>
+      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_fTE6z0xwEd6h-an5IXo-DA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0-RkcALuEeSueJWOLw5iaQ" name="code" visibility="private" isReadOnly="true" redefinedProperty="_eNpvcAFFEeSaVZ5WxWd94w">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WU_RgALvEeSueJWOLw5iaQ" name="title" visibility="private" isReadOnly="true" aggregation="composite" redefinedProperty="_gwkXoB7EEeGaOZtrEokzNQ">
+      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WU_RggLvEeSueJWOLw5iaQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WU_RgQLvEeSueJWOLw5iaQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WU-qcALvEeSueJWOLw5iaQ" name="text" visibility="private" isReadOnly="true" aggregation="composite" redefinedProperty="_xGqiGBVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WU-qcgLvEeSueJWOLw5iaQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WU-qcQLvEeSueJWOLw5iaQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fvvcIbS6EeWcPq3zAthoUQ" name="entry" type="_fvtm8LS6EeWcPq3zAthoUQ" isReadOnly="true" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fvvcIrS6EeWcPq3zAthoUQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fvvcI7S6EeWcPq3zAthoUQ" value="1"/>
+      <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_SvZ88DxYEd6JwqSGecoePg"/>
+      <association href="../consol.uml#_fvvcILS6EeWcPq3zAthoUQ"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fvtm8LS6EeWcPq3zAthoUQ" name="ResultOrganizer2Entry">
+      <ownedRule xmi:id="_kcqjELbPEeWQ25S2Lv5Ssw" name="ResultsSection2ResultOrganizer2EntryResultOrganizer2">
+        <constrainedElement xmi:type="uml:Association" href="../consol.uml#_fvxRULS6EeWcPq3zAthoUQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_kcqjEbbPEeWQ25S2Lv5Ssw">
+          <language>OCL</language>
+          <body>self.organizer->exists(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(consol::ResultOrganizer2))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fvtm8bS6EeWcPq3zAthoUQ">
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_r0FX0DxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_fvx4YLS6EeWcPq3zAthoUQ" name="resultOrganizer2" type="_gU40UPGEEeOmsLWmq5fnqQ" isReadOnly="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fvx4YbS6EeWcPq3zAthoUQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fvx4YrS6EeWcPq3zAthoUQ" value="*"/>
+        <subsettedProperty href="pathmap://CDA_MODEL/cda.uml#_Y3Eg4UbvEd6besF9iFIJkQ"/>
+        <association href="../consol.uml#_fvxRULS6EeWcPq3zAthoUQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_e0ccAALtEeSueJWOLw5iaQ" base_Class="_bAAhEALtEeSueJWOLw5iaQ" templateId="2.16.840.1.113883.10.20.22.2.3.1" templateVersion="2015-08-01">
+    <ruleId>CONF:1198-7108, CONF:1198-9137, CONF:1198-32592</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConformsTo xmi:id="_sCLBkALtEeSueJWOLw5iaQ" base_Generalization="_bAC9UALtEeSueJWOLw5iaQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_0-SLgALuEeSueJWOLw5iaQ" identifier="" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" base_Property="_0-RkcALuEeSueJWOLw5iaQ">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-15434, CONF:1198-31040</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_0-TZoALuEeSueJWOLw5iaQ" base_Property="_0-RkcALuEeSueJWOLw5iaQ">
+    <ruleId>CONF:1198-15433</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="__2YWcALuEeSueJWOLw5iaQ" memberEnd="__2YWcQLuEeSueJWOLw5iaQ">
+    <ownedEnd xmi:id="__2YWcQLuEeSueJWOLw5iaQ" type="_bAAhEALtEeSueJWOLw5iaQ" isReadOnly="true" association="__2YWcALuEeSueJWOLw5iaQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_CgRJ0ALvEeSueJWOLw5iaQ" base_Association="__2YWcALuEeSueJWOLw5iaQ">
+    <ruleId>CONF:1198-7112, CONF:1198-15516</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_WU-qcwLvEeSueJWOLw5iaQ" base_Property="_WU-qcALvEeSueJWOLw5iaQ">
+    <ruleId>CONF:1198-7111</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_XyOrkALvEeSueJWOLw5iaQ" base_Property="_WU_RgALvEeSueJWOLw5iaQ">
+    <ruleId>CONF:1198-8892</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_-Epj4KgSEeSoILDCw_oFwA" severity="INFO" base_Property="_9GaaAKgSEeSoILDCw_oFwA">
+    <ruleId>CONF:1198-32875</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_srf3MMznEeSLqosJ4F90vA" base_Property="_srfQIMznEeSLqosJ4F90vA"/>
+  <CDA:CodeSystemConstraint xmi:id="_uOxn0MznEeSLqosJ4F90vA" base_Property="_srfQIMznEeSLqosJ4F90vA" severity="WARNING">
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1198-7133</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_fBTKEM2BEeSEZ8MJJ3ZzLg" base_Property="_fBSjAM2BEeSEZ8MJJ3ZzLg">
+    <ruleId>CONF:1198-7143</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_tJTiYM2IEeSEZ8MJJ3ZzLg" severity="WARNING" base_Property="_tJS7UM2IEeSEZ8MJJ3ZzLg">
+    <ruleId>CONF:1198-7147</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_AZXd0M2JEeSEZ8MJJ3ZzLg" base_Property="_tJS7UM2IEeSEZ8MJJ3ZzLg">
+    <ruleId>CONF:1198-32476</ruleId>
+    <reference href="../consol-vocab.uml#_UnwpwM2JEeSEZ8MJJ3ZzLg"/>
+  </CDA:ValueSetConstraint>
+  <uml:Association xmi:id="_YnbSYM2LEeSEZ8MJJ3ZzLg" memberEnd="_YnaEQM2LEeSEZ8MJJ3ZzLg _Ynb5cM2LEeSEZ8MJJ3ZzLg">
+    <ownedEnd xmi:id="_Ynb5cM2LEeSEZ8MJJ3ZzLg" type="_H85E0PF7EeOmsLWmq5fnqQ" isReadOnly="true" association="_YnbSYM2LEeSEZ8MJJ3ZzLg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_ZZ54MM2LEeSEZ8MJJ3ZzLg" severity="WARNING" base_Association="_YnbSYM2LEeSEZ8MJJ3ZzLg">
+    <ruleId>CONF:1198-7150</ruleId>
+  </CDA:AssociationValidation>
+  <uml:Association xmi:id="_p-V64M2LEeSEZ8MJJ3ZzLg" memberEnd="_p-UFsM2LEeSEZ8MJJ3ZzLg _p-V64c2LEeSEZ8MJJ3ZzLg">
+    <ownedEnd xmi:id="_p-V64c2LEeSEZ8MJJ3ZzLg" type="_ln_lsM2LEeSEZ8MJJ3ZzLg" isReadOnly="true" association="_p-V64M2LEeSEZ8MJJ3ZzLg"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_rAQD0M2LEeSEZ8MJJ3ZzLg" base_Association="_p-V64M2LEeSEZ8MJJ3ZzLg">
+    <ruleId>CONF:1198-7151</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_1ASlYM2LEeSEZ8MJJ3ZzLg" base_Property="_0S-MYM2LEeSEZ8MJJ3ZzLg">
+    <ruleId>CONF:1198-32175</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_LtlcsM2MEeSEZ8MJJ3ZzLg" message="" base_Property="_LEkU4M2MEeSEZ8MJJ3ZzLg">
+    <ruleId>CONF:1198-7152</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Ti-5kM22EeSEZ8MJJ3ZzLg" base_Property="_IjhiYM22EeSEZ8MJJ3ZzLg">
+    <ruleId>CONF:1198-32489</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_T-r-IM22EeSEZ8MJJ3ZzLg" base_Property="_IjhiY822EeSEZ8MJJ3ZzLg">
+    <ruleId>CONF:1198-32488</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_lm2fYBaLEeWCiY8iFDNBKA" severity="INFO" base_Constraint="_IXgb0PJNEeOA6ZIOnFjrYQ"/>
+  <CDA:ConstraintValidation xmi:id="_TpVv8BaWEeWPafwaDwpzXw" severity="INFO" base_Constraint="_PX_vAPF8EeOmsLWmq5fnqQ"/>
+  <CDA:ConstraintValidation xmi:id="_UKZ1oBaWEeWPafwaDwpzXw" severity="INFO" base_Constraint="_7FLrMPF9EeOmsLWmq5fnqQ"/>
+  <CDA:ConstraintValidation xmi:id="_UlLGEBaWEeWPafwaDwpzXw" severity="INFO" base_Constraint="_lFBDcMzmEeSLqosJ4F90vA"/>
+  <CDA:ConstraintValidation xmi:id="_VFN4EBaWEeWPafwaDwpzXw" severity="INFO" base_Constraint="_tDNpEMzmEeSLqosJ4F90vA"/>
+  <CDA:ConstraintValidation xmi:id="_VnxykBaWEeWPafwaDwpzXw" severity="INFO" base_Constraint="_pSGH4MzmEeSLqosJ4F90vA"/>
+  <CDA:ConstraintValidation xmi:id="_WLVLkBaWEeWPafwaDwpzXw" severity="INFO" base_Constraint="_fNQT4M2sEeSEZ8MJJ3ZzLg"/>
+  <CDA:Inline xmi:id="_fFkdwLS6EeWcPq3zAthoUQ" base_Class="_fFj2sLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fFovMrS6EeWcPq3zAthoUQ" base_Class="_fFovMLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fNlKQrS6EeWcPq3zAthoUQ" base_Class="_fNlKQLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fpPLgrS6EeWcPq3zAthoUQ" base_Class="_fpPLgLS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_ftvRArS6EeWcPq3zAthoUQ" base_Class="_ftvRALS6EeWcPq3zAthoUQ"/>
+  <CDA:Inline xmi:id="_fvtm8rS6EeWcPq3zAthoUQ" base_Class="_fvtm8LS6EeWcPq3zAthoUQ"/>
+  <CDA:ConformsTo xmi:id="_V1pPULbPEeWQ25S2Lv5Ssw" base_Generalization="_ksO6UBVgEeGQCvUGzi1kDQ"/>
+  <Ecore:EClass xmi:id="_V1qdcLbPEeWQ25S2Lv5Ssw" base_Class="_2Js7AxSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP ResultsSectionEntriesOptionalTitle ResultsSectionText ResultsSectionEntry' templateId.root='2.16.840.1.113883.10.20.22.2.3.1' code.code='30954-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Relevant diagnostic tests and/or laboratory data' constraints.validation.dependOn.ResultsSectionEntriesOptionalCode='ResultsSectionEntriesOptionalCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_V15uALbPEeWQ25S2Lv5Ssw" base_Class="_2JxzgBSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerStatusCodeP ResultOrganizerCode' templateId.root='2.16.840.1.113883.10.20.22.4.1' constraints.validation.warning='ResultOrganizerCodeValue ResultOrganizerClassCodeValue' moodCode='EVN' constraints.validation.dependOn.ResultOrganizerStatusCode='ResultOrganizerStatusCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_V2vbgLbPEeWQ25S2Lv5Ssw" base_Class="_2J1d4BSVEeGGzu7fmW9pXw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultObservationTemplateId ResultObservationTextReferenceValue ResultObservationNoObservationRangeCode ResultObservationClassCode ResultObservationMoodCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationStatusCodeP ResultObservationEffectiveTime ResultObservationValue' templateId.root='2.16.840.1.113883.10.20.22.4.2' constraints.validation.warning='ResultObservationTextReference ResultObservationReferenceValue ResultObservationCodeValue ResultObservationText ResultObservationInterpretationCode' constraints.validation.info='ResultObservationAuthorMultiplicity ResultObservationMethodCode ResultObservationTargetSiteCode' classCode='OBS' moodCode='EVN'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_WZmQ8LbPEeWQ25S2Lv5Ssw" base_Class="_xGqiEBVdEeGQCvUGzi1kDQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP ResultsSectionEntriesOptionalTitle ResultsSectionEntriesOptionalText ResultsSectionEntriesOptionalEntry' templateId.root='2.16.840.1.113883.10.20.22.2.3' code.code='30954-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Relevant diagnostic tests and/or laboratory data'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ZgLAULbPEeWQ25S2Lv5Ssw" base_Class="_H85E0PF7EeOmsLWmq5fnqQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultObservationTemplateId ResultObservationEffectiveTime ResultObservationText ResultObservationCodeP ResultObservationValue ResultObservationInterpretationCode' templateId.root='2.16.840.1.113883.10.20.22.4.2' templateId.extension='2015-08-01' constraints.validation.info='ResultObservationAuthorMultiplicity ResultObservationCodeValue ResultObservationTextReference ResultObservationReferenceValue ResultObservationTextReferenceValue ResultObservationNoObservationRangeCode' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='ResultObservationCode ResultObservationInterpretationCodeP ResultObservation2AuthorParticipation ResultObservation2ReferenceRange' constraints.validation.dependOn.ResultObservationCode='ResultObservationCodeP' interpretationCode.codeSystem='2.16.840.1.113883.5.83' interpretationCode.codeSystemName='ObservationInterpretation' constraints.validation.dependOn.ResultObservationInterpretationCode='ResultObservationInterpretationCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_Zg2VwLbPEeWQ25S2Lv5Ssw" base_Class="_zhK8AM2LEeSEZ8MJJ3ZzLg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultObservation2ReferenceRangeObservationRangeValue ResultObservation2ReferenceRangeObservationRangeCode'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ZhMUALbPEeWQ25S2Lv5Ssw" base_Class="_gU40UPGEEeOmsLWmq5fnqQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId' templateId.root='2.16.840.1.113883.10.20.22.4.1' templateId.extension='2015-08-01' constraints.validation.warning='ResultOrganizerCodeValue ResultOrganizer2AuthorParticipation' constraints.validation.info='ResultOrganizerClassCodeValue ResultOrganizer2EffectiveTime'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ZhRMgLbPEeWQ25S2Lv5Ssw" base_Class="_-aBi0M21EeSEZ8MJJ3ZzLg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizer2IVLTSLow ResultOrganizer2IVLTSHigh'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ZvVdsLbPEeWQ25S2Lv5Ssw" base_Class="_yaJ3QAFAEeSaVZ5WxWd94w">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP ResultsSectionEntriesOptional2Entry' templateId.root='2.16.840.1.113883.10.20.22.2.3' templateId.extension='2015-08-01' code.code='30954-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Relevant diagnostic tests and/or laboratory data' constraints.validation.dependOn.ResultsSectionEntriesOptionalCode='ResultsSectionEntriesOptionalCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_Zze94LbPEeWQ25S2Lv5Ssw" base_Class="_bAAhEALtEeSueJWOLw5iaQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalCodeP ResultsSectionEntriesOptionalTitle ResultsSectionEntriesOptionalText ResultsSection2Entry' templateId.root='2.16.840.1.113883.10.20.22.2.3.1' templateId.extension='2015-08-01' nullFlavor='NI' constraints.validation.info='ResultsSection2NullFlavor' code.code='30954-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Relevant diagnostic tests and/or laboratory data' constraints.validation.dependOn.ResultsSectionEntriesOptionalCode='ResultsSectionEntriesOptionalCodeP'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_bgVhQLbPEeWQ25S2Lv5Ssw" base_Class="_ln_lsM2LEeSEZ8MJJ3ZzLg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultObservation2ReferenceRangeObservationRange'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_cVb9QLbPEeWQ25S2Lv5Ssw" base_Class="_fFj2sLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionResultOrganizerEntryResultOrganizer'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_cV7sgLbPEeWQ25S2Lv5Ssw" base_Class="_fFovMLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerResultObservationEntryRelationshipResultObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_dm4XALbPEeWQ25S2Lv5Ssw" base_Class="_fNlKQLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='ResultsSectionEntriesOptionalResultOrganizerEntryResultOrganizer'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_il9gILbPEeWQ25S2Lv5Ssw" base_Class="_fpPLgLS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizer2ResultObservation2EntryRelationshipResultObservation2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_j0xcoLbPEeWQ25S2Lv5Ssw" base_Class="_ftvRALS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='ResultsSectionEntriesOptional2ResultOrganizer2EntryResultOrganizer2'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_kdjT4LbPEeWQ25S2Lv5Ssw" base_Class="_fvtm8LS6EeWcPq3zAthoUQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSection2ResultOrganizer2EntryResultOrganizer2'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>
