@@ -406,7 +406,7 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode() {
@@ -422,19 +422,48 @@ public class ImmunizationMedicationInformationTest extends CDAValidationTest {
 					(ImmunizationMedicationInformation) objectToTest, diagnostician, map);
 			}
 
+			private final String VACCINES_ADMINISTERED_CVX = "2.16.840.1.113883.12.292";
+
 			@Override
-			protected void updateToFail(ImmunizationMedicationInformation target) {
-				target.init();
-				Material mm = CDAFactory.eINSTANCE.createMaterial();
-				target.setManufacturedMaterial(mm);
+			public void addFailTests() {
+
+				// no code
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ImmunizationMedicationInformation target) {
+						target.init();
+						Material mm = CDAFactory.eINSTANCE.createMaterial();
+						target.setManufacturedMaterial(mm);
+					}
+				});
+
+				// bad code
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ImmunizationMedicationInformation target) {
+						target.init();
+						Material mm = CDAFactory.eINSTANCE.createMaterial();
+						mm.setCode(DatatypesFactory.eINSTANCE.createCE(BAD_CODE_VALUE, VACCINES_ADMINISTERED_CVX));
+						target.setManufacturedMaterial(mm);
+					}
+				});
+
 			}
 
 			@Override
-			protected void updateToPass(ImmunizationMedicationInformation target) {
-				Material mm = CDAFactory.eINSTANCE.createMaterial();
-
-				mm.setCode(DatatypesFactory.eINSTANCE.createCE("143", "2.16.840.1.113883.12.292"));
-				target.setManufacturedMaterial(mm);
+			public void addPassTests() {
+				final String[] VACCINE_CODES_ADDED = { "143", "150", "163" };
+				for (final String code : VACCINE_CODES_ADDED) {
+					addPassTest(new PassTest() {
+						@Override
+						public void updateToPass(ImmunizationMedicationInformation target) {
+							target.init();
+							Material mm = CDAFactory.eINSTANCE.createMaterial();
+							mm.setCode(DatatypesFactory.eINSTANCE.createCE(code, VACCINES_ADMINISTERED_CVX));
+							target.setManufacturedMaterial(mm);
+						}
+					});
+				}
 			}
 
 		};
