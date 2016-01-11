@@ -44,7 +44,7 @@ public interface PurposeActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | \r\n  entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | \n  entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)'"
 	 * @generated
 	 */
 	boolean validatePurposeActivityHasReason(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -61,7 +61,7 @@ public interface PurposeActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll(entryRelationship : cda::EntryRelationship |\r\n  entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON implies( \r\n  not (entryRelationship.act.oclIsUndefined() and entryRelationship.encounter.oclIsUndefined()\r\n       and entryRelationship.observation.oclIsUndefined() and entryRelationship.procedure.oclIsUndefined()\r\n       and entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.supply.oclIsUndefined())))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->forAll(entryRelationship : cda::EntryRelationship |\n  entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON implies( \n  not (entryRelationship.act.oclIsUndefined() and entryRelationship.encounter.oclIsUndefined()\r\n       and entryRelationship.observation.oclIsUndefined() and entryRelationship.procedure.oclIsUndefined()\r\n       and entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.supply.oclIsUndefined())))'"
 	 * @generated
 	 */
 	boolean validatePurposeActivityReasonType(DiagnosticChain diagnostics, Map<Object, Object> context);

@@ -66,7 +66,7 @@ public interface PayerEntry extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV\r\n  implies not part.time.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV\n  implies not part.time.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validatePayerEntryCoveredPartyTime(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -93,7 +93,7 @@ public interface PayerEntry extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD\r\n  implies not part.time.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD\n  implies not part.time.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validatePayerEntrySubscriberTime(DiagnosticChain diagnostics, Map<Object, Object> context);

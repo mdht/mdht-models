@@ -68,7 +68,7 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() \r\n   or not author.assignedAuthor.representedOrganization.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() \n   or not author.assignedAuthor.representedOrganization.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateUnstructuredOrScannedDocumentHasAssignedAuthor(DiagnosticChain diagnostics,
@@ -84,7 +84,7 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()\r\n   and target.patientRole.id->forAll(roleId : datatypes::II | not roleId.root.oclIsUndefined()\r\n   and not roleId.extension.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()\n   and target.patientRole.id->forAll(roleId : datatypes::II | not roleId.root.oclIsUndefined()\n   and not roleId.extension.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredOrScannedDocumentPatientRoleId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -99,7 +99,7 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->exists(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()\r\n   and target.patientRole.addr->exists(address : datatypes::AD | address.country->exists(c : datatypes::ADXP |\r\n   not c.oclIsUndefined() and c.getText().size() > 0)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->exists(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()\n   and target.patientRole.addr->exists(address : datatypes::AD | address.country->exists(c : datatypes::ADXP |\n   not c.oclIsUndefined() and c.getText().size() > 0)))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredOrScannedDocumentHasPatientRoleAddress(DiagnosticChain diagnostics,
@@ -115,7 +115,7 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->exists(target : cda::RecordTarget | not target.patientRole.patient.oclIsUndefined()\r\n   and target.patientRole.patient.name->exists(name: datatypes::PN |\r\n      not name.given->isEmpty() and not name.family->isEmpty()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->exists(target : cda::RecordTarget | not target.patientRole.patient.oclIsUndefined()\n   and target.patientRole.patient.name->exists(name: datatypes::PN |\n      not name.given->isEmpty() and not name.family->isEmpty()))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredOrScannedDocumentHasPatientName(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -129,7 +129,7 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->one(target : cda::RecordTarget |\r\n   not target.patientRole.patient.administrativeGenderCode.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->one(target : cda::RecordTarget |\n   not target.patientRole.patient.administrativeGenderCode.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateUnstructuredOrScannedDocumentHasPatientGenderCode(DiagnosticChain diagnostics,
@@ -144,7 +144,7 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->one(target : cda::RecordTarget |\r\n   not target.patientRole.patient.birthTime.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->one(target : cda::RecordTarget |\n   not target.patientRole.patient.birthTime.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateUnstructuredOrScannedDocumentHasPatientBirthYear(DiagnosticChain diagnostics,
@@ -202,7 +202,7 @@ public interface UnstructuredOrScannedDocument extends GeneralHeaderConstraints 
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.legalAuthenticator.assignedEntity.id->size() > 0 implies (\r\n   self.legalAuthenticator.assignedEntity.id->forAll(ident : datatypes::II |\r\n      not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.legalAuthenticator.assignedEntity.id->size() > 0 implies (\n   self.legalAuthenticator.assignedEntity.id->forAll(ident : datatypes::II |\n      not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredOrScannedDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics,

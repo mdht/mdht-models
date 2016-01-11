@@ -39,7 +39,7 @@ public interface ScanOriginalAuthor extends Author {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthor.id->forAll(ident : datatypes::II |\r\n   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthor.id->forAll(ident : datatypes::II |\n   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateScanOriginalAuthorHasAssignedAuthorId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -53,7 +53,7 @@ public interface ScanOriginalAuthor extends Author {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthor.representedOrganization.id->forAll(ident : datatypes::II |\r\n   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthor.representedOrganization.id->forAll(ident : datatypes::II |\n   not ident.root.oclIsUndefined() and not ident.extension.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,

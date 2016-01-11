@@ -114,7 +114,7 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.informant->isEmpty() \r\nor not self.getSection().informant->isEmpty()\r\nor not self.getClinicalDocument().informant->isEmpty()\r\nor self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)\r\nor (self.entryRelationship->exists(rel : cda::EntryRelationship | \r\n   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR\r\n   and rel.observation.code.code = \'48766-0\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.informant->isEmpty() \nor not self.getSection().informant->isEmpty()\nor not self.getClinicalDocument().informant->isEmpty()\r\nor self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)\r\nor (self.entryRelationship->exists(rel : cda::EntryRelationship | \r\n   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR\r\n   and rel.observation.code.code = \'48766-0\'))'"
 	 * @generated
 	 */
 	boolean validateMedicationCombinationMedicationInformationSource(DiagnosticChain diagnostics,
@@ -158,7 +158,7 @@ public interface MedicationCombinationMedication extends MedicationActivity {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : \r\r\ncda::ClinicalStatement | not target.oclIsUndefined() and \r\n  (target.oclIsKindOf(consol::ProblemConcernAct) or target.oclIsKindOf(consol::ProblemObservation)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : \ncda::ClinicalStatement | not target.oclIsUndefined() and \r\n  (target.oclIsKindOf(consol::ProblemConcernAct) or target.oclIsKindOf(consol::ProblemObservation)))'"
 	 * @generated
 	 */
 	boolean validateMedicationCombinationMedicationHasReasonProblem(DiagnosticChain diagnostics,
