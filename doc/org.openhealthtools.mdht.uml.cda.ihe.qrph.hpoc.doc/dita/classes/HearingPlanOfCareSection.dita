@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Hearing Plan Of Care Section</title>
+<shortdesc conref="generated/_HearingPlanOfCareSection.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_HearingPlanOfCareSection.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_HearingPlanOfCareSection.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_HearingPlanOfCareSection.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_HearingPlanOfCareSection.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_HearingPlanOfCareSection.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p><b>Hearing Plan Of Care Section example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_HearingPlanOfCareSection.dita#classId/example">
+</codeblock>
+</body>
+</topic>

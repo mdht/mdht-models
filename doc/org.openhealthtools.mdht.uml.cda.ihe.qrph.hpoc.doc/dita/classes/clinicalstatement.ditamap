@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Clinical Statement Templates">
+<topicref href="HearingPlanOfCareActivityAct.dita" type="topic" />
+<topicref href="HearingPlanOfCareActivityEncounter.dita" type="topic" />
+<topicref href="HearingPlanOfCareActivityNonMedicinalSupply.dita" type="topic" />
+<topicref href="HearingPlanOfCareActivityObservation.dita" type="topic" />
+<topicref href="HearingPlanOfCareActivityProcedure.dita" type="topic" />
+<topicref href="HearingPlanOfCareActivitySubstanceAdministration.dita" type="topic" />
+<topicref href="HearingPlanOfCareInstructions.dita" type="topic" />
+<topicref href="HearingPlanOfCareProblemConcern.dita" type="topic" />
+<topicref href="HearingPlanOfCareProcedureActivityAct.dita" type="topic" />
+<topicref href="HearingPlanOfCareProcedureActivityProcedure.dita" type="topic" />
+<topicref href="HearingScreeningOrganizer.dita" type="topic" />
+<topicref href="HearingScreeningOutcomeObservationLeft.dita" type="topic" />
+<topicref href="HearingScreeningOutcomeObservationRight.dita" type="topic" />
+<topicref href="HearingScreeningResultObservation.dita" type="topic" />
+<topicref href="HearingScreeningResultsOrganizer.dita" type="topic" />
+<topicref href="ProblemConcern.dita" type="topic" />
+<topicref href="ProcedureActivityAct.dita" type="topic" />
+<topicref href="ProcedureActivityProcedure.dita" type="topic" />
+<topicref href="ReasonNotScreened.dita" type="topic" />
+<topicref href="RiskIndicatorForHearingLossObservation.dita" type="topic" />
+</map>

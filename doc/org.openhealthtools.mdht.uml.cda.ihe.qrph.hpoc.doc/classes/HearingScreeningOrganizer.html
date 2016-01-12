@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Hearing Screening Organizer"/>
+<meta name="abstract" content="[Organizer: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.8]"/>
+<meta name="description" content="[Organizer: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.8]"/>
+<meta name="DC.Coverage" content="Organizer"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Hearing Screening Organizer</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Hearing Screening Organizer</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Organizer: templateId <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.8</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i"><strong class="ph b">Template Design Relationships</strong><br/>
+This template further constrains of the IHE US Realm Hearing Screening Organizer section template. Machine readable entries associated with this template use US Realm vocabulary constraints established for this purpose.<br/>
+<br/>
+The design is builds upon on the C-CDA R1.1 Result Organizer template.<br/>
+<br/>
+<strong class="ph b">Template Purpose</strong><br/>
+This organizer records the outcome assessment of the hearing screening and the associated results used to determine the outcome assessment. It includes a component for the "screening outcome" for the left ear and a component "screening outcome" for the right ear. Each of the outcome observations carries an optional indication of the reason screening was not performed. The Hearing Screening Organizer also includes the set of result observations which were gathered. They are a third component and are organized in a Results Organizer.<br/>
+<br/>
+Note: If any Result Observation within the Result Organizer has a statusCode of 'active', the Result Organizer must also have as statusCode of 'active'.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.8"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultOrganizer.html">Consol Result Organizer</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.1</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="CLUSTER" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7121)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:7128)<tt class="ph tt"><strong class="ph b">/@code</strong>="54111-0" </tt><em class="ph i">Newborn Hearing Loss Panel</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="HearingScreeningOutcomeObservationLeft.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.9]">Hearing Screening Outcome Observation Left</a><ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HearingScreeningOutcomeObservationLeft.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.9]">Hearing Screening Outcome Observation Left</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.9</tt>)</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="HearingScreeningOutcomeObservationRight.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.11]">Hearing Screening Outcome Observation Right</a><ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HearingScreeningOutcomeObservationRight.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.11]">Hearing Screening Outcome Observation Right</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.11</tt>)</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">organizer</strong></tt>, where its type is <a class="xref" href="HearingScreeningResultsOrganizer.html" title="[Organizer: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.12]">Hearing Screening Results Organizer</a><ol class="ol" type="i">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HearingScreeningResultsOrganizer.html" title="[Organizer: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.12]">Hearing Screening Results Organizer</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.12</tt>)</li>
+</ol>
+</li>
+</ol>
+
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Hearing Screening Organizer example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="CLUSTER" moodCode="EVN"&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.8"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.1"/&gt;
+  &lt;id root="MDHT" extension="1011714103"/&gt;
+  &lt;code code="54111-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Newborn Hearing Loss Panel"/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2015"/&gt;
+    &lt;high value="2015"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;component&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="283489915"/&gt;
+      &lt;code code="2127889759"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2015"/&gt;
+        &lt;high value="2015"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CD" code="1962058321"/&gt;
+      &lt;methodCode code="1069894523"/&gt;
+      &lt;targetSiteCode code="1161896528"/&gt;
+      &lt;author/&gt;
+      &lt;entryRelationship typeCode="RSON"/&gt;
+    &lt;/observation&gt;
+  &lt;/component&gt;
+  &lt;component&gt;
+    &lt;observation&gt;
+      &lt;id root="MDHT" extension="744807298"/&gt;
+      &lt;code code="1722367389"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2015"/&gt;
+        &lt;high value="2015"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;value xsi:type="CD" code="219609018"/&gt;
+      &lt;methodCode code="1181860442"/&gt;
+      &lt;targetSiteCode code="256943861"/&gt;
+      &lt;author/&gt;
+      &lt;entryRelationship typeCode="RSON"/&gt;
+    &lt;/observation&gt;
+  &lt;/component&gt;
+  &lt;component&gt;
+    &lt;organizer&gt;
+      &lt;id root="MDHT" extension="1848897291"/&gt;
+      &lt;code code="1407681518"/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;component/&gt;
+    &lt;/organizer&gt;
+  &lt;/component&gt;
+&lt;/organizer&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

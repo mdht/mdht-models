@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>VS Hearing Screening Methods</title>
+<prolog id="prolog">
+<resourceid id="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.13"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>VS_HearingScreeningMethods - 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.13</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Version</entry><entry>1</entry></row>
+<row><entry>Definition</entry><entry>This value set holds a list of coded concepts representing the possible methods for performing hearing screening.</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA10387-1</entry><entry>LOINC</entry><entry>Automated auditory brainstem response (AABR)</entry></row>
+<row><entry>LA10388-9</entry><entry>LOINC</entry><entry>Auditory brain stem response (ABR)</entry></row>
+<row><entry>LA10389-7</entry><entry>LOINC</entry><entry>Otoacoustic emissions (OAE)</entry></row>
+<row><entry>LA10390-5</entry><entry>LOINC</entry><entry>Distortion product otoacoustic emissions (DPOAE)</entry></row>
+<row><entry>LA10391-3</entry><entry>LOINC</entry><entry>Transient otoacoustic emissions (TOAE)</entry></row>
+<row><entry>LA12406-7</entry><entry>LOINC</entry><entry>Methodology unknown</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

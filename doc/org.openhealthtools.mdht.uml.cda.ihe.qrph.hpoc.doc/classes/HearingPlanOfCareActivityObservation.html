@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Hearing Plan Of Care Activity Observation"/>
+<meta name="abstract" content="[Observation: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.4]"/>
+<meta name="description" content="[Observation: templateId 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.4]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Hearing Plan Of Care Activity Observation</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Hearing Plan Of Care Activity Observation</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.4</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i"><strong class="ph b">Template Design Relationships</strong><br/>
+This template is a specialization of the IHE UV Realm HPoC Activity Observation template. Machine readable entries associated with this template use US Realm vocabulary constraints established for this purpose.<br/>
+<br/>
+The design is based on the C-CDA R1.1 Plan of Care Activity Observation template (2.16.840.1.113883.10.20.22.4.44). A value set is added to express the type of observation activities relevant to a hearing plan of care.<br/>
+<br/>
+<strong class="ph b">Template Purpose</strong><br/>
+This is the template for the Plan of Care Activity observation. This template is used to record diagnostic tests and screenings which produce results.</em></p>
+</div>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.4"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareActivityObservation.html">Consol Plan Of Care Activity Observation</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.44</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/VS_HPoCActivityObservation.html">VS_HPoCActivityObservation</a> 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.6</tt><strong class="ph b"> STATIC</strong> 1
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt>
+<ol class="ol" type="a">
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: contains exactly one [1..1] low and contains exactly one [1..1] high</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+<ol class="ol" type="a">
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: contains exactly one [1..1] reference such that it contains exactly one [1..1] @value such that it begins with a '#' and points to its corresponding narrative (using the approach defined in CDA Release 2, Section 4.3.5.1)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Hearing Plan Of Care Activity Observation example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;observation xmlns="urn:hl7-org:v3" classCode="OBS"&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.4"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.44"/&gt;
+  &lt;id root="MDHT" extension="1247505830"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+  &lt;text&gt;Text Value&lt;/text&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2015"/&gt;
+    &lt;high value="2015"/&gt;
+  &lt;/effectiveTime&gt;
+&lt;/observation&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

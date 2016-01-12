@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Value Sets">
+<topicref href="VS_HPoCActivityAct.dita" type="topic" />
+<topicref href="VS_HPoCActivityEncounter.dita" type="topic" />
+<topicref href="VS_HPoCActivityNonMedicinalSupply.dita" type="topic" />
+<topicref href="VS_HPoCActivityObservation.dita" type="topic" />
+<topicref href="VS_HPoCActivityProcedure.dita" type="topic" />
+<topicref href="VS_HPoCActivitySubstanceAdministration.dita" type="topic" />
+<topicref href="VS_HPoCEncounterType.dita" type="topic" />
+<topicref href="VS_HPoCInstructions.dita" type="topic" />
+<topicref href="VS_HPoCProblemObservations.dita" type="topic" />
+<topicref href="VS_HPoCServiceEvent.dita" type="topic" />
+<topicref href="VS_HearingScreeningMethods.dita" type="topic" />
+<topicref href="VS_HearingScreeningOutcomeObservationValues.dita" type="topic" />
+<topicref href="VS_HearingScreeningTargetSites.dita" type="topic" />
+<topicref href="VS_HearingScreeningTestResultValues.dita" type="topic" />
+<topicref href="VS_ReasonNotScreened.dita" type="topic" />
+<topicref href="VS_RiskFactorsForHearing.dita" type="topic" />
+</map>

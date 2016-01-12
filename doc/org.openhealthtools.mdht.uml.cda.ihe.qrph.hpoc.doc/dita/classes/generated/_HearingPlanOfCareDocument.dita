@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Hearing Plan Of Care Document - conformance rules</title>
+<shortdesc id="shortdesc">[ClinicalDocument: templateId <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ClinicalDocument</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i><b>Template Design Relationships</b>
+This template is an adaptation of the IHE UV Realm HPoC Document template. It references section templates which have been adapted for the US Realm. These adapted section templates include entry templates which have been adapted for the US Realm. Machine readable entries associated with US Realm templates have been modified to use vocabulary constraints established for the Hearing Plan of Care in the US Realm.
+
+<b>Template Purpose</b>
+This document records information for the hearing plan of care for a newborn. It includes hearing plan of care instructions and planned care activities. It includes the results of the hearing screening provided prior to discharge as well as information about hearing risk indicators which may be available. It includes the newborn's problems list, highlighting the concerns which are likely to be relevant for a hearing plan of care. It also includes treatment procedures performed on the newborn during the birth encounter, highlighting the procedures which are likely to be relevant for a hearing plan of care.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.1"</li></ol></li>
+<li><b>SHALL</b> conform to <xref href="../HearingPlanOfCareHeader.dita">Hearing Plan Of Care Header</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.2.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>realmCode</b></tt><tt><b>/@code</b>="US" </tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>typeId</b></tt>
+<ol>
+<li>typeId <b>SHALL</b> contain exactly one [1..1] @root="2.16.840.1.113883.1.3"</li>
+<li>typeId <b>SHALL</b> contain exactly one [1..1] @extension="POCD_HD000040"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
+<ol>
+<li>id <b>SHALL</b> be a globally unique identifier for the document</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="34817-7" </tt><i>Hearing Screening Evaluation and Management Note</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareSection.dita">Hearing Plan Of Care Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.1</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>MAY</b> equal "Hearing Screening Evaluation and Management Note"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ol>
+<li>effectiveTime <b>SHALL</b> conform to US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> HL7 BasicConfidentialityKind 2.16.840.1.113883.1.11.16926</tt><b> STATIC</b>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> Language 2.16.840.1.113883.1.11.11526</tt><b> DYNAMIC</b>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HearingScreeningSection.dita">Hearing Screening Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.2</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../RiskIndicatorsForHearingLossSection.dita">Risk Indicators For Hearing Loss Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.3</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemsSection.dita">Problems Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.4</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureSection.dita">Procedure Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.6</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>setId</b></tt>
+<ol>
+<li>Both setId and versionNumber <b>SHALL</b> be present or both <b>SHALL</b> be absent.</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>versionNumber</b></tt>
+<ol>
+<li>Both setId and versionNumber <b>SHALL</b> be present or both <b>SHALL</b> be absent.</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../HearingPlanOfCareHeader.dita">Hearing Plan Of Care Header</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.2.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>realmCode</b></tt><tt><b>/@code</b>="US" </tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>typeId</b></tt>
+<ol>
+<li>typeId <b>SHALL</b> contain exactly one [1..1] @root="2.16.840.1.113883.1.3"</li>
+<li>typeId <b>SHALL</b> contain exactly one [1..1] @extension="POCD_HD000040"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
+<ol>
+<li>id <b>SHALL</b> be a globally unique identifier for the document</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="34817-7" </tt><i>Hearing Screening Evaluation and Management Note</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>MAY</b> equal "Hearing Screening Evaluation and Management Note"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ol>
+<li>effectiveTime <b>SHALL</b> conform to US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> HL7 BasicConfidentialityKind 2.16.840.1.113883.1.11.16926</tt><b> STATIC</b>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> Language 2.16.840.1.113883.1.11.11526</tt><b> DYNAMIC</b>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>setId</b></tt>
+<ol>
+<li>Both setId and versionNumber <b>SHALL</b> be present or both <b>SHALL</b> be absent.</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>versionNumber</b></tt>
+<ol>
+<li>Both setId and versionNumber <b>SHALL</b> be present or both <b>SHALL</b> be absent.</li></ol></li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Component2.dita">Component2</xref></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>recordTarget</b></tt> <ol><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> <ol><li> This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt><ol><li>The content of addr <b>SHALL</b> be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</li></ol></li><li> This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt></li><li> This patientRole <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt><ol><li>Such telecoms <b>SHOULD</b> contain zero or one [0..1] @use, which <b>SHALL</b> be selected from ValueSet Telecom Use (US Realm Header) 2.16.840.1.113883.11.20.9.20 DYNAMIC.</li></ol></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> <ol><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> Administrative Gender (HL7 V3) 2.16.840.1.113883.1.11.1</tt><b> DYNAMIC</b></li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>birthTime</b></tt><ol><li>birthTime <b>SHALL</b> be precise to year.</li><li>birthTime <b>SHOULD</b> be precise to day.</li></ol></li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>ethnicGroupCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> Ethnicity Value Set 2.16.840.1.114222.4.11.837</tt><b> DYNAMIC</b></li><li> This patient <b>SHOULD</b> contain zero or one [0..1] <tt><b>maritalStatusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> Marital Status 2.16.840.1.113883.1.11.12212</tt><b> STATIC</b> 1</li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt><ol><li>The content of name <b>SHALL</b> be a conformant US Realm Patient Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1)</li></ol></li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>raceCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> Race Value Set 2.16.840.1.113883.1.11.14914</tt><b> DYNAMIC</b></li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>religiousAffiliationCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> Religious Affiliation 2.16.840.1.113883.1.11.19185</tt><b> STATIC</b> 1</li><li> This patient <b>MAY</b> contain zero or one [0..1] <tt><b>birthplace</b></tt> <ol><li> This birthplace <b>SHALL</b> contain exactly one [1..1] <tt><b>place</b></tt> <ol><li> This place <b>SHALL</b> contain exactly one [1..1] <tt><b>addr</b></tt><ol><li>This addr <b>SHOULD</b> contain zero or one [0..1] country, which <b>SHALL</b> be selected from ValueSet CountryValueSet 2.16.840.1.113883.3.88.12.80.63 DYNAMIC</li><li>This addr <b>MAY</b> contain zero or one [0..1] postalCode, which <b>SHALL</b> be selected from ValueSet PostalCodeValueSet 2.16.840.1.113883.3.88.12.80.2 DYNAMIC</li><li>If country is US, this addr <b>SHALL</b> contain exactly one [1..1] state, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.113883.3.88.12.80.1 StateValueSet DYNAMIC</li></ol></li></ol> </li></ol> </li><li> This patient <b>SHOULD</b> contain at least one [1..*] <tt><b>guardian</b></tt> <ol><li> Such guardians <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt><ol><li>The content of addr <b>SHALL</b> be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</li></ol></li><li> Such guardians <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> PersonalAndLegalRelationshipRoleType 2.16.840.1.113883.11.20.12.1</tt><b> DYNAMIC</b></li><li> Such guardians <b>SHOULD</b> contain zero or more [0..*] <tt><b>telecom</b></tt><ol><li>The telecom, if present <b>SHOULD</b> contain zero or one [0..1] @use, which <b>SHALL</b> be selected from ValueSet Telecom Use (US Realm Header) 2.16.840.1.113883.11.20.9.20 DYNAMIC.</li></ol></li><li> Such guardians Contains exactly one [1..1] <tt><b>guardianPerson</b></tt> <ol><li> This guardianPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt><ol><li>The content of name <b>SHALL</b> be a conformant US Realm Patient Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1)</li></ol></li></ol> </li></ol> </li><li> This patient <b>SHOULD</b> contain zero or more [0..*] <tt><b>languageCommunication</b></tt> <ol><li> Such languageCommunications <b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> Language 2.16.840.1.113883.1.11.11526</tt><b> DYNAMIC</b></li><li> Such languageCommunications <b>MAY</b> contain zero or one [0..1] <tt><b>modeCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> LanguageAbilityMode 2.16.840.1.113883.1.11.12249</tt><b> STATIC</b> 1</li><li> Such languageCommunications <b>MAY</b> contain zero or one [0..1] <tt><b>preferenceInd</b></tt></li><li> Such languageCommunications <b>SHOULD</b> contain zero or one [0..1] <tt><b>proficiencyLevelCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> LanguageAbilityProficiency 2.16.840.1.113883.1.11.12199</tt><b> STATIC</b></li></ol> </li></ol> </li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>author</b></tt> <ol><li> Such authors <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt><ol><li>The content <b>SHALL</b> be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4)</li></ol></li><li> Such authors <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> <ol><li> This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>addr</b></tt><ol><li>The content of addr <b>SHALL</b> be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</li></ol></li><li> This assignedAuthor <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> Healthcare Provider Taxonomy (HIPAA) 2.16.840.1.114222.4.11.1066</tt><b> STATIC</b> 1</li><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt><ol><li>id <b>SHALL</b> contain exactly one [1..1] @root</li><li>If this assignedAuthor is an assignedPerson the assignedAuthor id <b>SHALL</b> contain exactly one [1..1] @root="2.16.840.1.113883.4.6" National Provider Identifier</li></ol></li><li> This assignedAuthor <b>SHALL</b> contain at least one [1..*] <tt><b>telecom</b></tt><ol><li>Such telecoms <b>SHOULD</b> contain zero or one [0..1] @use, which <b>SHALL</b> be selected from ValueSet Telecom Use (US Realm Header) 2.16.840.1.113883.11.20.9.20 DYNAMIC.</li></ol></li><li> This assignedAuthor <b>SHOULD</b> contain zero or one [0..1] <tt><b>assignedAuthoringDevice</b></tt> <ol><li> This assignedAuthoringDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>manufacturerModelName</b></tt></li><li> This assignedAuthoringDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>softwareName</b></tt></li></ol> </li><li> This assignedAuthor <b>SHOULD</b> contain zero or one [0..1] <tt><b>assignedPerson</b></tt> <ol><li> This assignedPerson <b>SHALL</b> contain at least one [1..*] <tt><b>name</b></tt><ol><li>The content of name <b>SHALL</b> be a conformant US Realm Patient Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1)</li></ol></li></ol> </li></ol> <ol><li>There <b>SHALL</b> be exactly one assignedAuthor/assignedPerson or exactly one assignedAuthor/assignedAuthoringDevice, or exactly one of each.</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>custodian</b></tt> <ol><li> This custodian <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedCustodian</b></tt> <ol><li> This assignedCustodian <b>SHALL</b> contain exactly one [1..1] <tt><b>representedCustodianOrganization</b></tt> <ol><li> This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>addr</b></tt><ol><li>The content of addr <b>SHALL</b> be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</li></ol></li><li> This representedCustodianOrganization <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt><ol><li>Such ids <b>SHOULD</b> contain zero or one [0..1] @root="2.16.840.1.113883.4.6" National Provider Identifier.</li></ol></li><li> This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt></li><li> This representedCustodianOrganization <b>SHALL</b> contain exactly one [1..1] <tt><b>telecom</b></tt><ol><li>This telecom <b>SHOULD</b> contain zero or one [0..1] @use, which <b>SHALL</b> be selected from ValueSet Telecom Use (US Realm Header) 2.16.840.1.113883.11.20.9.20 DYNAMIC</li></ol></li></ol> </li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>componentOf</b></tt> <ol><li> This componentOf <b>SHALL</b> contain exactly one [1..1] <tt><b>encompassingEncounter</b></tt> <ol><li> This encompassingEncounter <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/VS_HPoCEncounterType.dita">VS_HPoCEncounterType</xref> 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.1</tt><b> STATIC</b> 1<p><lines><i>Implementer Guidance:
+The code element of the encompassingEncounter records the type of encounter. The vocabulary binding in this template constrains the set of codes used to represent a birth encounter. This value set may be created from concepts in the ICD code system for the US Realm template.</i></lines></p></li><li> This encompassingEncounter <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt></li><li> This encompassingEncounter <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt></li><li> This encompassingEncounter <b>SHALL</b> contain exactly one [1..1] <tt><b>location</b></tt> <ol><li> This location <b>SHALL</b> contain exactly one [1..1] <tt><b>healthCareFacility</b></tt> <ol><li> This healthCareFacility <b>SHALL</b> contain exactly one [1..1] <tt><b>location</b></tt>, where its type is CDA Place<ol>
+<li>Contains exactly one [1..1] CDA Place</li></ol></li><li> This healthCareFacility <b>SHALL</b> contain exactly one [1..1] <tt><b>serviceProviderOrganization</b></tt>, where its type is CDA Organization<ol>
+<li>Contains exactly one [1..1] CDA Organization</li></ol></li></ol> </li></ol> </li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>documentationOf</b></tt> <p><lines><i>Implementer Guidance:
+One of the documentationOf elements should record the service event of creating the Hearing Plan of Care.
+Additionally, other documentationOf elements optionally can record the derived screening outcome for each ear.
+
+When the Hearing Plan of Care is developed by a system, Implementers will need to determine who should be listed as the performer of the service event associated with creation of the hearing plan of care. This may be someone who is responsible for reviewing the generated plan before it is completed. This implementation detail is out of scope for this profile.
+
+The performer participant represents clinicians who actually and principally carry out the serviceEvent. In a transfer of care this represents the healthcare providers involved in the current or pertinent historical care of the patient. Preferably, the patient's key healthcare care team members would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors</i></lines></p><ol><li> This documentationOf <b>SHALL</b> contain exactly one [1..1] <tt><b>serviceEvent</b></tt> <ol><li> This serviceEvent <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/VS_HPoCServiceEvent.dita">VS_HPoCServiceEvent</xref> 1.3.6.1.4.1.19376.1.7.3.1.1.26.2.5.2</tt><b> STATIC</b> 1</li><li> This serviceEvent <b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt><ol><li>This effectiveTime <b>SHALL</b> contain exactly one [1..1] low</li></ol></li><li> This serviceEvent <b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> <ol><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>functionCode</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.88 ParticipationFunction</tt>)</li><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.90 HL7ParticipationType</tt>)</li><li> Such performers <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> <ol><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt><ol><li>Such ids <b>SHOULD</b> contain zero or one [0..1] @root="2.16.840.1.113883.4.6" National Provider Identifier.</li></ol></li></ol> </li></ol> </li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareSection.dita">Hearing Plan Of Care Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.1</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HearingScreeningSection.dita">Hearing Screening Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.2</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../RiskIndicatorsForHearingLossSection.dita">Risk Indicators For Hearing Loss Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.3</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemsSection.dita">Problems Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.4</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProcedureSection.dita">Procedure Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.6</tt>)</li></ol></li>
+<li>typeId <b>SHALL</b> contain exactly one [1..1] @root="2.16.840.1.113883.1.3"</li>
+<li>typeId <b>SHALL</b> contain exactly one [1..1] @extension="POCD_HD000040"</li>
+<li>id <b>SHALL</b> be a globally unique identifier for the document</li>
+<li>effectiveTime <b>SHALL</b> conform to US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4)</li>
+<li>Both setId and versionNumber <b>SHALL</b> be present or both <b>SHALL</b> be absent.</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hpoc::HearingPlanOfCareDocument</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::clinicaldocument[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry></entry><entry>null null </entry></row> 
+<row><entry>setId</entry><entry>setId</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>MAY</entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>versionNumber</entry><entry>versionNumber</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>hearingPlanOfCareSection</entry><entry>hearingPlanOfCareSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>HearingPlanOfCareSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>hearingScreeningSection</entry><entry>hearingScreeningSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>HearingScreeningSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>problemsSection</entry><entry>problemsSection</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ProblemsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>procedureSection</entry><entry>procedureSection</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ProcedureSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>riskIndicatorsForHearingLossSection</entry><entry>riskIndicatorsForHearingLossSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>RiskIndicatorsForHearingLossSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <realmCode code="Code forrealmCode"/>
+  <typeId root="2.16.840.1.113883.1.3"/>
+  <id root="MDHT" extension="1952105223"/>
+  <code code="1551082125"/>
+  <title>TEXT FOR TITLE</title>
+  <effectiveTime/>
+  <confidentialityCode code="1935355912"/>
+  <setId root="MDHT" extension="8fa80fb9-b6d2-41d4-ae09-833663f86d17"/>
+  <versionNumber value="1"/>
+  <recordTarget>
+    <realmCode code="Code forrealmCode"/>
+    <typeId root="2.16.840.1.113883.1.3"/>
+    <patientRole/>
+  </recordTarget>
+  <author>
+    <realmCode code="Code forrealmCode"/>
+    <typeId root="2.16.840.1.113883.1.3"/>
+    <time/>
+    <assignedAuthor/>
+  </author>
+  <custodian/>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <realmCode code="Code forrealmCode"/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <id root="MDHT" extension="795490858"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act/>
+          </entry>
+          <entry>
+            <encounter/>
+          </entry>
+          <entry>
+            <observation/>
+          </entry>
+          <entry>
+            <procedure/>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM"/>
+          </entry>
+          <entry>
+            <supply classCode="SPLY"/>
+          </entry>
+          <entry>
+            <act/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode code="Code forrealmCode"/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <id root="MDHT" extension="68352463"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <organizer/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode code="Code forrealmCode"/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <id root="MDHT" extension="1455664624"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <observation/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode code="Code forrealmCode"/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <id root="MDHT" extension="772127123"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act/>
+          </entry>
+          <component>
+            <section/>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section>
+          <realmCode code="Code forrealmCode"/>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <id root="MDHT" extension="720501872"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <procedure/>
+          </entry>
+          <entry>
+            <act/>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Hearing Plan Of Care Document</ph></p>
+<p id="shortdesc">[ClinicalDocument: templateId <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.1</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Hearing Plan Of Care Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i><b>Template Design Relationships</b>
+This template is an adaptation of the IHE Universal Hearing Plan of Care section template. Machine readable entries associated with this template have been modified to use US Realm vocabulary constraints established for this purpose.
+
+This template adapts the design of the C-CDA R1.1 Plan of Care section template (2.16.840.1.113883.10.20.22.2.10) by narrowing the purpose to address only the hearing plan of care.
+
+<b>Template Purpose</b>
+The Hearing Plan of Care section contains data that defines pending orders, planned interventions (treatments (procedures)), scheduled appointments (visits (encounters)), planned testing services (observations), intended actions (act) for the patient or family members to perform, and instructions which are related to the hearing plan of care. It is limited to prospective, unfulfilled, or incomplete orders and requests only, which are indicated by the @moodCode of the entries within this section. All active, incomplete, or pending orders, appointments, referrals, procedures, services, or any other pending event of clinical significance to the current care of the patient should be listed unless constrained due to privacy issues. The plan may also contain information about ongoing care of the patient and clinical reminders. Clinical reminders are placed here to provide prompts for disease prevention and management, patient safety, and health-care quality improvements, including widely accepted performance measures. The plan may also indicate that patient education will be provided (act).</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] templateId (  ) such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.1"</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="18776-5" </tt><i>Plan of Care for Hearing</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt>, where its type is <xref href="../HearingPlanOfCareActivityAct.dita">Hearing Plan Of Care Activity Act</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareActivityAct.dita">Hearing Plan Of Care Activity Act</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.2</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>encounter</b></tt>, where its type is <xref href="../HearingPlanOfCareActivityEncounter.dita">Hearing Plan Of Care Activity Encounter</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareActivityEncounter.dita">Hearing Plan Of Care Activity Encounter</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.3</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HearingPlanOfCareActivityObservation.dita">Hearing Plan Of Care Activity Observation</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareActivityObservation.dita">Hearing Plan Of Care Activity Observation</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.4</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>procedure</b></tt>, where its type is <xref href="../HearingPlanOfCareActivityProcedure.dita">Hearing Plan Of Care Activity Procedure</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareActivityProcedure.dita">Hearing Plan Of Care Activity Procedure</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.5</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>substanceAdministration</b></tt>, where its type is <xref href="../HearingPlanOfCareActivitySubstanceAdministration.dita">Hearing Plan Of Care Activity Substance Administration</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareActivitySubstanceAdministration.dita">Hearing Plan Of Care Activity Substance Administration</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.6</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>supply</b></tt>, where its type is <xref href="../HearingPlanOfCareActivityNonMedicinalSupply.dita">Hearing Plan Of Care Activity Non Medicinal Supply</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareActivityNonMedicinalSupply.dita">Hearing Plan Of Care Activity Non Medicinal Supply</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.7</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt>, where its type is <xref href="../HearingPlanOfCareInstructions.dita">Hearing Plan Of Care Instructions</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareInstructions.dita">Hearing Plan Of Care Instructions</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.1</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="18776-5" </tt><i>Plan of Care for Hearing</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt>, where its type is <xref href="../HearingPlanOfCareActivityAct.dita">Hearing Plan Of Care Activity Act</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareActivityAct.dita">Hearing Plan Of Care Activity Act</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.2</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>encounter</b></tt>, where its type is <xref href="../HearingPlanOfCareActivityEncounter.dita">Hearing Plan Of Care Activity Encounter</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareActivityEncounter.dita">Hearing Plan Of Care Activity Encounter</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.3</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../HearingPlanOfCareActivityObservation.dita">Hearing Plan Of Care Activity Observation</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareActivityObservation.dita">Hearing Plan Of Care Activity Observation</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.4</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>procedure</b></tt>, where its type is <xref href="../HearingPlanOfCareActivityProcedure.dita">Hearing Plan Of Care Activity Procedure</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareActivityProcedure.dita">Hearing Plan Of Care Activity Procedure</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.5</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>substanceAdministration</b></tt>, where its type is <xref href="../HearingPlanOfCareActivitySubstanceAdministration.dita">Hearing Plan Of Care Activity Substance Administration</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareActivitySubstanceAdministration.dita">Hearing Plan Of Care Activity Substance Administration</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.6</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>supply</b></tt>, where its type is <xref href="../HearingPlanOfCareActivityNonMedicinalSupply.dita">Hearing Plan Of Care Activity Non Medicinal Supply</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareActivityNonMedicinalSupply.dita">Hearing Plan Of Care Activity Non Medicinal Supply</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.7</tt>)</li></ol></li></ol>
+</li>
+<li>If section/@nullFlavor is not present, <b>MAY</b> contain zero or more [0..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt>, where its type is <xref href="../HearingPlanOfCareInstructions.dita">Hearing Plan Of Care Instructions</xref><ol>
+<li>Contains exactly one [1..1] <xref href="../HearingPlanOfCareInstructions.dita">Hearing Plan Of Care Instructions</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.1</tt>)</li></ol></li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >hpoc::HearingPlanOfCareSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryAct</entry><entry>entryAct</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EntryAct</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryEncounter</entry><entry>entryEncounter</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EntryEncounter</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryInstructions</entry><entry>entryInstructions</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EntryInstructions</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryObservation</entry><entry>entryObservation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EntryObservation</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryProcedure</entry><entry>entryProcedure</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EntryProcedure</entry><entry></entry><entry> </entry></row> 
+<row><entry>entrySubstanceAdministration</entry><entry>entrySubstanceAdministration</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EntrySubstanceAdministration</entry><entry></entry><entry> </entry></row> 
+<row><entry>entrySupply</entry><entry>entrySupply</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EntrySupply</entry><entry></entry><entry> </entry></row> 
+<row><entry>hearingPlanOfCareSection</entry><entry>hearingPlanOfCareSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>HearingPlanOfCareSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <id root="MDHT" extension="1240717883"/>
+  <code code="1159670548"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <act>
+      <id root="MDHT" extension="2001903257"/>
+      <code code="2023922163"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+    </act>
+  </entry>
+  <entry>
+    <encounter>
+      <id root="MDHT" extension="1513869382"/>
+      <code code="1606022453"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+    </encounter>
+  </entry>
+  <entry>
+    <observation>
+      <id root="MDHT" extension="849764338"/>
+      <code code="1927459572"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+    </observation>
+  </entry>
+  <entry>
+    <procedure>
+      <id root="MDHT" extension="793732494"/>
+      <code code="1517707043"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+    </procedure>
+  </entry>
+  <entry>
+    <substanceAdministration>
+      <id root="MDHT" extension="585011634"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime xsi:type="PIVL_TS" value="20150416"/>
+      <repeatNumber value="1"/>
+      <routeCode code="2050092623"/>
+      <approachSiteCode code="1843218827"/>
+      <doseQuantity/>
+      <rateQuantity/>
+      <maxDoseQuantity/>
+      <administrationUnitCode code="1143563958"/>
+      <consumable/>
+      <performer/>
+      <participant typeCode="CSM"/>
+      <entryRelationship typeCode="RSON"/>
+      <entryRelationship typeCode="SUBJ" inversionInd="true"/>
+      <entryRelationship typeCode="REFR"/>
+      <entryRelationship typeCode="REFR"/>
+      <entryRelationship typeCode="CAUS"/>
+      <precondition typeCode="PRCN"/>
+    </substanceAdministration>
+  </entry>
+  <entry>
+    <supply>
+      <id root="MDHT" extension="1402830400"/>
+      <code code="998830638"/>
+      <text>Text Value</text>
+      <effectiveTime value="20150416"/>
+      <quantity/>
+      <participant typeCode="PRD"/>
+    </supply>
+  </entry>
+  <entry>
+    <act>
+      <code code="1830970928"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Hearing Plan Of Care Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.1</tt>]</p>
+</body>
+</topic>
