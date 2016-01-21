@@ -7,9 +7,9 @@
 	<parent>
 		<groupId>org.openhealthtools.mdht.cda</groupId>
 		<artifactId>org.openhealthtools.mdht.cda.tests</artifactId>
-		<version>2.5.7-SNAPSHOT</version>
+		<version>2.5.16-SNAPSHOT</version>
 	</parent>
-	<version>2.5.7-SNAPSHOT</version>
+	<version>2.5.16-SNAPSHOT</version>
 	<packaging>eclipse-plugin</packaging>
 
 	<build>
