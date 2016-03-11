@@ -88,15 +88,6 @@ public class TobaccoUseImpl extends ObservationImpl implements TobaccoUse {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTobaccoUseCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TobaccoUseOperations.validateTobaccoUseCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateTobaccoUseCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUseOperations.validateTobaccoUseCode(this, diagnostics, context);
 	}
@@ -144,6 +135,33 @@ public class TobaccoUseImpl extends ObservationImpl implements TobaccoUse {
 	 */
 	public boolean validateTobaccoUseValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUseOperations.validateTobaccoUseValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTobaccoUseCDCodeTermAssertionOrLoinc(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TobaccoUseOperations.validateTobaccoUseCDCodeTermAssertionOrLoinc(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTobaccoUseCDCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TobaccoUseOperations.validateTobaccoUseCDCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTobaccoUseCDCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TobaccoUseOperations.validateTobaccoUseCDCodeSystem(this, diagnostics, context);
 	}
 
 	/**

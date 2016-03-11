@@ -21,7 +21,8 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getTobaccoUse()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TobaccoUseTemplateId TobaccoUseEffectiveTimeLow TobaccoUseClassCode TobaccoUseMoodCode TobaccoUseCode TobaccoUseCodeP TobaccoUseEffectiveTime TobaccoUseStatusCode TobaccoUseStatusCodeP TobaccoUseValue TobaccoUseValueP' templateId.root='2.16.840.1.113883.10.20.22.4.85' classCode='OBS' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.TobaccoUseCode='TobaccoUseCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TobaccoUseTemplateId TobaccoUseEffectiveTimeLow TobaccoUseClassCode TobaccoUseMoodCode TobaccoUseCode TobaccoUseEffectiveTime TobaccoUseStatusCode TobaccoUseStatusCodeP TobaccoUseValue TobaccoUseValueP TobaccoUseCDCodeTermAssertionOrLoinc TobaccoUseCDCode TobaccoUseCDCodeSystem' templateId.root='2.16.840.1.113883.10.20.22.4.85' classCode='OBS' moodCode='EVN' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' constraints.validation.query='TobaccoUseCDCodeTermAssertionOrLoinc TobaccoUseCDCode TobaccoUseCDCodeSystem'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolTobaccoUseCD constraints.validation.error='TobaccoUseCDCodeTermAssertionOrLoinc TobaccoUseCDCode TobaccoUseCDCodeSystem'"
  * @generated
  */
 public interface TobaccoUse extends Observation {
@@ -81,18 +82,6 @@ public interface TobaccoUse extends Observation {
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateTobaccoUseCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'ASSERTION\' and value.codeSystem = \'2.16.840.1.113883.5.4\')'"
 	 * @generated
 	 */
 	boolean validateTobaccoUseCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -156,6 +145,42 @@ public interface TobaccoUse extends Observation {
 	 * @generated
 	 */
 	boolean validateTobaccoUseValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject((code = \'ASSERTION\' and codeSystem = \'2.16.840.1.113883.5.4\') or (code = \'11367-0\' and codeSystem = \'2.16.840.1.113883.6.1\'))'"
+	 * @generated
+	 */
+	boolean validateTobaccoUseCDCodeTermAssertionOrLoinc(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not code.oclIsUndefined() )))'"
+	 * @generated
+	 */
+	boolean validateTobaccoUseCDCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not codeSystem.oclIsUndefined() )))'"
+	 * @generated
+	 */
+	boolean validateTobaccoUseCDCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
