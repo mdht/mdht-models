@@ -31,13 +31,15 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation Value P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationCDCodeTermAssertionOrLoinc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation CD Code Term Assertion Or Loinc</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationCDCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation CD Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationCDCodeSystem(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation CD Code System</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationIVLTSCenter(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS Center</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation#validateSmokingStatusObservationIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Smoking Status Observation IVLTS Low</em>}</li>
@@ -154,40 +156,6 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	*/
-	@Test
-	public void testValidateSmokingStatusObservationCodeP() {
-		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationCodePTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(SmokingStatusObservation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(SmokingStatusObservation target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return SmokingStatusObservationOperations.validateSmokingStatusObservationCodeP(
-					(SmokingStatusObservation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateSmokingStatusObservationCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
 	* @generated not
 	*/
 	@Test
@@ -206,7 +174,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 			protected void updateToPass(SmokingStatusObservation target) {
 				target.init();
 
-				CD cd = DatatypesFactory.eINSTANCE.createCD("ASSERTION", "2.16.840.1.113883.5.4", "", "");
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
 				target.setCode(cd);
 
 			}
@@ -353,7 +321,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 			protected void updateToPass(SmokingStatusObservation target) {
 				target.init();
 
-				CD value = DatatypesFactory.eINSTANCE.createCD("449868002", "2.16.840.1.113883.6.96", "", "");
+				CD value = DatatypesFactory.eINSTANCE.createCD();
 				target.getValues().add(value);
 
 			}
@@ -368,6 +336,161 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 		};
 
 		validateSmokingStatusObservationValuePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationCDCodeTermAssertionOrLoinc() {
+		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationCDCodeTermAssertionOrLoincTestCase = new OperationsTestCase<SmokingStatusObservation>(
+			"validateSmokingStatusObservationCDCodeTermAssertionOrLoinc",
+			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusObservation target) {
+						// code with no @code or @codeSystem
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD());
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusObservation target) {
+						// invalid @code
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, "2.16.840.1.113883.5.4"));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusObservation target) {
+						// invalid @codeSystem
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("ASSERTION", BAD_CODESYSTEM_ID));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusObservation target) {
+						// invalid @code and invalid @codeSystem
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, BAD_CODESYSTEM_ID));
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SmokingStatusObservation target) {
+						// old R1.1 way for backwards compatibility
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("ASSERTION", "2.16.840.1.113883.5.4"));
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SmokingStatusObservation target) {
+						// new R2.1 option (as per errata 596)
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("72166-2", LOINC_ID));
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusObservationOperations.validateSmokingStatusObservationCDCodeTermAssertionOrLoinc(
+					(SmokingStatusObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationCDCodeTermAssertionOrLoincTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationCDCode() {
+		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationCDCodeTestCase = new OperationsTestCase<SmokingStatusObservation>(
+			"validateSmokingStatusObservationCDCode",
+			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusObservation target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusObservation target) {
+				target.setCode(DatatypesFactory.eINSTANCE.createCD("mustExistOnly", BAD_CODESYSTEM_ID));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusObservationOperations.validateSmokingStatusObservationCDCode(
+					(SmokingStatusObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationCDCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateSmokingStatusObservationCDCodeSystem() {
+		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationCDCodeSystemTestCase = new OperationsTestCase<SmokingStatusObservation>(
+			"validateSmokingStatusObservationCDCodeSystem",
+			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(SmokingStatusObservation target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(SmokingStatusObservation target) {
+				target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, "mustExistOnly"));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return SmokingStatusObservationOperations.validateSmokingStatusObservationCDCodeSystem(
+					(SmokingStatusObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateSmokingStatusObservationCDCodeSystemTestCase.doValidationTest();
 	}
 
 	/**
@@ -522,16 +645,71 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 			objectFactory) {
 
 			@Override
-			protected void updateToFail(SmokingStatusObservation target) {
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusObservation target) {
+						// empty test
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusObservation target) {
+						// has value but no code or codeSystem
+						target.init();
+						CD value = DatatypesFactory.eINSTANCE.createCD();
+						target.getValues().add(value);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusObservation target) {
+						// invalid @codeSystem
+						target.init();
+						CD value = DatatypesFactory.eINSTANCE.createCD("449868002", BAD_CODESYSTEM_ID);
+						target.getValues().add(value);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(SmokingStatusObservation target) {
+						// invalid @code and invalid @codeSystem
+						target.init();
+						CD value = DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, BAD_CODESYSTEM_ID);
+						target.getValues().add(value);
+					}
+				});
 
 			}
 
 			@Override
-			protected void updateToPass(SmokingStatusObservation target) {
-				target.init();
+			public void addPassTests() {
 
-				CD value = DatatypesFactory.eINSTANCE.createCD("449868002", SNOMEDCT_ID);
-				target.getValues().add(value);
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SmokingStatusObservation target) {
+						// code is in both old and new valueset
+						target.init();
+						CD value = DatatypesFactory.eINSTANCE.createCD("449868002", SNOMEDCT_ID);
+						target.getValues().add(value);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(SmokingStatusObservation target) {
+						// ensure code which only belongs to the new value set works (as per errata 596)
+						// this is interesting because previously we had to override this value in MU2 in order to use this code because it wasn't in
+						// the set. And now we are using the newer set in R1.1 as well. This mean that R1.1, R2.0, R2.1, and MU2 are now aligned.
+						target.init();
+						CD value = DatatypesFactory.eINSTANCE.createCD("428061000124105", SNOMEDCT_ID);
+						target.getValues().add(value);
+					}
+				});
 
 			}
 
