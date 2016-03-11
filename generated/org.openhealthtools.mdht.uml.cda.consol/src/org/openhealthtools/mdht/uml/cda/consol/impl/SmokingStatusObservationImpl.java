@@ -79,15 +79,6 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSmokingStatusObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationCodeP(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateSmokingStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationCode(this, diagnostics, context);
 	}
@@ -129,6 +120,36 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 */
 	public boolean validateSmokingStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSmokingStatusObservationCDCodeTermAssertionOrLoinc(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationCDCodeTermAssertionOrLoinc(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSmokingStatusObservationCDCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationCDCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSmokingStatusObservationCDCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationCDCodeSystem(
+			this, diagnostics, context);
 	}
 
 	/**

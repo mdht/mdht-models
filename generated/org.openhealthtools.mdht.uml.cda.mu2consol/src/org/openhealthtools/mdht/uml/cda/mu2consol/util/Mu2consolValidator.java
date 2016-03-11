@@ -4228,11 +4228,6 @@ public class Mu2consolValidator extends EObjectValidator {
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationCodeP(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
 					.validateSmokingStatusObservation_validateSmokingStatusObservationCode(
 							smokingStatusObservation, diagnostics, context);
 		}
@@ -4258,6 +4253,21 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= validateSmokingStatusObservation_validateSmokingStatusObservationValueP(
 					smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateSmokingStatusObservation_validateSmokingStatusObservationCDCodeTermAssertionOrLoinc(
+							smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateSmokingStatusObservation_validateSmokingStatusObservationCDCode(
+							smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateSmokingStatusObservation_validateSmokingStatusObservationCDCodeSystem(
+							smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
