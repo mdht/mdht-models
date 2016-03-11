@@ -1277,6 +1277,20 @@ Value Set: Medication Drug Class (2.16.840.1.113883.3.88.12.80.18) (NDFRT drug c
 Valueset Source: https://vsac.nlm.nih.gov/</body>
       </ownedComment>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_4hSRkObrEeWB4ufB0cOMzQ" name="Current Smoking Status">
+      <ownedComment xmi:id="_4hSRkebrEeWB4ufB0cOMzQ">
+        <body>This value set indicates the current smoking status of a patient. Specific URL Pending&#xD;
+Valueset Source: http://vtsl.vetmed.vt.edu/</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_4hSRkubrEeWB4ufB0cOMzQ" name="449868002"/>
+      <ownedLiteral xmi:id="_4hSRk-brEeWB4ufB0cOMzQ" name="428041000124106"/>
+      <ownedLiteral xmi:id="_4hSRlObrEeWB4ufB0cOMzQ" name="8517006"/>
+      <ownedLiteral xmi:id="_4hSRlebrEeWB4ufB0cOMzQ" name="266919005"/>
+      <ownedLiteral xmi:id="_4hSRlubrEeWB4ufB0cOMzQ" name="77176002"/>
+      <ownedLiteral xmi:id="_4hSRl-brEeWB4ufB0cOMzQ" name="266927001"/>
+      <ownedLiteral xmi:id="_4hSRmObrEeWB4ufB0cOMzQ" name="428071000124103"/>
+      <ownedLiteral xmi:id="_4hSRmebrEeWB4ufB0cOMzQ" name="428061000124105"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -2542,4 +2556,15 @@ Valueset Source: https://vsac.nlm.nih.gov/</body>
   <term:ValueSetVersion xmi:id="_oX3U8GBhEeSANuG0qM3tjw" identifier="2.16.840.1.113762.1.4.1010.1" binding="Dynamic" base_Enumeration="_oX2t4GBhEeSANuG0qM3tjw"/>
   <term:ValueSetCode xmi:id="_yTSpALY9EeWyGNoqJ3PYyg" conceptName="influenza, injectable, quadrivalent, preservative free" base_EnumerationLiteral="_yTSB8LY9EeWyGNoqJ3PYyg"/>
   <term:ValueSetCode xmi:id="_0sZ1cLY9EeWyGNoqJ3PYyg" conceptName="meningococcal B, OMV" base_EnumerationLiteral="_0sZOYLY9EeWyGNoqJ3PYyg"/>
+  <term:ValueSetVersion xmi:id="_4hS4oObrEeWB4ufB0cOMzQ" identifier="2.16.840.1.113883.11.20.9.38" version="2014-09-01" fullName="Current Smoking Status" base_Enumeration="_4hSRkObrEeWB4ufB0cOMzQ">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_4hS4oebrEeWB4ufB0cOMzQ" conceptName="Current every day smoker" base_EnumerationLiteral="_4hSRkubrEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4oubrEeWB4ufB0cOMzQ" conceptName="Current some day smoker" base_EnumerationLiteral="_4hSRk-brEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4o-brEeWB4ufB0cOMzQ" conceptName="Former smoker" base_EnumerationLiteral="_4hSRlObrEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4pObrEeWB4ufB0cOMzQ" conceptName="Never smoker (Never Smoked)" base_EnumerationLiteral="_4hSRlebrEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4pebrEeWB4ufB0cOMzQ" conceptName="Smoker, current status unknown" base_EnumerationLiteral="_4hSRlubrEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4pubrEeWB4ufB0cOMzQ" conceptName="Unknown if ever smoked" base_EnumerationLiteral="_4hSRl-brEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4p-brEeWB4ufB0cOMzQ" conceptName="Heavy tobacco smoker" base_EnumerationLiteral="_4hSRmObrEeWB4ufB0cOMzQ"/>
+  <term:ValueSetCode xmi:id="_4hS4qObrEeWB4ufB0cOMzQ" conceptName="Light tobacco smoker" base_EnumerationLiteral="_4hSRmebrEeWB4ufB0cOMzQ"/>
 </xmi:XMI>
