@@ -6,7 +6,6 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
-import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -33,13 +32,15 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Value P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseCDCodeTermAssertionOrLoinc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use CD Code Term Assertion Or Loinc</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseCDCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use CD Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse#validateTobaccoUseCDCodeSystem(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use CD Code System</em>}</li>
  * </ul>
  * </p>
  *
@@ -185,39 +186,7 @@ public class TobaccoUseTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
-	*/
-	@Test
-	public void testValidateTobaccoUseCodeP() {
-		OperationsTestCase<TobaccoUse> validateTobaccoUseCodePTestCase = new OperationsTestCase<TobaccoUse>(
-			"validateTobaccoUseCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
-
-			@Override
-			protected void updateToFail(TobaccoUse target) {
-
-			}
-
-			@Override
-			protected void updateToPass(TobaccoUse target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return TobaccoUseOperations.validateTobaccoUseCodeP((TobaccoUse) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateTobaccoUseCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateTobaccoUseCode() {
@@ -234,13 +203,9 @@ public class TobaccoUseTest extends CDAValidationTest {
 			protected void updateToPass(TobaccoUse target) {
 				target.init();
 
-			}
+				CD cd = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
 
-			@Override
-			protected void setDependency(TobaccoUse target) {
-				Collection<Object> passToken = new java.util.ArrayList<Object>(3);
-				passToken.add(target);
-				map.put("org.openhealthtools.mdht.uml.cda.consol.TobaccoUseCodeP", passToken);
 			}
 
 			@Override
@@ -427,6 +392,160 @@ public class TobaccoUseTest extends CDAValidationTest {
 		};
 
 		validateTobaccoUseValuePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTobaccoUseCDCodeTermAssertionOrLoinc() {
+		OperationsTestCase<TobaccoUse> validateTobaccoUseCDCodeTermAssertionOrLoincTestCase = new OperationsTestCase<TobaccoUse>(
+			"validateTobaccoUseCDCodeTermAssertionOrLoinc",
+			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TobaccoUse target) {
+						// code with no @code or @codeSystem
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD());
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TobaccoUse target) {
+						// invalid @code
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, "2.16.840.1.113883.5.4"));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TobaccoUse target) {
+						// invalid @codeSystem
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("ASSERTION", BAD_CODESYSTEM_ID));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TobaccoUse target) {
+						// invalid @code and invalid @codeSystem
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, BAD_CODESYSTEM_ID));
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(TobaccoUse target) {
+						// old R1.1 way for backwards compatibility
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("ASSERTION", "2.16.840.1.113883.5.4"));
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(TobaccoUse target) {
+						// new R2.1 option (as per errata 596)
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("11367-0", LOINC_ID));
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TobaccoUseOperations.validateTobaccoUseCDCodeTermAssertionOrLoinc(
+					(TobaccoUse) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTobaccoUseCDCodeTermAssertionOrLoincTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTobaccoUseCDCode() {
+		OperationsTestCase<TobaccoUse> validateTobaccoUseCDCodeTestCase = new OperationsTestCase<TobaccoUse>(
+			"validateTobaccoUseCDCode",
+			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+
+			@Override
+			protected void updateToFail(TobaccoUse target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(TobaccoUse target) {
+				target.setCode(DatatypesFactory.eINSTANCE.createCD("mustExistOnly", BAD_CODESYSTEM_ID));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TobaccoUseOperations.validateTobaccoUseCDCode((TobaccoUse) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTobaccoUseCDCodeTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateTobaccoUseCDCodeSystem() {
+		OperationsTestCase<TobaccoUse> validateTobaccoUseCDCodeSystemTestCase = new OperationsTestCase<TobaccoUse>(
+			"validateTobaccoUseCDCodeSystem",
+			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TobaccoUse target) {
+				target.init();
+				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+			}
+
+			@Override
+			protected void updateToPass(TobaccoUse target) {
+				target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, "mustExistOnly"));
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TobaccoUseOperations.validateTobaccoUseCDCodeSystem(
+					(TobaccoUse) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTobaccoUseCDCodeSystemTestCase.doValidationTest();
 	}
 
 	/**

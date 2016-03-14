@@ -73,6 +73,17 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateSmokingStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationTemplateId(
