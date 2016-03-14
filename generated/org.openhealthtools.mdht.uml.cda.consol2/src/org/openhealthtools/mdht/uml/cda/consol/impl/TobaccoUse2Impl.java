@@ -75,6 +75,16 @@ public class TobaccoUse2Impl extends TobaccoUseImpl implements TobaccoUse2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateTobaccoUse2CDCodeTermAssertionOrLoinc(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return TobaccoUse2Operations.validateTobaccoUse2CDCodeTermAssertionOrLoinc(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateTobaccoUse2IVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TobaccoUse2Operations.validateTobaccoUse2IVLTSHigh(this, diagnostics, context);
