@@ -317,8 +317,7 @@
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_tj0vYOWQEeGKmvzED_He2w" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_kh9tUOWQEeGKmvzED_He2w" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    <ownedAttribute xmi:id="_kh9tUOWQEeGKmvzED_He2w" name="code" visibility="private" type="_oMqNcOoVEeWB4ufB0cOMzQ" aggregation="composite">
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_kh-7cOWQEeGKmvzED_He2w" name="statusCode" visibility="private" aggregation="composite">
@@ -342,6 +341,35 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XvCGAOWTEeGKmvzED_He2w" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_oMqNcOoVEeWB4ufB0cOMzQ" name="CD">
+      <ownedComment xmi:id="_rTy9gOoVEeWB4ufB0cOMzQ">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_i8dCoOoWEeWB4ufB0cOMzQ" name="codeTermAssertionOrLoinc">
+        <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_zy0JkObmEeWB4ufB0cOMzQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_i8dCoeoWEeWB4ufB0cOMzQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>/@code SHALL=&quot;ASSERTION&quot; Assertion (CodeSystem: 2.16.840.1.113883.5.4 HL7ActCode) OR code/@code SHALL=&quot;11367-0&quot; History of tobacco use (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</body>
+          <body>(code = 'ASSERTION' and codeSystem = '2.16.840.1.113883.5.4') or (code = '11367-0' and codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_oMq0gOoVEeWB4ufB0cOMzQ">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_pdpUMOoVEeWB4ufB0cOMzQ" name="code" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ucjeMeoVEeWB4ufB0cOMzQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ucjeMOoVEeWB4ufB0cOMzQ" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pdpUM-oVEeWB4ufB0cOMzQ" name="codeSystem" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t9x3gOoVEeWB4ufB0cOMzQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t9xQcOoVEeWB4ufB0cOMzQ" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_3fx3ADxkEd6JwqSGecoePg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_moWLAOWQEeGKmvzED_He2w" base_Class="_gIH_QOWQEeGKmvzED_He2w" templateId="2.16.840.1.113883.10.20.22.4.85">
     <ruleId>CONF:16566</ruleId>
@@ -359,11 +387,9 @@
     <ruleId>CONF:16559</ruleId>
     <ruleId>R2.0=CONF:1098-16559</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_v26zYOWQEeGKmvzED_He2w" base_Property="_kh9tUOWQEeGKmvzED_He2w"/>
-  <CDA:CodeSystemConstraint xmi:id="_wT_w8OWQEeGKmvzED_He2w" code="ASSERTION" displayName="Assertion" base_Property="_kh9tUOWQEeGKmvzED_He2w">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+  <CDA:PropertyValidation xmi:id="_v26zYOWQEeGKmvzED_He2w" base_Property="_kh9tUOWQEeGKmvzED_He2w">
     <ruleId>CONF:16560</ruleId>
-  </CDA:CodeSystemConstraint>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_8mWTYOWQEeGKmvzED_He2w" base_Property="_kh-UYOWQEeGKmvzED_He2w">
     <ruleId>CONF:16564</ruleId>
   </CDA:PropertyValidation>
@@ -403,8 +429,7 @@ The smoking status value set includes a special code to communicate if the smoki
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_8EXgUOWTEeGKmvzED_He2w" value="EVN"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Yz0EIOWQEeGKmvzED_He2w" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    <ownedAttribute xmi:id="_Yz0EIOWQEeGKmvzED_He2w" name="code" visibility="private" type="_fpj14OoTEeWB4ufB0cOMzQ" aggregation="composite">
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Yz0rMeWQEeGKmvzED_He2w" name="statusCode" visibility="private" aggregation="composite">
@@ -459,6 +484,35 @@ The smoking status value set includes a special code to communicate if the smoki
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_kXgmQD6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
     </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_fpj14OoTEeWB4ufB0cOMzQ" name="CD">
+      <ownedComment xmi:id="_nFbKgOoTEeWB4ufB0cOMzQ">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_91fpAOoTEeWB4ufB0cOMzQ" name="codeTermAssertionOrLoinc">
+        <constrainedElement xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-socialhistory.uml#_RZX7kObjEeWB4ufB0cOMzQ"/>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_91fpAeoTEeWB4ufB0cOMzQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>/@code SHALL=&quot;ASSERTION&quot; Assertion (CodeSystem: 2.16.840.1.113883.5.4 HL7ActCode) OR code/@code SHALL=&quot;72166-2&quot; Tobacco smoking status NHIS (CodeSystem: 2.16.840.1.113883.6.1 LOINC)</body>
+          <body>(code = 'ASSERTION' and codeSystem = '2.16.840.1.113883.5.4') or (code = '72166-2' and codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fpkc8OoTEeWB4ufB0cOMzQ">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_iTqEoOoTEeWB4ufB0cOMzQ" name="code" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_WswmEETbEeC_V4iAGO_Ujg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rCdAweoTEeWB4ufB0cOMzQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rCdAwOoTEeWB4ufB0cOMzQ" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_XcVvsDxkEd6JwqSGecoePg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_iTtH8OoTEeWB4ufB0cOMzQ" name="codeSystem" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://DATATYPES_MODEL/datatypes.uml#_RpDqMDrsEeCN26jpCPaoAw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r0s9EeoTEeWB4ufB0cOMzQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r0s9EOoTEeWB4ufB0cOMzQ" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_3fx3ADxkEd6JwqSGecoePg"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_93hgAOWTEeGKmvzED_He2w" base_Class="_RYJj0OWQEeGKmvzED_He2w" templateId="2.16.840.1.113883.10.20.22.4.78">
     <ruleId>CONF:14815</ruleId>
@@ -475,9 +529,6 @@ The smoking status value set includes a special code to communicate if the smoki
   <CDA:PropertyValidation xmi:id="_BYK8QOWUEeGKmvzED_He2w" base_Property="_Yz0EIOWQEeGKmvzED_He2w">
     <ruleId>CONF:14808</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_CSfPcOWUEeGKmvzED_He2w" code="ASSERTION" displayName="Assertion" base_Property="_Yz0EIOWQEeGKmvzED_He2w">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_R6jJcOWUEeGKmvzED_He2w" message="Consol Smoking Status Observation SHALL contain exactly one [1..1] effectiveTime with @xsi:type=&quot;TS&quot;" base_Property="_Yz0EIeWQEeGKmvzED_He2w">
     <ruleId>CONF:14814</ruleId>
     <ruleId>R2.0=CONF:1098-31928</ruleId>
@@ -493,7 +544,7 @@ The smoking status value set includes a special code to communicate if the smoki
     <ruleId>CONF:14810</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_Zp9sMOWUEeGKmvzED_He2w" base_Property="_Yz0rNOWQEeGKmvzED_He2w">
-    <reference href="../consol-vocab.uml#_bgrWMOWUEeGKmvzED_He2w"/>
+    <reference href="../consol-vocab.uml#_FHdfcbm6EeOgPNzo_e4B9A"/>
     <ruleId>CONF:14817</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Muzn4OWVEeGKmvzED_He2w" base_Property="_2JL9oBSVEeGGzu7fmW9pXw">
@@ -921,9 +972,7 @@ If the patient's current smoking status is unknown, the value element must be po
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DJ3c8KzDEeSB84STE1Ny6A" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_jwglALm9EeOgPNzo_e4B9A" name="code" visibility="private" aggregation="composite" redefinedProperty="_Yz0EIOWQEeGKmvzED_He2w">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:id="_jwglALm9EeOgPNzo_e4B9A" name="code" visibility="private" type="_HxlesOoUEeWB4ufB0cOMzQ" aggregation="composite" redefinedProperty="_Yz0EIOWQEeGKmvzED_He2w"/>
     <ownedAttribute xmi:id="_zeAVcLm5EeOgPNzo_e4B9A" name="value" visibility="private" aggregation="composite" redefinedProperty="_Yz0rNOWQEeGKmvzED_He2w">
       <ownedComment xmi:id="_DdbUoLm8EeOgPNzo_e4B9A">
         <body>If the patient's current smoking status is unknown, @code SHALL contain '266927001' (Unknown if ever smoked) from ValueSet Current Smoking Status (2.16.840.1.113883.11.20.9.38 STATIC 2014-09-01) (CONF:1098-31019).</body>
@@ -937,6 +986,22 @@ If the patient's current smoking status is unknown, the value element must be po
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iVQjcbnHEeOgPNzo_e4B9A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iVRKgLnHEeOgPNzo_e4B9A" value="*"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_HxlesOoUEeWB4ufB0cOMzQ" name="CD">
+      <ownedComment xmi:id="_JqIUsOoUEeWB4ufB0cOMzQ">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_M1UeUOoUEeWB4ufB0cOMzQ" name="codeTermAssertionOrLoinc" constrainedElement="_HxlesOoUEeWB4ufB0cOMzQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_mIcIYOoUEeWB4ufB0cOMzQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>This constraint is being overridden as it has been removed in v2 and should never fire.</body>
+          <body>true</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_HxmFwOoUEeWB4ufB0cOMzQ">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_Nj2T0Lk0EeODDJAC5t5vpw" base_Class="_Hl3ScLk0EeODDJAC5t5vpw" templateId="2.16.840.1.113883.10.20.22.4.78" templateVersion="2014-06-09">
     <ruleId>CONF:1098-14815</ruleId>
@@ -1060,9 +1125,7 @@ The effectiveTime element is used to describe dates associated with the patient'
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_58Z28M80EeSJsu9BbhWxmQ" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_gpOQMPMyEeOUvapeh9bVvQ" name="code" visibility="private" aggregation="composite" redefinedProperty="_kh9tUOWQEeGKmvzED_He2w">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:id="_gpOQMPMyEeOUvapeh9bVvQ" name="code" visibility="private" type="_o3wjcOoWEeWB4ufB0cOMzQ" aggregation="composite" redefinedProperty="_kh9tUOWQEeGKmvzED_He2w"/>
     <ownedAttribute xmi:id="_P0E4APMyEeOUvapeh9bVvQ" name="effectiveTime" visibility="private" type="_fE3sEPMzEeOUvapeh9bVvQ" aggregation="composite" redefinedProperty="_kh-UYOWQEeGKmvzED_He2w">
       <ownedComment xmi:id="_WhJ0APMyEeOUvapeh9bVvQ">
         <body>Note: The effectiveTime represents the biologically relevant time of the observation. Thus, an observation of &quot;former smoker&quot; will have an effectiveTime defining the time during which the patient has been a former smoker; an observation of &quot;current smoker&quot; will have an effectiveTime defining the time during which the patient has been a current smoker.</body>
@@ -1088,6 +1151,22 @@ The effectiveTime element is used to describe dates associated with the patient'
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gYPYcfMzEeOUvapeh9bVvQ" value="1"/>
         <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
       </ownedAttribute>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_o3wjcOoWEeWB4ufB0cOMzQ" name="CD">
+      <ownedComment xmi:id="_qt8pAOoWEeWB4ufB0cOMzQ">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_tEozkOoWEeWB4ufB0cOMzQ" name="codeTermAssertionOrLoinc" constrainedElement="_o3wjcOoWEeWB4ufB0cOMzQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_1QBgoOoWEeWB4ufB0cOMzQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>This constraint is being overridden as it has been removed in v2 and should never fire.</body>
+          <body>true</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_o3xKgOoWEeWB4ufB0cOMzQ">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_uZOR0PMxEeOUvapeh9bVvQ" base_Class="_qHUXwPMxEeOUvapeh9bVvQ" templateId="2.16.840.1.113883.10.20.22.4.85" templateVersion="2014-06-09">
@@ -1250,4 +1329,28 @@ The effectiveTime element is used to describe dates associated with the patient'
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-32853</ruleId>
   </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_pOcsgOoTEeWB4ufB0cOMzQ" base_Property="_iTqEoOoTEeWB4ufB0cOMzQ">
+    <ruleId>CONF:14808</ruleId>
+    <ruleId>R2.1=CONF:1098-19170</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qR4fcOoTEeWB4ufB0cOMzQ" base_Property="_iTtH8OoTEeWB4ufB0cOMzQ">
+    <ruleId>CONF:14808</ruleId>
+    <ruleId>R2.1=CONF:1098-19170</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_91fpAuoTEeWB4ufB0cOMzQ" base_Constraint="_91fpAOoTEeWB4ufB0cOMzQ">
+    <ruleId>CONF:14808</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_1NKEwOoUEeWB4ufB0cOMzQ" severity="INFO" base_Constraint="_M1UeUOoUEeWB4ufB0cOMzQ"/>
+  <CDA:PropertyValidation xmi:id="_sMbOoOoVEeWB4ufB0cOMzQ" base_Property="_pdpUMOoVEeWB4ufB0cOMzQ">
+    <ruleId>CONF:16560</ruleId>
+    <ruleId>R2.1=CONF:1098-19174</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_s_56AOoVEeWB4ufB0cOMzQ" base_Property="_pdpUM-oVEeWB4ufB0cOMzQ">
+    <ruleId>CONF:16560</ruleId>
+    <ruleId>R2.1=CONF:1098-19174</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_i8dpsOoWEeWB4ufB0cOMzQ" base_Constraint="_i8dCoOoWEeWB4ufB0cOMzQ">
+    <ruleId>CONF:16560</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_vdvY8OoWEeWB4ufB0cOMzQ" severity="INFO" base_Constraint="_tEozkOoWEeWB4ufB0cOMzQ"/>
 </xmi:XMI>
