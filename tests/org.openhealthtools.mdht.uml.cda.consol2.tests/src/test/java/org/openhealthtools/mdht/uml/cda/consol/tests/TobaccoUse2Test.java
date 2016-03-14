@@ -16,6 +16,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
@@ -34,10 +35,11 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUse2Id(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use2 Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUseCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUse2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use2 Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUse2CDCodeTermAssertionOrLoinc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use2 CD Code Term Assertion Or Loinc</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUse2IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use2 IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUseTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUseCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUseCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2#validateTobaccoUseEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Effective Time</em>}</li>
  * </ul>
@@ -112,6 +114,45 @@ public class TobaccoUse2Test extends CDAValidationTest {
 		};
 
 		validateTobaccoUse2AuthorParticipationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* This constraint is being overridden as it has been removed in v2 and should never fire
+	* It always returns true and there is no reason to test it
+	* In this case, as per errata 596:
+	* For backwards compatibility, R1.1 was allowed to use its original code or the R2.0/R2.1 code 
+	* where as R2.1 can only use the new code - so we are removing the either or option 
+	*/
+	@Ignore
+	public void testValidateTobaccoUse2CDCodeTermAssertionOrLoinc() {
+		OperationsTestCase<TobaccoUse2> validateTobaccoUse2CDCodeTermAssertionOrLoincTestCase = new OperationsTestCase<TobaccoUse2>(
+			"validateTobaccoUse2CDCodeTermAssertionOrLoinc",
+			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(TobaccoUse2 target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TobaccoUse2 target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return TobaccoUse2Operations.validateTobaccoUse2CDCodeTermAssertionOrLoinc(
+					(TobaccoUse2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTobaccoUse2CDCodeTermAssertionOrLoincTestCase.doValidationTest();
 	}
 
 	/**
@@ -264,14 +305,67 @@ public class TobaccoUse2Test extends CDAValidationTest {
 			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
 
 			@Override
-			protected void updateToFail(TobaccoUse2 target) {
-				target.init();
-				target.setCode(DatatypesFactory.eINSTANCE.createCD());
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TobaccoUse2 target) {
+						// code with no @code or @codeSystem
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD());
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TobaccoUse2 target) {
+						// invalid @code
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, "2.16.840.1.113883.5.4"));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TobaccoUse2 target) {
+						// invalid @codeSystem
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("ASSERTION", BAD_CODESYSTEM_ID));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TobaccoUse2 target) {
+						// invalid @code and invalid @codeSystem
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD(BAD_CODE_VALUE, BAD_CODESYSTEM_ID));
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(TobaccoUse2 target) {
+						// old R1.1 way
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("ASSERTION", "2.16.840.1.113883.5.4"));
+					}
+				});
+
 			}
 
 			@Override
-			protected void updateToPass(TobaccoUse2 target) {
-				target.setCode(DatatypesFactory.eINSTANCE.createCD("11367-0", LOINC_ID));
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(TobaccoUse2 target) {
+						// new R2.1 code
+						target.init();
+						target.setCode(DatatypesFactory.eINSTANCE.createCD("11367-0", LOINC_ID));
+					}
+				});
+
 			}
 
 			@Override
