@@ -8689,7 +8689,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode() {
@@ -8720,7 +8720,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
 				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
 				Patient patient = CDAFactory.eINSTANCE.createPatient();
-				patient.setAdministrativeGenderCode(DatatypesFactory.eINSTANCE.createCE("F", "2.16.840.1.113883.5.1"));
+				patient.setAdministrativeGenderCode(DatatypesFactory.eINSTANCE.createCE("UNK", "2.16.840.1.113883.5.1"));
 				Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
 				Place place = CDAFactory.eINSTANCE.createPlace();
 				birthplace.setPlace(place);
