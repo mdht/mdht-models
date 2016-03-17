@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSelfCareActivities()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SelfCareActivitiesTemplateId SelfCareActivitiesClassCode SelfCareActivitiesMoodCode SelfCareActivitiesCodeP SelfCareActivitiesStatusCode SelfCareActivitiesStatusCodeP SelfCareActivitiesEffectiveTime SelfCareActivitiesValueP' templateId.root='2.16.840.1.113883.10.20.22.4.128' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.warning='SelfCareActivitiesCode SelfCareActivitiesValue SelfCareActivitiesAuthorParticipation' constraints.validation.dependOn.SelfCareActivitiesCode='SelfCareActivitiesCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SelfCareActivitiesTemplateId SelfCareActivitiesClassCode SelfCareActivitiesMoodCode SelfCareActivitiesCodeP SelfCareActivitiesStatusCode SelfCareActivitiesStatusCodeP SelfCareActivitiesEffectiveTime SelfCareActivitiesValueP' templateId.root='2.16.840.1.113883.10.20.22.4.128' classCode='OBS' moodCode='EVN' code.codeSystemName='' constraints.validation.warning='SelfCareActivitiesCode SelfCareActivitiesValue SelfCareActivitiesAuthorParticipation' constraints.validation.dependOn.SelfCareActivitiesCode='SelfCareActivitiesCodeP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
  * @generated
  */
 public interface SelfCareActivities extends Observation {
@@ -84,7 +84,7 @@ public interface SelfCareActivities extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'46008-9\' or value.code = \'28409-1\' or value.code = \'28408-3\' or value.code = \'46484-2\' or value.code = \'46482-6\' or value.code = \'28413-3\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'46008-9\' or value.code = \'28409-1\' or value.code = \'28408-3\' or value.code = \'46484-2\' or value.code = \'46482-6\' or value.code = \'28413-3\')'"
 	 * @generated
 	 */
 	boolean validateSelfCareActivitiesCode(DiagnosticChain diagnostics, Map<Object, Object> context);
