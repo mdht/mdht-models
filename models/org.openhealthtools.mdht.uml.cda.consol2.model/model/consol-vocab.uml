@@ -649,7 +649,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_DMi50DVREeGIw7CntkyPQw" name="Administrative Gender (HL7 V3)">
       <ownedLiteral xmi:id="_kg-2oPwdEeGXDIdcQJhgtg" name="F"/>
       <ownedLiteral xmi:id="_3yF68PwdEeGXDIdcQJhgtg" name="M"/>
-      <ownedLiteral xmi:id="_49unoPwdEeGXDIdcQJhgtg" name="UN"/>
+      <ownedLiteral xmi:id="_49unoPwdEeGXDIdcQJhgtg" name="UNK"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dfhqEKDqEd-dVeaMP0XXQw" name="HL7 Religious Affiliation"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dRMTIKDqEd-dVeaMP0XXQw" name="HL7 Marital Status">
@@ -2164,8 +2164,8 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetVersion xmi:id="_8K870TVPEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.16926" version="2010-04-21" fullName="Basic Confidentiality Kind Value Set" source="HL7" effectiveDate="2010-04-21" base_Enumeration="_8K870DVPEeGIw7CntkyPQw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_-5gOQGdLEeGkeaezs0FtvA"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_LGTEUDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.1" binding="Dynamic" base_Enumeration="_DMi50DVREeGIw7CntkyPQw">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
+  <term:ValueSetVersion xmi:id="_LGTEUDVREeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.1" releaseDate="20150424" binding="Dynamic" base_Enumeration="_DMi50DVREeGIw7CntkyPQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_SLh6QTVUEeGIw7CntkyPQw" identifier="2.16.840.1.113883.1.11.12199" fullName="Language Ability Proficiency" binding="Dynamic" base_Enumeration="_SLh6QDVUEeGIw7CntkyPQw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_PaapkGdREeGkeaezs0FtvA"/>
@@ -2621,7 +2621,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_-zyjcfwaEeGXDIdcQJhgtg" conceptName="Not Hispanic or Latino" base_EnumerationLiteral="_-zyjcPwaEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_khB58PwdEeGXDIdcQJhgtg" conceptName="Female" base_EnumerationLiteral="_kg-2oPwdEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_3yI-QPwdEeGXDIdcQJhgtg" conceptName="Male" base_EnumerationLiteral="_3yF68PwdEeGXDIdcQJhgtg"/>
-  <term:ValueSetCode xmi:id="_49xq8PwdEeGXDIdcQJhgtg" conceptName="Undifferentiated" base_EnumerationLiteral="_49unoPwdEeGXDIdcQJhgtg"/>
+  <term:ValueSetCode xmi:id="_49xq8PwdEeGXDIdcQJhgtg" conceptName="Unknown" base_EnumerationLiteral="_49unoPwdEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_IHUc8PweEeGXDIdcQJhgtg" conceptName="Annulled" base_EnumerationLiteral="_IHRZoPweEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_KbA94fweEeGXDIdcQJhgtg" conceptName="Divorced" base_EnumerationLiteral="_KbA94PweEeGXDIdcQJhgtg"/>
   <term:ValueSetCode xmi:id="_LoXh0fweEeGXDIdcQJhgtg" conceptName="Interlocutory" base_EnumerationLiteral="_LoXh0PweEeGXDIdcQJhgtg"/>
@@ -3363,7 +3363,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_Taz-AZm1EeOLJeQez13EkQ" conceptName="independent" base_EnumerationLiteral="_Taz-AJm1EeOLJeQez13EkQ"/>
   <term:ValueSetCode xmi:id="_Vr_9gZm1EeOLJeQez13EkQ" conceptName="able to and does" base_EnumerationLiteral="_Vr_9gJm1EeOLJeQez13EkQ"/>
   <term:ValueSetVersion xmi:id="_dxy_8Zm1EeOLJeQez13EkQ" identifier="2.16.840.1.113883.11.20.9.47" fullName="ADL Result Type" source="http://www.hl7.org" definition="This value set includes Basic ADL and IADL activities." binding="Dynamic" base_Enumeration="_dxy_8Jm1EeOLJeQez13EkQ">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_pUHzoZm1EeOLJeQez13EkQ" conceptName="Bathing" base_EnumerationLiteral="_pUHzoJm1EeOLJeQez13EkQ"/>
   <term:ValueSetCode xmi:id="_tQoFcZm1EeOLJeQez13EkQ" conceptName="Dressing" base_EnumerationLiteral="_tQoFcJm1EeOLJeQez13EkQ"/>
@@ -3436,7 +3436,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_hDbOoeHIEeO04sHNODkHmQ" conceptName="nullified" base_EnumerationLiteral="_hDbOoOHIEeO04sHNODkHmQ"/>
   <term:ValueSetCode xmi:id="_iiyIkeHIEeO04sHNODkHmQ" conceptName="obsolete" base_EnumerationLiteral="_iiyIkOHIEeO04sHNODkHmQ"/>
   <term:ValueSetVersion xmi:id="_maiyYOHKEeO04sHNODkHmQ" identifier="2.16.840.1.113883.1.11.14570" fullName="AdministrableDrugForm" binding="Dynamic" base_Enumeration="_maiLUOHKEeO04sHNODkHmQ">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_WsbMUeHNEeO04sHNODkHmQ"/>
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_OsdGUOuZEeWgMM6dmEi-NA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_7wHo0eHKEeO04sHNODkHmQ" conceptName="Puff" base_EnumerationLiteral="_7wHo0OHKEeO04sHNODkHmQ"/>
   <term:ValueSetCode xmi:id="_-MUlgeHKEeO04sHNODkHmQ" conceptName="Scoops" base_EnumerationLiteral="_-MUlgOHKEeO04sHNODkHmQ"/>

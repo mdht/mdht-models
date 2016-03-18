@@ -318,7 +318,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_SELF_CARE_ACTIVITIES_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '46008-9' or value.code = '28409-1' or value.code = '28408-3' or value.code = '46484-2' or value.code = '46482-6' or value.code = '28413-3'))";
+			+ "value.code = '46008-9' or value.code = '28409-1' or value.code = '28408-3' or value.code = '46484-2' or value.code = '46482-6' or value.code = '28413-3')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSelfCareActivitiesCode(SelfCareActivities, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Self Care Activities Code</em>}' invariant operation.
