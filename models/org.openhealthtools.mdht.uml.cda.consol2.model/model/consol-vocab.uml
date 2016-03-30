@@ -1979,6 +1979,56 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       <ownedLiteral xmi:id="_xhC6GU9uEeWsIc5CMrI4GA" name="228272008"/>
       <ownedLiteral xmi:id="_xhC6Gk9uEeWsIc5CMrI4GA" name="105421008"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_jGajcPXpEeWB5KUN8TYluQ" name="Observation Interpretation (HL7)">
+      <ownedLiteral xmi:id="_9FvzQPXpEeWB5KUN8TYluQ" name="&lt;"/>
+      <ownedLiteral xmi:id="_EF2Y8PXqEeWB5KUN8TYluQ" name=">"/>
+      <ownedLiteral xmi:id="_jGajcfXpEeWB5KUN8TYluQ" name="A"/>
+      <ownedLiteral xmi:id="_KzIJQPXqEeWB5KUN8TYluQ" name="AA"/>
+      <ownedLiteral xmi:id="_O4gDMPXqEeWB5KUN8TYluQ" name="AC"/>
+      <ownedLiteral xmi:id="_jGajdPXpEeWB5KUN8TYluQ" name="B"/>
+      <ownedLiteral xmi:id="_VbrcUPXqEeWB5KUN8TYluQ" name="CAR"/>
+      <ownedLiteral xmi:id="_jGajdfXpEeWB5KUN8TYluQ" name="Carrier"/>
+      <ownedLiteral xmi:id="_jGajdvXpEeWB5KUN8TYluQ" name="D"/>
+      <ownedLiteral xmi:id="_brIBIPXqEeWB5KUN8TYluQ" name="DET"/>
+      <ownedLiteral xmi:id="_MtbdUPXrEeWB5KUN8TYluQ" name="EX"/>
+      <ownedLiteral xmi:id="_iALpQPXrEeWB5KUN8TYluQ" name="H"/>
+      <ownedLiteral xmi:id="_jgTYMPXrEeWB5KUN8TYluQ" name="H>"/>
+      <ownedLiteral xmi:id="_kqYlsPXrEeWB5KUN8TYluQ" name="HH"/>
+      <ownedLiteral xmi:id="_l25cIPXrEeWB5KUN8TYluQ" name="HX"/>
+      <ownedLiteral xmi:id="_nVVJAPXrEeWB5KUN8TYluQ" name="I"/>
+      <ownedLiteral xmi:id="_oMokcPXrEeWB5KUN8TYluQ" name="IE"/>
+      <ownedLiteral xmi:id="_pla8UPXrEeWB5KUN8TYluQ" name="IND"/>
+      <ownedLiteral xmi:id="_qrKcYPXrEeWB5KUN8TYluQ" name="L"/>
+      <ownedLiteral xmi:id="_rk4SoPXrEeWB5KUN8TYluQ" name="L&lt;"/>
+      <ownedLiteral xmi:id="_swdU8PXrEeWB5KUN8TYluQ" name="LL"/>
+      <ownedLiteral xmi:id="_wUCJYPXrEeWB5KUN8TYluQ" name="LX"/>
+      <ownedLiteral xmi:id="_xHkfIPXrEeWB5KUN8TYluQ" name="MS"/>
+      <ownedLiteral xmi:id="_yN2xwPXrEeWB5KUN8TYluQ" name="N"/>
+      <ownedLiteral xmi:id="_zETRkPXrEeWB5KUN8TYluQ" name="ND"/>
+      <ownedLiteral xmi:id="_0ZLZ0PXrEeWB5KUN8TYluQ" name="NEG"/>
+      <ownedLiteral xmi:id="_1S4B8PXrEeWB5KUN8TYluQ" name="NR"/>
+      <ownedLiteral xmi:id="_2YSx4PXrEeWB5KUN8TYluQ" name="NS"/>
+      <ownedLiteral xmi:id="_3QIY0PXrEeWB5KUN8TYluQ" name="ObservationInterpretationDetection"/>
+      <ownedLiteral xmi:id="_405XMPXrEeWB5KUN8TYluQ" name="POS"/>
+      <ownedLiteral xmi:id="_6XDtgPXrEeWB5KUN8TYluQ" name="QCF"/>
+      <ownedLiteral xmi:id="_7bDhIPXrEeWB5KUN8TYluQ" name="R"/>
+      <ownedLiteral xmi:id="_8FwrAPXrEeWB5KUN8TYluQ" name="RR"/>
+      <ownedLiteral xmi:id="_87KB8PXrEeWB5KUN8TYluQ" name="ReactivityObservationInterpretation"/>
+      <ownedLiteral xmi:id="_-RwogPXrEeWB5KUN8TYluQ" name="S"/>
+      <ownedLiteral xmi:id="_--bhQPXrEeWB5KUN8TYluQ" name="SDD"/>
+      <ownedLiteral xmi:id="__4ZPIPXrEeWB5KUN8TYluQ" name="SYN-R"/>
+      <ownedLiteral xmi:id="_BBMqQPXsEeWB5KUN8TYluQ" name="SYN-S"/>
+      <ownedLiteral xmi:id="_CBuTIPXsEeWB5KUN8TYluQ" name="TOX"/>
+      <ownedLiteral xmi:id="_C4Ky8PXsEeWB5KUN8TYluQ" name="U"/>
+      <ownedLiteral xmi:id="_EDYB0PXsEeWB5KUN8TYluQ" name="VS"/>
+      <ownedLiteral xmi:id="_E2eSsPXsEeWB5KUN8TYluQ" name="W"/>
+      <ownedLiteral xmi:id="_HH-bQPXsEeWB5KUN8TYluQ" name="WR"/>
+      <ownedLiteral xmi:id="_ImfnsPXsEeWB5KUN8TYluQ" name="_GeneticObservationInterpretation"/>
+      <ownedLiteral xmi:id="_JilcgPXsEeWB5KUN8TYluQ" name="_ObservationInterpretationChange"/>
+      <ownedLiteral xmi:id="_KWry8PXsEeWB5KUN8TYluQ" name="_ObservationInterpretationExceptions"/>
+      <ownedLiteral xmi:id="_LQ4KUPXsEeWB5KUN8TYluQ" name="_ObservationInterpretationNormality"/>
+      <ownedLiteral xmi:id="_MLMdgPXsEeWB5KUN8TYluQ" name="_ObservationInterpretationSusceptibility"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3715,4 +3765,55 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_xhC6Kk9uEeWsIc5CMrI4GA" conceptName="Educational Achievement" base_EnumerationLiteral="_xhC6Gk9uEeWsIc5CMrI4GA"/>
   <term:ValueSetCode xmi:id="_evwC0LY7EeWyGNoqJ3PYyg" conceptName="influenza, injectable, quadrivalent, preservative free" base_EnumerationLiteral="_evhZULY7EeWyGNoqJ3PYyg"/>
   <term:ValueSetCode xmi:id="_uo8wIbY7EeWyGNoqJ3PYyg" conceptName="meningococcal B, OMV" base_EnumerationLiteral="_uo8wILY7EeWyGNoqJ3PYyg"/>
+  <term:ValueSetVersion xmi:id="_jGbKhfXpEeWB5KUN8TYluQ" identifier="2.16.840.1.113883.1.11.78" version="2015-12-10" fullName="Observation Interpretation (HL7)" source="http://www.hl7.org" definition="Observation interpretation concepts that are based upon HL7 V3 vocabulary." revisionDate="07/07/2009" base_Enumeration="_jGajcPXpEeWB5KUN8TYluQ">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_1o75oaFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_jGbKhvXpEeWB5KUN8TYluQ" conceptName="Abnormal" usageNote="ObservationInterpretation" base_EnumerationLiteral="_jGajcfXpEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_jGbKifXpEeWB5KUN8TYluQ" conceptName="Better" usageNote="ObservationInterpretation" base_EnumerationLiteral="_jGajdPXpEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_jGbKivXpEeWB5KUN8TYluQ" conceptName="Carrier" usageNote="ObservationInterpretation" base_EnumerationLiteral="_jGajdfXpEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_jGbKi_XpEeWB5KUN8TYluQ" conceptName="Significant change down" usageNote="ObservationInterpretation" base_EnumerationLiteral="_jGajdvXpEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_9F4WIPXpEeWB5KUN8TYluQ" conceptName="Off scale low" base_EnumerationLiteral="_9FvzQPXpEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_EF3AAPXqEeWB5KUN8TYluQ" conceptName="Off scale high" base_EnumerationLiteral="_EF2Y8PXqEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_KzIJQfXqEeWB5KUN8TYluQ" conceptName="Critically abnormal" base_EnumerationLiteral="_KzIJQPXqEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_O4gDMfXqEeWB5KUN8TYluQ" conceptName="Anti-complementary substances present" base_EnumerationLiteral="_O4gDMPXqEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_VbsDYPXqEeWB5KUN8TYluQ" conceptName="Carrier" base_EnumerationLiteral="_VbrcUPXqEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_brIoMPXqEeWB5KUN8TYluQ" conceptName="Detected" base_EnumerationLiteral="_brIBIPXqEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_MtcEYPXrEeWB5KUN8TYluQ" conceptName="outside threshold" base_EnumerationLiteral="_MtbdUPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_iALpQfXrEeWB5KUN8TYluQ" conceptName="High" base_EnumerationLiteral="_iALpQPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_jgT_QPXrEeWB5KUN8TYluQ" conceptName="Very high" base_EnumerationLiteral="_jgTYMPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_kqYlsfXrEeWB5KUN8TYluQ" conceptName="Critically high" base_EnumerationLiteral="_kqYlsPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_l25cIfXrEeWB5KUN8TYluQ" conceptName="above high threshold" base_EnumerationLiteral="_l25cIPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_nVVJAfXrEeWB5KUN8TYluQ" conceptName="Intermediate" base_EnumerationLiteral="_nVVJAPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_oMokcfXrEeWB5KUN8TYluQ" conceptName="Insufficient evidence" base_EnumerationLiteral="_oMokcPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_pla8UfXrEeWB5KUN8TYluQ" conceptName="Indeterminate" base_EnumerationLiteral="_pla8UPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_qrKcYfXrEeWB5KUN8TYluQ" conceptName="Low" base_EnumerationLiteral="_qrKcYPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_rk45sPXrEeWB5KUN8TYluQ" conceptName="Very low" base_EnumerationLiteral="_rk4SoPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_swd8APXrEeWB5KUN8TYluQ" conceptName="Critically low" base_EnumerationLiteral="_swdU8PXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_wUCJYfXrEeWB5KUN8TYluQ" conceptName="below low threshold" base_EnumerationLiteral="_wUCJYPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_xHlGMPXrEeWB5KUN8TYluQ" conceptName="moderately susceptible" base_EnumerationLiteral="_xHkfIPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_yN3Y0PXrEeWB5KUN8TYluQ" conceptName="Normal" base_EnumerationLiteral="_yN2xwPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_zET4oPXrEeWB5KUN8TYluQ" conceptName="Not detected" base_EnumerationLiteral="_zETRkPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_0ZLZ0fXrEeWB5KUN8TYluQ" conceptName="Negative" base_EnumerationLiteral="_0ZLZ0PXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_1S4B8fXrEeWB5KUN8TYluQ" conceptName="Non-reactive" base_EnumerationLiteral="_1S4B8PXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_2YSx4fXrEeWB5KUN8TYluQ" conceptName="Non-susceptible" base_EnumerationLiteral="_2YSx4PXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_3QIY0fXrEeWB5KUN8TYluQ" conceptName="ObservationInterpretationDetection" base_EnumerationLiteral="_3QIY0PXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_405XMfXrEeWB5KUN8TYluQ" conceptName="Positive" base_EnumerationLiteral="_405XMPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_6XEUkPXrEeWB5KUN8TYluQ" conceptName="Quality control failure" base_EnumerationLiteral="_6XDtgPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_7bDhIfXrEeWB5KUN8TYluQ" conceptName="Resistant" base_EnumerationLiteral="_7bDhIPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_8FxSEPXrEeWB5KUN8TYluQ" conceptName="Reactive" base_EnumerationLiteral="_8FwrAPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_87KpAPXrEeWB5KUN8TYluQ" conceptName="ReactivityObservationInterpretation" base_EnumerationLiteral="_87KB8PXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_-RwogfXrEeWB5KUN8TYluQ" conceptName="Susceptible" base_EnumerationLiteral="_-RwogPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_--cIUPXrEeWB5KUN8TYluQ" conceptName="Susceptible-dose dependent" base_EnumerationLiteral="_--bhQPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="__4Z2MPXrEeWB5KUN8TYluQ" conceptName="Synergy - resistant" base_EnumerationLiteral="__4ZPIPXrEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_BBNRUPXsEeWB5KUN8TYluQ" conceptName="Synergy - susceptible" base_EnumerationLiteral="_BBMqQPXsEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_CBuTIfXsEeWB5KUN8TYluQ" conceptName="Cytotoxic substance present" base_EnumerationLiteral="_CBuTIPXsEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_C4Ky8fXsEeWB5KUN8TYluQ" conceptName="Significant change up" base_EnumerationLiteral="_C4Ky8PXsEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_EDYo4PXsEeWB5KUN8TYluQ" conceptName="very susceptible" base_EnumerationLiteral="_EDYB0PXsEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_E2eSsfXsEeWB5KUN8TYluQ" conceptName="Worse" base_EnumerationLiteral="_E2eSsPXsEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_HH-bQfXsEeWB5KUN8TYluQ" conceptName="Weakly reactive" base_EnumerationLiteral="_HH-bQPXsEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_ImgOwPXsEeWB5KUN8TYluQ" conceptName="GeneticObservationInterpretation" base_EnumerationLiteral="_ImfnsPXsEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_JilcgfXsEeWB5KUN8TYluQ" conceptName="ObservationInterpretationChange" base_EnumerationLiteral="_JilcgPXsEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_KWsaAPXsEeWB5KUN8TYluQ" conceptName="ObservationInterpretationExceptions" base_EnumerationLiteral="_KWry8PXsEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_LQ4KUfXsEeWB5KUN8TYluQ" conceptName="ObservationInterpretationNormality" base_EnumerationLiteral="_LQ4KUPXsEeWB5KUN8TYluQ"/>
+  <term:ValueSetCode xmi:id="_MLNEkPXsEeWB5KUN8TYluQ" conceptName="ObservationInterpretationSusceptibility" base_EnumerationLiteral="_MLMdgPXsEeWB5KUN8TYluQ"/>
 </xmi:XMI>
