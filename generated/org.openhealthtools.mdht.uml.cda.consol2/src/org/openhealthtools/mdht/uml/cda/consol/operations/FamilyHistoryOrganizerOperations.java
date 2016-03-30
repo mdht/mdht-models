@@ -520,7 +520,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	 */
 	protected static final String VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((administrativeGenderCode.oclIsUndefined() or administrativeGenderCode.isNullFlavorUndefined()) implies (not administrativeGenderCode.oclIsUndefined() and administrativeGenderCode.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = administrativeGenderCode.oclAsType(datatypes::CE) in "
-			+ "value.code = 'F' or value.code = 'M' or value.code = 'UNK'))";
+			+ "value.codeSystem = '2.16.840.1.113883.5.1' and (value.code = 'F' or value.code = 'M' or value.code = 'UNK')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode(FamilyHistoryOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Organizer Subject Related Subject Subject Person Administrative Gender Code</em>}' invariant operation.

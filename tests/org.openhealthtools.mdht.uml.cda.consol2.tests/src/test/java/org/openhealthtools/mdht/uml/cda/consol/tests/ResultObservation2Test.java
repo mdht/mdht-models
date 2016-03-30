@@ -766,13 +766,25 @@ public class ResultObservation2Test extends CDAValidationTest {
 				target.getInterpretationCodes().add(DatatypesFactory.eINSTANCE.createCE());
 			}
 
+			String[] subsetOfCodesToTest = "A H > < H> L< SYN-S _GeneticObservationInterpretation AC".split(" ");
+
 			@Override
-			protected void updateToPass(ResultObservation2 target) {
-				for (CE icode : target.getInterpretationCodes()) {
-					icode.setCode("A");
-					icode.setCodeSystem("2.16.840.1.113883.5.83");
+			public void addPassTests() {
+				for (final String codeToTest : subsetOfCodesToTest) {
+					addPassTest(new PassTest() {
+						@Override
+						public void updateToPass(ResultObservation2 target) {
+							target.init();
+							target.getInterpretationCodes().clear();
+							target.getInterpretationCodes().add(DatatypesFactory.eINSTANCE.createCE());
+							for (CE icode : target.getInterpretationCodes()) {
+								icode.setCode(codeToTest);
+								icode.setCodeSystem("2.16.840.1.113883.5.83");
+							}
+						};
+					});
 				}
-			}
+			};
 
 			@Override
 			protected void setDependency(ResultObservation2 target) {
