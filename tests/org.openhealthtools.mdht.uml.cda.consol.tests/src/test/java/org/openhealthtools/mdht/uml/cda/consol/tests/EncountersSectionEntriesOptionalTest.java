@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncountersSectionEntriesOptionalOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,7 +55,8 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	public void testValidateEncountersSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
 			"validateEncountersSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -88,8 +89,8 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	@Test
 	public void testValidateEncountersSectionEntriesOptionalCode() {
 		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalCodeTestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
-			"validateEncountersSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEncountersSectionEntriesOptionalCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -122,8 +123,8 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	@Test
 	public void testValidateEncountersSectionEntriesOptionalCodeP() {
 		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalCodePTestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
-			"validateEncountersSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEncountersSectionEntriesOptionalCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -156,8 +157,8 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	@Test
 	public void testValidateEncountersSectionEntriesOptionalTitle() {
 		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalTitleTestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
-			"validateEncountersSectionEntriesOptionalTitle",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEncountersSectionEntriesOptionalTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -193,8 +194,8 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	@Test
 	public void testValidateEncountersSectionEntriesOptionalText() {
 		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalTextTestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
-			"validateEncountersSectionEntriesOptionalText",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEncountersSectionEntriesOptionalText", operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -231,7 +232,8 @@ public class EncountersSectionEntriesOptionalTest extends CDAValidationTest {
 	public void testValidateEncountersSectionEntriesOptionalEncounterActivities() {
 		OperationsTestCase<EncountersSectionEntriesOptional> validateEncountersSectionEntriesOptionalEncounterActivitiesTestCase = new OperationsTestCase<EncountersSectionEntriesOptional>(
 			"validateEncountersSectionEntriesOptionalEncounterActivities",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

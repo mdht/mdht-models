@@ -15,6 +15,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.mdht.uml.cda.operations.SectionOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -22,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.FindingsSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -82,26 +82,28 @@ public class FindingsSectionOperations extends SectionOperations {
 
 	public static boolean validateFindingsSectionTemplateId(FindingsSection findingsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FINDINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FINDINGS_SECTION);
 			try {
 				VALIDATE_FINDINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FINDINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FINDINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			findingsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FINDINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(findingsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FINDINGS_SECTION__FINDINGS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("FindingsSectionFindingsSectionTemplateId"),
-					new Object[] { findingsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FINDINGS_SECTION__FINDINGS_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("FindingsSectionFindingsSectionTemplateId"),
+						 new Object [] { findingsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;

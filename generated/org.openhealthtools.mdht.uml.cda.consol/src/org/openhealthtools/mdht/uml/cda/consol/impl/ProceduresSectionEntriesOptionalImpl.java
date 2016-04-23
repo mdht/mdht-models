@@ -17,21 +17,19 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSectionEntriesOptionalOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedures Section Entries Optional</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -62,8 +60,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +69,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +79,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +89,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +98,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public boolean validateProceduresSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +108,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityProcedure(this, diagnostics, context);
 	}
 
 	/**
@@ -126,8 +118,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalProcedureAcivityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureAcivityObservation(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureAcivityObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -137,8 +128,7 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 */
 	public boolean validateProceduresSectionEntriesOptionalProcedureActivityAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityAct(
-			this, diagnostics, context);
+		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalProcedureActivityAct(this, diagnostics, context);
 	}
 
 	/**
@@ -174,16 +164,16 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public ProceduresSectionEntriesOptional init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProceduresSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ProceduresSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProceduresSectionEntriesOptionalImpl

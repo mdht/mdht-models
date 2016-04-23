@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyProblemActOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Allergy Problem Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -150,8 +148,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActCDCodeAndCodeSystemValues(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActCDCodeAndCodeSystemValues(
-			this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActCDCodeAndCodeSystemValues(this, diagnostics, context);
 	}
 
 	/**
@@ -187,16 +184,16 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * @generated
 	 */
 	public AllergyProblemAct init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AllergyProblemAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AllergyProblemAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AllergyProblemActImpl

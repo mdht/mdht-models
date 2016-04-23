@@ -172,28 +172,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -233,28 +233,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -294,28 +294,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -355,28 +355,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteHasReasonForReferralOrReasonForVisit(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_HAS_REASON_FOR_REFERRAL_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_HAS_REASON_FOR_REFERRAL_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_HAS_REASON_FOR_REFERRAL_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_HAS_REASON_FOR_REFERRAL_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_HAS_REASON_FOR_REFERRAL_OR_REASON_FOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HAS_REASON_FOR_REFERRAL_OR_REASON_FOR_VISIT,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHasReasonForReferralOrReasonForVisit"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HAS_REASON_FOR_REFERRAL_OR_REASON_FOR_VISIT,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHasReasonForReferralOrReasonForVisit"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -416,26 +416,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteTemplateId(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteTemplateId"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteTemplateId"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -475,26 +477,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateGeneralHeaderConstraintsCodeP(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteGeneralHeaderConstraintsCodeP"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteGeneralHeaderConstraintsCodeP"),
+						 new Object [] { consultationNote }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -506,7 +510,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 				}
 				passToken.add(consultationNote);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -546,26 +550,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteComponentOf(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOf"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOf"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -605,26 +611,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteAssessmentSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteAssessmentSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteAssessmentSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -664,27 +672,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteAssessmentAndPlanSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteAssessmentAndPlanSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteAssessmentAndPlanSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -724,26 +733,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNotePlanOfCareSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PLAN_OF_CARE_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNotePlanOfCareSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PLAN_OF_CARE_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNotePlanOfCareSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -783,26 +794,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteHistoryOfPresentIllness(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHistoryOfPresentIllness"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHistoryOfPresentIllness"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -842,26 +855,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNotePhysicalExamSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNotePhysicalExamSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNotePhysicalExamSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -901,27 +916,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteReasonForReferralSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteReasonForReferralSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteReasonForReferralSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -961,26 +977,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteReasonForVisitSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteReasonForVisitSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteReasonForVisitSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1020,26 +1038,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteAllergiesSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ALLERGIES_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteAllergiesSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ALLERGIES_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteAllergiesSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1079,26 +1099,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteChiefComplaintSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteChiefComplaintSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteChiefComplaintSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1138,28 +1160,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteChiefComplaintAndReasonForVisitSection(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteChiefComplaintAndReasonForVisitSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteChiefComplaintAndReasonForVisitSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1199,26 +1221,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteFamilyHistorySection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_FAMILY_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteFamilyHistorySection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_FAMILY_HISTORY_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteFamilyHistorySection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1258,26 +1282,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteGeneralStatusSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_GENERAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteGeneralStatusSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_GENERAL_STATUS_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteGeneralStatusSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1317,27 +1343,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteHistoryOfPastIllnessSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHistoryOfPastIllnessSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHistoryOfPastIllnessSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1377,26 +1404,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteImmunizationsSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IMMUNIZATIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteImmunizationsSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IMMUNIZATIONS_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteImmunizationsSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1436,28 +1465,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteMedicationsSectionEntriesOptional(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteMedicationsSectionEntriesOptional"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteMedicationsSectionEntriesOptional"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1497,27 +1526,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteProblemSectionEntriesOptional(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteProblemSectionEntriesOptional"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteProblemSectionEntriesOptional"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1557,28 +1587,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteProceduresSectionEntriesOptional(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteProceduresSectionEntriesOptional"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteProceduresSectionEntriesOptional"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1618,27 +1648,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteResultsSectionEntriesOptional(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteResultsSectionEntriesOptional"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteResultsSectionEntriesOptional"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1678,26 +1709,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteReviewOfSystemsSection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteReviewOfSystemsSection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteReviewOfSystemsSection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1737,26 +1770,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteSocialHistorySection(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteSocialHistorySection"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteSocialHistorySection"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1796,28 +1831,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteVitalSignsSectionEntriesOptional(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteVitalSignsSectionEntriesOptional"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteVitalSignsSectionEntriesOptional"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1857,26 +1892,28 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateConsultationNoteInFulfillmentOf(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteInFulfillmentOf"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteInFulfillmentOf"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -1900,7 +1937,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -1916,31 +1953,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -1965,7 +2004,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -1981,31 +2020,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2030,7 +2071,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2046,31 +2087,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2095,7 +2138,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2111,31 +2154,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2160,7 +2205,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2176,31 +2221,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2225,7 +2272,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2241,31 +2288,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2290,7 +2339,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2306,31 +2355,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2355,7 +2406,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2371,31 +2422,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2420,7 +2473,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2436,31 +2489,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2EffectiveTime(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EffectiveTime"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EffectiveTime"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2485,7 +2540,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2501,31 +2556,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2Id(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2Id"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2Id"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2550,7 +2607,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2566,31 +2623,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2615,7 +2674,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2631,31 +2690,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant(
 			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2680,7 +2741,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2696,31 +2757,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteComponentOfEncompassingEncounter(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOfEncompassingEncounter"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2745,7 +2808,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2761,30 +2824,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteInFulfillmentOfOrderId(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteInFulfillmentOfOrderId"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteInFulfillmentOfOrderId"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2809,7 +2875,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2825,30 +2891,33 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	@SuppressWarnings("unchecked")
 	public static boolean validateConsultationNoteInFulfillmentOfOrder(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);
+		Object oclResult = VALIDATE_CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(consultationNote);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER,
-						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteInFulfillmentOfOrder"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteInFulfillmentOfOrder"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -2884,12 +2953,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static AssessmentSection getAssessmentSection(ConsultationNote consultationNote) {
 		if (GET_ASSESSMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(336));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(336));
 			try {
 				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2926,12 +2994,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static AssessmentAndPlanSection getAssessmentAndPlanSection(ConsultationNote consultationNote) {
 		if (GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(337));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(337));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -2968,12 +3035,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static PlanOfCareSection getPlanOfCareSection(ConsultationNote consultationNote) {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(338));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(338));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3010,12 +3076,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static HistoryOfPresentIllnessSection getHistoryOfPresentIllness(ConsultationNote consultationNote) {
 		if (GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(339));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(339));
 			try {
 				GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3052,12 +3117,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static PhysicalExamSection getPhysicalExamSection(ConsultationNote consultationNote) {
 		if (GET_PHYSICAL_EXAM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(340));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(340));
 			try {
 				GET_PHYSICAL_EXAM_SECTION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3094,12 +3158,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ReasonForReferralSection getReasonForReferralSection(ConsultationNote consultationNote) {
 		if (GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(341));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(341));
 			try {
 				GET_REASON_FOR_REFERRAL_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_REFERRAL_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3136,12 +3199,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ReasonForVisitSection getReasonForVisitSection(ConsultationNote consultationNote) {
 		if (GET_REASON_FOR_VISIT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(342));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(342));
 			try {
 				GET_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_REASON_FOR_VISIT_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3178,12 +3240,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static AllergiesSectionEntriesOptional getAllergiesSection(ConsultationNote consultationNote) {
 		if (GET_ALLERGIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(343));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(343));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3220,12 +3281,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ChiefComplaintSection getChiefComplaintSection(ConsultationNote consultationNote) {
 		if (GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(344));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(344));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3263,12 +3323,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			ConsultationNote consultationNote) {
 		if (GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(345));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(345));
 			try {
 				GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3305,12 +3364,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static FamilyHistorySection getFamilyHistorySection(ConsultationNote consultationNote) {
 		if (GET_FAMILY_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(346));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(346));
 			try {
 				GET_FAMILY_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3347,12 +3405,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static GeneralStatusSection getGeneralStatusSection(ConsultationNote consultationNote) {
 		if (GET_GENERAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(347));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(347));
 			try {
 				GET_GENERAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_GENERAL_STATUS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3389,12 +3446,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static HistoryOfPastIllnessSection getHistoryOfPastIllnessSection(ConsultationNote consultationNote) {
 		if (GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(348));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(348));
 			try {
 				GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3431,12 +3487,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ImmunizationsSection getImmunizationsSection(ConsultationNote consultationNote) {
 		if (GET_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(349));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(349));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3474,12 +3529,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 			ConsultationNote consultationNote) {
 		if (GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(350));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(350));
 			try {
 				GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3516,12 +3570,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ProblemSectionEntriesOptional getProblemSectionEntriesOptional(ConsultationNote consultationNote) {
 		if (GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(351));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(351));
 			try {
 				GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3558,12 +3611,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ProceduresSectionEntriesOptional getProceduresSectionEntriesOptional(ConsultationNote consultationNote) {
 		if (GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(352));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(352));
 			try {
 				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3600,12 +3652,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ResultsSectionEntriesOptional getResultsSectionEntriesOptional(ConsultationNote consultationNote) {
 		if (GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(353));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(353));
 			try {
 				GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3642,12 +3693,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static ReviewOfSystemsSection getReviewOfSystemsSection(ConsultationNote consultationNote) {
 		if (GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(354));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(354));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3684,12 +3734,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static SocialHistorySection getSocialHistorySection(ConsultationNote consultationNote) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(355));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(355));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3726,12 +3775,11 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	public static VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional(ConsultationNote consultationNote) {
 		if (GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.CONSULTATION_NOTE,
-				ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(356));
+			helper.setOperationContext(ConsolPackage.Literals.CONSULTATION_NOTE, ConsolPackage.Literals.CONSULTATION_NOTE.getEAllOperations().get(356));
 			try {
 				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -3747,9 +3795,9 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11488-4' or value.code = '34100-8' or value.code = '34104-0' or value.code = '51845-6' or value.code = '51853-0' or value.code = '51846-4' or value.code = '34101-6' or value.code = '34749-2' or value.code = '34102-4' or value.code = '34099-2' or value.code = '34756-7' or value.code = '34758-3' or value.code = '34760-9' or value.code = '34879-7' or value.code = '34761-7' or value.code = '34764-1' or value.code = '34771-6' or value.code = '34776-5' or value.code = '34777-3' or value.code = '34779-9' or value.code = '34781-5' or value.code = '34783-1' or value.code = '34785-6' or value.code = '34795-5' or value.code = '34797-1' or value.code = '34798-9' or value.code = '34800-3' or value.code = '34803-7' or value.code = '34855-7' or value.code = '34805-2' or value.code = '34807-8' or value.code = '34810-2' or value.code = '34812-8' or value.code = '34814-4' or value.code = '34816-9' or value.code = '34820-1' or value.code = '34822-7' or value.code = '34824-3' or value.code = '34826-8' or value.code = '34828-4' or value.code = '34788-0' or value.code = '34791-4' or value.code = '34103-2' or value.code = '34831-8' or value.code = '34833-4' or value.code = '34835-9' or value.code = '34837-5' or value.code = '34839-1' or value.code = '34841-7' or value.code = '34845-8' or value.code = '34847-4' or value.code = '34849-0' or value.code = '34851-6' or value.code = '34853-2'))";
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '11488-4' or value.code = '34100-8' or value.code = '34104-0' or value.code = '51845-6' or value.code = '51853-0' or value.code = '51846-4' or value.code = '34101-6' or value.code = '34749-2' or value.code = '34102-4' or value.code = '34099-2' or value.code = '34756-7' or value.code = '34758-3' or value.code = '34760-9' or value.code = '34879-7' or value.code = '34761-7' or value.code = '34764-1' or value.code = '34771-6' or value.code = '34776-5' or value.code = '34777-3' or value.code = '34779-9' or value.code = '34781-5' or value.code = '34783-1' or value.code = '34785-6' or value.code = '34795-5' or value.code = '34797-1' or value.code = '34798-9' or value.code = '34800-3' or value.code = '34803-7' or value.code = '34855-7' or value.code = '34805-2' or value.code = '34807-8' or value.code = '34810-2' or value.code = '34812-8' or value.code = '34814-4' or value.code = '34816-9' or value.code = '34820-1' or value.code = '34822-7' or value.code = '34824-3' or value.code = '34826-8' or value.code = '34828-4' or value.code = '34788-0' or value.code = '34791-4' or value.code = '34103-2' or value.code = '34831-8' or value.code = '34833-4' or value.code = '34835-9' or value.code = '34837-5' or value.code = '34839-1' or value.code = '34841-7' or value.code = '34845-8' or value.code = '34847-4' or value.code = '34849-0' or value.code = '34851-6' or value.code = '34853-2'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsCode(ConsultationNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' invariant operation.
@@ -3775,34 +3823,34 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 
 	public static boolean validateGeneralHeaderConstraintsCode(ConsultationNote consultationNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraintsCodeP");
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraintsCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(consultationNote)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONSULTATION_NOTE);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			consultationNote)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consultationNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
-					ConsolPlugin.INSTANCE.getString("ConsultationNoteGeneralHeaderConstraintsCode"),
-					new Object[] { consultationNote }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
+						 ConsolPlugin.INSTANCE.getString("ConsultationNoteGeneralHeaderConstraintsCode"),
+						 new Object [] { consultationNote }));
 			}
-
+			 
 			return false;
 		}
 		return true;

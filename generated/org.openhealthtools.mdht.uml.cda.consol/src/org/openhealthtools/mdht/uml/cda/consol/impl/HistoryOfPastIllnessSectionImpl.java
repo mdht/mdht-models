@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HistoryOfPastIllnessSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>History Of Past Illness Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 */
 	public boolean validateHistoryOfPastIllnessSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTemplateId(
-			this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +76,7 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * @generated
 	 */
 	public boolean validateHistoryOfPastIllnessSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionCodeP(
-			this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -89,8 +85,7 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * @generated
 	 */
 	public boolean validateHistoryOfPastIllnessSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTitle(
-			this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -109,8 +104,7 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 */
 	public boolean validateHistoryOfPastIllnessSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionProblemObservation(
-			this, diagnostics, context);
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -128,16 +122,16 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	 * @generated
 	 */
 	public HistoryOfPastIllnessSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HistoryOfPastIllnessSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HistoryOfPastIllnessSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HistoryOfPastIllnessSectionImpl

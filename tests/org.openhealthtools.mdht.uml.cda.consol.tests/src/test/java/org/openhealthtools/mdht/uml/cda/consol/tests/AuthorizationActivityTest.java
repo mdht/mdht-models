@@ -14,30 +14,30 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.Act;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Encounter;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Observation;
+import org.eclipse.mdht.uml.cda.ObservationMedia;
+import org.eclipse.mdht.uml.cda.Organizer;
+import org.eclipse.mdht.uml.cda.Procedure;
+import org.eclipse.mdht.uml.cda.RegionOfInterest;
+import org.eclipse.mdht.uml.cda.SubstanceAdministration;
+import org.eclipse.mdht.uml.cda.Supply;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.vocab.ActMood;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActMoodDocumentObservation;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentActMood;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentEncounterMood;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentProcedureMood;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.Act;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Encounter;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.ObservationMedia;
-import org.openhealthtools.mdht.uml.cda.Organizer;
-import org.openhealthtools.mdht.uml.cda.Procedure;
-import org.openhealthtools.mdht.uml.cda.RegionOfInterest;
-import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
-import org.openhealthtools.mdht.uml.cda.Supply;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AuthorizationActivityOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActMood;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActMoodDocumentObservation;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentEncounterMood;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentProcedureMood;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -206,8 +206,8 @@ public class AuthorizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateAuthorizationActivityEntryRelationship() {
 		OperationsTestCase<AuthorizationActivity> validateAuthorizationActivityEntryRelationshipTestCase = new OperationsTestCase<AuthorizationActivity>(
-			"validateAuthorizationActivityEntryRelationship",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAuthorizationActivityEntryRelationship", operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -244,7 +244,8 @@ public class AuthorizationActivityTest extends CDAValidationTest {
 	public void testValidateAuthorizationActivityEntryRelationshipHasClinicalStatement() {
 		OperationsTestCase<AuthorizationActivity> validateAuthorizationActivityEntryRelationshipHasClinicalStatementTestCase = new OperationsTestCase<AuthorizationActivity>(
 			"validateAuthorizationActivityEntryRelationshipHasClinicalStatement",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_HAS_CLINICAL_STATEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_HAS_CLINICAL_STATEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -536,7 +537,8 @@ public class AuthorizationActivityTest extends CDAValidationTest {
 	public void testValidateAuthorizationActivityEntryRelationshipHasAuthorizedPerformers() {
 		OperationsTestCase<AuthorizationActivity> validateAuthorizationActivityEntryRelationshipHasAuthorizedPerformersTestCase = new OperationsTestCase<AuthorizationActivity>(
 			"validateAuthorizationActivityEntryRelationshipHasAuthorizedPerformers",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_HAS_AUTHORIZED_PERFORMERS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_HAS_AUTHORIZED_PERFORMERS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -873,7 +875,8 @@ public class AuthorizationActivityTest extends CDAValidationTest {
 	public void testValidateAuthorizationActivityEntryRelationshipTypeCode() {
 		OperationsTestCase<AuthorizationActivity> validateAuthorizationActivityEntryRelationshipTypeCodeTestCase = new OperationsTestCase<AuthorizationActivity>(
 			"validateAuthorizationActivityEntryRelationshipTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{

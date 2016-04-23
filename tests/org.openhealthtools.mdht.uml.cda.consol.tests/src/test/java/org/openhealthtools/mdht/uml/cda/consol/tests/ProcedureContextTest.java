@@ -14,13 +14,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureContext;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureContextOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -51,8 +51,8 @@ public class ProcedureContextTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureContextEffectiveTimeValue() {
 		OperationsTestCase<ProcedureContext> validateProcedureContextEffectiveTimeValueTestCase = new OperationsTestCase<ProcedureContext>(
-			"validateProcedureContextEffectiveTimeValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureContextEffectiveTimeValue", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

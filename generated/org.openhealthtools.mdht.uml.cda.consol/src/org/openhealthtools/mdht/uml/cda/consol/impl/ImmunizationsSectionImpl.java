@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationsSectionOp
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunizations Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -114,8 +112,7 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	@Override
 	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ImmunizationsSectionOperations.validateImmunizationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -123,19 +120,17 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ImmunizationsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ImmunizationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ImmunizationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ImmunizationsSectionImpl

@@ -15,6 +15,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.mdht.uml.cda.operations.SectionOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -22,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalConsultationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -87,27 +87,28 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	public static boolean validateHospitalConsultationsSectionTemplateId(
 			HospitalConsultationsSection hospitalConsultationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_CONSULTATIONS_SECTION);
 			try {
 				VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalConsultationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(hospitalConsultationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionTemplateId"),
-					new Object[] { hospitalConsultationsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionTemplateId"),
+						 new Object [] { hospitalConsultationsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -121,9 +122,9 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '18841-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '18841-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHospitalConsultationsSectionCode(HospitalConsultationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Consultations Section Code</em>}' invariant operation.
@@ -150,26 +151,28 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	public static boolean validateHospitalConsultationsSectionCode(
 			HospitalConsultationsSection hospitalConsultationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_CONSULTATIONS_SECTION);
 			try {
 				VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalConsultationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(hospitalConsultationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionCode"),
-					new Object[] { hospitalConsultationsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionCode"),
+						 new Object [] { hospitalConsultationsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -210,26 +213,28 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	public static boolean validateHospitalConsultationsSectionCodeP(
 			HospitalConsultationsSection hospitalConsultationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_CONSULTATIONS_SECTION);
 			try {
 				VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalConsultationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(hospitalConsultationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionCodeP"),
-					new Object[] { hospitalConsultationsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionCodeP"),
+						 new Object [] { hospitalConsultationsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -270,26 +275,28 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	public static boolean validateHospitalConsultationsSectionText(
 			HospitalConsultationsSection hospitalConsultationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_CONSULTATIONS_SECTION);
 			try {
 				VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalConsultationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(hospitalConsultationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionText"),
-					new Object[] { hospitalConsultationsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionText"),
+						 new Object [] { hospitalConsultationsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -330,26 +337,28 @@ public class HospitalConsultationsSectionOperations extends SectionOperations {
 	public static boolean validateHospitalConsultationsSectionTitle(
 			HospitalConsultationsSection hospitalConsultationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_CONSULTATIONS_SECTION);
 			try {
 				VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalConsultationsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_CONSULTATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(hospitalConsultationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionTitle"),
-					new Object[] { hospitalConsultationsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.HOSPITAL_CONSULTATIONS_SECTION__HOSPITAL_CONSULTATIONS_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("HospitalConsultationsSectionHospitalConsultationsSectionTitle"),
+						 new Object [] { hospitalConsultationsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;

@@ -1,23 +1,19 @@
-/*******************************************************************************
- * Copyright (c) 2011, 2012 Sean Muir and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Sean Muir (JKM Software) - initial API and implementation
- *******************************************************************************/
+/**
+ */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Act;
+
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+
+import org.eclipse.mdht.uml.cda.Act;
 
 /**
  * <!-- begin-user-doc -->
@@ -61,7 +57,7 @@ public interface ProcedureActivityAct extends Act {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -81,8 +77,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.originalText.reference->size() = 1 implies self.code.originalText.reference.value->size() = 1'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActOriginalTextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProcedureActivityActOriginalTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -118,8 +113,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProcedureActivityActServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -164,7 +158,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and \nlet value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in \nvalue = vocab::x_DocumentActMood::EVN or value = vocab::x_DocumentActMood::INT'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and \nlet value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in \r\nvalue = vocab::x_DocumentActMood::EVN or value = vocab::x_DocumentActMood::INT'"
 	 * @generated
 	 */
 	boolean validateProcedureActivityActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -200,7 +194,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\' or value.code = \'active\' or value.code = \'aborted\' or value.code = \'cancelled\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\' or value.code = \'active\' or value.code = \'aborted\' or value.code = \'cancelled\')'"
 	 * @generated
 	 */
 	boolean validateProcedureActivityActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -224,10 +218,10 @@ public interface ProcedureActivityAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.5.7\' and (value.code = \'A\' or value.code = \'CR\' or value.code = \'CS\' or value.code = \'CSP\' or value.code = \'CSR\' or value.code = \'EL\' or value.code = \'EM\' or value.code = \'P\' or value.code = \'PRN\' or value.code = \'R\' or value.code = \'RR\' or value.code = \'S\' or value.code = \'T\' or value.code = \'UD\' or value.code = \'UR\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActPriorityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityActPriorityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -236,10 +230,10 @@ public interface ProcedureActivityAct extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.7\' and (value.code = \'A\' or value.code = \'CR\' or value.code = \'CS\' or value.code = \'CSP\' or value.code = \'CSR\' or value.code = \'EL\' or value.code = \'EM\' or value.code = \'P\' or value.code = \'PRN\' or value.code = \'R\' or value.code = \'RR\' or value.code = \'S\' or value.code = \'T\' or value.code = \'UD\' or value.code = \'UR\'))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActPriorityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityActPriorityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -303,7 +297,7 @@ public interface ProcedureActivityAct extends Act {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -323,8 +317,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -336,8 +329,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty()))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -349,8 +341,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() = 1))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -362,8 +353,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null).representedOrganization->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -375,8 +365,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -388,8 +377,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -401,8 +389,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() = 1))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -414,12 +401,11 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null)->reject(representedOrganization->one(representedOrganization : cda::Organization | not representedOrganization.oclIsUndefined() and representedOrganization.oclIsKindOf(cda::Organization)))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -427,8 +413,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActProcedureActPerformerAssignedEntity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProcedureActivityActProcedureActPerformerAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -440,8 +425,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter)).encounter->excluding(null)->reject(classCode=vocab::ActClass::ENC)'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -453,8 +437,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter)).encounter->excluding(null)->reject(moodCode=vocab::x_DocumentEncounterMood::EVN)'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -466,8 +449,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter)).encounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterId(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -479,8 +461,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter))->reject(not inversionInd.oclIsUndefined() and inversionInd=true)'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActEntryRelationshipInversionInd(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProcedureActivityActEntryRelationshipInversionInd(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -492,8 +473,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter))->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActEntryRelationshipTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProcedureActivityActEntryRelationshipTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -505,8 +485,7 @@ public interface ProcedureActivityAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter))->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter))->reject(encounter->one(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(cda::Encounter)))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityActEntryRelationshipProcedureActEncounter(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateProcedureActivityActEntryRelationshipProcedureActEncounter(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -550,11 +529,10 @@ public interface ProcedureActivityAct extends Act {
 	 * @generated
 	 */
 	public ProcedureActivityAct init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureActivityAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ProcedureActivityAct init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProcedureActivityAct

@@ -17,20 +17,18 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.CodeObservations;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.QuantityMeasurementObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CodeObservationsOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Code Observations</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -125,8 +123,7 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 */
 	public boolean validateCodeObservationsQuantityMeasurementObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CodeObservationsOperations.validateCodeObservationsQuantityMeasurementObservation(
-			this, diagnostics, context);
+		return CodeObservationsOperations.validateCodeObservationsQuantityMeasurementObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -153,16 +150,16 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * @generated
 	 */
 	public CodeObservations init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CodeObservations init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CodeObservations init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CodeObservationsImpl

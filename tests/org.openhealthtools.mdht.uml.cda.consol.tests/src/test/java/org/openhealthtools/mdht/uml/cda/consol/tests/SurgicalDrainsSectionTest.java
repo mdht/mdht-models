@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SurgicalDrainsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SurgicalDrainsSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,8 +52,8 @@ public class SurgicalDrainsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateSurgicalDrainsSectionTemplateId() {
 		OperationsTestCase<SurgicalDrainsSection> validateSurgicalDrainsSectionTemplateIdTestCase = new OperationsTestCase<SurgicalDrainsSection>(
-			"validateSurgicalDrainsSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SURGICAL_DRAINS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSurgicalDrainsSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SURGICAL_DRAINS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

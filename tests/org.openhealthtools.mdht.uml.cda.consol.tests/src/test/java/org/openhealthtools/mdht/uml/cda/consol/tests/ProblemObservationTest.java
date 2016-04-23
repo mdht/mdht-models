@@ -14,24 +14,24 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.ActClassObservation;
+import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassObservation;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -83,8 +83,8 @@ public class ProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationHasTextReference() {
 		OperationsTestCase<ProblemObservation> validateProblemObservationHasTextReferenceTestCase = new OperationsTestCase<ProblemObservation>(
-			"validateProblemObservationHasTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationHasTextReference", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -120,8 +120,8 @@ public class ProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationTextReferenceValue() {
 		OperationsTestCase<ProblemObservation> validateProblemObservationTextReferenceValueTestCase = new OperationsTestCase<ProblemObservation>(
-			"validateProblemObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -161,7 +161,8 @@ public class ProblemObservationTest extends CDAValidationTest {
 	public void testValidateProblemObservationHasTextReferenceValue() {
 		OperationsTestCase<ProblemObservation> validateProblemObservationHasTextReferenceValueTestCase = new NarrativeReferenceTestCase<ProblemObservation>(
 			"validateProblemObservationHasTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -248,8 +249,8 @@ public class ProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationHasResolutionDate() {
 		OperationsTestCase<ProblemObservation> validateProblemObservationHasResolutionDateTestCase = new OperationsTestCase<ProblemObservation>(
-			"validateProblemObservationHasResolutionDate",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationHasResolutionDate", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -287,8 +288,8 @@ public class ProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationValueNullFlavor() {
 		OperationsTestCase<ProblemObservation> validateProblemObservationValueNullFlavorTestCase = new OperationsTestCase<ProblemObservation>(
-			"validateProblemObservationValueNullFlavor",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationValueNullFlavor", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -327,7 +328,8 @@ public class ProblemObservationTest extends CDAValidationTest {
 	public void testValidateProblemObservationAgeObservationInversion() {
 		OperationsTestCase<ProblemObservation> validateProblemObservationAgeObservationInversionTestCase = new OperationsTestCase<ProblemObservation>(
 			"validateProblemObservationAgeObservationInversion",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_AGE_OBSERVATION_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_AGE_OBSERVATION_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -386,8 +388,8 @@ public class ProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationValueTranslation() {
 		OperationsTestCase<ProblemObservation> validateProblemObservationValueTranslationTestCase = new OperationsTestCase<ProblemObservation>(
-			"validateProblemObservationValueTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_VALUE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationValueTranslation", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_VALUE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -422,8 +424,8 @@ public class ProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationValueTranslationCode() {
 		OperationsTestCase<ProblemObservation> validateProblemObservationValueTranslationCodeTestCase = new OperationsTestCase<ProblemObservation>(
-			"validateProblemObservationValueTranslationCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_VALUE_TRANSLATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationValueTranslationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_VALUE_TRANSLATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -897,8 +899,8 @@ public class ProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationAgeObservation() {
 		OperationsTestCase<ProblemObservation> validateProblemObservationAgeObservationTestCase = new OperationsTestCase<ProblemObservation>(
-			"validateProblemObservationAgeObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationAgeObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -935,7 +937,8 @@ public class ProblemObservationTest extends CDAValidationTest {
 	public void testValidateProblemObservationHealthStatusObservation() {
 		OperationsTestCase<ProblemObservation> validateProblemObservationHealthStatusObservationTestCase = new OperationsTestCase<ProblemObservation>(
 			"validateProblemObservationHealthStatusObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

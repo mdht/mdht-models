@@ -1,18 +1,18 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Observation;
+
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+
+import org.eclipse.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -65,8 +65,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationHasTextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationHasTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -102,8 +101,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.targetSiteCode.qualifier->forAll(name->size() = 1)'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationTargetSiteQualifierName(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationTargetSiteQualifierName(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -115,8 +113,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.targetSiteCode.qualifier->forAll(name->size() = 1 and name.code=\'272741003\' and name.codeSystem = \'2.16.840.1.113883.6.96\')'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationTargetSiteQualifierNameCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationTargetSiteQualifierNameCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -128,8 +125,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.targetSiteCode.qualifier->forAll(value->size() = 1)'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationTargetSiteQualifierValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationTargetSiteQualifierValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -141,8 +137,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.targetSiteCode.qualifier->forAll((value.isNullFlavorDefined()) or (value->size() = 1 and not value.code.oclIsUndefined() and value.codeSystem = \'2.16.840.1.113883.6.96\'))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationTargetSiteQualifierValueCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationTargetSiteQualifierValueCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -223,7 +218,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'ASSERTION\' and value.codeSystem = \'2.16.840.1.113883.5.4\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'ASSERTION\' and value.codeSystem = \'2.16.840.1.113883.5.4\')'"
 	 * @generated
 	 */
 	boolean validatePressureUlcerObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -247,7 +242,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validatePressureUlcerObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -283,7 +278,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'421076008\' or value.code = \'420324007\' or value.code = \'421927004\' or value.code = \'420597008\' or value.code = \'421594008\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'421076008\' or value.code = \'420324007\' or value.code = \'421927004\' or value.code = \'420597008\' or value.code = \'421594008\')))'"
 	 * @generated
 	 */
 	boolean validatePressureUlcerObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -307,10 +302,10 @@ public interface PressureUlcerObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'79951008\' or value.code = \'23747009\' or value.code = \'76552005\' or value.code = \'45980000\' or value.code = \'74757004\' or value.code = \'51027004\' or value.code = \'304037003\' or value.code = \'286591006\' or value.code = \'49812005\' or value.code = \'29850006\' or value.code = \'22180002\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePressureUlcerObservationTargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -319,10 +314,10 @@ public interface PressureUlcerObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'79951008\' or value.code = \'23747009\' or value.code = \'76552005\' or value.code = \'45980000\' or value.code = \'74757004\' or value.code = \'51027004\' or value.code = \'304037003\' or value.code = \'286591006\' or value.code = \'49812005\' or value.code = \'29850006\' or value.code = \'22180002\')))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationTargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePressureUlcerObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -362,7 +357,7 @@ public interface PressureUlcerObservation extends Observation {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -370,8 +365,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401238003\').observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship1Observation1ClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship1Observation1ClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -383,8 +377,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401238003\').observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship1Observation1MoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -396,8 +389,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401238003\').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship1Observation1CodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship1Observation1CodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -406,11 +398,10 @@ public interface PressureUlcerObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401238003\').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.code = \'401238003\' and value.codeSystem = \'2.16.840.1.113883.6.96\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401238003\').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \r\nvalue.code = \'401238003\' and value.codeSystem = \'2.16.840.1.113883.6.96\'))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship1Observation1Code(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship1Observation1Code(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -422,8 +413,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401238003\').observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::PQ))))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship1Observation1Value(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship1Observation1Value(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -435,8 +425,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401238003\')->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401238003\')->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship1TypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship1TypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -448,8 +437,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401238003\')->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401238003\')->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship1Observation1(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship1Observation1(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -461,8 +449,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401239006\').observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship2Observation2ClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -474,8 +461,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401239006\').observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship2Observation2MoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -487,8 +473,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401239006\').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship2Observation2CodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship2Observation2CodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -497,11 +482,10 @@ public interface PressureUlcerObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401239006\').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.code = \'401239006\' and value.codeSystem = \'2.16.840.1.113883.6.96\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401239006\').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \r\nvalue.code = \'401239006\' and value.codeSystem = \'2.16.840.1.113883.6.96\'))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship2Observation2Code(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship2Observation2Code(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -513,8 +497,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401239006\').observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::PQ))))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship2Observation2Value(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship2Observation2Value(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -526,8 +509,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401239006\')->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401239006\')->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship2TypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship2TypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -539,8 +521,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401239006\')->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'401239006\')->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship2Observation2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship2Observation2(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -552,8 +533,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'425094009\').observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship3Observation3ClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -565,8 +545,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'425094009\').observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship3Observation3MoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -578,8 +557,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'425094009\').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship3Observation3CodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship3Observation3CodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -588,11 +566,10 @@ public interface PressureUlcerObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'425094009\').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \nvalue.code = \'425094009\' and value.codeSystem = \'2.16.840.1.113883.6.96\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'425094009\').observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = code.oclAsType(datatypes::CD) in \r\nvalue.code = \'425094009\' and value.codeSystem = \'2.16.840.1.113883.6.96\'))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship3Observation3Code(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship3Observation3Code(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -604,8 +581,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'425094009\').observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::PQ))))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship3Observation3Value(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship3Observation3Value(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -617,8 +593,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'425094009\')->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'425094009\')->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship3TypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship3TypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -630,8 +605,7 @@ public interface PressureUlcerObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'425094009\')->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code=\'425094009\')->reject(observation->one(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation)))'"
 	 * @generated
 	 */
-	boolean validatePressureUlcerObservationEntryRelationship3Observation3(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePressureUlcerObservationEntryRelationship3Observation3(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -639,11 +613,10 @@ public interface PressureUlcerObservation extends Observation {
 	 * @generated
 	 */
 	public PressureUlcerObservation init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PressureUlcerObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PressureUlcerObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PressureUlcerObservation

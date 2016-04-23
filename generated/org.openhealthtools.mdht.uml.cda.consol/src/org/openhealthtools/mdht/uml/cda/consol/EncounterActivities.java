@@ -1,23 +1,19 @@
-/*******************************************************************************
- * Copyright (c) 2011, 2012 Sean Muir and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Sean Muir (JKM Software) - initial API and implementation
- *******************************************************************************/
+/**
+ */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Encounter;
+
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+
+import org.eclipse.mdht.uml.cda.Encounter;
 
 /**
  * <!-- begin-user-doc -->
@@ -54,12 +50,11 @@ public interface EncounterActivities extends Encounter {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.value.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateEncounterActivitiesCodeOriginalTextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEncounterActivitiesCodeOriginalTextReference(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -79,8 +74,7 @@ public interface EncounterActivities extends Encounter {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.code.originalText.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateEncounterActivitiesCodeOriginalTextReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEncounterActivitiesCodeOriginalTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -161,7 +155,7 @@ public interface EncounterActivities extends Encounter {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.12\' and not value.code.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.12\' and not value.code.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateEncounterActivitiesCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -188,8 +182,7 @@ public interface EncounterActivities extends Encounter {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.sDTCDischargeDispositionCode->isEmpty() or self.sDTCDischargeDispositionCode->exists(element | element.isNullFlavorUndefined())) implies (not self.sDTCDischargeDispositionCode->isEmpty())'"
 	 * @generated
 	 */
-	boolean validateEncounterActivitiesSDTCDischargeDispositionCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEncounterActivitiesSDTCDischargeDispositionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -229,7 +222,7 @@ public interface EncounterActivities extends Encounter {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -241,7 +234,7 @@ public interface EncounterActivities extends Encounter {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -249,8 +242,7 @@ public interface EncounterActivities extends Encounter {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,8 +254,7 @@ public interface EncounterActivities extends Encounter {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
 	 * @generated
 	 */
-	boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -285,7 +276,7 @@ public interface EncounterActivities extends Encounter {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::EncounterDiagnosis)).oclAsType(consol::EncounterDiagnosis)'"
 	 * @generated
@@ -298,11 +289,10 @@ public interface EncounterActivities extends Encounter {
 	 * @generated
 	 */
 	public EncounterActivities init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncounterActivities init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EncounterActivities init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EncounterActivities

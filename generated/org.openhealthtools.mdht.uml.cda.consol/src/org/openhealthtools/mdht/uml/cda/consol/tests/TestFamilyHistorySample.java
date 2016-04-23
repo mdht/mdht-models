@@ -13,9 +13,9 @@ package org.openhealthtools.mdht.uml.cda.consol.tests;
 import java.io.FileInputStream;
 
 import org.eclipse.emf.common.util.Diagnostic;
+import org.eclipse.mdht.uml.cda.util.CDAUtil;
+import org.eclipse.mdht.uml.cda.util.ValidationResult;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-import org.openhealthtools.mdht.uml.cda.util.ValidationResult;
 
 public class TestFamilyHistorySample {
 	public static void main(String[] args) throws Exception {

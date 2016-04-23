@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfCareActivitySubstanceAdministrationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Plan Of Care Activity Substance Administration</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 */
 	public boolean validatePlanOfCareActivitySubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationTemplateId(
-			this, diagnostics, context);
+		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +67,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 */
 	public boolean validatePlanOfCareActivitySubstanceAdministrationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationClassCode(
-			this, diagnostics, context);
+		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +77,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 */
 	public boolean validatePlanOfCareActivitySubstanceAdministrationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationMoodCode(
-			this, diagnostics, context);
+		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +87,7 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 */
 	public boolean validatePlanOfCareActivitySubstanceAdministrationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationId(
-			this, diagnostics, context);
+		return PlanOfCareActivitySubstanceAdministrationOperations.validatePlanOfCareActivitySubstanceAdministrationId(this, diagnostics, context);
 	}
 
 	/**
@@ -102,17 +96,16 @@ public class PlanOfCareActivitySubstanceAdministrationImpl extends SubstanceAdmi
 	 * @generated
 	 */
 	public PlanOfCareActivitySubstanceAdministration init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PlanOfCareActivitySubstanceAdministration init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PlanOfCareActivitySubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlanOfCareActivitySubstanceAdministrationImpl

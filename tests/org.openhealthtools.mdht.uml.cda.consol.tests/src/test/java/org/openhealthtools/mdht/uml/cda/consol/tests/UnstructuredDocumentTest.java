@@ -14,21 +14,21 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedAuthor;
+import org.eclipse.mdht.uml.cda.AssignedCustodian;
+import org.eclipse.mdht.uml.cda.Author;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Component2;
+import org.eclipse.mdht.uml.cda.Custodian;
+import org.eclipse.mdht.uml.cda.CustodianOrganization;
+import org.eclipse.mdht.uml.cda.PatientRole;
+import org.eclipse.mdht.uml.cda.RecordTarget;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
-import org.openhealthtools.mdht.uml.cda.AssignedCustodian;
-import org.openhealthtools.mdht.uml.cda.Author;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component2;
-import org.openhealthtools.mdht.uml.cda.Custodian;
-import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
-import org.openhealthtools.mdht.uml.cda.PatientRole;
-import org.openhealthtools.mdht.uml.cda.RecordTarget;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.consol.operations.UnstructuredDocumentOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -103,8 +103,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	@Test
 	public void testValidateUnstructuredDocumentRecordTarget() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentRecordTargetTestCase = new OperationsTestCase<UnstructuredDocument>(
-			"validateUnstructuredDocumentRecordTarget",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateUnstructuredDocumentRecordTarget", operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -247,7 +247,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	public void testValidateUnstructuredDocumentRecordTargetPatientRole2Id() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentRecordTargetPatientRole2IdTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentRecordTargetPatientRole2Id",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -290,7 +291,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	public void testValidateUnstructuredDocumentRecordTargetPatientRole2() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentRecordTargetPatientRole2TestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentRecordTargetPatientRole2",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -331,7 +333,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	public void testValidateUnstructuredDocumentAuthorAssignedAuthor2Addr() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentAuthorAssignedAuthor2AddrTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentAuthorAssignedAuthor2Addr",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -376,7 +379,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	public void testValidateUnstructuredDocumentAuthorAssignedAuthor2Telecom() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentAuthorAssignedAuthor2TelecomTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentAuthorAssignedAuthor2Telecom",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -419,7 +423,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	public void testValidateUnstructuredDocumentAuthorAssignedAuthor2() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentAuthorAssignedAuthor2TestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentAuthorAssignedAuthor2",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -459,7 +464,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	public void testValidateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddrTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -500,7 +506,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	public void testValidateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationIdTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -541,7 +548,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	public void testValidateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationNameTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -582,7 +590,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	public void testValidateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecomTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -623,7 +632,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	public void testValidateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -667,7 +677,8 @@ public class UnstructuredDocumentTest extends CDAValidationTest {
 	public void testValidateUnstructuredDocumentCustodianAssignedCustodian2() {
 		OperationsTestCase<UnstructuredDocument> validateUnstructuredDocumentCustodianAssignedCustodian2TestCase = new OperationsTestCase<UnstructuredDocument>(
 			"validateUnstructuredDocumentCustodianAssignedCustodian2",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

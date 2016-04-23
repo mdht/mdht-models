@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.hl7.rim.operations.ParticipationOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -27,7 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.hl7.rim.operations.ParticipationOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -96,27 +96,28 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	public static boolean validatePhysicianofRecordParticipantTemplateId(
 			PhysicianofRecordParticipant physicianofRecordParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICIANOF_RECORD_PARTICIPANT);
 			try {
 				VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicianofRecordParticipant)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicianofRecordParticipant)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantTemplateId"),
-					new Object[] { physicianofRecordParticipant }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantTemplateId"),
+						 new Object [] { physicianofRecordParticipant }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -157,27 +158,28 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	public static boolean validatePhysicianofRecordParticipantTypeCode(
 			PhysicianofRecordParticipant physicianofRecordParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICIANOF_RECORD_PARTICIPANT);
 			try {
 				VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicianofRecordParticipant)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicianofRecordParticipant)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantTypeCode"),
-					new Object[] { physicianofRecordParticipant }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_TYPE_CODE,
+						 ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantTypeCode"),
+						 new Object [] { physicianofRecordParticipant }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -218,28 +220,28 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	public static boolean validatePhysicianofRecordParticipantAssignedEntity(
 			PhysicianofRecordParticipant physicianofRecordParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICIANOF_RECORD_PARTICIPANT);
 			try {
 				VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicianofRecordParticipant)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicianofRecordParticipant)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY,
-					ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntity"),
-					new Object[] { physicianofRecordParticipant }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY,
+						 ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntity"),
+						 new Object [] { physicianofRecordParticipant }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -263,7 +265,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -280,31 +282,33 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	public static boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName(
 			PhysicianofRecordParticipant physicianofRecordParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICIANOF_RECORD_PARTICIPANT);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicianofRecordParticipant);
+		Object oclResult = VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicianofRecordParticipant);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityAssignedPersonName"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME,
+						 ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityAssignedPersonName"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -329,7 +333,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_DICOM_OR_NUCC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -346,31 +350,33 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	public static boolean validatePhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode(
 			PhysicianofRecordParticipant physicianofRecordParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_DICOM_OR_NUCC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICIANOF_RECORD_PARTICIPANT);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_DICOM_OR_NUCC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_DICOM_OR_NUCC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_DICOM_OR_NUCC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicianofRecordParticipant);
+		Object oclResult = VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_DICOM_OR_NUCC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicianofRecordParticipant);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_DICOM_OR_NUCC_CODE,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_DICOM_OR_NUCC_CODE,
+						 ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -395,7 +401,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -412,31 +418,33 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	public static boolean validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId(
 			PhysicianofRecordParticipant physicianofRecordParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICIANOF_RECORD_PARTICIPANT);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicianofRecordParticipant);
+		Object oclResult = VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicianofRecordParticipant);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityHasNationalProviderId"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID,
+						 ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityHasNationalProviderId"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -461,7 +469,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -478,31 +486,33 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	public static boolean validatePhysicianofRecordParticipantAssignedEntityCode(
 			PhysicianofRecordParticipant physicianofRecordParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICIANOF_RECORD_PARTICIPANT);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicianofRecordParticipant);
+		Object oclResult = VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicianofRecordParticipant);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityCode"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_CODE,
+						 ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityCode"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -527,7 +537,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -544,31 +554,33 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	public static boolean validatePhysicianofRecordParticipantAssignedEntityId(
 			PhysicianofRecordParticipant physicianofRecordParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICIANOF_RECORD_PARTICIPANT);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicianofRecordParticipant);
+		Object oclResult = VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicianofRecordParticipant);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityId"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ID,
+						 ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityId"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}
@@ -593,7 +605,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Query<?, ?, ?> VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -610,31 +622,33 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 	public static boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(
 			PhysicianofRecordParticipant physicianofRecordParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICIANOF_RECORD_PARTICIPANT);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicianofRecordParticipant);
+		Object oclResult = VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(physicianofRecordParticipant);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
+  			
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON,
-						ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityAssignedPerson"),
-						new Object[] { eObject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON,
+						 ConsolPlugin.INSTANCE.getString("PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityAssignedPerson"),
+						 new Object [] { eObject }));
 				}
-
+				 
 			}
 			return oclResultSet.isEmpty();
 		}

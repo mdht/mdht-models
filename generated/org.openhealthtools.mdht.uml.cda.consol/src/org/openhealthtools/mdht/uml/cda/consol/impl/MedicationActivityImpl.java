@@ -17,7 +17,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DrugVehicle;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
@@ -27,14 +28,11 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationActivityOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -65,8 +63,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityDoseQuantityorrateQuantity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityDoseQuantityorrateQuantity(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityDoseQuantityorrateQuantity(this, diagnostics, context);
 	}
 
 	/**
@@ -182,8 +179,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityInstructionsInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityInstructionsInversionInd(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityInstructionsInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -319,8 +315,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityAdministrationUnitCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityAdministrationUnitCodeP(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityAdministrationUnitCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -387,8 +382,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityConsumableMedicationInformation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityConsumableMedicationInformation(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityConsumableMedicationInformation(this, diagnostics, context);
 	}
 
 	/**
@@ -408,8 +402,7 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 */
 	public boolean validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationActivityOperations.validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(
-			this, diagnostics, context);
+		return MedicationActivityOperations.validateMedicationActivityPreconditionPreconditionForSubstanceAdministration(this, diagnostics, context);
 	}
 
 	/**
@@ -526,16 +519,16 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * @generated
 	 */
 	public MedicationActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MedicationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationActivityImpl

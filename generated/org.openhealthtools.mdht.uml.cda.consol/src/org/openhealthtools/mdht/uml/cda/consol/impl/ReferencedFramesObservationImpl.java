@@ -16,19 +16,17 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReferencedFramesObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Referenced Frames Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateReferencedFramesObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationTemplateId(
-			this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +66,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateReferencedFramesObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationClassCode(
-			this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +84,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateReferencedFramesObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationMoodCode(
-			this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +94,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateReferencedFramesObservationBoundaryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationBoundaryObservation(
-			this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationBoundaryObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -118,16 +112,16 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public ReferencedFramesObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ReferencedFramesObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ReferencedFramesObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ReferencedFramesObservationImpl

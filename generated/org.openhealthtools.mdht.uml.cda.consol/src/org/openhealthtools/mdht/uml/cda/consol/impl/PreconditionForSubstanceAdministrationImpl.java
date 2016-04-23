@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.CriterionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PreconditionForSubstanceAdministrationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.CriterionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Precondition For Substance Administration</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class PreconditionForSubstanceAdministrationImpl extends CriterionImpl im
 	 */
 	public boolean validatePreconditionForSubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationTemplateId(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +67,7 @@ public class PreconditionForSubstanceAdministrationImpl extends CriterionImpl im
 	 */
 	public boolean validatePreconditionForSubstanceAdministrationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCode(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +77,7 @@ public class PreconditionForSubstanceAdministrationImpl extends CriterionImpl im
 	 */
 	public boolean validatePreconditionForSubstanceAdministrationText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationText(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationText(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +87,7 @@ public class PreconditionForSubstanceAdministrationImpl extends CriterionImpl im
 	 */
 	public boolean validatePreconditionForSubstanceAdministrationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationValue(
-			this, diagnostics, context);
+		return PreconditionForSubstanceAdministrationOperations.validatePreconditionForSubstanceAdministrationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -102,16 +96,16 @@ public class PreconditionForSubstanceAdministrationImpl extends CriterionImpl im
 	 * @generated
 	 */
 	public PreconditionForSubstanceAdministration init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PreconditionForSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PreconditionForSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PreconditionForSubstanceAdministrationImpl

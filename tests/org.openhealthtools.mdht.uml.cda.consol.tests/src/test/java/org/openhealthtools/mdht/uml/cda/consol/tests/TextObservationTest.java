@@ -14,20 +14,20 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.TextObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.TextObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -104,8 +104,8 @@ public class TextObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateTextObservationTextReferenceValue() {
 		OperationsTestCase<TextObservation> validateTextObservationTextReferenceValueTestCase = new OperationsTestCase<TextObservation>(
-			"validateTextObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTextObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -441,8 +441,8 @@ public class TextObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateTextObservationSOPInstanceObservation() {
 		OperationsTestCase<TextObservation> validateTextObservationSOPInstanceObservationTestCase = new OperationsTestCase<TextObservation>(
-			"validateTextObservationSOPInstanceObservation",
-			operationsForOCL.getOCLValue("VALIDATE_TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTextObservationSOPInstanceObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -480,7 +480,8 @@ public class TextObservationTest extends CDAValidationTest {
 	public void testValidateTextObservationQuantityMeasurementObservation() {
 		OperationsTestCase<TextObservation> validateTextObservationQuantityMeasurementObservationTestCase = new OperationsTestCase<TextObservation>(
 			"validateTextObservationQuantityMeasurementObservation",
-			operationsForOCL.getOCLValue("VALIDATE_TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

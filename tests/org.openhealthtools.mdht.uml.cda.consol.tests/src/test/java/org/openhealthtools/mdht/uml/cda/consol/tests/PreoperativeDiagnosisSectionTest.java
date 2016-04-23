@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PreoperativeDiagnosisSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -54,8 +54,8 @@ public class PreoperativeDiagnosisSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePreoperativeDiagnosisSectionTemplateId() {
 		OperationsTestCase<PreoperativeDiagnosisSection> validatePreoperativeDiagnosisSectionTemplateIdTestCase = new OperationsTestCase<PreoperativeDiagnosisSection>(
-			"validatePreoperativeDiagnosisSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePreoperativeDiagnosisSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -88,8 +88,8 @@ public class PreoperativeDiagnosisSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePreoperativeDiagnosisSectionCode() {
 		OperationsTestCase<PreoperativeDiagnosisSection> validatePreoperativeDiagnosisSectionCodeTestCase = new OperationsTestCase<PreoperativeDiagnosisSection>(
-			"validatePreoperativeDiagnosisSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePreoperativeDiagnosisSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -122,8 +122,8 @@ public class PreoperativeDiagnosisSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePreoperativeDiagnosisSectionCodeP() {
 		OperationsTestCase<PreoperativeDiagnosisSection> validatePreoperativeDiagnosisSectionCodePTestCase = new OperationsTestCase<PreoperativeDiagnosisSection>(
-			"validatePreoperativeDiagnosisSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePreoperativeDiagnosisSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -156,8 +156,8 @@ public class PreoperativeDiagnosisSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePreoperativeDiagnosisSectionText() {
 		OperationsTestCase<PreoperativeDiagnosisSection> validatePreoperativeDiagnosisSectionTextTestCase = new OperationsTestCase<PreoperativeDiagnosisSection>(
-			"validatePreoperativeDiagnosisSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePreoperativeDiagnosisSectionText", operationsForOCL.getOCLValue(
+				"VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -193,8 +193,8 @@ public class PreoperativeDiagnosisSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePreoperativeDiagnosisSectionTitle() {
 		OperationsTestCase<PreoperativeDiagnosisSection> validatePreoperativeDiagnosisSectionTitleTestCase = new OperationsTestCase<PreoperativeDiagnosisSection>(
-			"validatePreoperativeDiagnosisSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePreoperativeDiagnosisSectionTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -231,7 +231,8 @@ public class PreoperativeDiagnosisSectionTest extends CDAValidationTest {
 	public void testValidatePreoperativeDiagnosisSectionPreoperativeDiagnosis() {
 		OperationsTestCase<PreoperativeDiagnosisSection> validatePreoperativeDiagnosisSectionPreoperativeDiagnosisTestCase = new OperationsTestCase<PreoperativeDiagnosisSection>(
 			"validatePreoperativeDiagnosisSectionPreoperativeDiagnosis",
-			operationsForOCL.getOCLValue("VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

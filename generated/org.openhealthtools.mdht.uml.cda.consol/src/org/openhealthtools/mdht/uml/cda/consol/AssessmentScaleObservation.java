@@ -1,19 +1,19 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Observation;
+
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+
+import org.eclipse.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,8 +50,7 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.interpretationCode->size() > 0 implies self.interpretationCode.translation->size() > 0'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleObservationInterpretationCodeTranslation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAssessmentScaleObservationInterpretationCodeTranslation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,8 +146,7 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (not self.interpretationCode->isEmpty())'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleObservationInterpretationCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAssessmentScaleObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -157,7 +155,7 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \nvalue.code = \'completed\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateAssessmentScaleObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -220,8 +218,7 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AssessmentScaleSupportingObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleObservationAssessmentScaleSupportingObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAssessmentScaleObservationAssessmentScaleSupportingObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -233,8 +230,7 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->excluding(null).observationRange->excluding(null)->reject(not text.oclIsUndefined() implies text->forAll(reference->size() = 1))'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAssessmentScaleObservationReferenceRangeObservationRangeTextReference(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -246,8 +242,7 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->excluding(null).observationRange->excluding(null)->reject(text->forAll(reference->size() = 1) implies text->forAll(reference->one(value->size() = 1)))'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,8 +254,7 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->excluding(null).observationRange->excluding(null)->reject(not text.reference.value.oclIsUndefined() implies not getSection().text.getText(text.reference.value.substring(2, text.reference.value.size())).oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -272,8 +266,7 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->excluding(null).observationRange->excluding(null)->reject((text.oclIsUndefined() or text.isNullFlavorUndefined()) implies (not text.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleObservationReferenceRangeObservationRangeText(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAssessmentScaleObservationReferenceRangeObservationRangeText(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -285,8 +278,7 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->excluding(null)->reject(observationRange->one(observationRange : cda::ObservationRange | not observationRange.oclIsUndefined() and observationRange.oclIsKindOf(cda::ObservationRange)))'"
 	 * @generated
 	 */
-	boolean validateAssessmentScaleObservationReferenceRangeObservationRange(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAssessmentScaleObservationReferenceRangeObservationRange(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -303,11 +295,10 @@ public interface AssessmentScaleObservation extends Observation {
 	 * @generated
 	 */
 	public AssessmentScaleObservation init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AssessmentScaleObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AssessmentScaleObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentScaleObservation

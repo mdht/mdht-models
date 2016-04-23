@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.cda.operations.SectionOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -28,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -94,26 +94,28 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 
 	public static boolean validatePlannedProcedureSectionTemplateId(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION);
 			try {
 				VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedProcedureSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(plannedProcedureSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionTemplateId"),
-					new Object[] { plannedProcedureSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionTemplateId"),
+						 new Object [] { plannedProcedureSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -127,9 +129,9 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '59772-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '59772-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedProcedureSectionCode(PlannedProcedureSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure Section Code</em>}' invariant operation.
@@ -155,26 +157,28 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 
 	public static boolean validatePlannedProcedureSectionCode(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION);
 			try {
 				VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedProcedureSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(plannedProcedureSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionCode"),
-					new Object[] { plannedProcedureSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionCode"),
+						 new Object [] { plannedProcedureSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -214,26 +218,28 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 
 	public static boolean validatePlannedProcedureSectionCodeP(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PLANNED_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION);
 			try {
 				VALIDATE_PLANNED_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedProcedureSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(plannedProcedureSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionCodeP"),
-					new Object[] { plannedProcedureSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionCodeP"),
+						 new Object [] { plannedProcedureSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -273,26 +279,28 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 
 	public static boolean validatePlannedProcedureSectionText(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PLANNED_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION);
 			try {
 				VALIDATE_PLANNED_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedProcedureSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(plannedProcedureSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionText"),
-					new Object[] { plannedProcedureSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionText"),
+						 new Object [] { plannedProcedureSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -332,26 +340,28 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 
 	public static boolean validatePlannedProcedureSectionTitle(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PLANNED_PROCEDURE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION);
 			try {
 				VALIDATE_PLANNED_PROCEDURE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_PROCEDURE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedProcedureSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(plannedProcedureSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionTitle"),
-					new Object[] { plannedProcedureSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionTitle"),
+						 new Object [] { plannedProcedureSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -391,28 +401,28 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 
 	public static boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(
 			PlannedProcedureSection plannedProcedureSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION);
 			try {
 				VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedProcedureSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(plannedProcedureSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionPlanOfCareActivityProcedure"),
-					new Object[] { plannedProcedureSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PLANNED_PROCEDURE_SECTION__PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE,
+						 ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlannedProcedureSectionPlanOfCareActivityProcedure"),
+						 new Object [] { plannedProcedureSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -448,12 +458,11 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 			PlannedProcedureSection plannedProcedureSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION,
-				ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION.getEAllOperations().get(61));
+			helper.setOperationContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION, ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION.getEAllOperations().get(61));
 			try {
 				GET_PLAN_OF_CARE_ACTIVITY_PROCEDURES__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_PROCEDURES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

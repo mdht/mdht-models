@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PreoperativeDiagnosisOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Preoperative Diagnosis</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -96,8 +94,7 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 */
 	public boolean validatePreoperativeDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(
-			this, diagnostics, context);
+		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -115,16 +112,16 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 * @generated
 	 */
 	public PreoperativeDiagnosis init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PreoperativeDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PreoperativeDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PreoperativeDiagnosisImpl

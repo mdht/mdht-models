@@ -7,7 +7,7 @@
  *
  * Contributors:
  *     Sean Muir (JKM Software) - initial API and implementation
- *     Dan Brown (Audacious Inquiry) - additional testing code as per artf3818 : Errata 384 
+ *     Dan Brown (Audacious Inquiry) - additional testing code as per artf3818 : Errata 384
  *     								   Incorporate No Information Section Fixes SITE-462
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
@@ -17,16 +17,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
+import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 
 /**
  * <!-- begin-user-doc -->
@@ -71,7 +71,8 @@ public class ProblemSectionTest extends CDAValidationTest {
 	public void testValidateProblemSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<ProblemSection> validateProblemSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<ProblemSection>(
 			"validateProblemSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -104,8 +105,8 @@ public class ProblemSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemSectionEntriesOptionalCodeP() {
 		OperationsTestCase<ProblemSection> validateProblemSectionEntriesOptionalCodePTestCase = new OperationsTestCase<ProblemSection>(
-			"validateProblemSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemSectionEntriesOptionalCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -138,8 +139,8 @@ public class ProblemSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemSectionEntriesOptionalCode() {
 		OperationsTestCase<ProblemSection> validateProblemSectionEntriesOptionalCodeTestCase = new OperationsTestCase<ProblemSection>(
-			"validateProblemSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemSectionEntriesOptionalCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -179,8 +180,8 @@ public class ProblemSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemSectionEntriesOptionalText() {
 		OperationsTestCase<ProblemSection> validateProblemSectionEntriesOptionalTextTestCase = new OperationsTestCase<ProblemSection>(
-			"validateProblemSectionEntriesOptionalText",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemSectionEntriesOptionalText", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -216,8 +217,8 @@ public class ProblemSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemSectionEntriesOptionalTitle() {
 		OperationsTestCase<ProblemSection> validateProblemSectionEntriesOptionalTitleTestCase = new OperationsTestCase<ProblemSection>(
-			"validateProblemSectionEntriesOptionalTitle",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemSectionEntriesOptionalTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -254,7 +255,8 @@ public class ProblemSectionTest extends CDAValidationTest {
 	public void testValidateProblemSectionEntriesOptionalProblemConcern() {
 		OperationsTestCase<ProblemSection> validateProblemSectionEntriesOptionalProblemConcernTestCase = new OperationsTestCase<ProblemSection>(
 			"validateProblemSectionEntriesOptionalProblemConcern",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

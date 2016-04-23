@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -28,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.QuantityMeasurementObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -98,28 +98,28 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationCodeCodeSystemDIR(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DIR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION);
 			try {
 				VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DIR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DIR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DIR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			quantityMeasurementObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DIR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(quantityMeasurementObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DIR,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationCodeCodeSystemDIR"),
-					new Object[] { quantityMeasurementObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DIR,
+						 ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationCodeCodeSystemDIR"),
+						 new Object [] { quantityMeasurementObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -160,28 +160,28 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationCodeCodeSystemDICOM(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION);
 			try {
 				VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			quantityMeasurementObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(quantityMeasurementObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DICOM,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationCodeCodeSystemDICOM"),
-					new Object[] { quantityMeasurementObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DICOM,
+						 ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationCodeCodeSystemDICOM"),
+						 new Object [] { quantityMeasurementObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -222,27 +222,28 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationTemplateId(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION);
 			try {
 				VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			quantityMeasurementObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(quantityMeasurementObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationTemplateId"),
-					new Object[] { quantityMeasurementObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationTemplateId"),
+						 new Object [] { quantityMeasurementObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -283,27 +284,28 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationClassCode(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION);
 			try {
 				VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			quantityMeasurementObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(quantityMeasurementObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationClassCode"),
-					new Object[] { quantityMeasurementObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationClassCode"),
+						 new Object [] { quantityMeasurementObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -344,27 +346,28 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationMoodCode(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION);
 			try {
 				VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			quantityMeasurementObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(quantityMeasurementObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationMoodCode"),
-					new Object[] { quantityMeasurementObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationMoodCode"),
+						 new Object [] { quantityMeasurementObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -405,27 +408,28 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationCode(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION);
 			try {
 				VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			quantityMeasurementObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(quantityMeasurementObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationCode"),
-					new Object[] { quantityMeasurementObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationCode"),
+						 new Object [] { quantityMeasurementObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -466,28 +470,28 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationEffectiveTime(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION);
 			try {
 				VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			quantityMeasurementObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(quantityMeasurementObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationEffectiveTime"),
-					new Object[] { quantityMeasurementObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationEffectiveTime"),
+						 new Object [] { quantityMeasurementObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -528,27 +532,28 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationValue(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION);
 			try {
 				VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			quantityMeasurementObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(quantityMeasurementObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationValue"),
-					new Object[] { quantityMeasurementObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationValue"),
+						 new Object [] { quantityMeasurementObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -589,28 +594,28 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationSOPInstanceObservation(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION);
 			try {
 				VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			quantityMeasurementObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(quantityMeasurementObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_SOP_INSTANCE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationSOPInstanceObservation"),
-					new Object[] { quantityMeasurementObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_SOP_INSTANCE_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationQuantityMeasurementObservationSOPInstanceObservation"),
+						 new Object [] { quantityMeasurementObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -646,12 +651,11 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 			QuantityMeasurementObservation quantityMeasurementObservation) {
 		if (GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION,
-				ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION.getEAllOperations().get(60));
+			helper.setOperationContext(ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION, ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION.getEAllOperations().get(60));
 			try {
 				GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SOP_INSTANCE_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

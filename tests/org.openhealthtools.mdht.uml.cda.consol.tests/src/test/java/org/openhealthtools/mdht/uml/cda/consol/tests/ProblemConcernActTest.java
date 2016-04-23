@@ -15,18 +15,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.IVXB_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemConcernActOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -63,8 +63,8 @@ public class ProblemConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemConcernActEffectiveTimeLow() {
 		OperationsTestCase<ProblemConcernAct> validateProblemConcernActEffectiveTimeLowTestCase = new OperationsTestCase<ProblemConcernAct>(
-			"validateProblemConcernActEffectiveTimeLow",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemConcernActEffectiveTimeLow", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -101,8 +101,8 @@ public class ProblemConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemConcernActEffectiveTimeHigh() {
 		OperationsTestCase<ProblemConcernAct> validateProblemConcernActEffectiveTimeHighTestCase = new OperationsTestCase<ProblemConcernAct>(
-			"validateProblemConcernActEffectiveTimeHigh",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemConcernActEffectiveTimeHigh", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -424,8 +424,8 @@ public class ProblemConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemConcernActProblemObservation() {
 		OperationsTestCase<ProblemConcernAct> validateProblemConcernActProblemObservationTestCase = new OperationsTestCase<ProblemConcernAct>(
-			"validateProblemConcernActProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemConcernActProblemObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

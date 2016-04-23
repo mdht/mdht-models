@@ -1,22 +1,18 @@
-/*******************************************************************************
- * Copyright (c) 2011, 2012 Sean Muir and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Sean Muir (JKM Software) - initial API and implementation
- *******************************************************************************/
+/**
+ */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Act;
+
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+
+import org.eclipse.mdht.uml.cda.Act;
 
 /**
  * <!-- begin-user-doc -->
@@ -100,8 +96,7 @@ public interface AuthorizationActivity extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->reject(act->exists(moodCode = vocab::x_DocumentActMood::PRMS) or  encounter->exists(moodCode = vocab::x_DocumentEncounterMood::PRMS) or observation->exists(moodCode = vocab::x_ActMoodDocumentObservation::PRMS) or  observationMedia->exists(moodCode = vocab::ActMood::PRMS) or organizer->exists(moodCode = vocab::ActMood::PRMS) or procedure->exists(moodCode = vocab::x_DocumentProcedureMood::PRMS) or  regionOfInterest->exists(moodCode = vocab::ActMood::PRMS) or substanceAdministration->exists(moodCode = vocab::x_DocumentSubstanceMood::PRMS) or  supply->exists(moodCode = vocab::x_DocumentSubstanceMood::PRMS))'"
 	 * @generated
 	 */
-	boolean validateAuthorizationActivityEntryRelationshipHasClinicalStatement(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAuthorizationActivityEntryRelationshipHasClinicalStatement(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -110,11 +105,10 @@ public interface AuthorizationActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->reject(act->forAll( (moodCode = vocab::x_DocumentActMood::PRMS and performer->size() > 0) or moodCode <> vocab::x_DocumentActMood::PRMS ) and \nencounter->forAll((moodCode = vocab::x_DocumentEncounterMood::PRMS and performer->size() > 0) or moodCode <>  vocab::x_DocumentEncounterMood::PRMS) and \nobservation->forAll((moodCode = vocab::x_ActMoodDocumentObservation::PRMS and performer->size() > 0)  or moodCode <>  vocab::x_ActMoodDocumentObservation::PRMS) and \nobservationMedia->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode <>  vocab::ActMood::PRMS) and \r\norganizer->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0)  or moodCode <>  vocab::ActMood::PRMS) and \r\nprocedure->forAll((moodCode = vocab::x_DocumentProcedureMood::PRMS and performer->size() > 0)  or moodCode <>  vocab::x_DocumentProcedureMood::PRMS) and \r\nregionOfInterest->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode <>  vocab::ActMood::PRMS) and \r\nsubstanceAdministration->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0)  or moodCode <>  vocab::x_DocumentSubstanceMood::PRMS) and \r\nsupply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0) or moodCode <>  vocab::x_DocumentSubstanceMood::PRMS))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->reject(act->forAll( (moodCode = vocab::x_DocumentActMood::PRMS and performer->size() > 0) or moodCode <> vocab::x_DocumentActMood::PRMS ) and \nencounter->forAll((moodCode = vocab::x_DocumentEncounterMood::PRMS and performer->size() > 0) or moodCode <>  vocab::x_DocumentEncounterMood::PRMS) and \r\nobservation->forAll((moodCode = vocab::x_ActMoodDocumentObservation::PRMS and performer->size() > 0)  or moodCode <>  vocab::x_ActMoodDocumentObservation::PRMS) and \r\nobservationMedia->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode <>  vocab::ActMood::PRMS) and \r\norganizer->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0)  or moodCode <>  vocab::ActMood::PRMS) and \r\nprocedure->forAll((moodCode = vocab::x_DocumentProcedureMood::PRMS and performer->size() > 0)  or moodCode <>  vocab::x_DocumentProcedureMood::PRMS) and \r\nregionOfInterest->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode <>  vocab::ActMood::PRMS) and \r\nsubstanceAdministration->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0)  or moodCode <>  vocab::x_DocumentSubstanceMood::PRMS) and \r\nsupply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0) or moodCode <>  vocab::x_DocumentSubstanceMood::PRMS))'"
 	 * @generated
 	 */
-	boolean validateAuthorizationActivityEntryRelationshipHasAuthorizedPerformers(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAuthorizationActivityEntryRelationshipHasAuthorizedPerformers(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -126,8 +120,7 @@ public interface AuthorizationActivity extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)'"
 	 * @generated
 	 */
-	boolean validateAuthorizationActivityEntryRelationshipTypeCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateAuthorizationActivityEntryRelationshipTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -135,11 +128,10 @@ public interface AuthorizationActivity extends Act {
 	 * @generated
 	 */
 	public AuthorizationActivity init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AuthorizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AuthorizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AuthorizationActivity

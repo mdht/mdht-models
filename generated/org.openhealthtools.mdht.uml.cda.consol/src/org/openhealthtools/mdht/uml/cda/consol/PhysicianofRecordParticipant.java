@@ -1,22 +1,18 @@
-/*******************************************************************************
- * Copyright (c) 2011, 2012 Sean Muir and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Sean Muir (JKM Software) - initial API and implementation
- *******************************************************************************/
+/**
+ */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
+
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+
+import org.eclipse.mdht.uml.cda.EncounterParticipant;
 
 /**
  * <!-- begin-user-doc -->
@@ -77,8 +73,7 @@ public interface PhysicianofRecordParticipant extends EncounterParticipant {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null).assignedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty()))'"
 	 * @generated
 	 */
-	boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -90,8 +85,7 @@ public interface PhysicianofRecordParticipant extends EncounterParticipant {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject(code.codeSystem = \'1.2.840.10008.2.16.4\' or code.codeSystem = \'2.16.840.1.113883.6.101\')'"
 	 * @generated
 	 */
-	boolean validatePhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -103,8 +97,7 @@ public interface PhysicianofRecordParticipant extends EncounterParticipant {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject(id->exists( root=\'2.16.840.1.113883.4.6\' ))'"
 	 * @generated
 	 */
-	boolean validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -116,8 +109,7 @@ public interface PhysicianofRecordParticipant extends EncounterParticipant {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validatePhysicianofRecordParticipantAssignedEntityCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicianofRecordParticipantAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -129,8 +121,7 @@ public interface PhysicianofRecordParticipant extends EncounterParticipant {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
 	 * @generated
 	 */
-	boolean validatePhysicianofRecordParticipantAssignedEntityId(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicianofRecordParticipantAssignedEntityId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,8 +133,7 @@ public interface PhysicianofRecordParticipant extends EncounterParticipant {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person)))'"
 	 * @generated
 	 */
-	boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,11 +141,10 @@ public interface PhysicianofRecordParticipant extends EncounterParticipant {
 	 * @generated
 	 */
 	public PhysicianofRecordParticipant init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PhysicianofRecordParticipant init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PhysicianofRecordParticipant init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PhysicianofRecordParticipant

@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
@@ -50,8 +50,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeSummaryOperat
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Discharge Summary</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -82,8 +80,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(this, diagnostics, context);
 	}
 
 	/**
@@ -111,8 +108,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional(this, diagnostics, context);
 	}
 
 	/**
@@ -122,8 +118,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryHospitalAdmissionDiagnosisSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryHospitalAdmissionDiagnosisSection(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalAdmissionDiagnosisSection(this, diagnostics, context);
 	}
 
 	/**
@@ -133,8 +128,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryHospitalDischargeDiagnosisSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeDiagnosisSection(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeDiagnosisSection(this, diagnostics, context);
 	}
 
 	/**
@@ -153,8 +147,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional(this, diagnostics, context);
 	}
 
 	/**
@@ -174,8 +167,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryHistoryOfPresentIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryHistoryOfPresentIllnessSection(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryHistoryOfPresentIllnessSection(this, diagnostics, context);
 	}
 
 	/**
@@ -204,8 +196,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryHistoryOfPastIllnessSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryHistoryOfPastIllnessSection(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryHistoryOfPastIllnessSection(this, diagnostics, context);
 	}
 
 	/**
@@ -234,8 +225,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryChiefComplaintAndReasonForVisitSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryChiefComplaintAndReasonForVisitSection(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryChiefComplaintAndReasonForVisitSection(this, diagnostics, context);
 	}
 
 	/**
@@ -264,8 +254,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryHospitalConsultationsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryHospitalConsultationsSection(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalConsultationsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -275,8 +264,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryHospitalDischargeInstructionsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeInstructionsSection(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeInstructionsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -286,8 +274,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryHospitalDischargePhysicalSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargePhysicalSection(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargePhysicalSection(this, diagnostics, context);
 	}
 
 	/**
@@ -297,8 +284,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryHospitalDischargeStudiesSummarySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeStudiesSummarySection(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryHospitalDischargeStudiesSummarySection(this, diagnostics, context);
 	}
 
 	/**
@@ -308,8 +294,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryImmunizationsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryImmunizationsSectionEntriesOptional(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryImmunizationsSectionEntriesOptional(this, diagnostics, context);
 	}
 
 	/**
@@ -319,8 +304,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryProblemSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryProblemSectionEntriesOptional(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryProblemSectionEntriesOptional(this, diagnostics, context);
 	}
 
 	/**
@@ -330,8 +314,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryProceduresSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryProceduresSectionEntriesOptional(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryProceduresSectionEntriesOptional(this, diagnostics, context);
 	}
 
 	/**
@@ -360,8 +343,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryAllergiesSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryAllergiesSectionEntriesOptional(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryAllergiesSectionEntriesOptional(this, diagnostics, context);
 	}
 
 	/**
@@ -371,8 +353,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryVitalSignsSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryVitalSignsSectionEntriesOptional(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryVitalSignsSectionEntriesOptional(this, diagnostics, context);
 	}
 
 	/**
@@ -382,8 +363,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -393,8 +373,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -404,8 +383,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -415,8 +393,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -426,8 +403,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow(this, diagnostics, context);
 	}
 
 	/**
@@ -437,8 +413,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh(this, diagnostics, context);
 	}
 
 	/**
@@ -448,8 +423,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet(this, diagnostics, context);
 	}
 
 	/**
@@ -459,8 +433,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem(this, diagnostics, context);
 	}
 
 	/**
@@ -470,8 +443,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -481,8 +453,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -492,8 +463,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty(this, diagnostics, context);
 	}
 
 	/**
@@ -503,8 +473,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant(this, diagnostics, context);
 	}
 
 	/**
@@ -514,8 +483,7 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	public boolean validateDischargeSummaryComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter(
-			this, diagnostics, context);
+		return DischargeSummaryOperations.validateDischargeSummaryComponentOfEncompassingEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -758,19 +726,17 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public DischargeSummary init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DischargeSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DischargeSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DischargeSummaryImpl

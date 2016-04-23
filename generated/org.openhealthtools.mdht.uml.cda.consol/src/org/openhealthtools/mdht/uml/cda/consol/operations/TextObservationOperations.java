@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -29,7 +30,6 @@ import org.openhealthtools.mdht.uml.cda.consol.QuantityMeasurementObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.TextObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -102,26 +102,28 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationTextReference(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
 			try {
 				VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			textObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(textObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationTextReference"),
-					new Object[] { textObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEXT_REFERENCE,
+						 ConsolPlugin.INSTANCE.getString("TextObservationTextObservationTextReference"),
+						 new Object [] { textObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -161,26 +163,28 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationTextReferenceValue(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
 			try {
 				VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			textObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(textObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationTextReferenceValue"),
-					new Object[] { textObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEXT_REFERENCE_VALUE,
+						 ConsolPlugin.INSTANCE.getString("TextObservationTextObservationTextReferenceValue"),
+						 new Object [] { textObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -220,26 +224,28 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationReferenceValue(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TEXT_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
 			try {
 				VALIDATE_TEXT_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TEXT_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			textObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(textObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationReferenceValue"),
-					new Object[] { textObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_REFERENCE_VALUE,
+						 ConsolPlugin.INSTANCE.getString("TextObservationTextObservationReferenceValue"),
+						 new Object [] { textObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -279,26 +285,28 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationTemplateId(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TEXT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
 			try {
 				VALIDATE_TEXT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TEXT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			textObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(textObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationTemplateId"),
-					new Object[] { textObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("TextObservationTextObservationTemplateId"),
+						 new Object [] { textObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -338,26 +346,28 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationClassCode(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TEXT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
 			try {
 				VALIDATE_TEXT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TEXT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			textObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(textObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationClassCode"),
-					new Object[] { textObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("TextObservationTextObservationClassCode"),
+						 new Object [] { textObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -397,26 +407,28 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationMoodCode(TextObservation textObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TEXT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
 			try {
 				VALIDATE_TEXT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TEXT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			textObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(textObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationMoodCode"),
-					new Object[] { textObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("TextObservationTextObservationMoodCode"),
+						 new Object [] { textObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -456,25 +468,28 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationCode(TextObservation textObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TEXT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
 			try {
 				VALIDATE_TEXT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TEXT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(textObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationCode"),
-					new Object[] { textObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("TextObservationTextObservationCode"),
+						 new Object [] { textObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -514,26 +529,28 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationEffectiveTime(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TEXT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
 			try {
 				VALIDATE_TEXT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TEXT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			textObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(textObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationEffectiveTime"),
-					new Object[] { textObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_EFFECTIVE_TIME,
+						 ConsolPlugin.INSTANCE.getString("TextObservationTextObservationEffectiveTime"),
+						 new Object [] { textObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -573,25 +590,28 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationText(TextObservation textObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TEXT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
 			try {
 				VALIDATE_TEXT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TEXT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(textObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationText"),
-					new Object[] { textObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("TextObservationTextObservationText"),
+						 new Object [] { textObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -631,26 +651,28 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationValue(TextObservation textObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TEXT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
 			try {
 				VALIDATE_TEXT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TEXT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			textObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(textObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationValue"),
-					new Object[] { textObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("TextObservationTextObservationValue"),
+						 new Object [] { textObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -690,26 +712,28 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationSOPInstanceObservation(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
 			try {
 				VALIDATE_TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			textObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(textObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationSOPInstanceObservation"),
-					new Object[] { textObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("TextObservationTextObservationSOPInstanceObservation"),
+						 new Object [] { textObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -749,27 +773,28 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateTextObservationQuantityMeasurementObservation(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
 			try {
 				VALIDATE_TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			textObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(textObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("TextObservationTextObservationQuantityMeasurementObservation"),
-					new Object[] { textObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("TextObservationTextObservationQuantityMeasurementObservation"),
+						 new Object [] { textObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -804,12 +829,11 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 	public static EList<SOPInstanceObservation> getSOPInstanceObservations(TextObservation textObservation) {
 		if (GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TEXT_OBSERVATION,
-				ConsolPackage.Literals.TEXT_OBSERVATION.getEAllOperations().get(63));
+			helper.setOperationContext(ConsolPackage.Literals.TEXT_OBSERVATION, ConsolPackage.Literals.TEXT_OBSERVATION.getEAllOperations().get(63));
 			try {
 				GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SOP_INSTANCE_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -849,12 +873,11 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 			TextObservation textObservation) {
 		if (GET_QUANTITY_MEASUREMENT_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.TEXT_OBSERVATION,
-				ConsolPackage.Literals.TEXT_OBSERVATION.getEAllOperations().get(64));
+			helper.setOperationContext(ConsolPackage.Literals.TEXT_OBSERVATION, ConsolPackage.Literals.TEXT_OBSERVATION.getEAllOperations().get(64));
 			try {
 				GET_QUANTITY_MEASUREMENT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_QUANTITY_MEASUREMENT_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

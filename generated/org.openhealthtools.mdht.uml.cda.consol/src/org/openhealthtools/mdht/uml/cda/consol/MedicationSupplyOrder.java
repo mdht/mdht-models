@@ -1,22 +1,18 @@
-/*******************************************************************************
- * Copyright (c) 2011, 2012 Sean Muir and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Sean Muir (JKM Software) - initial API and implementation
- *******************************************************************************/
+/**
+ */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Supply;
+
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+
+import org.eclipse.mdht.uml.cda.Supply;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,12 +35,11 @@ public interface MedicationSupplyOrder extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)'"
 	 * @generated
 	 */
-	boolean validateMedicationSupplyOrderInstructionInversionInd(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationSupplyOrderInstructionInversionInd(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -64,8 +59,7 @@ public interface MedicationSupplyOrder extends Supply {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor self.product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation)'"
 	 * @generated
 	 */
-	boolean validateMedicationSupplyOrderContainsMedicationOrImmunization(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateMedicationSupplyOrderContainsMedicationOrImmunization(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -202,11 +196,10 @@ public interface MedicationSupplyOrder extends Supply {
 	 * @generated
 	 */
 	public MedicationSupplyOrder init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationSupplyOrder init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MedicationSupplyOrder init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationSupplyOrder

@@ -1,17 +1,16 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,8 +35,7 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.value->forAll(val | val.oclIsTypeOf(datatypes::CD) implies (val.isNullFlavorDefined() or val.oclAsType(datatypes::CD).codeSystem = \'2.16.840.1.113883.6.96\'))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusResultObservationValueDatatype(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusResultObservationValueDatatype(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -73,8 +71,7 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.supply.oclIsUndefined() and entryRelationship.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,8 +83,7 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::CaregiverCharacteristics) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusResultObservationCaregiverCharacteristics(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusResultObservationCaregiverCharacteristics(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -99,8 +95,7 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AssessmentScaleObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusResultObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusResultObservationAssessmentScaleObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -112,8 +107,7 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->exists(referenceRange : cda::ReferenceRange | not referenceRange.oclIsUndefined() and referenceRange.oclIsKindOf(cda::ReferenceRange))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusResultObservationReferenceRange(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusResultObservationReferenceRange(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -125,8 +119,7 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->excluding(null).observationRange->excluding(null)->reject(code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -138,8 +131,7 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->excluding(null)->reject(observationRange->one(observationRange : cda::ObservationRange | not observationRange.oclIsUndefined() and observationRange.oclIsKindOf(cda::ObservationRange)))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusResultObservationReferenceRangeObservationRange(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateFunctionalStatusResultObservationReferenceRangeObservationRange(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -174,11 +166,10 @@ public interface FunctionalStatusResultObservation extends ResultObservation {
 	 * @generated
 	 */
 	public FunctionalStatusResultObservation init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FunctionalStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public FunctionalStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusResultObservation

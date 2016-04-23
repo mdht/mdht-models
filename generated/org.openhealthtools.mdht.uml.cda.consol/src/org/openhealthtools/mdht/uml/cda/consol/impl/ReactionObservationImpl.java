@@ -17,21 +17,19 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReactionObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Reaction Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -108,8 +106,7 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 */
 	public boolean validateReactionObservationSeverityObservationInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationSeverityObservationInversionInd(
-			this, diagnostics, context);
+		return ReactionObservationOperations.validateReactionObservationSeverityObservationInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -119,8 +116,7 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 */
 	public boolean validateReactionObservationProcedureActivityProcedureInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedureInversionInd(
-			this, diagnostics, context);
+		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedureInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +126,7 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 */
 	public boolean validateReactionObservationMedicationActivityInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationMedicationActivityInversionInd(
-			this, diagnostics, context);
+		return ReactionObservationOperations.validateReactionObservationMedicationActivityInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -232,8 +227,7 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 */
 	public boolean validateReactionObservationProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedure(
-			this, diagnostics, context);
+		return ReactionObservationOperations.validateReactionObservationProcedureActivityProcedure(this, diagnostics, context);
 	}
 
 	/**
@@ -279,16 +273,16 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 	 * @generated
 	 */
 	public ReactionObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ReactionObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ReactionObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ReactionObservationImpl

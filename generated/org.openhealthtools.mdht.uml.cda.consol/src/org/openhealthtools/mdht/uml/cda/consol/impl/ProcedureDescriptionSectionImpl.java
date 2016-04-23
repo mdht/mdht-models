@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureDescriptionSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureDescriptionSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Description Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,8 +56,7 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 */
 	public boolean validateProcedureDescriptionSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +74,7 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public boolean validateProcedureDescriptionSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionCodeP(
-			this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -96,8 +92,7 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public boolean validateProcedureDescriptionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTitle(
-			this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -106,16 +101,16 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public ProcedureDescriptionSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureDescriptionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ProcedureDescriptionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureDescriptionSectionImpl

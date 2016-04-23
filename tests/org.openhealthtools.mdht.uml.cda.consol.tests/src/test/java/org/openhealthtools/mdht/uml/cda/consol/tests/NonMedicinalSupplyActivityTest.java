@@ -10,26 +10,23 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.tests;
 
-import static org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood.EVN;
-import static org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood.INT;
-
 import java.util.Arrays;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Participant2;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.vocab.ActClassSupply;
+import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NonMedicinalSupplyActivityOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassSupply;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -66,7 +63,8 @@ public class NonMedicinalSupplyActivityTest extends CDAValidationTest {
 	public void testValidateNonMedicinalSupplyActivityEffectiveTimeHigh() {
 		OperationsTestCase<NonMedicinalSupplyActivity> validateNonMedicinalSupplyActivityEffectiveTimeHighTestCase = new OperationsTestCase<NonMedicinalSupplyActivity>(
 			"validateNonMedicinalSupplyActivityEffectiveTimeHigh",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -102,7 +100,8 @@ public class NonMedicinalSupplyActivityTest extends CDAValidationTest {
 	public void testValidateNonMedicinalSupplyActivityProductInstanceTypeCode() {
 		OperationsTestCase<NonMedicinalSupplyActivity> validateNonMedicinalSupplyActivityProductInstanceTypeCodeTestCase = new OperationsTestCase<NonMedicinalSupplyActivity>(
 			"validateNonMedicinalSupplyActivityProductInstanceTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -142,8 +141,8 @@ public class NonMedicinalSupplyActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateNonMedicinalSupplyActivityTemplateId() {
 		OperationsTestCase<NonMedicinalSupplyActivity> validateNonMedicinalSupplyActivityTemplateIdTestCase = new OperationsTestCase<NonMedicinalSupplyActivity>(
-			"validateNonMedicinalSupplyActivityTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNonMedicinalSupplyActivityTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -176,8 +175,8 @@ public class NonMedicinalSupplyActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateNonMedicinalSupplyActivityClassCode() {
 		OperationsTestCase<NonMedicinalSupplyActivity> validateNonMedicinalSupplyActivityClassCodeTestCase = new OperationsTestCase<NonMedicinalSupplyActivity>(
-			"validateNonMedicinalSupplyActivityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNonMedicinalSupplyActivityClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -210,8 +209,8 @@ public class NonMedicinalSupplyActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateNonMedicinalSupplyActivityMoodCode() {
 		OperationsTestCase<NonMedicinalSupplyActivity> validateNonMedicinalSupplyActivityMoodCodeTestCase = new OperationsTestCase<NonMedicinalSupplyActivity>(
-			"validateNonMedicinalSupplyActivityMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNonMedicinalSupplyActivityMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -227,7 +226,8 @@ public class NonMedicinalSupplyActivityTest extends CDAValidationTest {
 
 			@Override
 			public void addPassTests() {
-				for (final x_DocumentSubstanceMood mood : Arrays.asList(EVN, INT)) {
+				for (final x_DocumentSubstanceMood mood : Arrays.asList(
+					x_DocumentSubstanceMood.EVN, x_DocumentSubstanceMood.INT)) {
 					addPassTest(new PassTest() {
 						@Override
 						public void updateToPass(NonMedicinalSupplyActivity target) {
@@ -292,8 +292,8 @@ public class NonMedicinalSupplyActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateNonMedicinalSupplyActivityStatusCode() {
 		OperationsTestCase<NonMedicinalSupplyActivity> validateNonMedicinalSupplyActivityStatusCodeTestCase = new OperationsTestCase<NonMedicinalSupplyActivity>(
-			"validateNonMedicinalSupplyActivityStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNonMedicinalSupplyActivityStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -330,7 +330,8 @@ public class NonMedicinalSupplyActivityTest extends CDAValidationTest {
 	public void testValidateNonMedicinalSupplyActivityEffectiveTime() {
 		OperationsTestCase<NonMedicinalSupplyActivity> validateNonMedicinalSupplyActivityEffectiveTimeTestCase = new OperationsTestCase<NonMedicinalSupplyActivity>(
 			"validateNonMedicinalSupplyActivityEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -365,8 +366,8 @@ public class NonMedicinalSupplyActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateNonMedicinalSupplyActivityQuantity() {
 		OperationsTestCase<NonMedicinalSupplyActivity> validateNonMedicinalSupplyActivityQuantityTestCase = new OperationsTestCase<NonMedicinalSupplyActivity>(
-			"validateNonMedicinalSupplyActivityQuantity",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNonMedicinalSupplyActivityQuantity", operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -400,7 +401,8 @@ public class NonMedicinalSupplyActivityTest extends CDAValidationTest {
 	public void testValidateNonMedicinalSupplyActivityProductInstance() {
 		OperationsTestCase<NonMedicinalSupplyActivity> validateNonMedicinalSupplyActivityProductInstanceTestCase = new OperationsTestCase<NonMedicinalSupplyActivity>(
 			"validateNonMedicinalSupplyActivityProductInstance",
-			operationsForOCL.getOCLValue("VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationsSectionEntriesOptionalOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunizations Section Entries Optional</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 */
 	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +68,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 */
 	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +78,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 */
 	public boolean validateImmunizationsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCodeP(
-			this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +88,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 */
 	public boolean validateImmunizationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +98,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 */
 	public boolean validateImmunizationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +108,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 */
 	public boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalImmunizationActivity(
-			this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalImmunizationActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -134,16 +126,16 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 * @generated
 	 */
 	public ImmunizationsSectionEntriesOptional init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ImmunizationsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ImmunizationsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ImmunizationsSectionEntriesOptionalImpl

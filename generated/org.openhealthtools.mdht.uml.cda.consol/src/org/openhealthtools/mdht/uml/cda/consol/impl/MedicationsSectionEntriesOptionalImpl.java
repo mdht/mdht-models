@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsSectionEntriesOptionalOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medications Section Entries Optional</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 */
 	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +68,7 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 */
 	public boolean validateMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +78,7 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 */
 	public boolean validateMedicationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +88,7 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 */
 	public boolean validateMedicationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +98,7 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 */
 	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalMedicationActivity(
-			this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalMedicationActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -123,16 +116,16 @@ public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implement
 	 * @generated
 	 */
 	public MedicationsSectionEntriesOptional init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MedicationsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationsSectionEntriesOptionalImpl

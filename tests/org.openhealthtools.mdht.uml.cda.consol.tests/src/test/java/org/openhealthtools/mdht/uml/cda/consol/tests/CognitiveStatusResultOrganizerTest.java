@@ -11,13 +11,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CognitiveStatusResultOrganizerOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +53,8 @@ public class CognitiveStatusResultOrganizerTest extends CDAValidationTest {
 	public void testValidateCognitiveStatusResultOrganizerCodeCodeSystem() {
 		OperationsTestCase<CognitiveStatusResultOrganizer> validateCognitiveStatusResultOrganizerCodeCodeSystemTestCase = new OperationsTestCase<CognitiveStatusResultOrganizer>(
 			"validateCognitiveStatusResultOrganizerCodeCodeSystem",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -87,7 +88,8 @@ public class CognitiveStatusResultOrganizerTest extends CDAValidationTest {
 	public void testValidateCognitiveStatusResultOrganizerCognitiveStatusResultObservation() {
 		OperationsTestCase<CognitiveStatusResultOrganizer> validateCognitiveStatusResultOrganizerCognitiveStatusResultObservationTestCase = new OperationsTestCase<CognitiveStatusResultOrganizer>(
 			"validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -235,7 +237,8 @@ public class CognitiveStatusResultOrganizerTest extends CDAValidationTest {
 	public void testValidateResultOrganizerId() {
 		OperationsTestCase<CognitiveStatusResultOrganizer> validateResultOrganizerIdTestCase = new OperationsTestCase<CognitiveStatusResultOrganizer>(
 			"validateResultOrganizerId",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(CognitiveStatusResultOrganizer target) {

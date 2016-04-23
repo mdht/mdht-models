@@ -15,16 +15,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -168,8 +168,8 @@ public class VitalSignsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignsSectionVitalSignsOrganizer() {
 		OperationsTestCase<VitalSignsSection> validateVitalSignsSectionVitalSignsOrganizerTestCase = new OperationsTestCase<VitalSignsSection>(
-			"validateVitalSignsSectionVitalSignsOrganizer",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignsSectionVitalSignsOrganizer", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_SECTION_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -218,7 +218,8 @@ public class VitalSignsSectionTest extends CDAValidationTest {
 	public void testValidateVitalSignsSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<VitalSignsSection> validateVitalSignsSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<VitalSignsSection>(
 			"validateVitalSignsSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -251,8 +252,8 @@ public class VitalSignsSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignsSectionEntriesOptionalTitle() {
 		OperationsTestCase<VitalSignsSection> validateVitalSignsSectionEntriesOptionalTitleTestCase = new OperationsTestCase<VitalSignsSection>(
-			"validateVitalSignsSectionEntriesOptionalTitle",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignsSectionEntriesOptionalTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

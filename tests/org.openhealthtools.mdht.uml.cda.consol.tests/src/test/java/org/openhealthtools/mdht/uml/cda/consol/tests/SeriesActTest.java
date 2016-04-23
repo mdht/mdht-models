@@ -14,21 +14,21 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CR;
+import org.eclipse.mdht.uml.hl7.datatypes.CV;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SeriesAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SeriesActOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CR;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CV;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -267,8 +267,8 @@ public class SeriesActTest extends CDAValidationTest {
 	@Test
 	public void testValidateSeriesActCodeQualifierValueCode() {
 		OperationsTestCase<SeriesAct> validateSeriesActCodeQualifierValueCodeTestCase = new OperationsTestCase<SeriesAct>(
-			"validateSeriesActCodeQualifierValueCode",
-			operationsForOCL.getOCLValue("VALIDATE_SERIES_ACT_CODE_QUALIFIER_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSeriesActCodeQualifierValueCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SERIES_ACT_CODE_QUALIFIER_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -541,8 +541,8 @@ public class SeriesActTest extends CDAValidationTest {
 	@Test
 	public void testValidateSeriesActSOPInstanceObservation() {
 		OperationsTestCase<SeriesAct> validateSeriesActSOPInstanceObservationTestCase = new OperationsTestCase<SeriesAct>(
-			"validateSeriesActSOPInstanceObservation",
-			operationsForOCL.getOCLValue("VALIDATE_SERIES_ACT_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSeriesActSOPInstanceObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_SERIES_ACT_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

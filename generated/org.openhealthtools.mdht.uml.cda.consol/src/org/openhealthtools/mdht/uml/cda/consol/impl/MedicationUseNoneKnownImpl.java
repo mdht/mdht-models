@@ -12,18 +12,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationUseNoneKnown;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationUseNoneKnownOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Use None Known</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -63,8 +61,7 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 */
 	public boolean validateMedicationUseNoneKnownTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReferenceValue(
-			this, diagnostics, context);
+		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -190,16 +187,16 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * @generated
 	 */
 	public MedicationUseNoneKnown init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationUseNoneKnown init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MedicationUseNoneKnown init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationUseNoneKnownImpl
