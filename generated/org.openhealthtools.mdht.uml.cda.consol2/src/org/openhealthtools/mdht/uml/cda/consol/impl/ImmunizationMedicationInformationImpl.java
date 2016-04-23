@@ -16,23 +16,21 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ManufacturedProductImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationMedicationInformationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ManufacturedProductImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunization Medication Information</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ImmunizationMedicationInformationImpl extends ManufacturedProductImpl implements
-		ImmunizationMedicationInformation {
+public class ImmunizationMedicationInformationImpl extends ManufacturedProductImpl
+		implements ImmunizationMedicationInformation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -82,7 +80,8 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 * @generated
 	 */
 	@Override
-	public boolean validateImmunizationMedicationInformationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunizationMedicationInformationId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationId(
 			this, diagnostics, context);
 	}

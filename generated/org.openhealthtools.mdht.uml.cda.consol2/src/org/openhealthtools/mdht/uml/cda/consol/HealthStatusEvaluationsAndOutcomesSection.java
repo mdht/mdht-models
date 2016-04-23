@@ -11,9 +11,9 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.Section;
+import org.eclipse.mdht.uml.cda.Section;
 
 /**
  * <!-- begin-user-doc -->

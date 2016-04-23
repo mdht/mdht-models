@@ -7,17 +7,13 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
@@ -30,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemObservation2Ope
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -84,7 +78,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	@Override
 	public boolean validateProblemObservation2PrognosisObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservation2Operations.validateProblemObservation2PrognosisObservation(this, diagnostics, context);
+		return ProblemObservation2Operations.validateProblemObservation2PrognosisObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -133,7 +128,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservation2CDCodeTranslation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservation2CDCodeTranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservation2CDCodeTranslation(this, diagnostics, context);
 	}
 
@@ -182,7 +178,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationHasTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservationHasTextReference(this, diagnostics, context);
 	}
 
@@ -192,7 +189,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservationTextReferenceValue(this, diagnostics, context);
 	}
 
@@ -204,7 +202,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	@Override
 	public boolean validateProblemObservationHasTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservation2Operations.validateProblemObservationHasTextReferenceValue(this, diagnostics, context);
+		return ProblemObservation2Operations.validateProblemObservationHasTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -223,7 +222,8 @@ public class ProblemObservation2Impl extends ProblemObservationImpl implements P
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservation2Operations.validateProblemObservationHasResolutionDate(this, diagnostics, context);
 	}
 

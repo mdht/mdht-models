@@ -16,19 +16,17 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReferencedFramesObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Referenced Frames Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -70,7 +68,8 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validateReferencedFramesObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateReferencedFramesObservationClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ReferencedFramesObservationOperations.validateReferencedFramesObservationClassCode(
 			this, diagnostics, context);
 	}
@@ -82,7 +81,8 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 */
 	@Override
 	public boolean validateReferencedFramesObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationCode(this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -91,7 +91,8 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validateReferencedFramesObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateReferencedFramesObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ReferencedFramesObservationOperations.validateReferencedFramesObservationMoodCode(
 			this, diagnostics, context);
 	}

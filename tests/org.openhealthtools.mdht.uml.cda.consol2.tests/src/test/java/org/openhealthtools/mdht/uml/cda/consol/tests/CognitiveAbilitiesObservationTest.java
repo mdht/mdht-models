@@ -16,21 +16,21 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CognitiveAbilitiesObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -71,7 +71,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	public void testValidateCognitiveAbilitiesObservationTemplateId() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationTemplateIdTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
 			"validateCognitiveAbilitiesObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -104,8 +105,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateCognitiveAbilitiesObservationClassCode() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationClassCodeTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
-			"validateCognitiveAbilitiesObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCognitiveAbilitiesObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -138,8 +139,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateCognitiveAbilitiesObservationMoodCode() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationMoodCodeTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
-			"validateCognitiveAbilitiesObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCognitiveAbilitiesObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -209,8 +210,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateCognitiveAbilitiesObservationCodeP() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationCodePTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
-			"validateCognitiveAbilitiesObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCognitiveAbilitiesObservationCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -243,8 +244,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateCognitiveAbilitiesObservationCode() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationCodeTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
-			"validateCognitiveAbilitiesObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCognitiveAbilitiesObservationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -288,8 +289,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateCognitiveAbilitiesObservationText() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationTextTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
-			"validateCognitiveAbilitiesObservationText",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCognitiveAbilitiesObservationText", operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -326,7 +327,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	public void testValidateCognitiveAbilitiesObservationStatusCode() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationStatusCodeTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
 			"validateCognitiveAbilitiesObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -363,7 +365,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	public void testValidateCognitiveAbilitiesObservationStatusCodeP() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationStatusCodePTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
 			"validateCognitiveAbilitiesObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -397,7 +400,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	public void testValidateCognitiveAbilitiesObservationEffectiveTime() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationEffectiveTimeTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
 			"validateCognitiveAbilitiesObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -433,8 +437,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateCognitiveAbilitiesObservationValue() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationValueTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
-			"validateCognitiveAbilitiesObservationValue",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCognitiveAbilitiesObservationValue", operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -469,8 +473,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateCognitiveAbilitiesObservationValueP() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationValuePTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
-			"validateCognitiveAbilitiesObservationValueP",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCognitiveAbilitiesObservationValueP", operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -505,7 +509,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	public void testValidateCognitiveAbilitiesObservationAssessmentScaleObservation() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationAssessmentScaleObservationTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
 			"validateCognitiveAbilitiesObservationAssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -542,7 +547,8 @@ public class CognitiveAbilitiesObservationTest extends CDAValidationTest {
 	public void testValidateCognitiveAbilitiesObservationAuthorParticipation() {
 		OperationsTestCase<CognitiveAbilitiesObservation> validateCognitiveAbilitiesObservationAuthorParticipationTestCase = new OperationsTestCase<CognitiveAbilitiesObservation>(
 			"validateCognitiveAbilitiesObservationAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_ABILITIES_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

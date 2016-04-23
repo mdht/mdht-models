@@ -16,23 +16,21 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.CriterionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PreconditionForSubstanceAdministrationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.CriterionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Precondition For Substance Administration</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PreconditionForSubstanceAdministrationImpl extends CriterionImpl implements
-		PreconditionForSubstanceAdministration {
+public class PreconditionForSubstanceAdministrationImpl extends CriterionImpl
+		implements PreconditionForSubstanceAdministration {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -113,7 +111,8 @@ public class PreconditionForSubstanceAdministrationImpl extends CriterionImpl im
 	 * @generated
 	 */
 	@Override
-	public PreconditionForSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public PreconditionForSubstanceAdministration init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
 	}

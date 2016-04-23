@@ -7,35 +7,28 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemSectionEntriesOptional2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Section Entries Optional2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOptionalImpl implements
-		ProblemSectionEntriesOptional2 {
+public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOptionalImpl
+		implements ProblemSectionEntriesOptional2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -105,7 +98,8 @@ public class ProblemSectionEntriesOptional2Impl extends ProblemSectionEntriesOpt
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemSectionEntriesOptional2Operations.validateProblemSectionEntriesOptionalCodeP(
 			this, diagnostics, context);
 	}

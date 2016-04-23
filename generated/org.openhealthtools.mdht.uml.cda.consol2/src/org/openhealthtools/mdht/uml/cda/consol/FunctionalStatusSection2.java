@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -15,7 +11,7 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,7 +46,8 @@ public interface FunctionalStatusSection2 extends FunctionalStatusSection {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::SelfCareActivities))'"
 	 * @generated
 	 */
-	boolean validateFunctionalStatusSection2SelfCareActivities(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFunctionalStatusSection2SelfCareActivities(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,7 +148,6 @@ public interface FunctionalStatusSection2 extends FunctionalStatusSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FunctionalStatusSection2 init();
 
 	/**
@@ -159,6 +155,5 @@ public interface FunctionalStatusSection2 extends FunctionalStatusSection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FunctionalStatusSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusSection2

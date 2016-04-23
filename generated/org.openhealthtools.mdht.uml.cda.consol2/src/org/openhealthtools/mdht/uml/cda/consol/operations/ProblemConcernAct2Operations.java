@@ -14,16 +14,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
@@ -85,7 +80,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -93,17 +89,19 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActStatusCodeP"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActStatusCodeP"),
+						new Object[] { problemConcernAct2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ProblemConcernActStatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ProblemConcernActStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -135,19 +133,22 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2AuthorParticipation"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2AuthorParticipation"),
+						new Object[] { problemConcernAct2 }));
 			}
 
 			return false;
@@ -173,19 +174,22 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2PriorityPreference"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE,
+						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2PriorityPreference"),
+						new Object[] { problemConcernAct2 }));
 			}
 
 			return false;
@@ -230,7 +234,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 				ConsolPackage.Literals.PROBLEM_CONCERN_ACT2,
 				ConsolPackage.Literals.PROBLEM_CONCERN_ACT2.getEAllOperations().get(67));
 			try {
-				GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP);
+				GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -259,19 +264,22 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTimeLow"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW,
+						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTimeLow"),
+						new Object[] { problemConcernAct2 }));
 			}
 
 			return false;
@@ -297,19 +305,22 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTimeHigh"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH,
+						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTimeHigh"),
+						new Object[] { problemConcernAct2 }));
 			}
 
 			return false;
@@ -501,7 +512,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				VALIDATE_PROBLEM_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PROBLEM_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -509,11 +521,12 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActTemplateId"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActTemplateId"),
+						new Object[] { problemConcernAct2 }));
 			}
 
 			return false;
@@ -529,9 +542,9 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "
-			+ "value.code = 'active' or value.code = 'suspended' or value.code = 'aborted' or value.code = 'completed')";
+	protected static final String VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " +
+			"value.code = 'active' or value.code = 'suspended' or value.code = 'aborted' or value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemConcernActStatusCode(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Status Code</em>}' invariant operation.
@@ -570,7 +583,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -578,11 +592,12 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActStatusCode"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActStatusCode"),
+						new Object[] { problemConcernAct2 }));
 			}
 
 			return false;
@@ -629,7 +644,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -637,11 +653,12 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTime"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTime"),
+						new Object[] { problemConcernAct2 }));
 			}
 
 			return false;
@@ -688,7 +705,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -696,17 +714,19 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActCodeP"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_CODE_P,
+						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActCodeP"),
+						new Object[] { problemConcernAct2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ProblemConcernActCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ProblemConcernActCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -728,9 +748,9 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = 'CONC' and value.codeSystem = '2.16.840.1.113883.5.6')";
+	protected static final String VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'CONC' and value.codeSystem = '2.16.840.1.113883.5.6')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemConcernActCode(ProblemConcernAct2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Concern Act Code</em>}' invariant operation.
@@ -769,7 +789,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -777,11 +798,12 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActCode"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_CODE,
+						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActCode"),
+						new Object[] { problemConcernAct2 }));
 			}
 
 			return false;
@@ -828,19 +850,22 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT2);
 			try {
-				VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemConcernAct2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				problemConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActProblemObservation"),
-					new Object[] { problemConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActProblemObservation"),
+						new Object[] { problemConcernAct2 }));
 			}
 
 			return false;

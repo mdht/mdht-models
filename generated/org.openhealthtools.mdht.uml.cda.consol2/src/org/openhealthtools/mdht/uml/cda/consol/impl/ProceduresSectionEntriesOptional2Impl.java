@@ -7,36 +7,29 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSectionEntriesOptional2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedures Section Entries Optional2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntriesOptionalImpl implements
-		ProceduresSectionEntriesOptional2 {
+public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntriesOptionalImpl
+		implements ProceduresSectionEntriesOptional2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -114,7 +107,8 @@ public class ProceduresSectionEntriesOptional2Impl extends ProceduresSectionEntr
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProceduresSectionEntriesOptional2Operations.validateProceduresSectionEntriesOptionalCode(
 			this, diagnostics, context);
 	}

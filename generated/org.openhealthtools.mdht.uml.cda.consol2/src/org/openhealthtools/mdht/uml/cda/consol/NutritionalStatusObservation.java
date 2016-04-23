@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -15,9 +11,9 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.Observation;
+import org.eclipse.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->

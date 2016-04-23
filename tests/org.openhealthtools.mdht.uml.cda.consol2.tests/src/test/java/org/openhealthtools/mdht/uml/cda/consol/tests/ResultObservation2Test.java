@@ -16,20 +16,20 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.ObservationRange;
+import org.eclipse.mdht.uml.cda.ReferenceRange;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.ObservationRange;
-import org.openhealthtools.mdht.uml.cda.ReferenceRange;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ResultObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultObservation2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -107,8 +107,8 @@ public class ResultObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateResultObservationInterpretationCodeP() {
 		OperationsTestCase<ResultObservation2> validateResultObservationInterpretationCodePTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservationInterpretationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationInterpretationCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -141,8 +141,8 @@ public class ResultObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateResultObservation2AuthorParticipation() {
 		OperationsTestCase<ResultObservation2> validateResultObservation2AuthorParticipationTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservation2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservation2AuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -175,8 +175,8 @@ public class ResultObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateResultObservation2ReferenceRange() {
 		OperationsTestCase<ResultObservation2> validateResultObservation2ReferenceRangeTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservation2ReferenceRange",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservation2ReferenceRange", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -211,7 +211,8 @@ public class ResultObservation2Test extends CDAValidationTest {
 	public void testValidateResultObservation2ReferenceRangeObservationRangeValue() {
 		OperationsTestCase<ResultObservation2> validateResultObservation2ReferenceRangeObservationRangeValueTestCase = new OperationsTestCase<ResultObservation2>(
 			"validateResultObservation2ReferenceRangeObservationRangeValue",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -225,7 +226,8 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(ResultObservation2 target) {
-				target.getReferenceRanges().get(0).getObservationRange().setValue(DatatypesFactory.eINSTANCE.createCD());
+				target.getReferenceRanges().get(0).getObservationRange().setValue(
+					DatatypesFactory.eINSTANCE.createCD());
 			}
 
 			@Override
@@ -249,7 +251,8 @@ public class ResultObservation2Test extends CDAValidationTest {
 		// Note: Modified operation OCL due to inline OCL 0..0 generation issue
 		OperationsTestCase<ResultObservation2> validateResultObservation2ReferenceRangeObservationRangeCodeTestCase = new OperationsTestCase<ResultObservation2>(
 			"validateResultObservation2ReferenceRangeObservationRangeCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -287,7 +290,8 @@ public class ResultObservation2Test extends CDAValidationTest {
 	public void testValidateResultObservation2ReferenceRangeObservationRange() {
 		OperationsTestCase<ResultObservation2> validateResultObservation2ReferenceRangeObservationRangeTestCase = new OperationsTestCase<ResultObservation2>(
 			"validateResultObservation2ReferenceRangeObservationRange",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION2_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -323,8 +327,8 @@ public class ResultObservation2Test extends CDAValidationTest {
 	@Ignore
 	public void testValidateResultObservationAuthorMultiplicity() {
 		OperationsTestCase<ResultObservation2> validateResultObservationAuthorMultiplicityTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservationAuthorMultiplicity",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_AUTHOR_MULTIPLICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationAuthorMultiplicity", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_AUTHOR_MULTIPLICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -493,8 +497,8 @@ public class ResultObservation2Test extends CDAValidationTest {
 	@Ignore
 	public void testValidateResultObservationTextReferenceValue() {
 		OperationsTestCase<ResultObservation2> validateResultObservationTextReferenceValueTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -533,7 +537,8 @@ public class ResultObservation2Test extends CDAValidationTest {
 	public void testValidateResultObservationNoObservationRangeCode() {
 		OperationsTestCase<ResultObservation2> validateResultObservationNoObservationRangeCodeTestCase = new OperationsTestCase<ResultObservation2>(
 			"validateResultObservationNoObservationRangeCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_NO_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_NO_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -755,8 +760,8 @@ public class ResultObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateResultObservationInterpretationCode() {
 		OperationsTestCase<ResultObservation2> validateResultObservationInterpretationCodeTestCase = new OperationsTestCase<ResultObservation2>(
-			"validateResultObservationInterpretationCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationInterpretationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

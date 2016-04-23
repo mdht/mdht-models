@@ -15,33 +15,31 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Encounter;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Organization;
+import org.eclipse.mdht.uml.cda.Participant2;
+import org.eclipse.mdht.uml.cda.Performer2;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.TEL;
+import org.eclipse.mdht.uml.hl7.vocab.ActClass;
+import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Encounter;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Organization;
-import org.openhealthtools.mdht.uml.cda.Participant2;
-import org.openhealthtools.mdht.uml.cda.Performer2;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.TEL;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClass;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActMoodDocumentObservation;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentEncounterMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -113,7 +111,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationCodeCodeSystems() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationCodeCodeSystemsTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationCodeCodeSystems",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_CODE_CODE_SYSTEMS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_CODE_CODE_SYSTEMS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -218,7 +217,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationCodeOriginalText() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationCodeOriginalTextTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationCodeOriginalText",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -257,7 +257,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationOriginalTextReference() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationOriginalTextReferenceTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationOriginalTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -302,7 +303,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationOriginalTextReferenceValue() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationOriginalTextReferenceValueTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationOriginalTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -348,7 +350,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationReferenceValue() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationReferenceValueTestCase = new NarrativeReferenceTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -397,7 +400,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationEncounterInversion() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationEncounterInversionTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationEncounterInversion",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENCOUNTER_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENCOUNTER_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -461,7 +465,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationServiceDeliveryLocationTypeCode() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationServiceDeliveryLocationTypeCodeTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationServiceDeliveryLocationTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -502,7 +507,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationInstructionsInversion() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationInstructionsInversionTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationInstructionsInversion",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_INSTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_INSTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -564,8 +570,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureActivityObservationTemplateId() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationTemplateIdTestCase = new OperationsTestCase<ProcedureActivityObservation>(
-			"validateProcedureActivityObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureActivityObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -598,8 +604,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureActivityObservationClassCode() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationClassCodeTestCase = new OperationsTestCase<ProcedureActivityObservation>(
-			"validateProcedureActivityObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureActivityObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -632,8 +638,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureActivityObservationMoodCode() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationMoodCodeTestCase = new OperationsTestCase<ProcedureActivityObservation>(
-			"validateProcedureActivityObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureActivityObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -703,8 +709,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureActivityObservationCode() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationCodeTestCase = new OperationsTestCase<ProcedureActivityObservation>(
-			"validateProcedureActivityObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureActivityObservationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -740,8 +746,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureActivityObservationStatusCode() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationStatusCodeTestCase = new OperationsTestCase<ProcedureActivityObservation>(
-			"validateProcedureActivityObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureActivityObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -778,8 +784,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureActivityObservationValue() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationValueTestCase = new OperationsTestCase<ProcedureActivityObservation>(
-			"validateProcedureActivityObservationValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureActivityObservationValue", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -816,7 +822,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationEffectiveTime() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationEffectiveTimeTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -853,7 +860,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationPriorityCode() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationPriorityCodeTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationPriorityCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -888,7 +896,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationPriorityCodeP() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationPriorityCodePTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationPriorityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -922,8 +931,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureActivityObservationMethodCode() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationMethodCodeTestCase = new OperationsTestCase<ProcedureActivityObservation>(
-			"validateProcedureActivityObservationMethodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureActivityObservationMethodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -957,7 +966,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationTargetSiteCode() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationTargetSiteCodeTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationTargetSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -996,7 +1006,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationTargetSiteCodeP() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationTargetSiteCodePTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationTargetSiteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1029,8 +1040,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureActivityObservationPerformer() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationPerformerTestCase = new OperationsTestCase<ProcedureActivityObservation>(
-			"validateProcedureActivityObservationPerformer",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureActivityObservationPerformer", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1063,7 +1074,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationServiceDeliveryLocation() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationServiceDeliveryLocationTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationServiceDeliveryLocation",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1101,7 +1113,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationInstructions() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationInstructionsTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationInstructions",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1137,8 +1150,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureActivityObservationIndication() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationIndicationTestCase = new OperationsTestCase<ProcedureActivityObservation>(
-			"validateProcedureActivityObservationIndication",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureActivityObservationIndication", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1175,7 +1188,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationMedicationActivity() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationMedicationActivityTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationMedicationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1238,7 +1252,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationEntryRelationship() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationEntryRelationshipTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationEntryRelationship",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1275,7 +1290,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationId() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationIdTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1320,7 +1336,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationName() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationNameTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationName",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1365,7 +1382,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationTelecom() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationTelecomTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1410,7 +1428,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationAddr() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationAddrTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationAddr",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_PROCEDURE_OBSERVATION_REPRESENTED_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1455,7 +1474,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityId() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityIdTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1496,7 +1516,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddrTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1537,7 +1558,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecomTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1578,7 +1600,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityRepresentedOrganization() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityRepresentedOrganizationTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_PROCEDURE_OBSERVATION_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1619,7 +1642,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationProcedureObservationPerformerAssignedEntity() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationProcedureObservationPerformerAssignedEntityTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationProcedureObservationPerformerAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROCEDURE_OBSERVATION_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1656,7 +1680,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterClassCode() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterClassCodeTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1700,7 +1725,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterMoodCode() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterMoodCodeTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1744,7 +1770,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterId() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterIdTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1788,7 +1815,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationEntryRelationshipInversionInd() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationEntryRelationshipInversionIndTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationEntryRelationshipInversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1833,7 +1861,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationEntryRelationshipTypeCode() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationEntryRelationshipTypeCodeTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationEntryRelationshipTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -1875,7 +1904,8 @@ public class ProcedureActivityObservationTest extends CDAValidationTest {
 	public void testValidateProcedureActivityObservationEntryRelationshipProcedureObservationEncounter() {
 		OperationsTestCase<ProcedureActivityObservation> validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounterTestCase = new OperationsTestCase<ProcedureActivityObservation>(
 			"validateProcedureActivityObservationEntryRelationshipProcedureObservationEncounter",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENTRY_RELATIONSHIP_PROCEDURE_OBSERVATION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{

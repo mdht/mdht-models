@@ -15,16 +15,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EntryReferenceOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 
 /**
  * <!-- begin-user-doc -->
@@ -162,7 +162,8 @@ public class EntryReferenceTest extends CDAValidationTest {
 	public void testValidateEntryReferenceId() {
 		OperationsTestCase<EntryReference> validateEntryReferenceIdTestCase = new OperationsTestCase<EntryReference>(
 			"validateEntryReferenceId",
-			operationsForOCL.getOCLValue("VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_ENTRY_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(EntryReference target) {
@@ -301,7 +302,7 @@ public class EntryReferenceTest extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
-	* Note: modified OCL for VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP 
+	* Note: modified OCL for VALIDATE_ENTRY_REFERENCE_II_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP
 	* due to OCL generation issue for a 0..0 situation
 	*/
 	@Test

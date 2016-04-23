@@ -16,18 +16,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MentalStatusObservation2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -69,8 +69,8 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservation2ValueDatatype() {
 		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2ValueDatatypeTestCase = new OperationsTestCase<MentalStatusObservation2>(
-			"validateMentalStatusObservation2ValueDatatype",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_VALUE_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservation2ValueDatatype", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_VALUE_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -105,8 +105,8 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservation2TemplateId() {
 		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2TemplateIdTestCase = new OperationsTestCase<MentalStatusObservation2>(
-			"validateMentalStatusObservation2TemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservation2TemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -139,8 +139,8 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservation2ClassCode() {
 		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2ClassCodeTestCase = new OperationsTestCase<MentalStatusObservation2>(
-			"validateMentalStatusObservation2ClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservation2ClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -173,8 +173,8 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservation2MoodCode() {
 		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2MoodCodeTestCase = new OperationsTestCase<MentalStatusObservation2>(
-			"validateMentalStatusObservation2MoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservation2MoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -320,8 +320,8 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservation2StatusCode() {
 		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2StatusCodeTestCase = new OperationsTestCase<MentalStatusObservation2>(
-			"validateMentalStatusObservation2StatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservation2StatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -357,8 +357,8 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservation2StatusCodeP() {
 		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2StatusCodePTestCase = new OperationsTestCase<MentalStatusObservation2>(
-			"validateMentalStatusObservation2StatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservation2StatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -391,8 +391,8 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservation2EffectiveTime() {
 		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2EffectiveTimeTestCase = new OperationsTestCase<MentalStatusObservation2>(
-			"validateMentalStatusObservation2EffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservation2EffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -466,7 +466,8 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 	public void testValidateMentalStatusObservation2AuthorParticipation() {
 		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2AuthorParticipationTestCase = new OperationsTestCase<MentalStatusObservation2>(
 			"validateMentalStatusObservation2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -501,7 +502,8 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 	public void testValidateMentalStatusObservation2AssessmentScaleObservation() {
 		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2AssessmentScaleObservationTestCase = new OperationsTestCase<MentalStatusObservation2>(
 			"validateMentalStatusObservation2AssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -538,8 +540,8 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservation2ReferenceRange() {
 		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2ReferenceRangeTestCase = new OperationsTestCase<MentalStatusObservation2>(
-			"validateMentalStatusObservation2ReferenceRange",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservation2ReferenceRange", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -573,8 +575,8 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusObservation2CDTranslation() {
 		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2CDTranslationTestCase = new OperationsTestCase<MentalStatusObservation2>(
-			"validateMentalStatusObservation2CDTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusObservation2CDTranslation", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -611,7 +613,8 @@ public class MentalStatusObservation2Test extends CDAValidationTest {
 	public void testValidateMentalStatusObservation2CDTranslationP() {
 		OperationsTestCase<MentalStatusObservation2> validateMentalStatusObservation2CDTranslationPTestCase = new OperationsTestCase<MentalStatusObservation2>(
 			"validateMentalStatusObservation2CDTranslationP",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

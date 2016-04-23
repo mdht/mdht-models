@@ -16,20 +16,20 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Reference;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentActMood;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedInterventionActOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -110,8 +110,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActTemplateId() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActTemplateIdTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -144,8 +144,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActClassCode() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActClassCodeTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -178,8 +178,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActMoodCodeP() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActMoodCodePTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActMoodCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActMoodCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -356,8 +356,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActStatusCode() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActStatusCodeTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -391,8 +391,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActStatusCodeP() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActStatusCodePTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -425,8 +425,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActEffectiveTime() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEffectiveTimeTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -463,7 +463,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActAuthorParticipation() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActAuthorParticipationTestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -496,7 +497,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActAdvanceDirectiveObservation2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActAdvanceDirectiveObservation2TestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActAdvanceDirectiveObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -532,7 +534,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActImmunizationActivity2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActImmunizationActivity2TestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActImmunizationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -568,7 +571,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActMedicationActivity2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActMedicationActivity2TestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActMedicationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -604,7 +608,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActProcedureActivityAct2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActProcedureActivityAct2TestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActProcedureActivityAct2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -639,8 +644,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActInterventionAct() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActInterventionActTestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActInterventionAct",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActInterventionAct", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -676,7 +681,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActProcedureActivityObservation2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActProcedureActivityObservation2TestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActProcedureActivityObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -712,7 +718,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActProcedureActivityProcedure2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActProcedureActivityProcedure2TestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActProcedureActivityProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -748,7 +755,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActEncounterActivity2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEncounterActivity2TestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActEncounterActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -783,8 +791,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActInstruction2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActInstruction2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActInstruction2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActInstruction2", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -820,7 +828,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActNonMedicinalSupplyActivity2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActNonMedicinalSupplyActivity2TestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActNonMedicinalSupplyActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -855,8 +864,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActPlannedAct2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedAct2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActPlannedAct2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActPlannedAct2", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -892,7 +901,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActPlannedEncounter2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedEncounter2TestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActPlannedEncounter2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -928,7 +938,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActPlannedObservation2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedObservation2TestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActPlannedObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -964,7 +975,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActPlannedProcedure2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedProcedure2TestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActPlannedProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1000,7 +1012,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActPlannedMedicationActivity2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedMedicationActivity2TestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActPlannedMedicationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1035,8 +1048,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedInterventionActPlannedSupply2() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedSupply2TestCase = new OperationsTestCase<PlannedInterventionAct>(
-			"validatePlannedInterventionActPlannedSupply2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedInterventionActPlannedSupply2", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1072,7 +1085,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActNutritionRecommendation() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActNutritionRecommendationTestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActNutritionRecommendation",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1107,7 +1121,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActEntryReferenceDocInstance() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryReferenceDocInstanceTestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActEntryReferenceDocInstance",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_DOC_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_DOC_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1143,7 +1158,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActEntryReferenceGoalObs() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActEntryReferenceGoalObsTestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActEntryReferenceGoalObs",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1179,7 +1195,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActHandoffCommunicationParticipants() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActHandoffCommunicationParticipantsTestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActHandoffCommunicationParticipants",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1215,7 +1232,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActPlannedImmunizationActivity() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActPlannedImmunizationActivityTestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActPlannedImmunizationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1285,7 +1303,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActReferenceTypeCode() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActReferenceTypeCodeTestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActReferenceTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1322,7 +1341,8 @@ public class PlannedInterventionActTest extends CDAValidationTest {
 	public void testValidatePlannedInterventionActReferenceExternalDocumentReference() {
 		OperationsTestCase<PlannedInterventionAct> validatePlannedInterventionActReferenceExternalDocumentReferenceTestCase = new OperationsTestCase<PlannedInterventionAct>(
 			"validatePlannedInterventionActReferenceExternalDocumentReference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureEstimatedBloodLossSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureEstimatedBloodLossSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Estimated Blood Loss Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,8 +56,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +66,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCode(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +76,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCodeP(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +86,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionText(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +96,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTitle(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -112,16 +105,16 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 * @generated
 	 */
 	public ProcedureEstimatedBloodLossSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureEstimatedBloodLossSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ProcedureEstimatedBloodLossSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureEstimatedBloodLossSectionImpl

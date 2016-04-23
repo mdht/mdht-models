@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -28,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -99,19 +99,23 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS);
 			try {
-				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalAdmissionDiagnosis)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				hospitalAdmissionDiagnosis)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisTemplateId"),
-					new Object[] { hospitalAdmissionDiagnosis }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisTemplateId"),
+						new Object[] { hospitalAdmissionDiagnosis }));
 			}
 
 			return false;
@@ -159,19 +163,23 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS);
 			try {
-				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalAdmissionDiagnosis)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				hospitalAdmissionDiagnosis)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisClassCode"),
-					new Object[] { hospitalAdmissionDiagnosis }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisClassCode"),
+						new Object[] { hospitalAdmissionDiagnosis }));
 			}
 
 			return false;
@@ -197,7 +205,8 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS);
 			try {
-				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -205,11 +214,12 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			hospitalAdmissionDiagnosis)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisCode"),
-					new Object[] { hospitalAdmissionDiagnosis }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_CODE,
+						ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisCode"),
+						new Object[] { hospitalAdmissionDiagnosis }));
 			}
 
 			return false;
@@ -257,19 +267,22 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS);
 			try {
-				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalAdmissionDiagnosis)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				hospitalAdmissionDiagnosis)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisMoodCode"),
-					new Object[] { hospitalAdmissionDiagnosis }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisMoodCode"),
+						new Object[] { hospitalAdmissionDiagnosis }));
 			}
 
 			return false;
@@ -285,9 +298,9 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '46241-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '46241-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHospitalAdmissionDiagnosisCode(HospitalAdmissionDiagnosis, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Admission Diagnosis Code</em>}' invariant operation.
@@ -340,21 +353,23 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS);
 			try {
-				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalAdmissionDiagnosis)) {
+				hospitalAdmissionDiagnosis)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisProblemObservation"),
-					new Object[] { hospitalAdmissionDiagnosis }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString(
+							"HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisProblemObservation"),
+						new Object[] { hospitalAdmissionDiagnosis }));
 			}
 
 			return false;
@@ -388,7 +403,8 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 	 * @generated
 	 */
 
-	public static EList<ProblemObservation> getProblemObservations(HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis) {
+	public static EList<ProblemObservation> getProblemObservations(
+			HospitalAdmissionDiagnosis hospitalAdmissionDiagnosis) {
 		if (GET_PROBLEM_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -402,7 +418,8 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProblemObservation> result = (Collection<ProblemObservation>) query.evaluate(hospitalAdmissionDiagnosis);
+		Collection<ProblemObservation> result = (Collection<ProblemObservation>) query.evaluate(
+			hospitalAdmissionDiagnosis);
 		return new BasicEList.UnmodifiableEList<ProblemObservation>(result.size(), result.toArray());
 	}
 

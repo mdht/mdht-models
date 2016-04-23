@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureFindingsSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Findings Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,10 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureFindingsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionTemplateId(this, diagnostics, context);
+	public boolean validateProcedureFindingsSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**

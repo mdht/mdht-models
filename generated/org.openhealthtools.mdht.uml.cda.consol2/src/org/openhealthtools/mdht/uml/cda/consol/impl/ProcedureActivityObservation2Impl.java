@@ -7,23 +7,18 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2;
-
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityObservation2Operations;
 
@@ -31,13 +26,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityObser
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Activity Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ProcedureActivityObservation2Impl extends ProcedureActivityObservationImpl implements
-		ProcedureActivityObservation2 {
+public class ProcedureActivityObservation2Impl extends ProcedureActivityObservationImpl
+		implements ProcedureActivityObservation2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -218,7 +211,8 @@ public class ProcedureActivityObservation2Impl extends ProcedureActivityObservat
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityObservation2Operations.validateProcedureActivityObservationMoodCode(
 			this, diagnostics, context);
 	}

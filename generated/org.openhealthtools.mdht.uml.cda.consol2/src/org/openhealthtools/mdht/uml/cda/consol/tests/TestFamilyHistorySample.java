@@ -13,9 +13,9 @@ package org.openhealthtools.mdht.uml.cda.consol.tests;
 import java.io.FileInputStream;
 
 import org.eclipse.emf.common.util.Diagnostic;
+import org.eclipse.mdht.uml.cda.util.CDAUtil;
+import org.eclipse.mdht.uml.cda.util.ValidationResult;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-import org.openhealthtools.mdht.uml.cda.util.ValidationResult;
 
 public class TestFamilyHistorySample {
 	public static void main(String[] args) throws Exception {
@@ -38,7 +38,8 @@ public class TestFamilyHistorySample {
 		}
 
 		System.out.println();
-		System.out.println("Number of Schema Validation Diagnostics: " + result.getSchemaValidationDiagnostics().size());
+		System.out.println(
+			"Number of Schema Validation Diagnostics: " + result.getSchemaValidationDiagnostics().size());
 		System.out.println("Number of EMF Resource Diagnostics: " + result.getEMFResourceDiagnostics().size());
 		System.out.println("Number of EMF Validation Diagnostics: " + result.getEMFValidationDiagnostics().size());
 		System.out.println("Number of Total Diagnostics: " + result.getAllDiagnostics().size());

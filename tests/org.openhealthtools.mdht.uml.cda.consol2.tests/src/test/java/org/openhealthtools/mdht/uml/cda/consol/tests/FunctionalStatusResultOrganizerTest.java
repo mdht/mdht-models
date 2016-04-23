@@ -11,13 +11,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusResultOrganizerOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +53,8 @@ public class FunctionalStatusResultOrganizerTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusResultOrganizerFunctionalStatusResultObservation() {
 		OperationsTestCase<FunctionalStatusResultOrganizer> validateFunctionalStatusResultOrganizerFunctionalStatusResultObservationTestCase = new OperationsTestCase<FunctionalStatusResultOrganizer>(
 			"validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_ORGANIZER_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_ORGANIZER_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -246,7 +247,8 @@ public class FunctionalStatusResultOrganizerTest extends CDAValidationTest {
 	public void testValidateResultOrganizerId() {
 		OperationsTestCase<FunctionalStatusResultOrganizer> validateResultOrganizerIdTestCase = new OperationsTestCase<FunctionalStatusResultOrganizer>(
 			"validateResultOrganizerId",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(FunctionalStatusResultOrganizer target) {

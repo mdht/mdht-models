@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -15,7 +11,7 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -77,7 +73,6 @@ public interface FunctionalStatusOrganizer2 extends FunctionalStatusResultOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FunctionalStatusOrganizer2 init();
 
 	/**
@@ -85,6 +80,5 @@ public interface FunctionalStatusOrganizer2 extends FunctionalStatusResultOrgani
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public FunctionalStatusOrganizer2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FunctionalStatusOrganizer2

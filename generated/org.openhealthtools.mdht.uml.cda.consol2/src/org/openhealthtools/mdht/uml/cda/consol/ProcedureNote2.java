@@ -10,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -184,7 +184,8 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureIndicationsSection2))'"
 	 * @generated
 	 */
-	boolean validateProcedureNote2ProcedureIndicationsSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureNote2ProcedureIndicationsSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -307,7 +308,8 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection2))'"
 	 * @generated
 	 */
-	boolean validateProcedureNote2HistoryOfPastIllnessSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureNote2HistoryOfPastIllnessSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -799,7 +801,8 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.authorization->excluding(null).consent->excluding(null)->reject(isDefined(\'classCode\') and classCode=vocab::ActClass::CONS)'"
 	 * @generated
 	 */
-	boolean validateProcedureNote2AuthorizationConsentClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureNote2AuthorizationConsentClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -811,7 +814,8 @@ public interface ProcedureNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.authorization->excluding(null).consent->excluding(null)->reject(isDefined(\'moodCode\') and moodCode=vocab::ActMood::EVN)'"
 	 * @generated
 	 */
-	boolean validateProcedureNote2AuthorizationConsentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureNote2AuthorizationConsentMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

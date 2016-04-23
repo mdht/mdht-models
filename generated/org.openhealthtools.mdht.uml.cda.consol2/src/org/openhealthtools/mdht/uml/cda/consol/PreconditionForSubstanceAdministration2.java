@@ -10,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +33,8 @@ public interface PreconditionForSubstanceAdministration2 extends PreconditionFor
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validatePreconditionForSubstanceAdministrationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePreconditionForSubstanceAdministrationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -60,5 +61,6 @@ public interface PreconditionForSubstanceAdministration2 extends PreconditionFor
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PreconditionForSubstanceAdministration2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public PreconditionForSubstanceAdministration2 init(
+			Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PreconditionForSubstanceAdministration2

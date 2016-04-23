@@ -1,23 +1,19 @@
-/*******************************************************************************
- * Copyright (c) 2011, 2012 Sean Muir and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Sean Muir (JKM Software) - initial API and implementation
- *******************************************************************************/
+/**
+ */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Section;
+
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+
+import org.eclipse.mdht.uml.cda.Section;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  * <!-- end-user-doc -->
  *
  * <!-- begin-model-doc -->
- * The Physical Exam section includes direct observations made by the clinician. The examination may include the use of simple instruments and may also describe simple maneuvers performed directly on the patient's body. This section includes only observations made by the examining clinician using inspection, palpation, auscultation, and percussion; it does not include laboratory or imaging findings. The exam may be limited to pertinent body systems based on the patient's chief complaint or it may include a comprehensive examination. The examination may be reported as a collection of random clinical statements or it may be reported categorically. 
+ * The Physical Exam section includes direct observations made by the clinician. The examination may include the use of simple instruments and may also describe simple maneuvers performed directly on the patient's body. This section includes only observations made by the examining clinician using inspection, palpation, auscultation, and percussion; it does not include laboratory or imaging findings. The exam may be limited to pertinent body systems based on the patient's chief complaint or it may include a comprehensive examination. The examination may be reported as a collection of random clinical statements or it may be reported categorically.
  * The Physical Exam section may contain multiple nested subsections: Vital Signs, General Status, and those listed in the Additional Physical Examination Subsections appendix.
  * <!-- end-model-doc -->
  *
@@ -61,7 +57,7 @@ public interface PhysicalExamSection extends Section {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -97,7 +93,7 @@ public interface PhysicalExamSection extends Section {
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -105,7 +101,8 @@ public interface PhysicalExamSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PressureUlcerObservation))'"
 	 * @generated
 	 */
-	boolean validatePhysicalExamSectionPressureUlcerObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePhysicalExamSectionPressureUlcerObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -169,7 +166,7 @@ public interface PhysicalExamSection extends Section {
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public PhysicalExamSection init(Iterable<? extends Initializer<? extends EObject>> initializers);

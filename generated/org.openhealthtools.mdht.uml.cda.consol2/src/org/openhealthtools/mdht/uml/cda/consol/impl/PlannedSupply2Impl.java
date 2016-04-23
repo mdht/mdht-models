@@ -7,17 +7,13 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
@@ -31,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedSupply2Operatio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Supply2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -210,8 +204,8 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2(
 			this, diagnostics, context);
 	}
@@ -281,7 +275,8 @@ public class PlannedSupply2Impl extends PlanOfCareActivitySupplyImpl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlanOfCareActivitySupplyTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlanOfCareActivitySupplyTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedSupply2Operations.validatePlanOfCareActivitySupplyTemplateId(this, diagnostics, context);
 	}
 

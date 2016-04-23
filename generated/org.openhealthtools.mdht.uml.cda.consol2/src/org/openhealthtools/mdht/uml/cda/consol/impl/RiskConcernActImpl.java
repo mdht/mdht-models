@@ -3,17 +3,14 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
@@ -48,14 +45,10 @@ import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.RiskConcernActOperations;
 
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Risk Concern Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -319,7 +312,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRiskConcernActNutritionAssessmentB(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRiskConcernActNutritionAssessmentB(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return RiskConcernActOperations.validateRiskConcernActNutritionAssessmentB(this, diagnostics, context);
 	}
 
@@ -338,7 +332,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRiskConcernActPregnancyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRiskConcernActPregnancyObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return RiskConcernActOperations.validateRiskConcernActPregnancyObservation(this, diagnostics, context);
 	}
 
@@ -347,7 +342,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRiskConcernActPreoperativeDiagnosis2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRiskConcernActPreoperativeDiagnosis2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return RiskConcernActOperations.validateRiskConcernActPreoperativeDiagnosis2(this, diagnostics, context);
 	}
 
@@ -356,7 +352,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRiskConcernActReactionObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRiskConcernActReactionObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return RiskConcernActOperations.validateRiskConcernActReactionObservation2(this, diagnostics, context);
 	}
 
@@ -413,7 +410,8 @@ public class RiskConcernActImpl extends ActImpl implements RiskConcernAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateRiskConcernActVitalSignObservation2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateRiskConcernActVitalSignObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return RiskConcernActOperations.validateRiskConcernActVitalSignObservation2(this, diagnostics, context);
 	}
 

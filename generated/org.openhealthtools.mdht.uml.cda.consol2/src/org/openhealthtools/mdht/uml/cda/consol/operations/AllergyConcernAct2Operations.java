@@ -13,24 +13,18 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -103,19 +97,22 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_CONCERN_ACT2);
 			try {
-				VALIDATE_ALLERGY_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALLERGY_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_ALLERGY_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			allergyConcernAct2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				allergyConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_CONCERN_ACT2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyConcernAct2AuthorParticipation"),
-					new Object[] { allergyConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_CONCERN_ACT2_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyConcernAct2AuthorParticipation"),
+						new Object[] { allergyConcernAct2 }));
 			}
 
 			return false;
@@ -156,7 +153,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 				ConsolPackage.Literals.ALLERGY_CONCERN_ACT2,
 				ConsolPackage.Literals.ALLERGY_CONCERN_ACT2.getEAllOperations().get(66));
 			try {
-				GET_CONSOL_ALLERGY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_ALLERGY_OBSERVATION2S__EOCL_EXP);
+				GET_CONSOL_ALLERGY_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_ALLERGY_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -206,7 +204,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_CONCERN_ACT2);
 			try {
-				VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -214,11 +213,12 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			allergyConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActTemplateId"),
-					new Object[] { allergyConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActTemplateId"),
+						new Object[] { allergyConcernAct2 }));
 			}
 
 			return false;
@@ -265,7 +265,8 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_CONCERN_ACT2);
 			try {
-				VALIDATE_ALLERGY_PROBLEM_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALLERGY_PROBLEM_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_ALLERGY_PROBLEM_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -273,11 +274,12 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			allergyConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActCode"),
-					new Object[] { allergyConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_CODE,
+						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActCode"),
+						new Object[] { allergyConcernAct2 }));
 			}
 
 			return false;
@@ -324,19 +326,22 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_CONCERN_ACT2);
 			try {
-				VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			allergyConcernAct2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				allergyConcernAct2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActAllergyObservation"),
-					new Object[] { allergyConcernAct2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActAllergyObservation"),
+						new Object[] { allergyConcernAct2 }));
 			}
 
 			return false;
@@ -383,24 +388,28 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_CONCERN_ACT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(allergyConcernAct2);
+		Object oclResult = VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			allergyConcernAct2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES,
-						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActCDCodeAndCodeSystemValues"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES,
+							ConsolPlugin.INSTANCE.getString(
+								"AllergyConcernAct2AllergyProblemActCDCodeAndCodeSystemValues"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -448,23 +457,27 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_CONCERN_ACT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(allergyConcernAct2);
+		Object oclResult = VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			allergyConcernAct2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_CD_CODE,
-						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActCDCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_CD_CODE,
+							ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActCDCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -512,23 +525,27 @@ public class AllergyConcernAct2Operations extends AllergyProblemActOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_CONCERN_ACT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(allergyConcernAct2);
+		Object oclResult = VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			allergyConcernAct2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM,
-						ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActCDCodeSystem"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.ALLERGY_CONCERN_ACT2__ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM,
+							ConsolPlugin.INSTANCE.getString("AllergyConcernAct2AllergyProblemActCDCodeSystem"),
+							new Object[] { eObject }));
 				}
 
 			}

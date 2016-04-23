@@ -8,7 +8,7 @@
  * Contributors:
  *     Dan Brown (Audacious Inquiry) - initial API and implementation
  *     								 - modified VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP
- *     								 as it required the use of select instead of reject 
+ *     								 as it required the use of select instead of reject
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
@@ -196,21 +196,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -257,7 +259,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -265,17 +268,19 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_CODE_P,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2CodeP"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_CODE_P,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2CodeP"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2CodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.DischargeSummary2CodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -297,9 +302,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISCHARGE_SUMMARY2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '18842-5' or value.code = '11490-0' or value.code = '28655-9' or value.code = '29761-4' or value.code = '34745-0' or value.code = '34105-7' or value.code = '34106-5'))";
+	protected static final String VALIDATE_DISCHARGE_SUMMARY2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = '18842-5' or value.code = '11490-0' or value.code = '28655-9' or value.code = '29761-4' or value.code = '34745-0' or value.code = '34105-7' or value.code = '34106-5'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeSummary2Code(DischargeSummary2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Code</em>}' invariant operation.
@@ -338,7 +343,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -346,11 +352,12 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_CODE,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2Code"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_CODE,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2Code"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -397,7 +404,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -405,11 +413,12 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PARTICIPANT,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2Participant"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PARTICIPANT,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2Participant"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -456,7 +465,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -464,11 +474,12 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOf"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOf"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -508,28 +519,30 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 
-	public static boolean validateDischargeSummary2AllergiesSectionEntriesOptional2(
-			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDischargeSummary2AllergiesSectionEntriesOptional2(DischargeSummary2 dischargeSummary2,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2AllergiesSectionEntriesOptional2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2AllergiesSectionEntriesOptional2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -576,19 +589,22 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HospitalCourseSection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HospitalCourseSection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -635,20 +651,22 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2PlanOfTreatmentSection2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PLAN_OF_TREATMENT_SECTION2,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2PlanOfTreatmentSection2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -695,19 +713,22 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ChiefComplaintSection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ChiefComplaintSection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -754,21 +775,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ChiefComplaintAndReasonForVisitSection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2ChiefComplaintAndReasonForVisitSection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -815,7 +838,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -823,11 +847,12 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_NUTRITION_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2NutritionSection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_NUTRITION_SECTION,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2NutritionSection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -874,20 +899,22 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_FUNCTIONAL_STATUS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2FunctionalStatusSection2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_FUNCTIONAL_STATUS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2FunctionalStatusSection2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -934,20 +961,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HISTORY_OF_PAST_ILLNESS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HistoryOfPastIllnessSection2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HISTORY_OF_PAST_ILLNESS_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2HistoryOfPastIllnessSection2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -994,21 +1024,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HistoryOfPresentIllnessSection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HISTORY_OF_PRESENT_ILLNESS_SECTION,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2HistoryOfPresentIllnessSection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1055,20 +1087,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_CONSULTATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_CONSULTATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_CONSULTATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_CONSULTATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_CONSULTATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_CONSULTATIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HospitalConsultationsSection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_CONSULTATIONS_SECTION,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2HospitalConsultationsSection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1115,21 +1150,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HospitalDischargeInstructionsSection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2HospitalDischargeInstructionsSection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1169,28 +1206,30 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 
-	public static boolean validateDischargeSummary2HospitalDischargePhysicalSection(
-			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDischargeSummary2HospitalDischargePhysicalSection(DischargeSummary2 dischargeSummary2,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HospitalDischargePhysicalSection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2HospitalDischargePhysicalSection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1237,21 +1276,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2HospitalDischargeStudiesSummarySection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2HospitalDischargeStudiesSummarySection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1298,21 +1339,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ImmunizationsSectionEntriesOptional2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2ImmunizationsSectionEntriesOptional2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1359,21 +1402,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PROBLEM_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ProblemSectionEntriesOptional2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PROBLEM_SECTION_ENTRIES_OPTIONAL2,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2ProblemSectionEntriesOptional2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1420,21 +1465,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ProceduresSectionEntriesOptional2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2ProceduresSectionEntriesOptional2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1481,19 +1528,22 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ReasonForVisitSection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ReasonForVisitSection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1540,19 +1590,22 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ReviewOfSystemsSection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ReviewOfSystemsSection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1599,19 +1652,22 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2SocialHistorySection2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2SocialHistorySection2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1658,21 +1714,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2VitalSignsSectionEntriesOptional2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2VitalSignsSectionEntriesOptional2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1719,20 +1777,22 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DISCHARGE_DIAGNOSIS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2DischargeDiagnosisSection2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DISCHARGE_DIAGNOSIS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2DischargeDiagnosisSection2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1779,21 +1839,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2DischargeMedicationsSectionEntriesOptional2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2DischargeMedicationsSectionEntriesOptional2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1840,19 +1902,22 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2FamilyHistorySection2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2FamilyHistorySection2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1899,20 +1964,22 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_ADMISSION_DIAGNOSIS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2AdmissionDiagnosisSection2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_ADMISSION_DIAGNOSIS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2AdmissionDiagnosisSection2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -1959,21 +2026,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2AdmissionMedicationsSectionEntriesOptional2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2AdmissionMedicationsSectionEntriesOptional2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -2020,20 +2089,23 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2DischargeMedicationsSection2"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"DischargeSummary2DischargeSummary2DischargeMedicationsSection2"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -2080,19 +2152,22 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2DischargeDietSection"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2DischargeDietSection"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;
@@ -2140,24 +2215,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2205,24 +2284,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterIVLTSLow"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2270,24 +2353,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2335,24 +2422,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2400,24 +2491,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2465,24 +2560,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2530,24 +2629,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2595,24 +2698,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2660,24 +2767,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2725,24 +2836,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2790,24 +2905,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2855,24 +2974,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEffectiveTime"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEffectiveTime"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2889,9 +3012,9 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((dischargeDispositionCode.oclIsUndefined() or dischargeDispositionCode.isNullFlavorUndefined()) implies (not dischargeDispositionCode.oclIsUndefined() and dischargeDispositionCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = dischargeDispositionCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.301.5' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((dischargeDispositionCode.oclIsUndefined() or dischargeDispositionCode.isNullFlavorUndefined()) implies (not dischargeDispositionCode.oclIsUndefined() and dischargeDispositionCode.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = dischargeDispositionCode.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.301.5' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode(DischargeSummary2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Summary2 Component Of Encompassing Encounter Discharge Disposition Code</em>}' invariant operation.
@@ -2922,24 +3045,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2987,24 +3114,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -3052,24 +3183,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -3117,24 +3252,28 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsibleParty"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounterResponsibleParty"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -3175,31 +3314,35 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounter(
-			DischargeSummary2 dischargeSummary2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateDischargeSummary2ComponentOfEncompassingEncounter(DischargeSummary2 dischargeSummary2,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(dischargeSummary2);
+		Object oclResult = VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			dischargeSummary2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-						ConsolPlugin.INSTANCE.getString("DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounter"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.DISCHARGE_SUMMARY2__DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
+							ConsolPlugin.INSTANCE.getString(
+								"DischargeSummary2DischargeSummary2ComponentOfEncompassingEncounter"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -3242,7 +3385,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(362));
 			try {
-				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
+				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
+					GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3411,7 +3555,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(366));
 			try {
-				GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_EXP);
+				GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_QRY = helper.createQuery(
+					GET_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3537,7 +3682,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(369));
 			try {
-				GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_EXP);
+				GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY = helper.createQuery(
+					GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3572,14 +3718,16 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 
-	public static HistoryOfPresentIllnessSection getHistoryOfPresentIllnessSection(DischargeSummary2 dischargeSummary2) {
+	public static HistoryOfPresentIllnessSection getHistoryOfPresentIllnessSection(
+			DischargeSummary2 dischargeSummary2) {
 		if (GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(370));
 			try {
-				GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_EXP);
+				GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(
+					GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3621,7 +3769,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(371));
 			try {
-				GET_HOSPITAL_CONSULTATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_CONSULTATIONS_SECTION__EOCL_EXP);
+				GET_HOSPITAL_CONSULTATIONS_SECTION__EOCL_QRY = helper.createQuery(
+					GET_HOSPITAL_CONSULTATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3664,7 +3813,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(372));
 			try {
-				GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);
+				GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper.createQuery(
+					GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3707,7 +3857,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(373));
 			try {
-				GET_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__EOCL_EXP);
+				GET_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__EOCL_QRY = helper.createQuery(
+					GET_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3750,7 +3901,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(374));
 			try {
-				GET_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__EOCL_QRY = helper.createQuery(GET_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__EOCL_EXP);
+				GET_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__EOCL_QRY = helper.createQuery(
+					GET_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3793,7 +3945,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(375));
 			try {
-				GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
+				GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
+					GET_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3828,14 +3981,16 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 
-	public static ProblemSectionEntriesOptional2 getProblemSectionEntriesOptional2(DischargeSummary2 dischargeSummary2) {
+	public static ProblemSectionEntriesOptional2 getProblemSectionEntriesOptional2(
+			DischargeSummary2 dischargeSummary2) {
 		if (GET_PROBLEM_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(376));
 			try {
-				GET_PROBLEM_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
+				GET_PROBLEM_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
+					GET_PROBLEM_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3878,7 +4033,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(377));
 			try {
-				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
+				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
+					GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -4047,7 +4203,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(381));
 			try {
-				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
+				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
+					GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -4089,7 +4246,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(382));
 			try {
-				GET_DISCHARGE_DIAGNOSIS_SECTION2__EOCL_QRY = helper.createQuery(GET_DISCHARGE_DIAGNOSIS_SECTION2__EOCL_EXP);
+				GET_DISCHARGE_DIAGNOSIS_SECTION2__EOCL_QRY = helper.createQuery(
+					GET_DISCHARGE_DIAGNOSIS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -4132,7 +4290,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(383));
 			try {
-				GET_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
+				GET_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
+					GET_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -4216,7 +4375,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(385));
 			try {
-				GET_ADMISSION_DIAGNOSIS_SECTION2__EOCL_QRY = helper.createQuery(GET_ADMISSION_DIAGNOSIS_SECTION2__EOCL_EXP);
+				GET_ADMISSION_DIAGNOSIS_SECTION2__EOCL_QRY = helper.createQuery(
+					GET_ADMISSION_DIAGNOSIS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -4259,7 +4419,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(386));
 			try {
-				GET_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
+				GET_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
+					GET_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -4301,7 +4462,8 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2,
 				ConsolPackage.Literals.DISCHARGE_SUMMARY2.getEAllOperations().get(387));
 			try {
-				GET_DISCHARGE_MEDICATIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_DISCHARGE_MEDICATIONS_SECTION2__EOCL_EXP);
+				GET_DISCHARGE_MEDICATIONS_SECTION2__EOCL_QRY = helper.createQuery(
+					GET_DISCHARGE_MEDICATIONS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -4391,19 +4553,21 @@ public class DischargeSummary2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_SUMMARY2);
 			try {
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dischargeSummary2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dischargeSummary2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.DISCHARGE_SUMMARY2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("DischargeSummary2GeneralHeaderConstraintsTemplateId"),
-					new Object[] { dischargeSummary2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.DISCHARGE_SUMMARY2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("DischargeSummary2GeneralHeaderConstraintsTemplateId"),
+						new Object[] { dischargeSummary2 }));
 			}
 
 			return false;

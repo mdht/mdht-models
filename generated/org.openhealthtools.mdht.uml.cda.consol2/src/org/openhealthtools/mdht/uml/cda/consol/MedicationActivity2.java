@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -15,7 +11,7 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,7 +111,8 @@ public interface MedicationActivity2 extends MedicationActivity {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(consol::SubstanceAdministeredAct) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateMedicationActivity2SubstanceAdministeredAct(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationActivity2SubstanceAdministeredAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,7 +203,6 @@ public interface MedicationActivity2 extends MedicationActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationActivity2 init();
 
 	/**
@@ -214,6 +210,5 @@ public interface MedicationActivity2 extends MedicationActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationActivity2

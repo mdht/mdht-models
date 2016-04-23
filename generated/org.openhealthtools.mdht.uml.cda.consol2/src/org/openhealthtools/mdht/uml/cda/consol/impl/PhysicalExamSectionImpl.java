@@ -17,21 +17,19 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
 import org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalExamSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Physical Exam Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */

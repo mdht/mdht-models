@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicalEquipmentSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -54,8 +54,8 @@ public class MedicalEquipmentSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicalEquipmentSectionTemplateId() {
 		OperationsTestCase<MedicalEquipmentSection> validateMedicalEquipmentSectionTemplateIdTestCase = new OperationsTestCase<MedicalEquipmentSection>(
-			"validateMedicalEquipmentSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicalEquipmentSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -231,7 +231,8 @@ public class MedicalEquipmentSectionTest extends CDAValidationTest {
 	public void testValidateMedicalEquipmentSectionNonMedicinalSupplyActivity() {
 		OperationsTestCase<MedicalEquipmentSection> validateMedicalEquipmentSectionNonMedicinalSupplyActivityTestCase = new OperationsTestCase<MedicalEquipmentSection>(
 			"validateMedicalEquipmentSectionNonMedicinalSupplyActivity",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

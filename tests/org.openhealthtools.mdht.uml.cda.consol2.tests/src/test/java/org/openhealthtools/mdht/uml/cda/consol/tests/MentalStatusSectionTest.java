@@ -15,15 +15,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MentalStatusSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -237,7 +237,8 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 	public void testValidateMentalStatusSectionAssessmentScaleObservation() {
 		OperationsTestCase<MentalStatusSection> validateMentalStatusSectionAssessmentScaleObservationTestCase = new OperationsTestCase<MentalStatusSection>(
 			"validateMentalStatusSectionAssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_SECTION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_SECTION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -270,7 +271,8 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 	public void testValidateMentalStatusSectionMentalStatusOrganizer2() {
 		OperationsTestCase<MentalStatusSection> validateMentalStatusSectionMentalStatusOrganizer2TestCase = new OperationsTestCase<MentalStatusSection>(
 			"validateMentalStatusSectionMentalStatusOrganizer2",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_SECTION_MENTAL_STATUS_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_SECTION_MENTAL_STATUS_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -304,7 +306,8 @@ public class MentalStatusSectionTest extends CDAValidationTest {
 	public void testValidateMentalStatusSectionMentalStatusObservation2() {
 		OperationsTestCase<MentalStatusSection> validateMentalStatusSectionMentalStatusObservation2TestCase = new OperationsTestCase<MentalStatusSection>(
 			"validateMentalStatusSectionMentalStatusObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_SECTION_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_SECTION_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

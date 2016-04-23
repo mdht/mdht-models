@@ -15,11 +15,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistorySection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -93,8 +93,8 @@ public class FamilyHistorySection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateFamilyHistorySectionFamilyHistory() {
 		OperationsTestCase<FamilyHistorySection2> validateFamilyHistorySectionFamilyHistoryTestCase = new OperationsTestCase<FamilyHistorySection2>(
-			"validateFamilyHistorySectionFamilyHistory",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistorySectionFamilyHistory", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

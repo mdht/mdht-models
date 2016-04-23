@@ -7,17 +7,13 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DrugVehicle;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2;
@@ -32,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationActivity2O
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunization Activity2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -210,7 +204,8 @@ public class ImmunizationActivity2Impl extends ImmunizationActivityImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateImmunizationActivityReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunizationActivityReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ImmunizationActivity2Operations.validateImmunizationActivityReferenceValue(this, diagnostics, context);
 	}
 

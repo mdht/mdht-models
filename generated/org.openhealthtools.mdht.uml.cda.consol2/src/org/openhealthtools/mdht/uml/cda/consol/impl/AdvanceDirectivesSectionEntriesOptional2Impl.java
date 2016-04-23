@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2;
@@ -24,13 +24,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSecti
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directives Section Entries Optional2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirectivesSectionEntriesOptionalImpl implements
-		AdvanceDirectivesSectionEntriesOptional2 {
+public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirectivesSectionEntriesOptionalImpl
+		implements AdvanceDirectivesSectionEntriesOptional2 {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,7 +142,8 @@ public class AdvanceDirectivesSectionEntriesOptional2Impl extends AdvanceDirecti
 	 * @generated
 	 */
 	@Override
-	public AdvanceDirectivesSectionEntriesOptional2 init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+	public AdvanceDirectivesSectionEntriesOptional2 init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
 	}

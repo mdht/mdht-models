@@ -14,28 +14,28 @@ import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.uml.cda.Author;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
-import org.openhealthtools.mdht.uml.cda.Criterion;
-import org.openhealthtools.mdht.uml.cda.Encounter;
-import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
-import org.openhealthtools.mdht.uml.cda.ExternalDocument;
-import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
-import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.Organizer;
-import org.openhealthtools.mdht.uml.cda.ParticipantRole;
-import org.openhealthtools.mdht.uml.cda.Performer1;
-import org.openhealthtools.mdht.uml.cda.Procedure;
-import org.openhealthtools.mdht.uml.cda.RelatedSubject;
-import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
-import org.openhealthtools.mdht.uml.cda.Supply;
+import org.eclipse.mdht.uml.cda.Author;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.ClinicalStatement;
+import org.eclipse.mdht.uml.cda.Criterion;
+import org.eclipse.mdht.uml.cda.Encounter;
+import org.eclipse.mdht.uml.cda.EncounterParticipant;
+import org.eclipse.mdht.uml.cda.ExternalDocument;
+import org.eclipse.mdht.uml.cda.ManufacturedProduct;
+import org.eclipse.mdht.uml.cda.Observation;
+import org.eclipse.mdht.uml.cda.Organizer;
+import org.eclipse.mdht.uml.cda.ParticipantRole;
+import org.eclipse.mdht.uml.cda.Performer1;
+import org.eclipse.mdht.uml.cda.Procedure;
+import org.eclipse.mdht.uml.cda.RelatedSubject;
+import org.eclipse.mdht.uml.cda.Section;
+import org.eclipse.mdht.uml.cda.SubstanceAdministration;
+import org.eclipse.mdht.uml.cda.Supply;
+import org.eclipse.mdht.uml.hl7.rim.Act;
+import org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot;
+import org.eclipse.mdht.uml.hl7.rim.Participation;
+import org.eclipse.mdht.uml.hl7.rim.Role;
 import org.openhealthtools.mdht.uml.cda.consol.*;
-import org.openhealthtools.mdht.uml.hl7.rim.Act;
-import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
-import org.openhealthtools.mdht.uml.hl7.rim.Participation;
-import org.openhealthtools.mdht.uml.hl7.rim.Role;
 
 /**
  * <!-- begin-user-doc -->
@@ -1712,7 +1712,7 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseCDA_Act(org.openhealthtools.mdht.uml.cda.Act object) {
+		public Adapter caseCDA_Act(org.eclipse.mdht.uml.cda.Act object) {
 			return createCDA_ActAdapter();
 		}
 
@@ -2969,13 +2969,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Encounter <em>Encounter</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Encounter <em>Encounter</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Encounter
+	 * @see org.eclipse.mdht.uml.cda.Encounter
 	 * @generated
 	 */
 	public Adapter createEncounterAdapter() {
@@ -3025,13 +3025,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Procedure <em>Procedure</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Procedure <em>Procedure</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Procedure
+	 * @see org.eclipse.mdht.uml.cda.Procedure
 	 * @generated
 	 */
 	public Adapter createProcedureAdapter() {
@@ -3501,13 +3501,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot <em>Infrastructure Root</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot <em>Infrastructure Root</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
+	 * @see org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot
 	 * @generated
 	 */
 	public Adapter createInfrastructureRootAdapter() {
@@ -3515,13 +3515,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.Act <em>Act</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.hl7.rim.Act <em>Act</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.Act
+	 * @see org.eclipse.mdht.uml.hl7.rim.Act
 	 * @generated
 	 */
 	public Adapter createActAdapter() {
@@ -3529,13 +3529,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalDocument <em>Clinical Document</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.ClinicalDocument <em>Clinical Document</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalDocument
+	 * @see org.eclipse.mdht.uml.cda.ClinicalDocument
 	 * @generated
 	 */
 	public Adapter createClinicalDocumentAdapter() {
@@ -3543,13 +3543,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ClinicalStatement <em>Clinical Statement</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.ClinicalStatement <em>Clinical Statement</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalStatement
+	 * @see org.eclipse.mdht.uml.cda.ClinicalStatement
 	 * @generated
 	 */
 	public Adapter createClinicalStatementAdapter() {
@@ -3557,13 +3557,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Act <em>Act</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Act <em>Act</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Act
+	 * @see org.eclipse.mdht.uml.cda.Act
 	 * @generated
 	 */
 	public Adapter createCDA_ActAdapter() {
@@ -3571,13 +3571,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Observation <em>Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Observation <em>Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Observation
+	 * @see org.eclipse.mdht.uml.cda.Observation
 	 * @generated
 	 */
 	public Adapter createObservationAdapter() {
@@ -3585,13 +3585,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.SubstanceAdministration <em>Substance Administration</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.SubstanceAdministration <em>Substance Administration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.SubstanceAdministration
+	 * @see org.eclipse.mdht.uml.cda.SubstanceAdministration
 	 * @generated
 	 */
 	public Adapter createSubstanceAdministrationAdapter() {
@@ -3599,13 +3599,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Supply <em>Supply</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Supply <em>Supply</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Supply
+	 * @see org.eclipse.mdht.uml.cda.Supply
 	 * @generated
 	 */
 	public Adapter createSupplyAdapter() {
@@ -3613,13 +3613,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.Role <em>Role</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.hl7.rim.Role <em>Role</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.Role
+	 * @see org.eclipse.mdht.uml.hl7.rim.Role
 	 * @generated
 	 */
 	public Adapter createRoleAdapter() {
@@ -3627,13 +3627,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ParticipantRole <em>Participant Role</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.ParticipantRole <em>Participant Role</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ParticipantRole
+	 * @see org.eclipse.mdht.uml.cda.ParticipantRole
 	 * @generated
 	 */
 	public Adapter createParticipantRoleAdapter() {
@@ -3641,13 +3641,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Section <em>Section</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Section <em>Section</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Section
+	 * @see org.eclipse.mdht.uml.cda.Section
 	 * @generated
 	 */
 	public Adapter createSectionAdapter() {
@@ -3655,13 +3655,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Organizer <em>Organizer</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Organizer <em>Organizer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Organizer
+	 * @see org.eclipse.mdht.uml.cda.Organizer
 	 * @generated
 	 */
 	public Adapter createOrganizerAdapter() {
@@ -3669,13 +3669,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.Participation <em>Participation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.hl7.rim.Participation <em>Participation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.Participation
+	 * @see org.eclipse.mdht.uml.hl7.rim.Participation
 	 * @generated
 	 */
 	public Adapter createParticipationAdapter() {
@@ -6497,13 +6497,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Performer1 <em>Performer1</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Performer1 <em>Performer1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Performer1
+	 * @see org.eclipse.mdht.uml.cda.Performer1
 	 * @generated
 	 */
 	public Adapter createPerformer1Adapter() {
@@ -6511,13 +6511,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ManufacturedProduct <em>Manufactured Product</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.ManufacturedProduct <em>Manufactured Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ManufacturedProduct
+	 * @see org.eclipse.mdht.uml.cda.ManufacturedProduct
 	 * @generated
 	 */
 	public Adapter createManufacturedProductAdapter() {
@@ -6525,13 +6525,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Criterion <em>Criterion</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Criterion <em>Criterion</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Criterion
+	 * @see org.eclipse.mdht.uml.cda.Criterion
 	 * @generated
 	 */
 	public Adapter createCriterionAdapter() {
@@ -6539,13 +6539,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.EncounterParticipant <em>Encounter Participant</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.EncounterParticipant <em>Encounter Participant</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.EncounterParticipant
+	 * @see org.eclipse.mdht.uml.cda.EncounterParticipant
 	 * @generated
 	 */
 	public Adapter createEncounterParticipantAdapter() {
@@ -6553,13 +6553,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.RelatedSubject <em>Related Subject</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.RelatedSubject <em>Related Subject</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.RelatedSubject
+	 * @see org.eclipse.mdht.uml.cda.RelatedSubject
 	 * @generated
 	 */
 	public Adapter createRelatedSubjectAdapter() {
@@ -6567,13 +6567,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Author <em>Author</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.Author <em>Author</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Author
+	 * @see org.eclipse.mdht.uml.cda.Author
 	 * @generated
 	 */
 	public Adapter createAuthorAdapter() {
@@ -6581,13 +6581,13 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ExternalDocument <em>External Document</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.mdht.uml.cda.ExternalDocument <em>External Document</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ExternalDocument
+	 * @see org.eclipse.mdht.uml.cda.ExternalDocument
 	 * @generated
 	 */
 	public Adapter createExternalDocumentAdapter() {

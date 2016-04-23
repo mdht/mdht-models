@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.OrganizerImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryOrganizerOperations;
-import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Family History Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -105,8 +103,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerFamilyHistoryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerFamilyHistoryObservation(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerFamilyHistoryObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -125,8 +122,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode(this, diagnostics, context);
 	}
 
 	/**
@@ -136,8 +132,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -147,8 +142,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime(this, diagnostics, context);
 	}
 
 	/**
@@ -158,8 +152,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd(this, diagnostics, context);
 	}
 
 	/**
@@ -169,8 +162,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime(this, diagnostics, context);
 	}
 
 	/**
@@ -180,8 +172,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId(this, diagnostics, context);
 	}
 
 	/**
@@ -191,8 +182,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectClassCode(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -202,8 +192,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectCode(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectCode(this, diagnostics, context);
 	}
 
 	/**
@@ -213,8 +202,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectCodeP(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -224,8 +212,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubject(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubject(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubject(this, diagnostics, context);
 	}
 
 	/**
@@ -235,8 +222,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerSubjectRelatedSubject(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubject(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubject(this, diagnostics, context);
 	}
 
 	/**
@@ -254,16 +240,16 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * @generated
 	 */
 	public FamilyHistoryOrganizer init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FamilyHistoryOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public FamilyHistoryOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FamilyHistoryOrganizerImpl

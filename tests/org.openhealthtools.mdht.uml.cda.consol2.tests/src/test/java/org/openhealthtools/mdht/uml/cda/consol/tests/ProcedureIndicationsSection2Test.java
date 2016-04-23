@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureIndicationsSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -62,8 +62,8 @@ public class ProcedureIndicationsSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureIndicationsSectionTemplateId() {
 		OperationsTestCase<ProcedureIndicationsSection2> validateProcedureIndicationsSectionTemplateIdTestCase = new OperationsTestCase<ProcedureIndicationsSection2>(
-			"validateProcedureIndicationsSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_INDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureIndicationsSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_INDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -96,8 +96,8 @@ public class ProcedureIndicationsSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureIndicationsSectionCodeP() {
 		OperationsTestCase<ProcedureIndicationsSection2> validateProcedureIndicationsSectionCodePTestCase = new OperationsTestCase<ProcedureIndicationsSection2>(
-			"validateProcedureIndicationsSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_INDICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureIndicationsSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_INDICATIONS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -171,8 +171,8 @@ public class ProcedureIndicationsSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureIndicationsSectionIndication() {
 		OperationsTestCase<ProcedureIndicationsSection2> validateProcedureIndicationsSectionIndicationTestCase = new OperationsTestCase<ProcedureIndicationsSection2>(
-			"validateProcedureIndicationsSectionIndication",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_INDICATIONS_SECTION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureIndicationsSectionIndication", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_INDICATIONS_SECTION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

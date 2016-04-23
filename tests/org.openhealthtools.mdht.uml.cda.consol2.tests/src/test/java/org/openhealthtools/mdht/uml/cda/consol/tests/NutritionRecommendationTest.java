@@ -16,18 +16,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NutritionRecommendationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -73,8 +73,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionRecommendationTemplateId() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationTemplateIdTestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -107,8 +107,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionRecommendationClassCode() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationClassCodeTestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -141,8 +141,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionRecommendationMoodCodeP() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationMoodCodePTestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationMoodCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationMoodCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -300,8 +300,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionRecommendationStatusCode() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationStatusCodeTestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -337,8 +337,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionRecommendationStatusCodeP() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationStatusCodePTestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -373,8 +373,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionRecommendationEffectiveTime() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationEffectiveTimeTestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -411,7 +411,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	public void testValidateNutritionRecommendationPlannedEncounter2() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedEncounter2TestCase = new OperationsTestCase<NutritionRecommendation>(
 			"validateNutritionRecommendationPlannedEncounter2",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -446,7 +447,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	public void testValidateNutritionRecommendationPlannedMedicationActivity2() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedMedicationActivity2TestCase = new OperationsTestCase<NutritionRecommendation>(
 			"validateNutritionRecommendationPlannedMedicationActivity2",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -481,7 +483,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	public void testValidateNutritionRecommendationPlannedObservation2() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedObservation2TestCase = new OperationsTestCase<NutritionRecommendation>(
 			"validateNutritionRecommendationPlannedObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -516,7 +519,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	public void testValidateNutritionRecommendationPlannedProcedure2() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedProcedure2TestCase = new OperationsTestCase<NutritionRecommendation>(
 			"validateNutritionRecommendationPlannedProcedure2",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -550,8 +554,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionRecommendationPlannedSupply2() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedSupply2TestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationPlannedSupply2",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationPlannedSupply2", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -585,8 +589,8 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionRecommendationPlannedAct2() {
 		OperationsTestCase<NutritionRecommendation> validateNutritionRecommendationPlannedAct2TestCase = new OperationsTestCase<NutritionRecommendation>(
-			"validateNutritionRecommendationPlannedAct2",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionRecommendationPlannedAct2", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection;
 import org.openhealthtools.mdht.uml.cda.consol.StudyAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DICOMObjectCatalogSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>DICOM Object Catalog Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * @generated
 	 */
 	public boolean validateDICOMObjectCatalogSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionTemplateId(
-			this, diagnostics, context);
+		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -105,16 +102,16 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * @generated
 	 */
 	public DICOMObjectCatalogSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DICOMObjectCatalogSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DICOMObjectCatalogSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DICOMObjectCatalogSectionImpl

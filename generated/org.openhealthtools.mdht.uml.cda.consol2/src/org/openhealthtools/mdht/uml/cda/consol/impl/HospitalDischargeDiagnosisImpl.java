@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalDischargeDiagnosisOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Hospital Discharge Diagnosis</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -71,7 +69,8 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 * @generated
 	 */
 	@Override
-	public boolean validateHospitalDischargeDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHospitalDischargeDiagnosisTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisTemplateId(
 			this, diagnostics, context);
 	}
@@ -82,7 +81,8 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 * @generated
 	 */
 	@Override
-	public boolean validateHospitalDischargeDiagnosisClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHospitalDischargeDiagnosisClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisClassCode(
 			this, diagnostics, context);
 	}
@@ -93,7 +93,8 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	 * @generated
 	 */
 	@Override
-	public boolean validateHospitalDischargeDiagnosisMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHospitalDischargeDiagnosisMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosisOperations.validateHospitalDischargeDiagnosisMoodCode(
 			this, diagnostics, context);
 	}

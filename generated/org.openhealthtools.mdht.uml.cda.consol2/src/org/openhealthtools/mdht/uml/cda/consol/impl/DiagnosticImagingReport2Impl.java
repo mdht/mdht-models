@@ -3,29 +3,22 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport2;
 import org.openhealthtools.mdht.uml.cda.consol.FindingsSection;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.DiagnosticImagingReport2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Diagnostic Imaging Report2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -92,7 +85,8 @@ public class DiagnosticImagingReport2Impl extends USRealmHeader2Impl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticImagingReport2Participant(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDiagnosticImagingReport2Participant(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2Participant(
 			this, diagnostics, context);
 	}
@@ -135,7 +129,8 @@ public class DiagnosticImagingReport2Impl extends USRealmHeader2Impl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticImagingReport2ComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDiagnosticImagingReport2ComponentOf(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentOf(
 			this, diagnostics, context);
 	}
@@ -167,8 +162,10 @@ public class DiagnosticImagingReport2Impl extends USRealmHeader2Impl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticImagingReport2Component2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2Component2(this, diagnostics, context);
+	public boolean validateDiagnosticImagingReport2Component2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2Component2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -612,8 +609,8 @@ public class DiagnosticImagingReport2Impl extends USRealmHeader2Impl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3Section(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDiagnosticImagingReport2ComponentStructuredBodyComponent3Section(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DiagnosticImagingReport2Operations.validateDiagnosticImagingReport2ComponentStructuredBodyComponent3Section(
 			this, diagnostics, context);
 	}
@@ -664,8 +661,10 @@ public class DiagnosticImagingReport2Impl extends USRealmHeader2Impl implements 
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReport2Operations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DiagnosticImagingReport2Operations.validateGeneralHeaderConstraintsTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**

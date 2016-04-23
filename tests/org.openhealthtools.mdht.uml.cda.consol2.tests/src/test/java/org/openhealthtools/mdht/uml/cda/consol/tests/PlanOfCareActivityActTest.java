@@ -14,14 +14,14 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
 import org.junit.Test;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfCareActivityActOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,8 +50,8 @@ public class PlanOfCareActivityActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlanOfCareActivityActTemplateId() {
 		OperationsTestCase<PlanOfCareActivityAct> validatePlanOfCareActivityActTemplateIdTestCase = new OperationsTestCase<PlanOfCareActivityAct>(
-			"validatePlanOfCareActivityActTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivityActTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -84,8 +84,8 @@ public class PlanOfCareActivityActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlanOfCareActivityActClassCode() {
 		OperationsTestCase<PlanOfCareActivityAct> validatePlanOfCareActivityActClassCodeTestCase = new OperationsTestCase<PlanOfCareActivityAct>(
-			"validatePlanOfCareActivityActClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivityActClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -118,8 +118,8 @@ public class PlanOfCareActivityActTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlanOfCareActivityActMoodCode() {
 		OperationsTestCase<PlanOfCareActivityAct> validatePlanOfCareActivityActMoodCodeTestCase = new OperationsTestCase<PlanOfCareActivityAct>(
-			"validatePlanOfCareActivityActMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivityActMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{

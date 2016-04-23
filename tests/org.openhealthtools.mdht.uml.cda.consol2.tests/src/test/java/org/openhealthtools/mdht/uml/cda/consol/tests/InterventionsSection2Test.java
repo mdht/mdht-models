@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.InterventionsSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -54,8 +54,8 @@ public class InterventionsSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateInterventionsSection2InterventionAct() {
 		OperationsTestCase<InterventionsSection2> validateInterventionsSection2InterventionActTestCase = new OperationsTestCase<InterventionsSection2>(
-			"validateInterventionsSection2InterventionAct",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateInterventionsSection2InterventionAct", operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTIONS_SECTION2_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -88,7 +88,8 @@ public class InterventionsSection2Test extends CDAValidationTest {
 	public void testValidateInterventionsSection2HandoffCommunication() {
 		OperationsTestCase<InterventionsSection2> validateInterventionsSection2HandoffCommunicationTestCase = new OperationsTestCase<InterventionsSection2>(
 			"validateInterventionsSection2HandoffCommunication",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -121,7 +122,8 @@ public class InterventionsSection2Test extends CDAValidationTest {
 	public void testValidateInterventionsSection2PlannedInterventionAct() {
 		OperationsTestCase<InterventionsSection2> validateInterventionsSection2PlannedInterventionActTestCase = new OperationsTestCase<InterventionsSection2>(
 			"validateInterventionsSection2PlannedInterventionAct",
-			operationsForOCL.getOCLValue("VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

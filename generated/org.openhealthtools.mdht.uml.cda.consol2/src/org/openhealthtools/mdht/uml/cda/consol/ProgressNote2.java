@@ -10,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -237,7 +237,8 @@ public interface ProgressNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional2))'"
 	 * @generated
 	 */
-	boolean validateProgressNote2ProblemSectionEntriesOptional2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProgressNote2ProblemSectionEntriesOptional2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,7 +250,8 @@ public interface ProgressNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional2))'"
 	 * @generated
 	 */
-	boolean validateProgressNote2ResultsSectionEntriesOptional2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProgressNote2ResultsSectionEntriesOptional2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -323,8 +325,8 @@ public interface ProgressNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(not effectiveTime.width.oclIsUndefined() xor not effectiveTime.high.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProgressNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -413,8 +415,8 @@ public interface ProgressNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null).location->excluding(null)->reject(healthCareFacility->one(healthCareFacility : cda::HealthCareFacility | not healthCareFacility.oclIsUndefined() and healthCareFacility.oclIsKindOf(cda::HealthCareFacility)))'"
 	 * @generated
 	 */
-	boolean validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProgressNote2ComponentOfEncompassingEncounterLocationHealthCareFacility(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

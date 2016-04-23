@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -25,13 +25,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusProble
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Functional Status Problem Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class FunctionalStatusProblemObservationImpl extends ProblemObservationImpl implements
-		FunctionalStatusProblemObservation {
+public class FunctionalStatusProblemObservationImpl extends ProblemObservationImpl
+		implements FunctionalStatusProblemObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -135,7 +133,8 @@ public class FunctionalStatusProblemObservationImpl extends ProblemObservationIm
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationHasTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return FunctionalStatusProblemObservationOperations.validateProblemObservationHasTextReference(
 			this, diagnostics, context);
 	}
@@ -146,7 +145,8 @@ public class FunctionalStatusProblemObservationImpl extends ProblemObservationIm
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return FunctionalStatusProblemObservationOperations.validateProblemObservationTextReferenceValue(
 			this, diagnostics, context);
 	}
@@ -180,7 +180,8 @@ public class FunctionalStatusProblemObservationImpl extends ProblemObservationIm
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return FunctionalStatusProblemObservationOperations.validateProblemObservationHasResolutionDate(
 			this, diagnostics, context);
 	}
@@ -309,7 +310,8 @@ public class FunctionalStatusProblemObservationImpl extends ProblemObservationIm
 	 */
 	@Override
 	public boolean validateProblemObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusProblemObservationOperations.validateProblemObservationValueP(this, diagnostics, context);
+		return FunctionalStatusProblemObservationOperations.validateProblemObservationValueP(
+			this, diagnostics, context);
 	}
 
 	/**

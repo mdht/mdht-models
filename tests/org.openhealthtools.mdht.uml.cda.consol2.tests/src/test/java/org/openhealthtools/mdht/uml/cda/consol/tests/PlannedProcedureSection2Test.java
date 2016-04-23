@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedProcedureSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -62,8 +62,8 @@ public class PlannedProcedureSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedProcedureSectionTemplateId() {
 		OperationsTestCase<PlannedProcedureSection2> validatePlannedProcedureSectionTemplateIdTestCase = new OperationsTestCase<PlannedProcedureSection2>(
-			"validatePlannedProcedureSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedProcedureSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -172,7 +172,8 @@ public class PlannedProcedureSection2Test extends CDAValidationTest {
 	public void testValidatePlannedProcedureSectionPlanOfCareActivityProcedure() {
 		OperationsTestCase<PlannedProcedureSection2> validatePlannedProcedureSectionPlanOfCareActivityProcedureTestCase = new OperationsTestCase<PlannedProcedureSection2>(
 			"validatePlannedProcedureSectionPlanOfCareActivityProcedure",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

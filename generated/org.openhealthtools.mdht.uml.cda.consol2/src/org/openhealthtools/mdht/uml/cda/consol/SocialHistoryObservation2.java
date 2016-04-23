@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +34,8 @@ public interface SocialHistoryObservation2 extends SocialHistoryObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.oclIsUndefined()'"
 	 * @generated
 	 */
-	boolean validateSocialHistoryObservation2ReferenceAttribute(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateSocialHistoryObservation2ReferenceAttribute(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,7 +103,6 @@ public interface SocialHistoryObservation2 extends SocialHistoryObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SocialHistoryObservation2 init();
 
 	/**
@@ -114,6 +110,5 @@ public interface SocialHistoryObservation2 extends SocialHistoryObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SocialHistoryObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // SocialHistoryObservation2

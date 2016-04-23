@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -29,8 +29,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyObservationOper
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Allergy Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,7 +58,8 @@ public class AllergyObservationImpl extends SubstanceOrDeviceAllergyObservationI
 	 * @generated
 	 */
 	@Override
-	public boolean validateAllergyObservationValueOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergyObservationValueOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationValueOriginalText(this, diagnostics, context);
 	}
 

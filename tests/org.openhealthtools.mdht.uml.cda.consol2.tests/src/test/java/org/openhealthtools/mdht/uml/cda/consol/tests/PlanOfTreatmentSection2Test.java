@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfTreatmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfTreatmentSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -71,7 +71,8 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	public void testValidatePlanOfTreatmentSection2HandoffCommunication() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfTreatmentSection2HandoffCommunicationTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfTreatmentSection2HandoffCommunication",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_TREATMENT_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_TREATMENT_SECTION2_HANDOFF_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -104,7 +105,8 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	public void testValidatePlanOfTreatmentSection2NutritionRecommendation() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfTreatmentSection2NutritionRecommendationTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfTreatmentSection2NutritionRecommendation",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -137,7 +139,8 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	public void testValidatePlanOfTreatmentSection2PlannedImmunizationActivity() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfTreatmentSection2PlannedImmunizationActivityTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfTreatmentSection2PlannedImmunizationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -171,7 +174,8 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	public void testValidatePlanOfTreatmentSection2GoalObservation() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfTreatmentSection2GoalObservationTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfTreatmentSection2GoalObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -445,7 +449,8 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	public void testValidatePlanOfCareSectionPlanOfCareActivityObservation() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlanOfCareActivityObservationTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfCareSectionPlanOfCareActivityObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -478,7 +483,8 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	public void testValidatePlanOfCareSectionPlanOfCareActivityEncounter() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlanOfCareActivityEncounterTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfCareSectionPlanOfCareActivityEncounter",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -511,7 +517,8 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	public void testValidatePlanOfCareSectionPlanOfCareActivityAct() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlanOfCareActivityActTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfCareSectionPlanOfCareActivityAct",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -544,7 +551,8 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	public void testValidatePlanOfCareSectionPlanOfCareActivityProcedure() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlanOfCareActivityProcedureTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfCareSectionPlanOfCareActivityProcedure",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -577,7 +585,8 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	public void testValidatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministrationTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -610,7 +619,8 @@ public class PlanOfTreatmentSection2Test extends CDAValidationTest {
 	public void testValidatePlanOfCareSectionPlanOfCareActivitySupply() {
 		OperationsTestCase<PlanOfTreatmentSection2> validatePlanOfCareSectionPlanOfCareActivitySupplyTestCase = new OperationsTestCase<PlanOfTreatmentSection2>(
 			"validatePlanOfCareSectionPlanOfCareActivitySupply",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUPPLY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUPPLY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

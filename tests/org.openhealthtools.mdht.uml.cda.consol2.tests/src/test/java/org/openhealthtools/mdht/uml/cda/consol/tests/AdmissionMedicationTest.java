@@ -15,12 +15,12 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdmissionMedicationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -229,8 +229,8 @@ public class AdmissionMedicationTest extends CDAValidationTest {
 	@Test
 	public void testValidateAdmissionMedicationMedicationActivity() {
 		OperationsTestCase<AdmissionMedication> validateAdmissionMedicationMedicationActivityTestCase = new OperationsTestCase<AdmissionMedication>(
-			"validateAdmissionMedicationMedicationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_ADMISSION_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdmissionMedicationMedicationActivity", operationsForOCL.getOCLValue(
+				"VALIDATE_ADMISSION_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -241,7 +241,7 @@ public class AdmissionMedicationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(AdmissionMedication target) {
 				target.addSubstanceAdministration(ConsolFactory.eINSTANCE.createMedicationActivity().init());
-				for (org.openhealthtools.mdht.uml.cda.EntryRelationship er : target.getEntryRelationships()) {
+				for (org.eclipse.mdht.uml.cda.EntryRelationship er : target.getEntryRelationships()) {
 					er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 				}
 

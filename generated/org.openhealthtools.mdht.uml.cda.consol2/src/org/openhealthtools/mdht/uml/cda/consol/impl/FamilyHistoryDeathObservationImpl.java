@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryDeathObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Family History Death Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -116,7 +114,8 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateFamilyHistoryDeathObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateFamilyHistoryDeathObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValue(
 			this, diagnostics, context);
 	}
@@ -127,7 +126,8 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateFamilyHistoryDeathObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateFamilyHistoryDeathObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValueP(
 			this, diagnostics, context);
 	}

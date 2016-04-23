@@ -14,16 +14,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReferencedFramesObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -54,8 +54,8 @@ public class ReferencedFramesObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferencedFramesObservationTemplateId() {
 		OperationsTestCase<ReferencedFramesObservation> validateReferencedFramesObservationTemplateIdTestCase = new OperationsTestCase<ReferencedFramesObservation>(
-			"validateReferencedFramesObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferencedFramesObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -88,8 +88,8 @@ public class ReferencedFramesObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferencedFramesObservationClassCode() {
 		OperationsTestCase<ReferencedFramesObservation> validateReferencedFramesObservationClassCodeTestCase = new OperationsTestCase<ReferencedFramesObservation>(
-			"validateReferencedFramesObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_REFERENCED_FRAMES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferencedFramesObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERENCED_FRAMES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -159,8 +159,8 @@ public class ReferencedFramesObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferencedFramesObservationMoodCode() {
 		OperationsTestCase<ReferencedFramesObservation> validateReferencedFramesObservationMoodCodeTestCase = new OperationsTestCase<ReferencedFramesObservation>(
-			"validateReferencedFramesObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_REFERENCED_FRAMES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferencedFramesObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERENCED_FRAMES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -194,7 +194,8 @@ public class ReferencedFramesObservationTest extends CDAValidationTest {
 	public void testValidateReferencedFramesObservationBoundaryObservation() {
 		OperationsTestCase<ReferencedFramesObservation> validateReferencedFramesObservationBoundaryObservationTestCase = new OperationsTestCase<ReferencedFramesObservation>(
 			"validateReferencedFramesObservationBoundaryObservation",
-			operationsForOCL.getOCLValue("VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

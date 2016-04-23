@@ -16,22 +16,22 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Participant2;
+import org.eclipse.mdht.uml.cda.ParticipantRole;
+import org.eclipse.mdht.uml.cda.PlayingEntity;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.AD;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Participant2;
-import org.openhealthtools.mdht.uml.cda.ParticipantRole;
-import org.openhealthtools.mdht.uml.cda.PlayingEntity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipants;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HandoffCommunicationParticipantsOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
 
 /**
  * <!-- begin-user-doc -->
@@ -75,7 +75,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsTemplateId() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsTemplateIdTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -109,7 +110,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsClassCode() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsClassCodeTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -143,7 +145,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsMoodCode() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsMoodCodeTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -176,8 +179,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	@Test
 	public void testValidateHandoffCommunicationParticipantsCodeP() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsCodePTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
-			"validateHandoffCommunicationParticipantsCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHandoffCommunicationParticipantsCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -210,8 +213,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	@Test
 	public void testValidateHandoffCommunicationParticipantsCode() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsCodeTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
-			"validateHandoffCommunicationParticipantsCode",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHandoffCommunicationParticipantsCode", operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -252,7 +255,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsStatusCode() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsStatusCodeTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -289,7 +293,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsStatusCodeP() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsStatusCodePTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -323,7 +328,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsEffectiveTime() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsEffectiveTimeTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -360,7 +366,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsParticipant() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsParticipantTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsParticipant",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -396,7 +403,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsAuthorParticipation() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsAuthorParticipationTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -430,7 +438,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityNameTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -470,7 +479,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsParticipantParticipantRoleId() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsParticipantParticipantRoleIdTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsParticipantParticipantRoleId",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -508,7 +518,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsParticipantParticipantRoleCodeP() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsParticipantParticipantRoleCodePTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsParticipantParticipantRoleCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -546,7 +557,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsParticipantParticipantRoleCode() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsParticipantParticipantRoleCodeTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsParticipantParticipantRoleCode",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -586,7 +598,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsParticipantParticipantRoleAddr() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsParticipantParticipantRoleAddrTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsParticipantParticipantRoleAddr",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -624,7 +637,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -662,7 +676,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsParticipantTypeCode() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsParticipantTypeCodeTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsParticipantTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -698,7 +713,8 @@ public class HandoffCommunicationParticipantsTest extends CDAValidationTest {
 	public void testValidateHandoffCommunicationParticipantsParticipantParticipantRole() {
 		OperationsTestCase<HandoffCommunicationParticipants> validateHandoffCommunicationParticipantsParticipantParticipantRoleTestCase = new OperationsTestCase<HandoffCommunicationParticipants>(
 			"validateHandoffCommunicationParticipantsParticipantParticipantRole",
-			operationsForOCL.getOCLValue("VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

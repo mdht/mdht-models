@@ -7,21 +7,16 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyObservation2Operations;
@@ -30,8 +25,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyObservation2Ope
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Allergy Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -104,7 +97,8 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	@Override
 	public boolean validateAllergyObservation2SeverityObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservation2SeverityObservation2(this, diagnostics, context);
+		return AllergyObservation2Operations.validateAllergyObservation2SeverityObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -196,7 +190,8 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * @generated
 	 */
 	@Override
-	public boolean validateAllergyObservationValueOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergyObservationValueOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservationValueOriginalText(this, diagnostics, context);
 	}
 
@@ -208,7 +203,8 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	@Override
 	public boolean validateAllergyObservationOriginalTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservationOriginalTextReference(this, diagnostics, context);
+		return AllergyObservation2Operations.validateAllergyObservationOriginalTextReference(
+			this, diagnostics, context);
 	}
 
 	/**

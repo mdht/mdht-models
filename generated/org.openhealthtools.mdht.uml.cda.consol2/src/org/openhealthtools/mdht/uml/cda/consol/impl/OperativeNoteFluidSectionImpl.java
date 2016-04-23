@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.OperativeNoteFluidSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.OperativeNoteFluidSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Operative Note Fluid Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -57,7 +55,8 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * @generated
 	 */
 	@Override
-	public boolean validateOperativeNoteFluidSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOperativeNoteFluidSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionTemplateId(
 			this, diagnostics, context);
 	}

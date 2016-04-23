@@ -15,16 +15,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Material;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Material;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationMedicationInformation2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -62,7 +62,8 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP() {
 		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationPTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
 			"validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationP",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION2_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION2_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -99,7 +100,8 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation() {
 		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslationTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
 			"validateImmunizationMedicationInformation2ImmunizationMedicationInformationManufacturedMaterialCETranslation",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION2_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION2_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -141,7 +143,8 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceValue() {
 		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceValueTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -174,7 +177,8 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP() {
 		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodePTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -209,7 +213,8 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationTemplateId() {
 		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformationTemplateIdTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
 			"validateImmunizationMedicationInformationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -243,7 +248,8 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationManufacturedMaterial() {
 		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformationManufacturedMaterialTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
 			"validateImmunizationMedicationInformationManufacturedMaterial",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -278,7 +284,8 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText() {
 		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalTextTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -313,7 +320,8 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference() {
 		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReferenceTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -349,7 +357,8 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue() {
 		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValueTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -384,7 +393,8 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation() {
 		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslationTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -418,7 +428,8 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode() {
 		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -454,7 +465,8 @@ public class ImmunizationMedicationInformation2Test extends CDAValidationTest {
 	public void testValidateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText() {
 		OperationsTestCase<ImmunizationMedicationInformation2> validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberTextTestCase = new OperationsTestCase<ImmunizationMedicationInformation2>(
 			"validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText",
-			operationsForOCL.getOCLValue("VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

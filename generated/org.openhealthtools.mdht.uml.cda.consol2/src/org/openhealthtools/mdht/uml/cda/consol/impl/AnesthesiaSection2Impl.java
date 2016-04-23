@@ -7,30 +7,23 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.AnesthesiaSection2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Anesthesia Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -122,7 +115,8 @@ public class AnesthesiaSection2Impl extends AnesthesiaSectionImpl implements Ane
 	 * @generated
 	 */
 	@Override
-	public boolean validateAnesthesiaSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAnesthesiaSectionMedicationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AnesthesiaSection2Operations.validateAnesthesiaSectionMedicationActivity(this, diagnostics, context);
 	}
 

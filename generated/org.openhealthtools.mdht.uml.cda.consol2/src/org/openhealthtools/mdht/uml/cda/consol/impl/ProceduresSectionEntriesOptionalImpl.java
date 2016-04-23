@@ -17,21 +17,19 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSectionEntriesOptionalOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedures Section Entries Optional</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -73,7 +71,8 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalCode(
 			this, diagnostics, context);
 	}
@@ -108,7 +107,8 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProceduresSectionEntriesOptionalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalText(
 			this, diagnostics, context);
 	}

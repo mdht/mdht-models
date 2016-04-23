@@ -10,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,7 +114,8 @@ public interface OperativeNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection2))'"
 	 * @generated
 	 */
-	boolean validateOperativeNote2PreoperativeDiagnosisSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateOperativeNote2PreoperativeDiagnosisSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -176,7 +177,8 @@ public interface OperativeNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostoperativeDiagnosisSection))'"
 	 * @generated
 	 */
-	boolean validateOperativeNote2PostoperativeDiagnosisSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateOperativeNote2PostoperativeDiagnosisSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -261,7 +263,8 @@ public interface OperativeNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureIndicationsSection2))'"
 	 * @generated
 	 */
-	boolean validateOperativeNote2ProcedureIndicationsSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateOperativeNote2ProcedureIndicationsSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -505,7 +508,8 @@ public interface OperativeNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.authorization->excluding(null).consent->excluding(null)->reject(isDefined(\'classCode\') and classCode=vocab::ActClass::CONS)'"
 	 * @generated
 	 */
-	boolean validateOperativeNote2AuthorizationConsentClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateOperativeNote2AuthorizationConsentClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -517,7 +521,8 @@ public interface OperativeNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.authorization->excluding(null).consent->excluding(null)->reject(isDefined(\'moodCode\') and moodCode=vocab::ActMood::EVN)'"
 	 * @generated
 	 */
-	boolean validateOperativeNote2AuthorizationConsentMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateOperativeNote2AuthorizationConsentMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

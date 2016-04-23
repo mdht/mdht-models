@@ -16,14 +16,14 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PreoperativeDiagnosis2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -174,8 +174,8 @@ public class PreoperativeDiagnosis2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePreoperativeDiagnosisProblemObservation() {
 		OperationsTestCase<PreoperativeDiagnosis2> validatePreoperativeDiagnosisProblemObservationTestCase = new OperationsTestCase<PreoperativeDiagnosis2>(
-			"validatePreoperativeDiagnosisProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PREOPERATIVE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePreoperativeDiagnosisProblemObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_PREOPERATIVE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

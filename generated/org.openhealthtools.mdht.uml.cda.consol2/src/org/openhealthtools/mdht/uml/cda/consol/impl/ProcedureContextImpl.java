@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureContext;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureContextOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Context</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -57,7 +55,8 @@ public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureContextEffectiveTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureContextEffectiveTimeValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureContextOperations.validateProcedureContextEffectiveTimeValue(this, diagnostics, context);
 	}
 

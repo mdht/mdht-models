@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.cda.operations.SectionOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -30,7 +31,6 @@ import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection;
 import org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -100,26 +100,28 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 
 	public static boolean validatePhysicalExamSectionTemplateId(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionTemplateId"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionTemplateId"),
+						 new Object [] { physicalExamSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -133,9 +135,9 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExamSectionCode(PhysicalExamSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Exam Section Code</em>}' invariant operation.
@@ -161,26 +163,28 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 
 	public static boolean validatePhysicalExamSectionCode(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionCode"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionCode"),
+						 new Object [] { physicalExamSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -220,26 +224,28 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 
 	public static boolean validatePhysicalExamSectionCodeP(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionCodeP"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CODE_P,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionCodeP"),
+						 new Object [] { physicalExamSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -279,26 +285,28 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 
 	public static boolean validatePhysicalExamSectionTitle(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionTitle"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionTitle"),
+						 new Object [] { physicalExamSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -338,26 +346,28 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 
 	public static boolean validatePhysicalExamSectionText(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionText"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionText"),
+						 new Object [] { physicalExamSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -397,27 +407,28 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 
 	public static boolean validatePhysicalExamSectionPressureUlcerObservation(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionPressureUlcerObservation"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionPressureUlcerObservation"),
+						 new Object [] { physicalExamSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -457,28 +468,28 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 
 	public static boolean validatePhysicalExamSectionNumberOfPressureUlcersObservation(
 			PhysicalExamSection physicalExamSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionNumberOfPressureUlcersObservation"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionNumberOfPressureUlcersObservation"),
+						 new Object [] { physicalExamSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -518,27 +529,28 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 
 	public static boolean validatePhysicalExamSectionHighestPressureUlcerStage(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicalExamSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExamSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE,
-					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionHighestPressureUlcerStage"),
-					new Object[] { physicalExamSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE,
+						 ConsolPlugin.INSTANCE.getString("PhysicalExamSectionPhysicalExamSectionHighestPressureUlcerStage"),
+						 new Object [] { physicalExamSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -573,12 +585,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static EList<PressureUlcerObservation> getPressureUlcerObservations(PhysicalExamSection physicalExamSection) {
 		if (GET_PRESSURE_ULCER_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(63));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(63));
 			try {
 				GET_PRESSURE_ULCER_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PRESSURE_ULCER_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -618,12 +629,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 			PhysicalExamSection physicalExamSection) {
 		if (GET_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(64));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(64));
 			try {
 				GET_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_NUMBER_OF_PRESSURE_ULCERS_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -662,12 +672,11 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	public static EList<HighestPressureUlcerStage> getHighestPressureUlcerStages(PhysicalExamSection physicalExamSection) {
 		if (GET_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION,
-				ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(65));
+			helper.setOperationContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION, ConsolPackage.Literals.PHYSICAL_EXAM_SECTION.getEAllOperations().get(65));
 			try {
 				GET_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_QRY = helper.createQuery(GET_HIGHEST_PRESSURE_ULCER_STAGES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

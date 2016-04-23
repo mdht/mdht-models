@@ -16,13 +16,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusMeaningfulUse2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -90,7 +90,8 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 	public void testValidateSmokingStatusMeaningfulUse2AuthorParticipation() {
 		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusMeaningfulUse2AuthorParticipationTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
 			"validateSmokingStatusMeaningfulUse2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -122,14 +123,15 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 	* This constraint is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	* In this case, as per errata 596:
-	* For backwards compatibility, R1.1 was allowed to use its original code or the R2.0/R2.1 code 
-	* where as R2.1 can only use the new code - so we are removing the either or option 
+	* For backwards compatibility, R1.1 was allowed to use its original code or the R2.0/R2.1 code
+	* where as R2.1 can only use the new code - so we are removing the either or option
 	*/
 	@Ignore
 	public void testValidateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc() {
 		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoincTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
 			"validateSmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_MEANINGFUL_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -162,8 +164,8 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationTemplateId() {
 		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationTemplateIdTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
-			"validateSmokingStatusObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

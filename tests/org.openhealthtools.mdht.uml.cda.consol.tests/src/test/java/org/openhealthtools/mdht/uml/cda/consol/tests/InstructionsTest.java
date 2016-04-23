@@ -14,16 +14,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.operations.InstructionsOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
  * <!-- begin-user-doc -->
@@ -287,7 +287,8 @@ public class InstructionsTest extends CDAValidationTest {
 	public void testValidateInstructionsCodeP() {
 		OperationsTestCase<Instructions> validateInstructionsCodePTestCase = new OperationsTestCase<Instructions>(
 			"validateInstructionsCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_INSTRUCTIONS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(Instructions target) {
@@ -303,7 +304,8 @@ public class InstructionsTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InstructionsOperations.validateInstructionsCodeP((Instructions) objectToTest, diagnostician, map);
+				return InstructionsOperations.validateInstructionsCodeP(
+					(Instructions) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -330,8 +332,8 @@ public class InstructionsTest extends CDAValidationTest {
 			protected void updateToPass(Instructions target) {
 				target.init();
 
-				target.setCode(DatatypesFactory.eINSTANCE.createCE(
-					"", "2.16.840.1.113883.6.96", "codeSystemName", "displayName"));
+				target.setCode(
+					DatatypesFactory.eINSTANCE.createCE("", "2.16.840.1.113883.6.96", "codeSystemName", "displayName"));
 
 			}
 

@@ -32,7 +32,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	 */
 	public static ConsolFactory init() {
 		try {
-			ConsolFactory theConsolFactory = (ConsolFactory) EPackage.Registry.INSTANCE.getEFactory(ConsolPackage.eNS_URI);
+			ConsolFactory theConsolFactory = (ConsolFactory) EPackage.Registry.INSTANCE.getEFactory(
+				ConsolPackage.eNS_URI);
 			if (theConsolFactory != null) {
 				return theConsolFactory;
 			}

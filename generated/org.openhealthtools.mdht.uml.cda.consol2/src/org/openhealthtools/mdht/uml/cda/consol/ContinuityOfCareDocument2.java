@@ -10,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -88,7 +88,8 @@ public interface ContinuityOfCareDocument2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection2))'"
 	 * @generated
 	 */
-	boolean validateContinuityOfCareDocument2AllergiesSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateContinuityOfCareDocument2AllergiesSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -125,7 +126,8 @@ public interface ContinuityOfCareDocument2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection2))'"
 	 * @generated
 	 */
-	boolean validateContinuityOfCareDocument2ProceduresSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateContinuityOfCareDocument2ProceduresSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -252,7 +254,8 @@ public interface ContinuityOfCareDocument2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSection2))'"
 	 * @generated
 	 */
-	boolean validateContinuityOfCareDocument2VitalSignsSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateContinuityOfCareDocument2VitalSignsSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

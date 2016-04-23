@@ -10,9 +10,9 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.Act;
+import org.eclipse.mdht.uml.cda.Act;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +38,8 @@ public interface HandoffCommunicationParticipants extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.141\')'"
 	 * @generated
 	 */
-	boolean validateHandoffCommunicationParticipantsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHandoffCommunicationParticipantsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -98,7 +99,8 @@ public interface HandoffCommunicationParticipants extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
 	 * @generated
 	 */
-	boolean validateHandoffCommunicationParticipantsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHandoffCommunicationParticipantsStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -110,7 +112,8 @@ public interface HandoffCommunicationParticipants extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateHandoffCommunicationParticipantsStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHandoffCommunicationParticipantsStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -135,7 +138,8 @@ public interface HandoffCommunicationParticipants extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant2))'"
 	 * @generated
 	 */
-	boolean validateHandoffCommunicationParticipantsParticipant(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHandoffCommunicationParticipantsParticipant(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -225,8 +229,8 @@ public interface HandoffCommunicationParticipants extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null).participantRole->excluding(null)->reject(playingEntity->one(playingEntity : cda::PlayingEntity | not playingEntity.oclIsUndefined() and playingEntity.oclIsKindOf(cda::PlayingEntity)))'"
 	 * @generated
 	 */
-	boolean validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

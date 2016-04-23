@@ -12,18 +12,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationUseNoneKnown;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationUseNoneKnownOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Use None Known</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -53,7 +51,8 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationUseNoneKnownTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationUseNoneKnownTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReference(this, diagnostics, context);
 	}
 
@@ -75,8 +74,10 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationUseNoneKnownReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownReferenceValue(this, diagnostics, context);
+	public boolean validateMedicationUseNoneKnownReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -145,7 +146,8 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * @generated
 	 */
 	@Override
-	public boolean validateMedicationUseNoneKnownEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationUseNoneKnownEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownEffectiveTime(this, diagnostics, context);
 	}
 

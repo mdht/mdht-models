@@ -15,21 +15,21 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedCustodian;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Component2;
+import org.eclipse.mdht.uml.cda.Custodian;
+import org.eclipse.mdht.uml.cda.NonXMLBody;
+import org.eclipse.mdht.uml.cda.PatientRole;
+import org.eclipse.mdht.uml.cda.RecordTarget;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.BinaryDataEncoding;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedCustodian;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component2;
-import org.openhealthtools.mdht.uml.cda.Custodian;
-import org.openhealthtools.mdht.uml.cda.NonXMLBody;
-import org.openhealthtools.mdht.uml.cda.PatientRole;
-import org.openhealthtools.mdht.uml.cda.RecordTarget;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.UnstructuredDocument2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.BinaryDataEncoding;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
  * <!-- begin-user-doc -->
@@ -67,8 +67,8 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 	@Test
 	public void testValidateUnstructuredDocument2RecordTarget() {
 		OperationsTestCase<UnstructuredDocument2> validateUnstructuredDocument2RecordTargetTestCase = new OperationsTestCase<UnstructuredDocument2>(
-			"validateUnstructuredDocument2RecordTarget",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateUnstructuredDocument2RecordTarget", operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -173,7 +173,8 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 	public void testValidateUnstructuredDocument2RecordTargetPatientRoleId() {
 		OperationsTestCase<UnstructuredDocument2> validateUnstructuredDocument2RecordTargetPatientRoleIdTestCase = new OperationsTestCase<UnstructuredDocument2>(
 			"validateUnstructuredDocument2RecordTargetPatientRoleId",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -212,7 +213,8 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 	public void testValidateUnstructuredDocument2RecordTargetPatientRole() {
 		OperationsTestCase<UnstructuredDocument2> validateUnstructuredDocument2RecordTargetPatientRoleTestCase = new OperationsTestCase<UnstructuredDocument2>(
 			"validateUnstructuredDocument2RecordTargetPatientRole",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -250,7 +252,8 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 	public void testValidateUnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization() {
 		OperationsTestCase<UnstructuredDocument2> validateUnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganizationTestCase = new OperationsTestCase<UnstructuredDocument2>(
 			"validateUnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -288,7 +291,8 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 	public void testValidateUnstructuredDocument2CustodianAssignedCustodian() {
 		OperationsTestCase<UnstructuredDocument2> validateUnstructuredDocument2CustodianAssignedCustodianTestCase = new OperationsTestCase<UnstructuredDocument2>(
 			"validateUnstructuredDocument2CustodianAssignedCustodian",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -326,7 +330,8 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 	public void testValidateUnstructuredDocument2ComponentNonXMLBodyEDMediaType() {
 		OperationsTestCase<UnstructuredDocument2> validateUnstructuredDocument2ComponentNonXMLBodyEDMediaTypeTestCase = new OperationsTestCase<UnstructuredDocument2>(
 			"validateUnstructuredDocument2ComponentNonXMLBodyEDMediaType",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -367,7 +372,8 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 	public void testValidateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation() {
 		OperationsTestCase<UnstructuredDocument2> validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentationTestCase = new OperationsTestCase<UnstructuredDocument2>(
 			"validateUnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -409,7 +415,8 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 	public void testValidateUnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats() {
 		OperationsTestCase<UnstructuredDocument2> validateUnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormatsTestCase = new OperationsTestCase<UnstructuredDocument2>(
 			"validateUnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -451,7 +458,8 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 	public void testValidateUnstructuredDocument2ComponentNonXMLBodyText() {
 		OperationsTestCase<UnstructuredDocument2> validateUnstructuredDocument2ComponentNonXMLBodyTextTestCase = new OperationsTestCase<UnstructuredDocument2>(
 			"validateUnstructuredDocument2ComponentNonXMLBodyText",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -489,7 +497,8 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 	public void testValidateUnstructuredDocument2ComponentNonXMLBody() {
 		OperationsTestCase<UnstructuredDocument2> validateUnstructuredDocument2ComponentNonXMLBodyTestCase = new OperationsTestCase<UnstructuredDocument2>(
 			"validateUnstructuredDocument2ComponentNonXMLBody",
-			operationsForOCL.getOCLValue("VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -524,8 +533,8 @@ public class UnstructuredDocument2Test extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<UnstructuredDocument2> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<UnstructuredDocument2>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

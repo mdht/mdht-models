@@ -7,16 +7,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer2;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -83,21 +79,23 @@ public class PhysicianReadingStudyPerformer2Operations extends PhysicianReadingS
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICIAN_READING_STUDY_PERFORMER2);
 			try {
-				VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			physicianReadingStudyPerformer2)) {
+				physicianReadingStudyPerformer2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER2__PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PhysicianReadingStudyPerformer2PhysicianReadingStudyPerformerTemplateId"),
-					new Object[] { physicianReadingStudyPerformer2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER2__PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"PhysicianReadingStudyPerformer2PhysicianReadingStudyPerformerTemplateId"),
+						new Object[] { physicianReadingStudyPerformer2 }));
 			}
 
 			return false;

@@ -5,12 +5,13 @@ package org.openhealthtools.mdht.uml.cda.consol;
 import java.lang.Iterable;
 
 import java.util.Map;
+
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +24,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDischargeMedicationsSectionEntriesOptional2CE translation.code='75311-1' translation.codeSystem='2.16.840.1.113883.6.1' translation.codeSystemName='LOINC' translation.displayName='Discharge Medications' constraints.validation.error='DischargeMedicationsSectionEntriesOptional2CETranslation DischargeMedicationsSectionEntriesOptional2CETranslationP'"
  * @generated
  */
-public interface DischargeMedicationsSectionEntriesOptional2 extends HospitalDischargeMedicationsSectionEntriesOptional {
+public interface DischargeMedicationsSectionEntriesOptional2
+		extends HospitalDischargeMedicationsSectionEntriesOptional {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

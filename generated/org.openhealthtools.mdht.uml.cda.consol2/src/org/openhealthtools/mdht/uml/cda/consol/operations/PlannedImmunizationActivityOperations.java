@@ -8,7 +8,7 @@
  * Contributors:
  *     Dan Brown (Audacious Inquiry) - initial API and implementation
  *     								 - modified VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP
- *     								 - due to inline datatype OCL generation issue 
+ *     								 - due to inline datatype OCL generation issue
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
@@ -22,6 +22,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.SubstanceAdministrationOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -34,7 +35,6 @@ import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.operations.SubstanceAdministrationOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -127,20 +127,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityTemplateId"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityTemplateId"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -188,19 +191,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityClassCode"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityClassCode"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -248,25 +255,30 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityMoodCodeP"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityMoodCodeP"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivityMoodCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivityMoodCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -289,9 +301,9 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and "
-			+ "let value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in "
-			+ "value = vocab::x_DocumentSubstanceMood::INT or value = vocab::x_DocumentSubstanceMood::PRMS or value = vocab::x_DocumentSubstanceMood::PRP or value = vocab::x_DocumentSubstanceMood::RQO";
+	protected static final String VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and " +
+			"let value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in " +
+			"value = vocab::x_DocumentSubstanceMood::INT or value = vocab::x_DocumentSubstanceMood::PRMS or value = vocab::x_DocumentSubstanceMood::PRP or value = vocab::x_DocumentSubstanceMood::RQO";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedImmunizationActivityMoodCode(PlannedImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Mood Code</em>}' invariant operation.
@@ -331,19 +343,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityMoodCode"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityMoodCode"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -383,15 +399,15 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	 * @generated
 	 */
 
-	public static boolean validatePlannedImmunizationActivityId(
-			PlannedImmunizationActivity plannedImmunizationActivity, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static boolean validatePlannedImmunizationActivityId(PlannedImmunizationActivity plannedImmunizationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -399,11 +415,12 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityId"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_ID,
+						ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityId"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -419,8 +436,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
+	protected static final String VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedImmunizationActivityStatusCode(PlannedImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Status Code</em>}' invariant operation.
@@ -452,20 +469,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityStatusCode"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityStatusCode"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -513,20 +533,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityStatusCodeP"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityStatusCodeP"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -574,20 +597,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityEffectiveTime"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityEffectiveTime"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -635,20 +661,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityRepeatNumber"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityRepeatNumber"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -696,26 +725,30 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityRouteCodeP"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityRouteCodeP"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivityRouteCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivityRouteCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -738,9 +771,9 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C38192' or value.code = 'C38193' or value.code = 'C38194' or value.code = 'C38675' or value.code = 'C38197' or value.code = 'C38633' or value.code = 'C38205' or value.code = 'C38206' or value.code = 'C38208' or value.code = 'C38209' or value.code = 'C38210' or value.code = 'C38211' or value.code = 'C38212' or value.code = 'C38200' or value.code = 'C38215' or value.code = 'C38219' or value.code = 'C38220' or value.code = 'C38221' or value.code = 'C38222' or value.code = 'C38223' or value.code = 'C38224' or value.code = 'C38225' or value.code = 'C38226' or value.code = 'C38227' or value.code = 'C38228' or value.code = 'C38229' or value.code = 'C38230' or value.code = 'C38231' or value.code = 'C38232' or value.code = 'C38233' or value.code = 'C38234' or value.code = 'C38217' or value.code = 'C38218' or value.code = 'C38235' or value.code = 'C38238' or value.code = 'C38239' or value.code = 'C38240' or value.code = 'C38241' or value.code = 'C38242' or value.code = 'C38243' or value.code = 'C38245' or value.code = 'C38246' or value.code = 'C38247' or value.code = 'C38249' or value.code = 'C38250' or value.code = 'C38251' or value.code = 'C38252' or value.code = 'C38253' or value.code = 'C38254' or value.code = 'C28161' or value.code = 'C38255' or value.code = 'C38256' or value.code = 'C38257' or value.code = 'C38258' or value.code = 'C38259' or value.code = 'C38260' or value.code = 'C38261' or value.code = 'C38262' or value.code = 'C38263' or value.code = 'C38264' or value.code = 'C38265' or value.code = 'C38266' or value.code = 'C38267' or value.code = 'C38207' or value.code = 'C38268' or value.code = 'C38269' or value.code = 'C38270' or value.code = 'C38272' or value.code = 'C38273' or value.code = 'C38276' or value.code = 'C38277' or value.code = 'C38278' or value.code = 'C38280' or value.code = 'C38203' or value.code = 'C38281' or value.code = 'C38282' or value.code = 'C38284' or value.code = 'C38285' or value.code = 'C48623' or value.code = 'C38286' or value.code = 'C38287' or value.code = 'C38288' or value.code = 'C38289' or value.code = 'C38291' or value.code = 'C38676' or value.code = 'C38292' or value.code = 'C38677' or value.code = 'C38293' or value.code = 'C38294' or value.code = 'C38295' or value.code = 'C38216' or value.code = 'C38296' or value.code = 'C38198' or value.code = 'C38297' or value.code = 'C38298' or value.code = 'C38299' or value.code = 'C38300' or value.code = 'C38301' or value.code = 'C38304' or value.code = 'C38305' or value.code = 'C38283' or value.code = 'C38307' or value.code = 'C38308' or value.code = 'C38309' or value.code = 'C38312' or value.code = 'C38271'))";
+	protected static final String VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.3.26.1.1' and (value.code = 'C38192' or value.code = 'C38193' or value.code = 'C38194' or value.code = 'C38675' or value.code = 'C38197' or value.code = 'C38633' or value.code = 'C38205' or value.code = 'C38206' or value.code = 'C38208' or value.code = 'C38209' or value.code = 'C38210' or value.code = 'C38211' or value.code = 'C38212' or value.code = 'C38200' or value.code = 'C38215' or value.code = 'C38219' or value.code = 'C38220' or value.code = 'C38221' or value.code = 'C38222' or value.code = 'C38223' or value.code = 'C38224' or value.code = 'C38225' or value.code = 'C38226' or value.code = 'C38227' or value.code = 'C38228' or value.code = 'C38229' or value.code = 'C38230' or value.code = 'C38231' or value.code = 'C38232' or value.code = 'C38233' or value.code = 'C38234' or value.code = 'C38217' or value.code = 'C38218' or value.code = 'C38235' or value.code = 'C38238' or value.code = 'C38239' or value.code = 'C38240' or value.code = 'C38241' or value.code = 'C38242' or value.code = 'C38243' or value.code = 'C38245' or value.code = 'C38246' or value.code = 'C38247' or value.code = 'C38249' or value.code = 'C38250' or value.code = 'C38251' or value.code = 'C38252' or value.code = 'C38253' or value.code = 'C38254' or value.code = 'C28161' or value.code = 'C38255' or value.code = 'C38256' or value.code = 'C38257' or value.code = 'C38258' or value.code = 'C38259' or value.code = 'C38260' or value.code = 'C38261' or value.code = 'C38262' or value.code = 'C38263' or value.code = 'C38264' or value.code = 'C38265' or value.code = 'C38266' or value.code = 'C38267' or value.code = 'C38207' or value.code = 'C38268' or value.code = 'C38269' or value.code = 'C38270' or value.code = 'C38272' or value.code = 'C38273' or value.code = 'C38276' or value.code = 'C38277' or value.code = 'C38278' or value.code = 'C38280' or value.code = 'C38203' or value.code = 'C38281' or value.code = 'C38282' or value.code = 'C38284' or value.code = 'C38285' or value.code = 'C48623' or value.code = 'C38286' or value.code = 'C38287' or value.code = 'C38288' or value.code = 'C38289' or value.code = 'C38291' or value.code = 'C38676' or value.code = 'C38292' or value.code = 'C38677' or value.code = 'C38293' or value.code = 'C38294' or value.code = 'C38295' or value.code = 'C38216' or value.code = 'C38296' or value.code = 'C38198' or value.code = 'C38297' or value.code = 'C38298' or value.code = 'C38299' or value.code = 'C38300' or value.code = 'C38301' or value.code = 'C38304' or value.code = 'C38305' or value.code = 'C38283' or value.code = 'C38307' or value.code = 'C38308' or value.code = 'C38309' or value.code = 'C38312' or value.code = 'C38271'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedImmunizationActivityRouteCode(PlannedImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Route Code</em>}' invariant operation.
@@ -780,19 +813,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityRouteCode"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityRouteCode"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -827,21 +864,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityApproachSiteCode"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityApproachSiteCode"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -878,9 +917,9 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedImmunizationActivityApproachSiteCode(PlannedImmunizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Immunization Activity Approach Site Code</em>}' invariant operation.
@@ -912,27 +951,30 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityApproachSiteCodeP"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityApproachSiteCodeP"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivityApproachSiteCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivityApproachSiteCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -988,20 +1030,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityDoseQuantity"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityDoseQuantity"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -1049,19 +1094,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityPerformer"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_PERFORMER,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityPerformer"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -1109,21 +1158,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityAuthorParticipation"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityAuthorParticipation"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -1171,21 +1222,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityPriorityPreference"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_PRIORITY_PREFERENCE,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityPriorityPreference"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -1233,20 +1286,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_INDICATION2,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityIndication2"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_INDICATION2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityIndication2"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -1294,20 +1350,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityInstruction2"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_INSTRUCTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityInstruction2"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -1355,20 +1414,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityPrecondition"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityPrecondition"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -1416,20 +1478,23 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedImmunizationActivity)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedImmunizationActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE,
-					ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityConsumable"),
-					new Object[] { plannedImmunizationActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedImmunizationActivityPlannedImmunizationActivityConsumable"),
+						new Object[] { plannedImmunizationActivity }));
 			}
 
 			return false;
@@ -1477,24 +1542,28 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedImmunizationActivity);
+		Object oclResult = VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedImmunizationActivity);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT,
-						ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityIVLPQUnit"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT,
+							ConsolPlugin.INSTANCE.getString(
+								"PlannedImmunizationActivityPlannedImmunizationActivityIVLPQUnit"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1543,24 +1612,28 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedImmunizationActivity);
+		Object oclResult = VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedImmunizationActivity);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION2,
-						ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityConsumableImmunizationMedicationInformation2"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION2,
+							ConsolPlugin.INSTANCE.getString(
+								"PlannedImmunizationActivityPlannedImmunizationActivityConsumableImmunizationMedicationInformation2"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1609,24 +1682,28 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedImmunizationActivity);
+		Object oclResult = VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedImmunizationActivity);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityPreconditionTypeCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"PlannedImmunizationActivityPlannedImmunizationActivityPreconditionTypeCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1675,24 +1752,28 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_IMMUNIZATION_ACTIVITY);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedImmunizationActivity);
+		Object oclResult = VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedImmunizationActivity);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2,
-						ConsolPlugin.INSTANCE.getString("PlannedImmunizationActivityPlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_IMMUNIZATION_ACTIVITY__PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2,
+							ConsolPlugin.INSTANCE.getString(
+								"PlannedImmunizationActivityPlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1742,7 +1823,8 @@ public class PlannedImmunizationActivityOperations extends SubstanceAdministrati
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PRIORITY_PREFERENCES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(plannedImmunizationActivity);
+		Collection<PriorityPreference> result = (Collection<PriorityPreference>) query.evaluate(
+			plannedImmunizationActivity);
 		return new BasicEList.UnmodifiableEList<PriorityPreference>(result.size(), result.toArray());
 	}
 

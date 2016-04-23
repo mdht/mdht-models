@@ -7,19 +7,14 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
-
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusObservation2Operations;
 
@@ -27,13 +22,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusObserv
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Functional Status Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObservationImpl implements
-		FunctionalStatusObservation2 {
+public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObservationImpl
+		implements FunctionalStatusObservation2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -82,7 +75,8 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 */
 	@Override
 	public boolean validateResultObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusObservation2Operations.validateResultObservationTextReference(this, diagnostics, context);
+		return FunctionalStatusObservation2Operations.validateResultObservationTextReference(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -91,7 +85,8 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateResultObservationTextReferenceValue(
 			this, diagnostics, context);
 	}
@@ -142,7 +137,8 @@ public class FunctionalStatusObservation2Impl extends FunctionalStatusResultObse
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return FunctionalStatusObservation2Operations.validateResultObservationInterpretationCode(
 			this, diagnostics, context);
 	}

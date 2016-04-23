@@ -7,20 +7,15 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis2;
-
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalDischargeDiagnosis2Operations;
 
@@ -28,13 +23,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalDischargeDiagn
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Hospital Discharge Diagnosis2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class HospitalDischargeDiagnosis2Impl extends HospitalDischargeDiagnosisImpl implements
-		HospitalDischargeDiagnosis2 {
+public class HospitalDischargeDiagnosis2Impl extends HospitalDischargeDiagnosisImpl
+		implements HospitalDischargeDiagnosis2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -61,7 +54,8 @@ public class HospitalDischargeDiagnosis2Impl extends HospitalDischargeDiagnosisI
 	 */
 	@Override
 	public boolean validateHospitalDischargeDiagnosisCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosisCodeP(this, diagnostics, context);
+		return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosisCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -80,7 +74,8 @@ public class HospitalDischargeDiagnosis2Impl extends HospitalDischargeDiagnosisI
 	 * @generated
 	 */
 	@Override
-	public boolean validateHospitalDischargeDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHospitalDischargeDiagnosisTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HospitalDischargeDiagnosis2Operations.validateHospitalDischargeDiagnosisTemplateId(
 			this, diagnostics, context);
 	}

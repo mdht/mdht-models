@@ -13,11 +13,11 @@ package org.openhealthtools.mdht.uml.cda.consol.tests;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.Section;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.Section;
+import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 public class TestGeneralHeaderSample {
 	public static void main(String[] args) throws Exception {

@@ -16,15 +16,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.WoundCharacteristic;
 import org.openhealthtools.mdht.uml.cda.consol.operations.WoundCharacteristicOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -341,8 +341,8 @@ public class WoundCharacteristicTest extends CDAValidationTest {
 	@Test
 	public void testValidateWoundCharacteristicEffectiveTime() {
 		OperationsTestCase<WoundCharacteristic> validateWoundCharacteristicEffectiveTimeTestCase = new OperationsTestCase<WoundCharacteristic>(
-			"validateWoundCharacteristicEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_WOUND_CHARACTERISTIC_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateWoundCharacteristicEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_WOUND_CHARACTERISTIC_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

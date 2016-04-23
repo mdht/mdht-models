@@ -15,19 +15,19 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PregnancyObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -351,8 +351,8 @@ public class PregnancyObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidatePregnancyObservationEffectiveTime() {
 		OperationsTestCase<PregnancyObservation> validatePregnancyObservationEffectiveTimeTestCase = new OperationsTestCase<PregnancyObservation>(
-			"validatePregnancyObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PREGNANCY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePregnancyObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_PREGNANCY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -389,7 +389,8 @@ public class PregnancyObservationTest extends CDAValidationTest {
 	public void testValidatePregnancyObservationEstimatedDateOfDelivery() {
 		OperationsTestCase<PregnancyObservation> validatePregnancyObservationEstimatedDateOfDeliveryTestCase = new OperationsTestCase<PregnancyObservation>(
 			"validatePregnancyObservationEstimatedDateOfDelivery",
-			operationsForOCL.getOCLValue("VALIDATE_PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -17,27 +17,27 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Consumable;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Performer2;
+import org.eclipse.mdht.uml.cda.Precondition;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_INT;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_PQ;
+import org.eclipse.mdht.uml.hl7.datatypes.SXCM_TS;
+import org.eclipse.mdht.uml.hl7.vocab.ActClass;
+import org.eclipse.mdht.uml.hl7.vocab.ActRelationshipType;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Consumable;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Performer2;
-import org.openhealthtools.mdht.uml.cda.Precondition;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedImmunizationActivityOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_INT;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_PQ;
-import org.openhealthtools.mdht.uml.hl7.datatypes.SXCM_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClass;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActRelationshipType;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -90,8 +90,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedImmunizationActivityTemplateId() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityTemplateIdTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -124,8 +124,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedImmunizationActivityClassCode() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityClassCodeTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -158,8 +158,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedImmunizationActivityMoodCodeP() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityMoodCodePTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityMoodCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityMoodCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -191,8 +191,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedImmunizationActivityMoodCode() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityMoodCodeTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -269,8 +269,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedImmunizationActivityStatusCode() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityStatusCodeTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -306,7 +306,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	public void testValidatePlannedImmunizationActivityStatusCodeP() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityStatusCodePTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -340,7 +341,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	public void testValidatePlannedImmunizationActivityEffectiveTime() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityEffectiveTimeTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -374,7 +376,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	public void testValidatePlannedImmunizationActivityRepeatNumber() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityRepeatNumberTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityRepeatNumber",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -407,8 +410,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedImmunizationActivityRouteCodeP() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityRouteCodePTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityRouteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityRouteCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -441,8 +444,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedImmunizationActivityRouteCode() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityRouteCodeTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityRouteCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityRouteCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -485,7 +488,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	public void testValidatePlannedImmunizationActivityApproachSiteCode() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityApproachSiteCodeTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityApproachSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -527,7 +531,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	public void testValidatePlannedImmunizationActivityApproachSiteCodeP() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityApproachSiteCodePTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityApproachSiteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -561,7 +566,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	public void testValidatePlannedImmunizationActivityDoseQuantity() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityDoseQuantityTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityDoseQuantity",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -594,8 +600,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedImmunizationActivityPerformer() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityPerformerTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityPerformer",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityPerformer", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -629,7 +635,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	public void testValidatePlannedImmunizationActivityAuthorParticipation() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityAuthorParticipationTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -662,7 +669,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	public void testValidatePlannedImmunizationActivityPriorityPreference() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityPriorityPreferenceTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -697,8 +705,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedImmunizationActivityIndication2() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityIndication2TestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityIndication2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityIndication2", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -735,8 +743,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedImmunizationActivityInstruction2() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityInstruction2TestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityInstruction2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityInstruction2", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -772,8 +780,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedImmunizationActivityPrecondition() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityPreconditionTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityPrecondition",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityPrecondition", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -807,8 +815,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedImmunizationActivityConsumable() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityConsumableTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityConsumable",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityConsumable", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -838,14 +846,14 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	/**
 	*
 	* @generated NOT
-	* modified VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP 
+	* modified VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP
 	* due to inline datatype OCL generation issue
 	*/
 	@Test
 	public void testValidatePlannedImmunizationActivityIVLPQUnit() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityIVLPQUnitTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
-			"validatePlannedImmunizationActivityIVLPQUnit",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedImmunizationActivityIVLPQUnit", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_IVLPQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -879,7 +887,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	public void testValidatePlannedImmunizationActivityConsumableImmunizationMedicationInformation2() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityConsumableImmunizationMedicationInformation2TestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityConsumableImmunizationMedicationInformation2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -915,7 +924,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	public void testValidatePlannedImmunizationActivityPreconditionTypeCode() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityPreconditionTypeCodeTestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityPreconditionTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -952,7 +962,8 @@ public class PlannedImmunizationActivityTest extends CDAValidationTest {
 	public void testValidatePlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2() {
 		OperationsTestCase<PlannedImmunizationActivity> validatePlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2TestCase = new OperationsTestCase<PlannedImmunizationActivity>(
 			"validatePlannedImmunizationActivityPreconditionPreconditionForSubstanceAdministration2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

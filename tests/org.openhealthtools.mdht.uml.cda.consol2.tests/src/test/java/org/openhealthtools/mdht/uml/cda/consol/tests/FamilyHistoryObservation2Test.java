@@ -16,13 +16,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryObservation2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,8 +52,8 @@ public class FamilyHistoryObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateFamilyHistoryObservation2CDTranslation() {
 		OperationsTestCase<FamilyHistoryObservation2> validateFamilyHistoryObservation2CDTranslationTestCase = new OperationsTestCase<FamilyHistoryObservation2>(
-			"validateFamilyHistoryObservation2CDTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryObservation2CDTranslation", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -90,7 +90,8 @@ public class FamilyHistoryObservation2Test extends CDAValidationTest {
 	public void testValidateFamilyHistoryObservation2CDTranslationP() {
 		OperationsTestCase<FamilyHistoryObservation2> validateFamilyHistoryObservation2CDTranslationPTestCase = new OperationsTestCase<FamilyHistoryObservation2>(
 			"validateFamilyHistoryObservation2CDTranslationP",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -124,8 +125,8 @@ public class FamilyHistoryObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateFamilyHistoryObservationTemplateId() {
 		OperationsTestCase<FamilyHistoryObservation2> validateFamilyHistoryObservationTemplateIdTestCase = new OperationsTestCase<FamilyHistoryObservation2>(
-			"validateFamilyHistoryObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

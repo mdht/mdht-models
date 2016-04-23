@@ -16,17 +16,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.PQ;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignObservation2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
 
 /**
  * <!-- begin-user-doc -->
@@ -64,7 +64,8 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 	public void testValidateVitalSignObservationInterpretationCodeP() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationInterpretationCodePTestCase = new OperationsTestCase<VitalSignObservation2>(
 			"validateVitalSignObservationInterpretationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -98,7 +99,8 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 	public void testValidateVitalSignObservation2AuthorParticipation() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservation2AuthorParticipationTestCase = new OperationsTestCase<VitalSignObservation2>(
 			"validateVitalSignObservation2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -174,8 +176,8 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 	@Ignore
 	public void testValidateVitalSignObservationTextReference() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationTextReferenceTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservationTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationTextReference", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -210,8 +212,8 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 	@Ignore
 	public void testValidateVitalSignObservationReferenceValue() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationReferenceValueTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservationReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -250,7 +252,8 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 	public void testValidateVitalSignObservationTextReferenceValue() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationTextReferenceValueTestCase = new OperationsTestCase<VitalSignObservation2>(
 			"validateVitalSignObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -320,8 +323,8 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignObservationEffectiveTime() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationEffectiveTimeTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -433,8 +436,8 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignObservationInterpretationCode() {
 		OperationsTestCase<VitalSignObservation2> validateVitalSignObservationInterpretationCodeTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservationInterpretationCode",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignObservationInterpretationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

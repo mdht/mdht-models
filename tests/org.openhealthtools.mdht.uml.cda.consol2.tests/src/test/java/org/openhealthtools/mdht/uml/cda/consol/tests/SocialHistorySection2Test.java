@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistorySection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -61,7 +61,8 @@ public class SocialHistorySection2Test extends CDAValidationTest {
 	public void testValidateSocialHistorySection2CaregiverCharacteristics() {
 		OperationsTestCase<SocialHistorySection2> validateSocialHistorySection2CaregiverCharacteristicsTestCase = new OperationsTestCase<SocialHistorySection2>(
 			"validateSocialHistorySection2CaregiverCharacteristics",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_SECTION2_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -94,7 +95,8 @@ public class SocialHistorySection2Test extends CDAValidationTest {
 	public void testValidateSocialHistorySection2CulturalAndReligiousObservation() {
 		OperationsTestCase<SocialHistorySection2> validateSocialHistorySection2CulturalAndReligiousObservationTestCase = new OperationsTestCase<SocialHistorySection2>(
 			"validateSocialHistorySection2CulturalAndReligiousObservation",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_SECTION2_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -127,7 +129,8 @@ public class SocialHistorySection2Test extends CDAValidationTest {
 	public void testValidateSocialHistorySection2CharacteristicsOfHomeEnvironment() {
 		OperationsTestCase<SocialHistorySection2> validateSocialHistorySection2CharacteristicsOfHomeEnvironmentTestCase = new OperationsTestCase<SocialHistorySection2>(
 			"validateSocialHistorySection2CharacteristicsOfHomeEnvironment",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_SECTION2_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -341,7 +344,8 @@ public class SocialHistorySection2Test extends CDAValidationTest {
 	public void testValidateSocialHistorySectionSocialHistoryObservation() {
 		OperationsTestCase<SocialHistorySection2> validateSocialHistorySectionSocialHistoryObservationTestCase = new OperationsTestCase<SocialHistorySection2>(
 			"validateSocialHistorySectionSocialHistoryObservation",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -374,7 +378,8 @@ public class SocialHistorySection2Test extends CDAValidationTest {
 	public void testValidateSocialHistorySectionSmokingStatusObservation() {
 		OperationsTestCase<SocialHistorySection2> validateSocialHistorySectionSmokingStatusObservationTestCase = new OperationsTestCase<SocialHistorySection2>(
 			"validateSocialHistorySectionSmokingStatusObservation",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

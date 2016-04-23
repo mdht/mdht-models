@@ -17,7 +17,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ProcedureImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
@@ -26,14 +27,11 @@ import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityProcedureOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ProcedureImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Activity Procedure</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -171,7 +169,8 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureMethodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureMethodCode(
 			this, diagnostics, context);
 	}
@@ -206,7 +205,8 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureIndication(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureIndication(
 			this, diagnostics, context);
 	}
@@ -217,7 +217,8 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureSpecimen(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureSpecimen(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureSpecimen(
 			this, diagnostics, context);
 	}
@@ -240,7 +241,8 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedurePerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedurePerformer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedurePerformer(
 			this, diagnostics, context);
 	}
@@ -251,7 +253,8 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureTemplateId(
 			this, diagnostics, context);
 	}
@@ -262,7 +265,8 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureClassCode(
 			this, diagnostics, context);
 	}
@@ -273,7 +277,8 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureMoodCode(
 			this, diagnostics, context);
 	}
@@ -304,7 +309,8 @@ public class ProcedureActivityProcedureImpl extends ProcedureImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureStatusCode(
 			this, diagnostics, context);
 	}

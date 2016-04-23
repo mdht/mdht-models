@@ -10,16 +10,12 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation;
@@ -29,10 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,7 +110,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -125,11 +119,12 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationTemplateId"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationTemplateId"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -176,7 +171,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -184,11 +180,12 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationClassCode"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationClassCode"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -235,7 +232,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -243,17 +241,19 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_MOOD_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationMoodCodeP"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_MOOD_CODE_P,
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationMoodCodeP"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationMoodCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationMoodCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -275,9 +275,9 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and "
-			+ "let value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in "
-			+ "value = vocab::x_DocumentActMood::INT or value = vocab::x_DocumentActMood::ARQ or value = vocab::x_DocumentActMood::PRMS or value = vocab::x_DocumentActMood::PRP or value = vocab::x_DocumentActMood::RQO or value = vocab::x_DocumentActMood::APT";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and " +
+			"let value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in " +
+			"value = vocab::x_DocumentActMood::INT or value = vocab::x_DocumentActMood::ARQ or value = vocab::x_DocumentActMood::PRMS or value = vocab::x_DocumentActMood::PRP or value = vocab::x_DocumentActMood::RQO or value = vocab::x_DocumentActMood::APT";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationMoodCode(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Mood Code</em>}' invariant operation.
@@ -316,7 +316,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -324,11 +325,12 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationMoodCode"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationMoodCode"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -375,7 +377,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -383,17 +386,19 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationCodeP"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationCodeP"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -415,9 +420,9 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '61310001' or value.code = '386373004' or value.code = '418995006' or value.code = '413315001' or value.code = '182922004' or value.code = '229912004' or value.code = '225372007' or value.code = '448556005'))";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '61310001' or value.code = '386373004' or value.code = '418995006' or value.code = '413315001' or value.code = '182922004' or value.code = '229912004' or value.code = '225372007' or value.code = '448556005'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationCode(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Code</em>}' invariant operation.
@@ -456,7 +461,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -464,11 +470,12 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationCode"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CODE,
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationCode"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -484,8 +491,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
+	protected static final String VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionRecommendationStatusCode(NutritionRecommendation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Recommendation Status Code</em>}' invariant operation.
@@ -516,7 +523,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -524,11 +532,12 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationStatusCode"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationStatusCode"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -575,19 +584,22 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_NUTRITION_RECOMMENDATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationStatusCodeP"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationStatusCodeP"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -634,19 +646,22 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_NUTRITION_RECOMMENDATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationEffectiveTime"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationEffectiveTime"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -693,19 +708,23 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedEncounter2"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2,
+						ConsolPlugin.INSTANCE.getString(
+							"NutritionRecommendationNutritionRecommendationPlannedEncounter2"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -752,21 +771,23 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+				nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedMedicationActivity2"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2,
+						ConsolPlugin.INSTANCE.getString(
+							"NutritionRecommendationNutritionRecommendationPlannedMedicationActivity2"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -813,21 +834,23 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+				nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedObservation2"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString(
+							"NutritionRecommendationNutritionRecommendationPlannedObservation2"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -874,19 +897,23 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedProcedure2"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2,
+						ConsolPlugin.INSTANCE.getString(
+							"NutritionRecommendationNutritionRecommendationPlannedProcedure2"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -926,26 +953,29 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 	 * @generated
 	 */
 
-	public static boolean validateNutritionRecommendationPlannedSupply2(
-			NutritionRecommendation nutritionRecommendation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateNutritionRecommendationPlannedSupply2(NutritionRecommendation nutritionRecommendation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nutritionRecommendation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedSupply2"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2,
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedSupply2"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -992,7 +1022,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NUTRITION_RECOMMENDATION);
 			try {
-				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1000,11 +1031,12 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		if (!EOCL_ENV.createQuery(VALIDATE_NUTRITION_RECOMMENDATION_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			nutritionRecommendation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_ACT2,
-					ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedAct2"),
-					new Object[] { nutritionRecommendation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_ACT2,
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedAct2"),
+						new Object[] { nutritionRecommendation }));
 			}
 
 			return false;
@@ -1090,14 +1122,16 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 				ConsolPackage.Literals.NUTRITION_RECOMMENDATION,
 				ConsolPackage.Literals.NUTRITION_RECOMMENDATION.getEAllOperations().get(67));
 			try {
-				GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_EXP);
+				GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(
+					GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<PlannedMedicationActivity2> result = (Collection<PlannedMedicationActivity2>) query.evaluate(nutritionRecommendation);
+		Collection<PlannedMedicationActivity2> result = (Collection<PlannedMedicationActivity2>) query.evaluate(
+			nutritionRecommendation);
 		return new BasicEList.UnmodifiableEList<PlannedMedicationActivity2>(result.size(), result.toArray());
 	}
 
@@ -1141,7 +1175,8 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<PlannedObservation2> result = (Collection<PlannedObservation2>) query.evaluate(nutritionRecommendation);
+		Collection<PlannedObservation2> result = (Collection<PlannedObservation2>) query.evaluate(
+			nutritionRecommendation);
 		return new BasicEList.UnmodifiableEList<PlannedObservation2>(result.size(), result.toArray());
 	}
 

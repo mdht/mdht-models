@@ -11,23 +11,23 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusProblemObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -78,7 +78,8 @@ public class FunctionalStatusProblemObservationTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusProblemObservationMethodCode() {
 		OperationsTestCase<FunctionalStatusProblemObservation> validateFunctionalStatusProblemObservationMethodCodeTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
 			"validateFunctionalStatusProblemObservationMethodCode",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -112,7 +113,8 @@ public class FunctionalStatusProblemObservationTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusProblemObservationNonMedicinalSupplyActivity() {
 		OperationsTestCase<FunctionalStatusProblemObservation> validateFunctionalStatusProblemObservationNonMedicinalSupplyActivityTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
 			"validateFunctionalStatusProblemObservationNonMedicinalSupplyActivity",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -150,7 +152,8 @@ public class FunctionalStatusProblemObservationTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusProblemObservationCaregiverCharacteristics() {
 		OperationsTestCase<FunctionalStatusProblemObservation> validateFunctionalStatusProblemObservationCaregiverCharacteristicsTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
 			"validateFunctionalStatusProblemObservationCaregiverCharacteristics",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -188,7 +191,8 @@ public class FunctionalStatusProblemObservationTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusProblemObservationAssessmentScaleObservation() {
 		OperationsTestCase<FunctionalStatusProblemObservation> validateFunctionalStatusProblemObservationAssessmentScaleObservationTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
 			"validateFunctionalStatusProblemObservationAssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_PROBLEM_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -261,8 +265,8 @@ public class FunctionalStatusProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationHasTextReference() {
 		OperationsTestCase<FunctionalStatusProblemObservation> validateProblemObservationHasTextReferenceTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
-			"validateProblemObservationHasTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationHasTextReference", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -299,8 +303,8 @@ public class FunctionalStatusProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationTextReferenceValue() {
 		OperationsTestCase<FunctionalStatusProblemObservation> validateProblemObservationTextReferenceValueTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
-			"validateProblemObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -339,7 +343,8 @@ public class FunctionalStatusProblemObservationTest extends CDAValidationTest {
 	public void testValidateProblemObservationHasTextReferenceValue() {
 		OperationsTestCase<FunctionalStatusProblemObservation> validateProblemObservationHasTextReferenceValueTestCase = new NarrativeReferenceTestCase<FunctionalStatusProblemObservation>(
 			"validateProblemObservationHasTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -420,8 +425,8 @@ public class FunctionalStatusProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationHasResolutionDate() {
 		OperationsTestCase<FunctionalStatusProblemObservation> validateProblemObservationHasResolutionDateTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
-			"validateProblemObservationHasResolutionDate",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationHasResolutionDate", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -454,8 +459,8 @@ public class FunctionalStatusProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationValueNullFlavor() {
 		OperationsTestCase<FunctionalStatusProblemObservation> validateProblemObservationValueNullFlavorTestCase = new OperationsTestCase<FunctionalStatusProblemObservation>(
-			"validateProblemObservationValueNullFlavor",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationValueNullFlavor", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

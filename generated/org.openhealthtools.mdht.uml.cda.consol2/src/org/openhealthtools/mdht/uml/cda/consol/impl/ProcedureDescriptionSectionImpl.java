@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureDescriptionSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureDescriptionSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Description Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -70,7 +68,8 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 */
 	@Override
 	public boolean validateProcedureDescriptionSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionCode(this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -91,7 +90,8 @@ public class ProcedureDescriptionSectionImpl extends SectionImpl implements Proc
 	 */
 	@Override
 	public boolean validateProcedureDescriptionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionText(this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionText(
+			this, diagnostics, context);
 	}
 
 	/**

@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusProblemObservation;
@@ -25,13 +25,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CognitiveStatusProblem
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Cognitive Status Problem Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class CognitiveStatusProblemObservationImpl extends ProblemObservationImpl implements
-		CognitiveStatusProblemObservation {
+public class CognitiveStatusProblemObservationImpl extends ProblemObservationImpl
+		implements CognitiveStatusProblemObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -135,7 +133,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationHasTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasTextReference(
 			this, diagnostics, context);
 	}
@@ -169,7 +168,8 @@ public class CognitiveStatusProblemObservationImpl extends ProblemObservationImp
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CognitiveStatusProblemObservationOperations.validateProblemObservationHasResolutionDate(
 			this, diagnostics, context);
 	}

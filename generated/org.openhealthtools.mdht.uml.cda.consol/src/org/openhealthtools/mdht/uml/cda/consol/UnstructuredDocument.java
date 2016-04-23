@@ -1,21 +1,16 @@
-/*******************************************************************************
- * Copyright (c) 2011, 2012 Sean Muir and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Sean Muir (JKM Software) - initial API and implementation
- *******************************************************************************/
+/**
+ */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,8 +110,7 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->excluding(null).patientRole->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentRecordTargetPatientRole2Id(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateUnstructuredDocumentRecordTargetPatientRole2Id(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -128,8 +122,7 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->excluding(null)->reject(patientRole->one(patientRole : cda::PatientRole | not patientRole.oclIsUndefined() and patientRole.oclIsKindOf(cda::PatientRole)))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentRecordTargetPatientRole2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateUnstructuredDocumentRecordTargetPatientRole2(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -141,8 +134,7 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentAuthorAssignedAuthor2Addr(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateUnstructuredDocumentAuthorAssignedAuthor2Addr(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -154,8 +146,7 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() = 1))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentAuthorAssignedAuthor2Telecom(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateUnstructuredDocumentAuthorAssignedAuthor2Telecom(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -179,8 +170,7 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((addr.oclIsUndefined() or addr.isNullFlavorUndefined()) implies (not addr.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -192,8 +182,7 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,8 +194,7 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((name.oclIsUndefined() or name.isNullFlavorUndefined()) implies (not name.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -218,8 +206,7 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((telecom.oclIsUndefined() or telecom.isNullFlavorUndefined()) implies (not telecom.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -231,8 +218,7 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null).assignedCustodian->excluding(null)->reject(representedCustodianOrganization->one(representedCustodianOrganization : cda::CustodianOrganization | not representedCustodianOrganization.oclIsUndefined() and representedCustodianOrganization.oclIsKindOf(cda::CustodianOrganization)))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -244,8 +230,7 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null)->reject(assignedCustodian->one(assignedCustodian : cda::AssignedCustodian | not assignedCustodian.oclIsUndefined() and assignedCustodian.oclIsKindOf(cda::AssignedCustodian)))'"
 	 * @generated
 	 */
-	boolean validateUnstructuredDocumentCustodianAssignedCustodian2(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateUnstructuredDocumentCustodianAssignedCustodian2(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -253,11 +238,10 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	public UnstructuredDocument init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public UnstructuredDocument init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public UnstructuredDocument init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // UnstructuredDocument

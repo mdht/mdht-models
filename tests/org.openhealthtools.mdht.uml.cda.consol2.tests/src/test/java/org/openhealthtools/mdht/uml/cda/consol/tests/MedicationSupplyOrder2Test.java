@@ -16,18 +16,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Product;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Product;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationSupplyOrder2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -63,7 +63,8 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 	public void testValidateMedicationSupplyOrder2ContainsMedicationInformation2() {
 		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrder2ContainsMedicationInformation2TestCase = new OperationsTestCase<MedicationSupplyOrder2>(
 			"validateMedicationSupplyOrder2ContainsMedicationInformation2",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER2_CONTAINS_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER2_CONTAINS_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -99,7 +100,8 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 	public void testValidateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2() {
 		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2TestCase = new OperationsTestCase<MedicationSupplyOrder2>(
 			"validateMedicationSupplyOrder2ContainsImmunizationMedicationInformation2",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -133,8 +135,8 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationSupplyOrderStatusCodeP() {
 		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderStatusCodePTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
-			"validateMedicationSupplyOrderStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationSupplyOrderStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -181,7 +183,8 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 	public void testValidateMedicationSupplyOrderContainsMedicationOrImmunization() {
 		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderContainsMedicationOrImmunizationTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
 			"validateMedicationSupplyOrderContainsMedicationOrImmunization",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -207,7 +210,8 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 					public void updateToPass(MedicationSupplyOrder2 target) {
 						target.init();
 						Product p = CDAFactory.eINSTANCE.createProduct();
-						p.setManufacturedProduct(ConsolFactory.eINSTANCE.createImmunizationMedicationInformation2().init());
+						p.setManufacturedProduct(
+							ConsolFactory.eINSTANCE.createImmunizationMedicationInformation2().init());
 						target.setProduct(p);
 					}
 				});
@@ -233,7 +237,8 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 	public void testValidateMedicationSupplyOrderInstructionInversionInd() {
 		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderInstructionInversionIndTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
 			"validateMedicationSupplyOrderInstructionInversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -268,8 +273,8 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationSupplyOrderTemplateId() {
 		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderTemplateIdTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
-			"validateMedicationSupplyOrderTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationSupplyOrderTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -302,8 +307,8 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationSupplyOrderStatusCode() {
 		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderStatusCodeTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
-			"validateMedicationSupplyOrderStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationSupplyOrderStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -344,8 +349,8 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationSupplyOrderRepeatNumber() {
 		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderRepeatNumberTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
-			"validateMedicationSupplyOrderRepeatNumber",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationSupplyOrderRepeatNumber", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -378,8 +383,8 @@ public class MedicationSupplyOrder2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationSupplyOrderInstructions() {
 		OperationsTestCase<MedicationSupplyOrder2> validateMedicationSupplyOrderInstructionsTestCase = new OperationsTestCase<MedicationSupplyOrder2>(
-			"validateMedicationSupplyOrderInstructions",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationSupplyOrderInstructions", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -16,19 +16,17 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PostprocedureDiagnosisSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Postprocedure Diagnosis Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 */
 	public boolean validatePostprocedureDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionTemplateId(
-			this, diagnostics, context);
+		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +66,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * @generated
 	 */
 	public boolean validatePostprocedureDiagnosisSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCodeP(
-			this, diagnostics, context);
+		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +75,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * @generated
 	 */
 	public boolean validatePostprocedureDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCode(
-			this, diagnostics, context);
+		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -89,8 +84,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * @generated
 	 */
 	public boolean validatePostprocedureDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionText(
-			this, diagnostics, context);
+		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +93,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * @generated
 	 */
 	public boolean validatePostprocedureDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionTitle(
-			this, diagnostics, context);
+		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +103,7 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 */
 	public boolean validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(
-			this, diagnostics, context);
+		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(this, diagnostics, context);
 	}
 
 	/**
@@ -129,16 +121,16 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	 * @generated
 	 */
 	public PostprocedureDiagnosisSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PostprocedureDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PostprocedureDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PostprocedureDiagnosisSectionImpl

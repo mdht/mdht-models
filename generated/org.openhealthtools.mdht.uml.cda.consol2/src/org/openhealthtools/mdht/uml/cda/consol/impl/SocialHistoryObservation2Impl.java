@@ -7,27 +7,20 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistoryObservation2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Social History Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -68,7 +61,8 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateSocialHistoryObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSocialHistoryObservationStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCodeP(
 			this, diagnostics, context);
 	}
@@ -125,7 +119,8 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSocialHistoryObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservationTemplateId(
 			this, diagnostics, context);
 	}
@@ -166,7 +161,8 @@ public class SocialHistoryObservation2Impl extends SocialHistoryObservationImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateSocialHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSocialHistoryObservationStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SocialHistoryObservation2Operations.validateSocialHistoryObservationStatusCode(
 			this, diagnostics, context);
 	}

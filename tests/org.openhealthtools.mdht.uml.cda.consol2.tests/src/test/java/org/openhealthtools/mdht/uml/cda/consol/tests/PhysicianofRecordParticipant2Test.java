@@ -15,16 +15,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Organization;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Organization;
-import org.openhealthtools.mdht.uml.cda.Person;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicianofRecordParticipant2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -93,7 +93,8 @@ public class PhysicianofRecordParticipant2Test extends CDAValidationTest {
 	public void testValidatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName() {
 		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationNameTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
 			"validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationName",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT2_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT2_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -131,7 +132,8 @@ public class PhysicianofRecordParticipant2Test extends CDAValidationTest {
 	public void testValidatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganization() {
 		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganizationTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
 			"validatePhysicianofRecordParticipant2AssignedEntityRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT2_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT2_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -167,8 +169,8 @@ public class PhysicianofRecordParticipant2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePhysicianofRecordParticipantTemplateId() {
 		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipantTemplateIdTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
-			"validatePhysicianofRecordParticipantTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePhysicianofRecordParticipantTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -202,7 +204,8 @@ public class PhysicianofRecordParticipant2Test extends CDAValidationTest {
 	public void testValidatePhysicianofRecordParticipantAssignedEntity() {
 		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipantAssignedEntityTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
 			"validatePhysicianofRecordParticipantAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -237,7 +240,8 @@ public class PhysicianofRecordParticipant2Test extends CDAValidationTest {
 	public void testValidatePhysicianofRecordParticipantAssignedEntityAssignedPersonName() {
 		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipantAssignedEntityAssignedPersonNameTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
 			"validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -274,7 +278,8 @@ public class PhysicianofRecordParticipant2Test extends CDAValidationTest {
 	public void testValidatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId() {
 		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderIdTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
 			"validatePhysicianofRecordParticipantAssignedEntityHasNationalProviderId",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -309,7 +314,8 @@ public class PhysicianofRecordParticipant2Test extends CDAValidationTest {
 	public void testValidatePhysicianofRecordParticipantAssignedEntityAssignedPerson() {
 		OperationsTestCase<PhysicianofRecordParticipant2> validatePhysicianofRecordParticipantAssignedEntityAssignedPersonTestCase = new OperationsTestCase<PhysicianofRecordParticipant2>(
 			"validatePhysicianofRecordParticipantAssignedEntityAssignedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

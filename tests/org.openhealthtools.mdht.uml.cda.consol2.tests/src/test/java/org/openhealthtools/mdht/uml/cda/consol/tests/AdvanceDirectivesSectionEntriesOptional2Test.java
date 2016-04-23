@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSectionEntriesOptional2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +53,8 @@ public class AdvanceDirectivesSectionEntriesOptional2Test extends CDAValidationT
 	public void testValidateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer() {
 		OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2> validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizerTestCase = new OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2>(
 			"validateAdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2_ADVANCE_DIRECTIVE_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -110,7 +111,8 @@ public class AdvanceDirectivesSectionEntriesOptional2Test extends CDAValidationT
 	public void testValidateAdvanceDirectivesSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2> validateAdvanceDirectivesSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2>(
 			"validateAdvanceDirectivesSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -144,7 +146,8 @@ public class AdvanceDirectivesSectionEntriesOptional2Test extends CDAValidationT
 	public void testValidateAdvanceDirectivesSectionEntriesOptionalCodeP() {
 		OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2> validateAdvanceDirectivesSectionEntriesOptionalCodePTestCase = new OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2>(
 			"validateAdvanceDirectivesSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -178,7 +181,8 @@ public class AdvanceDirectivesSectionEntriesOptional2Test extends CDAValidationT
 	public void testValidateAdvanceDirectivesSectionEntriesOptionalCode() {
 		OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2> validateAdvanceDirectivesSectionEntriesOptionalCodeTestCase = new OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2>(
 			"validateAdvanceDirectivesSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -220,7 +224,8 @@ public class AdvanceDirectivesSectionEntriesOptional2Test extends CDAValidationT
 	public void testValidateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation() {
 		OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2> validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservationTestCase = new OperationsTestCase<AdvanceDirectivesSectionEntriesOptional2>(
 			"validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

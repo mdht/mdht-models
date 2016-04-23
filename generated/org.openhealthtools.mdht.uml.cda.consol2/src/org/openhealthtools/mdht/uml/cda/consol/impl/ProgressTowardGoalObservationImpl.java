@@ -7,29 +7,21 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProgressTowardGoalObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProgressTowardGoalObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Progress Toward Goal Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -106,7 +98,8 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateProgressTowardGoalObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProgressTowardGoalObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationCodeP(
 			this, diagnostics, context);
 	}
@@ -152,7 +145,8 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateProgressTowardGoalObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProgressTowardGoalObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationValue(
 			this, diagnostics, context);
 	}
@@ -163,7 +157,8 @@ public class ProgressTowardGoalObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateProgressTowardGoalObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProgressTowardGoalObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProgressTowardGoalObservationOperations.validateProgressTowardGoalObservationValueP(
 			this, diagnostics, context);
 	}

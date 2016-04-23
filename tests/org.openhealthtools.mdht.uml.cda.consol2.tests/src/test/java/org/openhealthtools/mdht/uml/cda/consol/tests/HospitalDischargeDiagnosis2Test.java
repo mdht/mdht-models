@@ -16,14 +16,14 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalDischargeDiagnosis2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,8 +53,8 @@ public class HospitalDischargeDiagnosis2Test extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalDischargeDiagnosisCodeP() {
 		OperationsTestCase<HospitalDischargeDiagnosis2> validateHospitalDischargeDiagnosisCodePTestCase = new OperationsTestCase<HospitalDischargeDiagnosis2>(
-			"validateHospitalDischargeDiagnosisCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalDischargeDiagnosisCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -99,8 +99,8 @@ public class HospitalDischargeDiagnosis2Test extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalDischargeDiagnosisTemplateId() {
 		OperationsTestCase<HospitalDischargeDiagnosis2> validateHospitalDischargeDiagnosisTemplateIdTestCase = new OperationsTestCase<HospitalDischargeDiagnosis2>(
-			"validateHospitalDischargeDiagnosisTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalDischargeDiagnosisTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -175,7 +175,8 @@ public class HospitalDischargeDiagnosis2Test extends CDAValidationTest {
 	public void testValidateHospitalDischargeDiagnosisProblemObservation() {
 		OperationsTestCase<HospitalDischargeDiagnosis2> validateHospitalDischargeDiagnosisProblemObservationTestCase = new OperationsTestCase<HospitalDischargeDiagnosis2>(
 			"validateHospitalDischargeDiagnosisProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

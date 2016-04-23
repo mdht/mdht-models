@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer;
@@ -23,12 +23,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusResult
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Functional Status Result Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl implements FunctionalStatusResultOrganizer {
+public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl
+		implements FunctionalStatusResultOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -54,8 +53,8 @@ public class FunctionalStatusResultOrganizerImpl extends ResultOrganizerImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return FunctionalStatusResultOrganizerOperations.validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
 			this, diagnostics, context);
 	}

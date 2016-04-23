@@ -15,26 +15,19 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -130,7 +123,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -138,11 +132,12 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActTemplateId"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActTemplateId"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -189,7 +184,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -197,11 +193,12 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActClassCode"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActClassCode"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -248,7 +245,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -256,17 +254,19 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_MOOD_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActMoodCodeP"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_MOOD_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActMoodCodeP"),
+						new Object[] { patientReferralAct }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PatientReferralActMoodCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PatientReferralActMoodCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -288,9 +288,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and "
-			+ "let value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in "
-			+ "value = vocab::x_DocumentActMood::INT or value = vocab::x_DocumentActMood::RQO";
+	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and " +
+			"let value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in " +
+			"value = vocab::x_DocumentActMood::INT or value = vocab::x_DocumentActMood::RQO";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientReferralActMoodCode(PatientReferralAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Mood Code</em>}' invariant operation.
@@ -329,7 +329,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -337,11 +338,12 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActMoodCode"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActMoodCode"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -388,7 +390,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -396,11 +399,12 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActId"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ID,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActId"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -447,7 +451,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -455,17 +460,19 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActCodeP"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActCodeP"),
+						new Object[] { patientReferralAct }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PatientReferralActCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PatientReferralActCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -487,9 +494,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())";
+	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientReferralActCode(PatientReferralAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Code</em>}' invariant operation.
@@ -528,7 +535,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -536,11 +544,12 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActCode"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CODE,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActCode"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -556,8 +565,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
+	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientReferralActStatusCode(PatientReferralAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Status Code</em>}' invariant operation.
@@ -588,7 +597,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -596,11 +606,12 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActStatusCode"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActStatusCode"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -647,7 +658,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -655,11 +667,12 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActStatusCodeP"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActStatusCodeP"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -706,7 +719,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -714,11 +728,12 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEffectiveTime"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEffectiveTime"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -765,7 +780,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -773,11 +789,12 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PRIORITY_CODE,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActPriorityCode"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PRIORITY_CODE,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActPriorityCode"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -824,19 +841,22 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientReferralAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationship"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationship"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -883,19 +903,22 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientReferralAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PATIENT_REFERRAL_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActAuthorParticipation"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActAuthorParticipation"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -942,7 +965,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -950,11 +974,12 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_INDICATION2,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActIndication2"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_INDICATION2,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActIndication2"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -1001,7 +1026,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1009,11 +1035,12 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			patientReferralAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT,
-					ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActParticipant"),
-					new Object[] { patientReferralAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT,
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActParticipant"),
+						new Object[] { patientReferralAct }));
 			}
 
 			return false;
@@ -1060,24 +1087,28 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationClassCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActEntryRelationshipObservationClassCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1125,24 +1156,28 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationMoodCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActEntryRelationshipObservationMoodCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1190,29 +1225,34 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationCodeP"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActEntryRelationshipObservationCodeP"),
+							new Object[] { eObject }));
 				}
 
 				if (context != null) {
 					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PatientReferralActEntryRelationshipObservationCodeP");
+					Collection<Object> passToken = (Collection<Object>) context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.PatientReferralActEntryRelationshipObservationCodeP");
 					if (passToken == null) {
 						// anticipate a reasonably healthy model
 						passToken = new java.util.ArrayList<Object>(3);
@@ -1237,9 +1277,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = code.oclAsType(datatypes::CD) in "
-			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))";
+	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = code.oclAsType(datatypes::CD) in " +
+			"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientReferralActEntryRelationshipObservationCode(PatientReferralAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Code</em>}' invariant operation.
@@ -1270,19 +1310,23 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			Object passFilter = (context == null)
 					? null
-					: context.get("org.openhealthtools.mdht.uml.cda.consol.PatientReferralActEntryRelationshipObservationCodeP");
+					: context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.PatientReferralActEntryRelationshipObservationCodeP");
 			if (passFilter instanceof Collection<?>) {
 				// filter my query results
 				oclResultSet = new ArrayList<EObject>(oclResultSet);
@@ -1291,12 +1335,13 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActEntryRelationshipObservationCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1313,8 +1358,8 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((statusCode.oclIsUndefined() or statusCode.isNullFlavorUndefined()) implies (not statusCode.oclIsUndefined() and statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed'))";
+	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((statusCode.oclIsUndefined() or statusCode.isNullFlavorUndefined()) implies (not statusCode.oclIsUndefined() and statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientReferralActEntryRelationshipObservationStatusCode(PatientReferralAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Status Code</em>}' invariant operation.
@@ -1345,24 +1390,28 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationStatusCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActEntryRelationshipObservationStatusCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1410,24 +1459,28 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationStatusCodeP"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE_P,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActEntryRelationshipObservationStatusCodeP"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1475,29 +1528,34 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationPriorityCodeP"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE_P,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActEntryRelationshipObservationPriorityCodeP"),
+							new Object[] { eObject }));
 				}
 
 				if (context != null) {
 					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PatientReferralActEntryRelationshipObservationPriorityCodeP");
+					Collection<Object> passToken = (Collection<Object>) context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.PatientReferralActEntryRelationshipObservationPriorityCodeP");
 					if (passToken == null) {
 						// anticipate a reasonably healthy model
 						passToken = new java.util.ArrayList<Object>(3);
@@ -1522,9 +1580,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((priorityCode.oclIsUndefined() or priorityCode.isNullFlavorUndefined()) implies (not priorityCode.oclIsUndefined() and priorityCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = priorityCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.5.7' and (value.code = 'A' or value.code = 'CR' or value.code = 'CS' or value.code = 'CSP' or value.code = 'CSR' or value.code = 'EL' or value.code = 'EM' or value.code = 'P' or value.code = 'PRN' or value.code = 'R' or value.code = 'RR' or value.code = 'S' or value.code = 'T' or value.code = 'UD' or value.code = 'UR')))";
+	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((priorityCode.oclIsUndefined() or priorityCode.isNullFlavorUndefined()) implies (not priorityCode.oclIsUndefined() and priorityCode.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = priorityCode.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.5.7' and (value.code = 'A' or value.code = 'CR' or value.code = 'CS' or value.code = 'CSP' or value.code = 'CSR' or value.code = 'EL' or value.code = 'EM' or value.code = 'P' or value.code = 'PRN' or value.code = 'R' or value.code = 'RR' or value.code = 'S' or value.code = 'T' or value.code = 'UD' or value.code = 'UR')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientReferralActEntryRelationshipObservationPriorityCode(PatientReferralAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Priority Code</em>}' invariant operation.
@@ -1555,19 +1613,23 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			Object passFilter = (context == null)
 					? null
-					: context.get("org.openhealthtools.mdht.uml.cda.consol.PatientReferralActEntryRelationshipObservationPriorityCodeP");
+					: context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.PatientReferralActEntryRelationshipObservationPriorityCodeP");
 			if (passFilter instanceof Collection<?>) {
 				// filter my query results
 				oclResultSet = new ArrayList<EObject>(oclResultSet);
@@ -1576,12 +1638,13 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationPriorityCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActEntryRelationshipObservationPriorityCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1598,9 +1661,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '370985002' or value.code = '170941001' or value.code = '170935008' or value.code = '268528005' or value.code = '170939002' or value.code = '268529002' or value.code = '170936009' or value.code = '170937000' or value.code = '170940000'))))";
+	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '370985002' or value.code = '170941001' or value.code = '170935008' or value.code = '268528005' or value.code = '170939002' or value.code = '268529002' or value.code = '170936009' or value.code = '170937000' or value.code = '170940000'))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientReferralActEntryRelationshipObservationValue(PatientReferralAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Entry Relationship Observation Value</em>}' invariant operation.
@@ -1631,24 +1694,28 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationValue"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActEntryRelationshipObservationValue"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1696,24 +1763,28 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservationValueP"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActEntryRelationshipObservationValueP"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1761,24 +1832,28 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipTypeCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActEntryRelationshipTypeCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1826,24 +1901,28 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationshipObservation"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActEntryRelationshipObservation"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1891,29 +1970,34 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActParticipantParticipantRoleCodeP"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE_P,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActParticipantParticipantRoleCodeP"),
+							new Object[] { eObject }));
 				}
 
 				if (context != null) {
 					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PatientReferralActParticipantParticipantRoleCodeP");
+					Collection<Object> passToken = (Collection<Object>) context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.PatientReferralActParticipantParticipantRoleCodeP");
 					if (passToken == null) {
 						// anticipate a reasonably healthy model
 						passToken = new java.util.ArrayList<Object>(3);
@@ -1938,9 +2022,9 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).participantRole->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).participantRole->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = code.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientReferralActParticipantParticipantRoleCode(PatientReferralAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Referral Act Participant Participant Role Code</em>}' invariant operation.
@@ -1971,19 +2055,23 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			Object passFilter = (context == null)
 					? null
-					: context.get("org.openhealthtools.mdht.uml.cda.consol.PatientReferralActParticipantParticipantRoleCodeP");
+					: context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.PatientReferralActParticipantParticipantRoleCodeP");
 			if (passFilter instanceof Collection<?>) {
 				// filter my query results
 				oclResultSet = new ArrayList<EObject>(oclResultSet);
@@ -1992,12 +2080,13 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActParticipantParticipantRoleCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActParticipantParticipantRoleCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2045,23 +2134,27 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActParticipantTypeCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActParticipantTypeCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2109,24 +2202,28 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PATIENT_REFERRAL_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(patientReferralAct);
+		Object oclResult = VALIDATE_PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			patientReferralAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE,
-						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActParticipantParticipantRole"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE,
+							ConsolPlugin.INSTANCE.getString(
+								"PatientReferralActPatientReferralActParticipantParticipantRole"),
+							new Object[] { eObject }));
 				}
 
 			}

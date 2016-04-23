@@ -3,36 +3,28 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection;
 import org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.HealthStatusEvaluationsAndOutcomesSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Health Status Evaluations And Outcomes Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl implements
-		HealthStatusEvaluationsAndOutcomesSection {
+public class HealthStatusEvaluationsAndOutcomesSectionImpl extends SectionImpl
+		implements HealthStatusEvaluationsAndOutcomesSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

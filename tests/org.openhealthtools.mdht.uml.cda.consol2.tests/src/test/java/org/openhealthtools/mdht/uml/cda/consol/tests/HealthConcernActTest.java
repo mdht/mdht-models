@@ -16,22 +16,22 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Reference;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HealthConcernActOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
 
 /**
  * <!-- begin-user-doc -->
@@ -456,7 +456,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActHealthConcernActErRefr() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActHealthConcernActErRefrTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActHealthConcernActErRefr",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_HEALTH_CONCERN_ACT_ER_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_HEALTH_CONCERN_ACT_ER_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -494,7 +495,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActHealthConcernActErComp() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActHealthConcernActErCompTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActHealthConcernActErComp",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_HEALTH_CONCERN_ACT_ER_COMP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_HEALTH_CONCERN_ACT_ER_COMP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -532,7 +534,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActAssessmentScaleObservation() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActAssessmentScaleObservationTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActAssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -569,7 +572,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActFamilyHistoryOrganizer2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActFamilyHistoryOrganizer2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActFamilyHistoryOrganizer2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -605,8 +609,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActNutritionAssessment() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActNutritionAssessmentTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActNutritionAssessment",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActNutritionAssessment", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -642,8 +646,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActPregnancyObservation() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActPregnancyObservationTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActPregnancyObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActPregnancyObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -680,7 +684,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActCaregiverCharacteristics() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActCaregiverCharacteristicsTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActCaregiverCharacteristics",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -717,7 +722,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActCulturalAndReligiousObservation() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActCulturalAndReligiousObservationTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActCulturalAndReligiousObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -754,7 +760,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActCharacteristicsOfHomeEnvironment() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActCharacteristicsOfHomeEnvironmentTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActCharacteristicsOfHomeEnvironment",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -791,7 +798,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActNutritionalStatusObservation() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActNutritionalStatusObservationTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActNutritionalStatusObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -827,8 +835,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActEntryReferenceGeneral() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActEntryReferenceGeneralTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActEntryReferenceGeneral",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_ENTRY_REFERENCE_GENERAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActEntryReferenceGeneral", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_ENTRY_REFERENCE_GENERAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -865,8 +873,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActAuthorParticipation() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActAuthorParticipationTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -898,8 +906,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActSelfCareActivities() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActSelfCareActivitiesTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActSelfCareActivities",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActSelfCareActivities", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -971,7 +979,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActLongitudinalCareWoundObservation() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActLongitudinalCareWoundObservationTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActLongitudinalCareWoundObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_LONGITUDINAL_CARE_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_LONGITUDINAL_CARE_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1008,8 +1017,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActPriorityPreference() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActPriorityPreferenceTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActPriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActPriorityPreference", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1044,8 +1053,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActProblemObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActProblemObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActProblemObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActProblemObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1082,8 +1091,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActAllergyObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActAllergyObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActAllergyObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActAllergyObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1120,7 +1129,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActMentalStatusObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActMentalStatusObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActMentalStatusObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1158,7 +1168,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActSmokingStatusMeaningfulUse2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActSmokingStatusMeaningfulUse2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActSmokingStatusMeaningfulUse2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1194,8 +1205,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActEncounterDiagnosis2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActEncounterDiagnosis2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActEncounterDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActEncounterDiagnosis2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1233,7 +1244,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActFunctionalStatusObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActFunctionalStatusObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActFunctionalStatusObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1271,7 +1283,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActHospitalAdmissionDiagnosis2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActHospitalAdmissionDiagnosis2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActHospitalAdmissionDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1309,7 +1322,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActPostprocedureDiagnosis2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActPostprocedureDiagnosis2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActPostprocedureDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1346,8 +1360,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActPreoperativeDiagnosis2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActPreoperativeDiagnosis2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActPreoperativeDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActPreoperativeDiagnosis2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1384,8 +1398,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActReactionObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActReactionObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActReactionObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActReactionObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1422,8 +1436,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActResultObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActResultObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActResultObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActResultObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1461,7 +1475,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActSocialHistoryObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActSocialHistoryObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActSocialHistoryObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1499,7 +1514,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActSubstanceOrDeviceAllergyObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActSubstanceOrDeviceAllergyObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActSubstanceOrDeviceAllergyObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1574,8 +1590,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActVitalSignObservation2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActVitalSignObservation2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActVitalSignObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActVitalSignObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1613,7 +1629,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActProblemObservation2Support() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActProblemObservation2SupportTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActProblemObservation2Support",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PROBLEM_OBSERVATION2_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_PROBLEM_OBSERVATION2_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1650,8 +1667,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActResultOrganizer2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActResultOrganizer2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActResultOrganizer2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActResultOrganizer2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_RESULT_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1688,8 +1705,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActProblemConcernAct2() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActProblemConcernAct2TestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActProblemConcernAct2",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActProblemConcernAct2", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1759,8 +1776,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateHealthConcernActReferenceTypeCode() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActReferenceTypeCodeTestCase = new OperationsTestCase<HealthConcernAct>(
-			"validateHealthConcernActReferenceTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthConcernActReferenceTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1799,7 +1816,8 @@ public class HealthConcernActTest extends CDAValidationTest {
 	public void testValidateHealthConcernActReferenceExternalDocumentReference() {
 		OperationsTestCase<HealthConcernAct> validateHealthConcernActReferenceExternalDocumentReferenceTestCase = new OperationsTestCase<HealthConcernAct>(
 			"validateHealthConcernActReferenceExternalDocumentReference",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -3,32 +3,25 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusMeaningfulUse2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Smoking Status Meaningful Use2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImpl implements
-		SmokingStatusMeaningfulUse2 {
+public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImpl
+		implements SmokingStatusMeaningfulUse2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -85,7 +78,8 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 * @generated
 	 */
 	@Override
-	public boolean validateSmokingStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSmokingStatusObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationTemplateId(
 			this, diagnostics, context);
 	}

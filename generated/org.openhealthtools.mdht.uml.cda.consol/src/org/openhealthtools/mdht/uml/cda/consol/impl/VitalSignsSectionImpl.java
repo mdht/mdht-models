@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsSectionOpera
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Vital Signs Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -105,8 +103,7 @@ public class VitalSignsSectionImpl extends VitalSignsSectionEntriesOptionalImpl 
 	@Override
 	public boolean validateVitalSignsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsSectionOperations.validateVitalSignsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return VitalSignsSectionOperations.validateVitalSignsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -125,19 +122,17 @@ public class VitalSignsSectionImpl extends VitalSignsSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public VitalSignsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public VitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public VitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // VitalSignsSectionImpl

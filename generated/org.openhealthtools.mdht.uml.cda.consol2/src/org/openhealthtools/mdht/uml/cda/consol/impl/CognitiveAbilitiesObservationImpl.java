@@ -7,30 +7,23 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveAbilitiesObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.CognitiveAbilitiesObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Cognitive Abilities Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -107,7 +100,8 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateCognitiveAbilitiesObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCognitiveAbilitiesObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationCodeP(
 			this, diagnostics, context);
 	}
@@ -176,7 +170,8 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateCognitiveAbilitiesObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCognitiveAbilitiesObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationValue(
 			this, diagnostics, context);
 	}
@@ -187,7 +182,8 @@ public class CognitiveAbilitiesObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateCognitiveAbilitiesObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCognitiveAbilitiesObservationValueP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CognitiveAbilitiesObservationOperations.validateCognitiveAbilitiesObservationValueP(
 			this, diagnostics, context);
 	}

@@ -8,7 +8,7 @@
  * Contributors:
  *     Dan Brown (Audacious Inquiry) - initial API and implementation
  *     								 - modified VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP
- *     								   due to inline datatype OCL generation issue 								 
+ *     								   due to inline datatype OCL generation issue
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
@@ -105,7 +105,8 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -113,11 +114,12 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			unstructuredDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_RECORD_TARGET,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2RecordTarget"),
-					new Object[] { unstructuredDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_RECORD_TARGET,
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2RecordTarget"),
+						new Object[] { unstructuredDocument2 }));
 			}
 
 			return false;
@@ -164,7 +166,8 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -172,11 +175,12 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			unstructuredDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_CUSTODIAN,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2Custodian"),
-					new Object[] { unstructuredDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_CUSTODIAN,
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2Custodian"),
+						new Object[] { unstructuredDocument2 }));
 			}
 
 			return false;
@@ -223,7 +227,8 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -231,11 +236,12 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			unstructuredDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2Component"),
-					new Object[] { unstructuredDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT,
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2Component"),
+						new Object[] { unstructuredDocument2 }));
 			}
 
 			return false;
@@ -282,24 +288,28 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(unstructuredDocument2);
+		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			unstructuredDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2RecordTargetPatientRoleId"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID,
+							ConsolPlugin.INSTANCE.getString(
+								"UnstructuredDocument2UnstructuredDocument2RecordTargetPatientRoleId"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -347,24 +357,28 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(unstructuredDocument2);
+		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			unstructuredDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2RecordTargetPatientRole"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE,
+							ConsolPlugin.INSTANCE.getString(
+								"UnstructuredDocument2UnstructuredDocument2RecordTargetPatientRole"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -412,24 +426,28 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(unstructuredDocument2);
+		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			unstructuredDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION,
+							ConsolPlugin.INSTANCE.getString(
+								"UnstructuredDocument2UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -477,24 +495,28 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(unstructuredDocument2);
+		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			unstructuredDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2CustodianAssignedCustodian"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN,
+							ConsolPlugin.INSTANCE.getString(
+								"UnstructuredDocument2UnstructuredDocument2CustodianAssignedCustodian"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -542,24 +564,28 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(unstructuredDocument2);
+		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			unstructuredDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyEDMediaType"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE,
+							ConsolPlugin.INSTANCE.getString(
+								"UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyEDMediaType"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -607,24 +633,28 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(unstructuredDocument2);
+		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			unstructuredDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION,
+							ConsolPlugin.INSTANCE.getString(
+								"UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -672,24 +702,28 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(unstructuredDocument2);
+		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			unstructuredDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS,
+							ConsolPlugin.INSTANCE.getString(
+								"UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -737,24 +771,28 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(unstructuredDocument2);
+		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			unstructuredDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyText"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT,
+							ConsolPlugin.INSTANCE.getString(
+								"UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyText"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -802,24 +840,28 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(unstructuredDocument2);
+		Object oclResult = VALIDATE_UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			unstructuredDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY,
-						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBody"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY,
+							ConsolPlugin.INSTANCE.getString(
+								"UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBody"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -867,19 +909,22 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT2);
 			try {
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				unstructuredDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.UNSTRUCTURED_DOCUMENT2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("UnstructuredDocument2GeneralHeaderConstraintsTemplateId"),
-					new Object[] { unstructuredDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.UNSTRUCTURED_DOCUMENT2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2GeneralHeaderConstraintsTemplateId"),
+						new Object[] { unstructuredDocument2 }));
 			}
 
 			return false;

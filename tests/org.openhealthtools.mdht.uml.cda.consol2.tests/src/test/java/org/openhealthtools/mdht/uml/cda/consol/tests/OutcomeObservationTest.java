@@ -16,20 +16,20 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Reference;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.OutcomeObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
 
 /**
  * <!-- begin-user-doc -->
@@ -74,7 +74,8 @@ public class OutcomeObservationTest extends CDAValidationTest {
 	public void testValidateOutcomeObservationProgTowardGoalObsInversionIndIsTrue() {
 		OperationsTestCase<OutcomeObservation> validateOutcomeObservationProgTowardGoalObsInversionIndIsTrueTestCase = new OperationsTestCase<OutcomeObservation>(
 			"validateOutcomeObservationProgTowardGoalObsInversionIndIsTrue",
-			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -365,7 +366,8 @@ public class OutcomeObservationTest extends CDAValidationTest {
 	public void testValidateOutcomeObservationEntryReferenceGoalObs() {
 		OperationsTestCase<OutcomeObservation> validateOutcomeObservationEntryReferenceGoalObsTestCase = new OperationsTestCase<OutcomeObservation>(
 			"validateOutcomeObservationEntryReferenceGoalObs",
-			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -402,7 +404,8 @@ public class OutcomeObservationTest extends CDAValidationTest {
 	public void testValidateOutcomeObservationEntryReferenceInterventionAct() {
 		OperationsTestCase<OutcomeObservation> validateOutcomeObservationEntryReferenceInterventionActTestCase = new OperationsTestCase<OutcomeObservation>(
 			"validateOutcomeObservationEntryReferenceInterventionAct",
-			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -439,8 +442,8 @@ public class OutcomeObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateOutcomeObservationAuthorParticipation() {
 		OperationsTestCase<OutcomeObservation> validateOutcomeObservationAuthorParticipationTestCase = new OperationsTestCase<OutcomeObservation>(
-			"validateOutcomeObservationAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOutcomeObservationAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -473,7 +476,8 @@ public class OutcomeObservationTest extends CDAValidationTest {
 	public void testValidateOutcomeObservationProgressTowardGoalObservation() {
 		OperationsTestCase<OutcomeObservation> validateOutcomeObservationProgressTowardGoalObservationTestCase = new OperationsTestCase<OutcomeObservation>(
 			"validateOutcomeObservationProgressTowardGoalObservation",
-			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -542,8 +546,8 @@ public class OutcomeObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateOutcomeObservationEntryRelationship() {
 		OperationsTestCase<OutcomeObservation> validateOutcomeObservationEntryRelationshipTestCase = new OperationsTestCase<OutcomeObservation>(
-			"validateOutcomeObservationEntryRelationship",
-			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOutcomeObservationEntryRelationship", operationsForOCL.getOCLValue(
+				"VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -576,8 +580,8 @@ public class OutcomeObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateOutcomeObservationReferenceTypeCode() {
 		OperationsTestCase<OutcomeObservation> validateOutcomeObservationReferenceTypeCodeTestCase = new OperationsTestCase<OutcomeObservation>(
-			"validateOutcomeObservationReferenceTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOutcomeObservationReferenceTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -614,7 +618,8 @@ public class OutcomeObservationTest extends CDAValidationTest {
 	public void testValidateOutcomeObservationReferenceExternalDocumentReference() {
 		OperationsTestCase<OutcomeObservation> validateOutcomeObservationReferenceExternalDocumentReferenceTestCase = new OperationsTestCase<OutcomeObservation>(
 			"validateOutcomeObservationReferenceExternalDocumentReference",
-			operationsForOCL.getOCLValue("VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -16,14 +16,14 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PostprocedureDiagnosis2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -99,8 +99,8 @@ public class PostprocedureDiagnosis2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePostprocedureDiagnosisTemplateId() {
 		OperationsTestCase<PostprocedureDiagnosis2> validatePostprocedureDiagnosisTemplateIdTestCase = new OperationsTestCase<PostprocedureDiagnosis2>(
-			"validatePostprocedureDiagnosisTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_POSTPROCEDURE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePostprocedureDiagnosisTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -175,7 +175,8 @@ public class PostprocedureDiagnosis2Test extends CDAValidationTest {
 	public void testValidatePostprocedureDiagnosisProblemObservation() {
 		OperationsTestCase<PostprocedureDiagnosis2> validatePostprocedureDiagnosisProblemObservationTestCase = new OperationsTestCase<PostprocedureDiagnosis2>(
 			"validatePostprocedureDiagnosisProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

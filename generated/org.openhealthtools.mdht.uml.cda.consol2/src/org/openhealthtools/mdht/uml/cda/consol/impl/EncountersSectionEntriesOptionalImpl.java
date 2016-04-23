@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivities;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncountersSectionEntriesOptionalOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounters Section Entries Optional</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -71,7 +69,8 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalCode(
 			this, diagnostics, context);
 	}
@@ -106,7 +105,8 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	 * @generated
 	 */
 	@Override
-	public boolean validateEncountersSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncountersSectionEntriesOptionalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalText(
 			this, diagnostics, context);
 	}

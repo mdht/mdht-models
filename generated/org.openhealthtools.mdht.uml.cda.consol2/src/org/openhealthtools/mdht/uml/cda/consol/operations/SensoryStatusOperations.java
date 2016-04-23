@@ -10,26 +10,19 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.SensoryStatus;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -108,7 +101,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				VALIDATE_SENSORY_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SENSORY_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SENSORY_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -116,11 +110,12 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			sensoryStatus)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusTemplateId"),
-					new Object[] { sensoryStatus }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusTemplateId"),
+						new Object[] { sensoryStatus }));
 			}
 
 			return false;
@@ -167,7 +162,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				VALIDATE_SENSORY_STATUS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SENSORY_STATUS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SENSORY_STATUS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -175,11 +171,12 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			sensoryStatus)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusClassCode"),
-					new Object[] { sensoryStatus }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusClassCode"),
+						new Object[] { sensoryStatus }));
 			}
 
 			return false;
@@ -226,7 +223,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				VALIDATE_SENSORY_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SENSORY_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SENSORY_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -234,11 +232,12 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			sensoryStatus)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusMoodCode"),
-					new Object[] { sensoryStatus }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusMoodCode"),
+						new Object[] { sensoryStatus }));
 			}
 
 			return false;
@@ -285,23 +284,28 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				VALIDATE_SENSORY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SENSORY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SENSORY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sensoryStatus)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			sensoryStatus)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusCodeP"), new Object[] { sensoryStatus }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusCodeP"),
+						new Object[] { sensoryStatus }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.SensoryStatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.SensoryStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -323,9 +327,9 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SENSORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '47078008' or value.code = '405183003' or value.code = '373713005' or value.code = '397627001' or value.code = '397686008' or value.code = '397624008' or value.code = '128542002' or value.code = '285567008'))";
+	protected static final String VALIDATE_SENSORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '47078008' or value.code = '405183003' or value.code = '373713005' or value.code = '397627001' or value.code = '397686008' or value.code = '397624008' or value.code = '128542002' or value.code = '285567008'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSensoryStatusCode(SensoryStatus, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sensory Status Code</em>}' invariant operation.
@@ -364,17 +368,20 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				VALIDATE_SENSORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SENSORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SENSORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sensoryStatus)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusCode"), new Object[] { sensoryStatus }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusCode"),
+						new Object[] { sensoryStatus }));
 			}
 
 			return false;
@@ -390,8 +397,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SENSORY_STATUS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_SENSORY_STATUS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSensoryStatusStatusCode(SensoryStatus, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sensory Status Status Code</em>}' invariant operation.
@@ -422,7 +429,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				VALIDATE_SENSORY_STATUS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SENSORY_STATUS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SENSORY_STATUS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -430,11 +438,12 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			sensoryStatus)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusStatusCode"),
-					new Object[] { sensoryStatus }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusStatusCode"),
+						new Object[] { sensoryStatus }));
 			}
 
 			return false;
@@ -481,7 +490,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				VALIDATE_SENSORY_STATUS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SENSORY_STATUS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SENSORY_STATUS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -489,11 +499,12 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			sensoryStatus)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusStatusCodeP"),
-					new Object[] { sensoryStatus }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusStatusCodeP"),
+						new Object[] { sensoryStatus }));
 			}
 
 			return false;
@@ -540,7 +551,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				VALIDATE_SENSORY_STATUS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SENSORY_STATUS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SENSORY_STATUS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -548,11 +560,12 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			sensoryStatus)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusEffectiveTime"),
-					new Object[] { sensoryStatus }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusEffectiveTime"),
+						new Object[] { sensoryStatus }));
 			}
 
 			return false;
@@ -568,9 +581,9 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SENSORY_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_SENSORY_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSensoryStatusValue(SensoryStatus, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Sensory Status Value</em>}' invariant operation.
@@ -601,17 +614,20 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				VALIDATE_SENSORY_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SENSORY_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SENSORY_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sensoryStatus)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_VALUE,
-					ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusValue"), new Object[] { sensoryStatus }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_VALUE,
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusValue"),
+						new Object[] { sensoryStatus }));
 			}
 
 			return false;
@@ -658,17 +674,21 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				VALIDATE_SENSORY_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SENSORY_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SENSORY_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sensoryStatus)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			sensoryStatus)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusValueP"), new Object[] { sensoryStatus }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_VALUE_P,
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusValueP"),
+						new Object[] { sensoryStatus }));
 			}
 
 			return false;
@@ -715,19 +735,22 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				VALIDATE_SENSORY_STATUS_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SENSORY_STATUS_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SENSORY_STATUS_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			sensoryStatus)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SENSORY_STATUS_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				sensoryStatus)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_ASSESSMENT_SCALE_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusAssessmentScaleObservation"),
-					new Object[] { sensoryStatus }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_ASSESSMENT_SCALE_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusAssessmentScaleObservation"),
+						new Object[] { sensoryStatus }));
 			}
 
 			return false;
@@ -774,7 +797,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				VALIDATE_SENSORY_STATUS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SENSORY_STATUS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SENSORY_STATUS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -782,11 +806,12 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_SENSORY_STATUS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			sensoryStatus)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusAuthorParticipation"),
-					new Object[] { sensoryStatus }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusAuthorParticipation"),
+						new Object[] { sensoryStatus }));
 			}
 
 			return false;
@@ -833,7 +858,8 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_SENSORY_STATUS_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_SENSORY_STATUS_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_SENSORY_STATUS_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
@@ -845,10 +871,12 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusIVLTSLow"), new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_IVLTS_LOW,
+							ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusIVLTSLow"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -896,8 +924,10 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SENSORY_STATUS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_SENSORY_STATUS_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_SENSORY_STATUS_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_SENSORY_STATUS_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SENSORY_STATUS_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -908,11 +938,12 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusIVLTSHigh"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusIVLTSHigh"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -954,14 +985,16 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 				ConsolPackage.Literals.SENSORY_STATUS,
 				ConsolPackage.Literals.SENSORY_STATUS.getEAllOperations().get(65));
 			try {
-				GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_EXP);
+				GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY = helper.createQuery(
+					GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ASSESSMENT_SCALE_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<AssessmentScaleObservation> result = (Collection<AssessmentScaleObservation>) query.evaluate(sensoryStatus);
+		Collection<AssessmentScaleObservation> result = (Collection<AssessmentScaleObservation>) query.evaluate(
+			sensoryStatus);
 		return new BasicEList.UnmodifiableEList<AssessmentScaleObservation>(result.size(), result.toArray());
 	}
 

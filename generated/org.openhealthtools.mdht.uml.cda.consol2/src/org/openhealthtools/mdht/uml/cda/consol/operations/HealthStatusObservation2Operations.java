@@ -12,16 +12,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation2;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -96,7 +92,8 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_HEALTH_STATUS_OBSERVATION2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_OBSERVATION2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_STATUS_OBSERVATION2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_STATUS_OBSERVATION2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -104,11 +101,12 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_OBSERVATION2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			healthStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION2_ID,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservation2Id"),
-					new Object[] { healthStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION2_ID,
+						ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservation2Id"),
+						new Object[] { healthStatusObservation2 }));
 			}
 
 			return false;
@@ -134,7 +132,8 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_HEALTH_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -142,17 +141,19 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			healthStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationCodeP"),
-					new Object[] { healthStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationCodeP"),
+						new Object[] { healthStatusObservation2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -184,29 +185,34 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthStatusObservation2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				healthStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationStatusCodeP"),
-					new Object[] { healthStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationStatusCodeP"),
+						new Object[] { healthStatusObservation2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservationStatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservationStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservationStatusCodeP", passToken);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservationStatusCodeP", passToken);
 				}
 				passToken.add(healthStatusObservation2);
 			}
@@ -228,25 +234,30 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 	 */
 
 	public static boolean validateHealthStatusObservationHasTextReference(
-			HealthStatusObservation2 healthStatusObservation2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			HealthStatusObservation2 healthStatusObservation2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthStatusObservation2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				healthStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationHasTextReference"),
-					new Object[] { healthStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE,
+						ConsolPlugin.INSTANCE.getString(
+							"HealthStatusObservation2HealthStatusObservationHasTextReference"),
+						new Object[] { healthStatusObservation2 }));
 			}
 
 			return false;
@@ -266,27 +277,30 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 	 */
 
 	public static boolean validateHealthStatusObservationTextReferenceValue(
-			HealthStatusObservation2 healthStatusObservation2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			HealthStatusObservation2 healthStatusObservation2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthStatusObservation2)) {
+				healthStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationTextReferenceValue"),
-					new Object[] { healthStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE,
+						ConsolPlugin.INSTANCE.getString(
+							"HealthStatusObservation2HealthStatusObservationTextReferenceValue"),
+						new Object[] { healthStatusObservation2 }));
 			}
 
 			return false;
@@ -306,27 +320,30 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 	 */
 
 	public static boolean validateHealthStatusObservationHasTextReferenceValue(
-			HealthStatusObservation2 healthStatusObservation2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			HealthStatusObservation2 healthStatusObservation2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthStatusObservation2)) {
+				healthStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationHasTextReferenceValue"),
-					new Object[] { healthStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE,
+						ConsolPlugin.INSTANCE.getString(
+							"HealthStatusObservation2HealthStatusObservationHasTextReferenceValue"),
+						new Object[] { healthStatusObservation2 }));
 			}
 
 			return false;
@@ -373,7 +390,8 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -381,11 +399,12 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			healthStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationTemplateId"),
-					new Object[] { healthStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationTemplateId"),
+						new Object[] { healthStatusObservation2 }));
 			}
 
 			return false;
@@ -419,7 +438,8 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -427,11 +447,12 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			healthStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationCode"),
-					new Object[] { healthStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationCode"),
+						new Object[] { healthStatusObservation2 }));
 			}
 
 			return false;
@@ -552,9 +573,9 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '11323-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '11323-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHealthStatusObservationCode(HealthStatusObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Observation Code</em>}' invariant operation.
@@ -606,7 +627,8 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -614,11 +636,12 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			healthStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationText"),
-					new Object[] { healthStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_TEXT,
+						ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationText"),
+						new Object[] { healthStatusObservation2 }));
 			}
 
 			return false;
@@ -634,8 +657,8 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHealthStatusObservationStatusCode(HealthStatusObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Status Observation Status Code</em>}' invariant operation.
@@ -674,7 +697,8 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION2);
 			try {
-				VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -682,11 +706,12 @@ public class HealthStatusObservation2Operations extends HealthStatusObservationO
 		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			healthStatusObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationStatusCode"),
-					new Object[] { healthStatusObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_STATUS_OBSERVATION2__HEALTH_STATUS_OBSERVATION_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("HealthStatusObservation2HealthStatusObservationStatusCode"),
+						new Object[] { healthStatusObservation2 }));
 			}
 
 			return false;

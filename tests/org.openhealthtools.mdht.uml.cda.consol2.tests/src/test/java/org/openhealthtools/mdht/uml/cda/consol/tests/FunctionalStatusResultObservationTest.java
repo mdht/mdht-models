@@ -11,25 +11,25 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.ObservationRange;
+import org.eclipse.mdht.uml.cda.ReferenceRange;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.ObservationRange;
-import org.openhealthtools.mdht.uml.cda.ReferenceRange;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusResultObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -82,7 +82,8 @@ public class FunctionalStatusResultObservationTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusResultObservationValueDatatype() {
 		OperationsTestCase<FunctionalStatusResultObservation> validateFunctionalStatusResultObservationValueDatatypeTestCase = new OperationsTestCase<FunctionalStatusResultObservation>(
 			"validateFunctionalStatusResultObservationValueDatatype",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_VALUE_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_VALUE_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -151,7 +152,8 @@ public class FunctionalStatusResultObservationTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusResultObservationAuthor() {
 		OperationsTestCase<FunctionalStatusResultObservation> validateFunctionalStatusResultObservationAuthorTestCase = new OperationsTestCase<FunctionalStatusResultObservation>(
 			"validateFunctionalStatusResultObservationAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -185,7 +187,8 @@ public class FunctionalStatusResultObservationTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusResultObservationNonMedicinalSupplyActivity() {
 		OperationsTestCase<FunctionalStatusResultObservation> validateFunctionalStatusResultObservationNonMedicinalSupplyActivityTestCase = new OperationsTestCase<FunctionalStatusResultObservation>(
 			"validateFunctionalStatusResultObservationNonMedicinalSupplyActivity",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -222,7 +225,8 @@ public class FunctionalStatusResultObservationTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusResultObservationCaregiverCharacteristics() {
 		OperationsTestCase<FunctionalStatusResultObservation> validateFunctionalStatusResultObservationCaregiverCharacteristicsTestCase = new OperationsTestCase<FunctionalStatusResultObservation>(
 			"validateFunctionalStatusResultObservationCaregiverCharacteristics",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -260,7 +264,8 @@ public class FunctionalStatusResultObservationTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusResultObservationAssessmentScaleObservation() {
 		OperationsTestCase<FunctionalStatusResultObservation> validateFunctionalStatusResultObservationAssessmentScaleObservationTestCase = new OperationsTestCase<FunctionalStatusResultObservation>(
 			"validateFunctionalStatusResultObservationAssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -298,7 +303,8 @@ public class FunctionalStatusResultObservationTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusResultObservationReferenceRange() {
 		OperationsTestCase<FunctionalStatusResultObservation> validateFunctionalStatusResultObservationReferenceRangeTestCase = new OperationsTestCase<FunctionalStatusResultObservation>(
 			"validateFunctionalStatusResultObservationReferenceRange",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -332,7 +338,8 @@ public class FunctionalStatusResultObservationTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode() {
 		OperationsTestCase<FunctionalStatusResultObservation> validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCodeTestCase = new OperationsTestCase<FunctionalStatusResultObservation>(
 			"validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -374,7 +381,8 @@ public class FunctionalStatusResultObservationTest extends CDAValidationTest {
 	public void testValidateFunctionalStatusResultObservationReferenceRangeObservationRange() {
 		OperationsTestCase<FunctionalStatusResultObservation> validateFunctionalStatusResultObservationReferenceRangeObservationRangeTestCase = new OperationsTestCase<FunctionalStatusResultObservation>(
 			"validateFunctionalStatusResultObservationReferenceRangeObservationRange",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -484,8 +492,8 @@ public class FunctionalStatusResultObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateResultObservationTextReferenceValue() {
 		OperationsTestCase<FunctionalStatusResultObservation> validateResultObservationTextReferenceValueTestCase = new NarrativeReferenceTestCase<FunctionalStatusResultObservation>(
-			"validateResultObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -905,8 +913,8 @@ public class FunctionalStatusResultObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateResultObservationInterpretationCode() {
 		OperationsTestCase<FunctionalStatusResultObservation> validateResultObservationInterpretationCodeTestCase = new OperationsTestCase<FunctionalStatusResultObservation>(
-			"validateResultObservationInterpretationCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationInterpretationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -975,8 +983,8 @@ public class FunctionalStatusResultObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateResultObservationTargetSiteCode() {
 		OperationsTestCase<FunctionalStatusResultObservation> validateResultObservationTargetSiteCodeTestCase = new OperationsTestCase<FunctionalStatusResultObservation>(
-			"validateResultObservationTargetSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultObservationTargetSiteCode", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

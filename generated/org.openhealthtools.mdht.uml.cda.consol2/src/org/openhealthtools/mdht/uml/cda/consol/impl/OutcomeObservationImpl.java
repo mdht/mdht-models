@@ -7,31 +7,24 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
 import org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.ProgressTowardGoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.OutcomeObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Outcome Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -191,7 +184,8 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOutcomeObservationEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOutcomeObservationEntryRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationEntryRelationship(this, diagnostics, context);
 	}
 
@@ -200,7 +194,8 @@ public class OutcomeObservationImpl extends ObservationImpl implements OutcomeOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOutcomeObservationReferenceTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOutcomeObservationReferenceTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OutcomeObservationOperations.validateOutcomeObservationReferenceTypeCode(this, diagnostics, context);
 	}
 

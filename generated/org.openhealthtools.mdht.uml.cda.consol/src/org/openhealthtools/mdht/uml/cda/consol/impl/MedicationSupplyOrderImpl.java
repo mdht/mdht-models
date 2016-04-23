@@ -16,19 +16,17 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SupplyImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationSupplyOrderOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SupplyImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Supply Order</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 */
 	public boolean validateMedicationSupplyOrderInstructionInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructionInversionInd(
-			this, diagnostics, context);
+		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructionInversionInd(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +67,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 */
 	public boolean validateMedicationSupplyOrderEffectiveTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderEffectiveTimeHigh(
-			this, diagnostics, context);
+		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderEffectiveTimeHigh(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +77,7 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 */
 	public boolean validateMedicationSupplyOrderContainsMedicationOrImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderContainsMedicationOrImmunization(
-			this, diagnostics, context);
+		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderContainsMedicationOrImmunization(this, diagnostics, context);
 	}
 
 	/**
@@ -190,16 +185,16 @@ public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationS
 	 * @generated
 	 */
 	public MedicationSupplyOrder init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationSupplyOrder init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MedicationSupplyOrder init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationSupplyOrderImpl

@@ -16,19 +16,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Performer2;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Performer2;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedProcedure2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentProcedureMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -76,7 +75,8 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	public void testValidatePlannedProcedure2CodeFromLoincOrSnomed() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2CodeFromLoincOrSnomedTestCase = new OperationsTestCase<PlannedProcedure2>(
 			"validatePlannedProcedure2CodeFromLoincOrSnomed",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_LOINC_OR_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_LOINC_OR_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -123,8 +123,8 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedProcedure2CodeFromCptOrIcd() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2CodeFromCptOrIcdTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2CodeFromCptOrIcd",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_CPT_OR_ICD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedProcedure2CodeFromCptOrIcd", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_CODE_FROM_CPT_OR_ICD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			private static final String CPT = "2.16.840.1.113883.6.12", ICD = "2.16.840.1.113883.6.4";
@@ -174,7 +174,8 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	public void testValidatePlannedProcedure2Instruction2InversionInd() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2Instruction2InversionIndTestCase = new OperationsTestCase<PlannedProcedure2>(
 			"validatePlannedProcedure2Instruction2InversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -383,8 +384,8 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedProcedure2TargetSiteCodeP() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2TargetSiteCodePTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2TargetSiteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedProcedure2TargetSiteCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -417,8 +418,8 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedProcedure2TargetSiteCode() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2TargetSiteCodeTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2TargetSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedProcedure2TargetSiteCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -494,8 +495,8 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedProcedure2AuthorParticipation() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2AuthorParticipationTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedProcedure2AuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -527,8 +528,8 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedProcedure2PriorityPreference() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2PriorityPreferenceTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2PriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedProcedure2PriorityPreference", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -635,8 +636,8 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedProcedure2PlannedCoverage() {
 		OperationsTestCase<PlannedProcedure2> validatePlannedProcedure2PlannedCoverageTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlannedProcedure2PlannedCoverage",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_PROCEDURE2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedProcedure2PlannedCoverage", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_PROCEDURE2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -720,7 +721,8 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	public void testValidatePlanOfCareActivityProcedureTemplateId() {
 		OperationsTestCase<PlannedProcedure2> validatePlanOfCareActivityProcedureTemplateIdTestCase = new OperationsTestCase<PlannedProcedure2>(
 			"validatePlanOfCareActivityProcedureTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -753,8 +755,8 @@ public class PlannedProcedure2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlanOfCareActivityProcedureMoodCode() {
 		OperationsTestCase<PlannedProcedure2> validatePlanOfCareActivityProcedureMoodCodeTestCase = new OperationsTestCase<PlannedProcedure2>(
-			"validatePlanOfCareActivityProcedureMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivityProcedureMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

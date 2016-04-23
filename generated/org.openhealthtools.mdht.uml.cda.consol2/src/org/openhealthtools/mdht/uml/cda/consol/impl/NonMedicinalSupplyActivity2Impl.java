@@ -7,20 +7,15 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
-
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NonMedicinalSupplyActivity2Operations;
 
@@ -28,13 +23,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.NonMedicinalSupplyActi
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Non Medicinal Supply Activity2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityImpl implements
-		NonMedicinalSupplyActivity2 {
+public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityImpl
+		implements NonMedicinalSupplyActivity2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -114,7 +107,8 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 * @generated
 	 */
 	@Override
-	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityTemplateId(
 			this, diagnostics, context);
 	}
@@ -125,7 +119,8 @@ public class NonMedicinalSupplyActivity2Impl extends NonMedicinalSupplyActivityI
 	 * @generated
 	 */
 	@Override
-	public boolean validateNonMedicinalSupplyActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNonMedicinalSupplyActivityStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NonMedicinalSupplyActivity2Operations.validateNonMedicinalSupplyActivityStatusCode(
 			this, diagnostics, context);
 	}

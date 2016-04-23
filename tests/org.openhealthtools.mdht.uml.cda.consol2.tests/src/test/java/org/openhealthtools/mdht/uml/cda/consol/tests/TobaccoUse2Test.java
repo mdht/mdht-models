@@ -16,15 +16,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.IVXB_TS;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.TobaccoUse2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -122,14 +122,15 @@ public class TobaccoUse2Test extends CDAValidationTest {
 	* This constraint is being overridden as it has been removed in v2 and should never fire
 	* It always returns true and there is no reason to test it
 	* In this case, as per errata 596:
-	* For backwards compatibility, R1.1 was allowed to use its original code or the R2.0/R2.1 code 
-	* where as R2.1 can only use the new code - so we are removing the either or option 
+	* For backwards compatibility, R1.1 was allowed to use its original code or the R2.0/R2.1 code
+	* where as R2.1 can only use the new code - so we are removing the either or option
 	*/
 	@Ignore
 	public void testValidateTobaccoUse2CDCodeTermAssertionOrLoinc() {
 		OperationsTestCase<TobaccoUse2> validateTobaccoUse2CDCodeTermAssertionOrLoincTestCase = new OperationsTestCase<TobaccoUse2>(
 			"validateTobaccoUse2CDCodeTermAssertionOrLoinc",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TOBACCO_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -270,7 +271,8 @@ public class TobaccoUse2Test extends CDAValidationTest {
 	public void testValidateTobaccoUseCodeP() {
 		OperationsTestCase<TobaccoUse2> validateTobaccoUseCodePTestCase = new OperationsTestCase<TobaccoUse2>(
 			"validateTobaccoUseCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(TobaccoUse2 target) {

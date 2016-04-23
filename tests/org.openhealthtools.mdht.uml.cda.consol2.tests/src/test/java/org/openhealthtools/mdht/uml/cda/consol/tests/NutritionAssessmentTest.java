@@ -16,16 +16,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NutritionAssessmentOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -63,7 +63,8 @@ public class NutritionAssessmentTest extends CDAValidationTest {
 	public void testValidateNutritionAssessmentValueOfTypeCDIsFromSnomed() {
 		OperationsTestCase<NutritionAssessment> validateNutritionAssessmentValueOfTypeCDIsFromSnomedTestCase = new OperationsTestCase<NutritionAssessment>(
 			"validateNutritionAssessmentValueOfTypeCDIsFromSnomed",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -386,8 +387,8 @@ public class NutritionAssessmentTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionAssessmentEffectiveTime() {
 		OperationsTestCase<NutritionAssessment> validateNutritionAssessmentEffectiveTimeTestCase = new OperationsTestCase<NutritionAssessment>(
-			"validateNutritionAssessmentEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionAssessmentEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -460,8 +461,8 @@ public class NutritionAssessmentTest extends CDAValidationTest {
 	@Test
 	public void testValidateNutritionAssessmentAuthorParticipation() {
 		OperationsTestCase<NutritionAssessment> validateNutritionAssessmentAuthorParticipationTestCase = new OperationsTestCase<NutritionAssessment>(
-			"validateNutritionAssessmentAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNutritionAssessmentAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

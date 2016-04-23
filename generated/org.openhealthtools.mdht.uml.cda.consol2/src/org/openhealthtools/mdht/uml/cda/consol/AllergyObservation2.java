@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -15,7 +11,7 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -188,7 +184,6 @@ public interface AllergyObservation2 extends AllergyObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AllergyObservation2 init();
 
 	/**
@@ -196,6 +191,5 @@ public interface AllergyObservation2 extends AllergyObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AllergyObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AllergyObservation2

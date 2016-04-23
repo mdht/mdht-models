@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,9 +10,9 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.Observation;
+import org.eclipse.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +35,8 @@ public interface CharacteristicsOfHomeEnvironment extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.109\')'"
 	 * @generated
 	 */
-	boolean validateCharacteristicsOfHomeEnvironmentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCharacteristicsOfHomeEnvironmentTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -111,7 +108,8 @@ public interface CharacteristicsOfHomeEnvironment extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
 	 * @generated
 	 */
-	boolean validateCharacteristicsOfHomeEnvironmentStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCharacteristicsOfHomeEnvironmentStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -123,7 +121,8 @@ public interface CharacteristicsOfHomeEnvironment extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateCharacteristicsOfHomeEnvironmentStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCharacteristicsOfHomeEnvironmentStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

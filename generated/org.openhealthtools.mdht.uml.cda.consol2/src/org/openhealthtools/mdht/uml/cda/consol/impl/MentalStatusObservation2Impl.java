@@ -3,31 +3,23 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.MentalStatusObservation2Operations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Mental Status Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -67,8 +59,10 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMentalStatusObservation2TemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2TemplateId(this, diagnostics, context);
+	public boolean validateMentalStatusObservation2TemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2TemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -121,8 +115,10 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMentalStatusObservation2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MentalStatusObservation2Operations.validateMentalStatusObservation2StatusCode(this, diagnostics, context);
+	public boolean validateMentalStatusObservation2StatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MentalStatusObservation2Operations.validateMentalStatusObservation2StatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -130,7 +126,8 @@ public class MentalStatusObservation2Impl extends ObservationImpl implements Men
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMentalStatusObservation2StatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMentalStatusObservation2StatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MentalStatusObservation2Operations.validateMentalStatusObservation2StatusCodeP(
 			this, diagnostics, context);
 	}

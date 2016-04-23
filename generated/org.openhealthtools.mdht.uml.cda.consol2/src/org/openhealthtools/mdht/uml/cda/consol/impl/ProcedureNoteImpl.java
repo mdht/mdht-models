@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
@@ -53,8 +53,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureNoteOperation
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Note</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -245,7 +243,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureNoteChiefComplaintSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureNoteChiefComplaintSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteChiefComplaintSection(this, diagnostics, context);
 	}
 
@@ -299,7 +298,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureNoteMedicalHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureNoteMedicalHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteMedicalHistorySection(this, diagnostics, context);
 	}
 
@@ -342,7 +342,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureNotePlannedProcedureSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureNotePlannedProcedureSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNotePlannedProcedureSection(this, diagnostics, context);
 	}
 
@@ -410,7 +411,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	@Override
 	public boolean validateProcedureNoteProceduresSectionEntriesOptional(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteProceduresSectionEntriesOptional(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteProceduresSectionEntriesOptional(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -419,7 +421,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureNoteReasonForVisitSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureNoteReasonForVisitSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteReasonForVisitSection(this, diagnostics, context);
 	}
 
@@ -429,7 +432,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureNoteReviewOfSystemsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureNoteReviewOfSystemsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteReviewOfSystemsSection(this, diagnostics, context);
 	}
 
@@ -699,7 +703,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	@Override
 	public boolean validateProcedureNoteDocumentationOfServiceEvent1Code(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1Code(this, diagnostics, context);
+		return ProcedureNoteOperations.validateProcedureNoteDocumentationOfServiceEvent1Code(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -1023,7 +1028,8 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 

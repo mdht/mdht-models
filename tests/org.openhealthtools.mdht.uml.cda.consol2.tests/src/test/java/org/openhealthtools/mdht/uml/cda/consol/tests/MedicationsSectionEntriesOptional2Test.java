@@ -16,12 +16,12 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsSectionEntriesOptional2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,7 +55,8 @@ public class MedicationsSectionEntriesOptional2Test extends CDAValidationTest {
 	public void testValidateMedicationsSectionEntriesOptionalAbsenceOfMedications() {
 		OperationsTestCase<MedicationsSectionEntriesOptional2> validateMedicationsSectionEntriesOptionalAbsenceOfMedicationsTestCase = new OperationsTestCase<MedicationsSectionEntriesOptional2>(
 			"validateMedicationsSectionEntriesOptionalAbsenceOfMedications",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ABSENCE_OF_MEDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ABSENCE_OF_MEDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -89,7 +90,8 @@ public class MedicationsSectionEntriesOptional2Test extends CDAValidationTest {
 	public void testValidateMedicationsSectionEntriesOptionalCodeP() {
 		OperationsTestCase<MedicationsSectionEntriesOptional2> validateMedicationsSectionEntriesOptionalCodePTestCase = new OperationsTestCase<MedicationsSectionEntriesOptional2>(
 			"validateMedicationsSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -135,7 +137,8 @@ public class MedicationsSectionEntriesOptional2Test extends CDAValidationTest {
 	public void testValidateMedicationsSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<MedicationsSectionEntriesOptional2> validateMedicationsSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<MedicationsSectionEntriesOptional2>(
 			"validateMedicationsSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -168,8 +171,8 @@ public class MedicationsSectionEntriesOptional2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationsSectionEntriesOptionalCode() {
 		OperationsTestCase<MedicationsSectionEntriesOptional2> validateMedicationsSectionEntriesOptionalCodeTestCase = new OperationsTestCase<MedicationsSectionEntriesOptional2>(
-			"validateMedicationsSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationsSectionEntriesOptionalCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -210,7 +213,8 @@ public class MedicationsSectionEntriesOptional2Test extends CDAValidationTest {
 	public void testValidateMedicationsSectionEntriesOptionalMedicationActivity() {
 		OperationsTestCase<MedicationsSectionEntriesOptional2> validateMedicationsSectionEntriesOptionalMedicationActivityTestCase = new OperationsTestCase<MedicationsSectionEntriesOptional2>(
 			"validateMedicationsSectionEntriesOptionalMedicationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

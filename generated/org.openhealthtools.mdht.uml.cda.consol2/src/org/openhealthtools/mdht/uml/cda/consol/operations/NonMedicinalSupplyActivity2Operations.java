@@ -12,21 +12,15 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
-
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -101,21 +95,23 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
-				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity2)) {
+				nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2InversionInd"),
-					new Object[] { nonMedicinalSupplyActivity2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND,
+						ConsolPlugin.INSTANCE.getString(
+							"NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2InversionInd"),
+						new Object[] { nonMedicinalSupplyActivity2 }));
 			}
 
 			return false;
@@ -163,26 +159,30 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
-				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCodeP"),
-					new Object[] { nonMedicinalSupplyActivity2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCodeP"),
+						new Object[] { nonMedicinalSupplyActivity2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivityStatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivityStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -237,20 +237,23 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
-				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2"),
-					new Object[] { nonMedicinalSupplyActivity2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2"),
+						new Object[] { nonMedicinalSupplyActivity2 }));
 			}
 
 			return false;
@@ -382,19 +385,23 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
-				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityTemplateId"),
-					new Object[] { nonMedicinalSupplyActivity2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"NonMedicinalSupplyActivity2NonMedicinalSupplyActivityTemplateId"),
+						new Object[] { nonMedicinalSupplyActivity2 }));
 			}
 
 			return false;
@@ -410,9 +417,9 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "
-			+ "value.code = 'normal' or value.code = 'aborted' or value.code = 'active' or value.code = 'cancelled' or value.code = 'completed' or value.code = 'held' or value.code = 'new' or value.code = 'suspended' or value.code = 'nullified' or value.code = 'obsolete')";
+	protected static final String VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " +
+			"value.code = 'normal' or value.code = 'aborted' or value.code = 'active' or value.code = 'cancelled' or value.code = 'completed' or value.code = 'held' or value.code = 'new' or value.code = 'suspended' or value.code = 'nullified' or value.code = 'obsolete')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNonMedicinalSupplyActivityStatusCode(NonMedicinalSupplyActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Medicinal Supply Activity Status Code</em>}' invariant operation.
@@ -452,19 +459,23 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
-				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCode"),
-					new Object[] { nonMedicinalSupplyActivity2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCode"),
+						new Object[] { nonMedicinalSupplyActivity2 }));
 			}
 
 			return false;
@@ -512,21 +523,23 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY2);
 			try {
-				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonMedicinalSupplyActivity2)) {
+				nonMedicinalSupplyActivity2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE,
-					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivity2NonMedicinalSupplyActivityProductInstance"),
-					new Object[] { nonMedicinalSupplyActivity2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE,
+						ConsolPlugin.INSTANCE.getString(
+							"NonMedicinalSupplyActivity2NonMedicinalSupplyActivityProductInstance"),
+						new Object[] { nonMedicinalSupplyActivity2 }));
 			}
 
 			return false;

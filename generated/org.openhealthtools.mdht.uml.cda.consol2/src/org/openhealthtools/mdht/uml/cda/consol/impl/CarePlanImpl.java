@@ -7,16 +7,12 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.CarePlan;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GoalsSection;
@@ -29,8 +25,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CarePlanOperations;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Care Plan</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -380,7 +374,8 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 * @generated
 	 */
 	@Override
-	public boolean validateCarePlanAuthenticatorSignatureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCarePlanAuthenticatorSignatureCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CarePlanOperations.validateCarePlanAuthenticatorSignatureCode(this, diagnostics, context);
 	}
 
@@ -400,7 +395,8 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 * @generated
 	 */
 	@Override
-	public boolean validateCarePlanAuthenticatorAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCarePlanAuthenticatorAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CarePlanOperations.validateCarePlanAuthenticatorAssignedEntity(this, diagnostics, context);
 	}
 
@@ -513,8 +509,8 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 * @generated
 	 */
 	@Override
-	public boolean validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CarePlanOperations.validateCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName(
 			this, diagnostics, context);
 	}
@@ -561,7 +557,8 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 * @generated
 	 */
 	@Override
-	public boolean validateCarePlanParticipantCaregiverTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCarePlanParticipantCaregiverTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CarePlanOperations.validateCarePlanParticipantCaregiverTypeCode(this, diagnostics, context);
 	}
 
@@ -693,7 +690,8 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 * @generated
 	 */
 	@Override
-	public boolean validateCarePlanDocumentationOfServiceEvent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCarePlanDocumentationOfServiceEvent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CarePlanOperations.validateCarePlanDocumentationOfServiceEvent(this, diagnostics, context);
 	}
 
@@ -716,7 +714,8 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	@Override
 	public boolean validateCarePlanRelatedDocumentParentDocumentVersionNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CarePlanOperations.validateCarePlanRelatedDocumentParentDocumentVersionNumber(this, diagnostics, context);
+		return CarePlanOperations.validateCarePlanRelatedDocumentParentDocumentVersionNumber(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -818,7 +817,8 @@ public class CarePlanImpl extends USRealmHeader2Impl implements CarePlan {
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CarePlanOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 

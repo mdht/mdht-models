@@ -7,29 +7,22 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ResultObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultOrganizer2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Organizer2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -69,7 +62,8 @@ public class ResultOrganizer2Impl extends ResultOrganizerImpl implements ResultO
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultOrganizer2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultOrganizer2AuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResultOrganizer2Operations.validateResultOrganizer2AuthorParticipation(this, diagnostics, context);
 	}
 

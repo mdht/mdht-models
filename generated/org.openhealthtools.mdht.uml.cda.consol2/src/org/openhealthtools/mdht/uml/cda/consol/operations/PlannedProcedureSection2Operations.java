@@ -14,21 +14,15 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection2;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -85,7 +79,8 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 	 * @generated
 	 */
 
-	public static EList<PlannedProcedure2> getConsolPlannedProcedure2s(PlannedProcedureSection2 plannedProcedureSection2) {
+	public static EList<PlannedProcedure2> getConsolPlannedProcedure2s(
+			PlannedProcedureSection2 plannedProcedureSection2) {
 		if (GET_CONSOL_PLANNED_PROCEDURE2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -142,7 +137,8 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION2);
 			try {
-				VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -150,11 +146,12 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedProcedureSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionTemplateId"),
-					new Object[] { plannedProcedureSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionTemplateId"),
+						new Object[] { plannedProcedureSection2 }));
 			}
 
 			return false;
@@ -201,7 +198,8 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION2);
 			try {
-				VALIDATE_PLANNED_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -209,17 +207,19 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedProcedureSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionCodeP"),
-					new Object[] { plannedProcedureSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionCodeP"),
+						new Object[] { plannedProcedureSection2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSectionCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -241,9 +241,9 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '59772-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '59772-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedProcedureSectionCode(PlannedProcedureSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Procedure Section Code</em>}' invariant operation.
@@ -282,7 +282,8 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION2);
 			try {
-				VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -290,11 +291,12 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedProcedureSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionCode"),
-					new Object[] { plannedProcedureSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionCode"),
+						new Object[] { plannedProcedureSection2 }));
 			}
 
 			return false;
@@ -335,27 +337,30 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 	 */
 
 	public static boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(
-			PlannedProcedureSection2 plannedProcedureSection2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			PlannedProcedureSection2 plannedProcedureSection2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION2);
 			try {
-				VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedProcedureSection2)) {
+				plannedProcedureSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE,
-					ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionPlanOfCareActivityProcedure"),
-					new Object[] { plannedProcedureSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedProcedureSection2PlannedProcedureSectionPlanOfCareActivityProcedure"),
+						new Object[] { plannedProcedureSection2 }));
 			}
 
 			return false;

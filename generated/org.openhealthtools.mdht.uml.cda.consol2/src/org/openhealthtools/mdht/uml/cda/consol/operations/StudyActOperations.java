@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -25,7 +26,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.SeriesAct;
 import org.openhealthtools.mdht.uml.cda.consol.StudyAct;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -103,17 +103,19 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_IDS_HAVE_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_IDS_HAVE_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_IDS_HAVE_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_IDS_HAVE_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_IDS_HAVE_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_IDS_HAVE_ROOT,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActIdsHaveRoot"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.STUDY_ACT__STUDY_ACT_IDS_HAVE_ROOT,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActIdsHaveRoot"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -160,17 +162,19 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_NO_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_NO_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_NO_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_NO_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_NO_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_NO_ID_EXTENSION,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActNoIdExtension"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.STUDY_ACT__STUDY_ACT_NO_ID_EXTENSION,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActNoIdExtension"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -217,17 +221,19 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActTextReference"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT_REFERENCE,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActTextReference"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -274,7 +280,8 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -282,10 +289,12 @@ public class StudyActOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActTextReferenceValue"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT_REFERENCE_VALUE,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActTextReferenceValue"),
+						new Object[] { studyAct }));
 			}
 
 			return false;
@@ -332,17 +341,19 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActReferenceValue"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.STUDY_ACT__STUDY_ACT_REFERENCE_VALUE,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActReferenceValue"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -389,17 +400,19 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActTemplateId"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.STUDY_ACT__STUDY_ACT_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActTemplateId"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -446,17 +459,19 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActClassCode"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.STUDY_ACT__STUDY_ACT_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActClassCode"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -503,17 +518,19 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActMoodCode"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.STUDY_ACT__STUDY_ACT_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActMoodCode"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -553,22 +570,25 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static boolean validateStudyActId(StudyAct studyAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateStudyActId(StudyAct studyAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActId"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_ID,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActId"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -584,9 +604,9 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '113014' and value.codeSystem = '1.2.840.10008.2.16.4')";
+	protected static final String VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '113014' and value.codeSystem = '1.2.840.10008.2.16.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateStudyActCode(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Code</em>}' invariant operation.
@@ -617,16 +637,18 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActCode"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_CODE,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActCode"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -673,17 +695,19 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActEffectiveTime"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.STUDY_ACT__STUDY_ACT_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActEffectiveTime"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -730,16 +754,18 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActText"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActText"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -786,17 +812,19 @@ public class StudyActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
 			try {
-				VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.STUDY_ACT__STUDY_ACT_SERIES_ACT,
-					ConsolPlugin.INSTANCE.getString("StudyActStudyActSeriesAct"), new Object[] { studyAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.STUDY_ACT__STUDY_ACT_SERIES_ACT,
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActSeriesAct"), new Object[] { studyAct }));
 			}
 
 			return false;

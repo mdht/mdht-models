@@ -14,22 +14,16 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
-
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -115,7 +109,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -123,11 +118,12 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_CODE_VALUE_SET,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationCodeValueSet"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_CODE_VALUE_SET,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationCodeValueSet"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -174,7 +170,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -182,17 +179,19 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationCodeP"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationCodeP"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ReactionObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ReactionObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -224,7 +223,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -232,17 +232,19 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationStatusCodeP"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationStatusCodeP"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ReactionObservationStatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ReactionObservationStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -270,14 +272,16 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 				ConsolPackage.Literals.REACTION_OBSERVATION2,
 				ConsolPackage.Literals.REACTION_OBSERVATION2.getEAllOperations().get(78));
 			try {
-				GET_CONSOL_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP);
+				GET_CONSOL_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProcedureActivityProcedure2> result = (Collection<ProcedureActivityProcedure2>) query.evaluate(reactionObservation2);
+		Collection<ProcedureActivityProcedure2> result = (Collection<ProcedureActivityProcedure2>) query.evaluate(
+			reactionObservation2);
 		return new BasicEList.UnmodifiableEList<ProcedureActivityProcedure2>(result.size(), result.toArray());
 	}
 
@@ -294,7 +298,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 				ConsolPackage.Literals.REACTION_OBSERVATION2,
 				ConsolPackage.Literals.REACTION_OBSERVATION2.getEAllOperations().get(79));
 			try {
-				GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_EXP);
+				GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_MEDICATION_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -318,7 +323,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 				ConsolPackage.Literals.REACTION_OBSERVATION2,
 				ConsolPackage.Literals.REACTION_OBSERVATION2.getEAllOperations().get(80));
 			try {
-				GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_QRY = helper.createQuery(GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_EXP);
+				GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -345,21 +351,23 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reactionObservation2)) {
+				reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationProcedureActivityProcedureInversionInd"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND,
+						ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationProcedureActivityProcedureInversionInd"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -385,21 +393,23 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reactionObservation2)) {
+				reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationMedicationActivityInversionInd"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND,
+						ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationMedicationActivityInversionInd"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -425,21 +435,23 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reactionObservation2)) {
+				reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationSeverityObservationInversionInd"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND,
+						ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationSeverityObservationInversionInd"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -465,7 +477,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -473,11 +486,12 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEXT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationTextReference"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEXT_REFERENCE,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationTextReference"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -503,19 +517,22 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reactionObservation2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEXT_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationTextReferenceValue"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEXT_REFERENCE_VALUE,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationTextReferenceValue"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -541,7 +558,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -549,11 +567,12 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_REFERENCE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationReferenceValue"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_REFERENCE_VALUE,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationReferenceValue"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -579,7 +598,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -587,11 +607,12 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationTemplateId"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationTemplateId"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -625,7 +646,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -633,11 +655,12 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationCode"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationCode"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -663,7 +686,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -671,11 +695,12 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationId"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_ID,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationId"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -919,9 +944,9 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REACTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+	protected static final String VALIDATE_REACTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReactionObservationCode(ReactionObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Code</em>}' invariant operation.
@@ -994,7 +1019,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1002,11 +1028,12 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationText"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEXT,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationText"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -1022,8 +1049,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReactionObservationStatusCode(ReactionObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Status Code</em>}' invariant operation.
@@ -1062,7 +1089,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1070,11 +1098,12 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationStatusCode"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationStatusCode"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -1121,21 +1150,23 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reactionObservation2)) {
+				reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationProcedureActivityProcedure"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE,
+						ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationProcedureActivityProcedure"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -1182,19 +1213,22 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reactionObservation2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_MEDICATION_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationMedicationActivity"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_MEDICATION_ACTIVITY,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationMedicationActivity"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;
@@ -1241,19 +1275,22 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION2);
 			try {
-				VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reactionObservation2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				reactionObservation2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_SEVERITY_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationSeverityObservation"),
-					new Object[] { reactionObservation2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_SEVERITY_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationSeverityObservation"),
+						new Object[] { reactionObservation2 }));
 			}
 
 			return false;

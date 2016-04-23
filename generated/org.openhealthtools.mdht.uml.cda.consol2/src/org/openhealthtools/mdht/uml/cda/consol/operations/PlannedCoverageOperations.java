@@ -13,25 +13,18 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,7 +107,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				VALIDATE_PLANNED_COVERAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_COVERAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_COVERAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -122,11 +116,12 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_COVERAGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedCoverage)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageTemplateId"),
-					new Object[] { plannedCoverage }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageTemplateId"),
+						new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -166,14 +161,15 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static boolean validatePlannedCoverageClassCode(PlannedCoverage plannedCoverage,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePlannedCoverageClassCode(PlannedCoverage plannedCoverage, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_PLANNED_COVERAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				VALIDATE_PLANNED_COVERAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_COVERAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_COVERAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -181,11 +177,12 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_COVERAGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedCoverage)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageClassCode"),
-					new Object[] { plannedCoverage }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageClassCode"),
+						new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -232,7 +229,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				VALIDATE_PLANNED_COVERAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_COVERAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_COVERAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -240,11 +238,12 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_COVERAGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedCoverage)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageMoodCode"),
-					new Object[] { plannedCoverage }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageMoodCode"),
+						new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -291,18 +290,21 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(plannedCoverage)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			plannedCoverage)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageId"),
-					new Object[] { plannedCoverage }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ID,
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageId"),
+						new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -349,7 +351,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				VALIDATE_PLANNED_COVERAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_COVERAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_COVERAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -357,17 +360,19 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_COVERAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedCoverage)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageCodeP"),
-					new Object[] { plannedCoverage }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageCodeP"),
+						new Object[] { plannedCoverage }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedCoverageCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PlannedCoverageCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -389,9 +394,9 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_COVERAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PLANNED_COVERAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedCoverageCode(PlannedCoverage, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Code</em>}' invariant operation.
@@ -430,18 +435,21 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				VALIDATE_PLANNED_COVERAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_COVERAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_COVERAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_COVERAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(plannedCoverage)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_COVERAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			plannedCoverage)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageCode"),
-					new Object[] { plannedCoverage }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageCode"),
+						new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -457,8 +465,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_COVERAGE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
+	protected static final String VALIDATE_PLANNED_COVERAGE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedCoverageStatusCode(PlannedCoverage, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Status Code</em>}' invariant operation.
@@ -489,7 +497,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				VALIDATE_PLANNED_COVERAGE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_COVERAGE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_COVERAGE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -497,11 +506,12 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_COVERAGE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedCoverage)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageStatusCode"),
-					new Object[] { plannedCoverage }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageStatusCode"),
+						new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -548,7 +558,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				VALIDATE_PLANNED_COVERAGE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_COVERAGE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_COVERAGE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -556,11 +567,12 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_COVERAGE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedCoverage)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageStatusCodeP"),
-					new Object[] { plannedCoverage }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageStatusCodeP"),
+						new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -607,7 +619,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -615,11 +628,12 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedCoverage)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationship"),
-					new Object[] { plannedCoverage }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP,
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationship"),
+						new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -666,7 +680,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				VALIDATE_PLANNED_COVERAGE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_COVERAGE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_COVERAGE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -674,11 +689,12 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_COVERAGE_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedCoverage)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageAuthorParticipation"),
-					new Object[] { plannedCoverage }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageAuthorParticipation"),
+						new Object[] { plannedCoverage }));
 			}
 
 			return false;
@@ -725,23 +741,28 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedCoverage);
+		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedCoverage);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActClassCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"PlannedCoveragePlannedCoverageEntryRelationshipActClassCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -789,23 +810,28 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedCoverage);
+		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedCoverage);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActMoodCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"PlannedCoveragePlannedCoverageEntryRelationshipActMoodCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -853,23 +879,27 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedCoverage);
+		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedCoverage);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID,
-						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActId"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID,
+							ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActId"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -917,28 +947,33 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedCoverage);
+		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedCoverage);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActCodeP"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P,
+							ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActCodeP"),
+							new Object[] { eObject }));
 				}
 
 				if (context != null) {
 					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedCoverageEntryRelationshipActCodeP");
+					Collection<Object> passToken = (Collection<Object>) context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.PlannedCoverageEntryRelationshipActCodeP");
 					if (passToken == null) {
 						// anticipate a reasonably healthy model
 						passToken = new java.util.ArrayList<Object>(3);
@@ -963,9 +998,9 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).act->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.3.221.5' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).act->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.3.221.5' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedCoverageEntryRelationshipActCode(PlannedCoverage, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Entry Relationship Act Code</em>}' invariant operation.
@@ -996,13 +1031,16 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedCoverage);
+		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedCoverage);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
@@ -1017,11 +1055,12 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE,
+							ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1038,8 +1077,8 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).act->excluding(null)->reject((statusCode.oclIsUndefined() or statusCode.isNullFlavorUndefined()) implies (not statusCode.oclIsUndefined() and statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active'))";
+	protected static final String VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).act->excluding(null)->reject((statusCode.oclIsUndefined() or statusCode.isNullFlavorUndefined()) implies (not statusCode.oclIsUndefined() and statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedCoverageEntryRelationshipActStatusCode(PlannedCoverage, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Entry Relationship Act Status Code</em>}' invariant operation.
@@ -1070,24 +1109,28 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedCoverage);
+		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedCoverage);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActStatusCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"PlannedCoveragePlannedCoverageEntryRelationshipActStatusCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1135,24 +1178,28 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedCoverage);
+		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedCoverage);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActStatusCodeP"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P,
+							ConsolPlugin.INSTANCE.getString(
+								"PlannedCoveragePlannedCoverageEntryRelationshipActStatusCodeP"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1200,23 +1247,27 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedCoverage);
+		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedCoverage);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipTypeCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipTypeCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1264,23 +1315,27 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_COVERAGE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedCoverage);
+		Object oclResult = VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedCoverage);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT,
-						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipAct"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT,
+							ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipAct"),
+							new Object[] { eObject }));
 				}
 
 			}

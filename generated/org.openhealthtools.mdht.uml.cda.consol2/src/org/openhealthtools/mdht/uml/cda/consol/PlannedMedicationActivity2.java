@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -15,7 +11,7 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,7 +110,8 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode->isEmpty())'"
 	 * @generated
 	 */
-	boolean validatePlannedMedicationActivity2ApproachSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlannedMedicationActivity2ApproachSiteCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -126,7 +123,8 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validatePlannedMedicationActivity2ApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlannedMedicationActivity2ApproachSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -373,7 +371,6 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PlannedMedicationActivity2 init();
 
 	/**
@@ -381,6 +378,5 @@ public interface PlannedMedicationActivity2 extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PlannedMedicationActivity2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlannedMedicationActivity2

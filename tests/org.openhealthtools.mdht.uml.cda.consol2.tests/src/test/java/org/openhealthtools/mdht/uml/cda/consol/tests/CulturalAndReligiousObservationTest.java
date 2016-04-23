@@ -16,15 +16,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CulturalAndReligiousObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
@@ -60,7 +60,8 @@ public class CulturalAndReligiousObservationTest extends CDAValidationTest {
 	public void testValidateCulturalAndReligiousObservationValueOfTypeCDIsFromSnomed() {
 		OperationsTestCase<CulturalAndReligiousObservation> validateCulturalAndReligiousObservationValueOfTypeCDIsFromSnomedTestCase = new OperationsTestCase<CulturalAndReligiousObservation>(
 			"validateCulturalAndReligiousObservationValueOfTypeCDIsFromSnomed",
-			operationsForOCL.getOCLValue("VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE_OF_TYPE_CD_IS_FROM_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -96,7 +97,8 @@ public class CulturalAndReligiousObservationTest extends CDAValidationTest {
 	public void testValidateCulturalAndReligiousObservationTemplateId() {
 		OperationsTestCase<CulturalAndReligiousObservation> validateCulturalAndReligiousObservationTemplateIdTestCase = new OperationsTestCase<CulturalAndReligiousObservation>(
 			"validateCulturalAndReligiousObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -130,7 +132,8 @@ public class CulturalAndReligiousObservationTest extends CDAValidationTest {
 	public void testValidateCulturalAndReligiousObservationClassCode() {
 		OperationsTestCase<CulturalAndReligiousObservation> validateCulturalAndReligiousObservationClassCodeTestCase = new OperationsTestCase<CulturalAndReligiousObservation>(
 			"validateCulturalAndReligiousObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -164,7 +167,8 @@ public class CulturalAndReligiousObservationTest extends CDAValidationTest {
 	public void testValidateCulturalAndReligiousObservationMoodCode() {
 		OperationsTestCase<CulturalAndReligiousObservation> validateCulturalAndReligiousObservationMoodCodeTestCase = new OperationsTestCase<CulturalAndReligiousObservation>(
 			"validateCulturalAndReligiousObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -197,8 +201,8 @@ public class CulturalAndReligiousObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateCulturalAndReligiousObservationId() {
 		OperationsTestCase<CulturalAndReligiousObservation> validateCulturalAndReligiousObservationIdTestCase = new OperationsTestCase<CulturalAndReligiousObservation>(
-			"validateCulturalAndReligiousObservationId",
-			operationsForOCL.getOCLValue("VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCulturalAndReligiousObservationId", operationsForOCL.getOCLValue(
+				"VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -234,8 +238,8 @@ public class CulturalAndReligiousObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateCulturalAndReligiousObservationCodeP() {
 		OperationsTestCase<CulturalAndReligiousObservation> validateCulturalAndReligiousObservationCodePTestCase = new OperationsTestCase<CulturalAndReligiousObservation>(
-			"validateCulturalAndReligiousObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCulturalAndReligiousObservationCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -268,8 +272,8 @@ public class CulturalAndReligiousObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateCulturalAndReligiousObservationCode() {
 		OperationsTestCase<CulturalAndReligiousObservation> validateCulturalAndReligiousObservationCodeTestCase = new OperationsTestCase<CulturalAndReligiousObservation>(
-			"validateCulturalAndReligiousObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCulturalAndReligiousObservationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -313,7 +317,8 @@ public class CulturalAndReligiousObservationTest extends CDAValidationTest {
 	public void testValidateCulturalAndReligiousObservationStatusCode() {
 		OperationsTestCase<CulturalAndReligiousObservation> validateCulturalAndReligiousObservationStatusCodeTestCase = new OperationsTestCase<CulturalAndReligiousObservation>(
 			"validateCulturalAndReligiousObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -350,7 +355,8 @@ public class CulturalAndReligiousObservationTest extends CDAValidationTest {
 	public void testValidateCulturalAndReligiousObservationStatusCodeP() {
 		OperationsTestCase<CulturalAndReligiousObservation> validateCulturalAndReligiousObservationStatusCodePTestCase = new OperationsTestCase<CulturalAndReligiousObservation>(
 			"validateCulturalAndReligiousObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -383,8 +389,8 @@ public class CulturalAndReligiousObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateCulturalAndReligiousObservationValue() {
 		OperationsTestCase<CulturalAndReligiousObservation> validateCulturalAndReligiousObservationValueTestCase = new OperationsTestCase<CulturalAndReligiousObservation>(
-			"validateCulturalAndReligiousObservationValue",
-			operationsForOCL.getOCLValue("VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCulturalAndReligiousObservationValue", operationsForOCL.getOCLValue(
+				"VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

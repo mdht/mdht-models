@@ -7,32 +7,25 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.USRealmHeaderPatientGeneratedDocumentOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>US Realm Header Patient Generated Document</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Impl implements
-		USRealmHeaderPatientGeneratedDocument {
+public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Impl
+		implements USRealmHeaderPatientGeneratedDocument {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -416,8 +409,8 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP(
 			this, diagnostics, context);
 	}
@@ -630,8 +623,8 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity(
 			this, diagnostics, context);
 	}
@@ -689,8 +682,8 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity(
 			this, diagnostics, context);
 	}
@@ -821,8 +814,8 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent(
 			this, diagnostics, context);
 	}
@@ -833,7 +826,8 @@ public class USRealmHeaderPatientGeneratedDocumentImpl extends USRealmHeader2Imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return USRealmHeaderPatientGeneratedDocumentOperations.validateGeneralHeaderConstraintsTemplateId(
 			this, diagnostics, context);
 	}

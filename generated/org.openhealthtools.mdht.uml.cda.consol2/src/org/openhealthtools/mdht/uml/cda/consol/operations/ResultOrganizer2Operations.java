@@ -98,7 +98,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULT_ORGANIZER2);
 			try {
-				VALIDATE_RESULT_ORGANIZER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULT_ORGANIZER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_RESULT_ORGANIZER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -106,11 +107,12 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			resultOrganizer2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2EffectiveTime"),
-					new Object[] { resultOrganizer2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2EffectiveTime"),
+						new Object[] { resultOrganizer2 }));
 			}
 
 			return false;
@@ -157,19 +159,21 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULT_ORGANIZER2);
 			try {
-				VALIDATE_RESULT_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULT_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_RESULT_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			resultOrganizer2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_RESULT_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(resultOrganizer2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2AuthorParticipation"),
-					new Object[] { resultOrganizer2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2AuthorParticipation"),
+						new Object[] { resultOrganizer2 }));
 			}
 
 			return false;
@@ -217,23 +221,27 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULT_ORGANIZER2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_RESULT_ORGANIZER2_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_RESULT_ORGANIZER2_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_RESULT_ORGANIZER2_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULT_ORGANIZER2_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_RESULT_ORGANIZER2_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(resultOrganizer2);
+		Object oclResult = VALIDATE_RESULT_ORGANIZER2_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			resultOrganizer2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2IVLTSLow"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_IVLTS_LOW,
+							ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2IVLTSLow"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -282,23 +290,27 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULT_ORGANIZER2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_RESULT_ORGANIZER2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_RESULT_ORGANIZER2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_RESULT_ORGANIZER2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULT_ORGANIZER2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_RESULT_ORGANIZER2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(resultOrganizer2);
+		Object oclResult = VALIDATE_RESULT_ORGANIZER2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			resultOrganizer2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2IVLTSHigh"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2IVLTSHigh"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -340,7 +352,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 				ConsolPackage.Literals.RESULT_ORGANIZER2,
 				ConsolPackage.Literals.RESULT_ORGANIZER2.getEAllOperations().get(67));
 			try {
-				GET_CONSOL_RESULT_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_RESULT_OBSERVATION2S__EOCL_EXP);
+				GET_CONSOL_RESULT_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_RESULT_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -390,7 +403,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULT_ORGANIZER2);
 			try {
-				VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -398,11 +412,12 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			resultOrganizer2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_CODE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerCodeValue"),
-					new Object[] { resultOrganizer2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_CODE_VALUE,
+						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerCodeValue"),
+						new Object[] { resultOrganizer2 }));
 			}
 
 			return false;
@@ -449,7 +464,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULT_ORGANIZER2);
 			try {
-				VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -457,11 +473,12 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_CLASS_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			resultOrganizer2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_CLASS_CODE_VALUE,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerClassCodeValue"),
-					new Object[] { resultOrganizer2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_CLASS_CODE_VALUE,
+						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerClassCodeValue"),
+						new Object[] { resultOrganizer2 }));
 			}
 
 			return false;
@@ -508,7 +525,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULT_ORGANIZER2);
 			try {
-				VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -516,11 +534,12 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			resultOrganizer2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerTemplateId"),
-					new Object[] { resultOrganizer2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerTemplateId"),
+						new Object[] { resultOrganizer2 }));
 			}
 
 			return false;
@@ -567,7 +586,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULT_ORGANIZER2);
 			try {
-				VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -575,11 +595,12 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			resultOrganizer2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_RESULT_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerResultObservation"),
-					new Object[] { resultOrganizer2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_RESULT_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerResultObservation"),
+						new Object[] { resultOrganizer2 }));
 			}
 
 			return false;

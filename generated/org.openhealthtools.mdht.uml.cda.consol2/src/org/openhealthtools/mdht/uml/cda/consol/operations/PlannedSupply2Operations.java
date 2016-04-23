@@ -117,20 +117,23 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedSupply2)) {
+				plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2MedInfoXorImmunXorProductInstance"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedSupply2PlannedSupply2MedInfoXorImmunXorProductInstance"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -146,8 +149,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_SUPPLY2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
+	protected static final String VALIDATE_PLANNED_SUPPLY2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedSupply2StatusCode(PlannedSupply2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Status Code</em>}' invariant operation.
@@ -178,7 +181,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -186,11 +190,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2StatusCode"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2StatusCode"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -237,7 +242,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -245,11 +251,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2StatusCodeP"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2StatusCodeP"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -296,7 +303,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -304,11 +312,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2EffectiveTime"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2EffectiveTime"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -348,14 +357,15 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @generated
 	 */
 
-	public static boolean validatePlannedSupply2RepeatNumber(PlannedSupply2 plannedSupply2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePlannedSupply2RepeatNumber(PlannedSupply2 plannedSupply2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_PLANNED_SUPPLY2_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -363,11 +373,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_REPEAT_NUMBER,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2RepeatNumber"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_REPEAT_NUMBER,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2RepeatNumber"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -414,7 +425,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -422,11 +434,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_QUANTITY,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Quantity"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_QUANTITY,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Quantity"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -473,7 +486,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -481,11 +495,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Product"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Product"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -532,7 +547,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -540,11 +556,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Performer"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PERFORMER,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Performer"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -591,7 +608,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -599,11 +617,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2AuthorParticipation"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2AuthorParticipation"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -650,7 +669,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -658,11 +678,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT_INSTANCE,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2ProductInstance"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT_INSTANCE,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2ProductInstance"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -709,7 +730,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -717,11 +739,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2PriorityPreference"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRIORITY_PREFERENCE,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2PriorityPreference"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -768,7 +791,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -776,11 +800,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_INDICATION2,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Indication2"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_INDICATION2,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Indication2"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -820,14 +845,15 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @generated
 	 */
 
-	public static boolean validatePlannedSupply2Instruction2(PlannedSupply2 plannedSupply2,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePlannedSupply2Instruction2(PlannedSupply2 plannedSupply2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_PLANNED_SUPPLY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -835,11 +861,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Instruction2"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_INSTRUCTION2,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Instruction2"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -886,7 +913,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -894,11 +922,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_PLANNED_COVERAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PLANNED_COVERAGE,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2PlannedCoverage"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PLANNED_COVERAGE,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2PlannedCoverage"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -945,7 +974,8 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLANNED_SUPPLY2_PRODUCT_RECOMMENDED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_SUPPLY2_PRODUCT_RECOMMENDED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_PRODUCT_RECOMMENDED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_SUPPLY2_PRODUCT_RECOMMENDED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -953,11 +983,12 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_SUPPLY2_PRODUCT_RECOMMENDED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT_RECOMMENDED,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2ProductRecommended"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT_RECOMMENDED,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2ProductRecommended"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -1004,24 +1035,28 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedSupply2);
+		Object oclResult = VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedSupply2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2,
-						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2,
+							ConsolPlugin.INSTANCE.getString(
+								"PlannedSupply2PlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1069,23 +1104,27 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedSupply2);
+		Object oclResult = VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedSupply2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT,
-						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2ProductManufacturedProduct"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT,
+							ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2ProductManufacturedProduct"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1351,19 +1390,21 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedSupply2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlanOfCareActivitySupplyTemplateId"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlanOfCareActivitySupplyTemplateId"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;
@@ -1379,9 +1420,9 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and "
-			+ "let value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in "
-			+ "value = vocab::x_DocumentSubstanceMood::INT or value = vocab::x_DocumentSubstanceMood::PRMS or value = vocab::x_DocumentSubstanceMood::PRP or value = vocab::x_DocumentSubstanceMood::RQO";
+	protected static final String VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentSubstanceMood) and " +
+			"let value : vocab::x_DocumentSubstanceMood = self.moodCode.oclAsType(vocab::x_DocumentSubstanceMood) in " +
+			"value = vocab::x_DocumentSubstanceMood::INT or value = vocab::x_DocumentSubstanceMood::PRMS or value = vocab::x_DocumentSubstanceMood::PRP or value = vocab::x_DocumentSubstanceMood::RQO";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlanOfCareActivitySupplyMoodCode(PlannedSupply2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Supply Mood Code</em>}' invariant operation.
@@ -1412,19 +1453,21 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_SUPPLY2);
 			try {
-				VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedSupply2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(plannedSupply2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_SUPPLY2__PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedSupply2PlanOfCareActivitySupplyMoodCode"),
-					new Object[] { plannedSupply2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_SUPPLY2__PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlanOfCareActivitySupplyMoodCode"),
+						new Object[] { plannedSupply2 }));
 			}
 
 			return false;

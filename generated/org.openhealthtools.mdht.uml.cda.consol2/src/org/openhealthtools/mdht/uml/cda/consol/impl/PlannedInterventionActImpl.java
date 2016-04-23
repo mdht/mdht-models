@@ -3,17 +3,14 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2;
@@ -36,17 +33,12 @@ import org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedInterventionActOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Intervention Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -156,7 +148,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedInterventionActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedInterventionActEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedInterventionActOperations.validatePlannedInterventionActEffectiveTime(this, diagnostics, context);
 	}
 
@@ -264,7 +257,8 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedInterventionActInstruction2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedInterventionActInstruction2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedInterventionActOperations.validatePlannedInterventionActInstruction2(this, diagnostics, context);
 	}
 
@@ -337,8 +331,10 @@ public class PlannedInterventionActImpl extends ActImpl implements PlannedInterv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedInterventionActPlannedSupply2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedSupply2(this, diagnostics, context);
+	public boolean validatePlannedInterventionActPlannedSupply2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedInterventionActOperations.validatePlannedInterventionActPlannedSupply2(
+			this, diagnostics, context);
 	}
 
 	/**

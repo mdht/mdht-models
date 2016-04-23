@@ -14,16 +14,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
 import org.junit.Test;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultOrganizerOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActClassDocumentEntryOrganizer;
 
 /**
  * <!-- begin-user-doc -->
@@ -65,7 +65,8 @@ public class ResultOrganizerTest extends CDAValidationTest {
 
 			private final String cpt4Cs = "2.16.840.1.113883.6.12";
 
-			private final String[] valCodeSystems = { cpt4Cs, CDAValidationTest.SNOMEDCT_ID, CDAValidationTest.LOINC_ID };
+			private final String[] valCodeSystems = {
+					cpt4Cs, CDAValidationTest.SNOMEDCT_ID, CDAValidationTest.LOINC_ID };
 
 			@Override
 			protected void updateToFail(ResultOrganizer target) {
@@ -245,7 +246,8 @@ public class ResultOrganizerTest extends CDAValidationTest {
 	public void testValidateResultOrganizerId() {
 		OperationsTestCase<ResultOrganizer> validateResultOrganizerIdTestCase = new OperationsTestCase<ResultOrganizer>(
 			"validateResultOrganizerId",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(ResultOrganizer target) {
@@ -382,8 +384,8 @@ public class ResultOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateResultOrganizerResultObservation() {
 		OperationsTestCase<ResultOrganizer> validateResultOrganizerResultObservationTestCase = new OperationsTestCase<ResultOrganizer>(
-			"validateResultOrganizerResultObservation",
-			operationsForOCL.getOCLValue("VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateResultOrganizerResultObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

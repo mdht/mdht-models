@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalConsultationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalConsultationsSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Hospital Consultations Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,8 +56,7 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 */
 	public boolean validateHospitalConsultationsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTemplateId(
-			this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +65,7 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * @generated
 	 */
 	public boolean validateHospitalConsultationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionCode(
-			this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +74,7 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * @generated
 	 */
 	public boolean validateHospitalConsultationsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionCodeP(
-			this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +83,7 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * @generated
 	 */
 	public boolean validateHospitalConsultationsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionText(
-			this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -98,8 +92,7 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * @generated
 	 */
 	public boolean validateHospitalConsultationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTitle(
-			this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -108,16 +101,16 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * @generated
 	 */
 	public HospitalConsultationsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HospitalConsultationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HospitalConsultationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HospitalConsultationsSectionImpl

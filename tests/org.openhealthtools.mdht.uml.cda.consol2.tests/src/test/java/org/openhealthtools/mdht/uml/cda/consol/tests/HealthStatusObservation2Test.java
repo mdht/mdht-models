@@ -16,16 +16,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HealthStatusObservation2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
  * <!-- begin-user-doc -->
@@ -128,8 +128,8 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateHealthStatusObservationStatusCodeP() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationStatusCodePTestCase = new OperationsTestCase<HealthStatusObservation2>(
-			"validateHealthStatusObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthStatusObservationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -165,7 +165,8 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 	public void testValidateHealthStatusObservationHasTextReference() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationHasTextReferenceTestCase = new OperationsTestCase<HealthStatusObservation2>(
 			"validateHealthStatusObservationHasTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -201,7 +202,8 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 	public void testValidateHealthStatusObservationTextReferenceValue() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationTextReferenceValueTestCase = new OperationsTestCase<HealthStatusObservation2>(
 			"validateHealthStatusObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -240,7 +242,8 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 	public void testValidateHealthStatusObservationHasTextReferenceValue() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationHasTextReferenceValueTestCase = new OperationsTestCase<HealthStatusObservation2>(
 			"validateHealthStatusObservationHasTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -276,8 +279,8 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateHealthStatusObservationTemplateId() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationTemplateIdTestCase = new OperationsTestCase<HealthStatusObservation2>(
-			"validateHealthStatusObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthStatusObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -396,8 +399,8 @@ public class HealthStatusObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateHealthStatusObservationStatusCode() {
 		OperationsTestCase<HealthStatusObservation2> validateHealthStatusObservationStatusCodeTestCase = new OperationsTestCase<HealthStatusObservation2>(
-			"validateHealthStatusObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHealthStatusObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

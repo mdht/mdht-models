@@ -7,34 +7,27 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsSectionEntriesOptional2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Vital Signs Section Entries Optional2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class VitalSignsSectionEntriesOptional2Impl extends VitalSignsSectionEntriesOptionalImpl implements
-		VitalSignsSectionEntriesOptional2 {
+public class VitalSignsSectionEntriesOptional2Impl extends VitalSignsSectionEntriesOptionalImpl
+		implements VitalSignsSectionEntriesOptional2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -94,7 +87,8 @@ public class VitalSignsSectionEntriesOptional2Impl extends VitalSignsSectionEntr
 	 * @generated
 	 */
 	@Override
-	public boolean validateVitalSignsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignsSectionEntriesOptional2Operations.validateVitalSignsSectionEntriesOptionalCode(
 			this, diagnostics, context);
 	}

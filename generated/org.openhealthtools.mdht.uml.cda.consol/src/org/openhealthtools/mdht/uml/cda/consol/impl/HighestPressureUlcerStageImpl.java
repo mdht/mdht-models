@@ -12,18 +12,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HighestPressureUlcerStageOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Highest Pressure Ulcer Stage</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -53,8 +51,7 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * @generated
 	 */
 	public boolean validateHighestPressureUlcerStageTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageTemplateId(
-			this, diagnostics, context);
+		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -63,8 +60,7 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * @generated
 	 */
 	public boolean validateHighestPressureUlcerStageClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageClassCode(
-			this, diagnostics, context);
+		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -118,16 +114,16 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * @generated
 	 */
 	public HighestPressureUlcerStage init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HighestPressureUlcerStage init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HighestPressureUlcerStage init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HighestPressureUlcerStageImpl

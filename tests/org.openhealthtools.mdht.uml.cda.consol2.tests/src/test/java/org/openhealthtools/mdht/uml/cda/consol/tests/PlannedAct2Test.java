@@ -15,20 +15,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Performer2;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Performer2;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedAct2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedAct2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActClassDocumentEntryAct;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentActMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -68,8 +66,8 @@ public class PlannedAct2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedAct2CodeFromLoincOrSnomed() {
 		OperationsTestCase<PlannedAct2> validatePlannedAct2CodeFromLoincOrSnomedTestCase = new OperationsTestCase<PlannedAct2>(
-			"validatePlannedAct2CodeFromLoincOrSnomed",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_ACT2_CODE_FROM_LOINC_OR_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedAct2CodeFromLoincOrSnomed", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_ACT2_CODE_FROM_LOINC_OR_SNOMED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -466,8 +464,8 @@ public class PlannedAct2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlanOfCareActivityActTemplateId() {
 		OperationsTestCase<PlannedAct2> validatePlanOfCareActivityActTemplateIdTestCase = new OperationsTestCase<PlannedAct2>(
-			"validatePlanOfCareActivityActTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivityActTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -500,8 +498,8 @@ public class PlannedAct2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlanOfCareActivityActMoodCode() {
 		OperationsTestCase<PlannedAct2> validatePlanOfCareActivityActMoodCodeTestCase = new OperationsTestCase<PlannedAct2>(
-			"validatePlanOfCareActivityActMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivityActMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

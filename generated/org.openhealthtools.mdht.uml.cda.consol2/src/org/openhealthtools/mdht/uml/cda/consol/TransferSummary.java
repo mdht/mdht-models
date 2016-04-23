@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -397,7 +393,8 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection2))'"
 	 * @generated
 	 */
-	boolean validateTransferSummaryHistoryOfPastIllnessSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateTransferSummaryHistoryOfPastIllnessSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -767,7 +764,8 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null)->reject(serviceEvent->one(serviceEvent : cda::ServiceEvent | not serviceEvent.oclIsUndefined() and serviceEvent.oclIsKindOf(cda::ServiceEvent)))'"
 	 * @generated
 	 */
-	boolean validateTransferSummaryDocumentationOfServiceEvent(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateTransferSummaryDocumentationOfServiceEvent(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1035,7 +1033,6 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public TransferSummary init();
 
 	/**
@@ -1043,6 +1040,5 @@ public interface TransferSummary extends USRealmHeader2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public TransferSummary init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TransferSummary

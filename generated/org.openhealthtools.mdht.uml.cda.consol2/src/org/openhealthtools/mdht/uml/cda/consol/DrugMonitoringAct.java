@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,9 +10,9 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.Act;
+import org.eclipse.mdht.uml.cda.Act;
 
 /**
  * <!-- begin-user-doc -->
@@ -239,7 +235,8 @@ public interface DrugMonitoringAct extends Act {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null)->reject(participantRole->one(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(cda::ParticipantRole)))'"
 	 * @generated
 	 */
-	boolean validateDrugMonitoringActParticipantParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDrugMonitoringActParticipantParticipantRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

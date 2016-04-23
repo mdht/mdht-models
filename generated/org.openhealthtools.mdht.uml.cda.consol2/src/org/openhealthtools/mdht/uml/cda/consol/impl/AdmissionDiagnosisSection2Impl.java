@@ -3,33 +3,26 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdmissionDiagnosisSection2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Admission Diagnosis Section2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class AdmissionDiagnosisSection2Impl extends HospitalAdmissionDiagnosisSectionImpl implements
-		AdmissionDiagnosisSection2 {
+public class AdmissionDiagnosisSection2Impl extends HospitalAdmissionDiagnosisSectionImpl
+		implements AdmissionDiagnosisSection2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

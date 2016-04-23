@@ -10,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,7 +115,8 @@ public interface HistoryAndPhysicalNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informationRecipient->exists(informationRecipient : cda::InformationRecipient | not informationRecipient.oclIsUndefined() and informationRecipient.oclIsKindOf(cda::InformationRecipient))'"
 	 * @generated
 	 */
-	boolean validateHistoryAndPhysicalNote2InformationRecipient(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHistoryAndPhysicalNote2InformationRecipient(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -240,7 +241,8 @@ public interface HistoryAndPhysicalNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))'"
 	 * @generated
 	 */
-	boolean validateHistoryAndPhysicalNote2GeneralStatusSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHistoryAndPhysicalNote2GeneralStatusSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -291,7 +293,8 @@ public interface HistoryAndPhysicalNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection2))'"
 	 * @generated
 	 */
-	boolean validateHistoryAndPhysicalNote2InstructionsSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHistoryAndPhysicalNote2InstructionsSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -316,7 +319,8 @@ public interface HistoryAndPhysicalNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection2))'"
 	 * @generated
 	 */
-	boolean validateHistoryAndPhysicalNote2PhysicalExamSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHistoryAndPhysicalNote2PhysicalExamSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -588,8 +592,8 @@ public interface HistoryAndPhysicalNote2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(cda::ResponsibleParty)))'"
 	 * @generated
 	 */
-	boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHistoryAndPhysicalNote2ComponentOfEncompassingEncounterResponsibleParty(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

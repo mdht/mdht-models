@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.CoverageActivity;
 import org.openhealthtools.mdht.uml.cda.consol.PolicyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CoverageActivityOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Coverage Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,8 +58,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 */
 	public boolean validateCoverageActivityCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CoverageActivityOperations.validateCoverageActivityCoverageActivityRelationshipSequenceNumber(
-			this, diagnostics, context);
+		return CoverageActivityOperations.validateCoverageActivityCoverageActivityRelationshipSequenceNumber(this, diagnostics, context);
 	}
 
 	/**
@@ -142,16 +139,16 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * @generated
 	 */
 	public CoverageActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CoverageActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CoverageActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CoverageActivityImpl

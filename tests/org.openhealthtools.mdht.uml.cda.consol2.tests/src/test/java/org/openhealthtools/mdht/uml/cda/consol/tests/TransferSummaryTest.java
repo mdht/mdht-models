@@ -16,10 +16,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Performer1;
+import org.eclipse.mdht.uml.cda.ServiceEvent;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
+import org.eclipse.mdht.uml.hl7.vocab.ActClassRoot;
+import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
+import org.eclipse.mdht.uml.hl7.vocab.RoleClassAssociative;
+import org.eclipse.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Performer1;
-import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.CourseOfCareSection;
@@ -31,14 +39,6 @@ import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.TransferSummary;
 import org.openhealthtools.mdht.uml.cda.consol.operations.TransferSummaryOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 
 /**
  * <!-- begin-user-doc -->
@@ -153,7 +153,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -229,7 +230,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresentTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -420,8 +422,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryParticipantSupport() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantSupportTestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryParticipantSupport",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryParticipantSupport", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -454,7 +456,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantCallbackContact() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantCallbackContactTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantCallbackContact",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -520,7 +523,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryAdvanceDirectivesSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryAdvanceDirectivesSection2TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryAdvanceDirectivesSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -553,8 +557,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryAllergiesSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryAllergiesSection2TestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryAllergiesSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryAllergiesSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -587,8 +591,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryPhysicalExamSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryPhysicalExamSection2TestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryPhysicalExamSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryPhysicalExamSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -621,8 +625,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryEncountersSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryEncountersSection2TestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryEncountersSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_ENCOUNTERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryEncountersSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_ENCOUNTERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -655,8 +659,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryFamilyHistorySection() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryFamilyHistorySectionTestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryFamilyHistorySection",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryFamilyHistorySection", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -671,7 +675,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* FamilyHistorySection */
 				FamilyHistorySection section =
 
-				ConsolFactory.eINSTANCE.createFamilyHistorySection().init();
+						ConsolFactory.eINSTANCE.createFamilyHistorySection().init();
 
 				target.addSection(section);
 
@@ -697,7 +701,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryFunctionalStatusSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryFunctionalStatusSection2TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryFunctionalStatusSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -731,7 +736,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryImmunizationsSectionEntriesOptional2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryImmunizationsSectionEntriesOptional2TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryImmunizationsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -765,7 +771,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryMedicalEquipmentSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryMedicalEquipmentSection2TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryMedicalEquipmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -798,8 +805,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryMedicationsSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryMedicationsSection2TestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryMedicationsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryMedicationsSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -867,7 +874,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryPlanOfTreatmentSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryPlanOfTreatmentSection2TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryPlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -934,8 +942,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryProceduresSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryProceduresSection2TestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryProceduresSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryProceduresSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1002,8 +1010,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummarySocialHistorySection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummarySocialHistorySection2TestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummarySocialHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummarySocialHistorySection2", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1036,8 +1044,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryVitalSignsSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryVitalSignsSection2TestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryVitalSignsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryVitalSignsSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1070,8 +1078,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryMentalStatusSection() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryMentalStatusSectionTestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryMentalStatusSection",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryMentalStatusSection", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1086,7 +1094,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* MentalStatusSection */
 				MentalStatusSection section =
 
-				ConsolFactory.eINSTANCE.createMentalStatusSection().init();
+						ConsolFactory.eINSTANCE.createMentalStatusSection().init();
 
 				target.addSection(section);
 
@@ -1111,8 +1119,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryGeneralStatusSection() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryGeneralStatusSectionTestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryGeneralStatusSection",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryGeneralStatusSection", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1127,7 +1135,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* GeneralStatusSection */
 				GeneralStatusSection section =
 
-				ConsolFactory.eINSTANCE.createGeneralStatusSection().init();
+						ConsolFactory.eINSTANCE.createGeneralStatusSection().init();
 
 				target.addSection(section);
 
@@ -1152,8 +1160,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryReviewOfSystemsSection() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryReviewOfSystemsSectionTestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryReviewOfSystemsSection",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryReviewOfSystemsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1168,7 +1176,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* ReviewOfSystemsSection */
 				ReviewOfSystemsSection section =
 
-				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
+						ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
 
 				target.addSection(section);
 
@@ -1209,7 +1217,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* NutritionSection */
 				NutritionSection section =
 
-				ConsolFactory.eINSTANCE.createNutritionSection().init();
+						ConsolFactory.eINSTANCE.createNutritionSection().init();
 
 				target.addSection(section);
 
@@ -1235,7 +1243,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryReasonForReferralSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryReasonForReferralSection2TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryReasonForReferralSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1269,7 +1278,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryHistoryOfPastIllnessSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryHistoryOfPastIllnessSection2TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryHistoryOfPastIllnessSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1303,7 +1313,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryHistoryOfPresentIllnessSection() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryHistoryOfPresentIllnessSectionTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryHistoryOfPresentIllnessSection",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1318,7 +1329,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* HistoryOfPresentIllnessSection */
 				HistoryOfPresentIllnessSection section =
 
-				ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
+						ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
 
 				target.addSection(section);
 
@@ -1344,7 +1355,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryAssessmentAndPlanSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryAssessmentAndPlanSection2TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryAssessmentAndPlanSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1377,8 +1389,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryAssessmentSection() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryAssessmentSectionTestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryAssessmentSection",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryAssessmentSection", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1393,7 +1405,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* AssessmentSection */
 				AssessmentSection section =
 
-				ConsolFactory.eINSTANCE.createAssessmentSection().init();
+						ConsolFactory.eINSTANCE.createAssessmentSection().init();
 
 				target.addSection(section);
 
@@ -1419,7 +1431,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryDischargeDiagnosisSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryDischargeDiagnosisSection2TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryDischargeDiagnosisSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1453,7 +1466,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryAdmissionMedicationsSectionEntriesOptional2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryAdmissionMedicationsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1487,7 +1501,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryAdmissionDiagnosisSection2() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryAdmissionDiagnosisSection2TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryAdmissionDiagnosisSection2",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1521,8 +1536,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateTransferSummaryCourseOfCareSection() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryCourseOfCareSectionTestCase = new OperationsTestCase<TransferSummary>(
-			"validateTransferSummaryCourseOfCareSection",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_COURSE_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateTransferSummaryCourseOfCareSection", operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_COURSE_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1537,7 +1552,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 				/* CourseOfCareSection */
 				CourseOfCareSection section =
 
-				ConsolFactory.eINSTANCE.createCourseOfCareSection().init();
+						ConsolFactory.eINSTANCE.createCourseOfCareSection().init();
 
 				target.addSection(section);
 
@@ -1563,7 +1578,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonNameTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1601,7 +1617,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantSupportAssociatedEntityClassCodeP() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantSupportAssociatedEntityClassCodePTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantSupportAssociatedEntityClassCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1637,7 +1654,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantSupportAssociatedEntityClassCode() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantSupportAssociatedEntityClassCodeTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantSupportAssociatedEntityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1672,7 +1690,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1708,7 +1727,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantSupportTypeCode() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantSupportTypeCodeTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantSupportTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1742,7 +1762,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantSupportAssociatedEntity() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantSupportAssociatedEntityTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantSupportAssociatedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1776,7 +1797,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonNameTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1814,7 +1836,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantCallbackContactAssociatedEntityClassCode() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantCallbackContactAssociatedEntityClassCodeTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantCallbackContactAssociatedEntityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1849,7 +1872,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantCallbackContactAssociatedEntityId() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantCallbackContactAssociatedEntityIdTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantCallbackContactAssociatedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1885,7 +1909,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantCallbackContactAssociatedEntityAddr() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantCallbackContactAssociatedEntityAddrTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantCallbackContactAssociatedEntityAddr",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1921,7 +1946,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantCallbackContactAssociatedEntityTelecom() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantCallbackContactAssociatedEntityTelecomTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantCallbackContactAssociatedEntityTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1957,7 +1983,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1993,7 +2020,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganizationTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2029,7 +2057,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantCallbackContactTypeCode() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantCallbackContactTypeCodeTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantCallbackContactTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2063,7 +2092,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryParticipantCallbackContactAssociatedEntity() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryParticipantCallbackContactAssociatedEntityTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryParticipantCallbackContactAssociatedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2097,7 +2127,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryDocumentationOfServiceEventPerformerTypeCode() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryDocumentationOfServiceEventPerformerTypeCodeTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryDocumentationOfServiceEventPerformerTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2137,7 +2168,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodePTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2176,7 +2208,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryDocumentationOfServiceEventPerformerFunctionCode() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCode",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2217,7 +2250,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryDocumentationOfServiceEventClassCode() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryDocumentationOfServiceEventClassCodeTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryDocumentationOfServiceEventClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2252,7 +2286,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryDocumentationOfServiceEventCode() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryDocumentationOfServiceEventCodeTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryDocumentationOfServiceEventCode",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2287,7 +2322,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryDocumentationOfServiceEventPerformer1() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryDocumentationOfServiceEventPerformer1TestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryDocumentationOfServiceEventPerformer1",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2323,7 +2359,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	public void testValidateTransferSummaryDocumentationOfServiceEvent() {
 		OperationsTestCase<TransferSummary> validateTransferSummaryDocumentationOfServiceEventTestCase = new OperationsTestCase<TransferSummary>(
 			"validateTransferSummaryDocumentationOfServiceEvent",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2704,8 +2741,8 @@ public class TransferSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<TransferSummary> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<TransferSummary>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PostprocedureDiagnosisSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -63,7 +63,8 @@ public class PostprocedureDiagnosisSection2Test extends CDAValidationTest {
 	public void testValidatePostprocedureDiagnosisSectionTemplateId() {
 		OperationsTestCase<PostprocedureDiagnosisSection2> validatePostprocedureDiagnosisSectionTemplateIdTestCase = new OperationsTestCase<PostprocedureDiagnosisSection2>(
 			"validatePostprocedureDiagnosisSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -96,8 +97,8 @@ public class PostprocedureDiagnosisSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePostprocedureDiagnosisSectionCodeP() {
 		OperationsTestCase<PostprocedureDiagnosisSection2> validatePostprocedureDiagnosisSectionCodePTestCase = new OperationsTestCase<PostprocedureDiagnosisSection2>(
-			"validatePostprocedureDiagnosisSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePostprocedureDiagnosisSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -130,8 +131,8 @@ public class PostprocedureDiagnosisSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePostprocedureDiagnosisSectionCode() {
 		OperationsTestCase<PostprocedureDiagnosisSection2> validatePostprocedureDiagnosisSectionCodeTestCase = new OperationsTestCase<PostprocedureDiagnosisSection2>(
-			"validatePostprocedureDiagnosisSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePostprocedureDiagnosisSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -172,7 +173,8 @@ public class PostprocedureDiagnosisSection2Test extends CDAValidationTest {
 	public void testValidatePostprocedureDiagnosisSectionPostprocedureDiagnosis() {
 		OperationsTestCase<PostprocedureDiagnosisSection2> validatePostprocedureDiagnosisSectionPostprocedureDiagnosisTestCase = new OperationsTestCase<PostprocedureDiagnosisSection2>(
 			"validatePostprocedureDiagnosisSectionPostprocedureDiagnosis",
-			operationsForOCL.getOCLValue("VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

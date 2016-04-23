@@ -15,18 +15,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SeverityObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
 
 /**
  * <!-- begin-user-doc -->
@@ -62,8 +62,8 @@ public class SeverityObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSeverityObservationTextReference() {
 		OperationsTestCase<SeverityObservation> validateSeverityObservationTextReferenceTestCase = new OperationsTestCase<SeverityObservation>(
-			"validateSeverityObservationTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSeverityObservationTextReference", operationsForOCL.getOCLValue(
+				"VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -98,8 +98,8 @@ public class SeverityObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSeverityObservationTextReferenceValue() {
 		OperationsTestCase<SeverityObservation> validateSeverityObservationTextReferenceValueTestCase = new OperationsTestCase<SeverityObservation>(
-			"validateSeverityObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSeverityObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -136,8 +136,8 @@ public class SeverityObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSeverityObservationReferenceValue() {
 		OperationsTestCase<SeverityObservation> validateSeverityObservationReferenceValueTestCase = new NarrativeReferenceTestCase<SeverityObservation>(
-			"validateSeverityObservationReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_SEVERITY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSeverityObservationReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_SEVERITY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

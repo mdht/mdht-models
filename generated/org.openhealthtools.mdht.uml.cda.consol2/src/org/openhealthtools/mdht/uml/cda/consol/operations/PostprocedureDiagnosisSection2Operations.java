@@ -12,21 +12,15 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection2;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -91,7 +85,8 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 				ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS_SECTION2,
 				ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS_SECTION2.getEAllOperations().get(62));
 			try {
-				GET_CONSOL_POSTPROCEDURE_DIAGNOSIS2__EOCL_QRY = helper.createQuery(GET_CONSOL_POSTPROCEDURE_DIAGNOSIS2__EOCL_EXP);
+				GET_CONSOL_POSTPROCEDURE_DIAGNOSIS2__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_POSTPROCEDURE_DIAGNOSIS2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -140,20 +135,23 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS_SECTION2);
 			try {
-				VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			postprocedureDiagnosisSection2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				postprocedureDiagnosisSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionTemplateId"),
-					new Object[] { postprocedureDiagnosisSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionTemplateId"),
+						new Object[] { postprocedureDiagnosisSection2 }));
 			}
 
 			return false;
@@ -201,30 +199,35 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS_SECTION2);
 			try {
-				VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			postprocedureDiagnosisSection2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				postprocedureDiagnosisSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionCodeP"),
-					new Object[] { postprocedureDiagnosisSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionCodeP"),
+						new Object[] { postprocedureDiagnosisSection2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSectionCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put("org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSectionCodeP", passToken);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSectionCodeP", passToken);
 				}
 				passToken.add(postprocedureDiagnosisSection2);
 			}
@@ -242,9 +245,9 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '59769-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '59769-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePostprocedureDiagnosisSectionCode(PostprocedureDiagnosisSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Postprocedure Diagnosis Section Code</em>}' invariant operation.
@@ -285,7 +288,8 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS_SECTION2);
 			try {
-				VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -293,11 +297,13 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 		if (!EOCL_ENV.createQuery(VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			postprocedureDiagnosisSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionCode"),
-					new Object[] { postprocedureDiagnosisSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionCode"),
+						new Object[] { postprocedureDiagnosisSection2 }));
 			}
 
 			return false;
@@ -345,21 +351,23 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS_SECTION2);
 			try {
-				VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			postprocedureDiagnosisSection2)) {
+				postprocedureDiagnosisSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS,
-					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionPostprocedureDiagnosis"),
-					new Object[] { postprocedureDiagnosisSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS,
+						ConsolPlugin.INSTANCE.getString(
+							"PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionPostprocedureDiagnosis"),
+						new Object[] { postprocedureDiagnosisSection2 }));
 			}
 
 			return false;

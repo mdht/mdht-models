@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -11,9 +7,10 @@ import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -156,7 +153,8 @@ public interface ReferralNote extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))'"
 	 * @generated
 	 */
-	boolean validateReferralNoteHistoryOfPresentIllnessSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateReferralNoteHistoryOfPresentIllnessSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -892,7 +890,6 @@ public interface ReferralNote extends USRealmHeader2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ReferralNote init();
 
 	/**
@@ -900,6 +897,5 @@ public interface ReferralNote extends USRealmHeader2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ReferralNote init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ReferralNote

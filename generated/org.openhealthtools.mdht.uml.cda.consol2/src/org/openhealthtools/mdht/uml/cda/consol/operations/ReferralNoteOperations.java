@@ -15,15 +15,11 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2;
@@ -46,7 +42,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ReferralNote;
-
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2;
@@ -191,21 +186,23 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_REFERRAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+				referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ReferralNoteReferralNoteHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -252,21 +249,23 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_REFERRAL_NOTE_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+				referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT,
+						ConsolPlugin.INSTANCE.getString(
+							"ReferralNoteReferralNoteDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -313,23 +312,27 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteCodeP"), new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_CODE_P,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteCodeP"),
+						new Object[] { referralNote }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ReferralNoteCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ReferralNoteCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -351,9 +354,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REFERRAL_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
+	protected static final String VALIDATE_REFERRAL_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReferralNoteCode(ReferralNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Code</em>}' invariant operation.
@@ -392,17 +395,20 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_CODE,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteCode"), new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_CODE,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteCode"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -449,7 +455,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -457,11 +464,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipient"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipient"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -508,7 +516,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -516,11 +525,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiver"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiver"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -567,19 +577,21 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContact"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContact"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -626,19 +638,21 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNotePlanOfTreatmentSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNotePlanOfTreatmentSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -685,21 +699,23 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+				referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAdvanceDirectivesSectionEntriesOptional2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2,
+						ConsolPlugin.INSTANCE.getString(
+							"ReferralNoteReferralNoteAdvanceDirectivesSectionEntriesOptional2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -746,20 +762,22 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_REFERRAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+				referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteHistoryOfPresentIllnessSection"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteHistoryOfPresentIllnessSection"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -806,7 +824,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -814,11 +833,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_IMMUNIZATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteImmunizationsSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_IMMUNIZATIONS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteImmunizationsSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -865,7 +885,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -873,11 +894,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PROBLEM_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteProblemSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PROBLEM_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteProblemSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -924,20 +946,22 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_REFERRAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+				referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteProceduresSectionEntriesOptional2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteProceduresSectionEntriesOptional2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -984,7 +1008,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -992,11 +1017,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_RESULTS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteResultsSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_RESULTS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteResultsSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1043,19 +1069,21 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteReviewOfSystemsSection"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteReviewOfSystemsSection"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1102,7 +1130,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1110,11 +1139,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_SOCIAL_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteSocialHistorySection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_SOCIAL_HISTORY_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteSocialHistorySection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1154,14 +1184,15 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 
-	public static boolean validateReferralNoteVitalSignsSection2(ReferralNote referralNote,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateReferralNoteVitalSignsSection2(ReferralNote referralNote, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_REFERRAL_NOTE_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1169,11 +1200,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_VITAL_SIGNS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteVitalSignsSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_VITAL_SIGNS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteVitalSignsSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1220,19 +1252,21 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteFunctionalStatusSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteFunctionalStatusSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1279,7 +1313,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1287,11 +1322,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PHYSICAL_EXAM_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNotePhysicalExamSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PHYSICAL_EXAM_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNotePhysicalExamSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1338,21 +1374,23 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+				referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAdvanceDirectivesSectionEntriesOptional2b"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B,
+						ConsolPlugin.INSTANCE.getString(
+							"ReferralNoteReferralNoteAdvanceDirectivesSectionEntriesOptional2b"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1399,7 +1437,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1407,11 +1446,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_NUTRITION_SECTION,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteNutritionSection"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_NUTRITION_SECTION,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteNutritionSection"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1458,7 +1498,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1466,11 +1507,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_MENTAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteMentalStatusSection"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_MENTAL_STATUS_SECTION,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteMentalStatusSection"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1517,19 +1559,21 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteMedicalEquipmentSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteMedicalEquipmentSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1576,7 +1620,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1584,11 +1629,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ALLERGIES_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAllergiesSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ALLERGIES_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAllergiesSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1635,7 +1681,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1643,11 +1690,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ASSESSMENT_SECTION,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAssessmentSection"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ASSESSMENT_SECTION,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAssessmentSection"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1694,19 +1742,21 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAssessmentAndPlanSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAssessmentAndPlanSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1753,19 +1803,22 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referralNote)) {
+			VALIDATE_REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteHistoryOfPastIllnessSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteHistoryOfPastIllnessSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1812,7 +1865,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1820,11 +1874,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_GENERAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteGeneralStatusSection"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_GENERAL_STATUS_SECTION,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteGeneralStatusSection"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1871,7 +1926,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1879,11 +1935,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_MEDICATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteMedicationsSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_MEDICATIONS_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteMedicationsSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1930,19 +1987,21 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteReasonForReferralSection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteReasonForReferralSection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -1989,7 +2048,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_REFERRAL_NOTE_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERRAL_NOTE_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_REFERRAL_NOTE_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1997,11 +2057,12 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (!EOCL_ENV.createQuery(VALIDATE_REFERRAL_NOTE_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_FAMILY_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteFamilyHistorySection2"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_FAMILY_HISTORY_SECTION2,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteFamilyHistorySection2"),
+						new Object[] { referralNote }));
 			}
 
 			return false;
@@ -2041,31 +2102,35 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static boolean validateReferralNoteInformationRecipientIntendedRecipientPersonName(
-			ReferralNote referralNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateReferralNoteInformationRecipientIntendedRecipientPersonName(ReferralNote referralNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipientIntendedRecipientPersonName"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteInformationRecipientIntendedRecipientPersonName"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2113,24 +2178,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipientIntendedRecipientAddr"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteInformationRecipientIntendedRecipientAddr"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2178,24 +2247,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipientIntendedRecipientTelecom"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteInformationRecipientIntendedRecipientTelecom"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2243,24 +2316,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipientIntendedRecipientInformationRecipient"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteInformationRecipientIntendedRecipientInformationRecipient"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2308,24 +2385,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipientIntendedRecipient"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteInformationRecipientIntendedRecipient"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2373,24 +2454,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2438,29 +2523,34 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityClassCodeP"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityClassCodeP"),
+							new Object[] { eObject }));
 				}
 
 				if (context != null) {
 					// generate a pass token for my dependent constraints to short-circuit or filter results
-					Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP");
+					Collection<Object> passToken = (Collection<Object>) context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP");
 					if (passToken == null) {
 						// anticipate a reasonably healthy model
 						passToken = new java.util.ArrayList<Object>(3);
@@ -2485,9 +2575,9 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND).associatedEntity->excluding(null)->reject(not classCode.oclIsUndefined() and classCode.oclIsKindOf(vocab::RoleClassAssociative) and "
-			+ "let value : vocab::RoleClassAssociative = classCode.oclAsType(vocab::RoleClassAssociative) in "
-			+ "value = vocab::RoleClassAssociative::PRS or value = vocab::RoleClassAssociative::NOK or value = vocab::RoleClassAssociative::CAREGIVER or value = vocab::RoleClassAssociative::AGNT or value = vocab::RoleClassAssociative::GUAR or value = vocab::RoleClassAssociative::ECON)";
+	protected static final String VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::IND).associatedEntity->excluding(null)->reject(not classCode.oclIsUndefined() and classCode.oclIsKindOf(vocab::RoleClassAssociative) and " +
+			"let value : vocab::RoleClassAssociative = classCode.oclAsType(vocab::RoleClassAssociative) in " +
+			"value = vocab::RoleClassAssociative::PRS or value = vocab::RoleClassAssociative::NOK or value = vocab::RoleClassAssociative::CAREGIVER or value = vocab::RoleClassAssociative::AGNT or value = vocab::RoleClassAssociative::GUAR or value = vocab::RoleClassAssociative::ECON)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReferralNoteParticipantCaregiverAssociatedEntityClassCode(ReferralNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referral Note Participant Caregiver Associated Entity Class Code</em>}' invariant operation.
@@ -2518,19 +2608,23 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			Object passFilter = (context == null)
 					? null
-					: context.get("org.openhealthtools.mdht.uml.cda.consol.ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP");
+					: context.get(
+						"org.openhealthtools.mdht.uml.cda.consol.ReferralNoteParticipantCaregiverAssociatedEntityClassCodeP");
 			if (passFilter instanceof Collection<?>) {
 				// filter my query results
 				oclResultSet = new ArrayList<EObject>(oclResultSet);
@@ -2539,12 +2633,13 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityClassCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityClassCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2592,24 +2687,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2657,23 +2756,27 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverTypeCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverTypeCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2721,24 +2824,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverAssociatedEntity"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCaregiverAssociatedEntity"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2786,24 +2893,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2851,24 +2962,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityId"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityId"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2916,24 +3031,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAddr"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAddr"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2981,24 +3100,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityTelecom"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityTelecom"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -3046,24 +3169,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityClassCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityClassCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -3111,24 +3238,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -3176,24 +3307,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -3241,23 +3376,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactTypeCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCallbackContactTypeCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -3305,24 +3445,28 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(referralNote);
+		Object oclResult = VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			referralNote);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntity"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY,
+							ConsolPlugin.INSTANCE.getString(
+								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntity"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -3361,7 +3505,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(364));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(364));
 			try {
 				GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY = helper.createQuery(GET_PLAN_OF_TREATMENT_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3403,9 +3548,11 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(365));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(365));
 			try {
-				GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
+				GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
+					GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3444,9 +3591,11 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(366));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(366));
 			try {
-				GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_EXP);
+				GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_QRY = helper.createQuery(
+					GET_HISTORY_OF_PRESENT_ILLNESS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3485,7 +3634,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_IMMUNIZATIONS_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(367));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(367));
 			try {
 				GET_IMMUNIZATIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3526,7 +3676,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_PROBLEM_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(368));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(368));
 			try {
 				GET_PROBLEM_SECTION2__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3567,9 +3718,11 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(369));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(369));
 			try {
-				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
+				GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
+					GET_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3608,7 +3761,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_RESULTS_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(370));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(370));
 			try {
 				GET_RESULTS_SECTION2__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3649,7 +3803,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(371));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(371));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3690,7 +3845,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_SOCIAL_HISTORY_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(372));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(372));
 			try {
 				GET_SOCIAL_HISTORY_SECTION2__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3731,7 +3887,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_VITAL_SIGNS_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(373));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(373));
 			try {
 				GET_VITAL_SIGNS_SECTION2__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3772,7 +3929,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_FUNCTIONAL_STATUS_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(374));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(374));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION2__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3813,7 +3971,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_PHYSICAL_EXAM_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(375));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(375));
 			try {
 				GET_PHYSICAL_EXAM_SECTION2__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3855,9 +4014,11 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(376));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(376));
 			try {
-				GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__EOCL_EXP);
+				GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__EOCL_QRY = helper.createQuery(
+					GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3896,7 +4057,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_NUTRITION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(377));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(377));
 			try {
 				GET_NUTRITION_SECTION__EOCL_QRY = helper.createQuery(GET_NUTRITION_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3937,7 +4099,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_MENTAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(378));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(378));
 			try {
 				GET_MENTAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_MENTAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -3978,7 +4141,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_MEDICAL_EQUIPMENT_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(379));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(379));
 			try {
 				GET_MEDICAL_EQUIPMENT_SECTION2__EOCL_QRY = helper.createQuery(GET_MEDICAL_EQUIPMENT_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4019,7 +4183,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_ALLERGIES_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(380));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(380));
 			try {
 				GET_ALLERGIES_SECTION2__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4060,7 +4225,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_ASSESSMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(381));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(381));
 			try {
 				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4101,9 +4267,11 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(382));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(382));
 			try {
-				GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_EXP);
+				GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_QRY = helper.createQuery(
+					GET_ASSESSMENT_AND_PLAN_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -4142,9 +4310,11 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(383));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(383));
 			try {
-				GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_EXP);
+				GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_QRY = helper.createQuery(
+					GET_HISTORY_OF_PAST_ILLNESS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -4183,7 +4353,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_GENERAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(384));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(384));
 			try {
 				GET_GENERAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_GENERAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4224,7 +4395,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_MEDICATIONS_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(385));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(385));
 			try {
 				GET_MEDICATIONS_SECTION2__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4265,9 +4437,11 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_REASON_FOR_REFERRAL_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(386));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(386));
 			try {
-				GET_REASON_FOR_REFERRAL_SECTION2__EOCL_QRY = helper.createQuery(GET_REASON_FOR_REFERRAL_SECTION2__EOCL_EXP);
+				GET_REASON_FOR_REFERRAL_SECTION2__EOCL_QRY = helper.createQuery(
+					GET_REASON_FOR_REFERRAL_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -4306,7 +4480,8 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 		if (GET_FAMILY_HISTORY_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.REFERRAL_NOTE, ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(387));
+				ConsolPackage.Literals.REFERRAL_NOTE,
+				ConsolPackage.Literals.REFERRAL_NOTE.getEAllOperations().get(387));
 			try {
 				GET_FAMILY_HISTORY_SECTION2__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_SECTION2__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -4356,19 +4531,21 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERRAL_NOTE);
 			try {
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			referralNote)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referralNote)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REFERRAL_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ReferralNoteGeneralHeaderConstraintsTemplateId"),
-					new Object[] { referralNote }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.REFERRAL_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ReferralNoteGeneralHeaderConstraintsTemplateId"),
+						new Object[] { referralNote }));
 			}
 
 			return false;

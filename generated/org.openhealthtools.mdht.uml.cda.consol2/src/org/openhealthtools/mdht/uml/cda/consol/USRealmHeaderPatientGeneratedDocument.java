@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -81,7 +77,8 @@ public interface USRealmHeaderPatientGeneratedDocument extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->exists(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))'"
 	 * @generated
 	 */
-	boolean validateUSRealmHeaderPatientGeneratedDocumentAuthor(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUSRealmHeaderPatientGeneratedDocumentAuthor(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -613,8 +610,8 @@ public interface USRealmHeaderPatientGeneratedDocument extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.legalAuthenticator->excluding(null).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
 	 * @generated
 	 */
-	boolean validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -907,7 +904,6 @@ public interface USRealmHeaderPatientGeneratedDocument extends USRealmHeader2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public USRealmHeaderPatientGeneratedDocument init();
 
 	/**
@@ -915,6 +911,5 @@ public interface USRealmHeaderPatientGeneratedDocument extends USRealmHeader2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public USRealmHeaderPatientGeneratedDocument init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // USRealmHeaderPatientGeneratedDocument

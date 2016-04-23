@@ -18,6 +18,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.ParticipantRoleOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
@@ -27,7 +28,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-import org.openhealthtools.mdht.uml.cda.operations.ParticipantRoleOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -98,7 +98,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
-				VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -106,11 +107,12 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceTemplateId"),
-					new Object[] { productInstance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceTemplateId"),
+						new Object[] { productInstance }));
 			}
 
 			return false;
@@ -150,14 +152,15 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	 * @generated
 	 */
 
-	public static boolean validateProductInstanceClassCode(ProductInstance productInstance,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateProductInstanceClassCode(ProductInstance productInstance, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
-				VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -165,11 +168,12 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceClassCode"),
-					new Object[] { productInstance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceClassCode"),
+						new Object[] { productInstance }));
 			}
 
 			return false;
@@ -216,18 +220,21 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
-				VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(productInstance)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_ID,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceId"),
-					new Object[] { productInstance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_ID,
+						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceId"),
+						new Object[] { productInstance }));
 			}
 
 			return false;
@@ -274,7 +281,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
-				VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -282,11 +290,12 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceScopingEntity"),
-					new Object[] { productInstance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY,
+						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceScopingEntity"),
+						new Object[] { productInstance }));
 			}
 
 			return false;
@@ -333,7 +342,8 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
-				VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -341,11 +351,12 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			productInstance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE,
-					ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstancePlayingDevice"),
-					new Object[] { productInstance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE,
+						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstancePlayingDevice"),
+						new Object[] { productInstance }));
 			}
 
 			return false;
@@ -392,23 +403,27 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(productInstance);
+		Object oclResult = VALIDATE_PRODUCT_INSTANCE_SCOPING_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			productInstance);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceScopingEntityId"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY_ID,
+							ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceScopingEntityId"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -456,23 +471,27 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PRODUCT_INSTANCE);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(productInstance);
+		Object oclResult = VALIDATE_PRODUCT_INSTANCE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			productInstance);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE_CODE,
-						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstancePlayingDeviceCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE_CODE,
+							ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstancePlayingDeviceCode"),
+							new Object[] { eObject }));
 				}
 
 			}

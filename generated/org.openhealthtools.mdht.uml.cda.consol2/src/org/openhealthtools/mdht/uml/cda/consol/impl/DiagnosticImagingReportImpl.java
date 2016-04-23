@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport;
@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DiagnosticImagingRepor
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Diagnostic Imaging Report</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -126,8 +124,10 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validateDiagnosticImagingReportParticipant1(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportParticipant1(this, diagnostics, context);
+	public boolean validateDiagnosticImagingReportParticipant1(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportParticipant1(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -172,7 +172,8 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validateDiagnosticImagingReportComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDiagnosticImagingReportComponentOf(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportComponentOf(this, diagnostics, context);
 	}
 
@@ -454,7 +455,8 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 

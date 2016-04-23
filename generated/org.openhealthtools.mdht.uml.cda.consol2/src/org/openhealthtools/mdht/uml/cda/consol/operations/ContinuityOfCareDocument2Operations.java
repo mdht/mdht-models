@@ -8,18 +8,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -40,7 +35,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -158,7 +152,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -166,17 +161,19 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 		if (!EOCL_ENV.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_CODE_P,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2CodeP"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_CODE_P,
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2CodeP"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2CodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2CodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -198,9 +195,9 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '34133-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '34133-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateContinuityOfCareDocument2Code(ContinuityOfCareDocument2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Code</em>}' invariant operation.
@@ -239,7 +236,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -247,11 +245,12 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 		if (!EOCL_ENV.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_CODE,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2Code"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_CODE,
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2Code"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -298,7 +297,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -306,11 +306,12 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 		if (!EOCL_ENV.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2Author"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR,
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2Author"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -358,21 +359,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOf"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOf"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -420,21 +423,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2AllergiesSection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2AllergiesSection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -482,21 +487,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2MedicationsSection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2MedicationsSection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -544,21 +551,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2ProblemSection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2ProblemSection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -606,21 +615,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2ProceduresSection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2ProceduresSection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -668,21 +679,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2ResultsSection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2ResultsSection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -730,21 +743,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -792,21 +807,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2EncountersSectionEntriesOptional2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2EncountersSectionEntriesOptional2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -854,21 +871,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2FunctionalStatusSection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2FunctionalStatusSection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -916,21 +935,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2ImmunizationsSection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2ImmunizationsSection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -978,21 +999,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2MedicalEquipmentSection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2MedicalEquipmentSection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -1040,20 +1063,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2PayersSection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2PayersSection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -1101,21 +1127,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2PlanOfTreatmentSection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2PlanOfTreatmentSection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -1163,21 +1191,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2SocialHistorySection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2SocialHistorySection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -1225,21 +1255,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2VitalSignsSection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2VitalSignsSection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -1287,21 +1319,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2MentalStatusSection"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2MentalStatusSection"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -1349,21 +1383,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2NutritionSection"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2NutritionSection"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -1411,21 +1447,23 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2FamilyHistorySection2"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2,
+						ConsolPlugin.INSTANCE.getString(
+							"ContinuityOfCareDocument2ContinuityOfCareDocument2FamilyHistorySection2"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;
@@ -1473,24 +1511,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1539,24 +1581,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1605,24 +1651,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2AuthorAssignedAuthor"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2AuthorAssignedAuthor"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1671,24 +1721,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1737,24 +1791,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1803,24 +1861,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1869,24 +1931,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1935,24 +2001,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2001,24 +2071,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2067,24 +2141,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2133,24 +2211,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventClassCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventClassCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2199,24 +2281,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2265,24 +2351,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformer"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEventPerformer"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2331,24 +2421,28 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument2);
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			continuityOfCareDocument2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT,
-						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEvent"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT,
+							ConsolPlugin.INSTANCE.getString(
+								"ContinuityOfCareDocument2ContinuityOfCareDocument2DocumentationOfServiceEvent"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2601,7 +2695,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2,
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2.getEAllOperations().get(353));
 			try {
-				GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
+				GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
+					GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -2644,7 +2739,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2,
 				ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2.getEAllOperations().get(354));
 			try {
-				GET_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(GET_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
+				GET_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__EOCL_QRY = helper.createQuery(
+					GET_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -2849,7 +2945,8 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	 * @generated
 	 */
 
-	public static PlanOfTreatmentSection2 getPlanOfTreatmentSection2(ContinuityOfCareDocument2 continuityOfCareDocument2) {
+	public static PlanOfTreatmentSection2 getPlanOfTreatmentSection2(
+			ContinuityOfCareDocument2 continuityOfCareDocument2) {
 		if (GET_PLAN_OF_TREATMENT_SECTION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -3115,19 +3212,22 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT2);
 			try {
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			continuityOfCareDocument2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				continuityOfCareDocument2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2GeneralHeaderConstraintsTemplateId"),
-					new Object[] { continuityOfCareDocument2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CONTINUITY_OF_CARE_DOCUMENT2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocument2GeneralHeaderConstraintsTemplateId"),
+						new Object[] { continuityOfCareDocument2 }));
 			}
 
 			return false;

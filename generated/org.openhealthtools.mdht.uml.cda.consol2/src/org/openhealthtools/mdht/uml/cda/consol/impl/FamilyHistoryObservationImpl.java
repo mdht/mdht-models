@@ -16,20 +16,18 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Family History Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -71,8 +69,10 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * @generated
 	 */
 	@Override
-	public boolean validateFamilyHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationTemplateId(this, diagnostics, context);
+	public boolean validateFamilyHistoryObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -131,8 +131,10 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * @generated
 	 */
 	@Override
-	public boolean validateFamilyHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationStatusCode(this, diagnostics, context);
+	public boolean validateFamilyHistoryObservationStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -140,7 +142,8 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateFamilyHistoryObservationStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationStatusCodeP(
 			this, diagnostics, context);
 	}

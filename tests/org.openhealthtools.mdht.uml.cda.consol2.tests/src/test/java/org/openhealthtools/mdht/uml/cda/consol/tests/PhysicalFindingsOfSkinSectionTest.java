@@ -15,15 +15,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalFindingsOfSkinSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicalFindingsOfSkinSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -56,7 +56,8 @@ public class PhysicalFindingsOfSkinSectionTest extends CDAValidationTest {
 	public void testValidatePhysicalFindingsOfSkinSectionTemplateId() {
 		OperationsTestCase<PhysicalFindingsOfSkinSection> validatePhysicalFindingsOfSkinSectionTemplateIdTestCase = new OperationsTestCase<PhysicalFindingsOfSkinSection>(
 			"validatePhysicalFindingsOfSkinSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -89,8 +90,8 @@ public class PhysicalFindingsOfSkinSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePhysicalFindingsOfSkinSectionCode() {
 		OperationsTestCase<PhysicalFindingsOfSkinSection> validatePhysicalFindingsOfSkinSectionCodeTestCase = new OperationsTestCase<PhysicalFindingsOfSkinSection>(
-			"validatePhysicalFindingsOfSkinSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePhysicalFindingsOfSkinSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -123,8 +124,8 @@ public class PhysicalFindingsOfSkinSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePhysicalFindingsOfSkinSectionCodeP() {
 		OperationsTestCase<PhysicalFindingsOfSkinSection> validatePhysicalFindingsOfSkinSectionCodePTestCase = new OperationsTestCase<PhysicalFindingsOfSkinSection>(
-			"validatePhysicalFindingsOfSkinSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePhysicalFindingsOfSkinSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -157,8 +158,8 @@ public class PhysicalFindingsOfSkinSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePhysicalFindingsOfSkinSectionTitle() {
 		OperationsTestCase<PhysicalFindingsOfSkinSection> validatePhysicalFindingsOfSkinSectionTitleTestCase = new OperationsTestCase<PhysicalFindingsOfSkinSection>(
-			"validatePhysicalFindingsOfSkinSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePhysicalFindingsOfSkinSectionTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -194,8 +195,8 @@ public class PhysicalFindingsOfSkinSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePhysicalFindingsOfSkinSectionText() {
 		OperationsTestCase<PhysicalFindingsOfSkinSection> validatePhysicalFindingsOfSkinSectionTextTestCase = new OperationsTestCase<PhysicalFindingsOfSkinSection>(
-			"validatePhysicalFindingsOfSkinSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePhysicalFindingsOfSkinSectionText", operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -232,7 +233,8 @@ public class PhysicalFindingsOfSkinSectionTest extends CDAValidationTest {
 	public void testValidatePhysicalFindingsOfSkinSectionWoundObservation() {
 		OperationsTestCase<PhysicalFindingsOfSkinSection> validatePhysicalFindingsOfSkinSectionWoundObservationTestCase = new OperationsTestCase<PhysicalFindingsOfSkinSection>(
 			"validatePhysicalFindingsOfSkinSectionWoundObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICAL_FINDINGS_OF_SKIN_SECTION_WOUND_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

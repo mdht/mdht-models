@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
@@ -50,8 +50,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeSummaryOperat
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Discharge Summary</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -149,7 +147,8 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateDischargeSummaryDischargeDietSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDischargeSummaryDischargeDietSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryDischargeDietSection(this, diagnostics, context);
 	}
 
@@ -271,7 +270,8 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateDischargeSummaryFamilyHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDischargeSummaryFamilyHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummaryFamilyHistorySection(this, diagnostics, context);
 	}
 
@@ -376,7 +376,8 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateDischargeSummarySocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDischargeSummarySocialHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateDischargeSummarySocialHistorySection(this, diagnostics, context);
 	}
 
@@ -816,7 +817,8 @@ public class DischargeSummaryImpl extends GeneralHeaderConstraintsImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DischargeSummaryOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 

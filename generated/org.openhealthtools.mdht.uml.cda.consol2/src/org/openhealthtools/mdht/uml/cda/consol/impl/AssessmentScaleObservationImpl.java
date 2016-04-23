@@ -13,19 +13,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentScaleObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Assessment Scale Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -79,7 +77,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 * @generated
 	 */
 	@Override
-	public boolean validateAssessmentScaleObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAssessmentScaleObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationTemplateId(
 			this, diagnostics, context);
 	}
@@ -90,7 +89,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 * @generated
 	 */
 	@Override
-	public boolean validateAssessmentScaleObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAssessmentScaleObservationClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationClassCode(
 			this, diagnostics, context);
 	}
@@ -101,7 +101,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 * @generated
 	 */
 	@Override
-	public boolean validateAssessmentScaleObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAssessmentScaleObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationMoodCode(
 			this, diagnostics, context);
 	}
@@ -168,7 +169,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 * @generated
 	 */
 	@Override
-	public boolean validateAssessmentScaleObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAssessmentScaleObservationStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationStatusCode(
 			this, diagnostics, context);
 	}
@@ -202,7 +204,8 @@ public class AssessmentScaleObservationImpl extends ObservationImpl implements A
 	 */
 	@Override
 	public boolean validateAssessmentScaleObservationAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationAuthor(this, diagnostics, context);
+		return AssessmentScaleObservationOperations.validateAssessmentScaleObservationAuthor(
+			this, diagnostics, context);
 	}
 
 	/**

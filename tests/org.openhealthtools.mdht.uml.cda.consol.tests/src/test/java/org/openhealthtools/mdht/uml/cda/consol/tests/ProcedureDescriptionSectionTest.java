@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureDescriptionSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureDescriptionSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,8 +52,8 @@ public class ProcedureDescriptionSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureDescriptionSectionTemplateId() {
 		OperationsTestCase<ProcedureDescriptionSection> validateProcedureDescriptionSectionTemplateIdTestCase = new OperationsTestCase<ProcedureDescriptionSection>(
-			"validateProcedureDescriptionSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureDescriptionSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -120,8 +120,8 @@ public class ProcedureDescriptionSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureDescriptionSectionCodeP() {
 		OperationsTestCase<ProcedureDescriptionSection> validateProcedureDescriptionSectionCodePTestCase = new OperationsTestCase<ProcedureDescriptionSection>(
-			"validateProcedureDescriptionSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_DESCRIPTION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureDescriptionSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_DESCRIPTION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -191,8 +191,8 @@ public class ProcedureDescriptionSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureDescriptionSectionTitle() {
 		OperationsTestCase<ProcedureDescriptionSection> validateProcedureDescriptionSectionTitleTestCase = new OperationsTestCase<ProcedureDescriptionSection>(
-			"validateProcedureDescriptionSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureDescriptionSectionTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

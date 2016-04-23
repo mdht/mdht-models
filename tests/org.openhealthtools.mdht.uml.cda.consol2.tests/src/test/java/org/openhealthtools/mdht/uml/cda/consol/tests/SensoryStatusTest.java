@@ -16,18 +16,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SensoryStatus;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SensoryStatusOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -204,7 +204,8 @@ public class SensoryStatusTest extends CDAValidationTest {
 	public void testValidateSensoryStatusCode() {
 		OperationsTestCase<SensoryStatus> validateSensoryStatusCodeTestCase = new OperationsTestCase<SensoryStatus>(
 			"validateSensoryStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_SENSORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_SENSORY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(SensoryStatus target) {
@@ -426,7 +427,8 @@ public class SensoryStatusTest extends CDAValidationTest {
 	public void testValidateSensoryStatusAssessmentScaleObservation() {
 		OperationsTestCase<SensoryStatus> validateSensoryStatusAssessmentScaleObservationTestCase = new OperationsTestCase<SensoryStatus>(
 			"validateSensoryStatusAssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_SENSORY_STATUS_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SENSORY_STATUS_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -461,8 +463,8 @@ public class SensoryStatusTest extends CDAValidationTest {
 	@Test
 	public void testValidateSensoryStatusAuthorParticipation() {
 		OperationsTestCase<SensoryStatus> validateSensoryStatusAuthorParticipationTestCase = new OperationsTestCase<SensoryStatus>(
-			"validateSensoryStatusAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_SENSORY_STATUS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSensoryStatusAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_SENSORY_STATUS_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

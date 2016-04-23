@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -58,7 +54,8 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.getAllSections()->exists(s : cda::Section | s.oclIsTypeOf(consol::PlanOfTreatmentSection2))'"
 	 * @generated
 	 */
-	boolean validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCarePlanDoesNotHavePlanOfTreatmentSectionV2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -670,7 +667,8 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).effectiveTime->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((low.oclIsUndefined() or low.isNullFlavorUndefined()) implies (not low.oclIsUndefined()) )))'"
 	 * @generated
 	 */
-	boolean validateCarePlanDocumentationOfServiceEventIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCarePlanDocumentationOfServiceEventIVLTSLow(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -811,7 +809,8 @@ public interface CarePlan extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.relatedDocument->excluding(null).parentDocument->excluding(null)->reject((setId.oclIsUndefined() or setId.isNullFlavorUndefined()) implies (not setId.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateCarePlanRelatedDocumentParentDocumentSetId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCarePlanRelatedDocumentParentDocumentSetId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -928,7 +927,6 @@ public interface CarePlan extends USRealmHeader2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CarePlan init();
 
 	/**
@@ -936,6 +934,5 @@ public interface CarePlan extends USRealmHeader2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CarePlan init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CarePlan

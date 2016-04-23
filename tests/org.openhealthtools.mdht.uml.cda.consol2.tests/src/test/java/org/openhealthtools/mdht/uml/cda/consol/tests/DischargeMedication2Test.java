@@ -16,16 +16,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeMedication2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -128,8 +128,8 @@ public class DischargeMedication2Test extends CDAValidationTest {
 	@Test
 	public void testValidateDischargeMedication2StatusCodeP() {
 		OperationsTestCase<DischargeMedication2> validateDischargeMedication2StatusCodePTestCase = new OperationsTestCase<DischargeMedication2>(
-			"validateDischargeMedication2StatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDischargeMedication2StatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_MEDICATION2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -248,8 +248,8 @@ public class DischargeMedication2Test extends CDAValidationTest {
 	@Test
 	public void testValidateDischargeMedicationMedicationActivity() {
 		OperationsTestCase<DischargeMedication2> validateDischargeMedicationMedicationActivityTestCase = new OperationsTestCase<DischargeMedication2>(
-			"validateDischargeMedicationMedicationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDischargeMedicationMedicationActivity", operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

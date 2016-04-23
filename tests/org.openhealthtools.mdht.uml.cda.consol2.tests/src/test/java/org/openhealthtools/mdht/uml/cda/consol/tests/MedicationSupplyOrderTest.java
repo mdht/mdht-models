@@ -14,23 +14,23 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Product;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_INT;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.PQ;
+import org.eclipse.mdht.uml.hl7.vocab.ActClassSupply;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Product;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationSupplyOrderOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_INT;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassSupply;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -70,7 +70,8 @@ public class MedicationSupplyOrderTest extends CDAValidationTest {
 	public void testValidateMedicationSupplyOrderInstructionInversionInd() {
 		OperationsTestCase<MedicationSupplyOrder> validateMedicationSupplyOrderInstructionInversionIndTestCase = new OperationsTestCase<MedicationSupplyOrder>(
 			"validateMedicationSupplyOrderInstructionInversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -134,7 +135,8 @@ public class MedicationSupplyOrderTest extends CDAValidationTest {
 	public void testValidateMedicationSupplyOrderEffectiveTimeHigh() {
 		OperationsTestCase<MedicationSupplyOrder> validateMedicationSupplyOrderEffectiveTimeHighTestCase = new OperationsTestCase<MedicationSupplyOrder>(
 			"validateMedicationSupplyOrderEffectiveTimeHigh",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -174,7 +176,8 @@ public class MedicationSupplyOrderTest extends CDAValidationTest {
 	public void testValidateMedicationSupplyOrderContainsMedicationOrImmunization() {
 		OperationsTestCase<MedicationSupplyOrder> validateMedicationSupplyOrderContainsMedicationOrImmunizationTestCase = new OperationsTestCase<MedicationSupplyOrder>(
 			"validateMedicationSupplyOrderContainsMedicationOrImmunization",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -211,8 +214,8 @@ public class MedicationSupplyOrderTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationSupplyOrderTemplateId() {
 		OperationsTestCase<MedicationSupplyOrder> validateMedicationSupplyOrderTemplateIdTestCase = new OperationsTestCase<MedicationSupplyOrder>(
-			"validateMedicationSupplyOrderTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationSupplyOrderTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -279,8 +282,8 @@ public class MedicationSupplyOrderTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationSupplyOrderEffectiveTime() {
 		OperationsTestCase<MedicationSupplyOrder> validateMedicationSupplyOrderEffectiveTimeTestCase = new OperationsTestCase<MedicationSupplyOrder>(
-			"validateMedicationSupplyOrderEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationSupplyOrderEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -387,8 +390,8 @@ public class MedicationSupplyOrderTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationSupplyOrderRepeatNumber() {
 		OperationsTestCase<MedicationSupplyOrder> validateMedicationSupplyOrderRepeatNumberTestCase = new OperationsTestCase<MedicationSupplyOrder>(
-			"validateMedicationSupplyOrderRepeatNumber",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationSupplyOrderRepeatNumber", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -424,8 +427,8 @@ public class MedicationSupplyOrderTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationSupplyOrderStatusCode() {
 		OperationsTestCase<MedicationSupplyOrder> validateMedicationSupplyOrderStatusCodeTestCase = new OperationsTestCase<MedicationSupplyOrder>(
-			"validateMedicationSupplyOrderStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationSupplyOrderStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -532,8 +535,8 @@ public class MedicationSupplyOrderTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationSupplyOrderInstructions() {
 		OperationsTestCase<MedicationSupplyOrder> validateMedicationSupplyOrderInstructionsTestCase = new OperationsTestCase<MedicationSupplyOrder>(
-			"validateMedicationSupplyOrderInstructions",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationSupplyOrderInstructions", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_SUPPLY_ORDER_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -546,7 +549,7 @@ public class MedicationSupplyOrderTest extends CDAValidationTest {
 				target.init();
 				Instructions instructions = ConsolFactory.eINSTANCE.createInstructions().init();
 				target.addAct(instructions);
-				for (org.openhealthtools.mdht.uml.cda.EntryRelationship er : target.getEntryRelationships()) {
+				for (org.eclipse.mdht.uml.cda.EntryRelationship er : target.getEntryRelationships()) {
 					er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 				}
 

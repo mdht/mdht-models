@@ -10,18 +10,14 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
@@ -45,10 +41,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -168,7 +161,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -176,11 +170,12 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActTemplateId"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActTemplateId"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -227,7 +222,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -235,11 +231,12 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActClassCode"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActClassCode"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -286,7 +283,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -294,17 +292,19 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_MOOD_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActMoodCodeP"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_MOOD_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActMoodCodeP"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionActMoodCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionActMoodCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -326,9 +326,9 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and "
-			+ "let value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in "
-			+ "value = vocab::x_DocumentActMood::APT or value = vocab::x_DocumentActMood::ARQ or value = vocab::x_DocumentActMood::INT or value = vocab::x_DocumentActMood::PRMS or value = vocab::x_DocumentActMood::PRP or value = vocab::x_DocumentActMood::RQO";
+	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentActMood) and " +
+			"let value : vocab::x_DocumentActMood = self.moodCode.oclAsType(vocab::x_DocumentActMood) in " +
+			"value = vocab::x_DocumentActMood::APT or value = vocab::x_DocumentActMood::ARQ or value = vocab::x_DocumentActMood::INT or value = vocab::x_DocumentActMood::PRMS or value = vocab::x_DocumentActMood::PRP or value = vocab::x_DocumentActMood::RQO";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedInterventionActMoodCode(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Mood Code</em>}' invariant operation.
@@ -367,7 +367,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -375,11 +376,12 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActMoodCode"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActMoodCode"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -426,7 +428,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -434,11 +437,12 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActId"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_ID,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActId"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -485,7 +489,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -493,17 +498,19 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActCodeP"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActCodeP"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionActCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PlannedInterventionActCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -525,9 +532,9 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '362956003' and value.codeSystem = '2.16.840.1.113883.6.96')";
+	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '362956003' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedInterventionActCode(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Code</em>}' invariant operation.
@@ -566,7 +573,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -574,11 +582,12 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActCode"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActCode"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -594,8 +603,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
+	protected static final String VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedInterventionActStatusCode(PlannedInterventionAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Intervention Act Status Code</em>}' invariant operation.
@@ -626,7 +635,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -634,11 +644,12 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActStatusCode"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActStatusCode"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -685,19 +696,22 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_INTERVENTION_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActStatusCodeP"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActStatusCodeP"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -744,19 +758,22 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_INTERVENTION_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActEffectiveTime"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActEffectiveTime"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -803,20 +820,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActAuthorParticipation"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActAuthorParticipation"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -863,21 +883,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActAdvanceDirectiveObservation2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_ADVANCE_DIRECTIVE_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActAdvanceDirectiveObservation2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -924,21 +946,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActImmunizationActivity2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_IMMUNIZATION_ACTIVITY2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActImmunizationActivity2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -985,20 +1009,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_MEDICATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActMedicationActivity2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_MEDICATION_ACTIVITY2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActMedicationActivity2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1045,21 +1072,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActProcedureActivityAct2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_ACT2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActProcedureActivityAct2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1106,19 +1135,22 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_INTERVENTION_ACT_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_INTERVENTION_ACT,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActInterventionAct"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_INTERVENTION_ACT,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActInterventionAct"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1165,21 +1197,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActProcedureActivityObservation2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActProcedureActivityObservation2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1226,21 +1260,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActProcedureActivityProcedure2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PROCEDURE_ACTIVITY_PROCEDURE2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActProcedureActivityProcedure2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1287,19 +1323,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActEncounterActivity2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_ENCOUNTER_ACTIVITY2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActEncounterActivity2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1346,7 +1386,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1354,11 +1395,12 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_INSTRUCTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_INSTRUCTION2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActInstruction2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_INSTRUCTION2,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActInstruction2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1405,21 +1447,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActNonMedicinalSupplyActivity2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_NON_MEDICINAL_SUPPLY_ACTIVITY2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActNonMedicinalSupplyActivity2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1466,7 +1510,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1474,11 +1519,12 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_ACT2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActPlannedAct2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_ACT2,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActPlannedAct2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1518,26 +1564,30 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 */
 
-	public static boolean validatePlannedInterventionActPlannedEncounter2(
-			PlannedInterventionAct plannedInterventionAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePlannedInterventionActPlannedEncounter2(PlannedInterventionAct plannedInterventionAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActPlannedEncounter2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_ENCOUNTER2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActPlannedEncounter2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1584,20 +1634,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActPlannedObservation2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActPlannedObservation2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1637,26 +1690,30 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 */
 
-	public static boolean validatePlannedInterventionActPlannedProcedure2(
-			PlannedInterventionAct plannedInterventionAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePlannedInterventionActPlannedProcedure2(PlannedInterventionAct plannedInterventionAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActPlannedProcedure2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_PROCEDURE2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActPlannedProcedure2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1703,21 +1760,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_MEDICATION_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_MEDICATION_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActPlannedMedicationActivity2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_MEDICATION_ACTIVITY2,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActPlannedMedicationActivity2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1764,19 +1823,22 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_SUPPLY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_SUPPLY2,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActPlannedSupply2"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_SUPPLY2,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActPlannedSupply2"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1823,21 +1885,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActNutritionRecommendation"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_NUTRITION_RECOMMENDATION,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActNutritionRecommendation"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1884,21 +1948,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_DOC_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_DOC_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_DOC_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_DOC_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_DOC_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_DOC_INSTANCE,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActEntryReferenceDocInstance"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_DOC_INSTANCE,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActEntryReferenceDocInstance"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -1945,21 +2011,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActEntryReferenceGoalObs"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_ENTRY_REFERENCE_GOAL_OBS,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActEntryReferenceGoalObs"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -2006,21 +2074,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActHandoffCommunicationParticipants"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_HANDOFF_COMMUNICATION_PARTICIPANTS,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActHandoffCommunicationParticipants"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -2067,21 +2137,23 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_INTERVENTION_ACT_PLANNED_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedInterventionAct)) {
+				plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_IMMUNIZATION_ACTIVITY,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActPlannedImmunizationActivity"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_PLANNED_IMMUNIZATION_ACTIVITY,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedInterventionActPlannedInterventionActPlannedImmunizationActivity"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -2128,7 +2200,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -2136,11 +2209,12 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedInterventionAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActReference"),
-					new Object[] { plannedInterventionAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_REFERENCE,
+						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActReference"),
+						new Object[] { plannedInterventionAct }));
 			}
 
 			return false;
@@ -2180,31 +2254,35 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static boolean validatePlannedInterventionActReferenceTypeCode(
-			PlannedInterventionAct plannedInterventionAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePlannedInterventionActReferenceTypeCode(PlannedInterventionAct plannedInterventionAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedInterventionAct);
+		Object oclResult = VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedInterventionAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActReferenceTypeCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_REFERENCE_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"PlannedInterventionActPlannedInterventionActReferenceTypeCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2252,24 +2330,28 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_INTERVENTION_ACT);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedInterventionAct);
+		Object oclResult = VALIDATE_PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedInterventionAct);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("PlannedInterventionActPlannedInterventionActReferenceExternalDocumentReference"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_INTERVENTION_ACT__PLANNED_INTERVENTION_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
+							ConsolPlugin.INSTANCE.getString(
+								"PlannedInterventionActPlannedInterventionActReferenceExternalDocumentReference"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -2312,14 +2394,16 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(86));
 			try {
-				GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_EXP);
+				GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ADVANCE_DIRECTIVE_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<AdvanceDirectiveObservation2> result = (Collection<AdvanceDirectiveObservation2>) query.evaluate(plannedInterventionAct);
+		Collection<AdvanceDirectiveObservation2> result = (Collection<AdvanceDirectiveObservation2>) query.evaluate(
+			plannedInterventionAct);
 		return new BasicEList.UnmodifiableEList<AdvanceDirectiveObservation2>(result.size(), result.toArray());
 	}
 
@@ -2349,7 +2433,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 */
 
-	public static EList<ImmunizationActivity2> getImmunizationActivity2s(PlannedInterventionAct plannedInterventionAct) {
+	public static EList<ImmunizationActivity2> getImmunizationActivity2s(
+			PlannedInterventionAct plannedInterventionAct) {
 		if (GET_IMMUNIZATION_ACTIVITY2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2363,7 +2448,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_IMMUNIZATION_ACTIVITY2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ImmunizationActivity2> result = (Collection<ImmunizationActivity2>) query.evaluate(plannedInterventionAct);
+		Collection<ImmunizationActivity2> result = (Collection<ImmunizationActivity2>) query.evaluate(
+			plannedInterventionAct);
 		return new BasicEList.UnmodifiableEList<ImmunizationActivity2>(result.size(), result.toArray());
 	}
 
@@ -2407,7 +2493,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION_ACTIVITY2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<MedicationActivity2> result = (Collection<MedicationActivity2>) query.evaluate(plannedInterventionAct);
+		Collection<MedicationActivity2> result = (Collection<MedicationActivity2>) query.evaluate(
+			plannedInterventionAct);
 		return new BasicEList.UnmodifiableEList<MedicationActivity2>(result.size(), result.toArray());
 	}
 
@@ -2437,7 +2524,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 	 * @generated
 	 */
 
-	public static EList<ProcedureActivityAct2> getProcedureActivityAct2s(PlannedInterventionAct plannedInterventionAct) {
+	public static EList<ProcedureActivityAct2> getProcedureActivityAct2s(
+			PlannedInterventionAct plannedInterventionAct) {
 		if (GET_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
@@ -2451,7 +2539,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACTIVITY_ACT2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProcedureActivityAct2> result = (Collection<ProcedureActivityAct2>) query.evaluate(plannedInterventionAct);
+		Collection<ProcedureActivityAct2> result = (Collection<ProcedureActivityAct2>) query.evaluate(
+			plannedInterventionAct);
 		return new BasicEList.UnmodifiableEList<ProcedureActivityAct2>(result.size(), result.toArray());
 	}
 
@@ -2533,14 +2622,16 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(91));
 			try {
-				GET_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_EXP);
+				GET_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACTIVITY_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProcedureActivityObservation2> result = (Collection<ProcedureActivityObservation2>) query.evaluate(plannedInterventionAct);
+		Collection<ProcedureActivityObservation2> result = (Collection<ProcedureActivityObservation2>) query.evaluate(
+			plannedInterventionAct);
 		return new BasicEList.UnmodifiableEList<ProcedureActivityObservation2>(result.size(), result.toArray());
 	}
 
@@ -2578,14 +2669,16 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(92));
 			try {
-				GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP);
+				GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY = helper.createQuery(
+					GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProcedureActivityProcedure2> result = (Collection<ProcedureActivityProcedure2>) query.evaluate(plannedInterventionAct);
+		Collection<ProcedureActivityProcedure2> result = (Collection<ProcedureActivityProcedure2>) query.evaluate(
+			plannedInterventionAct);
 		return new BasicEList.UnmodifiableEList<ProcedureActivityProcedure2>(result.size(), result.toArray());
 	}
 
@@ -2711,14 +2804,16 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(95));
 			try {
-				GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP);
+				GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY = helper.createQuery(
+					GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<NonMedicinalSupplyActivity2> result = (Collection<NonMedicinalSupplyActivity2>) query.evaluate(plannedInterventionAct);
+		Collection<NonMedicinalSupplyActivity2> result = (Collection<NonMedicinalSupplyActivity2>) query.evaluate(
+			plannedInterventionAct);
 		return new BasicEList.UnmodifiableEList<NonMedicinalSupplyActivity2>(result.size(), result.toArray());
 	}
 
@@ -2850,7 +2945,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<PlannedObservation2> result = (Collection<PlannedObservation2>) query.evaluate(plannedInterventionAct);
+		Collection<PlannedObservation2> result = (Collection<PlannedObservation2>) query.evaluate(
+			plannedInterventionAct);
 		return new BasicEList.UnmodifiableEList<PlannedObservation2>(result.size(), result.toArray());
 	}
 
@@ -2932,14 +3028,16 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(100));
 			try {
-				GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_EXP);
+				GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY = helper.createQuery(
+					GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_MEDICATION_ACTIVITY2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<PlannedMedicationActivity2> result = (Collection<PlannedMedicationActivity2>) query.evaluate(plannedInterventionAct);
+		Collection<PlannedMedicationActivity2> result = (Collection<PlannedMedicationActivity2>) query.evaluate(
+			plannedInterventionAct);
 		return new BasicEList.UnmodifiableEList<PlannedMedicationActivity2>(result.size(), result.toArray());
 	}
 
@@ -3028,7 +3126,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_NUTRITION_RECOMMENDATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<NutritionRecommendation> result = (Collection<NutritionRecommendation>) query.evaluate(plannedInterventionAct);
+		Collection<NutritionRecommendation> result = (Collection<NutritionRecommendation>) query.evaluate(
+			plannedInterventionAct);
 		return new BasicEList.UnmodifiableEList<NutritionRecommendation>(result.size(), result.toArray());
 	}
 
@@ -3065,7 +3164,8 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(103));
 			try {
-				GET_ENTRY_REFERENCE_DOC_INSTANCES__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_DOC_INSTANCES__EOCL_EXP);
+				GET_ENTRY_REFERENCE_DOC_INSTANCES__EOCL_QRY = helper.createQuery(
+					GET_ENTRY_REFERENCE_DOC_INSTANCES__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -3152,14 +3252,16 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(105));
 			try {
-				GET_HANDOFF_COMMUNICATION_PARTICIPANTSS__EOCL_QRY = helper.createQuery(GET_HANDOFF_COMMUNICATION_PARTICIPANTSS__EOCL_EXP);
+				GET_HANDOFF_COMMUNICATION_PARTICIPANTSS__EOCL_QRY = helper.createQuery(
+					GET_HANDOFF_COMMUNICATION_PARTICIPANTSS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HANDOFF_COMMUNICATION_PARTICIPANTSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<HandoffCommunicationParticipants> result = (Collection<HandoffCommunicationParticipants>) query.evaluate(plannedInterventionAct);
+		Collection<HandoffCommunicationParticipants> result = (Collection<HandoffCommunicationParticipants>) query.evaluate(
+			plannedInterventionAct);
 		return new BasicEList.UnmodifiableEList<HandoffCommunicationParticipants>(result.size(), result.toArray());
 	}
 
@@ -3197,14 +3299,16 @@ public class PlannedInterventionActOperations extends ClinicalStatementOperation
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT,
 				ConsolPackage.Literals.PLANNED_INTERVENTION_ACT.getEAllOperations().get(106));
 			try {
-				GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_EXP);
+				GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_QRY = helper.createQuery(
+					GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_IMMUNIZATION_ACTIVITIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<PlannedImmunizationActivity> result = (Collection<PlannedImmunizationActivity>) query.evaluate(plannedInterventionAct);
+		Collection<PlannedImmunizationActivity> result = (Collection<PlannedImmunizationActivity>) query.evaluate(
+			plannedInterventionAct);
 		return new BasicEList.UnmodifiableEList<PlannedImmunizationActivity>(result.size(), result.toArray());
 	}
 

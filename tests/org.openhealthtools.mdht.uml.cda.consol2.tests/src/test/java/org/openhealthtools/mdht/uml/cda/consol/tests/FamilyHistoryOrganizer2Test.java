@@ -15,12 +15,12 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryOrganizer2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -96,8 +96,8 @@ public class FamilyHistoryOrganizer2Test extends CDAValidationTest {
 	@Test
 	public void testValidateFamilyHistoryOrganizerTemplateId() {
 		OperationsTestCase<FamilyHistoryOrganizer2> validateFamilyHistoryOrganizerTemplateIdTestCase = new OperationsTestCase<FamilyHistoryOrganizer2>(
-			"validateFamilyHistoryOrganizerTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFamilyHistoryOrganizerTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -131,7 +131,8 @@ public class FamilyHistoryOrganizer2Test extends CDAValidationTest {
 	public void testValidateFamilyHistoryOrganizerFamilyHistoryObservation() {
 		OperationsTestCase<FamilyHistoryOrganizer2> validateFamilyHistoryOrganizerFamilyHistoryObservationTestCase = new OperationsTestCase<FamilyHistoryOrganizer2>(
 			"validateFamilyHistoryOrganizerFamilyHistoryObservation",
-			operationsForOCL.getOCLValue("VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

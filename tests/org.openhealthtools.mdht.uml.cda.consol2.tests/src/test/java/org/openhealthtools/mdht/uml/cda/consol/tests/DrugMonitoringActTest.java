@@ -16,23 +16,23 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Participant2;
+import org.eclipse.mdht.uml.cda.ParticipantRole;
+import org.eclipse.mdht.uml.cda.PlayingEntity;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.PN;
+import org.eclipse.mdht.uml.hl7.vocab.EntityClassRoot;
+import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
+import org.eclipse.mdht.uml.hl7.vocab.RoleClassRoot;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Participant2;
-import org.openhealthtools.mdht.uml.cda.ParticipantRole;
-import org.openhealthtools.mdht.uml.cda.PlayingEntity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DrugMonitoringActOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
-import org.openhealthtools.mdht.uml.hl7.vocab.EntityClassRoot;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassRoot;
 
 /**
  * <!-- begin-user-doc -->
@@ -429,7 +429,8 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 	public void testValidateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCodeTestCase = new OperationsTestCase<DrugMonitoringAct>(
 			"validateDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -477,7 +478,8 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 	public void testValidateDrugMonitoringActParticipantParticipantRolePlayingEntityName() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRolePlayingEntityNameTestCase = new OperationsTestCase<DrugMonitoringAct>(
 			"validateDrugMonitoringActParticipantParticipantRolePlayingEntityName",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -526,7 +528,8 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 	public void testValidateDrugMonitoringActParticipantParticipantRoleClassCode() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRoleClassCodeTestCase = new OperationsTestCase<DrugMonitoringAct>(
 			"validateDrugMonitoringActParticipantParticipantRoleClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -570,7 +573,8 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 	public void testValidateDrugMonitoringActParticipantParticipantRoleId() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRoleIdTestCase = new OperationsTestCase<DrugMonitoringAct>(
 			"validateDrugMonitoringActParticipantParticipantRoleId",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -615,7 +619,8 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 	public void testValidateDrugMonitoringActParticipantParticipantRolePlayingEntity() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRolePlayingEntityTestCase = new OperationsTestCase<DrugMonitoringAct>(
 			"validateDrugMonitoringActParticipantParticipantRolePlayingEntity",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -659,8 +664,8 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 	@Test
 	public void testValidateDrugMonitoringActParticipantTypeCode() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantTypeCodeTestCase = new OperationsTestCase<DrugMonitoringAct>(
-			"validateDrugMonitoringActParticipantTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDrugMonitoringActParticipantTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -700,7 +705,8 @@ public class DrugMonitoringActTest extends CDAValidationTest {
 	public void testValidateDrugMonitoringActParticipantParticipantRole() {
 		OperationsTestCase<DrugMonitoringAct> validateDrugMonitoringActParticipantParticipantRoleTestCase = new OperationsTestCase<DrugMonitoringAct>(
 			"validateDrugMonitoringActParticipantParticipantRole",
-			operationsForOCL.getOCLValue("VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

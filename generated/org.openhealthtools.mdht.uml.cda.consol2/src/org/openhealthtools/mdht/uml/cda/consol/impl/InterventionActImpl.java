@@ -7,17 +7,14 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2;
@@ -35,14 +32,10 @@ import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.InterventionActOperations;
 
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Intervention Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -189,7 +182,8 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInterventionActGoalObsEntryReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInterventionActGoalObsEntryReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActGoalObsEntryReference(this, diagnostics, context);
 	}
 
@@ -199,7 +193,8 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * @generated
 	 */
 	@Override
-	public boolean validateInterventionActAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInterventionActAuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActAuthorParticipation(this, diagnostics, context);
 	}
 
@@ -210,7 +205,8 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 */
 	public boolean validateInterventionActAdvanceDirectiveObservation2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InterventionActOperations.validateInterventionActAdvanceDirectiveObservation2(this, diagnostics, context);
+		return InterventionActOperations.validateInterventionActAdvanceDirectiveObservation2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -218,7 +214,8 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInterventionActImmunizationActivity2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInterventionActImmunizationActivity2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActImmunizationActivity2(this, diagnostics, context);
 	}
 
@@ -227,7 +224,8 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInterventionActMedicationActivity2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInterventionActMedicationActivity2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActMedicationActivity2(this, diagnostics, context);
 	}
 
@@ -236,7 +234,8 @@ public class InterventionActImpl extends ActImpl implements InterventionAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInterventionActProcedureActivityAct2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInterventionActProcedureActivityAct2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InterventionActOperations.validateInterventionActProcedureActivityAct2(this, diagnostics, context);
 	}
 

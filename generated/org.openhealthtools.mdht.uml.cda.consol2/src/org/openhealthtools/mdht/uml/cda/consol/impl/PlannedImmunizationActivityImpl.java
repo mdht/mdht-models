@@ -7,37 +7,30 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedImmunizationActivity;
-
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedImmunizationActivityOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Immunization Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl implements PlannedImmunizationActivity {
+public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
+		implements PlannedImmunizationActivity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -75,7 +68,8 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedImmunizationActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedImmunizationActivityClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityClassCode(
 			this, diagnostics, context);
 	}
@@ -86,7 +80,8 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedImmunizationActivityMoodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedImmunizationActivityMoodCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityMoodCodeP(
 			this, diagnostics, context);
 	}
@@ -97,7 +92,8 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedImmunizationActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedImmunizationActivityMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityMoodCode(
 			this, diagnostics, context);
 	}
@@ -177,7 +173,8 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedImmunizationActivityRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedImmunizationActivityRouteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityRouteCode(
 			this, diagnostics, context);
 	}
@@ -223,7 +220,8 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedImmunizationActivityPerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedImmunizationActivityPerformer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityPerformer(
 			this, diagnostics, context);
 	}
@@ -301,7 +299,8 @@ public class PlannedImmunizationActivityImpl extends SubstanceAdministrationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedImmunizationActivityIVLPQUnit(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedImmunizationActivityIVLPQUnit(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedImmunizationActivityOperations.validatePlannedImmunizationActivityIVLPQUnit(
 			this, diagnostics, context);
 	}

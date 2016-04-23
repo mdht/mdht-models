@@ -16,16 +16,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Component4;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component4;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignsOrganizer2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -94,7 +94,8 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 	public void testValidateVitalSignsOrganizer2AuthorParticipation() {
 		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizer2AuthorParticipationTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
 			"validateVitalSignsOrganizer2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -127,8 +128,8 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignsOrganizer2CDTranslation() {
 		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizer2CDTranslationTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
-			"validateVitalSignsOrganizer2CDTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignsOrganizer2CDTranslation", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -164,8 +165,8 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignsOrganizer2CDTranslationP() {
 		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizer2CDTranslationPTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
-			"validateVitalSignsOrganizer2CDTranslationP",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignsOrganizer2CDTranslationP", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -286,8 +287,8 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 	@Test
 	public void testValidateVitalSignsOrganizerEffectiveTime() {
 		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizerEffectiveTimeTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
-			"validateVitalSignsOrganizerEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVitalSignsOrganizerEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -324,7 +325,8 @@ public class VitalSignsOrganizer2Test extends CDAValidationTest {
 	public void testValidateVitalSignsOrganizerVitalSignObservation() {
 		OperationsTestCase<VitalSignsOrganizer2> validateVitalSignsOrganizerVitalSignObservationTestCase = new OperationsTestCase<VitalSignsOrganizer2>(
 			"validateVitalSignsOrganizerVitalSignObservation",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER_VITAL_SIGN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VITAL_SIGNS_ORGANIZER_VITAL_SIGN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

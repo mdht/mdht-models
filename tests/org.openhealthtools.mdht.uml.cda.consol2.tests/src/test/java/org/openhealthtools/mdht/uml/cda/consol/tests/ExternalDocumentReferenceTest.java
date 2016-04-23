@@ -15,13 +15,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.vocab.ActClassDocument;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ExternalDocumentReference;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ExternalDocumentReferenceOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassDocument;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,8 +53,8 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 	@Test
 	public void testValidateExternalDocumentReferenceTemplateId() {
 		OperationsTestCase<ExternalDocumentReference> validateExternalDocumentReferenceTemplateIdTestCase = new OperationsTestCase<ExternalDocumentReference>(
-			"validateExternalDocumentReferenceTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateExternalDocumentReferenceTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -87,8 +87,8 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 	@Test
 	public void testValidateExternalDocumentReferenceClassCode() {
 		OperationsTestCase<ExternalDocumentReference> validateExternalDocumentReferenceClassCodeTestCase = new OperationsTestCase<ExternalDocumentReference>(
-			"validateExternalDocumentReferenceClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateExternalDocumentReferenceClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -121,8 +121,8 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 	@Test
 	public void testValidateExternalDocumentReferenceMoodCode() {
 		OperationsTestCase<ExternalDocumentReference> validateExternalDocumentReferenceMoodCodeTestCase = new OperationsTestCase<ExternalDocumentReference>(
-			"validateExternalDocumentReferenceMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateExternalDocumentReferenceMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -254,8 +254,8 @@ public class ExternalDocumentReferenceTest extends CDAValidationTest {
 	@Test
 	public void testValidateExternalDocumentReferenceVersionNumber() {
 		OperationsTestCase<ExternalDocumentReference> validateExternalDocumentReferenceVersionNumberTestCase = new OperationsTestCase<ExternalDocumentReference>(
-			"validateExternalDocumentReferenceVersionNumber",
-			operationsForOCL.getOCLValue("VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateExternalDocumentReferenceVersionNumber", operationsForOCL.getOCLValue(
+				"VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -77,7 +73,6 @@ public interface ProblemSection2 extends ProblemSectionEntriesOptional2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProblemSection2 init();
 
 	/**
@@ -85,6 +80,5 @@ public interface ProblemSection2 extends ProblemSectionEntriesOptional2 {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public ProblemSection2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProblemSection2

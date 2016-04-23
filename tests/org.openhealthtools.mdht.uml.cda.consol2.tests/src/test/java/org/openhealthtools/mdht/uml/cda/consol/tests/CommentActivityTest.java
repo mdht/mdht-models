@@ -16,22 +16,22 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedAuthor;
+import org.eclipse.mdht.uml.cda.Author;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Organization;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.AD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.vocab.PostalAddressUse;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
-import org.openhealthtools.mdht.uml.cda.Author;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Organization;
-import org.openhealthtools.mdht.uml.cda.Person;
 import org.openhealthtools.mdht.uml.cda.consol.CommentActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CommentActivityOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.vocab.PostalAddressUse;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,8 +117,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateCommentActivityTextReferenceValue() {
 		OperationsTestCase<CommentActivity> validateCommentActivityTextReferenceValueTestCase = new OperationsTestCase<CommentActivity>(
-			"validateCommentActivityTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCommentActivityTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -419,7 +419,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreetTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -493,7 +494,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUsePTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -538,7 +540,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -586,7 +589,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountryTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -631,7 +635,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStateTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -676,7 +681,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCityTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -721,7 +727,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCodeTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -766,7 +773,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLineTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -811,7 +819,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganizationTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -944,7 +953,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorAssignPersonName() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorAssignPersonNameTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorAssignPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ASSIGN_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ASSIGN_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 			{
 				this.skipFailsTest();
@@ -989,7 +999,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	public void testValidateCommentActivityAuthorAssignedAuthorAddr() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorAddrTestCase = new OperationsTestCase<CommentActivity>(
 			"validateCommentActivityAuthorAssignedAuthorAddr",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1033,8 +1044,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateCommentActivityAuthorAssignedAuthorId() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorIdTestCase = new OperationsTestCase<CommentActivity>(
-			"validateCommentActivityAuthorAssignedAuthorId",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCommentActivityAuthorAssignedAuthorId", operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1117,8 +1128,8 @@ public class CommentActivityTest extends CDAValidationTest {
 	@Test
 	public void testValidateCommentActivityAuthorAssignedAuthor() {
 		OperationsTestCase<CommentActivity> validateCommentActivityAuthorAssignedAuthorTestCase = new OperationsTestCase<CommentActivity>(
-			"validateCommentActivityAuthorAssignedAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCommentActivityAuthorAssignedAuthor", operationsForOCL.getOCLValue(
+				"VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

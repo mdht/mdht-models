@@ -10,15 +10,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.consol.operations.TobaccoUseOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -317,7 +317,8 @@ public class TobaccoUseTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return TobaccoUseOperations.validateTobaccoUseStatusCodeP((TobaccoUse) objectToTest, diagnostician, map);
+				return TobaccoUseOperations.validateTobaccoUseStatusCodeP(
+					(TobaccoUse) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -368,7 +369,8 @@ public class TobaccoUseTest extends CDAValidationTest {
 	public void testValidateTobaccoUseValueP() {
 		OperationsTestCase<TobaccoUse> validateTobaccoUseValuePTestCase = new OperationsTestCase<TobaccoUse>(
 			"validateTobaccoUseValueP",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(TobaccoUse target) {
@@ -402,7 +404,8 @@ public class TobaccoUseTest extends CDAValidationTest {
 	public void testValidateTobaccoUseCDCodeTermAssertionOrLoinc() {
 		OperationsTestCase<TobaccoUse> validateTobaccoUseCDCodeTermAssertionOrLoincTestCase = new OperationsTestCase<TobaccoUse>(
 			"validateTobaccoUseCDCodeTermAssertionOrLoinc",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TOBACCO_USE_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -489,7 +492,8 @@ public class TobaccoUseTest extends CDAValidationTest {
 	public void testValidateTobaccoUseCDCode() {
 		OperationsTestCase<TobaccoUse> validateTobaccoUseCDCodeTestCase = new OperationsTestCase<TobaccoUse>(
 			"validateTobaccoUseCDCode",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(TobaccoUse target) {

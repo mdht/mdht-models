@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FamilyHistoryDeathObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Family History Death Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,8 +56,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validateFamilyHistoryDeathObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationTemplateId(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +66,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validateFamilyHistoryDeathObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationClassCode(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +76,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validateFamilyHistoryDeathObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationMoodCode(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +85,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryDeathObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCode(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +95,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validateFamilyHistoryDeathObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationStatusCode(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -111,8 +104,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryDeathObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValue(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -121,8 +113,7 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryDeathObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValueP(
-			this, diagnostics, context);
+		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -131,16 +122,16 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public FamilyHistoryDeathObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FamilyHistoryDeathObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public FamilyHistoryDeathObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // FamilyHistoryDeathObservationImpl

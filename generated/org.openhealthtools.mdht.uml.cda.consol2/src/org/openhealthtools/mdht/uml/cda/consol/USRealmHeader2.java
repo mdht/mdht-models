@@ -1,18 +1,16 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
 
 import java.util.Map;
+
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -276,7 +274,6 @@ public interface USRealmHeader2 extends GeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public USRealmHeader2 init();
 
 	/**
@@ -284,6 +281,5 @@ public interface USRealmHeader2 extends GeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public USRealmHeader2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // USRealmHeader2

@@ -12,21 +12,15 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection2;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -91,7 +85,8 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 				ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION2,
 				ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION2.getEAllOperations().get(62));
 			try {
-				GET_CONSOL_PREOPERATIVE_DIAGNOSIS2__EOCL_QRY = helper.createQuery(GET_CONSOL_PREOPERATIVE_DIAGNOSIS2__EOCL_EXP);
+				GET_CONSOL_PREOPERATIVE_DIAGNOSIS2__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_PREOPERATIVE_DIAGNOSIS2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -140,20 +135,23 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION2);
 			try {
-				VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			preoperativeDiagnosisSection2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				preoperativeDiagnosisSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION2__PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionTemplateId"),
-					new Object[] { preoperativeDiagnosisSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION2__PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionTemplateId"),
+						new Object[] { preoperativeDiagnosisSection2 }));
 			}
 
 			return false;
@@ -201,7 +199,8 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION2);
 			try {
-				VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -209,17 +208,20 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 		if (!EOCL_ENV.createQuery(VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			preoperativeDiagnosisSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION2__PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionCodeP"),
-					new Object[] { preoperativeDiagnosisSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION2__PREOPERATIVE_DIAGNOSIS_SECTION_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionCodeP"),
+						new Object[] { preoperativeDiagnosisSection2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSectionCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSectionCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -241,9 +243,9 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '10219-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '10219-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePreoperativeDiagnosisSectionCode(PreoperativeDiagnosisSection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Preoperative Diagnosis Section Code</em>}' invariant operation.
@@ -274,7 +276,8 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 		Object passToken = (context == null)
 				? null
 				: context.get("org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSectionCodeP");
-		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(preoperativeDiagnosisSection2)) {
+		if ((passToken instanceof Collection<?>) &&
+				((Collection<?>) passToken).contains(preoperativeDiagnosisSection2)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
@@ -283,7 +286,8 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION2);
 			try {
-				VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -291,11 +295,13 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 		if (!EOCL_ENV.createQuery(VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			preoperativeDiagnosisSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION2__PREOPERATIVE_DIAGNOSIS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionCode"),
-					new Object[] { preoperativeDiagnosisSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION2__PREOPERATIVE_DIAGNOSIS_SECTION_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionCode"),
+						new Object[] { preoperativeDiagnosisSection2 }));
 			}
 
 			return false;
@@ -343,21 +349,23 @@ public class PreoperativeDiagnosisSection2Operations extends PreoperativeDiagnos
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION2);
 			try {
-				VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			preoperativeDiagnosisSection2)) {
+				preoperativeDiagnosisSection2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION2__PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS,
-					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionPreoperativeDiagnosis"),
-					new Object[] { preoperativeDiagnosisSection2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PREOPERATIVE_DIAGNOSIS_SECTION2__PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS,
+						ConsolPlugin.INSTANCE.getString(
+							"PreoperativeDiagnosisSection2PreoperativeDiagnosisSectionPreoperativeDiagnosis"),
+						new Object[] { preoperativeDiagnosisSection2 }));
 			}
 
 			return false;

@@ -7,28 +7,21 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.CulturalAndReligiousObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Cultural And Religious Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -116,7 +109,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	@Override
-	public boolean validateCulturalAndReligiousObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCulturalAndReligiousObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationCodeP(
 			this, diagnostics, context);
 	}
@@ -127,7 +121,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	@Override
-	public boolean validateCulturalAndReligiousObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCulturalAndReligiousObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationCode(
 			this, diagnostics, context);
 	}
@@ -162,7 +157,8 @@ public class CulturalAndReligiousObservationImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	@Override
-	public boolean validateCulturalAndReligiousObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCulturalAndReligiousObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return CulturalAndReligiousObservationOperations.validateCulturalAndReligiousObservationValue(
 			this, diagnostics, context);
 	}

@@ -7,17 +7,13 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
@@ -29,13 +25,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedMedicationActiv
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Medication Activity2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceAdministrationImpl implements
-		PlannedMedicationActivity2 {
+public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceAdministrationImpl
+		implements PlannedMedicationActivity2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -61,7 +55,8 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedMedicationActivity2StatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedMedicationActivity2StatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2StatusCode(
 			this, diagnostics, context);
 	}
@@ -107,7 +102,8 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedMedicationActivity2RouteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedMedicationActivity2RouteCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RouteCodeP(
 			this, diagnostics, context);
 	}
@@ -118,7 +114,8 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedMedicationActivity2RouteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedMedicationActivity2RouteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2RouteCode(
 			this, diagnostics, context);
 	}
@@ -212,7 +209,8 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedMedicationActivity2Performer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedMedicationActivity2Performer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Performer(
 			this, diagnostics, context);
 	}
@@ -270,7 +268,8 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedMedicationActivity2Consumable(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedMedicationActivity2Consumable(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2Consumable(
 			this, diagnostics, context);
 	}

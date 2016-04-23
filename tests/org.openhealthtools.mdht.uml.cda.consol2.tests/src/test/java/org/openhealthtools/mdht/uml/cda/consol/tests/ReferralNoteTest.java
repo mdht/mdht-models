@@ -16,14 +16,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssociatedEntity;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.InformationRecipient;
+import org.eclipse.mdht.uml.cda.IntendedRecipient;
+import org.eclipse.mdht.uml.cda.Organization;
+import org.eclipse.mdht.uml.cda.Participant1;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
+import org.eclipse.mdht.uml.hl7.vocab.RoleClassAssociative;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.InformationRecipient;
-import org.openhealthtools.mdht.uml.cda.IntendedRecipient;
-import org.openhealthtools.mdht.uml.cda.Organization;
-import org.openhealthtools.mdht.uml.cda.Participant1;
-import org.openhealthtools.mdht.uml.cda.Person;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
@@ -33,10 +37,6 @@ import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReferralNote;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReferralNoteOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
 
 /**
  * <!-- begin-user-doc -->
@@ -138,7 +138,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2() {
 		OperationsTestCase<ReferralNote> validateReferralNoteHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2TestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -219,7 +220,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent() {
 		OperationsTestCase<ReferralNote> validateReferralNoteDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresentTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -317,7 +319,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return ReferralNoteOperations.validateReferralNoteCodeP((ReferralNote) objectToTest, diagnostician, map);
+				return ReferralNoteOperations.validateReferralNoteCodeP(
+					(ReferralNote) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -333,7 +336,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteCode() {
 		OperationsTestCase<ReferralNote> validateReferralNoteCodeTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteCode",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(ReferralNote target) {
@@ -370,8 +374,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteInformationRecipient() {
 		OperationsTestCase<ReferralNote> validateReferralNoteInformationRecipientTestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteInformationRecipient",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteInformationRecipient", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -404,8 +408,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteParticipantCaregiver() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCaregiverTestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteParticipantCaregiver",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteParticipantCaregiver", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -440,8 +444,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteParticipantCallbackContact() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCallbackContactTestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteParticipantCallbackContact",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteParticipantCallbackContact", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -476,8 +480,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNotePlanOfTreatmentSection2() {
 		OperationsTestCase<ReferralNote> validateReferralNotePlanOfTreatmentSection2TestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNotePlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNotePlanOfTreatmentSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -511,7 +515,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteAdvanceDirectivesSectionEntriesOptional2() {
 		OperationsTestCase<ReferralNote> validateReferralNoteAdvanceDirectivesSectionEntriesOptional2TestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteAdvanceDirectivesSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -545,7 +550,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteHistoryOfPresentIllnessSection() {
 		OperationsTestCase<ReferralNote> validateReferralNoteHistoryOfPresentIllnessSectionTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteHistoryOfPresentIllnessSection",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -560,7 +566,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 				/* HistoryOfPresentIllnessSection */
 				HistoryOfPresentIllnessSection section =
 
-				ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
+						ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
 
 				target.addSection(section);
 
@@ -585,8 +591,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteImmunizationsSection2() {
 		OperationsTestCase<ReferralNote> validateReferralNoteImmunizationsSection2TestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteImmunizationsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteImmunizationsSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -654,7 +660,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteProceduresSectionEntriesOptional2() {
 		OperationsTestCase<ReferralNote> validateReferralNoteProceduresSectionEntriesOptional2TestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteProceduresSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -721,8 +728,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteReviewOfSystemsSection() {
 		OperationsTestCase<ReferralNote> validateReferralNoteReviewOfSystemsSectionTestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteReviewOfSystemsSection",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteReviewOfSystemsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -737,7 +744,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 				/* ReviewOfSystemsSection */
 				ReviewOfSystemsSection section =
 
-				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
+						ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
 
 				target.addSection(section);
 
@@ -762,8 +769,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteSocialHistorySection2() {
 		OperationsTestCase<ReferralNote> validateReferralNoteSocialHistorySection2TestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteSocialHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteSocialHistorySection2", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -830,8 +837,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteFunctionalStatusSection2() {
 		OperationsTestCase<ReferralNote> validateReferralNoteFunctionalStatusSection2TestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteFunctionalStatusSection2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteFunctionalStatusSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -864,8 +871,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNotePhysicalExamSection2() {
 		OperationsTestCase<ReferralNote> validateReferralNotePhysicalExamSection2TestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNotePhysicalExamSection2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNotePhysicalExamSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PHYSICAL_EXAM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -899,7 +906,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteAdvanceDirectivesSectionEntriesOptional2b() {
 		OperationsTestCase<ReferralNote> validateReferralNoteAdvanceDirectivesSectionEntriesOptional2bTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteAdvanceDirectivesSectionEntriesOptional2b",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -948,7 +956,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 				/* NutritionSection */
 				NutritionSection section =
 
-				ConsolFactory.eINSTANCE.createNutritionSection().init();
+						ConsolFactory.eINSTANCE.createNutritionSection().init();
 
 				target.addSection(section);
 
@@ -973,8 +981,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteMentalStatusSection() {
 		OperationsTestCase<ReferralNote> validateReferralNoteMentalStatusSectionTestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteMentalStatusSection",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteMentalStatusSection", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -989,7 +997,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 				/* MentalStatusSection */
 				MentalStatusSection section =
 
-				ConsolFactory.eINSTANCE.createMentalStatusSection().init();
+						ConsolFactory.eINSTANCE.createMentalStatusSection().init();
 
 				target.addSection(section);
 
@@ -1014,8 +1022,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteMedicalEquipmentSection2() {
 		OperationsTestCase<ReferralNote> validateReferralNoteMedicalEquipmentSection2TestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteMedicalEquipmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteMedicalEquipmentSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1098,7 +1106,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 				/* AssessmentSection */
 				AssessmentSection section =
 
-				ConsolFactory.eINSTANCE.createAssessmentSection().init();
+						ConsolFactory.eINSTANCE.createAssessmentSection().init();
 
 				target.addSection(section);
 
@@ -1123,8 +1131,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteAssessmentAndPlanSection2() {
 		OperationsTestCase<ReferralNote> validateReferralNoteAssessmentAndPlanSection2TestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteAssessmentAndPlanSection2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteAssessmentAndPlanSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1158,7 +1166,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteHistoryOfPastIllnessSection2() {
 		OperationsTestCase<ReferralNote> validateReferralNoteHistoryOfPastIllnessSection2TestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteHistoryOfPastIllnessSection2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1191,8 +1200,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteGeneralStatusSection() {
 		OperationsTestCase<ReferralNote> validateReferralNoteGeneralStatusSectionTestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteGeneralStatusSection",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteGeneralStatusSection", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1207,7 +1216,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 				/* GeneralStatusSection */
 				GeneralStatusSection section =
 
-				ConsolFactory.eINSTANCE.createGeneralStatusSection().init();
+						ConsolFactory.eINSTANCE.createGeneralStatusSection().init();
 
 				target.addSection(section);
 
@@ -1266,8 +1275,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteReasonForReferralSection2() {
 		OperationsTestCase<ReferralNote> validateReferralNoteReasonForReferralSection2TestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteReasonForReferralSection2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteReasonForReferralSection2", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1300,8 +1309,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateReferralNoteFamilyHistorySection2() {
 		OperationsTestCase<ReferralNote> validateReferralNoteFamilyHistorySection2TestCase = new OperationsTestCase<ReferralNote>(
-			"validateReferralNoteFamilyHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReferralNoteFamilyHistorySection2", operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1335,7 +1344,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteInformationRecipientIntendedRecipientPersonName() {
 		OperationsTestCase<ReferralNote> validateReferralNoteInformationRecipientIntendedRecipientPersonNameTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteInformationRecipientIntendedRecipientPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1351,8 +1361,9 @@ public class ReferralNoteTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(ReferralNote target) {
-				target.getInformationRecipients().get(0).getIntendedRecipient().getInformationRecipient().getNames().add(
-					DatatypesFactory.eINSTANCE.createPN());
+				target.getInformationRecipients().get(
+					0).getIntendedRecipient().getInformationRecipient().getNames().add(
+						DatatypesFactory.eINSTANCE.createPN());
 			}
 
 			@Override
@@ -1375,7 +1386,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteInformationRecipientIntendedRecipientAddr() {
 		OperationsTestCase<ReferralNote> validateReferralNoteInformationRecipientIntendedRecipientAddrTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteInformationRecipientIntendedRecipientAddr",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1414,7 +1426,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteInformationRecipientIntendedRecipientTelecom() {
 		OperationsTestCase<ReferralNote> validateReferralNoteInformationRecipientIntendedRecipientTelecomTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteInformationRecipientIntendedRecipientTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1454,7 +1467,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteInformationRecipientIntendedRecipientInformationRecipient() {
 		OperationsTestCase<ReferralNote> validateReferralNoteInformationRecipientIntendedRecipientInformationRecipientTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteInformationRecipientIntendedRecipientInformationRecipient",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1492,7 +1506,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteInformationRecipientIntendedRecipient() {
 		OperationsTestCase<ReferralNote> validateReferralNoteInformationRecipientIntendedRecipientTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteInformationRecipientIntendedRecipient",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1527,7 +1542,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonNameTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1568,7 +1584,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCaregiverAssociatedEntityClassCodeP() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCaregiverAssociatedEntityClassCodePTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCaregiverAssociatedEntityClassCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1606,7 +1623,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCaregiverAssociatedEntityClassCode() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCaregiverAssociatedEntityClassCodeTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCaregiverAssociatedEntityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1645,7 +1663,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1684,7 +1703,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCaregiverTypeCode() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCaregiverTypeCodeTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCaregiverTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -1730,7 +1750,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCaregiverAssociatedEntity() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCaregiverAssociatedEntityTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCaregiverAssociatedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1766,7 +1787,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonNameTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1807,7 +1829,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCallbackContactAssociatedEntityId() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCallbackContactAssociatedEntityIdTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCallbackContactAssociatedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1846,7 +1869,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCallbackContactAssociatedEntityAddr() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCallbackContactAssociatedEntityAddrTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCallbackContactAssociatedEntityAddr",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1885,7 +1909,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCallbackContactAssociatedEntityTelecom() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCallbackContactAssociatedEntityTelecomTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCallbackContactAssociatedEntityTelecom",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1924,7 +1949,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCallbackContactAssociatedEntityClassCode() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCallbackContactAssociatedEntityClassCodeTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCallbackContactAssociatedEntityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1962,7 +1988,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2001,7 +2028,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganizationTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2040,7 +2068,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCallbackContactTypeCode() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCallbackContactTypeCodeTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCallbackContactTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -2085,7 +2114,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	public void testValidateReferralNoteParticipantCallbackContactAssociatedEntity() {
 		OperationsTestCase<ReferralNote> validateReferralNoteParticipantCallbackContactAssociatedEntityTestCase = new OperationsTestCase<ReferralNote>(
 			"validateReferralNoteParticipantCallbackContactAssociatedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2409,8 +2439,8 @@ public class ReferralNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<ReferralNote> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<ReferralNote>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

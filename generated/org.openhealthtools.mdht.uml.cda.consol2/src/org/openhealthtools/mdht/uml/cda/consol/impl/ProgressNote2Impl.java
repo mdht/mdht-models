@@ -3,16 +3,12 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
@@ -31,15 +27,12 @@ import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SubjectiveSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProgressNote2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Progress Note2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -135,7 +128,8 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProgressNote2PlanOfTreatmentSection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProgressNote2PlanOfTreatmentSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProgressNote2Operations.validateProgressNote2PlanOfTreatmentSection2(this, diagnostics, context);
 	}
 
@@ -156,7 +150,8 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2AllergiesSectionEntriesOptional2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2AllergiesSectionEntriesOptional2(this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2AllergiesSectionEntriesOptional2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -164,7 +159,8 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProgressNote2ChiefComplaintSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProgressNote2ChiefComplaintSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProgressNote2Operations.validateProgressNote2ChiefComplaintSection(this, diagnostics, context);
 	}
 
@@ -173,7 +169,8 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProgressNote2InterventionsSection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProgressNote2InterventionsSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProgressNote2Operations.validateProgressNote2InterventionsSection2(this, diagnostics, context);
 	}
 
@@ -240,7 +237,8 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProgressNote2ReviewOfSystemsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProgressNote2ReviewOfSystemsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProgressNote2Operations.validateProgressNote2ReviewOfSystemsSection(this, diagnostics, context);
 	}
 
@@ -411,7 +409,8 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 */
 	public boolean validateProgressNote2ComponentOfEncompassingEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounter(this, diagnostics, context);
+		return ProgressNote2Operations.validateProgressNote2ComponentOfEncompassingEncounter(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -564,7 +563,8 @@ public class ProgressNote2Impl extends USRealmHeader2Impl implements ProgressNot
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProgressNote2Operations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 

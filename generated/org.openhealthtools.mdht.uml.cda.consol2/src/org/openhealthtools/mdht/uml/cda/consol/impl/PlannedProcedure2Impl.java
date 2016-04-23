@@ -7,17 +7,13 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
@@ -30,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedProcedure2Opera
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Procedure2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -82,7 +76,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	@Override
 	public boolean validatePlannedProcedure2Instruction2InversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlannedProcedure2Operations.validatePlannedProcedure2Instruction2InversionInd(this, diagnostics, context);
+		return PlannedProcedure2Operations.validatePlannedProcedure2Instruction2InversionInd(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -170,7 +165,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlannedProcedure2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedProcedure2AuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedProcedure2Operations.validatePlannedProcedure2AuthorParticipation(this, diagnostics, context);
 	}
 
@@ -179,7 +175,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedProcedure2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedProcedure2PriorityPreference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedProcedure2Operations.validatePlannedProcedure2PriorityPreference(this, diagnostics, context);
 	}
 
@@ -269,7 +266,8 @@ public class PlannedProcedure2Impl extends PlanOfCareActivityProcedureImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlanOfCareActivityProcedureMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedProcedure2Operations.validatePlanOfCareActivityProcedureMoodCode(this, diagnostics, context);
 	}
 

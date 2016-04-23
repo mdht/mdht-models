@@ -3,16 +3,12 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -31,15 +27,12 @@ import org.openhealthtools.mdht.uml.cda.consol.ProcedureImplantsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureSpecimensTakenSection;
 import org.openhealthtools.mdht.uml.cda.consol.SurgicalDrainsSection;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.OperativeNote2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Operative Note2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -113,7 +106,8 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperativeNote2ComplicationsSection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOperativeNote2ComplicationsSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OperativeNote2Operations.validateOperativeNote2ComplicationsSection2(this, diagnostics, context);
 	}
 
@@ -155,7 +149,8 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	 */
 	public boolean validateOperativeNote2ProcedureSpecimensTakenSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNote2Operations.validateOperativeNote2ProcedureSpecimensTakenSection(this, diagnostics, context);
+		return OperativeNote2Operations.validateOperativeNote2ProcedureSpecimensTakenSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -254,7 +249,8 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperativeNote2SurgicalDrainsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOperativeNote2SurgicalDrainsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OperativeNote2Operations.validateOperativeNote2SurgicalDrainsSection(this, diagnostics, context);
 	}
 
@@ -263,8 +259,8 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow(
 			this, diagnostics, context);
 	}
@@ -307,8 +303,8 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OperativeNote2Operations.validateOperativeNote2DocumentationOfServiceEventPerformerAssignedEntity(
 			this, diagnostics, context);
 	}
@@ -471,7 +467,8 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	 */
 	public boolean validateOperativeNote2AuthorizationConsentStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNote2Operations.validateOperativeNote2AuthorizationConsentStatusCode(this, diagnostics, context);
+		return OperativeNote2Operations.validateOperativeNote2AuthorizationConsentStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -479,7 +476,8 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperativeNote2AuthorizationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOperativeNote2AuthorizationTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OperativeNote2Operations.validateOperativeNote2AuthorizationTypeCode(this, diagnostics, context);
 	}
 
@@ -488,7 +486,8 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperativeNote2AuthorizationConsent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOperativeNote2AuthorizationConsent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OperativeNote2Operations.validateOperativeNote2AuthorizationConsent(this, diagnostics, context);
 	}
 
@@ -642,7 +641,8 @@ public class OperativeNote2Impl extends USRealmHeader2Impl implements OperativeN
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OperativeNote2Operations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 

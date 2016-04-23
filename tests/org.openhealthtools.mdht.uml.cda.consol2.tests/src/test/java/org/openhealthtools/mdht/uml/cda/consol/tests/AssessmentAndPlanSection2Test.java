@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentAndPlanSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -62,8 +62,8 @@ public class AssessmentAndPlanSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateAssessmentAndPlanSectionTemplateId() {
 		OperationsTestCase<AssessmentAndPlanSection2> validateAssessmentAndPlanSectionTemplateIdTestCase = new OperationsTestCase<AssessmentAndPlanSection2>(
-			"validateAssessmentAndPlanSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAssessmentAndPlanSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -172,7 +172,8 @@ public class AssessmentAndPlanSection2Test extends CDAValidationTest {
 	public void testValidateAssessmentAndPlanSectionPlanOfCareActivityAct() {
 		OperationsTestCase<AssessmentAndPlanSection2> validateAssessmentAndPlanSectionPlanOfCareActivityActTestCase = new OperationsTestCase<AssessmentAndPlanSection2>(
 			"validateAssessmentAndPlanSectionPlanOfCareActivityAct",
-			operationsForOCL.getOCLValue("VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

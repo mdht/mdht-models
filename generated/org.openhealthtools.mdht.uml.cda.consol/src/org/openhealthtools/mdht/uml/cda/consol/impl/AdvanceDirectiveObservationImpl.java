@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directive Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,8 +56,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationHasStartingTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationHasStartingTime(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationHasStartingTime(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +66,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationHasEndingTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationHasEndingTime(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationHasEndingTime(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +76,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationTemplateId(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +85,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationClassCode(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +94,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationMoodCode(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -119,8 +112,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCodeP(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -139,8 +131,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationStatusCode(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -150,8 +141,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationEffectiveTime(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -160,8 +150,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservationVerifier(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationVerifier(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationVerifier(this, diagnostics, context);
 	}
 
 	/**
@@ -170,8 +159,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservationCustodian(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodian(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodian(this, diagnostics, context);
 	}
 
 	/**
@@ -180,8 +168,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservationReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReference(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReference(this, diagnostics, context);
 	}
 
 	/**
@@ -191,8 +178,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationVerifierTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationVerifierTime(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationVerifierTime(this, diagnostics, context);
 	}
 
 	/**
@@ -202,8 +188,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationVerifierTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationVerifierTypeCode(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationVerifierTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -213,8 +198,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationVerifierParticipantRole(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationVerifierParticipantRole(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationVerifierParticipantRole(this, diagnostics, context);
 	}
 
 	/**
@@ -224,8 +208,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName(this, diagnostics, context);
 	}
 
 	/**
@@ -235,8 +218,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationCustodianCustodianRoleAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianCustodianRoleAddr(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianCustodianRoleAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -246,8 +228,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationCustodianCustodianRoleClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianCustodianRoleClassCode(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianCustodianRoleClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -257,8 +238,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationCustodianCustodianRoleTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianCustodianRoleTelecom(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianCustodianRoleTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -268,8 +248,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -279,8 +258,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationCustodianTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianTypeCode(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -290,8 +268,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole(this, diagnostics, context);
 	}
 
 	/**
@@ -301,8 +278,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(this, diagnostics, context);
 	}
 
 	/**
@@ -312,8 +288,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference(this, diagnostics, context);
 	}
 
 	/**
@@ -323,8 +298,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationReferenceExternalDocumentId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentId(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentId(this, diagnostics, context);
 	}
 
 	/**
@@ -334,8 +308,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationReferenceExternalDocumentText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentText(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentText(this, diagnostics, context);
 	}
 
 	/**
@@ -345,8 +318,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationReferenceTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceTypeCode(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -356,8 +328,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationReferenceExternalDocument(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocument(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocument(this, diagnostics, context);
 	}
 
 	/**
@@ -366,16 +337,16 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public AdvanceDirectiveObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AdvanceDirectiveObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdvanceDirectiveObservationImpl

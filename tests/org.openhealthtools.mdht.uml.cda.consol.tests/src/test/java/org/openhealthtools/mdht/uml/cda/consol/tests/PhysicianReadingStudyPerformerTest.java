@@ -14,16 +14,16 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PhysicianReadingStudyPerformerOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 
 /**
  * <!-- begin-user-doc -->
@@ -58,7 +58,8 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	public void testValidatePhysicianReadingStudyPerformerTemplateId() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerTemplateIdTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -91,8 +92,8 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerTime() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerTimeTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
-			"validatePhysicianReadingStudyPerformerTime",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePhysicianReadingStudyPerformerTime", operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -119,14 +120,15 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	}
 
 	/**
-	* 
+	*
 	* @generated not
 	*/
 	@Test
 	public void testValidatePhysicianReadingStudyPerformerTypeCode() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerTypeCodeTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -161,7 +163,8 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	public void testValidatePhysicianReadingStudyPerformerAssignedEntity() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerAssignedEntityTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -195,7 +198,8 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	public void testValidatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderIdTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -236,7 +240,8 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	public void testValidatePhysicianReadingStudyPerformerAssignedEntityHasDICOM() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerAssignedEntityHasDICOMTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerAssignedEntityHasDICOM",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_DICOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -275,7 +280,8 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	public void testValidatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganizationTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -314,7 +320,8 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	public void testValidatePhysicianReadingStudyPerformerAssignedEntityCode() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerAssignedEntityCodeTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -352,7 +359,8 @@ public class PhysicianReadingStudyPerformerTest extends CDAValidationTest {
 	public void testValidatePhysicianReadingStudyPerformerAssignedEntityId() {
 		OperationsTestCase<PhysicianReadingStudyPerformer> validatePhysicianReadingStudyPerformerAssignedEntityIdTestCase = new OperationsTestCase<PhysicianReadingStudyPerformer>(
 			"validatePhysicianReadingStudyPerformerAssignedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PHYSICIAN_READING_STUDY_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

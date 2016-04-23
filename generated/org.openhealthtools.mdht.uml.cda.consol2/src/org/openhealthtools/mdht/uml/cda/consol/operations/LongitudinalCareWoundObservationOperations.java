@@ -13,7 +13,7 @@
  *     								   VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP,
  *     							       VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP,
  *     								   VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP
- *     								   due to inline datatype OCL generation issues 
+ *     								   due to inline datatype OCL generation issues
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
@@ -128,21 +128,23 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationClassCode"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationClassCode"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			return false;
@@ -190,21 +192,23 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationMoodCode"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationMoodCode"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			return false;
@@ -252,26 +256,30 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationCodeP"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCodeP"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -294,9 +302,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLongitudinalCareWoundObservationCode(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Code</em>}' invariant operation.
@@ -337,20 +345,23 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationCode"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCode"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			return false;
@@ -398,26 +409,30 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationValueP"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationValueP"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationValueP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationValueP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -440,9 +455,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLongitudinalCareWoundObservationValue(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Value</em>}' invariant operation.
@@ -483,20 +498,23 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationValue"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationValue"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			return false;
@@ -544,27 +562,30 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationTargetSiteCodeP"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationTargetSiteCodeP"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationTargetSiteCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationTargetSiteCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -588,9 +609,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLongitudinalCareWoundObservationTargetSiteCode(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Target Site Code</em>}' invariant operation.
@@ -620,7 +641,8 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 
 		Object passToken = (context == null)
 				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationTargetSiteCodeP");
+				: context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationTargetSiteCodeP");
 		if ((passToken instanceof Collection<?>) &&
 				((Collection<?>) passToken).contains(longitudinalCareWoundObservation)) {
 			// I have a free pass to short-circuit
@@ -631,21 +653,23 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationTargetSiteCode"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationTargetSiteCode"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			return false;
@@ -693,21 +717,23 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_MEASUREMENT_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationWoundMeasurementObservation"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_MEASUREMENT_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationWoundMeasurementObservation"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			return false;
@@ -755,21 +781,23 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_CHARACTERISTICS,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationWoundCharacteristics"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_CHARACTERISTICS,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationWoundCharacteristics"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			return false;
@@ -817,21 +845,23 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_HIGHEST_PRESSURE_ULCER_STAGE,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationHighestPressureUlcerStage"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_HIGHEST_PRESSURE_ULCER_STAGE,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationHighestPressureUlcerStage"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			return false;
@@ -879,21 +909,23 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationAuthorParticipation"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationAuthorParticipation"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			return false;
@@ -941,21 +973,23 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			longitudinalCareWoundObservation)) {
+				longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationNumberOfPressureUlcersObservation2"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationNumberOfPressureUlcersObservation2"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			return false;
@@ -1003,24 +1037,28 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(longitudinalCareWoundObservation);
+		Object oclResult = VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			longitudinalCareWoundObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY,
-						ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRCDValueTerminology"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY,
+							ConsolPlugin.INSTANCE.getString(
+								"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRCDValueTerminology"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1069,24 +1107,28 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(longitudinalCareWoundObservation);
+		Object oclResult = VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			longitudinalCareWoundObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE,
-						ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRCDCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE,
+							ConsolPlugin.INSTANCE.getString(
+								"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRCDCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1103,9 +1145,9 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	 * @generated NOT
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.targetSiteCode->excluding(null)->select(isNullFlavorUndefined()).qualifier->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((name.oclIsUndefined() or name.isNullFlavorUndefined()) implies (not name.oclIsUndefined() and name.oclIsKindOf(datatypes::CV) and "
-			+ "let value : datatypes::CV = name.oclAsType(datatypes::CV) in "
-			+ "value.code = '272741003' and value.codeSystem = '2.16.840.1.113883.6.96') )))";
+	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.targetSiteCode->excluding(null)->select(isNullFlavorUndefined()).qualifier->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((name.oclIsUndefined() or name.isNullFlavorUndefined()) implies (not name.oclIsUndefined() and name.oclIsKindOf(datatypes::CV) and " +
+			"let value : datatypes::CV = name.oclAsType(datatypes::CV) in " +
+			"value.code = '272741003' and value.codeSystem = '2.16.840.1.113883.6.96') )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLongitudinalCareWoundObservationCDCRName(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation CDCR Name</em>}' invariant operation.
@@ -1137,24 +1179,28 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(longitudinalCareWoundObservation);
+		Object oclResult = VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			longitudinalCareWoundObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME,
-						ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRName"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME,
+							ConsolPlugin.INSTANCE.getString(
+								"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRName"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1203,24 +1249,28 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(longitudinalCareWoundObservation);
+		Object oclResult = VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			longitudinalCareWoundObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P,
-						ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRNameP"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P,
+							ConsolPlugin.INSTANCE.getString(
+								"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRNameP"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1269,24 +1319,28 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(longitudinalCareWoundObservation);
+		Object oclResult = VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			longitudinalCareWoundObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE,
-						ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRValue"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE,
+							ConsolPlugin.INSTANCE.getString(
+								"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRValue"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1335,24 +1389,28 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CD_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CD_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CD_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CD_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CD_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(longitudinalCareWoundObservation);
+		Object oclResult = VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CD_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			longitudinalCareWoundObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CD_QUALIFIER,
-						ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDQualifier"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CD_QUALIFIER,
+							ConsolPlugin.INSTANCE.getString(
+								"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDQualifier"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1395,14 +1453,16 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION,
 				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION.getEAllOperations().get(110));
 			try {
-				GET_WOUND_MEASUREMENT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_WOUND_MEASUREMENT_OBSERVATIONS__EOCL_EXP);
+				GET_WOUND_MEASUREMENT_OBSERVATIONS__EOCL_QRY = helper.createQuery(
+					GET_WOUND_MEASUREMENT_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_WOUND_MEASUREMENT_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<WoundMeasurementObservation> result = (Collection<WoundMeasurementObservation>) query.evaluate(longitudinalCareWoundObservation);
+		Collection<WoundMeasurementObservation> result = (Collection<WoundMeasurementObservation>) query.evaluate(
+			longitudinalCareWoundObservation);
 		return new BasicEList.UnmodifiableEList<WoundMeasurementObservation>(result.size(), result.toArray());
 	}
 
@@ -1447,7 +1507,8 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_WOUND_CHARACTERISTICSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<WoundCharacteristic> result = (Collection<WoundCharacteristic>) query.evaluate(longitudinalCareWoundObservation);
+		Collection<WoundCharacteristic> result = (Collection<WoundCharacteristic>) query.evaluate(
+			longitudinalCareWoundObservation);
 		return new BasicEList.UnmodifiableEList<WoundCharacteristic>(result.size(), result.toArray());
 	}
 
@@ -1485,7 +1546,8 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION,
 				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION.getEAllOperations().get(112));
 			try {
-				GET_HIGHEST_PRESSURE_ULCER_STAGE__EOCL_QRY = helper.createQuery(GET_HIGHEST_PRESSURE_ULCER_STAGE__EOCL_EXP);
+				GET_HIGHEST_PRESSURE_ULCER_STAGE__EOCL_QRY = helper.createQuery(
+					GET_HIGHEST_PRESSURE_ULCER_STAGE__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1528,14 +1590,16 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION,
 				ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION.getEAllOperations().get(113));
 			try {
-				GET_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2S__EOCL_EXP);
+				GET_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<NumberOfPressureUlcersObservation2> result = (Collection<NumberOfPressureUlcersObservation2>) query.evaluate(longitudinalCareWoundObservation);
+		Collection<NumberOfPressureUlcersObservation2> result = (Collection<NumberOfPressureUlcersObservation2>) query.evaluate(
+			longitudinalCareWoundObservation);
 		return new BasicEList.UnmodifiableEList<NumberOfPressureUlcersObservation2>(result.size(), result.toArray());
 	}
 
@@ -1579,7 +1643,8 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.LONGITUDINAL_CARE_WOUND_OBSERVATION);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1587,11 +1652,12 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			longitudinalCareWoundObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationProblemObservationTemplateId"),
-					new Object[] { longitudinalCareWoundObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationProblemObservationTemplateId"),
+						new Object[] { longitudinalCareWoundObservation }));
 			}
 
 			return false;

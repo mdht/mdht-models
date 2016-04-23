@@ -16,12 +16,12 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -102,7 +102,8 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 	public void testValidateFunctionalStatusSection2SelfCareActivities() {
 		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSection2SelfCareActivitiesTestCase = new OperationsTestCase<FunctionalStatusSection2>(
 			"validateFunctionalStatusSection2SelfCareActivities",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION2_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_SECTION2_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -135,7 +136,8 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 	public void testValidateFunctionalStatusSection2SensoryAndSpeechStatus() {
 		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSection2SensoryAndSpeechStatusTestCase = new OperationsTestCase<FunctionalStatusSection2>(
 			"validateFunctionalStatusSection2SensoryAndSpeechStatus",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -275,8 +277,8 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateFunctionalStatusSectionTemplateId() {
 		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionTemplateIdTestCase = new OperationsTestCase<FunctionalStatusSection2>(
-			"validateFunctionalStatusSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateFunctionalStatusSectionTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -351,7 +353,8 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 	public void testValidateFunctionalStatusSectionFunctionalStatusResultOrganizer() {
 		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionFunctionalStatusResultOrganizerTestCase = new OperationsTestCase<FunctionalStatusSection2>(
 			"validateFunctionalStatusSectionFunctionalStatusResultOrganizer",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -384,7 +387,8 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 	public void testValidateFunctionalStatusSectionFunctionalStatusResultObservation() {
 		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionFunctionalStatusResultObservationTestCase = new OperationsTestCase<FunctionalStatusSection2>(
 			"validateFunctionalStatusSectionFunctionalStatusResultObservation",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -419,7 +423,8 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 	public void testValidateFunctionalStatusSectionCognitiveStatusResultOrganizer() {
 		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionCognitiveStatusResultOrganizerTestCase = new OperationsTestCase<FunctionalStatusSection2>(
 			"validateFunctionalStatusSectionCognitiveStatusResultOrganizer",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -455,7 +460,8 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 	public void testValidateFunctionalStatusSectionCognitiveStatusResultObservation() {
 		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionCognitiveStatusResultObservationTestCase = new OperationsTestCase<FunctionalStatusSection2>(
 			"validateFunctionalStatusSectionCognitiveStatusResultObservation",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -489,7 +495,8 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 	public void testValidateFunctionalStatusSectionNonMedicinalSupplyActivity() {
 		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionNonMedicinalSupplyActivityTestCase = new OperationsTestCase<FunctionalStatusSection2>(
 			"validateFunctionalStatusSectionNonMedicinalSupplyActivity",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -525,7 +532,8 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 	public void testValidateFunctionalStatusSectionNumberOfPressureUlcersObservation() {
 		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionNumberOfPressureUlcersObservationTestCase = new OperationsTestCase<FunctionalStatusSection2>(
 			"validateFunctionalStatusSectionNumberOfPressureUlcersObservation",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -561,7 +569,8 @@ public class FunctionalStatusSection2Test extends CDAValidationTest {
 	public void testValidateFunctionalStatusSectionHighestPressureUlcerStage() {
 		OperationsTestCase<FunctionalStatusSection2> validateFunctionalStatusSectionHighestPressureUlcerStageTestCase = new OperationsTestCase<FunctionalStatusSection2>(
 			"validateFunctionalStatusSectionHighestPressureUlcerStage",
-			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_FUNCTIONAL_STATUS_SECTION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

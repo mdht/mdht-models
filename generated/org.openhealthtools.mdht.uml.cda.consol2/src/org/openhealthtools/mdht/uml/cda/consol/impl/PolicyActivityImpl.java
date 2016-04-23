@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PolicyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PolicyActivityOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Policy Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -669,7 +667,8 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 * @generated
 	 */
 	@Override
-	public boolean validatePolicyActivityCoverageCoverageRoleId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePolicyActivityCoverageCoverageRoleId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleId(this, diagnostics, context);
 	}
 
@@ -774,7 +773,8 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 * @generated
 	 */
 	@Override
-	public boolean validatePolicyActivityCoverageCoverageRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePolicyActivityCoverageCoverageRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRole(this, diagnostics, context);
 	}
 
@@ -883,7 +883,8 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 * @generated
 	 */
 	@Override
-	public boolean validatePolicyActivityHolderHolderRoleAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePolicyActivityHolderHolderRoleAddr(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderHolderRoleAddr(this, diagnostics, context);
 	}
 

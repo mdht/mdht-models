@@ -16,15 +16,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergiesSection2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -164,7 +164,8 @@ public class AllergiesSection2Test extends CDAValidationTest {
 	public void testValidateAllergiesSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<AllergiesSection2> validateAllergiesSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<AllergiesSection2>(
 			"validateAllergiesSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -197,8 +198,8 @@ public class AllergiesSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateAllergiesSectionEntriesOptionalCodeP() {
 		OperationsTestCase<AllergiesSection2> validateAllergiesSectionEntriesOptionalCodePTestCase = new OperationsTestCase<AllergiesSection2>(
-			"validateAllergiesSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergiesSectionEntriesOptionalCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -231,8 +232,8 @@ public class AllergiesSection2Test extends CDAValidationTest {
 	@Test
 	public void testValidateAllergiesSectionEntriesOptionalCode() {
 		OperationsTestCase<AllergiesSection2> validateAllergiesSectionEntriesOptionalCodeTestCase = new OperationsTestCase<AllergiesSection2>(
-			"validateAllergiesSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergiesSectionEntriesOptionalCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -273,7 +274,8 @@ public class AllergiesSection2Test extends CDAValidationTest {
 	public void testValidateAllergiesSectionEntriesOptionalAllergyProblemAct() {
 		OperationsTestCase<AllergiesSection2> validateAllergiesSectionEntriesOptionalAllergyProblemActTestCase = new OperationsTestCase<AllergiesSection2>(
 			"validateAllergiesSectionEntriesOptionalAllergyProblemAct",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

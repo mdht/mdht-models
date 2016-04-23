@@ -16,11 +16,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemSectionEntriesOptional2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +53,8 @@ public class ProblemSectionEntriesOptional2Test extends CDAValidationTest {
 	public void testValidateProblemSectionEntriesOptional2HealthStatusObservation2() {
 		OperationsTestCase<ProblemSectionEntriesOptional2> validateProblemSectionEntriesOptional2HealthStatusObservation2TestCase = new OperationsTestCase<ProblemSectionEntriesOptional2>(
 			"validateProblemSectionEntriesOptional2HealthStatusObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL2_HEALTH_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL2_HEALTH_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -110,7 +111,8 @@ public class ProblemSectionEntriesOptional2Test extends CDAValidationTest {
 	public void testValidateProblemSectionEntriesOptionalTemplateId() {
 		OperationsTestCase<ProblemSectionEntriesOptional2> validateProblemSectionEntriesOptionalTemplateIdTestCase = new OperationsTestCase<ProblemSectionEntriesOptional2>(
 			"validateProblemSectionEntriesOptionalTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -143,8 +145,8 @@ public class ProblemSectionEntriesOptional2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProblemSectionEntriesOptionalCodeP() {
 		OperationsTestCase<ProblemSectionEntriesOptional2> validateProblemSectionEntriesOptionalCodePTestCase = new OperationsTestCase<ProblemSectionEntriesOptional2>(
-			"validateProblemSectionEntriesOptionalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemSectionEntriesOptionalCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -177,8 +179,8 @@ public class ProblemSectionEntriesOptional2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProblemSectionEntriesOptionalCode() {
 		OperationsTestCase<ProblemSectionEntriesOptional2> validateProblemSectionEntriesOptionalCodeTestCase = new OperationsTestCase<ProblemSectionEntriesOptional2>(
-			"validateProblemSectionEntriesOptionalCode",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemSectionEntriesOptionalCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -219,7 +221,8 @@ public class ProblemSectionEntriesOptional2Test extends CDAValidationTest {
 	public void testValidateProblemSectionEntriesOptionalProblemConcern() {
 		OperationsTestCase<ProblemSectionEntriesOptional2> validateProblemSectionEntriesOptionalProblemConcernTestCase = new OperationsTestCase<ProblemSectionEntriesOptional2>(
 			"validateProblemSectionEntriesOptionalProblemConcern",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -15,12 +15,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.DocumentationOf;
+import org.eclipse.mdht.uml.cda.Performer1;
+import org.eclipse.mdht.uml.cda.ServiceEvent;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.IVXB_TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.DocumentationOf;
-import org.openhealthtools.mdht.uml.cda.Performer1;
-import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection;
 import org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
@@ -41,12 +47,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ProcedureSpecimensTakenSection;
 import org.openhealthtools.mdht.uml.cda.consol.SurgicalDrainsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraintsOperations;
 import org.openhealthtools.mdht.uml.cda.consol.operations.OperativeNoteOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 
 /**
  * <!-- begin-user-doc -->
@@ -208,7 +208,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* AnesthesiaSection */
 				AnesthesiaSection section =
 
-				ConsolFactory.eINSTANCE.createAnesthesiaSection().init();
+						ConsolFactory.eINSTANCE.createAnesthesiaSection().init();
 
 				target.addSection(section);
 
@@ -233,8 +233,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNoteComplicationsSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteComplicationsSectionTestCase = new OperationsTestCase<OperativeNote>(
-			"validateOperativeNoteComplicationsSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_COMPLICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNoteComplicationsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_COMPLICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -249,7 +249,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* ComplicationsSection */
 				ComplicationsSection section =
 
-				ConsolFactory.eINSTANCE.createComplicationsSection().init();
+						ConsolFactory.eINSTANCE.createComplicationsSection().init();
 
 				target.addSection(section);
 
@@ -275,7 +275,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNotePostoperativeDiagnosisSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNotePostoperativeDiagnosisSectionTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNotePostoperativeDiagnosisSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -290,7 +291,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* PostoperativeDiagnosisSection */
 				PostoperativeDiagnosisSection section =
 
-				ConsolFactory.eINSTANCE.createPostoperativeDiagnosisSection().init();
+						ConsolFactory.eINSTANCE.createPostoperativeDiagnosisSection().init();
 
 				target.addSection(section);
 
@@ -316,7 +317,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNotePreoperativeDiagnosisSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNotePreoperativeDiagnosisSectionTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNotePreoperativeDiagnosisSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -331,7 +333,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* PreoperativeDiagnosisSection */
 				PreoperativeDiagnosisSection section =
 
-				ConsolFactory.eINSTANCE.createPreoperativeDiagnosisSection().init();
+						ConsolFactory.eINSTANCE.createPreoperativeDiagnosisSection().init();
 
 				target.addSection(section);
 
@@ -357,7 +359,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteProcedureEstimatedBloodLossSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteProcedureEstimatedBloodLossSectionTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteProcedureEstimatedBloodLossSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -372,7 +375,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* ProcedureEstimatedBloodLossSection */
 				ProcedureEstimatedBloodLossSection section =
 
-				ConsolFactory.eINSTANCE.createProcedureEstimatedBloodLossSection().init();
+						ConsolFactory.eINSTANCE.createProcedureEstimatedBloodLossSection().init();
 
 				target.addSection(section);
 
@@ -397,8 +400,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNoteProcedureFindingsSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteProcedureFindingsSectionTestCase = new OperationsTestCase<OperativeNote>(
-			"validateOperativeNoteProcedureFindingsSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNoteProcedureFindingsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -413,7 +416,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* ProcedureFindingsSection */
 				ProcedureFindingsSection section =
 
-				ConsolFactory.eINSTANCE.createProcedureFindingsSection().init();
+						ConsolFactory.eINSTANCE.createProcedureFindingsSection().init();
 
 				target.addSection(section);
 
@@ -439,7 +442,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteProcedureSpecimensTakenSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteProcedureSpecimensTakenSectionTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteProcedureSpecimensTakenSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -454,7 +458,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* ProcedureSpecimensTakenSection */
 				ProcedureSpecimensTakenSection section =
 
-				ConsolFactory.eINSTANCE.createProcedureSpecimensTakenSection().init();
+						ConsolFactory.eINSTANCE.createProcedureSpecimensTakenSection().init();
 
 				target.addSection(section);
 
@@ -480,7 +484,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteProcedureDescriptionSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteProcedureDescriptionSectionTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteProcedureDescriptionSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -495,7 +500,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* ProcedureDescriptionSection */
 				ProcedureDescriptionSection section =
 
-				ConsolFactory.eINSTANCE.createProcedureDescriptionSection().init();
+						ConsolFactory.eINSTANCE.createProcedureDescriptionSection().init();
 
 				target.addSection(section);
 
@@ -520,8 +525,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNoteProcedureImplantsSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteProcedureImplantsSectionTestCase = new OperationsTestCase<OperativeNote>(
-			"validateOperativeNoteProcedureImplantsSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNoteProcedureImplantsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -536,7 +541,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* ProcedureImplantsSection */
 				ProcedureImplantsSection section =
 
-				ConsolFactory.eINSTANCE.createProcedureImplantsSection().init();
+						ConsolFactory.eINSTANCE.createProcedureImplantsSection().init();
 
 				target.addSection(section);
 
@@ -562,7 +567,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteOperativeNoteFluidSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteOperativeNoteFluidSectionTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteOperativeNoteFluidSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -577,7 +583,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* OperativeNoteFluidSection */
 				OperativeNoteFluidSection section =
 
-				ConsolFactory.eINSTANCE.createOperativeNoteFluidSection().init();
+						ConsolFactory.eINSTANCE.createOperativeNoteFluidSection().init();
 
 				target.addSection(section);
 
@@ -603,7 +609,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteOperativeNoteSurgicalProcedureSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteOperativeNoteSurgicalProcedureSectionTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteOperativeNoteSurgicalProcedureSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -618,7 +625,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* OperativeNoteSurgicalProcedureSection */
 				OperativeNoteSurgicalProcedureSection section =
 
-				ConsolFactory.eINSTANCE.createOperativeNoteSurgicalProcedureSection().init();
+						ConsolFactory.eINSTANCE.createOperativeNoteSurgicalProcedureSection().init();
 
 				target.addSection(section);
 
@@ -643,8 +650,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNotePlanOfCareSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNotePlanOfCareSectionTestCase = new OperationsTestCase<OperativeNote>(
-			"validateOperativeNotePlanOfCareSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNotePlanOfCareSection", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -659,7 +666,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* PlanOfCareSection */
 				PlanOfCareSection section =
 
-				ConsolFactory.eINSTANCE.createPlanOfCareSection().init();
+						ConsolFactory.eINSTANCE.createPlanOfCareSection().init();
 
 				target.addSection(section);
 
@@ -684,8 +691,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNotePlannedProcedureSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNotePlannedProcedureSectionTestCase = new OperationsTestCase<OperativeNote>(
-			"validateOperativeNotePlannedProcedureSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNotePlannedProcedureSection", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -700,7 +707,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* PlannedProcedureSection */
 				PlannedProcedureSection section =
 
-				ConsolFactory.eINSTANCE.createPlannedProcedureSection().init();
+						ConsolFactory.eINSTANCE.createPlannedProcedureSection().init();
 
 				target.addSection(section);
 
@@ -726,7 +733,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteProcedureDispositionSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteProcedureDispositionSectionTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteProcedureDispositionSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -741,7 +749,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* ProcedureDispositionSection */
 				ProcedureDispositionSection section =
 
-				ConsolFactory.eINSTANCE.createProcedureDispositionSection().init();
+						ConsolFactory.eINSTANCE.createProcedureDispositionSection().init();
 
 				target.addSection(section);
 
@@ -767,7 +775,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteProcedureIndicationsSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteProcedureIndicationsSectionTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteProcedureIndicationsSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -782,7 +791,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* ProcedureIndicationsSection */
 				ProcedureIndicationsSection section =
 
-				ConsolFactory.eINSTANCE.createProcedureIndicationsSection().init();
+						ConsolFactory.eINSTANCE.createProcedureIndicationsSection().init();
 
 				target.addSection(section);
 
@@ -807,8 +816,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateOperativeNoteSurgicalDrainsSection() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteSurgicalDrainsSectionTestCase = new OperationsTestCase<OperativeNote>(
-			"validateOperativeNoteSurgicalDrainsSection",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateOperativeNoteSurgicalDrainsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -823,7 +832,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 				/* SurgicalDrainsSection */
 				SurgicalDrainsSection section =
 
-				ConsolFactory.eINSTANCE.createSurgicalDrainsSection().init();
+						ConsolFactory.eINSTANCE.createSurgicalDrainsSection().init();
 
 				target.addSection(section);
 
@@ -849,7 +858,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -901,7 +911,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodePTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -953,7 +964,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCodeTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -1006,7 +1018,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1055,7 +1068,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventProcedureCodes() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventProcedureCodesTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventProcedureCodes",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 			// 2.16.840.1.113883.6.104' or code.codeSystem = '2.16.840.1.113883.6.12' or code.codeSystem = '2.16.840.1.113883.6.96'
 
@@ -1072,7 +1086,7 @@ public class OperativeNoteTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
+			 *
 			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
@@ -1142,7 +1156,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLowTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1194,7 +1209,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidthTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1246,7 +1262,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidthTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1300,7 +1317,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventPreciseToTheDay() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventPreciseToTheDayTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventPreciseToTheDay",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1343,7 +1361,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventPreciseToTheMinute() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventPreciseToTheMinuteTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventPreciseToTheMinute",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1387,7 +1406,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventPreciseToTheSecond() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventPreciseToTheSecondTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventPreciseToTheSecond",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1431,7 +1451,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffsetTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1474,7 +1495,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventCode() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventCodeTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventCode",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1519,7 +1541,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventEffectiveTime() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventEffectiveTimeTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1567,7 +1590,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	public void testValidateOperativeNoteDocumentationOfServiceEventPrimaryPerformer() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEventPrimaryPerformer",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1607,13 +1631,14 @@ public class OperativeNoteTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not 
+	* @generated not
 	*/
 	@Test
 	public void testValidateOperativeNoteDocumentationOfServiceEvent() {
 		OperationsTestCase<OperativeNote> validateOperativeNoteDocumentationOfServiceEventTestCase = new OperationsTestCase<OperativeNote>(
 			"validateOperativeNoteDocumentationOfServiceEvent",
-			operationsForOCL.getOCLValue("VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1845,8 +1870,8 @@ public class OperativeNoteTest extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<OperativeNote> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<OperativeNote>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

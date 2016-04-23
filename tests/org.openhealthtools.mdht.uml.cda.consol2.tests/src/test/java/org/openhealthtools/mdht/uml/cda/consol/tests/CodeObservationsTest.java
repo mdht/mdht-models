@@ -14,17 +14,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.CodeObservations;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CodeObservationsOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -269,8 +269,8 @@ public class CodeObservationsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCodeObservationsSOPInstanceObservation() {
 		OperationsTestCase<CodeObservations> validateCodeObservationsSOPInstanceObservationTestCase = new OperationsTestCase<CodeObservations>(
-			"validateCodeObservationsSOPInstanceObservation",
-			operationsForOCL.getOCLValue("VALIDATE_CODE_OBSERVATIONS_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCodeObservationsSOPInstanceObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_CODE_OBSERVATIONS_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -308,7 +308,8 @@ public class CodeObservationsTest extends CDAValidationTest {
 	public void testValidateCodeObservationsQuantityMeasurementObservation() {
 		OperationsTestCase<CodeObservations> validateCodeObservationsQuantityMeasurementObservationTestCase = new OperationsTestCase<CodeObservations>(
 			"validateCodeObservationsQuantityMeasurementObservation",
-			operationsForOCL.getOCLValue("VALIDATE_CODE_OBSERVATIONS_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CODE_OBSERVATIONS_QUANTITY_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

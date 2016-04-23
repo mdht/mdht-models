@@ -16,28 +16,28 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedAuthor;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.Author;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.DocumentationOf;
+import org.eclipse.mdht.uml.cda.Organization;
+import org.eclipse.mdht.uml.cda.Performer1;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.ServiceEvent;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.ActClassRoot;
+import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
+import org.eclipse.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.Author;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.DocumentationOf;
-import org.openhealthtools.mdht.uml.cda.Organization;
-import org.openhealthtools.mdht.uml.cda.Performer1;
-import org.openhealthtools.mdht.uml.cda.Person;
-import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ContinuityOfCareDocument2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassRoot;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,8 +115,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	@Test
 	public void testValidateContinuityOfCareDocument2CodeP() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2CodePTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
-			"validateContinuityOfCareDocument2CodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateContinuityOfCareDocument2CodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -190,8 +190,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	@Test
 	public void testValidateContinuityOfCareDocument2Author() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2AuthorTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
-			"validateContinuityOfCareDocument2Author",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateContinuityOfCareDocument2Author", operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -225,7 +225,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOf() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOf",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -259,7 +260,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2AllergiesSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2AllergiesSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2AllergiesSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ALLERGIES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -293,7 +295,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2MedicationsSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2MedicationsSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2MedicationsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -327,7 +330,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2ProblemSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2ProblemSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2ProblemSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROBLEM_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -361,7 +365,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2ProceduresSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2ProceduresSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2ProceduresSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PROCEDURES_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -395,7 +400,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2ResultsSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2ResultsSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2ResultsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_RESULTS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -429,7 +435,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2AdvanceDirectivesSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -463,7 +470,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2EncountersSectionEntriesOptional2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2EncountersSectionEntriesOptional2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2EncountersSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -497,7 +505,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2FunctionalStatusSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2FunctionalStatusSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2FunctionalStatusSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -531,7 +540,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2ImmunizationsSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2ImmunizationsSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2ImmunizationsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_IMMUNIZATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -565,7 +575,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2MedicalEquipmentSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2MedicalEquipmentSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2MedicalEquipmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MEDICAL_EQUIPMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -599,7 +610,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2PayersSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2PayersSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2PayersSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PAYERS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -633,7 +645,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2PlanOfTreatmentSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2PlanOfTreatmentSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2PlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -667,7 +680,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2SocialHistorySection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2SocialHistorySection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2SocialHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -701,7 +715,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2VitalSignsSection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2VitalSignsSection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2VitalSignsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_VITAL_SIGNS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -735,7 +750,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2MentalStatusSection() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2MentalStatusSectionTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2MentalStatusSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_MENTAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -750,7 +766,7 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 				/* MentalStatusSection */
 				MentalStatusSection section =
 
-				ConsolFactory.eINSTANCE.createMentalStatusSection().init();
+						ConsolFactory.eINSTANCE.createMentalStatusSection().init();
 
 				target.addSection(section);
 
@@ -776,7 +792,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2NutritionSection() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2NutritionSectionTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2NutritionSection",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -791,7 +808,7 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 				/* NutritionSection */
 				NutritionSection section =
 
-				ConsolFactory.eINSTANCE.createNutritionSection().init();
+						ConsolFactory.eINSTANCE.createNutritionSection().init();
 
 				target.addSection(section);
 
@@ -817,7 +834,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2FamilyHistorySection2() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2FamilyHistorySection2TestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2FamilyHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -851,7 +869,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganizationTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -947,7 +966,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganizationTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR_HAS_REPRESENT_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -995,7 +1015,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2AuthorAssignedAuthor() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2AuthorAssignedAuthorTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2AuthorAssignedAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1033,7 +1054,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLowTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1073,7 +1095,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHighTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1113,7 +1136,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifierTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1168,7 +1192,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityIdTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1220,7 +1245,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPersonTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1274,7 +1300,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCodeTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1325,7 +1352,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1373,7 +1401,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventClassCode() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventClassCodeTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1415,7 +1444,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTimeTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1457,7 +1487,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEventPerformer() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEventPerformer",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1499,7 +1530,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	public void testValidateContinuityOfCareDocument2DocumentationOfServiceEvent() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateContinuityOfCareDocument2DocumentationOfServiceEventTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
 			"validateContinuityOfCareDocument2DocumentationOfServiceEvent",
-			operationsForOCL.getOCLValue("VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1741,8 +1773,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<ContinuityOfCareDocument2> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<ContinuityOfCareDocument2>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

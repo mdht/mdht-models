@@ -15,20 +15,19 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Participant2;
+import org.eclipse.mdht.uml.cda.Performer2;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Participant2;
-import org.openhealthtools.mdht.uml.cda.Performer2;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedSupply2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 
 /**
  * <!-- begin-user-doc -->
@@ -78,12 +77,15 @@ public class PlannedSupply2Test extends CDAValidationTest {
 	public void testValidatePlannedSupply2MedInfoXorImmunXorProductInstance() {
 		OperationsTestCase<PlannedSupply2> validatePlannedSupply2MedInfoXorImmunXorProductInstanceTestCase = new OperationsTestCase<PlannedSupply2>(
 			"validatePlannedSupply2MedInfoXorImmunXorProductInstance",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			// OCL
 			// protected static final String VALIDATE_PLANNED_SUPPLY2_IF_PRODUCT_IS_MED_INFO_THEN_NOT_IMMUN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP =
-			// "(product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2)) xor (product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)) xor (participant.participantRole->select(oclIsTypeOf(consol::ProductInstance))->size() = 1 )";
+			// "(product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2)) xor
+			// (product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)) xor
+			// (participant.participantRole->select(oclIsTypeOf(consol::ProductInstance))->size() = 1 )";
 
 			@Override
 			public void addFailTests() {
@@ -424,8 +426,8 @@ public class PlannedSupply2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedSupply2AuthorParticipation() {
 		OperationsTestCase<PlannedSupply2> validatePlannedSupply2AuthorParticipationTestCase = new OperationsTestCase<PlannedSupply2>(
-			"validatePlannedSupply2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedSupply2AuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_SUPPLY2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -495,8 +497,8 @@ public class PlannedSupply2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedSupply2PriorityPreference() {
 		OperationsTestCase<PlannedSupply2> validatePlannedSupply2PriorityPreferenceTestCase = new OperationsTestCase<PlannedSupply2>(
-			"validatePlannedSupply2PriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedSupply2PriorityPreference", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_SUPPLY2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -639,8 +641,8 @@ public class PlannedSupply2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlannedSupply2ProductRecommended() {
 		OperationsTestCase<PlannedSupply2> validatePlannedSupply2ProductRecommendedTestCase = new OperationsTestCase<PlannedSupply2>(
-			"validatePlannedSupply2ProductRecommended",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_PRODUCT_RECOMMENDED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlannedSupply2ProductRecommended", operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_SUPPLY2_PRODUCT_RECOMMENDED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -674,7 +676,8 @@ public class PlannedSupply2Test extends CDAValidationTest {
 	public void testValidatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2() {
 		OperationsTestCase<PlannedSupply2> validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2TestCase = new OperationsTestCase<PlannedSupply2>(
 			"validatePlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -725,7 +728,8 @@ public class PlannedSupply2Test extends CDAValidationTest {
 	public void testValidatePlannedSupply2ProductManufacturedProduct() {
 		OperationsTestCase<PlannedSupply2> validatePlannedSupply2ProductManufacturedProductTestCase = new OperationsTestCase<PlannedSupply2>(
 			"validatePlannedSupply2ProductManufacturedProduct",
-			operationsForOCL.getOCLValue("VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -818,8 +822,8 @@ public class PlannedSupply2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlanOfCareActivitySupplyTemplateId() {
 		OperationsTestCase<PlannedSupply2> validatePlanOfCareActivitySupplyTemplateIdTestCase = new OperationsTestCase<PlannedSupply2>(
-			"validatePlanOfCareActivitySupplyTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivitySupplyTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -852,8 +856,8 @@ public class PlannedSupply2Test extends CDAValidationTest {
 	@Test
 	public void testValidatePlanOfCareActivitySupplyMoodCode() {
 		OperationsTestCase<PlannedSupply2> validatePlanOfCareActivitySupplyMoodCodeTestCase = new OperationsTestCase<PlannedSupply2>(
-			"validatePlanOfCareActivitySupplyMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePlanOfCareActivitySupplyMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

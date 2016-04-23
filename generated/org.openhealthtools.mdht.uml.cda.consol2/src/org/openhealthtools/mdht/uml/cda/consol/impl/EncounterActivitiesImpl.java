@@ -17,21 +17,19 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.EncounterImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivities;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterActivitiesOperations;
-import org.openhealthtools.mdht.uml.cda.impl.EncounterImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounter Activities</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -61,7 +59,8 @@ public class EncounterActivitiesImpl extends EncounterImpl implements EncounterA
 	 * @generated
 	 */
 	@Override
-	public boolean validateEncounterActivitiesCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncounterActivitiesCodeOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncounterActivitiesOperations.validateEncounterActivitiesCodeOriginalText(this, diagnostics, context);
 	}
 

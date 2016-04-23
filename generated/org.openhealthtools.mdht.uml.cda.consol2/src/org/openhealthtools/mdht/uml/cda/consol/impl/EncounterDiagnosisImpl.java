@@ -13,19 +13,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterDiagnosisOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounter Diagnosis</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -105,7 +103,8 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * @generated
 	 */
 	@Override
-	public boolean validateEncounterDiagnosisProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncounterDiagnosisProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncounterDiagnosisOperations.validateEncounterDiagnosisProblemObservation(this, diagnostics, context);
 	}
 

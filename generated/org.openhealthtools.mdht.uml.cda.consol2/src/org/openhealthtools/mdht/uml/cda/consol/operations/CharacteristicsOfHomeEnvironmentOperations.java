@@ -12,19 +12,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -99,21 +94,23 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHARACTERISTICS_OF_HOME_ENVIRONMENT);
 			try {
-				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			characteristicsOfHomeEnvironment)) {
+				characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentTemplateId"),
-					new Object[] { characteristicsOfHomeEnvironment }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentTemplateId"),
+						new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
 			return false;
@@ -161,21 +158,23 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHARACTERISTICS_OF_HOME_ENVIRONMENT);
 			try {
-				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			characteristicsOfHomeEnvironment)) {
+				characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentClassCode"),
-					new Object[] { characteristicsOfHomeEnvironment }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentClassCode"),
+						new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
 			return false;
@@ -223,21 +222,23 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHARACTERISTICS_OF_HOME_ENVIRONMENT);
 			try {
-				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			characteristicsOfHomeEnvironment)) {
+				characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentMoodCode"),
-					new Object[] { characteristicsOfHomeEnvironment }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentMoodCode"),
+						new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
 			return false;
@@ -285,20 +286,23 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHARACTERISTICS_OF_HOME_ENVIRONMENT);
 			try {
-				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			characteristicsOfHomeEnvironment)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentId"),
-					new Object[] { characteristicsOfHomeEnvironment }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentId"),
+						new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
 			return false;
@@ -346,26 +350,30 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHARACTERISTICS_OF_HOME_ENVIRONMENT);
 			try {
-				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			characteristicsOfHomeEnvironment)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentCodeP"),
-					new Object[] { characteristicsOfHomeEnvironment }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentCodeP"),
+						new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironmentCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironmentCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -388,9 +396,9 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '75274-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '75274-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCharacteristicsOfHomeEnvironmentCode(CharacteristicsOfHomeEnvironment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Code</em>}' invariant operation.
@@ -431,20 +439,23 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHARACTERISTICS_OF_HOME_ENVIRONMENT);
 			try {
-				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			characteristicsOfHomeEnvironment)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentCode"),
-					new Object[] { characteristicsOfHomeEnvironment }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentCode"),
+						new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
 			return false;
@@ -460,8 +471,8 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCharacteristicsOfHomeEnvironmentStatusCode(CharacteristicsOfHomeEnvironment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Status Code</em>}' invariant operation.
@@ -493,21 +504,23 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHARACTERISTICS_OF_HOME_ENVIRONMENT);
 			try {
-				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			characteristicsOfHomeEnvironment)) {
+				characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentStatusCode"),
-					new Object[] { characteristicsOfHomeEnvironment }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentStatusCode"),
+						new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
 			return false;
@@ -555,21 +568,23 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHARACTERISTICS_OF_HOME_ENVIRONMENT);
 			try {
-				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			characteristicsOfHomeEnvironment)) {
+				characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentStatusCodeP"),
-					new Object[] { characteristicsOfHomeEnvironment }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentStatusCodeP"),
+						new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
 			return false;
@@ -585,9 +600,9 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCharacteristicsOfHomeEnvironmentValue(CharacteristicsOfHomeEnvironment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Value</em>}' invariant operation.
@@ -619,20 +634,23 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHARACTERISTICS_OF_HOME_ENVIRONMENT);
 			try {
-				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			characteristicsOfHomeEnvironment)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentValue"),
-					new Object[] { characteristicsOfHomeEnvironment }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE,
+						ConsolPlugin.INSTANCE.getString(
+							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentValue"),
+						new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
 			return false;
@@ -680,20 +698,23 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHARACTERISTICS_OF_HOME_ENVIRONMENT);
 			try {
-				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			characteristicsOfHomeEnvironment)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				characteristicsOfHomeEnvironment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P,
-					ConsolPlugin.INSTANCE.getString("CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentValueP"),
-					new Object[] { characteristicsOfHomeEnvironment }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentValueP"),
+						new Object[] { characteristicsOfHomeEnvironment }));
 			}
 
 			return false;

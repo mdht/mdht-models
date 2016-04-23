@@ -7,32 +7,25 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveObservation2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directive Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservationImpl implements
-		AdvanceDirectiveObservation2 {
+public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservationImpl
+		implements AdvanceDirectiveObservation2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -102,7 +95,8 @@ public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservatio
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveObservation2IVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveObservation2IVLTSLow(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2IVLTSLow(
 			this, diagnostics, context);
 	}
@@ -196,8 +190,8 @@ public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservatio
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservation2VerifierParticipantRolePlayingEntity(
 			this, diagnostics, context);
 	}
@@ -371,7 +365,8 @@ public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservatio
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveObservationVerifier(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveObservationVerifier(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationVerifier(
 			this, diagnostics, context);
 	}
@@ -382,7 +377,8 @@ public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservatio
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveObservationCustodian(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveObservationCustodian(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationCustodian(
 			this, diagnostics, context);
 	}
@@ -393,7 +389,8 @@ public class AdvanceDirectiveObservation2Impl extends AdvanceDirectiveObservatio
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveObservationReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveObservationReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveObservation2Operations.validateAdvanceDirectiveObservationReference(
 			this, diagnostics, context);
 	}

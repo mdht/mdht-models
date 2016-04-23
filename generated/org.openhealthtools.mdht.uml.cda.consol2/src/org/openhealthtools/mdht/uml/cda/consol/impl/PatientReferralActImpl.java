@@ -7,30 +7,23 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.PatientReferralActOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Patient Referral Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -168,7 +161,8 @@ public class PatientReferralActImpl extends ActImpl implements PatientReferralAc
 	 * @generated
 	 */
 	@Override
-	public boolean validatePatientReferralActEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientReferralActEntryRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientReferralActOperations.validatePatientReferralActEntryRelationship(this, diagnostics, context);
 	}
 

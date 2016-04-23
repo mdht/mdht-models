@@ -2,10 +2,10 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="consol" nsURI="http://www.openhealthtools.org/mdht/uml/cda/consol"
     nsPrefix="consol">
-  <eAnnotations source="http://www.openhealthtools.org/mdht/uml">
+  <eAnnotations source="http://www.eclipse.org/mdht/uml">
     <details key="initializers" value="org.openhealthtools.mdht.uml.cda.consol"/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="GeneralHeaderConstraints" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ClinicalDocument">
+  <eClassifiers xsi:type="ecore:EClass" name="GeneralHeaderConstraints" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//ClinicalDocument">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This section describes constraints that apply to the header for all documents within the scope of this implementation guide. Header constraints specific to each document type are described in the appropriate document-specific section below&#xA;&#xA;Document Type Codes&#xA;CDA R2 states that LOINC is the preferred vocabulary for document type codes, which specify the type of document being exchanged (e.g., History and Physical). Each document type in this guide recommends a single preferred clinicalDocument/code, with further specification provided by author or performer, setting, or specialty"/>
     </eAnnotations>
@@ -5552,7 +5552,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AllergyProblemAct" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="AllergyProblemAct" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This clinical statement act represents a concern relating to a patient's allergies or adverse events. A concern is a term used when referring to patient's problems that are related to one another. Observations of problems or other clinical statements captured at a point in time are wrapped in a Allergy Problem Act, or &quot;Concern&quot; act, which represents the ongoing process tracked over time. This outer Allergy Problem Act (representing the &quot;Concern&quot;) can contain nested problem observations or other nested clinical statements relevant to the allergy concern."/>
     </eAnnotations>
@@ -5824,7 +5824,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AllergyObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="AllergyObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This clinical statement represents that an allergy or adverse reaction exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a manufactured material participant playing entity in the allergy - intolerance observation. While the agent is often implicit in the alert observation (e.g. &quot;allergy to penicillin&quot;), it should also be asserted explicitly as an entity. The manufactured material participant is used to represent natural and non-natural occurring substances.&#xD;&#xA;NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed. The following constraints reflect limitations in the base CDA R2 specification, and should be used to represent any type of responsible agent."/>
     </eAnnotations>
@@ -6501,7 +6501,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ReactionObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="ReactionObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ReactionObservationTemplateId ReactionObservationReferenceValue ReactionObservationSeverityObservationInversionInd ReactionObservationProcedureActivityProcedureInversionInd ReactionObservationMedicationActivityInversionInd ReactionObservationClassCode ReactionObservationMoodCode ReactionObservationId ReactionObservationCode ReactionObservationStatusCode ReactionObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.9"/>
@@ -6912,7 +6912,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SeverityObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="SeverityObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This clinical statement represents the gravity of the problem, such as allergy or reaction, in terms of its actual or potential impact on the patient. The Severity Observation can be associated with an Allergy Obervation, Reaction Observation or both. When the Severity Observation is associated directly with an Allergy it characterizes the Allergy. When the Severity Observation is associated with a Reaction Observation it characterizes a Reaction. A person may manifest many symptoms in a reaction to a single substance, and each reaction to the substance can be represented. However, each reaction observation can have only one severity observation associated with it. For example, someone may have a rash reaction observation as well as an itching reaction observation, but each can have only one level of severity"/>
     </eAnnotations>
@@ -7121,7 +7121,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityProcedure" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Procedure">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityProcedure" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Procedure">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureActivityProcedureTemplateId ProcedureActivityProcedureReferenceValue ProcedureActivityProcedureEncounterInversion ProcedureActivityProcedureProductInstanceTypeCode ProcedureActivityProcedureServiceDeliveryLocationTypeCode ProcedureActivityProcedureInstructionsInversion ProcedureActivityProcedureClassCode ProcedureActivityProcedureMoodCode ProcedureActivityProcedureId ProcedureActivityProcedureCode ProcedureActivityProcedureStatusCode ProcedureActivityProcedurePriorityCode ProcedureActivityProcedureTargetSiteCode ProcedureActivityProcedureProcedureSpecimenSpecimenRole ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityProcedureActivityRepresentedOrganizationTelecom ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityProcedureActivityRepresentedOrganizationAddr ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityId ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityAddr ProcedureActivityProcedureProcedureActivityPerformerProcedureActivityAssignedEntityTelecom ProcedureActivityProcedureProcedureActivityPerformerAssignedEntity ProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterClassCode ProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterMoodCode ProcedureActivityProcedureEntryRelationshipProcedureActivityEncounterId ProcedureActivityProcedureEntryRelationshipInversionInd ProcedureActivityProcedureEntryRelationshipTypeCode ProcedureActivityProcedureEntryRelationshipProcedureActivityEncounter"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.14"/>
@@ -8083,7 +8083,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Indication" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="Indication" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="IndicationTemplateId IndicationClassCode IndicationMoodCode IndicationId IndicationCodeP IndicationStatusCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.19"/>
@@ -8308,7 +8308,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ServiceDeliveryLocation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ParticipantRole">
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceDeliveryLocation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//ParticipantRole">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ServiceDeliveryLocationTemplateId ServiceDeliveryLocationHasPlayingEntityClassCode ServiceDeliveryLocationClassCode ServiceDeliveryLocationCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.32"/>
@@ -8471,7 +8471,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MedicationActivity" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//SubstanceAdministration">
+  <eClassifiers xsi:type="ecore:EClass" name="MedicationActivity" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//SubstanceAdministration">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationActivityTemplateId MedicationActivityTextReferenceValue MedicationActivityEffectiveTimeIVLTSorTS MedicationActivityEffectiveTimeIVLTSLow MedicationActivityEffectiveTimeIVLTSHigh  MedicationActivityEffectiveTimeTSValue MedicationActivityEffectiveTimeOperator MedicationActivityDrugVehicleTypeCode MedicationActivityInstructionsInversionInd MedicationActivityRateQuantityUnit MedicationActivityClassCode MedicationActivityMoodCode MedicationActivityId MedicationActivityStatusCode MedicationActivityRouteCode MedicationActivityApproachSiteCode MedicationActivityAdministrationUnitCode MedicationActivityConsumable MedicationActivityConsumableMedicationInformation MedicationActivityPreconditionTypeCode MedicationActivityPreconditionPreconditionForSubstanceAdministration"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.16"/>
@@ -8613,6 +8613,9 @@
       </eParameters>
     </eOperations>
     <eOperations name="MedicationActivityEffectiveTimeIVLTSHigh" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details key="originalName" value="MedicationActivityEffectiveTimeIVLTSHigh "/>
+      </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).high->size() = 1)"/>
       </eAnnotations>
@@ -9350,7 +9353,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MedicationSupplyOrder" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Supply">
+  <eClassifiers xsi:type="ecore:EClass" name="MedicationSupplyOrder" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Supply">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationSupplyOrderTemplateId MedicationSupplyOrderInstructionInversionInd MedicationSupplyOrderEffectiveTimeHigh MedicationSupplyOrderContainsMedicationOrImmunization MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderStatusCode MedicationSupplyOrderId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.17"/>
@@ -9612,7 +9615,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Instructions" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="Instructions" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="InstructionsTemplateId InstructionsTextReferenceValue InstructionsClassCode InstructionsMoodCode InstructionsCodeP InstructionsStatusCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.20"/>
@@ -9815,7 +9818,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MedicationDispense" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Supply">
+  <eClassifiers xsi:type="ecore:EClass" name="MedicationDispense" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Supply">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationDispenseTemplateId MedicationDispenseContainsMedicationOrImmunization MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine MedicationDispensePerformerMedicationDispenseAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse MedicationDispensePerformerMedicationDispenseAssignedEntity"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.18"/>
@@ -10252,7 +10255,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DrugVehicle" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ParticipantRole">
+  <eClassifiers xsi:type="ecore:EClass" name="DrugVehicle" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//ParticipantRole">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="DrugVehicleTemplateId DrugVehiclePlayingEntityCode DrugVehicleClassCode DrugVehicleCode DrugVehiclePlayingEntity"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.24"/>
@@ -10377,7 +10380,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProductInstance" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ParticipantRole">
+  <eClassifiers xsi:type="ecore:EClass" name="ProductInstance" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//ParticipantRole">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This clinical statement represents a particular device that was placed in or used as part of a procedure or other act. This provides a record of the identifier and other details about the given product that was used. For example, it is important to have a record that indicates not just that a hip prostheses was placed in a patient but that it was a particular hip prostheses number with a unique identifier.&#xD;&#xA;The FDA Amendments Act specifies the creation of a Unique Device Identification (UDI) System that requires the label of devices to bear a unique identifier that will standardize device identification and identify the device through distribution and use.  &#xD;&#xA;The UDI should be sent in the participantRole/id."/>
     </eAnnotations>
@@ -10528,7 +10531,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AllergyStatusObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="AllergyStatusObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This template represents the status of the allergy indicating whether it is active, no longer active, or is an historic allergy. There can be only one allergy status observation per alert observation."/>
     </eAnnotations>
@@ -10660,7 +10663,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AgeObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="AgeObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This Age Observation represents the subject's age at onset of an event or observation. The age of a relative in a Family History Observation at the time of that observation could also be inferred by comparing RelatedSubject/subject/birthTime with Observation/effectiveTime. However, a common scenario is that a patient will know the age of a relative when the relative had a certain condition or when the relative died, but will not know the actual year (e.g., &quot;grandpa died of a heart attack at the age of 50&quot;). Often times, neither precise dates nor ages are known (e.g. &quot;cousin died of congenital heart disease as an infant&quot;)."/>
     </eAnnotations>
@@ -10848,7 +10851,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HealthStatusObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="HealthStatusObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The Health Status Observation records information about the current health status of the patient."/>
     </eAnnotations>
@@ -11076,7 +11079,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CommentActivity" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="CommentActivity" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="CommentActivityTemplateId CommentActivityTextReference CommentActivityTextReferenceValue CommentActivityReferenceValue CommentActivityClassCode CommentActivityMoodCode CommentActivityCode CommentActivityText CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse CommentActivityAuthorAssignedAuthorHasPersonOrOrganization CommentActivityAuthorAssignedAuthorAssignPersonName CommentActivityAuthorAssignedAuthorAddr CommentActivityAuthorAssignedAuthorId CommentActivityAuthorTime CommentActivityAuthorAssignedAuthor"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.64"/>
@@ -11549,7 +11552,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NonMedicinalSupplyActivity" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Supply">
+  <eClassifiers xsi:type="ecore:EClass" name="NonMedicinalSupplyActivity" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Supply">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="NonMedicinalSupplyActivityTemplateId NonMedicinalSupplyActivityProductInstanceTypeCode NonMedicinalSupplyActivityClassCode NonMedicinalSupplyActivityMoodCode NonMedicinalSupplyActivityId NonMedicinalSupplyActivityStatusCode NonMedicinalSupplyActivityProductInstance"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.50"/>
@@ -11752,7 +11755,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProblemConcernAct" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="ProblemConcernAct" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProblemConcernActTemplateId ProblemConcernActEffectiveTimeLow ProblemConcernActClassCode ProblemConcernActMoodCode ProblemConcernActId ProblemConcernActCode ProblemConcernActCodeP ProblemConcernActStatusCode ProblemConcernActEffectiveTime ProblemConcernActProblemObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.3"/>
@@ -11981,7 +11984,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProblemObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="ProblemObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProblemObservationTemplateId ProblemObservationTextReferenceValue ProblemObservationHasTextReferenceValue ProblemObservationHasOnsetDate ProblemObservationAgeObservationInversion ProblemObservationClassCode ProblemObservationMoodCode ProblemObservationId ProblemObservationCodeP ProblemObservationStatusCode ProblemObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.4"/>
@@ -12469,7 +12472,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProblemStatus" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="ProblemStatus" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProblemStatusTemplateId ProblemStatusReferenceValue ProblemStatusTextReferenceValue ProblemStatusClassCode ProblemStatusMoodCode ProblemStatusCode ProblemStatusStatusCode ProblemStatusValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.6"/>
@@ -13621,7 +13624,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AllergiesSectionEntriesOptional" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="AllergiesSectionEntriesOptional" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This section lists and describes any medication allergies, adverse reactions, idiosyncratic reactions, anaphylaxis/anaphylactoid reactions to food items, and metabolic variations or adverse reactions/allergies to other substances (such as latex, iodine, tape adhesives) used to assure the safety of health care delivery. At a minimum, it should list currently active and any relevant historical allergies and adverse reactions."/>
     </eAnnotations>
@@ -13870,7 +13873,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MedicationsSectionEntriesOptional" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="MedicationsSectionEntriesOptional" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationsSectionEntriesOptionalTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionEntriesOptionalTitle MedicationsSectionEntriesOptionalText"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.1"/>
@@ -14128,7 +14131,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProblemSectionEntriesOptional" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ProblemSectionEntriesOptional" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalCodeP ProblemSectionEntriesOptionalTitle ProblemSectionEntriesOptionalText"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.5"/>
@@ -14474,7 +14477,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProceduresSectionEntriesOptional" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ProceduresSectionEntriesOptional" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).&#xD;&#xA;The length of an encounter is documented in the documentationOf/encompassingEncounter/effectiveTime and length of service in documentationOf/ServiceEvent/effectiveTime."/>
     </eAnnotations>
@@ -14660,7 +14663,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureActivityObservationTemplateId ProcedureActivityObservationReferenceValue ProcedureActivityObservationEncounterInversion ProcedureActivityObservationServiceDeliveryLocationTypeCode ProcedureActivityObservationInstructionsInversion ProcedureActivityObservationClassCode ProcedureActivityObservationMoodCode ProcedureActivityObservationId ProcedureActivityObservationCode ProcedureActivityObservationStatusCode ProcedureActivityObservationValue ProcedureActivityObservationPriorityCode ProcedureActivityObservationTargetSiteCode ProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationTelecom ProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityProcedureObservationRepresentedOrganizationAddr ProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityId ProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityAddr ProcedureActivityObservationProcedureObservationPerformerProcedureObservationAssignedEntityTelecom ProcedureActivityObservationProcedureObservationPerformerAssignedEntity ProcedureActivityObservationEntryRelationshipProcedureObservationEncounterClassCode ProcedureActivityObservationEntryRelationshipProcedureObservationEncounterMoodCode ProcedureActivityObservationEntryRelationshipProcedureObservationEncounterId ProcedureActivityObservationEntryRelationshipInversionInd ProcedureActivityObservationEntryRelationshipTypeCode ProcedureActivityObservationEntryRelationshipProcedureObservationEncounter"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.13"/>
@@ -15536,7 +15539,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityAct" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityAct" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureActivityActTemplateId ProcedureActivityActReferenceValue ProcedureActivityActEncounterInversion ProcedureActivityActServiceDeliveryLocationTypeCode ProcedureActivityActInstructionsInversion ProcedureActivityActClassCode ProcedureActivityActMoodCode ProcedureActivityActId ProcedureActivityActCode ProcedureActivityActStatusCode ProcedureActivityActPriorityCode ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr ProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom ProcedureActivityActProcedureActPerformerAssignedEntity ProcedureActivityActEntryRelationshipProcedureActEncounterClassCode ProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode ProcedureActivityActEntryRelationshipProcedureActEncounterId ProcedureActivityActEntryRelationshipInversionInd ProcedureActivityActEntryRelationshipTypeCode ProcedureActivityActEntryRelationshipProcedureActEncounter"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.12"/>
@@ -16471,7 +16474,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ResultsSectionEntriesOptional" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ResultsSectionEntriesOptional" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>&#xA;The Results section contains the results of observations generated by laboratories, imaging procedures, and other procedures. The scope includes observations such as hematology, chemistry, serology, virology, toxicology, microbiology, plain x-ray, ultrasound, CT, MRI, angiography, echocardiography, nuclear medicine, pathology, and procedure observations. The section often includes notable results such as abnormal values or relevant trends, and could contain all results for the period of time being documented.&#xA;&lt;/p>&#xA;&lt;p>&#xA;Laboratory results are typically generated by laboratories providing analytic services in areas such as chemistry, hematology, serology, histology, cytology, anatomic pathology, microbiology, and/or virology. These observations are based on analysis of specimens obtained from the patient and submitted to the laboratory.&#xA;&lt;/p>&#xA;&lt;p>&#xA;Imaging results are typically generated by a clinician reviewing the output of an imaging procedure, such as where a cardiologist reports the left ventricular ejection fraction based on the review of a cardiac echocardiogram.&#xA;Procedure results are typically generated by a clinician to provide more granular information about component observations made during  a procedure, such as where a gastroenterologist reports the size of a polyp observed during a colonoscopy.&#xA;&lt;/p>"/>
     </eAnnotations>
@@ -16605,7 +16608,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ResultOrganizer" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Organizer">
+  <eClassifiers xsi:type="ecore:EClass" name="ResultOrganizer" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Organizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerStatusCodeP ResultOrganizerCode ResultOrganizerResultObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.1"/>
@@ -16810,7 +16813,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ResultObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="ResultObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultObservationTemplateId ResultObservationTextReferenceValue ResultObservationNoObservationRangeCode ResultObservationClassCode ResultObservationMoodCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationStatusCodeP ResultObservationEffectiveTime ResultObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.2"/>
@@ -17318,7 +17321,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AdvanceDirectivesSectionEntriesOptional"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>&#xA;This section contains data defining the patient's advance directives and any reference to supporting documentation. The most recent and up-to-date directives are required, if known, and should be listed in as much detail as possible. This section contains data such as the existence of living wills, healthcare proxies, and CPR and resuscitation status. If referenced documents are available, they can be included in the CCD exchange package. &#xA;&lt;/p>&#xA;&lt;p>&#xA;NOTE: The descriptions in this section differentiate between &quot;advance directives&quot; and &quot;advance directive documents&quot;. The former are the directions whereas the latter are legal documents containing those directions. Thus, an advance directive might be &quot;no cardiopulmonary resuscitation&quot;, and this directive might be stated in a legal advance directive document.&#xA;&lt;/p>"/>
     </eAnnotations>
@@ -17453,7 +17456,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AdvanceDirectiveObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="AdvanceDirectiveObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AdvanceDirectiveObservationTemplateId AdvanceDirectiveObservationHasStartingTime AdvanceDirectiveObservationHasEndingTime AdvanceDirectiveObservationClassCode AdvanceDirectiveObservationMoodCode AdvanceDirectiveObservationId AdvanceDirectiveObservationCodeP AdvanceDirectiveObservationStatusCode AdvanceDirectiveObservationEffectiveTime AdvanceDirectiveObservationVerifierTime AdvanceDirectiveObservationVerifierTypeCode AdvanceDirectiveObservationVerifierParticipantRole AdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName AdvanceDirectiveObservationCustodianCustodianRoleClassCode AdvanceDirectiveObservationCustodianCustodianRolePlayingEntity AdvanceDirectiveObservationCustodianTypeCode AdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole AdvanceDirectiveObservationReferenceExternalDocumentId AdvanceDirectiveObservationReferenceTypeCode AdvanceDirectiveObservationReferenceExternalDocument"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.48"/>
@@ -18197,7 +18200,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EncountersSectionEntriesOptional" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="EncountersSectionEntriesOptional" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This section lists and describes any healthcare encounters pertinent to the patient's current health status or historical health history. An Encounter is an interaction, regardless of the setting, between a patient and a practitioner who is vested with primary responsibility for diagnosing, evaluating, or treating the patient's condition. It may include visits, appointments, as well as non face-to-face interactions. It is also a contact between a patient and a practitioner who has primary responsibility for assessing and treating the patient at a given contact, exercising independent judgment. This section may contain all encounters for the time period being summarized, but should include notable encounters."/>
     </eAnnotations>
@@ -18331,7 +18334,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EncounterActivities" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Encounter">
+  <eClassifiers xsi:type="ecore:EClass" name="EncounterActivities" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Encounter">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="EncounterActivitiesTemplateId EncounterActivitiesCodeOriginalTextReferenceValue EncounterActivitiesServiceDeliveryTypeCode EncounterActivitiesSdtcDDCFromNUBCOrDD EncounterActivitiesClassCode EncounterActivitiesMoodCode EncounterActivitiesId EncounterActivitiesEffectiveTime EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.49"/>
@@ -18731,7 +18734,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EncounterDiagnosis" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="EncounterDiagnosis" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="EncounterDiagnosisTemplateId EncounterDiagnosisClassCode EncounterDiagnosisMoodCode EncounterDiagnosisCode EncounterDiagnosisCodeP EncounterDiagnosisProblemObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.80"/>
@@ -18864,7 +18867,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistorySection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistorySection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This section contains data defining the patient's genetic relatives in terms of possible or relevant health risk factors that have a potential impact on the patient's healthcare risk profile."/>
     </eAnnotations>
@@ -18998,7 +19001,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistoryOrganizer" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Organizer">
+  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistoryOrganizer" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Organizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="FamilyHistoryOrganizerTemplateId FamilyHistoryOrganizerClassCode FamilyHistoryOrganizerMoodCode FamilyHistoryOrganizerStatusCode FamilyHistoryOrganizerStatusCodeP FamilyHistoryOrganizerFamilyHistoryObservation FamilyHistoryOrganizerSubject FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode FamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP FamilyHistoryOrganizerSubjectRelatedSubjectClassCode FamilyHistoryOrganizerSubjectRelatedSubjectCodeP FamilyHistoryOrganizerSubjectRelatedSubject"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.45"/>
@@ -19383,7 +19386,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistoryObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistoryObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="FamilyHistoryObservationTemplateId FamilyHistoryObservationAgeObservationInversion FamilyHistoryObservationClassCode FamilyHistoryObservationMoodCode FamilyHistoryObservationId FamilyHistoryObservationCodeP FamilyHistoryObservationStatusCode FamilyHistoryObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.46"/>
@@ -19639,7 +19642,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistoryDeathObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="FamilyHistoryDeathObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="FamilyHistoryDeathObservationTemplateId FamilyHistoryDeathObservationClassCode FamilyHistoryDeathObservationMoodCode FamilyHistoryDeathObservationCode FamilyHistoryDeathObservationStatusCode FamilyHistoryDeathObservationValue FamilyHistoryDeathObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.47"/>
@@ -19789,7 +19792,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The Functional Status section describes the patient's physical state, status of functioning, and environmental status at the time the document was created. &#xD;&#xA;A patient's physical state may include information regarding the patient's physical findings as they relate to problems, including but not limited to:&#xD;&#xA;Pressure Ulcers&#xD;&#xA;Amputations&#xD;&#xA;Heart murmur&#xD;&#xA;Ostomies&#xD;&#xA;A patient's functional status may include information regarding the patient relative to their general functional and cognitive ability, including:&#xD;&#xA;Ambulatory ability&#xD;&#xA;Mental status or competency&#xD;&#xA;Activities of Daily Living (ADLs), including bathing, dressing, feeding, grooming&#xD;&#xA;Home or living situation having an effect on the health status of the patient&#xD;&#xA;Ability to care for self&#xD;&#xA;Social activity, including issues with social cognition, participation with friends and acquaintances other than family members&#xD;&#xA;Occupation activity, including activities partly or directly related to working, housework or volunteering, family and home responsibilities or activities related to home and family&#xD;&#xA;Communication ability, including issues with speech, writing or cognition required for communication&#xD;&#xA;Perception, including sight, hearing, taste, skin sensation, kinesthetic sense, proprioception, or balance&#xD;&#xA;A patient's environmental status may include information regarding the patient's current exposures from their daily environment, including but not limited to:&#xD;&#xA;Airborne hazards such as second-hand smoke, volatile organic compounds, dust, or other allergens&#xD;&#xA;Radiation&#xD;&#xA;Safety hazards in home, such as throw rugs, poor lighting, lack of railings/grab bars, etc.&#xD;&#xA;Safety hazards at work, such as communicable diseases, excessive heat, excessive noise, etc.&#xD;&#xA;The patient's functional status may be expressed as a problem or as a result observation. A functional or cognitive status problem observation describes a patient's problem, symptoms or condition. A functional or cognitive status result observation may include observations resulting from an assessment scale, evaluation or question and answer assessment.&#xD;&#xA;Any deviation from normal function displayed by the patient and recorded in the record should be included. Of particular interest are those limitations that would interfere with self-care or the medical therapeutic process in any way. In addition, a note of normal function, an improvement, or a change in functioning status may be included."/>
     </eAnnotations>
@@ -20901,7 +20904,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CaregiverCharacteristics" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="CaregiverCharacteristics" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="CaregiverCharacteristicsTemplateId CaregiverCharacteristicsValueCodeSystem CaregiverCharacteristicsClassCode CaregiverCharacteristicsMoodCode CaregiverCharacteristicsId CaregiverCharacteristicsCode CaregiverCharacteristicsStatusCode CaregiverCharacteristicsStatusCodeP CaregiverCharacteristicsValue CaregiverCharacteristicsParticipant CaregiverCharacteristicsParticipantParticipantRoleClassCode CaregiverCharacteristicsParticipantTimeLow CaregiverCharacteristicsParticipantTypeCode CaregiverCharacteristicsParticipantParticipantRole"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.72"/>
@@ -21226,7 +21229,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AssessmentScaleObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="AssessmentScaleObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AssessmentScaleObservationTemplateId AssessmentScaleObservationClassCode AssessmentScaleObservationMoodCode AssessmentScaleObservationCode AssessmentScaleObservationEffectiveTime AssessmentScaleObservationId AssessmentScaleObservationStatusCode AssessmentScaleObservationStatusCodeP AssessmentScaleObservationValue AssessmentScaleObservationReferenceRangeObservationRangeReferenceValue AssessmentScaleObservationReferenceRangeObservationRange"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.69"/>
@@ -21657,7 +21660,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AssessmentScaleSupportingObservation"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AssessmentScaleSupportingObservationTemplateId AssessmentScaleSupportingObservationCodeCodeSystem AssessmentScaleSupportingObservationClassCode AssessmentScaleSupportingObservationMoodCode AssessmentScaleSupportingObservationCode AssessmentScaleSupportingObservationId AssessmentScaleSupportingObservationStatusCode AssessmentScaleSupportingObservationStatusCodeP AssessmentScaleSupportingObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.86"/>
@@ -23508,7 +23511,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PressureUlcerObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="PressureUlcerObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PressureUlcerObservationTemplateId PressureUlcerObservationTextReferenceValue PressureUlcerObservationHasTextReferenceValue PressureUlcerObservationTargetSiteQualifierName PressureUlcerObservationTargetSiteQualifierValue PressureUlcerObservationClassCode PressureUlcerObservationMoodCode PressureUlcerObservationId PressureUlcerObservationCodeP PressureUlcerObservationStatusCode PressureUlcerObservationStatusCodeP PressureUlcerObservationEffectiveTime PressureUlcerObservationValueP PressureUlcerObservationEntryRelationship1Observation1ClassCode PressureUlcerObservationEntryRelationship1Observation1MoodCode PressureUlcerObservationEntryRelationship1Observation1CodeP PressureUlcerObservationEntryRelationship1Observation1Code PressureUlcerObservationEntryRelationship1Observation1Value PressureUlcerObservationEntryRelationship1TypeCode PressureUlcerObservationEntryRelationship1Observation1 PressureUlcerObservationEntryRelationship2Observation2ClassCode PressureUlcerObservationEntryRelationship2Observation2MoodCode PressureUlcerObservationEntryRelationship2Observation2CodeP PressureUlcerObservationEntryRelationship2Observation2Code PressureUlcerObservationEntryRelationship2Observation2Value PressureUlcerObservationEntryRelationship2TypeCode PressureUlcerObservationEntryRelationship2Observation2 PressureUlcerObservationEntryRelationship3Observation3ClassCode PressureUlcerObservationEntryRelationship3Observation3MoodCode PressureUlcerObservationEntryRelationship3Observation3CodeP PressureUlcerObservationEntryRelationship3Observation3Code PressureUlcerObservationEntryRelationship3Observation3Value PressureUlcerObservationEntryRelationship3TypeCode PressureUlcerObservationEntryRelationship3Observation3"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.70"/>
@@ -24510,7 +24513,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NumberOfPressureUlcersObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="NumberOfPressureUlcersObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="NumberOfPressureUlcersObservationTemplateId NumberOfPressureUlcersObservationClassCode NumberOfPressureUlcersObservationMoodCode NumberOfPressureUlcersObservationId NumberOfPressureUlcersObservationCode NumberOfPressureUlcersObservationCodeP NumberOfPressureUlcersObservationStatusCode NumberOfPressureUlcersObservationStatusCodeP NumberOfPressureUlcersObservationEffectiveTime NumberOfPressureUlcersObservationValue NumberOfPressureUlcersObservationEntryRelationship NumberOfPressureUlcersObservationEntryRelationshipObservationClassCode NumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode NumberOfPressureUlcersObservationEntryRelationshipObservationValueP NumberOfPressureUlcersObservationEntryRelationshipTypeCode NumberOfPressureUlcersObservationEntryRelationshipObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.76"/>
@@ -24888,7 +24891,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HighestPressureUlcerStage" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="HighestPressureUlcerStage" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HighestPressureUlcerStageTemplateId HighestPressureUlcerStageClassCode HighestPressureUlcerStageMoodCode HighestPressureUlcerStageId HighestPressureUlcerStageCode HighestPressureUlcerStageCodeP HighestPressureUlcerStageValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.77"/>
@@ -25036,7 +25039,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ImmunizationsSectionEntriesOptional"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ImmunizationsSectionEntriesOptionalTemplateId ImmunizationsSectionEntriesOptionalCode ImmunizationsSectionEntriesOptionalCodeP ImmunizationsSectionEntriesOptionalTitle ImmunizationsSectionEntriesOptionalText"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.2"/>
@@ -25166,7 +25169,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ImmunizationActivity" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//SubstanceAdministration">
+  <eClassifiers xsi:type="ecore:EClass" name="ImmunizationActivity" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//SubstanceAdministration">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>An Immunization Activity describes immunization substance administrations that have actually occurred or are intended to occur. Immunization Activities in &quot;INT&quot; mood are reflections of immunizations a clinician intends a patient to receive. Immunization Activities in &quot;EVN&quot; mood reflect immunizations actually received.&lt;/p>&#xA;&#xA;&lt;p>An Immunization Activity is very similar to a Medication Activity with some key differentiators. The drug code system is constrained to CVX codes. Administration timing is less complex. Patient refusal reasons should be captured. All vaccines administered should be fully documented in the patient's permanent medical record. Healthcare providers who administer vaccines covered by the National Childhood Vaccine Injury Act are required to ensure that the permanent medical record of the recipient indicates: &lt;/p>&#xA;&#xA;&lt;ol>&#xA;&lt;li>Date of administration &lt;/li>&#xA;&lt;li>Vaccine manufacturer &lt;/li>&#xA;&lt;li>Vaccine lot number &lt;/li>&#xA;&lt;li>Name and title of the person who administered the vaccine and the address of the clinic or facility where the permanent record will reside &lt;/li>&#xA;&lt;li>Vaccine information statement (VIS) &#xA;&lt;ol>&#xA;&lt;li>date printed on the VIS&lt;/li>&#xA;&lt;li>date VIS given to patient or parent/guardian.&lt;/li>&#xA;&lt;/ol>&#xA;&lt;/li>&#xA;&lt;/ol>"/>
     </eAnnotations>
@@ -25920,7 +25923,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ImmunizationRefusalReason" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="ImmunizationRefusalReason" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ImmunizationRefusalReasonTemplateId ImmunizationRefusalReasonClassCode ImmunizationRefusalReasonCode ImmunizationRefusalReasonId ImmunizationRefusalReasonMoodCode ImmunizationRefusalReasonStatusCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.53"/>
@@ -26045,7 +26048,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MedicalEquipmentSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="MedicalEquipmentSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionCodeP MedicalEquipmentSectionTitle MedicalEquipmentSectionText"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.23"/>
@@ -26176,7 +26179,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PayersSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="PayersSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>&#xD;&#xA;The Payers section contains data on the patient s payers, whether a  third party  insurance, self-pay, &#xD;&#xA;other payer or guarantor, or some combination of payers, and is used to define which entity is the&#xD;&#xA; responsible fiduciary for the financial aspects of a patient s care.&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;Each unique instance of a payer and all the pertinent data needed to contact, bill to, and collect from&#xD;&#xA; that payer should be included. Authorization information that can be used to define pertinent referral, &#xD;&#xA;authorization tracking number, procedure, therapy, intervention, device, or similar authorizations for &#xD;&#xA;the patient or provider, or both should be included. At a minimum, the patient s pertinent current &#xD;&#xA;payment sources should be listed.&#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;The sources of payment are represented as a Coverage Activity, which identifies all of the insurance &#xD;&#xA;policies or government or other programs that cover some or all of the patient s healthcare expenses. &#xD;&#xA;The policies or programs are sequenced by preference. The Coverage Activity has a sequence number &#xD;&#xA;that represents the preference order. Each policy or program identifies the covered party &#xD;&#xA;with respect to the payer, so that the identifiers can be recorded.&#xD;&#xA;&lt;/p>"/>
     </eAnnotations>
@@ -26310,7 +26313,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CoverageActivity" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="CoverageActivity" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="CoverageActivityTemplateId CoverageActivityClassCode CoverageActivityCode CoverageActivityId CoverageActivityMoodCode CoverageActivityStatusCode CoverageActivityPolicyActivity"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.60"/>
@@ -26483,7 +26486,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PolicyActivity" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="PolicyActivity" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PolicyActivityTemplateId PolicyActivityClassCode PolicyActivityCodeP PolicyActivityId PolicyActivityMoodCode PolicyActivityStatusCode PolicyActivityPayer PolicyActivityCoverage PolicyActivityEntryRelationship PolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet PolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity PolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine PolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse PolicyActivityPayerPayerAssignedEntityId PolicyActivityPayerTemplateId PolicyActivityPayerTypeCode PolicyActivityPayerPayerAssignedEntity PolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet PolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity PolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine PolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse PolicyActivityGuarantorGuarantorAssignedEntityCode PolicyActivityGuarantorGuarantorAssignedEntityCodeP PolicyActivityGuarantorTemplateId PolicyActivityGuarantorGuarantorAssignedEntity PolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet PolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressCity PolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressStreetAddressLine PolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressUse PolicyActivityCoverageCoverageRoleCoveragePlayingEntityName PolicyActivityCoverageCoverageRoleId PolicyActivityCoverageCoverageRoleCodeP PolicyActivityCoverageTemplateId PolicyActivityCoverageTypeCode PolicyActivityCoverageCoverageRole PolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet PolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressCity PolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressStreetAddressLine PolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressUse PolicyActivityHolderHolderRoleId PolicyActivityHolderTemplateId PolicyActivityHolderTypeCode PolicyActivityHolderHolderRole PolicyActivityEntryRelationshipTargetActActivity PolicyActivityEntryRelationshipDescriptionCoveragePlan PolicyActivityEntryRelationshipTypeCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.61"/>
@@ -28227,7 +28230,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The Plan of Care section contains data that defines pending orders, interventions, encounters, services, and procedures for the patient. It is limited to prospective, unfulfilled, or incomplete orders and requests only, which are indicated by the @moodCode of the entries within this section. All active, incomplete, or pending orders, appointments, referrals, procedures, services, or any other pending event of clinical significance to the current care of the patient should be listed unless constrained due to privacy issues. The plan may also contain information about ongoing care of the patient and information regarding goals and clinical reminders. Clinical reminders are placed here to provide prompts for disease prevention and management, patient safety, and health-care quality improvements, including widely accepted performance measures. The plan may also indicate that patient education was given or will be provided."/>
     </eAnnotations>
@@ -28512,7 +28515,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivityAct" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivityAct" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareActivityActTemplateId PlanOfCareActivityActClassCode PlanOfCareActivityActMoodCode PlanOfCareActivityActId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.39"/>
@@ -28595,7 +28598,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivityEncounter" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Encounter">
+  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivityEncounter" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Encounter">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareActivityEncounterTemplateId PlanOfCareActivityEncounterClassCode PlanOfCareActivityEncounterMoodCode PlanOfCareActivityEncounterId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.40"/>
@@ -28678,7 +28681,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivityObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivityObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareActivityObservationTemplateId PlanOfCareActivityObservationClassCode PlanOfCareActivityObservationMoodCode PlanOfCareActivityObservationId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.44"/>
@@ -28761,7 +28764,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivityProcedure" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Procedure">
+  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivityProcedure" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Procedure">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareActivityProcedureTemplateId PlanOfCareActivityProcedureClassCode PlanOfCareActivityProcedureMoodCode PlanOfCareActivityProcedureId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.41"/>
@@ -28845,7 +28848,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivitySubstanceAdministration"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//SubstanceAdministration">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//SubstanceAdministration">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareActivitySubstanceAdministrationTemplateId PlanOfCareActivitySubstanceAdministrationClassCode PlanOfCareActivitySubstanceAdministrationMoodCode PlanOfCareActivitySubstanceAdministrationId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.42"/>
@@ -28928,7 +28931,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivitySupply" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Supply">
+  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareActivitySupply" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Supply">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlanOfCareActivitySupplyTemplateId PlanOfCareActivitySupplyClassCode PlanOfCareActivitySupplyMoodCode PlanOfCareActivitySupplyId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.43"/>
@@ -29011,7 +29014,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SocialHistorySection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="SocialHistorySection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SocialHistorySectionTemplateId SocialHistorySectionCode SocialHistorySectionCodeP SocialHistorySectionTitle SocialHistorySectionText"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.17"/>
@@ -29218,7 +29221,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SocialHistoryObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="SocialHistoryObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SocialHistoryObservationTemplateId SocialHistoryObservationReferenceValue SocialHistoryObservationClassCode SocialHistoryObservationMoodCode SocialHistoryObservationId SocialHistoryObservationStatusCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.38"/>
@@ -29441,7 +29444,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PregnancyObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="PregnancyObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PregnancyObservationTemplateId PregnancyObservationClassCode PregnancyObservationMoodCode PregnancyObservationCode PregnancyObservationCodeP PregnancyObservationStatusCode PregnancyObservationValue PregnancyObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.8"/>
@@ -29657,7 +29660,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="EstimatedDateOfDelivery" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="EstimatedDateOfDelivery" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="EstimatedDateOfDeliveryTemplateId EstimatedDateOfDeliveryClassCode EstimatedDateOfDeliveryCode EstimatedDateOfDeliveryMoodCode EstimatedDateOfDeliveryStatusCode EstimatedDateOfDeliveryValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.15.3.1"/>
@@ -29783,7 +29786,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SmokingStatusObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="SmokingStatusObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SmokingStatusObservationTemplateId SmokingStatusObservationClassCode SmokingStatusObservationMoodCode SmokingStatusObservationCode SmokingStatusObservationEffectiveTime SmokingStatusObservationStatusCode SmokingStatusObservationStatusCodeP SmokingStatusObservationValue SmokingStatusObservationValueP SmokingStatusObservationCDCodeTermAssertionOrLoinc SmokingStatusObservationCDCode SmokingStatusObservationCDCodeSystem SmokingStatusObservationIVLTSCenter SmokingStatusObservationIVLTSHigh SmokingStatusObservationIVLTSLow SmokingStatusObservationIVLTSWidth"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.78"/>
@@ -30105,7 +30108,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TobaccoUse" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="TobaccoUse" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="TobaccoUseTemplateId TobaccoUseEffectiveTimeLow TobaccoUseClassCode TobaccoUseMoodCode TobaccoUseCode TobaccoUseEffectiveTime TobaccoUseStatusCode TobaccoUseStatusCodeP TobaccoUseValue TobaccoUseValueP TobaccoUseCDCodeTermAssertionOrLoinc TobaccoUseCDCode TobaccoUseCDCodeSystem"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.85"/>
@@ -30367,7 +30370,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="VitalSignsSectionEntriesOptional" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="VitalSignsSectionEntriesOptional" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="VitalSignsSectionEntriesOptionalTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionEntriesOptionalCodeP VitalSignsSectionEntriesOptionalText VitalSignsSectionEntriesOptionalTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.4"/>
@@ -30498,7 +30501,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="VitalSignsOrganizer" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Organizer">
+  <eClassifiers xsi:type="ecore:EClass" name="VitalSignsOrganizer" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Organizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="VitalSignsOrganizerTemplateId VitalSignsOrganizerClassCode VitalSignsOrganizerMoodCode VitalSignsOrganizerId VitalSignsOrganizerCode VitalSignsOrganizerStatusCode VitalSignsOrganizerEffectiveTime VitalSignsOrganizerVitalSignObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.26"/>
@@ -30669,7 +30672,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="VitalSignObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="VitalSignObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="VitalSignObservationTemplateId VitalSignObservationTextReferenceValue VitalSignObservationClassCode VitalSignObservationMoodCode VitalSignObservationId VitalSignObservationCodeP VitalSignObservationStatusCode VitalSignObservationEffectiveTime VitalSignObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.27"/>
@@ -31277,7 +31280,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HistoryOfPastIllnessSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="HistoryOfPastIllnessSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This section describes the history related to the patient's past complaints, problems, or diagnoses. It records these details up until and possibly pertinent to the patient's current complaint or reason for seeking medical care."/>
     </eAnnotations>
@@ -31411,7 +31414,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ChiefComplaintSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ChiefComplaintSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This section records the patient's chief complaint (the patient's own description)."/>
     </eAnnotations>
@@ -31519,7 +31522,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ReasonForReferralSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ReasonForReferralSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A Reason for Referral section records the reason the patient is being referred for a consultation by a provider. An optional Chief Complaint section may capture the patient's description of the reason for the consultation."/>
     </eAnnotations>
@@ -31627,7 +31630,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HistoryOfPresentIllnessSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="HistoryOfPresentIllnessSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The History of Present Illness section describes the history related to the reason for the encounter.  It contains the historical details leading up to and pertaining to the patient's current complaint or reason for seeking medical care."/>
     </eAnnotations>
@@ -31735,7 +31738,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionDiagnosisSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionDiagnosisSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The Hospital Admitting Diagnosis section contains a narrative description of the primary reason for admission to a hospital facility. The section includes an optional entry to record patient conditions."/>
     </eAnnotations>
@@ -31870,7 +31873,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionDiagnosis" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionDiagnosis" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalAdmissionDiagnosisTemplateId HospitalAdmissionDiagnosisClassCode HospitalAdmissionDiagnosisCode HospitalAdmissionDiagnosisMoodCode HospitalAdmissionDiagnosisProblemObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.34"/>
@@ -31984,7 +31987,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HospitalAdmissionMedicationsSectionEntriesOptional"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The Hospital Admission Medications section defines the relevant medications administered prior to admission to the facility. The currently active medications must be listed."/>
     </eAnnotations>
@@ -32120,7 +32123,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AdmissionMedication" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="AdmissionMedication" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AdmissionMedicationTemplateId AdmissionMedicationClassCode AdmissionMedicationCodeP AdmissionMedicationMoodCode AdmissionMedicationMedicationActivity"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.36"/>
@@ -32254,7 +32257,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MedicationsAdministeredSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="MedicationsAdministeredSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The Medications Administered section defines medications and fluids administered during the procedure, encounter, or other activity excluding anesthetic medications. This guide recommends anesthesia medications be documented as described in the section on Anesthesia."/>
     </eAnnotations>
@@ -32388,7 +32391,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PhysicalExamSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="PhysicalExamSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The Physical Exam section includes direct observations made by the clinician. The examination may include the use of simple instruments and may also describe simple maneuvers performed directly on the patient's body. This section includes only observations made by the examining clinician using inspection, palpation, auscultation, and percussion; it does not include laboratory or imaging findings. The exam may be limited to pertinent body systems based on the patient's chief complaint or it may include a comprehensive examination. The examination may be reported as a collection of random clinical statements or it may be reported categorically. &#xD;&#xA;The Physical Exam section may contain multiple nested subsections: Vital Signs, General Status, and those listed in the Additional Physical Examination Subsections appendix."/>
     </eAnnotations>
@@ -32572,7 +32575,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="GeneralStatusSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="GeneralStatusSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The General Status section describes general observations and readily observable attributes of the patient, including affect and demeanor, apparent age compared to actual age, gender, ethnicity, nutritional status based on appearance, body build and habitus (e.g., muscular, cachectic, obese), developmental or other deformities, gait and mobility, personal hygiene, evidence of distress, and voice quality and speech."/>
     </eAnnotations>
@@ -32680,7 +32683,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ReviewOfSystemsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ReviewOfSystemsSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The Review of Systems section contains a relevant collection of symptoms and functions systematically gathered by a clinician. It includes symptoms the patient is currently experiencing, some of which were not elicited during the history of present illness, as well as a potentially large number of pertinent negatives, for example, symptoms that the patient denied experiencing."/>
     </eAnnotations>
@@ -32788,7 +32791,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AssessmentAndPlanSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="AssessmentAndPlanSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The Assessment and Plan sections may be combined or separated to meet local policy requirements.&#xD;&#xA;The Assessment and Plan section represents both the clinician's conclusions and working assumptions that will guide treatment of the patient (see Assessment Section above) and pending orders, interventions, encounters, services, and procedures for the patient (see Plan of Care Section below)."/>
     </eAnnotations>
@@ -32903,7 +32906,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SurgicalDrainsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="SurgicalDrainsSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SurgicalDrainsSectionTemplateId SurgicalDrainsSectionCode SurgicalDrainsSectionCodeP SurgicalDrainsSectionText SurgicalDrainsSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.7.13"/>
@@ -33351,7 +33354,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MedicationInformation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ManufacturedProduct">
+  <eClassifiers xsi:type="ecore:EClass" name="MedicationInformation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//ManufacturedProduct">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationInformationTemplateId MedicationInformationClassCode MedicationInformationManufacturedMaterial MedicationInformationMedicationInformationManufacturedMaterialCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.23"/>
@@ -34567,7 +34570,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeDiagnosisSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeDiagnosisSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The Hospital Discharge Diagnosis section describes the relevant problems or diagnoses at the time of discharge that occurred during the hospitalization or that need to be followed after hospitalization. This section includes an optional entry to record patient conditions."/>
     </eAnnotations>
@@ -34702,7 +34705,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeDiagnosis" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeDiagnosis" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalDischargeDiagnosisProblemObservation HospitalDischargeDiagnosisTemplateId HospitalDischargeDiagnosisClassCode HospitalDischargeDiagnosisMoodCode HospitalDischargeDiagnosisCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.33"/>
@@ -34815,7 +34818,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DischargeDietSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="DischargeDietSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This section records a narrative description of the expectations for diet, including proposals, goals, and order requests for monitoring, tracking, or improving the dietary control of the patient, used in a discharge from a facility such as an emergency department, hospital, or nursing home."/>
     </eAnnotations>
@@ -34924,7 +34927,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeMedicationsSectionEntriesOptional"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The Hospital Discharge Medications section defines the medications that the patient is intended to take (or stop) after discharge. The currently active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list, for example, from a pharmacy system versus from the patient."/>
     </eAnnotations>
@@ -35060,7 +35063,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DischargeMedication" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="DischargeMedication" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="DischargeMedicationMedicationActivity DischargeMedicationTemplateId DischargeMedicationClassCode DischargeMedicationMoodCode DischargeMedicationCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.35"/>
@@ -35173,7 +35176,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalCourseSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="HospitalCourseSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="The Hospital Course section describes the sequence of events from admission to discharge in a hospital facility."/>
     </eAnnotations>
@@ -35282,7 +35285,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ChiefComplaintAndReasonForVisitSection"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ChiefComplaintAndReasonForVisitSectionTemplateId ChiefComplaintAndReasonForVisitSectionCode ChiefComplaintAndReasonForVisitSectionCodeP ChiefComplaintAndReasonForVisitSectionText ChiefComplaintAndReasonForVisitSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.13"/>
@@ -35387,7 +35390,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalConsultationsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="HospitalConsultationsSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalConsultationsSectionTemplateId HospitalConsultationsSectionCode HospitalConsultationsSectionCodeP HospitalConsultationsSectionText HospitalConsultationsSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.42"/>
@@ -35492,7 +35495,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeInstructionsSection"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalDischargeInstructionsSectionTemplateId HospitalDischargeInstructionsSectionCode HospitalDischargeInstructionsSectionCodeP HospitalDischargeInstructionsSectionTitle HospitalDischargeInstructionsSectionText"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.41"/>
@@ -35597,7 +35600,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargePhysicalSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargePhysicalSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalDischargePhysicalSectionTemplateId HospitalDischargePhysicalSectionCode HospitalDischargePhysicalSectionCodeP HospitalDischargePhysicalSectionTitle HospitalDischargePhysicalSectionText"/>
       <details key="templateId.root" value="1.3.6.1.4.1.19376.1.5.3.1.3.26"/>
@@ -35703,7 +35706,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HospitalDischargeStudiesSummarySection"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="HospitalDischargeStudiesSummarySectionTemplateId HospitalDischargeStudiesSummarySectionCode HospitalDischargeStudiesSummarySectionCodeP HospitalDischargeStudiesSummarySectionTitle HospitalDischargeStudiesSummarySectionText"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.16"/>
@@ -35808,7 +35811,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ReasonForVisitSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ReasonForVisitSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ReasonForVisitSectionTemplateId ReasonForVisitSectionCode ReasonForVisitSectionCodeP ReasonForVisitSectionText ReasonForVisitSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.12"/>
@@ -35914,7 +35917,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PreconditionForSubstanceAdministration"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Criterion">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Criterion">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PreconditionForSubstanceAdministrationTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.25"/>
@@ -35998,7 +36001,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ImmunizationMedicationInformation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//ManufacturedProduct">
+  <eClassifiers xsi:type="ecore:EClass" name="ImmunizationMedicationInformation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//ManufacturedProduct">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ImmunizationMedicationInformationTemplateId ImmunizationMedicationInformationClassCode ImmunizationMedicationInformationManufacturedMaterial ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.54"/>
@@ -36231,7 +36234,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AuthorizationActivity" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="AuthorizationActivity" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AuthorizationActivityTemplateId AuthorizationActivityClassCode AuthorizationActivityId AuthorizationActivityMoodCode AuthorizationActivityEntryRelationship AuthorizationActivityEntryRelationshipHasClinicalStatement AuthorizationActivityEntryRelationshipTypeCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.1.19"/>
@@ -36547,7 +36550,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AnesthesiaSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="AnesthesiaSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AnesthesiaSectionTemplateId AnesthesiaSectionCode AnesthesiaSectionCodeP AnesthesiaSectionText AnesthesiaSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.25"/>
@@ -36702,7 +36705,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ComplicationsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ComplicationsSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ComplicationsSectionTemplateId ComplicationsSectionCode ComplicationsSectionCodeP ComplicationsSectionTitle ComplicationsSectionText"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.37"/>
@@ -36833,7 +36836,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DICOMObjectCatalogSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="DICOMObjectCatalogSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="DICOMObjectCatalogSectionTemplateId DICOMObjectCatalogSectionCode DICOMObjectCatalogSectionCodeP DICOMObjectCatalogSectionStudyAct"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.1.1"/>
@@ -36925,7 +36928,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="StudyAct" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="StudyAct" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="StudyActTemplateId StudyActIdsHaveRoot StudyActNoIdExtension StudyActReferenceValue StudyActClassCode StudyActMoodCode StudyActId StudyActCode StudyActSeriesAct"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.6"/>
@@ -37190,7 +37193,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SeriesAct" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="SeriesAct" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SeriesActTemplateId SeriesActIdHasRoot SeriesActIdNoExtension SeriesActCodeQualifier SeriesActCodeQualifierCode SeriesActCodeQualifierValue SeriesActCodeQualifierValueCode SeriesActClassCode SeriesActMoodCode SeriesActCode SeriesActId SeriesActSOPInstanceObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.63"/>
@@ -37475,7 +37478,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SOPInstanceObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="SOPInstanceObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SOPInstanceObservationTemplateId SOPInstanceObservationEffectiveTimeHasValue SOPInstanceObservationEffectiveTimeNoLow SOPInstanceObservationEffectiveTimeNoHigh SOPInstanceObservationTextMediaType SOPInstanceObservationTextReference SOPInstanceObservationTextReferenceValue SOPInstanceObservationClassCode SOPInstanceObservationId SOPInstanceObservationMoodCode SOPInstanceObservationCode SOPInstanceObservationCodeP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.8"/>
@@ -37829,7 +37832,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PurposeofReferenceObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="PurposeofReferenceObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PurposeofReferenceObservationTemplateId PurposeofReferenceObservationClassCode PurposeofReferenceObservationCode PurposeofReferenceObservationMoodCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.9"/>
@@ -37954,7 +37957,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ReferencedFramesObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="ReferencedFramesObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ReferencedFramesObservationTemplateId ReferencedFramesObservationClassCode ReferencedFramesObservationMoodCode ReferencedFramesObservationCode ReferencedFramesObservationBoundaryObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.10"/>
@@ -38066,7 +38069,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BoundaryObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="BoundaryObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="BoundaryObservationTemplateId BoundaryObservationClassCode BoundaryObservationCode BoundaryObservationMoodCode BoundaryObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.11"/>
@@ -38173,7 +38176,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FindingsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="FindingsSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="FindingsSectionTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.1.2"/>
@@ -38198,7 +38201,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="InterventionsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="InterventionsSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="InterventionsSectionTemplateId InterventionsSectionCode InterventionsSectionCodeP InterventionsSectionText InterventionsSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.21.2.3"/>
@@ -38302,7 +38305,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MedicalHistorySection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="MedicalHistorySection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicalHistorySectionTemplateId MedicalHistorySectionCode MedicalHistorySectionCodeP MedicalHistorySectionText MedicalHistorySectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.39"/>
@@ -38406,7 +38409,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ObjectiveSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ObjectiveSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ObjectiveSectionTemplateId ObjectiveSectionCode ObjectiveSectionCodeP ObjectiveSectionText ObjectiveSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.21.2.1"/>
@@ -38511,7 +38514,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="OperativeNoteFluidSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="OperativeNoteFluidSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="OperativeNoteFluidSectionTemplateId OperativeNoteFluidSectionCode OperativeNoteFluidSectionCodeP OperativeNoteFluidSectionText OperativeNoteFluidSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.7.12"/>
@@ -38617,7 +38620,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OperativeNoteSurgicalProcedureSection"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="OperativeNoteSurgicalProcedureSectionTemplateId OperativeNoteSurgicalProcedureSectionCode OperativeNoteSurgicalProcedureSectionCodeP OperativeNoteSurgicalProcedureSectionText OperativeNoteSurgicalProcedureSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.7.14"/>
@@ -38722,7 +38725,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PlannedProcedureSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="PlannedProcedureSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PlannedProcedureSectionTemplateId PlannedProcedureSectionCode PlannedProcedureSectionCodeP PlannedProcedureSectionText PlannedProcedureSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.30"/>
@@ -38853,7 +38856,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PostoperativeDiagnosisSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="PostoperativeDiagnosisSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PostoperativeDiagnosisSectionTemplateId PostoperativeDiagnosisSectionCode PostoperativeDiagnosisSectionCodeP PostoperativeDiagnosisSectionText PostoperativeDiagnosisSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.35"/>
@@ -38958,7 +38961,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PostprocedureDiagnosisSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="PostprocedureDiagnosisSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PostprocedureDiagnosisSectionTemplateId PostprocedureDiagnosisSectionCode PostprocedureDiagnosisSectionCodeP PostprocedureDiagnosisSectionText PostprocedureDiagnosisSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.36"/>
@@ -39088,7 +39091,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PostprocedureDiagnosis" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="PostprocedureDiagnosis" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PostprocedureDiagnosisTemplateId PostprocedureDiagnosisClassCode PostprocedureDiagnosisMoodCode PostprocedureDiagnosisCode PostprocedureDiagnosisProblemObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.51"/>
@@ -39201,7 +39204,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PreoperativeDiagnosisSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="PreoperativeDiagnosisSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PreoperativeDiagnosisSectionTemplateId PreoperativeDiagnosisSectionCode PreoperativeDiagnosisSectionCodeP PreoperativeDiagnosisSectionText PreoperativeDiagnosisSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.34"/>
@@ -39331,7 +39334,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PreoperativeDiagnosis" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="PreoperativeDiagnosis" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PreoperativeDiagnosisTemplateId PreoperativeDiagnosisClassCode PreoperativeDiagnosisCode PreoperativeDiagnosisMoodCode PreoperativeDiagnosisProblemObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.65"/>
@@ -39443,7 +39446,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcedureDescriptionSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcedureDescriptionSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureDescriptionSectionTemplateId ProcedureDescriptionSectionCode ProcedureDescriptionSectionCodeP ProcedureDescriptionSectionText ProcedureDescriptionSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.27"/>
@@ -39548,7 +39551,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcedureDispositionSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcedureDispositionSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureDispositionSectionTemplateId ProcedureDispositionSectionCode ProcedureDispositionSectionCodeP ProcedureDispositionSectionText ProcedureDispositionSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.18.2.12"/>
@@ -39654,7 +39657,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ProcedureEstimatedBloodLossSection"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureEstimatedBloodLossSectionTemplateId ProcedureEstimatedBloodLossSectionCode ProcedureEstimatedBloodLossSectionCodeP ProcedureEstimatedBloodLossSectionText ProcedureEstimatedBloodLossSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.18.2.9"/>
@@ -39759,7 +39762,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcedureFindingsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcedureFindingsSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureFindingsSectionTemplateId ProcedureFindingsSectionCode ProcedureFindingsSectionCodeP ProcedureFindingsSectionText ProcedureFindingsSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.28"/>
@@ -39890,7 +39893,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcedureImplantsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcedureImplantsSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureImplantsSectionTemplateId ProcedureImplantsSectionCode ProcedureImplantsSectionCodeP ProcedureImplantsSectionText ProcedureImplantsSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.40"/>
@@ -39995,7 +39998,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcedureIndicationsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcedureIndicationsSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureIndicationsSectionTemplateId ProcedureIndicationsSectionCode ProcedureIndicationsSectionCodeP ProcedureIndicationsSectionText ProcedureIndicationsSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.29"/>
@@ -40126,7 +40129,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcedureSpecimensTakenSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcedureSpecimensTakenSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureSpecimensTakenSectionTemplateId ProcedureSpecimensTakenSectionCode ProcedureSpecimensTakenSectionCodeP ProcedureSpecimensTakenSectionText ProcedureSpecimensTakenSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.31"/>
@@ -40231,7 +40234,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SubjectiveSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="SubjectiveSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SubjectiveSectionTemplateId SubjectiveSectionCode SubjectiveSectionCodeP SubjectiveSectionText SubjectiveSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.21.2.2"/>
@@ -41356,7 +41359,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AssessmentSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="AssessmentSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="AssessmentSectionTemplateId AssessmentSectionCode AssessmentSectionCodeP AssessmentSectionText AssessmentSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.8"/>
@@ -42462,7 +42465,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="InstructionsSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Section">
+  <eClassifiers xsi:type="ecore:EClass" name="InstructionsSection" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Section">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="InstructionsSectionTemplateId InstructionsSectionCode InstructionsSectionCodeP InstructionsSectionText InstructionsSectionTitle"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.45"/>
@@ -46476,7 +46479,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PhysicianReadingStudyPerformer" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Performer1">
+  <eClassifiers xsi:type="ecore:EClass" name="PhysicianReadingStudyPerformer" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Performer1">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PhysicianReadingStudyPerformerTemplateId PhysicianReadingStudyPerformerTypeCode PhysicianReadingStudyPerformerAssignedEntity PhysicianReadingStudyPerformerAssignedEntityHasDICOM PhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization PhysicianReadingStudyPerformerAssignedEntityCode PhysicianReadingStudyPerformerAssignedEntityId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.1"/>
@@ -46662,7 +46665,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PhysicianofRecordParticipant" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//EncounterParticipant">
+  <eClassifiers xsi:type="ecore:EClass" name="PhysicianofRecordParticipant" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//EncounterParticipant">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="PhysicianofRecordParticipantTemplateId PhysicianofRecordParticipantTypeCode PhysicianofRecordParticipantAssignedEntity PhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode PhysicianofRecordParticipantAssignedEntityCode PhysicianofRecordParticipantAssignedEntityId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.2"/>
@@ -46852,7 +46855,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TextObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="TextObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="TextObservationTemplateId TextObservationReferenceValue TextObservationClassCode TextObservationMoodCode TextObservationCode TextObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.12"/>
@@ -47102,7 +47105,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="QuantityMeasurementObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="QuantityMeasurementObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="QuantityMeasurementObservationTemplateId QuantityMeasurementObservationClassCode QuantityMeasurementObservationMoodCode QuantityMeasurementObservationCode QuantityMeasurementObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.14"/>
@@ -47289,7 +47292,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CodeObservations" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="CodeObservations" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="CodeObservationsTemplateId CodeObservationsClassCode CodeObservationsMoodCode CodeObservationsCode CodeObservationsValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.13"/>
@@ -47463,7 +47466,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcedureContext" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Act">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcedureContext" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Act">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureContextTemplateId ProcedureContextEffectiveTimeValue ProcedureContextClassCode ProcedureContextMoodCode ProcedureContextCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.5"/>
@@ -47586,7 +47589,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MedicationUseNoneKnown" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="MedicationUseNoneKnown" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationUseNoneKnownTemplateId MedicationUseNoneKnownReferenceValue MedicationUseNoneKnownClassCode MedicationUseNoneKnownMoodCode MedicationUseNoneKnownId MedicationUseNoneKnownCode MedicationUseNoneKnownCodeP MedicationUseNoneKnownStatusCode MedicationUseNoneKnownStatusCodeP MedicationUseNoneKnownValue MedicationUseNoneKnownValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.29"/>
@@ -47891,7 +47894,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DeceasedObservation" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+  <eClassifiers xsi:type="ecore:EClass" name="DeceasedObservation" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="DeceasedObservationTemplateId DeceasedObservationEffectiveTimeLow DeceasedObservationClassCode DeceasedObservationMoodCode DeceasedObservationId DeceasedObservationCode DeceasedObservationCodeP DeceasedObservationStatusCode DeceasedObservationStatusCodeP DeceasedObservationEffectiveTime DeceasedObservationValue DeceasedObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.79"/>
@@ -48162,7 +48165,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FetusSubjectContext" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//RelatedSubject">
+  <eClassifiers xsi:type="ecore:EClass" name="FetusSubjectContext" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//RelatedSubject">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="FetusSubjectContextTemplateId FetusSubjectContextCode FetusSubjectContextSubject"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.3"/>
@@ -48231,7 +48234,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ObserverContext" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Author">
+  <eClassifiers xsi:type="ecore:EClass" name="ObserverContext" eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Author">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ObserverContextTemplateId ObserverContextAssignedAuthor"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.4"/>
@@ -48279,7 +48282,7 @@
     </eOperations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SubstanceOrDeviceAllergyObservation"
-      eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.ecore#//Observation">
+      eSuperTypes="../../org.eclipse.mdht.uml.cda/model/cda.ecore#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SubstanceOrDeviceAllergyObservationTemplateId SubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator SubstanceOrDeviceAllergyObservationReactionInversionIndicator SubstanceOrDeviceAllergyObservationSeverityInversionIndicator SubstanceOrDeviceAllergyObservationClassCode SubstanceOrDeviceAllergyObservationMoodCode SubstanceOrDeviceAllergyObservationId SubstanceOrDeviceAllergyObservationCode SubstanceOrDeviceAllergyObservationCodeP SubstanceOrDeviceAllergyObservationStatusCode SubstanceOrDeviceAllergyObservationStatusCodeP SubstanceOrDeviceAllergyObservationEffectiveTime SubstanceOrDeviceAllergyObservationValue SubstanceOrDeviceAllergyObservationValueP SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode SubstanceOrDeviceAllergyObservationParticipantParticipantRoleClassCode SubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity SubstanceOrDeviceAllergyObservationParticipantTypeCode SubstanceOrDeviceAllergyObservationParticipantParticipantRole"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.24.3.90"/>

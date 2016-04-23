@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -27,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSecti
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directives Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -96,8 +94,7 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	 */
 	public boolean validateAdvanceDirectivesSectionAdvanceDirectiveObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionAdvanceDirectiveObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -117,8 +114,7 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	@Override
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -126,19 +122,17 @@ public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntrie
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public AdvanceDirectivesSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public AdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdvanceDirectivesSectionImpl

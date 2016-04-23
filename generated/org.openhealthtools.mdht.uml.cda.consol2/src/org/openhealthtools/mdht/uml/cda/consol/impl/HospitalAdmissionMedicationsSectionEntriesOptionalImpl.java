@@ -17,24 +17,22 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalAdmissionMedicationsSectionEntriesOptionalOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Hospital Admission Medications Section Entries Optional</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends SectionImpl implements
-		HospitalAdmissionMedicationsSectionEntriesOptional {
+public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl extends SectionImpl
+		implements HospitalAdmissionMedicationsSectionEntriesOptional {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

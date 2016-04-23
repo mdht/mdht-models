@@ -12,18 +12,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense2;
-
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -98,21 +94,23 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_DISPENSE2);
 			try {
-				VALIDATE_MEDICATION_DISPENSE2_CONTAINS_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_DISPENSE2_CONTAINS_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_DISPENSE2_CONTAINS_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICATION_DISPENSE2_CONTAINS_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_MEDICATION_DISPENSE2_CONTAINS_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationDispense2)) {
+				medicationDispense2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE2_CONTAINS_MEDICATION_INFORMATION2,
-					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispense2ContainsMedicationInformation2"),
-					new Object[] { medicationDispense2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE2_CONTAINS_MEDICATION_INFORMATION2,
+						ConsolPlugin.INSTANCE.getString(
+							"MedicationDispense2MedicationDispense2ContainsMedicationInformation2"),
+						new Object[] { medicationDispense2 }));
 			}
 
 			return false;
@@ -159,21 +157,23 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_DISPENSE2);
 			try {
-				VALIDATE_MEDICATION_DISPENSE2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_DISPENSE2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_DISPENSE2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICATION_DISPENSE2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_MEDICATION_DISPENSE2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationDispense2)) {
+				medicationDispense2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2,
-					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispense2ContainsImmunizationMedicationInformation2"),
-					new Object[] { medicationDispense2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2,
+						ConsolPlugin.INSTANCE.getString(
+							"MedicationDispense2MedicationDispense2ContainsImmunizationMedicationInformation2"),
+						new Object[] { medicationDispense2 }));
 			}
 
 			return false;
@@ -199,7 +199,8 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_DISPENSE2);
 			try {
-				VALIDATE_MEDICATION_DISPENSE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_DISPENSE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_DISPENSE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICATION_DISPENSE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -207,17 +208,19 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_DISPENSE_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			medicationDispense2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseStatusCodeP"),
-					new Object[] { medicationDispense2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseStatusCodeP"),
+						new Object[] { medicationDispense2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.MedicationDispenseStatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.MedicationDispenseStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -244,7 +247,8 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 				ConsolPackage.Literals.MEDICATION_DISPENSE2,
 				ConsolPackage.Literals.MEDICATION_DISPENSE2.getEAllOperations().get(77));
 			try {
-				GET_CONSOL_MEDICATION_SUPPLY_ORDER2__EOCL_QRY = helper.createQuery(GET_CONSOL_MEDICATION_SUPPLY_ORDER2__EOCL_EXP);
+				GET_CONSOL_MEDICATION_SUPPLY_ORDER2__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_MEDICATION_SUPPLY_ORDER2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -271,21 +275,23 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_DISPENSE2);
 			try {
-				VALIDATE_MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationDispense2)) {
+				medicationDispense2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION,
-					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseContainsMedicationOrImmunization"),
-					new Object[] { medicationDispense2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION,
+						ConsolPlugin.INSTANCE.getString(
+							"MedicationDispense2MedicationDispenseContainsMedicationOrImmunization"),
+						new Object[] { medicationDispense2 }));
 			}
 
 			return false;
@@ -394,7 +400,8 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_DISPENSE2);
 			try {
-				VALIDATE_MEDICATION_DISPENSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_DISPENSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_DISPENSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICATION_DISPENSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -402,11 +409,12 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_DISPENSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			medicationDispense2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseTemplateId"),
-					new Object[] { medicationDispense2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseTemplateId"),
+						new Object[] { medicationDispense2 }));
 			}
 
 			return false;
@@ -422,9 +430,9 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_DISPENSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "
-			+ "value.code = 'aborted' or value.code = 'completed')";
+	protected static final String VALIDATE_MEDICATION_DISPENSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " +
+			"value.code = 'aborted' or value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationDispenseStatusCode(MedicationDispense2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Dispense Status Code</em>}' invariant operation.
@@ -463,7 +471,8 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_DISPENSE2);
 			try {
-				VALIDATE_MEDICATION_DISPENSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_DISPENSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_DISPENSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICATION_DISPENSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -471,11 +480,12 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_DISPENSE_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			medicationDispense2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseStatusCode"),
-					new Object[] { medicationDispense2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseStatusCode"),
+						new Object[] { medicationDispense2 }));
 			}
 
 			return false;
@@ -522,7 +532,8 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_DISPENSE2);
 			try {
-				VALIDATE_MEDICATION_DISPENSE_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_DISPENSE_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_DISPENSE_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICATION_DISPENSE_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -530,11 +541,12 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_DISPENSE_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			medicationDispense2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_REPEAT_NUMBER,
-					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseRepeatNumber"),
-					new Object[] { medicationDispense2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_REPEAT_NUMBER,
+						ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseRepeatNumber"),
+						new Object[] { medicationDispense2 }));
 			}
 
 			return false;
@@ -581,19 +593,22 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_DISPENSE2);
 			try {
-				VALIDATE_MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationDispense2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				medicationDispense2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER,
-					ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseMedicationSupplyOrder"),
-					new Object[] { medicationDispense2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER,
+						ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseMedicationSupplyOrder"),
+						new Object[] { medicationDispense2 }));
 			}
 
 			return false;

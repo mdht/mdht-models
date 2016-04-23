@@ -16,28 +16,28 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedCustodian;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.AssociatedEntity;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Custodian;
+import org.eclipse.mdht.uml.cda.CustodianOrganization;
+import org.eclipse.mdht.uml.cda.DataEnterer;
+import org.eclipse.mdht.uml.cda.Informant12;
+import org.eclipse.mdht.uml.cda.LanguageCommunication;
+import org.eclipse.mdht.uml.cda.Participant1;
+import org.eclipse.mdht.uml.cda.RelatedEntity;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
+import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
+import org.eclipse.mdht.uml.hl7.vocab.RoleClassAssociative;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedCustodian;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Custodian;
-import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
-import org.openhealthtools.mdht.uml.cda.DataEnterer;
-import org.openhealthtools.mdht.uml.cda.Informant12;
-import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
-import org.openhealthtools.mdht.uml.cda.Participant1;
-import org.openhealthtools.mdht.uml.cda.RelatedEntity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument;
 import org.openhealthtools.mdht.uml.cda.consol.operations.USRealmHeaderPatientGeneratedDocumentOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
 
 /**
  * <!-- begin-user-doc -->
@@ -131,7 +131,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTarget() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentRecordTarget",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -164,7 +165,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthor() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthorTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -197,7 +199,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDataEnterer() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDataEntererTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDataEnterer",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -231,7 +234,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentInformant() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInformantTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentInformant",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -265,7 +269,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentCustodian() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentCustodianTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentCustodian",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -299,7 +304,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentInformationRecipient() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentInformationRecipient",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -332,7 +338,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticator() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticator",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -365,7 +372,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthenticator() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentAuthenticator",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -398,7 +406,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentParticipant() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentParticipantTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentParticipant",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -431,7 +440,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -464,7 +474,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDocumentationOf() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDocumentationOf",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -497,7 +508,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -536,7 +548,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodePTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -575,7 +588,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -614,7 +628,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceIndTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PREFERENCE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PREFERENCE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -629,8 +644,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 
 			@Override
 			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
-				target.getRecordTargets().get(0).getPatientRole().getPatient().getLanguageCommunications().get(0).setPreferenceInd(
-					DatatypesFactory.eINSTANCE.createBL());
+				target.getRecordTargets().get(0).getPatientRole().getPatient().getLanguageCommunications().get(
+					0).setPreferenceInd(DatatypesFactory.eINSTANCE.createBL());
 			}
 
 			@Override
@@ -653,7 +668,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangCommTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_IF_MORE_THAN_ONE_LANG_COMM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_IF_MORE_THAN_ONE_LANG_COMM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -662,7 +678,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 				target.getRecordTargets().add(CDAFactory.eINSTANCE.createRecordTarget());
 				target.getRecordTargets().get(0).setPatientRole(CDAFactory.eINSTANCE.createPatientRole());
 				target.getRecordTargets().get(0).getPatientRole().setPatient(CDAFactory.eINSTANCE.createPatient());
-				List<LanguageCommunication> lcoms = target.getRecordTargets().get(0).getPatientRole().getPatient().getLanguageCommunications();
+				List<LanguageCommunication> lcoms = target.getRecordTargets().get(
+					0).getPatientRole().getPatient().getLanguageCommunications();
 				LanguageCommunication lcom1 = CDAFactory.eINSTANCE.createLanguageCommunication();
 				lcom1.setPreferenceInd(DatatypesFactory.eINSTANCE.createBL());
 				lcom1.getPreferenceInd().setValue(true);
@@ -676,8 +693,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 			@Override
 			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
 				// remove value
-				target.getRecordTargets().get(0).getPatientRole().getPatient().getLanguageCommunications().get(0).getPreferenceInd().setValue(
-					null);
+				target.getRecordTargets().get(0).getPatientRole().getPatient().getLanguageCommunications().get(
+					0).getPreferenceInd().setValue(null);
 			}
 
 			@Override
@@ -700,7 +717,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -737,7 +755,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -774,7 +793,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -809,7 +829,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -844,7 +865,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganizationTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -880,7 +902,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -914,7 +937,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminologyTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -953,7 +977,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -990,7 +1015,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1025,7 +1051,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1060,7 +1087,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1094,7 +1122,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodePTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1131,7 +1160,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1169,7 +1199,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1205,7 +1236,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodePTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1243,7 +1275,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1282,7 +1315,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntityTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_HAS_RELATED_ENTITY_OR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_HAS_RELATED_ENTITY_OR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1363,7 +1397,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1399,7 +1434,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1439,7 +1475,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1477,7 +1514,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1513,7 +1551,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRootTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_II_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1551,7 +1590,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1588,7 +1628,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1623,7 +1664,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminologyTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE_SYSTEM_AND_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1662,7 +1704,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1699,7 +1742,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1734,7 +1778,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1769,7 +1814,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1803,7 +1849,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1839,7 +1886,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodePTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1874,7 +1922,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1910,7 +1959,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1944,7 +1994,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodePTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1979,7 +2030,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2016,7 +2068,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodesTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_IF_TYPE_CODE_IND_THEN_AE_CLASS_CODE_FROM_IND_ROLECLASS_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_IF_TYPE_CODE_IND_THEN_AE_CLASS_CODE_FROM_IND_ROLECLASS_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2086,7 +2139,7 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 					@Override
 					public void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
 						// nullFlavor pass
-						// has <participant typeCode="IND"> and has <associatedEntity nullFlavor=”NA” />
+						// has <participant typeCode="IND"> and has <associatedEntity nullFlavor=ï¿½NAï¿½ />
 						target.getParticipants().clear();
 						target.init();
 						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
@@ -2119,7 +2172,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentParticipantTypeCode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentParticipantTypeCodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentParticipantTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2153,7 +2207,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2187,7 +2242,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF_ORDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2222,7 +2278,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF_ORDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2256,7 +2313,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2272,8 +2330,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 
 			@Override
 			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).getAssignedEntity().getIds().add(
-					DatatypesFactory.eINSTANCE.createII());
+				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+					0).getAssignedEntity().getIds().add(DatatypesFactory.eINSTANCE.createII());
 			}
 
 			@Override
@@ -2296,7 +2354,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodePTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2312,8 +2371,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 
 			@Override
 			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).getAssignedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE());
+				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+					0).getAssignedEntity().setCode(DatatypesFactory.eINSTANCE.createCE());
 			}
 
 			@Override
@@ -2336,7 +2395,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2352,8 +2412,9 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 
 			@Override
 			protected void updateToPass(USRealmHeaderPatientGeneratedDocument target) {
-				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).getAssignedEntity().setCode(
-					DatatypesFactory.eINSTANCE.createCE("NotCurrentlyChecked", "2.16.840.1.113883.5.111"));
+				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(
+					0).getAssignedEntity().setCode(
+						DatatypesFactory.eINSTANCE.createCE("NotCurrentlyChecked", "2.16.840.1.113883.5.111"));
 			}
 
 			@Override
@@ -2376,7 +2437,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodePTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2414,7 +2476,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2452,7 +2515,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2490,7 +2554,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCodeTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2525,7 +2590,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2561,7 +2627,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	public void testValidateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
 			"validateUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent",
-			operationsForOCL.getOCLValue("VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2594,8 +2661,8 @@ public class USRealmHeaderPatientGeneratedDocumentTest extends CDAValidationTest
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<USRealmHeaderPatientGeneratedDocument> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<USRealmHeaderPatientGeneratedDocument>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

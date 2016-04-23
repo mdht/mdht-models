@@ -7,29 +7,21 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SubstanceAdministeredAct;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.SubstanceAdministeredActOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Substance Administered Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +51,10 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * @generated
 	 */
 	@Override
-	public boolean validateSubstanceAdministeredActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActTemplateId(this, diagnostics, context);
+	public boolean validateSubstanceAdministeredActTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -119,8 +113,10 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * @generated
 	 */
 	@Override
-	public boolean validateSubstanceAdministeredActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActStatusCode(this, diagnostics, context);
+	public boolean validateSubstanceAdministeredActStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -129,7 +125,8 @@ public class SubstanceAdministeredActImpl extends ActImpl implements SubstanceAd
 	 * @generated
 	 */
 	@Override
-	public boolean validateSubstanceAdministeredActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSubstanceAdministeredActStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SubstanceAdministeredActOperations.validateSubstanceAdministeredActStatusCodeP(
 			this, diagnostics, context);
 	}

@@ -10,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -354,7 +354,8 @@ public interface DischargeSummary2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::DischargeDiagnosisSection2))'"
 	 * @generated
 	 */
-	boolean validateDischargeSummary2DischargeDiagnosisSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDischargeSummary2DischargeDiagnosisSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -391,7 +392,8 @@ public interface DischargeSummary2 extends USRealmHeader2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdmissionDiagnosisSection2))'"
 	 * @generated
 	 */
-	boolean validateDischargeSummary2AdmissionDiagnosisSection2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDischargeSummary2AdmissionDiagnosisSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

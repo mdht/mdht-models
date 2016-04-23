@@ -16,21 +16,19 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatus;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,7 +58,8 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationHasTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservationOperations.validateProblemObservationHasTextReference(this, diagnostics, context);
 	}
 
@@ -70,7 +69,8 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservationOperations.validateProblemObservationTextReferenceValue(this, diagnostics, context);
 	}
 
@@ -101,7 +101,8 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservationOperations.validateProblemObservationHasResolutionDate(this, diagnostics, context);
 	}
 
@@ -133,7 +134,8 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemObservationValueTranslation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationValueTranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservationOperations.validateProblemObservationValueTranslation(this, diagnostics, context);
 	}
 

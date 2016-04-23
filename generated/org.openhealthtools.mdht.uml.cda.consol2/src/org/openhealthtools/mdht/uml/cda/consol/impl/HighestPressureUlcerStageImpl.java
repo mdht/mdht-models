@@ -12,18 +12,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HighestPressureUlcerStageOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Highest Pressure Ulcer Stage</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -53,7 +51,8 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * @generated
 	 */
 	@Override
-	public boolean validateHighestPressureUlcerStageTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHighestPressureUlcerStageTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageTemplateId(
 			this, diagnostics, context);
 	}
@@ -64,7 +63,8 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 * @generated
 	 */
 	@Override
-	public boolean validateHighestPressureUlcerStageClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHighestPressureUlcerStageClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageClassCode(
 			this, diagnostics, context);
 	}
@@ -76,7 +76,8 @@ public class HighestPressureUlcerStageImpl extends ObservationImpl implements Hi
 	 */
 	@Override
 	public boolean validateHighestPressureUlcerStageMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageMoodCode(this, diagnostics, context);
+		return HighestPressureUlcerStageOperations.validateHighestPressureUlcerStageMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**

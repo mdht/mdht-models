@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReasonForReferralSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Reason For Referral Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -57,8 +55,10 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * @generated
 	 */
 	@Override
-	public boolean validateReasonForReferralSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForReferralSectionOperations.validateReasonForReferralSectionTemplateId(this, diagnostics, context);
+	public boolean validateReasonForReferralSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForReferralSectionOperations.validateReasonForReferralSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**

@@ -14,26 +14,19 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
+import org.eclipse.mdht.uml.cda.operations.SectionOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection;
-
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -109,7 +102,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERNS_SECTION);
 			try {
-				VALIDATE_HEALTH_CONCERNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_CONCERNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_CONCERNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -117,11 +111,12 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			healthConcernsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionTemplateId"),
-					new Object[] { healthConcernsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionTemplateId"),
+						new Object[] { healthConcernsSection }));
 			}
 
 			return false;
@@ -168,7 +163,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERNS_SECTION);
 			try {
-				VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -176,11 +172,12 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERNS_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			healthConcernsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_NULL_FLAVOR,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionNullFlavor"),
-					new Object[] { healthConcernsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_NULL_FLAVOR,
+						ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionNullFlavor"),
+						new Object[] { healthConcernsSection }));
 			}
 
 			return false;
@@ -196,9 +193,9 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HEALTH_CONCERNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '75310-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HEALTH_CONCERNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '75310-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHealthConcernsSectionCode(HealthConcernsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Health Concerns Section Code</em>}' invariant operation.
@@ -229,7 +226,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERNS_SECTION);
 			try {
-				VALIDATE_HEALTH_CONCERNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_CONCERNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_CONCERNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -237,11 +235,12 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERNS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			healthConcernsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionCode"),
-					new Object[] { healthConcernsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_CODE,
+						ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionCode"),
+						new Object[] { healthConcernsSection }));
 			}
 
 			return false;
@@ -288,7 +287,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERNS_SECTION);
 			try {
-				VALIDATE_HEALTH_CONCERNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_CONCERNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_CONCERNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -296,11 +296,12 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERNS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			healthConcernsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionCodeP"),
-					new Object[] { healthConcernsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionCodeP"),
+						new Object[] { healthConcernsSection }));
 			}
 
 			return false;
@@ -347,7 +348,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERNS_SECTION);
 			try {
-				VALIDATE_HEALTH_CONCERNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_CONCERNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_CONCERNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -355,11 +357,12 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERNS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			healthConcernsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionTitle"),
-					new Object[] { healthConcernsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_TITLE,
+						ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionTitle"),
+						new Object[] { healthConcernsSection }));
 			}
 
 			return false;
@@ -406,7 +409,8 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERNS_SECTION);
 			try {
-				VALIDATE_HEALTH_CONCERNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_CONCERNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_CONCERNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -414,11 +418,12 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERNS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			healthConcernsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionText"),
-					new Object[] { healthConcernsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_TEXT,
+						ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionText"),
+						new Object[] { healthConcernsSection }));
 			}
 
 			return false;
@@ -465,19 +470,22 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERNS_SECTION);
 			try {
-				VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthConcernsSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				healthConcernsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_HEALTH_CONCERN_ACT,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionHealthConcernAct"),
-					new Object[] { healthConcernsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_HEALTH_CONCERN_ACT,
+						ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionHealthConcernAct"),
+						new Object[] { healthConcernsSection }));
 			}
 
 			return false;
@@ -524,21 +532,23 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERNS_SECTION);
 			try {
-				VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_HEALTH_CONCERNS_SECTION_HEALTH_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthConcernsSection)) {
+				healthConcernsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_HEALTH_STATUS_OBSERVATION2,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionHealthStatusObservation2"),
-					new Object[] { healthConcernsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_HEALTH_STATUS_OBSERVATION2,
+						ConsolPlugin.INSTANCE.getString(
+							"HealthConcernsSectionHealthConcernsSectionHealthStatusObservation2"),
+						new Object[] { healthConcernsSection }));
 			}
 
 			return false;
@@ -585,19 +595,22 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_CONCERNS_SECTION);
 			try {
-				VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthConcernsSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				healthConcernsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT,
-					ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionRiskConcernAct"),
-					new Object[] { healthConcernsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HEALTH_CONCERNS_SECTION__HEALTH_CONCERNS_SECTION_RISK_CONCERN_ACT,
+						ConsolPlugin.INSTANCE.getString("HealthConcernsSectionHealthConcernsSectionRiskConcernAct"),
+						new Object[] { healthConcernsSection }));
 			}
 
 			return false;
@@ -683,14 +696,16 @@ public class HealthConcernsSectionOperations extends SectionOperations {
 				ConsolPackage.Literals.HEALTH_CONCERNS_SECTION,
 				ConsolPackage.Literals.HEALTH_CONCERNS_SECTION.getEAllOperations().get(65));
 			try {
-				GET_HEALTH_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_HEALTH_STATUS_OBSERVATION2S__EOCL_EXP);
+				GET_HEALTH_STATUS_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_HEALTH_STATUS_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HEALTH_STATUS_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<HealthStatusObservation2> result = (Collection<HealthStatusObservation2>) query.evaluate(healthConcernsSection);
+		Collection<HealthStatusObservation2> result = (Collection<HealthStatusObservation2>) query.evaluate(
+			healthConcernsSection);
 		return new BasicEList.UnmodifiableEList<HealthStatusObservation2>(result.size(), result.toArray());
 	}
 

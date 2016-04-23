@@ -16,19 +16,18 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Observation;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.vocab.ActClassObservation;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Observation;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NumberOfPressureUlcersObservation2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.ActClassObservation;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActMoodDocumentObservation;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -68,7 +67,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservation2CDTranslation() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservation2CDTranslationTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservation2CDTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -105,7 +105,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservation2CDTranslationP() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservation2CDTranslationPTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservation2CDTranslationP",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -141,7 +142,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCodePTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -183,7 +185,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservation2EntryRelationshipObservationCode() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCodeTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservation2EntryRelationshipObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_ENTRY_RELATIONSHIP_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_ENTRY_RELATIONSHIP_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -227,7 +230,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservationTemplateId() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservationTemplateIdTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -261,7 +265,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservationCodeP() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservationCodePTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -294,8 +299,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateNumberOfPressureUlcersObservationCode() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservationCodeTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
-			"validateNumberOfPressureUlcersObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNumberOfPressureUlcersObservationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -338,7 +343,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservationEntryRelationship() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservationEntryRelationshipTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservationEntryRelationship",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -375,7 +381,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservationEntryRelationshipObservationClassCodeTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -417,7 +424,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCodeTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -459,7 +467,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservationEntryRelationshipObservationValueP() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservationEntryRelationshipObservationValuePTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservationEntryRelationshipObservationValueP",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -501,7 +510,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservationEntryRelationshipObservationValue() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservationEntryRelationshipObservationValueTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservationEntryRelationshipObservationValue",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -545,7 +555,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservationEntryRelationshipTypeCode() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservationEntryRelationshipTypeCodeTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservationEntryRelationshipTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{
@@ -586,7 +597,8 @@ public class NumberOfPressureUlcersObservation2Test extends CDAValidationTest {
 	public void testValidateNumberOfPressureUlcersObservationEntryRelationshipObservation() {
 		OperationsTestCase<NumberOfPressureUlcersObservation2> validateNumberOfPressureUlcersObservationEntryRelationshipObservationTestCase = new OperationsTestCase<NumberOfPressureUlcersObservation2>(
 			"validateNumberOfPressureUlcersObservationEntryRelationshipObservation",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

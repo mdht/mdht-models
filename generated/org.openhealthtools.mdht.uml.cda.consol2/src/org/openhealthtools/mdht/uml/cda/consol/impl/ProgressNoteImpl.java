@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
@@ -40,8 +40,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProgressNoteOperations
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Progress Note</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -145,7 +143,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * @generated
 	 */
 	@Override
-	public boolean validateProgressNoteAssessmentAndPlanSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProgressNoteAssessmentAndPlanSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteAssessmentAndPlanSection(this, diagnostics, context);
 	}
 
@@ -239,7 +238,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * @generated
 	 */
 	@Override
-	public boolean validateProgressNoteReviewOfSystemsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProgressNoteReviewOfSystemsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteReviewOfSystemsSection(this, diagnostics, context);
 	}
 
@@ -668,7 +668,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProgressNoteOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 

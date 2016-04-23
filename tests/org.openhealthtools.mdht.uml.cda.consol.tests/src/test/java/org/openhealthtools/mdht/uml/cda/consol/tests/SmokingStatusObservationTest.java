@@ -10,15 +10,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -59,8 +59,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationTemplateId() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationTemplateIdTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -93,8 +93,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationClassCode() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationClassCodeTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -127,8 +127,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationMoodCode() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationMoodCodeTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -194,14 +194,14 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	/**
 	*
 	* @generated
-	* 
+	*
 	* Note: This is being treated as a TS instead of an IVL_TS via nested constraints and custom messages.
 	*/
 	@Test
 	public void testValidateSmokingStatusObservationEffectiveTime() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationEffectiveTimeTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -237,8 +237,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationStatusCodeP() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationStatusCodePTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -271,8 +271,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationStatusCode() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationStatusCodeTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -346,7 +346,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	public void testValidateSmokingStatusObservationCDCodeTermAssertionOrLoinc() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationCDCodeTermAssertionOrLoincTestCase = new OperationsTestCase<SmokingStatusObservation>(
 			"validateSmokingStatusObservationCDCodeTermAssertionOrLoinc",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -466,8 +467,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationCDCodeSystem() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationCDCodeSystemTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationCDCodeSystem",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationCDCodeSystem", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_CD_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -500,8 +501,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationIVLTSCenter() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationIVLTSCenterTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationIVLTSCenter",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_CENTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationIVLTSCenter", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_CENTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -535,8 +536,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationIVLTSHigh() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationIVLTSHighTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationIVLTSHigh",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationIVLTSHigh", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -570,8 +571,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationIVLTSLow() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationIVLTSLowTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationIVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationIVLTSLow", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -605,8 +606,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationIVLTSWidth() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationIVLTSWidthTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationIVLTSWidth",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationIVLTSWidth", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_IVLTS_WIDTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

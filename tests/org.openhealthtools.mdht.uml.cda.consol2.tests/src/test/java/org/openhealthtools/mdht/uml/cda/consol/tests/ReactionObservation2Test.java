@@ -16,20 +16,20 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReactionObservation2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -76,8 +76,8 @@ public class ReactionObservation2Test extends CDAValidationTest {
 	@Ignore
 	public void testValidateReactionObservationCodeValueSet() {
 		OperationsTestCase<ReactionObservation2> validateReactionObservationCodeValueSetTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservationCodeValueSet",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReactionObservationCodeValueSet", operationsForOCL.getOCLValue(
+				"VALIDATE_REACTION_OBSERVATION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -215,7 +215,8 @@ public class ReactionObservation2Test extends CDAValidationTest {
 	public void testValidateReactionObservationProcedureActivityProcedureInversionInd() {
 		OperationsTestCase<ReactionObservation2> validateReactionObservationProcedureActivityProcedureInversionIndTestCase = new OperationsTestCase<ReactionObservation2>(
 			"validateReactionObservationProcedureActivityProcedureInversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -274,7 +275,8 @@ public class ReactionObservation2Test extends CDAValidationTest {
 	public void testValidateReactionObservationMedicationActivityInversionInd() {
 		OperationsTestCase<ReactionObservation2> validateReactionObservationMedicationActivityInversionIndTestCase = new OperationsTestCase<ReactionObservation2>(
 			"validateReactionObservationMedicationActivityInversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -333,7 +335,8 @@ public class ReactionObservation2Test extends CDAValidationTest {
 	public void testValidateReactionObservationSeverityObservationInversionInd() {
 		OperationsTestCase<ReactionObservation2> validateReactionObservationSeverityObservationInversionIndTestCase = new OperationsTestCase<ReactionObservation2>(
 			"validateReactionObservationSeverityObservationInversionInd",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -373,8 +376,8 @@ public class ReactionObservation2Test extends CDAValidationTest {
 	@Ignore
 	public void testValidateReactionObservationTextReference() {
 		OperationsTestCase<ReactionObservation2> validateReactionObservationTextReferenceTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservationTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReactionObservationTextReference", operationsForOCL.getOCLValue(
+				"VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -409,8 +412,8 @@ public class ReactionObservation2Test extends CDAValidationTest {
 	@Ignore
 	public void testValidateReactionObservationTextReferenceValue() {
 		OperationsTestCase<ReactionObservation2> validateReactionObservationTextReferenceValueTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservationTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReactionObservationTextReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -448,8 +451,8 @@ public class ReactionObservation2Test extends CDAValidationTest {
 	@Ignore
 	public void testValidateReactionObservationReferenceValue() {
 		OperationsTestCase<ReactionObservation2> validateReactionObservationReferenceValueTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservationReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReactionObservationReferenceValue", operationsForOCL.getOCLValue(
+				"VALIDATE_REACTION_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -681,7 +684,8 @@ public class ReactionObservation2Test extends CDAValidationTest {
 	public void testValidateReactionObservationProcedureActivityProcedure() {
 		OperationsTestCase<ReactionObservation2> validateReactionObservationProcedureActivityProcedureTestCase = new OperationsTestCase<ReactionObservation2>(
 			"validateReactionObservationProcedureActivityProcedure",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -717,8 +721,8 @@ public class ReactionObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateReactionObservationMedicationActivity() {
 		OperationsTestCase<ReactionObservation2> validateReactionObservationMedicationActivityTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservationMedicationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReactionObservationMedicationActivity", operationsForOCL.getOCLValue(
+				"VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -754,8 +758,8 @@ public class ReactionObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateReactionObservationSeverityObservation() {
 		OperationsTestCase<ReactionObservation2> validateReactionObservationSeverityObservationTestCase = new OperationsTestCase<ReactionObservation2>(
-			"validateReactionObservationSeverityObservation",
-			operationsForOCL.getOCLValue("VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateReactionObservationSeverityObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

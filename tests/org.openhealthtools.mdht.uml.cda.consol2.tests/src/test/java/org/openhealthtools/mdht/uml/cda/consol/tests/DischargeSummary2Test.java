@@ -16,16 +16,23 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.AssociatedEntity;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Component1;
+import org.eclipse.mdht.uml.cda.EncompassingEncounter;
+import org.eclipse.mdht.uml.cda.EncounterParticipant;
+import org.eclipse.mdht.uml.cda.Participant1;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.ResponsibleParty;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
+import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
+import org.eclipse.mdht.uml.hl7.vocab.RoleClassAssociative;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.AssociatedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component1;
-import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
-import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
-import org.openhealthtools.mdht.uml.cda.Participant1;
-import org.openhealthtools.mdht.uml.cda.Person;
-import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
@@ -41,13 +48,6 @@ import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DischargeSummary2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassAssociative;
 
 /**
  * <!-- begin-user-doc -->
@@ -150,7 +150,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSectionTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2DoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -160,7 +161,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 					@Override
 					public void updateToFail(DischargeSummary2 target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
 					}
 
@@ -170,7 +172,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 					@Override
 					public void updateToFail(DischargeSummary2 target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
 					}
 
@@ -180,7 +183,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 					@Override
 					public void updateToFail(DischargeSummary2 target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintSection().init());
 						target.addSection(ConsolFactory.eINSTANCE.createReasonForVisitSection().init());
 					}
@@ -195,7 +199,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 					@Override
 					public void updateToPass(DischargeSummary2 target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 
 					}
 				});
@@ -376,7 +381,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2AllergiesSectionEntriesOptional2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2AllergiesSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2AllergiesSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -409,8 +415,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	@Test
 	public void testValidateDischargeSummary2HospitalCourseSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HospitalCourseSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2HospitalCourseSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDischargeSummary2HospitalCourseSection", operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -425,7 +431,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* HospitalCourseSection */
 				HospitalCourseSection section =
 
-				ConsolFactory.eINSTANCE.createHospitalCourseSection().init();
+						ConsolFactory.eINSTANCE.createHospitalCourseSection().init();
 
 				target.addSection(section);
 
@@ -451,7 +457,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2PlanOfTreatmentSection2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2PlanOfTreatmentSection2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2PlanOfTreatmentSection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_PLAN_OF_TREATMENT_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -484,8 +491,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	@Test
 	public void testValidateDischargeSummary2ChiefComplaintSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ChiefComplaintSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2ChiefComplaintSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDischargeSummary2ChiefComplaintSection", operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -500,7 +507,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* ChiefComplaintSection */
 				ChiefComplaintSection section =
 
-				ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
+						ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
 
 				target.addSection(section);
 
@@ -526,7 +533,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ChiefComplaintAndReasonForVisitSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ChiefComplaintAndReasonForVisitSectionTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ChiefComplaintAndReasonForVisitSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -541,7 +549,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* ChiefComplaintAndReasonForVisitSection */
 				ChiefComplaintAndReasonForVisitSection section =
 
-				ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init();
+						ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init();
 
 				target.addSection(section);
 
@@ -566,8 +574,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	@Test
 	public void testValidateDischargeSummary2NutritionSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2NutritionSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2NutritionSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDischargeSummary2NutritionSection", operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_NUTRITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -582,7 +590,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* NutritionSection */
 				NutritionSection section =
 
-				ConsolFactory.eINSTANCE.createNutritionSection().init();
+						ConsolFactory.eINSTANCE.createNutritionSection().init();
 
 				target.addSection(section);
 
@@ -608,7 +616,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2FunctionalStatusSection2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2FunctionalStatusSection2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2FunctionalStatusSection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_FUNCTIONAL_STATUS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -642,7 +651,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2HistoryOfPastIllnessSection2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HistoryOfPastIllnessSection2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2HistoryOfPastIllnessSection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PAST_ILLNESS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -676,7 +686,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2HistoryOfPresentIllnessSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HistoryOfPresentIllnessSectionTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2HistoryOfPresentIllnessSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -691,7 +702,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* HistoryOfPresentIllnessSection */
 				HistoryOfPresentIllnessSection section =
 
-				ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
+						ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
 
 				target.addSection(section);
 
@@ -717,7 +728,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2HospitalConsultationsSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HospitalConsultationsSectionTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2HospitalConsultationsSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_CONSULTATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_CONSULTATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -732,7 +744,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* HospitalConsultationsSection */
 				HospitalConsultationsSection section =
 
-				ConsolFactory.eINSTANCE.createHospitalConsultationsSection().init();
+						ConsolFactory.eINSTANCE.createHospitalConsultationsSection().init();
 
 				target.addSection(section);
 
@@ -758,7 +770,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2HospitalDischargeInstructionsSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HospitalDischargeInstructionsSectionTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2HospitalDischargeInstructionsSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -773,7 +786,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* HospitalDischargeInstructionsSection */
 				HospitalDischargeInstructionsSection section =
 
-				ConsolFactory.eINSTANCE.createHospitalDischargeInstructionsSection().init();
+						ConsolFactory.eINSTANCE.createHospitalDischargeInstructionsSection().init();
 
 				target.addSection(section);
 
@@ -799,7 +812,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2HospitalDischargePhysicalSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HospitalDischargePhysicalSectionTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2HospitalDischargePhysicalSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_PHYSICAL_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -814,7 +828,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* HospitalDischargePhysicalSection */
 				HospitalDischargePhysicalSection section =
 
-				ConsolFactory.eINSTANCE.createHospitalDischargePhysicalSection().init();
+						ConsolFactory.eINSTANCE.createHospitalDischargePhysicalSection().init();
 
 				target.addSection(section);
 
@@ -840,7 +854,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2HospitalDischargeStudiesSummarySection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2HospitalDischargeStudiesSummarySectionTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2HospitalDischargeStudiesSummarySection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -855,7 +870,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* HospitalDischargeStudiesSummarySection */
 				HospitalDischargeStudiesSummarySection section =
 
-				ConsolFactory.eINSTANCE.createHospitalDischargeStudiesSummarySection().init();
+						ConsolFactory.eINSTANCE.createHospitalDischargeStudiesSummarySection().init();
 
 				target.addSection(section);
 
@@ -881,7 +896,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ImmunizationsSectionEntriesOptional2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ImmunizationsSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ImmunizationsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -915,7 +931,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ProblemSectionEntriesOptional2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ProblemSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ProblemSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_PROBLEM_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -949,7 +966,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ProceduresSectionEntriesOptional2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ProceduresSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ProceduresSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -983,7 +1001,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ReasonForVisitSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ReasonForVisitSectionTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ReasonForVisitSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -998,7 +1017,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* ReasonForVisitSection */
 				ReasonForVisitSection section =
 
-				ConsolFactory.eINSTANCE.createReasonForVisitSection().init();
+						ConsolFactory.eINSTANCE.createReasonForVisitSection().init();
 
 				target.addSection(section);
 
@@ -1024,7 +1043,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ReviewOfSystemsSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ReviewOfSystemsSectionTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ReviewOfSystemsSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1039,7 +1059,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 				/* ReviewOfSystemsSection */
 				ReviewOfSystemsSection section =
 
-				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
+						ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
 
 				target.addSection(section);
 
@@ -1064,8 +1084,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	@Test
 	public void testValidateDischargeSummary2SocialHistorySection2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2SocialHistorySection2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2SocialHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDischargeSummary2SocialHistorySection2", operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_SOCIAL_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1099,7 +1119,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2VitalSignsSectionEntriesOptional2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2VitalSignsSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2VitalSignsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1133,7 +1154,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2DischargeDiagnosisSection2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2DischargeDiagnosisSection2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2DischargeDiagnosisSection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1167,7 +1189,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2DischargeMedicationsSectionEntriesOptional2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2DischargeMedicationsSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2DischargeMedicationsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1200,8 +1223,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	@Test
 	public void testValidateDischargeSummary2FamilyHistorySection2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2FamilyHistorySection2TestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2FamilyHistorySection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDischargeSummary2FamilyHistorySection2", operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_FAMILY_HISTORY_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1235,7 +1258,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2AdmissionDiagnosisSection2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2AdmissionDiagnosisSection2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2AdmissionDiagnosisSection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_DIAGNOSIS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1269,7 +1293,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2AdmissionMedicationsSectionEntriesOptional2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1304,7 +1329,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2DischargeMedicationsSection2() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2DischargeMedicationsSection2TestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2DischargeMedicationsSection2",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_MEDICATIONS_SECTION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1338,8 +1364,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	@Test
 	public void testValidateDischargeSummary2DischargeDietSection() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2DischargeDietSectionTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateDischargeSummary2DischargeDietSection",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateDischargeSummary2DischargeDietSection", operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_DISCHARGE_DIET_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1375,7 +1401,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeINDTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ParticipantIfParTypeCodeINDThenAEClassCodeIND",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_PARTICIPANT_IF_PAR_TYPE_CODE_IND_THEN_AE_CLASS_CODE_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1445,7 +1472,7 @@ public class DischargeSummary2Test extends CDAValidationTest {
 					@Override
 					public void updateToPass(DischargeSummary2 target) {
 						// nullFlavor pass
-						// has <participant typeCode="IND"> and has <associatedEntity nullFlavor=”NA” />
+						// has <participant typeCode="IND"> and has <associatedEntity nullFlavor=ï¿½NAï¿½ />
 						target.getParticipants().clear();
 						target.init();
 						Participant1 p = CDAFactory.eINSTANCE.createParticipant1();
@@ -1478,7 +1505,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterIVLTSLow() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSLowTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSLow",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1519,7 +1547,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSHighTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterIVLTSHigh",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1560,7 +1589,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPersonTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityAssignedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1604,7 +1634,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganizationTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1648,7 +1679,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganizationTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityHasPersonOrOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1705,7 +1737,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntityTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1756,7 +1789,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPersonTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityAssignedPerson",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1799,7 +1833,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganizationTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityRepresentedOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1842,7 +1877,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganizationTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityHasPersonOrOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1891,7 +1927,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntityTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyAssignedEntity",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1936,7 +1973,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterEffectiveTime() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterEffectiveTimeTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1975,7 +2013,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCode",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2019,7 +2058,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodePTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterDischargeDispositionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_DISCHARGE_DISPOSITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2060,7 +2100,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipantTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterEncounterParticipant",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2101,7 +2142,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounterResponsibleParty() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterResponsiblePartyTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounterResponsibleParty",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_RESPONSIBLE_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2142,7 +2184,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	public void testValidateDischargeSummary2ComponentOfEncompassingEncounter() {
 		OperationsTestCase<DischargeSummary2> validateDischargeSummary2ComponentOfEncompassingEncounterTestCase = new OperationsTestCase<DischargeSummary2>(
 			"validateDischargeSummary2ComponentOfEncompassingEncounter",
-			operationsForOCL.getOCLValue("VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_DISCHARGE_SUMMARY2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -2501,8 +2544,8 @@ public class DischargeSummary2Test extends CDAValidationTest {
 	@Test
 	public void testValidateGeneralHeaderConstraintsTemplateId() {
 		OperationsTestCase<DischargeSummary2> validateGeneralHeaderConstraintsTemplateIdTestCase = new OperationsTestCase<DischargeSummary2>(
-			"validateGeneralHeaderConstraintsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateGeneralHeaderConstraintsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

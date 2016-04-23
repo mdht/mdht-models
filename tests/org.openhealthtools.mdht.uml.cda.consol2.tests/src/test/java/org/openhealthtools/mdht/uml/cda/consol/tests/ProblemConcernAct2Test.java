@@ -16,17 +16,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemConcernAct2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -99,8 +99,8 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProblemConcernAct2AuthorParticipation() {
 		OperationsTestCase<ProblemConcernAct2> validateProblemConcernAct2AuthorParticipationTestCase = new OperationsTestCase<ProblemConcernAct2>(
-			"validateProblemConcernAct2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemConcernAct2AuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -132,8 +132,8 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProblemConcernAct2PriorityPreference() {
 		OperationsTestCase<ProblemConcernAct2> validateProblemConcernAct2PriorityPreferenceTestCase = new OperationsTestCase<ProblemConcernAct2>(
-			"validateProblemConcernAct2PriorityPreference",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemConcernAct2PriorityPreference", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -192,8 +192,8 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProblemConcernActEffectiveTimeLow() {
 		OperationsTestCase<ProblemConcernAct2> validateProblemConcernActEffectiveTimeLowTestCase = new OperationsTestCase<ProblemConcernAct2>(
-			"validateProblemConcernActEffectiveTimeLow",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemConcernActEffectiveTimeLow", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -229,8 +229,8 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProblemConcernActEffectiveTimeHigh() {
 		OperationsTestCase<ProblemConcernAct2> validateProblemConcernActEffectiveTimeHighTestCase = new OperationsTestCase<ProblemConcernAct2>(
-			"validateProblemConcernActEffectiveTimeHigh",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemConcernActEffectiveTimeHigh", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -456,8 +456,8 @@ public class ProblemConcernAct2Test extends CDAValidationTest {
 	@Test
 	public void testValidateProblemConcernActProblemObservation() {
 		OperationsTestCase<ProblemConcernAct2> validateProblemConcernActProblemObservationTestCase = new OperationsTestCase<ProblemConcernAct2>(
-			"validateProblemConcernActProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemConcernActProblemObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

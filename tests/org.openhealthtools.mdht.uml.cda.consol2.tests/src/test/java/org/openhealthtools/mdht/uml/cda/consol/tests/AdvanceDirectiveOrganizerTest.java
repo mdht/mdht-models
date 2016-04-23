@@ -16,15 +16,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveOrganizerOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
 
 /**
  * <!-- begin-user-doc -->
@@ -60,8 +60,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveOrganizerTemplateId() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerTemplateIdTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
-			"validateAdvanceDirectiveOrganizerTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveOrganizerTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -94,8 +94,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveOrganizerClassCode() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerClassCodeTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
-			"validateAdvanceDirectiveOrganizerClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveOrganizerClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -128,8 +128,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveOrganizerMoodCode() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerMoodCodeTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
-			"validateAdvanceDirectiveOrganizerMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveOrganizerMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -268,8 +268,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveOrganizerStatusCodeP() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerStatusCodePTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
-			"validateAdvanceDirectiveOrganizerStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveOrganizerStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -302,8 +302,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	@Test
 	public void testValidateAdvanceDirectiveOrganizerStatusCode() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerStatusCodeTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
-			"validateAdvanceDirectiveOrganizerStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAdvanceDirectiveOrganizerStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -347,7 +347,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	public void testValidateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2TestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
 			"validateAdvanceDirectiveOrganizerAdvanceDirectiveObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -383,7 +384,8 @@ public class AdvanceDirectiveOrganizerTest extends CDAValidationTest {
 	public void testValidateAdvanceDirectiveOrganizerAuthorParticipation() {
 		OperationsTestCase<AdvanceDirectiveOrganizer> validateAdvanceDirectiveOrganizerAuthorParticipationTestCase = new OperationsTestCase<AdvanceDirectiveOrganizer>(
 			"validateAdvanceDirectiveOrganizerAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

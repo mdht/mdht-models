@@ -8,7 +8,7 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,7 +20,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId HospitalAdmissionMedicationsSectionEntriesOptionalCode HospitalAdmissionMedicationsSectionEntriesOptionalCodeP' templateId.root='2.16.840.1.113883.10.20.22.2.44' templateId.extension='2015-08-01' code.code='42346-7' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Medications on Admission' constraints.validation.dependOn.HospitalAdmissionMedicationsSectionEntriesOptionalCode='HospitalAdmissionMedicationsSectionEntriesOptionalCodeP' constraints.validation.warning='HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication'"
  * @generated
  */
-public interface AdmissionMedicationsSectionEntriesOptional2 extends HospitalAdmissionMedicationsSectionEntriesOptional {
+public interface AdmissionMedicationsSectionEntriesOptional2
+		extends HospitalAdmissionMedicationsSectionEntriesOptional {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

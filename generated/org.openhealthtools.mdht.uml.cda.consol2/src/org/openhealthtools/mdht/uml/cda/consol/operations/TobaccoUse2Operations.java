@@ -12,22 +12,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -100,16 +94,19 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TOBACCO_USE2);
 			try {
-				VALIDATE_TOBACCO_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOBACCO_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOBACCO_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_TOBACCO_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TOBACCO_USE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tobaccoUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.TOBACCO_USE2__TOBACCO_USE2_ID,
-					ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUse2Id"), new Object[] { tobaccoUse2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.TOBACCO_USE2__TOBACCO_USE2_ID,
+						ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUse2Id"), new Object[] { tobaccoUse2 }));
 			}
 
 			return false;
@@ -135,7 +132,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TOBACCO_USE2);
 			try {
-				VALIDATE_TOBACCO_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOBACCO_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOBACCO_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_TOBACCO_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -143,11 +141,12 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_TOBACCO_USE2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			tobaccoUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TOBACCO_USE2__TOBACCO_USE2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUse2AuthorParticipation"),
-					new Object[] { tobaccoUse2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.TOBACCO_USE2__TOBACCO_USE2_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUse2AuthorParticipation"),
+						new Object[] { tobaccoUse2 }));
 			}
 
 			return false;
@@ -173,23 +172,27 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TOBACCO_USE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TOBACCO_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_TOBACCO_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_TOBACCO_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOBACCO_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_TOBACCO_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(tobaccoUse2);
+		Object oclResult = VALIDATE_TOBACCO_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			tobaccoUse2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TOBACCO_USE2__TOBACCO_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC,
-						ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUse2CDCodeTermAssertionOrLoinc"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.TOBACCO_USE2__TOBACCO_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC,
+							ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUse2CDCodeTermAssertionOrLoinc"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -216,7 +219,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TOBACCO_USE2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_TOBACCO_USE2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_TOBACCO_USE2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_TOBACCO_USE2_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
@@ -228,10 +232,12 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.TOBACCO_USE2__TOBACCO_USE2_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUse2IVLTSHigh"), new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.TOBACCO_USE2__TOBACCO_USE2_IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUse2IVLTSHigh"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -258,17 +264,21 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TOBACCO_USE2);
 			try {
-				VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tobaccoUse2)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_TOBACCO_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			tobaccoUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TOBACCO_USE2__TOBACCO_USE_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUseTemplateId"), new Object[] { tobaccoUse2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.TOBACCO_USE2__TOBACCO_USE_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUseTemplateId"),
+						new Object[] { tobaccoUse2 }));
 			}
 
 			return false;
@@ -294,7 +304,8 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TOBACCO_USE2);
 			try {
-				VALIDATE_TOBACCO_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOBACCO_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOBACCO_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_TOBACCO_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -302,10 +313,12 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_TOBACCO_USE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			tobaccoUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TOBACCO_USE2__TOBACCO_USE_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUseEffectiveTime"), new Object[] { tobaccoUse2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.TOBACCO_USE2__TOBACCO_USE_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUseEffectiveTime"),
+						new Object[] { tobaccoUse2 }));
 			}
 
 			return false;
@@ -436,23 +449,26 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TOBACCO_USE2);
 			try {
-				VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TOBACCO_USE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tobaccoUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TOBACCO_USE2__TOBACCO_USE_CODE_P,
-					ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUseCodeP"), new Object[] { tobaccoUse2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.TOBACCO_USE2__TOBACCO_USE_CODE_P,
+						ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUseCodeP"), new Object[] { tobaccoUse2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.TobaccoUseCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.TobaccoUseCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -474,9 +490,9 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '11367-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '11367-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTobaccoUseCode(TobaccoUse2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Code</em>}' invariant operation.
@@ -536,17 +552,19 @@ public class TobaccoUse2Operations extends TobaccoUseOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TOBACCO_USE2);
 			try {
-				VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tobaccoUse2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.TOBACCO_USE2__TOBACCO_USE_CODE,
-					ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUseCode"), new Object[] { tobaccoUse2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.TOBACCO_USE2__TOBACCO_USE_CODE,
+						ConsolPlugin.INSTANCE.getString("TobaccoUse2TobaccoUseCode"), new Object[] { tobaccoUse2 }));
 			}
 
 			return false;

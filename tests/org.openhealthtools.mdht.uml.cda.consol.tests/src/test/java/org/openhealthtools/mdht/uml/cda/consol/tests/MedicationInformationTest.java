@@ -14,17 +14,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Material;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.TEL;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Material;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationInformation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationInformationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.TEL;
 
 /**
  * <!-- begin-user-doc -->
@@ -162,7 +162,8 @@ public class MedicationInformationTest extends CDAValidationTest {
 	public void testValidateMedicationInformationManufacturedMaterial() {
 		OperationsTestCase<MedicationInformation> validateMedicationInformationManufacturedMaterialTestCase = new OperationsTestCase<MedicationInformation>(
 			"validateMedicationInformationManufacturedMaterial",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -195,7 +196,8 @@ public class MedicationInformationTest extends CDAValidationTest {
 	public void testValidateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText() {
 		OperationsTestCase<MedicationInformation> validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalTextTestCase = new OperationsTestCase<MedicationInformation>(
 			"validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -242,7 +244,8 @@ public class MedicationInformationTest extends CDAValidationTest {
 	public void testValidateMedicationInformationMedicationInformationManufacturedMaterialReference() {
 		OperationsTestCase<MedicationInformation> validateMedicationInformationMedicationInformationManufacturedMaterialReferenceTestCase = new OperationsTestCase<MedicationInformation>(
 			"validateMedicationInformationMedicationInformationManufacturedMaterialReference",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -290,7 +293,8 @@ public class MedicationInformationTest extends CDAValidationTest {
 	public void testValidateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue() {
 		OperationsTestCase<MedicationInformation> validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValueTestCase = new OperationsTestCase<MedicationInformation>(
 			"validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -340,7 +344,8 @@ public class MedicationInformationTest extends CDAValidationTest {
 	public void testValidateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation() {
 		OperationsTestCase<MedicationInformation> validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslationTestCase = new OperationsTestCase<MedicationInformation>(
 			"validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -384,7 +389,8 @@ public class MedicationInformationTest extends CDAValidationTest {
 	public void testValidateMedicationInformationMedicationInformationManufacturedMaterialCode() {
 		OperationsTestCase<MedicationInformation> validateMedicationInformationMedicationInformationManufacturedMaterialCodeTestCase = new OperationsTestCase<MedicationInformation>(
 			"validateMedicationInformationMedicationInformationManufacturedMaterialCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -427,7 +433,8 @@ public class MedicationInformationTest extends CDAValidationTest {
 	public void testValidateMedicationInformationManufacturerOrganization() {
 		OperationsTestCase<MedicationInformation> validateMedicationInformationManufacturerOrganizationTestCase = new OperationsTestCase<MedicationInformation>(
 			"validateMedicationInformationManufacturerOrganization",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

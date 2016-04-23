@@ -16,21 +16,19 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatus;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -116,8 +114,7 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 */
 	public boolean validateProblemObservationAgeObservationInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationAgeObservationInversion(
-			this, diagnostics, context);
+		return ProblemObservationOperations.validateProblemObservationAgeObservationInversion(this, diagnostics, context);
 	}
 
 	/**
@@ -263,8 +260,7 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 */
 	public boolean validateProblemObservationHealthStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationHealthStatusObservation(
-			this, diagnostics, context);
+		return ProblemObservationOperations.validateProblemObservationHealthStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -309,16 +305,16 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * @generated
 	 */
 	public ProblemObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProblemObservationImpl

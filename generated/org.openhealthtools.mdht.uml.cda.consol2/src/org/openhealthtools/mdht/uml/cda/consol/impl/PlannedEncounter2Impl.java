@@ -7,31 +7,24 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedEncounter2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Planned Encounter2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -142,7 +135,8 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedEncounter2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedEncounter2PriorityPreference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2PriorityPreference(this, diagnostics, context);
 	}
 
@@ -161,7 +155,8 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlannedEncounter2AuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlannedEncounter2AuthorParticipation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlannedEncounter2AuthorParticipation(this, diagnostics, context);
 	}
 
@@ -222,7 +217,8 @@ public class PlannedEncounter2Impl extends PlanOfCareActivityEncounterImpl imple
 	 * @generated
 	 */
 	@Override
-	public boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PlannedEncounter2Operations.validatePlanOfCareActivityEncounterMoodCode(this, diagnostics, context);
 	}
 

@@ -16,15 +16,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SelfCareActivitiesOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -310,8 +310,8 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 	@Test
 	public void testValidateSelfCareActivitiesEffectiveTime() {
 		OperationsTestCase<SelfCareActivities> validateSelfCareActivitiesEffectiveTimeTestCase = new OperationsTestCase<SelfCareActivities>(
-			"validateSelfCareActivitiesEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_SELF_CARE_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSelfCareActivitiesEffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_SELF_CARE_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -418,8 +418,8 @@ public class SelfCareActivitiesTest extends CDAValidationTest {
 	@Test
 	public void testValidateSelfCareActivitiesAuthorParticipation() {
 		OperationsTestCase<SelfCareActivities> validateSelfCareActivitiesAuthorParticipationTestCase = new OperationsTestCase<SelfCareActivities>(
-			"validateSelfCareActivitiesAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSelfCareActivitiesAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

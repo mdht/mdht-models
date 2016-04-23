@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ClinicalDocumentImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraintsOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>General Header Constraints</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -57,8 +55,10 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTypeIdRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsTypeIdRoot(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsTypeIdRoot(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsTypeIdRoot(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +103,10 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -199,7 +201,8 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsLanguageCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLanguageCode(
 			this, diagnostics, context);
 	}
@@ -253,7 +256,8 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsDataEnterer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsDataEnterer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDataEnterer(
 			this, diagnostics, context);
 	}
@@ -310,7 +314,8 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsRecordTarget(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTarget(
 			this, diagnostics, context);
 	}
@@ -321,7 +326,8 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsComponentOf(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsComponentOf(
 			this, diagnostics, context);
 	}
@@ -1127,8 +1133,8 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
 			this, diagnostics, context);
 	}
@@ -1641,8 +1647,10 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsAuthorTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorTime(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsAuthorTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -3059,8 +3067,8 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime(
 			this, diagnostics, context);
 	}

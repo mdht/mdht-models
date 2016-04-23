@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -79,7 +75,6 @@ public interface MedicationDispense2 extends MedicationDispense {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationDispense2 init();
 
 	/**
@@ -87,6 +82,5 @@ public interface MedicationDispense2 extends MedicationDispense {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public MedicationDispense2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationDispense2

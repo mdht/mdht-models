@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalAdmissionDiagnosisSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,7 +55,8 @@ public class HospitalAdmissionDiagnosisSectionTest extends CDAValidationTest {
 	public void testValidateHospitalAdmissionDiagnosisSectionTemplateId() {
 		OperationsTestCase<HospitalAdmissionDiagnosisSection> validateHospitalAdmissionDiagnosisSectionTemplateIdTestCase = new OperationsTestCase<HospitalAdmissionDiagnosisSection>(
 			"validateHospitalAdmissionDiagnosisSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -88,8 +89,8 @@ public class HospitalAdmissionDiagnosisSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalAdmissionDiagnosisSectionCode() {
 		OperationsTestCase<HospitalAdmissionDiagnosisSection> validateHospitalAdmissionDiagnosisSectionCodeTestCase = new OperationsTestCase<HospitalAdmissionDiagnosisSection>(
-			"validateHospitalAdmissionDiagnosisSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalAdmissionDiagnosisSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -123,7 +124,8 @@ public class HospitalAdmissionDiagnosisSectionTest extends CDAValidationTest {
 	public void testValidateHospitalAdmissionDiagnosisSectionCodeP() {
 		OperationsTestCase<HospitalAdmissionDiagnosisSection> validateHospitalAdmissionDiagnosisSectionCodePTestCase = new OperationsTestCase<HospitalAdmissionDiagnosisSection>(
 			"validateHospitalAdmissionDiagnosisSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -156,8 +158,8 @@ public class HospitalAdmissionDiagnosisSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalAdmissionDiagnosisSectionTitle() {
 		OperationsTestCase<HospitalAdmissionDiagnosisSection> validateHospitalAdmissionDiagnosisSectionTitleTestCase = new OperationsTestCase<HospitalAdmissionDiagnosisSection>(
-			"validateHospitalAdmissionDiagnosisSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalAdmissionDiagnosisSectionTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -193,8 +195,8 @@ public class HospitalAdmissionDiagnosisSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateHospitalAdmissionDiagnosisSectionText() {
 		OperationsTestCase<HospitalAdmissionDiagnosisSection> validateHospitalAdmissionDiagnosisSectionTextTestCase = new OperationsTestCase<HospitalAdmissionDiagnosisSection>(
-			"validateHospitalAdmissionDiagnosisSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateHospitalAdmissionDiagnosisSectionText", operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -231,7 +233,8 @@ public class HospitalAdmissionDiagnosisSectionTest extends CDAValidationTest {
 	public void testValidateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis() {
 		OperationsTestCase<HospitalAdmissionDiagnosisSection> validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosisTestCase = new OperationsTestCase<HospitalAdmissionDiagnosisSection>(
 			"validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis",
-			operationsForOCL.getOCLValue("VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

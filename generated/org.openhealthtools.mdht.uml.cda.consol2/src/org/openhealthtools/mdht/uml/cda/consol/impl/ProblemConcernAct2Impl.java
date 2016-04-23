@@ -7,17 +7,13 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2;
@@ -28,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemConcernAct2Oper
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Concern Act2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -79,7 +73,8 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernAct2PriorityPreference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemConcernAct2PriorityPreference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemConcernAct2Operations.validateProblemConcernAct2PriorityPreference(this, diagnostics, context);
 	}
 
@@ -118,7 +113,8 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemConcernActEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemConcernActEffectiveTimeHigh(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemConcernAct2Operations.validateProblemConcernActEffectiveTimeHigh(this, diagnostics, context);
 	}
 
@@ -178,7 +174,8 @@ public class ProblemConcernAct2Impl extends ProblemConcernActImpl implements Pro
 	 * @generated
 	 */
 	@Override
-	public boolean validateProblemConcernActProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemConcernActProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemConcernAct2Operations.validateProblemConcernActProblemObservation(this, diagnostics, context);
 	}
 

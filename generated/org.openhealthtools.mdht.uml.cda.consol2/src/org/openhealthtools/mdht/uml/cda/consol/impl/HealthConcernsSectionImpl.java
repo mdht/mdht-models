@@ -7,33 +7,25 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection;
-
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HealthConcernsSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Health Concerns Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -124,7 +116,8 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	@Override
 	public boolean validateHealthConcernsSectionHealthConcernAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthConcernsSectionOperations.validateHealthConcernsSectionHealthConcernAct(this, diagnostics, context);
+		return HealthConcernsSectionOperations.validateHealthConcernsSectionHealthConcernAct(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -143,7 +136,8 @@ public class HealthConcernsSectionImpl extends SectionImpl implements HealthConc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHealthConcernsSectionRiskConcernAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHealthConcernsSectionRiskConcernAct(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HealthConcernsSectionOperations.validateHealthConcernsSectionRiskConcernAct(this, diagnostics, context);
 	}
 

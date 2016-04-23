@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationRefusalReason;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationRefusalReasonOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunization Refusal Reason</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -57,7 +55,8 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * @generated
 	 */
 	@Override
-	public boolean validateImmunizationRefusalReasonTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunizationRefusalReasonTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonTemplateId(
 			this, diagnostics, context);
 	}
@@ -68,7 +67,8 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * @generated
 	 */
 	@Override
-	public boolean validateImmunizationRefusalReasonClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunizationRefusalReasonClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonClassCode(
 			this, diagnostics, context);
 	}
@@ -100,7 +100,8 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 */
 	@Override
 	public boolean validateImmunizationRefusalReasonMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonMoodCode(this, diagnostics, context);
+		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -109,7 +110,8 @@ public class ImmunizationRefusalReasonImpl extends ObservationImpl implements Im
 	 * @generated
 	 */
 	@Override
-	public boolean validateImmunizationRefusalReasonStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunizationRefusalReasonStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ImmunizationRefusalReasonOperations.validateImmunizationRefusalReasonStatusCode(
 			this, diagnostics, context);
 	}

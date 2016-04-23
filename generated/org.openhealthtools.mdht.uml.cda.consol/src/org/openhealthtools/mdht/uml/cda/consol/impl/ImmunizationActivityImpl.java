@@ -16,7 +16,8 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DrugVehicle;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
@@ -27,14 +28,11 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ImmunizationActivityOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunization Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -102,8 +100,7 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 */
 	public boolean validateImmunizationActivityInstructionInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityInstructionInversion(
-			this, diagnostics, context);
+		return ImmunizationActivityOperations.validateImmunizationActivityInstructionInversion(this, diagnostics, context);
 	}
 
 	/**
@@ -113,8 +110,7 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 */
 	public boolean validateImmunizationActivityDrugVehicleTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityDrugVehicleTypeCode(
-			this, diagnostics, context);
+		return ImmunizationActivityOperations.validateImmunizationActivityDrugVehicleTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -124,8 +120,7 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 */
 	public boolean validateImmunizationActivityPreconditionTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityPreconditionTypeCode(
-			this, diagnostics, context);
+		return ImmunizationActivityOperations.validateImmunizationActivityPreconditionTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -135,8 +130,7 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 */
 	public boolean validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(
-			this, diagnostics, context);
+		return ImmunizationActivityOperations.validateImmunizationActivityPreconditionPreconditionForSubstanceAdministration(this, diagnostics, context);
 	}
 
 	/**
@@ -282,8 +276,7 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 */
 	public boolean validateImmunizationActivityAdministrationUnitCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityAdministrationUnitCode(
-			this, diagnostics, context);
+		return ImmunizationActivityOperations.validateImmunizationActivityAdministrationUnitCode(this, diagnostics, context);
 	}
 
 	/**
@@ -293,8 +286,7 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 */
 	public boolean validateImmunizationActivityAdministrationUnitCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityAdministrationUnitCodeP(
-			this, diagnostics, context);
+		return ImmunizationActivityOperations.validateImmunizationActivityAdministrationUnitCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -341,8 +333,7 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 */
 	public boolean validateImmunizationActivityReactionObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityReactionObservation(
-			this, diagnostics, context);
+		return ImmunizationActivityOperations.validateImmunizationActivityReactionObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -361,8 +352,7 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 */
 	public boolean validateImmunizationActivityImmunizationRefusalReason(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityImmunizationRefusalReason(
-			this, diagnostics, context);
+		return ImmunizationActivityOperations.validateImmunizationActivityImmunizationRefusalReason(this, diagnostics, context);
 	}
 
 	/**
@@ -390,8 +380,7 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 */
 	public boolean validateImmunizationActivityMedicationSupplyOrder(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityMedicationSupplyOrder(
-			this, diagnostics, context);
+		return ImmunizationActivityOperations.validateImmunizationActivityMedicationSupplyOrder(this, diagnostics, context);
 	}
 
 	/**
@@ -401,8 +390,7 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 */
 	public boolean validateImmunizationActivityConsumableImmunizationMedicationInformation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationActivityOperations.validateImmunizationActivityConsumableImmunizationMedicationInformation(
-			this, diagnostics, context);
+		return ImmunizationActivityOperations.validateImmunizationActivityConsumableImmunizationMedicationInformation(this, diagnostics, context);
 	}
 
 	/**
@@ -474,16 +462,16 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 * @generated
 	 */
 	public ImmunizationActivity init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ImmunizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ImmunizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ImmunizationActivityImpl

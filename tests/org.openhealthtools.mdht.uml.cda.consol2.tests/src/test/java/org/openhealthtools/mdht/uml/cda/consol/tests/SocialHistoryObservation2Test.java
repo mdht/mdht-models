@@ -16,15 +16,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistoryObservation2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -61,7 +61,8 @@ public class SocialHistoryObservation2Test extends CDAValidationTest {
 	public void testValidateSocialHistoryObservation2ReferenceAttribute() {
 		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservation2ReferenceAttributeTestCase = new OperationsTestCase<SocialHistoryObservation2>(
 			"validateSocialHistoryObservation2ReferenceAttribute",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION2_REFERENCE_ATTRIBUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION2_REFERENCE_ATTRIBUTE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -95,8 +96,8 @@ public class SocialHistoryObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateSocialHistoryObservationStatusCodeP() {
 		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservationStatusCodePTestCase = new OperationsTestCase<SocialHistoryObservation2>(
-			"validateSocialHistoryObservationStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSocialHistoryObservationStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -129,8 +130,8 @@ public class SocialHistoryObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateSocialHistoryObservation2EffectiveTime() {
 		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservation2EffectiveTimeTestCase = new OperationsTestCase<SocialHistoryObservation2>(
-			"validateSocialHistoryObservation2EffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSocialHistoryObservation2EffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -167,7 +168,8 @@ public class SocialHistoryObservation2Test extends CDAValidationTest {
 	public void testValidateSocialHistoryObservation2AuthorParticipation() {
 		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservation2AuthorParticipationTestCase = new OperationsTestCase<SocialHistoryObservation2>(
 			"validateSocialHistoryObservation2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -199,8 +201,8 @@ public class SocialHistoryObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateSocialHistoryObservation2CDTranslation() {
 		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservation2CDTranslationTestCase = new OperationsTestCase<SocialHistoryObservation2>(
-			"validateSocialHistoryObservation2CDTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSocialHistoryObservation2CDTranslation", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -237,7 +239,8 @@ public class SocialHistoryObservation2Test extends CDAValidationTest {
 	public void testValidateSocialHistoryObservation2CDTranslationP() {
 		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservation2CDTranslationPTestCase = new OperationsTestCase<SocialHistoryObservation2>(
 			"validateSocialHistoryObservation2CDTranslationP",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -272,8 +275,8 @@ public class SocialHistoryObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateSocialHistoryObservationTemplateId() {
 		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservationTemplateIdTestCase = new OperationsTestCase<SocialHistoryObservation2>(
-			"validateSocialHistoryObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSocialHistoryObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -412,8 +415,8 @@ public class SocialHistoryObservation2Test extends CDAValidationTest {
 	@Test
 	public void testValidateSocialHistoryObservationStatusCode() {
 		OperationsTestCase<SocialHistoryObservation2> validateSocialHistoryObservationStatusCodeTestCase = new OperationsTestCase<SocialHistoryObservation2>(
-			"validateSocialHistoryObservationStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSocialHistoryObservationStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

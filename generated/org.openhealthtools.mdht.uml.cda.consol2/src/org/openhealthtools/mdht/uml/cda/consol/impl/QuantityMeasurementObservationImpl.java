@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.QuantityMeasurementObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.QuantityMeasurementObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Quantity Measurement Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -119,7 +117,8 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateQuantityMeasurementObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateQuantityMeasurementObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationCode(
 			this, diagnostics, context);
 	}
@@ -142,7 +141,8 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateQuantityMeasurementObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateQuantityMeasurementObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationValue(
 			this, diagnostics, context);
 	}

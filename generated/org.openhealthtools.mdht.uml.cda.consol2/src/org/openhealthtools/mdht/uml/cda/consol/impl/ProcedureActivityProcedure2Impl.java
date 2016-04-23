@@ -7,23 +7,18 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
-
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityProcedure2Operations;
 
@@ -31,13 +26,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureActivityProce
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Activity Procedure2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureImpl implements
-		ProcedureActivityProcedure2 {
+public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureImpl
+		implements ProcedureActivityProcedure2 {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -183,7 +176,8 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureTemplateId(
 			this, diagnostics, context);
 	}
@@ -218,7 +212,8 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureMoodCode(
 			this, diagnostics, context);
 	}
@@ -229,7 +224,8 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureStatusCode(
 			this, diagnostics, context);
 	}
@@ -240,7 +236,8 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureIndication(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureIndication(
 			this, diagnostics, context);
 	}
@@ -275,7 +272,8 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureSpecimen(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedureSpecimen(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedureSpecimen(
 			this, diagnostics, context);
 	}
@@ -286,7 +284,8 @@ public class ProcedureActivityProcedure2Impl extends ProcedureActivityProcedureI
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedurePerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProcedureActivityProcedurePerformer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProcedureActivityProcedure2Operations.validateProcedureActivityProcedurePerformer(
 			this, diagnostics, context);
 	}

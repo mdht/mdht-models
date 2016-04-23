@@ -15,13 +15,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MentalStatusOrganizer2Operations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,7 +55,8 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 	public void testValidateMentalStatusOrganizer2HasCodeOrEffectiveTime() {
 		OperationsTestCase<MentalStatusOrganizer2> validateMentalStatusOrganizer2HasCodeOrEffectiveTimeTestCase = new OperationsTestCase<MentalStatusOrganizer2>(
 			"validateMentalStatusOrganizer2HasCodeOrEffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_ORGANIZER2_HAS_CODE_OR_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_ORGANIZER2_HAS_CODE_OR_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -91,8 +92,8 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 	@Test
 	public void testValidateMentalStatusOrganizer2EffectiveTime() {
 		OperationsTestCase<MentalStatusOrganizer2> validateMentalStatusOrganizer2EffectiveTimeTestCase = new OperationsTestCase<MentalStatusOrganizer2>(
-			"validateMentalStatusOrganizer2EffectiveTime",
-			operationsForOCL.getOCLValue("VALIDATE_MENTAL_STATUS_ORGANIZER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMentalStatusOrganizer2EffectiveTime", operationsForOCL.getOCLValue(
+				"VALIDATE_MENTAL_STATUS_ORGANIZER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -175,7 +176,8 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 	public void testValidateCognitiveStatusResultOrganizerCodeCodeSystem() {
 		OperationsTestCase<MentalStatusOrganizer2> validateCognitiveStatusResultOrganizerCodeCodeSystemTestCase = new OperationsTestCase<MentalStatusOrganizer2>(
 			"validateCognitiveStatusResultOrganizerCodeCodeSystem",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -277,7 +279,8 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 	public void testValidateCognitiveStatusResultOrganizerCognitiveStatusResultObservation() {
 		OperationsTestCase<MentalStatusOrganizer2> validateCognitiveStatusResultOrganizerCognitiveStatusResultObservationTestCase = new OperationsTestCase<MentalStatusOrganizer2>(
 			"validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

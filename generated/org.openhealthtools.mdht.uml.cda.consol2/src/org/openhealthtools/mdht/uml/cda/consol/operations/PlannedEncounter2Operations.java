@@ -108,21 +108,23 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLANNED_ENCOUNTER2_PARTICIPANT_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_ENCOUNTER2_PARTICIPANT_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_ENCOUNTER2_PARTICIPANT_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_ENCOUNTER2_PARTICIPANT_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_PLANNED_ENCOUNTER2_PARTICIPANT_SERVICE_DELIVERY_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedEncounter2)) {
+				plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_PARTICIPANT_SERVICE_DELIVERY_LOCATION_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2ParticipantServiceDeliveryLocationTypeCode"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_PARTICIPANT_SERVICE_DELIVERY_LOCATION_TYPE_CODE,
+						ConsolPlugin.INSTANCE.getString(
+							"PlannedEncounter2PlannedEncounter2ParticipantServiceDeliveryLocationTypeCode"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			return false;
@@ -156,7 +158,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLANNED_ENCOUNTER2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_ENCOUNTER2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_ENCOUNTER2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_ENCOUNTER2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -164,11 +167,12 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_ENCOUNTER2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2Code"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2Code"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			return false;
@@ -205,9 +209,9 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_ENCOUNTER2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())";
+	protected static final String VALIDATE_PLANNED_ENCOUNTER2_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedEncounter2Code(PlannedEncounter2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Encounter2 Code</em>}' invariant operation.
@@ -238,7 +242,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLANNED_ENCOUNTER2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_ENCOUNTER2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_ENCOUNTER2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_ENCOUNTER2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -246,17 +251,19 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_ENCOUNTER2_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2CodeP"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2CodeP"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2CodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2CodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -278,8 +285,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
+	protected static final String VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'active')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedEncounter2StatusCode(PlannedEncounter2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Encounter2 Status Code</em>}' invariant operation.
@@ -310,7 +317,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -318,11 +326,12 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2StatusCode"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2StatusCode"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			return false;
@@ -369,7 +378,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -377,11 +387,12 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_ENCOUNTER2_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2StatusCodeP"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2StatusCodeP"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			return false;
@@ -428,7 +439,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLANNED_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -436,11 +448,12 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_ENCOUNTER2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2EffectiveTime"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2EffectiveTime"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			return false;
@@ -487,7 +500,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLANNED_ENCOUNTER2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_ENCOUNTER2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_ENCOUNTER2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_ENCOUNTER2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -495,11 +509,12 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_ENCOUNTER2_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_PERFORMER,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2Performer"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_PERFORMER,
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2Performer"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			return false;
@@ -546,19 +561,22 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLANNED_ENCOUNTER2_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_ENCOUNTER2_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_ENCOUNTER2_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_ENCOUNTER2_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_ENCOUNTER2_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedEncounter2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_ENCOUNTER2_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_SERVICE_DELIVERY_LOCATION,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2ServiceDeliveryLocation"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_SERVICE_DELIVERY_LOCATION,
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2ServiceDeliveryLocation"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			return false;
@@ -605,19 +623,21 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLANNED_ENCOUNTER2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_ENCOUNTER2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_ENCOUNTER2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_ENCOUNTER2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_ENCOUNTER2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedEncounter2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_ENCOUNTER2_PRIORITY_PREFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_PRIORITY_PREFERENCE,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2PriorityPreference"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_PRIORITY_PREFERENCE,
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2PriorityPreference"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			return false;
@@ -664,7 +684,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLANNED_ENCOUNTER2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_ENCOUNTER2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_ENCOUNTER2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_ENCOUNTER2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -672,11 +693,12 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_ENCOUNTER2_INDICATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_INDICATION2,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2Indication2"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_INDICATION2,
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2Indication2"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			return false;
@@ -723,19 +745,22 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLANNED_ENCOUNTER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_ENCOUNTER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_ENCOUNTER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLANNED_ENCOUNTER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_ENCOUNTER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedEncounter2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLANNED_ENCOUNTER2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2AuthorParticipation"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2AuthorParticipation"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			return false;
@@ -782,23 +807,28 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_PLANNED_ENCOUNTER2_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_PLANNED_ENCOUNTER2_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_PLANNED_ENCOUNTER2_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_ENCOUNTER2_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_PLANNED_ENCOUNTER2_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(plannedEncounter2);
+		Object oclResult = VALIDATE_PLANNED_ENCOUNTER2_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			plannedEncounter2);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_PERFORMER_ASSIGNED_ENTITY,
-						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2PerformerAssignedEntity"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_PERFORMER_ASSIGNED_ENTITY,
+							ConsolPlugin.INSTANCE.getString(
+								"PlannedEncounter2PlannedEncounter2PerformerAssignedEntity"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -847,7 +877,8 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_SERVICE_DELIVERY_LOCATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ServiceDeliveryLocation> result = (Collection<ServiceDeliveryLocation>) query.evaluate(plannedEncounter2);
+		Collection<ServiceDeliveryLocation> result = (Collection<ServiceDeliveryLocation>) query.evaluate(
+			plannedEncounter2);
 		return new BasicEList.UnmodifiableEList<ServiceDeliveryLocation>(result.size(), result.toArray());
 	}
 
@@ -976,19 +1007,22 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedEncounter2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlanOfCareActivityEncounterTemplateId"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlanOfCareActivityEncounterTemplateId"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			return false;
@@ -1004,9 +1038,9 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentEncounterMood) and "
-			+ "let value : vocab::x_DocumentEncounterMood = self.moodCode.oclAsType(vocab::x_DocumentEncounterMood) in "
-			+ "value = vocab::x_DocumentEncounterMood::INT or value = vocab::x_DocumentEncounterMood::ARQ or value = vocab::x_DocumentEncounterMood::PRMS or value = vocab::x_DocumentEncounterMood::PRP or value = vocab::x_DocumentEncounterMood::RQO";
+	protected static final String VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.moodCode.oclIsUndefined() and self.moodCode.oclIsKindOf(vocab::x_DocumentEncounterMood) and " +
+			"let value : vocab::x_DocumentEncounterMood = self.moodCode.oclAsType(vocab::x_DocumentEncounterMood) in " +
+			"value = vocab::x_DocumentEncounterMood::INT or value = vocab::x_DocumentEncounterMood::ARQ or value = vocab::x_DocumentEncounterMood::PRMS or value = vocab::x_DocumentEncounterMood::PRP or value = vocab::x_DocumentEncounterMood::RQO";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlanOfCareActivityEncounterMoodCode(PlannedEncounter2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Activity Encounter Mood Code</em>}' invariant operation.
@@ -1037,19 +1071,22 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_ENCOUNTER2);
 			try {
-				VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedEncounter2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				plannedEncounter2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PLANNED_ENCOUNTER2__PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlanOfCareActivityEncounterMoodCode"),
-					new Object[] { plannedEncounter2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.PLANNED_ENCOUNTER2__PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlanOfCareActivityEncounterMoodCode"),
+						new Object[] { plannedEncounter2 }));
 			}
 
 			return false;

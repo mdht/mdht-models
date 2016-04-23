@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PostoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PostoperativeDiagnosisSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +53,8 @@ public class PostoperativeDiagnosisSectionTest extends CDAValidationTest {
 	public void testValidatePostoperativeDiagnosisSectionTemplateId() {
 		OperationsTestCase<PostoperativeDiagnosisSection> validatePostoperativeDiagnosisSectionTemplateIdTestCase = new OperationsTestCase<PostoperativeDiagnosisSection>(
 			"validatePostoperativeDiagnosisSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -86,8 +87,8 @@ public class PostoperativeDiagnosisSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePostoperativeDiagnosisSectionCode() {
 		OperationsTestCase<PostoperativeDiagnosisSection> validatePostoperativeDiagnosisSectionCodeTestCase = new OperationsTestCase<PostoperativeDiagnosisSection>(
-			"validatePostoperativeDiagnosisSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePostoperativeDiagnosisSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -120,8 +121,8 @@ public class PostoperativeDiagnosisSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePostoperativeDiagnosisSectionCodeP() {
 		OperationsTestCase<PostoperativeDiagnosisSection> validatePostoperativeDiagnosisSectionCodePTestCase = new OperationsTestCase<PostoperativeDiagnosisSection>(
-			"validatePostoperativeDiagnosisSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePostoperativeDiagnosisSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -154,8 +155,8 @@ public class PostoperativeDiagnosisSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePostoperativeDiagnosisSectionText() {
 		OperationsTestCase<PostoperativeDiagnosisSection> validatePostoperativeDiagnosisSectionTextTestCase = new OperationsTestCase<PostoperativeDiagnosisSection>(
-			"validatePostoperativeDiagnosisSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePostoperativeDiagnosisSectionText", operationsForOCL.getOCLValue(
+				"VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -191,8 +192,8 @@ public class PostoperativeDiagnosisSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidatePostoperativeDiagnosisSectionTitle() {
 		OperationsTestCase<PostoperativeDiagnosisSection> validatePostoperativeDiagnosisSectionTitleTestCase = new OperationsTestCase<PostoperativeDiagnosisSection>(
-			"validatePostoperativeDiagnosisSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePostoperativeDiagnosisSectionTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

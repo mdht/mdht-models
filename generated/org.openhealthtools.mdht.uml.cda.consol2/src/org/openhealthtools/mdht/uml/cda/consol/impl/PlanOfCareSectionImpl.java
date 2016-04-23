@@ -17,7 +17,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct;
@@ -28,14 +29,11 @@ import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySubstanceAdmini
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupply;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlanOfCareSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Plan Of Care Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -176,7 +174,8 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	@Override
 	public boolean validatePlanOfCareSectionPlanOfCareActivitySupply(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySupply(this, diagnostics, context);
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySupply(
+			this, diagnostics, context);
 	}
 
 	/**

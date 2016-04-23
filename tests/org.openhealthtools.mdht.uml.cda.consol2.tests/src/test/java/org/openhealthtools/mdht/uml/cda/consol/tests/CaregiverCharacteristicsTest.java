@@ -10,19 +10,19 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Participant2;
+import org.eclipse.mdht.uml.cda.ParticipantRole;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
+import org.eclipse.mdht.uml.hl7.vocab.RoleClassRoot;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Participant2;
-import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CaregiverCharacteristicsOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.ParticipationType;
-import org.openhealthtools.mdht.uml.hl7.vocab.RoleClassRoot;
 
 /**
  * <!-- begin-user-doc -->
@@ -64,7 +64,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	public void testValidateCaregiverCharacteristicsValueCodeSystem() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsValueCodeSystemTestCase = new OperationsTestCase<CaregiverCharacteristics>(
 			"validateCaregiverCharacteristicsValueCodeSystem",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -99,8 +100,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCaregiverCharacteristicsTemplateId() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsTemplateIdTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -133,8 +134,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCaregiverCharacteristicsClassCode() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsClassCodeTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -167,8 +168,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCaregiverCharacteristicsMoodCode() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsMoodCodeTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -269,8 +270,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCaregiverCharacteristicsStatusCode() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsStatusCodeTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsStatusCode",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsStatusCode", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -306,8 +307,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCaregiverCharacteristicsStatusCodeP() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsStatusCodePTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsStatusCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsStatusCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -377,8 +378,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCaregiverCharacteristicsParticipant() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsParticipant",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsParticipant", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -413,7 +414,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	public void testValidateCaregiverCharacteristicsParticipantParticipantRoleClassCode() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantParticipantRoleClassCodeTestCase = new OperationsTestCase<CaregiverCharacteristics>(
 			"validateCaregiverCharacteristicsParticipantParticipantRoleClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -477,7 +479,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	public void testValidateCaregiverCharacteristicsParticipantTimeLow() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantTimeLowTestCase = new OperationsTestCase<CaregiverCharacteristics>(
 			"validateCaregiverCharacteristicsParticipantTimeLow",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -517,7 +520,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	public void testValidateCaregiverCharacteristicsParticipantTimeHigh() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantTimeHighTestCase = new OperationsTestCase<CaregiverCharacteristics>(
 			"validateCaregiverCharacteristicsParticipantTimeHigh",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -557,7 +561,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	public void testValidateCaregiverCharacteristicsParticipantTypeCode() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantTypeCodeTestCase = new OperationsTestCase<CaregiverCharacteristics>(
 			"validateCaregiverCharacteristicsParticipantTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -614,8 +619,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	@Test
 	public void testValidateCaregiverCharacteristicsParticipantTime() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantTimeTestCase = new OperationsTestCase<CaregiverCharacteristics>(
-			"validateCaregiverCharacteristicsParticipantTime",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCaregiverCharacteristicsParticipantTime", operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -653,7 +658,8 @@ public class CaregiverCharacteristicsTest extends CDAValidationTest {
 	public void testValidateCaregiverCharacteristicsParticipantParticipantRole() {
 		OperationsTestCase<CaregiverCharacteristics> validateCaregiverCharacteristicsParticipantParticipantRoleTestCase = new OperationsTestCase<CaregiverCharacteristics>(
 			"validateCaregiverCharacteristicsParticipantParticipantRole",
-			operationsForOCL.getOCLValue("VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

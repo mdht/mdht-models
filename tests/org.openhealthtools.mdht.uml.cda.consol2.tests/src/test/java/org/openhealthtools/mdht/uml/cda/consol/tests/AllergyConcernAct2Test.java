@@ -16,17 +16,17 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyConcernAct2Operations;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyProblemActOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -79,8 +79,8 @@ public class AllergyConcernAct2Test extends CDAValidationTest {
 	@Test
 	public void testValidateAllergyConcernAct2AuthorParticipation() {
 		OperationsTestCase<AllergyConcernAct2> validateAllergyConcernAct2AuthorParticipationTestCase = new OperationsTestCase<AllergyConcernAct2>(
-			"validateAllergyConcernAct2AuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyConcernAct2AuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_CONCERN_ACT2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -126,8 +126,8 @@ public class AllergyConcernAct2Test extends CDAValidationTest {
 	@Ignore
 	public void testValidateAllergyProblemActEffectiveTimeLow() {
 		OperationsTestCase<AllergyConcernAct2> validateAllergyProblemActEffectiveTimeLowTestCase = new OperationsTestCase<AllergyConcernAct2>(
-			"validateAllergyProblemActEffectiveTimeLow",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyProblemActEffectiveTimeLow", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -162,8 +162,8 @@ public class AllergyConcernAct2Test extends CDAValidationTest {
 	@Ignore
 	public void testValidateAllergyProblemActEffectiveTimeHigh() {
 		OperationsTestCase<AllergyConcernAct2> validateAllergyProblemActEffectiveTimeHighTestCase = new OperationsTestCase<AllergyConcernAct2>(
-			"validateAllergyProblemActEffectiveTimeHigh",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyProblemActEffectiveTimeHigh", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -270,8 +270,8 @@ public class AllergyConcernAct2Test extends CDAValidationTest {
 	@Test
 	public void testValidateAllergyProblemActAllergyObservation() {
 		OperationsTestCase<AllergyConcernAct2> validateAllergyProblemActAllergyObservationTestCase = new OperationsTestCase<AllergyConcernAct2>(
-			"validateAllergyProblemActAllergyObservation",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAllergyProblemActAllergyObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -308,7 +308,8 @@ public class AllergyConcernAct2Test extends CDAValidationTest {
 	public void testValidateAllergyProblemActCDCodeAndCodeSystemValues() {
 		OperationsTestCase<AllergyConcernAct2> validateAllergyProblemActCDCodeAndCodeSystemValuesTestCase = new OperationsTestCase<AllergyConcernAct2>(
 			"validateAllergyProblemActCDCodeAndCodeSystemValues",
-			operationsForOCL.getOCLValue("VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

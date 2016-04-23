@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -27,13 +27,11 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectivesSecti
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directives Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntriesOptionalImpl implements
-		AdvanceDirectivesSection {
+public class AdvanceDirectivesSectionImpl extends AdvanceDirectivesSectionEntriesOptionalImpl
+		implements AdvanceDirectivesSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

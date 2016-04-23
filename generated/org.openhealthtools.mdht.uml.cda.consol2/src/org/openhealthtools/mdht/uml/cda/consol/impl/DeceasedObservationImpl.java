@@ -12,19 +12,17 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.DeceasedObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Deceased Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -54,7 +52,8 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * @generated
 	 */
 	@Override
-	public boolean validateDeceasedObservationEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDeceasedObservationEffectiveTimeLow(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationEffectiveTimeLow(this, diagnostics, context);
 	}
 

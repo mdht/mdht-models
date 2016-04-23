@@ -7,19 +7,14 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense2;
-
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationDispense2Operations;
 
@@ -27,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationDispense2Ope
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Dispense2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -146,7 +139,8 @@ public class MedicationDispense2Impl extends MedicationDispenseImpl implements M
 	@Override
 	public boolean validateMedicationDispenseMedicationSupplyOrder(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationDispense2Operations.validateMedicationDispenseMedicationSupplyOrder(this, diagnostics, context);
+		return MedicationDispense2Operations.validateMedicationDispenseMedicationSupplyOrder(
+			this, diagnostics, context);
 	}
 
 	/**

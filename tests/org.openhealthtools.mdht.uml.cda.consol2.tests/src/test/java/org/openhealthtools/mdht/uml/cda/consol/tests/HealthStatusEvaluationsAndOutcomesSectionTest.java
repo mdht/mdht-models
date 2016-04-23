@@ -15,15 +15,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HealthStatusEvaluationsAndOutcomesSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -57,7 +57,8 @@ public class HealthStatusEvaluationsAndOutcomesSectionTest extends CDAValidation
 	public void testValidateHealthStatusEvaluationsAndOutcomesSectionTemplateId() {
 		OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection> validateHealthStatusEvaluationsAndOutcomesSectionTemplateIdTestCase = new OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection>(
 			"validateHealthStatusEvaluationsAndOutcomesSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -91,7 +92,8 @@ public class HealthStatusEvaluationsAndOutcomesSectionTest extends CDAValidation
 	public void testValidateHealthStatusEvaluationsAndOutcomesSectionNullFlavor() {
 		OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection> validateHealthStatusEvaluationsAndOutcomesSectionNullFlavorTestCase = new OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection>(
 			"validateHealthStatusEvaluationsAndOutcomesSectionNullFlavor",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -125,7 +127,8 @@ public class HealthStatusEvaluationsAndOutcomesSectionTest extends CDAValidation
 	public void testValidateHealthStatusEvaluationsAndOutcomesSectionCode() {
 		OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection> validateHealthStatusEvaluationsAndOutcomesSectionCodeTestCase = new OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection>(
 			"validateHealthStatusEvaluationsAndOutcomesSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -159,7 +162,8 @@ public class HealthStatusEvaluationsAndOutcomesSectionTest extends CDAValidation
 	public void testValidateHealthStatusEvaluationsAndOutcomesSectionCodeP() {
 		OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection> validateHealthStatusEvaluationsAndOutcomesSectionCodePTestCase = new OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection>(
 			"validateHealthStatusEvaluationsAndOutcomesSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -193,7 +197,8 @@ public class HealthStatusEvaluationsAndOutcomesSectionTest extends CDAValidation
 	public void testValidateHealthStatusEvaluationsAndOutcomesSectionTitle() {
 		OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection> validateHealthStatusEvaluationsAndOutcomesSectionTitleTestCase = new OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection>(
 			"validateHealthStatusEvaluationsAndOutcomesSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -230,7 +235,8 @@ public class HealthStatusEvaluationsAndOutcomesSectionTest extends CDAValidation
 	public void testValidateHealthStatusEvaluationsAndOutcomesSectionText() {
 		OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection> validateHealthStatusEvaluationsAndOutcomesSectionTextTestCase = new OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection>(
 			"validateHealthStatusEvaluationsAndOutcomesSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -267,7 +273,8 @@ public class HealthStatusEvaluationsAndOutcomesSectionTest extends CDAValidation
 	public void testValidateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation() {
 		OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection> validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservationTestCase = new OperationsTestCase<HealthStatusEvaluationsAndOutcomesSection>(
 			"validateHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation",
-			operationsForOCL.getOCLValue("VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

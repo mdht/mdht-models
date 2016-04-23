@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -14,7 +10,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -69,7 +65,6 @@ public interface VitalSignObservation2 extends VitalSignObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public VitalSignObservation2 init();
 
 	/**
@@ -77,6 +72,5 @@ public interface VitalSignObservation2 extends VitalSignObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public VitalSignObservation2 init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VitalSignObservation2

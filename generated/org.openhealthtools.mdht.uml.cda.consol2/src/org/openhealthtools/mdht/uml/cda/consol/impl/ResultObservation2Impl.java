@@ -7,27 +7,20 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ResultObservation2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultObservation2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result Observation2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -65,7 +58,8 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResultObservationInterpretationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultObservationInterpretationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservationInterpretationCodeP(this, diagnostics, context);
 	}
 
@@ -128,7 +122,8 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultObservationAuthorMultiplicity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultObservationAuthorMultiplicity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservationAuthorMultiplicity(this, diagnostics, context);
 	}
 
@@ -168,7 +163,8 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultObservationTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservationTextReferenceValue(this, diagnostics, context);
 	}
 
@@ -239,7 +235,8 @@ public class ResultObservation2Impl extends ResultObservationImpl implements Res
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultObservationInterpretationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResultObservation2Operations.validateResultObservationInterpretationCode(this, diagnostics, context);
 	}
 

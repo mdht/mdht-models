@@ -16,19 +16,19 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CR;
+import org.eclipse.mdht.uml.hl7.datatypes.CV;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.LongitudinalCareWoundObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CR;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CV;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -78,7 +78,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationClassCode() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationClassCodeTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -112,7 +113,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationMoodCode() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationMoodCodeTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -145,8 +147,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateLongitudinalCareWoundObservationCodeP() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationCodePTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
-			"validateLongitudinalCareWoundObservationCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateLongitudinalCareWoundObservationCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -179,8 +181,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateLongitudinalCareWoundObservationCode() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationCodeTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
-			"validateLongitudinalCareWoundObservationCode",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateLongitudinalCareWoundObservationCode", operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -222,7 +224,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationValueP() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationValuePTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationValueP",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -257,8 +260,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateLongitudinalCareWoundObservationValue() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationValueTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
-			"validateLongitudinalCareWoundObservationValue",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateLongitudinalCareWoundObservationValue", operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -300,7 +303,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationTargetSiteCodeP() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationTargetSiteCodePTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationTargetSiteCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -334,7 +338,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationTargetSiteCode() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationTargetSiteCodeTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationTargetSiteCode",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -377,7 +382,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationWoundMeasurementObservation() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationWoundMeasurementObservationTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationWoundMeasurementObservation",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_MEASUREMENT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -413,7 +419,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationWoundCharacteristics() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationWoundCharacteristicsTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationWoundCharacteristics",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -449,7 +456,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationHighestPressureUlcerStage() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationHighestPressureUlcerStageTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationHighestPressureUlcerStage",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_HIGHEST_PRESSURE_ULCER_STAGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -485,7 +493,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationAuthorParticipation() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationAuthorParticipationTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -519,7 +528,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationNumberOfPressureUlcersObservation2() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationNumberOfPressureUlcersObservation2TestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationNumberOfPressureUlcersObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -557,7 +567,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationCDCRCDValueTerminology() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationCDCRCDValueTerminologyTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationCDCRCDValueTerminology",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			// Modified OCL in operations due to inline datatype OCL generation issue
@@ -598,7 +609,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationCDCRCDCode() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationCDCRCDCodeTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationCDCRCDCode",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			// Modified OCL in operations due to inline datatype OCL generation issue
@@ -637,7 +649,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationCDCRName() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationCDCRNameTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationCDCRName",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			// Modified OCL in operations due to inline datatype OCL generation issue
@@ -677,7 +690,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationCDCRNameP() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationCDCRNamePTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationCDCRNameP",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			// Modified OCL in operations due to inline datatype OCL generation issue
@@ -690,7 +704,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(LongitudinalCareWoundObservation target) {
-				target.getTargetSiteCodes().get(0).getQualifiers().get(0).setName(DatatypesFactory.eINSTANCE.createCV());
+				target.getTargetSiteCodes().get(0).getQualifiers().get(0).setName(
+					DatatypesFactory.eINSTANCE.createCV());
 
 			}
 
@@ -714,7 +729,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationCDCRValue() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationCDCRValueTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationCDCRValue",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			// Modified OCL in operations due to inline datatype OCL generation issue
@@ -752,7 +768,8 @@ public class LongitudinalCareWoundObservationTest extends CDAValidationTest {
 	public void testValidateLongitudinalCareWoundObservationCDQualifier() {
 		OperationsTestCase<LongitudinalCareWoundObservation> validateLongitudinalCareWoundObservationCDQualifierTestCase = new OperationsTestCase<LongitudinalCareWoundObservation>(
 			"validateLongitudinalCareWoundObservationCDQualifier",
-			operationsForOCL.getOCLValue("VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CD_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_CD_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			// Modified OCL in operations due to inline datatype OCL generation issue

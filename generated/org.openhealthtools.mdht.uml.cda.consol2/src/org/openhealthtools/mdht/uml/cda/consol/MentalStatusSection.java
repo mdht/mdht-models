@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
@@ -15,9 +11,9 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.Section;
+import org.eclipse.mdht.uml.cda.Section;
 
 /**
  * <!-- begin-user-doc -->
@@ -125,7 +121,8 @@ public interface MentalStatusSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::MentalStatusObservation2))'"
 	 * @generated
 	 */
-	boolean validateMentalStatusSectionMentalStatusObservation2(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMentalStatusSectionMentalStatusObservation2(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
@@ -46,8 +46,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.HistoryAndPhysicalNote
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>History And Physical Note</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -787,7 +785,8 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 

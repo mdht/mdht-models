@@ -10,15 +10,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterDiagnosisOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -147,7 +147,7 @@ public class EncounterDiagnosisTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not 
+	* @generated not
 	*/
 	@Test
 	public void testValidateEncounterDiagnosisCode() {
@@ -220,8 +220,8 @@ public class EncounterDiagnosisTest extends CDAValidationTest {
 	@Test
 	public void testValidateEncounterDiagnosisProblemObservation() {
 		OperationsTestCase<EncounterDiagnosis> validateEncounterDiagnosisProblemObservationTestCase = new OperationsTestCase<EncounterDiagnosis>(
-			"validateEncounterDiagnosisProblemObservation",
-			operationsForOCL.getOCLValue("VALIDATE_ENCOUNTER_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateEncounterDiagnosisProblemObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_ENCOUNTER_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

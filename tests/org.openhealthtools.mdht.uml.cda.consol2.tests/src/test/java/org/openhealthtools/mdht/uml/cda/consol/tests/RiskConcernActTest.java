@@ -16,19 +16,19 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.Reference;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.Reference;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.RiskConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.RiskConcernActOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipExternalReference;
 
 /**
  * <!-- begin-user-doc -->
@@ -243,7 +243,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActId() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActIdTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActId",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(RiskConcernAct target) {
@@ -460,8 +461,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActAuthorParticipation() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActAuthorParticipationTestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActAuthorParticipation",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActAuthorParticipation", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -494,8 +495,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActProblemObservation2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActProblemObservation2TestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActProblemObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActProblemObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -530,8 +531,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActAllergyObservation2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActAllergyObservation2TestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActAllergyObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActAllergyObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -567,7 +568,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActEntryReferenceRelatesTo() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActEntryReferenceRelatesToTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActEntryReferenceRelatesTo",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_RELATES_TO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -603,7 +605,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActEntryReferenceHasComponent() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActEntryReferenceHasComponentTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActEntryReferenceHasComponent",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HAS_COMPONENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -639,7 +642,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActAssessmentScaleObservation() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActAssessmentScaleObservationTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActAssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -675,7 +679,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActMentalStatusObservation2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActMentalStatusObservation2TestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActMentalStatusObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -710,8 +715,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActSelfCareActivities() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActSelfCareActivitiesTestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActSelfCareActivities",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActSelfCareActivities", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_SELF_CARE_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -747,7 +752,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActMentalStatusObservation2B() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActMentalStatusObservation2BTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActMentalStatusObservation2B",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_B__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -783,7 +789,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActSmokingStatusMeaningfulUse2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActSmokingStatusMeaningfulUse2TestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActSmokingStatusMeaningfulUse2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -818,8 +825,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActEncounterDiagnosis2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActEncounterDiagnosis2TestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActEncounterDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActEncounterDiagnosis2", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -854,8 +861,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActFamilyHistoryOrganizer2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActFamilyHistoryOrganizer2TestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActFamilyHistoryOrganizer2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActFamilyHistoryOrganizer2", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -891,7 +898,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActFunctionalStatusObservation2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActFunctionalStatusObservation2TestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActFunctionalStatusObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -927,7 +935,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActHospitalAdmissionDiagnosis2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActHospitalAdmissionDiagnosis2TestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActHospitalAdmissionDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -963,7 +972,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActMentalStatusObservation2C() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActMentalStatusObservation2CTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActMentalStatusObservation2C",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2_C__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -998,8 +1008,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActNutritionAssessment() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActNutritionAssessmentTestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActNutritionAssessment",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActNutritionAssessment", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1034,8 +1044,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActNutritionAssessmentB() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActNutritionAssessmentBTestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActNutritionAssessmentB",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActNutritionAssessmentB", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_NUTRITION_ASSESSMENT_B__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1070,8 +1080,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActPostprocedureDiagnosis2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActPostprocedureDiagnosis2TestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActPostprocedureDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActPostprocedureDiagnosis2", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1106,8 +1116,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActPregnancyObservation() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActPregnancyObservationTestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActPregnancyObservation",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActPregnancyObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1142,8 +1152,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActPreoperativeDiagnosis2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActPreoperativeDiagnosis2TestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActPreoperativeDiagnosis2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActPreoperativeDiagnosis2", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1178,8 +1188,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActReactionObservation2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActReactionObservation2TestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActReactionObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActReactionObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_REACTION_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1214,8 +1224,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActResultObservation2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActResultObservation2TestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActResultObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActResultObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_RESULT_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1287,7 +1297,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActSocialHistoryObservation2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActSocialHistoryObservation2TestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActSocialHistoryObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1323,7 +1334,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActSubstanceOrDeviceAllergyObservation2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActSubstanceOrDeviceAllergyObservation2TestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActSubstanceOrDeviceAllergyObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1394,8 +1406,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActVitalSignObservation2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActVitalSignObservation2TestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActVitalSignObservation2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActVitalSignObservation2", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_VITAL_SIGN_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1467,7 +1479,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActProblemObservation2HasSupport() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActProblemObservation2HasSupportTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActProblemObservation2HasSupport",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_PROBLEM_OBSERVATION2_HAS_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1502,8 +1515,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActCaregiverCharacteristics() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActCaregiverCharacteristicsTestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActCaregiverCharacteristics",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActCaregiverCharacteristics", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1539,7 +1552,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActCulturalAndReligiousObservation() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActCulturalAndReligiousObservationTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActCulturalAndReligiousObservation",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1575,7 +1589,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActCharacteristicsOfHomeEnvironment() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActCharacteristicsOfHomeEnvironmentTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActCharacteristicsOfHomeEnvironment",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1611,7 +1626,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActNutritionalStatusObservation() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActNutritionalStatusObservationTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActNutritionalStatusObservation",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1683,7 +1699,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActPriorityPreferencePatient() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActPriorityPreferencePatientTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActPriorityPreferencePatient",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1719,7 +1736,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActPriorityPreferenceProvider() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActPriorityPreferenceProviderTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActPriorityPreferenceProvider",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_PRIORITY_PREFERENCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1754,8 +1772,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActProblemConcernAct2() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActProblemConcernAct2TestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActProblemConcernAct2",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActProblemConcernAct2", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_PROBLEM_CONCERN_ACT2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1791,7 +1809,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActEntryReferenceHealthConcern() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActEntryReferenceHealthConcernTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActEntryReferenceHealthConcern",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_ENTRY_REFERENCE_HEALTH_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1860,8 +1879,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	@Test
 	public void testValidateRiskConcernActReferenceTypeCode() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActReferenceTypeCodeTestCase = new OperationsTestCase<RiskConcernAct>(
-			"validateRiskConcernActReferenceTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateRiskConcernActReferenceTypeCode", operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -1898,7 +1917,8 @@ public class RiskConcernActTest extends CDAValidationTest {
 	public void testValidateRiskConcernActReferenceExternalDocumentReference() {
 		OperationsTestCase<RiskConcernAct> validateRiskConcernActReferenceExternalDocumentReferenceTestCase = new OperationsTestCase<RiskConcernAct>(
 			"validateRiskConcernActReferenceExternalDocumentReference",
-			operationsForOCL.getOCLValue("VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_RISK_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

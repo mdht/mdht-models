@@ -14,26 +14,20 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.OrganizerOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -113,21 +107,23 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_XOR_PROC_ACT_PROC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_XOR_PROC_ACT_PROC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_XOR_PROC_ACT_PROC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_XOR_PROC_ACT_PROC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_XOR_PROC_ACT_PROC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentOrganizer)) {
+				medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_XOR_PROC_ACT_PROC,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerHasNonMedSupActXorProcActProc"),
-					new Object[] { medicalEquipmentOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_XOR_PROC_ACT_PROC,
+						ConsolPlugin.INSTANCE.getString(
+							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerHasNonMedSupActXorProcActProc"),
+						new Object[] { medicalEquipmentOrganizer }));
 			}
 
 			return false;
@@ -175,19 +171,22 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerTemplateId"),
-					new Object[] { medicalEquipmentOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerTemplateId"),
+						new Object[] { medicalEquipmentOrganizer }));
 			}
 
 			return false;
@@ -235,19 +234,22 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerClassCode"),
-					new Object[] { medicalEquipmentOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerClassCode"),
+						new Object[] { medicalEquipmentOrganizer }));
 			}
 
 			return false;
@@ -287,15 +289,15 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 */
 
-	public static boolean validateMedicalEquipmentOrganizerMoodCode(
-			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static boolean validateMedicalEquipmentOrganizerMoodCode(MedicalEquipmentOrganizer medicalEquipmentOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -303,11 +305,12 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerMoodCode"),
-					new Object[] { medicalEquipmentOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerMoodCode"),
+						new Object[] { medicalEquipmentOrganizer }));
 			}
 
 			return false;
@@ -354,7 +357,8 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -362,11 +366,12 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_ID,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerId"),
-					new Object[] { medicalEquipmentOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_ID,
+						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerId"),
+						new Object[] { medicalEquipmentOrganizer }));
 			}
 
 			return false;
@@ -413,7 +418,8 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -421,11 +427,12 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerCode"),
-					new Object[] { medicalEquipmentOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_CODE,
+						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerCode"),
+						new Object[] { medicalEquipmentOrganizer }));
 			}
 
 			return false;
@@ -473,25 +480,30 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerStatusCodeP"),
-					new Object[] { medicalEquipmentOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString(
+							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerStatusCodeP"),
+						new Object[] { medicalEquipmentOrganizer }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizerStatusCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizerStatusCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -514,9 +526,9 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "
-			+ "value.code = 'aborted' or value.code = 'active' or value.code = 'cancelled' or value.code = 'completed' or value.code = 'held' or value.code = 'suspended')";
+	protected static final String VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " +
+			"value.code = 'aborted' or value.code = 'active' or value.code = 'cancelled' or value.code = 'completed' or value.code = 'held' or value.code = 'suspended')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentOrganizerStatusCode(MedicalEquipmentOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Status Code</em>}' invariant operation.
@@ -556,19 +568,22 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerStatusCode"),
-					new Object[] { medicalEquipmentOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerStatusCode"),
+						new Object[] { medicalEquipmentOrganizer }));
 			}
 
 			return false;
@@ -616,19 +631,23 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentOrganizer)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerEffectiveTime"),
-					new Object[] { medicalEquipmentOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString(
+							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerEffectiveTime"),
+						new Object[] { medicalEquipmentOrganizer }));
 			}
 
 			return false;
@@ -676,21 +695,23 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentOrganizer)) {
+				medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerNonMedicinalSupplyActivity2"),
-					new Object[] { medicalEquipmentOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2,
+						ConsolPlugin.INSTANCE.getString(
+							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerNonMedicinalSupplyActivity2"),
+						new Object[] { medicalEquipmentOrganizer }));
 			}
 
 			return false;
@@ -738,21 +759,23 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicalEquipmentOrganizer)) {
+				medicalEquipmentOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2,
-					ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerProcedureActivityProcedure2"),
-					new Object[] { medicalEquipmentOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2,
+						ConsolPlugin.INSTANCE.getString(
+							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerProcedureActivityProcedure2"),
+						new Object[] { medicalEquipmentOrganizer }));
 			}
 
 			return false;
@@ -792,31 +815,35 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-	public static boolean validateMedicalEquipmentOrganizerIVLTSLow(
-			MedicalEquipmentOrganizer medicalEquipmentOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static boolean validateMedicalEquipmentOrganizerIVLTSLow(MedicalEquipmentOrganizer medicalEquipmentOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicalEquipmentOrganizer);
+		Object oclResult = VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			medicalEquipmentOrganizer);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerIVLTSLow"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW,
+							ConsolPlugin.INSTANCE.getString(
+								"MedicalEquipmentOrganizerMedicalEquipmentOrganizerIVLTSLow"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -865,23 +892,28 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(medicalEquipmentOrganizer);
+		Object oclResult = VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			medicalEquipmentOrganizer);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerIVLTSHigh"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_HIGH,
+							ConsolPlugin.INSTANCE.getString(
+								"MedicalEquipmentOrganizerMedicalEquipmentOrganizerIVLTSHigh"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -924,14 +956,16 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 				ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER,
 				ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER.getEAllOperations().get(65));
 			try {
-				GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY = helper.createQuery(GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP);
+				GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY = helper.createQuery(
+					GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_NON_MEDICINAL_SUPPLY_ACTIVITY2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<NonMedicinalSupplyActivity2> result = (Collection<NonMedicinalSupplyActivity2>) query.evaluate(medicalEquipmentOrganizer);
+		Collection<NonMedicinalSupplyActivity2> result = (Collection<NonMedicinalSupplyActivity2>) query.evaluate(
+			medicalEquipmentOrganizer);
 		return new BasicEList.UnmodifiableEList<NonMedicinalSupplyActivity2>(result.size(), result.toArray());
 	}
 
@@ -969,14 +1003,16 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 				ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER,
 				ConsolPackage.Literals.MEDICAL_EQUIPMENT_ORGANIZER.getEAllOperations().get(66));
 			try {
-				GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP);
+				GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY = helper.createQuery(
+					GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURE2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProcedureActivityProcedure2> result = (Collection<ProcedureActivityProcedure2>) query.evaluate(medicalEquipmentOrganizer);
+		Collection<ProcedureActivityProcedure2> result = (Collection<ProcedureActivityProcedure2>) query.evaluate(
+			medicalEquipmentOrganizer);
 		return new BasicEList.UnmodifiableEList<ProcedureActivityProcedure2>(result.size(), result.toArray());
 	}
 

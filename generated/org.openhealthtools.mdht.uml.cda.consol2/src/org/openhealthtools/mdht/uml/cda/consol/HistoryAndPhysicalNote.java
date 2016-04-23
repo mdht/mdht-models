@@ -1,21 +1,16 @@
-/*******************************************************************************
- * Copyright (c) 2011, 2012 Sean Muir and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- *
- * Contributors:
- *     Sean Muir (JKM Software) - initial API and implementation
- *******************************************************************************/
+/**
+ */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -180,7 +175,8 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))'"
 	 * @generated
 	 */
-	boolean validateHistoryAndPhysicalNoteChiefComplaintSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHistoryAndPhysicalNoteChiefComplaintSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,7 +201,8 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))'"
 	 * @generated
 	 */
-	boolean validateHistoryAndPhysicalNoteFamilyHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHistoryAndPhysicalNoteFamilyHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,7 +214,8 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))'"
 	 * @generated
 	 */
-	boolean validateHistoryAndPhysicalNoteGeneralStatusSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHistoryAndPhysicalNoteGeneralStatusSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -267,7 +265,8 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))'"
 	 * @generated
 	 */
-	boolean validateHistoryAndPhysicalNoteReasonForVisitSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHistoryAndPhysicalNoteReasonForVisitSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -305,7 +304,8 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))'"
 	 * @generated
 	 */
-	boolean validateHistoryAndPhysicalNoteSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHistoryAndPhysicalNoteSocialHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -537,8 +537,8 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject(responsibleParty->one(responsibleParty : cda::ResponsibleParty | not responsibleParty.oclIsUndefined() and responsibleParty.oclIsKindOf(cda::ResponsibleParty)))'"
 	 * @generated
 	 */
-	boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -760,14 +760,12 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HistoryAndPhysicalNote init();
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public HistoryAndPhysicalNote init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HistoryAndPhysicalNote

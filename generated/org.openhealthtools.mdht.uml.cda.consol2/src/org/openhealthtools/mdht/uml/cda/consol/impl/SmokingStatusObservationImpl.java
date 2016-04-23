@@ -12,18 +12,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Smoking Status Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -52,8 +50,10 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSmokingStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationTemplateId(this, diagnostics, context);
+	public boolean validateSmokingStatusObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,7 +104,8 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * @generated
 	 */
 	@Override
-	public boolean validateSmokingStatusObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSmokingStatusObservationStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCodeP(
 			this, diagnostics, context);
 	}
@@ -115,8 +116,10 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * @generated
 	 */
 	@Override
-	public boolean validateSmokingStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCode(this, diagnostics, context);
+	public boolean validateSmokingStatusObservationStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -154,7 +157,8 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSmokingStatusObservationCDCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSmokingStatusObservationCDCodeSystem(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationCDCodeSystem(
 			this, diagnostics, context);
 	}
@@ -164,7 +168,8 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSmokingStatusObservationIVLTSCenter(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSmokingStatusObservationIVLTSCenter(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSCenter(
 			this, diagnostics, context);
 	}
@@ -192,8 +197,10 @@ public class SmokingStatusObservationImpl extends ObservationImpl implements Smo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSmokingStatusObservationIVLTSWidth(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSWidth(this, diagnostics, context);
+	public boolean validateSmokingStatusObservationIVLTSWidth(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationIVLTSWidth(
+			this, diagnostics, context);
 	}
 
 	/**

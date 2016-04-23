@@ -11,22 +11,22 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.CognitiveStatusProblemObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -75,7 +75,8 @@ public class CognitiveStatusProblemObservationTest extends CDAValidationTest {
 	public void testValidateCognitiveStatusProblemObservationMethodCode() {
 		OperationsTestCase<CognitiveStatusProblemObservation> validateCognitiveStatusProblemObservationMethodCodeTestCase = new OperationsTestCase<CognitiveStatusProblemObservation>(
 			"validateCognitiveStatusProblemObservationMethodCode",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_PROBLEM_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_PROBLEM_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -110,7 +111,8 @@ public class CognitiveStatusProblemObservationTest extends CDAValidationTest {
 	public void testValidateCognitiveStatusProblemObservationNonMedicinalSupplyActivity() {
 		OperationsTestCase<CognitiveStatusProblemObservation> validateCognitiveStatusProblemObservationNonMedicinalSupplyActivityTestCase = new OperationsTestCase<CognitiveStatusProblemObservation>(
 			"validateCognitiveStatusProblemObservationNonMedicinalSupplyActivity",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_PROBLEM_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_PROBLEM_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -148,7 +150,8 @@ public class CognitiveStatusProblemObservationTest extends CDAValidationTest {
 	public void testValidateCognitiveStatusProblemObservationCaregiverCharacteristics() {
 		OperationsTestCase<CognitiveStatusProblemObservation> validateCognitiveStatusProblemObservationCaregiverCharacteristicsTestCase = new OperationsTestCase<CognitiveStatusProblemObservation>(
 			"validateCognitiveStatusProblemObservationCaregiverCharacteristics",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_PROBLEM_OBSERVATION_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_PROBLEM_OBSERVATION_CAREGIVER_CHARACTERISTICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -186,7 +189,8 @@ public class CognitiveStatusProblemObservationTest extends CDAValidationTest {
 	public void testValidateCognitiveStatusProblemObservationAssessmentScaleObservation() {
 		OperationsTestCase<CognitiveStatusProblemObservation> validateCognitiveStatusProblemObservationAssessmentScaleObservationTestCase = new OperationsTestCase<CognitiveStatusProblemObservation>(
 			"validateCognitiveStatusProblemObservationAssessmentScaleObservation",
-			operationsForOCL.getOCLValue("VALIDATE_COGNITIVE_STATUS_PROBLEM_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_COGNITIVE_STATUS_PROBLEM_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -259,8 +263,8 @@ public class CognitiveStatusProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationHasTextReference() {
 		OperationsTestCase<CognitiveStatusProblemObservation> validateProblemObservationHasTextReferenceTestCase = new OperationsTestCase<CognitiveStatusProblemObservation>(
-			"validateProblemObservationHasTextReference",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationHasTextReference", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -301,7 +305,8 @@ public class CognitiveStatusProblemObservationTest extends CDAValidationTest {
 		// createEDWithReference()
 		OperationsTestCase<CognitiveStatusProblemObservation> validateProblemObservationHasTextReferenceValueTestCase = new NarrativeReferenceTestCase<CognitiveStatusProblemObservation>(
 			"validateProblemObservationHasTextReferenceValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -383,8 +388,8 @@ public class CognitiveStatusProblemObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateProblemObservationHasResolutionDate() {
 		OperationsTestCase<CognitiveStatusProblemObservation> validateProblemObservationHasResolutionDateTestCase = new OperationsTestCase<CognitiveStatusProblemObservation>(
-			"validateProblemObservationHasResolutionDate",
-			operationsForOCL.getOCLValue("VALIDATE_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProblemObservationHasResolutionDate", operationsForOCL.getOCLValue(
+				"VALIDATE_PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

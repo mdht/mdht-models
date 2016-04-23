@@ -17,19 +17,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalAdmissionDiagnosisOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Hospital Admission Diagnosis</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,8 +57,7 @@ public class HospitalAdmissionDiagnosisImpl extends ActImpl implements HospitalA
 	 * @generated
 	 */
 	public boolean validateHospitalAdmissionDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisTemplateId(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +66,7 @@ public class HospitalAdmissionDiagnosisImpl extends ActImpl implements HospitalA
 	 * @generated
 	 */
 	public boolean validateHospitalAdmissionDiagnosisClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisClassCode(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +84,7 @@ public class HospitalAdmissionDiagnosisImpl extends ActImpl implements HospitalA
 	 * @generated
 	 */
 	public boolean validateHospitalAdmissionDiagnosisMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisMoodCode(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +94,7 @@ public class HospitalAdmissionDiagnosisImpl extends ActImpl implements HospitalA
 	 */
 	public boolean validateHospitalAdmissionDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisProblemObservation(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisOperations.validateHospitalAdmissionDiagnosisProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -118,16 +112,16 @@ public class HospitalAdmissionDiagnosisImpl extends ActImpl implements HospitalA
 	 * @generated
 	 */
 	public HospitalAdmissionDiagnosis init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HospitalAdmissionDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HospitalAdmissionDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HospitalAdmissionDiagnosisImpl

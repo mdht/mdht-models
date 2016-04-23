@@ -14,27 +14,20 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
 import org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.ProgressTowardGoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,21 +110,23 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+				outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationProgTowardGoalObsInversionIndIsTrue"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE,
+						ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationProgTowardGoalObsInversionIndIsTrue"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -178,7 +173,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -186,11 +182,12 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationTemplateId"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationTemplateId"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -237,7 +234,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -245,11 +243,12 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationClassCode"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationClassCode"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -296,7 +295,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -304,11 +304,12 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationMoodCode"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationMoodCode"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -355,7 +356,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -363,11 +365,12 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ID,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationId"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ID,
+						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationId"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -414,7 +417,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -422,17 +426,19 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CODE_P,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationCodeP"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CODE_P,
+						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationCodeP"),
+						new Object[] { outcomeObservation }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.OutcomeObservationCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.OutcomeObservationCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -454,9 +460,9 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOutcomeObservationCode(OutcomeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Outcome Observation Code</em>}' invariant operation.
@@ -495,7 +501,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -503,11 +510,12 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationCode"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CODE,
+						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationCode"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -554,7 +562,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -562,11 +571,12 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationValue"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_VALUE,
+						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationValue"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -613,19 +623,22 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryReferenceGoalObs"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS,
+						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryReferenceGoalObs"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -665,28 +678,30 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static boolean validateOutcomeObservationEntryReferenceInterventionAct(
-			OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateOutcomeObservationEntryReferenceInterventionAct(OutcomeObservation outcomeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+				outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryReferenceInterventionAct"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT,
+						ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationEntryReferenceInterventionAct"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -733,19 +748,22 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationAuthorParticipation"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION,
+						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationAuthorParticipation"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -785,28 +803,30 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static boolean validateOutcomeObservationProgressTowardGoalObservation(
-			OutcomeObservation outcomeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateOutcomeObservationProgressTowardGoalObservation(OutcomeObservation outcomeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+				outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationProgressTowardGoalObservation"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationProgressTowardGoalObservation"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -853,7 +873,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -861,11 +882,12 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReference"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE,
+						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReference"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -912,19 +934,22 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			outcomeObservation)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				outcomeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP,
-					ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryRelationship"),
-					new Object[] { outcomeObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP,
+						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryRelationship"),
+						new Object[] { outcomeObservation }));
 			}
 
 			return false;
@@ -971,23 +996,27 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(outcomeObservation);
+		Object oclResult = VALIDATE_OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			outcomeObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReferenceTypeCode"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE,
+							ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReferenceTypeCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1035,24 +1064,28 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OUTCOME_OBSERVATION);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+					VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
+					oclExpression);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		Object oclResult = VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(outcomeObservation);
+		Object oclResult = VALIDATE_OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
+			outcomeObservation);
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
-						ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReferenceExternalDocumentReference"),
-						new Object[] { eObject }));
+					diagnostics.add(
+						new BasicDiagnostic(
+							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
+							ConsolPlugin.INSTANCE.getString(
+								"OutcomeObservationOutcomeObservationReferenceExternalDocumentReference"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -1138,7 +1171,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 				ConsolPackage.Literals.OUTCOME_OBSERVATION,
 				ConsolPackage.Literals.OUTCOME_OBSERVATION.getEAllOperations().get(68));
 			try {
-				GET_ENTRY_REFERENCE_INTERVENTION_ACTS__EOCL_QRY = helper.createQuery(GET_ENTRY_REFERENCE_INTERVENTION_ACTS__EOCL_EXP);
+				GET_ENTRY_REFERENCE_INTERVENTION_ACTS__EOCL_QRY = helper.createQuery(
+					GET_ENTRY_REFERENCE_INTERVENTION_ACTS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -1175,14 +1209,16 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 
-	public static ProgressTowardGoalObservation getProgressTowardGoalObservation(OutcomeObservation outcomeObservation) {
+	public static ProgressTowardGoalObservation getProgressTowardGoalObservation(
+			OutcomeObservation outcomeObservation) {
 		if (GET_PROGRESS_TOWARD_GOAL_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.OUTCOME_OBSERVATION,
 				ConsolPackage.Literals.OUTCOME_OBSERVATION.getEAllOperations().get(69));
 			try {
-				GET_PROGRESS_TOWARD_GOAL_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROGRESS_TOWARD_GOAL_OBSERVATION__EOCL_EXP);
+				GET_PROGRESS_TOWARD_GOAL_OBSERVATION__EOCL_QRY = helper.createQuery(
+					GET_PROGRESS_TOWARD_GOAL_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}

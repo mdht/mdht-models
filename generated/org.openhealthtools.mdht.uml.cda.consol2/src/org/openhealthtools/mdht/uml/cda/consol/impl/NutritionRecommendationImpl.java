@@ -3,17 +3,14 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedAct2;
@@ -22,17 +19,12 @@ import org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.NutritionRecommendationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Nutrition Recommendation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -124,7 +116,8 @@ public class NutritionRecommendationImpl extends ActImpl implements NutritionRec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNutritionRecommendationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNutritionRecommendationStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NutritionRecommendationOperations.validateNutritionRecommendationStatusCodeP(this, diagnostics, context);
 	}
 
@@ -133,7 +126,8 @@ public class NutritionRecommendationImpl extends ActImpl implements NutritionRec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNutritionRecommendationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNutritionRecommendationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NutritionRecommendationOperations.validateNutritionRecommendationEffectiveTime(
 			this, diagnostics, context);
 	}
@@ -198,7 +192,8 @@ public class NutritionRecommendationImpl extends ActImpl implements NutritionRec
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNutritionRecommendationPlannedAct2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNutritionRecommendationPlannedAct2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NutritionRecommendationOperations.validateNutritionRecommendationPlannedAct2(this, diagnostics, context);
 	}
 

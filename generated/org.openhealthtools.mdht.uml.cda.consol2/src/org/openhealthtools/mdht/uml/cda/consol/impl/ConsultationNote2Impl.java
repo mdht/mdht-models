@@ -3,16 +3,12 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection2;
@@ -40,15 +36,12 @@ import org.openhealthtools.mdht.uml.cda.consol.ResultsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ConsultationNote2Operations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Consultation Note2</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -166,7 +159,8 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNote2AssessmentSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNote2AssessmentSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2AssessmentSection(this, diagnostics, context);
 	}
 
@@ -227,7 +221,8 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNote2AllergiesSection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNote2AllergiesSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2AllergiesSection2(this, diagnostics, context);
 	}
 
@@ -289,7 +284,8 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNote2MedicationsSection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNote2MedicationsSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2MedicationsSection2(this, diagnostics, context);
 	}
 
@@ -337,7 +333,8 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNote2VitalSignsSection2(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNote2VitalSignsSection2(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2VitalSignsSection2(this, diagnostics, context);
 	}
 
@@ -359,7 +356,8 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2FunctionalStatusSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2FunctionalStatusSection2(this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2FunctionalStatusSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -379,7 +377,8 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 */
 	public boolean validateConsultationNote2MedicalEquipmentSection2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationNote2Operations.validateConsultationNote2MedicalEquipmentSection2(this, diagnostics, context);
+		return ConsultationNote2Operations.validateConsultationNote2MedicalEquipmentSection2(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -387,7 +386,8 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNote2MentalStatusSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNote2MentalStatusSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2MentalStatusSection(this, diagnostics, context);
 	}
 
@@ -415,8 +415,8 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNote2ParticipantAssociatedEntityAssociatedPersonName(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNote2ParticipantAssociatedEntityAssociatedPersonName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2ParticipantAssociatedEntityAssociatedPersonName(
 			this, diagnostics, context);
 	}
@@ -492,7 +492,8 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNote2ParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNote2ParticipantTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateConsultationNote2ParticipantTypeCode(this, diagnostics, context);
 	}
 
@@ -901,7 +902,8 @@ public class ConsultationNote2Impl extends USRealmHeader2Impl implements Consult
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ConsultationNote2Operations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 

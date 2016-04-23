@@ -17,20 +17,18 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.QuantityMeasurementObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.TextObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.TextObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Text Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -161,8 +159,7 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 */
 	public boolean validateTextObservationQuantityMeasurementObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TextObservationOperations.validateTextObservationQuantityMeasurementObservation(
-			this, diagnostics, context);
+		return TextObservationOperations.validateTextObservationQuantityMeasurementObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -189,16 +186,16 @@ public class TextObservationImpl extends ObservationImpl implements TextObservat
 	 * @generated
 	 */
 	public TextObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public TextObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TextObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // TextObservationImpl

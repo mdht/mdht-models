@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PostoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PostoperativeDiagnosisSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Postoperative Diagnosis Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -80,7 +78,8 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 * @generated
 	 */
 	@Override
-	public boolean validatePostoperativeDiagnosisSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePostoperativeDiagnosisSectionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionCodeP(
 			this, diagnostics, context);
 	}
@@ -102,7 +101,8 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 * @generated
 	 */
 	@Override
-	public boolean validatePostoperativeDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePostoperativeDiagnosisSectionTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTitle(
 			this, diagnostics, context);
 	}

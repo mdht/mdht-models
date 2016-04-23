@@ -13,7 +13,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -23,8 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.CognitiveStatusResultO
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Cognitive Status Result Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -55,8 +53,7 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	 */
 	public boolean validateCognitiveStatusResultOrganizerCodeCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerCodeCodeSystem(
-			this, diagnostics, context);
+		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerCodeCodeSystem(this, diagnostics, context);
 	}
 
 	/**
@@ -66,8 +63,7 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	 */
 	public boolean validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(
-			this, diagnostics, context);
+		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -154,19 +150,17 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CognitiveStatusResultOrganizer init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CognitiveStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CognitiveStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // CognitiveStatusResultOrganizerImpl

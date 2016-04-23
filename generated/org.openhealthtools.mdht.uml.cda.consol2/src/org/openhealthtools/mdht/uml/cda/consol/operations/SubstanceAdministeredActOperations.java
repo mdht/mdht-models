@@ -12,19 +12,14 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.SubstanceAdministeredAct;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -97,19 +92,22 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBSTANCE_ADMINISTERED_ACT);
 			try {
-				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			substanceAdministeredAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				substanceAdministeredAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActTemplateId"),
-					new Object[] { substanceAdministeredAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActTemplateId"),
+						new Object[] { substanceAdministeredAct }));
 			}
 
 			return false;
@@ -156,7 +154,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBSTANCE_ADMINISTERED_ACT);
 			try {
-				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -164,11 +163,12 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			substanceAdministeredAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActClassCode"),
-					new Object[] { substanceAdministeredAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE,
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActClassCode"),
+						new Object[] { substanceAdministeredAct }));
 			}
 
 			return false;
@@ -215,7 +215,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBSTANCE_ADMINISTERED_ACT);
 			try {
-				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -223,11 +224,12 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			substanceAdministeredAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActMoodCode"),
-					new Object[] { substanceAdministeredAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE,
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActMoodCode"),
+						new Object[] { substanceAdministeredAct }));
 			}
 
 			return false;
@@ -274,7 +276,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBSTANCE_ADMINISTERED_ACT);
 			try {
-				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SUBSTANCE_ADMINISTERED_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -282,11 +285,12 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			substanceAdministeredAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_ID,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActId"),
-					new Object[] { substanceAdministeredAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_ID,
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActId"),
+						new Object[] { substanceAdministeredAct }));
 			}
 
 			return false;
@@ -333,7 +337,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBSTANCE_ADMINISTERED_ACT);
 			try {
-				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -341,17 +346,19 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			substanceAdministeredAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActCodeP"),
-					new Object[] { substanceAdministeredAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CODE_P,
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActCodeP"),
+						new Object[] { substanceAdministeredAct }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.SubstanceAdministeredActCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.SubstanceAdministeredActCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -373,9 +380,9 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '416118004' and value.codeSystem = '2.16.840.1.113883.6.96')";
+	protected static final String VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '416118004' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSubstanceAdministeredActCode(SubstanceAdministeredAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Administered Act Code</em>}' invariant operation.
@@ -414,7 +421,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBSTANCE_ADMINISTERED_ACT);
 			try {
-				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -422,11 +430,12 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			substanceAdministeredAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CODE,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActCode"),
-					new Object[] { substanceAdministeredAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CODE,
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActCode"),
+						new Object[] { substanceAdministeredAct }));
 			}
 
 			return false;
@@ -442,8 +451,8 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSubstanceAdministeredActStatusCode(SubstanceAdministeredAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Administered Act Status Code</em>}' invariant operation.
@@ -474,19 +483,22 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBSTANCE_ADMINISTERED_ACT);
 			try {
-				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			substanceAdministeredAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				substanceAdministeredAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActStatusCode"),
-					new Object[] { substanceAdministeredAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE,
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActStatusCode"),
+						new Object[] { substanceAdministeredAct }));
 			}
 
 			return false;
@@ -526,26 +538,29 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 	 * @generated
 	 */
 
-	public static boolean validateSubstanceAdministeredActStatusCodeP(
-			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateSubstanceAdministeredActStatusCodeP(SubstanceAdministeredAct substanceAdministeredAct,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBSTANCE_ADMINISTERED_ACT);
 			try {
-				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			substanceAdministeredAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				substanceAdministeredAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActStatusCodeP"),
-					new Object[] { substanceAdministeredAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActStatusCodeP"),
+						new Object[] { substanceAdministeredAct }));
 			}
 
 			return false;
@@ -586,25 +601,30 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 	 */
 
 	public static boolean validateSubstanceAdministeredActEffectiveTime(
-			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			SubstanceAdministeredAct substanceAdministeredAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBSTANCE_ADMINISTERED_ACT);
 			try {
-				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			substanceAdministeredAct)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				substanceAdministeredAct)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME,
-					ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActEffectiveTime"),
-					new Object[] { substanceAdministeredAct }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME,
+						ConsolPlugin.INSTANCE.getString(
+							"SubstanceAdministeredActSubstanceAdministeredActEffectiveTime"),
+						new Object[] { substanceAdministeredAct }));
 			}
 
 			return false;

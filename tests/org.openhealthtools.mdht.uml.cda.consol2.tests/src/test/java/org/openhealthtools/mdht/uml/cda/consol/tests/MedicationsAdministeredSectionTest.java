@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsAdministeredSectionOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,7 +55,8 @@ public class MedicationsAdministeredSectionTest extends CDAValidationTest {
 	public void testValidateMedicationsAdministeredSectionTemplateId() {
 		OperationsTestCase<MedicationsAdministeredSection> validateMedicationsAdministeredSectionTemplateIdTestCase = new OperationsTestCase<MedicationsAdministeredSection>(
 			"validateMedicationsAdministeredSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -88,8 +89,8 @@ public class MedicationsAdministeredSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationsAdministeredSectionCode() {
 		OperationsTestCase<MedicationsAdministeredSection> validateMedicationsAdministeredSectionCodeTestCase = new OperationsTestCase<MedicationsAdministeredSection>(
-			"validateMedicationsAdministeredSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationsAdministeredSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -122,8 +123,8 @@ public class MedicationsAdministeredSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationsAdministeredSectionCodeP() {
 		OperationsTestCase<MedicationsAdministeredSection> validateMedicationsAdministeredSectionCodePTestCase = new OperationsTestCase<MedicationsAdministeredSection>(
-			"validateMedicationsAdministeredSectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationsAdministeredSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -156,8 +157,8 @@ public class MedicationsAdministeredSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationsAdministeredSectionText() {
 		OperationsTestCase<MedicationsAdministeredSection> validateMedicationsAdministeredSectionTextTestCase = new OperationsTestCase<MedicationsAdministeredSection>(
-			"validateMedicationsAdministeredSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationsAdministeredSectionText", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -193,8 +194,8 @@ public class MedicationsAdministeredSectionTest extends CDAValidationTest {
 	@Test
 	public void testValidateMedicationsAdministeredSectionTitle() {
 		OperationsTestCase<MedicationsAdministeredSection> validateMedicationsAdministeredSectionTitleTestCase = new OperationsTestCase<MedicationsAdministeredSection>(
-			"validateMedicationsAdministeredSectionTitle",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMedicationsAdministeredSectionTitle", operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -231,7 +232,8 @@ public class MedicationsAdministeredSectionTest extends CDAValidationTest {
 	public void testValidateMedicationsAdministeredSectionMedicationActivity() {
 		OperationsTestCase<MedicationsAdministeredSection> validateMedicationsAdministeredSectionMedicationActivityTestCase = new OperationsTestCase<MedicationsAdministeredSection>(
 			"validateMedicationsAdministeredSectionMedicationActivity",
-			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override

@@ -13,19 +13,15 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosis2;
-
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -76,7 +72,8 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS2);
 			try {
-				VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -84,17 +81,19 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			hospitalDischargeDiagnosis2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS2__HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosis2HospitalDischargeDiagnosisCodeP"),
-					new Object[] { hospitalDischargeDiagnosis2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS2__HOSPITAL_DISCHARGE_DIAGNOSIS_CODE_P,
+						ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosis2HospitalDischargeDiagnosisCodeP"),
+						new Object[] { hospitalDischargeDiagnosis2 }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -122,14 +121,16 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 				ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS2,
 				ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS2.getEAllOperations().get(58));
 			try {
-				GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP);
+				GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_PROBLEM_OBSERVATION2S__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(hospitalDischargeDiagnosis2);
+		Collection<ProblemObservation2> result = (Collection<ProblemObservation2>) query.evaluate(
+			hospitalDischargeDiagnosis2);
 		return new BasicEList.UnmodifiableEList<ProblemObservation2>(result.size(), result.toArray());
 	}
 
@@ -214,19 +215,23 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS2);
 			try {
-				VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalDischargeDiagnosis2)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				hospitalDischargeDiagnosis2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS2__HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosis2HospitalDischargeDiagnosisTemplateId"),
-					new Object[] { hospitalDischargeDiagnosis2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS2__HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID,
+						ConsolPlugin.INSTANCE.getString(
+							"HospitalDischargeDiagnosis2HospitalDischargeDiagnosisTemplateId"),
+						new Object[] { hospitalDischargeDiagnosis2 }));
 			}
 
 			return false;
@@ -242,9 +247,9 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '11535-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '11535-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHospitalDischargeDiagnosisCode(HospitalDischargeDiagnosis2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Diagnosis Code</em>}' invariant operation.
@@ -284,7 +289,8 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS2);
 			try {
-				VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
@@ -292,11 +298,12 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 		if (!EOCL_ENV.createQuery(VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 			hospitalDischargeDiagnosis2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS2__HOSPITAL_DISCHARGE_DIAGNOSIS_CODE,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosis2HospitalDischargeDiagnosisCode"),
-					new Object[] { hospitalDischargeDiagnosis2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS2__HOSPITAL_DISCHARGE_DIAGNOSIS_CODE,
+						ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosis2HospitalDischargeDiagnosisCode"),
+						new Object[] { hospitalDischargeDiagnosis2 }));
 			}
 
 			return false;
@@ -344,21 +351,23 @@ public class HospitalDischargeDiagnosis2Operations extends HospitalDischargeDiag
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS2);
 			try {
-				VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
 			VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalDischargeDiagnosis2)) {
+				hospitalDischargeDiagnosis2)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS2__HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION,
-					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosis2HospitalDischargeDiagnosisProblemObservation"),
-					new Object[] { hospitalDischargeDiagnosis2 }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.HOSPITAL_DISCHARGE_DIAGNOSIS2__HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString(
+							"HospitalDischargeDiagnosis2HospitalDischargeDiagnosisProblemObservation"),
+						new Object[] { hospitalDischargeDiagnosis2 }));
 			}
 
 			return false;

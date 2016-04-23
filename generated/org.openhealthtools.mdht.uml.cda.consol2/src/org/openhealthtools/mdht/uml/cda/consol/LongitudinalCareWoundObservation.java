@@ -11,7 +11,7 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -213,7 +213,8 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined()).qualifier->excluding(null)->select(isNullFlavorUndefined()).value->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not code.oclIsUndefined() )))'"
 	 * @generated
 	 */
-	boolean validateLongitudinalCareWoundObservationCDCRCDCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateLongitudinalCareWoundObservationCDCRCDCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -261,7 +262,8 @@ public interface LongitudinalCareWoundObservation extends ProblemObservation2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((qualifier->isEmpty() or qualifier->exists(element | element.isNullFlavorUndefined())) implies (not qualifier->isEmpty()) )))'"
 	 * @generated
 	 */
-	boolean validateLongitudinalCareWoundObservationCDQualifier(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateLongitudinalCareWoundObservationCDQualifier(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

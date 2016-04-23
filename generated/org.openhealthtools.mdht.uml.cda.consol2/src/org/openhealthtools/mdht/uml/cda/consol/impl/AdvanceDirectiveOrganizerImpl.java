@@ -7,30 +7,23 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.OrganizerImpl;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.AdvanceDirectiveOrganizerOperations;
-import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directive Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -60,7 +53,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveOrganizerTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerTemplateId(
 			this, diagnostics, context);
 	}
@@ -71,7 +65,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveOrganizerClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerClassCode(
 			this, diagnostics, context);
 	}
@@ -83,7 +78,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 */
 	@Override
 	public boolean validateAdvanceDirectiveOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerMoodCode(this, diagnostics, context);
+		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -122,7 +118,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveOrganizerStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveOrganizerStatusCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerStatusCodeP(
 			this, diagnostics, context);
 	}
@@ -133,7 +130,8 @@ public class AdvanceDirectiveOrganizerImpl extends OrganizerImpl implements Adva
 	 * @generated
 	 */
 	@Override
-	public boolean validateAdvanceDirectiveOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveOrganizerStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveOrganizerOperations.validateAdvanceDirectiveOrganizerStatusCode(
 			this, diagnostics, context);
 	}

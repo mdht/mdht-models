@@ -14,15 +14,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.PlayingEntity;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.vocab.EntityClassRoot;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.PlayingEntity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ServiceDeliveryLocationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.vocab.EntityClassRoot;
 
 /**
  * <!-- begin-user-doc -->
@@ -56,7 +56,8 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 	public void testValidateServiceDeliveryLocationHasPlayingEntity() {
 		OperationsTestCase<ServiceDeliveryLocation> validateServiceDeliveryLocationHasPlayingEntityTestCase = new OperationsTestCase<ServiceDeliveryLocation>(
 			"validateServiceDeliveryLocationHasPlayingEntity",
-			operationsForOCL.getOCLValue("VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -91,7 +92,8 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 	public void testValidateServiceDeliveryLocationHasPlayingEntityClassCode() {
 		OperationsTestCase<ServiceDeliveryLocation> validateServiceDeliveryLocationHasPlayingEntityClassCodeTestCase = new OperationsTestCase<ServiceDeliveryLocation>(
 			"validateServiceDeliveryLocationHasPlayingEntityClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -131,7 +133,8 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 	public void testValidateServiceDeliveryLocationHasPlayingEntityName() {
 		OperationsTestCase<ServiceDeliveryLocation> validateServiceDeliveryLocationHasPlayingEntityNameTestCase = new OperationsTestCase<ServiceDeliveryLocation>(
 			"validateServiceDeliveryLocationHasPlayingEntityName",
-			operationsForOCL.getOCLValue("VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -167,8 +170,8 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 	@Test
 	public void testValidateServiceDeliveryLocationTemplateId() {
 		OperationsTestCase<ServiceDeliveryLocation> validateServiceDeliveryLocationTemplateIdTestCase = new OperationsTestCase<ServiceDeliveryLocation>(
-			"validateServiceDeliveryLocationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SERVICE_DELIVERY_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateServiceDeliveryLocationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SERVICE_DELIVERY_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -201,8 +204,8 @@ public class ServiceDeliveryLocationTest extends CDAValidationTest {
 	@Test
 	public void testValidateServiceDeliveryLocationClassCode() {
 		OperationsTestCase<ServiceDeliveryLocation> validateServiceDeliveryLocationClassCodeTestCase = new OperationsTestCase<ServiceDeliveryLocation>(
-			"validateServiceDeliveryLocationClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_SERVICE_DELIVERY_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateServiceDeliveryLocationClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_SERVICE_DELIVERY_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			{

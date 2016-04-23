@@ -1,18 +1,17 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.lang.Iterable;
+
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -174,7 +173,6 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CognitiveStatusResultObservation init();
 
 	/**
@@ -182,6 +180,5 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public CognitiveStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CognitiveStatusResultObservation
