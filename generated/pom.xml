@@ -3,35 +3,53 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<parent>
 		<groupId>org.openhealthtools.mdht.cda</groupId>
 		<artifactId>org.openhealthtools.mdht.cda.models</artifactId>
 		<version>2.5.16-SNAPSHOT</version>
 	</parent>
-	
+
 	<groupId>org.openhealthtools.mdht.cda</groupId>
 	<artifactId>org.openhealthtools.mdht.cda.generated</artifactId>
 	<packaging>pom</packaging>
 
-	 
- 
+
+
 	<modules>
-		<module>org.openhealthtools.mdht.uml.cda.ccd</module>
+
 		<module>org.openhealthtools.mdht.uml.cda.mu2consol</module>
-		<module>org.openhealthtools.mdht.uml.cda.cdt</module>
-		<module>org.openhealthtools.mdht.uml.cda.hitsp</module>
+
 		<module>org.openhealthtools.mdht.uml.cda.consol</module>
-		<module>org.openhealthtools.mdht.uml.cda.consol2</module>
-		<module>org.openhealthtools.mdht.uml.cda.ihe</module>
-<!--    <module>org.openhealthtools.mdht.cda.doc.user</module>
-		<module>org.openhealthtools.mdht.uml.cda.cdt.doc</module>
-		<module>org.openhealthtools.mdht.uml.cda.ccd.doc</module>
-		<module>org.openhealthtools.mdht.uml.cda.hitsp.doc</module>
-		<module>org.openhealthtools.mdht.uml.cda.ihe.doc</module>
-		<module>org.openhealthtools.mdht.uml.cda.consol.doc</module>
-		<module>org.openhealthtools.mdht.uml.cda.mu2consol.doc</module> -->
+		<!-- <module>org.openhealthtools.mdht.uml.cda.ccd</module> <module>org.openhealthtools.mdht.uml.cda.cdt</module> 
+			<module>org.openhealthtools.mdht.uml.cda.hitsp</module> <module>org.openhealthtools.mdht.uml.cda.consol2</module> 
+			<module>org.openhealthtools.mdht.uml.cda.ihe</module> <module>org.openhealthtools.mdht.cda.doc.user</module> 
+			<module>org.openhealthtools.mdht.uml.cda.cdt.doc</module> <module>org.openhealthtools.mdht.uml.cda.ccd.doc</module> 
+			<module>org.openhealthtools.mdht.uml.cda.hitsp.doc</module> <module>org.openhealthtools.mdht.uml.cda.ihe.doc</module> 
+			<module>org.openhealthtools.mdht.uml.cda.consol.doc</module> <module>org.openhealthtools.mdht.uml.cda.mu2consol.doc</module> -->
 	</modules>
- 
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<additionalparam>-Xdoclint:none</additionalparam>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>
 
 </project>

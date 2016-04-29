@@ -16,9 +16,9 @@
 
  	<repositories>
 		<repository>
-			<id>kepler</id>
+			<id>mars</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/kepler</url>
+			<url>http://download.eclipse.org/releases/mars</url>
 		</repository>
 	</repositories>
 
@@ -82,18 +82,7 @@
 					<dependency-resolution>
 						<optionalDependencies>ignore</optionalDependencies>
 					</dependency-resolution>
-					<!-- See https://bugs.eclipse.org/bugs/show_bug.cgi?id=350133 -->
-					<filters>
-						<filter>
-							<type>eclipse-plugin</type>
-							<id>org.eclipse.jdt.core</id>
-							<restrictTo>
-								<!-- this is the version for Kepler SR1, have to adapt for other 
-									release trains/service releases -->
-								<version>3.9.1.v20130905-0837</version>
-							</restrictTo>
-						</filter>
-					</filters>
+				 
 				</configuration>
 			</plugin>
 		</plugins>
