@@ -10,15 +10,15 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.tests;
 
-import junit.framework.JUnit4TestAdapter;
-
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
+
+import junit.framework.JUnit4TestAdapter;
 
 /**
  * <!-- begin-user-doc --> A test suite for the '<em><b>mu2consol</b></em>'
  * package. <!-- end-user-doc -->
- * 		
+ *
 
  * @generated
  */

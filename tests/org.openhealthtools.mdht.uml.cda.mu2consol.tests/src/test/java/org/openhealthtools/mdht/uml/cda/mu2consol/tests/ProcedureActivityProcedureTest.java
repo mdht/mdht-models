@@ -14,13 +14,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolFactory;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ProcedureActivityProcedureOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc --> A static utility class that provides operations
@@ -48,8 +48,8 @@ public class ProcedureActivityProcedureTest extends CDAValidationTest {
 	@Test
 	public void testValidateProcedureActivityProcedureCodeValue() {
 		OperationsTestCase<ProcedureActivityProcedure> validateProcedureActivityProcedureCodeValueTestCase = new OperationsTestCase<ProcedureActivityProcedure>(
-			"validateProcedureActivityProcedureCodeValue",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureActivityProcedureCodeValue", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -81,14 +81,14 @@ public class ProcedureActivityProcedureTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
 	public void testValidateProcedureActivityProcedureTemplateId() {
 		OperationsTestCase<ProcedureActivityProcedure> validateProcedureActivityProcedureTemplateIdTestCase = new OperationsTestCase<ProcedureActivityProcedure>(
-			"validateProcedureActivityProcedureTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateProcedureActivityProcedureTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -151,7 +151,7 @@ public class ProcedureActivityProcedureTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class OperationsForOCL extends ProcedureActivityProcedureOperations {
@@ -169,7 +169,7 @@ public class ProcedureActivityProcedureTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ObjectFactory implements TestObjectFactory<ProcedureActivityProcedure> {
@@ -180,20 +180,20 @@ public class ProcedureActivityProcedureTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static OperationsForOCL operationsForOCL = new OperationsForOCL();
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static ObjectFactory objectFactory = new ObjectFactory();
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ConstructorTestClass extends ProcedureActivityProcedureOperations {
@@ -201,7 +201,7 @@ public class ProcedureActivityProcedureTest extends CDAValidationTest {
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -210,7 +210,7 @@ public class ProcedureActivityProcedureTest extends CDAValidationTest {
 	} // testConstructor
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 

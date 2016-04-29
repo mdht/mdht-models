@@ -16,14 +16,14 @@ import org.eclipse.emf.common.util.ResourceLocator;
 /**
  * This is the central singleton for the mu2consol_Ecore model plugin. <!--
  * begin-user-doc --> <!-- end-user-doc -->
- * 
+ *
  * @generated
  */
 public final class Mu2consolPlugin extends EMFPlugin {
 	/**
 	 * Keep track of the singleton. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final Mu2consolPlugin INSTANCE = new Mu2consolPlugin();
@@ -31,7 +31,7 @@ public final class Mu2consolPlugin extends EMFPlugin {
 	/**
 	 * Keep track of the singleton. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private static Implementation plugin;
@@ -71,7 +71,7 @@ public final class Mu2consolPlugin extends EMFPlugin {
 	/**
 	 * The actual implementation of the Eclipse <b>Plugin</b>. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static class Implementation extends EclipsePlugin {

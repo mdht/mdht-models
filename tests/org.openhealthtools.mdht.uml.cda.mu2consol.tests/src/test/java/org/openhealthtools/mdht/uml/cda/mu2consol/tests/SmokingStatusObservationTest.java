@@ -16,13 +16,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolFactory;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SmokingStatusObservationOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc --> A static utility class that provides operations
@@ -50,8 +50,8 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	@Test
 	public void testValidateSmokingStatusObservationTemplateId() {
 		OperationsTestCase<SmokingStatusObservation> validateSmokingStatusObservationTemplateIdTestCase = new OperationsTestCase<SmokingStatusObservation>(
-			"validateSmokingStatusObservationTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSmokingStatusObservationTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -158,7 +158,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class OperationsForOCL extends SmokingStatusObservationOperations {
@@ -176,7 +176,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ObjectFactory implements TestObjectFactory<SmokingStatusObservation> {
@@ -187,20 +187,20 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static OperationsForOCL operationsForOCL = new OperationsForOCL();
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static ObjectFactory objectFactory = new ObjectFactory();
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ConstructorTestClass extends SmokingStatusObservationOperations {
@@ -208,7 +208,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -217,7 +217,7 @@ public class SmokingStatusObservationTest extends CDAValidationTest {
 	} // testConstructor
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 

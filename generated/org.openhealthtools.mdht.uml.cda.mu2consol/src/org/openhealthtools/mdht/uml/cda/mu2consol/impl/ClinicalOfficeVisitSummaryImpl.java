@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.InstructionsSection;
@@ -33,13 +31,10 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ClinicalOfficeVisit
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>Clinical Office Visit Summary</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
-public class ClinicalOfficeVisitSummaryImpl extends
-		GeneralHeaderConstraintsImpl implements ClinicalOfficeVisitSummary {
+public class ClinicalOfficeVisitSummaryImpl extends GeneralHeaderConstraintsImpl implements ClinicalOfficeVisitSummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -65,11 +60,10 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateClinicalOfficeVisitSummaryReasonforVisit(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryReasonforVisit(this,
-						diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryReasonforVisit(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryReasonforVisit(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -78,11 +72,10 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateClinicalOfficeVisitSummaryCarePlanning(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryCarePlanning(this,
-						diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryCarePlanning(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryCarePlanning(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -91,11 +84,10 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateClinicalOfficeVisitSummaryDateOfvisit(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryDateOfvisit(this,
-						diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryDateOfvisit(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryDateOfvisit(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -104,11 +96,10 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateClinicalOfficeVisitSummaryVisitLocation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryVisitLocation(this,
-						diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryVisitLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryVisitLocation(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -117,11 +108,10 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateClinicalOfficeVisitSummaryProviderNameAndContactInfo(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryProviderNameAndContactInfo(
-						this, diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryProviderNameAndContactInfo(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryProviderNameAndContactInfo(this,
+				diagnostics, context);
 	}
 
 	/**
@@ -130,11 +120,10 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateClinicalOfficeVisitSummaryVitalSigns(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryVitalSigns(this,
-						diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryVitalSigns(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryVitalSigns(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -146,20 +135,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	public boolean validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	@Override
-	public boolean validateClinicalOfficeVisitSummarySocialHistorySection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummarySocialHistorySection(this,
+				.validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER(this,
 						diagnostics, context);
 	}
 
@@ -169,11 +145,10 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateClinicalOfficeVisitSummaryProblemSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryProblemSection(this,
-						diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummarySocialHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummarySocialHistorySection(this,
+				diagnostics, context);
 	}
 
 	/**
@@ -182,11 +157,10 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateClinicalOfficeVisitSummaryAllergiesSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryAllergiesSection(this,
-						diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryProblemSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryProblemSection(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -195,11 +169,10 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateClinicalOfficeVisitSummaryResultsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryResultsSection(this,
-						diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryAllergiesSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryAllergiesSection(this,
+				diagnostics, context);
 	}
 
 	/**
@@ -208,11 +181,10 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateClinicalOfficeVisitSummaryProceduresSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryProceduresSection(this,
-						diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryResultsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryResultsSection(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -221,11 +193,10 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateClinicalOfficeVisitSummaryImmunizationsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryImmunizationsSection(this,
-						diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryProceduresSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryProceduresSection(this,
+				diagnostics, context);
 	}
 
 	/**
@@ -234,11 +205,22 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateClinicalOfficeVisitSummaryInstructionsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations
-				.validateClinicalOfficeVisitSummaryInstructionsSection(this,
-						diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryImmunizationsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryImmunizationsSection(this,
+				diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public boolean validateClinicalOfficeVisitSummaryInstructionsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryInstructionsSection(this,
+				diagnostics, context);
 	}
 
 	/**
@@ -248,8 +230,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 */
 	@Override
 	public InstructionsSection retrieveInstructionsSection() {
-		return ClinicalOfficeVisitSummaryOperations
-				.retrieveInstructionsSection(this);
+		return ClinicalOfficeVisitSummaryOperations.retrieveInstructionsSection(this);
 	}
 
 	/**
@@ -259,8 +240,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 */
 	@Override
 	public MedicationsAdministeredSection retrieveMedicationsAdministeredSection() {
-		return ClinicalOfficeVisitSummaryOperations
-				.retrieveMedicationsAdministeredSection(this);
+		return ClinicalOfficeVisitSummaryOperations.retrieveMedicationsAdministeredSection(this);
 	}
 
 	/**
@@ -270,8 +250,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 */
 	@Override
 	public SocialHistorySection getSocialHistorySection() {
-		return ClinicalOfficeVisitSummaryOperations
-				.getSocialHistorySection(this);
+		return ClinicalOfficeVisitSummaryOperations.getSocialHistorySection(this);
 	}
 
 	/**
@@ -331,8 +310,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 */
 	@Override
 	public ImmunizationsSection getImmunizationsSection() {
-		return ClinicalOfficeVisitSummaryOperations
-				.getImmunizationsSection(this);
+		return ClinicalOfficeVisitSummaryOperations.getImmunizationsSection(this);
 	}
 
 	/**
@@ -342,19 +320,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 */
 	@Override
 	public org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection getMedicationsAdministeredSection() {
-		return ClinicalOfficeVisitSummaryOperations
-				.getMedicationsAdministeredSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	@Override
-	public InstructionsSection getInstructionsSection() {
-		return ClinicalOfficeVisitSummaryOperations
-				.getInstructionsSection(this);
+		return ClinicalOfficeVisitSummaryOperations.getMedicationsAdministeredSection(this);
 	}
 
 	/**
@@ -364,7 +330,7 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 */
 	@Override
 	public ClinicalOfficeVisitSummary init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -374,8 +340,18 @@ public class ClinicalOfficeVisitSummaryImpl extends
 	 */
 	@Override
 	public ClinicalOfficeVisitSummary init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated
+	 */
+	@Override
+	public InstructionsSection getInstructionsSection() {
+		return ClinicalOfficeVisitSummaryOperations.getInstructionsSection(this);
 	}
 } // ClinicalOfficeVisitSummaryImpl

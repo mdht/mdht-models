@@ -26,13 +26,12 @@ public interface Mu2consolFactory extends EFactory {
 	 * 
 	 * @generated
 	 */
-	Mu2consolFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolFactoryImpl
-			.init();
+	Mu2consolFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>General Header Constraints</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>General Header Constraints</em>'.
 	 * @generated
 	 */
@@ -41,7 +40,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Summary Of Care Record</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Summary Of Care Record</em>'.
 	 * @generated
 	 */
@@ -50,7 +49,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Social History Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Social History Section</em>'.
 	 * @generated
 	 */
@@ -59,7 +58,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Smoking Status Observation</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Smoking Status Observation</em>'.
 	 * @generated
 	 */
@@ -68,7 +67,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Results Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Results Section</em>'.
 	 * @generated
 	 */
@@ -77,7 +76,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Result Organizer</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Result Organizer</em>'.
 	 * @generated
 	 */
@@ -86,7 +85,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Result Observation</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Result Observation</em>'.
 	 * @generated
 	 */
@@ -95,7 +94,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Procedures Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Procedures Section</em>'.
 	 * @generated
 	 */
@@ -163,7 +162,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>VDT Inpatient Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>VDT Inpatient Summary</em>'.
 	 * @generated
 	 */
@@ -172,7 +171,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>VDT Ambulatory Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>VDT Ambulatory Summary</em>'.
 	 * @generated
 	 */
@@ -181,7 +180,7 @@ public interface Mu2consolFactory extends EFactory {
 	/**
 	 * Returns a new object of class '<em>Functional Status Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return a new object of class '<em>Functional Status Section</em>'.
 	 * @generated
 	 */

@@ -27,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>Cognitive Status Result Observation</b></em>' model
  * objects. <!-- end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
@@ -36,12 +36,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <em>Validate Result Observation Template Id</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
 public class CognitiveStatusResultObservationOperations
-		extends
-		org.openhealthtools.mdht.uml.cda.consol.operations.CognitiveStatusResultObservationOperations {
+		extends org.openhealthtools.mdht.uml.cda.consol.operations.CognitiveStatusResultObservationOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -56,7 +55,7 @@ public class CognitiveStatusResultObservationOperations
 	 * {@link #validateResultObservationTemplateId(CognitiveStatusResultObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * <em>Validate Result Observation Template Id</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #validateResultObservationTemplateId(CognitiveStatusResultObservation,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
@@ -80,7 +79,7 @@ public class CognitiveStatusResultObservationOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param cognitiveStatusResultObservation
 	 *            The receiving '
 	 *            <em><b>Cognitive Status Result Observation</b></em>' model
@@ -94,8 +93,8 @@ public class CognitiveStatusResultObservationOperations
 	 */
 
 	public static boolean validateResultObservationTemplateId(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -104,23 +103,17 @@ public class CognitiveStatusResultObservationOperations
 				VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
 						.createInvariant(VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(cognitiveStatusResultObservation)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
-								Mu2consolPlugin.INSTANCE
-										.getString("CognitiveStatusResultObservationResultObservationTemplateId"),
-								new Object[] { cognitiveStatusResultObservation }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
+						Mu2consolPlugin.INSTANCE
+								.getString("CognitiveStatusResultObservationResultObservationTemplateId"),
+						new Object[] { cognitiveStatusResultObservation }));
 			}
 
 			return false;

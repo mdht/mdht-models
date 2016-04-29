@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary;
@@ -25,13 +23,10 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTInpatientSummary
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>VDT Inpatient Summary</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
-public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
-		implements VDTInpatientSummary {
+public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl implements VDTInpatientSummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -57,11 +52,8 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTInpatientSummaryAdmissionDate(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations
-				.validateVDTInpatientSummaryAdmissionDate(this, diagnostics,
-						context);
+	public boolean validateVDTInpatientSummaryAdmissionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryAdmissionDate(this, diagnostics, context);
 	}
 
 	/**
@@ -70,11 +62,8 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTInpatientSummaryDischargeDate(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations
-				.validateVDTInpatientSummaryDischargeDate(this, diagnostics,
-						context);
+	public boolean validateVDTInpatientSummaryDischargeDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryDischargeDate(this, diagnostics, context);
 	}
 
 	/**
@@ -83,11 +72,10 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTInpatientSummaryAdmissionDischargeLocation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations
-				.validateVDTInpatientSummaryAdmissionDischargeLocation(this,
-						diagnostics, context);
+	public boolean validateVDTInpatientSummaryAdmissionDischargeLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryAdmissionDischargeLocation(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -96,11 +84,8 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTInpatientSummaryMedications(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations
-				.validateVDTInpatientSummaryMedications(this, diagnostics,
-						context);
+	public boolean validateVDTInpatientSummaryMedications(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryMedications(this, diagnostics, context);
 	}
 
 	/**
@@ -109,11 +94,10 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTInpatientSummaryReasonforHospitalization(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations
-				.validateVDTInpatientSummaryReasonforHospitalization(this,
-						diagnostics, context);
+	public boolean validateVDTInpatientSummaryReasonforHospitalization(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryReasonforHospitalization(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -122,11 +106,10 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientSummaryOperations
-				.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
-						this, diagnostics, context);
+	public boolean validateVDTInpatientSummaryHospitalDischargeInstructionsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return VDTInpatientSummaryOperations.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(this,
+				diagnostics, context);
 	}
 
 	/**
@@ -136,8 +119,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 */
 	@Override
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
-		return VDTInpatientSummaryOperations
-				.getHospitalDischargeInstructionsSection(this);
+		return VDTInpatientSummaryOperations.getHospitalDischargeInstructionsSection(this);
 	}
 
 	/**
@@ -147,7 +129,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 */
 	@Override
 	public VDTInpatientSummary init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -157,8 +139,8 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl
 	 */
 	@Override
 	public VDTInpatientSummary init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // VDTInpatientSummaryImpl

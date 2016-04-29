@@ -30,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>Transition Of Care Inpatient Summary</b></em>' model
  * objects. <!-- end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
@@ -39,21 +39,21 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <em>Validate Transition Of Care Inpatient Summary Medications</em>}</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareInpatientSummary#validateTransitionOfCareInpatientSummaryEncounterDiagnoses(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate Transition Of Care Inpatient Summary Encounter Diagnoses</em>}</li>
+ * <em>Validate Transition Of Care Inpatient Summary Encounter Diagnoses</em>}
+ * </li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareInpatientSummary#validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate Transition Of Care Inpatient Summary Hospital Discharge
- * Instructions Section</em>}</li>
+ * <em>Validate Transition Of Care Inpatient Summary Hospital Discharge Instructions Section</em>
+ * }</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareInpatientSummary#getHospitalDischargeInstructionsSection()
  * <em>Get Hospital Discharge Instructions Section</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
-public class TransitionOfCareInpatientSummaryOperations extends
-		SummaryOfCareRecordOperations {
+public class TransitionOfCareInpatientSummaryOperations extends SummaryOfCareRecordOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -93,7 +93,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param transitionOfCareInpatientSummary
 	 *            The receiving '
 	 *            <em><b>Transition Of Care Inpatient Summary</b></em>' model
@@ -107,33 +107,29 @@ public class TransitionOfCareInpatientSummaryOperations extends
 	 */
 
 	public static boolean validateTransitionOfCareInpatientSummaryMedications(
-			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY);
 			try {
 				VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+				.createQuery(VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(transitionOfCareInpatientSummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS,
-								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareInpatientSummaryTransitionOfCareInpatientSummaryMedications"),
-								new Object[] { transitionOfCareInpatientSummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS,
+						Mu2consolPlugin.INSTANCE.getString(
+								"TransitionOfCareInpatientSummaryTransitionOfCareInpatientSummaryMedications"),
+						new Object[] { transitionOfCareInpatientSummary }));
 			}
 
 			return false;
@@ -144,8 +140,8 @@ public class TransitionOfCareInpatientSummaryOperations extends
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateTransitionOfCareInpatientSummaryEncounterDiagnoses(TransitionOfCareInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Transition Of Care Inpatient Summary Encounter Diagnoses</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate Transition Of Care Inpatient Summary Encounter Diagnoses</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateTransitionOfCareInpatientSummaryEncounterDiagnoses(TransitionOfCareInpatientSummary,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -157,8 +153,8 @@ public class TransitionOfCareInpatientSummaryOperations extends
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateTransitionOfCareInpatientSummaryEncounterDiagnoses(TransitionOfCareInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Transition Of Care Inpatient Summary Encounter Diagnoses</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate Transition Of Care Inpatient Summary Encounter Diagnoses</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateTransitionOfCareInpatientSummaryEncounterDiagnoses(TransitionOfCareInpatientSummary,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -170,7 +166,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param transitionOfCareInpatientSummary
 	 *            The receiving '
 	 *            <em><b>Transition Of Care Inpatient Summary</b></em>' model
@@ -184,18 +180,18 @@ public class TransitionOfCareInpatientSummaryOperations extends
 	 */
 
 	public static boolean validateTransitionOfCareInpatientSummaryEncounterDiagnoses(
-			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_ENCOUNTER_DIAGNOSES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY);
 			try {
 				VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_ENCOUNTER_DIAGNOSES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_ENCOUNTER_DIAGNOSES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_ENCOUNTER_DIAGNOSES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
@@ -203,14 +199,11 @@ public class TransitionOfCareInpatientSummaryOperations extends
 						VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_ENCOUNTER_DIAGNOSES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(transitionOfCareInpatientSummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_ENCOUNTER_DIAGNOSES,
-								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareInpatientSummaryTransitionOfCareInpatientSummaryEncounterDiagnoses"),
-								new Object[] { transitionOfCareInpatientSummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_ENCOUNTER_DIAGNOSES,
+						Mu2consolPlugin.INSTANCE.getString(
+								"TransitionOfCareInpatientSummaryTransitionOfCareInpatientSummaryEncounterDiagnoses"),
+						new Object[] { transitionOfCareInpatientSummary }));
 			}
 
 			return false;
@@ -221,8 +214,8 @@ public class TransitionOfCareInpatientSummaryOperations extends
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(TransitionOfCareInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Transition Of Care Inpatient Summary Hospital Discharge Instructions Section</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate Transition Of Care Inpatient Summary Hospital Discharge Instructions Section</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(TransitionOfCareInpatientSummary,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -234,8 +227,8 @@ public class TransitionOfCareInpatientSummaryOperations extends
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(TransitionOfCareInpatientSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Transition Of Care Inpatient Summary Hospital Discharge Instructions Section</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate Transition Of Care Inpatient Summary Hospital Discharge Instructions Section</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(TransitionOfCareInpatientSummary,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -250,7 +243,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))
-	 * 
+	 *
 	 * @param transitionOfCareInpatientSummary
 	 *            The receiving '
 	 *            <em><b>Transition Of Care Inpatient Summary</b></em>' model
@@ -264,18 +257,18 @@ public class TransitionOfCareInpatientSummaryOperations extends
 	 */
 
 	public static boolean validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(
-			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY);
 			try {
 				VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
@@ -283,14 +276,11 @@ public class TransitionOfCareInpatientSummaryOperations extends
 						VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(transitionOfCareInpatientSummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareInpatientSummaryTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection"),
-								new Object[] { transitionOfCareInpatientSummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION,
+						Mu2consolPlugin.INSTANCE.getString(
+								"TransitionOfCareInpatientSummaryTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection"),
+						new Object[] { transitionOfCareInpatientSummary }));
 			}
 
 			return false;
@@ -303,7 +293,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 	 * {@link #getHospitalDischargeInstructionsSection(TransitionOfCareInpatientSummary)
 	 * <em>Get Hospital Discharge Instructions Section</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getHospitalDischargeInstructionsSection(TransitionOfCareInpatientSummary)
 	 * @generated
 	 * @ordered
@@ -329,7 +319,7 @@ public class TransitionOfCareInpatientSummaryOperations extends
 	 * section.oclIsKindOf(consol::HospitalDischargeInstructionsSection
 	 * ))->asSequence
 	 * ()->any(true).oclAsType(consol::HospitalDischargeInstructionsSection)
-	 * 
+	 *
 	 * @param transitionOfCareInpatientSummary
 	 *            The receiving '
 	 *            <em><b>Transition Of Care Inpatient Summary</b></em>' model
@@ -341,22 +331,17 @@ public class TransitionOfCareInpatientSummaryOperations extends
 			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary) {
 		if (GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY,
-					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY
-							.getEAllOperations().get(318));
+			helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY,
+					Mu2consolPackage.Literals.TRANSITION_OF_CARE_INPATIENT_SUMMARY.getEAllOperations().get(318));
 			try {
 				GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY);
-		return (HospitalDischargeInstructionsSection) query
-				.evaluate(transitionOfCareInpatientSummary);
+		OCL.Query query = EOCL_ENV.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY);
+		return (HospitalDischargeInstructionsSection) query.evaluate(transitionOfCareInpatientSummary);
 	}
 
 } // TransitionOfCareInpatientSummaryOperations

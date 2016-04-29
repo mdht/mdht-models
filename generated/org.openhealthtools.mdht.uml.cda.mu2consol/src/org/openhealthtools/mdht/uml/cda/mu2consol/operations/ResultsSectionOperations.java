@@ -33,7 +33,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>Results Section</b></em>' model objects. <!-- end-user-doc
  * -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
@@ -48,12 +48,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <em>Validate Results Section Entries Optional Template Id</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
 public class ResultsSectionOperations
-		extends
-		org.openhealthtools.mdht.uml.cda.consol.operations.ResultsSectionOperations {
+		extends org.openhealthtools.mdht.uml.cda.consol.operations.ResultsSectionOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -69,43 +68,36 @@ public class ResultsSectionOperations
 	 * organizer.oclIsUndefined() and
 	 * organizer.oclIsKindOf(mu2consol::ResultOrganizer
 	 * )).oclAsType(mu2consol::ResultOrganizer)
-	 * 
+	 *
 	 * @param resultsSection
 	 *            The receiving '<em><b>Results Section</b></em>' model object.
 	 *            <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static EList<ResultOrganizer> getMu2consolResultOrganizers(
-			ResultsSection resultsSection) {
+	public static EList<ResultOrganizer> getMu2consolResultOrganizers(ResultsSection resultsSection) {
 		if (GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.RESULTS_SECTION,
-					Mu2consolPackage.Literals.RESULTS_SECTION
-							.getEAllOperations().get(65));
+			helper.setOperationContext(Mu2consolPackage.Literals.RESULTS_SECTION,
+					Mu2consolPackage.Literals.RESULTS_SECTION.getEAllOperations().get(65));
 			try {
 				GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_QRY = helper
 						.createQuery(GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<ResultOrganizer> result = (Collection<ResultOrganizer>) query
-				.evaluate(resultsSection);
-		return new BasicEList.UnmodifiableEList<ResultOrganizer>(result.size(),
-				result.toArray());
+		Collection<ResultOrganizer> result = (Collection<ResultOrganizer>) query.evaluate(resultsSection);
+		return new BasicEList.UnmodifiableEList<ResultOrganizer>(result.size(), result.toArray());
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.templateId->exists(id : datatypes::II | id.root =
 	 * '2.16.840.1.113883.10.20.22.2.3.1')
-	 * 
+	 *
 	 * @param resultsSection
 	 *            The receiving '<em><b>Results Section</b></em>' model object.
 	 * @param diagnostics
@@ -116,34 +108,27 @@ public class ResultsSectionOperations
 	 * @generated
 	 */
 
-	public static boolean validateResultsSectionEntriesOptionalTemplateId(
-			ResultsSection resultsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static boolean validateResultsSectionEntriesOptionalTemplateId(ResultsSection resultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.RESULTS_SECTION);
 			try {
 				VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(resultsSection)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-								Mu2consolPlugin.INSTANCE
-										.getString("ResultsSectionResultsSectionEntriesOptionalTemplateId"),
-								new Object[] { resultsSection }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
+						Mu2consolPlugin.INSTANCE.getString("ResultsSectionResultsSectionEntriesOptionalTemplateId"),
+						new Object[] { resultsSection }));
 			}
 
 			return false;
@@ -168,7 +153,7 @@ public class ResultsSectionOperations
 	 * {@link #getMu2consolResultOrganizers(ResultsSection)
 	 * <em>Get Mu2consol Result Organizers</em>}' query operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getMu2consolResultOrganizers(ResultsSection)
 	 * @generated
 	 * @ordered
@@ -207,7 +192,7 @@ public class ResultsSectionOperations
 	 * {@link #validateResultsSectionResultOrganizer(ResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * <em>Validate Results Section Result Organizer</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #validateResultsSectionResultOrganizer(ResultsSection,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
@@ -231,7 +216,7 @@ public class ResultsSectionOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param resultsSection
 	 *            The receiving '<em><b>Results Section</b></em>' model object.
 	 * @param diagnostics
@@ -242,9 +227,8 @@ public class ResultsSectionOperations
 	 * @generated
 	 */
 
-	public static boolean validateResultsSectionResultOrganizer(
-			ResultsSection resultsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public static boolean validateResultsSectionResultOrganizer(ResultsSection resultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -253,23 +237,16 @@ public class ResultsSectionOperations
 				VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
 						.createInvariant(VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(resultsSection)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.RESULTS_SECTION__RESULTS_SECTION_RESULT_ORGANIZER,
-								Mu2consolPlugin.INSTANCE
-										.getString("ResultsSectionResultsSectionResultOrganizer"),
-								new Object[] { resultsSection }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.RESULTS_SECTION__RESULTS_SECTION_RESULT_ORGANIZER,
+						Mu2consolPlugin.INSTANCE.getString("ResultsSectionResultsSectionResultOrganizer"),
+						new Object[] { resultsSection }));
 			}
 
 			return false;

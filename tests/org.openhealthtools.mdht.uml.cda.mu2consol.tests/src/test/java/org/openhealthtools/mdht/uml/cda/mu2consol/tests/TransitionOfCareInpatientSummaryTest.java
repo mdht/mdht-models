@@ -15,6 +15,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
@@ -34,7 +35,6 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolFactory;
 import org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareInpatientSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.TransitionOfCareInpatientSummaryOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc --> A static utility class that provides operations
@@ -64,7 +64,8 @@ public class TransitionOfCareInpatientSummaryTest extends CDAValidationTest {
 	public void testValidateTransitionOfCareInpatientSummaryMedications() {
 		OperationsTestCase<TransitionOfCareInpatientSummary> validateTransitionOfCareInpatientSummaryMedicationsTestCase = new OperationsTestCase<TransitionOfCareInpatientSummary>(
 			"validateTransitionOfCareInpatientSummaryMedications",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -117,7 +118,8 @@ public class TransitionOfCareInpatientSummaryTest extends CDAValidationTest {
 	public void testValidateTransitionOfCareInpatientSummaryEncounterDiagnoses() {
 		OperationsTestCase<TransitionOfCareInpatientSummary> validateTransitionOfCareInpatientSummaryEncounterDiagnosesTestCase = new OperationsTestCase<TransitionOfCareInpatientSummary>(
 			"validateTransitionOfCareInpatientSummaryEncounterDiagnoses",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_ENCOUNTER_DIAGNOSES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_ENCOUNTER_DIAGNOSES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -565,14 +567,15 @@ public class TransitionOfCareInpatientSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection() {
 		OperationsTestCase<TransitionOfCareInpatientSummary> validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSectionTestCase = new OperationsTestCase<TransitionOfCareInpatientSummary>(
 			"validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -587,7 +590,7 @@ public class TransitionOfCareInpatientSummaryTest extends CDAValidationTest {
 				/* HospitalDischargeInstructionsSection */
 				HospitalDischargeInstructionsSection section =
 
-				ConsolFactory.eINSTANCE.createHospitalDischargeInstructionsSection().init();
+						ConsolFactory.eINSTANCE.createHospitalDischargeInstructionsSection().init();
 
 				target.addSection(section);
 
@@ -606,7 +609,7 @@ public class TransitionOfCareInpatientSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -618,7 +621,7 @@ public class TransitionOfCareInpatientSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class OperationsForOCL extends TransitionOfCareInpatientSummaryOperations {
@@ -636,7 +639,7 @@ public class TransitionOfCareInpatientSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ObjectFactory implements TestObjectFactory<TransitionOfCareInpatientSummary> {
@@ -647,20 +650,20 @@ public class TransitionOfCareInpatientSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static OperationsForOCL operationsForOCL = new OperationsForOCL();
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static ObjectFactory objectFactory = new ObjectFactory();
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ConstructorTestClass extends TransitionOfCareInpatientSummaryOperations {
@@ -668,7 +671,7 @@ public class TransitionOfCareInpatientSummaryTest extends CDAValidationTest {
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -677,7 +680,7 @@ public class TransitionOfCareInpatientSummaryTest extends CDAValidationTest {
 	} // testConstructor
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 

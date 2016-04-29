@@ -28,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>Smoking Status Observation</b></em>' model objects. <!--
  * end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
@@ -43,12 +43,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <em>Validate Smoking Status Observation Value</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
 public class SmokingStatusObservationOperations
-		extends
-		org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusObservationOperations {
+		extends org.openhealthtools.mdht.uml.cda.consol.operations.SmokingStatusObservationOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -87,7 +86,7 @@ public class SmokingStatusObservationOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param smokingStatusObservation
 	 *            The receiving '<em><b>Smoking Status Observation</b></em>'
 	 *            model object.
@@ -99,8 +98,7 @@ public class SmokingStatusObservationOperations
 	 * @generated
 	 */
 
-	public static boolean validateSmokingStatusObservationTemplateId(
-			SmokingStatusObservation smokingStatusObservation,
+	public static boolean validateSmokingStatusObservationTemplateId(SmokingStatusObservation smokingStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -108,25 +106,20 @@ public class SmokingStatusObservationOperations
 			helper.setContext(Mu2consolPackage.Literals.SMOKING_STATUS_OBSERVATION);
 			try {
 				VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(smokingStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_TEMPLATE_ID,
-								Mu2consolPlugin.INSTANCE
-										.getString("SmokingStatusObservationSmokingStatusObservationTemplateId"),
-								new Object[] { smokingStatusObservation }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_TEMPLATE_ID,
+						Mu2consolPlugin.INSTANCE
+								.getString("SmokingStatusObservationSmokingStatusObservationTemplateId"),
+						new Object[] { smokingStatusObservation }));
 			}
 
 			return false;
@@ -139,7 +132,7 @@ public class SmokingStatusObservationOperations
 	 * {@link #validateSmokingStatusObservationValueP(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * <em>Validate Smoking Status Observation Value P</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #validateSmokingStatusObservationValueP(SmokingStatusObservation,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
@@ -163,7 +156,7 @@ public class SmokingStatusObservationOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param smokingStatusObservation
 	 *            The receiving '<em><b>Smoking Status Observation</b></em>'
 	 *            model object.
@@ -175,8 +168,7 @@ public class SmokingStatusObservationOperations
 	 * @generated
 	 */
 
-	public static boolean validateSmokingStatusObservationValueP(
-			SmokingStatusObservation smokingStatusObservation,
+	public static boolean validateSmokingStatusObservationValueP(SmokingStatusObservation smokingStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -186,23 +178,16 @@ public class SmokingStatusObservationOperations
 				VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
 						.createInvariant(VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(smokingStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE_P,
-								Mu2consolPlugin.INSTANCE
-										.getString("SmokingStatusObservationSmokingStatusObservationValueP"),
-								new Object[] { smokingStatusObservation }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE_P,
+						Mu2consolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationValueP"),
+						new Object[] { smokingStatusObservation }));
 			}
 
 			if (context != null) {
@@ -214,9 +199,7 @@ public class SmokingStatusObservationOperations
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-							"org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservationValueP",
-							passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservationValueP", passToken);
 				}
 				passToken.add(smokingStatusObservation);
 			}
@@ -231,7 +214,7 @@ public class SmokingStatusObservationOperations
 	 * {@link #validateSmokingStatusObservationValue(SmokingStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * <em>Validate Smoking Status Observation Value</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #validateSmokingStatusObservationValue(SmokingStatusObservation,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
@@ -257,7 +240,7 @@ public class SmokingStatusObservationOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param smokingStatusObservation
 	 *            The receiving '<em><b>Smoking Status Observation</b></em>'
 	 *            model object.
@@ -269,16 +252,12 @@ public class SmokingStatusObservationOperations
 	 * @generated
 	 */
 
-	public static boolean validateSmokingStatusObservationValue(
-			SmokingStatusObservation smokingStatusObservation,
+	public static boolean validateSmokingStatusObservationValue(SmokingStatusObservation smokingStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		Object passToken = (context == null) ? null
-				: context
-						.get("org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservationValueP");
-		if ((passToken instanceof Collection<?>)
-				&& ((Collection<?>) passToken)
-						.contains(smokingStatusObservation)) {
+				: context.get("org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservationValueP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(smokingStatusObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
@@ -290,23 +269,16 @@ public class SmokingStatusObservationOperations
 				VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
 						.createInvariant(VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_SMOKING_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(smokingStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE,
-								Mu2consolPlugin.INSTANCE
-										.getString("SmokingStatusObservationSmokingStatusObservationValue"),
-								new Object[] { smokingStatusObservation }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE,
+						Mu2consolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationValue"),
+						new Object[] { smokingStatusObservation }));
 			}
 
 			return false;

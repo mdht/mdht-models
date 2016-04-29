@@ -14,6 +14,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
@@ -26,7 +27,6 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SummaryOfCareRecordOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc --> A static utility class that provides operations
@@ -65,14 +65,14 @@ import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 public class SummaryOfCareRecordTest extends CDAValidationTest {
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateSummaryOfCareRecordCarePlanning() {
 		OperationsTestCase<SummaryOfCareRecord> validateSummaryOfCareRecordCarePlanningTestCase = new OperationsTestCase<SummaryOfCareRecord>(
-			"validateSummaryOfCareRecordCarePlanning",
-			operationsForOCL.getOCLValue("VALIDATE_SUMMARY_OF_CARE_RECORD_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSummaryOfCareRecordCarePlanning", operationsForOCL.getOCLValue(
+				"VALIDATE_SUMMARY_OF_CARE_RECORD_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -169,14 +169,14 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateSummaryOfCareRecordProblemSection() {
 		OperationsTestCase<SummaryOfCareRecord> validateSummaryOfCareRecordProblemSectionTestCase = new OperationsTestCase<SummaryOfCareRecord>(
-			"validateSummaryOfCareRecordProblemSection",
-			operationsForOCL.getOCLValue("VALIDATE_SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSummaryOfCareRecordProblemSection", operationsForOCL.getOCLValue(
+				"VALIDATE_SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -191,7 +191,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* ProblemSection */
 				ProblemSection section =
 
-				ConsolFactory.eINSTANCE.createProblemSection().init();
+						ConsolFactory.eINSTANCE.createProblemSection().init();
 
 				target.addSection(section);
 
@@ -210,14 +210,14 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateSummaryOfCareRecordAllergiesSection() {
 		OperationsTestCase<SummaryOfCareRecord> validateSummaryOfCareRecordAllergiesSectionTestCase = new OperationsTestCase<SummaryOfCareRecord>(
-			"validateSummaryOfCareRecordAllergiesSection",
-			operationsForOCL.getOCLValue("VALIDATE_SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSummaryOfCareRecordAllergiesSection", operationsForOCL.getOCLValue(
+				"VALIDATE_SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -232,7 +232,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* AllergiesSection */
 				AllergiesSection section =
 
-				ConsolFactory.eINSTANCE.createAllergiesSection().init();
+						ConsolFactory.eINSTANCE.createAllergiesSection().init();
 
 				target.addSection(section);
 
@@ -251,14 +251,15 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateSummaryOfCareRecordImmunizationsSection() {
 		OperationsTestCase<SummaryOfCareRecord> validateSummaryOfCareRecordImmunizationsSectionTestCase = new OperationsTestCase<SummaryOfCareRecord>(
 			"validateSummaryOfCareRecordImmunizationsSection",
-			operationsForOCL.getOCLValue("VALIDATE_SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -273,7 +274,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* ImmunizationsSection */
 				ImmunizationsSection section =
 
-				ConsolFactory.eINSTANCE.createImmunizationsSection().init();
+						ConsolFactory.eINSTANCE.createImmunizationsSection().init();
 
 				target.addSection(section);
 
@@ -292,14 +293,15 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateSummaryOfCareRecordSocialHistorySection() {
 		OperationsTestCase<SummaryOfCareRecord> validateSummaryOfCareRecordSocialHistorySectionTestCase = new OperationsTestCase<SummaryOfCareRecord>(
 			"validateSummaryOfCareRecordSocialHistorySection",
-			operationsForOCL.getOCLValue("VALIDATE_SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -314,7 +316,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* SocialHistorySection */
 				SocialHistorySection section =
 
-				Mu2consolFactory.eINSTANCE.createSocialHistorySection().init();
+						Mu2consolFactory.eINSTANCE.createSocialHistorySection().init();
 
 				target.addSection(section);
 
@@ -333,14 +335,14 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateSummaryOfCareRecordResultsSection() {
 		OperationsTestCase<SummaryOfCareRecord> validateSummaryOfCareRecordResultsSectionTestCase = new OperationsTestCase<SummaryOfCareRecord>(
-			"validateSummaryOfCareRecordResultsSection",
-			operationsForOCL.getOCLValue("VALIDATE_SUMMARY_OF_CARE_RECORD_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSummaryOfCareRecordResultsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_SUMMARY_OF_CARE_RECORD_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -355,7 +357,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* ResultsSection */
 				ResultsSection section =
 
-				Mu2consolFactory.eINSTANCE.createResultsSection().init();
+						Mu2consolFactory.eINSTANCE.createResultsSection().init();
 
 				target.addSection(section);
 
@@ -374,14 +376,14 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateSummaryOfCareRecordProceduresSection() {
 		OperationsTestCase<SummaryOfCareRecord> validateSummaryOfCareRecordProceduresSectionTestCase = new OperationsTestCase<SummaryOfCareRecord>(
-			"validateSummaryOfCareRecordProceduresSection",
-			operationsForOCL.getOCLValue("VALIDATE_SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateSummaryOfCareRecordProceduresSection", operationsForOCL.getOCLValue(
+				"VALIDATE_SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -396,7 +398,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* ProceduresSection */
 				ProceduresSection section =
 
-				Mu2consolFactory.eINSTANCE.createProceduresSection().init();
+						Mu2consolFactory.eINSTANCE.createProceduresSection().init();
 
 				target.addSection(section);
 
@@ -422,7 +424,8 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	public void testValidateSummaryOfCareRecordFunctionalStatusSection() {
 		OperationsTestCase<SummaryOfCareRecord> validateSummaryOfCareRecordFunctionalStatusSectionTestCase = new OperationsTestCase<SummaryOfCareRecord>(
 			"validateSummaryOfCareRecordFunctionalStatusSection",
-			operationsForOCL.getOCLValue("VALIDATE_SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -437,7 +440,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* FunctionalStatusSection */
 				FunctionalStatusSection section =
 
-				ConsolFactory.eINSTANCE.createFunctionalStatusSection().init();
+						ConsolFactory.eINSTANCE.createFunctionalStatusSection().init();
 
 				target.addSection(section);
 
@@ -456,7 +459,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -468,7 +471,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -480,7 +483,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -492,7 +495,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -504,7 +507,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -516,7 +519,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -528,7 +531,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -540,7 +543,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class OperationsForOCL extends SummaryOfCareRecordOperations {
@@ -558,7 +561,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ObjectFactory implements TestObjectFactory<SummaryOfCareRecord> {
@@ -569,20 +572,20 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static OperationsForOCL operationsForOCL = new OperationsForOCL();
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static ObjectFactory objectFactory = new ObjectFactory();
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ConstructorTestClass extends SummaryOfCareRecordOperations {
@@ -590,7 +593,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -599,7 +602,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 	} // testConstructor
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 

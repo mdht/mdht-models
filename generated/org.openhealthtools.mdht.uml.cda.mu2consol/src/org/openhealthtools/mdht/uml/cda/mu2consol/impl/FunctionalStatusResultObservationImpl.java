@@ -6,33 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
-
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.FunctionalStatusResultObservationOperations;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>Functional Status Result Observation</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
 public class FunctionalStatusResultObservationImpl
-		extends
-		org.openhealthtools.mdht.uml.cda.consol.impl.FunctionalStatusResultObservationImpl
+		extends org.openhealthtools.mdht.uml.cda.consol.impl.FunctionalStatusResultObservationImpl
 		implements FunctionalStatusResultObservation {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -59,10 +49,9 @@ public class FunctionalStatusResultObservationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultObservationTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusResultObservationOperations
-				.validateResultObservationTemplateId(this, diagnostics, context);
+	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FunctionalStatusResultObservationOperations.validateResultObservationTemplateId(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -72,7 +61,7 @@ public class FunctionalStatusResultObservationImpl
 	 */
 	@Override
 	public FunctionalStatusResultObservation init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -82,8 +71,8 @@ public class FunctionalStatusResultObservationImpl
 	 */
 	@Override
 	public FunctionalStatusResultObservation init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // FunctionalStatusResultObservationImpl

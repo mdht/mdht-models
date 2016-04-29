@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary;
@@ -25,13 +23,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.TransitionOfCareAmb
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>Transition Of Care Ambulatory Summary</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
-public class TransitionOfCareAmbulatorySummaryImpl extends
-		SummaryOfCareRecordImpl implements TransitionOfCareAmbulatorySummary {
+public class TransitionOfCareAmbulatorySummaryImpl extends SummaryOfCareRecordImpl
+		implements TransitionOfCareAmbulatorySummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -57,11 +53,10 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TransitionOfCareAmbulatorySummaryOperations
-				.validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(
-						this, diagnostics, context);
+				.validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(this, diagnostics, context);
 	}
 
 	/**
@@ -70,11 +65,10 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateTransitionOfCareAmbulatorySummaryReasonForReferral(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransitionOfCareAmbulatorySummaryReasonForReferral(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TransitionOfCareAmbulatorySummaryOperations
-				.validateTransitionOfCareAmbulatorySummaryReasonForReferral(
-						this, diagnostics, context);
+				.validateTransitionOfCareAmbulatorySummaryReasonForReferral(this, diagnostics, context);
 	}
 
 	/**
@@ -83,11 +77,10 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TransitionOfCareAmbulatorySummaryOperations
-				.validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(
-						this, diagnostics, context);
+				.validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(this, diagnostics, context);
 	}
 
 	/**
@@ -96,11 +89,10 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateTransitionOfCareAmbulatorySummaryMedicationsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransitionOfCareAmbulatorySummaryMedicationsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TransitionOfCareAmbulatorySummaryOperations
-				.validateTransitionOfCareAmbulatorySummaryMedicationsSection(
-						this, diagnostics, context);
+				.validateTransitionOfCareAmbulatorySummaryMedicationsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +102,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 */
 	@Override
 	public MedicationsSection getMedicationsSection() {
-		return TransitionOfCareAmbulatorySummaryOperations
-				.getMedicationsSection(this);
+		return TransitionOfCareAmbulatorySummaryOperations.getMedicationsSection(this);
 	}
 
 	/**
@@ -121,7 +112,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 */
 	@Override
 	public TransitionOfCareAmbulatorySummary init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -131,8 +122,8 @@ public class TransitionOfCareAmbulatorySummaryImpl extends
 	 */
 	@Override
 	public TransitionOfCareAmbulatorySummary init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // TransitionOfCareAmbulatorySummaryImpl

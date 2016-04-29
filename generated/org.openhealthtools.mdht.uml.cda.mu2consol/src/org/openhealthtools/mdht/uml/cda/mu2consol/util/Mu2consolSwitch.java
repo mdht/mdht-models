@@ -13,12 +13,6 @@ package org.openhealthtools.mdht.uml.cda.mu2consol.util;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
-import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.Organizer;
-import org.openhealthtools.mdht.uml.cda.Procedure;
-import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
@@ -43,8 +37,6 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareInpatientSumma
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatorySummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary;
-import org.openhealthtools.mdht.uml.hl7.rim.Act;
-import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 
 /**
  * <!-- begin-user-doc --> The <b>Switch</b> for the model's inheritance
@@ -80,7 +72,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	/**
 	 * Checks whether this is a switch for the given package. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @parameter ePackage the package in question.
 	 * @return whether this is a switch for the given package.
 	 * @generated
@@ -678,8 +670,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseMedicationsAdministeredSection(
-			MedicationsAdministeredSection object) {
+	public T caseMedicationsAdministeredSection(MedicationsAdministeredSection object) {
 		return null;
 	}
 
@@ -696,8 +687,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTransitionOfCareAmbulatorySummary(
-			TransitionOfCareAmbulatorySummary object) {
+	public T caseTransitionOfCareAmbulatorySummary(TransitionOfCareAmbulatorySummary object) {
 		return null;
 	}
 
@@ -714,8 +704,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTransitionOfCareInpatientSummary(
-			TransitionOfCareInpatientSummary object) {
+	public T caseTransitionOfCareInpatientSummary(TransitionOfCareInpatientSummary object) {
 		return null;
 	}
 
@@ -800,8 +789,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCognitiveStatusResultObservation(
-			CognitiveStatusResultObservation object) {
+	public T caseCognitiveStatusResultObservation(CognitiveStatusResultObservation object) {
 		return null;
 	}
 
@@ -818,8 +806,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCognitiveStatusResultOrganizer(
-			CognitiveStatusResultOrganizer object) {
+	public T caseCognitiveStatusResultOrganizer(CognitiveStatusResultOrganizer object) {
 		return null;
 	}
 
@@ -836,8 +823,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFunctionalStatusResultObservation(
-			FunctionalStatusResultObservation object) {
+	public T caseFunctionalStatusResultObservation(FunctionalStatusResultObservation object) {
 		return null;
 	}
 
@@ -854,8 +840,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseFunctionalStatusResultOrganizer(
-			FunctionalStatusResultOrganizer object) {
+	public T caseFunctionalStatusResultOrganizer(FunctionalStatusResultOrganizer object) {
 		return null;
 	}
 
@@ -872,7 +857,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInfrastructureRoot(InfrastructureRoot object) {
+	public T caseInfrastructureRoot(org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot object) {
 		return null;
 	}
 
@@ -889,7 +874,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAct(Act object) {
+	public T caseAct(org.eclipse.mdht.uml.hl7.rim.Act object) {
 		return null;
 	}
 
@@ -906,7 +891,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseClinicalDocument(ClinicalDocument object) {
+	public T caseClinicalDocument(org.eclipse.mdht.uml.cda.ClinicalDocument object) {
 		return null;
 	}
 
@@ -941,7 +926,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSection(Section object) {
+	public T caseSection(org.eclipse.mdht.uml.cda.Section object) {
 		return null;
 	}
 
@@ -958,8 +943,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_SocialHistorySection(
-			org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection object) {
+	public T caseConsol_SocialHistorySection(org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection object) {
 		return null;
 	}
 
@@ -976,7 +960,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseClinicalStatement(ClinicalStatement object) {
+	public T caseClinicalStatement(org.eclipse.mdht.uml.cda.ClinicalStatement object) {
 		return null;
 	}
 
@@ -993,7 +977,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseObservation(Observation object) {
+	public T caseObservation(org.eclipse.mdht.uml.cda.Observation object) {
 		return null;
 	}
 
@@ -1028,8 +1012,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseResultsSectionEntriesOptional(
-			ResultsSectionEntriesOptional object) {
+	public T caseResultsSectionEntriesOptional(ResultsSectionEntriesOptional object) {
 		return null;
 	}
 
@@ -1046,8 +1029,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_ResultsSection(
-			org.openhealthtools.mdht.uml.cda.consol.ResultsSection object) {
+	public T caseConsol_ResultsSection(org.openhealthtools.mdht.uml.cda.consol.ResultsSection object) {
 		return null;
 	}
 
@@ -1064,7 +1046,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOrganizer(Organizer object) {
+	public T caseOrganizer(org.eclipse.mdht.uml.cda.Organizer object) {
 		return null;
 	}
 
@@ -1081,8 +1063,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_ResultOrganizer(
-			org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer object) {
+	public T caseConsol_ResultOrganizer(org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer object) {
 		return null;
 	}
 
@@ -1099,8 +1080,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_ResultObservation(
-			org.openhealthtools.mdht.uml.cda.consol.ResultObservation object) {
+	public T caseConsol_ResultObservation(org.openhealthtools.mdht.uml.cda.consol.ResultObservation object) {
 		return null;
 	}
 
@@ -1117,8 +1097,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseProceduresSectionEntriesOptional(
-			ProceduresSectionEntriesOptional object) {
+	public T caseProceduresSectionEntriesOptional(ProceduresSectionEntriesOptional object) {
 		return null;
 	}
 
@@ -1135,8 +1114,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsol_ProceduresSection(
-			org.openhealthtools.mdht.uml.cda.consol.ProceduresSection object) {
+	public T caseConsol_ProceduresSection(org.openhealthtools.mdht.uml.cda.consol.ProceduresSection object) {
 		return null;
 	}
 
@@ -1153,7 +1131,7 @@ public class Mu2consolSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseProcedure(Procedure object) {
+	public T caseProcedure(org.eclipse.mdht.uml.cda.Procedure object) {
 		return null;
 	}
 

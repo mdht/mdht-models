@@ -10,19 +10,18 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>General Header Constraints</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getGeneralHeaderConstraints()
  * @model annotation=
  *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsCareTeamMembers GeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole' templateId.root='2.16.840.1.113883.10.20.22.1.1' constraints.validation.query='GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole' constraints.validation.warning='GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication'"
@@ -36,11 +35,10 @@ import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection
  *        "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication constraints.validation.error='GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode'"
  * @generated
  */
-public interface GeneralHeaderConstraints extends
-		org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints {
+public interface GeneralHeaderConstraints extends org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param diagnostics
 	 *            The chain of diagnostics to which problems are to be appended.
 	 * @param context
@@ -50,12 +48,11 @@ public interface GeneralHeaderConstraints extends
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.documentationOf.oclAsType(cda::DocumentationOf).serviceEvent.performer->notEmpty()) or (self.componentOf.oclAsType(cda::Component1).encompassingEncounter.encounterParticipant->notEmpty()) or (self.componentOf.oclAsType(cda::Component1).encompassingEncounter.responsibleParty->notEmpty())'"
 	 * @generated
 	 */
-	boolean validateGeneralHeaderConstraintsCareTeamMembers(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateGeneralHeaderConstraintsCareTeamMembers(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param diagnostics
 	 *            The chain of diagnostics to which problems are to be appended.
 	 * @param context
@@ -76,7 +73,7 @@ public interface GeneralHeaderConstraints extends
 	 * ))->asSequence
 	 * ()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection) <!--
 	 * end-model-doc -->
-	 * 
+	 *
 	 * @model required="true" ordered="false" annotation=
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)'"
 	 * @generated
@@ -88,7 +85,6 @@ public interface GeneralHeaderConstraints extends
 	 * 
 	 * @generated
 	 */
-	@Override
 	public GeneralHeaderConstraints init();
 
 	/**
@@ -96,7 +92,5 @@ public interface GeneralHeaderConstraints extends
 	 * 
 	 * @generated
 	 */
-	@Override
-	public GeneralHeaderConstraints init(
-			Iterable<? extends Initializer<? extends EObject>> initializers);
+	public GeneralHeaderConstraints init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GeneralHeaderConstraints

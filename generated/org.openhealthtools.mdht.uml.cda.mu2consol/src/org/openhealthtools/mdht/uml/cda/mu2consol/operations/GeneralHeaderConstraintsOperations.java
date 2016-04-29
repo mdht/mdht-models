@@ -33,7 +33,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>General Header Constraints</b></em>' model objects. <!--
  * end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
@@ -42,8 +42,8 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <em>Validate General Header Constraints Care Team Members</em>}</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate General Header Constraints Record Target Patient Role Patient
- * Language Communication Language Code Term Case Insensitive</em>}</li>
+ * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code Term Case Insensitive</em>
+ * }</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#retrieveHospitalAdmissionDiagnosisSection()
  * <em>Retrieve Hospital Admission Diagnosis Section</em>}</li>
@@ -55,43 +55,42 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <em>Validate General Header Constraints Record Target</em>}</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate General Header Constraints Record Target Patient Role Patient
- * Language Communication Language Code</em>}</li>
+ * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>
+ * }</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate General Header Constraints Record Target Patient Role Patient
- * Ethnic Group Code</em>}</li>
+ * <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code</em>
+ * }</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate General Header Constraints Record Target Patient Role Patient
- * Ethnic Group Code P</em>}</li>
+ * <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code P</em>
+ * }</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate General Header Constraints Record Target Patient Role Patient
- * Race Code</em>}</li>
+ * <em>Validate General Header Constraints Record Target Patient Role Patient Race Code</em>
+ * }</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate General Header Constraints Record Target Patient Role Patient
- * Race Code P</em>}</li>
+ * <em>Validate General Header Constraints Record Target Patient Role Patient Race Code P</em>
+ * }</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate General Header Constraints Record Target Patient Role Patient
- * Language Communication</em>}</li>
+ * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication</em>
+ * }</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate General Header Constraints Record Target Patient Role Patient
- * </em>}</li>
+ * <em>Validate General Header Constraints Record Target Patient Role Patient</em>
+ * }</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints#validateGeneralHeaderConstraintsRecordTargetPatientRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
  * <em>Validate General Header Constraints Record Target Patient Role</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
 public class GeneralHeaderConstraintsOperations
-		extends
-		org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraintsOperations {
+		extends org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraintsOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -130,7 +129,7 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object.
@@ -143,33 +142,28 @@ public class GeneralHeaderConstraintsOperations
 	 */
 
 	public static boolean validateGeneralHeaderConstraintsCareTeamMembers(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CARE_TEAM_MEMBERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_CARE_TEAM_MEMBERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CARE_TEAM_MEMBERS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_GENERAL_HEADER_CONSTRAINTS_CARE_TEAM_MEMBERS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_GENERAL_HEADER_CONSTRAINTS_CARE_TEAM_MEMBERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CARE_TEAM_MEMBERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(generalHeaderConstraints)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_CARE_TEAM_MEMBERS,
-								Mu2consolPlugin.INSTANCE
-										.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsCareTeamMembers"),
-								new Object[] { generalHeaderConstraints }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_CARE_TEAM_MEMBERS,
+						Mu2consolPlugin.INSTANCE
+								.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsCareTeamMembers"),
+						new Object[] { generalHeaderConstraints }));
 			}
 
 			return false;
@@ -179,7 +173,7 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object.
@@ -192,20 +186,19 @@ public class GeneralHeaderConstraintsOperations
 	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_TERM_CASE_INSENSITIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper
-						.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_TERM_CASE_INSENSITIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_TERM_CASE_INSENSITIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_TERM_CASE_INSENSITIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV
 						.createQuery(oclExpression);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_TERM_CASE_INSENSITIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY
@@ -215,14 +208,11 @@ public class GeneralHeaderConstraintsOperations
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics
-							.add(new BasicDiagnostic(
-									Diagnostic.ERROR,
-									Mu2consolValidator.DIAGNOSTIC_SOURCE,
-									Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_TERM_CASE_INSENSITIVE,
-									Mu2consolPlugin.INSTANCE
-											.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive"),
-									new Object[] { eObject }));
+					diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+							Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_TERM_CASE_INSENSITIVE,
+							Mu2consolPlugin.INSTANCE.getString(
+									"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -238,7 +228,7 @@ public class GeneralHeaderConstraintsOperations
 	 * section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection
 	 * ))->asSequence
 	 * ()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object. <!-- end-model-doc -->
@@ -249,29 +239,24 @@ public class GeneralHeaderConstraintsOperations
 			GeneralHeaderConstraints generalHeaderConstraints) {
 		if (RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS,
-					Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS
-							.getEAllOperations().get(294));
+			helper.setOperationContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS,
+					Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS.getEAllOperations().get(294));
 			try {
 				RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY);
-		return (HospitalAdmissionDiagnosisSection) query
-				.evaluate(generalHeaderConstraints);
+		OCL.Query query = EOCL_ENV.createQuery(RETRIEVE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__EOCL_QRY);
+		return (HospitalAdmissionDiagnosisSection) query.evaluate(generalHeaderConstraints);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.templateId->exists(id : datatypes::II | id.root =
 	 * '2.16.840.1.113883.10.20.22.1.1')
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object.
@@ -283,8 +268,7 @@ public class GeneralHeaderConstraintsOperations
 	 * @generated
 	 */
 
-	public static boolean validateGeneralHeaderConstraintsTemplateId(
-			GeneralHeaderConstraints generalHeaderConstraints,
+	public static boolean validateGeneralHeaderConstraintsTemplateId(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -292,25 +276,20 @@ public class GeneralHeaderConstraintsOperations
 			helper.setContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(generalHeaderConstraints)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-								Mu2consolPlugin.INSTANCE
-										.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsTemplateId"),
-								new Object[] { generalHeaderConstraints }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						Mu2consolPlugin.INSTANCE
+								.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsTemplateId"),
+						new Object[] { generalHeaderConstraints }));
 			}
 
 			return false;
@@ -321,8 +300,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code Term Case Insensitive</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code Term Case Insensitive</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -334,8 +313,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code Term Case Insensitive</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code Term Case Insensitive</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -347,7 +326,7 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object.
@@ -360,33 +339,28 @@ public class GeneralHeaderConstraintsOperations
 	 */
 
 	public static boolean validateGeneralHeaderConstraintsRecordTarget(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(generalHeaderConstraints)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET,
-								Mu2consolPlugin.INSTANCE
-										.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTarget"),
-								new Object[] { generalHeaderConstraints }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET,
+						Mu2consolPlugin.INSTANCE
+								.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTarget"),
+						new Object[] { generalHeaderConstraints }));
 			}
 
 			return false;
@@ -464,7 +438,7 @@ public class GeneralHeaderConstraintsOperations
 	 * value.code = 'vol' or value.code = 'wln' or value.code = 'wol' or
 	 * value.code = 'xho' or value.code = 'yid' or value.code = 'yor' or
 	 * value.code = 'zha' or value.code = 'zul'))
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object.
@@ -477,20 +451,19 @@ public class GeneralHeaderConstraintsOperations
 	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper
-						.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV
 						.createQuery(oclExpression);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY
@@ -500,14 +473,11 @@ public class GeneralHeaderConstraintsOperations
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics
-							.add(new BasicDiagnostic(
-									Diagnostic.ERROR,
-									Mu2consolValidator.DIAGNOSTIC_SOURCE,
-									Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE,
-									Mu2consolPlugin.INSTANCE
-											.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode"),
-									new Object[] { eObject }));
+					diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+							Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE,
+							Mu2consolPlugin.INSTANCE.getString(
+									"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -522,7 +492,7 @@ public class GeneralHeaderConstraintsOperations
 	 * excluding(null)->reject((ethnicGroupCode.oclIsUndefined() or
 	 * ethnicGroupCode.isNullFlavorUndefined()) implies (not
 	 * ethnicGroupCode.oclIsUndefined()))
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object.
@@ -535,20 +505,19 @@ public class GeneralHeaderConstraintsOperations
 	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper
-						.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV
 						.createQuery(oclExpression);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY
@@ -558,14 +527,11 @@ public class GeneralHeaderConstraintsOperations
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics
-							.add(new BasicDiagnostic(
-									Diagnostic.ERROR,
-									Mu2consolValidator.DIAGNOSTIC_SOURCE,
-									Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE,
-									Mu2consolPlugin.INSTANCE
-											.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode"),
-									new Object[] { eObject }));
+					diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+							Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE,
+							Mu2consolPlugin.INSTANCE.getString(
+									"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -580,7 +546,7 @@ public class GeneralHeaderConstraintsOperations
 	 * excluding(null)->reject((ethnicGroupCode.oclIsUndefined() or
 	 * ethnicGroupCode.isNullFlavorUndefined()) implies (not
 	 * ethnicGroupCode.oclIsUndefined()))
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object.
@@ -593,20 +559,19 @@ public class GeneralHeaderConstraintsOperations
 	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper
-						.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV
 						.createQuery(oclExpression);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY
@@ -616,14 +581,11 @@ public class GeneralHeaderConstraintsOperations
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics
-							.add(new BasicDiagnostic(
-									Diagnostic.ERROR,
-									Mu2consolValidator.DIAGNOSTIC_SOURCE,
-									Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P,
-									Mu2consolPlugin.INSTANCE
-											.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP"),
-									new Object[] { eObject }));
+					diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+							Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P,
+							Mu2consolPlugin.INSTANCE.getString(
+									"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -638,7 +600,7 @@ public class GeneralHeaderConstraintsOperations
 	 * excluding(null)->reject((raceCode.oclIsUndefined() or
 	 * raceCode.isNullFlavorUndefined()) implies (not
 	 * raceCode.oclIsUndefined()))
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object.
@@ -651,20 +613,19 @@ public class GeneralHeaderConstraintsOperations
 	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper
-						.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV
 						.createQuery(oclExpression);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY
@@ -674,14 +635,11 @@ public class GeneralHeaderConstraintsOperations
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics
-							.add(new BasicDiagnostic(
-									Diagnostic.ERROR,
-									Mu2consolValidator.DIAGNOSTIC_SOURCE,
-									Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE,
-									Mu2consolPlugin.INSTANCE
-											.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode"),
-									new Object[] { eObject }));
+					diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+							Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE,
+							Mu2consolPlugin.INSTANCE.getString(
+									"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -696,7 +654,7 @@ public class GeneralHeaderConstraintsOperations
 	 * excluding(null)->reject((raceCode.oclIsUndefined() or
 	 * raceCode.isNullFlavorUndefined()) implies (not
 	 * raceCode.oclIsUndefined()))
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object.
@@ -709,20 +667,19 @@ public class GeneralHeaderConstraintsOperations
 	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper
-						.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV
 						.createQuery(oclExpression);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY
@@ -732,14 +689,11 @@ public class GeneralHeaderConstraintsOperations
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics
-							.add(new BasicDiagnostic(
-									Diagnostic.ERROR,
-									Mu2consolValidator.DIAGNOSTIC_SOURCE,
-									Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P,
-									Mu2consolPlugin.INSTANCE
-											.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP"),
-									new Object[] { eObject }));
+					diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+							Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P,
+							Mu2consolPlugin.INSTANCE.getString(
+									"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -754,7 +708,7 @@ public class GeneralHeaderConstraintsOperations
 	 * excluding(null)->reject(languageCommunication->one(languageCommunication
 	 * : cda::LanguageCommunication | not languageCommunication.oclIsUndefined()
 	 * and languageCommunication.oclIsKindOf(cda::LanguageCommunication)))
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object.
@@ -767,20 +721,19 @@ public class GeneralHeaderConstraintsOperations
 	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper
-						.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV
 						.createQuery(oclExpression);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY
@@ -790,14 +743,11 @@ public class GeneralHeaderConstraintsOperations
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics
-							.add(new BasicDiagnostic(
-									Diagnostic.WARNING,
-									Mu2consolValidator.DIAGNOSTIC_SOURCE,
-									Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION,
-									Mu2consolPlugin.INSTANCE
-											.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication"),
-									new Object[] { eObject }));
+					diagnostics.add(new BasicDiagnostic(Diagnostic.WARNING, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+							Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION,
+							Mu2consolPlugin.INSTANCE.getString(
+									"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -811,7 +761,7 @@ public class GeneralHeaderConstraintsOperations
 	 * self.recordTarget->excluding(null).patientRole->excluding(null)->reject(
 	 * patient->one(patient : cda::Patient | not patient.oclIsUndefined() and
 	 * patient.oclIsKindOf(cda::Patient)))
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object.
@@ -824,20 +774,19 @@ public class GeneralHeaderConstraintsOperations
 	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper
-						.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV
 						.createQuery(oclExpression);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY
@@ -847,14 +796,11 @@ public class GeneralHeaderConstraintsOperations
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics
-							.add(new BasicDiagnostic(
-									Diagnostic.ERROR,
-									Mu2consolValidator.DIAGNOSTIC_SOURCE,
-									Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT,
-									Mu2consolPlugin.INSTANCE
-											.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatient"),
-									new Object[] { eObject }));
+					diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+							Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT,
+							Mu2consolPlugin.INSTANCE.getString(
+									"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRolePatient"),
+							new Object[] { eObject }));
 				}
 
 			}
@@ -868,7 +814,7 @@ public class GeneralHeaderConstraintsOperations
 	 * {@link #retrieveHospitalAdmissionDiagnosisSection(GeneralHeaderConstraints)
 	 * <em>Retrieve Hospital Admission Diagnosis Section</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #retrieveHospitalAdmissionDiagnosisSection(GeneralHeaderConstraints)
 	 * @generated
 	 * @ordered
@@ -944,8 +890,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -957,8 +903,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -971,8 +917,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -986,8 +932,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1000,8 +946,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code P</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code P</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1013,8 +959,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code P</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code P</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1027,8 +973,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Race Code</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Race Code</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1042,8 +988,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Race Code</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Race Code</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1056,8 +1002,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Race Code P</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Race Code P</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1069,8 +1015,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Race Code P</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Race Code P</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1083,8 +1029,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1096,8 +1042,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1110,8 +1056,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1123,8 +1069,8 @@ public class GeneralHeaderConstraintsOperations
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate General Header Constraints Record Target Patient Role Patient</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate General Header Constraints Record Target Patient Role Patient</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(GeneralHeaderConstraints,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -1163,7 +1109,7 @@ public class GeneralHeaderConstraintsOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param generalHeaderConstraints
 	 *            The receiving '<em><b>General Header Constraints</b></em>'
 	 *            model object.
@@ -1176,20 +1122,19 @@ public class GeneralHeaderConstraintsOperations
 	 */
 	@SuppressWarnings("unchecked")
 	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRole(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.GENERAL_HEADER_CONSTRAINTS);
 			try {
-				OCLExpression<EClassifier> oclExpression = helper
-						.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				OCLExpression<EClassifier> oclExpression = helper.createQuery(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 				VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV
 						.createQuery(oclExpression);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		Object oclResult = VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY
@@ -1199,14 +1144,11 @@ public class GeneralHeaderConstraintsOperations
 
 			if (diagnostics != null) {
 				for (EObject eObject : oclResultSet) {
-					diagnostics
-							.add(new BasicDiagnostic(
-									Diagnostic.ERROR,
-									Mu2consolValidator.DIAGNOSTIC_SOURCE,
-									Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE,
-									Mu2consolPlugin.INSTANCE
-											.getString("GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole"),
-									new Object[] { eObject }));
+					diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+							Mu2consolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE,
+							Mu2consolPlugin.INSTANCE.getString(
+									"GeneralHeaderConstraintsGeneralHeaderConstraintsRecordTargetPatientRole"),
+							new Object[] { eObject }));
 				}
 
 			}

@@ -58,8 +58,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * 
 	 * @generated
 	 */
-	Mu2consolPackage eINSTANCE = org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl
-			.init();
+	Mu2consolPackage eINSTANCE = org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl.init();
 
 	/**
 	 * The meta object id for the '
@@ -103,7 +102,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -112,7 +111,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -319,7 +318,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -328,7 +327,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -337,7 +336,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -395,7 +394,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -404,7 +403,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -611,7 +610,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -620,7 +619,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -629,7 +628,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -686,7 +685,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -695,7 +694,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -713,7 +712,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -785,7 +784,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -794,7 +793,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -803,7 +802,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -812,7 +811,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -878,7 +877,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -896,7 +895,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1076,7 +1075,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1085,7 +1084,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1094,7 +1093,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1103,7 +1102,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1161,7 +1160,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1170,7 +1169,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1188,7 +1187,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1260,7 +1259,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1269,7 +1268,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1278,7 +1277,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1287,7 +1286,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1353,7 +1352,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1461,7 +1460,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1470,7 +1469,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1479,7 +1478,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1545,7 +1544,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1563,7 +1562,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1743,7 +1742,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1752,7 +1751,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1761,7 +1760,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1770,7 +1769,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1827,7 +1826,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1836,7 +1835,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1854,7 +1853,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1926,7 +1925,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1935,7 +1934,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1944,7 +1943,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -1953,7 +1952,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2019,7 +2018,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2028,7 +2027,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2181,7 +2180,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2190,7 +2189,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2199,7 +2198,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2208,7 +2207,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2266,7 +2265,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2275,7 +2274,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2482,7 +2481,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2491,7 +2490,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2500,7 +2499,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2558,7 +2557,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2567,7 +2566,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2585,7 +2584,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2657,7 +2656,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2666,7 +2665,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2675,7 +2674,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2684,7 +2683,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2698,14 +2697,15 @@ public interface Mu2consolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MEDICATIONS_ADMINISTERED_SECTION_FEATURE_COUNT = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION_FEATURE_COUNT + 0;
+	int MEDICATIONS_ADMINISTERED_SECTION_FEATURE_COUNT = ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION_FEATURE_COUNT
+			+ 0;
 
 	/**
 	 * The meta object id for the '
 	 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.TransitionOfCareAmbulatorySummaryImpl
 	 * <em>Transition Of Care Ambulatory Summary</em>}' class. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.TransitionOfCareAmbulatorySummaryImpl
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareAmbulatorySummary()
 	 * @generated
@@ -2742,7 +2742,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2751,7 +2751,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2958,7 +2958,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2967,7 +2967,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2976,7 +2976,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2986,7 +2986,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * The number of structural features of the '
 	 * <em>Transition Of Care Ambulatory Summary</em>' class. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -2997,7 +2997,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.TransitionOfCareInpatientSummaryImpl
 	 * <em>Transition Of Care Inpatient Summary</em>}' class. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.TransitionOfCareInpatientSummaryImpl
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareInpatientSummary()
 	 * @generated
@@ -3034,7 +3034,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3043,7 +3043,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3250,7 +3250,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3259,7 +3259,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3268,7 +3268,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3326,7 +3326,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3335,7 +3335,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3542,7 +3542,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3551,7 +3551,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3560,7 +3560,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3618,7 +3618,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3627,7 +3627,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3834,7 +3834,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3843,7 +3843,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3852,7 +3852,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3909,7 +3909,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -3918,7 +3918,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4125,7 +4125,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4134,7 +4134,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4143,7 +4143,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4200,7 +4200,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4209,7 +4209,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4227,7 +4227,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4299,7 +4299,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Section Id</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4308,7 +4308,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4317,7 +4317,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4326,7 +4326,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4393,7 +4393,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4411,7 +4411,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4591,7 +4591,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4600,7 +4600,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4609,7 +4609,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4618,7 +4618,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4632,7 +4632,8 @@ public interface Mu2consolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_RESULT_OBSERVATION_FEATURE_COUNT = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION_FEATURE_COUNT + 0;
+	int COGNITIVE_STATUS_RESULT_OBSERVATION_FEATURE_COUNT = ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION_FEATURE_COUNT
+			+ 0;
 
 	/**
 	 * The meta object id for the '
@@ -4685,7 +4686,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4793,7 +4794,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4802,7 +4803,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4811,7 +4812,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4825,14 +4826,15 @@ public interface Mu2consolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COGNITIVE_STATUS_RESULT_ORGANIZER_FEATURE_COUNT = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER_FEATURE_COUNT + 0;
+	int COGNITIVE_STATUS_RESULT_ORGANIZER_FEATURE_COUNT = ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER_FEATURE_COUNT
+			+ 0;
 
 	/**
 	 * The meta object id for the '
 	 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultObservationImpl
 	 * <em>Functional Status Result Observation</em>}' class. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultObservationImpl
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusResultObservation()
 	 * @generated
@@ -4878,7 +4880,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -4896,7 +4898,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Text</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -5076,7 +5078,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -5085,7 +5087,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -5094,7 +5096,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -5103,7 +5105,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Negation Ind</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -5117,7 +5119,8 @@ public interface Mu2consolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FUNCTIONAL_STATUS_RESULT_OBSERVATION_FEATURE_COUNT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION_FEATURE_COUNT + 0;
+	int FUNCTIONAL_STATUS_RESULT_OBSERVATION_FEATURE_COUNT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION_FEATURE_COUNT
+			+ 0;
 
 	/**
 	 * The meta object id for the '
@@ -5170,7 +5173,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -5278,7 +5281,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -5287,7 +5290,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -5296,7 +5299,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 * @ordered
 	 */
@@ -5310,7 +5313,8 @@ public interface Mu2consolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FUNCTIONAL_STATUS_RESULT_ORGANIZER_FEATURE_COUNT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER_FEATURE_COUNT + 0;
+	int FUNCTIONAL_STATUS_RESULT_ORGANIZER_FEATURE_COUNT = ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER_FEATURE_COUNT
+			+ 0;
 
 	/**
 	 * Returns the meta object for class '
@@ -5376,7 +5380,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.ResultOrganizer
 	 * <em>Result Organizer</em>}'. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @return the meta object for class '<em>Result Organizer</em>'.
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.ResultOrganizer
 	 * @generated
@@ -5388,7 +5392,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.ResultObservation
 	 * <em>Result Observation</em>}'. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @return the meta object for class '<em>Result Observation</em>'.
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.ResultObservation
 	 * @generated
@@ -5400,7 +5404,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection
 	 * <em>Procedures Section</em>}'. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @return the meta object for class '<em>Procedures Section</em>'.
 	 * @see org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection
 	 * @generated
@@ -5576,7 +5580,7 @@ public interface Mu2consolPackage extends EPackage {
 	/**
 	 * Returns the factory that creates the instances of the model. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
@@ -5606,8 +5610,7 @@ public interface Mu2consolPackage extends EPackage {
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getGeneralHeaderConstraints()
 		 * @generated
 		 */
-		EClass GENERAL_HEADER_CONSTRAINTS = eINSTANCE
-				.getGeneralHeaderConstraints();
+		EClass GENERAL_HEADER_CONSTRAINTS = eINSTANCE.getGeneralHeaderConstraints();
 
 		/**
 		 * The meta object literal for the '
@@ -5643,8 +5646,7 @@ public interface Mu2consolPackage extends EPackage {
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getSmokingStatusObservation()
 		 * @generated
 		 */
-		EClass SMOKING_STATUS_OBSERVATION = eINSTANCE
-				.getSmokingStatusObservation();
+		EClass SMOKING_STATUS_OBSERVATION = eINSTANCE.getSmokingStatusObservation();
 
 		/**
 		 * The meta object literal for the '
@@ -5704,8 +5706,7 @@ public interface Mu2consolPackage extends EPackage {
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getProcedureActivityProcedure()
 		 * @generated
 		 */
-		EClass PROCEDURE_ACTIVITY_PROCEDURE = eINSTANCE
-				.getProcedureActivityProcedure();
+		EClass PROCEDURE_ACTIVITY_PROCEDURE = eINSTANCE.getProcedureActivityProcedure();
 
 		/**
 		 * The meta object literal for the '
@@ -5717,47 +5718,43 @@ public interface Mu2consolPackage extends EPackage {
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getClinicalOfficeVisitSummary()
 		 * @generated
 		 */
-		EClass CLINICAL_OFFICE_VISIT_SUMMARY = eINSTANCE
-				.getClinicalOfficeVisitSummary();
+		EClass CLINICAL_OFFICE_VISIT_SUMMARY = eINSTANCE.getClinicalOfficeVisitSummary();
 
 		/**
 		 * The meta object literal for the '
 		 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.MedicationsAdministeredSectionImpl
 		 * <em>Medications Administered Section</em>}' class. <!--
 		 * begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 *
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.MedicationsAdministeredSectionImpl
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getMedicationsAdministeredSection()
 		 * @generated
 		 */
-		EClass MEDICATIONS_ADMINISTERED_SECTION = eINSTANCE
-				.getMedicationsAdministeredSection();
+		EClass MEDICATIONS_ADMINISTERED_SECTION = eINSTANCE.getMedicationsAdministeredSection();
 
 		/**
 		 * The meta object literal for the '
 		 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.TransitionOfCareAmbulatorySummaryImpl
 		 * <em>Transition Of Care Ambulatory Summary</em>}' class. <!--
 		 * begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 *
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.TransitionOfCareAmbulatorySummaryImpl
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareAmbulatorySummary()
 		 * @generated
 		 */
-		EClass TRANSITION_OF_CARE_AMBULATORY_SUMMARY = eINSTANCE
-				.getTransitionOfCareAmbulatorySummary();
+		EClass TRANSITION_OF_CARE_AMBULATORY_SUMMARY = eINSTANCE.getTransitionOfCareAmbulatorySummary();
 
 		/**
 		 * The meta object literal for the '
 		 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.TransitionOfCareInpatientSummaryImpl
 		 * <em>Transition Of Care Inpatient Summary</em>}' class. <!--
 		 * begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 *
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.TransitionOfCareInpatientSummaryImpl
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getTransitionOfCareInpatientSummary()
 		 * @generated
 		 */
-		EClass TRANSITION_OF_CARE_INPATIENT_SUMMARY = eINSTANCE
-				.getTransitionOfCareInpatientSummary();
+		EClass TRANSITION_OF_CARE_INPATIENT_SUMMARY = eINSTANCE.getTransitionOfCareInpatientSummary();
 
 		/**
 		 * The meta object literal for the '
@@ -5769,8 +5766,7 @@ public interface Mu2consolPackage extends EPackage {
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getViewDownloadTransmitSummary()
 		 * @generated
 		 */
-		EClass VIEW_DOWNLOAD_TRANSMIT_SUMMARY = eINSTANCE
-				.getViewDownloadTransmitSummary();
+		EClass VIEW_DOWNLOAD_TRANSMIT_SUMMARY = eINSTANCE.getViewDownloadTransmitSummary();
 
 		/**
 		 * The meta object literal for the '
@@ -5806,60 +5802,55 @@ public interface Mu2consolPackage extends EPackage {
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusSection()
 		 * @generated
 		 */
-		EClass FUNCTIONAL_STATUS_SECTION = eINSTANCE
-				.getFunctionalStatusSection();
+		EClass FUNCTIONAL_STATUS_SECTION = eINSTANCE.getFunctionalStatusSection();
 
 		/**
 		 * The meta object literal for the '
 		 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.CognitiveStatusResultObservationImpl
 		 * <em>Cognitive Status Result Observation</em>}' class. <!--
 		 * begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 *
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.CognitiveStatusResultObservationImpl
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getCognitiveStatusResultObservation()
 		 * @generated
 		 */
-		EClass COGNITIVE_STATUS_RESULT_OBSERVATION = eINSTANCE
-				.getCognitiveStatusResultObservation();
+		EClass COGNITIVE_STATUS_RESULT_OBSERVATION = eINSTANCE.getCognitiveStatusResultObservation();
 
 		/**
 		 * The meta object literal for the '
 		 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.CognitiveStatusResultOrganizerImpl
 		 * <em>Cognitive Status Result Organizer</em>}' class. <!--
 		 * begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 *
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.CognitiveStatusResultOrganizerImpl
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getCognitiveStatusResultOrganizer()
 		 * @generated
 		 */
-		EClass COGNITIVE_STATUS_RESULT_ORGANIZER = eINSTANCE
-				.getCognitiveStatusResultOrganizer();
+		EClass COGNITIVE_STATUS_RESULT_ORGANIZER = eINSTANCE.getCognitiveStatusResultOrganizer();
 
 		/**
 		 * The meta object literal for the '
 		 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultObservationImpl
 		 * <em>Functional Status Result Observation</em>}' class. <!--
 		 * begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 *
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultObservationImpl
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusResultObservation()
 		 * @generated
 		 */
-		EClass FUNCTIONAL_STATUS_RESULT_OBSERVATION = eINSTANCE
-				.getFunctionalStatusResultObservation();
+		EClass FUNCTIONAL_STATUS_RESULT_OBSERVATION = eINSTANCE.getFunctionalStatusResultObservation();
 
 		/**
 		 * The meta object literal for the '
 		 * {@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultOrganizerImpl
 		 * <em>Functional Status Result Organizer</em>}' class. <!--
 		 * begin-user-doc --> <!-- end-user-doc -->
-		 * 
+		 *
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.FunctionalStatusResultOrganizerImpl
 		 * @see org.openhealthtools.mdht.uml.cda.mu2consol.impl.Mu2consolPackageImpl#getFunctionalStatusResultOrganizer()
 		 * @generated
 		 */
-		EClass FUNCTIONAL_STATUS_RESULT_ORGANIZER = eINSTANCE
-				.getFunctionalStatusResultOrganizer();
+		EClass FUNCTIONAL_STATUS_RESULT_ORGANIZER = eINSTANCE.getFunctionalStatusResultOrganizer();
 
 	}
 

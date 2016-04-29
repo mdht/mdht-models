@@ -30,33 +30,35 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>Transition Of Care Ambulatory Summary</b></em>' model
  * objects. <!-- end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary#validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate Transition Of Care Ambulatory Summary Provider Name And Contact
- * Info</em>}</li>
+ * <em>Validate Transition Of Care Ambulatory Summary Provider Name And Contact Info</em>
+ * }</li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary#validateTransitionOfCareAmbulatorySummaryReasonForReferral(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate Transition Of Care Ambulatory Summary Reason For Referral</em>}</li>
+ * <em>Validate Transition Of Care Ambulatory Summary Reason For Referral</em>}
+ * </li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary#validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate Transition Of Care Ambulatory Summary Encounter Diagnoses</em>}</li>
+ * <em>Validate Transition Of Care Ambulatory Summary Encounter Diagnoses</em>}
+ * </li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary#validateTransitionOfCareAmbulatorySummaryMedicationsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate Transition Of Care Ambulatory Summary Medications Section</em>}</li>
+ * <em>Validate Transition Of Care Ambulatory Summary Medications Section</em>}
+ * </li>
  * <li>
  * {@link org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareAmbulatorySummary#getMedicationsSection()
  * <em>Get Medications Section</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
-public class TransitionOfCareAmbulatorySummaryOperations extends
-		SummaryOfCareRecordOperations {
+public class TransitionOfCareAmbulatorySummaryOperations extends SummaryOfCareRecordOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -69,8 +71,8 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(TransitionOfCareAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Transition Of Care Ambulatory Summary Provider Name And Contact Info</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate Transition Of Care Ambulatory Summary Provider Name And Contact Info</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(TransitionOfCareAmbulatorySummary,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -82,8 +84,8 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(TransitionOfCareAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Transition Of Care Ambulatory Summary Provider Name And Contact Info</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate Transition Of Care Ambulatory Summary Provider Name And Contact Info</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(TransitionOfCareAmbulatorySummary,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -95,7 +97,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param transitionOfCareAmbulatorySummary
 	 *            The receiving '
 	 *            <em><b>Transition Of Care Ambulatory Summary</b></em>' model
@@ -109,18 +111,18 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	 */
 
 	public static boolean validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY);
 			try {
 				VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
@@ -128,14 +130,11 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 						VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(transitionOfCareAmbulatorySummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO,
-								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo"),
-								new Object[] { transitionOfCareAmbulatorySummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO,
+						Mu2consolPlugin.INSTANCE.getString(
+								"TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo"),
+						new Object[] { transitionOfCareAmbulatorySummary }));
 			}
 
 			return false;
@@ -146,8 +145,8 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateTransitionOfCareAmbulatorySummaryReasonForReferral(TransitionOfCareAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Transition Of Care Ambulatory Summary Reason For Referral</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate Transition Of Care Ambulatory Summary Reason For Referral</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateTransitionOfCareAmbulatorySummaryReasonForReferral(TransitionOfCareAmbulatorySummary,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -160,8 +159,8 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateTransitionOfCareAmbulatorySummaryReasonForReferral(TransitionOfCareAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Transition Of Care Ambulatory Summary Reason For Referral</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate Transition Of Care Ambulatory Summary Reason For Referral</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateTransitionOfCareAmbulatorySummaryReasonForReferral(TransitionOfCareAmbulatorySummary,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -173,7 +172,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param transitionOfCareAmbulatorySummary
 	 *            The receiving '
 	 *            <em><b>Transition Of Care Ambulatory Summary</b></em>' model
@@ -187,18 +186,18 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	 */
 
 	public static boolean validateTransitionOfCareAmbulatorySummaryReasonForReferral(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_REASON_FOR_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY);
 			try {
 				VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_REASON_FOR_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_REASON_FOR_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_REASON_FOR_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
@@ -206,14 +205,11 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 						VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_REASON_FOR_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(transitionOfCareAmbulatorySummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_REASON_FOR_REFERRAL,
-								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryReasonForReferral"),
-								new Object[] { transitionOfCareAmbulatorySummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_REASON_FOR_REFERRAL,
+						Mu2consolPlugin.INSTANCE.getString(
+								"TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryReasonForReferral"),
+						new Object[] { transitionOfCareAmbulatorySummary }));
 			}
 
 			return false;
@@ -224,8 +220,8 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(TransitionOfCareAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Transition Of Care Ambulatory Summary Encounter Diagnoses</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate Transition Of Care Ambulatory Summary Encounter Diagnoses</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(TransitionOfCareAmbulatorySummary,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -237,8 +233,8 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(TransitionOfCareAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Transition Of Care Ambulatory Summary Encounter Diagnoses</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate Transition Of Care Ambulatory Summary Encounter Diagnoses</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(TransitionOfCareAmbulatorySummary,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -250,7 +246,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param transitionOfCareAmbulatorySummary
 	 *            The receiving '
 	 *            <em><b>Transition Of Care Ambulatory Summary</b></em>' model
@@ -264,18 +260,18 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	 */
 
 	public static boolean validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_ENCOUNTER_DIAGNOSES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY);
 			try {
 				VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_ENCOUNTER_DIAGNOSES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_ENCOUNTER_DIAGNOSES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_ENCOUNTER_DIAGNOSES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
@@ -283,14 +279,11 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 						VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_ENCOUNTER_DIAGNOSES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(transitionOfCareAmbulatorySummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_ENCOUNTER_DIAGNOSES,
-								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryEncounterDiagnoses"),
-								new Object[] { transitionOfCareAmbulatorySummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_ENCOUNTER_DIAGNOSES,
+						Mu2consolPlugin.INSTANCE.getString(
+								"TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryEncounterDiagnoses"),
+						new Object[] { transitionOfCareAmbulatorySummary }));
 			}
 
 			return false;
@@ -301,8 +294,8 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	/**
 	 * The cached OCL expression body for the '
 	 * {@link #validateTransitionOfCareAmbulatorySummaryMedicationsSection(TransitionOfCareAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Transition Of Care Ambulatory Summary Medications Section</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate Transition Of Care Ambulatory Summary Medications Section</em>
+	 * }' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateTransitionOfCareAmbulatorySummaryMedicationsSection(TransitionOfCareAmbulatorySummary,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -314,8 +307,8 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	/**
 	 * The cached OCL invariant for the '
 	 * {@link #validateTransitionOfCareAmbulatorySummaryMedicationsSection(TransitionOfCareAmbulatorySummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Transition Of Care Ambulatory Summary Medications Section</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <em>Validate Transition Of Care Ambulatory Summary Medications Section</em>
+	 * }' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @see #validateTransitionOfCareAmbulatorySummaryMedicationsSection(TransitionOfCareAmbulatorySummary,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
@@ -327,7 +320,7 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param transitionOfCareAmbulatorySummary
 	 *            The receiving '
 	 *            <em><b>Transition Of Care Ambulatory Summary</b></em>' model
@@ -341,18 +334,18 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 	 */
 
 	public static boolean validateTransitionOfCareAmbulatorySummaryMedicationsSection(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY);
 			try {
 				VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
@@ -360,14 +353,11 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 						VALIDATE_TRANSITION_OF_CARE_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(transitionOfCareAmbulatorySummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_MEDICATIONS_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryMedicationsSection"),
-								new Object[] { transitionOfCareAmbulatorySummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_MEDICATIONS_SECTION,
+						Mu2consolPlugin.INSTANCE.getString(
+								"TransitionOfCareAmbulatorySummaryTransitionOfCareAmbulatorySummaryMedicationsSection"),
+						new Object[] { transitionOfCareAmbulatorySummary }));
 			}
 
 			return false;
@@ -409,22 +399,16 @@ public class TransitionOfCareAmbulatorySummaryOperations extends
 			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary) {
 		if (GET_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY,
-					Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY
-							.getEAllOperations().get(319));
+			helper.setOperationContext(Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY,
+					Mu2consolPackage.Literals.TRANSITION_OF_CARE_AMBULATORY_SUMMARY.getEAllOperations().get(319));
 			try {
-				GET_MEDICATIONS_SECTION__EOCL_QRY = helper
-						.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
+				GET_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_MEDICATIONS_SECTION__EOCL_QRY);
-		return (MedicationsSection) query
-				.evaluate(transitionOfCareAmbulatorySummary);
+		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATIONS_SECTION__EOCL_QRY);
+		return (MedicationsSection) query.evaluate(transitionOfCareAmbulatorySummary);
 	}
 
 } // TransitionOfCareAmbulatorySummaryOperations

@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ProcedureActivityProcedureOperations;
@@ -24,14 +22,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ProcedureActivityPr
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>Procedure Activity Procedure</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
 public class ProcedureActivityProcedureImpl
-		extends
-		org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedureImpl
+		extends org.openhealthtools.mdht.uml.cda.consol.impl.ProcedureActivityProcedureImpl
 		implements ProcedureActivityProcedure {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -57,11 +52,10 @@ public class ProcedureActivityProcedureImpl
 	 * 
 	 * @generated
 	 */
-	public boolean validateProcedureActivityProcedureCodeValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations
-				.validateProcedureActivityProcedureCodeValue(this, diagnostics,
-						context);
+	public boolean validateProcedureActivityProcedureCodeValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureCodeValue(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -70,11 +64,10 @@ public class ProcedureActivityProcedureImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations
-				.validateProcedureActivityProcedureTemplateId(this,
-						diagnostics, context);
+	public boolean validateProcedureActivityProcedureTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureTemplateId(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -83,11 +76,8 @@ public class ProcedureActivityProcedureImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateProcedureActivityProcedureCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureActivityProcedureOperations
-				.validateProcedureActivityProcedureCode(this, diagnostics,
-						context);
+	public boolean validateProcedureActivityProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityProcedureOperations.validateProcedureActivityProcedureCode(this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +87,7 @@ public class ProcedureActivityProcedureImpl
 	 */
 	@Override
 	public ProcedureActivityProcedure init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -107,8 +97,8 @@ public class ProcedureActivityProcedureImpl
 	 */
 	@Override
 	public ProcedureActivityProcedure init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // ProcedureActivityProcedureImpl

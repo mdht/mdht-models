@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SmokingStatusObservationOperations;
@@ -24,15 +22,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SmokingStatusObserv
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>Smoking Status Observation</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
-public class SmokingStatusObservationImpl
-		extends
-		org.openhealthtools.mdht.uml.cda.consol.impl.SmokingStatusObservationImpl
-		implements SmokingStatusObservation {
+public class SmokingStatusObservationImpl extends
+		org.openhealthtools.mdht.uml.cda.consol.impl.SmokingStatusObservationImpl implements SmokingStatusObservation {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -58,16 +52,15 @@ public class SmokingStatusObservationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateSmokingStatusObservationTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations
-				.validateSmokingStatusObservationTemplateId(this, diagnostics,
-						context);
+	public boolean validateSmokingStatusObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationTemplateId(this, diagnostics,
+				context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	// @Override
@@ -83,11 +76,8 @@ public class SmokingStatusObservationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateSmokingStatusObservationValueP(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations
-				.validateSmokingStatusObservationValueP(this, diagnostics,
-						context);
+	public boolean validateSmokingStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -96,11 +86,8 @@ public class SmokingStatusObservationImpl
 	 * @generated
 	 */
 	@Override
-	public boolean validateSmokingStatusObservationValue(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SmokingStatusObservationOperations
-				.validateSmokingStatusObservationValue(this, diagnostics,
-						context);
+	public boolean validateSmokingStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusObservationOperations.validateSmokingStatusObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -110,7 +97,7 @@ public class SmokingStatusObservationImpl
 	 */
 	@Override
 	public SmokingStatusObservation init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -120,8 +107,8 @@ public class SmokingStatusObservationImpl
 	 */
 	@Override
 	public SmokingStatusObservation init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // SmokingStatusObservationImpl

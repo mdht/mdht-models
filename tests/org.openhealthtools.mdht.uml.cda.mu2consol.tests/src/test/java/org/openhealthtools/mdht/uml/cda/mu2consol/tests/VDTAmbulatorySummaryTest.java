@@ -15,24 +15,24 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Component1;
+import org.eclipse.mdht.uml.cda.DocumentationOf;
+import org.eclipse.mdht.uml.cda.EncompassingEncounter;
+import org.eclipse.mdht.uml.cda.EncounterParticipant;
+import org.eclipse.mdht.uml.cda.Performer1;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.ResponsibleParty;
+import org.eclipse.mdht.uml.cda.ServiceEvent;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component1;
-import org.openhealthtools.mdht.uml.cda.DocumentationOf;
-import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
-import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
-import org.openhealthtools.mdht.uml.cda.Performer1;
-import org.openhealthtools.mdht.uml.cda.Person;
-import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
-import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolFactory;
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatorySummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTAmbulatorySummaryOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc --> A static utility class that provides operations
@@ -61,7 +61,8 @@ public class VDTAmbulatorySummaryTest extends CDAValidationTest {
 	public void testValidateVDTAmbulatorySummaryProviderNameAndContactInfo() {
 		OperationsTestCase<VDTAmbulatorySummary> validateVDTAmbulatorySummaryProviderNameAndContactInfoTestCase = new OperationsTestCase<VDTAmbulatorySummary>(
 			"validateVDTAmbulatorySummaryProviderNameAndContactInfo",
-			operationsForOCL.getOCLValue("VALIDATE_VDT_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VDT_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -234,8 +235,8 @@ public class VDTAmbulatorySummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateVDTAmbulatorySummaryMedicationsSection() {
 		OperationsTestCase<VDTAmbulatorySummary> validateVDTAmbulatorySummaryMedicationsSectionTestCase = new OperationsTestCase<VDTAmbulatorySummary>(
-			"validateVDTAmbulatorySummaryMedicationsSection",
-			operationsForOCL.getOCLValue("VALIDATE_VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVDTAmbulatorySummaryMedicationsSection", operationsForOCL.getOCLValue(
+				"VALIDATE_VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -250,7 +251,7 @@ public class VDTAmbulatorySummaryTest extends CDAValidationTest {
 				/* MedicationsSection */
 				MedicationsSection section =
 
-				ConsolFactory.eINSTANCE.createMedicationsSection().init();
+						ConsolFactory.eINSTANCE.createMedicationsSection().init();
 
 				target.addSection(section);
 
@@ -281,7 +282,7 @@ public class VDTAmbulatorySummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class OperationsForOCL extends VDTAmbulatorySummaryOperations {
@@ -299,7 +300,7 @@ public class VDTAmbulatorySummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ObjectFactory implements TestObjectFactory<VDTAmbulatorySummary> {
@@ -310,20 +311,20 @@ public class VDTAmbulatorySummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static OperationsForOCL operationsForOCL = new OperationsForOCL();
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static ObjectFactory objectFactory = new ObjectFactory();
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ConstructorTestClass extends VDTAmbulatorySummaryOperations {
@@ -331,7 +332,7 @@ public class VDTAmbulatorySummaryTest extends CDAValidationTest {
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -340,7 +341,7 @@ public class VDTAmbulatorySummaryTest extends CDAValidationTest {
 	} // testConstructor
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 

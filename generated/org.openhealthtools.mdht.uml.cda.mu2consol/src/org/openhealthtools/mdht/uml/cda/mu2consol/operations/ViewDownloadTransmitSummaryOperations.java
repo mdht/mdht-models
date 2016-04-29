@@ -35,7 +35,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>View Download Transmit Summary</b></em>' model objects.
  * <!-- end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
@@ -80,11 +80,10 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <em>Get Social History Section</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
-public class ViewDownloadTransmitSummaryOperations extends
-		GeneralHeaderConstraintsOperations {
+public class ViewDownloadTransmitSummaryOperations extends GeneralHeaderConstraintsOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -124,7 +123,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object.
@@ -137,33 +136,28 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 */
 
 	public static boolean validateViewDownloadTransmitSummaryCarePlanning(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY);
 			try {
 				VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(viewDownloadTransmitSummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING,
-								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryCarePlanning"),
-								new Object[] { viewDownloadTransmitSummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING,
+						Mu2consolPlugin.INSTANCE
+								.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryCarePlanning"),
+						new Object[] { viewDownloadTransmitSummary }));
 			}
 
 			return false;
@@ -201,7 +195,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object.
@@ -214,33 +208,28 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 */
 
 	public static boolean validateViewDownloadTransmitSummaryVitalSigns(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY);
 			try {
 				VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(viewDownloadTransmitSummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS,
-								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryVitalSigns"),
-								new Object[] { viewDownloadTransmitSummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS,
+						Mu2consolPlugin.INSTANCE
+								.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryVitalSigns"),
+						new Object[] { viewDownloadTransmitSummary }));
 			}
 
 			return false;
@@ -280,7 +269,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::AllergiesSection))
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object.
@@ -293,33 +282,29 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 */
 
 	public static boolean validateViewDownloadTransmitSummaryAllergiesSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY);
 			try {
 				VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+				.createQuery(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(viewDownloadTransmitSummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryAllergiesSection"),
-								new Object[] { viewDownloadTransmitSummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION,
+						Mu2consolPlugin.INSTANCE
+								.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryAllergiesSection"),
+						new Object[] { viewDownloadTransmitSummary }));
 			}
 
 			return false;
@@ -358,7 +343,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object.
@@ -371,33 +356,29 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 */
 
 	public static boolean validateViewDownloadTransmitSummaryProblemSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY);
 			try {
 				VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+				.createQuery(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(viewDownloadTransmitSummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryProblemSection"),
-								new Object[] { viewDownloadTransmitSummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION,
+						Mu2consolPlugin.INSTANCE
+								.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryProblemSection"),
+						new Object[] { viewDownloadTransmitSummary }));
 			}
 
 			return false;
@@ -437,7 +418,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::ProceduresSection))
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object.
@@ -450,33 +431,29 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 */
 
 	public static boolean validateViewDownloadTransmitSummaryProceduresSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY);
 			try {
 				VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+				.createQuery(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(viewDownloadTransmitSummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryProceduresSection"),
-								new Object[] { viewDownloadTransmitSummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION,
+						Mu2consolPlugin.INSTANCE
+								.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryProceduresSection"),
+						new Object[] { viewDownloadTransmitSummary }));
 			}
 
 			return false;
@@ -516,7 +493,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::ResultsSection))
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object.
@@ -529,33 +506,29 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 */
 
 	public static boolean validateViewDownloadTransmitSummaryResultsSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY);
 			try {
 				VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+				.createQuery(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(viewDownloadTransmitSummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryResultsSection"),
-								new Object[] { viewDownloadTransmitSummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION,
+						Mu2consolPlugin.INSTANCE
+								.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummaryResultsSection"),
+						new Object[] { viewDownloadTransmitSummary }));
 			}
 
 			return false;
@@ -595,7 +568,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::SocialHistorySection))
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object.
@@ -608,18 +581,18 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 */
 
 	public static boolean validateViewDownloadTransmitSummarySocialHistorySection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
 		if (VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY);
 			try {
 				VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
@@ -627,14 +600,11 @@ public class ViewDownloadTransmitSummaryOperations extends
 						VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(viewDownloadTransmitSummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("ViewDownloadTransmitSummaryViewDownloadTransmitSummarySocialHistorySection"),
-								new Object[] { viewDownloadTransmitSummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION,
+						Mu2consolPlugin.INSTANCE.getString(
+								"ViewDownloadTransmitSummaryViewDownloadTransmitSummarySocialHistorySection"),
+						new Object[] { viewDownloadTransmitSummary }));
 			}
 
 			return false;
@@ -647,7 +617,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * {@link #retrievePreoperativeDiagnosisSection(ViewDownloadTransmitSummary)
 	 * <em>Retrieve Preoperative Diagnosis Section</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #retrievePreoperativeDiagnosisSection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -659,7 +629,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * {@link #retrievePreoperativeDiagnosisSection(ViewDownloadTransmitSummary)
 	 * <em>Retrieve Preoperative Diagnosis Section</em>}' query operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #retrievePreoperativeDiagnosisSection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -673,7 +643,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * section.oclIsKindOf(consol::PreoperativeDiagnosisSection
 	 * ))->asSequence()->
 	 * any(true).oclAsType(consol::PreoperativeDiagnosisSection)
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object. <!-- end-model-doc -->
@@ -684,22 +654,17 @@ public class ViewDownloadTransmitSummaryOperations extends
 			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (RETRIEVE_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
-					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY
-							.getEAllOperations().get(302));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
+					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(302));
 			try {
 				RETRIEVE_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(RETRIEVE_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY);
-		return (PreoperativeDiagnosisSection) query
-				.evaluate(viewDownloadTransmitSummary);
+		OCL.Query query = EOCL_ENV.createQuery(RETRIEVE_PREOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY);
+		return (PreoperativeDiagnosisSection) query.evaluate(viewDownloadTransmitSummary);
 	}
 
 	/**
@@ -732,27 +697,22 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::AllergiesSection)
 	 * )->asSequence()->any(true).oclAsType(consol::AllergiesSection)
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static AllergiesSection getAllergiesSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+	public static AllergiesSection getAllergiesSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_ALLERGIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
-					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY
-							.getEAllOperations().get(303));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
+					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(303));
 			try {
-				GET_ALLERGIES_SECTION__EOCL_QRY = helper
-						.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
+				GET_ALLERGIES_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ALLERGIES_SECTION__EOCL_QRY);
@@ -789,27 +749,22 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::ProblemSection))-
 	 * >asSequence()->any(true).oclAsType(consol::ProblemSection)
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static ProblemSection getProblemSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+	public static ProblemSection getProblemSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_PROBLEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
-					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY
-							.getEAllOperations().get(304));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
+					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(304));
 			try {
-				GET_PROBLEM_SECTION__EOCL_QRY = helper
-						.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
+				GET_PROBLEM_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_SECTION__EOCL_QRY);
@@ -846,31 +801,25 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::ProceduresSection
 	 * ))->asSequence()->any(true).oclAsType(mu2consol::ProceduresSection)
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static ProceduresSection getProceduresSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+	public static ProceduresSection getProceduresSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_PROCEDURES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
-					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY
-							.getEAllOperations().get(305));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
+					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(305));
 			try {
-				GET_PROCEDURES_SECTION__EOCL_QRY = helper
-						.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
+				GET_PROCEDURES_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_PROCEDURES_SECTION__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURES_SECTION__EOCL_QRY);
 		return (ProceduresSection) query.evaluate(viewDownloadTransmitSummary);
 	}
 
@@ -904,27 +853,22 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::ResultsSection
 	 * ))->asSequence()->any(true).oclAsType(mu2consol::ResultsSection)
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object. <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static ResultsSection getResultsSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
+	public static ResultsSection getResultsSection(ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
-					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY
-							.getEAllOperations().get(306));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
+					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(306));
 			try {
-				GET_RESULTS_SECTION__EOCL_QRY = helper
-						.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
+				GET_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_RESULTS_SECTION__EOCL_QRY);
@@ -948,7 +892,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * {@link #getSocialHistorySection(ViewDownloadTransmitSummary)
 	 * <em>Get Social History Section</em>}' query operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getSocialHistorySection(ViewDownloadTransmitSummary)
 	 * @generated
 	 * @ordered
@@ -961,7 +905,7 @@ public class ViewDownloadTransmitSummaryOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::SocialHistorySection
 	 * ))->asSequence()->any(true).oclAsType(mu2consol::SocialHistorySection)
-	 * 
+	 *
 	 * @param viewDownloadTransmitSummary
 	 *            The receiving '<em><b>View Download Transmit Summary</b></em>'
 	 *            model object. <!-- end-model-doc -->
@@ -972,22 +916,16 @@ public class ViewDownloadTransmitSummaryOperations extends
 			ViewDownloadTransmitSummary viewDownloadTransmitSummary) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
-					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY
-							.getEAllOperations().get(307));
+			helper.setOperationContext(Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY,
+					Mu2consolPackage.Literals.VIEW_DOWNLOAD_TRANSMIT_SUMMARY.getEAllOperations().get(307));
 			try {
-				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper
-						.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
+				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_QRY);
-		return (SocialHistorySection) query
-				.evaluate(viewDownloadTransmitSummary);
+		OCL.Query query = EOCL_ENV.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_QRY);
+		return (SocialHistorySection) query.evaluate(viewDownloadTransmitSummary);
 	}
 
 } // ViewDownloadTransmitSummaryOperations

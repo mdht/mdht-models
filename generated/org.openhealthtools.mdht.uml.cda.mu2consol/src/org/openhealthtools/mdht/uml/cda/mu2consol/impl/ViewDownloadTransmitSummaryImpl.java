@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
@@ -30,13 +28,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ViewDownloadTransmi
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>View Download Transmit Summary</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
-public class ViewDownloadTransmitSummaryImpl extends
-		GeneralHeaderConstraintsImpl implements ViewDownloadTransmitSummary {
+public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImpl
+		implements ViewDownloadTransmitSummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -62,11 +58,10 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateViewDownloadTransmitSummaryCarePlanning(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations
-				.validateViewDownloadTransmitSummaryCarePlanning(this,
-						diagnostics, context);
+	public boolean validateViewDownloadTransmitSummaryCarePlanning(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryCarePlanning(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -75,11 +70,10 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateViewDownloadTransmitSummaryVitalSigns(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations
-				.validateViewDownloadTransmitSummaryVitalSigns(this,
-						diagnostics, context);
+	public boolean validateViewDownloadTransmitSummaryVitalSigns(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryVitalSigns(this, diagnostics,
+				context);
 	}
 
 	/**
@@ -88,11 +82,10 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateViewDownloadTransmitSummaryAllergiesSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations
-				.validateViewDownloadTransmitSummaryAllergiesSection(this,
-						diagnostics, context);
+	public boolean validateViewDownloadTransmitSummaryAllergiesSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryAllergiesSection(this,
+				diagnostics, context);
 	}
 
 	/**
@@ -101,11 +94,10 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateViewDownloadTransmitSummaryProblemSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations
-				.validateViewDownloadTransmitSummaryProblemSection(this,
-						diagnostics, context);
+	public boolean validateViewDownloadTransmitSummaryProblemSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryProblemSection(this,
+				diagnostics, context);
 	}
 
 	/**
@@ -114,11 +106,10 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateViewDownloadTransmitSummaryProceduresSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations
-				.validateViewDownloadTransmitSummaryProceduresSection(this,
-						diagnostics, context);
+	public boolean validateViewDownloadTransmitSummaryProceduresSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryProceduresSection(this,
+				diagnostics, context);
 	}
 
 	/**
@@ -127,11 +118,10 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateViewDownloadTransmitSummaryResultsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations
-				.validateViewDownloadTransmitSummaryResultsSection(this,
-						diagnostics, context);
+	public boolean validateViewDownloadTransmitSummaryResultsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummaryResultsSection(this,
+				diagnostics, context);
 	}
 
 	/**
@@ -140,11 +130,10 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateViewDownloadTransmitSummarySocialHistorySection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ViewDownloadTransmitSummaryOperations
-				.validateViewDownloadTransmitSummarySocialHistorySection(this,
-						diagnostics, context);
+	public boolean validateViewDownloadTransmitSummarySocialHistorySection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ViewDownloadTransmitSummaryOperations.validateViewDownloadTransmitSummarySocialHistorySection(this,
+				diagnostics, context);
 	}
 
 	/**
@@ -154,8 +143,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 */
 	@Override
 	public PreoperativeDiagnosisSection retrievePreoperativeDiagnosisSection() {
-		return ViewDownloadTransmitSummaryOperations
-				.retrievePreoperativeDiagnosisSection(this);
+		return ViewDownloadTransmitSummaryOperations.retrievePreoperativeDiagnosisSection(this);
 	}
 
 	/**
@@ -205,8 +193,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 */
 	@Override
 	public SocialHistorySection getSocialHistorySection() {
-		return ViewDownloadTransmitSummaryOperations
-				.getSocialHistorySection(this);
+		return ViewDownloadTransmitSummaryOperations.getSocialHistorySection(this);
 	}
 
 	/**
@@ -216,7 +203,7 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 */
 	@Override
 	public ViewDownloadTransmitSummary init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -226,8 +213,8 @@ public class ViewDownloadTransmitSummaryImpl extends
 	 */
 	@Override
 	public ViewDownloadTransmitSummary init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // ViewDownloadTransmitSummaryImpl

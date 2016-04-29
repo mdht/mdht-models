@@ -30,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>VDT Ambulatory Summary</b></em>' model objects. <!--
  * end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
@@ -45,11 +45,10 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <em>Get Medications Section</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
-public class VDTAmbulatorySummaryOperations extends
-		ViewDownloadTransmitSummaryOperations {
+public class VDTAmbulatorySummaryOperations extends ViewDownloadTransmitSummaryOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -88,7 +87,7 @@ public class VDTAmbulatorySummaryOperations extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param vdtAmbulatorySummary
 	 *            The receiving '<em><b>VDT Ambulatory Summary</b></em>' model
 	 *            object.
@@ -101,18 +100,17 @@ public class VDTAmbulatorySummaryOperations extends
 	 */
 
 	public static boolean validateVDTAmbulatorySummaryProviderNameAndContactInfo(
-			VDTAmbulatorySummary vdtAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			VDTAmbulatorySummary vdtAmbulatorySummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_VDT_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY);
 			try {
 				VALIDATE_VDT_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_VDT_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_VDT_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
@@ -120,14 +118,11 @@ public class VDTAmbulatorySummaryOperations extends
 						VALIDATE_VDT_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(vdtAmbulatorySummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO,
-								Mu2consolPlugin.INSTANCE
-										.getString("VDTAmbulatorySummaryVDTAmbulatorySummaryProviderNameAndContactInfo"),
-								new Object[] { vdtAmbulatorySummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO,
+						Mu2consolPlugin.INSTANCE
+								.getString("VDTAmbulatorySummaryVDTAmbulatorySummaryProviderNameAndContactInfo"),
+						new Object[] { vdtAmbulatorySummary }));
 			}
 
 			return false;
@@ -164,7 +159,7 @@ public class VDTAmbulatorySummaryOperations extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param vdtAmbulatorySummary
 	 *            The receiving '<em><b>VDT Ambulatory Summary</b></em>' model
 	 *            object.
@@ -176,8 +171,7 @@ public class VDTAmbulatorySummaryOperations extends
 	 * @generated
 	 */
 
-	public static boolean validateVDTAmbulatorySummaryMedicationsSection(
-			VDTAmbulatorySummary vdtAmbulatorySummary,
+	public static boolean validateVDTAmbulatorySummaryMedicationsSection(VDTAmbulatorySummary vdtAmbulatorySummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -185,25 +179,20 @@ public class VDTAmbulatorySummaryOperations extends
 			helper.setContext(Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY);
 			try {
 				VALIDATE_VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(vdtAmbulatorySummary)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("VDTAmbulatorySummaryVDTAmbulatorySummaryMedicationsSection"),
-								new Object[] { vdtAmbulatorySummary }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION,
+						Mu2consolPlugin.INSTANCE
+								.getString("VDTAmbulatorySummaryVDTAmbulatorySummaryMedicationsSection"),
+						new Object[] { vdtAmbulatorySummary }));
 			}
 
 			return false;
@@ -241,24 +230,18 @@ public class VDTAmbulatorySummaryOperations extends
 	 * @generated
 	 */
 
-	public static MedicationsSection getMedicationsSection(
-			VDTAmbulatorySummary vdtAmbulatorySummary) {
+	public static MedicationsSection getMedicationsSection(VDTAmbulatorySummary vdtAmbulatorySummary) {
 		if (GET_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY,
-					Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY
-							.getEAllOperations().get(310));
+			helper.setOperationContext(Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY,
+					Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY.getEAllOperations().get(310));
 			try {
-				GET_MEDICATIONS_SECTION__EOCL_QRY = helper
-						.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
+				GET_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_MEDICATIONS_SECTION__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATIONS_SECTION__EOCL_QRY);
 		return (MedicationsSection) query.evaluate(vdtAmbulatorySummary);
 	}
 

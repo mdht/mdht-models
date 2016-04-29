@@ -14,6 +14,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
@@ -24,7 +25,6 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ViewDownloadTransmitSummaryOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 
 /**
  * <!-- begin-user-doc --> A static utility class that provides operations
@@ -63,7 +63,8 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	public void testValidateViewDownloadTransmitSummaryCarePlanning() {
 		OperationsTestCase<ViewDownloadTransmitSummary> validateViewDownloadTransmitSummaryCarePlanningTestCase = new OperationsTestCase<ViewDownloadTransmitSummary>(
 			"validateViewDownloadTransmitSummaryCarePlanning",
-			operationsForOCL.getOCLValue("VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -114,8 +115,8 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateViewDownloadTransmitSummaryVitalSigns() {
 		OperationsTestCase<ViewDownloadTransmitSummary> validateViewDownloadTransmitSummaryVitalSignsTestCase = new OperationsTestCase<ViewDownloadTransmitSummary>(
-			"validateViewDownloadTransmitSummaryVitalSigns",
-			operationsForOCL.getOCLValue("VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateViewDownloadTransmitSummaryVitalSigns", operationsForOCL.getOCLValue(
+				"VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -160,14 +161,15 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateViewDownloadTransmitSummaryAllergiesSection() {
 		OperationsTestCase<ViewDownloadTransmitSummary> validateViewDownloadTransmitSummaryAllergiesSectionTestCase = new OperationsTestCase<ViewDownloadTransmitSummary>(
 			"validateViewDownloadTransmitSummaryAllergiesSection",
-			operationsForOCL.getOCLValue("VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -182,7 +184,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 				/* AllergiesSection */
 				AllergiesSection section =
 
-				ConsolFactory.eINSTANCE.createAllergiesSection().init();
+						ConsolFactory.eINSTANCE.createAllergiesSection().init();
 
 				target.addSection(section);
 
@@ -201,14 +203,15 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateViewDownloadTransmitSummaryProblemSection() {
 		OperationsTestCase<ViewDownloadTransmitSummary> validateViewDownloadTransmitSummaryProblemSectionTestCase = new OperationsTestCase<ViewDownloadTransmitSummary>(
 			"validateViewDownloadTransmitSummaryProblemSection",
-			operationsForOCL.getOCLValue("VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -223,7 +226,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 				/* ProblemSection */
 				ProblemSection section =
 
-				ConsolFactory.eINSTANCE.createProblemSection().init();
+						ConsolFactory.eINSTANCE.createProblemSection().init();
 
 				target.addSection(section);
 
@@ -242,14 +245,15 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateViewDownloadTransmitSummaryProceduresSection() {
 		OperationsTestCase<ViewDownloadTransmitSummary> validateViewDownloadTransmitSummaryProceduresSectionTestCase = new OperationsTestCase<ViewDownloadTransmitSummary>(
 			"validateViewDownloadTransmitSummaryProceduresSection",
-			operationsForOCL.getOCLValue("VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -264,7 +268,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 				/* ProceduresSection */
 				ProceduresSection section =
 
-				Mu2consolFactory.eINSTANCE.createProceduresSection().init();
+						Mu2consolFactory.eINSTANCE.createProceduresSection().init();
 
 				target.addSection(section);
 
@@ -283,14 +287,15 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateViewDownloadTransmitSummaryResultsSection() {
 		OperationsTestCase<ViewDownloadTransmitSummary> validateViewDownloadTransmitSummaryResultsSectionTestCase = new OperationsTestCase<ViewDownloadTransmitSummary>(
 			"validateViewDownloadTransmitSummaryResultsSection",
-			operationsForOCL.getOCLValue("VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -305,7 +310,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 				/* ResultsSection */
 				ResultsSection section =
 
-				Mu2consolFactory.eINSTANCE.createResultsSection().init();
+						Mu2consolFactory.eINSTANCE.createResultsSection().init();
 
 				target.addSection(section);
 
@@ -324,14 +329,15 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateViewDownloadTransmitSummarySocialHistorySection() {
 		OperationsTestCase<ViewDownloadTransmitSummary> validateViewDownloadTransmitSummarySocialHistorySectionTestCase = new OperationsTestCase<ViewDownloadTransmitSummary>(
 			"validateViewDownloadTransmitSummarySocialHistorySection",
-			operationsForOCL.getOCLValue("VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -346,7 +352,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 				/* SocialHistorySection */
 				SocialHistorySection section =
 
-				Mu2consolFactory.eINSTANCE.createSocialHistorySection().init();
+						Mu2consolFactory.eINSTANCE.createSocialHistorySection().init();
 
 				target.addSection(section);
 
@@ -365,7 +371,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -377,7 +383,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -389,7 +395,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -401,7 +407,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -413,7 +419,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -425,7 +431,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class OperationsForOCL extends ViewDownloadTransmitSummaryOperations {
@@ -443,7 +449,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ObjectFactory implements TestObjectFactory<ViewDownloadTransmitSummary> {
@@ -454,20 +460,20 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static OperationsForOCL operationsForOCL = new OperationsForOCL();
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static ObjectFactory objectFactory = new ObjectFactory();
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ConstructorTestClass extends ViewDownloadTransmitSummaryOperations {
@@ -475,7 +481,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -484,7 +490,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 	} // testConstructor
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 

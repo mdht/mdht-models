@@ -30,12 +30,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareInpatientSumma
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatorySummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary;
-import org.openhealthtools.mdht.uml.cda.util.CDAValidator;
 
 /**
  * <!-- begin-user-doc --> The <b>Validator</b> for the model. <!-- end-user-doc
  * -->
- * 
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage
  * @generated
  */
@@ -64,7 +63,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate General Header Constraints Care Team Members' of
 	 * 'General Header Constraints'. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_CARE_TEAM_MEMBERS = 1;
@@ -94,7 +93,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate General Header Constraints Record Target' of
 	 * 'General Header Constraints'. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET = 4;
@@ -114,7 +113,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate General Header Constraints Record Target Patient
 	 * Role Patient Ethnic Group Code' of 'General Header Constraints'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE = 6;
@@ -124,7 +123,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate General Header Constraints Record Target Patient
 	 * Role Patient Ethnic Group Code P' of 'General Header Constraints'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P = 7;
@@ -134,7 +133,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate General Header Constraints Record Target Patient
 	 * Role Patient Race Code' of 'General Header Constraints'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE = 8;
@@ -144,7 +143,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate General Header Constraints Record Target Patient
 	 * Role Patient Race Code P' of 'General Header Constraints'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P = 9;
@@ -284,7 +283,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Social History Section Smoking Status Observation'
 	 * of 'Social History Section'. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION = 23;
@@ -384,7 +383,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Procedure Activity Procedure Code Value' of
 	 * 'Procedure Activity Procedure'. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE_VALUE = 34;
@@ -394,7 +393,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Procedure Activity Procedure Template Id' of
 	 * 'Procedure Activity Procedure'. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID = 35;
@@ -543,7 +542,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Transition Of Care Ambulatory Summary Provider Name
 	 * And Contact Info' of 'Transition Of Care Ambulatory Summary'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO = 53;
@@ -563,7 +562,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Transition Of Care Ambulatory Summary Encounter
 	 * Diagnoses' of 'Transition Of Care Ambulatory Summary'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_ENCOUNTER_DIAGNOSES = 55;
@@ -776,7 +775,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Functional Status Section Template Id' of
 	 * 'Functional Status Section'. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int FUNCTIONAL_STATUS_SECTION__FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID = 75;
@@ -841,7 +840,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	protected CDAValidator cdaValidator;
+	protected org.eclipse.mdht.uml.cda.util.CDAValidator cdaValidator;
 
 	/**
 	 * The cached base package validator. <!-- begin-user-doc --> <!--
@@ -859,7 +858,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 */
 	public Mu2consolValidator() {
 		super();
-		cdaValidator = CDAValidator.INSTANCE;
+		cdaValidator = org.eclipse.mdht.uml.cda.util.CDAValidator.INSTANCE;
 		consolValidator = ConsolValidator.INSTANCE;
 	}
 
@@ -881,78 +880,55 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 		case Mu2consolPackage.GENERAL_HEADER_CONSTRAINTS:
-			return validateGeneralHeaderConstraints(
-					(GeneralHeaderConstraints) value, diagnostics, context);
+			return validateGeneralHeaderConstraints((GeneralHeaderConstraints) value, diagnostics, context);
 		case Mu2consolPackage.SUMMARY_OF_CARE_RECORD:
-			return validateSummaryOfCareRecord((SummaryOfCareRecord) value,
-					diagnostics, context);
+			return validateSummaryOfCareRecord((SummaryOfCareRecord) value, diagnostics, context);
 		case Mu2consolPackage.SOCIAL_HISTORY_SECTION:
-			return validateSocialHistorySection((SocialHistorySection) value,
-					diagnostics, context);
+			return validateSocialHistorySection((SocialHistorySection) value, diagnostics, context);
 		case Mu2consolPackage.SMOKING_STATUS_OBSERVATION:
-			return validateSmokingStatusObservation(
-					(SmokingStatusObservation) value, diagnostics, context);
+			return validateSmokingStatusObservation((SmokingStatusObservation) value, diagnostics, context);
 		case Mu2consolPackage.RESULTS_SECTION:
-			return validateResultsSection((ResultsSection) value, diagnostics,
-					context);
+			return validateResultsSection((ResultsSection) value, diagnostics, context);
 		case Mu2consolPackage.RESULT_ORGANIZER:
-			return validateResultOrganizer((ResultOrganizer) value,
-					diagnostics, context);
+			return validateResultOrganizer((ResultOrganizer) value, diagnostics, context);
 		case Mu2consolPackage.RESULT_OBSERVATION:
-			return validateResultObservation((ResultObservation) value,
-					diagnostics, context);
+			return validateResultObservation((ResultObservation) value, diagnostics, context);
 		case Mu2consolPackage.PROCEDURES_SECTION:
-			return validateProceduresSection((ProceduresSection) value,
-					diagnostics, context);
+			return validateProceduresSection((ProceduresSection) value, diagnostics, context);
 		case Mu2consolPackage.PROCEDURE_ACTIVITY_PROCEDURE:
-			return validateProcedureActivityProcedure(
-					(ProcedureActivityProcedure) value, diagnostics, context);
+			return validateProcedureActivityProcedure((ProcedureActivityProcedure) value, diagnostics, context);
 		case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY:
-			return validateClinicalOfficeVisitSummary(
-					(ClinicalOfficeVisitSummary) value, diagnostics, context);
+			return validateClinicalOfficeVisitSummary((ClinicalOfficeVisitSummary) value, diagnostics, context);
 		case Mu2consolPackage.MEDICATIONS_ADMINISTERED_SECTION:
-			return validateMedicationsAdministeredSection(
-					(MedicationsAdministeredSection) value, diagnostics,
-					context);
+			return validateMedicationsAdministeredSection((MedicationsAdministeredSection) value, diagnostics, context);
 		case Mu2consolPackage.TRANSITION_OF_CARE_AMBULATORY_SUMMARY:
-			return validateTransitionOfCareAmbulatorySummary(
-					(TransitionOfCareAmbulatorySummary) value, diagnostics,
+			return validateTransitionOfCareAmbulatorySummary((TransitionOfCareAmbulatorySummary) value, diagnostics,
 					context);
 		case Mu2consolPackage.TRANSITION_OF_CARE_INPATIENT_SUMMARY:
-			return validateTransitionOfCareInpatientSummary(
-					(TransitionOfCareInpatientSummary) value, diagnostics,
+			return validateTransitionOfCareInpatientSummary((TransitionOfCareInpatientSummary) value, diagnostics,
 					context);
 		case Mu2consolPackage.VIEW_DOWNLOAD_TRANSMIT_SUMMARY:
-			return validateViewDownloadTransmitSummary(
-					(ViewDownloadTransmitSummary) value, diagnostics, context);
+			return validateViewDownloadTransmitSummary((ViewDownloadTransmitSummary) value, diagnostics, context);
 		case Mu2consolPackage.VDT_INPATIENT_SUMMARY:
-			return validateVDTInpatientSummary((VDTInpatientSummary) value,
-					diagnostics, context);
+			return validateVDTInpatientSummary((VDTInpatientSummary) value, diagnostics, context);
 		case Mu2consolPackage.VDT_AMBULATORY_SUMMARY:
-			return validateVDTAmbulatorySummary((VDTAmbulatorySummary) value,
-					diagnostics, context);
+			return validateVDTAmbulatorySummary((VDTAmbulatorySummary) value, diagnostics, context);
 		case Mu2consolPackage.FUNCTIONAL_STATUS_SECTION:
-			return validateFunctionalStatusSection(
-					(FunctionalStatusSection) value, diagnostics, context);
+			return validateFunctionalStatusSection((FunctionalStatusSection) value, diagnostics, context);
 		case Mu2consolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION:
-			return validateCognitiveStatusResultObservation(
-					(CognitiveStatusResultObservation) value, diagnostics,
+			return validateCognitiveStatusResultObservation((CognitiveStatusResultObservation) value, diagnostics,
 					context);
 		case Mu2consolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER:
-			return validateCognitiveStatusResultOrganizer(
-					(CognitiveStatusResultOrganizer) value, diagnostics,
-					context);
+			return validateCognitiveStatusResultOrganizer((CognitiveStatusResultOrganizer) value, diagnostics, context);
 		case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION:
-			return validateFunctionalStatusResultObservation(
-					(FunctionalStatusResultObservation) value, diagnostics,
+			return validateFunctionalStatusResultObservation((FunctionalStatusResultObservation) value, diagnostics,
 					context);
 		case Mu2consolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER:
-			return validateFunctionalStatusResultOrganizer(
-					(FunctionalStatusResultOrganizer) value, diagnostics,
+			return validateFunctionalStatusResultOrganizer((FunctionalStatusResultOrganizer) value, diagnostics,
 					context);
 		default:
 			return true;
@@ -964,60 +940,48 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraints(
-			GeneralHeaderConstraints generalHeaderConstraints,
+	public boolean validateGeneralHeaderConstraints(GeneralHeaderConstraints generalHeaderConstraints,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(generalHeaderConstraints,
-				diagnostics, context)) {
+		if (!validate_NoCircularContainment(generalHeaderConstraints, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				generalHeaderConstraints, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(generalHeaderConstraints, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(generalHeaderConstraints,
-					diagnostics, context);
+			result &= validate_EveryDataValueConforms(generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
-					generalHeaderConstraints, diagnostics, context);
+			result &= validate_EveryReferenceIsContained(generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					generalHeaderConstraints, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(generalHeaderConstraints,
-					diagnostics, context);
+			result &= validate_EveryProxyResolves(generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_UniqueID(generalHeaderConstraints, diagnostics,
+			result &= validate_UniqueID(generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(generalHeaderConstraints, diagnostics,
 					context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(generalHeaderConstraints,
-					diagnostics, context);
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(generalHeaderConstraints, diagnostics,
+					context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(generalHeaderConstraints,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
 					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
 					generalHeaderConstraints, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
-							generalHeaderConstraints, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-							generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -1034,34 +998,28 @@ public class Mu2consolValidator extends EObjectValidator {
 					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -1074,39 +1032,32 @@ public class Mu2consolValidator extends EObjectValidator {
 							generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -1119,23 +1070,20 @@ public class Mu2consolValidator extends EObjectValidator {
 							generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
 					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -1143,19 +1091,16 @@ public class Mu2consolValidator extends EObjectValidator {
 							generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -1660,9 +1605,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
-							generalHeaderConstraints, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
+					generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -2333,11 +2277,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return generalHeaderConstraints
-				.validateGeneralHeaderConstraintsCareTeamMembers(diagnostics,
-						context);
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return generalHeaderConstraints.validateGeneralHeaderConstraintsCareTeamMembers(diagnostics, context);
 	}
 
 	/**
@@ -2349,8 +2291,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints
 				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(
 						diagnostics, context);
@@ -2364,11 +2306,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return generalHeaderConstraints
-				.validateGeneralHeaderConstraintsTemplateId(diagnostics,
-						context);
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return generalHeaderConstraints.validateGeneralHeaderConstraintsTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -2379,11 +2319,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return generalHeaderConstraints
-				.validateGeneralHeaderConstraintsRecordTarget(diagnostics,
-						context);
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTarget(diagnostics, context);
 	}
 
 	/**
@@ -2395,8 +2333,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints
 				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
 						diagnostics, context);
@@ -2411,11 +2349,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints
-				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
-						diagnostics, context);
+				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(diagnostics, context);
 	}
 
 	/**
@@ -2427,11 +2364,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints
-				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
-						diagnostics, context);
+				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(diagnostics, context);
 	}
 
 	/**
@@ -2443,11 +2379,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints
-				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
-						diagnostics, context);
+				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(diagnostics, context);
 	}
 
 	/**
@@ -2459,11 +2394,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints
-				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
-						diagnostics, context);
+				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(diagnostics, context);
 	}
 
 	/**
@@ -2475,11 +2409,11 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints
-				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
-						diagnostics, context);
+				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(diagnostics,
+						context);
 	}
 
 	/**
@@ -2491,11 +2425,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return generalHeaderConstraints
-				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
-						diagnostics, context);
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(diagnostics,
+				context);
 	}
 
 	/**
@@ -2506,11 +2439,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
-			GeneralHeaderConstraints generalHeaderConstraints,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return generalHeaderConstraints
-				.validateGeneralHeaderConstraintsRecordTargetPatientRole(
-						diagnostics, context);
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return generalHeaderConstraints.validateGeneralHeaderConstraintsRecordTargetPatientRole(diagnostics, context);
 	}
 
 	/**
@@ -2518,60 +2449,47 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecord(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(summaryOfCareRecord, diagnostics,
-				context)) {
+	public boolean validateSummaryOfCareRecord(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(summaryOfCareRecord, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				summaryOfCareRecord, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(summaryOfCareRecord, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(summaryOfCareRecord,
-					diagnostics, context);
+			result &= validate_EveryDataValueConforms(summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(summaryOfCareRecord,
-					diagnostics, context);
+			result &= validate_EveryReferenceIsContained(summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					summaryOfCareRecord, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(summaryOfCareRecord,
-					diagnostics, context);
+			result &= validate_EveryProxyResolves(summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_UniqueID(summaryOfCareRecord, diagnostics,
+			result &= validate_UniqueID(summaryOfCareRecord, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(summaryOfCareRecord, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(summaryOfCareRecord, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(summaryOfCareRecord, diagnostics,
 					context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(summaryOfCareRecord, diagnostics,
-					context);
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(summaryOfCareRecord,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
 					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
 					summaryOfCareRecord, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
-							summaryOfCareRecord, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-							summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -2584,38 +2502,32 @@ public class Mu2consolValidator extends EObjectValidator {
 							summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(summaryOfCareRecord,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
 					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-							summaryOfCareRecord, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -2628,39 +2540,32 @@ public class Mu2consolValidator extends EObjectValidator {
 							summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -2673,23 +2578,20 @@ public class Mu2consolValidator extends EObjectValidator {
 							summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
-							summaryOfCareRecord, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
 					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
-							summaryOfCareRecord, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(summaryOfCareRecord,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+					summaryOfCareRecord, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -2697,19 +2599,16 @@ public class Mu2consolValidator extends EObjectValidator {
 							summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -3214,9 +3113,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
-							summaryOfCareRecord, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
+					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -3877,36 +3775,36 @@ public class Mu2consolValidator extends EObjectValidator {
 					summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordCarePlanning(
-					summaryOfCareRecord, diagnostics, context);
+			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordCarePlanning(summaryOfCareRecord,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordVitalSigns(
-					summaryOfCareRecord, diagnostics, context);
+			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordVitalSigns(summaryOfCareRecord,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordProblemSection(
-					summaryOfCareRecord, diagnostics, context);
+			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordProblemSection(summaryOfCareRecord,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordAllergiesSection(
-					summaryOfCareRecord, diagnostics, context);
+			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordAllergiesSection(summaryOfCareRecord,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordImmunizationsSection(
-					summaryOfCareRecord, diagnostics, context);
+			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordImmunizationsSection(summaryOfCareRecord,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordSocialHistorySection(
-					summaryOfCareRecord, diagnostics, context);
+			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordSocialHistorySection(summaryOfCareRecord,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordResultsSection(
-					summaryOfCareRecord, diagnostics, context);
+			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordResultsSection(summaryOfCareRecord,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordProceduresSection(
-					summaryOfCareRecord, diagnostics, context);
+			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordProceduresSection(summaryOfCareRecord,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateSummaryOfCareRecord_validateSummaryOfCareRecordFunctionalStatusSection(
@@ -3923,10 +3821,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordCarePlanning(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return summaryOfCareRecord.validateSummaryOfCareRecordCarePlanning(
-				diagnostics, context);
+			SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return summaryOfCareRecord.validateSummaryOfCareRecordCarePlanning(diagnostics, context);
 	}
 
 	/**
@@ -3937,10 +3833,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordVitalSigns(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return summaryOfCareRecord.validateSummaryOfCareRecordVitalSigns(
-				diagnostics, context);
+			SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return summaryOfCareRecord.validateSummaryOfCareRecordVitalSigns(diagnostics, context);
 	}
 
 	/**
@@ -3951,10 +3845,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordProblemSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return summaryOfCareRecord.validateSummaryOfCareRecordProblemSection(
-				diagnostics, context);
+			SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return summaryOfCareRecord.validateSummaryOfCareRecordProblemSection(diagnostics, context);
 	}
 
 	/**
@@ -3965,10 +3857,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordAllergiesSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return summaryOfCareRecord.validateSummaryOfCareRecordAllergiesSection(
-				diagnostics, context);
+			SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return summaryOfCareRecord.validateSummaryOfCareRecordAllergiesSection(diagnostics, context);
 	}
 
 	/**
@@ -3979,11 +3869,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordImmunizationsSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return summaryOfCareRecord
-				.validateSummaryOfCareRecordImmunizationsSection(diagnostics,
-						context);
+			SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return summaryOfCareRecord.validateSummaryOfCareRecordImmunizationsSection(diagnostics, context);
 	}
 
 	/**
@@ -3994,11 +3881,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordSocialHistorySection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return summaryOfCareRecord
-				.validateSummaryOfCareRecordSocialHistorySection(diagnostics,
-						context);
+			SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return summaryOfCareRecord.validateSummaryOfCareRecordSocialHistorySection(diagnostics, context);
 	}
 
 	/**
@@ -4009,10 +3893,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordResultsSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return summaryOfCareRecord.validateSummaryOfCareRecordResultsSection(
-				diagnostics, context);
+			SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return summaryOfCareRecord.validateSummaryOfCareRecordResultsSection(diagnostics, context);
 	}
 
 	/**
@@ -4023,11 +3905,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordProceduresSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return summaryOfCareRecord
-				.validateSummaryOfCareRecordProceduresSection(diagnostics,
-						context);
+			SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return summaryOfCareRecord.validateSummaryOfCareRecordProceduresSection(diagnostics, context);
 	}
 
 	/**
@@ -4038,11 +3917,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordFunctionalStatusSection(
-			SummaryOfCareRecord summaryOfCareRecord,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return summaryOfCareRecord
-				.validateSummaryOfCareRecordFunctionalStatusSection(
-						diagnostics, context);
+			SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return summaryOfCareRecord.validateSummaryOfCareRecordFunctionalStatusSection(diagnostics, context);
 	}
 
 	/**
@@ -4050,93 +3926,74 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateSocialHistorySection(
-			SocialHistorySection socialHistorySection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(socialHistorySection, diagnostics,
-				context)) {
+	public boolean validateSocialHistorySection(SocialHistorySection socialHistorySection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(socialHistorySection, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				socialHistorySection, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(socialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(socialHistorySection,
+			result &= validate_EveryDataValueConforms(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(socialHistorySection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSocialHistorySection_validateSocialHistorySectionTemplateId(socialHistorySection,
 					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(socialHistorySection,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
+			result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionCode(
 					socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(socialHistorySection,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(socialHistorySection, diagnostics,
-					context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(socialHistorySection,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(socialHistorySection,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(
+			result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionCodeP(
 					socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(
+			result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionTitle(
 					socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSocialHistorySection_validateSocialHistorySectionTemplateId(
+			result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionText(
 					socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSocialHistorySection_validateSocialHistorySectionCode(
-							socialHistorySection, diagnostics, context);
+			result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionSocialHistoryObservation(
+					socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSocialHistorySection_validateSocialHistorySectionCodeP(
-							socialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSocialHistorySection_validateSocialHistorySectionTitle(
-							socialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSocialHistorySection_validateSocialHistorySectionText(
-							socialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSocialHistorySection_validateSocialHistorySectionSocialHistoryObservation(
-							socialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSocialHistorySection_validateSocialHistorySectionPregnancyObservation(
-							socialHistorySection, diagnostics, context);
+			result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionPregnancyObservation(
+					socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateSocialHistorySection_validateSocialHistorySectionSmokingStatusObservation(
 					socialHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSocialHistorySection_validateSocialHistorySectionTobaccoUse(
-							socialHistorySection, diagnostics, context);
+			result &= consolValidator.validateSocialHistorySection_validateSocialHistorySectionTobaccoUse(
+					socialHistorySection, diagnostics, context);
 		}
 		return result;
 	}
@@ -4149,10 +4006,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSocialHistorySection_validateSocialHistorySectionTemplateId(
-			SocialHistorySection socialHistorySection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return socialHistorySection.validateSocialHistorySectionTemplateId(
-				diagnostics, context);
+			SocialHistorySection socialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return socialHistorySection.validateSocialHistorySectionTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -4163,11 +4018,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSocialHistorySection_validateSocialHistorySectionSmokingStatusObservation(
-			SocialHistorySection socialHistorySection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return socialHistorySection
-				.validateSocialHistorySectionSmokingStatusObservation(
-						diagnostics, context);
+			SocialHistorySection socialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return socialHistorySection.validateSocialHistorySectionSmokingStatusObservation(diagnostics, context);
 	}
 
 	/**
@@ -4175,84 +4027,68 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateSmokingStatusObservation(
-			SmokingStatusObservation smokingStatusObservation,
+	public boolean validateSmokingStatusObservation(SmokingStatusObservation smokingStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(smokingStatusObservation,
-				diagnostics, context)) {
+		if (!validate_NoCircularContainment(smokingStatusObservation, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				smokingStatusObservation, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(smokingStatusObservation, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(smokingStatusObservation,
-					diagnostics, context);
+			result &= validate_EveryDataValueConforms(smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
-					smokingStatusObservation, diagnostics, context);
+			result &= validate_EveryReferenceIsContained(smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					smokingStatusObservation, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(smokingStatusObservation,
-					diagnostics, context);
+			result &= validate_EveryProxyResolves(smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_UniqueID(smokingStatusObservation, diagnostics,
-					context);
+			result &= validate_UniqueID(smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(smokingStatusObservation,
-					diagnostics, context);
+			result &= validate_EveryKeyUnique(smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(smokingStatusObservation,
-					diagnostics, context);
+			result &= validate_EveryMapEntryUnique(smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateSmokingStatusObservation_validateSmokingStatusObservationTemplateId(
 					smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationClassCode(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationMoodCode(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationCode(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationEffectiveTime(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationStatusCode(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationStatusCodeP(
-							smokingStatusObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSmokingStatusObservation_validateSmokingStatusObservationValue(
+			result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationClassCode(
 					smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSmokingStatusObservation_validateSmokingStatusObservationValueP(
+			result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationMoodCode(
 					smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationCode(
+					smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationEffectiveTime(
+					smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationStatusCode(
+					smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationStatusCodeP(
+					smokingStatusObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSmokingStatusObservation_validateSmokingStatusObservationValue(smokingStatusObservation,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateSmokingStatusObservation_validateSmokingStatusObservationValueP(smokingStatusObservation,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -4260,34 +4096,28 @@ public class Mu2consolValidator extends EObjectValidator {
 							smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationCDCode(
-							smokingStatusObservation, diagnostics, context);
+			result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationCDCode(
+					smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationCDCodeSystem(
-							smokingStatusObservation, diagnostics, context);
+			result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationCDCodeSystem(
+					smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationIVLTSCenter(
-							smokingStatusObservation, diagnostics, context);
+			result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationIVLTSCenter(
+					smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationIVLTSHigh(
-							smokingStatusObservation, diagnostics, context);
+			result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationIVLTSHigh(
+					smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationIVLTSLow(
-							smokingStatusObservation, diagnostics, context);
+			result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationIVLTSLow(
+					smokingStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateSmokingStatusObservation_validateSmokingStatusObservationIVLTSWidth(
-							smokingStatusObservation, diagnostics, context);
+			result &= consolValidator.validateSmokingStatusObservation_validateSmokingStatusObservationIVLTSWidth(
+					smokingStatusObservation, diagnostics, context);
 		}
 		return result;
 	}
@@ -4300,11 +4130,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSmokingStatusObservation_validateSmokingStatusObservationTemplateId(
-			SmokingStatusObservation smokingStatusObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return smokingStatusObservation
-				.validateSmokingStatusObservationTemplateId(diagnostics,
-						context);
+			SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return smokingStatusObservation.validateSmokingStatusObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -4315,10 +4143,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSmokingStatusObservation_validateSmokingStatusObservationValueP(
-			SmokingStatusObservation smokingStatusObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return smokingStatusObservation.validateSmokingStatusObservationValueP(
-				diagnostics, context);
+			SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return smokingStatusObservation.validateSmokingStatusObservationValueP(diagnostics, context);
 	}
 
 	/**
@@ -4329,10 +4156,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSmokingStatusObservation_validateSmokingStatusObservationValue(
-			SmokingStatusObservation smokingStatusObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return smokingStatusObservation.validateSmokingStatusObservationValue(
-				diagnostics, context);
+			SmokingStatusObservation smokingStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return smokingStatusObservation.validateSmokingStatusObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -4340,72 +4166,58 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateResultsSection(ResultsSection resultsSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(resultsSection, diagnostics,
-				context)) {
+	public boolean validateResultsSection(ResultsSection resultsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(resultsSection, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(resultsSection,
-				diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(resultsSection, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(resultsSection,
-					diagnostics, context);
+			result &= validate_EveryDataValueConforms(resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(resultsSection,
-					diagnostics, context);
+			result &= validate_EveryReferenceIsContained(resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					resultsSection, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(resultsSection, diagnostics,
-					context);
+			result &= validate_EveryProxyResolves(resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_UniqueID(resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(resultsSection, diagnostics,
-					context);
+			result &= validate_EveryKeyUnique(resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(resultsSection, diagnostics,
-					context);
+			result &= validate_EveryMapEntryUnique(resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(
+			result &= cdaValidator.validateSection_validateClassCode(resultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(resultsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateResultsSection_validateResultsSectionEntriesOptionalTemplateId(resultsSection,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultsSection_validateResultsSectionEntriesOptionalCode(resultsSection,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultsSection_validateResultsSectionEntriesOptionalCodeP(resultsSection,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultsSection_validateResultsSectionEntriesOptionalTitle(resultsSection,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalText(
 					resultsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(
-					resultsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResultsSection_validateResultsSectionEntriesOptionalTemplateId(
-					resultsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultsSection_validateResultsSectionEntriesOptionalCode(
-							resultsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultsSection_validateResultsSectionEntriesOptionalCodeP(
-							resultsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultsSection_validateResultsSectionEntriesOptionalTitle(
-							resultsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultsSectionEntriesOptional_validateResultsSectionEntriesOptionalText(
-							resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -4413,13 +4225,12 @@ public class Mu2consolValidator extends EObjectValidator {
 							resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultsSection_validateResultsSectionText(
-							resultsSection, diagnostics, context);
+			result &= consolValidator.validateResultsSection_validateResultsSectionText(resultsSection, diagnostics,
+					context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultsSection_validateResultsSectionResultOrganizer(
-					resultsSection, diagnostics, context);
+			result &= validateResultsSection_validateResultsSectionResultOrganizer(resultsSection, diagnostics,
+					context);
 		}
 		return result;
 	}
@@ -4428,14 +4239,12 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateResultsSectionEntriesOptionalTemplateId constraint
 	 * of '<em>Results Section</em>'. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @generated
 	 */
-	public boolean validateResultsSection_validateResultsSectionEntriesOptionalTemplateId(
-			ResultsSection resultsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return resultsSection.validateResultsSectionEntriesOptionalTemplateId(
-				diagnostics, context);
+	public boolean validateResultsSection_validateResultsSectionEntriesOptionalTemplateId(ResultsSection resultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return resultsSection.validateResultsSectionEntriesOptionalTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -4444,11 +4253,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateResultsSection_validateResultsSectionResultOrganizer(
-			ResultsSection resultsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return resultsSection.validateResultsSectionResultOrganizer(
-				diagnostics, context);
+	public boolean validateResultsSection_validateResultsSectionResultOrganizer(ResultsSection resultsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return resultsSection.validateResultsSectionResultOrganizer(diagnostics, context);
 	}
 
 	/**
@@ -4456,88 +4263,71 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateResultOrganizer(ResultOrganizer resultOrganizer,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(resultOrganizer, diagnostics,
-				context)) {
+	public boolean validateResultOrganizer(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(resultOrganizer, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(resultOrganizer,
-				diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(resultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(resultOrganizer,
-					diagnostics, context);
+			result &= validate_EveryDataValueConforms(resultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(resultOrganizer,
-					diagnostics, context);
+			result &= validate_EveryReferenceIsContained(resultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					resultOrganizer, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(resultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(resultOrganizer, diagnostics,
-					context);
+			result &= validate_EveryProxyResolves(resultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_UniqueID(resultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(resultOrganizer, diagnostics,
-					context);
+			result &= validate_EveryKeyUnique(resultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(resultOrganizer,
+			result &= validate_EveryMapEntryUnique(resultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerCodeValue(resultOrganizer,
 					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerCodeValue(
-							resultOrganizer, diagnostics, context);
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerClassCodeValue(resultOrganizer,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerClassCodeValue(
-							resultOrganizer, diagnostics, context);
+			result &= validateResultOrganizer_validateResultOrganizerTemplateId(resultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerTemplateId(
-					resultOrganizer, diagnostics, context);
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerClassCode(resultOrganizer,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerClassCode(
-							resultOrganizer, diagnostics, context);
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerMoodCode(resultOrganizer,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerMoodCode(
-							resultOrganizer, diagnostics, context);
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerId(resultOrganizer, diagnostics,
+					context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerId(
-							resultOrganizer, diagnostics, context);
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerStatusCodeP(resultOrganizer,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerStatusCodeP(
-							resultOrganizer, diagnostics, context);
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerStatusCode(resultOrganizer,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerStatusCode(
-							resultOrganizer, diagnostics, context);
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerCode(resultOrganizer, diagnostics,
+					context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerCode(
-							resultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerResultObservation(
-					resultOrganizer, diagnostics, context);
+			result &= validateResultOrganizer_validateResultOrganizerResultObservation(resultOrganizer, diagnostics,
+					context);
 		}
 		return result;
 	}
@@ -4548,11 +4338,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateResultOrganizer_validateResultOrganizerTemplateId(
-			ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return resultOrganizer.validateResultOrganizerTemplateId(diagnostics,
-				context);
+	public boolean validateResultOrganizer_validateResultOrganizerTemplateId(ResultOrganizer resultOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return resultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -4561,11 +4349,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateResultOrganizer_validateResultOrganizerResultObservation(
-			ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return resultOrganizer.validateResultOrganizerResultObservation(
-				diagnostics, context);
+	public boolean validateResultOrganizer_validateResultOrganizerResultObservation(ResultOrganizer resultOrganizer,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return resultOrganizer.validateResultOrganizerResultObservation(diagnostics, context);
 	}
 
 	/**
@@ -4573,135 +4359,108 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateResultObservation(
-			ResultObservation resultObservation, DiagnosticChain diagnostics,
+	public boolean validateResultObservation(ResultObservation resultObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(resultObservation, diagnostics,
-				context)) {
+		if (!validate_NoCircularContainment(resultObservation, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(resultObservation,
-				diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(resultObservation, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(resultObservation,
-					diagnostics, context);
+			result &= validate_EveryDataValueConforms(resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(resultObservation,
-					diagnostics, context);
+			result &= validate_EveryReferenceIsContained(resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					resultObservation, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(resultObservation,
-					diagnostics, context);
+			result &= validate_EveryProxyResolves(resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_UniqueID(resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(resultObservation, diagnostics,
-					context);
+			result &= validate_EveryKeyUnique(resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(resultObservation,
-					diagnostics, context);
+			result &= validate_EveryMapEntryUnique(resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationTextReference(
-							resultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationReferenceValue(
-							resultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationTextReferenceValue(
-							resultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationCodeValue(
-							resultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationNoObservationRangeCode(
-							resultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationAuthorMultiplicity(
-							resultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResultObservation_validateResultObservationTemplateId(
+			result &= consolValidator.validateResultObservation_validateResultObservationTextReference(
 					resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationClassCode(
-							resultObservation, diagnostics, context);
+			result &= consolValidator.validateResultObservation_validateResultObservationReferenceValue(
+					resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationMoodCode(
-							resultObservation, diagnostics, context);
+			result &= consolValidator.validateResultObservation_validateResultObservationTextReferenceValue(
+					resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationId(
-							resultObservation, diagnostics, context);
+			result &= consolValidator.validateResultObservation_validateResultObservationCodeValue(resultObservation,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationCode(
-							resultObservation, diagnostics, context);
+			result &= consolValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(
+					resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationText(
-							resultObservation, diagnostics, context);
+			result &= consolValidator.validateResultObservation_validateResultObservationAuthorMultiplicity(
+					resultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationStatusCode(
-							resultObservation, diagnostics, context);
+			result &= validateResultObservation_validateResultObservationTemplateId(resultObservation, diagnostics,
+					context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationStatusCodeP(
-							resultObservation, diagnostics, context);
+			result &= consolValidator.validateResultObservation_validateResultObservationClassCode(resultObservation,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationEffectiveTime(
-							resultObservation, diagnostics, context);
+			result &= consolValidator.validateResultObservation_validateResultObservationMoodCode(resultObservation,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationValue(
-							resultObservation, diagnostics, context);
+			result &= consolValidator.validateResultObservation_validateResultObservationId(resultObservation,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationInterpretationCode(
-							resultObservation, diagnostics, context);
+			result &= consolValidator.validateResultObservation_validateResultObservationCode(resultObservation,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationMethodCode(
-							resultObservation, diagnostics, context);
+			result &= consolValidator.validateResultObservation_validateResultObservationText(resultObservation,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationTargetSiteCode(
-							resultObservation, diagnostics, context);
+			result &= consolValidator.validateResultObservation_validateResultObservationStatusCode(resultObservation,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultObservation_validateResultObservationStatusCodeP(resultObservation,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultObservation_validateResultObservationEffectiveTime(
+					resultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultObservation_validateResultObservationValue(resultObservation,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultObservation_validateResultObservationInterpretationCode(
+					resultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultObservation_validateResultObservationMethodCode(resultObservation,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultObservation_validateResultObservationTargetSiteCode(
+					resultObservation, diagnostics, context);
 		}
 		return result;
 	}
@@ -4710,14 +4469,12 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateResultObservationTemplateId constraint of '
 	 * <em>Result Observation</em>'. <!-- begin-user-doc --> <!-- end-user-doc
 	 * -->
-	 * 
+	 *
 	 * @generated
 	 */
-	public boolean validateResultObservation_validateResultObservationTemplateId(
-			ResultObservation resultObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return resultObservation.validateResultObservationTemplateId(
-				diagnostics, context);
+	public boolean validateResultObservation_validateResultObservationTemplateId(ResultObservation resultObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return resultObservation.validateResultObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -4725,63 +4482,50 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateProceduresSection(
-			ProceduresSection proceduresSection, DiagnosticChain diagnostics,
+	public boolean validateProceduresSection(ProceduresSection proceduresSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(proceduresSection, diagnostics,
-				context)) {
+		if (!validate_NoCircularContainment(proceduresSection, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(proceduresSection,
-				diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(proceduresSection, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(proceduresSection,
-					diagnostics, context);
+			result &= validate_EveryDataValueConforms(proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(proceduresSection,
-					diagnostics, context);
+			result &= validate_EveryReferenceIsContained(proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					proceduresSection, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(proceduresSection,
-					diagnostics, context);
+			result &= validate_EveryProxyResolves(proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_UniqueID(proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(proceduresSection, diagnostics,
-					context);
+			result &= validate_EveryKeyUnique(proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(proceduresSection,
+			result &= validate_EveryMapEntryUnique(proceduresSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(proceduresSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(proceduresSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateProceduresSection_validateProceduresSectionEntriesOptionalTemplateId(proceduresSection,
 					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(
+			result &= consolValidator.validateProceduresSection_validateProceduresSectionEntriesOptionalCode(
 					proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(
+			result &= consolValidator.validateProceduresSection_validateProceduresSectionEntriesOptionalCodeP(
 					proceduresSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProceduresSection_validateProceduresSectionEntriesOptionalTemplateId(
-					proceduresSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProceduresSection_validateProceduresSectionEntriesOptionalCode(
-							proceduresSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProceduresSection_validateProceduresSectionEntriesOptionalCodeP(
-							proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -4789,9 +4533,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProceduresSection_validateProceduresSectionEntriesOptionalText(
-							proceduresSection, diagnostics, context);
+			result &= consolValidator.validateProceduresSection_validateProceduresSectionEntriesOptionalText(
+					proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -4809,28 +4552,24 @@ public class Mu2consolValidator extends EObjectValidator {
 							proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProceduresSection_validateProceduresSectionHasProcedureActivity(
-							proceduresSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProceduresSection_validateProceduresSectionTitle(
-							proceduresSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProceduresSection_validateProceduresSectionProcedureActivityProcedure(
+			result &= consolValidator.validateProceduresSection_validateProceduresSectionHasProcedureActivity(
 					proceduresSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProceduresSection_validateProceduresSectionProcedureActivityObservation(
-							proceduresSection, diagnostics, context);
+			result &= consolValidator.validateProceduresSection_validateProceduresSectionTitle(proceduresSection,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProceduresSection_validateProceduresSectionProcedureActivityAct(
-							proceduresSection, diagnostics, context);
+			result &= validateProceduresSection_validateProceduresSectionProcedureActivityProcedure(proceduresSection,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProceduresSection_validateProceduresSectionProcedureActivityObservation(
+					proceduresSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateProceduresSection_validateProceduresSectionProcedureActivityAct(
+					proceduresSection, diagnostics, context);
 		}
 		return result;
 	}
@@ -4843,11 +4582,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateProceduresSection_validateProceduresSectionEntriesOptionalTemplateId(
-			ProceduresSection proceduresSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return proceduresSection
-				.validateProceduresSectionEntriesOptionalTemplateId(
-						diagnostics, context);
+			ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return proceduresSection.validateProceduresSectionEntriesOptionalTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -4858,11 +4594,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateProceduresSection_validateProceduresSectionProcedureActivityProcedure(
-			ProceduresSection proceduresSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return proceduresSection
-				.validateProceduresSectionProcedureActivityProcedure(
-						diagnostics, context);
+			ProceduresSection proceduresSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return proceduresSection.validateProceduresSectionProcedureActivityProcedure(diagnostics, context);
 	}
 
 	/**
@@ -4870,42 +4603,32 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateProcedureActivityProcedure(
-			ProcedureActivityProcedure procedureActivityProcedure,
+	public boolean validateProcedureActivityProcedure(ProcedureActivityProcedure procedureActivityProcedure,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(procedureActivityProcedure,
-				diagnostics, context)) {
+		if (!validate_NoCircularContainment(procedureActivityProcedure, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				procedureActivityProcedure, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(procedureActivityProcedure, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(
-					procedureActivityProcedure, diagnostics, context);
+			result &= validate_EveryDataValueConforms(procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
-					procedureActivityProcedure, diagnostics, context);
+			result &= validate_EveryReferenceIsContained(procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					procedureActivityProcedure, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(procedureActivityProcedure,
-					diagnostics, context);
+			result &= validate_EveryProxyResolves(procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_UniqueID(procedureActivityProcedure,
-					diagnostics, context);
+			result &= validate_UniqueID(procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(procedureActivityProcedure,
-					diagnostics, context);
+			result &= validate_EveryKeyUnique(procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(procedureActivityProcedure,
-					diagnostics, context);
+			result &= validate_EveryMapEntryUnique(procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -4957,28 +4680,24 @@ public class Mu2consolValidator extends EObjectValidator {
 					procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProcedureActivityProcedure_validateProcedureActivityProcedureClassCode(
-							procedureActivityProcedure, diagnostics, context);
+			result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureClassCode(
+					procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProcedureActivityProcedure_validateProcedureActivityProcedureMoodCode(
-							procedureActivityProcedure, diagnostics, context);
+			result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureMoodCode(
+					procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProcedureActivityProcedure_validateProcedureActivityProcedureId(
-							procedureActivityProcedure, diagnostics, context);
+			result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureId(
+					procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateProcedureActivityProcedure_validateProcedureActivityProcedureCode(
 					procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProcedureActivityProcedure_validateProcedureActivityProcedureStatusCode(
-							procedureActivityProcedure, diagnostics, context);
+			result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureStatusCode(
+					procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -4991,14 +4710,12 @@ public class Mu2consolValidator extends EObjectValidator {
 							procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProcedureActivityProcedure_validateProcedureActivityProcedurePriorityCode(
-							procedureActivityProcedure, diagnostics, context);
+			result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedurePriorityCode(
+					procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProcedureActivityProcedure_validateProcedureActivityProcedureMethodCode(
-							procedureActivityProcedure, diagnostics, context);
+			result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureMethodCode(
+					procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -5011,14 +4728,12 @@ public class Mu2consolValidator extends EObjectValidator {
 							procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProcedureActivityProcedure_validateProcedureActivityProcedureIndication(
-							procedureActivityProcedure, diagnostics, context);
+			result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureIndication(
+					procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProcedureActivityProcedure_validateProcedureActivityProcedureSpecimen(
-							procedureActivityProcedure, diagnostics, context);
+			result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedureSpecimen(
+					procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -5026,9 +4741,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateProcedureActivityProcedure_validateProcedureActivityProcedurePerformer(
-							procedureActivityProcedure, diagnostics, context);
+			result &= consolValidator.validateProcedureActivityProcedure_validateProcedureActivityProcedurePerformer(
+					procedureActivityProcedure, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -5150,11 +4864,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateProcedureActivityProcedure_validateProcedureActivityProcedureCodeValue(
-			ProcedureActivityProcedure procedureActivityProcedure,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureActivityProcedure
-				.validateProcedureActivityProcedureCodeValue(diagnostics,
-						context);
+			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return procedureActivityProcedure.validateProcedureActivityProcedureCodeValue(diagnostics, context);
 	}
 
 	/**
@@ -5165,11 +4877,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateProcedureActivityProcedure_validateProcedureActivityProcedureTemplateId(
-			ProcedureActivityProcedure procedureActivityProcedure,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureActivityProcedure
-				.validateProcedureActivityProcedureTemplateId(diagnostics,
-						context);
+			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return procedureActivityProcedure.validateProcedureActivityProcedureTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -5180,10 +4890,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateProcedureActivityProcedure_validateProcedureActivityProcedureCode(
-			ProcedureActivityProcedure procedureActivityProcedure,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return procedureActivityProcedure
-				.validateProcedureActivityProcedureCode(diagnostics, context);
+			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return procedureActivityProcedure.validateProcedureActivityProcedureCode(diagnostics, context);
 	}
 
 	/**
@@ -5191,60 +4900,48 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummary(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
+	public boolean validateClinicalOfficeVisitSummary(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(clinicalOfficeVisitSummary,
-				diagnostics, context)) {
+		if (!validate_NoCircularContainment(clinicalOfficeVisitSummary, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				clinicalOfficeVisitSummary, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(clinicalOfficeVisitSummary, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(
+			result &= validate_EveryDataValueConforms(clinicalOfficeVisitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(clinicalOfficeVisitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(clinicalOfficeVisitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(clinicalOfficeVisitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(clinicalOfficeVisitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(clinicalOfficeVisitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(clinicalOfficeVisitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(clinicalOfficeVisitSummary, diagnostics,
+					context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(clinicalOfficeVisitSummary, diagnostics,
+					context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
 					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
 					clinicalOfficeVisitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					clinicalOfficeVisitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(clinicalOfficeVisitSummary,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(clinicalOfficeVisitSummary,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(clinicalOfficeVisitSummary,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(clinicalOfficeVisitSummary,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(
-					clinicalOfficeVisitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
-					clinicalOfficeVisitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
-							clinicalOfficeVisitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-							clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -5261,34 +4958,28 @@ public class Mu2consolValidator extends EObjectValidator {
 					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -5301,39 +4992,32 @@ public class Mu2consolValidator extends EObjectValidator {
 							clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -5346,23 +5030,20 @@ public class Mu2consolValidator extends EObjectValidator {
 							clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
 					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -5370,19 +5051,16 @@ public class Mu2consolValidator extends EObjectValidator {
 							clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -5887,9 +5565,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
-							clinicalOfficeVisitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
+					clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -6616,11 +6293,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryReasonforVisit(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryReasonforVisit(diagnostics,
-						context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryReasonforVisit(diagnostics, context);
 	}
 
 	/**
@@ -6631,11 +6306,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryCarePlanning(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryCarePlanning(diagnostics,
-						context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryCarePlanning(diagnostics, context);
 	}
 
 	/**
@@ -6646,11 +6319,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryDateOfvisit(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryDateOfvisit(diagnostics,
-						context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryDateOfvisit(diagnostics, context);
 	}
 
 	/**
@@ -6661,11 +6332,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryVisitLocation(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryVisitLocation(diagnostics,
-						context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryVisitLocation(diagnostics, context);
 	}
 
 	/**
@@ -6677,11 +6346,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryProviderNameAndContactInfo(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryProviderNameAndContactInfo(
-						diagnostics, context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryProviderNameAndContactInfo(diagnostics,
+				context);
 	}
 
 	/**
@@ -6692,11 +6360,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryVitalSigns(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryVitalSigns(diagnostics,
-						context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryVitalSigns(diagnostics, context);
 	}
 
 	/**
@@ -6704,15 +6370,15 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER
 	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER(
-						diagnostics, context);
+				.validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER(diagnostics,
+						context);
 	}
 
 	/**
@@ -6723,26 +6389,22 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryProblemSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryProblemSection(diagnostics,
-						context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryProblemSection(diagnostics, context);
 	}
 
 	/**
 	 * Validates the validateClinicalOfficeVisitSummaryAllergiesSection
 	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryAllergiesSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryAllergiesSection(
-						diagnostics, context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryAllergiesSection(diagnostics, context);
 	}
 
 	/**
@@ -6753,41 +6415,35 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryResultsSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryResultsSection(diagnostics,
-						context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryResultsSection(diagnostics, context);
 	}
 
 	/**
 	 * Validates the validateClinicalOfficeVisitSummaryProceduresSection
 	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryProceduresSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryProceduresSection(
-						diagnostics, context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryProceduresSection(diagnostics, context);
 	}
 
 	/**
 	 * Validates the validateClinicalOfficeVisitSummaryImmunizationsSection
 	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryImmunizationsSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryImmunizationsSection(
-						diagnostics, context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryImmunizationsSection(diagnostics, context);
 	}
 
 	/**
@@ -6795,78 +6451,63 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateMedicationsAdministeredSection(
-			MedicationsAdministeredSection medicationsAdministeredSection,
+	public boolean validateMedicationsAdministeredSection(MedicationsAdministeredSection medicationsAdministeredSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationsAdministeredSection,
-				diagnostics, context)) {
+		if (!validate_NoCircularContainment(medicationsAdministeredSection, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				medicationsAdministeredSection, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(medicationsAdministeredSection, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(
-					medicationsAdministeredSection, diagnostics, context);
+			result &= validate_EveryDataValueConforms(medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
-					medicationsAdministeredSection, diagnostics, context);
+			result &= validate_EveryReferenceIsContained(medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					medicationsAdministeredSection, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(medicationsAdministeredSection, diagnostics,
+					context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(
-					medicationsAdministeredSection, diagnostics, context);
+			result &= validate_EveryProxyResolves(medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_UniqueID(medicationsAdministeredSection,
-					diagnostics, context);
+			result &= validate_UniqueID(medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(medicationsAdministeredSection,
-					diagnostics, context);
+			result &= validate_EveryKeyUnique(medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(
-					medicationsAdministeredSection, diagnostics, context);
+			result &= validate_EveryMapEntryUnique(medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(
-					medicationsAdministeredSection, diagnostics, context);
+			result &= cdaValidator.validateSection_validateClassCode(medicationsAdministeredSection, diagnostics,
+					context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(
-					medicationsAdministeredSection, diagnostics, context);
+			result &= cdaValidator.validateSection_validateMoodCode(medicationsAdministeredSection, diagnostics,
+					context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionTemplateId(
 					medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionCode(
-							medicationsAdministeredSection, diagnostics,
-							context);
+			result &= consolValidator.validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionCode(
+					medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionCodeP(
-							medicationsAdministeredSection, diagnostics,
-							context);
+							medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionText(
-							medicationsAdministeredSection, diagnostics,
-							context);
+			result &= consolValidator.validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionText(
+					medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionTitle(
-							medicationsAdministeredSection, diagnostics,
-							context);
+							medicationsAdministeredSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionMedicationActivity(
@@ -6883,56 +6524,49 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionTemplateId(
-			MedicationsAdministeredSection medicationsAdministeredSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationsAdministeredSection
-				.validateMedicationsAdministeredSectionTemplateId(diagnostics,
-						context);
+			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicationsAdministeredSection.validateMedicationsAdministeredSectionTemplateId(diagnostics, context);
 	}
 
 	/**
 	 * Validates the validateMedicationsAdministeredSectionMedicationActivity
 	 * constraint of '<em>Medications Administered Section</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionMedicationActivity(
-			MedicationsAdministeredSection medicationsAdministeredSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationsAdministeredSection
-				.validateMedicationsAdministeredSectionMedicationActivity(
-						diagnostics, context);
+			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return medicationsAdministeredSection.validateMedicationsAdministeredSectionMedicationActivity(diagnostics,
+				context);
 	}
 
 	/**
 	 * Validates the validateClinicalOfficeVisitSummaryInstructionsSection
 	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryInstructionsSection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummaryInstructionsSection(
-						diagnostics, context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummaryInstructionsSection(diagnostics, context);
 	}
 
 	/**
 	 * Validates the validateClinicalOfficeVisitSummarySocialHistorySection
 	 * constraint of '<em>Clinical Office Visit Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummarySocialHistorySection(
-			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return clinicalOfficeVisitSummary
-				.validateClinicalOfficeVisitSummarySocialHistorySection(
-						diagnostics, context);
+			ClinicalOfficeVisitSummary clinicalOfficeVisitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return clinicalOfficeVisitSummary.validateClinicalOfficeVisitSummarySocialHistorySection(diagnostics, context);
 	}
 
 	/**
@@ -6941,471 +6575,373 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateTransitionOfCareAmbulatorySummary(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(transitionOfCareAmbulatorySummary,
-				diagnostics, context)) {
+			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(transitionOfCareAmbulatorySummary, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				transitionOfCareAmbulatorySummary, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(transitionOfCareAmbulatorySummary, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(
-					transitionOfCareAmbulatorySummary, diagnostics, context);
+			result &= validate_EveryDataValueConforms(transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
-					transitionOfCareAmbulatorySummary, diagnostics, context);
+			result &= validate_EveryReferenceIsContained(transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					transitionOfCareAmbulatorySummary, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(transitionOfCareAmbulatorySummary, diagnostics,
+					context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(
-					transitionOfCareAmbulatorySummary, diagnostics, context);
+			result &= validate_EveryProxyResolves(transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_UniqueID(transitionOfCareAmbulatorySummary,
+			result &= validate_UniqueID(transitionOfCareAmbulatorySummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(transitionOfCareAmbulatorySummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(transitionOfCareAmbulatorySummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(transitionOfCareAmbulatorySummary,
 					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(transitionOfCareAmbulatorySummary,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
 					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
 					transitionOfCareAmbulatorySummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(
-					transitionOfCareAmbulatorySummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
-					transitionOfCareAmbulatorySummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdVersionNumber(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumberSetId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
 					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipient(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticator(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
 					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSupportParticipant(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTELUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUSRealmPatientNameMixedContent(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameFamily(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameGiven(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNamePrefix(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameSuffix(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUseP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
@@ -7414,26 +6950,22 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientIfSdtcEnforceRaceCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
@@ -7446,20 +6978,17 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
@@ -7472,38 +7001,32 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
@@ -7512,104 +7035,87 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTELUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
@@ -7618,8 +7124,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganization(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
@@ -7628,920 +7133,766 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTELUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasOneAssignedPersonOrOneAssignedAuthoringDevice(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
+					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthor(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTELUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTELUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodian(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganization(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTELUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorTime(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTELUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAssignedPerson(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorTime(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorSignatureCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityPersonName(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAddr(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAssignedPerson(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityAddr(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityPerson(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportTime(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrderId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrder(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityHasNationalProviderIdentifier(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1TypeCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTimeLow(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEvent(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentId(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentStatusCodeP(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentStatusCode(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsent(
-							transitionOfCareAmbulatorySummary, diagnostics,
-							context);
+							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
@@ -8611,60 +7962,56 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo
 	 * constraint of '<em>Transition Of Care Ambulatory Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateTransitionOfCareAmbulatorySummary_validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return transitionOfCareAmbulatorySummary
-				.validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(
-						diagnostics, context);
+				.validateTransitionOfCareAmbulatorySummaryProviderNameAndContactInfo(diagnostics, context);
 	}
 
 	/**
 	 * Validates the validateTransitionOfCareAmbulatorySummaryReasonForReferral
 	 * constraint of '<em>Transition Of Care Ambulatory Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateTransitionOfCareAmbulatorySummary_validateTransitionOfCareAmbulatorySummaryReasonForReferral(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return transitionOfCareAmbulatorySummary
-				.validateTransitionOfCareAmbulatorySummaryReasonForReferral(
-						diagnostics, context);
+			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return transitionOfCareAmbulatorySummary.validateTransitionOfCareAmbulatorySummaryReasonForReferral(diagnostics,
+				context);
 	}
 
 	/**
 	 * Validates the validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses
 	 * constraint of '<em>Transition Of Care Ambulatory Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateTransitionOfCareAmbulatorySummary_validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return transitionOfCareAmbulatorySummary
-				.validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(
-						diagnostics, context);
+				.validateTransitionOfCareAmbulatorySummaryEncounterDiagnoses(diagnostics, context);
 	}
 
 	/**
 	 * Validates the validateTransitionOfCareAmbulatorySummaryMedicationsSection
 	 * constraint of '<em>Transition Of Care Ambulatory Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateTransitionOfCareAmbulatorySummary_validateTransitionOfCareAmbulatorySummaryMedicationsSection(
-			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			TransitionOfCareAmbulatorySummary transitionOfCareAmbulatorySummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return transitionOfCareAmbulatorySummary
-				.validateTransitionOfCareAmbulatorySummaryMedicationsSection(
-						diagnostics, context);
+				.validateTransitionOfCareAmbulatorySummaryMedicationsSection(diagnostics, context);
 	}
 
 	/**
@@ -8673,471 +8020,373 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateTransitionOfCareInpatientSummary(
-			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(transitionOfCareInpatientSummary,
-				diagnostics, context)) {
+			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(transitionOfCareInpatientSummary, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				transitionOfCareInpatientSummary, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(transitionOfCareInpatientSummary, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(
-					transitionOfCareInpatientSummary, diagnostics, context);
+			result &= validate_EveryDataValueConforms(transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
-					transitionOfCareInpatientSummary, diagnostics, context);
+			result &= validate_EveryReferenceIsContained(transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					transitionOfCareInpatientSummary, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(transitionOfCareInpatientSummary, diagnostics,
+					context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(
-					transitionOfCareInpatientSummary, diagnostics, context);
+			result &= validate_EveryProxyResolves(transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_UniqueID(transitionOfCareInpatientSummary,
+			result &= validate_UniqueID(transitionOfCareInpatientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(transitionOfCareInpatientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(transitionOfCareInpatientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(transitionOfCareInpatientSummary,
 					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(transitionOfCareInpatientSummary,
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(transitionOfCareInpatientSummary,
 					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
 					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
 					transitionOfCareInpatientSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
-					transitionOfCareInpatientSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdVersionNumber(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumberSetId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
 					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipient(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticator(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
 					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSupportParticipant(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTELUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUSRealmPatientNameMixedContent(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameFamily(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameGiven(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNamePrefix(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameSuffix(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUseP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
@@ -9146,26 +8395,22 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientIfSdtcEnforceRaceCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
@@ -9178,20 +8423,17 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
@@ -9204,38 +8446,32 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
@@ -9244,104 +8480,87 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTELUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
@@ -9350,8 +8569,7 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganization(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
@@ -9360,920 +8578,766 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTELUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasOneAssignedPersonOrOneAssignedAuthoringDevice(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
+					transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthor(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTELUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTELUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodian(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganization(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTELUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorTime(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTELUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAssignedPerson(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorTime(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorSignatureCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityPersonName(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAddr(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAssignedPerson(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressState(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityAddr(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityPerson(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportTime(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrderId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrder(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityHasNationalProviderIdentifier(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1TypeCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTimeLow(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEvent(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentId(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentStatusCodeP(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentStatusCode(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsent(
-							transitionOfCareInpatientSummary, diagnostics,
-							context);
+							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
@@ -10338,30 +9402,28 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateTransitionOfCareInpatientSummaryMedications
 	 * constraint of '<em>Transition Of Care Inpatient Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryMedications(
-			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return transitionOfCareInpatientSummary
-				.validateTransitionOfCareInpatientSummaryMedications(
-						diagnostics, context);
+			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return transitionOfCareInpatientSummary.validateTransitionOfCareInpatientSummaryMedications(diagnostics,
+				context);
 	}
 
 	/**
 	 * Validates the validateTransitionOfCareInpatientSummaryEncounterDiagnoses
 	 * constraint of '<em>Transition Of Care Inpatient Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryEncounterDiagnoses(
-			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return transitionOfCareInpatientSummary
-				.validateTransitionOfCareInpatientSummaryEncounterDiagnoses(
-						diagnostics, context);
+			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return transitionOfCareInpatientSummary.validateTransitionOfCareInpatientSummaryEncounterDiagnoses(diagnostics,
+				context);
 	}
 
 	/**
@@ -10369,15 +9431,14 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection
 	 * constraint of '<em>Transition Of Care Inpatient Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateTransitionOfCareInpatientSummary_validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(
-			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+			TransitionOfCareInpatientSummary transitionOfCareInpatientSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return transitionOfCareInpatientSummary
-				.validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(
-						diagnostics, context);
+				.validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(diagnostics, context);
 	}
 
 	/**
@@ -10385,60 +9446,48 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateViewDownloadTransmitSummary(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
+	public boolean validateViewDownloadTransmitSummary(ViewDownloadTransmitSummary viewDownloadTransmitSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(viewDownloadTransmitSummary,
-				diagnostics, context)) {
+		if (!validate_NoCircularContainment(viewDownloadTransmitSummary, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				viewDownloadTransmitSummary, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(viewDownloadTransmitSummary, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(
+			result &= validate_EveryDataValueConforms(viewDownloadTransmitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(viewDownloadTransmitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(viewDownloadTransmitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(viewDownloadTransmitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(viewDownloadTransmitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(viewDownloadTransmitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(viewDownloadTransmitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(viewDownloadTransmitSummary, diagnostics,
+					context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(viewDownloadTransmitSummary, diagnostics,
+					context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
 					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
 					viewDownloadTransmitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					viewDownloadTransmitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(viewDownloadTransmitSummary,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(viewDownloadTransmitSummary,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(viewDownloadTransmitSummary,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(viewDownloadTransmitSummary,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(
-					viewDownloadTransmitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
-					viewDownloadTransmitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
-							viewDownloadTransmitSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-							viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -10455,34 +9504,28 @@ public class Mu2consolValidator extends EObjectValidator {
 					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -10495,39 +9538,32 @@ public class Mu2consolValidator extends EObjectValidator {
 							viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -10540,23 +9576,20 @@ public class Mu2consolValidator extends EObjectValidator {
 							viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
 					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -10564,19 +9597,16 @@ public class Mu2consolValidator extends EObjectValidator {
 							viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -11081,9 +10111,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
-							viewDownloadTransmitSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
+					viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -11782,11 +10811,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryCarePlanning(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return viewDownloadTransmitSummary
-				.validateViewDownloadTransmitSummaryCarePlanning(diagnostics,
-						context);
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryCarePlanning(diagnostics, context);
 	}
 
 	/**
@@ -11797,86 +10824,75 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryVitalSigns(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return viewDownloadTransmitSummary
-				.validateViewDownloadTransmitSummaryVitalSigns(diagnostics,
-						context);
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryVitalSigns(diagnostics, context);
 	}
 
 	/**
 	 * Validates the validateViewDownloadTransmitSummaryAllergiesSection
 	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryAllergiesSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return viewDownloadTransmitSummary
-				.validateViewDownloadTransmitSummaryAllergiesSection(
-						diagnostics, context);
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryAllergiesSection(diagnostics, context);
 	}
 
 	/**
 	 * Validates the validateViewDownloadTransmitSummaryProblemSection
 	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryProblemSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return viewDownloadTransmitSummary
-				.validateViewDownloadTransmitSummaryProblemSection(diagnostics,
-						context);
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryProblemSection(diagnostics, context);
 	}
 
 	/**
 	 * Validates the validateViewDownloadTransmitSummaryProceduresSection
 	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryProceduresSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return viewDownloadTransmitSummary
-				.validateViewDownloadTransmitSummaryProceduresSection(
-						diagnostics, context);
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryProceduresSection(diagnostics, context);
 	}
 
 	/**
 	 * Validates the validateViewDownloadTransmitSummaryResultsSection
 	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryResultsSection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return viewDownloadTransmitSummary
-				.validateViewDownloadTransmitSummaryResultsSection(diagnostics,
-						context);
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return viewDownloadTransmitSummary.validateViewDownloadTransmitSummaryResultsSection(diagnostics, context);
 	}
 
 	/**
 	 * Validates the validateViewDownloadTransmitSummarySocialHistorySection
 	 * constraint of '<em>View Download Transmit Summary</em>'. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummarySocialHistorySection(
-			ViewDownloadTransmitSummary viewDownloadTransmitSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return viewDownloadTransmitSummary
-				.validateViewDownloadTransmitSummarySocialHistorySection(
-						diagnostics, context);
+			ViewDownloadTransmitSummary viewDownloadTransmitSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return viewDownloadTransmitSummary.validateViewDownloadTransmitSummarySocialHistorySection(diagnostics,
+				context);
 	}
 
 	/**
@@ -11884,60 +10900,47 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateVDTInpatientSummary(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(vdtInpatientSummary, diagnostics,
-				context)) {
+	public boolean validateVDTInpatientSummary(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(vdtInpatientSummary, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				vdtInpatientSummary, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(vdtInpatientSummary, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(vdtInpatientSummary,
-					diagnostics, context);
+			result &= validate_EveryDataValueConforms(vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(vdtInpatientSummary,
-					diagnostics, context);
+			result &= validate_EveryReferenceIsContained(vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					vdtInpatientSummary, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(vdtInpatientSummary,
-					diagnostics, context);
+			result &= validate_EveryProxyResolves(vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_UniqueID(vdtInpatientSummary, diagnostics,
+			result &= validate_UniqueID(vdtInpatientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(vdtInpatientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(vdtInpatientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(vdtInpatientSummary, diagnostics,
 					context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(vdtInpatientSummary, diagnostics,
-					context);
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(vdtInpatientSummary,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
 					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
 					vdtInpatientSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
-							vdtInpatientSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-							vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -11950,38 +10953,32 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(vdtInpatientSummary,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
 					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-							vdtInpatientSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -11994,39 +10991,32 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -12039,23 +11029,20 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
-							vdtInpatientSummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
 					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
-							vdtInpatientSummary, diagnostics, context);
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(vdtInpatientSummary,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+					vdtInpatientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -12063,19 +11050,16 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -12580,9 +11564,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
-							vdtInpatientSummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
+					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -13271,20 +12254,20 @@ public class Mu2consolValidator extends EObjectValidator {
 					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateVDTInpatientSummary_validateVDTInpatientSummaryAdmissionDate(
-					vdtInpatientSummary, diagnostics, context);
+			result &= validateVDTInpatientSummary_validateVDTInpatientSummaryAdmissionDate(vdtInpatientSummary,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateVDTInpatientSummary_validateVDTInpatientSummaryDischargeDate(
-					vdtInpatientSummary, diagnostics, context);
+			result &= validateVDTInpatientSummary_validateVDTInpatientSummaryDischargeDate(vdtInpatientSummary,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateVDTInpatientSummary_validateVDTInpatientSummaryAdmissionDischargeLocation(
 					vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateVDTInpatientSummary_validateVDTInpatientSummaryMedications(
-					vdtInpatientSummary, diagnostics, context);
+			result &= validateVDTInpatientSummary_validateVDTInpatientSummaryMedications(vdtInpatientSummary,
+					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateVDTInpatientSummary_validateVDTInpatientSummaryReasonforHospitalization(
@@ -13305,10 +12288,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryAdmissionDate(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return vdtInpatientSummary.validateVDTInpatientSummaryAdmissionDate(
-				diagnostics, context);
+			VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return vdtInpatientSummary.validateVDTInpatientSummaryAdmissionDate(diagnostics, context);
 	}
 
 	/**
@@ -13319,10 +12300,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryDischargeDate(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return vdtInpatientSummary.validateVDTInpatientSummaryDischargeDate(
-				diagnostics, context);
+			VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return vdtInpatientSummary.validateVDTInpatientSummaryDischargeDate(diagnostics, context);
 	}
 
 	/**
@@ -13333,11 +12312,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryAdmissionDischargeLocation(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return vdtInpatientSummary
-				.validateVDTInpatientSummaryAdmissionDischargeLocation(
-						diagnostics, context);
+			VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return vdtInpatientSummary.validateVDTInpatientSummaryAdmissionDischargeLocation(diagnostics, context);
 	}
 
 	/**
@@ -13348,10 +12324,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryMedications(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return vdtInpatientSummary.validateVDTInpatientSummaryMedications(
-				diagnostics, context);
+			VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return vdtInpatientSummary.validateVDTInpatientSummaryMedications(diagnostics, context);
 	}
 
 	/**
@@ -13362,11 +12336,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryReasonforHospitalization(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return vdtInpatientSummary
-				.validateVDTInpatientSummaryReasonforHospitalization(
-						diagnostics, context);
+			VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return vdtInpatientSummary.validateVDTInpatientSummaryReasonforHospitalization(diagnostics, context);
 	}
 
 	/**
@@ -13378,11 +12349,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
-			VDTInpatientSummary vdtInpatientSummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return vdtInpatientSummary
-				.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
-						diagnostics, context);
+			VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return vdtInpatientSummary.validateVDTInpatientSummaryHospitalDischargeInstructionsSection(diagnostics,
+				context);
 	}
 
 	/**
@@ -13390,60 +12359,48 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateVDTAmbulatorySummary(
-			VDTAmbulatorySummary vdtAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(vdtAmbulatorySummary, diagnostics,
-				context)) {
+	public boolean validateVDTAmbulatorySummary(VDTAmbulatorySummary vdtAmbulatorySummary, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(vdtAmbulatorySummary, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				vdtAmbulatorySummary, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(vdtAmbulatorySummary, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(vdtAmbulatorySummary,
-					diagnostics, context);
+			result &= validate_EveryDataValueConforms(vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(vdtAmbulatorySummary,
-					diagnostics, context);
+			result &= validate_EveryReferenceIsContained(vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					vdtAmbulatorySummary, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(vdtAmbulatorySummary,
-					diagnostics, context);
+			result &= validate_EveryProxyResolves(vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_UniqueID(vdtAmbulatorySummary, diagnostics,
+			result &= validate_UniqueID(vdtAmbulatorySummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(vdtAmbulatorySummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(vdtAmbulatorySummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(vdtAmbulatorySummary, diagnostics,
 					context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(vdtAmbulatorySummary,
-					diagnostics, context);
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(vdtAmbulatorySummary, diagnostics,
+					context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(vdtAmbulatorySummary,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
 					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
 					vdtAmbulatorySummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
-							vdtAmbulatorySummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-							vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -13456,38 +12413,32 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
+			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(vdtAmbulatorySummary,
+					diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
 					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-							vdtAmbulatorySummary, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -13500,39 +12451,32 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeP(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -13545,23 +12489,20 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
 					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -13569,19 +12510,16 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -14086,9 +13024,8 @@ public class Mu2consolValidator extends EObjectValidator {
 							vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
-							vdtAmbulatorySummary, diagnostics, context);
+			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
+					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -14781,8 +13718,8 @@ public class Mu2consolValidator extends EObjectValidator {
 					vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateVDTAmbulatorySummary_validateVDTAmbulatorySummaryMedicationsSection(
-					vdtAmbulatorySummary, diagnostics, context);
+			result &= validateVDTAmbulatorySummary_validateVDTAmbulatorySummaryMedicationsSection(vdtAmbulatorySummary,
+					diagnostics, context);
 		}
 		return result;
 	}
@@ -14795,11 +13732,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateVDTAmbulatorySummary_validateVDTAmbulatorySummaryProviderNameAndContactInfo(
-			VDTAmbulatorySummary vdtAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return vdtAmbulatorySummary
-				.validateVDTAmbulatorySummaryProviderNameAndContactInfo(
-						diagnostics, context);
+			VDTAmbulatorySummary vdtAmbulatorySummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return vdtAmbulatorySummary.validateVDTAmbulatorySummaryProviderNameAndContactInfo(diagnostics, context);
 	}
 
 	/**
@@ -14810,11 +13744,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateVDTAmbulatorySummary_validateVDTAmbulatorySummaryMedicationsSection(
-			VDTAmbulatorySummary vdtAmbulatorySummary,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return vdtAmbulatorySummary
-				.validateVDTAmbulatorySummaryMedicationsSection(diagnostics,
-						context);
+			VDTAmbulatorySummary vdtAmbulatorySummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return vdtAmbulatorySummary.validateVDTAmbulatorySummaryMedicationsSection(diagnostics, context);
 	}
 
 	/**
@@ -14822,69 +13753,54 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateFunctionalStatusSection(
-			FunctionalStatusSection functionalStatusSection,
+	public boolean validateFunctionalStatusSection(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(functionalStatusSection,
-				diagnostics, context)) {
+		if (!validate_NoCircularContainment(functionalStatusSection, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				functionalStatusSection, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(functionalStatusSection, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(functionalStatusSection,
+			result &= validate_EveryDataValueConforms(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateClassCode(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= cdaValidator.validateSection_validateMoodCode(functionalStatusSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validateFunctionalStatusSection_validateFunctionalStatusSectionTemplateId(functionalStatusSection,
 					diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
+			result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionCode(
 					functionalStatusSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
+			result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionTitle(
 					functionalStatusSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(functionalStatusSection,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(functionalStatusSection, diagnostics,
-					context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(functionalStatusSection,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(functionalStatusSection,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(
+			result &= consolValidator.validateFunctionalStatusSection_validateFunctionalStatusSectionText(
 					functionalStatusSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(
-					functionalStatusSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFunctionalStatusSection_validateFunctionalStatusSectionTemplateId(
-					functionalStatusSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusSection_validateFunctionalStatusSectionCode(
-							functionalStatusSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusSection_validateFunctionalStatusSectionTitle(
-							functionalStatusSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusSection_validateFunctionalStatusSectionText(
-							functionalStatusSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
@@ -14957,10 +13873,8 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusSection_validateFunctionalStatusSectionTemplateId(
-			FunctionalStatusSection functionalStatusSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return functionalStatusSection
-				.validateFunctionalStatusSectionTemplateId(diagnostics, context);
+			FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return functionalStatusSection.validateFunctionalStatusSectionTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -14969,207 +13883,155 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateCognitiveStatusResultObservation(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(cognitiveStatusResultObservation,
-				diagnostics, context)) {
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(cognitiveStatusResultObservation, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				cognitiveStatusResultObservation, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(cognitiveStatusResultObservation, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(
+			result &= validate_EveryDataValueConforms(cognitiveStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(cognitiveStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(cognitiveStatusResultObservation, diagnostics,
+					context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(cognitiveStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(cognitiveStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(cognitiveStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(cognitiveStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationTextReference(
 					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
+			result &= consolValidator.validateResultObservation_validateResultObservationReferenceValue(
 					cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(
-					cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(cognitiveStatusResultObservation,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(cognitiveStatusResultObservation,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(
-					cognitiveStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationTextReference(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationReferenceValue(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultObservation_validateResultObservationTextReferenceValue(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+							cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationCodeValue(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateResultObservation_validateResultObservationCodeValue(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationNoObservationRangeCode(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationAuthorMultiplicity(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateResultObservation_validateResultObservationAuthorMultiplicity(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateCognitiveStatusResultObservation_validateResultObservationTemplateId(
 					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationClassCode(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationClassCode(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationMoodCode(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationMoodCode(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationId(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationId(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationCode(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationCode(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationText(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationText(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationStatusCode(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationStatusCode(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationStatusCodeP(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationStatusCodeP(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationEffectiveTime(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationEffectiveTime(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationValue(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationValue(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultObservation_validateResultObservationInterpretationCode(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+							cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationMethodCode(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationMethodCode(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationTargetSiteCode(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationTargetSiteCode(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationValueDatatype(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+							cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultObservation_validateResultObservationCodeP(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultObservation_validateResultObservationCodeP(
+					cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationAuthor(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+							cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+							cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationCaregiverCharacteristics(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+							cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationAssessmentScaleObservation(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+							cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationReferenceRange(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+							cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+							cognitiveStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultObservation_validateCognitiveStatusResultObservationReferenceRangeObservationRange(
-							cognitiveStatusResultObservation, diagnostics,
-							context);
+							cognitiveStatusResultObservation, diagnostics, context);
 		}
 		return result;
 	}
@@ -15182,10 +14044,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateCognitiveStatusResultObservation_validateResultObservationTemplateId(
-			CognitiveStatusResultObservation cognitiveStatusResultObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return cognitiveStatusResultObservation
-				.validateResultObservationTemplateId(diagnostics, context);
+			CognitiveStatusResultObservation cognitiveStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultObservation.validateResultObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -15193,112 +14054,83 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * 
 	 * @generated
 	 */
-	public boolean validateCognitiveStatusResultOrganizer(
-			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer,
+	public boolean validateCognitiveStatusResultOrganizer(CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(cognitiveStatusResultOrganizer,
-				diagnostics, context)) {
+		if (!validate_NoCircularContainment(cognitiveStatusResultOrganizer, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				cognitiveStatusResultOrganizer, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(cognitiveStatusResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(
+			result &= validate_EveryDataValueConforms(cognitiveStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(cognitiveStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(cognitiveStatusResultOrganizer, diagnostics,
+					context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(cognitiveStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(cognitiveStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(cognitiveStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(cognitiveStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerCodeValue(
 					cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerClassCodeValue(
 					cognitiveStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					cognitiveStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(
-					cognitiveStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(cognitiveStatusResultOrganizer,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(cognitiveStatusResultOrganizer,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(
-					cognitiveStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerCodeValue(
-							cognitiveStatusResultOrganizer, diagnostics,
-							context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerClassCodeValue(
-							cognitiveStatusResultOrganizer, diagnostics,
-							context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateCognitiveStatusResultOrganizer_validateResultOrganizerTemplateId(
 					cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultOrganizer_validateResultOrganizerClassCode(
-							cognitiveStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultOrganizer_validateResultOrganizerClassCode(
+					cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultOrganizer_validateResultOrganizerMoodCode(
-							cognitiveStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultOrganizer_validateResultOrganizerMoodCode(
+					cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultOrganizer_validateResultOrganizerId(
-							cognitiveStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultOrganizer_validateResultOrganizerId(
+					cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultOrganizer_validateResultOrganizerStatusCodeP(
-							cognitiveStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultOrganizer_validateResultOrganizerStatusCodeP(
+					cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultOrganizer_validateResultOrganizerStatusCode(
-							cognitiveStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultOrganizer_validateResultOrganizerStatusCode(
+					cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateCognitiveStatusResultOrganizer_validateResultOrganizerCode(
-							cognitiveStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateCognitiveStatusResultOrganizer_validateResultOrganizerCode(
+					cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerResultObservation(
-							cognitiveStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerResultObservation(
+					cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerCodeCodeSystem(
-							cognitiveStatusResultOrganizer, diagnostics,
-							context);
+							cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateCognitiveStatusResultOrganizer_validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(
-							cognitiveStatusResultOrganizer, diagnostics,
-							context);
+							cognitiveStatusResultOrganizer, diagnostics, context);
 		}
 		return result;
 	}
@@ -15311,10 +14143,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateCognitiveStatusResultOrganizer_validateResultOrganizerTemplateId(
-			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return cognitiveStatusResultOrganizer
-				.validateResultOrganizerTemplateId(diagnostics, context);
+			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return cognitiveStatusResultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -15323,207 +14154,155 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusResultObservation(
-			FunctionalStatusResultObservation functionalStatusResultObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(functionalStatusResultObservation,
-				diagnostics, context)) {
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(functionalStatusResultObservation, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				functionalStatusResultObservation, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(functionalStatusResultObservation, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(
+			result &= validate_EveryDataValueConforms(functionalStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(functionalStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(functionalStatusResultObservation, diagnostics,
+					context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(functionalStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(functionalStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(functionalStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(functionalStatusResultObservation, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationTextReference(
 					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
+			result &= consolValidator.validateResultObservation_validateResultObservationReferenceValue(
 					functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(
-					functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(functionalStatusResultObservation,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(
-					functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(
-					functionalStatusResultObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationTextReference(
-							functionalStatusResultObservation, diagnostics,
-							context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationReferenceValue(
-							functionalStatusResultObservation, diagnostics,
-							context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultObservation_validateResultObservationTextReferenceValue(
-							functionalStatusResultObservation, diagnostics,
-							context);
+							functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationCodeValue(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateResultObservation_validateResultObservationCodeValue(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationNoObservationRangeCode(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateResultObservation_validateResultObservationNoObservationRangeCode(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultObservation_validateResultObservationAuthorMultiplicity(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateResultObservation_validateResultObservationAuthorMultiplicity(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateFunctionalStatusResultObservation_validateResultObservationTemplateId(
 					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationClassCode(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationClassCode(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationMoodCode(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationMoodCode(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationId(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationId(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationCode(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationCode(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationText(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationText(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationStatusCode(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationStatusCode(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationStatusCodeP(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationStatusCodeP(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationEffectiveTime(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationEffectiveTime(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationValue(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationValue(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultObservation_validateResultObservationInterpretationCode(
-							functionalStatusResultObservation, diagnostics,
-							context);
+							functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationMethodCode(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationMethodCode(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationTargetSiteCode(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationTargetSiteCode(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationValueDatatype(
-							functionalStatusResultObservation, diagnostics,
-							context);
+							functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultObservation_validateResultObservationCodeP(
-							functionalStatusResultObservation, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultObservation_validateResultObservationCodeP(
+					functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationAuthor(
-							functionalStatusResultObservation, diagnostics,
-							context);
+							functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationNonMedicinalSupplyActivity(
-							functionalStatusResultObservation, diagnostics,
-							context);
+							functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationCaregiverCharacteristics(
-							functionalStatusResultObservation, diagnostics,
-							context);
+							functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationAssessmentScaleObservation(
-							functionalStatusResultObservation, diagnostics,
-							context);
+							functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationReferenceRange(
-							functionalStatusResultObservation, diagnostics,
-							context);
+							functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode(
-							functionalStatusResultObservation, diagnostics,
-							context);
+							functionalStatusResultObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultObservation_validateFunctionalStatusResultObservationReferenceRangeObservationRange(
-							functionalStatusResultObservation, diagnostics,
-							context);
+							functionalStatusResultObservation, diagnostics, context);
 		}
 		return result;
 	}
@@ -15536,10 +14315,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusResultObservation_validateResultObservationTemplateId(
-			FunctionalStatusResultObservation functionalStatusResultObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return functionalStatusResultObservation
-				.validateResultObservationTemplateId(diagnostics, context);
+			FunctionalStatusResultObservation functionalStatusResultObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultObservation.validateResultObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -15548,111 +14326,83 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusResultOrganizer(
-			FunctionalStatusResultOrganizer functionalStatusResultOrganizer,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(functionalStatusResultOrganizer,
-				diagnostics, context)) {
+			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(functionalStatusResultOrganizer, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(
-				functionalStatusResultOrganizer, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(functionalStatusResultOrganizer, diagnostics, context);
 		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(
+			result &= validate_EveryDataValueConforms(functionalStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryReferenceIsContained(functionalStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryBidirectionalReferenceIsPaired(functionalStatusResultOrganizer, diagnostics,
+					context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryProxyResolves(functionalStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_UniqueID(functionalStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryKeyUnique(functionalStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= validate_EveryMapEntryUnique(functionalStatusResultOrganizer, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerCodeValue(
 					functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerClassCodeValue(
 					functionalStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-					functionalStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(
-					functionalStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(functionalStatusResultOrganizer,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(functionalStatusResultOrganizer,
-					diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(
-					functionalStatusResultOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerCodeValue(
-							functionalStatusResultOrganizer, diagnostics,
-							context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerClassCodeValue(
-							functionalStatusResultOrganizer, diagnostics,
-							context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateFunctionalStatusResultOrganizer_validateResultOrganizerTemplateId(
 					functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultOrganizer_validateResultOrganizerClassCode(
-							functionalStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultOrganizer_validateResultOrganizerClassCode(
+					functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultOrganizer_validateResultOrganizerMoodCode(
-							functionalStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultOrganizer_validateResultOrganizerMoodCode(
+					functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultOrganizer_validateResultOrganizerId(
-							functionalStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultOrganizer_validateResultOrganizerId(
+					functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultOrganizer_validateResultOrganizerStatusCodeP(
-							functionalStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultOrganizer_validateResultOrganizerStatusCodeP(
+					functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultOrganizer_validateResultOrganizerStatusCode(
-							functionalStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultOrganizer_validateResultOrganizerStatusCode(
+					functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateFunctionalStatusResultOrganizer_validateResultOrganizerCode(
-							functionalStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateFunctionalStatusResultOrganizer_validateResultOrganizerCode(
+					functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= consolValidator
-					.validateResultOrganizer_validateResultOrganizerResultObservation(
-							functionalStatusResultOrganizer, diagnostics,
-							context);
+			result &= consolValidator.validateResultOrganizer_validateResultOrganizerResultObservation(
+					functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerCodeCodeSystem(
-							functionalStatusResultOrganizer, diagnostics,
-							context);
+							functionalStatusResultOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateFunctionalStatusResultOrganizer_validateFunctionalStatusResultOrganizerFunctionalStatusResultObservation(
-							functionalStatusResultOrganizer, diagnostics,
-							context);
+							functionalStatusResultOrganizer, diagnostics, context);
 		}
 		return result;
 	}
@@ -15665,10 +14415,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusResultOrganizer_validateResultOrganizerTemplateId(
-			FunctionalStatusResultOrganizer functionalStatusResultOrganizer,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return functionalStatusResultOrganizer
-				.validateResultOrganizerTemplateId(diagnostics, context);
+			FunctionalStatusResultOrganizer functionalStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return functionalStatusResultOrganizer.validateResultOrganizerTemplateId(diagnostics, context);
 	}
 
 	/**

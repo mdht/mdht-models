@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareInpatientSummary;
@@ -25,13 +23,11 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.TransitionOfCareInp
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>Transition Of Care Inpatient Summary</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
-public class TransitionOfCareInpatientSummaryImpl extends
-		SummaryOfCareRecordImpl implements TransitionOfCareInpatientSummary {
+public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImpl
+		implements TransitionOfCareInpatientSummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -57,11 +53,10 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateTransitionOfCareInpatientSummaryMedications(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TransitionOfCareInpatientSummaryOperations
-				.validateTransitionOfCareInpatientSummaryMedications(this,
-						diagnostics, context);
+	public boolean validateTransitionOfCareInpatientSummaryMedications(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return TransitionOfCareInpatientSummaryOperations.validateTransitionOfCareInpatientSummaryMedications(this,
+				diagnostics, context);
 	}
 
 	/**
@@ -70,11 +65,10 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateTransitionOfCareInpatientSummaryEncounterDiagnoses(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTransitionOfCareInpatientSummaryEncounterDiagnoses(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TransitionOfCareInpatientSummaryOperations
-				.validateTransitionOfCareInpatientSummaryEncounterDiagnoses(
-						this, diagnostics, context);
+				.validateTransitionOfCareInpatientSummaryEncounterDiagnoses(this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +80,8 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	public boolean validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TransitionOfCareInpatientSummaryOperations
-				.validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(
-						this, diagnostics, context);
+				.validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(this, diagnostics,
+						context);
 	}
 
 	/**
@@ -97,8 +91,7 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	 */
 	@Override
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
-		return TransitionOfCareInpatientSummaryOperations
-				.getHospitalDischargeInstructionsSection(this);
+		return TransitionOfCareInpatientSummaryOperations.getHospitalDischargeInstructionsSection(this);
 	}
 
 	/**
@@ -108,7 +101,7 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	 */
 	@Override
 	public TransitionOfCareInpatientSummary init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -118,8 +111,8 @@ public class TransitionOfCareInpatientSummaryImpl extends
 	 */
 	@Override
 	public TransitionOfCareInpatientSummary init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // TransitionOfCareInpatientSummaryImpl

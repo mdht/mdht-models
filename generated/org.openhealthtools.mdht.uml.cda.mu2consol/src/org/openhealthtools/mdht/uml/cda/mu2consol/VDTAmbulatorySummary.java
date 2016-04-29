@@ -10,19 +10,18 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>VDT Ambulatory Summary</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getVDTAmbulatorySummary()
  * @model annotation=
  *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VDTAmbulatorySummaryProviderNameAndContactInfo VDTAmbulatorySummaryMedicationsSection'"
@@ -31,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 public interface VDTAmbulatorySummary extends ViewDownloadTransmitSummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param diagnostics
 	 *            The chain of diagnostics to which problems are to be appended.
 	 * @param context
@@ -41,12 +40,12 @@ public interface VDTAmbulatorySummary extends ViewDownloadTransmitSummary {
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->notEmpty() and self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->exists(assignedEntity->excluding(null).assignedPerson->excluding(null).name->notEmpty() and assignedEntity->excluding(null).addr->notEmpty() and assignedEntity->excluding(null).telecom->notEmpty())) or (self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->notEmpty() and self.componentOf->excluding(null).encompassingEncounter->excluding(null).encounterParticipant->exists(assignedEntity->excluding(null).assignedPerson->excluding(null).name->notEmpty() and assignedEntity->excluding(null).addr->notEmpty() and assignedEntity->excluding(null).telecom->notEmpty())) or (self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->notEmpty() and self.componentOf->excluding(null).encompassingEncounter->excluding(null).responsibleParty->exists(assignedEntity->excluding(null).assignedPerson->excluding(null).name->notEmpty() and assignedEntity->excluding(null).addr->notEmpty() and assignedEntity->excluding(null).telecom->notEmpty()))'"
 	 * @generated
 	 */
-	boolean validateVDTAmbulatorySummaryProviderNameAndContactInfo(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVDTAmbulatorySummaryProviderNameAndContactInfo(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param diagnostics
 	 *            The chain of diagnostics to which problems are to be appended.
 	 * @param context
@@ -56,8 +55,7 @@ public interface VDTAmbulatorySummary extends ViewDownloadTransmitSummary {
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))'"
 	 * @generated
 	 */
-	boolean validateVDTAmbulatorySummaryMedicationsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateVDTAmbulatorySummaryMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -73,7 +71,6 @@ public interface VDTAmbulatorySummary extends ViewDownloadTransmitSummary {
 	 * 
 	 * @generated
 	 */
-	@Override
 	public VDTAmbulatorySummary init();
 
 	/**
@@ -81,7 +78,5 @@ public interface VDTAmbulatorySummary extends ViewDownloadTransmitSummary {
 	 * 
 	 * @generated
 	 */
-	@Override
-	public VDTAmbulatorySummary init(
-			Iterable<? extends Initializer<? extends EObject>> initializers);
+	public VDTAmbulatorySummary init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VDTAmbulatorySummary

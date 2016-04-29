@@ -15,18 +15,21 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Component1;
+import org.eclipse.mdht.uml.cda.DocumentationOf;
+import org.eclipse.mdht.uml.cda.EncompassingEncounter;
+import org.eclipse.mdht.uml.cda.EncounterParticipant;
+import org.eclipse.mdht.uml.cda.Location;
+import org.eclipse.mdht.uml.cda.Performer1;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.ResponsibleParty;
+import org.eclipse.mdht.uml.cda.ServiceEvent;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component1;
-import org.openhealthtools.mdht.uml.cda.DocumentationOf;
-import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
-import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
-import org.openhealthtools.mdht.uml.cda.Location;
-import org.openhealthtools.mdht.uml.cda.Performer1;
-import org.openhealthtools.mdht.uml.cda.Person;
-import org.openhealthtools.mdht.uml.cda.ResponsibleParty;
-import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
@@ -40,9 +43,6 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ClinicalOfficeVisitSummaryOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc --> A static utility class that provides operations
@@ -93,7 +93,8 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	public void testValidateClinicalOfficeVisitSummaryReasonforVisit() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryReasonforVisitTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
 			"validateClinicalOfficeVisitSummaryReasonforVisit",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_REASONFOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_REASONFOR_VISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -129,7 +130,8 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 					@Override
 					public void updateToPass(ClinicalOfficeVisitSummary target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 					}
 
 				});
@@ -168,14 +170,15 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateClinicalOfficeVisitSummaryCarePlanning() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryCarePlanningTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
 			"validateClinicalOfficeVisitSummaryCarePlanning",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -226,8 +229,8 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateClinicalOfficeVisitSummaryDateOfvisit() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryDateOfvisitTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
-			"validateClinicalOfficeVisitSummaryDateOfvisit",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_DATE_OFVISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateClinicalOfficeVisitSummaryDateOfvisit", operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_DATE_OFVISIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -311,7 +314,8 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	public void testValidateClinicalOfficeVisitSummaryVisitLocation() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryVisitLocationTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
 			"validateClinicalOfficeVisitSummaryVisitLocation",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_VISIT_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_VISIT_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -379,7 +383,8 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	public void testValidateClinicalOfficeVisitSummaryProviderNameAndContactInfo() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryProviderNameAndContactInfoTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
 			"validateClinicalOfficeVisitSummaryProviderNameAndContactInfo",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -552,8 +557,8 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateClinicalOfficeVisitSummaryVitalSigns() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryVitalSignsTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
-			"validateClinicalOfficeVisitSummaryVitalSigns",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateClinicalOfficeVisitSummaryVitalSigns", operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -605,7 +610,8 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	public void testValidateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionERTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
 			"validateClinicalOfficeVisitSummaryMedicationsAdministeredSectionOrMedicationsSectionER",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION_OR_MEDICATIONS_SECTION_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION_OR_MEDICATIONS_SECTION_ER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -684,14 +690,15 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
 	public void testValidateClinicalOfficeVisitSummarySocialHistorySection() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummarySocialHistorySectionTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
 			"validateClinicalOfficeVisitSummarySocialHistorySection",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -706,7 +713,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* SocialHistorySection */
 				SocialHistorySection section =
 
-				Mu2consolFactory.eINSTANCE.createSocialHistorySection().init();
+						Mu2consolFactory.eINSTANCE.createSocialHistorySection().init();
 
 				target.addSection(section);
 
@@ -725,14 +732,15 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateClinicalOfficeVisitSummaryProblemSection() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryProblemSectionTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
 			"validateClinicalOfficeVisitSummaryProblemSection",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -747,7 +755,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* ProblemSection */
 				ProblemSection section =
 
-				ConsolFactory.eINSTANCE.createProblemSection().init();
+						ConsolFactory.eINSTANCE.createProblemSection().init();
 
 				target.addSection(section);
 
@@ -766,14 +774,15 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateClinicalOfficeVisitSummaryAllergiesSection() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryAllergiesSectionTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
 			"validateClinicalOfficeVisitSummaryAllergiesSection",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -788,7 +797,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* AllergiesSection */
 				AllergiesSection section =
 
-				ConsolFactory.eINSTANCE.createAllergiesSection().init();
+						ConsolFactory.eINSTANCE.createAllergiesSection().init();
 
 				target.addSection(section);
 
@@ -807,14 +816,15 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateClinicalOfficeVisitSummaryResultsSection() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryResultsSectionTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
 			"validateClinicalOfficeVisitSummaryResultsSection",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -829,7 +839,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* ResultsSection */
 				ResultsSection section =
 
-				Mu2consolFactory.eINSTANCE.createResultsSection().init();
+						Mu2consolFactory.eINSTANCE.createResultsSection().init();
 
 				target.addSection(section);
 
@@ -848,14 +858,15 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateClinicalOfficeVisitSummaryProceduresSection() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryProceduresSectionTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
 			"validateClinicalOfficeVisitSummaryProceduresSection",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -870,7 +881,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* ProceduresSection */
 				ProceduresSection section =
 
-				Mu2consolFactory.eINSTANCE.createProceduresSection().init();
+						Mu2consolFactory.eINSTANCE.createProceduresSection().init();
 
 				target.addSection(section);
 
@@ -889,14 +900,15 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateClinicalOfficeVisitSummaryImmunizationsSection() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryImmunizationsSectionTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
 			"validateClinicalOfficeVisitSummaryImmunizationsSection",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -911,7 +923,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* ImmunizationsSection */
 				ImmunizationsSection section =
 
-				ConsolFactory.eINSTANCE.createImmunizationsSection().init();
+						ConsolFactory.eINSTANCE.createImmunizationsSection().init();
 
 				target.addSection(section);
 
@@ -930,14 +942,15 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateClinicalOfficeVisitSummaryInstructionsSection() {
 		OperationsTestCase<ClinicalOfficeVisitSummary> validateClinicalOfficeVisitSummaryInstructionsSectionTestCase = new OperationsTestCase<ClinicalOfficeVisitSummary>(
 			"validateClinicalOfficeVisitSummaryInstructionsSection",
-			operationsForOCL.getOCLValue("VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -952,7 +965,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* InstructionsSection */
 				InstructionsSection section =
 
-				ConsolFactory.eINSTANCE.createInstructionsSection().init();
+						ConsolFactory.eINSTANCE.createInstructionsSection().init();
 
 				target.addSection(section);
 
@@ -971,7 +984,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -983,7 +996,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -995,7 +1008,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -1007,7 +1020,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -1019,7 +1032,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -1031,7 +1044,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -1043,7 +1056,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -1055,7 +1068,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -1067,7 +1080,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -1079,7 +1092,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class OperationsForOCL extends ClinicalOfficeVisitSummaryOperations {
@@ -1097,7 +1110,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ObjectFactory implements TestObjectFactory<ClinicalOfficeVisitSummary> {
@@ -1108,20 +1121,20 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static OperationsForOCL operationsForOCL = new OperationsForOCL();
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static ObjectFactory objectFactory = new ObjectFactory();
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ConstructorTestClass extends ClinicalOfficeVisitSummaryOperations {
@@ -1129,7 +1142,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -1138,7 +1151,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 	} // testConstructor
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 

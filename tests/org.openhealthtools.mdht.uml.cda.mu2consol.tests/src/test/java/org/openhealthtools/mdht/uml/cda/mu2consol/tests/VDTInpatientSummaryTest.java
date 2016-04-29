@@ -14,21 +14,21 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Component1;
+import org.eclipse.mdht.uml.cda.DocumentationOf;
+import org.eclipse.mdht.uml.cda.EncompassingEncounter;
+import org.eclipse.mdht.uml.cda.Location;
+import org.eclipse.mdht.uml.cda.ServiceEvent;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Component1;
-import org.openhealthtools.mdht.uml.cda.DocumentationOf;
-import org.openhealthtools.mdht.uml.cda.EncompassingEncounter;
-import org.openhealthtools.mdht.uml.cda.Location;
-import org.openhealthtools.mdht.uml.cda.ServiceEvent;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolFactory;
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTInpatientSummaryOperations;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc --> A static utility class that provides operations
@@ -60,8 +60,8 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateVDTInpatientSummaryAdmissionDate() {
 		OperationsTestCase<VDTInpatientSummary> validateVDTInpatientSummaryAdmissionDateTestCase = new OperationsTestCase<VDTInpatientSummary>(
-			"validateVDTInpatientSummaryAdmissionDate",
-			operationsForOCL.getOCLValue("VALIDATE_VDT_INPATIENT_SUMMARY_ADMISSION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVDTInpatientSummaryAdmissionDate", operationsForOCL.getOCLValue(
+				"VALIDATE_VDT_INPATIENT_SUMMARY_ADMISSION_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -144,8 +144,8 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 	@Test
 	public void testValidateVDTInpatientSummaryDischargeDate() {
 		OperationsTestCase<VDTInpatientSummary> validateVDTInpatientSummaryDischargeDateTestCase = new OperationsTestCase<VDTInpatientSummary>(
-			"validateVDTInpatientSummaryDischargeDate",
-			operationsForOCL.getOCLValue("VALIDATE_VDT_INPATIENT_SUMMARY_DISCHARGE_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateVDTInpatientSummaryDischargeDate", operationsForOCL.getOCLValue(
+				"VALIDATE_VDT_INPATIENT_SUMMARY_DISCHARGE_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -229,7 +229,8 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 	public void testValidateVDTInpatientSummaryAdmissionDischargeLocation() {
 		OperationsTestCase<VDTInpatientSummary> validateVDTInpatientSummaryAdmissionDischargeLocationTestCase = new OperationsTestCase<VDTInpatientSummary>(
 			"validateVDTInpatientSummaryAdmissionDischargeLocation",
-			operationsForOCL.getOCLValue("VALIDATE_VDT_INPATIENT_SUMMARY_ADMISSION_DISCHARGE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VDT_INPATIENT_SUMMARY_ADMISSION_DISCHARGE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -350,7 +351,8 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 	public void testValidateVDTInpatientSummaryReasonforHospitalization() {
 		OperationsTestCase<VDTInpatientSummary> validateVDTInpatientSummaryReasonforHospitalizationTestCase = new OperationsTestCase<VDTInpatientSummary>(
 			"validateVDTInpatientSummaryReasonforHospitalization",
-			operationsForOCL.getOCLValue("VALIDATE_VDT_INPATIENT_SUMMARY_REASONFOR_HOSPITALIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VDT_INPATIENT_SUMMARY_REASONFOR_HOSPITALIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -386,7 +388,8 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 					@Override
 					public void updateToPass(VDTInpatientSummary target) {
 						target.init();
-						target.addSection(ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
+						target.addSection(
+							ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init());
 					}
 
 				});
@@ -446,14 +449,15 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated NOT
 	 */
 	@Test
 	public void testValidateVDTInpatientSummaryHospitalDischargeInstructionsSection() {
 		OperationsTestCase<VDTInpatientSummary> validateVDTInpatientSummaryHospitalDischargeInstructionsSectionTestCase = new OperationsTestCase<VDTInpatientSummary>(
 			"validateVDTInpatientSummaryHospitalDischargeInstructionsSection",
-			operationsForOCL.getOCLValue("VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_VDT_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -468,7 +472,7 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 				/* HospitalDischargeInstructionsSection */
 				HospitalDischargeInstructionsSection section =
 
-				ConsolFactory.eINSTANCE.createHospitalDischargeInstructionsSection().init();
+						ConsolFactory.eINSTANCE.createHospitalDischargeInstructionsSection().init();
 
 				target.addSection(section);
 
@@ -487,7 +491,7 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -499,7 +503,7 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class OperationsForOCL extends VDTInpatientSummaryOperations {
@@ -517,7 +521,7 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ObjectFactory implements TestObjectFactory<VDTInpatientSummary> {
@@ -528,20 +532,20 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 	}
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static OperationsForOCL operationsForOCL = new OperationsForOCL();
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 	private static ObjectFactory objectFactory = new ObjectFactory();
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	private static class ConstructorTestClass extends VDTInpatientSummaryOperations {
@@ -549,7 +553,7 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 
 	/**
 	 * Tests Operations Constructor for 100% coverage
-	 * 
+	 *
 	 * @generated
 	 */
 	@Test
@@ -558,7 +562,7 @@ public class VDTInpatientSummaryTest extends CDAValidationTest {
 	} // testConstructor
 
 	/**
-	 * 
+	 *
 	 * @generated
 	 */
 

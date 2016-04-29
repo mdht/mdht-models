@@ -14,16 +14,14 @@ import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
-import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.Organizer;
-import org.openhealthtools.mdht.uml.cda.Procedure;
-import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional;
-import org.openhealthtools.mdht.uml.cda.mu2consol.*;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
+import org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultObservation;
+import org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultOrganizer;
+import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultObservation;
+import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultOrganizer;
+import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
@@ -40,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.TransitionOfCareInpatientSumma
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatorySummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary;
-import org.openhealthtools.mdht.uml.hl7.rim.Act;
-import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 
 /**
  * <!-- begin-user-doc --> The <b>Adapter Factory</b> for the model. It provides
@@ -94,13 +90,12 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The switch that delegates to the <code>createXXX</code> methods. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected Mu2consolSwitch<Adapter> modelSwitch = new Mu2consolSwitch<Adapter>() {
 		@Override
-		public Adapter caseGeneralHeaderConstraints(
-				GeneralHeaderConstraints object) {
+		public Adapter caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
 			return createGeneralHeaderConstraintsAdapter();
 		}
 
@@ -115,8 +110,7 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseSmokingStatusObservation(
-				SmokingStatusObservation object) {
+		public Adapter caseSmokingStatusObservation(SmokingStatusObservation object) {
 			return createSmokingStatusObservationAdapter();
 		}
 
@@ -141,38 +135,32 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseProcedureActivityProcedure(
-				ProcedureActivityProcedure object) {
+		public Adapter caseProcedureActivityProcedure(ProcedureActivityProcedure object) {
 			return createProcedureActivityProcedureAdapter();
 		}
 
 		@Override
-		public Adapter caseClinicalOfficeVisitSummary(
-				ClinicalOfficeVisitSummary object) {
+		public Adapter caseClinicalOfficeVisitSummary(ClinicalOfficeVisitSummary object) {
 			return createClinicalOfficeVisitSummaryAdapter();
 		}
 
 		@Override
-		public Adapter caseMedicationsAdministeredSection(
-				MedicationsAdministeredSection object) {
+		public Adapter caseMedicationsAdministeredSection(MedicationsAdministeredSection object) {
 			return createMedicationsAdministeredSectionAdapter();
 		}
 
 		@Override
-		public Adapter caseTransitionOfCareAmbulatorySummary(
-				TransitionOfCareAmbulatorySummary object) {
+		public Adapter caseTransitionOfCareAmbulatorySummary(TransitionOfCareAmbulatorySummary object) {
 			return createTransitionOfCareAmbulatorySummaryAdapter();
 		}
 
 		@Override
-		public Adapter caseTransitionOfCareInpatientSummary(
-				TransitionOfCareInpatientSummary object) {
+		public Adapter caseTransitionOfCareInpatientSummary(TransitionOfCareInpatientSummary object) {
 			return createTransitionOfCareInpatientSummaryAdapter();
 		}
 
 		@Override
-		public Adapter caseViewDownloadTransmitSummary(
-				ViewDownloadTransmitSummary object) {
+		public Adapter caseViewDownloadTransmitSummary(ViewDownloadTransmitSummary object) {
 			return createViewDownloadTransmitSummaryAdapter();
 		}
 
@@ -187,47 +175,42 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseFunctionalStatusSection(
-				FunctionalStatusSection object) {
+		public Adapter caseFunctionalStatusSection(FunctionalStatusSection object) {
 			return createFunctionalStatusSectionAdapter();
 		}
 
 		@Override
-		public Adapter caseCognitiveStatusResultObservation(
-				CognitiveStatusResultObservation object) {
+		public Adapter caseCognitiveStatusResultObservation(CognitiveStatusResultObservation object) {
 			return createCognitiveStatusResultObservationAdapter();
 		}
 
 		@Override
-		public Adapter caseCognitiveStatusResultOrganizer(
-				CognitiveStatusResultOrganizer object) {
+		public Adapter caseCognitiveStatusResultOrganizer(CognitiveStatusResultOrganizer object) {
 			return createCognitiveStatusResultOrganizerAdapter();
 		}
 
 		@Override
-		public Adapter caseFunctionalStatusResultObservation(
-				FunctionalStatusResultObservation object) {
+		public Adapter caseFunctionalStatusResultObservation(FunctionalStatusResultObservation object) {
 			return createFunctionalStatusResultObservationAdapter();
 		}
 
 		@Override
-		public Adapter caseFunctionalStatusResultOrganizer(
-				FunctionalStatusResultOrganizer object) {
+		public Adapter caseFunctionalStatusResultOrganizer(FunctionalStatusResultOrganizer object) {
 			return createFunctionalStatusResultOrganizerAdapter();
 		}
 
 		@Override
-		public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
+		public Adapter caseInfrastructureRoot(org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot object) {
 			return createInfrastructureRootAdapter();
 		}
 
 		@Override
-		public Adapter caseAct(Act object) {
+		public Adapter caseAct(org.eclipse.mdht.uml.hl7.rim.Act object) {
 			return createActAdapter();
 		}
 
 		@Override
-		public Adapter caseClinicalDocument(ClinicalDocument object) {
+		public Adapter caseClinicalDocument(org.eclipse.mdht.uml.cda.ClinicalDocument object) {
 			return createClinicalDocumentAdapter();
 		}
 
@@ -238,7 +221,7 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseSection(Section object) {
+		public Adapter caseSection(org.eclipse.mdht.uml.cda.Section object) {
 			return createSectionAdapter();
 		}
 
@@ -249,12 +232,12 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseClinicalStatement(ClinicalStatement object) {
+		public Adapter caseClinicalStatement(org.eclipse.mdht.uml.cda.ClinicalStatement object) {
 			return createClinicalStatementAdapter();
 		}
 
 		@Override
-		public Adapter caseObservation(Observation object) {
+		public Adapter caseObservation(org.eclipse.mdht.uml.cda.Observation object) {
 			return createObservationAdapter();
 		}
 
@@ -265,48 +248,42 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseResultsSectionEntriesOptional(
-				ResultsSectionEntriesOptional object) {
+		public Adapter caseResultsSectionEntriesOptional(ResultsSectionEntriesOptional object) {
 			return createResultsSectionEntriesOptionalAdapter();
 		}
 
 		@Override
-		public Adapter caseConsol_ResultsSection(
-				org.openhealthtools.mdht.uml.cda.consol.ResultsSection object) {
+		public Adapter caseConsol_ResultsSection(org.openhealthtools.mdht.uml.cda.consol.ResultsSection object) {
 			return createConsol_ResultsSectionAdapter();
 		}
 
 		@Override
-		public Adapter caseOrganizer(Organizer object) {
+		public Adapter caseOrganizer(org.eclipse.mdht.uml.cda.Organizer object) {
 			return createOrganizerAdapter();
 		}
 
 		@Override
-		public Adapter caseConsol_ResultOrganizer(
-				org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer object) {
+		public Adapter caseConsol_ResultOrganizer(org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer object) {
 			return createConsol_ResultOrganizerAdapter();
 		}
 
 		@Override
-		public Adapter caseConsol_ResultObservation(
-				org.openhealthtools.mdht.uml.cda.consol.ResultObservation object) {
+		public Adapter caseConsol_ResultObservation(org.openhealthtools.mdht.uml.cda.consol.ResultObservation object) {
 			return createConsol_ResultObservationAdapter();
 		}
 
 		@Override
-		public Adapter caseProceduresSectionEntriesOptional(
-				ProceduresSectionEntriesOptional object) {
+		public Adapter caseProceduresSectionEntriesOptional(ProceduresSectionEntriesOptional object) {
 			return createProceduresSectionEntriesOptionalAdapter();
 		}
 
 		@Override
-		public Adapter caseConsol_ProceduresSection(
-				org.openhealthtools.mdht.uml.cda.consol.ProceduresSection object) {
+		public Adapter caseConsol_ProceduresSection(org.openhealthtools.mdht.uml.cda.consol.ProceduresSection object) {
 			return createConsol_ProceduresSectionAdapter();
 		}
 
 		@Override
-		public Adapter caseProcedure(Procedure object) {
+		public Adapter caseProcedure(org.eclipse.mdht.uml.cda.Procedure object) {
 			return createProcedureAdapter();
 		}
 
@@ -598,14 +575,14 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
+	 * {@link org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot
 	 * <em>Infrastructure Root</em>}'. <!-- begin-user-doc --> This default
 	 * implementation returns null so that we can easily ignore cases; it's
 	 * useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * 
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot
+	 * @see org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot
 	 * @generated
 	 */
 	public Adapter createInfrastructureRootAdapter() {
@@ -618,7 +595,7 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * begin-user-doc --> This default implementation returns null so that we
 	 * can easily ignore cases; it's useful to ignore a case when inheritance
 	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return the new adapter.
 	 * @see org.openhealthtools.mdht.uml.hl7.rim.Act
 	 * @generated
@@ -629,14 +606,14 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.ClinicalDocument
+	 * {@link org.eclipse.mdht.uml.cda.ClinicalDocument
 	 * <em>Clinical Document</em>}'. <!-- begin-user-doc --> This default
 	 * implementation returns null so that we can easily ignore cases; it's
 	 * useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * 
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalDocument
+	 * @see org.eclipse.mdht.uml.cda.ClinicalDocument
 	 * @generated
 	 */
 	public Adapter createClinicalDocumentAdapter() {
@@ -665,7 +642,7 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * begin-user-doc --> This default implementation returns null so that we
 	 * can easily ignore cases; it's useful to ignore a case when inheritance
 	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 * 
+	 *
 	 * @return the new adapter.
 	 * @see org.openhealthtools.mdht.uml.cda.Section
 	 * @generated
@@ -692,14 +669,14 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.ClinicalStatement
+	 * {@link org.eclipse.mdht.uml.cda.ClinicalStatement
 	 * <em>Clinical Statement</em>}'. <!-- begin-user-doc --> This default
 	 * implementation returns null so that we can easily ignore cases; it's
 	 * useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * 
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ClinicalStatement
+	 * @see org.eclipse.mdht.uml.cda.ClinicalStatement
 	 * @generated
 	 */
 	public Adapter createClinicalStatementAdapter() {
@@ -708,13 +685,13 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.Observation <em>Observation</em>}
-	 * '. <!-- begin-user-doc --> This default implementation returns null so
-	 * that we can easily ignore cases; it's useful to ignore a case when
-	 * inheritance will catch all the cases anyway. <!-- end-user-doc -->
+	 * {@link org.eclipse.mdht.uml.cda.Observation <em>Observation</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we
+	 * can easily ignore cases; it's useful to ignore a case when inheritance
+	 * will catch all the cases anyway. <!-- end-user-doc -->
 	 * 
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Observation
+	 * @see org.eclipse.mdht.uml.cda.Observation
 	 * @generated
 	 */
 	public Adapter createObservationAdapter() {
@@ -771,13 +748,13 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.Organizer <em>Organizer</em>}'.
-	 * <!-- begin-user-doc --> This default implementation returns null so that
-	 * we can easily ignore cases; it's useful to ignore a case when inheritance
+	 * {@link org.eclipse.mdht.uml.cda.Organizer <em>Organizer</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we
+	 * can easily ignore cases; it's useful to ignore a case when inheritance
 	 * will catch all the cases anyway. <!-- end-user-doc -->
 	 * 
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Organizer
+	 * @see org.eclipse.mdht.uml.cda.Organizer
 	 * @generated
 	 */
 	public Adapter createOrganizerAdapter() {
@@ -850,13 +827,13 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.Procedure <em>Procedure</em>}'.
-	 * <!-- begin-user-doc --> This default implementation returns null so that
-	 * we can easily ignore cases; it's useful to ignore a case when inheritance
+	 * {@link org.eclipse.mdht.uml.cda.Procedure <em>Procedure</em>}'. <!--
+	 * begin-user-doc --> This default implementation returns null so that we
+	 * can easily ignore cases; it's useful to ignore a case when inheritance
 	 * will catch all the cases anyway. <!-- end-user-doc -->
 	 * 
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Procedure
+	 * @see org.eclipse.mdht.uml.cda.Procedure
 	 * @generated
 	 */
 	public Adapter createProcedureAdapter() {

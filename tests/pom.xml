@@ -30,7 +30,7 @@
 	<modules>
 		<module>org.openhealthtools.mdht.uml.cda.consol.tests</module>
 		<module>org.openhealthtools.mdht.uml.cda.mu2consol.tests</module>
-		<module>org.openhealthtools.mdht.uml.cda.consol2.tests</module>
+		<!-- <module>org.openhealthtools.mdht.uml.cda.consol2.tests</module> -->
 		<!-- QRDA is "mavenized" and the tests will run but the project has not been reviewed -->
 		<!-- <module>org.openhealthtools.mdht.uml.cda.qrda.tests</module> -->
 	</modules>

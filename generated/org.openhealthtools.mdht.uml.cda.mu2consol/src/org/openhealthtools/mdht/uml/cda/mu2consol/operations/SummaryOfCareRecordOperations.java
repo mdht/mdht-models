@@ -39,7 +39,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>Summary Of Care Record</b></em>' model objects. <!--
  * end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
@@ -105,11 +105,10 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <em>Get Functional Status Section</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
-public class SummaryOfCareRecordOperations extends
-		GeneralHeaderConstraintsOperations {
+public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
@@ -124,7 +123,7 @@ public class SummaryOfCareRecordOperations extends
 	 * {@link #validateSummaryOfCareRecordCarePlanning(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * <em>Validate Summary Of Care Record Care Planning</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #validateSummaryOfCareRecordCarePlanning(SummaryOfCareRecord,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
@@ -153,7 +152,7 @@ public class SummaryOfCareRecordOperations extends
 	 * s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or
 	 * self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and
 	 * s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)))
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object.
@@ -165,8 +164,7 @@ public class SummaryOfCareRecordOperations extends
 	 * @generated
 	 */
 
-	public static boolean validateSummaryOfCareRecordCarePlanning(
-			SummaryOfCareRecord summaryOfCareRecord,
+	public static boolean validateSummaryOfCareRecordCarePlanning(SummaryOfCareRecord summaryOfCareRecord,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_SUMMARY_OF_CARE_RECORD_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -176,23 +174,16 @@ public class SummaryOfCareRecordOperations extends
 				VALIDATE_SUMMARY_OF_CARE_RECORD_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
 						.createInvariant(VALIDATE_SUMMARY_OF_CARE_RECORD_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_SUMMARY_OF_CARE_RECORD_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_SUMMARY_OF_CARE_RECORD_CARE_PLANNING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(summaryOfCareRecord)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_CARE_PLANNING,
-								Mu2consolPlugin.INSTANCE
-										.getString("SummaryOfCareRecordSummaryOfCareRecordCarePlanning"),
-								new Object[] { summaryOfCareRecord }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_CARE_PLANNING,
+						Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordCarePlanning"),
+						new Object[] { summaryOfCareRecord }));
 			}
 
 			return false;
@@ -205,7 +196,7 @@ public class SummaryOfCareRecordOperations extends
 	 * {@link #validateSummaryOfCareRecordVitalSigns(SummaryOfCareRecord, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * <em>Validate Summary Of Care Record Vital Signs</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #validateSummaryOfCareRecordVitalSigns(SummaryOfCareRecord,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
@@ -230,7 +221,7 @@ public class SummaryOfCareRecordOperations extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object.
@@ -242,8 +233,7 @@ public class SummaryOfCareRecordOperations extends
 	 * @generated
 	 */
 
-	public static boolean validateSummaryOfCareRecordVitalSigns(
-			SummaryOfCareRecord summaryOfCareRecord,
+	public static boolean validateSummaryOfCareRecordVitalSigns(SummaryOfCareRecord summaryOfCareRecord,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_SUMMARY_OF_CARE_RECORD_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -253,23 +243,16 @@ public class SummaryOfCareRecordOperations extends
 				VALIDATE_SUMMARY_OF_CARE_RECORD_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
 						.createInvariant(VALIDATE_SUMMARY_OF_CARE_RECORD_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_SUMMARY_OF_CARE_RECORD_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_SUMMARY_OF_CARE_RECORD_VITAL_SIGNS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(summaryOfCareRecord)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_VITAL_SIGNS,
-								Mu2consolPlugin.INSTANCE
-										.getString("SummaryOfCareRecordSummaryOfCareRecordVitalSigns"),
-								new Object[] { summaryOfCareRecord }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_VITAL_SIGNS,
+						Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordVitalSigns"),
+						new Object[] { summaryOfCareRecord }));
 			}
 
 			return false;
@@ -308,7 +291,7 @@ public class SummaryOfCareRecordOperations extends
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object.
@@ -320,8 +303,7 @@ public class SummaryOfCareRecordOperations extends
 	 * @generated
 	 */
 
-	public static boolean validateSummaryOfCareRecordProblemSection(
-			SummaryOfCareRecord summaryOfCareRecord,
+	public static boolean validateSummaryOfCareRecordProblemSection(SummaryOfCareRecord summaryOfCareRecord,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -329,25 +311,19 @@ public class SummaryOfCareRecordOperations extends
 			helper.setContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD);
 			try {
 				VALIDATE_SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(summaryOfCareRecord)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("SummaryOfCareRecordSummaryOfCareRecordProblemSection"),
-								new Object[] { summaryOfCareRecord }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION,
+						Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordProblemSection"),
+						new Object[] { summaryOfCareRecord }));
 			}
 
 			return false;
@@ -387,7 +363,7 @@ public class SummaryOfCareRecordOperations extends
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::AllergiesSection))
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object.
@@ -399,8 +375,7 @@ public class SummaryOfCareRecordOperations extends
 	 * @generated
 	 */
 
-	public static boolean validateSummaryOfCareRecordAllergiesSection(
-			SummaryOfCareRecord summaryOfCareRecord,
+	public static boolean validateSummaryOfCareRecordAllergiesSection(SummaryOfCareRecord summaryOfCareRecord,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -408,25 +383,19 @@ public class SummaryOfCareRecordOperations extends
 			helper.setContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD);
 			try {
 				VALIDATE_SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(summaryOfCareRecord)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("SummaryOfCareRecordSummaryOfCareRecordAllergiesSection"),
-								new Object[] { summaryOfCareRecord }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION,
+						Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordAllergiesSection"),
+						new Object[] { summaryOfCareRecord }));
 			}
 
 			return false;
@@ -466,7 +435,7 @@ public class SummaryOfCareRecordOperations extends
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::ImmunizationsSection))
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object.
@@ -478,8 +447,7 @@ public class SummaryOfCareRecordOperations extends
 	 * @generated
 	 */
 
-	public static boolean validateSummaryOfCareRecordImmunizationsSection(
-			SummaryOfCareRecord summaryOfCareRecord,
+	public static boolean validateSummaryOfCareRecordImmunizationsSection(SummaryOfCareRecord summaryOfCareRecord,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -487,25 +455,20 @@ public class SummaryOfCareRecordOperations extends
 			helper.setContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD);
 			try {
 				VALIDATE_SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(summaryOfCareRecord)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("SummaryOfCareRecordSummaryOfCareRecordImmunizationsSection"),
-								new Object[] { summaryOfCareRecord }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION,
+						Mu2consolPlugin.INSTANCE
+								.getString("SummaryOfCareRecordSummaryOfCareRecordImmunizationsSection"),
+						new Object[] { summaryOfCareRecord }));
 			}
 
 			return false;
@@ -545,7 +508,7 @@ public class SummaryOfCareRecordOperations extends
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::SocialHistorySection))
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object.
@@ -557,8 +520,7 @@ public class SummaryOfCareRecordOperations extends
 	 * @generated
 	 */
 
-	public static boolean validateSummaryOfCareRecordSocialHistorySection(
-			SummaryOfCareRecord summaryOfCareRecord,
+	public static boolean validateSummaryOfCareRecordSocialHistorySection(SummaryOfCareRecord summaryOfCareRecord,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -566,25 +528,21 @@ public class SummaryOfCareRecordOperations extends
 			helper.setContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD);
 			try {
 				VALIDATE_SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+				.createQuery(VALIDATE_SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(summaryOfCareRecord)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("SummaryOfCareRecordSummaryOfCareRecordSocialHistorySection"),
-								new Object[] { summaryOfCareRecord }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION,
+						Mu2consolPlugin.INSTANCE
+								.getString("SummaryOfCareRecordSummaryOfCareRecordSocialHistorySection"),
+						new Object[] { summaryOfCareRecord }));
 			}
 
 			return false;
@@ -624,7 +582,7 @@ public class SummaryOfCareRecordOperations extends
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::ResultsSection))
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object.
@@ -636,8 +594,7 @@ public class SummaryOfCareRecordOperations extends
 	 * @generated
 	 */
 
-	public static boolean validateSummaryOfCareRecordResultsSection(
-			SummaryOfCareRecord summaryOfCareRecord,
+	public static boolean validateSummaryOfCareRecordResultsSection(SummaryOfCareRecord summaryOfCareRecord,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_SUMMARY_OF_CARE_RECORD_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -645,25 +602,19 @@ public class SummaryOfCareRecordOperations extends
 			helper.setContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD);
 			try {
 				VALIDATE_SUMMARY_OF_CARE_RECORD_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_SUMMARY_OF_CARE_RECORD_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_SUMMARY_OF_CARE_RECORD_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_SUMMARY_OF_CARE_RECORD_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_SUMMARY_OF_CARE_RECORD_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(summaryOfCareRecord)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_RESULTS_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("SummaryOfCareRecordSummaryOfCareRecordResultsSection"),
-								new Object[] { summaryOfCareRecord }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_RESULTS_SECTION,
+						Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordResultsSection"),
+						new Object[] { summaryOfCareRecord }));
 			}
 
 			return false;
@@ -703,7 +654,7 @@ public class SummaryOfCareRecordOperations extends
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::ProceduresSection))
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object.
@@ -715,8 +666,7 @@ public class SummaryOfCareRecordOperations extends
 	 * @generated
 	 */
 
-	public static boolean validateSummaryOfCareRecordProceduresSection(
-			SummaryOfCareRecord summaryOfCareRecord,
+	public static boolean validateSummaryOfCareRecordProceduresSection(SummaryOfCareRecord summaryOfCareRecord,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -724,25 +674,19 @@ public class SummaryOfCareRecordOperations extends
 			helper.setContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD);
 			try {
 				VALIDATE_SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+		if (!EOCL_ENV.createQuery(VALIDATE_SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(summaryOfCareRecord)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("SummaryOfCareRecordSummaryOfCareRecordProceduresSection"),
-								new Object[] { summaryOfCareRecord }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION,
+						Mu2consolPlugin.INSTANCE.getString("SummaryOfCareRecordSummaryOfCareRecordProceduresSection"),
+						new Object[] { summaryOfCareRecord }));
 			}
 
 			return false;
@@ -782,7 +726,7 @@ public class SummaryOfCareRecordOperations extends
 	 * self.getAllSections()->one(section : cda::Section | not
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::FunctionalStatusSection))
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object.
@@ -794,8 +738,7 @@ public class SummaryOfCareRecordOperations extends
 	 * @generated
 	 */
 
-	public static boolean validateSummaryOfCareRecordFunctionalStatusSection(
-			SummaryOfCareRecord summaryOfCareRecord,
+	public static boolean validateSummaryOfCareRecordFunctionalStatusSection(SummaryOfCareRecord summaryOfCareRecord,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
 		if (VALIDATE_SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
@@ -803,25 +746,21 @@ public class SummaryOfCareRecordOperations extends
 			helper.setContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD);
 			try {
 				VALIDATE_SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+						.createInvariant(
+								VALIDATE_SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+				.createQuery(VALIDATE_SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
 				.check(summaryOfCareRecord)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION,
-								Mu2consolPlugin.INSTANCE
-										.getString("SummaryOfCareRecordSummaryOfCareRecordFunctionalStatusSection"),
-								new Object[] { summaryOfCareRecord }));
+				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						Mu2consolValidator.SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION,
+						Mu2consolPlugin.INSTANCE
+								.getString("SummaryOfCareRecordSummaryOfCareRecordFunctionalStatusSection"),
+						new Object[] { summaryOfCareRecord }));
 			}
 
 			return false;
@@ -834,7 +773,7 @@ public class SummaryOfCareRecordOperations extends
 	 * {@link #retrieveFunctionalStatusSection(SummaryOfCareRecord)
 	 * <em>Retrieve Functional Status Section</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #retrieveFunctionalStatusSection(SummaryOfCareRecord)
 	 * @generated
 	 * @ordered
@@ -846,7 +785,7 @@ public class SummaryOfCareRecordOperations extends
 	 * {@link #retrieveFunctionalStatusSection(SummaryOfCareRecord)
 	 * <em>Retrieve Functional Status Section</em>}' query operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #retrieveFunctionalStatusSection(SummaryOfCareRecord)
 	 * @generated
 	 * @ordered
@@ -859,31 +798,26 @@ public class SummaryOfCareRecordOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::FunctionalStatusSection
 	 * ))->asSequence()->any(true).oclAsType(consol::FunctionalStatusSection)
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static FunctionalStatusSection retrieveFunctionalStatusSection(
-			SummaryOfCareRecord summaryOfCareRecord) {
+	public static FunctionalStatusSection retrieveFunctionalStatusSection(SummaryOfCareRecord summaryOfCareRecord) {
 		if (RETRIEVE_FUNCTIONAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(304));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(304));
 			try {
 				RETRIEVE_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(RETRIEVE_FUNCTIONAL_STATUS_SECTION__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(RETRIEVE_FUNCTIONAL_STATUS_SECTION__EOCL_QRY);
 		return (FunctionalStatusSection) query.evaluate(summaryOfCareRecord);
 	}
 
@@ -892,7 +826,7 @@ public class SummaryOfCareRecordOperations extends
 	 * {@link #retrieveHospitalDischargeDiagnosisSection(SummaryOfCareRecord)
 	 * <em>Retrieve Hospital Discharge Diagnosis Section</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #retrieveHospitalDischargeDiagnosisSection(SummaryOfCareRecord)
 	 * @generated
 	 * @ordered
@@ -918,7 +852,7 @@ public class SummaryOfCareRecordOperations extends
 	 * section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection
 	 * ))->asSequence
 	 * ()->any(true).oclAsType(consol::HospitalDischargeDiagnosisSection)
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object. <!-- end-model-doc -->
@@ -929,22 +863,17 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (RETRIEVE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(305));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(305));
 			try {
 				RETRIEVE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(RETRIEVE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY);
-		return (HospitalDischargeDiagnosisSection) query
-				.evaluate(summaryOfCareRecord);
+		OCL.Query query = EOCL_ENV.createQuery(RETRIEVE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY);
+		return (HospitalDischargeDiagnosisSection) query.evaluate(summaryOfCareRecord);
 	}
 
 	/**
@@ -952,7 +881,7 @@ public class SummaryOfCareRecordOperations extends
 	 * {@link #retrievePostoperativeDiagnosisSection(SummaryOfCareRecord)
 	 * <em>Retrieve Postoperative Diagnosis Section</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #retrievePostoperativeDiagnosisSection(SummaryOfCareRecord)
 	 * @generated
 	 * @ordered
@@ -964,7 +893,7 @@ public class SummaryOfCareRecordOperations extends
 	 * {@link #retrievePostoperativeDiagnosisSection(SummaryOfCareRecord)
 	 * <em>Retrieve Postoperative Diagnosis Section</em>}' query operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #retrievePostoperativeDiagnosisSection(SummaryOfCareRecord)
 	 * @generated
 	 * @ordered
@@ -978,7 +907,7 @@ public class SummaryOfCareRecordOperations extends
 	 * section.oclIsKindOf(consol::PostoperativeDiagnosisSection
 	 * ))->asSequence()-
 	 * >any(true).oclAsType(consol::PostoperativeDiagnosisSection)
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object. <!-- end-model-doc -->
@@ -989,22 +918,17 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (RETRIEVE_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(306));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(306));
 			try {
 				RETRIEVE_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(RETRIEVE_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY);
-		return (PostoperativeDiagnosisSection) query
-				.evaluate(summaryOfCareRecord);
+		OCL.Query query = EOCL_ENV.createQuery(RETRIEVE_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY);
+		return (PostoperativeDiagnosisSection) query.evaluate(summaryOfCareRecord);
 	}
 
 	/**
@@ -1012,7 +936,7 @@ public class SummaryOfCareRecordOperations extends
 	 * {@link #retrievePostprocedureDiagnosisSection(SummaryOfCareRecord)
 	 * <em>Retrieve Postprocedure Diagnosis Section</em>}' operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #retrievePostprocedureDiagnosisSection(SummaryOfCareRecord)
 	 * @generated
 	 * @ordered
@@ -1024,7 +948,7 @@ public class SummaryOfCareRecordOperations extends
 	 * {@link #retrievePostprocedureDiagnosisSection(SummaryOfCareRecord)
 	 * <em>Retrieve Postprocedure Diagnosis Section</em>}' query operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #retrievePostprocedureDiagnosisSection(SummaryOfCareRecord)
 	 * @generated
 	 * @ordered
@@ -1038,7 +962,7 @@ public class SummaryOfCareRecordOperations extends
 	 * section.oclIsKindOf(consol::PostprocedureDiagnosisSection
 	 * ))->asSequence()-
 	 * >any(true).oclAsType(consol::PostprocedureDiagnosisSection)
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object. <!-- end-model-doc -->
@@ -1049,22 +973,17 @@ public class SummaryOfCareRecordOperations extends
 			SummaryOfCareRecord summaryOfCareRecord) {
 		if (RETRIEVE_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(307));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(307));
 			try {
 				RETRIEVE_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(RETRIEVE_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_QRY);
-		return (PostprocedureDiagnosisSection) query
-				.evaluate(summaryOfCareRecord);
+		OCL.Query query = EOCL_ENV.createQuery(RETRIEVE_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_QRY);
+		return (PostprocedureDiagnosisSection) query.evaluate(summaryOfCareRecord);
 	}
 
 	/**
@@ -1097,27 +1016,22 @@ public class SummaryOfCareRecordOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::ProblemSection))-
 	 * >asSequence()->any(true).oclAsType(consol::ProblemSection)
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static ProblemSection getProblemSection(
-			SummaryOfCareRecord summaryOfCareRecord) {
+	public static ProblemSection getProblemSection(SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_PROBLEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(308));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(308));
 			try {
-				GET_PROBLEM_SECTION__EOCL_QRY = helper
-						.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
+				GET_PROBLEM_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_SECTION__EOCL_QRY);
@@ -1154,27 +1068,22 @@ public class SummaryOfCareRecordOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::AllergiesSection)
 	 * )->asSequence()->any(true).oclAsType(consol::AllergiesSection)
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static AllergiesSection getAllergiesSection(
-			SummaryOfCareRecord summaryOfCareRecord) {
+	public static AllergiesSection getAllergiesSection(SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_ALLERGIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(309));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(309));
 			try {
-				GET_ALLERGIES_SECTION__EOCL_QRY = helper
-						.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
+				GET_ALLERGIES_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ALLERGIES_SECTION__EOCL_QRY);
@@ -1211,31 +1120,25 @@ public class SummaryOfCareRecordOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::ImmunizationsSection
 	 * ))->asSequence()->any(true).oclAsType(consol::ImmunizationsSection)
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static ImmunizationsSection getImmunizationsSection(
-			SummaryOfCareRecord summaryOfCareRecord) {
+	public static ImmunizationsSection getImmunizationsSection(SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(310));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(310));
 			try {
-				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper
-						.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
+				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_QRY);
 		return (ImmunizationsSection) query.evaluate(summaryOfCareRecord);
 	}
 
@@ -1256,7 +1159,7 @@ public class SummaryOfCareRecordOperations extends
 	 * {@link #getSocialHistorySection(SummaryOfCareRecord)
 	 * <em>Get Social History Section</em>}' query operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getSocialHistorySection(SummaryOfCareRecord)
 	 * @generated
 	 * @ordered
@@ -1269,31 +1172,25 @@ public class SummaryOfCareRecordOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::SocialHistorySection
 	 * ))->asSequence()->any(true).oclAsType(mu2consol::SocialHistorySection)
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static SocialHistorySection getSocialHistorySection(
-			SummaryOfCareRecord summaryOfCareRecord) {
+	public static SocialHistorySection getSocialHistorySection(SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(311));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(311));
 			try {
-				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper
-						.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
+				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_QRY);
 		return (SocialHistorySection) query.evaluate(summaryOfCareRecord);
 	}
 
@@ -1327,27 +1224,22 @@ public class SummaryOfCareRecordOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::ResultsSection
 	 * ))->asSequence()->any(true).oclAsType(mu2consol::ResultsSection)
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static ResultsSection getResultsSection(
-			SummaryOfCareRecord summaryOfCareRecord) {
+	public static ResultsSection getResultsSection(SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(312));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(312));
 			try {
-				GET_RESULTS_SECTION__EOCL_QRY = helper
-						.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
+				GET_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_RESULTS_SECTION__EOCL_QRY);
@@ -1384,31 +1276,25 @@ public class SummaryOfCareRecordOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(mu2consol::ProceduresSection
 	 * ))->asSequence()->any(true).oclAsType(mu2consol::ProceduresSection)
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static ProceduresSection getProceduresSection(
-			SummaryOfCareRecord summaryOfCareRecord) {
+	public static ProceduresSection getProceduresSection(SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_PROCEDURES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(313));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(313));
 			try {
-				GET_PROCEDURES_SECTION__EOCL_QRY = helper
-						.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
+				GET_PROCEDURES_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_PROCEDURES_SECTION__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURES_SECTION__EOCL_QRY);
 		return (ProceduresSection) query.evaluate(summaryOfCareRecord);
 	}
 
@@ -1429,7 +1315,7 @@ public class SummaryOfCareRecordOperations extends
 	 * {@link #getFunctionalStatusSection(SummaryOfCareRecord)
 	 * <em>Get Functional Status Section</em>}' query operation. <!--
 	 * begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getFunctionalStatusSection(SummaryOfCareRecord)
 	 * @generated
 	 * @ordered
@@ -1442,31 +1328,25 @@ public class SummaryOfCareRecordOperations extends
 	 * section.oclIsUndefined() and
 	 * section.oclIsKindOf(consol::FunctionalStatusSection
 	 * ))->asSequence()->any(true).oclAsType(consol::FunctionalStatusSection)
-	 * 
+	 *
 	 * @param summaryOfCareRecord
 	 *            The receiving '<em><b>Summary Of Care Record</b></em>' model
 	 *            object. <!-- end-model-doc -->
 	 * @generated
 	 */
 
-	public static FunctionalStatusSection getFunctionalStatusSection(
-			SummaryOfCareRecord summaryOfCareRecord) {
+	public static FunctionalStatusSection getFunctionalStatusSection(SummaryOfCareRecord summaryOfCareRecord) {
 		if (GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD
-							.getEAllOperations().get(314));
+			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(314));
 			try {
-				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper
-						.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
+				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY);
 		return (FunctionalStatusSection) query.evaluate(summaryOfCareRecord);
 	}
 

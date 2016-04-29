@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultObservationOperations;
@@ -24,13 +22,10 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultObservationOp
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>Result Observation</b></em>'. <!-- end-user-doc -->
- * <p>
- * </p>
- * 
+ *
  * @generated
  */
-public class ResultObservationImpl extends
-		org.openhealthtools.mdht.uml.cda.consol.impl.ResultObservationImpl
+public class ResultObservationImpl extends org.openhealthtools.mdht.uml.cda.consol.impl.ResultObservationImpl
 		implements ResultObservation {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
@@ -57,10 +52,8 @@ public class ResultObservationImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultObservationTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultObservationOperations.validateResultObservationTemplateId(
-				this, diagnostics, context);
+	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,7 +63,7 @@ public class ResultObservationImpl extends
 	 */
 	@Override
 	public ResultObservation init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -80,8 +73,8 @@ public class ResultObservationImpl extends
 	 */
 	@Override
 	public ResultObservation init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // ResultObservationImpl
