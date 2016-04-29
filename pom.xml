@@ -15,14 +15,14 @@
 		<snapshot_url>http://52.26.42.198:8081/nexus/content/repositories/snapshots</snapshot_url>
 		<repository_id>remote.nexus</repository_id>
 	</properties>
-	
+
 	<repositories>
 		<repository>
 			<id>mars</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/releases/mars</url>
 		</repository>
-		
+
 		<repository>
 			<id>mdht-mars</id>
 			<layout>p2</layout>
@@ -43,7 +43,7 @@
 			<url>${snapshot_url}</url>
 		</snapshotRepository>
 	</distributionManagement>
-	
+
 	<modules>
 		<module>generated</module>
 		<module>doc</module>
@@ -53,8 +53,9 @@
 		<profile>
 			<id>mdht_build</id>
 			<activation>
-            <activeByDefault>true</activeByDefault>
-        </activation>
+				<activeByDefault>true</activeByDefault>
+				<jdk>1.8</jdk>
+			</activation>
 			<repositories>
 				<repository>
 					<id>mars</id>
@@ -108,21 +109,21 @@
 								<optionalDependencies>ignore</optionalDependencies>
 							</dependency-resolution>
 
-						 
+
 
 						</configuration>
 					</plugin>
-					
+
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-release-plugin</artifactId>
 						<version>2.5.1</version>
 					</plugin>
-					
+
 				</plugins>
 			</build>
 		</profile>
-		
+
 		<profile>
 			<id>cdatools</id>
 			<distributionManagement>
@@ -140,14 +141,44 @@
 
 			</distributionManagement>
 		</profile>
-		
+
+		<profile>
+			<id>javadocs18</id>
+			<activation>
+				<jdk>1.8</jdk>
+			</activation>
+			<build>
+				<plugins>
+
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<version>2.9</version>
+						<executions>
+							<execution>
+								<id>attach-javadocs</id>
+								<goals>
+									<goal>jar</goal>
+								</goals>
+								<configuration>
+									<additionalparam>-Xdoclint:none</additionalparam>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+
+				</plugins>
+			</build>
+
+		</profile>
+
 	</profiles>
-	
+
 	<scm>
 		<connection>scm:git:git@github.com:mdht/mdht-models.git</connection>
 		<url>scm:git:git@github.com:mdht/mdht-models.git</url>
 		<developerConnection>scm:git:git@github.com:mdht/mdht-models.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
-	
+
 </project>
