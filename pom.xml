@@ -141,6 +141,24 @@
 
 			</distributionManagement>
 		</profile>
+		
+		<profile>
+			<id>siteenv</id>
+			<distributionManagement>
+				<repository>
+					<id>devsoap.sitenv.org</id>
+					<name>devsoap.sitenv.org-releases</name>
+					<url>http://devsoap.sitenv.org:8081/artifactory/libs-release-local</url>
+				</repository>
+
+				<snapshotRepository>
+					<id>devsoap.sitenv.org</id>
+					<name>devsoap.sitenv.org-snapshots</name>
+					<url>http://devsoap.sitenv.org:8081/artifactory/libs-snapshot-local</url>
+				</snapshotRepository>
+
+			</distributionManagement>
+		</profile>
 
 		<profile>
 			<id>javadocs18</id>
