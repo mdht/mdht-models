@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.openhealthtools.mdht.cda</groupId>
 	<artifactId>org.openhealthtools.mdht.cda.models</artifactId>
-	<version>2.5.16-SNAPSHOT</version>
+	<version>2.5.17-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
