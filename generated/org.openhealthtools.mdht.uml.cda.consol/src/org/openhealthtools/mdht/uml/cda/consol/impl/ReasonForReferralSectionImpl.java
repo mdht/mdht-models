@@ -54,8 +54,10 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateReasonForReferralSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReasonForReferralSectionOperations.validateReasonForReferralSectionTemplateId(this, diagnostics, context);
+	public boolean validateReasonForReferralSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ReasonForReferralSectionOperations.validateReasonForReferralSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -100,16 +102,16 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	 * @generated
 	 */
 	public ReasonForReferralSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ReasonForReferralSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReasonForReferralSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ReasonForReferralSectionImpl

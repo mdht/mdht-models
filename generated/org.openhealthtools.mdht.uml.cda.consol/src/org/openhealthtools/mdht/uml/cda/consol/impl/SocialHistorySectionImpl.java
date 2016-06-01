@@ -106,7 +106,8 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 */
 	public boolean validateSocialHistorySectionSocialHistoryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistorySectionOperations.validateSocialHistorySectionSocialHistoryObservation(this, diagnostics, context);
+		return SocialHistorySectionOperations.validateSocialHistorySectionSocialHistoryObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -116,7 +117,8 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 */
 	public boolean validateSocialHistorySectionPregnancyObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistorySectionOperations.validateSocialHistorySectionPregnancyObservation(this, diagnostics, context);
+		return SocialHistorySectionOperations.validateSocialHistorySectionPregnancyObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -126,7 +128,8 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 */
 	public boolean validateSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistorySectionOperations.validateSocialHistorySectionSmokingStatusObservation(this, diagnostics, context);
+		return SocialHistorySectionOperations.validateSocialHistorySectionSmokingStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -158,7 +161,7 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<SmokingStatusObservation> getSmokingStatusObservations() {
@@ -180,16 +183,16 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 * @generated
 	 */
 	public SocialHistorySection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public SocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // SocialHistorySectionImpl

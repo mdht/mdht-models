@@ -78,7 +78,8 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 */
 	public boolean validateProceduresSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityProcedure(this, diagnostics, context);
+		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -88,7 +89,8 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 */
 	public boolean validateProceduresSectionProcedureActivityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityObservation(this, diagnostics, context);
+		return ProceduresSectionOperations.validateProceduresSectionProcedureActivityObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -136,7 +138,8 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -156,7 +159,8 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
@@ -166,7 +170,8 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * @generated
 	 */
 	@Override
-	public boolean validateProceduresSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProceduresSectionEntriesOptionalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
@@ -175,17 +180,19 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProceduresSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProceduresSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProceduresSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProceduresSectionImpl

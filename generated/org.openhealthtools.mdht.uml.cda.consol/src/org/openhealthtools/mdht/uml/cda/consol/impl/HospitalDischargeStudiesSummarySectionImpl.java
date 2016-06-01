@@ -29,8 +29,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalDischargeStudi
  *
  * @generated
  */
-public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl implements
-		HospitalDischargeStudiesSummarySection {
+public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl
+		implements HospitalDischargeStudiesSummarySection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -57,7 +57,8 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	 */
 	public boolean validateHospitalDischargeStudiesSummarySectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTemplateId(this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	 */
 	public boolean validateHospitalDischargeStudiesSummarySectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionCode(this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +79,8 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	 */
 	public boolean validateHospitalDischargeStudiesSummarySectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionCodeP(this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -87,7 +90,8 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	 */
 	public boolean validateHospitalDischargeStudiesSummarySectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTitle(this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +101,8 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	 */
 	public boolean validateHospitalDischargeStudiesSummarySectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionText(this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -106,16 +111,17 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	 * @generated
 	 */
 	public HospitalDischargeStudiesSummarySection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public HospitalDischargeStudiesSummarySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargeStudiesSummarySection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // HospitalDischargeStudiesSummarySectionImpl

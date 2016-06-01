@@ -94,7 +94,8 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultsSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionEntriesOptionalCodeP(this, diagnostics, context);
 	}
 
@@ -114,7 +115,8 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * @generated
 	 */
 	@Override
-	public boolean validateResultsSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
@@ -123,17 +125,19 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ResultsSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ResultsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ResultsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ResultsSectionImpl

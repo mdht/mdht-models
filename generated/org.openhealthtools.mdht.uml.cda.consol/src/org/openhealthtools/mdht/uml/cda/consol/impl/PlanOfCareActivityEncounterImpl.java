@@ -56,7 +56,8 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 */
 	public boolean validatePlanOfCareActivityEncounterTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterTemplateId(this, diagnostics, context);
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +65,10 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareActivityEncounterClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterClassCode(this, diagnostics, context);
+	public boolean validatePlanOfCareActivityEncounterClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +76,10 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCode(this, diagnostics, context);
+	public boolean validatePlanOfCareActivityEncounterMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlanOfCareActivityEncounterOperations.validatePlanOfCareActivityEncounterMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -92,16 +97,16 @@ public class PlanOfCareActivityEncounterImpl extends EncounterImpl implements Pl
 	 * @generated
 	 */
 	public PlanOfCareActivityEncounter init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PlanOfCareActivityEncounter init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PlanOfCareActivityEncounter init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PlanOfCareActivityEncounterImpl

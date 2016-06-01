@@ -51,7 +51,8 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDeceasedObservationEffectiveTimeLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDeceasedObservationEffectiveTimeLow(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return DeceasedObservationOperations.validateDeceasedObservationEffectiveTimeLow(this, diagnostics, context);
 	}
 
@@ -179,16 +180,16 @@ public class DeceasedObservationImpl extends ObservationImpl implements Deceased
 	 * @generated
 	 */
 	public DeceasedObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DeceasedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DeceasedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // DeceasedObservationImpl

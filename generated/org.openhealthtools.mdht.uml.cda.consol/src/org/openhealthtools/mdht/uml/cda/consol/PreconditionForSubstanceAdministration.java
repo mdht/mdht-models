@@ -35,7 +35,8 @@ public interface PreconditionForSubstanceAdministration extends Criterion {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.22.4.25\')'"
 	 * @generated
 	 */
-	boolean validatePreconditionForSubstanceAdministrationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePreconditionForSubstanceAdministrationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -47,7 +48,8 @@ public interface PreconditionForSubstanceAdministration extends Criterion {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validatePreconditionForSubstanceAdministrationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePreconditionForSubstanceAdministrationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,7 +61,8 @@ public interface PreconditionForSubstanceAdministration extends Criterion {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.text.oclIsUndefined() or self.text.isNullFlavorUndefined()) implies (not self.text.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validatePreconditionForSubstanceAdministrationText(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePreconditionForSubstanceAdministrationText(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -71,7 +74,8 @@ public interface PreconditionForSubstanceAdministration extends Criterion {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value.oclIsUndefined() or self.value.isNullFlavorUndefined()) implies (self.value.oclIsTypeOf(datatypes::CD))'"
 	 * @generated
 	 */
-	boolean validatePreconditionForSubstanceAdministrationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePreconditionForSubstanceAdministrationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -79,10 +83,11 @@ public interface PreconditionForSubstanceAdministration extends Criterion {
 	 * @generated
 	 */
 	public PreconditionForSubstanceAdministration init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PreconditionForSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PreconditionForSubstanceAdministration init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PreconditionForSubstanceAdministration

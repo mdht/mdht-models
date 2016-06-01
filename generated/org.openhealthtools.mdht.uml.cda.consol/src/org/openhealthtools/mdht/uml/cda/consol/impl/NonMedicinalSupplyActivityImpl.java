@@ -57,7 +57,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	public boolean validateNonMedicinalSupplyActivityEffectiveTimeHigh(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityEffectiveTimeHigh(this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityEffectiveTimeHigh(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	public boolean validateNonMedicinalSupplyActivityProductInstanceTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstanceTypeCode(this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstanceTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,8 +77,10 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityTemplateId(this, diagnostics, context);
+	public boolean validateNonMedicinalSupplyActivityTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +88,10 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonMedicinalSupplyActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityClassCode(this, diagnostics, context);
+	public boolean validateNonMedicinalSupplyActivityClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +99,10 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonMedicinalSupplyActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityMoodCode(this, diagnostics, context);
+	public boolean validateNonMedicinalSupplyActivityMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -111,8 +119,10 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonMedicinalSupplyActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityStatusCode(this, diagnostics, context);
+	public boolean validateNonMedicinalSupplyActivityStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityStatusCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -122,7 +132,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	public boolean validateNonMedicinalSupplyActivityEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityEffectiveTime(this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +141,10 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonMedicinalSupplyActivityQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityQuantity(this, diagnostics, context);
+	public boolean validateNonMedicinalSupplyActivityQuantity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityQuantity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -141,7 +154,8 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 */
 	public boolean validateNonMedicinalSupplyActivityProductInstance(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstance(this, diagnostics, context);
+		return NonMedicinalSupplyActivityOperations.validateNonMedicinalSupplyActivityProductInstance(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -159,16 +173,16 @@ public class NonMedicinalSupplyActivityImpl extends SupplyImpl implements NonMed
 	 * @generated
 	 */
 	public NonMedicinalSupplyActivity init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public NonMedicinalSupplyActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NonMedicinalSupplyActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // NonMedicinalSupplyActivityImpl

@@ -56,8 +56,10 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDICOMObjectCatalogSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionTemplateId(this, diagnostics, context);
+	public boolean validateDICOMObjectCatalogSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -84,12 +86,13 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * @generated
 	 */
 	public boolean validateDICOMObjectCatalogSectionStudyAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionStudyAct(this, diagnostics, context);
+		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionStudyAct(
+			this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<StudyAct> getStudyActs() {
@@ -102,16 +105,16 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	 * @generated
 	 */
 	public DICOMObjectCatalogSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DICOMObjectCatalogSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DICOMObjectCatalogSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // DICOMObjectCatalogSectionImpl

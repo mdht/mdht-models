@@ -54,8 +54,10 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperativeNoteFluidSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionTemplateId(this, diagnostics, context);
+	public boolean validateOperativeNoteFluidSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return OperativeNoteFluidSectionOperations.validateOperativeNoteFluidSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -100,16 +102,16 @@ public class OperativeNoteFluidSectionImpl extends SectionImpl implements Operat
 	 * @generated
 	 */
 	public OperativeNoteFluidSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public OperativeNoteFluidSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OperativeNoteFluidSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // OperativeNoteFluidSectionImpl

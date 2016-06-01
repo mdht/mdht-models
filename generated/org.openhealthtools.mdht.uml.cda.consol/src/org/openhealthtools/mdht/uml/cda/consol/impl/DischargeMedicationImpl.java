@@ -99,7 +99,7 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<MedicationActivity> getMedicationActivities() {
@@ -112,16 +112,16 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 	 * @generated
 	 */
 	public DischargeMedication init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public DischargeMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DischargeMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // DischargeMedicationImpl

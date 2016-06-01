@@ -72,7 +72,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturerOrganization->one(manufacturerOrganization : cda::Organization | not manufacturerOrganization.oclIsUndefined() and manufacturerOrganization.oclIsKindOf(rim::Entity))'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationManufacturerOrganization(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationInformationManufacturerOrganization(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,7 +97,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(code.originalText->size() = 1)'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,7 +110,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(code.originalText->size() = 1 implies code.originalText->one(reference->size() = 1))'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationMedicationInformationManufacturedMaterialReference(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationInformationMedicationInformationManufacturedMaterialReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -120,7 +123,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(code.originalText.reference->size() = 1 implies code.originalText.reference.value->size() = 1)'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -132,7 +136,8 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject(code->size() = 1 implies code.translation->size() > 0)'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -141,10 +146,11 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.88\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.manufacturedMaterial->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.88\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
-	boolean validateMedicationInformationMedicationInformationManufacturedMaterialCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationInformationMedicationInformationManufacturedMaterialCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -152,10 +158,11 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * @generated
 	 */
 	public MedicationInformation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MedicationInformation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationInformation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MedicationInformation

@@ -94,12 +94,13 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 */
 	public boolean validatePreoperativeDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(this, diagnostics, context);
+		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
-	* <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EList<ProblemObservation> getProblemObservations() {
@@ -112,16 +113,16 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 * @generated
 	 */
 	public PreoperativeDiagnosis init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PreoperativeDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PreoperativeDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PreoperativeDiagnosisImpl

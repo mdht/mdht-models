@@ -97,7 +97,8 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncounterDiagnosisProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncounterDiagnosisProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncounterDiagnosisOperations.validateEncounterDiagnosisProblemObservation(this, diagnostics, context);
 	}
 
@@ -116,16 +117,16 @@ public class EncounterDiagnosisImpl extends ActImpl implements EncounterDiagnosi
 	 * @generated
 	 */
 	public EncounterDiagnosis init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public EncounterDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EncounterDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // EncounterDiagnosisImpl

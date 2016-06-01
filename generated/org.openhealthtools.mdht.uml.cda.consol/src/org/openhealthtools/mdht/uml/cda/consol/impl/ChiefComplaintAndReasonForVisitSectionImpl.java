@@ -29,8 +29,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ChiefComplaintAndReaso
  *
  * @generated
  */
-public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl implements
-		ChiefComplaintAndReasonForVisitSection {
+public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl
+		implements ChiefComplaintAndReasonForVisitSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -57,7 +57,8 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	 */
 	public boolean validateChiefComplaintAndReasonForVisitSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionTemplateId(this, diagnostics, context);
+		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -67,7 +68,8 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	 */
 	public boolean validateChiefComplaintAndReasonForVisitSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionCode(this, diagnostics, context);
+		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,7 +79,8 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	 */
 	public boolean validateChiefComplaintAndReasonForVisitSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionCodeP(this, diagnostics, context);
+		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -87,7 +90,8 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	 */
 	public boolean validateChiefComplaintAndReasonForVisitSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionText(this, diagnostics, context);
+		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -97,7 +101,8 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	 */
 	public boolean validateChiefComplaintAndReasonForVisitSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionTitle(this, diagnostics, context);
+		return ChiefComplaintAndReasonForVisitSectionOperations.validateChiefComplaintAndReasonForVisitSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -106,16 +111,17 @@ public class ChiefComplaintAndReasonForVisitSectionImpl extends SectionImpl impl
 	 * @generated
 	 */
 	public ChiefComplaintAndReasonForVisitSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ChiefComplaintAndReasonForVisitSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ChiefComplaintAndReasonForVisitSection init(
+			Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ChiefComplaintAndReasonForVisitSectionImpl

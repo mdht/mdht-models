@@ -104,7 +104,8 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 */
 	public boolean validateAnesthesiaSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AnesthesiaSectionOperations.validateAnesthesiaSectionProcedureActivityProcedure(this, diagnostics, context);
+		return AnesthesiaSectionOperations.validateAnesthesiaSectionProcedureActivityProcedure(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -112,7 +113,8 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAnesthesiaSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAnesthesiaSectionMedicationActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AnesthesiaSectionOperations.validateAnesthesiaSectionMedicationActivity(this, diagnostics, context);
 	}
 
@@ -140,16 +142,16 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * @generated
 	 */
 	public AnesthesiaSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AnesthesiaSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AnesthesiaSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AnesthesiaSectionImpl

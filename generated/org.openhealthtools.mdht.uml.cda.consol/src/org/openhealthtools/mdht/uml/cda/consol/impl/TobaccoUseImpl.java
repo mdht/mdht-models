@@ -140,7 +140,8 @@ public class TobaccoUseImpl extends ObservationImpl implements TobaccoUse {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateTobaccoUseCDCodeTermAssertionOrLoinc(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateTobaccoUseCDCodeTermAssertionOrLoinc(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return TobaccoUseOperations.validateTobaccoUseCDCodeTermAssertionOrLoinc(this, diagnostics, context);
 	}
 
@@ -168,16 +169,16 @@ public class TobaccoUseImpl extends ObservationImpl implements TobaccoUse {
 	 * @generated
 	 */
 	public TobaccoUse init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public TobaccoUse init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TobaccoUse init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // TobaccoUseImpl

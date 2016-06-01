@@ -121,7 +121,8 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 */
 	public boolean validateVitalSignsOrganizerVitalSignObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerVitalSignObservation(this, diagnostics, context);
+		return VitalSignsOrganizerOperations.validateVitalSignsOrganizerVitalSignObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -139,16 +140,16 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * @generated
 	 */
 	public VitalSignsOrganizer init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // VitalSignsOrganizerImpl

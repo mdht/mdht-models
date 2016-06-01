@@ -65,7 +65,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemConcernActEffectiveTimeHigh(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActEffectiveTimeHigh(this, diagnostics, context);
 	}
 
@@ -146,7 +147,8 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemConcernActProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemConcernActProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActProblemObservation(this, diagnostics, context);
 	}
 
@@ -165,16 +167,16 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	 * @generated
 	 */
 	public ProblemConcernAct init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProblemConcernAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemConcernAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProblemConcernActImpl

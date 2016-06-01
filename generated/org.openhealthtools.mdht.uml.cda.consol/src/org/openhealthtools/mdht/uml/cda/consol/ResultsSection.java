@@ -63,10 +63,11 @@ public interface ResultsSection extends ResultsSectionEntriesOptional {
 	 * @generated
 	 */
 	public ResultsSection init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ResultsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ResultsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResultsSection

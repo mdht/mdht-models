@@ -34,7 +34,8 @@ public interface CognitiveStatusResultOrganizer extends ResultOrganizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.isNullFlavorDefined() or self.code.codeSystem = \'2.16.840.1.113883.6.254\' or self.code.codeSystem = \'2.16.840.1.113883.6.96\''"
 	 * @generated
 	 */
-	boolean validateCognitiveStatusResultOrganizerCodeCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCognitiveStatusResultOrganizerCodeCodeSystem(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -46,7 +47,8 @@ public interface CognitiveStatusResultOrganizer extends ResultOrganizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::CognitiveStatusResultObservation))'"
 	 * @generated
 	 */
-	boolean validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -63,10 +65,11 @@ public interface CognitiveStatusResultOrganizer extends ResultOrganizer {
 	 * @generated
 	 */
 	public CognitiveStatusResultOrganizer init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CognitiveStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CognitiveStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CognitiveStatusResultOrganizer

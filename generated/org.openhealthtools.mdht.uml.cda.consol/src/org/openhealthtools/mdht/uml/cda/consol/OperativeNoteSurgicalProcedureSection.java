@@ -35,7 +35,8 @@ public interface OperativeNoteSurgicalProcedureSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.7.14\')'"
 	 * @generated
 	 */
-	boolean validateOperativeNoteSurgicalProcedureSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateOperativeNoteSurgicalProcedureSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -44,7 +45,7 @@ public interface OperativeNoteSurgicalProcedureSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'10223-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'10223-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateOperativeNoteSurgicalProcedureSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -59,7 +60,8 @@ public interface OperativeNoteSurgicalProcedureSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateOperativeNoteSurgicalProcedureSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateOperativeNoteSurgicalProcedureSectionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,7 +85,8 @@ public interface OperativeNoteSurgicalProcedureSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateOperativeNoteSurgicalProcedureSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateOperativeNoteSurgicalProcedureSectionTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,10 +94,11 @@ public interface OperativeNoteSurgicalProcedureSection extends Section {
 	 * @generated
 	 */
 	public OperativeNoteSurgicalProcedureSection init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public OperativeNoteSurgicalProcedureSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OperativeNoteSurgicalProcedureSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // OperativeNoteSurgicalProcedureSection

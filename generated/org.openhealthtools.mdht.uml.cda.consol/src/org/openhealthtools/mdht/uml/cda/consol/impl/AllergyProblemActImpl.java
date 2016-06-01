@@ -65,7 +65,8 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyProblemActEffectiveTimeHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergyProblemActEffectiveTimeHigh(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActEffectiveTimeHigh(this, diagnostics, context);
 	}
 
@@ -137,7 +138,8 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergyProblemActAllergyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAllergyProblemActAllergyObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AllergyProblemActOperations.validateAllergyProblemActAllergyObservation(this, diagnostics, context);
 	}
 
@@ -148,7 +150,8 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 */
 	public boolean validateAllergyProblemActCDCodeAndCodeSystemValues(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyProblemActOperations.validateAllergyProblemActCDCodeAndCodeSystemValues(this, diagnostics, context);
+		return AllergyProblemActOperations.validateAllergyProblemActCDCodeAndCodeSystemValues(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -184,16 +187,16 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * @generated
 	 */
 	public AllergyProblemAct init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AllergyProblemAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllergyProblemAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AllergyProblemActImpl

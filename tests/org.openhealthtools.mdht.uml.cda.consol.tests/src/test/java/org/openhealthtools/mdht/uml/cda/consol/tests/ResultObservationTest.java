@@ -777,8 +777,6 @@ public class ResultObservationTest extends CDAValidationTest {
 				target.getTargetSiteCodes().clear();
 				CE tsCode1 = DatatypesFactory.eINSTANCE.createCE();
 				target.getTargetSiteCodes().add(tsCode1);
-				CE tsCode3 = DatatypesFactory.eINSTANCE.createCE();
-				target.getTargetSiteCodes().add(tsCode3);
 
 			}
 

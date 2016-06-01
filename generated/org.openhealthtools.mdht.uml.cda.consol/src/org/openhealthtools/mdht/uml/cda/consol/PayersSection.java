@@ -22,22 +22,22 @@ import org.eclipse.mdht.uml.cda.Section;
  *
  * <!-- begin-model-doc -->
  * <p>
- * The Payers section contains data on the patient s payers, whether a  third party  insurance, self-pay, 
+ * The Payers section contains data on the patient s payers, whether a  third party  insurance, self-pay,
  * other payer or guarantor, or some combination of payers, and is used to define which entity is the
  *  responsible fiduciary for the financial aspects of a patient s care.
  * </p>
  * <p>
  * Each unique instance of a payer and all the pertinent data needed to contact, bill to, and collect from
- *  that payer should be included. Authorization information that can be used to define pertinent referral, 
- * authorization tracking number, procedure, therapy, intervention, device, or similar authorizations for 
- * the patient or provider, or both should be included. At a minimum, the patient s pertinent current 
+ *  that payer should be included. Authorization information that can be used to define pertinent referral,
+ * authorization tracking number, procedure, therapy, intervention, device, or similar authorizations for
+ * the patient or provider, or both should be included. At a minimum, the patient s pertinent current
  * payment sources should be listed.
  * </p>
  * <p>
- * The sources of payment are represented as a Coverage Activity, which identifies all of the insurance 
- * policies or government or other programs that cover some or all of the patient s healthcare expenses. 
- * The policies or programs are sequenced by preference. The Coverage Activity has a sequence number 
- * that represents the preference order. Each policy or program identifies the covered party 
+ * The sources of payment are represented as a Coverage Activity, which identifies all of the insurance
+ * policies or government or other programs that cover some or all of the patient s healthcare expenses.
+ * The policies or programs are sequenced by preference. The Coverage Activity has a sequence number
+ * that represents the preference order. Each policy or program identifies the covered party
  * with respect to the payer, so that the identifiers can be recorded.
  * </p>
  * <!-- end-model-doc -->
@@ -67,7 +67,7 @@ public interface PayersSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'48768-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.code = \'48768-6\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validatePayersSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -135,10 +135,11 @@ public interface PayersSection extends Section {
 	 * @generated
 	 */
 	public PayersSection init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PayersSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PayersSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PayersSection

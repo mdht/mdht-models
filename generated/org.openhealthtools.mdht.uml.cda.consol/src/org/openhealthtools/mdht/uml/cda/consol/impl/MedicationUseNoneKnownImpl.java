@@ -50,7 +50,8 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationUseNoneKnownTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationUseNoneKnownTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReference(this, diagnostics, context);
 	}
 
@@ -61,7 +62,8 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 */
 	public boolean validateMedicationUseNoneKnownTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReferenceValue(this, diagnostics, context);
+		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +71,10 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationUseNoneKnownReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownReferenceValue(this, diagnostics, context);
+	public boolean validateMedicationUseNoneKnownReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -132,7 +136,8 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationUseNoneKnownEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationUseNoneKnownEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationUseNoneKnownOperations.validateMedicationUseNoneKnownEffectiveTime(this, diagnostics, context);
 	}
 
@@ -187,16 +192,16 @@ public class MedicationUseNoneKnownImpl extends ObservationImpl implements Medic
 	 * @generated
 	 */
 	public MedicationUseNoneKnown init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public MedicationUseNoneKnown init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MedicationUseNoneKnown init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // MedicationUseNoneKnownImpl

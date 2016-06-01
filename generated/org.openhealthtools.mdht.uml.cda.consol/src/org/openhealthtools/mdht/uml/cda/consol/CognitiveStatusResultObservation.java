@@ -36,7 +36,8 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.value->forAll(val | val.oclIsTypeOf(datatypes::CD) implies (val.isNullFlavorDefined() or val.oclAsType(datatypes::CD).codeSystem = \'2.16.840.1.113883.6.96\'))'"
 	 * @generated
 	 */
-	boolean validateCognitiveStatusResultObservationValueDatatype(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCognitiveStatusResultObservationValueDatatype(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -72,7 +73,8 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.supply.oclIsUndefined() and entryRelationship.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
-	boolean validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCognitiveStatusResultObservationNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,7 +86,8 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::CaregiverCharacteristics) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
-	boolean validateCognitiveStatusResultObservationCaregiverCharacteristics(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCognitiveStatusResultObservationCaregiverCharacteristics(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,7 +99,8 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::AssessmentScaleObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
-	boolean validateCognitiveStatusResultObservationAssessmentScaleObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCognitiveStatusResultObservationAssessmentScaleObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,7 +112,8 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->exists(referenceRange : cda::ReferenceRange | not referenceRange.oclIsUndefined() and referenceRange.oclIsKindOf(cda::ReferenceRange))'"
 	 * @generated
 	 */
-	boolean validateCognitiveStatusResultObservationReferenceRange(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCognitiveStatusResultObservationReferenceRange(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -120,7 +125,8 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->excluding(null).observationRange->excluding(null)->reject(code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -132,7 +138,8 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.referenceRange->excluding(null)->reject(observationRange->one(observationRange : cda::ObservationRange | not observationRange.oclIsUndefined() and observationRange.oclIsKindOf(cda::ObservationRange)))'"
 	 * @generated
 	 */
-	boolean validateCognitiveStatusResultObservationReferenceRangeObservationRange(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCognitiveStatusResultObservationReferenceRangeObservationRange(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -167,10 +174,11 @@ public interface CognitiveStatusResultObservation extends ResultObservation {
 	 * @generated
 	 */
 	public CognitiveStatusResultObservation init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public CognitiveStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CognitiveStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CognitiveStatusResultObservation

@@ -43,10 +43,11 @@ public interface FindingsSection extends Section {
 	 * @generated
 	 */
 	public FindingsSection init();
-    /**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public FindingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FindingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FindingsSection

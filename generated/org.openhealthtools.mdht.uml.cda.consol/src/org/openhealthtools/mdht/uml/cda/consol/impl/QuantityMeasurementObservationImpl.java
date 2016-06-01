@@ -58,7 +58,8 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateQuantityMeasurementObservationCodeCodeSystemDIR(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationCodeCodeSystemDIR(this, diagnostics, context);
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationCodeCodeSystemDIR(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -68,7 +69,8 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateQuantityMeasurementObservationCodeCodeSystemDICOM(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationCodeCodeSystemDICOM(this, diagnostics, context);
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationCodeCodeSystemDICOM(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -78,7 +80,8 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateQuantityMeasurementObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationTemplateId(this, diagnostics, context);
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -88,7 +91,8 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateQuantityMeasurementObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationClassCode(this, diagnostics, context);
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -98,7 +102,8 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateQuantityMeasurementObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationMoodCode(this, diagnostics, context);
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -106,8 +111,10 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateQuantityMeasurementObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationCode(this, diagnostics, context);
+	public boolean validateQuantityMeasurementObservationCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -117,7 +124,8 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateQuantityMeasurementObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationEffectiveTime(this, diagnostics, context);
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -125,8 +133,10 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateQuantityMeasurementObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationValue(this, diagnostics, context);
+	public boolean validateQuantityMeasurementObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -136,7 +146,8 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateQuantityMeasurementObservationSOPInstanceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationSOPInstanceObservation(this, diagnostics, context);
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationSOPInstanceObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -154,16 +165,16 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public QuantityMeasurementObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public QuantityMeasurementObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public QuantityMeasurementObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // QuantityMeasurementObservationImpl

@@ -56,7 +56,8 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 */
 	public boolean validateHospitalDischargePhysicalSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionTemplateId(this, diagnostics, context);
+		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +65,10 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalDischargePhysicalSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionCode(this, diagnostics, context);
+	public boolean validateHospitalDischargePhysicalSectionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +78,8 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 */
 	public boolean validateHospitalDischargePhysicalSectionCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionCodeP(this, diagnostics, context);
+		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +89,8 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 */
 	public boolean validateHospitalDischargePhysicalSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionTitle(this, diagnostics, context);
+		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +98,10 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHospitalDischargePhysicalSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionText(this, diagnostics, context);
+	public boolean validateHospitalDischargePhysicalSectionText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -103,16 +110,16 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public HospitalDischargePhysicalSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public HospitalDischargePhysicalSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HospitalDischargePhysicalSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // HospitalDischargePhysicalSectionImpl

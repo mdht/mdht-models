@@ -56,8 +56,10 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProcedureFindingsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionTemplateId(this, diagnostics, context);
+	public boolean validateProcedureFindingsSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -103,7 +105,8 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 */
 	public boolean validateProcedureFindingsSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionProblemObservation(this, diagnostics, context);
+		return ProcedureFindingsSectionOperations.validateProcedureFindingsSectionProblemObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -121,16 +124,16 @@ public class ProcedureFindingsSectionImpl extends SectionImpl implements Procedu
 	 * @generated
 	 */
 	public ProcedureFindingsSection init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProcedureFindingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProcedureFindingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProcedureFindingsSectionImpl

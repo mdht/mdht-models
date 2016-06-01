@@ -58,7 +58,8 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 */
 	public boolean validateAllergiesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,8 +67,10 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalCode(this, diagnostics, context);
+	public boolean validateAllergiesSectionEntriesOptionalCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,8 +78,10 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesSectionEntriesOptionalCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalCodeP(this, diagnostics, context);
+	public boolean validateAllergiesSectionEntriesOptionalCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +89,10 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTitle(this, diagnostics, context);
+	public boolean validateAllergiesSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTitle(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +100,10 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalText(this, diagnostics, context);
+	public boolean validateAllergiesSectionEntriesOptionalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalText(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -104,7 +113,8 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 */
 	public boolean validateAllergiesSectionEntriesOptionalAllergyProblemAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalAllergyProblemAct(this, diagnostics, context);
+		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalAllergyProblemAct(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -122,16 +132,16 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	 * @generated
 	 */
 	public AllergiesSectionEntriesOptional init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public AllergiesSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllergiesSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // AllergiesSectionEntriesOptionalImpl

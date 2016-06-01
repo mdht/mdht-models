@@ -57,7 +57,8 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservationHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationHasTextReference(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservationOperations.validateProblemObservationHasTextReference(this, diagnostics, context);
 	}
 
@@ -66,7 +67,8 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservationOperations.validateProblemObservationTextReferenceValue(this, diagnostics, context);
 	}
 
@@ -94,7 +96,8 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationHasResolutionDate(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservationOperations.validateProblemObservationHasResolutionDate(this, diagnostics, context);
 	}
 
@@ -114,7 +117,8 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 */
 	public boolean validateProblemObservationAgeObservationInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationAgeObservationInversion(this, diagnostics, context);
+		return ProblemObservationOperations.validateProblemObservationAgeObservationInversion(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -122,7 +126,8 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservationValueTranslation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationValueTranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservationOperations.validateProblemObservationValueTranslation(this, diagnostics, context);
 	}
 
@@ -260,7 +265,8 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 */
 	public boolean validateProblemObservationHealthStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationHealthStatusObservation(this, diagnostics, context);
+		return ProblemObservationOperations.validateProblemObservationHealthStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -305,16 +311,16 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * @generated
 	 */
 	public ProblemObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public ProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ProblemObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // ProblemObservationImpl

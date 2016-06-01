@@ -56,7 +56,8 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTemplateId(this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +65,10 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePhysicianReadingStudyPerformerTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTime(this, diagnostics, context);
+	public boolean validatePhysicianReadingStudyPerformerTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -75,7 +78,8 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTypeCode(this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -85,7 +89,8 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntity(this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +100,8 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId(this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityHasNationalProviderId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -105,7 +111,8 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntityHasDICOM(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityHasDICOM(this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityHasDICOM(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -115,7 +122,8 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization(this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityHasAssignedPersonOrRepresentedOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -125,7 +133,8 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityCode(this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -135,7 +144,8 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 */
 	public boolean validatePhysicianReadingStudyPerformerAssignedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityId(this, diagnostics, context);
+		return PhysicianReadingStudyPerformerOperations.validatePhysicianReadingStudyPerformerAssignedEntityId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -144,16 +154,16 @@ public class PhysicianReadingStudyPerformerImpl extends Performer1Impl implement
 	 * @generated
 	 */
 	public PhysicianReadingStudyPerformer init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public PhysicianReadingStudyPerformer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhysicianReadingStudyPerformer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // PhysicianReadingStudyPerformerImpl

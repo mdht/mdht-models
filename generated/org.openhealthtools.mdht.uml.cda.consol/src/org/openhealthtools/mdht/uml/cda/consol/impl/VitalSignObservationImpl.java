@@ -63,7 +63,8 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignObservationReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignObservationReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignObservationOperations.validateVitalSignObservationReferenceValue(this, diagnostics, context);
 	}
 
@@ -74,7 +75,8 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 */
 	public boolean validateVitalSignObservationTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignObservationOperations.validateVitalSignObservationTextReferenceValue(this, diagnostics, context);
+		return VitalSignObservationOperations.validateVitalSignObservationTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -165,7 +167,8 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 */
 	public boolean validateVitalSignObservationInterpretationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return VitalSignObservationOperations.validateVitalSignObservationInterpretationCode(this, diagnostics, context);
+		return VitalSignObservationOperations.validateVitalSignObservationInterpretationCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -182,7 +185,8 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateVitalSignObservationTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateVitalSignObservationTargetSiteCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return VitalSignObservationOperations.validateVitalSignObservationTargetSiteCode(this, diagnostics, context);
 	}
 
@@ -210,16 +214,16 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * @generated
 	 */
 	public VitalSignObservation init() {
-	    return Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    public VitalSignObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
-        return this;
-    }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VitalSignObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
+	}
 } // VitalSignObservationImpl
