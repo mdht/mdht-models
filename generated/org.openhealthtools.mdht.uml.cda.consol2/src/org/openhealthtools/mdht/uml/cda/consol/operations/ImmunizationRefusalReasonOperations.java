@@ -250,7 +250,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_IMMUNIZATION_REFUSAL_REASON_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_IMMUNIZATION_REFUSAL_REASON_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImmunizationRefusalReasonId(ImmunizationRefusalReason, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Refusal Reason Id</em>}' invariant operation.

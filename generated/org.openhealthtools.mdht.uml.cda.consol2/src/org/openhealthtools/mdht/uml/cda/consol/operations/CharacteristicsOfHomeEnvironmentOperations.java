@@ -254,7 +254,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCharacteristicsOfHomeEnvironmentId(CharacteristicsOfHomeEnvironment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Id</em>}' invariant operation.
@@ -666,7 +666,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+	protected static final String VALIDATE_CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCharacteristicsOfHomeEnvironmentValueP(CharacteristicsOfHomeEnvironment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Characteristics Of Home Environment Value P</em>}' invariant operation.

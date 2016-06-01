@@ -578,7 +578,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (not translation->isEmpty()) )))";
+	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (( not translation->isEmpty()) ) )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservation2CDTranslationP(SocialHistoryObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation2 CD Translation P</em>}' invariant operation.

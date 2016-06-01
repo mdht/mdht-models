@@ -254,7 +254,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProgressTowardGoalObservationId(ProgressTowardGoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Toward Goal Observation Id</em>}' invariant operation.
@@ -663,7 +663,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+	protected static final String VALIDATE_PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProgressTowardGoalObservationValueP(ProgressTowardGoalObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Toward Goal Observation Value P</em>}' invariant operation.

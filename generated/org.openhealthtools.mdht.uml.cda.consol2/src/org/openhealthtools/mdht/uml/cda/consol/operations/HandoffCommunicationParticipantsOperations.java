@@ -737,7 +737,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).participantRole->excluding(null).playingEntity->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty()))";
+	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).participantRole->excluding(null).playingEntity->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (( not name->isEmpty()) ))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName(HandoffCommunicationParticipants, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participants Participant Participant Role Playing Entity Name</em>}' invariant operation.
@@ -807,7 +807,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).participantRole->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))";
+	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).participantRole->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (( not id->isEmpty()) ))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationParticipantsParticipantParticipantRoleId(HandoffCommunicationParticipants, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participants Participant Participant Role Id</em>}' invariant operation.
@@ -1043,7 +1043,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).participantRole->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (not addr->isEmpty()))";
+	protected static final String VALIDATE_HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).participantRole->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (( not addr->isEmpty()) ))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHandoffCommunicationParticipantsParticipantParticipantRoleAddr(HandoffCommunicationParticipants, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Handoff Communication Participants Participant Participant Role Addr</em>}' invariant operation.

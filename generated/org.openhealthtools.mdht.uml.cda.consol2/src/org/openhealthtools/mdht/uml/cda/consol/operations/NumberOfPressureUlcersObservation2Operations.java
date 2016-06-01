@@ -138,7 +138,7 @@ public class NumberOfPressureUlcersObservation2Operations extends NumberOfPressu
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (translation->size() = 1) )))";
+	protected static final String VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (translation->size() =  1) )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNumberOfPressureUlcersObservation2CDTranslationP(NumberOfPressureUlcersObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation2 CD Translation P</em>}' invariant operation.

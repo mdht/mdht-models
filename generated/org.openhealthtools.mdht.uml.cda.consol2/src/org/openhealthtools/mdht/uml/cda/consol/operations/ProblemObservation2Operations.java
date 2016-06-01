@@ -1330,7 +1330,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_OBSERVATION2_CD_CODE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (not translation->isEmpty()) )))";
+	protected static final String VALIDATE_PROBLEM_OBSERVATION2_CD_CODE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (( not translation->isEmpty()) ) )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemObservation2CDCodeTranslationP(ProblemObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation2 CD Code Translation P</em>}' invariant operation.

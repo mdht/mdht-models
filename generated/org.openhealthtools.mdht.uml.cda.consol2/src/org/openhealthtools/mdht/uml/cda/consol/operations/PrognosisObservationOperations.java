@@ -573,7 +573,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROGNOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
+	protected static final String VALIDATE_PROGNOSIS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePrognosisObservationValue(PrognosisObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prognosis Observation Value</em>}' invariant operation.

@@ -318,7 +318,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationId(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Id</em>}' invariant operation.
@@ -663,7 +663,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
+	protected static final String VALIDATE_CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCulturalAndReligiousObservationValue(CulturalAndReligiousObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cultural And Religious Observation Value</em>}' invariant operation.

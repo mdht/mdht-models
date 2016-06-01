@@ -245,7 +245,7 @@ public class ExternalDocumentReferenceOperations extends ExternalDocumentOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)";
+	protected static final String VALIDATE_EXTERNAL_DOCUMENT_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() =  1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExternalDocumentReferenceId(ExternalDocumentReference, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate External Document Reference Id</em>}' invariant operation.

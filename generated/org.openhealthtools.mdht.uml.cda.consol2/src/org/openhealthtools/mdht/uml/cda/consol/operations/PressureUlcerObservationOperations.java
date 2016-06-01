@@ -926,7 +926,7 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationId(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Id</em>}' invariant operation.
@@ -1383,7 +1383,7 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationValueP(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Value P</em>}' invariant operation.
@@ -2094,7 +2094,7 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401238003').observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::PQ))))";
+	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP1_OBSERVATION1_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401238003').observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() =  1 and value->forAll(element | element.oclIsTypeOf(datatypes::PQ))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship1Observation1Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship1 Observation1 Value</em>}' invariant operation.
@@ -2610,7 +2610,7 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401239006').observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::PQ))))";
+	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP2_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='401239006').observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() =  1 and value->forAll(element | element.oclIsTypeOf(datatypes::PQ))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship2Observation2Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship2 Observation2 Value</em>}' invariant operation.
@@ -3126,7 +3126,7 @@ public class PressureUlcerObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='425094009').observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::PQ))))";
+	protected static final String VALIDATE_PRESSURE_ULCER_OBSERVATION_ENTRY_RELATIONSHIP3_OBSERVATION3_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP and observation.code.code='425094009').observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() =  1 and value->forAll(element | element.oclIsTypeOf(datatypes::PQ))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePressureUlcerObservationEntryRelationship3Observation3Value(PressureUlcerObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pressure Ulcer Observation Entry Relationship3 Observation3 Value</em>}' invariant operation.

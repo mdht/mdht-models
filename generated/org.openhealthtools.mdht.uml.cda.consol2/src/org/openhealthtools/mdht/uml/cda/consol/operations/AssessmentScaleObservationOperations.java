@@ -589,7 +589,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationId(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Id</em>}' invariant operation.
@@ -843,7 +843,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
+	protected static final String VALIDATE_ASSESSMENT_SCALE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAssessmentScaleObservationValue(AssessmentScaleObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Assessment Scale Observation Value</em>}' invariant operation.

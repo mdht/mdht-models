@@ -259,7 +259,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_PLANNED_COVERAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedCoverageId(PlannedCoverage, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Id</em>}' invariant operation.
@@ -848,7 +848,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).act->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))";
+	protected static final String VALIDATE_PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null).act->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (( not id->isEmpty()) ))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedCoverageEntryRelationshipActId(PlannedCoverage, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Coverage Entry Relationship Act Id</em>}' invariant operation.

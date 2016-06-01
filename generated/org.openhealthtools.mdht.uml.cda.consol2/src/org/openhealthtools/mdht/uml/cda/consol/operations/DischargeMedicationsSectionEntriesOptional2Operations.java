@@ -134,7 +134,7 @@ public class DischargeMedicationsSectionEntriesOptional2Operations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (translation->size() = 1) )))";
+	protected static final String VALIDATE_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_CE_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (translation->size() =  1) )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeMedicationsSectionEntriesOptional2CETranslationP(DischargeMedicationsSectionEntriesOptional2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Medications Section Entries Optional2 CE Translation P</em>}' invariant operation.

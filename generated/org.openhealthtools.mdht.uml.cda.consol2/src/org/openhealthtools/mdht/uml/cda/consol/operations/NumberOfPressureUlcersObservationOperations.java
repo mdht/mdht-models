@@ -266,7 +266,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNumberOfPressureUlcersObservationId(NumberOfPressureUlcersObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation Id</em>}' invariant operation.
@@ -676,7 +676,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::INT)))";
+	protected static final String VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::INT)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNumberOfPressureUlcersObservationValue(NumberOfPressureUlcersObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation Value</em>}' invariant operation.
@@ -1080,7 +1080,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1 and value->forAll(element | element.oclIsTypeOf(datatypes::CD))))";
+	protected static final String VALIDATE_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->select(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() =  1 and value->forAll(element | element.oclIsTypeOf(datatypes::CD))))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNumberOfPressureUlcersObservationEntryRelationshipObservationValueP(NumberOfPressureUlcersObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Pressure Ulcers Observation Entry Relationship Observation Value P</em>}' invariant operation.

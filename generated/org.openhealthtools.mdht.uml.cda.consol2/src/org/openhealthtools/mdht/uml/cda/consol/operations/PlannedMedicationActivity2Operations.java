@@ -226,7 +226,7 @@ public class PlannedMedicationActivity2Operations extends PlanOfCareActivitySubs
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_MEDICATION_ACTIVITY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (self.effectiveTime->size() = 1)";
+	protected static final String VALIDATE_PLANNED_MEDICATION_ACTIVITY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (self.effectiveTime->size() =  1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedMedicationActivity2EffectiveTime(PlannedMedicationActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Effective Time</em>}' invariant operation.

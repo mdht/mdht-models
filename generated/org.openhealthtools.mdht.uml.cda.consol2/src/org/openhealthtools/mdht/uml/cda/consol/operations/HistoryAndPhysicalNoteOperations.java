@@ -2539,7 +2539,7 @@ public class HistoryAndPhysicalNoteOperations extends GeneralHeaderConstraintsOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))";
+	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER4_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.componentOf->excluding(null).encompassingEncounter->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() =  1))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id(HistoryAndPhysicalNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Note Component Of Encompassing Encounter4 Id</em>}' invariant operation.

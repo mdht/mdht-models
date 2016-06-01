@@ -409,7 +409,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())";
+	protected static final String VALIDATE_PLANNED_OBSERVATION2_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (( not self.value->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedObservation2Value(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Value</em>}' invariant operation.
@@ -470,7 +470,7 @@ public class PlannedObservation2Operations extends PlanOfCareActivityObservation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_OBSERVATION2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())";
+	protected static final String VALIDATE_PLANNED_OBSERVATION2_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (( not self.methodCode->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedObservation2MethodCode(PlannedObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Observation2 Method Code</em>}' invariant operation.

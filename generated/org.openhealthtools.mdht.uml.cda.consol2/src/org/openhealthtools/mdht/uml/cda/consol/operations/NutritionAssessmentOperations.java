@@ -310,7 +310,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_ASSESSMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_NUTRITION_ASSESSMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionAssessmentId(NutritionAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Id</em>}' invariant operation.
@@ -700,7 +700,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUTRITION_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
+	protected static final String VALIDATE_NUTRITION_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNutritionAssessmentValue(NutritionAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Nutrition Assessment Value</em>}' invariant operation.

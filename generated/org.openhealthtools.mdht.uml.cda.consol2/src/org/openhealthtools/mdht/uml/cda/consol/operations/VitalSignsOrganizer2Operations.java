@@ -252,7 +252,7 @@ public class VitalSignsOrganizer2Operations extends VitalSignsOrganizerOperation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (translation->size() = 1) )))";
+	protected static final String VALIDATE_VITAL_SIGNS_ORGANIZER2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (translation->size() =  1) )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVitalSignsOrganizer2CDTranslationP(VitalSignsOrganizer2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer2 CD Translation P</em>}' invariant operation.

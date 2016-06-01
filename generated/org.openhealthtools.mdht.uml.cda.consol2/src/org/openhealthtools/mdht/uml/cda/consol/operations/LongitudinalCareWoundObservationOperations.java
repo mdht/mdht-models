@@ -55,8 +55,8 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#validateLongitudinalCareWoundObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#validateLongitudinalCareWoundObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#validateLongitudinalCareWoundObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#validateLongitudinalCareWoundObservationTargetSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Target Site Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#validateLongitudinalCareWoundObservationTargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Target Site Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#validateLongitudinalCareWoundObservationTargetSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Target Site Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#validateLongitudinalCareWoundObservationWoundMeasurementObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Wound Measurement Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#validateLongitudinalCareWoundObservationWoundCharacteristics(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Wound Characteristics</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation#validateLongitudinalCareWoundObservationHighestPressureUlcerStage(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Highest Pressure Ulcer Stage</em>}</li>
@@ -523,27 +523,6 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateLongitudinalCareWoundObservationTargetSiteCodeP(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Target Site Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateLongitudinalCareWoundObservationTargetSiteCodeP(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateLongitudinalCareWoundObservationTargetSiteCodeP(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Target Site Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateLongitudinalCareWoundObservationTargetSiteCodeP(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -581,21 +560,6 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 						new Object[] { longitudinalCareWoundObservation }));
 			}
 
-			if (context != null) {
-				// generate a pass token for my dependent constraints to short-circuit or filter results
-				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationTargetSiteCodeP");
-				if (passToken == null) {
-					// anticipate a reasonably healthy model
-					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationTargetSiteCodeP",
-						passToken);
-				}
-				passToken.add(longitudinalCareWoundObservation);
-			}
-
 			return false;
 		}
 		return true;
@@ -625,6 +589,27 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	protected static Constraint VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateLongitudinalCareWoundObservationTargetSiteCodeP(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Target Site Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateLongitudinalCareWoundObservationTargetSiteCodeP(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (( not self.targetSiteCode->isEmpty()) )";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateLongitudinalCareWoundObservationTargetSiteCodeP(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Longitudinal Care Wound Observation Target Site Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateLongitudinalCareWoundObservationTargetSiteCodeP(LongitudinalCareWoundObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -638,16 +623,6 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 	public static boolean validateLongitudinalCareWoundObservationTargetSiteCode(
 			LongitudinalCareWoundObservation longitudinalCareWoundObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get(
-					"org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservationTargetSiteCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(longitudinalCareWoundObservation)) {
-			// I have a free pass to short-circuit
-			return true;
-		}
 
 		if (VALIDATE_LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();

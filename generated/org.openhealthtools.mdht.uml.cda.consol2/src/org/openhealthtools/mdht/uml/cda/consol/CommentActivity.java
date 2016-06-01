@@ -21,9 +21,9 @@ import org.eclipse.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getCommentActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CommentActivityTemplateId CommentActivityTextReference CommentActivityTextReferenceValue CommentActivityReferenceValue CommentActivityClassCode CommentActivityMoodCode CommentActivityCode CommentActivityText CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine CommentActivityAuthorAssignedAuthorHasPersonOrOrganization CommentActivityAuthorAssignedAuthorAssignPersonName CommentActivityAuthorAssignedAuthorAddr CommentActivityAuthorAssignedAuthorId CommentActivityAuthorTime CommentActivityAuthorAssignedAuthor' templateId.root='2.16.840.1.113883.10.20.22.4.64' classCode='ACT' moodCode='EVN' code.code='48767-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Annotation comment' constraints.validation.info='CommentActivityAuthor' constraints.validation.query='CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine CommentActivityAuthorAssignedAuthorHasPersonOrOrganization CommentActivityAuthorAssignedAuthorAssignPersonName CommentActivityAuthorAssignedAuthorAddr CommentActivityAuthorAssignedAuthorId CommentActivityAuthorTime CommentActivityAuthorAssignedAuthor' constraints.validation.warning='CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode' constraints.validation.dependOn.CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse='GeneralHeaderConstraintsUSRealmAddressUseP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CommentActivityTemplateId CommentActivityTextReference CommentActivityTextReferenceValue CommentActivityReferenceValue CommentActivityClassCode CommentActivityMoodCode CommentActivityCode CommentActivityText CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine CommentActivityAuthorAssignedAuthorHasPersonOrOrganization CommentActivityAuthorAssignedAuthorAssignPersonName CommentActivityAuthorAssignedAuthorAddr CommentActivityAuthorAssignedAuthorId CommentActivityAuthorTime CommentActivityAuthorAssignedAuthor' templateId.root='2.16.840.1.113883.10.20.22.4.64' classCode='ACT' moodCode='EVN' code.code='48767-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Annotation comment' constraints.validation.info='CommentActivityAuthor' constraints.validation.query='CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine CommentActivityAuthorAssignedAuthorHasPersonOrOrganization CommentActivityAuthorAssignedAuthorAssignPersonName CommentActivityAuthorAssignedAuthorAddr CommentActivityAuthorAssignedAuthorId CommentActivityAuthorTime CommentActivityAuthorAssignedAuthor' constraints.validation.warning='CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCommentActivityAuthor constraints.validation.error='CommentActivityAuthorTime CommentActivityAuthorAssignedAuthor'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCommentActivityAuthorAssignedAuthor constraints.validation.error='CommentActivityAuthorAssignedAuthorHasPersonOrOrganization CommentActivityAuthorAssignedAuthorAssignPersonName CommentActivityAuthorAssignedAuthorAddr CommentActivityAuthorAssignedAuthorId AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse AssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity AssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine' constraints.validation.query='AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse AssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry AssignedAuthorGeneralHeaderConstraintsUSRealmAddressState AssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity AssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode AssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine' constraints.validation.warning='AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP AssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry AssignedAuthorGeneralHeaderConstraintsUSRealmAddressState AssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode' constraints.validation.dependOn.AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse='GeneralHeaderConstraintsUSRealmAddressUseP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolCommentActivityAuthorAssignedAuthor constraints.validation.error='CommentActivityAuthorAssignedAuthorHasPersonOrOrganization CommentActivityAuthorAssignedAuthorAssignPersonName CommentActivityAuthorAssignedAuthorAddr CommentActivityAuthorAssignedAuthorId AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse AssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity AssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine' constraints.validation.query='AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP AssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry AssignedAuthorGeneralHeaderConstraintsUSRealmAddressState AssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity AssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode AssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine' constraints.validation.warning='AssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP AssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry AssignedAuthorGeneralHeaderConstraintsUSRealmAddressState AssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode'"
  * @generated
  */
 public interface CommentActivity extends Act {
@@ -106,7 +106,7 @@ public interface CommentActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'48767-8\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.code = \'48767-8\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateCommentActivityCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -155,7 +155,7 @@ public interface CommentActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (not use->isEmpty() )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (( not use->isEmpty())  )))'"
 	 * @generated
 	 */
 	boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(
@@ -168,7 +168,7 @@ public interface CommentActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and \r\nlet value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in \r\nvalue = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies (use->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(vocab::PostalAddressUse) and \nlet value : vocab::PostalAddressUse = element.oclAsType(vocab::PostalAddressUse) in \nvalue = vocab::PostalAddressUse::BAD or value = vocab::PostalAddressUse::DIR or value = vocab::PostalAddressUse::H or value = vocab::PostalAddressUse::HP or value = vocab::PostalAddressUse::HV or value = vocab::PostalAddressUse::PHYS or value = vocab::PostalAddressUse::PST or value = vocab::PostalAddressUse::PUB or value = vocab::PostalAddressUse::TMP or value = vocab::PostalAddressUse::WP) )))'"
 	 * @generated
 	 */
 	boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(
@@ -181,7 +181,7 @@ public interface CommentActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((country->isEmpty() or country->exists(element | element.isNullFlavorUndefined())) implies (not country->isEmpty()) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((country->isEmpty() or country->exists(element | element.isNullFlavorUndefined())) implies (( not country->isEmpty()) ) )))'"
 	 * @generated
 	 */
 	boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(
@@ -194,7 +194,7 @@ public interface CommentActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((state->isEmpty() or state->exists(element | element.isNullFlavorUndefined())) implies (not state->isEmpty()) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((state->isEmpty() or state->exists(element | element.isNullFlavorUndefined())) implies (( not state->isEmpty()) ) )))'"
 	 * @generated
 	 */
 	boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(
@@ -207,7 +207,7 @@ public interface CommentActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((city->isEmpty() or city->exists(element | element.isNullFlavorUndefined())) implies (city->size() = 1) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((city->isEmpty() or city->exists(element | element.isNullFlavorUndefined())) implies (city->size() =  1) )))'"
 	 * @generated
 	 */
 	boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(
@@ -220,7 +220,7 @@ public interface CommentActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((postalCode->isEmpty() or postalCode->exists(element | element.isNullFlavorUndefined())) implies (not postalCode->isEmpty()) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((postalCode->isEmpty() or postalCode->exists(element | element.isNullFlavorUndefined())) implies (( not postalCode->isEmpty()) ) )))'"
 	 * @generated
 	 */
 	boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(
@@ -233,7 +233,7 @@ public interface CommentActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((streetAddressLine->isEmpty() or streetAddressLine->exists(element | element.isNullFlavorUndefined())) implies (not streetAddressLine->isEmpty()) )))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null).addr->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((streetAddressLine->isEmpty() or streetAddressLine->exists(element | element.isNullFlavorUndefined())) implies (( not streetAddressLine->isEmpty()) ) )))'"
 	 * @generated
 	 */
 	boolean validateCommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
@@ -272,7 +272,7 @@ public interface CommentActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() =  1))'"
 	 * @generated
 	 */
 	boolean validateCommentActivityAuthorAssignedAuthorAddr(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -284,7 +284,7 @@ public interface CommentActivity extends Act {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() =  1))'"
 	 * @generated
 	 */
 	boolean validateCommentActivityAuthorAssignedAuthorId(DiagnosticChain diagnostics, Map<Object, Object> context);

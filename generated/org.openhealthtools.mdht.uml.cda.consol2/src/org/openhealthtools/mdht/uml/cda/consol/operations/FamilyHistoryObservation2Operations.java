@@ -128,7 +128,7 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (not translation->isEmpty()) )))";
+	protected static final String VALIDATE_FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->excluding(null)->select(isNullFlavorUndefined())->reject( ( isNullFlavorUndefined() implies ((translation->isEmpty() or translation->exists(element | element.isNullFlavorUndefined())) implies (( not translation->isEmpty()) ) )))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFamilyHistoryObservation2CDTranslationP(FamilyHistoryObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation2 CD Translation P</em>}' invariant operation.

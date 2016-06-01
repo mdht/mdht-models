@@ -272,7 +272,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_SUPPLY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (not self.effectiveTime->isEmpty())";
+	protected static final String VALIDATE_PLANNED_SUPPLY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime->isEmpty() or self.effectiveTime->exists(element | element.isNullFlavorUndefined())) implies (( not self.effectiveTime->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedSupply2EffectiveTime(PlannedSupply2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Effective Time</em>}' invariant operation.

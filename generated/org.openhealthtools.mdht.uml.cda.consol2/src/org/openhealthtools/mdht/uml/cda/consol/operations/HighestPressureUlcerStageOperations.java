@@ -247,7 +247,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())";
+	protected static final String VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHighestPressureUlcerStageId(HighestPressureUlcerStage, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Highest Pressure Ulcer Stage Id</em>}' invariant operation.
@@ -453,7 +453,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
+	protected static final String VALIDATE_HIGHEST_PRESSURE_ULCER_STAGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHighestPressureUlcerStageValue(HighestPressureUlcerStage, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Highest Pressure Ulcer Stage Value</em>}' invariant operation.

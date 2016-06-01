@@ -319,7 +319,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))";
+	protected static final String VALIDATE_UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() =  1))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUnstructuredDocumentRecordTargetPatientRole2Id(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Record Target Patient Role2 Id</em>}' invariant operation.
@@ -457,7 +457,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->excluding(null).assignedAuthor->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))";
+	protected static final String VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->excluding(null).assignedAuthor->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() =  1))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUnstructuredDocumentAuthorAssignedAuthor2Addr(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Author Assigned Author2 Addr</em>}' invariant operation.
@@ -526,7 +526,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->excluding(null).assignedAuthor->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() = 1))";
+	protected static final String VALIDATE_UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->excluding(null).assignedAuthor->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() =  1))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUnstructuredDocumentAuthorAssignedAuthor2Telecom(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Author Assigned Author2 Telecom</em>}' invariant operation.
@@ -733,7 +733,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))";
+	protected static final String VALIDATE_UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() =  1))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId(UnstructuredDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unstructured Document Custodian Assigned Custodian3 Custodian Organization Id</em>}' invariant operation.
