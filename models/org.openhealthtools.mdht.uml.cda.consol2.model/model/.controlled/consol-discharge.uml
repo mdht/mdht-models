@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2Uz-4xSVEeGGzu7fmW9pXw" name="DischargeDietSection">
     <ownedComment xmi:id="_2Uz-5BSVEeGGzu7fmW9pXw" annotatedElement="_2Uz-4xSVEeGGzu7fmW9pXw">
       <body>This section records a narrative description of the expectations for diet, including proposals, goals, and order requests for monitoring, tracking, or improving the dietary control of the patient, used in a discharge from a facility such as an emergency department, hospital, or nursing home.</body>
@@ -594,9 +594,9 @@ Note that there are discrepancies between CCD and the lab domain model, such as 
     <ruleId>CONF:1098-31674</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_LTXdkI0DEeOoMZgUoTghIg" severity="WARNING" base_Property="_Hog8cI0DEeOoMZgUoTghIg"/>
-  <CDA:ValueSetConstraint xmi:id="_ShwW4I0DEeOoMZgUoTghIg" base_Property="_Hog8cI0DEeOoMZgUoTghIg" severity="WARNING">
-    <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+  <CDA:ValueSetConstraint xmi:id="_ShwW4I0DEeOoMZgUoTghIg" severity="WARNING" base_Property="_Hog8cI0DEeOoMZgUoTghIg">
     <ruleId>CONF:1098-31676</ruleId>
+    <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_ihaWkI55EeOB0eBUISUB4Q" name="OutcomeObservation">
     <ownedComment xmi:id="_nN3oMI6FEeOB0eBUISUB4Q">
@@ -827,15 +827,13 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:ConstraintValidation xmi:id="_3jVusK4qEeORf5eJaKt1KQ" base_Constraint="_vn4UAK4qEeORf5eJaKt1KQ">
     <ruleId>CONF:1098-31429</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_EIeu8MyjEeO93sHu8pHB2g" clientDependency="_bl_s0MykEeO93sHu8pHB2g" name="DischargeMedication2">
+  <uml:Class xmi:id="_EIeu8MyjEeO93sHu8pHB2g" name="DischargeMedication2">
     <ownedComment xmi:id="_QIz30MykEeO93sHu8pHB2g">
       <body>This template represents medications that the patient is intended to take (or stop) after discharge.</body>
     </ownedComment>
     <generalization xmi:id="_EIhLMMyjEeO93sHu8pHB2g" general="_hD-z0CUPEeGiOPpZVnfEJA"/>
     <substitution xmi:id="_bl_s0MykEeO93sHu8pHB2g" name="DischargeMedication" client="_EIeu8MyjEeO93sHu8pHB2g" supplier="_hD-z0CUPEeGiOPpZVnfEJA" contract="_hD-z0CUPEeGiOPpZVnfEJA"/>
-    <ownedAttribute xmi:id="_0SZ7MMyvEeO93sHu8pHB2g" name="code" visibility="private" aggregation="composite" redefinedProperty="_iYcFUCUPEeGiOPpZVnfEJA">
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-    </ownedAttribute>
+    <ownedAttribute xmi:id="_0SZ7MMyvEeO93sHu8pHB2g" name="code" visibility="private" type="_PNp8oDJrEeaFUpY8BxK5oA" aggregation="composite" redefinedProperty="_iYcFUCUPEeGiOPpZVnfEJA"/>
     <ownedAttribute xmi:id="__fREMPf8EeOYeZoWJF5yyQ" name="medicationActivity2" redefinedProperty="_3ImhkCUPEeGiOPpZVnfEJA" association="__fTgcPf8EeOYeZoWJF5yyQ">
       <type xmi:type="uml:Class" href="consol-medications.uml#_WnSCMOLAEeOc7-TVP7Wi6w"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CWGHYff9EeOYeZoWJF5yyQ" value="1"/>
@@ -847,22 +845,37 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__G91sK1mEeS-n_bBhdNjYg" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_PNp8oDJrEeaFUpY8BxK5oA" name="CD">
+      <ownedComment xmi:id="_Q-K4ADJrEeaFUpY8BxK5oA">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_PNqjsDJrEeaFUpY8BxK5oA">
+        <general xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_lDj48DJrEeaFUpY8BxK5oA" name="translation" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M6WAwTJsEeaFUpY8BxK5oA" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M6WAwDJsEeaFUpY8BxK5oA" value="1"/>
+        <redefinedProperty href="pathmap://DATATYPES_MODEL/datatypes.uml#_DtKpQD57Ed6cla2oXsPtlA"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_DU_AAMykEeO93sHu8pHB2g" base_Class="_EIeu8MyjEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.35" templateVersion="2014-06-09">
+  <CDA:CDATemplate xmi:id="_DU_AAMykEeO93sHu8pHB2g" base_Class="_EIeu8MyjEeO93sHu8pHB2g" templateId="2.16.840.1.113883.10.20.22.4.35" templateVersion="2016-03-01">
     <ruleId>CONF:1098-16760</ruleId>
     <ruleId>CONF:1098-16761</ruleId>
     <ruleId>CONF:1098-32513</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_UCOZYMykEeO93sHu8pHB2g" base_Generalization="_EIhLMMyjEeO93sHu8pHB2g"/>
-  <CDA:CodeSystemConstraint xmi:id="_0SZ7McyvEeO93sHu8pHB2g" code="75311-1" displayName="Discharge Medication" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
+  <CDA:CodeSystemConstraint xmi:id="_0SZ7McyvEeO93sHu8pHB2g" code="10183-2" displayName="Hospital discharge medications" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-19161</ruleId>
+    <ruleId>DSTU:820</ruleId>
     <ruleId>CONF:1098-32159</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2XxsQMyvEeO93sHu8pHB2g" base_Property="_0SZ7MMyvEeO93sHu8pHB2g">
     <ruleId>CONF:1098-7691</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_Trd1cOEMEeOmBMTtnrPqww" clientDependency="_sVxMAOEMEeOmBMTtnrPqww" name="HospitalDischargeDiagnosis2">
+  <uml:Class xmi:id="_Trd1cOEMEeOmBMTtnrPqww" name="HospitalDischargeDiagnosis2">
     <ownedComment xmi:id="_ao5hoOEMEeOmBMTtnrPqww">
       <body>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization or need to be monitored after hospitalization. It requires at least one Problem Observation entry.</body>
     </ownedComment>
@@ -902,7 +915,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:EntryRelationship xmi:id="_LLxDYPgEEeOYeZoWJF5yyQ" base_Association="_IZP4cPgEEeOYeZoWJF5yyQ" typeCode="SUBJ">
     <ruleId>CONF:1198-7666, CONF:1198-7667, CONF:1198-15536</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_jfuGYPytEeOmn53IDV99zw" clientDependency="_KptZoPyuEeOmn53IDV99zw" name="DischargeDiagnosisSection2">
+  <uml:Class xmi:id="_jfuGYPytEeOmn53IDV99zw" name="DischargeDiagnosisSection2">
     <ownedComment xmi:id="_CsRpAPyuEeOmn53IDV99zw">
       <body>This template represents problems or diagnoses present at the time of discharge which occurred during the hospitalization or need to be monitored after hospitalization. This section includes an optional entry to record patient conditions.</body>
     </ownedComment>
@@ -945,7 +958,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:AssociationValidation xmi:id="_MVLyEPywEeOmn53IDV99zw" severity="WARNING" base_Association="_JZutkPywEeOmn53IDV99zw">
     <ruleId>CONF:1198-7983, CONF:1198-15489</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_HlfBYPyzEeOfAK77IvEBUw" clientDependency="_aFs0QPyzEeOfAK77IvEBUw" name="DischargeMedicationsSectionEntriesOptional2">
+  <uml:Class xmi:id="_HlfBYPyzEeOfAK77IvEBUw" name="DischargeMedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_PlPGMPyzEeOfAK77IvEBUw">
       <body>This section contains the medications the patient is intended to take or stop after discharge. Current, active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list.</body>
     </ownedComment>
@@ -981,7 +994,7 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
   <CDA:AssociationValidation xmi:id="_oxVFwPy0EeOfAK77IvEBUw" severity="WARNING" base_Association="_nTDw8Py0EeOfAK77IvEBUw">
     <ruleId>CONF:1198-7820, CONF:1198-15490</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_Jt0moAI0EeSRkrs1G7P_XQ" clientDependency="_bZ0uUAI0EeSRkrs1G7P_XQ" name="DischargeMedicationsSection2">
+  <uml:Class xmi:id="_Jt0moAI0EeSRkrs1G7P_XQ" name="DischargeMedicationsSection2">
     <ownedComment xmi:id="_RgJTcAI0EeSRkrs1G7P_XQ">
       <body>This section contains the medications the patient is intended to take or stop after discharge. Current, active medications must be listed. The section may also include a patient's prescription history and indicate the source of the medication list.</body>
     </ownedComment>
@@ -1042,7 +1055,9 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <ownedEnd xmi:id="_GxQc8AI2EeSRkrs1G7P_XQ" type="_Jt0moAI0EeSRkrs1G7P_XQ" association="_GxP14AI2EeSRkrs1G7P_XQ"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_HkURkAI2EeSRkrs1G7P_XQ" base_Association="_GxP14AI2EeSRkrs1G7P_XQ">
-    <ruleId>CONF:1198-7826, CONF:1198-15491</ruleId>
+    <ruleId>CONF:1198-7826</ruleId>
+    <ruleId>CONF:1198-15491</ruleId>
+    <ruleId>DSTU:820</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_e05cIwI2EeSRkrs1G7P_XQ" base_Property="_e05cIAI2EeSRkrs1G7P_XQ">
     <ruleId>CONF:1198-7825</ruleId>
@@ -1137,5 +1152,14 @@ Often thought of as an &quot;actual outcome&quot;, the Outcome Observation may b
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-32855</ruleId>
     <ruleId>CONF:1198-32856</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_LSG3oDJsEeaFUpY8BxK5oA" base_Property="_lDj48DJrEeaFUpY8BxK5oA">
+    <ruleId>CONF:NEW</ruleId>
+    <ruleId>DSTU:820</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_T8XSADJsEeaFUpY8BxK5oA" code="75311-1" displayName="Discharge medication" base_Property="_lDj48DJrEeaFUpY8BxK5oA">
+    <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:NEW</ruleId>
+    <ruleId>DSTU:820</ruleId>
   </CDA:CodeSystemConstraint>
 </xmi:XMI>

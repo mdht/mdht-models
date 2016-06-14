@@ -21,7 +21,6 @@ import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.ED;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
-import org.eclipse.mdht.uml.hl7.datatypes.PQ;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
@@ -38,7 +37,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.VitalSignObservation2O
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationInterpretationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Interpretation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservation2PQUnit(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation2 PQ Unit</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Reference Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2#validateVitalSignObservationTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Sign Observation Text Reference Value</em>}</li>
@@ -126,46 +124,46 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 		validateVitalSignObservation2AuthorParticipationTestCase.doValidationTest();
 	}
 
-	/**
-	*
-	* @generated NOT
-	* modified VALIDATE_VITAL_SIGN_OBSERVATION2_PQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP due to inline datatype OCL generation issue
-	*/
-	@Test
-	public void testValidateVitalSignObservation2PQUnit() {
-		OperationsTestCase<VitalSignObservation2> validateVitalSignObservation2PQUnitTestCase = new OperationsTestCase<VitalSignObservation2>(
-			"validateVitalSignObservation2PQUnit",
-			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION2_PQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(VitalSignObservation2 target) {
-				target.init();
-				PQ value = DatatypesFactory.eINSTANCE.createPQ();
-				target.getValues().add(value);
-			}
-
-			@Override
-			protected void updateToPass(VitalSignObservation2 target) {
-				PQ value = DatatypesFactory.eINSTANCE.createPQ();
-				value.setUnit("hasUnit");
-				for (int i = 0; i < target.getValues().size(); i++) {
-					target.getValues().set(i, value);
-				}
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return VitalSignObservation2Operations.validateVitalSignObservation2PQUnit(
-					(VitalSignObservation2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateVitalSignObservation2PQUnitTestCase.doValidationTest();
-	}
+	// /**
+	// *
+	// * @generated NOT
+	// * modified VALIDATE_VITAL_SIGN_OBSERVATION2_PQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP due to inline datatype OCL generation issue
+	// */
+	// @Test
+	// public void testValidateVitalSignObservation2PQUnit() {
+	// OperationsTestCase<VitalSignObservation2> validateVitalSignObservation2PQUnitTestCase = new OperationsTestCase<VitalSignObservation2>(
+	// "validateVitalSignObservation2PQUnit",
+	// operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGN_OBSERVATION2_PQ_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	// objectFactory) {
+	//
+	// @Override
+	// protected void updateToFail(VitalSignObservation2 target) {
+	// target.init();
+	// PQ value = DatatypesFactory.eINSTANCE.createPQ();
+	// target.getValues().add(value);
+	// }
+	//
+	// @Override
+	// protected void updateToPass(VitalSignObservation2 target) {
+	// PQ value = DatatypesFactory.eINSTANCE.createPQ();
+	// value.setUnit("hasUnit");
+	// for (int i = 0; i < target.getValues().size(); i++) {
+	// target.getValues().set(i, value);
+	// }
+	//
+	// }
+	//
+	// @Override
+	// protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+	//
+	// return VitalSignObservation2Operations.validateVitalSignObservation2PQUnit(
+	// (VitalSignObservation2) objectToTest, diagnostician, map);
+	// }
+	//
+	// };
+	//
+	// validateVitalSignObservation2PQUnitTestCase.doValidationTest();
+	// }
 
 	/**
 	*

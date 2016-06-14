@@ -79,6 +79,25 @@ public class DischargeMedication2Impl extends DischargeMedicationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateDischargeMedication2CDTranslation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DischargeMedication2Operations.validateDischargeMedication2CDTranslation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDischargeMedication2CDTranslationP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DischargeMedication2Operations.validateDischargeMedication2CDTranslationP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EList<MedicationActivity2> getConsolMedicationActivity2s() {
 		return DischargeMedication2Operations.getConsolMedicationActivity2s(this);
