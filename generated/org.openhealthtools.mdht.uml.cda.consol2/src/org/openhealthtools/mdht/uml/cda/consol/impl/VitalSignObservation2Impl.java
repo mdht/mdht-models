@@ -73,16 +73,6 @@ public class VitalSignObservation2Impl extends VitalSignObservationImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateVitalSignObservation2PQUnit(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignObservation2Operations.validateVitalSignObservation2PQUnit(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateVitalSignObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignObservation2Operations.validateVitalSignObservationTextReference(this, diagnostics, context);
 	}

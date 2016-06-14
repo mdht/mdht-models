@@ -168,6 +168,7 @@
 		<replaceTemplateNames oldTemplateName="Postprocedure Diagnosis2" newTemplateName="Postprocedure Diagnosis (V3)" />
 		<replaceTemplateNames oldTemplateName="Preoperative Diagnosis2" newTemplateName="Preoperative Diagnosis (V3)" />
 		<replaceTemplateNames oldTemplateName="Consol Risk Concern Act" newTemplateName="Consol Risk Concern Act (V2)" />
+		<replaceTemplateNames oldTemplateName="Discharge Medication2" newTemplateName="Discharge Medication (V3)" />
 		<!-- other -->
 		<replaceTemplateNames oldTemplateName="US Realm Header Patient Generated Document" newTemplateName="US Realm Header - Patient Generated Document (V2)" />
 	</target>
