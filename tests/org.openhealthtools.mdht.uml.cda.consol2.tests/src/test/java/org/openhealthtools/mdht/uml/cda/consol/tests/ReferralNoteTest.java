@@ -566,7 +566,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 				/* HistoryOfPresentIllnessSection */
 				HistoryOfPresentIllnessSection section =
 
-						ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
+				ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
 
 				target.addSection(section);
 
@@ -744,7 +744,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 				/* ReviewOfSystemsSection */
 				ReviewOfSystemsSection section =
 
-						ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
+				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
 
 				target.addSection(section);
 
@@ -956,7 +956,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 				/* NutritionSection */
 				NutritionSection section =
 
-						ConsolFactory.eINSTANCE.createNutritionSection().init();
+				ConsolFactory.eINSTANCE.createNutritionSection().init();
 
 				target.addSection(section);
 
@@ -997,7 +997,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 				/* MentalStatusSection */
 				MentalStatusSection section =
 
-						ConsolFactory.eINSTANCE.createMentalStatusSection().init();
+				ConsolFactory.eINSTANCE.createMentalStatusSection().init();
 
 				target.addSection(section);
 
@@ -1106,7 +1106,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 				/* AssessmentSection */
 				AssessmentSection section =
 
-						ConsolFactory.eINSTANCE.createAssessmentSection().init();
+				ConsolFactory.eINSTANCE.createAssessmentSection().init();
 
 				target.addSection(section);
 
@@ -1216,7 +1216,7 @@ public class ReferralNoteTest extends CDAValidationTest {
 				/* GeneralStatusSection */
 				GeneralStatusSection section =
 
-						ConsolFactory.eINSTANCE.createGeneralStatusSection().init();
+				ConsolFactory.eINSTANCE.createGeneralStatusSection().init();
 
 				target.addSection(section);
 
