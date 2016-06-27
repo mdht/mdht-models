@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2MAoIBSVEeGGzu7fmW9pXw" name="ImmunizationActivity">
     <ownedComment xmi:id="_2MQfwhSVEeGGzu7fmW9pXw" annotatedElement="_2MAoIBSVEeGGzu7fmW9pXw">
       <body>&lt;p>An Immunization Activity describes immunization substance administrations that have actually occurred or are intended to occur. Immunization Activities in &quot;INT&quot; mood are reflections of immunizations a clinician intends a patient to receive. Immunization Activities in &quot;EVN&quot; mood reflect immunizations actually received.&lt;/p>
@@ -528,12 +528,12 @@
     <ruleId>CONF:8838</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_HZBV8BqlEeGo461UQq-B1g" base_Property="_2ME5kRSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:8839, R2.1=CONF:1198-8839</ruleId>
+    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_T_-PYBqlEeGo461UQq-B1g" base_Property="_2MHV0BSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:8840, R2.1=CONF:1198-8840</ruleId>
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_aN2t8BqlEeGo461UQq-B1g" severity="WARNING" base_Property="_2MHV1BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8841, R2.1=CONF:1198-8841</ruleId>
@@ -557,8 +557,8 @@
     <ruleId>CONF:8866, CONF:8867, CONF:15541</ruleId>
   </CDA:EntryRelationship>
   <CDA:ValueSetConstraint xmi:id="_xMN1MBqnEeGo461UQq-B1g" base_Property="_2MDEYxSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
     <ruleId>CONF:8827, R2.1=CONF:1198-8827</ruleId>
+    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_OEcn8BqsEeGo461UQq-B1g" base_Association="_o-v9khVOEeGbmN_W114JUw">
     <ruleId>CONF:8847</ruleId>
@@ -574,8 +574,8 @@
     <ruleId>CONF:8992</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_m_dk8Bq1EeGo461UQq-B1g" base_Property="_DruzARVOEeGbmN_W114JUw">
-    <reference href="../consol-vocab.uml#_7bYRUGiaEeGYO5jeo5rr2w"/>
     <ruleId>CONF:8995</ruleId>
+    <reference href="../consol-vocab.uml#_7bYRUGiaEeGYO5jeo5rr2w"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_BJU_EBrdEeGo461UQq-B1g" base_Property="_Dr388BVOEeGbmN_W114JUw">
     <ruleId>CONF:8994</ruleId>
@@ -677,8 +677,8 @@
     <ruleId>CONF:9011</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="__zeu4EX8EeG6e5lG0YsSyQ" base_Property="_xgWAcEX8EeG6e5lG0YsSyQ">
-    <reference href="../consol-vocab.uml#_2MRG0BSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:9007</ruleId>
+    <reference href="../consol-vocab.uml#_2MRG0BSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:TextValue xmi:id="_IuilYEX9EeG6e5lG0YsSyQ" severity="WARNING" base_Property="_xgWngEX8EeG6e5lG0YsSyQ">
     <ruleId>CONF:9014</ruleId>
@@ -899,12 +899,12 @@ The priority of the immunization activity to the patient and provider is communi
     <ruleId>CONF:1098-32102</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_jioDUJXJEeOgXcDbh8Igkw" base_Property="_rorhRJXFEeOgXcDbh8Igkw">
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-32127</ruleId>
+    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_-P-2wJXJEeOgXcDbh8Igkw" base_Property="_romowJXFEeOgXcDbh8Igkw">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-32128</ruleId>
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_-OtZgJXLEeOgXcDbh8Igkw" severity="WARNING" base_Property="_8MbYsJXLEeOgXcDbh8Igkw">
     <ruleId>CONF:1098-32130</ruleId>
@@ -922,8 +922,8 @@ The priority of the immunization activity to the patient and provider is communi
     <ruleId>CONF:1098-32104</ruleId>
   </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_lbBQsJgsEeOgXcDbh8Igkw" base_Property="_rorhQJXFEeOgXcDbh8Igkw">
-    <reference href="../consol-vocab.uml#_jUMsBgCtEeWNGdLwd_3YGQ"/>
     <ruleId>CONF:1098-32097</ruleId>
+    <reference href="../consol-vocab.uml#_jUMsBgCtEeWNGdLwd_3YGQ"/>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_F4Z9cK70EeORf5eJaKt1KQ" memberEnd="_F4W6IK70EeORf5eJaKt1KQ _F4akgK70EeORf5eJaKt1KQ">
     <ownedEnd xmi:id="_F4akgK70EeORf5eJaKt1KQ" type="_KRcPwJXFEeOgXcDbh8Igkw" association="_F4Z9cK70EeORf5eJaKt1KQ"/>
@@ -940,7 +940,7 @@ The priority of the immunization activity to the patient and provider is communi
     <ruleId>CONF:1098-32110</ruleId>
   </CDA:EntryRelationship>
   <CDA:PropertyValidation xmi:id="_Y1-IwK72EeORf5eJaKt1KQ" base_Property="_rorhQJXFEeOgXcDbh8Igkw"/>
-  <uml:Class xmi:id="_zI6vcOE7EeOTq9XEMvvkWw" clientDependency="_uJQiEOE8EeOTq9XEMvvkWw" name="ImmunizationActivity2">
+  <uml:Class xmi:id="_zI6vcOE7EeOTq9XEMvvkWw" name="ImmunizationActivity2">
     <ownedComment xmi:id="_Jul70OE8EeOTq9XEMvvkWw">
       <body>&lt;p>&#xD;
 An Immunization Activity describes immunization substance administrations that have actually occurred or are intended to occur. Immunization Activities in &quot;INT&quot; mood are reflections of immunizations a clinician intends a patient to receive. Immunization Activities in &quot;EVN&quot; mood reflect immunizations actually received.&#xD;
@@ -1159,21 +1159,21 @@ This information should be included in an Immunization Activity when available. 
     <ruleId>CONF:1198-8833</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_D06X8OHGEeO04sHNODkHmQ" base_Property="_BHNbkOHGEeO04sHNODkHmQ">
-    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
     <ruleId>CONF:1198-32359</ruleId>
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_CXurc-HKEeO04sHNODkHmQ" severity="INFO" base_Property="_CXurcOHKEeO04sHNODkHmQ">
     <ruleId>CONF:1198-8838</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Z9QyUOHKEeO04sHNODkHmQ" severity="INFO" base_Property="_Z9QLQOHKEeO04sHNODkHmQ"/>
   <CDA:ValueSetConstraint xmi:id="_Z9RZYOHKEeO04sHNODkHmQ" base_Property="_Z9QLQOHKEeO04sHNODkHmQ">
-    <reference href="../consol-vocab.uml#_maiyYOHKEeO04sHNODkHmQ"/>
     <ruleId>CONF:1198-8846</ruleId>
+    <reference href="../consol-vocab.uml#_maiyYOHKEeO04sHNODkHmQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_JbaXUOHPEeO04sHNODkHmQ" severity="INFO">
     <ruleId>CONF:1198-8985</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_Rx8LIOHUEeO04sHNODkHmQ" clientDependency="_nm3QAOHUEeO04sHNODkHmQ" name="ImmunizationMedicationInformation2">
+  <uml:Class xmi:id="_Rx8LIOHUEeO04sHNODkHmQ" name="ImmunizationMedicationInformation2">
     <ownedComment xmi:id="_xLRlgOHUEeO04sHNODkHmQ">
       <body>The Immunization Medication Information represents product information about the immunization substance. The vaccine manufacturer and vaccine lot number are typically recorded in the medical record and should be included if known.</body>
     </ownedComment>
@@ -1234,9 +1234,12 @@ This information should be included in an Immunization Activity when available. 
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sCU5QeHVEeO04sHNODkHmQ" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_2daj0MKMEeSqg-Exmsy2kg" name="lotNumberText" visibility="private" aggregation="composite" redefinedProperty="_xgWngEX8EeG6e5lG0YsSyQ">
+        <ownedComment xmi:id="_90fFMDyNEeaJttsCYk-pKw">
+          <body>Note: lotNumberText should be included if known.</body>
+        </ownedComment>
         <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_76a_EcKMEeSqg-Exmsy2kg" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_76a_EMKMEeSqg-Exmsy2kg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iBxMMDyNEeaJttsCYk-pKw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iBs6wDyNEeaJttsCYk-pKw" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Ft3skOHlEeO04sHNODkHmQ" name="CE">
         <generalization xmi:id="_Ft4ToOHlEeO04sHNODkHmQ">
@@ -1258,8 +1261,8 @@ This information should be included in an Immunization Activity when available. 
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_jO7mcOHUEeO04sHNODkHmQ" base_Generalization="_Rx8LIeHUEeO04sHNODkHmQ"/>
   <CDA:ValueSetConstraint xmi:id="_sCU5Q-HVEeO04sHNODkHmQ" base_Property="_sCU5QOHVEeO04sHNODkHmQ">
-    <reference href="../consol-vocab.uml#_UMJcYeHXEeO04sHNODkHmQ"/>
     <ruleId>CONF:1098-9007</ruleId>
+    <reference href="../consol-vocab.uml#_UMJcYeHXEeO04sHNODkHmQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_TXeV0OHlEeO04sHNODkHmQ" severity="INFO" base_Property="_PMPEcOHlEeO04sHNODkHmQ">
     <ruleId>CONF:1098-31543</ruleId>
@@ -1306,7 +1309,7 @@ This information should be included in an Immunization Activity when available. 
   <CDA:AssociationValidation xmi:id="_ejvggPgLEeOYeZoWJF5yyQ" base_Association="_Vq0YAPgLEeOYeZoWJF5yyQ">
     <ruleId>CONF:1198-15546</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_kdQhIPy3EeO1SvUcmWeLDQ" clientDependency="_7ore4Py3EeO1SvUcmWeLDQ" name="ImmunizationsSectionEntriesOptional2">
+  <uml:Class xmi:id="_kdQhIPy3EeO1SvUcmWeLDQ" name="ImmunizationsSectionEntriesOptional2">
     <ownedComment xmi:id="_5M3jwPy3EeO1SvUcmWeLDQ">
       <body>The Immunizations Section defines a patient's current immunization status and pertinent immunization history. The primary use case for the Immunization Section is to enable communication of a patient's immunization status. The section should include current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.</body>
     </ownedComment>
@@ -1337,7 +1340,7 @@ This information should be included in an Immunization Activity when available. 
   <CDA:AssociationValidation xmi:id="_YSjpYPy4EeO1SvUcmWeLDQ" severity="WARNING" base_Association="_XHwDIPy4EeO1SvUcmWeLDQ">
     <ruleId>CONF:1198-7969, CONF:1198-15494</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_14bikALNEeSIPYXg7AgJzw" clientDependency="_G26c8ALOEeSIPYXg7AgJzw" name="ImmunizationsSection2">
+  <uml:Class xmi:id="_14bikALNEeSIPYXg7AgJzw" name="ImmunizationsSection2">
     <ownedComment xmi:id="_64PrgALNEeSIPYXg7AgJzw">
       <body>The Immunizations Section defines a patient's current immunization status and pertinent immunization history. The primary use case for the Immunization Section is to enable communication of a patient's immunization status. The section should include current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.</body>
     </ownedComment>
@@ -1492,8 +1495,9 @@ This information should be included in an Immunization Activity when available. 
   <CDA:AssociationValidation xmi:id="_y8WpYMHzEeST26B_nQ4gxA" base_Association="_yQQYYMHzEeST26B_nQ4gxA">
     <ruleId>CONF:1198-31514</ruleId>
   </CDA:AssociationValidation>
-  <CDA:TextValue xmi:id="_2dcZAMKMEeSqg-Exmsy2kg" base_Property="_2daj0MKMEeSqg-Exmsy2kg">
+  <CDA:TextValue xmi:id="_2dcZAMKMEeSqg-Exmsy2kg" severity="WARNING" base_Property="_2daj0MKMEeSqg-Exmsy2kg">
     <ruleId>CONF:1098-9014</ruleId>
+    <ruleId>DSTU:995</ruleId>
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_5ss-wMKWEeSqg-Exmsy2kg" base_Property="_PMPEcOHlEeO04sHNODkHmQ" message="This code MAY contain zero or more [0..*] translation (CONF:1098-31543), which MAY be selected from ValueSet Vaccine Clinical Drug 2.16.840.1.113762.1.4.1010.8 DYNAMIC or from ValueSet Specific Vaccine Clinical Drug 2.16.840.1.113762.1.4.1010.10 DYNAMIC (CONF:1098-31881)" severity="INFO">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
