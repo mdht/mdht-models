@@ -6953,7 +6953,7 @@ The Care Plan is continually evolving and dynamic. The Care Plan CDA instance is
     <ruleId>CONF:1198-32877</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_3V4okJ5zEeOr4eM3k36wAg" code="52521-2" displayName="Overall Plan of Care / Advance Care Directives" base_Property="_WQ858J5xEeOr4eM3k36wAg">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-28746, CONF:1198-28747</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_2aBAwJ50EeOr4eM3k36wAg" memberEnd="_2Z_yoJ50EeOr4eM3k36wAg _2aBAwZ50EeOr4eM3k36wAg">
@@ -10051,7 +10051,7 @@ The serviceEvent/performer represents the healthcare providers involved in the c
               <specification xmi:type="uml:OpaqueExpression" xmi:id="_RZSiQSJZEeSBLYc2hU6GfA">
                 <language>Analysis</language>
                 <language>OCL</language>
-                <body>If this assignedEntity is an assignedPerson, the assignedEntity SHOULD contain zero or one [0..1] id such that it SHALL contain exactly one [1..1] @root=&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
+                <body>If the assignedEntity is an assignedPerson, one id SHOULD contain exactly one [1..1] @root=&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
                 <body>(not assignedPerson.oclIsUndefined() and not id->isEmpty()) implies id->exists(id | (id.isNullFlavorDefined() and id.extension->isEmpty() and id.root->isEmpty()) or (id.isNullFlavorDefined() and id.root='2.16.840.1.113883.4.6') or (id.root='2.16.840.1.113883.4.6' and id.extension->size() = 1))</body>
               </specification>
             </ownedRule>
@@ -10060,8 +10060,8 @@ The serviceEvent/performer represents the healthcare providers involved in the c
             </generalization>
             <ownedAttribute xmi:id="_ZU3joCJXEeSBLYc2hU6GfA" name="id" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_clYSICJXEeSBLYc2hU6GfA" value="1"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_clXrECJXEeSBLYc2hU6GfA" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dxC64DyuEeaJttsCYk-pKw" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dxAeoDyuEeaJttsCYk-pKw" value="*"/>
               <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
             </ownedAttribute>
             <ownedAttribute xmi:id="_EqLgcCJbEeSBLYc2hU6GfA" name="assignedPerson" association="_EqMukCJbEeSBLYc2hU6GfA">
@@ -10144,9 +10144,12 @@ The serviceEvent/performer represents the healthcare providers involved in the c
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_baLqUCJXEeSBLYc2hU6GfA" base_Property="_ZU3joCJXEeSBLYc2hU6GfA">
     <ruleId>CONF:1198-30882</ruleId>
+    <ruleId>DSTU:1015</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_RZTJUCJZEeSBLYc2hU6GfA" severity="WARNING" base_Constraint="_RZSiQCJZEeSBLYc2hU6GfA">
-    <ruleId>CONF:1198-32466, CONF:1198-32484</ruleId>
+    <ruleId>CONF:1198-32466</ruleId>
+    <ruleId>CONF:1198-32484</ruleId>
+    <ruleId>DSTU:1015</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_EqMukCJbEeSBLYc2hU6GfA" memberEnd="_EqLgcCJbEeSBLYc2hU6GfA _EqNVoCJbEeSBLYc2hU6GfA">
     <ownedEnd xmi:id="_EqNVoCJbEeSBLYc2hU6GfA" type="_Q2RmsCJXEeSBLYc2hU6GfA" association="_EqMukCJbEeSBLYc2hU6GfA"/>
