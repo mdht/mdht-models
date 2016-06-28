@@ -1140,36 +1140,646 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 				"VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			private static final String NPI_ID = "2.16.840.1.113883.4.6";
+
+			private static final String INCORRECT_NPI_ID = "2.16.777.7.777777.7.7";
+
+			private static final String EXT_VAL = "ValueIsIrrelevant";
+
 			@Override
-			protected void updateToFail(ContinuityOfCareDocument2 target) {
-				target.init();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				Person ap = CDAFactory.eINSTANCE.createPerson();
-				ae.setAssignedPerson(ap);
-				ae.getIds().add(DatatypesFactory.eINSTANCE.createII("Not2.16.840.1.113883.4.6", "12345"));
-				perf.setAssignedEntity(ae);
-				se.getPerformers().add(perf);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// f1
+						// <assignedPerson> exists and there is one id and the id/@root does NOT = '2.16.840.1.113883.4.6'
+						// and the id's/@extension exists)
+						// expect fail because assigned person exists and the only root (NPI) is incorrect
+						System.out.println("\nf1");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// f2
+						// -<assignedPerson> exists and there is one id and (the id/@root = '2.16.840.1.113883.4.6'
+						// and the only id/@extension DOES NOT EXIST)
+						// expect fail because assigned person exists and the only id/@extension does not exist
+						System.out.println("\nf2");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// f3
+						// -<assignedPerson> exists and there is one id and (the id/@root does NOT = '2.16.840.1.113883.4.6'
+						// and the id's/@extension DOES NOT EXIST)
+						// expect fail because assigned person exists and the root (NPI) is incorrect and
+						// the only id/@extension does not exist
+						System.out.println("\nf3");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				// null testing
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// fn1
+						// one id
+						// nullFlavor replacing the root instead of the extension
+						System.out.println("\nfn1");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						II id = DatatypesFactory.eINSTANCE.createII();
+						id.setExtension(EXT_VAL);
+						ae.getIds().add(id);
+						ae.getIds().get(0).setNullFlavor(NullFlavor.UNK);
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// fn2
+						// one id
+						// incorrect NPI in the root mixed with a null flavor
+						System.out.println("\nfn2 \nincorrect NPI in the root mixed with a null flavor");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID));
+						ae.getIds().get(0).setNullFlavor(NullFlavor.UNK);
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				// old tests
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// one id only
+						// Id is NOT equal to 2.16.840.1.113883.4.6 (or does not have a nullFlavor set instead)
+						// and does not have an @extension (has assignedPerson)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("111111"));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// one id only
+						// id does not have an attribute root or extension (or any attribute) (or does not have a nullFlavor set instead)
+						// (has assignedPerson)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// two ids
+						// Has Id but has two id's with a root each (has assignedPerson) (neither of which have a valid NPI)
+						// It should fail, but under the hood, it should only be failing due to not having at least one valid id as opposed to failing
+						// both specifically
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("111111"));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("222222"));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(ContinuityOfCareDocument2 target) {
+						// two ids
+						// Has an assignedPerson element and the assignedEntity has two ids (neither of which have a valid NPI)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII());
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
 			}
 
 			@Override
-			protected void updateToPass(ContinuityOfCareDocument2 target) {
-				target.getDocumentationOfs().clear();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				Person ap = CDAFactory.eINSTANCE.createPerson();
-				ae.setAssignedPerson(ap);
-				ae.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.6", "12345"));
-				perf.setAssignedEntity(ae);
-				se.getPerformers().add(perf);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// p1
+						// one id only
+						// <assignedPerson> exists and there is an id and (the id/@root = '2.16.840.1.113883.4.6'
+						// and the id's/@extension exists)
+						System.out.println("\np1");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// p2
+						// NO id
+						// If there is no id, none of the checks can be enforced, instead, that will be caught by:
+						// Consol Assigned Author SHALL contain at least one [1..*] id (CONF:5449)
+						// If there's an assignedPerson element and the assignedAuthor has zero (no) ids
+						System.out.println("\np2");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// p3
+						// one id only
+						// *NO ASSIGNED PERSON
+						// If <assignedPerson> DOES NOT exist (we don't enforce the id/@root or id/@extension NPI warning at all
+						// For the example we have an incorrect NPI, which is NOT checked.
+						System.out.println("\np3");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				// nullFlavor tests
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// pn1
+						// one id only
+						// correct NPI root and a nullFlavor at the same time (no extension)
+						System.out.println("\npn1");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						II id = DatatypesFactory.eINSTANCE.createII();
+						id.setRoot(NPI_ID);
+						id.setNullFlavor(NullFlavor.UNK);
+						ae.getIds().add(id);
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// pn2
+						// one id only
+						// nullFlavor in id (and nothing else in id), has assignedPerson
+						System.out.println("\npn2");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NullFlavor.ASKU));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				// multiple id tests (see errata 1015)
+				// http://www.hl7.org/dstucomments/showdetail_comment.cfm?commentid=1015
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// DSTU:1015-1
+						// two valid ids
+						// <assignedPerson> exists and there are 2 ids
+						// the id/@root both = '2.16.840.1.113883.4.6' and the id/@extension both exist
+						System.out.println("\nDSTU:1015-1");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// DSTU:1015-2
+						// three valid ids
+						// <assignedPerson> exists and there are 3 ids
+						// the id/@root all = '2.16.840.1.113883.4.6' and the id/@extension all exist
+						System.out.println("\nDSTU:1015-2");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// Note: This is the most important test for verifying errata 1015 is working
+						// DSTU:1015-3
+						// one valid id, one invalid id, only one valid id is needed to pass
+						// <assignedPerson> exists and there are 2 ids
+						// one id/@root = '2.16.840.1.113883.4.6' and the other is invalid
+						// the id/@extension both exist
+						System.out.println("\nDSTU:1015-3");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// DSTU:1015-4
+						// one valid id, two invalid ids, only one valid id is needed to pass
+						// <assignedPerson> exists and there are 3 ids
+						// one id/@root = '2.16.840.1.113883.4.6' and the other 2 are invalid
+						// the id/@extension all exist
+						System.out.println("\nDSTU:1015-4");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID, EXT_VAL));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NPI_ID, EXT_VAL));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// DSTU:1015-5
+						// two ids
+						// 1st id: incorrect NPI and has extension
+						// 2nd id: correct NPI root and a nullFlavor at the same time (no extension)
+						System.out.println("\nDSTU:1015-5");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(INCORRECT_NPI_ID, EXT_VAL));
+						II id2 = DatatypesFactory.eINSTANCE.createII();
+						id2.setRoot(NPI_ID);
+						id2.setNullFlavor(NullFlavor.UNK);
+						ae.getIds().add(id2);
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// DSTU:1015-6
+						// two ids
+						// 1st and second id are the same (except nullFlavor type):
+						// nullFlavor in id (and nothing else in id), has assignedPerson
+						System.out.println("\nDSTU:1015-6");
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+
+						ae.setAssignedPerson(CDAFactory.eINSTANCE.createPerson());
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NullFlavor.ASKU));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NullFlavor.UNK));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				// *no assignedPerson tests which negates the requirements
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// one id only
+						// Id is equal to 2.16.840.1.113883.4.6 (without assignedPerson)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.6"));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// one id only
+						// nullFlavor on Id without assignedPerson
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII(NullFlavor.ASKU));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// one id only
+						// (*no assignedPerson) and no extension
+						// Id is NOT equal to 2.16.840.1.113883.4.6 (or does not have a nullFlavor set instead)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("111111"));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// one id only
+						// Id does not have an attribute root (or any attribute) (or does not have a nullFlavor set instead) and no extension
+						// but *no assignedPerson
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// two incorrect ids
+						// Has Id but has two roots (*no assignedPerson)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("111111"));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("222222"));
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// one empty id element but no assignedPerson to enforce rule
+						// Has Id but has zero roots (*no assignedPerson)
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII());
+
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
 			}
 
 			@Override
@@ -1198,8 +1808,8 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(ContinuityOfCareDocument2 target) {
+				// no id
 				target.init();
-
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
@@ -1211,18 +1821,43 @@ public class ContinuityOfCareDocument2Test extends CDAValidationTest {
 			}
 
 			@Override
-			protected void updateToPass(ContinuityOfCareDocument2 target) {
-				target.getDocumentationOfs().clear();
+			public void addPassTests() {
 
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
-				ae.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.6", "12345"));
-				perf.setAssignedEntity(ae);
-				se.getPerformers().add(perf);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// 1 id only
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.6", "5555555555"));
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ContinuityOfCareDocument2 target) {
+						// more than 1 id
+						target.init();
+						DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
+						ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
+						Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+						AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.4.6", "5555555555"));
+						ae.getIds().add(DatatypesFactory.eINSTANCE.createII("2.16.840.1.113883.9.9", "54321"));
+						perf.setAssignedEntity(ae);
+						se.getPerformers().add(perf);
+						dof.setServiceEvent(se);
+						target.getDocumentationOfs().add(dof);
+					}
+				});
+
 			}
 
 			@Override
