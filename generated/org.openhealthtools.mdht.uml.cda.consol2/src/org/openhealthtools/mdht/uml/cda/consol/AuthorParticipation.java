@@ -21,10 +21,10 @@ import org.eclipse.mdht.uml.cda.Author;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAuthorParticipation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AuthorParticipationTemplateId AuthorParticipationTime AuthorParticipationAssignedAuthor AuthorParticipationAssignedAuthorRepresentedOrganizationClassCode AuthorParticipationAssignedAuthorId' templateId.root='2.16.840.1.113883.10.20.22.4.119' constraints.validation.info='AuthorParticipationAssignedAuthorAssignedPersonName AuthorParticipationAssignedAuthorRepresentedOrganizationId AuthorParticipationAssignedAuthorRepresentedOrganizationName AuthorParticipationAssignedAuthorRepresentedOrganizationTelecom AuthorParticipationAssignedAuthorRepresentedOrganizationAddr AuthorParticipationAssignedAuthorAssignedPerson AuthorParticipationAssignedAuthorRepresentedOrganization' constraints.validation.query='AuthorParticipationAssignedAuthorAssignedPersonName AuthorParticipationAssignedAuthorRepresentedOrganizationClassCode AuthorParticipationAssignedAuthorRepresentedOrganizationId AuthorParticipationAssignedAuthorRepresentedOrganizationName AuthorParticipationAssignedAuthorRepresentedOrganizationTelecom AuthorParticipationAssignedAuthorRepresentedOrganizationAddr AuthorParticipationAssignedAuthorCodeTerminology AuthorParticipationAssignedAuthorId AuthorParticipationAssignedAuthorCode AuthorParticipationAssignedAuthorAssignedPerson AuthorParticipationAssignedAuthorRepresentedOrganization' constraints.validation.warning='AuthorParticipationAssignedAuthorCodeTerminology AuthorParticipationAssignedAuthorCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AuthorParticipationTemplateId AuthorParticipationTime AuthorParticipationAssignedAuthor AuthorParticipationAssignedAuthorId' templateId.root='2.16.840.1.113883.10.20.22.4.119' constraints.validation.info='AuthorParticipationAssignedAuthorAssignedPersonName AuthorParticipationAssignedAuthorRepresentedOrganizationId AuthorParticipationAssignedAuthorRepresentedOrganizationName AuthorParticipationAssignedAuthorRepresentedOrganizationTelecom AuthorParticipationAssignedAuthorRepresentedOrganizationAddr AuthorParticipationAssignedAuthorAssignedPerson AuthorParticipationAssignedAuthorRepresentedOrganization' constraints.validation.query='AuthorParticipationAssignedAuthorAssignedPersonName AuthorParticipationAssignedAuthorRepresentedOrganizationId AuthorParticipationAssignedAuthorRepresentedOrganizationName AuthorParticipationAssignedAuthorRepresentedOrganizationTelecom AuthorParticipationAssignedAuthorRepresentedOrganizationAddr AuthorParticipationAssignedAuthorCodeTerminology AuthorParticipationAssignedAuthorId AuthorParticipationAssignedAuthorCode AuthorParticipationAssignedAuthorAssignedPerson AuthorParticipationAssignedAuthorRepresentedOrganization' constraints.validation.warning='AuthorParticipationAssignedAuthorCodeTerminology AuthorParticipationAssignedAuthorCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAuthorParticipationAssignedAuthor constraints.validation.warning='AuthorParticipationAssignedAuthorCodeTerminology AuthorParticipationAssignedAuthorCode' constraints.validation.error='AuthorParticipationAssignedAuthorId' constraints.validation.info='AuthorParticipationAssignedAuthorAssignedPerson AuthorParticipationAssignedAuthorRepresentedOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAuthorParticipationAssignedAuthorAssignedPerson constraints.validation.info='AuthorParticipationAssignedAuthorAssignedPersonName'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAuthorParticipationAssignedAuthorRepresentedOrganization classCode='ORG' constraints.validation.error='AuthorParticipationAssignedAuthorRepresentedOrganizationClassCode' constraints.validation.info='AuthorParticipationAssignedAuthorRepresentedOrganizationId AuthorParticipationAssignedAuthorRepresentedOrganizationName AuthorParticipationAssignedAuthorRepresentedOrganizationTelecom AuthorParticipationAssignedAuthorRepresentedOrganizationAddr'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAuthorParticipationAssignedAuthorRepresentedOrganization constraints.validation.info='AuthorParticipationAssignedAuthorRepresentedOrganizationId AuthorParticipationAssignedAuthorRepresentedOrganizationName AuthorParticipationAssignedAuthorRepresentedOrganizationTelecom AuthorParticipationAssignedAuthorRepresentedOrganizationAddr'"
  * @generated
  */
 public interface AuthorParticipation extends Author {
@@ -75,19 +75,6 @@ public interface AuthorParticipation extends Author {
 	 * @generated
 	 */
 	boolean validateAuthorParticipationAssignedAuthorAssignedPersonName(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedAuthor->excluding(null).representedOrganization->excluding(null)->reject(isDefined(\'classCode\') and classCode=vocab::EntityClassOrganization::ORG)'"
-	 * @generated
-	 */
-	boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**

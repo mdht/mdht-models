@@ -37,7 +37,6 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorAssignedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Assigned Person Name</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Telecom</em>}</li>
@@ -305,75 +304,6 @@ public class AuthorParticipationOperations extends AuthorOperations {
 							ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME,
 							ConsolPlugin.INSTANCE.getString(
 								"AuthorParticipationAuthorParticipationAssignedAuthorAssignedPersonName"),
-							new Object[] { eObject }));
-				}
-
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(AuthorParticipation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Class Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(AuthorParticipation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedAuthor->excluding(null).representedOrganization->excluding(null)->reject(isDefined('classCode') and classCode=vocab::EntityClassOrganization::ORG)";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(AuthorParticipation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Class Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(AuthorParticipation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Query<?, ?, ?> VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param authorParticipation The receiving '<em><b>Author Participation</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	@SuppressWarnings("unchecked")
-	public static boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(
-			AuthorParticipation authorParticipation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.AUTHOR_PARTICIPATION);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(
-					VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(
-					oclExpression);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		Object oclResult = VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(
-			authorParticipation);
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
-
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-					diagnostics.add(
-						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-							ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_CLASS_CODE,
-							ConsolPlugin.INSTANCE.getString(
-								"AuthorParticipationAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode"),
 							new Object[] { eObject }));
 				}
 

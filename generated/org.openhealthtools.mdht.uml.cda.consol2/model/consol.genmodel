@@ -14750,10 +14750,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorAssignedPersonName/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorAssignedPersonName/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationClassCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationClassCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationClassCode/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorParticipation/AuthorParticipationAssignedAuthorRepresentedOrganizationId/context"/>
