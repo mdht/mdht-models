@@ -93,18 +93,6 @@ public class AuthorParticipationImpl extends AuthorImpl implements AuthorPartici
 	 * @generated
 	 */
 	@Override
-	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(

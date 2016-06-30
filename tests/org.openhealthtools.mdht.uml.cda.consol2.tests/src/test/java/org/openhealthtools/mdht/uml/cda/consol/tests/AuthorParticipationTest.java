@@ -21,7 +21,6 @@ import org.eclipse.mdht.uml.cda.Organization;
 import org.eclipse.mdht.uml.cda.Person;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.eclipse.mdht.uml.hl7.vocab.EntityClassOrganization;
 import org.junit.Test;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
@@ -39,7 +38,6 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AuthorParticipationOpe
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorAssignedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Assigned Person Name</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation#validateAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Author Participation Assigned Author Represented Organization Telecom</em>}</li>
@@ -194,44 +192,6 @@ public class AuthorParticipationTest extends CDAValidationTest {
 		};
 
 		validateAuthorParticipationAssignedAuthorAssignedPersonNameTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode() {
-		OperationsTestCase<AuthorParticipation> validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCodeTestCase = new OperationsTestCase<AuthorParticipation>(
-			"validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(AuthorParticipation target) {
-				target.init();
-				AssignedAuthor aa = CDAFactory.eINSTANCE.createAssignedAuthor();
-				target.setAssignedAuthor(aa);
-				Organization repOrg = CDAFactory.eINSTANCE.createOrganization();
-				aa.setRepresentedOrganization(repOrg);
-			}
-
-			@Override
-			protected void updateToPass(AuthorParticipation target) {
-				target.getAssignedAuthor().getRepresentedOrganization().setClassCode(EntityClassOrganization.ORG);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return AuthorParticipationOperations.validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCode(
-					(AuthorParticipation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAuthorParticipationAssignedAuthorRepresentedOrganizationClassCodeTestCase.doValidationTest();
 	}
 
 	/**
