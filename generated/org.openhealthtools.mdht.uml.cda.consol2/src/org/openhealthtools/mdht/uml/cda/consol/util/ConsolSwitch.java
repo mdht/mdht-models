@@ -6509,6 +6509,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.BIRTH_SEX_OBSERVATION: {
+				BirthSexObservation birthSexObservation = (BirthSexObservation) theEObject;
+				T result = caseBirthSexObservation(birthSexObservation);
+				if (result == null) {
+					result = caseObservation(birthSexObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(birthSexObservation);
+				}
+				if (result == null) {
+					result = caseAct(birthSexObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(birthSexObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			default:
 				return defaultCase(theEObject);
 		}
@@ -11253,6 +11273,21 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T casePhysicianReadingStudyPerformer2(PhysicianReadingStudyPerformer2 object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Birth Sex Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Birth Sex Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBirthSexObservation(BirthSexObservation object) {
 		return null;
 	}
 
