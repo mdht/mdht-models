@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_jfoCUOZbEeGINOJ_SD9_dA" name="CognitiveStatusResultOrganizer">
     <ownedComment xmi:id="_67cIUOZiEeGINOJ_SD9_dA">
       <body>This clinical statement identifies a set of cognitive status result observations. It contains information applicable to all of the contained cognitive status result observations. A result organizer may be used to group questions in a Patient Health Questionaire (PHQ). &#xD;
@@ -528,9 +528,9 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
   <CDA:PropertyValidation xmi:id="_r7wPMOZdEeGINOJ_SD9_dA" severity="INFO" base_Property="_aFueTuZcEeGINOJ_SD9_dA">
     <ruleId>CONF:14693</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_aF4PR-ZcEeGINOJ_SD9_dA" base_Property="_aF4PROZcEeGINOJ_SD9_dA" severity="WARNING">
-    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+  <CDA:ValueSetConstraint xmi:id="_aF4PR-ZcEeGINOJ_SD9_dA" severity="WARNING" base_Property="_aF4PROZcEeGINOJ_SD9_dA">
     <ruleId>CONF:14349</ruleId>
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_P7LgYOZdEeGINOJ_SD9_dA" base_Property="_aF4PROZcEeGINOJ_SD9_dA"/>
   <CDA:EntryRelationship xmi:id="_OZw7gOZeEeGINOJ_SD9_dA" severity="INFO" base_Association="_FvvKouZeEeGINOJ_SD9_dA" typeCode="REFR">
@@ -861,7 +861,7 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_lsVbMOY_EeGINOJ_SD9_dA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>the code/@code SHALL be selected from LOINC (codeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96</body>
+        <body>the value/@code SHALL be selected from LOINC (codeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96</body>
         <body>self.value->forAll(val | val.isNullFlavorDefined() or val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.1' or val.oclAsType(datatypes::CD).codeSystem = '2.16.840.1.113883.6.96')</body>
       </specification>
     </ownedRule>
@@ -1086,9 +1086,9 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <ruleId>CONF:29250</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Ac3QgIoCEeOoMZgUoTghIg" base_Property="_9fGUUYoAEeOoMZgUoTghIg"/>
-  <CDA:ValueSetConstraint xmi:id="_KR74MIoCEeOoMZgUoTghIg" base_Property="_9fGUUYoAEeOoMZgUoTghIg" severity="WARNING">
-    <reference href="../consol-vocab.uml#_hfQH0YoMEeOoMZgUoTghIg"/>
+  <CDA:ValueSetConstraint xmi:id="_KR74MIoCEeOoMZgUoTghIg" severity="WARNING" base_Property="_9fGUUYoAEeOoMZgUoTghIg">
     <ruleId>CONF:29251</ruleId>
+    <reference href="../consol-vocab.uml#_hfQH0YoMEeOoMZgUoTghIg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_fNoPAIoCEeOoMZgUoTghIg" severity="WARNING" base_Property="_9fHidIoAEeOoMZgUoTghIg">
     <ruleId>CONF:29252</ruleId>
@@ -1112,9 +1112,9 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <ruleId>CONF:29267</ruleId>
     <ruleId>CONF:29268</ruleId>
   </CDA:EntryRelationship>
-  <CDA:ValueSetConstraint xmi:id="_lLcTcIoREeOoMZgUoTghIg" base_Property="_9fHid4oAEeOoMZgUoTghIg" severity="WARNING">
-    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
+  <CDA:ValueSetConstraint xmi:id="_lLcTcIoREeOoMZgUoTghIg" severity="WARNING" base_Property="_9fHid4oAEeOoMZgUoTghIg">
     <ruleId>CONF:29264</ruleId>
+    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_-lJmEI0kEeOB0eBUISUB4Q" name="MentalStatusObservation">
     <ownedComment xmi:id="_WTRLwI0mEeOB0eBUISUB4Q">
@@ -1195,13 +1195,13 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:29195</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_9HAQQI0oEeOB0eBUISUB4Q" base_Property="_vnbNEY0lEeOB0eBUISUB4Q" severity="WARNING">
-    <reference href="../consol-vocab.uml#_CRVckI0oEeOB0eBUISUB4Q"/>
+  <CDA:ValueSetConstraint xmi:id="_9HAQQI0oEeOB0eBUISUB4Q" severity="WARNING" base_Property="_vnbNEY0lEeOB0eBUISUB4Q">
     <ruleId>CONF:29189</ruleId>
+    <reference href="../consol-vocab.uml#_CRVckI0oEeOB0eBUISUB4Q"/>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_Oa-dAI0qEeOB0eBUISUB4Q" base_Property="_vncbNI0lEeOB0eBUISUB4Q" severity="WARNING">
-    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
+  <CDA:ValueSetConstraint xmi:id="_Oa-dAI0qEeOB0eBUISUB4Q" severity="WARNING" base_Property="_vncbNI0lEeOB0eBUISUB4Q">
     <ruleId>CONF:29202</ruleId>
+    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_PrukII0zEeOB0eBUISUB4Q" memberEnd="_Prt9EI0zEeOB0eBUISUB4Q _PrukIY0zEeOB0eBUISUB4Q">
     <ownedEnd xmi:id="_PrukIY0zEeOB0eBUISUB4Q" type="_-lJmEI0kEeOB0eBUISUB4Q" association="_PrukII0zEeOB0eBUISUB4Q"/>
@@ -1301,17 +1301,17 @@ Reason for deprecation: Cognitive Status Problem Observation has been merged, wi
     <ruleId>CONF:1098-31437</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_kURRoJm5EeOLJeQez13EkQ" base_Property="_wSgasJm4EeOLJeQez13EkQ"/>
-  <CDA:ValueSetConstraint xmi:id="_5jGKYJm6EeOLJeQez13EkQ" base_Property="_wSfzoZm4EeOLJeQez13EkQ" severity="WARNING">
-    <reference href="../consol-vocab.uml#_Sv4_cZm6EeOLJeQez13EkQ"/>
+  <CDA:ValueSetConstraint xmi:id="_5jGKYJm6EeOLJeQez13EkQ" severity="WARNING" base_Property="_wSfzoZm4EeOLJeQez13EkQ">
     <ruleId>CONF:1098-27962</ruleId>
+    <reference href="../consol-vocab.uml#_Sv4_cZm6EeOLJeQez13EkQ"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_D8_WYJm7EeOLJeQez13EkQ" code="completed" base_Property="_wSfzppm4EeOLJeQez13EkQ">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31438</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_bnkVUJm7EeOLJeQez13EkQ" base_Property="_wSgasJm4EeOLJeQez13EkQ" severity="WARNING">
-    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
+  <CDA:ValueSetConstraint xmi:id="_bnkVUJm7EeOLJeQez13EkQ" severity="WARNING" base_Property="_wSgasJm4EeOLJeQez13EkQ">
     <ruleId>CONF:1098-27974</ruleId>
+    <reference href="../consol-vocab.uml#_cyt1UYoOEeOoMZgUoTghIg"/>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_6SDawJm9EeOLJeQez13EkQ" memberEnd="_6SCMoJm9EeOLJeQez13EkQ _6SDawZm9EeOLJeQez13EkQ">
     <ownedEnd xmi:id="_6SDawZm9EeOLJeQez13EkQ" type="_kyeGAJm4EeOLJeQez13EkQ" association="_6SDawJm9EeOLJeQez13EkQ"/>
@@ -1409,7 +1409,7 @@ The Mental Status Section contains observations and evaluations related to a pat
   <CDA:AssociationValidation xmi:id="_7slLEK4hEeORf5eJaKt1KQ" severity="WARNING" base_Association="_6pOQoK4hEeORf5eJaKt1KQ">
     <ruleId>CONF:31435</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_6LYrULkoEeODDJAC5t5vpw" clientDependency="_dfDNQLkpEeODDJAC5t5vpw" name="MentalStatusOrganizer2">
+  <uml:Class xmi:id="_6LYrULkoEeODDJAC5t5vpw" name="MentalStatusOrganizer2">
     <ownedComment xmi:id="_XgdH4LkpEeODDJAC5t5vpw">
       <body>The Mental Status Organizer template may be used to group related Mental Status Observations (e.g., results of mental tests) and associated Assessment Scale Observations into subcategories and/or groupings by time. Subcategories can be things such as Mood and Affect, Behavior, Thought Process, Perception, Cognition, etc.</body>
     </ownedComment>
