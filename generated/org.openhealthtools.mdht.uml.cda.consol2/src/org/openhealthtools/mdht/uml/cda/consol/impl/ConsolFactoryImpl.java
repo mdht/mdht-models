@@ -581,6 +581,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createResultsSectionEntriesOptional2();
 			case ConsolPackage.SOCIAL_HISTORY_SECTION2:
 				return createSocialHistorySection2();
+			case ConsolPackage.BIRTH_SEX_OBSERVATION:
+				return createBirthSexObservation();
 			case ConsolPackage.VITAL_SIGNS_SECTION2:
 				return createVitalSignsSection2();
 			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2:
@@ -699,8 +701,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPreconditionForSubstanceAdministration2();
 			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER2:
 				return createPhysicianReadingStudyPerformer2();
-			case ConsolPackage.BIRTH_SEX_OBSERVATION:
-				return createBirthSexObservation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}

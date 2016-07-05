@@ -397,7 +397,7 @@
     <ruleId>R2.0=CONF:1098-16561</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_4hL00OWQEeGKmvzED_He2w" code="completed" displayName="Completed" base_Property="_kh-7cOWQEeGKmvzED_He2w">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:16561</ruleId>
     <ruleId>R2.0=CONF:1098-19118</ruleId>
   </CDA:CodeSystemConstraint>
@@ -1182,7 +1182,7 @@ The effectiveTime element is used to describe dates associated with the patient'
     <ruleId>CONF:1098-19174</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_gpO3QPMyEeOUvapeh9bVvQ" code="11367-0" displayName="History of tobacco use" base_Property="_gpOQMPMyEeOUvapeh9bVvQ">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-19175</ruleId>
     <ruleId>CONF:1098-32172</ruleId>
   </CDA:CodeSystemConstraint>
@@ -1231,13 +1231,17 @@ The effectiveTime element is used to describe dates associated with the patient'
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rt0u4QFQEeSG_MJH-zNFRw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rt0u4gFQEeSG_MJH-zNFRw" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_GxLGUELDEeaf56PK5wLLJw" name="birthSexObservation" type="_8fGTcD-qEeaJttsCYk-pKw" association="_GxM7gELDEeaf56PK5wLLJw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GxLtYELDEeaf56PK5wLLJw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GxLtYULDEeaf56PK5wLLJw" value="*"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_1kXFQAFHEeSG_MJH-zNFRw" base_Class="_wLWZMAFHEeSG_MJH-zNFRw" templateId="2.16.840.1.113883.10.20.22.2.17" templateVersion="2015-08-01">
     <ruleId>CONF:1198-7936, CONF:1198-10449, CONF:1198-32494</ruleId>
   </CDA:CDATemplate>
   <CDA:ConformsTo xmi:id="_9aG5gAFHEeSG_MJH-zNFRw" base_Generalization="_wLZcgAFHEeSG_MJH-zNFRw"/>
   <CDA:CodeSystemConstraint xmi:id="_l7q08AFOEeSG_MJH-zNFRw" code="29762-2" displayName="Social History" base_Property="_l7qN4AFOEeSG_MJH-zNFRw">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1198-14820, CONF:1198-30814</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_l7tRMAFOEeSG_MJH-zNFRw" base_Property="_l7qN4AFOEeSG_MJH-zNFRw">
@@ -1417,4 +1421,10 @@ The effectiveTime element is used to describe dates associated with the patient'
     <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:3250-18125</ruleId>
   </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_GxM7gELDEeaf56PK5wLLJw" memberEnd="_GxLGUELDEeaf56PK5wLLJw _GxNikELDEeaf56PK5wLLJw">
+    <ownedEnd xmi:id="_GxNikELDEeaf56PK5wLLJw" type="_wLWZMAFHEeSG_MJH-zNFRw" association="_GxM7gELDEeaf56PK5wLLJw"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_JeCVMELDEeaf56PK5wLLJw" severity="INFO" base_Association="_GxM7gELDEeaf56PK5wLLJw">
+    <ruleId>CONF:1198-NEW</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

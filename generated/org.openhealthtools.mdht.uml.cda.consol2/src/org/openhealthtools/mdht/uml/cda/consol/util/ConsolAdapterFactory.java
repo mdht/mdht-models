@@ -1395,6 +1395,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseBirthSexObservation(BirthSexObservation object) {
+			return createBirthSexObservationAdapter();
+		}
+
+		@Override
 		public Adapter caseVitalSignsSection2(VitalSignsSection2 object) {
 			return createVitalSignsSection2Adapter();
 		}
@@ -1689,11 +1694,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter casePhysicianReadingStudyPerformer2(PhysicianReadingStudyPerformer2 object) {
 			return createPhysicianReadingStudyPerformer2Adapter();
-		}
-
-		@Override
-		public Adapter caseBirthSexObservation(BirthSexObservation object) {
-			return createBirthSexObservationAdapter();
 		}
 
 		@Override
