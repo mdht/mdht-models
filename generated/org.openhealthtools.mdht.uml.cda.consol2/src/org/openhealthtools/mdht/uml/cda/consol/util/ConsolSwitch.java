@@ -5249,6 +5249,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.BIRTH_SEX_OBSERVATION: {
+				BirthSexObservation birthSexObservation = (BirthSexObservation) theEObject;
+				T result = caseBirthSexObservation(birthSexObservation);
+				if (result == null) {
+					result = caseObservation(birthSexObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(birthSexObservation);
+				}
+				if (result == null) {
+					result = caseAct(birthSexObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(birthSexObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.VITAL_SIGNS_SECTION2: {
 				VitalSignsSection2 vitalSignsSection2 = (VitalSignsSection2) theEObject;
 				T result = caseVitalSignsSection2(vitalSignsSection2);
@@ -6503,26 +6523,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(physicianReadingStudyPerformer2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.BIRTH_SEX_OBSERVATION: {
-				BirthSexObservation birthSexObservation = (BirthSexObservation) theEObject;
-				T result = caseBirthSexObservation(birthSexObservation);
-				if (result == null) {
-					result = caseObservation(birthSexObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(birthSexObservation);
-				}
-				if (result == null) {
-					result = caseAct(birthSexObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(birthSexObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);

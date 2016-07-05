@@ -14,6 +14,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.openhealthtools.mdht.uml.cda.consol.BirthSexObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -92,6 +93,17 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSocialHistorySection2BirthSexObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistorySection2Operations.validateSocialHistorySection2BirthSexObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public EList<SocialHistoryObservation2> getConsolSocialHistoryObservation2s() {
 		return SocialHistorySection2Operations.getConsolSocialHistoryObservation2s(this);
@@ -144,6 +156,15 @@ public class SocialHistorySection2Impl extends SocialHistorySectionImpl implemen
 	@Override
 	public EList<CharacteristicsOfHomeEnvironment> getCharacteristicsOfHomeEnvironments() {
 		return SocialHistorySection2Operations.getCharacteristicsOfHomeEnvironments(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<BirthSexObservation> getBirthSexObservations() {
+		return SocialHistorySection2Operations.getBirthSexObservations(this);
 	}
 
 	/**

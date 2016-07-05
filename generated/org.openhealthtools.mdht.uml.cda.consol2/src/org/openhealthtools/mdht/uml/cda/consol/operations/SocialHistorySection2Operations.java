@@ -19,6 +19,7 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
+import org.openhealthtools.mdht.uml.cda.consol.BirthSexObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -41,12 +42,14 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CaregiverCharacteristics(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Caregiver Characteristics</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CulturalAndReligiousObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Cultural And Religious Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2CharacteristicsOfHomeEnvironment(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Characteristics Of Home Environment</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySection2BirthSexObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Birth Sex Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getConsolSocialHistoryObservation2s() <em>Get Consol Social History Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getConsolCurrentSmokingStatus2s() <em>Get Consol Current Smoking Status2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getConsolTobaccoUse2s() <em>Get Consol Tobacco Use2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getCaregiverCharacteristicss() <em>Get Caregiver Characteristicss</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getCulturalAndReligiousObservations() <em>Get Cultural And Religious Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getCharacteristicsOfHomeEnvironments() <em>Get Characteristics Of Home Environments</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#getBirthSexObservations() <em>Get Birth Sex Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2#validateSocialHistorySectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}</li>
@@ -258,6 +261,69 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySection2BirthSexObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Birth Sex Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistorySection2BirthSexObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION2_BIRTH_SEX_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::BirthSexObservation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySection2BirthSexObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section2 Birth Sex Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistorySection2BirthSexObservation(SocialHistorySection2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION2_BIRTH_SEX_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param socialHistorySection2 The receiving '<em><b>Social History Section2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateSocialHistorySection2BirthSexObservation(SocialHistorySection2 socialHistorySection2,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_SOCIAL_HISTORY_SECTION2_BIRTH_SEX_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2);
+			try {
+				VALIDATE_SOCIAL_HISTORY_SECTION2_BIRTH_SEX_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SOCIAL_HISTORY_SECTION2_BIRTH_SEX_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SOCIAL_HISTORY_SECTION2_BIRTH_SEX_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				socialHistorySection2)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SOCIAL_HISTORY_SECTION2__SOCIAL_HISTORY_SECTION2_BIRTH_SEX_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString(
+							"SocialHistorySection2SocialHistorySection2BirthSexObservation"),
+						new Object[] { socialHistorySection2 }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #getConsolSocialHistoryObservation2s(SocialHistorySection2) <em>Get Consol Social History Observation2s</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -289,7 +355,7 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(71));
+				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(72));
 			try {
 				GET_CONSOL_SOCIAL_HISTORY_OBSERVATION2S__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_SOCIAL_HISTORY_OBSERVATION2S__EOCL_EXP);
@@ -336,7 +402,7 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(72));
+				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(73));
 			try {
 				GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_CURRENT_SMOKING_STATUS2S__EOCL_EXP);
@@ -382,7 +448,7 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(73));
+				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(74));
 			try {
 				GET_CONSOL_TOBACCO_USE2S__EOCL_QRY = helper.createQuery(GET_CONSOL_TOBACCO_USE2S__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -427,7 +493,7 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(74));
+				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(75));
 			try {
 				GET_CAREGIVER_CHARACTERISTICSS__EOCL_QRY = helper.createQuery(GET_CAREGIVER_CHARACTERISTICSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -473,7 +539,7 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(75));
+				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(76));
 			try {
 				GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(
 					GET_CULTURAL_AND_RELIGIOUS_OBSERVATIONS__EOCL_EXP);
@@ -520,7 +586,7 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
-				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(76));
+				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(77));
 			try {
 				GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_QRY = helper.createQuery(
 					GET_CHARACTERISTICS_OF_HOME_ENVIRONMENTS__EOCL_EXP);
@@ -533,6 +599,51 @@ public class SocialHistorySection2Operations extends SocialHistorySectionOperati
 		Collection<CharacteristicsOfHomeEnvironment> result = (Collection<CharacteristicsOfHomeEnvironment>) query.evaluate(
 			socialHistorySection2);
 		return new BasicEList.UnmodifiableEList<CharacteristicsOfHomeEnvironment>(result.size(), result.toArray());
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getBirthSexObservations(SocialHistorySection2) <em>Get Birth Sex Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBirthSexObservations(SocialHistorySection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_BIRTH_SEX_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BirthSexObservation)).oclAsType(consol::BirthSexObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getBirthSexObservations(SocialHistorySection2) <em>Get Birth Sex Observations</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBirthSexObservations(SocialHistorySection2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_BIRTH_SEX_OBSERVATIONS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static EList<BirthSexObservation> getBirthSexObservations(SocialHistorySection2 socialHistorySection2) {
+		if (GET_BIRTH_SEX_OBSERVATIONS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2,
+				ConsolPackage.Literals.SOCIAL_HISTORY_SECTION2.getEAllOperations().get(78));
+			try {
+				GET_BIRTH_SEX_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_BIRTH_SEX_OBSERVATIONS__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_BIRTH_SEX_OBSERVATIONS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<BirthSexObservation> result = (Collection<BirthSexObservation>) query.evaluate(
+			socialHistorySection2);
+		return new BasicEList.UnmodifiableEList<BirthSexObservation>(result.size(), result.toArray());
 	}
 
 	/**
