@@ -29,8 +29,10 @@ import org.eclipse.mdht.uml.hl7.datatypes.II;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.eclipse.mdht.uml.hl7.vocab.ActClassObservation;
 import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActMoodDocumentObservation;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentActMood;
 import org.junit.Test;
-import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PatientReferralActOperations;
@@ -491,14 +493,17 @@ public class PatientReferralActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PatientReferralAct target) {
-
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.RSON);
+				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected void updateToPass(PatientReferralAct target) {
-				target.init();
-				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
-				target.getEntryRelationships().add(er);
+				for (EntryRelationship er : target.getEntryRelationships()) {
+					er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
+				}
 			}
 
 			@Override
@@ -635,6 +640,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 				target.init();
 				Observation obs = CDAFactory.eINSTANCE.createObservation();
 				target.addObservation(obs);
+				target.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 			}
 
 			@Override
@@ -671,6 +677,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 				target.init();
 				Observation obs = CDAFactory.eINSTANCE.createObservation();
 				target.addObservation(obs);
+				target.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 			}
 
 			@Override
@@ -707,6 +714,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 				target.init();
 				Observation obs = CDAFactory.eINSTANCE.createObservation();
 				target.addObservation(obs);
+				target.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 			}
 
 			@Override
@@ -744,6 +752,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 				target.init();
 				Observation obs = CDAFactory.eINSTANCE.createObservation();
 				target.addObservation(obs);
+				target.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 			}
 
 			@Override
@@ -783,6 +792,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 				target.init();
 				Observation obs = CDAFactory.eINSTANCE.createObservation();
 				target.addObservation(obs);
+				target.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 			}
 
 			@Override
@@ -819,6 +829,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 				target.init();
 				Observation obs = CDAFactory.eINSTANCE.createObservation();
 				target.addObservation(obs);
+				target.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 			}
 
 			@Override
@@ -855,6 +866,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 				target.init();
 				Observation obs = CDAFactory.eINSTANCE.createObservation();
 				target.addObservation(obs);
+				target.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 			}
 
 			@Override
@@ -891,6 +903,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 				target.init();
 				Observation obs = CDAFactory.eINSTANCE.createObservation();
 				target.addObservation(obs);
+				target.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 				obs.setPriorityCode(DatatypesFactory.eINSTANCE.createCE(BAD_CODE_VALUE, BAD_CODESYSTEM_ID));
 			}
 
@@ -929,6 +942,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 				target.init();
 				Observation obs = CDAFactory.eINSTANCE.createObservation();
 				target.addObservation(obs);
+				target.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 			}
 
 			@Override
@@ -968,6 +982,7 @@ public class PatientReferralActTest extends CDAValidationTest {
 				target.init();
 				Observation obs = CDAFactory.eINSTANCE.createObservation();
 				target.addObservation(obs);
+				target.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 			}
 
 			@Override
@@ -1001,6 +1016,12 @@ public class PatientReferralActTest extends CDAValidationTest {
 				"VALIDATE_PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific entryRelationship type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
+
 			@Override
 			protected void updateToFail(PatientReferralAct target) {
 				target.init();
@@ -1010,8 +1031,10 @@ public class PatientReferralActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(PatientReferralAct target) {
-				target.getEntryRelationships().get(0).setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
+				target.getEntryRelationships().add(er);
 			}
 
 			@Override
@@ -1040,14 +1063,18 @@ public class PatientReferralActTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PatientReferralAct target) {
+				// fails for not having an observation AND being of type SUBJ
 				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
 				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected void updateToPass(PatientReferralAct target) {
-				target.getEntryRelationships().get(0).setObservation(CDAFactory.eINSTANCE.createObservation());
+				for (EntryRelationship er : target.getEntryRelationships()) {
+					er.setObservation(CDAFactory.eINSTANCE.createObservation());
+				}
 			}
 
 			@Override
