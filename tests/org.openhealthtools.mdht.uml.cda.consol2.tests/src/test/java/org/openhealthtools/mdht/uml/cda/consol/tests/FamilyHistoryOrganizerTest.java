@@ -342,7 +342,7 @@ public class FamilyHistoryOrganizerTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(FamilyHistoryOrganizer target) {
 				target.getSubject().getRelatedSubject().getSubject().setAdministrativeGenderCode(
-					DatatypesFactory.eINSTANCE.createCE("F", "2.16.840.1.113883.5.1"));
+					DatatypesFactory.eINSTANCE.createCE("UN", "2.16.840.1.113883.5.1"));
 
 			}
 
