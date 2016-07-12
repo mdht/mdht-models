@@ -38,7 +38,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MentalStatusOrganizer2
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateCognitiveStatusResultOrganizerCodeCodeSystem(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Organizer Code Code System</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Organizer Cognitive Status Result Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2#validateResultOrganizerResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Result Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -276,11 +276,10 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateCognitiveStatusResultOrganizerCognitiveStatusResultObservation() {
-		OperationsTestCase<MentalStatusOrganizer2> validateCognitiveStatusResultOrganizerCognitiveStatusResultObservationTestCase = new OperationsTestCase<MentalStatusOrganizer2>(
-			"validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+	public void testValidateResultOrganizerResultObservation() {
+		OperationsTestCase<MentalStatusOrganizer2> validateResultOrganizerResultObservationTestCase = new OperationsTestCase<MentalStatusOrganizer2>(
+			"validateResultOrganizerResultObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -297,13 +296,13 @@ public class MentalStatusOrganizer2Test extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return MentalStatusOrganizer2Operations.validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(
+				return MentalStatusOrganizer2Operations.validateResultOrganizerResultObservation(
 					(MentalStatusOrganizer2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateCognitiveStatusResultOrganizerCognitiveStatusResultObservationTestCase.doValidationTest();
+		validateResultOrganizerResultObservationTestCase.doValidationTest();
 	}
 
 	/**
