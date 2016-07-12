@@ -4317,11 +4317,7 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCodeCodeSystem/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCodeCodeSystem/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCognitiveStatusResultObservation">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCognitiveStatusResultObservation/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CognitiveStatusResultOrganizer/CognitiveStatusResultOrganizerCognitiveStatusResultObservation/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultOrganizer/getCognitiveStatusResultObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultOrganizer/getConsolCognitiveStatusResultObservations"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//CognitiveStatusResultObservation">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CognitiveStatusResultObservation/CognitiveStatusResultObservationValueDatatype">

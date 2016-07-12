@@ -119,10 +119,8 @@ public class MentalStatusOrganizer2Impl extends CognitiveStatusResultOrganizerIm
 	 * @generated
 	 */
 	@Override
-	public boolean validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MentalStatusOrganizer2Operations.validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(
-			this, diagnostics, context);
+	public boolean validateResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusOrganizer2Operations.validateResultOrganizerResultObservation(this, diagnostics, context);
 	}
 
 	/**

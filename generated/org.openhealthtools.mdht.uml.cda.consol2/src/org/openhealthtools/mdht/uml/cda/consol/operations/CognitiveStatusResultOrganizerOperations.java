@@ -34,8 +34,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer#validateCognitiveStatusResultOrganizerCodeCodeSystem(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Organizer Code Code System</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer#validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Organizer Cognitive Status Result Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer#getCognitiveStatusResultObservations() <em>Get Cognitive Status Result Observations</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer#getConsolCognitiveStatusResultObservations() <em>Get Consol Cognitive Status Result Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer#validateResultOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer#validateResultOrganizerClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer#validateResultOrganizerMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Mood Code</em>}</li>
@@ -43,6 +42,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer#validateResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer#validateResultOrganizerStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer#validateResultOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer#validateResultOrganizerResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Result Observation</em>}</li>
  * </ul>
  * </p>
  *
@@ -123,88 +123,24 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(CognitiveStatusResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Organizer Cognitive Status Result Observation</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolCognitiveStatusResultObservations(CognitiveStatusResultOrganizer) <em>Get Consol Cognitive Status Result Observations</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(CognitiveStatusResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #getConsolCognitiveStatusResultObservations(CognitiveStatusResultOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::CognitiveStatusResultObservation))";
+	protected static final String GET_CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusResultObservation)).oclAsType(consol::CognitiveStatusResultObservation)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(CognitiveStatusResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cognitive Status Result Organizer Cognitive Status Result Observation</em>}' invariant operation.
+	 * The cached OCL query for the '{@link #getConsolCognitiveStatusResultObservations(CognitiveStatusResultOrganizer) <em>Get Consol Cognitive Status Result Observations</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(CognitiveStatusResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #getConsolCognitiveStatusResultObservations(CognitiveStatusResultOrganizer)
 	 * @generated
 	 * @ordered
 	 */
-
-	protected static Constraint VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param cognitiveStatusResultOrganizer The receiving '<em><b>Cognitive Status Result Organizer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(
-			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.COGNITIVE_STATUS_RESULT_ORGANIZER);
-			try {
-				VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
-					VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-				cognitiveStatusResultOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(
-					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_COGNITIVE_STATUS_RESULT_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
-							"CognitiveStatusResultOrganizerCognitiveStatusResultOrganizerCognitiveStatusResultObservation"),
-						new Object[] { cognitiveStatusResultOrganizer }));
-			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #getCognitiveStatusResultObservations(CognitiveStatusResultOrganizer) <em>Get Cognitive Status Result Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCognitiveStatusResultObservations(CognitiveStatusResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String GET_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CognitiveStatusResultObservation)).oclAsType(consol::CognitiveStatusResultObservation)";
-
-	/**
-	 * The cached OCL query for the '{@link #getCognitiveStatusResultObservations(CognitiveStatusResultOrganizer) <em>Get Cognitive Status Result Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getCognitiveStatusResultObservations(CognitiveStatusResultOrganizer)
-	 * @generated
-	 * @ordered
-	 */
-	protected static OCLExpression<EClassifier> GET_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -212,21 +148,21 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 	 * @generated
 	 */
 
-	public static EList<CognitiveStatusResultObservation> getCognitiveStatusResultObservations(
+	public static EList<CognitiveStatusResultObservation> getConsolCognitiveStatusResultObservations(
 			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer) {
-		if (GET_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY == null) {
+		if (GET_CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.COGNITIVE_STATUS_RESULT_ORGANIZER,
-				ConsolPackage.Literals.COGNITIVE_STATUS_RESULT_ORGANIZER.getEAllOperations().get(65));
+				ConsolPackage.Literals.COGNITIVE_STATUS_RESULT_ORGANIZER.getEAllOperations().get(64));
 			try {
-				GET_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(
-					GET_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_EXP);
+				GET_CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<CognitiveStatusResultObservation> result = (Collection<CognitiveStatusResultObservation>) query.evaluate(
 			cognitiveStatusResultOrganizer);
@@ -679,6 +615,69 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE,
 						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerStatusCode"),
+						new Object[] { cognitiveStatusResultOrganizer }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateResultOrganizerResultObservation(CognitiveStatusResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Result Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateResultOrganizerResultObservation(CognitiveStatusResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(consol::CognitiveStatusResultObservation))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateResultOrganizerResultObservation(CognitiveStatusResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Result Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateResultOrganizerResultObservation(CognitiveStatusResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param cognitiveStatusResultOrganizer The receiving '<em><b>Cognitive Status Result Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateResultOrganizerResultObservation(
+			CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.COGNITIVE_STATUS_RESULT_ORGANIZER);
+			try {
+				VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			cognitiveStatusResultOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_RESULT_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusResultOrganizerResultOrganizerResultObservation"),
 						new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
