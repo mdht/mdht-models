@@ -47,6 +47,7 @@ An appropriate nullFlavor can be used when the organizer/code or organizer/id is
     <ownedAttribute xmi:id="_0aKXMOZjEeGINOJ_SD9_dA" name="cognitiveStatusResultObservation" type="_gkBM0OZbEeGINOJ_SD9_dA" association="_0aKXMuZjEeGINOJ_SD9_dA">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2AElEeZjEeGINOJ_SD9_dA" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2AElEOZjEeGINOJ_SD9_dA" value="*"/>
+      <redefinedProperty href="consol-results.uml#_2JxzgxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_0aKXMuZjEeGINOJ_SD9_dA" memberEnd="_0aKXMOZjEeGINOJ_SD9_dA _0aKXM-ZjEeGINOJ_SD9_dA">
