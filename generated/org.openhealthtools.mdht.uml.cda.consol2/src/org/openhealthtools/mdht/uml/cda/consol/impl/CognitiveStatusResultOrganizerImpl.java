@@ -63,21 +63,8 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CognitiveStatusResultOrganizerOperations.validateCognitiveStatusResultOrganizerCognitiveStatusResultObservation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EList<CognitiveStatusResultObservation> getCognitiveStatusResultObservations() {
-		return CognitiveStatusResultOrganizerOperations.getCognitiveStatusResultObservations(this);
+	public EList<CognitiveStatusResultObservation> getConsolCognitiveStatusResultObservations() {
+		return CognitiveStatusResultOrganizerOperations.getConsolCognitiveStatusResultObservations(this);
 	}
 
 	/**
@@ -148,6 +135,17 @@ public class CognitiveStatusResultOrganizerImpl extends ResultOrganizerImpl impl
 	@Override
 	public boolean validateResultOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateResultOrganizerResultObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CognitiveStatusResultOrganizerOperations.validateResultOrganizerResultObservation(
+			this, diagnostics, context);
 	}
 
 	/**
