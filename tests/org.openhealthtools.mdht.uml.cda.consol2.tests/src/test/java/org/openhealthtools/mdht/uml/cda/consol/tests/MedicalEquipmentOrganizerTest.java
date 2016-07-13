@@ -37,7 +37,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.MedicalEquipmentOrgani
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Has Non Med Sup Act Xor Proc Act Proc</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Has Non Med Sup Act Or Proc Act Proc</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer#validateMedicalEquipmentOrganizerMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Organizer Mood Code</em>}</li>
@@ -65,11 +65,11 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProc() {
-		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProcTestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
-			"validateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProc",
+	public void testValidateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc() {
+		OperationsTestCase<MedicalEquipmentOrganizer> validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProcTestCase = new OperationsTestCase<MedicalEquipmentOrganizer>(
+			"validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc",
 			operationsForOCL.getOCLValue(
-				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_XOR_PROC_ACT_PROC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+				"VALIDATE_MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_OR_PROC_ACT_PROC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -99,18 +99,31 @@ public class MedicalEquipmentOrganizerTest extends CDAValidationTest {
 
 					}
 				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(MedicalEquipmentOrganizer target) {
+						target.init();
+						Component4 compPAP = CDAFactory.eINSTANCE.createComponent4();
+						compPAP.setProcedure(ConsolFactory.eINSTANCE.createProcedureActivityProcedure2().init());
+						Component4 compMSA = CDAFactory.eINSTANCE.createComponent4();
+						compMSA.setSupply(ConsolFactory.eINSTANCE.createNonMedicinalSupplyActivity2().init());
+						target.getComponents().add(compPAP);
+						target.getComponents().add(compMSA);
+					}
+				});
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProc(
+				return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc(
 					(MedicalEquipmentOrganizer) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProcTestCase.doValidationTest();
+		validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProcTestCase.doValidationTest();
 	}
 
 	/**
