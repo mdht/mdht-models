@@ -9779,9 +9779,9 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//MedicalEquipmentOrganizer">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicalEquipmentOrganizer/MedicalEquipmentOrganizerHasNonMedSupActXorProcActProc">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicalEquipmentOrganizer/MedicalEquipmentOrganizerHasNonMedSupActXorProcActProc/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicalEquipmentOrganizer/MedicalEquipmentOrganizerHasNonMedSupActXorProcActProc/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicalEquipmentOrganizer/MedicalEquipmentOrganizerHasNonMedSupActOrProcActProc">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicalEquipmentOrganizer/MedicalEquipmentOrganizerHasNonMedSupActOrProcActProc/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicalEquipmentOrganizer/MedicalEquipmentOrganizerHasNonMedSupActOrProcActProc/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MedicalEquipmentOrganizer/MedicalEquipmentOrganizerTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//MedicalEquipmentOrganizer/MedicalEquipmentOrganizerTemplateId/diagnostics"/>

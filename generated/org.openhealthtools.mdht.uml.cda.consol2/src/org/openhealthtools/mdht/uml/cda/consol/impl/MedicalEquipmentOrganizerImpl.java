@@ -53,9 +53,9 @@ public class MedicalEquipmentOrganizerImpl extends OrganizerImpl implements Medi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProc(DiagnosticChain diagnostics,
+	public boolean validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerHasNonMedSupActXorProcActProc(
+		return MedicalEquipmentOrganizerOperations.validateMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc(
 			this, diagnostics, context);
 	}
 
