@@ -2171,12 +2171,12 @@ This template represents a set of current or historical medical devices, supplie
 Devices that are applied during a procedure (e.g., cardiac pacemaker, gastrosomy tube, port catheter), whether permanent or temporary, are represented within the Procedure Activity Procedure (V2) template (templateId: 2.16.840.1.113883.10.20.22.4.14.2).&#xD;
 &lt;/p></body>
     </ownedComment>
-    <ownedRule xmi:id="_0b9iwP5_EeSoDZvueq4eYw" name="hasNonMedSupActXorProcActProc" constrainedElement="_RbbCII0dEeOB0eBUISUB4Q">
+    <ownedRule xmi:id="_0b9iwP5_EeSoDZvueq4eYw" name="hasNonMedSupActOrProcActProc" constrainedElement="_RbbCII0dEeOB0eBUISUB4Q">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_7JbgUP5_EeSoDZvueq4eYw">
         <language>Analysis</language>
         <language>OCL</language>
         <body>Either Non-Medicinal Supply Activity (V2) (templateId:2.16.840.1.113883.10.20.22.4.50:2014-06-09) OR Procedure Activity Procedure (V2) (templateId:2.16.840.1.113883.10.20.22.4.14:2014-06-09) SHALL be present</body>
-        <body>self.component->exists(component : cda::Component4 | not component.supply.oclIsUndefined() and component.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2)) xor self.component->exists(component : cda::Component4 | not component.procedure.oclIsUndefined() and component.procedure.oclIsKindOf(consol::ProcedureActivityProcedure2))</body>
+        <body>self.component->exists(component : cda::Component4 | not component.supply.oclIsUndefined() and component.supply.oclIsKindOf(consol::NonMedicinalSupplyActivity2)) or self.component->exists(component : cda::Component4 | not component.procedure.oclIsUndefined() and component.procedure.oclIsKindOf(consol::ProcedureActivityProcedure2))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_RbdeYI0dEeOB0eBUISUB4Q">
