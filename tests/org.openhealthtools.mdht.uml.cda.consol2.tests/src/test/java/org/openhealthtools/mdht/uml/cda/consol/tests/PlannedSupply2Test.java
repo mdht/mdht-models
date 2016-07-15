@@ -114,15 +114,6 @@ public class PlannedSupply2Test extends CDAValidationTest {
 					}
 				});
 
-				addFailTest(new FailTest() {
-					@Override
-					public void updateToFail(PlannedSupply2 target) {
-						// 3. none of the requirements are met (generic cda manufacturedProduct)
-						target.init();
-						target.setProduct(CDAFactory.eINSTANCE.createProduct());
-						target.getProduct().setManufacturedProduct(CDAFactory.eINSTANCE.createManufacturedProduct());
-					}
-				});
 			}
 
 			@Override
@@ -167,6 +158,24 @@ public class PlannedSupply2Test extends CDAValidationTest {
 						// added as per SITE-2226
 						// has no product or participant and passes since the rule is not enforced in this case
 						target.init();
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedSupply2 target) {
+						// generic cda product shouldn't trigger the rule
+						target.init();
+						target.setProduct(CDAFactory.eINSTANCE.createProduct());
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedSupply2 target) {
+						// generic cda participant shouldn't trigger the rule
+						target.init();
+						target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant2());
 					}
 				});
 
