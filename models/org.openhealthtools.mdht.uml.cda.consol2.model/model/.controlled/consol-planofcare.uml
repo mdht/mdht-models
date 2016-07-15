@@ -2662,7 +2662,7 @@ Depending on the type of supply, the product or participant will be either a Med
         <language>Analysis</language>
         <language>OCL</language>
         <body>If the product is Medication Information (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.23:2014-06-09) then the product SHALL NOT be Immunization Medication Information (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.54:2014-06-09) and the participant SHALL NOT be Product Instance.  If the product is Immunization Medication Information (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.54:2014-06-09) then the product SHALL NOT be Medication Information (V2) (identifier: urn:hl7ii:2.16.840.1.113883.10.20.22.4.23:2014-06-09) and the participant SHALL NOT be Product Instance.  If the participant is Product Instance then the product SHALL NOT be Medication Information (V2) and the product SHALL NOT be Immunization Medication Information (V2).</body>
-        <body>(product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2)) xor (product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)) xor (participant.participantRole->select(oclIsTypeOf(consol::ProductInstance))->size() = 1 )</body>
+        <body>(not product.oclIsUndefined() or participant->size() > 0) implies ( (product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2)) xor (product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)) xor (participant.participantRole->select(oclIsTypeOf(consol::ProductInstance))->size() = 1 ) )</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_vEecgOg0EeO-iJTuAv7BKQ" general="_2NoY5BSVEeGGzu7fmW9pXw"/>
