@@ -86,7 +86,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2)) xor (product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)) xor (participant.participantRole->select(oclIsTypeOf(consol::ProductInstance))->size() = 1 )";
+	protected static final String VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(not product.oclIsUndefined() or participant->size() > 0) implies ( (product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2)) xor (product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)) xor (participant.participantRole->select(oclIsTypeOf(consol::ProductInstance))->size() = 1 ) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedSupply2MedInfoXorImmunXorProductInstance(PlannedSupply2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Supply2 Med Info Xor Immun Xor Product Instance</em>}' invariant operation.
