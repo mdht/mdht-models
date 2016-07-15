@@ -23,8 +23,9 @@ import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.eclipse.mdht.uml.hl7.datatypes.CS;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 import org.junit.Test;
-import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedSupply2Operations;
@@ -80,12 +81,6 @@ public class PlannedSupply2Test extends CDAValidationTest {
 			operationsForOCL.getOCLValue(
 				"VALIDATE_PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
-
-			// OCL
-			// protected static final String VALIDATE_PLANNED_SUPPLY2_IF_PRODUCT_IS_MED_INFO_THEN_NOT_IMMUN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP =
-			// "(product.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation2)) xor
-			// (product.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation2)) xor
-			// (participant.participantRole->select(oclIsTypeOf(consol::ProductInstance))->size() = 1 )";
 
 			@Override
 			public void addFailTests() {
@@ -165,6 +160,16 @@ public class PlannedSupply2Test extends CDAValidationTest {
 						}
 					}
 				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedSupply2 target) {
+						// added as per SITE-2226
+						// has no product or participant and passes since the rule is not enforced in this case
+						target.init();
+					}
+				});
+
 			}
 
 			@Override
