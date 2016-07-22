@@ -547,6 +547,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 			protected void updateToPass(ProcedureNote2 target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
 				target.getParticipants().add(par);
 			}
 
@@ -1734,6 +1735,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 			protected void updateToFail(ProcedureNote2 target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
 				target.getParticipants().add(par);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				par.setAssociatedEntity(ae);
@@ -1774,6 +1776,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 			protected void updateToFail(ProcedureNote2 target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
 				target.getParticipants().add(par);
 				AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 				par.setAssociatedEntity(ae);
@@ -1808,6 +1811,12 @@ public class ProcedureNote2Test extends CDAValidationTest {
 			"validateProcedureNote2ParticipantTypeCode", operationsForOCL.getOCLValue(
 				"VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific participant type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
 
 			@Override
 			protected void updateToFail(ProcedureNote2 target) {
@@ -1850,6 +1859,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 			protected void updateToFail(ProcedureNote2 target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
 				target.getParticipants().add(par);
 			}
 
@@ -1888,6 +1898,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 			protected void updateToFail(ProcedureNote2 target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
 				target.getParticipants().add(par);
 			}
 
@@ -1926,6 +1937,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 			protected void updateToFail(ProcedureNote2 target) {
 				target.init();
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
 				target.getParticipants().add(par);
 			}
 
@@ -2118,6 +2130,12 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				"VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific performer type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
+
 			@Override
 			protected void updateToFail(ProcedureNote2 target) {
 				target.init();
@@ -2223,6 +2241,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				perf.setAssignedEntity(ae);
 				se.getPerformers().add(perf);
@@ -2236,6 +2255,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				CE code = DatatypesFactory.eINSTANCE.createCE();
 				ae.setCode(code);
@@ -2276,6 +2296,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				CE code = DatatypesFactory.eINSTANCE.createCE();
 				ae.setCode(code);
@@ -2291,6 +2312,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				CE code = DatatypesFactory.eINSTANCE.createCE("mustExistOnly", "2.16.840.1.113883.6.101");
 				ae.setCode(code);
@@ -2323,6 +2345,12 @@ public class ProcedureNote2Test extends CDAValidationTest {
 			operationsForOCL.getOCLValue(
 				"VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific performer type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
 
 			@Override
 			protected void updateToFail(ProcedureNote2 target) {
@@ -2377,6 +2405,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				se.getPerformers().add(perf);
 				dof.setServiceEvent(se);
 				target.getDocumentationOfs().add(dof);
@@ -2388,6 +2417,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				perf.setAssignedEntity(ae);
 				se.getPerformers().add(perf);
@@ -2894,7 +2924,9 @@ public class ProcedureNote2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(ProcedureNote2 target) {
 				for (DocumentationOf dof : target.getDocumentationOfs()) {
-					dof.getServiceEvent().getPerformers().add(CDAFactory.eINSTANCE.createPerformer1());
+					Performer1 performer = CDAFactory.eINSTANCE.createPerformer1();
+					performer.setTypeCode(x_ServiceEventPerformer.PPRF);
+					dof.getServiceEvent().getPerformers().add(performer);
 				}
 			}
 
@@ -2937,6 +2969,7 @@ public class ProcedureNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				se.getPerformers().add(perf);
 				dof.setServiceEvent(se);
 				target.getDocumentationOfs().add(dof);

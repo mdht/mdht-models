@@ -1045,6 +1045,12 @@ public class OperativeNote2Test extends CDAValidationTest {
 				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific performer type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
+
 			@Override
 			protected void updateToFail(OperativeNote2 target) {
 				target.init();
@@ -1150,6 +1156,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				CE code = DatatypesFactory.eINSTANCE.createCE();
 				ae.setCode(code);
@@ -1171,6 +1178,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 							DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 							ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 							Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+							perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 							AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 							CE code = DatatypesFactory.eINSTANCE.createCE(CUR_CODE, "2.16.840.1.113883.12.443");
 							ae.setCode(code);
@@ -1213,6 +1221,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				perf.setAssignedEntity(ae);
 				se.getPerformers().add(perf);
@@ -1227,6 +1236,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				CE code = DatatypesFactory.eINSTANCE.createCE();
 				ae.setCode(code);
@@ -1260,6 +1270,12 @@ public class OperativeNote2Test extends CDAValidationTest {
 			operationsForOCL.getOCLValue(
 				"VALIDATE_OPERATIVE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
+
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific performer type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
 
 			@Override
 			protected void updateToFail(OperativeNote2 target) {
@@ -1315,6 +1331,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				se.getPerformers().add(perf);
 				dof.setServiceEvent(se);
 				target.getDocumentationOfs().add(dof);
@@ -1327,6 +1344,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				AssignedEntity ae = CDAFactory.eINSTANCE.createAssignedEntity();
 				perf.setAssignedEntity(ae);
 				se.getPerformers().add(perf);
@@ -1829,14 +1847,11 @@ public class OperativeNote2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(OperativeNote2 target) {
-				target.getDocumentationOfs().clear();
-				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
-				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
-				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
-				se.getPerformers().add(perf);
-				dof.setServiceEvent(se);
-				target.getDocumentationOfs().add(dof);
-
+				for (DocumentationOf dof : target.getDocumentationOfs()) {
+					Performer1 performer = CDAFactory.eINSTANCE.createPerformer1();
+					performer.setTypeCode(x_ServiceEventPerformer.PPRF);
+					dof.getServiceEvent().getPerformers().add(performer);
+				}
 			}
 
 			@Override
@@ -1878,6 +1893,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				DocumentationOf dof = CDAFactory.eINSTANCE.createDocumentationOf();
 				ServiceEvent se = CDAFactory.eINSTANCE.createServiceEvent();
 				Performer1 perf = CDAFactory.eINSTANCE.createPerformer1();
+				perf.setTypeCode(x_ServiceEventPerformer.SPRF);
 				se.getPerformers().add(perf);
 				dof.setServiceEvent(se);
 				target.getDocumentationOfs().add(dof);

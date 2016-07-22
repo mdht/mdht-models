@@ -434,6 +434,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(TransferSummary target) {
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 			}
 
 			@Override
@@ -468,6 +469,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(TransferSummary target) {
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.CALLBCK);
 			}
 
 			@Override
@@ -1586,6 +1588,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 				target.getParticipants().get(0).getAssociatedEntity().setAssociatedPerson(
 					CDAFactory.eINSTANCE.createPerson());
@@ -1625,6 +1628,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1662,6 +1666,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1698,6 +1703,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1731,6 +1737,12 @@ public class TransferSummaryTest extends CDAValidationTest {
 				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific participant type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
+
 			@Override
 			protected void updateToFail(TransferSummary target) {
 				target.init();
@@ -1739,6 +1751,9 @@ public class TransferSummaryTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(TransferSummary target) {
+				target.getParticipants().clear();
+				target.init();
+				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
 				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 			}
 
@@ -1770,6 +1785,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
 			}
 
 			@Override
@@ -1805,6 +1821,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 				target.getParticipants().get(0).getAssociatedEntity().setAssociatedPerson(
 					CDAFactory.eINSTANCE.createPerson());
@@ -1844,6 +1861,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1880,6 +1898,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1917,6 +1936,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1954,6 +1974,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -1991,6 +2012,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -2028,6 +2050,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.CALLBCK);
 				target.getParticipants().get(0).setAssociatedEntity(CDAFactory.eINSTANCE.createAssociatedEntity());
 			}
 
@@ -2061,6 +2084,12 @@ public class TransferSummaryTest extends CDAValidationTest {
 				"VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific participant type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
+
 			@Override
 			protected void updateToFail(TransferSummary target) {
 				target.init();
@@ -2069,6 +2098,9 @@ public class TransferSummaryTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(TransferSummary target) {
+				target.getParticipants().clear();
+				target.init();
+				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
 				target.getParticipants().get(0).setTypeCode(ParticipationType.CALLBCK);
 			}
 
@@ -2100,6 +2132,7 @@ public class TransferSummaryTest extends CDAValidationTest {
 			protected void updateToFail(TransferSummary target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				target.getParticipants().get(0).setTypeCode(ParticipationType.CALLBCK);
 			}
 
 			@Override
@@ -2131,6 +2164,12 @@ public class TransferSummaryTest extends CDAValidationTest {
 				"VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
+			{
+				// It is not possible for this test to fail since @typeCode is used for identification of the specific performer type and sub
+				// requirements. Without a unique @typeCode no sub rules are enforced in the first place.
+				skipFailsTest();
+			}
+
 			@Override
 			protected void updateToFail(TransferSummary target) {
 				target.init();
@@ -2144,6 +2183,12 @@ public class TransferSummaryTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(TransferSummary target) {
+				target.getDocumentationOfs().clear();
+				target.init();
+				target.getDocumentationOfs().add(CDAFactory.eINSTANCE.createDocumentationOf());
+				target.getDocumentationOfs().get(0).setServiceEvent(CDAFactory.eINSTANCE.createServiceEvent());
+				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().add(
+					CDAFactory.eINSTANCE.createPerformer1());
 				target.getDocumentationOfs().get(0).getServiceEvent().getPerformers().get(0).setTypeCode(
 					x_ServiceEventPerformer.PRF);
 			}
