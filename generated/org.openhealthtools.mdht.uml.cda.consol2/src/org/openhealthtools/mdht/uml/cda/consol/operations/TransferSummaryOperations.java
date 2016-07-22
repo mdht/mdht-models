@@ -512,7 +512,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->exists(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant1))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->select(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant1))->select(typeCode = vocab::ParticipationType::IND)->notEmpty()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantSupport(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support</em>}' invariant operation.
@@ -573,7 +573,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->exists(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant1))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->select(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant1))->select(typeCode = vocab::ParticipationType::CALLBCK)->notEmpty()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContact(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact</em>}' invariant operation.
@@ -2480,7 +2480,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null).associatedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (( not name->isEmpty()) ))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::IND).associatedEntity->excluding(null).associatedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (( not name->isEmpty()) ))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support Associated Entity Associated Person Name</em>}' invariant operation.
@@ -2549,7 +2549,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject(isDefined('classCode'))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::IND).associatedEntity->excluding(null)->reject(isDefined('classCode'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantSupportAssociatedEntityClassCodeP(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support Associated Entity Class Code P</em>}' invariant operation.
@@ -2632,7 +2632,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject(not classCode.oclIsUndefined() and classCode.oclIsKindOf(vocab::RoleClassAssociative) and " +
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::IND).associatedEntity->excluding(null)->reject(not classCode.oclIsUndefined() and classCode.oclIsKindOf(vocab::RoleClassAssociative) and " +
 			"let value : vocab::RoleClassAssociative = classCode.oclAsType(vocab::RoleClassAssociative) in " +
 			"value = vocab::RoleClassAssociative::PRS or value = vocab::RoleClassAssociative::NOK or value = vocab::RoleClassAssociative::CAREGIVER or value = vocab::RoleClassAssociative::AGNT or value = vocab::RoleClassAssociative::GUAR or value = vocab::RoleClassAssociative::ECON)";
 
@@ -2713,7 +2713,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject(associatedPerson->one(associatedPerson : cda::Person | not associatedPerson.oclIsUndefined() and associatedPerson.oclIsKindOf(cda::Person)))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::IND).associatedEntity->excluding(null)->reject(associatedPerson->one(associatedPerson : cda::Person | not associatedPerson.oclIsUndefined() and associatedPerson.oclIsKindOf(cda::Person)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support Associated Entity Associated Person</em>}' invariant operation.
@@ -2782,7 +2782,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject(typeCode=vocab::ParticipationType::IND)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::IND)->select(typeCode = vocab::ParticipationType::IND)->reject(typeCode=vocab::ParticipationType::IND)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantSupportTypeCode(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support Type Code</em>}' invariant operation.
@@ -2850,7 +2850,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject(associatedEntity->one(associatedEntity : cda::AssociatedEntity | not associatedEntity.oclIsUndefined() and associatedEntity.oclIsKindOf(cda::AssociatedEntity)))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::IND)->select(typeCode = vocab::ParticipationType::IND)->reject(associatedEntity->one(associatedEntity : cda::AssociatedEntity | not associatedEntity.oclIsUndefined() and associatedEntity.oclIsKindOf(cda::AssociatedEntity)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantSupportAssociatedEntity(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Support Associated Entity</em>}' invariant operation.
@@ -2919,7 +2919,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null).associatedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (( not name->isEmpty()) ))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::CALLBCK).associatedEntity->excluding(null).associatedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (( not name->isEmpty()) ))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact Associated Entity Associated Person Name</em>}' invariant operation.
@@ -2988,7 +2988,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject(classCode=vocab::RoleClassAssociative::ASSIGNED)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::CALLBCK).associatedEntity->excluding(null)->reject(classCode=vocab::RoleClassAssociative::ASSIGNED)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContactAssociatedEntityClassCode(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact Associated Entity Class Code</em>}' invariant operation.
@@ -3057,7 +3057,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (( not id->isEmpty()) ))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::CALLBCK).associatedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (( not id->isEmpty()) ))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContactAssociatedEntityId(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact Associated Entity Id</em>}' invariant operation.
@@ -3126,7 +3126,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (not addr->isEmpty()))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::CALLBCK).associatedEntity->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (not addr->isEmpty()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContactAssociatedEntityAddr(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact Associated Entity Addr</em>}' invariant operation.
@@ -3195,7 +3195,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (( not telecom->isEmpty()) ))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::CALLBCK).associatedEntity->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (( not telecom->isEmpty()) ))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContactAssociatedEntityTelecom(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact Associated Entity Telecom</em>}' invariant operation.
@@ -3264,7 +3264,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject(associatedPerson->one(associatedPerson : cda::Person | not associatedPerson.oclIsUndefined() and associatedPerson.oclIsKindOf(cda::Person)))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::CALLBCK).associatedEntity->excluding(null)->reject(associatedPerson->one(associatedPerson : cda::Person | not associatedPerson.oclIsUndefined() and associatedPerson.oclIsKindOf(cda::Person)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact Associated Entity Associated Person</em>}' invariant operation.
@@ -3333,7 +3333,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject(scopingOrganization->one(scopingOrganization : cda::Organization | not scopingOrganization.oclIsUndefined() and scopingOrganization.oclIsKindOf(rim::Entity)))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::CALLBCK).associatedEntity->excluding(null)->reject(scopingOrganization->one(scopingOrganization : cda::Organization | not scopingOrganization.oclIsUndefined() and scopingOrganization.oclIsKindOf(rim::Entity)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact Associated Entity Scoping Organization</em>}' invariant operation.
@@ -3402,7 +3402,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject(isDefined('typeCode'))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::CALLBCK)->select(typeCode = vocab::ParticipationType::CALLBCK)->reject(typeCode=vocab::ParticipationType::CALLBCK)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContactTypeCode(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact Type Code</em>}' invariant operation.
@@ -3471,7 +3471,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject(associatedEntity->one(associatedEntity : cda::AssociatedEntity | not associatedEntity.oclIsUndefined() and associatedEntity.oclIsKindOf(cda::AssociatedEntity)))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::CALLBCK)->select(typeCode = vocab::ParticipationType::CALLBCK)->reject(associatedEntity->one(associatedEntity : cda::AssociatedEntity | not associatedEntity.oclIsUndefined() and associatedEntity.oclIsKindOf(cda::AssociatedEntity)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryParticipantCallbackContactAssociatedEntity(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Participant Callback Contact Associated Entity</em>}' invariant operation.
@@ -3540,7 +3540,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(typeCode=vocab::x_ServiceEventPerformer::PRF)";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->reject(typeCode=vocab::x_ServiceEventPerformer::PRF)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryDocumentationOfServiceEventPerformerTypeCode(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Documentation Of Service Event Performer Type Code</em>}' invariant operation.
@@ -3609,7 +3609,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined()))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Documentation Of Service Event Performer Function Code P</em>}' invariant operation.
@@ -3692,7 +3692,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined() and functionCode.oclIsKindOf(datatypes::CE) and " +
+	protected static final String VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined() and functionCode.oclIsKindOf(datatypes::CE) and " +
 			"let value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in " +
 			"value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
 
@@ -3911,7 +3911,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))";
+	protected static final String VALIDATE_TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->select(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1))->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->notEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTransferSummaryDocumentationOfServiceEventPerformer1(TransferSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Transfer Summary Documentation Of Service Event Performer1</em>}' invariant operation.

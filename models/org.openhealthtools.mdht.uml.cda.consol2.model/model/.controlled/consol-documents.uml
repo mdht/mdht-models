@@ -4026,7 +4026,7 @@ A History and Physical Examination is required upon hospital admission as well a
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_TtkpcD-UEeGvOdejHZ7dYg" name="PrimaryPerformer">
           <ownedComment xmi:id="_TtkpcT-UEeGvOdejHZ7dYg">
-            <body>INLINE&amp;typeCode = vocab::x_ServiceEventPerformer::PPRF</body>
+            <body>&lt;p>The performer participant represents clinicians who actually and principally carry out the serviceEvent. Typically, these are clinicians who have the appropriate privileges in their institutions such as gastroenterologists, interventional radiologists, and family practice physicians. Performers may also be non-physician providers (NPPs) who have other significant roles in the procedure such as a radiology technician, dental assistant, or nurse.&lt;/p></body>
           </ownedComment>
           <ownedComment xmi:id="_hIbGgPL1EeG2kc3Pn1a-QA">
             <body>INLINE&amp;typeCode = vocab::x_ServiceEventPerformer::PPRF</body>
@@ -7777,7 +7777,7 @@ When using a generic type of code such as 18761-7 (Provider - Unspecified Transf
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_F5SFwKDTEeOPqKnBFQcY_A" name="ParticipantSupport">
       <ownedComment xmi:id="_cejpgKDTEeOPqKnBFQcY_A">
-        <body>INLINE</body>
+        <body>INLINE&amp;typeCode = vocab::ParticipationType::IND</body>
       </ownedComment>
       <ownedComment xmi:id="_eo9rkKDTEeOPqKnBFQcY_A">
         <body>participant&#xD;
@@ -7821,7 +7821,7 @@ This participant identifies individuals who support the patient such as a relati
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_lisRkKDVEeOPqKnBFQcY_A" name="ParticipantCallbackContact">
       <ownedComment xmi:id="_F9P4YKDWEeOPqKnBFQcY_A">
-        <body>INLINE</body>
+        <body>INLINE&amp;typeCode = vocab::ParticipationType::CALLBCK</body>
       </ownedComment>
       <ownedComment xmi:id="_Hc34EKDWEeOPqKnBFQcY_A">
         <body>participant&#xD;
@@ -7830,7 +7830,7 @@ This participant represents the clinician to contact for questions about the tra
       <generalization xmi:id="_lis4oKDVEeOPqKnBFQcY_A">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_ufJPMKDVEeOPqKnBFQcY_A" name="typeCode" visibility="private">
+      <ownedAttribute xmi:id="_ufJPMKDVEeOPqKnBFQcY_A" name="typeCode" visibility="private" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="pathmap://VOCAB_MODEL/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_-5Dc4KDVEeOPqKnBFQcY_A" value="CALLBCK"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_bmsJsErdEd6FXKclYGEDCw"/>
@@ -7938,6 +7938,9 @@ performer&#xD;
 &lt;p>&#xD;
 The performer(s) represents the healthcare providers involved in the current or historical care of the patient. The patient's key healthcare providers would be listed here which would include the primary physician and any active consulting physicians, therapists, counselors, and care team members.&#xD;
 &lt;/p></body>
+          </ownedComment>
+          <ownedComment xmi:id="_kihQwE9cEeaNiZ2QlJtgqg">
+            <body>INLINE&amp;typeCode = vocab::x_ServiceEventPerformer::PRF</body>
           </ownedComment>
           <generalization xmi:id="_-EJtoKWVEeOPqKnBFQcY_A">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
@@ -12292,7 +12295,10 @@ If the date and the duration of the procedure is known, serviceEvent/effectiveTi
         <nestedClassifier xmi:type="uml:Class" xmi:id="_osSGIC1mEeSoCqqrpX8LzQ" name="Performer">
           <ownedComment xmi:id="_ulJW8C1mEeSoCqqrpX8LzQ">
             <body>performer&#xD;
-The performer represents clinicians who actually and principally carry out the serviceEvent.????Typically, these are clinicians who have surgical privileges in their institutions such as Surgeons, Obstetrician/Gynecologists, and Family Practice Physicians.????The performer may also be Nonphysician Providers (NPP) who have surgical privileges. There may be more than one primary performer in the case of complicated surgeries.????There are occasionally co-surgeons.????Usually they will be billing separately and will each dictate their own notes.????An example may be spinal surgery , where a general surgeon and an orthopedic surgeon both are present and billing off the same Current Procedural Terminology (CPT) codes.????Typically two Operative Notes are generated; however, each will list the other as a co-surgeon.</body>
+The performer represents clinicians who actually and principally carry out the serviceEvent. Typically, these are clinicians who have surgical privileges in their institutions such as Surgeons, Obstetrician/Gynecologists, and Family Practice Physicians. The performer may also be Nonphysician Providers (NPP) who have surgical privileges. There may be more than one primary performer in the case of complicated surgeries. There are occasionally co-surgeons. Usually they will be billing separately and will each dictate their own notes. An example may be spinal surgery , where a general surgeon and an orthopedic surgeon both are present and billing off the same Current Procedural Terminology (CPT) codes. Typically two Operative Notes are generated; however, each will list the other as a co-surgeon.</body>
+          </ownedComment>
+          <ownedComment xmi:id="_Ud__IE6qEeaNiZ2QlJtgqg">
+            <body>INLINE&amp;typeCode = vocab::x_ServiceEventPerformer::PPRF</body>
           </ownedComment>
           <generalization xmi:id="_osYMwC1mEeSoCqqrpX8LzQ">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
@@ -12331,6 +12337,9 @@ The performer represents clinicians who actually and principally carry out the s
           <ownedComment xmi:id="_hGQt8J3KEeSofqct4VeYrw">
             <body>performer&#xD;
 This performer represents any assistants.</body>
+          </ownedComment>
+          <ownedComment xmi:id="_mEbT8E9SEeaNiZ2QlJtgqg">
+            <body>INLINE&amp;typeCode = vocab::x_ServiceEventPerformer::SPRF</body>
           </ownedComment>
           <generalization xmi:id="_IxQ5AJ3KEeSofqct4VeYrw">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
@@ -12789,7 +12798,7 @@ The Procedure Note is created immediately following a non-operative procedure. I
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_FfLCoC4rEeSoCqqrpX8LzQ" name="Participant">
       <ownedComment xmi:id="_KkMbsC4rEeSoCqqrpX8LzQ">
-        <body>INLINE</body>
+        <body>INLINE&amp;typeCode = vocab::ParticipationType::IND</body>
       </ownedComment>
       <ownedComment xmi:id="_NzQ_wC4rEeSoCqqrpX8LzQ">
         <body>Participant&#xD;
@@ -12897,6 +12906,9 @@ serviceEvent/effectiveTime may be represented two different ways in the Procedur
             <body>performer&#xD;
 The performer participant represents clinicians who actually and principally carry out the serviceEvent. Typically, these are clinicians who have the appropriate privileges in their institutions such as gastroenterologists, interventional radiologists, and family practice physicians. Performers may also be non-physician providers (NPPs) who have other significant roles in the procedure such as a radiology technician, dental assistant, or nurse.</body>
           </ownedComment>
+          <ownedComment xmi:id="_IMDNsE6cEeaNiZ2QlJtgqg">
+            <body>INLINE&amp;typeCode = vocab::x_ServiceEventPerformer::PPRF</body>
+          </ownedComment>
           <generalization xmi:id="_yCE3IC4yEeSoCqqrpX8LzQ">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
           </generalization>
@@ -12934,6 +12946,9 @@ The performer participant represents clinicians who actually and principally car
           <ownedComment xmi:id="_XmuPAKAHEeSy_9HMspjkmw">
             <body>performer&#xD;
 This performer identifies any assistants.</body>
+          </ownedComment>
+          <ownedComment xmi:id="_aTaVQE9YEeaNiZ2QlJtgqg">
+            <body>INLINE&amp;typeCode = vocab::x_ServiceEventPerformer::SPRF</body>
           </ownedComment>
           <generalization xmi:id="_LdUNMKAHEeSy_9HMspjkmw">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>

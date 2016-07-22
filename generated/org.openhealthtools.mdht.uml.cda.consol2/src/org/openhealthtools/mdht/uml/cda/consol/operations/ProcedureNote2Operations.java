@@ -516,7 +516,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->exists(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant1))";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->select(participant : cda::Participant1 | not participant.oclIsUndefined() and participant.oclIsKindOf(cda::Participant1))->select(typeCode = vocab::ParticipationType::IND)->notEmpty()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2Participant(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Participant</em>}' invariant operation.
@@ -2490,7 +2490,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject(classCode=vocab::RoleClassAssociative::PROV)";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_ASSOCIATED_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::IND).associatedEntity->excluding(null)->reject(classCode=vocab::RoleClassAssociative::PROV)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2ParticipantAssociatedEntityClassCode(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Participant Associated Entity Class Code</em>}' invariant operation.
@@ -2559,7 +2559,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null).associatedEntity->excluding(null)->reject(associatedPerson->one(associatedPerson : cda::Person | not associatedPerson.oclIsUndefined() and associatedPerson.oclIsKindOf(rim::Entity)))";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::IND).associatedEntity->excluding(null)->reject(associatedPerson->one(associatedPerson : cda::Person | not associatedPerson.oclIsUndefined() and associatedPerson.oclIsKindOf(rim::Entity)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2ParticipantAssociatedEntityAssociatedPerson(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Participant Associated Entity Associated Person</em>}' invariant operation.
@@ -2628,7 +2628,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject(typeCode=vocab::ParticipationType::IND)";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::IND)->select(typeCode = vocab::ParticipationType::IND)->reject(typeCode=vocab::ParticipationType::IND)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2ParticipantTypeCode(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Participant Type Code</em>}' invariant operation.
@@ -2696,7 +2696,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined() and functionCode.oclIsKindOf(datatypes::CE) and " +
+	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_FUNCTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::IND)->select(typeCode = vocab::ParticipationType::IND)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined() and functionCode.oclIsKindOf(datatypes::CE) and " +
 			"let value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in " +
 			"value.code = 'PCP' and value.codeSystem = '2.16.840.1.113883.5.88'))";
 
@@ -2766,7 +2766,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined()))";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_FUNCTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::IND)->select(typeCode = vocab::ParticipationType::IND)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2ParticipantFunctionCodeP(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Participant Function Code P</em>}' invariant operation.
@@ -2834,7 +2834,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->reject(associatedEntity->one(associatedEntity : cda::AssociatedEntity | not associatedEntity.oclIsUndefined() and associatedEntity.oclIsKindOf(cda::AssociatedEntity)))";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_PARTICIPANT_ASSOCIATED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->excluding(null)->select(typeCode = vocab::ParticipationType::IND)->select(typeCode = vocab::ParticipationType::IND)->reject(associatedEntity->one(associatedEntity : cda::AssociatedEntity | not associatedEntity.oclIsUndefined() and associatedEntity.oclIsKindOf(cda::AssociatedEntity)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2ParticipantAssociatedEntity(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Participant Associated Entity</em>}' invariant operation.
@@ -2971,7 +2971,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Documentation Of Service Event Performer Assigned Entity Code P</em>}' invariant operation.
@@ -3054,7 +3054,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and " +
+	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and " +
 			"let value : datatypes::CE = code.oclAsType(datatypes::CE) in " +
 			"value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
 
@@ -3135,7 +3135,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(typeCode=vocab::x_ServiceEventPerformer::PPRF)";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject(typeCode=vocab::x_ServiceEventPerformer::PPRF)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2DocumentationOfServiceEventPerformerTypeCode(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Documentation Of Service Event Performer Type Code</em>}' invariant operation.
@@ -3204,7 +3204,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Documentation Of Service Event Performer Assigned Entity</em>}' invariant operation.
@@ -3273,7 +3273,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::SPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Documentation Of Service Event Performer Assistants Assigned Entity Code P</em>}' invariant operation.
@@ -3356,7 +3356,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and " +
+	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::SPRF).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and " +
 			"let value : datatypes::CE = code.oclAsType(datatypes::CE) in " +
 			"value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))";
 
@@ -3437,7 +3437,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(typeCode=vocab::x_ServiceEventPerformer::SPRF)";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::SPRF)->select(typeCode = vocab::x_ServiceEventPerformer::SPRF)->reject(typeCode=vocab::x_ServiceEventPerformer::SPRF)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Documentation Of Service Event Performer Assistants Type Code</em>}' invariant operation.
@@ -3506,7 +3506,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::SPRF)->select(typeCode = vocab::x_ServiceEventPerformer::SPRF)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Documentation Of Service Event Performer Assistants Assigned Entity</em>}' invariant operation.
@@ -3920,7 +3920,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->select(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1))->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->notEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2DocumentationOfServiceEventPerformer(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Documentation Of Service Event Performer</em>}' invariant operation.
@@ -3989,7 +3989,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))";
+	protected static final String VALIDATE_PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->select(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1))->select(typeCode = vocab::x_ServiceEventPerformer::SPRF)->notEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNote2DocumentationOfServiceEventPerformerAssistants(ProcedureNote2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Note2 Documentation Of Service Event Performer Assistants</em>}' invariant operation.
