@@ -2371,65 +2371,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityText/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthor">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthor/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthor/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorHasPersonOrOrganization">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorHasPersonOrOrganization/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorHasPersonOrOrganization/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorAssignPersonName">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorAssignPersonName/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorAssignPersonName/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorAddr">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorAddr/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorAddr/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthorId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorTime">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorTime/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorTime/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthor">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthor/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorAssignedAuthor/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CommentActivity/CommentActivityAuthorParticipation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorParticipation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CommentActivity/CommentActivityAuthorParticipation/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//NonMedicinalSupplyActivity">

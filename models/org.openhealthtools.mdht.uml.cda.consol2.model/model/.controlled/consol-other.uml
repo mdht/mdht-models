@@ -111,61 +111,11 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2FmeIhSVEeGGzu7fmW9pXw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2FmeIRSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2FhlpxSVEeGGzu7fmW9pXw" name="author" type="_HgbLYHegEeGLwesdFe7o6w" association="_2FizwRSVEeGGzu7fmW9pXw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ehPigUhgEeK8B-PH0_kphA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ehPigEhgEeK8B-PH0_kphA" value="1"/>
+    <ownedAttribute xmi:id="_lZOe4FgmEeaw99gz9T1FvQ" name="authorParticipation" type="_7jqj4KrlEeOxqJAXCMXUYg" association="_lZQUEFgmEeaw99gz9T1FvQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yHycMVgmEeaw99gz9T1FvQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHycMFgmEeaw99gz9T1FvQ" value="1"/>
     </ownedAttribute>
-    <nestedClassifier xmi:type="uml:Class" xmi:id="_HgbLYHegEeGLwesdFe7o6w" name="Author">
-      <ownedComment xmi:id="_bnbZEHekEeGLwesdFe7o6w">
-        <body>INLINE</body>
-      </ownedComment>
-      <generalization xmi:id="_HgbLYXegEeGLwesdFe7o6w">
-        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
-      </generalization>
-      <ownedAttribute xmi:id="_LEV-EHegEeGLwesdFe7o6w" name="time" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_OOYRIHegEeGLwesdFe7o6w" name="assignedAuthor" visibility="private" type="_PfJ8gHegEeGLwesdFe7o6w" aggregation="composite">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OOYRInegEeGLwesdFe7o6w" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OOYRIXegEeGLwesdFe7o6w" value="1"/>
-        <association href="../consol.uml#_OOYRI3egEeGLwesdFe7o6w"/>
-      </ownedAttribute>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_PfJ8gHegEeGLwesdFe7o6w" name="AssignedAuthor">
-        <ownedRule xmi:id="_7iHw4HegEeGLwesdFe7o6w" name="hasPersonOrOrganization" constrainedElement="_PfJ8gHegEeGLwesdFe7o6w">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_-5PdsHegEeGLwesdFe7o6w">
-            <language>Analysis</language>
-            <language>OCL</language>
-            <body>include assignedPerson/name or representedOrganization/name</body>
-            <body>self.assignedPerson->one(element | not element.oclIsUndefined() and element.name->size() = 1) or self.representedOrganization->one(element | not element.oclIsUndefined() and element.name->size() = 1)</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_QL-JwHehEeGLwesdFe7o6w" name="assignPersonName" constrainedElement="_PfJ8gHegEeGLwesdFe7o6w">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_R5xIUHehEeGLwesdFe7o6w">
-            <language>Analysis</language>
-            <language>OCL</language>
-            <body>An  assignedPerson/name SHALL be a conformant US Realm Person Name (PN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1)</body>
-            <body>self.assignedPerson.name->forAll(name | name.oclIsTypeOf(datatypes::PN))</body>
-          </specification>
-        </ownedRule>
-        <generalization xmi:id="_PfJ8gXegEeGLwesdFe7o6w">
-          <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_z2vcQEcDEd6besF9iFIJkQ"/>
-        </generalization>
-        <ownedAttribute xmi:id="_S78McHegEeGLwesdFe7o6w" name="addr" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="consol-documents.uml#_i4zXgPIPEeGu1M-cCXg0Dg"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YeUP4XegEeGLwesdFe7o6w" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YeUP4HegEeGLwesdFe7o6w" value="1"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:id="_S78Mc3egEeGLwesdFe7o6w" name="id" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XDkJIXegEeGLwesdFe7o6w" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XDkJIHegEeGLwesdFe7o6w" value="1"/>
-        </ownedAttribute>
-      </nestedClassifier>
-    </nestedClassifier>
   </uml:Class>
-  <uml:Association xmi:id="_2FizwRSVEeGGzu7fmW9pXw" memberEnd="_2FhlpxSVEeGGzu7fmW9pXw _2FizwhSVEeGGzu7fmW9pXw">
-    <ownedEnd xmi:id="_2FizwhSVEeGGzu7fmW9pXw" type="_2FhloBSVEeGGzu7fmW9pXw" association="_2FizwRSVEeGGzu7fmW9pXw"/>
-  </uml:Association>
   <CDA:CDATemplate xmi:id="_JkL0wBnbEeGs5a462vYX5Q" base_Class="_2FhloBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.64">
     <ruleId>CONF:9427</ruleId>
     <ruleId>CONF:10491</ruleId>
@@ -184,9 +134,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF-6.3.4.6.8</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:AssociationValidation xmi:id="_2FizwxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2FizwRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:9433</ruleId>
-  </CDA:AssociationValidation>
   <uml:Class xmi:id="_2KKOBhSVEeGGzu7fmW9pXw" name="FunctionalStatusSection">
     <ownedComment xmi:id="_2KTX8xSVEeGGzu7fmW9pXw" annotatedElement="_2KKOBhSVEeGGzu7fmW9pXw">
       <body>The Functional Status section describes the patient's physical state, status of functioning, and environmental status at the time the document was created. &#xD;
@@ -1244,21 +1191,6 @@ Instructions are information or directions to the patient. Use the Instructions 
   <CDA:PropertyValidation xmi:id="_6VsPcHefEeGLwesdFe7o6w" base_Property="_2FmeIBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9430</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_Lof0AHegEeGLwesdFe7o6w" base_Property="_LEV-EHegEeGLwesdFe7o6w">
-    <ruleId>CONF:9434</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_U21L0HegEeGLwesdFe7o6w" base_Property="_S78Mc3egEeGLwesdFe7o6w">
-    <ruleId>CONF:9436</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_VYJwMHegEeGLwesdFe7o6w" base_Property="_S78McHegEeGLwesdFe7o6w">
-    <ruleId>CONF:9437</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="__McGgHegEeGLwesdFe7o6w" base_Constraint="_7iHw4HegEeGLwesdFe7o6w">
-    <ruleId>CONF:9438</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_Te7vUHehEeGLwesdFe7o6w" base_Constraint="_QL-JwHehEeGLwesdFe7o6w">
-    <ruleId>CONF:9439</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_xA5L8Ny4EeG3d7pEoxuOZA" base_Property="_nD-cEB-YEeGtfPlBCjHWkw">
     <ruleId>CONF:7758</ruleId>
   </CDA:PropertyValidation>
@@ -3404,4 +3336,11 @@ Instructions are information or directions to the patient. Use the Instructions 
     <ruleId>CONF:1198-32750</ruleId>
     <ruleId>CONF:1198-32751</ruleId>
   </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_lZQUEFgmEeaw99gz9T1FvQ" memberEnd="_lZOe4FgmEeaw99gz9T1FvQ _lZQ7IFgmEeaw99gz9T1FvQ">
+    <ownedEnd xmi:id="_lZQ7IFgmEeaw99gz9T1FvQ" type="_2FhloBSVEeGGzu7fmW9pXw" association="_lZQUEFgmEeaw99gz9T1FvQ"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_wm2N4FgmEeaw99gz9T1FvQ" severity="WARNING" base_Association="_lZQUEFgmEeaw99gz9T1FvQ">
+    <ruleId>CONF:NEW</ruleId>
+    <ruleId>DSTU:1038</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
