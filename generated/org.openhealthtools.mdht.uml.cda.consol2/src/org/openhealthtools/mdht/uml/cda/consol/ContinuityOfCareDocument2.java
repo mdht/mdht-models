@@ -23,7 +23,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2Author constraints.validation.error='ContinuityOfCareDocument2AuthorAssignedAuthor'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2AuthorAssignedAuthor constraints.validation.error='ContinuityOfCareDocument2AuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization ContinuityOfCareDocument2AuthorAssignedAuthorHasRepresentOrganization'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2DocumentationOf constraints.validation.error='ContinuityOfCareDocument2DocumentationOfServiceEvent'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2DocumentationOfServiceEvent classCode='PCPR' constraints.validation.error='ContinuityOfCareDocument2DocumentationOfServiceEventClassCode ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh' constraints.validation.warning='ContinuityOfCareDocument2DocumentationOfServiceEventPerformer' constraints.validation.query='ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2DocumentationOfServiceEvent classCode='PCPR' constraints.validation.error='ContinuityOfCareDocument2DocumentationOfServiceEventClassCode ContinuityOfCareDocument2DocumentationOfServiceEventEffectiveTime ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode' constraints.validation.warning='ContinuityOfCareDocument2DocumentationOfServiceEventPerformer ServiceEventPerformerContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier' constraints.validation.query='ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh ServiceEventPerformerContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId ServiceEventPerformerContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode ServiceEventContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity' constraints.validation.info='ServiceEventPerformerContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson ServiceEventContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2DocumentationOfServiceEventIVLTS constraints.validation.error='ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSLow ContinuityOfCareDocument2DocumentationOfServiceEventIVLTSHigh'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2DocumentationOfServiceEventPerformer typeCode='PRF' constraints.validation.error='ContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode' constraints.validation.info='ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity constraints.validation.warning='ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier' constraints.validation.error='ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId' constraints.validation.info='ContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson'"
@@ -367,7 +367,7 @@ public interface ContinuityOfCareDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((not assignedPerson.oclIsUndefined() and not id->isEmpty()) implies id->exists(id | (id.isNullFlavorDefined() and id.extension->isEmpty() and id.root->isEmpty()) or (id.isNullFlavorDefined() and id.root=\'2.16.840.1.113883.4.6\') or (id.root=\'2.16.840.1.113883.4.6\' and id.extension->size() = 1)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF).assignedEntity->excluding(null)->reject((not assignedPerson.oclIsUndefined() and not id->isEmpty()) implies id->exists(id | (id.isNullFlavorDefined() and id.extension->isEmpty() and id.root->isEmpty()) or (id.isNullFlavorDefined() and id.root=\'2.16.840.1.113883.4.6\') or (id.root=\'2.16.840.1.113883.4.6\' and id.extension->size() = 1)))'"
 	 * @generated
 	 */
 	boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(
@@ -380,7 +380,7 @@ public interface ContinuityOfCareDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
 	 * @generated
 	 */
 	boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId(
@@ -393,7 +393,7 @@ public interface ContinuityOfCareDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(rim::Entity)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF).assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(rim::Entity)))'"
 	 * @generated
 	 */
 	boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(
@@ -406,7 +406,7 @@ public interface ContinuityOfCareDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(typeCode=vocab::x_ServiceEventPerformer::PRF)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->reject(typeCode=vocab::x_ServiceEventPerformer::PRF)'"
 	 * @generated
 	 */
 	boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode(DiagnosticChain diagnostics,
@@ -419,7 +419,7 @@ public interface ContinuityOfCareDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))'"
 	 * @generated
 	 */
 	boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity(
@@ -458,7 +458,7 @@ public interface ContinuityOfCareDocument2 extends USRealmHeader2 {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->select(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1))->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->notEmpty())'"
 	 * @generated
 	 */
 	boolean validateContinuityOfCareDocument2DocumentationOfServiceEventPerformer(DiagnosticChain diagnostics,

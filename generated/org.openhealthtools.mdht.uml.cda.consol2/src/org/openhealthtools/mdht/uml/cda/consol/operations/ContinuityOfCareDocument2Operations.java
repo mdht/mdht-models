@@ -1829,7 +1829,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((not assignedPerson.oclIsUndefined() and not id->isEmpty()) implies id->exists(id | (id.isNullFlavorDefined() and id.extension->isEmpty() and id.root->isEmpty()) or (id.isNullFlavorDefined() and id.root='2.16.840.1.113883.4.6') or (id.root='2.16.840.1.113883.4.6' and id.extension->size() = 1)))";
+	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF).assignedEntity->excluding(null)->reject((not assignedPerson.oclIsUndefined() and not id->isEmpty()) implies id->exists(id | (id.isNullFlavorDefined() and id.extension->isEmpty() and id.root->isEmpty()) or (id.isNullFlavorDefined() and id.root='2.16.840.1.113883.4.6') or (id.root='2.16.840.1.113883.4.6' and id.extension->size() = 1)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier(ContinuityOfCareDocument2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Documentation Of Service Event Performer Assigned Entity Has National Provider Identifier</em>}' invariant operation.
@@ -1899,7 +1899,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))";
+	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF).assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityId(ContinuityOfCareDocument2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Documentation Of Service Event Performer Assigned Entity Id</em>}' invariant operation.
@@ -1969,7 +1969,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(rim::Entity)))";
+	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF).assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(rim::Entity)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntityAssignedPerson(ContinuityOfCareDocument2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Documentation Of Service Event Performer Assigned Entity Assigned Person</em>}' invariant operation.
@@ -2039,7 +2039,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(typeCode=vocab::x_ServiceEventPerformer::PRF)";
+	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->reject(typeCode=vocab::x_ServiceEventPerformer::PRF)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerTypeCode(ContinuityOfCareDocument2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Documentation Of Service Event Performer Type Code</em>}' invariant operation.
@@ -2109,7 +2109,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))";
+	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->reject(assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateContinuityOfCareDocument2DocumentationOfServiceEventPerformerAssignedEntity(ContinuityOfCareDocument2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Documentation Of Service Event Performer Assigned Entity</em>}' invariant operation.
@@ -2319,7 +2319,7 @@ public class ContinuityOfCareDocument2Operations extends USRealmHeader2Operation
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->exists(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1)))";
+	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.documentationOf->excluding(null).serviceEvent->excluding(null)->reject(performer->select(performer : cda::Performer1 | not performer.oclIsUndefined() and performer.oclIsKindOf(cda::Performer1))->select(typeCode = vocab::x_ServiceEventPerformer::PRF)->notEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateContinuityOfCareDocument2DocumentationOfServiceEventPerformer(ContinuityOfCareDocument2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document2 Documentation Of Service Event Performer</em>}' invariant operation.

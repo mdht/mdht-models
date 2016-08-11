@@ -354,7 +354,7 @@ public class RiskConcernActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() =  1)";
+	protected static final String VALIDATE_RISK_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (( not self.id->isEmpty()) )";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRiskConcernActId(RiskConcernAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Risk Concern Act Id</em>}' invariant operation.
