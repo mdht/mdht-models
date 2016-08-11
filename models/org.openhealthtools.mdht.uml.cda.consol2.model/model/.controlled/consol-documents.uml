@@ -1976,6 +1976,9 @@ The CCD is a core data set of the most relevant administrative, demographic, and
           <ownedComment xmi:id="_2aw1sEIPEeGfG6GbxF_VQQ">
             <body>serviceEvent/performer represents the healthcare providers involved in the current or pertinent historical care of the patient. Preferably, the patient's key healthcare providers would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors</body>
           </ownedComment>
+          <ownedComment xmi:id="_99hhUF5LEeaw99gz9T1FvQ">
+            <body>INLINE&amp;typeCode = vocab::x_ServiceEventPerformer::PRF</body>
+          </ownedComment>
           <generalization xmi:id="_fbQCcEIOEeGfG6GbxF_VQQ">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
           </generalization>
@@ -10036,6 +10039,9 @@ NOTE: Implementations originating a CCD should take care to discover what the ep
           <ownedComment xmi:id="_z7BYUCJWEeSBLYc2hU6GfA">
             <body>performer&#xD;
 The serviceEvent/performer represents the healthcare providers involved in the current or pertinent historical care of the patient. Preferably, the patient's key healthcare providers would be listed, particularly their primary physician and any active consulting physicians, therapists, and counselors.</body>
+          </ownedComment>
+          <ownedComment xmi:id="_uWaCgF5LEeaw99gz9T1FvQ">
+            <body>INLINE&amp;typeCode = vocab::x_ServiceEventPerformer::PRF</body>
           </ownedComment>
           <generalization xmi:id="_otUw0CJWEeSBLYc2hU6GfA">
             <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
