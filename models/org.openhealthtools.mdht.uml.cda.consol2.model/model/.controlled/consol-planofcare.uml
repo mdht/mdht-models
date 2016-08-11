@@ -3686,8 +3686,8 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     </ownedAttribute>
     <ownedAttribute xmi:id="_2d2bcON3EeS_XOr-dz_KWA" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__nlAEeN3EeS_XOr-dz_KWA" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__nlAEON3EeS_XOr-dz_KWA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ErWbgV5dEeaw99gz9T1FvQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ErWbgF5dEeaw99gz9T1FvQ" value="*"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2d1NUON3EeS_XOr-dz_KWA" name="code" visibility="private" aggregation="composite">
@@ -3948,6 +3948,7 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_9ZpI4ON3EeS_XOr-dz_KWA" base_Property="_2d2bcON3EeS_XOr-dz_KWA">
     <ruleId>CONF:1198-32223</ruleId>
+    <ruleId>DSTU:1017</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_BPZScON4EeS_XOr-dz_KWA" base_Property="_2d1NUON3EeS_XOr-dz_KWA">
     <ruleId>CONF:1198-32305</ruleId>
