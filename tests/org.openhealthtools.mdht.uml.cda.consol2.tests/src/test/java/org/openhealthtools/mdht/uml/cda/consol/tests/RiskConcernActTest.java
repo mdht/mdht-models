@@ -255,6 +255,7 @@ public class RiskConcernActTest extends CDAValidationTest {
 			protected void updateToPass(RiskConcernAct target) {
 				target.init();
 				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
+				target.getIds().add(DatatypesFactory.eINSTANCE.createII());
 			}
 
 			@Override
