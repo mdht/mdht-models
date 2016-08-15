@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:lcm="lcm" xmlns:rim="rim">
+
+    <s:Header>
+        <a:Action s:mustUnderstand="1"> urn:ihe:iti:2007:ProvideAndRegisterDocumentSet </a:Action>
+        <!-- MessageID comes from the Message-ID header.
+            It is prepended with mid: to conform to the requirements of WS-Addressing -->
+        <a:MessageID> mid:AANLkTikLULq=xbbxBFPEnbMwQFZmN6CrtT7pz2EmXPVK@mail.gmail.com </a:MessageID>
+        <a:ReplyTo>
+            <a:Address>http://www.w3.org/2005/08/addressing/anonymous</a:Address>
+        </a:ReplyTo>
+        <!-- The To address must be determined by the converting program.
+            Expected to be a mapped from the To address in the header -->
+        <a:To s:mustUnderstand="1"> http://localhost:2647/DirectXdrService/DirectXDRRecipient.svc
+        </a:To>
+    </s:Header>
+
+    <s:Body>
+        <ProvideAndRegisterDocumentSetRequest>
+            <lcm:SubmitObjectsRequest>
+                <rim:RegistryObjectList>
+                    <rim:ExtrinsicObject id="Document01" mimeType="text/plain"
+                        objectType="urn:uuid:7edca82f-054d-47f2-a032-9b2a5b5186c1">
+                        <!-- HL7 Confidentiality code -->
+                        <rim:Classification
+                            classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                            classifiedObject="Document01" id="CLS0-1"
+                            objectType="urn:oasis:names:tc:ebxmlregrep:ObjectType:RegistryObject:Classification"
+                            nodeRepresentation="N">
+                            <rim:Slot name="codingScheme">
+                                <rim:ValueList>
+                                    <rim:Value>2.16.840.1.113883.1.11.16926</rim:Value>
+                                </rim:ValueList>
+                            </rim:Slot>
+                            <rim:Name>
+                                <rim:LocalizedString value="Normal"/>
+                            </rim:Name>
+                        </rim:Classification>
+                        <!-- HL7 Purpose of Use - Treatment-->
+                        <!--  templateId: 2.16.840.1.113883.3.3251.1.23  -->
+                        <rim:Classification
+                            classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                            classifiedObject="Document01" id="CLS0-2"
+                            objectType="urn:oasis:names:tc:ebxmlregrep:ObjectType:RegistryObject:Classification"
+                            nodeRepresentation="TREAT">
+                            <rim:Slot name="codingScheme">
+                                <rim:ValueList>
+                                    <rim:Value>2.16.840.1.113883.1.11.20448</rim:Value>
+                                </rim:ValueList>
+                            </rim:Slot>
+                            <rim:Name>
+                                <rim:LocalizedString value="Treatment"/>
+                            </rim:Name>
+                        </rim:Classification>
+                        <!-- HL7 Purpose of Use - Emergency Treatment-->
+                        <!--  templateId: 2.16.840.1.113883.3.3251.1.23 -->
+                        <rim:Classification
+                            classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                            classifiedObject="Document01" id="CLS0-2"
+                            objectType="urn:oasis:names:tc:ebxmlregrep:ObjectType:RegistryObject:Classification"
+                            nodeRepresentation="ETREAT">
+                            <rim:Slot name="codingScheme">
+                                <rim:ValueList>
+                                    <rim:Value>2.16.840.1.113883.1.11.20448</rim:Value>
+                                </rim:ValueList>
+                            </rim:Slot>
+                           <rim:Slot name="text">
+                            <rim:ValueList>
+                                <rim:Value>The reason for emergency is.... </rim:Value>
+                            </rim:ValueList>
+                           </rim:Slot>
+                            <rim:Name>
+                                <rim:LocalizedString value="Emergency Treatment"/>
+                            </rim:Name>
+                        </rim:Classification>                     
+                        <!-- HL7 Obligation Code -->
+                        <!-- templateId: 2.16.840.1.113883.3.3251.1.22 -->
+                        <rim:Classification
+                            classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                            classifiedObject="Document01" id="CLS0-3"
+                            objectType="urn:oasis:names:tc:ebxmlregrep:ObjectType:RegistryObject:Classification"
+                            nodeRepresentation="CPLYCD">
+                            <rim:Slot name="codingScheme">
+                                <rim:ValueList>
+                                    <rim:Value>2.16.840.1.113883.1.11.20445</rim:Value>
+                                </rim:ValueList>
+                            </rim:Slot>
+                            <rim:Name>
+                                <rim:LocalizedString value="Comply with consent privacy directive"/>
+                            </rim:Name>
+                        </rim:Classification>
+                        <!-- HL7 Refrain Policy Code -->
+                        <!-- templateId: 2.16.840.1.113883.3.3251.1.24  -->
+                        <rim:Classification
+                            classificationScheme="urn:uuid:f4f85eac-e6cb-4883-b524-f2705394840f"
+                            classifiedObject="Document01" id="CLS0-4"
+                            objectType="urn:oasis:names:tc:ebxmlregrep:ObjectType:RegistryObject:Classification"
+                            nodeRepresentation="NORDSCLCD ">
+                            <rim:Slot name="codingScheme">
+                                <rim:ValueList>
+                                    <rim:Value>2.16.840.1.113883.1.11.20446</rim:Value>
+                                </rim:ValueList>
+                            </rim:Slot>
+                            <rim:Name>
+                                <rim:LocalizedString value="No redisclosure without privacy consent"/>
+                            </rim:Name>
+                        </rim:Classification>
+
+                        <Slot name="creationTime">
+                            <ValueList>
+                                <Value>20060105</Value>
+                            </ValueList>
+                        </Slot>
+                        <Slot name="languageCode">
+                            <ValueList>
+                                <Value>en-us</Value>
+                            </ValueList>
+                        </Slot>
+                        <!-- The value= content must be generated and unique
+                            Unless some unique value in the message is able to be used -->
+                        <rim:ExternalIdentifier id="ei02" registryObject="Document01"
+                            identificationScheme="urn:uuid:2e82c1f6-a085-4c72-9da3-8640a32e42ab"
+                            value="1.3.6.1.4.1.21367.2005.3.9999.32">
+                            <rim:Name>
+                                <rim:LocalizedString value="XDSDocumentEntry.uniqueId"/>
+                            </rim:Name>
+                        </rim:ExternalIdentifier>
+
+                    </rim:ExtrinsicObject>
+
+                    <rim:RegistryPackage id="SubmissionSet01">
+
+                        <!-- submissionTime comes from the Date header.
+                            It must be converted into YYYYMMDDHHMMSS format -->
+                        <rim:Slot name="submissionTime">
+                            <rim:ValueList>
+                                <rim:Value>20101111115540</rim:Value>
+                            </rim:ValueList>
+                        </rim:Slot>
+
+                        <!-- authorTelecommunication comes from the From header.
+                            It must be prepended with ^^Internet^ -->
+                        <rim:Classification id="cl08"
+                            classificationScheme="urn:uuid:a7058bb9-b4e4-4307-ba5b-e3f0ab85e12d"
+                            classifiedObject="SubmissionSet01">
+                            <rim:Slot name="authorTelecommunication">
+                                <rim:ValueList>
+                                    <rim:Value>>^^Internet^drjones@direct.sunnyfamily.example.org</rim:Value>
+                                </rim:ValueList>
+                            </rim:Slot>
+                        </rim:Classification>
+
+                        <!-- The value= content must be generated and unique
+                            Unless some unique value in the message is able to be used -->
+                        <rim:ExternalIdentifier id="ei03" registryObject="SubmissionSet01"
+                            identificationScheme="urn:uuid:96fdda7c-d067-4183-912e-bf5ee74998a8"
+                            value="1.3.6.1.4.1.21367.2005.3.9999.33">
+                            <rim:Name>
+                                <rim:LocalizedString value="XDSSubmissionSet.uniqueId"/>
+                            </rim:Name>
+                        </rim:ExternalIdentifier>
+
+                        <!-- The value= content must be determined through configuration
+                            It represents the source of the content and is expected to be a mapping from
+                            the From header -->
+                        <rim:ExternalIdentifier id="ei04" registryObject="SubmissionSet01"
+                            identificationScheme="urn:uuid:554ac39e-e3fe-47fe-b233-965d2a147832"
+                            value="3670984664">
+                            <rim:Name>
+                                <rim:LocalizedString value="XDSSubmissionSet.sourceId"/>
+                            </rim:Name>
+                        </rim:ExternalIdentifier>
+
+                        <!-- intendedRecipient comes from the To header.
+                            It must be prepended with ||^^Internet^ -->
+                        <rim:Slot name="intendedRecipient">
+                            <rim:ValueList>
+                                <rim:Value> ||^^ Internet^drsmith@direct.happyvalley.example.com
+                                </rim:Value>
+                            </rim:ValueList>
+                        </rim:Slot>
+
+
+                    </rim:RegistryPackage>
+
+                    <rim:Classification id="cl10" classifiedObject="SubmissionSet01"
+                        classificationNode="urn:uuid:a54d6aa5-d40d-43f9-88c5-b4633d873bdd"/>
+
+                    <rim:Association id="as01" associationType="HasMember"
+                        sourceObject="SubmissionSet01" targetObject="Document01">
+                        <rim:Slot name="SubmissionSetStatus">
+                            <rim:ValueList>
+                                <rim:Value>Original</rim:Value>
+                            </rim:ValueList>
+                        </rim:Slot>
+                    </rim:Association>
+
+                </rim:RegistryObjectList>
+            </lcm:SubmitObjectsRequest>
+
+            <!-- The contents goes here.
+                When sent the contents is MTOM encoded -->
+            <Document id="Document01"> 
+...
+
+            </Document>
+        </ProvideAndRegisterDocumentSetRequest>
+    </s:Body>
+</s:Envelope>
