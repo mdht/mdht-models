@@ -54,6 +54,61 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePlannedMedicationActivity2EffectiveTimeIVLTSorTS(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTimeIVLTSorTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedMedicationActivity2EffectiveTimeIVLTSLow(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTimeIVLTSLow(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedMedicationActivity2EffectiveTimeIVLTSHigh(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTimeIVLTSHigh(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedMedicationActivity2EffectiveTimeIVLTSLowXorValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTimeIVLTSLowXorValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePlannedMedicationActivity2EffectiveTimePIVLTS(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTimePIVLTS(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validatePlannedMedicationActivity2StatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -70,18 +125,6 @@ public class PlannedMedicationActivity2Impl extends PlanOfCareActivitySubstanceA
 	public boolean validatePlannedMedicationActivity2StatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2StatusCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validatePlannedMedicationActivity2EffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTime(
 			this, diagnostics, context);
 	}
 

@@ -10287,6 +10287,26 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PlannedMedicationActivity2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimeIVLTSorTS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimeIVLTSorTS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimeIVLTSorTS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimeIVLTSLow">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimeIVLTSLow/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimeIVLTSLow/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimeIVLTSHigh">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimeIVLTSHigh/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimeIVLTSHigh/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimeIVLTSLowXorValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimeIVLTSLowXorValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimeIVLTSLowXorValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimePIVLTS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimePIVLTS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTimePIVLTS/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2StatusCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2StatusCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2StatusCode/context"/>
@@ -10294,10 +10314,6 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2StatusCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2StatusCodeP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2StatusCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTime">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTime/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2EffectiveTime/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2RepeatNumber">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//PlannedMedicationActivity2/PlannedMedicationActivity2RepeatNumber/diagnostics"/>
