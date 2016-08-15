@@ -23,10 +23,13 @@ import org.eclipse.mdht.uml.cda.Precondition;
 import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.eclipse.mdht.uml.hl7.datatypes.CS;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.EIVL_TS;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.PIVL_TS;
 import org.eclipse.mdht.uml.hl7.vocab.ActRelationshipType;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentSubstanceMood;
 import org.junit.Test;
-import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedMedicationActivity2Operations;
@@ -39,9 +42,13 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedMedicationActiv
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2EffectiveTimeIVLTSorTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Effective Time IVLT Sor TS</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2EffectiveTimeIVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Effective Time IVLTS Low</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2EffectiveTimeIVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Effective Time IVLTS High</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2EffectiveTimeIVLTSLowXorValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Effective Time IVLTS Low Xor Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2EffectiveTimePIVLTS(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Effective Time PIVLTS</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2StatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2StatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Status Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2EffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2RepeatNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Repeat Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2RouteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Route Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.PlannedMedicationActivity2#validatePlannedMedicationActivity2RouteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Medication Activity2 Route Code</em>}</li>
@@ -76,6 +83,267 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.PlannedMedicationActiv
  */
 
 public class PlannedMedicationActivity2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidatePlannedMedicationActivity2EffectiveTimeIVLTSorTS() {
+		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2EffectiveTimeIVLTSorTSTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
+			"validatePlannedMedicationActivity2EffectiveTimeIVLTSorTS",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_MEDICATION_ACTIVITY2_EFFECTIVE_TIME_IVLT_SOR_TS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedMedicationActivity2 target) {
+				target.init();
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedMedicationActivity2 target) {
+						target.init();
+						target.getEffectiveTimes().add(DatatypesFactory.eINSTANCE.createIVL_TS());
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedMedicationActivity2 target) {
+						target.init();
+						target.getEffectiveTimes().add(DatatypesFactory.eINSTANCE.createSXCM_TS());
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTimeIVLTSorTS(
+					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedMedicationActivity2EffectiveTimeIVLTSorTSTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidatePlannedMedicationActivity2EffectiveTimeIVLTSLow() {
+		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2EffectiveTimeIVLTSLowTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
+			"validatePlannedMedicationActivity2EffectiveTimeIVLTSLow",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_MEDICATION_ACTIVITY2_EFFECTIVE_TIME_IVLTS_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedMedicationActivity2 target) {
+				target.init();
+				target.getEffectiveTimes().add(DatatypesFactory.eINSTANCE.createIVL_TS());
+			}
+
+			@Override
+			protected void updateToPass(PlannedMedicationActivity2 target) {
+				target.getEffectiveTimes().clear();
+				IVL_TS ef = DatatypesFactory.eINSTANCE.createIVL_TS();
+				ef.setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.getEffectiveTimes().add(ef);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTimeIVLTSLow(
+					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedMedicationActivity2EffectiveTimeIVLTSLowTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidatePlannedMedicationActivity2EffectiveTimeIVLTSHigh() {
+		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2EffectiveTimeIVLTSHighTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
+			"validatePlannedMedicationActivity2EffectiveTimeIVLTSHigh",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_MEDICATION_ACTIVITY2_EFFECTIVE_TIME_IVLTS_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedMedicationActivity2 target) {
+				target.init();
+				IVL_TS et = DatatypesFactory.eINSTANCE.createIVL_TS();
+				target.getEffectiveTimes().add(et);
+			}
+
+			@Override
+			protected void updateToPass(PlannedMedicationActivity2 target) {
+				target.getEffectiveTimes().clear();
+				IVL_TS etWithHigh = DatatypesFactory.eINSTANCE.createIVL_TS();
+				etWithHigh.setHigh(DatatypesFactory.eINSTANCE.createIVXB_TS());
+				target.getEffectiveTimes().add(etWithHigh);
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTimeIVLTSHigh(
+					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedMedicationActivity2EffectiveTimeIVLTSHighTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidatePlannedMedicationActivity2EffectiveTimeIVLTSLowXorValue() {
+		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2EffectiveTimeIVLTSLowXorValueTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
+			"validatePlannedMedicationActivity2EffectiveTimeIVLTSLowXorValue",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_MEDICATION_ACTIVITY2_EFFECTIVE_TIME_IVLTS_LOW_XOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			// Note: we can't provide a fail test for both in code as we
+			// can only have an IVL_TS with a low or
+			// a TS with a value anyway as per types
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(PlannedMedicationActivity2 target) {
+						// Contains effectiveTime of type TS (SCXM_TS) withOUT a value element
+						target.init();
+						target.getEffectiveTimes().add(DatatypesFactory.eINSTANCE.createSXCM_TS());
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(PlannedMedicationActivity2 target) {
+						// Contains effectiveTime of type IVL_TS (SCXM_TS) withOUT a low element
+						target.init();
+						target.getEffectiveTimes().add(DatatypesFactory.eINSTANCE.createIVL_TS());
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedMedicationActivity2 target) {
+						// test 1 - Contains effectiveTime of type TS (SCXM_TS) with a value element
+						target.init();
+						target.getEffectiveTimes().add(DatatypesFactory.eINSTANCE.createSXCM_TS());
+						target.getEffectiveTimes().get(0).setValue("hasAValueAndDefaultsToTypeTS");
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedMedicationActivity2 target) {
+						// test 2 - Contains effectiveTime of type IVL_TS with a low
+						target.init();
+						IVL_TS ef = DatatypesFactory.eINSTANCE.createIVL_TS();
+						ef.setLow(DatatypesFactory.eINSTANCE.createIVXB_TS());
+						target.getEffectiveTimes().add(ef);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTimeIVLTSLowXorValue(
+					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedMedicationActivity2EffectiveTimeIVLTSLowXorValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidatePlannedMedicationActivity2EffectiveTimePIVLTS() {
+		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2EffectiveTimePIVLTSTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
+			"validatePlannedMedicationActivity2EffectiveTimePIVLTS",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PLANNED_MEDICATION_ACTIVITY2_EFFECTIVE_TIME_PIVLTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(PlannedMedicationActivity2 target) {
+				target.init();
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedMedicationActivity2 target) {
+						target.init();
+						PIVL_TS et = DatatypesFactory.eINSTANCE.createPIVL_TS();
+						target.getEffectiveTimes().add(et);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(PlannedMedicationActivity2 target) {
+						target.init();
+						EIVL_TS et = DatatypesFactory.eINSTANCE.createEIVL_TS();
+						target.getEffectiveTimes().add(et);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTimePIVLTS(
+					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePlannedMedicationActivity2EffectiveTimePIVLTSTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -144,42 +412,6 @@ public class PlannedMedicationActivity2Test extends CDAValidationTest {
 		};
 
 		validatePlannedMedicationActivity2StatusCodePTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated NOT
-	*/
-	@Test
-	public void testValidatePlannedMedicationActivity2EffectiveTime() {
-		OperationsTestCase<PlannedMedicationActivity2> validatePlannedMedicationActivity2EffectiveTimeTestCase = new OperationsTestCase<PlannedMedicationActivity2>(
-			"validatePlannedMedicationActivity2EffectiveTime",
-			operationsForOCL.getOCLValue(
-				"VALIDATE_PLANNED_MEDICATION_ACTIVITY2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(PlannedMedicationActivity2 target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PlannedMedicationActivity2 target) {
-				target.init();
-				IVL_TS ts = DatatypesFactory.eINSTANCE.createIVL_TS();
-				target.getEffectiveTimes().add(ts);
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return PlannedMedicationActivity2Operations.validatePlannedMedicationActivity2EffectiveTime(
-					(PlannedMedicationActivity2) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePlannedMedicationActivity2EffectiveTimeTestCase.doValidationTest();
 	}
 
 	/**

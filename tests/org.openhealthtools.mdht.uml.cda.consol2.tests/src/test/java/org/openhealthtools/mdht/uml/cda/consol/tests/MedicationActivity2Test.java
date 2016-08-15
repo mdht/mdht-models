@@ -27,9 +27,9 @@ import org.eclipse.mdht.uml.hl7.datatypes.EIVL_TS;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.eclipse.mdht.uml.hl7.datatypes.PIVL_TS;
 import org.eclipse.mdht.uml.hl7.vocab.ActRelationshipType;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
@@ -225,7 +225,6 @@ public class MedicationActivity2Test extends CDAValidationTest {
 					}
 				});
 
-				// everything works but this test with latest OCL - this test must be written wrong..
 				addPassTest(new PassTest() {
 					@Override
 					public void updateToPass(MedicationActivity2 target) {
