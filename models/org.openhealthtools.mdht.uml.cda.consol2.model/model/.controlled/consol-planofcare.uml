@@ -2363,6 +2363,58 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
     <ownedComment xmi:id="_lNwj8OgREeO-iJTuAv7BKQ">
       <body>This template represents planned medication activities. The priority of the medication activity to the patient and provider is communicated through Priority Preference. The effectiveTime indicates the time when the medication activity is intended to take place. The authorTime indicates when the documentation of the plan occurred.</body>
     </ownedComment>
+    <ownedRule xmi:id="_Uj1l4GDIEeaVKMeiBlPhjw" name="effectiveTimeIVLTSorTS">
+      <ownedComment xmi:id="_Uj1l4WDIEeaVKMeiBlPhjw">
+        <body>This effectiveTime represents either the medication duration (i.e., the time the medication should be started and stopped) or the timestamp when the single-administration should occur.</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Uj1l4mDIEeaVKMeiBlPhjw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL contain exactly one [1..1] effectiveTime such that it SHALL contain exactly one [1..1] @xsi:type=&quot;IVL_TS&quot; or contain exactly one [1..1] @xsi:type=&quot;TS&quot;</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->size() = 1 xor self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::SXCM_TS))->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_X-Mz8GDIEeaVKMeiBlPhjw" name="effectiveTimeIVLTSLow">
+      <ownedComment xmi:id="_X-Mz8WDIEeaVKMeiBlPhjw">
+        <body>Note: indicates when medication started</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_X-Mz8mDIEeaVKMeiBlPhjw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If effectiveTime @xsi:type=&quot;IVL_TS&quot;, SHOULD contain zero or one [0..1] low</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).low->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_aRwyAGDIEeaVKMeiBlPhjw" name="effectiveTimeIVLTSHigh">
+      <ownedComment xmi:id="_aRwyAWDIEeaVKMeiBlPhjw">
+        <body>Note: indicates when medication stopped</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_aRwyAmDIEeaVKMeiBlPhjw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If effectiveTime @xsi:type=&quot;IVL_TS&quot;, MAY contain zero or one [0..1] high</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).high->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_fHhAAGDIEeaVKMeiBlPhjw" name="effectiveTimeIVLTSLowXorValue">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_fHhAAWDIEeaVKMeiBlPhjw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If an effectiveTime is present with @xsi:type=&quot;IVL_TS&quot; or @xsi:type=&quot;TS&quot;, this effectiveTime SHALL contain either a low or a @value but not both</body>
+        <body>( self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).low->size() = 1) )  and  ( self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::SXCM_TS))->forAll( eff | eff.oclAsType(datatypes:: SXCM_TS).value->size() = 1 or eff.oclAsType(datatypes::SXCM_TS).isNullFlavorDefined()) )</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_cyRm8GDIEeaVKMeiBlPhjw" name="effectiveTimePIVLTS">
+      <ownedComment xmi:id="_cyRm8WDIEeaVKMeiBlPhjw">
+        <body>Note: This effectiveTime represents the ordered medication frequency (e.g.,times to be administered per day).</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cyRm8mDIEeaVKMeiBlPhjw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHOULD contain zero or one [0..1] effectiveTime such that it SHALL contain exactly one [1..1] @xsi:type = &quot;PIVL_TS&quot; or &quot;EIVL_TS&quot;</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::PIVL_TS) or ef.oclIsTypeOf(datatypes::EIVL_TS))->size() = 1</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_Yj5gcOgREeO-iJTuAv7BKQ" general="_2NoYwxSVEeGGzu7fmW9pXw"/>
     <substitution xmi:id="_4bsYcOgREeO-iJTuAv7BKQ" name="PlanOfCareActivitySubstanceAdministration" client="_Yj45YOgREeO-iJTuAv7BKQ" supplier="_2NoYwxSVEeGGzu7fmW9pXw" contract="_2NoYwxSVEeGGzu7fmW9pXw"/>
     <ownedAttribute xmi:id="_ZNTVQMapEeSY-qHOFt9wVQ" name="moodCode" visibility="private" redefinedProperty="_2NoYzhSVEeGGzu7fmW9pXw">
@@ -2373,15 +2425,6 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pyfBcOgTEeO-iJTuAv7BKQ" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pyeaYOgTEeO-iJTuAv7BKQ" value="1"/>
       <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_sDU9cErsEd6FXKclYGEDCw"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_NrQRAOgTEeO-iJTuAv7BKQ" name="effectiveTime" visibility="private" aggregation="composite">
-      <ownedComment xmi:id="_4V9cgOgUEeO-iJTuAv7BKQ">
-        <body>The effectiveTime in a planned medication activity represents the time that the medication activity should occur.</body>
-      </ownedComment>
-      <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BspUgegUEeO-iJTuAv7BKQ" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BspUgOgUEeO-iJTuAv7BKQ" value="1"/>
-      <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_u37zEErsEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_NrQ4FugTEeO-iJTuAv7BKQ" name="repeatNumber" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_CvA7AOgVEeO-iJTuAv7BKQ">
@@ -2551,9 +2594,6 @@ MethodCode SHALL NOT conflict with the method inherent in Procedure / code.</bod
   <CDA:ConformsTo xmi:id="_rlHHkOgREeO-iJTuAv7BKQ" base_Generalization="_Yj5gcOgREeO-iJTuAv7BKQ"/>
   <CDA:PropertyValidation xmi:id="_otQewOgTEeO-iJTuAv7BKQ" base_Property="_NrRfIOgTEeO-iJTuAv7BKQ">
     <ruleId>CONF:1098-32087</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_w5_PoOgTEeO-iJTuAv7BKQ" base_Property="_NrQRAOgTEeO-iJTuAv7BKQ">
-    <ruleId>CONF:1098-30468</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_DYXPcOgUEeO-iJTuAv7BKQ" severity="INFO" base_Property="_NrQ4FugTEeO-iJTuAv7BKQ">
     <ruleId>CONF:1098-32066</ruleId>
@@ -4404,4 +4444,24 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <CDA:PropertyValidation xmi:id="_DjRFoADcEeWNGdLwd_3YGQ" severity="WARNING" base_Property="_CWg-oADcEeWNGdLwd_3YGQ">
     <ruleId>CONF:1098-32327</ruleId>
   </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_3jUnkGDIEeaVKMeiBlPhjw" base_Constraint="_Uj1l4GDIEeaVKMeiBlPhjw">
+    <ruleId>CONF:NEW</ruleId>
+    <ruleId>DSTU:1045</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_4F2F0GDIEeaVKMeiBlPhjw" severity="WARNING" base_Constraint="_X-Mz8GDIEeaVKMeiBlPhjw">
+    <ruleId>CONF:NEW</ruleId>
+    <ruleId>DSTU:1045</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_4kVYoGDIEeaVKMeiBlPhjw" severity="INFO" base_Constraint="_aRwyAGDIEeaVKMeiBlPhjw">
+    <ruleId>CONF:NEW</ruleId>
+    <ruleId>DSTU:1045</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_5HgXIGDIEeaVKMeiBlPhjw" severity="WARNING" base_Constraint="_cyRm8GDIEeaVKMeiBlPhjw">
+    <ruleId>CONF:NEW</ruleId>
+    <ruleId>DSTU:1045</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_5qJKIGDIEeaVKMeiBlPhjw" base_Constraint="_fHhAAGDIEeaVKMeiBlPhjw">
+    <ruleId>CONF:NEW</ruleId>
+    <ruleId>DSTU:1045</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
