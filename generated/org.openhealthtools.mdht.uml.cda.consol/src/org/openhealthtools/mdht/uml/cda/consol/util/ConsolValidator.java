@@ -18380,23 +18380,23 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.ALLERGIES_SECTION:
 				return validateAllergiesSection((AllergiesSection) value, diagnostics, context);
 			case ConsolPackage.ALLERGIES_SECTION_ENTRIES_OPTIONAL:
-				return validateAllergiesSectionEntriesOptional(
-					(AllergiesSectionEntriesOptional) value, diagnostics, context);
+				return validateAllergiesSectionEntriesOptional((AllergiesSectionEntriesOptional) value, diagnostics,
+					context);
 			case ConsolPackage.MEDICATIONS_SECTION:
 				return validateMedicationsSection((MedicationsSection) value, diagnostics, context);
 			case ConsolPackage.MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
-				return validateMedicationsSectionEntriesOptional(
-					(MedicationsSectionEntriesOptional) value, diagnostics, context);
+				return validateMedicationsSectionEntriesOptional((MedicationsSectionEntriesOptional) value, diagnostics,
+					context);
 			case ConsolPackage.PROBLEM_SECTION:
 				return validateProblemSection((ProblemSection) value, diagnostics, context);
 			case ConsolPackage.PROBLEM_SECTION_ENTRIES_OPTIONAL:
-				return validateProblemSectionEntriesOptional(
-					(ProblemSectionEntriesOptional) value, diagnostics, context);
+				return validateProblemSectionEntriesOptional((ProblemSectionEntriesOptional) value, diagnostics,
+					context);
 			case ConsolPackage.PROCEDURES_SECTION:
 				return validateProceduresSection((ProceduresSection) value, diagnostics, context);
 			case ConsolPackage.PROCEDURES_SECTION_ENTRIES_OPTIONAL:
-				return validateProceduresSectionEntriesOptional(
-					(ProceduresSectionEntriesOptional) value, diagnostics, context);
+				return validateProceduresSectionEntriesOptional((ProceduresSectionEntriesOptional) value, diagnostics,
+					context);
 			case ConsolPackage.PROCEDURE_ACTIVITY_OBSERVATION:
 				return validateProcedureActivityObservation((ProcedureActivityObservation) value, diagnostics, context);
 			case ConsolPackage.PROCEDURE_ACTIVITY_ACT:
@@ -18404,8 +18404,8 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.RESULTS_SECTION:
 				return validateResultsSection((ResultsSection) value, diagnostics, context);
 			case ConsolPackage.RESULTS_SECTION_ENTRIES_OPTIONAL:
-				return validateResultsSectionEntriesOptional(
-					(ResultsSectionEntriesOptional) value, diagnostics, context);
+				return validateResultsSectionEntriesOptional((ResultsSectionEntriesOptional) value, diagnostics,
+					context);
 			case ConsolPackage.RESULT_ORGANIZER:
 				return validateResultOrganizer((ResultOrganizer) value, diagnostics, context);
 			case ConsolPackage.RESULT_OBSERVATION:
@@ -18413,15 +18413,15 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION:
 				return validateAdvanceDirectivesSection((AdvanceDirectivesSection) value, diagnostics, context);
 			case ConsolPackage.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL:
-				return validateAdvanceDirectivesSectionEntriesOptional(
-					(AdvanceDirectivesSectionEntriesOptional) value, diagnostics, context);
+				return validateAdvanceDirectivesSectionEntriesOptional((AdvanceDirectivesSectionEntriesOptional) value,
+					diagnostics, context);
 			case ConsolPackage.ADVANCE_DIRECTIVE_OBSERVATION:
 				return validateAdvanceDirectiveObservation((AdvanceDirectiveObservation) value, diagnostics, context);
 			case ConsolPackage.ENCOUNTERS_SECTION:
 				return validateEncountersSection((EncountersSection) value, diagnostics, context);
 			case ConsolPackage.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL:
-				return validateEncountersSectionEntriesOptional(
-					(EncountersSectionEntriesOptional) value, diagnostics, context);
+				return validateEncountersSectionEntriesOptional((EncountersSectionEntriesOptional) value, diagnostics,
+					context);
 			case ConsolPackage.ENCOUNTER_ACTIVITIES:
 				return validateEncounterActivities((EncounterActivities) value, diagnostics, context);
 			case ConsolPackage.ENCOUNTER_DIAGNOSIS:
@@ -18433,45 +18433,45 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.FAMILY_HISTORY_OBSERVATION:
 				return validateFamilyHistoryObservation((FamilyHistoryObservation) value, diagnostics, context);
 			case ConsolPackage.FAMILY_HISTORY_DEATH_OBSERVATION:
-				return validateFamilyHistoryDeathObservation(
-					(FamilyHistoryDeathObservation) value, diagnostics, context);
+				return validateFamilyHistoryDeathObservation((FamilyHistoryDeathObservation) value, diagnostics,
+					context);
 			case ConsolPackage.FUNCTIONAL_STATUS_SECTION:
 				return validateFunctionalStatusSection((FunctionalStatusSection) value, diagnostics, context);
 			case ConsolPackage.FUNCTIONAL_STATUS_RESULT_ORGANIZER:
-				return validateFunctionalStatusResultOrganizer(
-					(FunctionalStatusResultOrganizer) value, diagnostics, context);
+				return validateFunctionalStatusResultOrganizer((FunctionalStatusResultOrganizer) value, diagnostics,
+					context);
 			case ConsolPackage.FUNCTIONAL_STATUS_RESULT_OBSERVATION:
-				return validateFunctionalStatusResultObservation(
-					(FunctionalStatusResultObservation) value, diagnostics, context);
+				return validateFunctionalStatusResultObservation((FunctionalStatusResultObservation) value, diagnostics,
+					context);
 			case ConsolPackage.CAREGIVER_CHARACTERISTICS:
 				return validateCaregiverCharacteristics((CaregiverCharacteristics) value, diagnostics, context);
 			case ConsolPackage.ASSESSMENT_SCALE_OBSERVATION:
 				return validateAssessmentScaleObservation((AssessmentScaleObservation) value, diagnostics, context);
 			case ConsolPackage.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION:
-				return validateAssessmentScaleSupportingObservation(
-					(AssessmentScaleSupportingObservation) value, diagnostics, context);
+				return validateAssessmentScaleSupportingObservation((AssessmentScaleSupportingObservation) value,
+					diagnostics, context);
 			case ConsolPackage.COGNITIVE_STATUS_RESULT_ORGANIZER:
-				return validateCognitiveStatusResultOrganizer(
-					(CognitiveStatusResultOrganizer) value, diagnostics, context);
+				return validateCognitiveStatusResultOrganizer((CognitiveStatusResultOrganizer) value, diagnostics,
+					context);
 			case ConsolPackage.COGNITIVE_STATUS_RESULT_OBSERVATION:
-				return validateCognitiveStatusResultObservation(
-					(CognitiveStatusResultObservation) value, diagnostics, context);
+				return validateCognitiveStatusResultObservation((CognitiveStatusResultObservation) value, diagnostics,
+					context);
 			case ConsolPackage.FUNCTIONAL_STATUS_PROBLEM_OBSERVATION:
-				return validateFunctionalStatusProblemObservation(
-					(FunctionalStatusProblemObservation) value, diagnostics, context);
+				return validateFunctionalStatusProblemObservation((FunctionalStatusProblemObservation) value,
+					diagnostics, context);
 			case ConsolPackage.COGNITIVE_STATUS_PROBLEM_OBSERVATION:
-				return validateCognitiveStatusProblemObservation(
-					(CognitiveStatusProblemObservation) value, diagnostics, context);
+				return validateCognitiveStatusProblemObservation((CognitiveStatusProblemObservation) value, diagnostics,
+					context);
 			case ConsolPackage.PRESSURE_ULCER_OBSERVATION:
 				return validatePressureUlcerObservation((PressureUlcerObservation) value, diagnostics, context);
 			case ConsolPackage.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION:
-				return validateNumberOfPressureUlcersObservation(
-					(NumberOfPressureUlcersObservation) value, diagnostics, context);
+				return validateNumberOfPressureUlcersObservation((NumberOfPressureUlcersObservation) value, diagnostics,
+					context);
 			case ConsolPackage.HIGHEST_PRESSURE_ULCER_STAGE:
 				return validateHighestPressureUlcerStage((HighestPressureUlcerStage) value, diagnostics, context);
 			case ConsolPackage.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL:
-				return validateImmunizationsSectionEntriesOptional(
-					(ImmunizationsSectionEntriesOptional) value, diagnostics, context);
+				return validateImmunizationsSectionEntriesOptional((ImmunizationsSectionEntriesOptional) value,
+					diagnostics, context);
 			case ConsolPackage.IMMUNIZATION_ACTIVITY:
 				return validateImmunizationActivity((ImmunizationActivity) value, diagnostics, context);
 			case ConsolPackage.IMMUNIZATION_REFUSAL_REASON:
@@ -18491,8 +18491,8 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_ENCOUNTER:
 				return validatePlanOfCareActivityEncounter((PlanOfCareActivityEncounter) value, diagnostics, context);
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_OBSERVATION:
-				return validatePlanOfCareActivityObservation(
-					(PlanOfCareActivityObservation) value, diagnostics, context);
+				return validatePlanOfCareActivityObservation((PlanOfCareActivityObservation) value, diagnostics,
+					context);
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE:
 				return validatePlanOfCareActivityProcedure((PlanOfCareActivityProcedure) value, diagnostics, context);
 			case ConsolPackage.PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION:
@@ -18513,8 +18513,8 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.TOBACCO_USE:
 				return validateTobaccoUse((TobaccoUse) value, diagnostics, context);
 			case ConsolPackage.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL:
-				return validateVitalSignsSectionEntriesOptional(
-					(VitalSignsSectionEntriesOptional) value, diagnostics, context);
+				return validateVitalSignsSectionEntriesOptional((VitalSignsSectionEntriesOptional) value, diagnostics,
+					context);
 			case ConsolPackage.VITAL_SIGNS_ORGANIZER:
 				return validateVitalSignsOrganizer((VitalSignsOrganizer) value, diagnostics, context);
 			case ConsolPackage.VITAL_SIGN_OBSERVATION:
@@ -18530,11 +18530,11 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.REASON_FOR_REFERRAL_SECTION:
 				return validateReasonForReferralSection((ReasonForReferralSection) value, diagnostics, context);
 			case ConsolPackage.HISTORY_OF_PRESENT_ILLNESS_SECTION:
-				return validateHistoryOfPresentIllnessSection(
-					(HistoryOfPresentIllnessSection) value, diagnostics, context);
+				return validateHistoryOfPresentIllnessSection((HistoryOfPresentIllnessSection) value, diagnostics,
+					context);
 			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION:
-				return validateHospitalAdmissionDiagnosisSection(
-					(HospitalAdmissionDiagnosisSection) value, diagnostics, context);
+				return validateHospitalAdmissionDiagnosisSection((HospitalAdmissionDiagnosisSection) value, diagnostics,
+					context);
 			case ConsolPackage.HOSPITAL_ADMISSION_DIAGNOSIS:
 				return validateHospitalAdmissionDiagnosis((HospitalAdmissionDiagnosis) value, diagnostics, context);
 			case ConsolPackage.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL:
@@ -18543,8 +18543,8 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.ADMISSION_MEDICATION:
 				return validateAdmissionMedication((AdmissionMedication) value, diagnostics, context);
 			case ConsolPackage.MEDICATIONS_ADMINISTERED_SECTION:
-				return validateMedicationsAdministeredSection(
-					(MedicationsAdministeredSection) value, diagnostics, context);
+				return validateMedicationsAdministeredSection((MedicationsAdministeredSection) value, diagnostics,
+					context);
 			case ConsolPackage.PHYSICAL_EXAM_SECTION:
 				return validatePhysicalExamSection((PhysicalExamSection) value, diagnostics, context);
 			case ConsolPackage.GENERAL_STATUS_SECTION:
@@ -18562,8 +18562,8 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.DISCHARGE_SUMMARY:
 				return validateDischargeSummary((DischargeSummary) value, diagnostics, context);
 			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION:
-				return validateHospitalDischargeDiagnosisSection(
-					(HospitalDischargeDiagnosisSection) value, diagnostics, context);
+				return validateHospitalDischargeDiagnosisSection((HospitalDischargeDiagnosisSection) value, diagnostics,
+					context);
 			case ConsolPackage.HOSPITAL_DISCHARGE_DIAGNOSIS:
 				return validateHospitalDischargeDiagnosis((HospitalDischargeDiagnosis) value, diagnostics, context);
 			case ConsolPackage.DISCHARGE_DIET_SECTION:
@@ -18576,32 +18576,32 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.HOSPITAL_COURSE_SECTION:
 				return validateHospitalCourseSection((HospitalCourseSection) value, diagnostics, context);
 			case ConsolPackage.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION:
-				return validateChiefComplaintAndReasonForVisitSection(
-					(ChiefComplaintAndReasonForVisitSection) value, diagnostics, context);
+				return validateChiefComplaintAndReasonForVisitSection((ChiefComplaintAndReasonForVisitSection) value,
+					diagnostics, context);
 			case ConsolPackage.HOSPITAL_CONSULTATIONS_SECTION:
 				return validateHospitalConsultationsSection((HospitalConsultationsSection) value, diagnostics, context);
 			case ConsolPackage.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION:
-				return validateHospitalDischargeInstructionsSection(
-					(HospitalDischargeInstructionsSection) value, diagnostics, context);
+				return validateHospitalDischargeInstructionsSection((HospitalDischargeInstructionsSection) value,
+					diagnostics, context);
 			case ConsolPackage.HOSPITAL_DISCHARGE_PHYSICAL_SECTION:
-				return validateHospitalDischargePhysicalSection(
-					(HospitalDischargePhysicalSection) value, diagnostics, context);
+				return validateHospitalDischargePhysicalSection((HospitalDischargePhysicalSection) value, diagnostics,
+					context);
 			case ConsolPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION:
-				return validateHospitalDischargeStudiesSummarySection(
-					(HospitalDischargeStudiesSummarySection) value, diagnostics, context);
+				return validateHospitalDischargeStudiesSummarySection((HospitalDischargeStudiesSummarySection) value,
+					diagnostics, context);
 			case ConsolPackage.REASON_FOR_VISIT_SECTION:
 				return validateReasonForVisitSection((ReasonForVisitSection) value, diagnostics, context);
 			case ConsolPackage.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION:
-				return validatePreconditionForSubstanceAdministration(
-					(PreconditionForSubstanceAdministration) value, diagnostics, context);
+				return validatePreconditionForSubstanceAdministration((PreconditionForSubstanceAdministration) value,
+					diagnostics, context);
 			case ConsolPackage.IMMUNIZATION_MEDICATION_INFORMATION:
-				return validateImmunizationMedicationInformation(
-					(ImmunizationMedicationInformation) value, diagnostics, context);
+				return validateImmunizationMedicationInformation((ImmunizationMedicationInformation) value, diagnostics,
+					context);
 			case ConsolPackage.AUTHORIZATION_ACTIVITY:
 				return validateAuthorizationActivity((AuthorizationActivity) value, diagnostics, context);
 			case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION:
-				return validateHospitalDischargeMedicationsSection(
-					(HospitalDischargeMedicationsSection) value, diagnostics, context);
+				return validateHospitalDischargeMedicationsSection((HospitalDischargeMedicationsSection) value,
+					diagnostics, context);
 			case ConsolPackage.ANESTHESIA_SECTION:
 				return validateAnesthesiaSection((AnesthesiaSection) value, diagnostics, context);
 			case ConsolPackage.COMPLICATIONS_SECTION:
@@ -18615,8 +18615,8 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.SOP_INSTANCE_OBSERVATION:
 				return validateSOPInstanceObservation((SOPInstanceObservation) value, diagnostics, context);
 			case ConsolPackage.PURPOSEOF_REFERENCE_OBSERVATION:
-				return validatePurposeofReferenceObservation(
-					(PurposeofReferenceObservation) value, diagnostics, context);
+				return validatePurposeofReferenceObservation((PurposeofReferenceObservation) value, diagnostics,
+					context);
 			case ConsolPackage.REFERENCED_FRAMES_OBSERVATION:
 				return validateReferencedFramesObservation((ReferencedFramesObservation) value, diagnostics, context);
 			case ConsolPackage.BOUNDARY_OBSERVATION:
@@ -18632,16 +18632,16 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.OPERATIVE_NOTE_FLUID_SECTION:
 				return validateOperativeNoteFluidSection((OperativeNoteFluidSection) value, diagnostics, context);
 			case ConsolPackage.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION:
-				return validateOperativeNoteSurgicalProcedureSection(
-					(OperativeNoteSurgicalProcedureSection) value, diagnostics, context);
+				return validateOperativeNoteSurgicalProcedureSection((OperativeNoteSurgicalProcedureSection) value,
+					diagnostics, context);
 			case ConsolPackage.PLANNED_PROCEDURE_SECTION:
 				return validatePlannedProcedureSection((PlannedProcedureSection) value, diagnostics, context);
 			case ConsolPackage.POSTOPERATIVE_DIAGNOSIS_SECTION:
-				return validatePostoperativeDiagnosisSection(
-					(PostoperativeDiagnosisSection) value, diagnostics, context);
+				return validatePostoperativeDiagnosisSection((PostoperativeDiagnosisSection) value, diagnostics,
+					context);
 			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS_SECTION:
-				return validatePostprocedureDiagnosisSection(
-					(PostprocedureDiagnosisSection) value, diagnostics, context);
+				return validatePostprocedureDiagnosisSection((PostprocedureDiagnosisSection) value, diagnostics,
+					context);
 			case ConsolPackage.POSTPROCEDURE_DIAGNOSIS:
 				return validatePostprocedureDiagnosis((PostprocedureDiagnosis) value, diagnostics, context);
 			case ConsolPackage.PREOPERATIVE_DIAGNOSIS_SECTION:
@@ -18653,8 +18653,8 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.PROCEDURE_DISPOSITION_SECTION:
 				return validateProcedureDispositionSection((ProcedureDispositionSection) value, diagnostics, context);
 			case ConsolPackage.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION:
-				return validateProcedureEstimatedBloodLossSection(
-					(ProcedureEstimatedBloodLossSection) value, diagnostics, context);
+				return validateProcedureEstimatedBloodLossSection((ProcedureEstimatedBloodLossSection) value,
+					diagnostics, context);
 			case ConsolPackage.PROCEDURE_FINDINGS_SECTION:
 				return validateProcedureFindingsSection((ProcedureFindingsSection) value, diagnostics, context);
 			case ConsolPackage.PROCEDURE_IMPLANTS_SECTION:
@@ -18662,8 +18662,8 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.PROCEDURE_INDICATIONS_SECTION:
 				return validateProcedureIndicationsSection((ProcedureIndicationsSection) value, diagnostics, context);
 			case ConsolPackage.PROCEDURE_SPECIMENS_TAKEN_SECTION:
-				return validateProcedureSpecimensTakenSection(
-					(ProcedureSpecimensTakenSection) value, diagnostics, context);
+				return validateProcedureSpecimensTakenSection((ProcedureSpecimensTakenSection) value, diagnostics,
+					context);
 			case ConsolPackage.SUBJECTIVE_SECTION:
 				return validateSubjectiveSection((SubjectiveSection) value, diagnostics, context);
 			case ConsolPackage.CONSULTATION_NOTE:
@@ -18683,15 +18683,15 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.DIAGNOSTIC_IMAGING_REPORT:
 				return validateDiagnosticImagingReport((DiagnosticImagingReport) value, diagnostics, context);
 			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER:
-				return validatePhysicianReadingStudyPerformer(
-					(PhysicianReadingStudyPerformer) value, diagnostics, context);
+				return validatePhysicianReadingStudyPerformer((PhysicianReadingStudyPerformer) value, diagnostics,
+					context);
 			case ConsolPackage.PHYSICIANOF_RECORD_PARTICIPANT:
 				return validatePhysicianofRecordParticipant((PhysicianofRecordParticipant) value, diagnostics, context);
 			case ConsolPackage.TEXT_OBSERVATION:
 				return validateTextObservation((TextObservation) value, diagnostics, context);
 			case ConsolPackage.QUANTITY_MEASUREMENT_OBSERVATION:
-				return validateQuantityMeasurementObservation(
-					(QuantityMeasurementObservation) value, diagnostics, context);
+				return validateQuantityMeasurementObservation((QuantityMeasurementObservation) value, diagnostics,
+					context);
 			case ConsolPackage.CODE_OBSERVATIONS:
 				return validateCodeObservations((CodeObservations) value, diagnostics, context);
 			case ConsolPackage.PROCEDURE_CONTEXT:
@@ -18705,8 +18705,8 @@ public class ConsolValidator extends EObjectValidator {
 			case ConsolPackage.OBSERVER_CONTEXT:
 				return validateObserverContext((ObserverContext) value, diagnostics, context);
 			case ConsolPackage.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION:
-				return validateSubstanceOrDeviceAllergyObservation(
-					(SubstanceOrDeviceAllergyObservation) value, diagnostics, context);
+				return validateSubstanceOrDeviceAllergyObservation((SubstanceOrDeviceAllergyObservation) value,
+					diagnostics, context);
 			default:
 				return true;
 		}
