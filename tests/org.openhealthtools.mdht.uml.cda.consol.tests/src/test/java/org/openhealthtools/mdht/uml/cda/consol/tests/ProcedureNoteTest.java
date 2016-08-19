@@ -600,7 +600,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* AssessmentSection */
 				AssessmentSection section =
 
-						ConsolFactory.eINSTANCE.createAssessmentSection().init();
+				ConsolFactory.eINSTANCE.createAssessmentSection().init();
 
 				target.addSection(section);
 
@@ -641,7 +641,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* PlanOfCareSection */
 				PlanOfCareSection section =
 
-						ConsolFactory.eINSTANCE.createPlanOfCareSection().init();
+				ConsolFactory.eINSTANCE.createPlanOfCareSection().init();
 
 				target.addSection(section);
 
@@ -682,7 +682,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* AssessmentAndPlanSection */
 				AssessmentAndPlanSection section =
 
-						ConsolFactory.eINSTANCE.createAssessmentAndPlanSection().init();
+				ConsolFactory.eINSTANCE.createAssessmentAndPlanSection().init();
 
 				target.addSection(section);
 
@@ -723,7 +723,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ComplicationsSection */
 				ComplicationsSection section =
 
-						ConsolFactory.eINSTANCE.createComplicationsSection().init();
+				ConsolFactory.eINSTANCE.createComplicationsSection().init();
 
 				target.addSection(section);
 
@@ -765,7 +765,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* PostprocedureDiagnosisSection */
 				PostprocedureDiagnosisSection section =
 
-						ConsolFactory.eINSTANCE.createPostprocedureDiagnosisSection().init();
+				ConsolFactory.eINSTANCE.createPostprocedureDiagnosisSection().init();
 
 				target.addSection(section);
 
@@ -807,7 +807,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ProcedureDescriptionSection */
 				ProcedureDescriptionSection section =
 
-						ConsolFactory.eINSTANCE.createProcedureDescriptionSection().init();
+				ConsolFactory.eINSTANCE.createProcedureDescriptionSection().init();
 
 				target.addSection(section);
 
@@ -849,7 +849,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ProcedureIndicationsSection */
 				ProcedureIndicationsSection section =
 
-						ConsolFactory.eINSTANCE.createProcedureIndicationsSection().init();
+				ConsolFactory.eINSTANCE.createProcedureIndicationsSection().init();
 
 				target.addSection(section);
 
@@ -891,7 +891,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* AllergiesSectionEntriesOptional */
 				AllergiesSectionEntriesOptional section =
 
-						ConsolFactory.eINSTANCE.createAllergiesSectionEntriesOptional().init();
+				ConsolFactory.eINSTANCE.createAllergiesSectionEntriesOptional().init();
 
 				target.addSection(section);
 
@@ -932,7 +932,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* AnesthesiaSection */
 				AnesthesiaSection section =
 
-						ConsolFactory.eINSTANCE.createAnesthesiaSection().init();
+				ConsolFactory.eINSTANCE.createAnesthesiaSection().init();
 
 				target.addSection(section);
 
@@ -973,7 +973,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ChiefComplaintSection */
 				ChiefComplaintSection section =
 
-						ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
+				ConsolFactory.eINSTANCE.createChiefComplaintSection().init();
 
 				target.addSection(section);
 
@@ -1015,7 +1015,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ChiefComplaintAndReasonForVisitSection */
 				ChiefComplaintAndReasonForVisitSection section =
 
-						ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init();
+				ConsolFactory.eINSTANCE.createChiefComplaintAndReasonForVisitSection().init();
 
 				target.addSection(section);
 
@@ -1056,7 +1056,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* FamilyHistorySection */
 				FamilyHistorySection section =
 
-						ConsolFactory.eINSTANCE.createFamilyHistorySection().init();
+				ConsolFactory.eINSTANCE.createFamilyHistorySection().init();
 
 				target.addSection(section);
 
@@ -1098,7 +1098,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* HistoryOfPastIllnessSection */
 				HistoryOfPastIllnessSection section =
 
-						ConsolFactory.eINSTANCE.createHistoryOfPastIllnessSection().init();
+				ConsolFactory.eINSTANCE.createHistoryOfPastIllnessSection().init();
 
 				target.addSection(section);
 
@@ -1140,7 +1140,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* HistoryOfPresentIllnessSection */
 				HistoryOfPresentIllnessSection section =
 
-						ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
+				ConsolFactory.eINSTANCE.createHistoryOfPresentIllnessSection().init();
 
 				target.addSection(section);
 
@@ -1181,7 +1181,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* MedicalHistorySection */
 				MedicalHistorySection section =
 
-						ConsolFactory.eINSTANCE.createMedicalHistorySection().init();
+				ConsolFactory.eINSTANCE.createMedicalHistorySection().init();
 
 				target.addSection(section);
 
@@ -1223,7 +1223,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* MedicationsSectionEntriesOptional */
 				MedicationsSectionEntriesOptional section =
 
-						ConsolFactory.eINSTANCE.createMedicationsSectionEntriesOptional().init();
+				ConsolFactory.eINSTANCE.createMedicationsSectionEntriesOptional().init();
 
 				target.addSection(section);
 
@@ -1265,7 +1265,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* MedicationsAdministeredSection */
 				MedicationsAdministeredSection section =
 
-						ConsolFactory.eINSTANCE.createMedicationsAdministeredSection().init();
+				ConsolFactory.eINSTANCE.createMedicationsAdministeredSection().init();
 
 				target.addSection(section);
 
@@ -1306,7 +1306,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* PhysicalExamSection */
 				PhysicalExamSection section =
 
-						ConsolFactory.eINSTANCE.createPhysicalExamSection().init();
+				ConsolFactory.eINSTANCE.createPhysicalExamSection().init();
 
 				target.addSection(section);
 
@@ -1347,7 +1347,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* PlannedProcedureSection */
 				PlannedProcedureSection section =
 
-						ConsolFactory.eINSTANCE.createPlannedProcedureSection().init();
+				ConsolFactory.eINSTANCE.createPlannedProcedureSection().init();
 
 				target.addSection(section);
 
@@ -1389,7 +1389,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ProcedureDispositionSection */
 				ProcedureDispositionSection section =
 
-						ConsolFactory.eINSTANCE.createProcedureDispositionSection().init();
+				ConsolFactory.eINSTANCE.createProcedureDispositionSection().init();
 
 				target.addSection(section);
 
@@ -1431,7 +1431,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ProcedureEstimatedBloodLossSection */
 				ProcedureEstimatedBloodLossSection section =
 
-						ConsolFactory.eINSTANCE.createProcedureEstimatedBloodLossSection().init();
+				ConsolFactory.eINSTANCE.createProcedureEstimatedBloodLossSection().init();
 
 				target.addSection(section);
 
@@ -1472,7 +1472,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ProcedureFindingsSection */
 				ProcedureFindingsSection section =
 
-						ConsolFactory.eINSTANCE.createProcedureFindingsSection().init();
+				ConsolFactory.eINSTANCE.createProcedureFindingsSection().init();
 
 				target.addSection(section);
 
@@ -1513,7 +1513,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ProcedureImplantsSection */
 				ProcedureImplantsSection section =
 
-						ConsolFactory.eINSTANCE.createProcedureImplantsSection().init();
+				ConsolFactory.eINSTANCE.createProcedureImplantsSection().init();
 
 				target.addSection(section);
 
@@ -1555,7 +1555,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ProcedureSpecimensTakenSection */
 				ProcedureSpecimensTakenSection section =
 
-						ConsolFactory.eINSTANCE.createProcedureSpecimensTakenSection().init();
+				ConsolFactory.eINSTANCE.createProcedureSpecimensTakenSection().init();
 
 				target.addSection(section);
 
@@ -1597,7 +1597,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ProceduresSectionEntriesOptional */
 				ProceduresSectionEntriesOptional section =
 
-						ConsolFactory.eINSTANCE.createProceduresSectionEntriesOptional().init();
+				ConsolFactory.eINSTANCE.createProceduresSectionEntriesOptional().init();
 
 				target.addSection(section);
 
@@ -1638,7 +1638,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ReasonForVisitSection */
 				ReasonForVisitSection section =
 
-						ConsolFactory.eINSTANCE.createReasonForVisitSection().init();
+				ConsolFactory.eINSTANCE.createReasonForVisitSection().init();
 
 				target.addSection(section);
 
@@ -1679,7 +1679,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* ReviewOfSystemsSection */
 				ReviewOfSystemsSection section =
 
-						ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
+				ConsolFactory.eINSTANCE.createReviewOfSystemsSection().init();
 
 				target.addSection(section);
 
@@ -1720,7 +1720,7 @@ public class ProcedureNoteTest extends CDAValidationTest {
 				/* SocialHistorySection */
 				SocialHistorySection section =
 
-						ConsolFactory.eINSTANCE.createSocialHistorySection().init();
+				ConsolFactory.eINSTANCE.createSocialHistorySection().init();
 
 				target.addSection(section);
 

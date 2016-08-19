@@ -8507,8 +8507,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 				RecordTarget re = CDAFactory.eINSTANCE.createRecordTarget();
 				PatientRole pr = CDAFactory.eINSTANCE.createPatientRole();
 				Patient patient = CDAFactory.eINSTANCE.createPatient();
-				patient.setAdministrativeGenderCode(
-					DatatypesFactory.eINSTANCE.createCE("UNK", "2.16.840.1.113883.5.1"));
+				patient.setAdministrativeGenderCode(DatatypesFactory.eINSTANCE.createCE("UN", "2.16.840.1.113883.5.1"));
 				Birthplace birthplace = CDAFactory.eINSTANCE.createBirthplace();
 				Place place = CDAFactory.eINSTANCE.createPlace();
 				birthplace.setPlace(place);
@@ -8767,9 +8766,8 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 					public void updateToFail(GeneralHeaderConstraints target) {
 						// -has guardian and an incorrect codeSystem ID with a valid code
 						setup(target);
-						guardian.setCode(
-							DatatypesFactory.eINSTANCE.createCE(
-								VALID_PERSONALRELATIONSHIP_CODE, CDAValidationTest.BAD_CODESYSTEM_ID));
+						guardian.setCode(DatatypesFactory.eINSTANCE.createCE(
+							VALID_PERSONALRELATIONSHIP_CODE, CDAValidationTest.BAD_CODESYSTEM_ID));
 						addElements(target);
 					}
 				});
@@ -8792,9 +8790,8 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 					public void updateToFail(GeneralHeaderConstraints target) {
 						// -has guardian, an incorrect codeSystem ID, and invalid code
 						setup(target);
-						guardian.setCode(
-							DatatypesFactory.eINSTANCE.createCE(
-								CDAValidationTest.BAD_CODE_VALUE, CDAValidationTest.BAD_CODESYSTEM_ID));
+						guardian.setCode(DatatypesFactory.eINSTANCE.createCE(
+							CDAValidationTest.BAD_CODE_VALUE, CDAValidationTest.BAD_CODESYSTEM_ID));
 						addElements(target);
 					}
 				});
