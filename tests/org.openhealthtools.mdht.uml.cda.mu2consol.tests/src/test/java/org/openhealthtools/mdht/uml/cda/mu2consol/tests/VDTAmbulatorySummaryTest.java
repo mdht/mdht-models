@@ -251,7 +251,7 @@ public class VDTAmbulatorySummaryTest extends CDAValidationTest {
 				/* MedicationsSection */
 				MedicationsSection section =
 
-						ConsolFactory.eINSTANCE.createMedicationsSection().init();
+				ConsolFactory.eINSTANCE.createMedicationsSection().init();
 
 				target.addSection(section);
 

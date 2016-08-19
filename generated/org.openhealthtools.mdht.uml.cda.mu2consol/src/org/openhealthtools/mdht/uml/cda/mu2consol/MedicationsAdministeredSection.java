@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
+import java.lang.Iterable;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
@@ -25,7 +26,7 @@ public interface MedicationsAdministeredSection
 		extends org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @model kind="operation" required="true" ordered="false" annotation=
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)'"
 	 * @generated
@@ -34,14 +35,14 @@ public interface MedicationsAdministeredSection
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public MedicationsAdministeredSection init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers);

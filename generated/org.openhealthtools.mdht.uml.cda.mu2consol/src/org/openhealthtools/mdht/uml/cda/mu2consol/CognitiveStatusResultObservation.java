@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
+import java.lang.Iterable;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
@@ -24,14 +25,14 @@ public interface CognitiveStatusResultObservation
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public CognitiveStatusResultObservation init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public CognitiveStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);

@@ -6,12 +6,14 @@
  */
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusResultObservation;
@@ -104,7 +106,7 @@ public class FunctionalStatusSectionImpl extends
 	 */
 	@Override
 	public FunctionalStatusSection init() {
-		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -113,9 +115,8 @@ public class FunctionalStatusSectionImpl extends
 	 * @generated
 	 */
 	@Override
-	public FunctionalStatusSection init(
-			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
-		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+	public FunctionalStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // FunctionalStatusSectionImpl

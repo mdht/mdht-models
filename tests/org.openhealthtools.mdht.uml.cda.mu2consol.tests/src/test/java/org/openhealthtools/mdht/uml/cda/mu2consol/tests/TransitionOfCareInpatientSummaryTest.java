@@ -590,7 +590,7 @@ public class TransitionOfCareInpatientSummaryTest extends CDAValidationTest {
 				/* HospitalDischargeInstructionsSection */
 				HospitalDischargeInstructionsSection section =
 
-						ConsolFactory.eINSTANCE.createHospitalDischargeInstructionsSection().init();
+				ConsolFactory.eINSTANCE.createHospitalDischargeInstructionsSection().init();
 
 				target.addSection(section);
 

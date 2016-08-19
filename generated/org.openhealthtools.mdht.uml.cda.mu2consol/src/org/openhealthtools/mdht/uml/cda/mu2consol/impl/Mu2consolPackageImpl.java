@@ -16,6 +16,8 @@ import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.CognitiveStatusResultObservation;
@@ -269,10 +271,9 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 		theMu2consolPackage.freeze();
 
 		// publish my initializers in the registry
-		org.eclipse.mdht.emf.runtime.util.Initializer.Registry.INSTANCE.registerFactory(
-				"org.openhealthtools.mdht.uml.cda.mu2consol",
-				org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer.FACTORY);
-		org.eclipse.mdht.emf.runtime.util.Initializer.Registry.INSTANCE.initializeEPackage(theMu2consolPackage);
+		Initializer.Registry.INSTANCE.registerFactory("org.openhealthtools.mdht.uml.cda.mu2consol",
+				AnnotationBasedInitializer.FACTORY);
+		Initializer.Registry.INSTANCE.initializeEPackage(theMu2consolPackage);
 
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(Mu2consolPackage.eNS_URI, theMu2consolPackage);
@@ -1309,7 +1310,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 		createResource(eNS_URI);
 
 		// Create annotations
-		// http://www.openhealthtools.org/mdht/uml
+		// http://www.eclipse.org/mdht/uml
 		createUmlAnnotations();
 		// http://www.openhealthtools.org/mdht/uml/cda/annotation
 		createAnnotationAnnotations();
@@ -1326,14 +1327,13 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 	}
 
 	/**
-	 * Initializes the annotations for
-	 * <b>http://www.openhealthtools.org/mdht/uml</b>. <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * Initializes the annotations for <b>http://www.eclipse.org/mdht/uml</b>.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * 
 	 * @generated
 	 */
 	protected void createUmlAnnotations() {
-		String source = "http://www.openhealthtools.org/mdht/uml";
+		String source = "http://www.eclipse.org/mdht/uml";
 		addAnnotation(this, source, new String[] { "initializers", "org.openhealthtools.mdht.uml.cda.mu2consol" });
 	}
 

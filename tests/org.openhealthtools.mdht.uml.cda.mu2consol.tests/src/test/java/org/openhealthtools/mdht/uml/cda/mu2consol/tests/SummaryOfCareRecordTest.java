@@ -191,7 +191,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* ProblemSection */
 				ProblemSection section =
 
-						ConsolFactory.eINSTANCE.createProblemSection().init();
+				ConsolFactory.eINSTANCE.createProblemSection().init();
 
 				target.addSection(section);
 
@@ -232,7 +232,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* AllergiesSection */
 				AllergiesSection section =
 
-						ConsolFactory.eINSTANCE.createAllergiesSection().init();
+				ConsolFactory.eINSTANCE.createAllergiesSection().init();
 
 				target.addSection(section);
 
@@ -274,7 +274,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* ImmunizationsSection */
 				ImmunizationsSection section =
 
-						ConsolFactory.eINSTANCE.createImmunizationsSection().init();
+				ConsolFactory.eINSTANCE.createImmunizationsSection().init();
 
 				target.addSection(section);
 
@@ -316,7 +316,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* SocialHistorySection */
 				SocialHistorySection section =
 
-						Mu2consolFactory.eINSTANCE.createSocialHistorySection().init();
+				Mu2consolFactory.eINSTANCE.createSocialHistorySection().init();
 
 				target.addSection(section);
 
@@ -357,7 +357,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* ResultsSection */
 				ResultsSection section =
 
-						Mu2consolFactory.eINSTANCE.createResultsSection().init();
+				Mu2consolFactory.eINSTANCE.createResultsSection().init();
 
 				target.addSection(section);
 
@@ -398,7 +398,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* ProceduresSection */
 				ProceduresSection section =
 
-						Mu2consolFactory.eINSTANCE.createProceduresSection().init();
+				Mu2consolFactory.eINSTANCE.createProceduresSection().init();
 
 				target.addSection(section);
 
@@ -440,7 +440,7 @@ public class SummaryOfCareRecordTest extends CDAValidationTest {
 				/* FunctionalStatusSection */
 				FunctionalStatusSection section =
 
-						ConsolFactory.eINSTANCE.createFunctionalStatusSection().init();
+				ConsolFactory.eINSTANCE.createFunctionalStatusSection().init();
 
 				target.addSection(section);
 

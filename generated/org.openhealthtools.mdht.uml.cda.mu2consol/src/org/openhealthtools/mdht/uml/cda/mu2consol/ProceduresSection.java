@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
+import java.lang.Iterable;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
@@ -41,14 +42,14 @@ public interface ProceduresSection extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public ProceduresSection init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public ProceduresSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
