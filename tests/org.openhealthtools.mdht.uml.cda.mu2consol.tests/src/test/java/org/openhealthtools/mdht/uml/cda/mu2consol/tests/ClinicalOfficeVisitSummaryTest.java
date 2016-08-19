@@ -713,7 +713,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* SocialHistorySection */
 				SocialHistorySection section =
 
-						Mu2consolFactory.eINSTANCE.createSocialHistorySection().init();
+				Mu2consolFactory.eINSTANCE.createSocialHistorySection().init();
 
 				target.addSection(section);
 
@@ -755,7 +755,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* ProblemSection */
 				ProblemSection section =
 
-						ConsolFactory.eINSTANCE.createProblemSection().init();
+				ConsolFactory.eINSTANCE.createProblemSection().init();
 
 				target.addSection(section);
 
@@ -797,7 +797,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* AllergiesSection */
 				AllergiesSection section =
 
-						ConsolFactory.eINSTANCE.createAllergiesSection().init();
+				ConsolFactory.eINSTANCE.createAllergiesSection().init();
 
 				target.addSection(section);
 
@@ -839,7 +839,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* ResultsSection */
 				ResultsSection section =
 
-						Mu2consolFactory.eINSTANCE.createResultsSection().init();
+				Mu2consolFactory.eINSTANCE.createResultsSection().init();
 
 				target.addSection(section);
 
@@ -881,7 +881,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* ProceduresSection */
 				ProceduresSection section =
 
-						Mu2consolFactory.eINSTANCE.createProceduresSection().init();
+				Mu2consolFactory.eINSTANCE.createProceduresSection().init();
 
 				target.addSection(section);
 
@@ -923,7 +923,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* ImmunizationsSection */
 				ImmunizationsSection section =
 
-						ConsolFactory.eINSTANCE.createImmunizationsSection().init();
+				ConsolFactory.eINSTANCE.createImmunizationsSection().init();
 
 				target.addSection(section);
 
@@ -965,7 +965,7 @@ public class ClinicalOfficeVisitSummaryTest extends CDAValidationTest {
 				/* InstructionsSection */
 				InstructionsSection section =
 
-						ConsolFactory.eINSTANCE.createInstructionsSection().init();
+				ConsolFactory.eINSTANCE.createInstructionsSection().init();
 
 				target.addSection(section);
 

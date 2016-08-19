@@ -184,7 +184,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 				/* AllergiesSection */
 				AllergiesSection section =
 
-						ConsolFactory.eINSTANCE.createAllergiesSection().init();
+				ConsolFactory.eINSTANCE.createAllergiesSection().init();
 
 				target.addSection(section);
 
@@ -226,7 +226,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 				/* ProblemSection */
 				ProblemSection section =
 
-						ConsolFactory.eINSTANCE.createProblemSection().init();
+				ConsolFactory.eINSTANCE.createProblemSection().init();
 
 				target.addSection(section);
 
@@ -268,7 +268,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 				/* ProceduresSection */
 				ProceduresSection section =
 
-						Mu2consolFactory.eINSTANCE.createProceduresSection().init();
+				Mu2consolFactory.eINSTANCE.createProceduresSection().init();
 
 				target.addSection(section);
 
@@ -310,7 +310,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 				/* ResultsSection */
 				ResultsSection section =
 
-						Mu2consolFactory.eINSTANCE.createResultsSection().init();
+				Mu2consolFactory.eINSTANCE.createResultsSection().init();
 
 				target.addSection(section);
 
@@ -352,7 +352,7 @@ public class ViewDownloadTransmitSummaryTest extends CDAValidationTest {
 				/* SocialHistorySection */
 				SocialHistorySection section =
 
-						Mu2consolFactory.eINSTANCE.createSocialHistorySection().init();
+				Mu2consolFactory.eINSTANCE.createSocialHistorySection().init();
 
 				target.addSection(section);
 
