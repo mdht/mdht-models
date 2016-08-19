@@ -10,11 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection;
@@ -270,7 +272,7 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	@Override
 	public SummaryOfCareRecord init() {
-		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -279,9 +281,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implem
 	 * @generated
 	 */
 	@Override
-	public SummaryOfCareRecord init(
-			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
-		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+	public SummaryOfCareRecord init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // SummaryOfCareRecordImpl

@@ -10,11 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.InstructionsSection;
@@ -330,7 +332,7 @@ public class ClinicalOfficeVisitSummaryImpl extends GeneralHeaderConstraintsImpl
 	 */
 	@Override
 	public ClinicalOfficeVisitSummary init() {
-		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -339,9 +341,8 @@ public class ClinicalOfficeVisitSummaryImpl extends GeneralHeaderConstraintsImpl
 	 * @generated
 	 */
 	@Override
-	public ClinicalOfficeVisitSummary init(
-			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
-		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+	public ClinicalOfficeVisitSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
 		return this;
 	}
 

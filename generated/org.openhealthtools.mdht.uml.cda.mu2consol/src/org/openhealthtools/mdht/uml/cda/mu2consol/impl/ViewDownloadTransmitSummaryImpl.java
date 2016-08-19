@@ -10,11 +10,13 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
@@ -203,7 +205,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	 */
 	@Override
 	public ViewDownloadTransmitSummary init() {
-		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+		return Initializer.Util.init(this);
 	}
 
 	/**
@@ -212,9 +214,8 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 	 * @generated
 	 */
 	@Override
-	public ViewDownloadTransmitSummary init(
-			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
-		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+	public ViewDownloadTransmitSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // ViewDownloadTransmitSummaryImpl
