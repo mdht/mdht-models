@@ -3288,7 +3288,8 @@ The plan may also indicate that patient education will be provided.</body>
   </CDA:EntryRelationship>
   <CDA:ValueSetConstraint xmi:id="_X6AF4MafEeSY-qHOFt9wVQ" base_Property="_X5-3wMafEeSY-qHOFt9wVQ">
     <ruleId>CONF:1098-8565</ruleId>
-    <reference href="../consol-vocab.uml#_sJV7YY3PEeOB0eBUISUB4Q"/>
+    <ruleId>DSTU:1047</ruleId>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_kX95d_8pEeS4jrgU1p4iug"/>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_vaxzIMagEeSY-qHOFt9wVQ" memberEnd="_vawlAMagEeSY-qHOFt9wVQ _vazBQMagEeSY-qHOFt9wVQ">
     <ownedEnd xmi:id="_vazBQMagEeSY-qHOFt9wVQ" type="_bDPFMOdXEeOqBOMhgDlycQ" association="_vaxzIMagEeSY-qHOFt9wVQ"/>
