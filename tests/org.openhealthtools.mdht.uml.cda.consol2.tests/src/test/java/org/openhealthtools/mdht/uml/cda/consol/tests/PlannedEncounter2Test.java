@@ -24,8 +24,9 @@ import org.eclipse.mdht.uml.hl7.datatypes.CS;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentEncounterMood;
 import org.junit.Test;
-import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2;
 import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
@@ -579,13 +580,13 @@ public class PlannedEncounter2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToFail(PlannedEncounter2 target) {
-
+				target.init();
+				target.setMoodCode(x_DocumentEncounterMood.EVN);
 			}
 
 			@Override
 			protected void updateToPass(PlannedEncounter2 target) {
-				target.init();
-				target.setMoodCode(x_DocumentEncounterMood.PRMS);
+				target.setMoodCode(x_DocumentEncounterMood.APT);
 			}
 
 			@Override
