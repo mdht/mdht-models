@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Class xmi:id="_2NIpgBSVEeGGzu7fmW9pXw" name="MedicationsSection">
     <ownedRule xmi:id="_2NJ3tRSVEeGGzu7fmW9pXw" name="absenceOfMedications">
       <ownedComment xmi:id="_2NJ3thSVEeGGzu7fmW9pXw">
@@ -370,14 +370,14 @@ Medication timing is complex. This template requires that there be a substanceAd
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2GIpoRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbvhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2GJQsBSVEeGGzu7fmW9pXw" base_Property="_2GHbvhSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7514</ruleId>
+    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2GMUABSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbzhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2GX6MBSVEeGGzu7fmW9pXw" base_Property="_2GHbzhSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7515</ruleId>
     <ruleId>R2.0=CONF:1098-7515</ruleId>
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2GKe0BSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2GHbwhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7516</ruleId>
@@ -988,8 +988,8 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>R2.0=CONF:1098-7451</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_JbIaABrZEeGo461UQq-B1g" base_Property="_ThIPFBrYEeGo461UQq-B1g">
-    <reference href="../consol-vocab.uml#_2Hn3YBSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7455</ruleId>
+    <reference href="../consol-vocab.uml#_2Hn3YBSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <uml:Class xmi:id="_j3aTQBrTEeGo461UQq-B1g" name="MedicationSupplyOrder">
     <ownedRule xmi:id="_iZPioB7lEeGEaLkc3UAsAg" name="instructionInversionInd" constrainedElement="_j3aTQBrTEeGo461UQq-B1g">
@@ -1159,9 +1159,9 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>R2.0=CONF:1098-7496</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_jT_r4B-vEeGKirKJsFylGA" base_Property="_2GkugRSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
     <ruleId>CONF:7497</ruleId>
     <ruleId>R2.0=CONF:1098-7497</ruleId>
+    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
   </CDA:ValueSetConstraint>
   <CDA:TextValue xmi:id="_zcy7cB-vEeGKirKJsFylGA" severity="WARNING" base_Property="_yhVYwB-vEeGKirKJsFylGA">
     <ruleId>CONF:7501</ruleId>
@@ -1220,9 +1220,9 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>R2.0=CONF:1098-8745</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_3ny2cDiAEeGSytqLITd2FA" base_Property="_2HTHQBSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
     <ruleId>CONF:8746</ruleId>
     <ruleId>R2.0=CONF:1098-8746</ruleId>
+    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_61IfsDiBEeGSytqLITd2FA" severity="WARNING" base_Property="_5f05oDiBEeGSytqLITd2FA">
     <ruleId>CONF:15498</ruleId>
@@ -1392,8 +1392,8 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:ConstraintValidation xmi:id="_nkhuYMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_2NJ3tRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_t5o2UMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_iAoXFhVdEeGQCvUGzi1kDQ"/>
   <CDA:ValueSetConstraint xmi:id="_W_OvoNuhEeGaiuMcT06VUQ" base_Property="_Dh74wCANEeGKirKJsFylGA">
-    <reference href="../consol-vocab.uml#_uPu0oCXZEeGD8_EQPvfzIQ"/>
     <ruleId>CONF:7412</ruleId>
+    <reference href="../consol-vocab.uml#_uPu0oCXZEeGD8_EQPvfzIQ"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_MB6gQNzPEeG4UqssEkZt3w" severity="WARNING" base_Constraint="_GyKRMEIsEeG4bZAl2IGXmQ"/>
   <CDA:ConstraintValidation xmi:id="_M2SjgNzPEeG4UqssEkZt3w" severity="WARNING" base_Constraint="_WONKoCANEeGKirKJsFylGA"/>
@@ -1605,7 +1605,7 @@ For example, a cardiologist may prescribe a patient Warfarin. The patient's prim
   <CDA:PropertyValidation xmi:id="_3HD6IIzzEeOoMZgUoTghIg" message="This playingEntity SHALL contain exactly one [1..1] US Realm Patient Name (PTN.US.FIELDED) (identifier: urn:oid:2.16.840.1.113883.10.20.22.5.1) (CONF:1098-28669)" base_Property="_nv0DUIzzEeOoMZgUoTghIg">
     <ruleId>CONF:1098-28669</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_ZQpEwK-1EeO8duI_7f6kZw" clientDependency="_z821MLBkEeOtlapy2HWYww" name="AdmissionMedication2">
+  <uml:Class xmi:id="_ZQpEwK-1EeO8duI_7f6kZw" name="AdmissionMedication2">
     <ownedComment xmi:id="_qsCkoK-1EeO8duI_7f6kZw">
       <body>This template represents the medications taken by the patient prior to and at the time of admission.</body>
     </ownedComment>
@@ -1637,7 +1637,7 @@ For example, a cardiologist may prescribe a patient Warfarin. The patient's prim
     <ruleId>CONF:NEW</ruleId>
     <ruleId>R2.0=CONF:1098-32775</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_WnSCMOLAEeOc7-TVP7Wi6w" clientDependency="_C9_R8OLBEeOc7-TVP7Wi6w" name="MedicationActivity2">
+  <uml:Class xmi:id="_WnSCMOLAEeOc7-TVP7Wi6w" name="MedicationActivity2">
     <ownedComment xmi:id="_oiDlsOLAEeOc7-TVP7Wi6w">
       <body>A Medication Activity describes substance administrations that have actually occurred (e.g., pills ingested or injections given) or are intended to occur (e.g., &quot;take 2 tablets twice a day for the next 10 days&quot;). Medication activities in &quot;INT&quot; mood are reflections of what a clinician intends a patient to be taking. For example, a clinician may intend that a patient to be administered Lisinopril 20 mg PO for blood pressure control. If what was actually administered was Lisinopril 10 mg., then the Medication activities in the &quot;EVN&quot; mood would reflect actual use.&#xD;
 A moodCode of INT is allowed, but it is recommended that the Planned Medication Activity (V2) template be used for moodCodes other than EVN if the document type contains a section that includes Planned Medication Activity (V2) (for example a Care Plan document with Plan of Treatment, Intervention, or Goal sections).&#xD;
@@ -1942,12 +1942,12 @@ This effectiveTime represents either the medication duration (i.e., the time the
     <ruleId>CONF:1098-7507</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_DyKbsOLTEeOc7-TVP7Wi6w" base_Property="__4L5cOLSEeOc7-TVP7Wi6w">
-    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
     <ruleId>CONF:1098-32360</ruleId>
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_6PKzw-LYEeOc7-TVP7Wi6w" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w">
-    <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-7519</ruleId>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_Mj8dAGvSEeaBpo0IxWaF6w"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_N3hTYOLZEeOc7-TVP7Wi6w" severity="INFO" base_Property="_6PKzwOLYEeOc7-TVP7Wi6w"/>
   <uml:Association xmi:id="_OvExAOLaEeOc7-TVP7Wi6w" memberEnd="_OvC70OLaEeOc7-TVP7Wi6w _OvFYEOLaEeOc7-TVP7Wi6w">
@@ -1971,7 +1971,7 @@ This effectiveTime represents either the medication duration (i.e., the time the
   <CDA:ConstraintValidation xmi:id="_GsKcUuXAEeOkFcFJ9uzEEw" message="" base_Constraint="_GsKcUOXAEeOkFcFJ9uzEEw">
     <ruleId>CONF:1098-7508</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_qH-ckOXfEeOkFcFJ9uzEEw" clientDependency="_31L-AOXgEeOkFcFJ9uzEEw" name="MedicationDispense2">
+  <uml:Class xmi:id="_qH-ckOXfEeOkFcFJ9uzEEw" name="MedicationDispense2">
     <ownedComment xmi:id="_zoMZIOXgEeOkFcFJ9uzEEw">
       <body>This template records the act of supplying medications (i.e., dispensing).</body>
     </ownedComment>
@@ -2036,7 +2036,7 @@ This effectiveTime represents either the medication duration (i.e., the time the
   <CDA:ConstraintValidation xmi:id="_VWi7YuXnEeOkFcFJ9uzEEw" base_Constraint="_VWi7YOXnEeOkFcFJ9uzEEw">
     <ruleId>CONF:1098-9333</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_Hz__kOXrEeOkFcFJ9uzEEw" clientDependency="_L3zMMOXrEeOkFcFJ9uzEEw" name="MedicationInformation2">
+  <uml:Class xmi:id="_Hz__kOXrEeOkFcFJ9uzEEw" name="MedicationInformation2">
     <ownedComment xmi:id="_RV3XYOXrEeOkFcFJ9uzEEw">
       <body>A medication should be recorded as a pre-coordinated ingredient + strength + dose form (e.g., &quot;metoprolol 25mg tablet&quot;, &quot;amoxicillin 400mg/5mL suspension&quot;) where possible. This includes RxNorm codes whose Term Type is SCD (semantic clinical drug), SBD (semantic brand drug), GPCK (generic pack), BPCK (brand pack).&#xD;
 The dose (doseQuantity) represents how many of the consumables are to be administered at each administration event. As a result, the dose is always relative to the consumable. Thus, a patient consuming a single &quot;metoprolol 25mg tablet&quot; per administration will have a doseQuantity of &quot;1&quot;, whereas a patient consuming &quot;metoprolol&quot; will have a dose of &quot;25 mg&quot;.</body>
@@ -2128,8 +2128,8 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
     <ruleId>CONF:1098-32579</ruleId>
   </CDA:CDATemplate>
   <CDA:ValueSetConstraint xmi:id="_MeYOkOXsEeOkFcFJ9uzEEw" base_Property="_MeXngOXsEeOkFcFJ9uzEEw">
-    <reference href="../consol-vocab.uml#_0_S4geXsEeOkFcFJ9uzEEw"/>
     <ruleId>CONF:1098-7412</ruleId>
+    <reference href="../consol-vocab.uml#_0_S4geXsEeOkFcFJ9uzEEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_QyMNIOXsEeOkFcFJ9uzEEw" base_Property="_MeXngOXsEeOkFcFJ9uzEEw"/>
   <CDA:PropertyValidation xmi:id="_eEksYOXwEeOkFcFJ9uzEEw" severity="INFO" base_Property="_dVFJIOXwEeOkFcFJ9uzEEw">
@@ -2138,7 +2138,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
   <CDA:ConstraintValidation xmi:id="_5CwxIOXwEeOkFcFJ9uzEEw" severity="INFO" base_Constraint="_4LnGsOXwEeOkFcFJ9uzEEw">
     <ruleId>CONF:1098-31884</ruleId>
   </CDA:ConstraintValidation>
-  <uml:Class xmi:id="_InVpIOZ8EeOmzetP5oaH3A" clientDependency="_azwWQOZ8EeOmzetP5oaH3A" name="MedicationSupplyOrder2">
+  <uml:Class xmi:id="_InVpIOZ8EeOmzetP5oaH3A" name="MedicationSupplyOrder2">
     <ownedComment xmi:id="_SYVCEOZ8EeOmzetP5oaH3A">
       <body>This template records the intent to supply a patient with medications.</body>
     </ownedComment>
@@ -2223,7 +2223,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
     <ruleId>CONF:1098-7444</ruleId>
     <ruleId>CONF:1098-31391</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_k_C20OaCEeOmzetP5oaH3A" clientDependency="_RKlYYOaDEeOmzetP5oaH3A" name="NonMedicinalSupplyActivity2">
+  <uml:Class xmi:id="_k_C20OaCEeOmzetP5oaH3A" name="NonMedicinalSupplyActivity2">
     <ownedComment xmi:id="_vkE70OaCEeOmzetP5oaH3A">
       <body>This template represents equipment supplied to the patient (e.g., pumps, inhalers, wheelchairs). Devices applied to, or placed in, the patient are represented with the Product Instance entry contained within a Procedure Activity Procedure (V2) (identifier: urn:hl7ii: 2.16.840.1.113883.10.20.22.4.14:2014-06-09)</body>
     </ownedComment>
@@ -2319,7 +2319,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
     <ruleId>CONF:1098-7474</ruleId>
     <ruleId>CONF:1098-15606</ruleId>
   </CDA:EntryRelationship>
-  <uml:Class xmi:id="_ZLY3MPyqEeOlg_Cnc5bODw" clientDependency="_0HqQYPyqEeOlg_Cnc5bODw" name="AdmissionMedicationsSectionEntriesOptional2">
+  <uml:Class xmi:id="_ZLY3MPyqEeOlg_Cnc5bODw" name="AdmissionMedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_hnpR0PyqEeOlg_Cnc5bODw">
       <body>The section contains the medications taken by the patient prior to and at the time of admission to the facility.</body>
     </ownedComment>
@@ -2350,7 +2350,7 @@ The dose (doseQuantity) represents how many of the consumables are to be adminis
   <CDA:AssociationValidation xmi:id="_-48zQPyrEeOlg_Cnc5bODw" severity="WARNING" base_Association="_9ZvqUPyrEeOlg_Cnc5bODw">
     <ruleId>CONF:1198-10102, CONF:1198-15484</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_5OKxwP1bEeO5Hq-yrsJSmg" clientDependency="_QpJ1gP1cEeO5Hq-yrsJSmg" name="MedicalEquipmentSection2">
+  <uml:Class xmi:id="_5OKxwP1bEeO5Hq-yrsJSmg" name="MedicalEquipmentSection2">
     <ownedComment xmi:id="_GwZnsP1cEeO5Hq-yrsJSmg">
       <body>This section defines a patient's implanted and external health and medical devices and equipment. This section lists any pertinent durable medical equipment (DME) used to help maintain the patient's health status. All equipment relevant to the diagnosis, care, or treatment of a patient should be included. &#xD;
 Devices applied to, or placed in, the patient are represented with the Procedure Activity Procedure (V2) template. Equipment supplied to the patient (e.g., pumps, inhalers, wheelchairs) is represented by the Non-Medicinal Supply Activity V2 template.&#xD;
@@ -2410,7 +2410,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     <ruleId>CONF:1098-31885</ruleId>
     <ruleId>CONF:1098-31886</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_F37nMP4jEeOwFalSp0fRiw" clientDependency="_iESIMP4jEeOwFalSp0fRiw" name="MedicationsAdministeredSection2">
+  <uml:Class xmi:id="_F37nMP4jEeOwFalSp0fRiw" name="MedicationsAdministeredSection2">
     <ownedComment xmi:id="_cc_vkP4jEeOwFalSp0fRiw">
       <body>The Medications Administered Section usually resides inside a Procedure Note describing a procedure. This section defines medications and fluids administered during the procedure, its related encounter, or other procedure related activity excluding anesthetic medications. Anesthesia medications should be documented as described in the Anesthesia Section templateId 2.16.840.1.113883.10.20.22.2.25.</body>
     </ownedComment>
@@ -2445,7 +2445,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     <ruleId>CONF:1098-8156</ruleId>
     <ruleId>CONF:1098-15499</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_JUvaUAFaEeS0nNJt6oyOyQ" clientDependency="_f7UloAFaEeS0nNJt6oyOyQ" name="MedicationsSectionEntriesOptional2">
+  <uml:Class xmi:id="_JUvaUAFaEeS0nNJt6oyOyQ" name="MedicationsSectionEntriesOptional2">
     <ownedComment xmi:id="_R4TW0AFaEeS0nNJt6oyOyQ">
       <body>The Medications Section contains a patient's current medications and pertinent medication history. At a minimum, the currently active medications are listed. An entire medication history is an option. The section can describe a patient's prescription and dispense history and information about intended drug monitoring.</body>
     </ownedComment>
@@ -2488,7 +2488,7 @@ These devices may be grouped together within a Medical Equipment Organizer. The 
     <ruleId>CONF:1098-7795</ruleId>
     <ruleId>CONF:1098-10076</ruleId>
   </CDA:AssociationValidation>
-  <uml:Class xmi:id="_P2mp4ALQEeS0YMHMf4rRtQ" clientDependency="_jpry0ALQEeS0YMHMf4rRtQ" name="MedicationsSection2">
+  <uml:Class xmi:id="_P2mp4ALQEeS0YMHMf4rRtQ" name="MedicationsSection2">
     <ownedComment xmi:id="_w0ZgoALQEeS0YMHMf4rRtQ">
       <body>The Medications Section contains a patient's current medications and pertinent medication history. At a minimum, the currently active medications are listed. An entire medication history is an option. The section can describe a patient's prescription and dispense history and information about intended drug monitoring. &#xD;
 This section requires either an entry indicating the subject is not known to be on any medications or entries summarizing the subject's medications.</body>
@@ -2554,7 +2554,7 @@ This section requires either an entry indicating the subject is not known to be 
   <CDA:PropertyValidation xmi:id="_zErHgDhBEeS1WeMhbm6GZw" severity="WARNING" base_Property="_thJ0kDhBEeS1WeMhbm6GZw">
     <ruleId>CONF:7369</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="_XA96QDhDEeS1WeMhbm6GZw" clientDependency="_9o9TsDhDEeS1WeMhbm6GZw" name="PreconditionForSubstanceAdministration2">
+  <uml:Class xmi:id="_XA96QDhDEeS1WeMhbm6GZw" name="PreconditionForSubstanceAdministration2">
     <ownedComment xmi:id="_ro_uMDhDEeS1WeMhbm6GZw">
       <body>A criterion for administration can be used to record that the medication is to be administered only when the associated criteria are met.</body>
     </ownedComment>
@@ -2587,8 +2587,8 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2fqgUzhEEeS1WeMhbm6GZw" base_Property="_2fqgUDhEEeS1WeMhbm6GZw"/>
   <CDA:ValueSetConstraint xmi:id="_7o8uUDhEEeS1WeMhbm6GZw" base_Property="_2fqgUDhEEeS1WeMhbm6GZw">
-    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-7369</ruleId>
+    <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_qeq-MDhFEeS1WeMhbm6GZw" code="ASSERTION" displayName="Assertion" base_Property="_KDeToDhEEeS1WeMhbm6GZw">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
@@ -2639,12 +2639,12 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_nbj6IMLMEeSqg-Exmsy2kg" severity="WARNING" base_Property="_nbjTEMLMEeSqg-Exmsy2kg"/>
   <CDA:ValueSetConstraint xmi:id="_nbkhMMLMEeSqg-Exmsy2kg" base_Property="_nbjTEMLMEeSqg-Exmsy2kg">
-    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:1098-7514</ruleId>
+    <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_smFv8MNpEeSRNKqIviDQAg" base_Property="_smEh0MNpEeSRNKqIviDQAg">
-    <reference href="../consol-vocab.uml#_dy62kMNpEeSRNKqIviDQAg"/>
     <ruleId>CONF:1098-32361</ruleId>
+    <reference href="../consol-vocab.uml#_dy62kMNpEeSRNKqIviDQAg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_33ADgMNpEeSRNKqIviDQAg" base_Property="_smEh0MNpEeSRNKqIviDQAg">
     <ruleId>CONF:1098-7455</ruleId>
@@ -2656,8 +2656,8 @@ This section requires either an entry indicating the subject is not known to be 
     <ruleId>CONF:1098-7432</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_e9LkEMOGEeSRNKqIviDQAg" base_Property="_bgxuoMOGEeSRNKqIviDQAg">
-    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
     <ruleId>CONF:1098-32362</ruleId>
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Hv6hU8OIEeSRNKqIviDQAg" severity="WARNING" base_Property="_Hv6hUMOIEeSRNKqIviDQAg">
     <ruleId>CONF:1098-7434</ruleId>
@@ -2666,8 +2666,8 @@ This section requires either an entry indicating the subject is not known to be 
     <ruleId>CONF:1098-8749</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_vPRM4MQSEeSt_63yiINGSw" base_Property="_oW6N8MQSEeSt_63yiINGSw">
-    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
     <ruleId>CONF:1098-32363</ruleId>
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_YauMIMQUEeSt_63yiINGSw" memberEnd="_Yas-AMQUEeSt_63yiINGSw _YauzMMQUEeSt_63yiINGSw">
     <ownedEnd xmi:id="_YauzMMQUEeSt_63yiINGSw" type="_k_C20OaCEeOmzetP5oaH3A" association="_YauMIMQUEeSt_63yiINGSw"/>
@@ -2678,12 +2678,12 @@ This section requires either an entry indicating the subject is not known to be 
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_07H3UMhCEeSU-Km0iFeHDg" severity="INFO" base_Property="_2GHbxhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_JAJr4MhDEeSU-Km0iFeHDg" base_Property="_2GHbxhSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7519</ruleId>
+    <reference href="../consol-vocab.uml#_2H49IRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_WpUWIPpdEeS-CfvNxekztA" base_Property="_WDsGYYqvEeOoMZgUoTghIg">
-    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
     <ruleId>CONF:1098-32358</ruleId>
+    <reference href="../consol-vocab.uml#_SdFiQeHGEeO04sHNODkHmQ"/>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_pHwjUA7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_so0iEOZ2EeO97uF_XMEmeg"/>
   <CDA:ConstraintValidation xmi:id="_pldL8A7VEeWbLdDULBrUww" severity="INFO" base_Constraint="_cKGQYOZ3EeO97uF_XMEmeg"/>
@@ -2820,8 +2820,8 @@ An example free text sig: Thyroxin 150 ug, take one tab by mouth every morning&#
     <ruleId>CONF:1198-32754</ruleId>
   </CDA:TextValue>
   <CDA:ValueSetConstraint xmi:id="_eS9XoDsBEeWD4MX6K2c_gA" base_Property="_HkAI4DsAEeWD4MX6K2c_gA">
-    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
     <ruleId>CONF:1198-32771</ruleId>
+    <reference href="../consol-vocab.uml#_rvGXc8LCEeSqg-Exmsy2kg"/>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_BH7ycDsCEeWD4MX6K2c_gA" code="76662-6" displayName="Instructions Medication" base_Property="_Hj_h0DsAEeWD4MX6K2c_gA">
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
