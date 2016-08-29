@@ -2034,6 +2034,11 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       <ownedLiteral xmi:id="_HlApMD-xEeaJttsCYk-pKw" name="M"/>
       <ownedLiteral xmi:id="_L5UXAD-xEeaJttsCYk-pKw" name="U"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Mj6n0GvSEeaBpo0IxWaF6w" name="AdministrationUnitDoseForm">
+      <ownedComment xmi:id="_Uq0dgGvSEeaBpo0IxWaF6w">
+        <body>Codes that are similar to a drug &quot;form&quot; but limited to those used as units when describing drug administration when the drug item is a physical form that is continuous and therefore not administered as an &quot;each&quot; of the physical form, or is not using standard measurement units (inch, ounce, gram, etc.) This set does not include unit concepts that mimic &quot;physical form&quot; concepts that can be counted using &quot;each&quot;, such as tablet, bar, lozenge, packet, etc</body>
+      </ownedComment>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3491,7 +3496,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_hDbOoeHIEeO04sHNODkHmQ" conceptName="nullified" base_EnumerationLiteral="_hDbOoOHIEeO04sHNODkHmQ"/>
   <term:ValueSetCode xmi:id="_iiyIkeHIEeO04sHNODkHmQ" conceptName="obsolete" base_EnumerationLiteral="_iiyIkOHIEeO04sHNODkHmQ"/>
   <term:ValueSetVersion xmi:id="_maiyYOHKEeO04sHNODkHmQ" identifier="2.16.840.1.113883.1.11.14570" fullName="AdministrableDrugForm" binding="Dynamic" base_Enumeration="_maiLUOHKEeO04sHNODkHmQ">
-    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_OsdGUOuZEeWgMM6dmEi-NA"/>
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_OsdGUOuZEeWgMM6dmEi-NA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_7wHo0eHKEeO04sHNODkHmQ" conceptName="Puff" base_EnumerationLiteral="_7wHo0OHKEeO04sHNODkHmQ"/>
   <term:ValueSetCode xmi:id="_-MUlgeHKEeO04sHNODkHmQ" conceptName="Scoops" base_EnumerationLiteral="_-MUlgOHKEeO04sHNODkHmQ"/>
@@ -3827,4 +3832,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_E11tMT-xEeaJttsCYk-pKw" conceptName="Female" base_EnumerationLiteral="_E11tMD-xEeaJttsCYk-pKw"/>
   <term:ValueSetCode xmi:id="_HlBQQD-xEeaJttsCYk-pKw" conceptName="Male" base_EnumerationLiteral="_HlApMD-xEeaJttsCYk-pKw"/>
   <term:ValueSetCode xmi:id="_L5U-ED-xEeaJttsCYk-pKw" conceptName="Unknown" base_EnumerationLiteral="_L5UXAD-xEeaJttsCYk-pKw"/>
+  <term:ValueSetVersion xmi:id="_Mj8dAGvSEeaBpo0IxWaF6w" identifier="2.16.840.1.113762.1.4.1021.30" fullName="AdministrationUnitDoseForm" source="VSAC" url="https://vsac.nlm.nih.gov/" binding="Dynamic" base_Enumeration="_Mj6n0GvSEeaBpo0IxWaF6w">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_8GxMoG4FEea346h_ImlQww"/>
+  </term:ValueSetVersion>
 </xmi:XMI>

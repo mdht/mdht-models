@@ -112,6 +112,7 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_3OgIoD1FEeWD4MX6K2c_gA" name="Media Type"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Oe_SEOuZEeWgMM6dmEi-NA" name="orderableDrugForm"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ywl2UD-vEeaJttsCYk-pKw" name="AdministrativeSex"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8Gm0kG4FEea346h_ImlQww" name="FDA RouteOfAdministration"/>
     <profileApplication xmi:id="_H1PoACF_Ed-M3adQxwHq4g">
       <eAnnotations xmi:id="_H1Q2ICF_Ed-M3adQxwHq4g" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -186,4 +187,5 @@
   <term:CodeSystemVersion xmi:id="_3OgvsD1FEeWD4MX6K2c_gA" identifier="2.16.840.1.113883.5.79" base_Enumeration="_3OgIoD1FEeWD4MX6K2c_gA"/>
   <term:CodeSystemVersion xmi:id="_OsdGUOuZEeWgMM6dmEi-NA" identifier="2.16.840.1.113883.5.85" url="http://www.hl7.org/documentcenter/public_temp_029C8D8D-1C23-BA17-0C659482C916B284/standards/vocabulary/vocabulary_tables/infrastructure/vocabulary/orderableDrugForm.html" base_Enumeration="_Oe_SEOuZEeWgMM6dmEi-NA"/>
   <term:CodeSystemVersion xmi:id="_YwmdYD-vEeaJttsCYk-pKw" identifier="2.16.840.1.113883.18.2" fullName="Administrative Sex" base_Enumeration="_Ywl2UD-vEeaJttsCYk-pKw"/>
+  <term:CodeSystemVersion xmi:id="_8GxMoG4FEea346h_ImlQww" identifier="2.16.840.1.113883.3.26.1.1" fullName="FDA RouteOfAdministration" base_Enumeration="_8Gm0kG4FEea346h_ImlQww"/>
 </xmi:XMI>

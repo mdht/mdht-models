@@ -1168,10 +1168,9 @@ public class MedicationActivity2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(MedicationActivity2 target) {
-				// saving old code in case valueSet change was due to errata in IG...
-				// target.setAdministrationUnitCode(DatatypesFactory.eINSTANCE.createCE("APPFUL", "2.16.840.1.113883.5.85"));
 				target.setAdministrationUnitCode(
-					DatatypesFactory.eINSTANCE.createCE("C42892", "2.16.840.1.113883.3.26.1.1"));
+					DatatypesFactory.eINSTANCE.createCE(
+						"codeSystemEnforcedOnly_CodeNotChecked", "2.16.840.1.113883.3.26.1.1"));
 			}
 
 			@Override
