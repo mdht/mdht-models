@@ -707,7 +707,7 @@ public class ImmunizationActivityTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateImmunizationActivityRouteCode() {
@@ -723,7 +723,7 @@ public class ImmunizationActivityTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(ImmunizationActivity target) {
-				target.setRouteCode(DatatypesFactory.eINSTANCE.createCE("C38192", "2.16.840.1.113883.3.26.1.1"));
+				target.setRouteCode(DatatypesFactory.eINSTANCE.createCE("C38290", "2.16.840.1.113883.3.26.1.1"));
 
 			}
 
