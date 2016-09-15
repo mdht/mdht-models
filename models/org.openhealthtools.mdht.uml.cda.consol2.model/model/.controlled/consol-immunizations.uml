@@ -1477,13 +1477,13 @@ This information should be included in an Immunization Activity when available. 
   <uml:Association xmi:id="_X5kN8MHyEeST26B_nQ4gxA" memberEnd="_X5i_0MHyEeST26B_nQ4gxA _X5lcEMHyEeST26B_nQ4gxA">
     <ownedEnd xmi:id="_X5lcEMHyEeST26B_nQ4gxA" type="_zI6vcOE7EeOTq9XEMvvkWw" association="_X5kN8MHyEeST26B_nQ4gxA"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_buqQMMHyEeST26B_nQ4gxA" severity="WARNING" base_Association="_X5kN8MHyEeST26B_nQ4gxA">
+  <CDA:AssociationValidation xmi:id="_buqQMMHyEeST26B_nQ4gxA" message="Consol Immunization Activity2 SHOULD contain zero or more [0..*] entryRelationship (CONF:1198-31510) such that it" severity="WARNING" base_Association="_X5kN8MHyEeST26B_nQ4gxA">
     <ruleId>CONF:1198-31510</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_-u3qoMHyEeST26B_nQ4gxA" base_Property="_pBFIgMHyEeST26B_nQ4gxA">
+  <CDA:PropertyValidation xmi:id="_-u3qoMHyEeST26B_nQ4gxA" message="Consol Entry Relationship SHALL contain exactly one [1..1] @typeCode=&quot;COMP&quot; (CONF:1198-31511)" severity="WARNING" base_Property="_pBFIgMHyEeST26B_nQ4gxA">
     <ruleId>CONF:1198-31511</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_OIHFgMHzEeST26B_nQ4gxA" base_Property="_pBEhcMHyEeST26B_nQ4gxA">
+  <CDA:PropertyValidation xmi:id="_OIHFgMHzEeST26B_nQ4gxA" message="Consol Entry Relationship SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; (CONF:1198-31512)" severity="WARNING" base_Property="_pBEhcMHyEeST26B_nQ4gxA">
     <ruleId>CONF:1198-31512</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_fQUjoMHzEeST26B_nQ4gxA" severity="INFO" base_Property="_pBEhc8HyEeST26B_nQ4gxA">
@@ -1492,7 +1492,7 @@ This information should be included in an Immunization Activity when available. 
   <uml:Association xmi:id="_yQQYYMHzEeST26B_nQ4gxA" memberEnd="_yQPKQMHzEeST26B_nQ4gxA _yQQ_cMHzEeST26B_nQ4gxA">
     <ownedEnd xmi:id="_yQQ_cMHzEeST26B_nQ4gxA" type="_kL7XcMHyEeST26B_nQ4gxA" association="_yQQYYMHzEeST26B_nQ4gxA"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_y8WpYMHzEeST26B_nQ4gxA" base_Association="_yQQYYMHzEeST26B_nQ4gxA">
+  <CDA:AssociationValidation xmi:id="_y8WpYMHzEeST26B_nQ4gxA" message="Consol Entry Relationship SHALL contain exactly one [1..1] act, where its type is Substance Administered Act (CONF:1198-31514)" severity="WARNING" base_Association="_yQQYYMHzEeST26B_nQ4gxA">
     <ruleId>CONF:1198-31514</ruleId>
   </CDA:AssociationValidation>
   <CDA:TextValue xmi:id="_2dcZAMKMEeSqg-Exmsy2kg" severity="WARNING" base_Property="_2daj0MKMEeSqg-Exmsy2kg">

@@ -346,7 +346,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE,
 							ConsolPlugin.INSTANCE.getString(
 								"ImmunizationActivity2ImmunizationActivity2EntryRelationshipTypeCode"),
@@ -415,7 +415,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY2_ENTRY_RELATIONSHIP_INVERSION_IND,
 							ConsolPlugin.INSTANCE.getString(
 								"ImmunizationActivity2ImmunizationActivity2EntryRelationshipInversionInd"),
@@ -553,7 +553,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY2_ENTRY_RELATIONSHIP_SUBSTANCE_ADMINISTERED_ACT,
 							ConsolPlugin.INSTANCE.getString(
 								"ImmunizationActivity2ImmunizationActivity2EntryRelationshipSubstanceAdministeredAct"),
