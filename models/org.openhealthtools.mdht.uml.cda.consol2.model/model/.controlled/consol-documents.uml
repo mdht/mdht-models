@@ -1124,7 +1124,7 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
 &lt;p>A supporting person or organization is an individual or an organization with a relationship to the patient. A supporting person who is playing multiple roles would be recorded in multiple particpants (e.g., emergency contact and next-of-kin)&lt;/p></body>
       </ownedComment>
       <ownedComment xmi:id="_PhHewCzKEeGMXrZ0DiQwGg">
-        <body>INLINE</body>
+        <body>INLINE&amp;typeCode = vocab::ParticipationType::IND</body>
       </ownedComment>
       <ownedRule xmi:id="_CAPIoDVaEeGIw7CntkyPQw" name="associatedEntityHasAssociatedPersonOrScopingOrganization" constrainedElement="_Zi4mACzHEeGMXrZ0DiQwGg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_FRAV0DVaEeGIw7CntkyPQw">
@@ -6339,7 +6339,7 @@ The participant element identifies supporting entities, including parents, relat
 A supporting person or organization is an individual or an organization with a relationship to the patient. A supporting person who is playing multiple roles would be recorded in multiple participants (e.g., emergency contact and next-of-kin).</body>
       </ownedComment>
       <ownedComment xmi:id="__zHqMBwgEeSMr-NWzQuDBw">
-        <body>INLINE</body>
+        <body>INLINE&amp;typeCode = vocab::ParticipationType::IND</body>
       </ownedComment>
       <ownedRule xmi:id="_eKyzQBwhEeSMr-NWzQuDBw" name="associatedEntityHasAssociatedPersonOrScopingOrganization" constrainedElement="_Zi4mACzHEeGMXrZ0DiQwGg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_eKyzQRwhEeSMr-NWzQuDBw">
