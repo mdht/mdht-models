@@ -52,6 +52,7 @@ import org.eclipse.mdht.uml.hl7.datatypes.ST;
 import org.eclipse.mdht.uml.hl7.datatypes.TEL;
 import org.eclipse.mdht.uml.hl7.datatypes.TS;
 import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
+import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
 import org.eclipse.mdht.uml.hl7.vocab.PostalAddressUse;
 import org.eclipse.mdht.uml.hl7.vocab.TelecommunicationAddressUse;
 import org.junit.Ignore;
@@ -1359,6 +1360,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(USRealmHeader2 target) {
 				Participant1 par = CDAFactory.eINSTANCE.createParticipant1();
+				par.setTypeCode(ParticipationType.IND);
 				target.getParticipants().add(par);
 			}
 
@@ -3183,6 +3185,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 						// Does not contain an associatedPerson element or a scopingOrganization element
 						target.init();
 						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+						participant.setTypeCode(ParticipationType.IND);
 						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 						participant.setAssociatedEntity(ae);
 						target.getParticipants().add(participant);
@@ -3201,6 +3204,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 						// associatedPerson element and scopingOrganization element
 						target.init();
 						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+						participant.setTypeCode(ParticipationType.IND);
 						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 						ae.setAssociatedPerson(CDAFactory.eINSTANCE.createPerson());
 						ae.setScopingOrganization(CDAFactory.eINSTANCE.createOrganization());
@@ -3216,6 +3220,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 						// scopingOrganization element only
 						target.init();
 						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+						participant.setTypeCode(ParticipationType.IND);
 						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 						ae.setScopingOrganization(CDAFactory.eINSTANCE.createOrganization());
 						participant.setAssociatedEntity(ae);
@@ -3231,6 +3236,7 @@ public class USRealmHeader2Test extends CDAValidationTest {
 						// associatedPerson element only
 						target.init();
 						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+						participant.setTypeCode(ParticipationType.IND);
 						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 						ae.setAssociatedPerson(CDAFactory.eINSTANCE.createPerson());
 						participant.setAssociatedEntity(ae);

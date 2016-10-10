@@ -66,6 +66,7 @@ import org.eclipse.mdht.uml.hl7.datatypes.TEL;
 import org.eclipse.mdht.uml.hl7.datatypes.TS;
 import org.eclipse.mdht.uml.hl7.vocab.EntityNameUse;
 import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
+import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
 import org.eclipse.mdht.uml.hl7.vocab.PostalAddressUse;
 import org.eclipse.mdht.uml.hl7.vocab.TelecommunicationAddressUse;
 import org.eclipse.mdht.uml.hl7.vocab.x_ServiceEventPerformer;
@@ -1311,6 +1312,9 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 			protected void updateToPass(GeneralHeaderConstraints target) {
 				target.init();
 				target.getParticipants().add(CDAFactory.eINSTANCE.createParticipant1());
+				if (!target.getParticipants().isEmpty()) {
+					target.getParticipants().get(0).setTypeCode(ParticipationType.IND);
+				}
 
 			}
 
@@ -12949,6 +12953,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 						// Does not contain an associatedPerson element or a scopingOrganization element
 						target.init();
 						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+						participant.setTypeCode(ParticipationType.IND);
 						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 						participant.setAssociatedEntity(ae);
 						target.getParticipants().add(participant);
@@ -12972,6 +12977,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 						// associatedPerson element and scopingOrganization element
 						target.init();
 						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+						participant.setTypeCode(ParticipationType.IND);
 						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 						ae.setAssociatedPerson(CDAFactory.eINSTANCE.createPerson());
 						ae.setScopingOrganization(CDAFactory.eINSTANCE.createOrganization());
@@ -12987,6 +12993,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 						// scopingOrganization element only
 						target.init();
 						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+						participant.setTypeCode(ParticipationType.IND);
 						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 						ae.setScopingOrganization(CDAFactory.eINSTANCE.createOrganization());
 						participant.setAssociatedEntity(ae);
@@ -13002,6 +13009,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 						// associatedPerson element only
 						target.init();
 						Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+						participant.setTypeCode(ParticipationType.IND);
 						AssociatedEntity ae = CDAFactory.eINSTANCE.createAssociatedEntity();
 						ae.setAssociatedPerson(CDAFactory.eINSTANCE.createPerson());
 						participant.setAssociatedEntity(ae);
@@ -13237,6 +13245,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 				target.init();
 				Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+				participant.setTypeCode(ParticipationType.IND);
 				target.getParticipants().add(participant);
 
 			}
@@ -13246,6 +13255,7 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 				target.getParticipants().clear();
 				Participant1 participant = CDAFactory.eINSTANCE.createParticipant1();
+				participant.setTypeCode(ParticipationType.IND);
 				participant.setTime(DatatypesFactory.eINSTANCE.createIVL_TS());
 				target.getParticipants().add(participant);
 
