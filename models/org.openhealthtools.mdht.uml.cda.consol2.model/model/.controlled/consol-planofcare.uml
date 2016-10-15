@@ -680,7 +680,7 @@
 This template represents a patient health goal. A Goal Observation template may have related components that are acts, encounters, observations, procedures, substance administrations, or supplies.&#xD;
 &lt;/p>&#xD;
 &lt;p>&#xD;
-A goal may be a patient or provider goal. If the author is set to the recordTarget (patient), this is a patient goal. If the author is set to a provider, this is a provider goal. If both patient and provider are set as authors, this is a negotiated goal.&#xD;
+A goal may be a patient or provider goal. If the author is the recordTarget (patient), this is a patient goal. If the author is a provider, this is a provider goal. If both patient and provider are authors, this is a negotiated goal. If no author is present, it is assumed the document or section author(s) is the author of this goal.&#xD;
 &lt;/p>&#xD;
 &lt;p>&#xD;
 A goal usually has a related health concern and/or risk.&#xD;
@@ -717,8 +717,8 @@ A goal may have components consisting of other goals (milestones). These milesto
         <body>If the author is set to the recordTarget (patient), this is a patient goal. If the author is set to a provider, this is a provider goal. If both patient and provider are set as authors, this is a negotiated goal.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zZu0AavEEeOEkquDecUlEw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zZu0AKvEEeOEkquDecUlEw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OXj2QZMPEea9R7VeOazsfg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OXj2QJMPEea9R7VeOazsfg" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ULjEQKvFEeOEkquDecUlEw" name="healthConcernActER" association="_ULjrUKvFEeOEkquDecUlEw">
       <ownedComment xmi:id="_QU8UMKvHEeOEkquDecUlEw">
@@ -1644,10 +1644,14 @@ For example, an observation outcome of a blood oxygen saturation level of 95% is
     <ruleId>CONF:1098-29588</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_xWMO8KvEEeOEkquDecUlEw" memberEnd="_xWLA0KvEEeOEkquDecUlEw _xWMO8avEEeOEkquDecUlEw">
+    <ownedComment xmi:id="_oLLlUJMPEea9R7VeOazsfg">
+      <body>If the author is the recordTarget (patient), this is a patient goal. If the author is a provider, this is a provider goal. If both patient and provider are authors, this is a negotiated goal. If no author is present, it is assumed the document or section author(s) is the author of this goal.</body>
+    </ownedComment>
     <ownedEnd xmi:id="_xWMO8avEEeOEkquDecUlEw" type="_-miMII9TEeOB0eBUISUB4Q" association="_xWMO8KvEEeOEkquDecUlEw"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_yZYxUKvEEeOEkquDecUlEw" base_Association="_xWMO8KvEEeOEkquDecUlEw">
+  <CDA:AssociationValidation xmi:id="_yZYxUKvEEeOEkquDecUlEw" severity="WARNING" base_Association="_xWMO8KvEEeOEkquDecUlEw">
     <ruleId>CONF:1098-30995</ruleId>
+    <ruleId>DSTU:867</ruleId>
   </CDA:AssociationValidation>
   <uml:Association xmi:id="_ULjrUKvFEeOEkquDecUlEw" memberEnd="_ULjEQKvFEeOEkquDecUlEw _ULkSYKvFEeOEkquDecUlEw">
     <ownedEnd xmi:id="_ULkSYKvFEeOEkquDecUlEw" type="_-miMII9TEeOB0eBUISUB4Q" association="_ULjrUKvFEeOEkquDecUlEw"/>
