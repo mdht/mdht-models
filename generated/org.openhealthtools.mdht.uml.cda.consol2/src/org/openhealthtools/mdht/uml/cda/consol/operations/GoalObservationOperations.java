@@ -882,7 +882,7 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_AUTHOR_PARTICIPATION,
 						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationAuthorParticipation"),
 						new Object[] { goalObservation }));
