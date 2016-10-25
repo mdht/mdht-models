@@ -41,6 +41,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.BirthSexObservationOpe
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BirthSexObservation#validateBirthSexObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BirthSexObservation#validateBirthSexObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BirthSexObservation#validateBirthSexObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BirthSexObservation#validateBirthSexObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Value P</em>}</li>
  * </ul>
  * </p>
  *
@@ -302,13 +303,50 @@ public class BirthSexObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateBirthSexObservationValue() {
 		OperationsTestCase<BirthSexObservation> validateBirthSexObservationValueTestCase = new OperationsTestCase<BirthSexObservation>(
 			"validateBirthSexObservationValue",
 			operationsForOCL.getOCLValue("VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(BirthSexObservation target) {
+				target.init();
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+			}
+
+			@Override
+			protected void updateToPass(BirthSexObservation target) {
+				final String ADMINISTRATIVE_SEX_CS = "2.16.840.1.113883.18.2";
+				target.getValues().set(0, DatatypesFactory.eINSTANCE.createCD("F", ADMINISTRATIVE_SEX_CS));
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return BirthSexObservationOperations.validateBirthSexObservationValue(
+					(BirthSexObservation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateBirthSexObservationValueTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateBirthSexObservationValueP() {
+		OperationsTestCase<BirthSexObservation> validateBirthSexObservationValuePTestCase = new OperationsTestCase<BirthSexObservation>(
+			"validateBirthSexObservationValueP",
+			operationsForOCL.getOCLValue("VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -328,13 +366,13 @@ public class BirthSexObservationTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return BirthSexObservationOperations.validateBirthSexObservationValue(
+				return BirthSexObservationOperations.validateBirthSexObservationValueP(
 					(BirthSexObservation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateBirthSexObservationValueTestCase.doValidationTest();
+		validateBirthSexObservationValuePTestCase.doValidationTest();
 	}
 
 	/**

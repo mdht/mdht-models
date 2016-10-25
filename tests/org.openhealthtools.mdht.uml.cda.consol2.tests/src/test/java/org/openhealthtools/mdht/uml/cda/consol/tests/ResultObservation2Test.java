@@ -773,8 +773,11 @@ public class ResultObservation2Test extends CDAValidationTest {
 
 			String[] subsetOfCodesToTest = "A H > < H> L< SYN-S _GeneticObservationInterpretation AC".split(" ");
 
+			final String OBSERVATION_INTERPRETATION_CS = "2.16.840.1.113883.5.83";
+
 			@Override
 			public void addPassTests() {
+
 				for (final String codeToTest : subsetOfCodesToTest) {
 					addPassTest(new PassTest() {
 						@Override
@@ -784,11 +787,24 @@ public class ResultObservation2Test extends CDAValidationTest {
 							target.getInterpretationCodes().add(DatatypesFactory.eINSTANCE.createCE());
 							for (CE icode : target.getInterpretationCodes()) {
 								icode.setCode(codeToTest);
-								icode.setCodeSystem("2.16.840.1.113883.5.83");
+								icode.setCodeSystem(OBSERVATION_INTERPRETATION_CS);
 							}
 						};
 					});
 				}
+
+				// Due to errata 963 DSTU Update 2 the value set is DYNAMIC (and the specific codes are no longer enforced in MDHT, only the
+				// codeSystem is enforced)
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(ResultObservation2 target) {
+						target.init();
+						target.getInterpretationCodes().clear();
+						target.getInterpretationCodes().add(
+							DatatypesFactory.eINSTANCE.createCE(BAD_CODE_VALUE, OBSERVATION_INTERPRETATION_CS));
+					}
+				});
+
 			};
 
 			@Override
