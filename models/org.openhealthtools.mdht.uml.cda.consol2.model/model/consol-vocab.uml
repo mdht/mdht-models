@@ -2040,6 +2040,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
         <body>Codes that are similar to a drug &quot;form&quot; but limited to those used as units when describing drug administration when the drug item is a physical form that is continuous and therefore not administered as an &quot;each&quot; of the physical form, or is not using standard measurement units (inch, ounce, gram, etc.) This set does not include unit concepts that mimic &quot;physical form&quot; concepts that can be counted using &quot;each&quot;, such as tablet, bar, lozenge, packet, etc</body>
       </ownedComment>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_LEBI0JrZEea9R7VeOazsfg" name="Observation Interpretation (HL7) DYNAMIC"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3837,4 +3838,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
     <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_8GxMoG4FEea346h_ImlQww"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_zZyFcHnZEeaNmqTnufj84g" conceptName="OTHER" base_EnumerationLiteral="_zZwQQHnZEeaNmqTnufj84g"/>
+  <term:ValueSetVersion xmi:id="_LEfp8JrZEea9R7VeOazsfg" identifier="2.16.840.1.113883.1.11.78" fullName="Observation Interpretation (HL7)" source="http://www.hl7.org" definition="Observation interpretation concepts that are based upon HL7 V3 vocabulary." binding="Dynamic" base_Enumeration="_LEBI0JrZEea9R7VeOazsfg">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_1o75oaFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
 </xmi:XMI>
