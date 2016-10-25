@@ -1409,9 +1409,7 @@ The effectiveTime element is used to describe dates associated with the patient'
   <CDA:PropertyValidation xmi:id="_pdrmED-sEeaJttsCYk-pKw" base_Property="_SYHYsD-sEeaJttsCYk-pKw">
     <ruleId>CONF:3250-18124</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_p2txID-sEeaJttsCYk-pKw" base_Property="_SYIm0D-sEeaJttsCYk-pKw">
-    <ruleId>CONF:3250-32947</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_p2txID-sEeaJttsCYk-pKw" message="Consol Birth Sex Observation SHALL contain exactly one [1..1] value with @xsi:type=&quot;CD&quot;, where the code SHALL be selected from ValueSet ONC Administrative Sex urn:oid:2.16.840.1.113762.1.4.1 STATIC (CONF:3250-32947). If value/@code not from value set, SHALL contain exactly one [1..1] @nullFlavor=&quot;UNK&quot; (CONF:3250-32948)" base_Property="_SYIm0D-sEeaJttsCYk-pKw"/>
   <CDA:CodeSystemConstraint xmi:id="_KeNAsD-tEeaJttsCYk-pKw" code="76689-9" displayName="Sex Assigned At Birth" base_Property="_SYGKkD-sEeaJttsCYk-pKw">
     <reference href="pathmap://TERM_MODEL///CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:3250-18235</ruleId>
@@ -1427,4 +1425,8 @@ The effectiveTime element is used to describe dates associated with the patient'
   <CDA:AssociationValidation xmi:id="_JeCVMELDEeaf56PK5wLLJw" severity="INFO" base_Association="_GxM7gELDEeaf56PK5wLLJw">
     <ruleId>CONF:1198-NEW</ruleId>
   </CDA:AssociationValidation>
+  <CDA:ValueSetConstraint xmi:id="_a6aMAJrUEea9R7VeOazsfg" base_Property="_SYIm0D-sEeaJttsCYk-pKw">
+    <ruleId>CONF:3250-32947</ruleId>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_pJl6gD-uEeaJttsCYk-pKw"/>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>
