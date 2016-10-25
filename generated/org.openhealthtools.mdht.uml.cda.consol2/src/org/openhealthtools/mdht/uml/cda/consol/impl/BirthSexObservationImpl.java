@@ -124,6 +124,15 @@ public class BirthSexObservationImpl extends ObservationImpl implements BirthSex
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateBirthSexObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return BirthSexObservationOperations.validateBirthSexObservationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public BirthSexObservation init() {
 		return Initializer.Util.init(this);
 	}
