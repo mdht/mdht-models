@@ -14750,5 +14750,6 @@ The nonXMLBody/text element also has a &quot;compression&quot; attribute that ca
   <CDA:ConstraintValidation xmi:id="_TxkKMD0qEeWD4MX6K2c_gA" base_Constraint="_TxjjID0qEeWD4MX6K2c_gA"/>
   <CDA:ConstraintValidation xmi:id="_PfctYD0tEeWD4MX6K2c_gA" base_Constraint="_GP2KQD0tEeWD4MX6K2c_gA">
     <ruleId>CONF:1198-28682</ruleId>
+    <ruleId>DSTU:618</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>

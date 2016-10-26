@@ -529,9 +529,11 @@ The smoking status value set includes a special code to communicate if the smoki
   <CDA:PropertyValidation xmi:id="_BYK8QOWUEeGKmvzED_He2w" base_Property="_Yz0EIOWQEeGKmvzED_He2w">
     <ruleId>CONF:14808</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_R6jJcOWUEeGKmvzED_He2w" message="Consol Smoking Status Observation SHALL contain exactly one [1..1] effectiveTime with @xsi:type=&quot;TS&quot;" base_Property="_Yz0EIeWQEeGKmvzED_He2w">
+  <CDA:PropertyValidation xmi:id="_R6jJcOWUEeGKmvzED_He2w" message="Consol Smoking Status Observation SHALL contain exactly one [1..1] effectiveTime with @xsi:type=&quot;TS&quot; (CONF:14814, R2.0=CONF:1098-31928, DSTU:596, DSTU:597) Note: This template represents a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime is constrained to just a time stamp, and will approximately correspond with the author/time. " base_Property="_Yz0EIeWQEeGKmvzED_He2w">
     <ruleId>CONF:14814</ruleId>
     <ruleId>R2.0=CONF:1098-31928</ruleId>
+    <ruleId>DSTU:596</ruleId>
+    <ruleId>DSTU:597</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_GdsEkOWUEeGKmvzED_He2w" base_Property="_Yz0rMeWQEeGKmvzED_He2w"/>
   <CDA:CodeSystemConstraint xmi:id="_G4ULEOWUEeGKmvzED_He2w" code="completed" displayName="Completed" base_Property="_Yz0rMeWQEeGKmvzED_He2w">
@@ -1023,6 +1025,7 @@ If the patient's current smoking status is unknown, the value element must be po
     <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31039</ruleId>
     <ruleId>CONF:1098-32157</ruleId>
+    <ruleId>DSTU:596</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_iVRxkLnHEeOgPNzo_e4B9A" memberEnd="_iVQjcLnHEeOgPNzo_e4B9A _iVRxkbnHEeOgPNzo_e4B9A">
     <ownedEnd xmi:id="_iVRxkbnHEeOgPNzo_e4B9A" type="_Hl3ScLk0EeODDJAC5t5vpw" association="_iVRxkLnHEeOgPNzo_e4B9A"/>
@@ -1306,7 +1309,7 @@ The effectiveTime element is used to describe dates associated with the patient'
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_pnuJYO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a center" base_Property="_jfV14O3yEeSQmpVKea6s3Q"/>
   <CDA:PropertyValidation xmi:id="_qFj78O3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a high" base_Property="_jfV14-3yEeSQmpVKea6s3Q"/>
-  <CDA:PropertyValidation xmi:id="_qyCAYO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a low" base_Property="_jfV15u3yEeSQmpVKea6s3Q"/>
+  <CDA:PropertyValidation xmi:id="_qyCAYO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a low (DSTU:596, DSTU:597)" base_Property="_jfV15u3yEeSQmpVKea6s3Q"/>
   <CDA:PropertyValidation xmi:id="_rGOuwO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a width" base_Property="_jfV16e3yEeSQmpVKea6s3Q"/>
   <CDA:PropertyValidation xmi:id="_F8nwkPmzEeSGHoih4Jm09A" base_Property="_DAqVwPmzEeSGHoih4Jm09A"/>
   <CDA:ValueSetConstraint xmi:id="_OCGp8PmzEeSGHoih4Jm09A" severity="WARNING" base_Property="_DAqVwPmzEeSGHoih4Jm09A">
@@ -1343,6 +1346,7 @@ The effectiveTime element is used to describe dates associated with the patient'
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_91fpAuoTEeWB4ufB0cOMzQ" base_Constraint="_91fpAOoTEeWB4ufB0cOMzQ">
     <ruleId>CONF:14808</ruleId>
+    <ruleId>DSTU:596</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_1NKEwOoUEeWB4ufB0cOMzQ" severity="INFO" base_Constraint="_M1UeUOoUEeWB4ufB0cOMzQ"/>
   <CDA:PropertyValidation xmi:id="_sMbOoOoVEeWB4ufB0cOMzQ" base_Property="_pdpUMOoVEeWB4ufB0cOMzQ">
