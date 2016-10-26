@@ -38,6 +38,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BirthSexObservation#validateBirthSexObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BirthSexObservation#validateBirthSexObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BirthSexObservation#validateBirthSexObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.BirthSexObservation#validateBirthSexObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Value P</em>}</li>
  * </ul>
  * </p>
  *
@@ -512,7 +513,9 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+	protected static final String VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.18.2' and (value.code = 'F' or value.code = 'M' or value.code = 'U')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBirthSexObservationValue(BirthSexObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Value</em>}' invariant operation.
@@ -557,6 +560,67 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_VALUE,
 						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationValue"),
+						new Object[] { birthSexObservation }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateBirthSexObservationValueP(BirthSexObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthSexObservationValueP(BirthSexObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() =  1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateBirthSexObservationValueP(BirthSexObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateBirthSexObservationValueP(BirthSexObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param birthSexObservation The receiving '<em><b>Birth Sex Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateBirthSexObservationValueP(BirthSexObservation birthSexObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.BIRTH_SEX_OBSERVATION);
+			try {
+				VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_BIRTH_SEX_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			birthSexObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_VALUE_P,
+						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationValueP"),
 						new Object[] { birthSexObservation }));
 			}
 
