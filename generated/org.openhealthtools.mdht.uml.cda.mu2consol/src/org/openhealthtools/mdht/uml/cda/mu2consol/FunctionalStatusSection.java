@@ -56,7 +56,7 @@ public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cd
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @model kind="operation" required="true" ordered="false" annotation=
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::FunctionalStatusResultObservation)).oclAsType(mu2consol::FunctionalStatusResultObservation)'"
 	 * @generated
@@ -65,7 +65,7 @@ public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cd
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @model kind="operation" required="true" ordered="false" annotation=
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::FunctionalStatusResultOrganizer)).oclAsType(mu2consol::FunctionalStatusResultOrganizer)'"
 	 * @generated
@@ -74,14 +74,14 @@ public interface FunctionalStatusSection extends org.openhealthtools.mdht.uml.cd
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public FunctionalStatusSection init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public FunctionalStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers);

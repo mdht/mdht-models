@@ -28,14 +28,14 @@ public interface ResultObservation extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ResultObservation init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);

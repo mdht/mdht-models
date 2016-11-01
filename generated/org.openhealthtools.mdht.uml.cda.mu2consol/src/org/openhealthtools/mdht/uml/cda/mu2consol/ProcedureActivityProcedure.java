@@ -44,14 +44,14 @@ public interface ProcedureActivityProcedure extends org.openhealthtools.mdht.uml
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ProcedureActivityProcedure init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ProcedureActivityProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers);

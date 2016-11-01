@@ -25,14 +25,14 @@ public interface FunctionalStatusResultObservation
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public FunctionalStatusResultObservation init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public FunctionalStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);

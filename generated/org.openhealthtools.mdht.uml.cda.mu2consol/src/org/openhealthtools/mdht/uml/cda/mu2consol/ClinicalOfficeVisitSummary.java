@@ -406,14 +406,14 @@ public interface ClinicalOfficeVisitSummary extends GeneralHeaderConstraints {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ClinicalOfficeVisitSummary init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ClinicalOfficeVisitSummary init(Iterable<? extends Initializer<? extends EObject>> initializers);

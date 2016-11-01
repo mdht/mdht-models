@@ -136,14 +136,14 @@ public interface VDTInpatientSummary extends ViewDownloadTransmitSummary {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public VDTInpatientSummary init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public VDTInpatientSummary init(Iterable<? extends Initializer<? extends EObject>> initializers);

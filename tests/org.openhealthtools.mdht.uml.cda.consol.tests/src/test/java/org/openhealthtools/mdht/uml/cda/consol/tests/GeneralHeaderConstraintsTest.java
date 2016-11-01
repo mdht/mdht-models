@@ -3905,6 +3905,96 @@ public class GeneralHeaderConstraintsTest extends CDAValidationTest {
 
 	/**
 	*
+	* @generated NOT
+	*/
+	@Test
+
+	public void testValidateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDay() {
+		OperationsTestCase<GeneralHeaderConstraints> validateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDayTestCase = new OperationsTestCase<GeneralHeaderConstraints>(
+			"validateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDay",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHOR_US_REALM_DATE_TIME_DTM_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			public void addFailTests() {
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(GeneralHeaderConstraints target) {
+						// time with no value
+						target.init();
+						Author author = CDAFactory.eINSTANCE.createAuthor();
+						target.getAuthors().add(author);
+						author.setTime(DatatypesFactory.eINSTANCE.createTS());
+					}
+				});
+
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(GeneralHeaderConstraints target) {
+						// time with a value that is too short
+						target.init();
+						Author author = CDAFactory.eINSTANCE.createAuthor();
+						target.getAuthors().add(author);
+						author.setTime(DatatypesFactory.eINSTANCE.createTS("1234567"));
+					}
+				});
+
+			}
+
+			@Override
+			public void addPassTests() {
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(GeneralHeaderConstraints target) {
+						// no time element so nothing to fail
+						target.init();
+						Author author = CDAFactory.eINSTANCE.createAuthor();
+						target.getAuthors().add(author);
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(GeneralHeaderConstraints target) {
+						// has time element and value and the value is the correct precision
+						target.init();
+						Author author = CDAFactory.eINSTANCE.createAuthor();
+						target.getAuthors().add(author);
+						author.setTime(DatatypesFactory.eINSTANCE.createTS(CDAValidationTest.PRECISE_TO_DAY));
+					}
+				});
+
+				addPassTest(new PassTest() {
+					@Override
+					public void updateToPass(GeneralHeaderConstraints target) {
+						// has time element with a nullFlavor exception
+						target.init();
+						Author author = CDAFactory.eINSTANCE.createAuthor();
+						target.getAuthors().add(author);
+						author.setTime(DatatypesFactory.eINSTANCE.createTS());
+						author.getTime().setNullFlavor(NullFlavor.UNK);
+					}
+				});
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDay(
+					(GeneralHeaderConstraints) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDayTestCase.doValidationTest();
+	}
+
+	/**
+	*
 	* @generated not
 	*/
 	@Test

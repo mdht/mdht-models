@@ -42,14 +42,14 @@ public interface ProceduresSection extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ProceduresSection init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ProceduresSection init(Iterable<? extends Initializer<? extends EObject>> initializers);

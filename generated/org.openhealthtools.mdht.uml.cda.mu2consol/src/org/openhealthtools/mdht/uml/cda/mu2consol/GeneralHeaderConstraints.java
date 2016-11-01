@@ -83,14 +83,14 @@ public interface GeneralHeaderConstraints extends org.openhealthtools.mdht.uml.c
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public GeneralHeaderConstraints init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public GeneralHeaderConstraints init(Iterable<? extends Initializer<? extends EObject>> initializers);
