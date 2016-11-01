@@ -233,14 +233,14 @@ public interface ViewDownloadTransmitSummary extends GeneralHeaderConstraints {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ViewDownloadTransmitSummary init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ViewDownloadTransmitSummary init(Iterable<? extends Initializer<? extends EObject>> initializers);

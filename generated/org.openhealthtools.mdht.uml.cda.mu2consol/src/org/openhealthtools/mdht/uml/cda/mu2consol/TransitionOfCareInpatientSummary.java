@@ -94,14 +94,14 @@ public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public TransitionOfCareInpatientSummary init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public TransitionOfCareInpatientSummary init(Iterable<? extends Initializer<? extends EObject>> initializers);

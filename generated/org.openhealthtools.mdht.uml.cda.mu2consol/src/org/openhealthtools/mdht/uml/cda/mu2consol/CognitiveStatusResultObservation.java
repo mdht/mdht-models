@@ -25,14 +25,14 @@ public interface CognitiveStatusResultObservation
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public CognitiveStatusResultObservation init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public CognitiveStatusResultObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);

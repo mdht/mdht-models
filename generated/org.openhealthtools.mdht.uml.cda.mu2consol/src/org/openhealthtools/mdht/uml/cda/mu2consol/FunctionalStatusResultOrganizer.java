@@ -25,7 +25,7 @@ public interface FunctionalStatusResultOrganizer
 		extends org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultOrganizer, ResultOrganizer {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @model kind="operation" required="true" ordered="false" annotation=
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::FunctionalStatusResultObservation)).oclAsType(mu2consol::FunctionalStatusResultObservation)'"
 	 * @generated
@@ -34,14 +34,14 @@ public interface FunctionalStatusResultOrganizer
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public FunctionalStatusResultOrganizer init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public FunctionalStatusResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);

@@ -60,7 +60,7 @@ public interface VDTAmbulatorySummary extends ViewDownloadTransmitSummary {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @model kind="operation" required="true" ordered="false" annotation=
 	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))->asSequence()->any(true).oclAsType(consol::MedicationsSection)'"
 	 * @generated
@@ -69,14 +69,14 @@ public interface VDTAmbulatorySummary extends ViewDownloadTransmitSummary {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public VDTAmbulatorySummary init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public VDTAmbulatorySummary init(Iterable<? extends Initializer<? extends EObject>> initializers);

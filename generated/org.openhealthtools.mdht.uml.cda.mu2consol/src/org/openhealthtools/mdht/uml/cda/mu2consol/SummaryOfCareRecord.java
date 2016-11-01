@@ -346,14 +346,14 @@ public interface SummaryOfCareRecord extends GeneralHeaderConstraints {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public SummaryOfCareRecord init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public SummaryOfCareRecord init(Iterable<? extends Initializer<? extends EObject>> initializers);

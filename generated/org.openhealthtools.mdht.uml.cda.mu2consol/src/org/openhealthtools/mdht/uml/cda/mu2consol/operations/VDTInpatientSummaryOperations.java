@@ -544,7 +544,7 @@ public class VDTInpatientSummaryOperations extends ViewDownloadTransmitSummaryOp
 		if (GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY,
-					Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(314));
+					Mu2consolPackage.Literals.VDT_INPATIENT_SUMMARY.getEAllOperations().get(315));
 			try {
 				GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_QRY = helper
 						.createQuery(GET_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__EOCL_EXP);

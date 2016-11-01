@@ -1606,6 +1606,11 @@ public class Mu2consolValidator extends EObjectValidator {
 							generalHeaderConstraints, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDay(
+							generalHeaderConstraints, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
 					generalHeaderConstraints, diagnostics, context);
 		}
@@ -3111,6 +3116,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
+							summaryOfCareRecord, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDay(
 							summaryOfCareRecord, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -5566,6 +5576,11 @@ public class Mu2consolValidator extends EObjectValidator {
 							clinicalOfficeVisitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDay(
+							clinicalOfficeVisitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
 					clinicalOfficeVisitSummary, diagnostics, context);
 		}
@@ -7242,6 +7257,11 @@ public class Mu2consolValidator extends EObjectValidator {
 							transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDay(
+							transitionOfCareAmbulatorySummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
 					transitionOfCareAmbulatorySummary, diagnostics, context);
 		}
@@ -8687,6 +8707,11 @@ public class Mu2consolValidator extends EObjectValidator {
 							transitionOfCareInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDay(
+							transitionOfCareInpatientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
 					transitionOfCareInpatientSummary, diagnostics, context);
 		}
@@ -10109,6 +10134,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
+							viewDownloadTransmitSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDay(
 							viewDownloadTransmitSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -11562,6 +11592,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
+							vdtInpatientSummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDay(
 							vdtInpatientSummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
@@ -13022,6 +13057,11 @@ public class Mu2consolValidator extends EObjectValidator {
 		if (result || diagnostics != null) {
 			result &= consolValidator
 					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
+							vdtAmbulatorySummary, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
+			result &= consolValidator
+					.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorUSRealmDateTimeDtmPreciseToDay(
 							vdtAmbulatorySummary, diagnostics, context);
 		}
 		if (result || diagnostics != null) {

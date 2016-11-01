@@ -41,14 +41,14 @@ public interface ResultsSection extends org.openhealthtools.mdht.uml.cda.consol.
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ResultsSection init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ResultsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);

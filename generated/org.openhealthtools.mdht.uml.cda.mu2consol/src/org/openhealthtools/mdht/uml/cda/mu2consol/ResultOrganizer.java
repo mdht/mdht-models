@@ -41,14 +41,14 @@ public interface ResultOrganizer extends org.openhealthtools.mdht.uml.cda.consol
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ResultOrganizer init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 *
+	 * 
 	 * @generated
 	 */
 	public ResultOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
