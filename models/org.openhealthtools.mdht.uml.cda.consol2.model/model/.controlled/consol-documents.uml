@@ -538,20 +538,13 @@ In a CCD the encompassingEncounter may be used when documenting a specific encou
       <ownedComment xmi:id="_kQ25sCzJEeGMXrZ0DiQwGg">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_KHg6IOxnEeG7k4bbVdXbXw" name="USRealmDateTime" constrainedElement="_xw9WkCymEeGMXrZ0DiQwGg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_N40BgOxnEeG7k4bbVdXbXw">
-          <language>Analysis</language>
-          <body>This time SHALL contain exactly one [1..1] US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4)</body>
-        </specification>
-      </ownedRule>
       <generalization xmi:id="_xw9WkSymEeGMXrZ0DiQwGg">
         <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_1GS6sCymEeGMXrZ0DiQwGg" name="time" visibility="private" aggregation="composite">
+      <ownedAttribute xmi:id="_1GS6sCymEeGMXrZ0DiQwGg" name="time" visibility="private" type="_OB2hAJBlEeSSfIVHL_x3Xw" aggregation="composite">
         <ownedComment xmi:id="_H0md8MWpEeOgR58te6lEvw">
           <body>The content SHALL be a conformant US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4) (CONF:16866).</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
         <redefinedProperty href="pathmap://CDA_MODEL/cda.uml#_t59eEEofEd6c3qsAxlFHaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_4VMvkCy6EeGMXrZ0DiQwGg" name="assignedAuthor" type="_344-ICymEeGMXrZ0DiQwGg" association="_4VNWoCy6EeGMXrZ0DiQwGg">
@@ -1479,7 +1472,7 @@ This data type uses the same rules as US Realm Date and Time (DT.US.FIELDED), bu
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_lH2PYZBpEeSSfIVHL_x3Xw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>self.isNullFlavorUndefined() implies (not self.value.oclIsUndefined() implies self.value.size() >= 8)</body>
+          <body>self.isNullFlavorUndefined() implies (not self.value.oclIsUndefined() and self.value.size() >= 8)</body>
           <body>SHALL be precise to the day</body>
         </specification>
       </ownedRule>
@@ -1487,7 +1480,7 @@ This data type uses the same rules as US Realm Date and Time (DT.US.FIELDED), bu
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_A9I7QZBqEeSSfIVHL_x3Xw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>self.isNullFlavorUndefined() implies (not self.value.oclIsUndefined() implies self.value.size() >= 12)</body>
+          <body>self.isNullFlavorUndefined() implies (not self.value.oclIsUndefined() and self.value.size() >= 12)</body>
           <body>SHOULD be precise to the minute</body>
         </specification>
       </ownedRule>
@@ -1495,7 +1488,7 @@ This data type uses the same rules as US Realm Date and Time (DT.US.FIELDED), bu
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Cm9YwZBqEeSSfIVHL_x3Xw">
           <language>OCL</language>
           <language>Analysis</language>
-          <body>self.isNullFlavorUndefined() implies (not self.value.oclIsUndefined() implies self.value.size() >= 14)</body>
+          <body>self.isNullFlavorUndefined() implies (not self.value.oclIsUndefined() and self.value.size() >= 14)</body>
           <body>MAY be precise to the second</body>
         </specification>
       </ownedRule>
@@ -5430,9 +5423,6 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_zpgcAOxmEeG7k4bbVdXbXw" severity="WARNING" base_Property="_xqTkYOxmEeG7k4bbVdXbXw">
     <ruleId>CONF:7994, CONF:1198-7994</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_OLu9gOxnEeG7k4bbVdXbXw" base_Constraint="_KHg6IOxnEeG7k4bbVdXbXw">
-    <ruleId>CONF:5446</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_D8oLkOxvEeG7k4bbVdXbXw" base_Property="_DF0fYOxvEeG7k4bbVdXbXw">
     <ruleId>CONF:16789, R2.1=CONF:1198-16789</ruleId>
   </CDA:PropertyValidation>
