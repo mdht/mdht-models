@@ -321,8 +321,8 @@ public class BirthSexObservationTest extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(BirthSexObservation target) {
-				final String ADMINISTRATIVE_SEX_CS = "2.16.840.1.113883.18.2";
-				target.getValues().set(0, DatatypesFactory.eINSTANCE.createCD("F", ADMINISTRATIVE_SEX_CS));
+				final String ADMINISTRATIVE_GENDER_CS = "2.16.840.1.113883.5.1";
+				target.getValues().set(0, DatatypesFactory.eINSTANCE.createCD("F", ADMINISTRATIVE_GENDER_CS));
 			}
 
 			@Override

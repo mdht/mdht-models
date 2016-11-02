@@ -2033,7 +2033,6 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_pJlTcD-uEeaJttsCYk-pKw" name="ONC Administrative Sex">
       <ownedLiteral xmi:id="_E11tMD-xEeaJttsCYk-pKw" name="F"/>
       <ownedLiteral xmi:id="_HlApMD-xEeaJttsCYk-pKw" name="M"/>
-      <ownedLiteral xmi:id="_L5UXAD-xEeaJttsCYk-pKw" name="U"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Mj6n0GvSEeaBpo0IxWaF6w" name="AdministrationUnitDoseForm">
       <ownedComment xmi:id="_Uq0dgGvSEeaBpo0IxWaF6w">
@@ -3829,11 +3828,10 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_LQ4KUfXsEeWB5KUN8TYluQ" conceptName="ObservationInterpretationNormality" base_EnumerationLiteral="_LQ4KUPXsEeWB5KUN8TYluQ"/>
   <term:ValueSetCode xmi:id="_MLNEkPXsEeWB5KUN8TYluQ" conceptName="ObservationInterpretationSusceptibility" base_EnumerationLiteral="_MLMdgPXsEeWB5KUN8TYluQ"/>
   <term:ValueSetVersion xmi:id="_pJl6gD-uEeaJttsCYk-pKw" identifier="2.16.840.1.113762.1.4.1" fullName="ONC Administrative Sex" base_Enumeration="_pJlTcD-uEeaJttsCYk-pKw">
-    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_YwmdYD-vEeaJttsCYk-pKw"/>
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_IXptEKEXEea9R7VeOazsfg"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_E11tMT-xEeaJttsCYk-pKw" conceptName="Female" base_EnumerationLiteral="_E11tMD-xEeaJttsCYk-pKw"/>
   <term:ValueSetCode xmi:id="_HlBQQD-xEeaJttsCYk-pKw" conceptName="Male" base_EnumerationLiteral="_HlApMD-xEeaJttsCYk-pKw"/>
-  <term:ValueSetCode xmi:id="_L5U-ED-xEeaJttsCYk-pKw" conceptName="Unknown" base_EnumerationLiteral="_L5UXAD-xEeaJttsCYk-pKw"/>
   <term:ValueSetVersion xmi:id="_Mj8dAGvSEeaBpo0IxWaF6w" identifier="2.16.840.1.113762.1.4.1021.30" fullName="AdministrationUnitDoseForm" source="VSAC" url="https://vsac.nlm.nih.gov/" binding="Dynamic" base_Enumeration="_Mj6n0GvSEeaBpo0IxWaF6w">
     <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_8GxMoG4FEea346h_ImlQww"/>
   </term:ValueSetVersion>
