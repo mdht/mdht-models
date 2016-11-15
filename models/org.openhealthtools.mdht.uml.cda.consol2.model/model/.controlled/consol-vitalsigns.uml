@@ -693,7 +693,8 @@ Vital signs are represented in the same way as other results, but are aggregated
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_nkHIoM9CEeSJsu9BbhWxmQ" base_Property="_eEbiIM9CEeSJsu9BbhWxmQ">
     <ruleId>CONF:1098-32886</ruleId>
-    <reference href="../consol-vocab.uml#_UnwpwM2JEeSEZ8MJJ3ZzLg"/>
+    <ruleId>DSTU:NEW</ruleId>
+    <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_LEfp8JrZEea9R7VeOazsfg"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_fH50gM9GEeSJsu9BbhWxmQ" base_Property="_2OlbERSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_sClFwM9HEeSJsu9BbhWxmQ" base_Property="_2OlbFhSVEeGGzu7fmW9pXw">
