@@ -439,16 +439,37 @@ public class VitalSignObservation2Test extends CDAValidationTest {
 			objectFactory) {
 
 			@Override
-			protected void updateToFail(VitalSignObservation2 target) {
-				target.init();
-				target.getInterpretationCodes().clear();
-				target.getInterpretationCodes().add(DatatypesFactory.eINSTANCE.createCE());
+			public void addFailTests() {
+
+				// no code system set
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(VitalSignObservation2 target) {
+						target.init();
+						target.getInterpretationCodes().clear();
+						target.getInterpretationCodes().add(DatatypesFactory.eINSTANCE.createCE());
+					}
+				});
+
+				// bad code system set
+				addFailTest(new FailTest() {
+					@Override
+					public void updateToFail(VitalSignObservation2 target) {
+						target.init();
+						target.getInterpretationCodes().clear();
+						target.getInterpretationCodes().add(
+							DatatypesFactory.eINSTANCE.createCE("notChecked", BAD_CODESYSTEM_ID));
+					}
+				});
+
 			}
 
 			@Override
 			protected void updateToPass(VitalSignObservation2 target) {
-				target.getInterpretationCodes().set(
-					0, DatatypesFactory.eINSTANCE.createCE("A", "2.16.840.1.113883.5.83"));
+				target.init();
+				target.getInterpretationCodes().clear();
+				target.getInterpretationCodes().add(
+					DatatypesFactory.eINSTANCE.createCE("notChecked", "2.16.840.1.113883.5.83"));
 			}
 
 			@Override
