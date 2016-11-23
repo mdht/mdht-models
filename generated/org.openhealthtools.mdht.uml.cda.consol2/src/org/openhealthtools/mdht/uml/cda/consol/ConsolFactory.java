@@ -2893,6 +2893,15 @@ public interface ConsolFactory extends EFactory {
 	PhysicianReadingStudyPerformer2 createPhysicianReadingStudyPerformer2();
 
 	/**
+	 * Returns a new object of class '<em>Criticality Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Criticality Observation</em>'.
+	 * @generated
+	 */
+	CriticalityObservation createCriticalityObservation();
+
+	/**
 	 * Returns a new object of class '<em>Birth Sex Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
