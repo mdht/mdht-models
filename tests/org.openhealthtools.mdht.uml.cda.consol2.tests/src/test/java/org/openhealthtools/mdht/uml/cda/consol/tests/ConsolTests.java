@@ -137,7 +137,7 @@ import junit.framework.JUnit4TestAdapter;
 		PhysicianReadingStudyPerformer2Test.class, CourseOfCareSectionTest.class, USRealmHeader2Test.class,
 		MentalStatusObservation2Test.class, MentalStatusOrganizer2Test.class, SmokingStatusMeaningfulUse2Test.class,
 		RiskConcernActTest.class, PlannedInterventionActTest.class, MedicationFreeTextSigTest.class,
-		BirthSexObservationTest.class })
+		BirthSexObservationTest.class, CriticalityObservationTest.class })
 public class ConsolTests {
 
 	/**

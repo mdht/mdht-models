@@ -2672,6 +2672,7 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <packagedElement xmi:type="uml:Class" href=".controlled/consol-socialhistory.uml#_8fGTcD-qEeaJttsCYk-pKw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-socialhistory.uml#_GxM7gELDEeaf56PK5wLLJw"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-other.uml#_lZQUEFgmEeaw99gz9T1FvQ"/>
+    <packagedElement xmi:type="uml:Class" href=".controlled/consol-allergies.uml#_LspMELDzEeafNo3UpQoAYw"/>
     <profileApplication xmi:id="_2B97UBSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97URSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>

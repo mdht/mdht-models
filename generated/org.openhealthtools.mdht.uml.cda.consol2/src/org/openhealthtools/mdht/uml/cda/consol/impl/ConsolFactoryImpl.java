@@ -701,6 +701,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPreconditionForSubstanceAdministration2();
 			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER2:
 				return createPhysicianReadingStudyPerformer2();
+			case ConsolPackage.CRITICALITY_OBSERVATION:
+				return createCriticalityObservation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -3950,6 +3952,16 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public PhysicianReadingStudyPerformer2 createPhysicianReadingStudyPerformer2() {
 		PhysicianReadingStudyPerformer2Impl physicianReadingStudyPerformer2 = new PhysicianReadingStudyPerformer2Impl();
 		return physicianReadingStudyPerformer2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CriticalityObservation createCriticalityObservation() {
+		CriticalityObservationImpl criticalityObservation = new CriticalityObservationImpl();
+		return criticalityObservation;
 	}
 
 	/**
