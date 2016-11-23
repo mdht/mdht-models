@@ -1932,6 +1932,11 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_LEBI0JrZEea9R7VeOazsfg" name="Observation Interpretation (HL7) DYNAMIC"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_6Zo2YLD2EeafNo3UpQoAYw" name="Criticality Observation">
+      <ownedLiteral xmi:id="_hCNCILD4EeafNo3UpQoAYw" name="CRITL"/>
+      <ownedLiteral xmi:id="_nB4soLD4EeafNo3UpQoAYw" name="CRITH"/>
+      <ownedLiteral xmi:id="_octr4LD4EeafNo3UpQoAYw" name="CRITU"/>
+    </packagedElement>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -3283,7 +3288,7 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetCode xmi:id="_hDbOoeHIEeO04sHNODkHmQ" conceptName="nullified" base_EnumerationLiteral="_hDbOoOHIEeO04sHNODkHmQ"/>
   <term:ValueSetCode xmi:id="_iiyIkeHIEeO04sHNODkHmQ" conceptName="obsolete" base_EnumerationLiteral="_iiyIkOHIEeO04sHNODkHmQ"/>
   <term:ValueSetVersion xmi:id="_maiyYOHKEeO04sHNODkHmQ" identifier="2.16.840.1.113883.1.11.14570" fullName="AdministrableDrugForm" binding="Dynamic" base_Enumeration="_maiLUOHKEeO04sHNODkHmQ">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_OsdGUOuZEeWgMM6dmEi-NA"/>
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_OsdGUOuZEeWgMM6dmEi-NA"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_7wHo0eHKEeO04sHNODkHmQ" conceptName="Puff" base_EnumerationLiteral="_7wHo0OHKEeO04sHNODkHmQ"/>
   <term:ValueSetCode xmi:id="_-MUlgeHKEeO04sHNODkHmQ" conceptName="Scoops" base_EnumerationLiteral="_-MUlgOHKEeO04sHNODkHmQ"/>
@@ -3624,4 +3629,10 @@ Valueset Source: http://vtsl.vetmed.vt.edu/</body>
   <term:ValueSetVersion xmi:id="_LEfp8JrZEea9R7VeOazsfg" identifier="2.16.840.1.113883.1.11.78" fullName="Observation Interpretation (HL7)" source="http://www.hl7.org" definition="Observation interpretation concepts that are based upon HL7 V3 vocabulary." binding="Dynamic" base_Enumeration="_LEBI0JrZEea9R7VeOazsfg">
     <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_1o75oaFkEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_6ZpdcLD2EeafNo3UpQoAYw" identifier="2.16.840.1.113883.1.11.20549" version="2015-08-01" fullName="Criticality Observation" definition="A clinical judgment as to the worst case result of a future exposure (including substance administration)." base_Enumeration="_6Zo2YLD2EeafNo3UpQoAYw">
+    <codeSystem href="pathmap://TERM_MODEL///CodeSystems.uml#_T_bIUbD4EeafNo3UpQoAYw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_hCQFcLD4EeafNo3UpQoAYw" base_EnumerationLiteral="_hCNCILD4EeafNo3UpQoAYw"/>
+  <term:ValueSetCode xmi:id="_nB4sobD4EeafNo3UpQoAYw" base_EnumerationLiteral="_nB4soLD4EeafNo3UpQoAYw"/>
+  <term:ValueSetCode xmi:id="_octr4bD4EeafNo3UpQoAYw" base_EnumerationLiteral="_octr4LD4EeafNo3UpQoAYw"/>
 </xmi:XMI>
