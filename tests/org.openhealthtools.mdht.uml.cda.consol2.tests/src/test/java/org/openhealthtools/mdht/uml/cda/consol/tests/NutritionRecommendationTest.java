@@ -23,8 +23,9 @@ import org.eclipse.mdht.uml.hl7.datatypes.CD;
 import org.eclipse.mdht.uml.hl7.datatypes.CS;
 import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_DocumentActMood;
 import org.junit.Test;
-import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionRecommendation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.NutritionRecommendationOperations;
@@ -424,6 +425,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 			protected void updateToPass(NutritionRecommendation target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setEncounter(ConsolFactory.eINSTANCE.createPlannedEncounter2().init());
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
 
@@ -459,6 +461,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(NutritionRecommendation target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				er.setSubstanceAdministration(ConsolFactory.eINSTANCE.createPlannedMedicationActivity2().init());
 				target.getEntryRelationships().add(er);
 			}
@@ -496,6 +499,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 			protected void updateToPass(NutritionRecommendation target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setObservation(ConsolFactory.eINSTANCE.createPlannedObservation2().init());
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
 
@@ -532,6 +536,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 			protected void updateToPass(NutritionRecommendation target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setProcedure(ConsolFactory.eINSTANCE.createPlannedProcedure2().init());
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
 
@@ -567,6 +572,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 			protected void updateToPass(NutritionRecommendation target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setSupply(ConsolFactory.eINSTANCE.createPlannedSupply2().init());
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
 
@@ -602,6 +608,7 @@ public class NutritionRecommendationTest extends CDAValidationTest {
 			protected void updateToPass(NutritionRecommendation target) {
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setAct(ConsolFactory.eINSTANCE.createPlannedAct2().init());
+				er.setTypeCode(x_ActRelationshipEntryRelationship.REFR);
 				target.getEntryRelationships().add(er);
 			}
 

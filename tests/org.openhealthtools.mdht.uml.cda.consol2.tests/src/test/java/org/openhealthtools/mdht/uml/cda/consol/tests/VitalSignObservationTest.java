@@ -364,7 +364,7 @@ public class VitalSignObservationTest extends CDAValidationTest {
 
 	/**
 	*
-	* @generated not
+	* @generated NOT
 	*/
 	@Test
 	public void testValidateVitalSignObservationCode() {
@@ -381,10 +381,9 @@ public class VitalSignObservationTest extends CDAValidationTest {
 			@Override
 			protected void updateToPass(VitalSignObservation target) {
 				target.init();
-
-				CD cd = DatatypesFactory.eINSTANCE.createCD("8310-5", "2.16.840.1.113883.6.1", "", "");
+				CD cd = DatatypesFactory.eINSTANCE.createCD(
+					"dynamicSetSoOnlyCodeSystemIsEnforced", "2.16.840.1.113883.6.1");
 				target.setCode(cd);
-
 			}
 
 			@Override

@@ -449,7 +449,7 @@
     <ruleId>CONF:1098-30341</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_EiOuoI3MEeOB0eBUISUB4Q" code="active" displayName="Active" base_Property="_KJ-edY3FEeOB0eBUISUB4Q">
-    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:1098-31698</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_SUujQI3OEeOB0eBUISUB4Q" severity="WARNING" base_Property="_KJ-ecI3FEeOB0eBUISUB4Q">
@@ -4363,45 +4363,21 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
   <uml:Association xmi:id="_t1UvQP8qEeS4jrgU1p4iug" memberEnd="_t1S6EP8qEeS4jrgU1p4iug _t1UvQf8qEeS4jrgU1p4iug">
     <ownedEnd xmi:id="_t1UvQf8qEeS4jrgU1p4iug" type="_FhAIMI3FEeOB0eBUISUB4Q" association="_t1UvQP8qEeS4jrgU1p4iug"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_ua1QEP8qEeS4jrgU1p4iug" severity="INFO" base_Association="_t1UvQP8qEeS4jrgU1p4iug">
-    <ruleId>CONF:1098-32382</ruleId>
-    <ruleId>CONF:1098-32383</ruleId>
-  </CDA:AssociationValidation>
   <uml:Association xmi:id="_5WZlwP8qEeS4jrgU1p4iug" memberEnd="_5WYXoP8qEeS4jrgU1p4iug _5WZlwf8qEeS4jrgU1p4iug">
     <ownedEnd xmi:id="_5WZlwf8qEeS4jrgU1p4iug" type="_FhAIMI3FEeOB0eBUISUB4Q" association="_5WZlwP8qEeS4jrgU1p4iug"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_5y7JsP8qEeS4jrgU1p4iug" severity="INFO" base_Association="_5WZlwP8qEeS4jrgU1p4iug">
-    <ruleId>CONF:1098-32384</ruleId>
-    <ruleId>CONF:1098-32385</ruleId>
-  </CDA:AssociationValidation>
   <uml:Association xmi:id="_GDh_sP8rEeS4jrgU1p4iug" memberEnd="_GDgxkP8rEeS4jrgU1p4iug _GDimwP8rEeS4jrgU1p4iug">
     <ownedEnd xmi:id="_GDimwP8rEeS4jrgU1p4iug" type="_FhAIMI3FEeOB0eBUISUB4Q" association="_GDh_sP8rEeS4jrgU1p4iug"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_Gj6v8P8rEeS4jrgU1p4iug" severity="INFO" base_Association="_GDh_sP8rEeS4jrgU1p4iug">
-    <ruleId>CONF:1098-32386</ruleId>
-    <ruleId>CONF:1098-32387</ruleId>
-  </CDA:AssociationValidation>
   <uml:Association xmi:id="_Iels4P8rEeS4jrgU1p4iug" memberEnd="_IekewP8rEeS4jrgU1p4iug _IemT8P8rEeS4jrgU1p4iug">
     <ownedEnd xmi:id="_IemT8P8rEeS4jrgU1p4iug" type="_FhAIMI3FEeOB0eBUISUB4Q" association="_Iels4P8rEeS4jrgU1p4iug"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_I4gBsP8rEeS4jrgU1p4iug" severity="INFO" base_Association="_Iels4P8rEeS4jrgU1p4iug">
-    <ruleId>CONF:1098-32388</ruleId>
-    <ruleId>CONF:1098-32389</ruleId>
-  </CDA:AssociationValidation>
   <uml:Association xmi:id="_KczGAP8rEeS4jrgU1p4iug" memberEnd="_Kcx34P8rEeS4jrgU1p4iug _KcztEP8rEeS4jrgU1p4iug">
     <ownedEnd xmi:id="_KcztEP8rEeS4jrgU1p4iug" type="_FhAIMI3FEeOB0eBUISUB4Q" association="_KczGAP8rEeS4jrgU1p4iug"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_LIw0IP8rEeS4jrgU1p4iug" severity="INFO" base_Association="_KczGAP8rEeS4jrgU1p4iug">
-    <ruleId>CONF:1098-32390</ruleId>
-    <ruleId>CONF:1098-32391</ruleId>
-  </CDA:AssociationValidation>
   <uml:Association xmi:id="_NY0yQP8rEeS4jrgU1p4iug" memberEnd="_NY0LMP8rEeS4jrgU1p4iug _NY1ZUP8rEeS4jrgU1p4iug">
     <ownedEnd xmi:id="_NY1ZUP8rEeS4jrgU1p4iug" type="_FhAIMI3FEeOB0eBUISUB4Q" association="_NY0yQP8rEeS4jrgU1p4iug"/>
   </uml:Association>
-  <CDA:AssociationValidation xmi:id="_N2LcoP8rEeS4jrgU1p4iug" severity="INFO" base_Association="_NY0yQP8rEeS4jrgU1p4iug">
-    <ruleId>CONF:1098-32632</ruleId>
-    <ruleId>CONF:1098-32633</ruleId>
-  </CDA:AssociationValidation>
   <CDA:ValueSetConstraint xmi:id="_wNDAQAAJEeWla-1cYCOuzQ">
     <reference href="../consol-vocab.uml#_8JaroAAJEeWla-1cYCOuzQ"/>
   </CDA:ValueSetConstraint>
@@ -4469,4 +4445,10 @@ A Risk Concern Act represents a health concern that is a risk. A risk is a clini
     <ruleId>CONF:NEW</ruleId>
     <ruleId>DSTU:1045</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:EntryRelationship xmi:id="_TmghoLdREea9we5PpRWq8g" severity="INFO" base_Association="_t1UvQP8qEeS4jrgU1p4iug" typeCode="REFR"/>
+  <CDA:EntryRelationship xmi:id="_WfeS0LdREea9we5PpRWq8g" severity="INFO" base_Association="_5WZlwP8qEeS4jrgU1p4iug" typeCode="REFR"/>
+  <CDA:EntryRelationship xmi:id="_XcX_8LdREea9we5PpRWq8g" severity="INFO" base_Association="_GDh_sP8rEeS4jrgU1p4iug" typeCode="REFR"/>
+  <CDA:EntryRelationship xmi:id="_YHwfQLdREea9we5PpRWq8g" severity="INFO" base_Association="_Iels4P8rEeS4jrgU1p4iug" typeCode="REFR"/>
+  <CDA:EntryRelationship xmi:id="_Y3sucLdREea9we5PpRWq8g" severity="INFO" base_Association="_KczGAP8rEeS4jrgU1p4iug" typeCode="REFR"/>
+  <CDA:EntryRelationship xmi:id="_ZjSpILdREea9we5PpRWq8g" severity="INFO" base_Association="_NY0yQP8rEeS4jrgU1p4iug" typeCode="REFR"/>
 </xmi:XMI>
