@@ -379,7 +379,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_TYPE_CODE,
 						ConsolPlugin.INSTANCE.getString(
 							"EncounterActivitiesEncounterActivitiesServiceDeliveryTypeCode"),
