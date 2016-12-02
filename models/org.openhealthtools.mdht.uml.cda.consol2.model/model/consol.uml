@@ -3204,7 +3204,10 @@ UNK.  If the code is something other than SNOMED, @nullFlavor SHOULD be OTH and 
     <base_Property href=".controlled/consol-documents.uml#_7Os41CylEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_J8keoCyqEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5284, CONF:10411, R2.1=CONF:1198-5284</ruleId>
+    <ruleId>CONF:5284</ruleId>
+    <ruleId>CONF:10411</ruleId>
+    <ruleId>R2.1=CONF:1198-5284</ruleId>
+    <ruleId>DSTU:808</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_7OuG8SylEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_6HJMICyrEeGMXrZ0DiQwGg" severity="INFO">
