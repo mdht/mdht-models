@@ -1205,6 +1205,9 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_uBVvYPfpEeO297ryy8ptVg" name="severityInversionIndicator">
+      <ownedComment xmi:id="_XahGwLvbEead0dyhUBLajQ">
+        <body>&lt;!--SHALL enforced as SHOULD due to such that it clause--></body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_uBVvYffpEeO297ryy8ptVg">
         <language>Analysis</language>
         <language>OCL</language>
@@ -1263,8 +1266,8 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c0mMAvfoEeO297ryy8ptVg" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_5r5SAPfpEeO297ryy8ptVg" name="severityObservation2" type="_B0oKYPJdEeO2NaSiicarcg" association="_5r6gIPfpEeO297ryy8ptVg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9eTMoffpEeO297ryy8ptVg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9eTMoPfpEeO297ryy8ptVg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VqwOwbvaEead0dyhUBLajQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VqwOwLvaEead0dyhUBLajQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FNs1ILkcEeODDJAC5t5vpw" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" redefinedProperty="_-xkhwBUvEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q5Wj8LkcEeODDJAC5t5vpw"/>
@@ -2001,6 +2004,9 @@ The effectiveTime of the Substance or Device Allergy - Intolerance Observation i
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_MNuWAPMqEeOrR8IF-aqVyQ" name="severityInversionIndicator" constrainedElement="_mgny4NF8EeOHUokOVP95oQ">
+      <ownedComment xmi:id="_LqFJILvcEead0dyhUBLajQ">
+        <body>&lt;!--SHALL enforced as SHOULD due to such that it clause--></body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_MNuWAfMqEeOrR8IF-aqVyQ">
         <language>Analysis</language>
         <language>OCL</language>
@@ -2224,13 +2230,15 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <uml:Association xmi:id="_v9yVgPMpEeOrR8IF-aqVyQ" memberEnd="_v9wgUPMpEeOrR8IF-aqVyQ _v9yVgfMpEeOrR8IF-aqVyQ">
     <ownedEnd xmi:id="_v9yVgfMpEeOrR8IF-aqVyQ" type="_K3M6IPKJEeOn7bMsPcStOw" association="_v9yVgPMpEeOrR8IF-aqVyQ"/>
   </uml:Association>
-  <CDA:EntryRelationship xmi:id="_2yDeoPMpEeOrR8IF-aqVyQ" severity="INFO" base_Association="_v9yVgPMpEeOrR8IF-aqVyQ" typeCode="SUBJ">
+  <CDA:EntryRelationship xmi:id="_2yDeoPMpEeOrR8IF-aqVyQ" message="Consol Substance or Device Allergy - Intolerance Observation (V2) SHOULD NOT contain [0..1] entryRelationship such that it (CONF:1098-16341, CONF:1098-16342, CONF:1098-16344, DSTU:710) Contains @typeCode=&quot;SUBJ&quot; SUBJ, and Conforms to Severity Observation (V2) (templateId: 2.16.840.1.113883.10.20.22.4.8:2014-06-09)" severity="WARNING" negationIndicator="true" base_Association="_v9yVgPMpEeOrR8IF-aqVyQ" typeCode="SUBJ">
     <ruleId>CONF:1098-16341</ruleId>
     <ruleId>CONF:1098-16342</ruleId>
     <ruleId>CONF:1098-16344</ruleId>
+    <ruleId>DSTU:710</ruleId>
   </CDA:EntryRelationship>
-  <CDA:ConstraintValidation xmi:id="_MNuWAvMqEeOrR8IF-aqVyQ" base_Constraint="_MNuWAPMqEeOrR8IF-aqVyQ">
+  <CDA:ConstraintValidation xmi:id="_MNuWAvMqEeOrR8IF-aqVyQ" severity="WARNING" base_Constraint="_MNuWAPMqEeOrR8IF-aqVyQ">
     <ruleId>CONF:1098-16343</ruleId>
+    <ruleId>DSTU:710</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_ynKgoPMrEeOrR8IF-aqVyQ" memberEnd="_ynIrcPMrEeOrR8IF-aqVyQ _ynKgofMrEeOrR8IF-aqVyQ">
     <ownedEnd xmi:id="_ynKgofMrEeOrR8IF-aqVyQ" type="_K3M6IPKJEeOn7bMsPcStOw" association="_ynKgoPMrEeOrR8IF-aqVyQ"/>
@@ -2255,16 +2263,18 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
   <CDA:ConstraintValidation xmi:id="_YbNUcvfpEeO297ryy8ptVg" base_Constraint="_YbNUcPfpEeO297ryy8ptVg">
     <ruleId>CONF:1098-7449</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_uBVvYvfpEeO297ryy8ptVg" base_Constraint="_uBVvYPfpEeO297ryy8ptVg">
+  <CDA:ConstraintValidation xmi:id="_uBVvYvfpEeO297ryy8ptVg" severity="WARNING" base_Constraint="_uBVvYPfpEeO297ryy8ptVg">
     <ruleId>CONF:1098-9964</ruleId>
+    <ruleId>DSTU:710</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_5r6gIPfpEeO297ryy8ptVg" memberEnd="_5r5SAPfpEeO297ryy8ptVg _5r6gIffpEeO297ryy8ptVg">
     <ownedEnd xmi:id="_5r6gIffpEeO297ryy8ptVg" type="_uVJogLj5EeODDJAC5t5vpw" association="_5r6gIPfpEeO297ryy8ptVg"/>
   </uml:Association>
-  <CDA:EntryRelationship xmi:id="_-N9H8PfpEeO297ryy8ptVg" severity="INFO" base_Association="_5r6gIPfpEeO297ryy8ptVg" typeCode="SUBJ">
+  <CDA:EntryRelationship xmi:id="_-N9H8PfpEeO297ryy8ptVg" message="Consol Allergy - Intolerance Observation (V2) SHOULD NOT contain [0..1] entryRelationship such that it  (CONF:1098-9961, CONF:1098-9962, CONF:1098-15956, DSTU:710) Contains @typeCode=&quot;SUBJ&quot; SUBJ, and Conforms to Severity Observation (V2) (templateId: 2.16.840.1.113883.10.20.22.4.8:2014-06-09)" severity="WARNING" negationIndicator="true" base_Association="_5r6gIPfpEeO297ryy8ptVg" typeCode="SUBJ">
     <ruleId>CONF:1098-9961</ruleId>
     <ruleId>CONF:1098-9962</ruleId>
     <ruleId>CONF:1098-15956</ruleId>
+    <ruleId>DSTU:710</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_hOWwkPijEeOXlK95I8tUew" memberEnd="_hOU7YPijEeOXlK95I8tUew _hOWwkfijEeOXlK95I8tUew">
     <ownedEnd xmi:id="_hOWwkfijEeOXlK95I8tUew" type="_U3yosPDxEeOKPKE9au0oug" association="_hOWwkPijEeOXlK95I8tUew"/>
