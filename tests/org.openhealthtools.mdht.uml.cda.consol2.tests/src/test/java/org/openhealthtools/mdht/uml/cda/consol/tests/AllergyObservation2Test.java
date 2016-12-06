@@ -28,9 +28,9 @@ import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.eclipse.mdht.uml.hl7.datatypes.ED;
 import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.eclipse.mdht.uml.hl7.vocab.ParticipationType;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.junit.Ignore;
 import org.junit.Test;
-import org.eclipse.mdht.uml.hl7.vocab.*;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyObservation2Operations;
@@ -43,11 +43,12 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyObservation2Ope
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2CriticalityInversionIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Criticality Inversion Indicator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2NegationInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Negation Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2SeverityObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Severity Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2CriticalityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Criticality Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityAllergySpecificMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity Allergy Specific Medication</em>}</li>
@@ -55,7 +56,8 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyObservation2Ope
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity Allergy Food Other Substance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getConsolAllergyStatusObservations() <em>Get Consol Allergy Status Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getConsolReactionObservation2s() <em>Get Consol Reaction Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getSeverityObservation2() <em>Get Severity Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getConsolSeverityObservation2() <em>Get Consol Severity Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getCriticalityObservation() <em>Get Criticality Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationValueOriginalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Value Original Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationOriginalTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Original Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationOriginalTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Original Text Reference Value</em>}</li>
@@ -71,6 +73,7 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyObservation2Ope
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationAllergyStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Allergy Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationReactionObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Reaction Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationSeverityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Severity Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity CE Original Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity CE Translation</em>}</li>
@@ -87,6 +90,46 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyObservation2Ope
  */
 
 public class AllergyObservation2Test extends CDAValidationTest {
+
+	/**
+	*
+	* @generated NOT
+	*/
+	@Test
+	public void testValidateAllergyObservation2CriticalityInversionIndicator() {
+		OperationsTestCase<AllergyObservation2> validateAllergyObservation2CriticalityInversionIndicatorTestCase = new OperationsTestCase<AllergyObservation2>(
+			"validateAllergyObservation2CriticalityInversionIndicator",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyObservation2 target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
+				er.setObservation(ConsolFactory.eINSTANCE.createCriticalityObservation().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected void updateToPass(AllergyObservation2 target) {
+				for (EntryRelationship er : target.getEntryRelationships()) {
+					er.setInversionInd(true);
+				}
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservation2Operations.validateAllergyObservation2CriticalityInversionIndicator(
+					(AllergyObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyObservation2CriticalityInversionIndicatorTestCase.doValidationTest();
+	}
 
 	/**
 	*
@@ -227,36 +270,37 @@ public class AllergyObservation2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-	public void testValidateAllergyObservation2SeverityObservation2() {
-		OperationsTestCase<AllergyObservation2> validateAllergyObservation2SeverityObservation2TestCase = new OperationsTestCase<AllergyObservation2>(
-			"validateAllergyObservation2SeverityObservation2", operationsForOCL.getOCLValue(
-				"VALIDATE_ALLERGY_OBSERVATION2_SEVERITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateAllergyObservation2CriticalityObservation() {
+		OperationsTestCase<AllergyObservation2> validateAllergyObservation2CriticalityObservationTestCase = new OperationsTestCase<AllergyObservation2>(
+			"validateAllergyObservation2CriticalityObservation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
 			protected void updateToFail(AllergyObservation2 target) {
-
+				target.init();
 			}
 
 			@Override
 			protected void updateToPass(AllergyObservation2 target) {
-				target.init();
 				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
 				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
-				er.setObservation(ConsolFactory.eINSTANCE.createSeverityObservation2().init());
+				er.setObservation(ConsolFactory.eINSTANCE.createCriticalityObservation().init());
 				target.getEntryRelationships().add(er);
 			}
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return AllergyObservation2Operations.validateAllergyObservation2SeverityObservation2(
+				return AllergyObservation2Operations.validateAllergyObservation2CriticalityObservation(
 					(AllergyObservation2) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateAllergyObservation2SeverityObservation2TestCase.doValidationTest();
+		validateAllergyObservation2CriticalityObservationTestCase.doValidationTest();
 	}
 
 	/**
@@ -467,10 +511,24 @@ public class AllergyObservation2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetSeverityObservation2() {
+
+	public void testGetConsolSeverityObservation2() {
 
 		AllergyObservation2 target = objectFactory.create();
-		target.getSeverityObservation2();
+		target.getConsolSeverityObservation2();
+
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testGetCriticalityObservation() {
+
+		AllergyObservation2 target = objectFactory.create();
+		target.getCriticalityObservation();
 
 	}
 
@@ -1047,6 +1105,44 @@ public class AllergyObservation2Test extends CDAValidationTest {
 		};
 
 		validateAllergyObservationReactionObservationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated NOT
+	* Note: Updated VALIDATE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP in operations as per errata 710
+	*/
+	@Test
+	public void testValidateAllergyObservationSeverityObservation() {
+		OperationsTestCase<AllergyObservation2> validateAllergyObservationSeverityObservationTestCase = new OperationsTestCase<AllergyObservation2>(
+			"validateAllergyObservationSeverityObservation", operationsForOCL.getOCLValue(
+				"VALIDATE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(AllergyObservation2 target) {
+				target.init();
+				EntryRelationship er = CDAFactory.eINSTANCE.createEntryRelationship();
+				er.setTypeCode(x_ActRelationshipEntryRelationship.SUBJ);
+				er.setObservation(ConsolFactory.eINSTANCE.createSeverityObservation2().init());
+				target.getEntryRelationships().add(er);
+			}
+
+			@Override
+			protected void updateToPass(AllergyObservation2 target) {
+				target.getEntryRelationships().clear();
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return AllergyObservation2Operations.validateAllergyObservationSeverityObservation(
+					(AllergyObservation2) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAllergyObservationSeverityObservationTestCase.doValidationTest();
 	}
 
 	/**

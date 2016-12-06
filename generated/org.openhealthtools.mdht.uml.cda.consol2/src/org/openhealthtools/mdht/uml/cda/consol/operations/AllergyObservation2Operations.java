@@ -1,9 +1,14 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *     Dan Brown (Ai) - updated VALIDATE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP as per errata 710
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Collection;
@@ -25,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
+import org.openhealthtools.mdht.uml.cda.consol.CriticalityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -37,11 +43,12 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2CriticalityInversionIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Criticality Inversion Indicator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2NegationInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Negation Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Author Participation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2SeverityObservation2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Severity Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2CriticalityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Criticality Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservation2IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityAllergySpecificMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity Allergy Specific Medication</em>}</li>
@@ -49,7 +56,8 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity Allergy Food Other Substance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getConsolAllergyStatusObservations() <em>Get Consol Allergy Status Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getConsolReactionObservation2s() <em>Get Consol Reaction Observation2s</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getSeverityObservation2() <em>Get Severity Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getConsolSeverityObservation2() <em>Get Consol Severity Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#getCriticalityObservation() <em>Get Criticality Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationValueOriginalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Value Original Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationOriginalTextReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Original Text Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationOriginalTextReferenceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Original Text Reference Value</em>}</li>
@@ -65,6 +73,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationAllergyStatusObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Allergy Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationReactionObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Reaction Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationSeverityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Severity Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipant(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity CE Original Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2#validateAllergyObservationParticipantParticipantRolePlayingEntityCETranslation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Participant Participant Role Playing Entity CE Translation</em>}</li>
@@ -87,6 +96,69 @@ public class AllergyObservation2Operations extends AllergyObservationOperations 
 	 */
 	protected AllergyObservation2Operations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateAllergyObservation2CriticalityInversionIndicator(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Criticality Inversion Indicator</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAllergyObservation2CriticalityInversionIndicator(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::CriticalityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAllergyObservation2CriticalityInversionIndicator(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Criticality Inversion Indicator</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAllergyObservation2CriticalityInversionIndicator(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param allergyObservation2 The receiving '<em><b>Allergy Observation2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateAllergyObservation2CriticalityInversionIndicator(
+			AllergyObservation2 allergyObservation2, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ALLERGY_OBSERVATION2);
+			try {
+				VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				allergyObservation2)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ALLERGY_OBSERVATION2__ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR,
+						ConsolPlugin.INSTANCE.getString(
+							"AllergyObservation2AllergyObservation2CriticalityInversionIndicator"),
+						new Object[] { allergyObservation2 }));
+			}
+
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -308,28 +380,28 @@ public class AllergyObservation2Operations extends AllergyObservationOperations 
 	 * @generated
 	 */
 
-	public static boolean validateAllergyObservation2SeverityObservation2(AllergyObservation2 allergyObservation2,
+	public static boolean validateAllergyObservation2CriticalityObservation(AllergyObservation2 allergyObservation2,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_ALLERGY_OBSERVATION2_SEVERITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_OBSERVATION2);
 			try {
-				VALIDATE_ALLERGY_OBSERVATION2_SEVERITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
-					VALIDATE_ALLERGY_OBSERVATION2_SEVERITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(
-			VALIDATE_ALLERGY_OBSERVATION2_SEVERITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
 				allergyObservation2)) {
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
-						ConsolValidator.ALLERGY_OBSERVATION2__ALLERGY_OBSERVATION2_SEVERITY_OBSERVATION2,
-						ConsolPlugin.INSTANCE.getString("AllergyObservation2AllergyObservation2SeverityObservation2"),
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ALLERGY_OBSERVATION2__ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("AllergyObservation2AllergyObservation2CriticalityObservation"),
 						new Object[] { allergyObservation2 }));
 			}
 
@@ -588,7 +660,7 @@ public class AllergyObservation2Operations extends AllergyObservationOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ALLERGY_OBSERVATION2,
-				ConsolPackage.Literals.ALLERGY_OBSERVATION2.getEAllOperations().get(125));
+				ConsolPackage.Literals.ALLERGY_OBSERVATION2.getEAllOperations().get(126));
 			try {
 				GET_CONSOL_ALLERGY_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_ALLERGY_STATUS_OBSERVATIONS__EOCL_EXP);
@@ -614,7 +686,7 @@ public class AllergyObservation2Operations extends AllergyObservationOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ALLERGY_OBSERVATION2,
-				ConsolPackage.Literals.ALLERGY_OBSERVATION2.getEAllOperations().get(126));
+				ConsolPackage.Literals.ALLERGY_OBSERVATION2.getEAllOperations().get(127));
 			try {
 				GET_CONSOL_REACTION_OBSERVATION2S__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_REACTION_OBSERVATION2S__EOCL_EXP);
@@ -635,20 +707,43 @@ public class AllergyObservation2Operations extends AllergyObservationOperations 
 	 * @generated
 	 */
 
-	public static SeverityObservation2 getSeverityObservation2(AllergyObservation2 allergyObservation2) {
-		if (GET_SEVERITY_OBSERVATION2__EOCL_QRY == null) {
+	public static SeverityObservation2 getConsolSeverityObservation2(AllergyObservation2 allergyObservation2) {
+		if (GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ALLERGY_OBSERVATION2,
-				ConsolPackage.Literals.ALLERGY_OBSERVATION2.getEAllOperations().get(127));
+				ConsolPackage.Literals.ALLERGY_OBSERVATION2.getEAllOperations().get(128));
 			try {
-				GET_SEVERITY_OBSERVATION2__EOCL_QRY = helper.createQuery(GET_SEVERITY_OBSERVATION2__EOCL_EXP);
+				GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_QRY = helper.createQuery(
+					GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SEVERITY_OBSERVATION2__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_QRY);
 		return (SeverityObservation2) query.evaluate(allergyObservation2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static CriticalityObservation getCriticalityObservation(AllergyObservation2 allergyObservation2) {
+		if (GET_CRITICALITY_OBSERVATION__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.ALLERGY_OBSERVATION2,
+				ConsolPackage.Literals.ALLERGY_OBSERVATION2.getEAllOperations().get(129));
+			try {
+				GET_CRITICALITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_CRITICALITY_OBSERVATION__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_CRITICALITY_OBSERVATION__EOCL_QRY);
+		return (CriticalityObservation) query.evaluate(allergyObservation2);
 	}
 
 	/**
@@ -929,7 +1024,7 @@ public class AllergyObservation2Operations extends AllergyObservationOperations 
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_OBSERVATION2__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_INVERSION_INDICATOR,
 						ConsolPlugin.INSTANCE.getString(
 							"AllergyObservation2SubstanceOrDeviceAllergyObservationSeverityInversionIndicator"),
@@ -1148,25 +1243,25 @@ public class AllergyObservation2Operations extends AllergyObservationOperations 
 	protected static Constraint VALIDATE_ALLERGY_OBSERVATION2_AUTHOR_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAllergyObservation2SeverityObservation2(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Severity Observation2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateAllergyObservation2CriticalityObservation(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Criticality Observation</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAllergyObservation2SeverityObservation2(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateAllergyObservation2CriticalityObservation(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALLERGY_OBSERVATION2_SEVERITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SeverityObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
+	protected static final String VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::CriticalityObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAllergyObservation2SeverityObservation2(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Severity Observation2</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateAllergyObservation2CriticalityObservation(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 Criticality Observation</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAllergyObservation2SeverityObservation2(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateAllergyObservation2CriticalityObservation(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ALLERGY_OBSERVATION2_SEVERITY_OBSERVATION2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateAllergyObservation2IVLTSLow(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation2 IVLTS Low</em>}' operation.
@@ -1314,24 +1409,44 @@ public class AllergyObservation2Operations extends AllergyObservationOperations 
 	protected static OCLExpression<EClassifier> GET_CONSOL_REACTION_OBSERVATION2S__EOCL_QRY;
 
 	/**
-	 * The cached OCL expression body for the '{@link #getSeverityObservation2(AllergyObservation2) <em>Get Severity Observation2</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getConsolSeverityObservation2(AllergyObservation2) <em>Get Consol Severity Observation2</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSeverityObservation2(AllergyObservation2)
+	 * @see #getConsolSeverityObservation2(AllergyObservation2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SEVERITY_OBSERVATION2__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation2))->asSequence()->any(true).oclAsType(consol::SeverityObservation2)";
+	protected static final String GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation2))->asSequence()->any(true).oclAsType(consol::SeverityObservation2)";
 
 	/**
-	 * The cached OCL query for the '{@link #getSeverityObservation2(AllergyObservation2) <em>Get Severity Observation2</em>}' query operation.
+	 * The cached OCL query for the '{@link #getConsolSeverityObservation2(AllergyObservation2) <em>Get Consol Severity Observation2</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getSeverityObservation2(AllergyObservation2)
+	 * @see #getConsolSeverityObservation2(AllergyObservation2)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_SEVERITY_OBSERVATION2__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_QRY;
+
+	/**
+	 * The cached OCL expression body for the '{@link #getCriticalityObservation(AllergyObservation2) <em>Get Criticality Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCriticalityObservation(AllergyObservation2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CRITICALITY_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CriticalityObservation))->asSequence()->any(true).oclAsType(consol::CriticalityObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getCriticalityObservation(AllergyObservation2) <em>Get Criticality Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCriticalityObservation(AllergyObservation2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CRITICALITY_OBSERVATION__EOCL_QRY;
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateAllergyObservationValueOriginalText(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Value Original Text</em>}' operation.
@@ -1864,6 +1979,68 @@ public class AllergyObservation2Operations extends AllergyObservationOperations 
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_OBSERVATION2__ALLERGY_OBSERVATION_REACTION_OBSERVATION,
 						ConsolPlugin.INSTANCE.getString("AllergyObservation2AllergyObservationReactionObservation"),
+						new Object[] { allergyObservation2 }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateAllergyObservationSeverityObservation(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Severity Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAllergyObservationSeverityObservation(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated NOT
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->select(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SeverityObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)->isEmpty()";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAllergyObservationSeverityObservation(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Observation Severity Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAllergyObservationSeverityObservation(AllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param allergyObservation2 The receiving '<em><b>Allergy Observation2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateAllergyObservationSeverityObservation(AllergyObservation2 allergyObservation2,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ALLERGY_OBSERVATION2);
+			try {
+				VALIDATE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				allergyObservation2)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.ALLERGY_OBSERVATION2__ALLERGY_OBSERVATION_SEVERITY_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString("AllergyObservation2AllergyObservationSeverityObservation"),
 						new Object[] { allergyObservation2 }));
 			}
 

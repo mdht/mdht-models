@@ -2291,7 +2291,9 @@ For conformance with both specifications, please review the appendix on XDS-SD a
     <reference href="../consol-vocab.uml#_8K870TVPEeGIw7CntkyPQw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_J18sMDVQEeGIw7CntkyPQw" base_Property="_2DNR8RSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:5372, R2.1=CONF:1198-5372</ruleId>
+    <ruleId>CONF:5372</ruleId>
+    <ruleId>R2.1=CONF:1198-5372</ruleId>
+    <ruleId>DSTU:806</ruleId>
     <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_IliiUDVSEeGIw7CntkyPQw" base_Property="_7OvVECylEeGMXrZ0DiQwGg">
@@ -5400,6 +5402,7 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_G_Cs0NBZEeG2b5vwscX4AA" base_Property="_DKwi4NBZEeG2b5vwscX4AA"/>
   <CDA:ValueSetConstraint xmi:id="_oIdS0NBbEeGF655cTEGY8Q" base_Property="_DKwi4NBZEeG2b5vwscX4AA">
     <ruleId>CONF:5407</ruleId>
+    <ruleId>DSTU:806</ruleId>
     <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Vj9PoOxkEeG7k4bbVdXbXw" severity="WARNING" base_Property="_T-Xx4OxkEeG7k4bbVdXbXw">

@@ -4292,6 +4292,26 @@ public class ConsolSwitch<T> {
 				}
 				return result;
 			}
+			case ConsolPackage.CRITICALITY_OBSERVATION: {
+				CriticalityObservation criticalityObservation = (CriticalityObservation) theEObject;
+				T result = caseCriticalityObservation(criticalityObservation);
+				if (result == null) {
+					result = caseObservation(criticalityObservation);
+				}
+				if (result == null) {
+					result = caseClinicalStatement(criticalityObservation);
+				}
+				if (result == null) {
+					result = caseAct(criticalityObservation);
+				}
+				if (result == null) {
+					result = caseInfrastructureRoot(criticalityObservation);
+				}
+				if (result == null) {
+					result = defaultCase(theEObject);
+				}
+				return result;
+			}
 			case ConsolPackage.MENTAL_STATUS_OBSERVATION2: {
 				MentalStatusObservation2 mentalStatusObservation2 = (MentalStatusObservation2) theEObject;
 				T result = caseMentalStatusObservation2(mentalStatusObservation2);
@@ -6523,26 +6543,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(physicianReadingStudyPerformer2);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.CRITICALITY_OBSERVATION: {
-				CriticalityObservation criticalityObservation = (CriticalityObservation) theEObject;
-				T result = caseCriticalityObservation(criticalityObservation);
-				if (result == null) {
-					result = caseObservation(criticalityObservation);
-				}
-				if (result == null) {
-					result = caseClinicalStatement(criticalityObservation);
-				}
-				if (result == null) {
-					result = caseAct(criticalityObservation);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(criticalityObservation);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);

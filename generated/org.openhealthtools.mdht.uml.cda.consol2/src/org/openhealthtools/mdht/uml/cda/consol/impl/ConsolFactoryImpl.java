@@ -491,6 +491,8 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createNumberOfPressureUlcersObservation2();
 			case ConsolPackage.ALLERGY_OBSERVATION2:
 				return createAllergyObservation2();
+			case ConsolPackage.CRITICALITY_OBSERVATION:
+				return createCriticalityObservation();
 			case ConsolPackage.MENTAL_STATUS_OBSERVATION2:
 				return createMentalStatusObservation2();
 			case ConsolPackage.SMOKING_STATUS_MEANINGFUL_USE2:
@@ -701,8 +703,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createPreconditionForSubstanceAdministration2();
 			case ConsolPackage.PHYSICIAN_READING_STUDY_PERFORMER2:
 				return createPhysicianReadingStudyPerformer2();
-			case ConsolPackage.CRITICALITY_OBSERVATION:
-				return createCriticalityObservation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
