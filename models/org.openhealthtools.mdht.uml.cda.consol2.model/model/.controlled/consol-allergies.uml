@@ -1265,9 +1265,9 @@ The agent responsible for an allergy or adverse reaction is not always a manufac
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c0mMAffoEeO297ryy8ptVg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c0mMAvfoEeO297ryy8ptVg" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_5r5SAPfpEeO297ryy8ptVg" name="severityObservation2" type="_B0oKYPJdEeO2NaSiicarcg" association="_5r6gIPfpEeO297ryy8ptVg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VqwOwbvaEead0dyhUBLajQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VqwOwLvaEead0dyhUBLajQ" value="1"/>
+    <ownedAttribute xmi:id="_5r5SAPfpEeO297ryy8ptVg" name="severityObservation2" type="_B0oKYPJdEeO2NaSiicarcg" redefinedProperty="_2EaLexSVEeGGzu7fmW9pXw" association="_5r6gIPfpEeO297ryy8ptVg">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nDmmkbv-Eead0dyhUBLajQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nDmmkLv-Eead0dyhUBLajQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FNs1ILkcEeODDJAC5t5vpw" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" redefinedProperty="_-xkhwBUvEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q5Wj8LkcEeODDJAC5t5vpw"/>
@@ -2057,8 +2057,8 @@ If the allergy/intolerance is known to be resolved, but the date of resolution i
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zLs4cvMoEeOrR8IF-aqVyQ" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_v9wgUPMpEeOrR8IF-aqVyQ" name="severityObservation2" type="_B0oKYPJdEeO2NaSiicarcg" redefinedProperty="_zb8Z0tF8EeOHUokOVP95oQ" association="_v9yVgPMpEeOrR8IF-aqVyQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0kOVIfMpEeOrR8IF-aqVyQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0kOVIPMpEeOrR8IF-aqVyQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hEe8wLv-Eead0dyhUBLajQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hEeVsLv-Eead0dyhUBLajQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ynIrcPMrEeOrR8IF-aqVyQ" name="authorParticipation" association="_ynKgoPMrEeOrR8IF-aqVyQ">
       <type xmi:type="uml:Class" href="consol-other.uml#_7jqj4KrlEeOxqJAXCMXUYg"/>
