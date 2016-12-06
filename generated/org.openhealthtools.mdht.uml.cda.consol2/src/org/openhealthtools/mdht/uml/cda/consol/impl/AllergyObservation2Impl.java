@@ -17,6 +17,7 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.CriticalityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AllergyObservation2Operations;
@@ -46,6 +47,17 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ALLERGY_OBSERVATION2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAllergyObservation2CriticalityInversionIndicator(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservation2CriticalityInversionIndicator(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -94,10 +106,9 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAllergyObservation2SeverityObservation2(DiagnosticChain diagnostics,
+	public boolean validateAllergyObservation2CriticalityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservation2Operations.validateAllergyObservation2SeverityObservation2(
+		return AllergyObservation2Operations.validateAllergyObservation2CriticalityObservation(
 			this, diagnostics, context);
 	}
 
@@ -179,9 +190,17 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public SeverityObservation2 getSeverityObservation2() {
-		return AllergyObservation2Operations.getSeverityObservation2(this);
+	public SeverityObservation2 getConsolSeverityObservation2() {
+		return AllergyObservation2Operations.getConsolSeverityObservation2(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CriticalityObservation getCriticalityObservation() {
+		return AllergyObservation2Operations.getCriticalityObservation(this);
 	}
 
 	/**
@@ -348,6 +367,17 @@ public class AllergyObservation2Impl extends AllergyObservationImpl implements A
 	public boolean validateAllergyObservationReactionObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservation2Operations.validateAllergyObservationReactionObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateAllergyObservationSeverityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AllergyObservation2Operations.validateAllergyObservationSeverityObservation(this, diagnostics, context);
 	}
 
 	/**

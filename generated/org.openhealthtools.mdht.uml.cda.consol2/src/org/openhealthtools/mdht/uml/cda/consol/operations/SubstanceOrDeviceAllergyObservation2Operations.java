@@ -1,9 +1,14 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *     Dan Brown (Ai) - updated VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP as per errata 710
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Collection;
@@ -23,6 +28,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
+import org.openhealthtools.mdht.uml.cda.consol.CriticalityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2;
@@ -36,7 +42,9 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#validateSubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation2 Criticality Inversion Indicator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#validateSubstanceOrDeviceAllergyObservation2AuthorParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation2 Author Participation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#validateSubstanceOrDeviceAllergyObservation2CriticalityObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation2 Criticality Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#validateSubstanceOrDeviceAllergyObservation2IVLTSLow(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation2 IVLTS Low</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#validateSubstanceOrDeviceAllergyObservation2IVLTSHigh(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation2 IVLTS High</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergySpecificMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Allergy Specific Medication</em>}</li>
@@ -44,6 +52,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#validateSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityAllergyFoodOtherSubstance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Participant Participant Role Playing Entity Allergy Food Other Substance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#getConsolReactionObservation2s() <em>Get Consol Reaction Observation2s</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#getConsolSeverityObservation2() <em>Get Consol Severity Observation2</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#getCriticalityObservation() <em>Get Criticality Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#validateSubstanceOrDeviceAllergyObservationReactionInversionIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Reaction Inversion Indicator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#validateSubstanceOrDeviceAllergyObservationSeverityInversionIndicator(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Severity Inversion Indicator</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2#validateSubstanceOrDeviceAllergyObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Template Id</em>}</li>
@@ -76,6 +85,70 @@ public class SubstanceOrDeviceAllergyObservation2Operations extends SubstanceOrD
 	 */
 	protected SubstanceOrDeviceAllergyObservation2Operations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator(SubstanceOrDeviceAllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation2 Criticality Inversion Indicator</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator(SubstanceOrDeviceAllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::CriticalityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator(SubstanceOrDeviceAllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation2 Criticality Inversion Indicator</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator(SubstanceOrDeviceAllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param substanceOrDeviceAllergyObservation2 The receiving '<em><b>Substance Or Device Allergy Observation2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateSubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator(
+			SubstanceOrDeviceAllergyObservation2 substanceOrDeviceAllergyObservation2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2);
+			try {
+				VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				substanceOrDeviceAllergyObservation2)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_INVERSION_INDICATOR,
+						ConsolPlugin.INSTANCE.getString(
+							"SubstanceOrDeviceAllergyObservation2SubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator"),
+						new Object[] { substanceOrDeviceAllergyObservation2 }));
+			}
+
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -134,6 +207,70 @@ public class SubstanceOrDeviceAllergyObservation2Operations extends SubstanceOrD
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_AUTHOR_PARTICIPATION,
 						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservation2SubstanceOrDeviceAllergyObservation2AuthorParticipation"),
+						new Object[] { substanceOrDeviceAllergyObservation2 }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSubstanceOrDeviceAllergyObservation2CriticalityObservation(SubstanceOrDeviceAllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation2 Criticality Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSubstanceOrDeviceAllergyObservation2CriticalityObservation(SubstanceOrDeviceAllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::CriticalityObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSubstanceOrDeviceAllergyObservation2CriticalityObservation(SubstanceOrDeviceAllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation2 Criticality Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSubstanceOrDeviceAllergyObservation2CriticalityObservation(SubstanceOrDeviceAllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param substanceOrDeviceAllergyObservation2 The receiving '<em><b>Substance Or Device Allergy Observation2</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateSubstanceOrDeviceAllergyObservation2CriticalityObservation(
+			SubstanceOrDeviceAllergyObservation2 substanceOrDeviceAllergyObservation2, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2);
+			try {
+				VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
+					VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+				substanceOrDeviceAllergyObservation2)) {
+			if (diagnostics != null) {
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2_CRITICALITY_OBSERVATION,
+						ConsolPlugin.INSTANCE.getString(
+							"SubstanceOrDeviceAllergyObservation2SubstanceOrDeviceAllergyObservation2CriticalityObservation"),
 						new Object[] { substanceOrDeviceAllergyObservation2 }));
 			}
 
@@ -524,7 +661,7 @@ public class SubstanceOrDeviceAllergyObservation2Operations extends SubstanceOrD
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2,
-				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2.getEAllOperations().get(90));
+				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2.getEAllOperations().get(92));
 			try {
 				GET_CONSOL_REACTION_OBSERVATION2S__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_REACTION_OBSERVATION2S__EOCL_EXP);
@@ -571,7 +708,7 @@ public class SubstanceOrDeviceAllergyObservation2Operations extends SubstanceOrD
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2,
-				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2.getEAllOperations().get(91));
+				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2.getEAllOperations().get(93));
 			try {
 				GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_QRY = helper.createQuery(
 					GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_EXP);
@@ -581,6 +718,49 @@ public class SubstanceOrDeviceAllergyObservation2Operations extends SubstanceOrD
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_CONSOL_SEVERITY_OBSERVATION2__EOCL_QRY);
 		return (SeverityObservation2) query.evaluate(substanceOrDeviceAllergyObservation2);
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getCriticalityObservation(SubstanceOrDeviceAllergyObservation2) <em>Get Criticality Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCriticalityObservation(SubstanceOrDeviceAllergyObservation2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_CRITICALITY_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::CriticalityObservation))->asSequence()->any(true).oclAsType(consol::CriticalityObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getCriticalityObservation(SubstanceOrDeviceAllergyObservation2) <em>Get Criticality Observation</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCriticalityObservation(SubstanceOrDeviceAllergyObservation2)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_CRITICALITY_OBSERVATION__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+
+	public static CriticalityObservation getCriticalityObservation(
+			SubstanceOrDeviceAllergyObservation2 substanceOrDeviceAllergyObservation2) {
+		if (GET_CRITICALITY_OBSERVATION__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(
+				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2,
+				ConsolPackage.Literals.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2.getEAllOperations().get(94));
+			try {
+				GET_CRITICALITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_CRITICALITY_OBSERVATION__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_CRITICALITY_OBSERVATION__EOCL_QRY);
+		return (CriticalityObservation) query.evaluate(substanceOrDeviceAllergyObservation2);
 	}
 
 	/**
@@ -699,7 +879,7 @@ public class SubstanceOrDeviceAllergyObservation2Operations extends SubstanceOrD
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_INVERSION_INDICATOR,
 						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservation2SubstanceOrDeviceAllergyObservationSeverityInversionIndicator"),
@@ -1278,10 +1458,10 @@ public class SubstanceOrDeviceAllergyObservation2Operations extends SubstanceOrD
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #validateSubstanceOrDeviceAllergyObservationSeverityObservation(SubstanceOrDeviceAllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
+	 * @generated NOT
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SeverityObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)";
+	protected static final String VALIDATE_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->select(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(consol::SeverityObservation2) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::SUBJ)->isEmpty()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSubstanceOrDeviceAllergyObservationSeverityObservation(SubstanceOrDeviceAllergyObservation2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Substance Or Device Allergy Observation Severity Observation</em>}' invariant operation.
@@ -1325,7 +1505,7 @@ public class SubstanceOrDeviceAllergyObservation2Operations extends SubstanceOrD
 			if (diagnostics != null) {
 				diagnostics.add(
 					new BasicDiagnostic(
-						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION,
 						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservation2SubstanceOrDeviceAllergyObservationSeverityObservation"),

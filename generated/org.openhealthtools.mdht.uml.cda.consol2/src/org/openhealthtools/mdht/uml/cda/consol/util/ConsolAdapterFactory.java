@@ -1170,6 +1170,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
+		public Adapter caseCriticalityObservation(CriticalityObservation object) {
+			return createCriticalityObservationAdapter();
+		}
+
+		@Override
 		public Adapter caseMentalStatusObservation2(MentalStatusObservation2 object) {
 			return createMentalStatusObservation2Adapter();
 		}
@@ -1694,11 +1699,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter casePhysicianReadingStudyPerformer2(PhysicianReadingStudyPerformer2 object) {
 			return createPhysicianReadingStudyPerformer2Adapter();
-		}
-
-		@Override
-		public Adapter caseCriticalityObservation(CriticalityObservation object) {
-			return createCriticalityObservationAdapter();
 		}
 
 		@Override

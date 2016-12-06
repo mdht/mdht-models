@@ -15,6 +15,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
+import org.openhealthtools.mdht.uml.cda.consol.CriticalityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation2;
@@ -53,10 +54,32 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateSubstanceOrDeviceAllergyObservation2AuthorParticipation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2AuthorParticipation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSubstanceOrDeviceAllergyObservation2CriticalityObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SubstanceOrDeviceAllergyObservation2Operations.validateSubstanceOrDeviceAllergyObservation2CriticalityObservation(
 			this, diagnostics, context);
 	}
 
@@ -132,9 +155,17 @@ public class SubstanceOrDeviceAllergyObservation2Impl extends SubstanceOrDeviceA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public SeverityObservation2 getConsolSeverityObservation2() {
 		return SubstanceOrDeviceAllergyObservation2Operations.getConsolSeverityObservation2(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CriticalityObservation getCriticalityObservation() {
+		return SubstanceOrDeviceAllergyObservation2Operations.getCriticalityObservation(this);
 	}
 
 	/**

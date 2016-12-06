@@ -11737,6 +11737,10 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//AllergyObservation2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation2/AllergyObservation2CriticalityInversionIndicator">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2CriticalityInversionIndicator/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2CriticalityInversionIndicator/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation2/AllergyObservation2NegationInd">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2NegationInd/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2NegationInd/context"/>
@@ -11753,9 +11757,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2AuthorParticipation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2AuthorParticipation/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation2/AllergyObservation2SeverityObservation2">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2SeverityObservation2/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2SeverityObservation2/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation2/AllergyObservation2CriticalityObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2CriticalityObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2CriticalityObservation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation2/AllergyObservation2IVLTSLow">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation2/AllergyObservation2IVLTSLow/diagnostics"/>
@@ -11779,7 +11783,46 @@
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation2/getConsolAllergyStatusObservations"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation2/getConsolReactionObservation2s"/>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation2/getSeverityObservation2"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation2/getConsolSeverityObservation2"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation2/getCriticalityObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//CriticalityObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationValueP/context"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//MentalStatusObservation2">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//MentalStatusObservation2/MentalStatusObservation2ValueDatatype">
@@ -11954,9 +11997,17 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//SubstanceOrDeviceAllergyObservation2">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2CriticalityInversionIndicator/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2AuthorParticipation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2AuthorParticipation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2AuthorParticipation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2CriticalityObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2CriticalityObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2CriticalityObservation/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2IVLTSLow">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SubstanceOrDeviceAllergyObservation2/SubstanceOrDeviceAllergyObservation2IVLTSLow/diagnostics"/>
@@ -11980,6 +12031,7 @@
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/getConsolReactionObservation2s"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/getConsolSeverityObservation2"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SubstanceOrDeviceAllergyObservation2/getCriticalityObservation"/>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//TobaccoUse2">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//TobaccoUse2/TobaccoUse2Id">
@@ -16752,43 +16804,5 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PhysicianReadingStudyPerformer2"/>
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//CriticalityObservation">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationTemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationTemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationTemplateId/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationClassCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationClassCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationClassCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationMoodCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationMoodCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationMoodCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationStatusCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationStatusCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationStatusCode/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationStatusCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationStatusCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationStatusCodeP/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationValue">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationValue/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationValue/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//CriticalityObservation/CriticalityObservationValueP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationValueP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//CriticalityObservation/CriticalityObservationValueP/context"/>
-      </genOperations>
-    </genClasses>
   </genPackages>
 </genmodel:GenModel>
