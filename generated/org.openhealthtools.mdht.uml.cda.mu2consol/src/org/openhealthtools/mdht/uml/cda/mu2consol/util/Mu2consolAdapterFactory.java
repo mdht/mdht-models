@@ -608,13 +608,13 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.hl7.rim.Act <em>Act</em>}'. <!--
+	 * {@link org.eclipse.mdht.uml.hl7.rim.Act <em>Act</em>}'. <!--
 	 * begin-user-doc --> This default implementation returns null so that we
 	 * can easily ignore cases; it's useful to ignore a case when inheritance
 	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 *
+	 * 
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.hl7.rim.Act
+	 * @see org.eclipse.mdht.uml.hl7.rim.Act
 	 * @generated
 	 */
 	public Adapter createActAdapter() {
@@ -655,13 +655,13 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 
 	/**
 	 * Creates a new adapter for an object of class '
-	 * {@link org.openhealthtools.mdht.uml.cda.Section <em>Section</em>}'. <!--
+	 * {@link org.eclipse.mdht.uml.cda.Section <em>Section</em>}'. <!--
 	 * begin-user-doc --> This default implementation returns null so that we
 	 * can easily ignore cases; it's useful to ignore a case when inheritance
 	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 *
+	 * 
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Section
+	 * @see org.eclipse.mdht.uml.cda.Section
 	 * @generated
 	 */
 	public Adapter createSectionAdapter() {
@@ -706,7 +706,7 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * begin-user-doc --> This default implementation returns null so that we
 	 * can easily ignore cases; it's useful to ignore a case when inheritance
 	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 *
+	 * 
 	 * @return the new adapter.
 	 * @see org.eclipse.mdht.uml.cda.Observation
 	 * @generated
@@ -770,7 +770,7 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * begin-user-doc --> This default implementation returns null so that we
 	 * can easily ignore cases; it's useful to ignore a case when inheritance
 	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 *
+	 * 
 	 * @return the new adapter.
 	 * @see org.eclipse.mdht.uml.cda.Organizer
 	 * @generated
@@ -850,7 +850,7 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * begin-user-doc --> This default implementation returns null so that we
 	 * can easily ignore cases; it's useful to ignore a case when inheritance
 	 * will catch all the cases anyway. <!-- end-user-doc -->
-	 *
+	 * 
 	 * @return the new adapter.
 	 * @see org.eclipse.mdht.uml.cda.Procedure
 	 * @generated

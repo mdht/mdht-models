@@ -5,7 +5,7 @@
   <eAnnotations source="http://www.eclipse.org/mdht/uml">
     <details key="initializers" value="org.openhealthtools.mdht.uml.cda.mu2consol"/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="GeneralHeaderConstraints" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints">
+  <eClassifiers xsi:type="ecore:EClass" name="GeneralHeaderConstraints" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//GeneralHeaderConstraints">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsCareTeamMembers GeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.1.1"/>
@@ -35,7 +35,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.1.1')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -56,7 +56,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.recordTarget->exists(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(cda::RecordTarget))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTarget"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTarget"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -77,7 +77,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).languageCommunication->excluding(null)->reject((languageCode.oclIsUndefined() or languageCode.isNullFlavorUndefined()) implies (not languageCode.oclIsUndefined()))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -98,7 +98,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((ethnicGroupCode.oclIsUndefined() or ethnicGroupCode.isNullFlavorUndefined()) implies (not ethnicGroupCode.oclIsUndefined() and ethnicGroupCode.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = ethnicGroupCode.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.238' and (value.code = '2135-2' or value.code = '2186-5')))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -119,7 +119,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((ethnicGroupCode.oclIsUndefined() or ethnicGroupCode.isNullFlavorUndefined()) implies (not ethnicGroupCode.oclIsUndefined()))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -140,7 +140,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((raceCode.oclIsUndefined() or raceCode.isNullFlavorUndefined()) implies (not raceCode.oclIsUndefined() and raceCode.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = raceCode.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.238' and (value.code = '1002-5' or value.code = '2028-9' or value.code = '2076-8' or value.code = '2106-3' or value.code = '2054-5')))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -161,7 +161,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((raceCode.oclIsUndefined() or raceCode.isNullFlavorUndefined()) implies (not raceCode.oclIsUndefined()))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -182,7 +182,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject(languageCommunication->exists(languageCommunication : cda::LanguageCommunication | not languageCommunication.oclIsUndefined() and languageCommunication.oclIsKindOf(cda::LanguageCommunication)))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -203,7 +203,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.recordTarget->excluding(null).patientRole->excluding(null)->reject(patient->one(patient : cda::Patient | not patient.oclIsUndefined() and patient.oclIsKindOf(cda::Patient)))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatient"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatient"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -224,7 +224,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.recordTarget->excluding(null)->reject(patientRole->one(patientRole : cda::PatientRole | not patientRole.oclIsUndefined() and patientRole.oclIsKindOf(cda::PatientRole)))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRole"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRole"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -281,7 +281,7 @@
       </eParameters>
     </eOperations>
     <eOperations name="retrieveHospitalAdmissionDiagnosisSection" ordered="false"
-        lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalAdmissionDiagnosisSection">
+        lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//HospitalAdmissionDiagnosisSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosisSection)"/>
       </eAnnotations>
@@ -463,40 +463,40 @@
       </eParameters>
     </eOperations>
     <eOperations name="retrieveFunctionalStatusSection" ordered="false" lowerBound="1"
-        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//FunctionalStatusSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//FunctionalStatusSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))->asSequence()->any(true).oclAsType(consol::FunctionalStatusSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="retrieveHospitalDischargeDiagnosisSection" ordered="false"
-        lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalDischargeDiagnosisSection">
+        lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//HospitalDischargeDiagnosisSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosisSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="retrievePostoperativeDiagnosisSection" ordered="false" lowerBound="1"
-        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PostoperativeDiagnosisSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//PostoperativeDiagnosisSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PostoperativeDiagnosisSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="retrievePostprocedureDiagnosisSection" ordered="false" lowerBound="1"
-        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PostprocedureDiagnosisSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//PostprocedureDiagnosisSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostprocedureDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PostprocedureDiagnosisSection)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getProblemSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProblemSection">
+    <eOperations name="getProblemSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ProblemSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))->asSequence()->any(true).oclAsType(consol::ProblemSection)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getAllergiesSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//AllergiesSection">
+    <eOperations name="getAllergiesSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//AllergiesSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))->asSequence()->any(true).oclAsType(consol::AllergiesSection)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getImmunizationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ImmunizationsSection">
+    <eOperations name="getImmunizationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ImmunizationsSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSection))->asSequence()->any(true).oclAsType(consol::ImmunizationsSection)"/>
       </eAnnotations>
@@ -517,13 +517,13 @@
       </eAnnotations>
     </eOperations>
     <eOperations name="getFunctionalStatusSection" ordered="false" lowerBound="1"
-        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//FunctionalStatusSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//FunctionalStatusSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))->asSequence()->any(true).oclAsType(consol::FunctionalStatusSection)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SocialHistorySection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//SocialHistorySection">
+  <eClassifiers xsi:type="ecore:EClass" name="SocialHistorySection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//SocialHistorySection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SocialHistorySectionTemplateId SocialHistorySectionSmokingStatusObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.17"/>
@@ -534,7 +534,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.17')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//SocialHistorySection/SocialHistorySectionTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//SocialHistorySection/SocialHistorySectionTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -555,7 +555,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(mu2consol::SmokingStatusObservation))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//SocialHistorySection/SocialHistorySectionSmokingStatusObservation"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//SocialHistorySection/SocialHistorySectionSmokingStatusObservation"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -579,7 +579,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="SmokingStatusObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//SmokingStatusObservation">
+  <eClassifiers xsi:type="ecore:EClass" name="SmokingStatusObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//SmokingStatusObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="SmokingStatusObservationTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.78"/>
@@ -594,7 +594,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.78')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//SmokingStatusObservation/SmokingStatusObservationTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//SmokingStatusObservation/SmokingStatusObservationTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -615,7 +615,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValueP"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValueP"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -635,7 +635,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '449868002' or value.code = '428041000124106' or value.code = '8517006' or value.code = '266919005' or value.code = '77176002' or value.code = '266927001' or value.code = '428071000124103' or value.code = '428061000124105')))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValue"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//SmokingStatusObservation/SmokingStatusObservationValue"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -653,7 +653,7 @@
       </contents>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ResultsSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultsSection">
+  <eClassifiers xsi:type="ecore:EClass" name="ResultsSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultsSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultsSectionEntriesOptionalTemplateId ResultsSectionResultOrganizer"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.3.1"/>
@@ -664,7 +664,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.3.1')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultsSectionEntriesOptional/ResultsSectionEntriesOptionalTemplateId ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultsSection/%duplicates%/ResultsSectionEntriesOptionalTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultsSectionEntriesOptional/ResultsSectionEntriesOptionalTemplateId ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultsSection/%duplicates%/ResultsSectionEntriesOptionalTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -684,7 +684,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(mu2consol::ResultOrganizer))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultsSection/ResultsSectionResultOrganizer"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultsSection/ResultsSectionResultOrganizer"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -708,7 +708,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ResultOrganizer" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultOrganizer">
+  <eClassifiers xsi:type="ecore:EClass" name="ResultOrganizer" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultOrganizerTemplateId ResultOrganizerResultObservation"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.1"/>
@@ -718,7 +718,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.1')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultOrganizer/ResultOrganizerTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultOrganizer/ResultOrganizerTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -739,7 +739,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(mu2consol::ResultObservation))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultOrganizer/ResultOrganizerResultObservation"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultOrganizer/ResultOrganizerResultObservation"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -763,7 +763,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultObservation">
+  <eClassifiers xsi:type="ecore:EClass" name="ResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultObservationTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.2"/>
@@ -773,7 +773,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.2')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultObservation/ResultObservationTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultObservation/ResultObservationTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -791,7 +791,7 @@
       </contents>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProceduresSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProceduresSection">
+  <eClassifiers xsi:type="ecore:EClass" name="ProceduresSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ProceduresSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProceduresSectionEntriesOptionalTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.7.1"/>
@@ -803,7 +803,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.7.1')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProceduresSectionEntriesOptional/ProceduresSectionEntriesOptionalTemplateId ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProceduresSection/%duplicates%/ProceduresSectionEntriesOptionalTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ProceduresSectionEntriesOptional/ProceduresSectionEntriesOptionalTemplateId ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ProceduresSection/%duplicates%/ProceduresSectionEntriesOptionalTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -824,7 +824,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.procedure.oclIsUndefined() and entry.procedure.oclIsKindOf(mu2consol::ProcedureActivityProcedure))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProceduresSection/ProceduresSectionProcedureActivityProcedure"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ProceduresSection/ProceduresSectionProcedureActivityProcedure"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -848,7 +848,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityProcedure" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProcedureActivityProcedure">
+  <eClassifiers xsi:type="ecore:EClass" name="ProcedureActivityProcedure" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ProcedureActivityProcedure">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ProcedureActivityProcedureTemplateId ProcedureActivityProcedureCodeValue ProcedureActivityProcedureCode"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.14"/>
@@ -859,7 +859,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.14')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -880,7 +880,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureCode"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureCode"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1189,28 +1189,28 @@
       </eParameters>
     </eOperations>
     <eOperations name="retrieveInstructionsSection" ordered="false" lowerBound="1"
-        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//InstructionsSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//InstructionsSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection))->asSequence()->any(true).oclAsType(consol::InstructionsSection)"/>
       </eAnnotations>
     </eOperations>
     <eOperations name="retrieveMedicationsAdministeredSection" ordered="false" lowerBound="1"
-        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//MedicationsAdministeredSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//MedicationsAdministeredSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsAdministeredSection))->asSequence()->any(true).oclAsType(consol::MedicationsAdministeredSection)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getProblemSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProblemSection">
+    <eOperations name="getProblemSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ProblemSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))->asSequence()->any(true).oclAsType(consol::ProblemSection)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getMedicationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//MedicationsSection">
+    <eOperations name="getMedicationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//MedicationsSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))->asSequence()->any(true).oclAsType(consol::MedicationsSection)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getAllergiesSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//AllergiesSection">
+    <eOperations name="getAllergiesSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//AllergiesSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))->asSequence()->any(true).oclAsType(consol::AllergiesSection)"/>
       </eAnnotations>
@@ -1225,12 +1225,12 @@
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::ProceduresSection))->asSequence()->any(true).oclAsType(mu2consol::ProceduresSection)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getImmunizationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ImmunizationsSection">
+    <eOperations name="getImmunizationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ImmunizationsSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSection))->asSequence()->any(true).oclAsType(consol::ImmunizationsSection)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getInstructionsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//InstructionsSection">
+    <eOperations name="getInstructionsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//InstructionsSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InstructionsSection))->asSequence()->any(true).oclAsType(consol::InstructionsSection)"/>
       </eAnnotations>
@@ -1247,7 +1247,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MedicationsAdministeredSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//MedicationsAdministeredSection">
+  <eClassifiers xsi:type="ecore:EClass" name="MedicationsAdministeredSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//MedicationsAdministeredSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="MedicationsAdministeredSectionTemplateId MedicationsAdministeredSectionMedicationActivity"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.38"/>
@@ -1258,7 +1258,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.38')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//MedicationsAdministeredSection/MedicationsAdministeredSectionTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//MedicationsAdministeredSection/MedicationsAdministeredSectionTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1279,7 +1279,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.nullFlavor &lt;> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(consol::MedicationActivity))"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//MedicationsAdministeredSection/MedicationsAdministeredSectionMedicationActivity"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//MedicationsAdministeredSection/MedicationsAdministeredSectionMedicationActivity"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1297,7 +1297,7 @@
       </contents>
     </eAnnotations>
     <eOperations name="getMu2consolMedicationActivities" ordered="false" lowerBound="1"
-        upperBound="-1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//MedicationActivity">
+        upperBound="-1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//MedicationActivity">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)"/>
       </eAnnotations>
@@ -1384,7 +1384,7 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getMedicationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//MedicationsSection">
+    <eOperations name="getMedicationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//MedicationsSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))->asSequence()->any(true).oclAsType(consol::MedicationsSection)"/>
       </eAnnotations>
@@ -1453,7 +1453,7 @@
       </eParameters>
     </eOperations>
     <eOperations name="getHospitalDischargeInstructionsSection" ordered="false" lowerBound="1"
-        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalDischargeInstructionsSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//HospitalDischargeInstructionsSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))->asSequence()->any(true).oclAsType(consol::HospitalDischargeInstructionsSection)"/>
       </eAnnotations>
@@ -1597,17 +1597,17 @@
       </eParameters>
     </eOperations>
     <eOperations name="retrievePreoperativeDiagnosisSection" ordered="false" lowerBound="1"
-        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//PreoperativeDiagnosisSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//PreoperativeDiagnosisSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PreoperativeDiagnosisSection)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getAllergiesSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//AllergiesSection">
+    <eOperations name="getAllergiesSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//AllergiesSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))->asSequence()->any(true).oclAsType(consol::AllergiesSection)"/>
       </eAnnotations>
     </eOperations>
-    <eOperations name="getProblemSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ProblemSection">
+    <eOperations name="getProblemSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ProblemSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))->asSequence()->any(true).oclAsType(consol::ProblemSection)"/>
       </eAnnotations>
@@ -1747,7 +1747,7 @@
       </eParameters>
     </eOperations>
     <eOperations name="getHospitalDischargeInstructionsSection" ordered="false" lowerBound="1"
-        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//HospitalDischargeInstructionsSection">
+        eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//HospitalDischargeInstructionsSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))->asSequence()->any(true).oclAsType(consol::HospitalDischargeInstructionsSection)"/>
       </eAnnotations>
@@ -1795,13 +1795,13 @@
         </eGenericType>
       </eParameters>
     </eOperations>
-    <eOperations name="getMedicationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//MedicationsSection">
+    <eOperations name="getMedicationsSection" ordered="false" lowerBound="1" eType="ecore:EClass ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//MedicationsSection">
       <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
         <details key="body" value="self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))->asSequence()->any(true).oclAsType(consol::MedicationsSection)"/>
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//FunctionalStatusSection">
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//FunctionalStatusSection">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="FunctionalStatusSectionTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.2.14"/>
@@ -1812,7 +1812,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.14')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//FunctionalStatusSection/FunctionalStatusSectionTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//FunctionalStatusSection/FunctionalStatusSectionTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1854,7 +1854,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CognitiveStatusResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//CognitiveStatusResultObservation #//ResultObservation">
+  <eClassifiers xsi:type="ecore:EClass" name="CognitiveStatusResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//CognitiveStatusResultObservation #//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultObservationTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.74"/>
@@ -1864,7 +1864,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.74')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultObservation/ResultObservationTemplateId #//ResultObservation/%duplicates%/ResultObservationTemplateId ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//CognitiveStatusResultObservation/%duplicates%/ResultObservationTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultObservation/ResultObservationTemplateId #//ResultObservation/%duplicates%/ResultObservationTemplateId ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//CognitiveStatusResultObservation/%duplicates%/ResultObservationTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1882,7 +1882,7 @@
       </contents>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CognitiveStatusResultOrganizer" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//CognitiveStatusResultOrganizer #//ResultOrganizer">
+  <eClassifiers xsi:type="ecore:EClass" name="CognitiveStatusResultOrganizer" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//CognitiveStatusResultOrganizer #//ResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultOrganizerTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.75"/>
@@ -1892,7 +1892,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.75')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultOrganizer/ResultOrganizerTemplateId #//ResultOrganizer/%duplicates%/ResultOrganizerTemplateId ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//CognitiveStatusResultOrganizer/%duplicates%/ResultOrganizerTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultOrganizer/ResultOrganizerTemplateId #//ResultOrganizer/%duplicates%/ResultOrganizerTemplateId ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//CognitiveStatusResultOrganizer/%duplicates%/ResultOrganizerTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1916,7 +1916,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//FunctionalStatusResultObservation #//ResultObservation">
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusResultObservation" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//FunctionalStatusResultObservation #//ResultObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultObservationTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.67"/>
@@ -1926,7 +1926,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.67')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultObservation/ResultObservationTemplateId #//ResultObservation/%duplicates%/ResultObservationTemplateId ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//FunctionalStatusResultObservation/%duplicates%/ResultObservationTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultObservation/ResultObservationTemplateId #//ResultObservation/%duplicates%/ResultObservationTemplateId ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//FunctionalStatusResultObservation/%duplicates%/ResultObservationTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>
@@ -1944,7 +1944,7 @@
       </contents>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusResultOrganizer" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//FunctionalStatusResultOrganizer #//ResultOrganizer">
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionalStatusResultOrganizer" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//FunctionalStatusResultOrganizer #//ResultOrganizer">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.error" value="ResultOrganizerTemplateId"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.66"/>
@@ -1954,7 +1954,7 @@
         <eAnnotations source="http://www.eclipse.org/uml2/1.1.0/GenModel">
           <details key="body" value="self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.4.66')"/>
         </eAnnotations>
-        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//ResultOrganizer/ResultOrganizerTemplateId #//ResultOrganizer/%duplicates%/ResultOrganizerTemplateId ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.ecore#//FunctionalStatusResultOrganizer/%duplicates%/ResultOrganizerTemplateId"/>
+        <eAnnotations source="redefines" references="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//ResultOrganizer/ResultOrganizerTemplateId #//ResultOrganizer/%duplicates%/ResultOrganizerTemplateId ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.ecore#//FunctionalStatusResultOrganizer/%duplicates%/ResultOrganizerTemplateId"/>
         <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain">
           <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
             <details key="documentation" value="The chain of diagnostics to which problems are to be appended."/>

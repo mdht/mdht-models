@@ -234,7 +234,7 @@ public class VDTAmbulatorySummaryOperations extends ViewDownloadTransmitSummaryO
 		if (GET_MEDICATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY,
-					Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY.getEAllOperations().get(311));
+					Mu2consolPackage.Literals.VDT_AMBULATORY_SUMMARY.getEAllOperations().get(318));
 			try {
 				GET_MEDICATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {

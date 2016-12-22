@@ -16,25 +16,25 @@
 	<macrodef name="convertEcorePaths">
 		<attribute name="filePath" />
 		<sequential>
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/consol.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-allergies.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-problems.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-other.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-medications.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-familyhistory.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-socialhistory.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-results.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-advancedirectives.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-encounters.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-immunizations.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-payers.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-planofcare.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-procedures.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-vitalsigns.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-exams.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-discharge.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
-			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-dicom.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-cognitive.uml" value="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/consol.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-allergies.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-problems.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-other.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-medications.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-familyhistory.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-socialhistory.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-results.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-advancedirectives.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-encounters.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-immunizations.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-payers.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-planofcare.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-procedures.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-vitalsigns.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-exams.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-discharge.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
+			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-dicom.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />			<replace file="@{filePath}" token="pathmap://CONSOL_MODEL/.controlled/consol-cognitive.uml" value="../../org.openhealthtools.mdht.uml.cda.consol2/model/consol_Ecore.uml" />
 		</sequential>
 	</macrodef>	<property name="oldTemplateName" value="General Header Constraints" />	<property name="newTemplateName" value="US Realm Header" />	<target name="postProcess">		<replaceTemplateNames oldTemplateName="${oldTemplateName}" newTemplateName="${newTemplateName}" />	</target>
 	<import file="${cdaPluginPath}/transform-common.xml" />
