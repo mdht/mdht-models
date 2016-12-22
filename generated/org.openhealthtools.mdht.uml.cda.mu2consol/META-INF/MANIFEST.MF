@@ -17,7 +17,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.mdht.uml.hl7.rim;visibility:=reexport,
  org.eclipse.mdht.uml.hl7.vocab;visibility:=reexport,
  org.eclipse.uml2.types;visibility:=reexport,
- org.openhealthtools.mdht.uml.cda.consol;visibility:=reexport
+ org.openhealthtools.mdht.uml.cda.consol2;visibility:=reexport
 Export-Package: org.openhealthtools.mdht.uml.cda.mu2consol,
  org.openhealthtools.mdht.uml.cda.mu2consol.impl,
  org.openhealthtools.mdht.uml.cda.mu2consol.operations,

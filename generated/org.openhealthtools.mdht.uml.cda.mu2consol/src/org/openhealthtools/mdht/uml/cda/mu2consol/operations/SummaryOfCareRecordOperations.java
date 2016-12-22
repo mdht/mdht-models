@@ -809,7 +809,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 		if (RETRIEVE_FUNCTIONAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(305));
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(312));
 			try {
 				RETRIEVE_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
@@ -864,7 +864,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 		if (RETRIEVE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(306));
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(313));
 			try {
 				RETRIEVE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -919,7 +919,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 		if (RETRIEVE_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(307));
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(314));
 			try {
 				RETRIEVE_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_POSTOPERATIVE_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -974,7 +974,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 		if (RETRIEVE_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(308));
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(315));
 			try {
 				RETRIEVE_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_QRY = helper
 						.createQuery(RETRIEVE_POSTPROCEDURE_DIAGNOSIS_SECTION__EOCL_EXP);
@@ -1027,7 +1027,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 		if (GET_PROBLEM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(309));
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(316));
 			try {
 				GET_PROBLEM_SECTION__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1079,7 +1079,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 		if (GET_ALLERGIES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(310));
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(317));
 			try {
 				GET_ALLERGIES_SECTION__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1131,7 +1131,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 		if (GET_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(311));
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(318));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1183,7 +1183,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(312));
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(319));
 			try {
 				GET_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1235,7 +1235,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 		if (GET_RESULTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(313));
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(320));
 			try {
 				GET_RESULTS_SECTION__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1287,7 +1287,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 		if (GET_PROCEDURES_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(314));
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(321));
 			try {
 				GET_PROCEDURES_SECTION__EOCL_QRY = helper.createQuery(GET_PROCEDURES_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1339,7 +1339,7 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 		if (GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD,
-					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(315));
+					Mu2consolPackage.Literals.SUMMARY_OF_CARE_RECORD.getEAllOperations().get(322));
 			try {
 				GET_FUNCTIONAL_STATUS_SECTION__EOCL_QRY = helper.createQuery(GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
