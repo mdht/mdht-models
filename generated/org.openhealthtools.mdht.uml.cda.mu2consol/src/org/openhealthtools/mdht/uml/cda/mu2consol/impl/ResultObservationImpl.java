@@ -22,8 +22,8 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ResultObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultObservationOperations;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>Result Observation</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object ' <em><b>Result
+ * Observation</b></em>'. <!-- end-user-doc -->
  *
  * @generated
  */
@@ -31,7 +31,7 @@ public class ResultObservationImpl extends org.openhealthtools.mdht.uml.cda.cons
 		implements ResultObservation {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected ResultObservationImpl() {
@@ -40,7 +40,7 @@ public class ResultObservationImpl extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -50,7 +50,7 @@ public class ResultObservationImpl extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -60,7 +60,7 @@ public class ResultObservationImpl extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -70,7 +70,7 @@ public class ResultObservationImpl extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override

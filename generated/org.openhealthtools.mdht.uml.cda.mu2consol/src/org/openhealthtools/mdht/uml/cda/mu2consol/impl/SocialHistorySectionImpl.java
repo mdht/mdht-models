@@ -24,8 +24,8 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SocialHistorySectionOperations;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>Social History Section</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object ' <em><b>Social
+ * History Section</b></em>'. <!-- end-user-doc -->
  *
  * @generated
  */
@@ -33,7 +33,7 @@ public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.c
 		implements SocialHistorySection {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected SocialHistorySectionImpl() {
@@ -42,7 +42,7 @@ public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.c
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -52,7 +52,7 @@ public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.c
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -62,7 +62,7 @@ public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.c
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -72,7 +72,7 @@ public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.c
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -84,7 +84,7 @@ public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.c
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -94,7 +94,7 @@ public class SocialHistorySectionImpl extends org.openhealthtools.mdht.uml.cda.c
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override

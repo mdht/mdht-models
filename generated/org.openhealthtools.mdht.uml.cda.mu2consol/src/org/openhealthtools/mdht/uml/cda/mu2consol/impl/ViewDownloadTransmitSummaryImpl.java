@@ -28,8 +28,8 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ViewDownloadTransmitSummaryOperations;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>View Download Transmit Summary</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object ' <em><b>View
+ * Download Transmit Summary</b></em>'. <!-- end-user-doc -->
  *
  * @generated
  */
@@ -37,7 +37,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 		implements ViewDownloadTransmitSummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected ViewDownloadTransmitSummaryImpl() {
@@ -46,7 +46,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -56,7 +56,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -68,7 +68,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -80,7 +80,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -92,7 +92,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -104,7 +104,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -116,7 +116,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -128,7 +128,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -140,7 +140,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -150,7 +150,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -160,7 +160,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -170,7 +170,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -180,7 +180,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -190,7 +190,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -200,7 +200,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -210,7 +210,7 @@ public class ViewDownloadTransmitSummaryImpl extends GeneralHeaderConstraintsImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override

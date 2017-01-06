@@ -23,8 +23,9 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getAssessmentAndPlanSection()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Mu2consolAssessmentAndPlanSectionTemplateId' templateId.root='2.16.840.1.113883.10.20.22.2.9'"
+ * @model annotation= "http://www.openhealthtools.org/mdht/uml/cda/annotation
+ *        constraints.validation.error='Mu2consolAssessmentAndPlanSectionTemplateId'
+ *        templateId.root='2.16.840.1.113883.10.20.22.2.9'"
  * @generated
  */
 public interface AssessmentAndPlanSection extends org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection {
@@ -38,7 +39,10 @@ public interface AssessmentAndPlanSection extends org.openhealthtools.mdht.uml.c
 	 * end-model-doc -->
 	 *
 	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::PlanOfCareActivityProcedure))->asSequence()->any(true).oclAsType(consol::PlanOfCareActivityProcedure)'"
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getProcedures()->select(procedure : cda::Procedure |
+	 *        not procedure.oclIsUndefined() and
+	 *        procedure.oclIsKindOf(consol::PlanOfCareActivityProcedure))->asSequence()->any(true).oclAsType(consol::PlanOfCareActivityProcedure)'"
 	 * @generated
 	 */
 	PlanOfCareActivityProcedure getPlanOfCareActivityProcedure();
@@ -55,7 +59,11 @@ public interface AssessmentAndPlanSection extends org.openhealthtools.mdht.uml.c
 	 * end-model-doc -->
 	 *
 	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::PlanOfCareActivitySubstanceAdministration))->asSequence()->any(true).oclAsType(consol::PlanOfCareActivitySubstanceAdministration)'"
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getSubstanceAdministrations()->select(substanceAdministration
+	 *        : cda::SubstanceAdministration | not
+	 *        substanceAdministration.oclIsUndefined() and
+	 *        substanceAdministration.oclIsKindOf(consol::PlanOfCareActivitySubstanceAdministration))->asSequence()->any(true).oclAsType(consol::PlanOfCareActivitySubstanceAdministration)'"
 	 * @generated
 	 */
 	PlanOfCareActivitySubstanceAdministration getPlanOfCareActivitySubstanceAdministration();
@@ -69,7 +77,10 @@ public interface AssessmentAndPlanSection extends org.openhealthtools.mdht.uml.c
 	 * <!-- end-model-doc -->
 	 *
 	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::PlanOfCareActivitySupply))->asSequence()->any(true).oclAsType(consol::PlanOfCareActivitySupply)'"
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getSupplies()->select(supply : cda::Supply | not
+	 *        supply.oclIsUndefined() and
+	 *        supply.oclIsKindOf(consol::PlanOfCareActivitySupply))->asSequence()->any(true).oclAsType(consol::PlanOfCareActivitySupply)'"
 	 * @generated
 	 */
 	PlanOfCareActivitySupply getPlanOfCareActivitySupply();
@@ -83,7 +94,10 @@ public interface AssessmentAndPlanSection extends org.openhealthtools.mdht.uml.c
 	 * end-model-doc -->
 	 *
 	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)'"
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getObservations()->select(observation :
+	 *        cda::Observation | not observation.oclIsUndefined() and
+	 *        observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)'"
 	 * @generated
 	 */
 	ProblemObservation getProblemObservation();

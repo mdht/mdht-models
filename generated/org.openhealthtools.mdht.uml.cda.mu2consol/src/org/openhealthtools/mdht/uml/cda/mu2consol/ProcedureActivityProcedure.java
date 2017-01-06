@@ -23,8 +23,10 @@ import org.eclipse.mdht.emf.runtime.util.Initializer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getProcedureActivityProcedure()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureActivityProcedureTemplateId ProcedureActivityProcedureCodeValue ProcedureActivityProcedureCode' templateId.root='2.16.840.1.113883.10.20.22.4.14'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation
+ *        constraints.validation.error='ProcedureActivityProcedureTemplateId
+ *        ProcedureActivityProcedureCodeValue ProcedureActivityProcedureCode'
+ *        templateId.root='2.16.840.1.113883.10.20.22.4.14'"
  * @generated
  */
 public interface ProcedureActivityProcedure extends org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure {
@@ -36,22 +38,24 @@ public interface ProcedureActivityProcedure extends org.openhealthtools.mdht.uml
 	 * @param context
 	 *            The cache of context-specific information. <!-- end-model-doc
 	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.isNullFlavorDefined() or self.code.codeSystem = \'2.16.840.1.113883.6.96\' xor self.code.codeSystem = \'2.16.840.1.113883.6.12\''"
+	 * @model annotation= "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.code.isNullFlavorDefined() or self.code.codeSystem =
+	 *        \'2.16.840.1.113883.6.96\' xor self.code.codeSystem =
+	 *        \'2.16.840.1.113883.6.12\''"
 	 * @generated
 	 */
 	boolean validateProcedureActivityProcedureCodeValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public ProcedureActivityProcedure init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public ProcedureActivityProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers);

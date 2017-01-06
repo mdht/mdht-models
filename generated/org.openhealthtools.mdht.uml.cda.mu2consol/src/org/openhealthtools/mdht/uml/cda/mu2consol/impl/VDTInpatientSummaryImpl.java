@@ -23,15 +23,15 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientSummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTInpatientSummaryOperations;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>VDT Inpatient Summary</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object ' <em><b>VDT
+ * Inpatient Summary</b></em>'. <!-- end-user-doc -->
  *
  * @generated
  */
 public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl implements VDTInpatientSummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected VDTInpatientSummaryImpl() {
@@ -40,7 +40,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -50,7 +50,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -60,7 +60,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -70,7 +70,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -82,7 +82,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -92,7 +92,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -104,7 +104,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -116,7 +116,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -126,7 +126,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -136,7 +136,7 @@ public class VDTInpatientSummaryImpl extends ViewDownloadTransmitSummaryImpl imp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override

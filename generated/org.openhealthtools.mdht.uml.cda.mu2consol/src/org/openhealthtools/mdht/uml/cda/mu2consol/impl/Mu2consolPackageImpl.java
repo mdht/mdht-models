@@ -281,7 +281,6 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(Mu2consolPackage.eNS_URI, theMu2consolPackage);
-
 		return theMu2consolPackage;
 	}
 
@@ -1400,13 +1399,11 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 				new String[] { "constraints.validation.error",
 						"SocialHistorySectionTemplateId SocialHistorySectionSmokingStatusObservation",
 						"templateId.root", "2.16.840.1.113883.10.20.22.2.17" });
-		addAnnotation(smokingStatusObservationEClass, source,
-				new String[] { "constraints.validation.error",
-						"SmokingStatusObservationTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP",
-						"templateId.root", "2.16.840.1.113883.10.20.22.4.78", "value.codeSystem",
-						"2.16.840.1.113883.6.96", "value.codeSystemName", "SNOMEDCT",
-						"constraints.validation.dependOn.SmokingStatusObservationValue",
-						"SmokingStatusObservationValueP" });
+		addAnnotation(smokingStatusObservationEClass, source, new String[] { "constraints.validation.error",
+				"SmokingStatusObservationTemplateId SmokingStatusObservationValue SmokingStatusObservationValueP",
+				"templateId.root", "2.16.840.1.113883.10.20.22.4.78", "value.codeSystem", "2.16.840.1.113883.6.96",
+				"value.codeSystemName", "SNOMEDCT", "constraints.validation.dependOn.SmokingStatusObservationValue",
+				"SmokingStatusObservationValueP" });
 		addAnnotation(resultsSectionEClass, source,
 				new String[] { "constraints.validation.error",
 						"ResultsSectionEntriesOptionalTemplateId ResultsSectionResultOrganizer", "templateId.root",
@@ -1502,9 +1499,8 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * Initializes the annotations for
-	 * <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/
-	 * mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication
-	 * </b>. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication</b>.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 *
 	 * @generated
 	 */

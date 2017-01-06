@@ -33,7 +33,7 @@ public class ProceduresSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 		implements ProceduresSection {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected ProceduresSectionImpl() {
@@ -42,7 +42,7 @@ public class ProceduresSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -52,7 +52,7 @@ public class ProceduresSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -62,7 +62,7 @@ public class ProceduresSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -74,7 +74,7 @@ public class ProceduresSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -86,7 +86,7 @@ public class ProceduresSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -96,7 +96,7 @@ public class ProceduresSectionImpl extends org.openhealthtools.mdht.uml.cda.cons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
