@@ -7,8 +7,12 @@
  *
  * Contributors:
  *    Rama Ramakrishnan (Agilex Corporation) - initial API and implementation
+ *    Dan Brown (Ai) - Added ability to unload and reload the Mu2ConsolPackage from the registry
+ *                     in order to allow for one program instance to handle all forms of validation
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
+
+import java.util.Iterator;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
@@ -47,153 +51,153 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 /**
  * <!-- begin-user-doc --> An implementation of the model <b>Package</b>. <!--
  * end-user-doc -->
- * 
+ *
  * @generated
  */
 public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPackage {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass generalHeaderConstraintsEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass summaryOfCareRecordEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass socialHistorySectionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass smokingStatusObservationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass resultsSectionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass resultOrganizerEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass resultObservationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass proceduresSectionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass procedureActivityProcedureEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass clinicalOfficeVisitSummaryEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass transitionOfCareAmbulatorySummaryEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass transitionOfCareInpatientSummaryEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass viewDownloadTransmitSummaryEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass vdtInpatientSummaryEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass vdtAmbulatorySummaryEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass functionalStatusSectionEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass cognitiveStatusResultObservationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass cognitiveStatusResultOrganizerEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass functionalStatusResultObservationEClass = null;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private EClass functionalStatusResultOrganizerEClass = null;
@@ -219,7 +223,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private static boolean isInited = false;
@@ -277,12 +281,49 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(Mu2consolPackage.eNS_URI, theMu2consolPackage);
+
 		return theMu2consolPackage;
 	}
 
 	/**
+	 * @generated NOT
+	 */
+	private static boolean isUnloaded = false;
+
+	/**
+	 * @generated NOT
+	 */
+	public void unload() {
+		if (isUnloaded) {
+			return;
+		}
+
+		for (Iterator<String> iter = EPackage.Registry.INSTANCE.keySet().iterator(); iter.hasNext();) {
+			String key = iter.next();
+			if (key.equals(Mu2consolPackage.eNS_URI)) {
+				iter.remove();
+			}
+		}
+
+		isUnloaded = true;
+	}
+
+	/**
+	 * @generated NOT
+	 */
+	public void reload() {
+		if (!isUnloaded) {
+			return;
+		}
+		// since mu2 is not in the registry, add it back
+		EPackage.Registry.INSTANCE.put(Mu2consolPackage.eNS_URI, this);
+
+		isUnloaded = false;
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -292,7 +333,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -302,7 +343,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -312,7 +353,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -322,7 +363,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -332,7 +373,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -342,7 +383,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -352,7 +393,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -362,7 +403,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -372,7 +413,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -382,7 +423,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -392,7 +433,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -402,7 +443,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -412,7 +453,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -422,7 +463,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -432,7 +473,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -442,7 +483,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -452,7 +493,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -462,7 +503,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -472,7 +513,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -482,7 +523,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -492,7 +533,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -502,7 +543,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private boolean isCreated = false;
@@ -511,7 +552,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 	 * Creates the meta-model objects for the package. This method is guarded to
 	 * have no affect on any invocation but its first. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public void createPackageContents() {
@@ -566,7 +607,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private boolean isInitialized = false;
@@ -1329,7 +1370,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 	/**
 	 * Initializes the annotations for <b>http://www.eclipse.org/mdht/uml</b>.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected void createUmlAnnotations() {
@@ -1464,7 +1505,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 	 * <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/
 	 * mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication
 	 * </b>. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected void createMu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationAnnotations() {
@@ -1476,7 +1517,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 	/**
 	 * Initializes the annotations for <b>duplicates</b>. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected void createDuplicatesAnnotations() {
