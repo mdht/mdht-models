@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -130,7 +131,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_HAS_NON_MED_SUP_ACT_OR_PROC_ACT_PROC,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerHasNonMedSupActOrProcActProc"),
 						new Object[] { medicalEquipmentOrganizer }));
 			}
@@ -197,8 +198,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerTemplateId"),
+						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerTemplateId"),
 						new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -264,8 +264,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerClassCode"),
+						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerClassCode"),
 						new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -330,8 +329,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerMoodCode"),
+						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerMoodCode"),
 						new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -395,8 +393,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerId"),
+						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerId"),
 						new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -460,8 +457,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerCode"),
+						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerCode"),
 						new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -527,7 +523,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerStatusCodeP"),
 						new Object[] { medicalEquipmentOrganizer }));
 			}
@@ -618,8 +614,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerStatusCode"),
+						ConsolPlugin.INSTANCE.getString("MedicalEquipmentOrganizerMedicalEquipmentOrganizerStatusCode"),
 						new Object[] { medicalEquipmentOrganizer }));
 			}
 
@@ -685,7 +680,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerEffectiveTime"),
 						new Object[] { medicalEquipmentOrganizer }));
 			}
@@ -752,7 +747,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_NON_MEDICINAL_SUPPLY_ACTIVITY2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerNonMedicinalSupplyActivity2"),
 						new Object[] { medicalEquipmentOrganizer }));
 			}
@@ -819,7 +814,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_PROCEDURE_ACTIVITY_PROCEDURE2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicalEquipmentOrganizerMedicalEquipmentOrganizerProcedureActivityProcedure2"),
 						new Object[] { medicalEquipmentOrganizer }));
 			}
@@ -889,7 +884,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_LOW,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"MedicalEquipmentOrganizerMedicalEquipmentOrganizerIVLTSLow"),
 							new Object[] { eObject }));
 				}
@@ -961,7 +956,7 @@ public class MedicalEquipmentOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICAL_EQUIPMENT_ORGANIZER__MEDICAL_EQUIPMENT_ORGANIZER_IVLTS_HIGH,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"MedicalEquipmentOrganizerMedicalEquipmentOrganizerIVLTSHigh"),
 							new Object[] { eObject }));
 				}

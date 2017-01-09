@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SeriesAct;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -128,9 +129,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERIES_ACT__SERIES_ACT_ID_HAS_ROOT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActIdHasRoot"),
-						new Object[] { seriesAct }));
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActIdHasRoot"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -192,8 +191,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERIES_ACT__SERIES_ACT_ID_NO_EXTENSION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActIdNoExtension"),
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActIdNoExtension"),
 						new Object[] { seriesAct }));
 			}
 
@@ -256,8 +254,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERIES_ACT__SERIES_ACT_CODE_QUALIFIER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActCodeQualifier"),
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActCodeQualifier"),
 						new Object[] { seriesAct }));
 			}
 
@@ -320,8 +317,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERIES_ACT__SERIES_ACT_CODE_QUALIFIER_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActCodeQualifierCode"),
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActCodeQualifierCode"),
 						new Object[] { seriesAct }));
 			}
 
@@ -384,8 +380,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERIES_ACT__SERIES_ACT_CODE_QUALIFIER_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActCodeQualifierValue"),
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActCodeQualifierValue"),
 						new Object[] { seriesAct }));
 			}
 
@@ -449,8 +444,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERIES_ACT__SERIES_ACT_CODE_QUALIFIER_VALUE_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActCodeQualifierValueCode"),
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActCodeQualifierValueCode"),
 						new Object[] { seriesAct }));
 			}
 
@@ -513,9 +507,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERIES_ACT__SERIES_ACT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActTemplateId"),
-						new Object[] { seriesAct }));
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActTemplateId"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -577,9 +569,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERIES_ACT__SERIES_ACT_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActClassCode"),
-						new Object[] { seriesAct }));
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActClassCode"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -641,9 +631,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERIES_ACT__SERIES_ACT_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActMoodCode"),
-						new Object[] { seriesAct }));
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActMoodCode"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -707,9 +695,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERIES_ACT__SERIES_ACT_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActCode"),
-						new Object[] { seriesAct }));
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActCode"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -771,8 +757,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERIES_ACT__SERIES_ACT_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActEffectiveTime"),
 						new Object[] { seriesAct }));
 			}
 
@@ -834,9 +819,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.SERIES_ACT__SERIES_ACT_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActId"),
-						new Object[] { seriesAct }));
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActId"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -897,9 +880,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.SERIES_ACT__SERIES_ACT_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActText"),
-						new Object[] { seriesAct }));
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActText"), new Object[] { seriesAct }));
 			}
 
 			return false;
@@ -962,8 +943,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERIES_ACT__SERIES_ACT_SOP_INSTANCE_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SeriesActSeriesActSOPInstanceObservation"),
+						ConsolPlugin.INSTANCE.getString("SeriesActSeriesActSOPInstanceObservation"),
 						new Object[] { seriesAct }));
 			}
 

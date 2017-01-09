@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedicationsSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -123,7 +124,7 @@ public class DischargeMedicationsSectionEntriesOptional2Operations
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_CE_TRANSLATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeMedicationsSectionEntriesOptional2DischargeMedicationsSectionEntriesOptional2CETranslation"),
 							new Object[] { eObject }));
 				}
@@ -195,7 +196,7 @@ public class DischargeMedicationsSectionEntriesOptional2Operations
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2_CE_TRANSLATION_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeMedicationsSectionEntriesOptional2DischargeMedicationsSectionEntriesOptional2CETranslationP"),
 							new Object[] { eObject }));
 				}
@@ -313,7 +314,7 @@ public class DischargeMedicationsSectionEntriesOptional2Operations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeMedicationsSectionEntriesOptional2HospitalDischargeMedicationsSectionEntriesOptionalTemplateId"),
 						new Object[] { dischargeMedicationsSectionEntriesOptional2 }));
 			}
@@ -380,7 +381,7 @@ public class DischargeMedicationsSectionEntriesOptional2Operations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeMedicationsSectionEntriesOptional2HospitalDischargeMedicationsSectionEntriesOptionalCodeP"),
 						new Object[] { dischargeMedicationsSectionEntriesOptional2 }));
 			}
@@ -474,7 +475,7 @@ public class DischargeMedicationsSectionEntriesOptional2Operations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeMedicationsSectionEntriesOptional2HospitalDischargeMedicationsSectionEntriesOptionalCode"),
 						new Object[] { dischargeMedicationsSectionEntriesOptional2 }));
 			}
@@ -541,7 +542,7 @@ public class DischargeMedicationsSectionEntriesOptional2Operations
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2__HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_DISCHARGE_MEDICATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeMedicationsSectionEntriesOptional2HospitalDischargeMedicationsSectionEntriesOptionalDischargeMedication"),
 						new Object[] { dischargeMedicationsSectionEntriesOptional2 }));
 			}

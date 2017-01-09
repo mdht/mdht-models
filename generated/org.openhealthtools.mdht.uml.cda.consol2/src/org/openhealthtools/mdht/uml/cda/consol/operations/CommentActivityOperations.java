@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.CommentActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -116,8 +117,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT_REFERENCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CommentActivityCommentActivityTextReference"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityTextReference"),
 						new Object[] { commentActivity }));
 			}
 
@@ -182,8 +182,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT_REFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CommentActivityCommentActivityTextReferenceValue"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityTextReferenceValue"),
 						new Object[] { commentActivity }));
 			}
 
@@ -246,8 +245,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_REFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CommentActivityCommentActivityReferenceValue"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityReferenceValue"),
 						new Object[] { commentActivity }));
 			}
 
@@ -310,8 +308,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CommentActivityCommentActivityTemplateId"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityTemplateId"),
 						new Object[] { commentActivity }));
 			}
 
@@ -374,8 +371,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CommentActivityCommentActivityClassCode"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityClassCode"),
 						new Object[] { commentActivity }));
 			}
 
@@ -438,8 +434,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CommentActivityCommentActivityMoodCode"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityMoodCode"),
 						new Object[] { commentActivity }));
 			}
 
@@ -504,8 +499,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CommentActivityCommentActivityCode"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityCode"),
 						new Object[] { commentActivity }));
 			}
 
@@ -568,8 +562,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CommentActivityCommentActivityText"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityText"),
 						new Object[] { commentActivity }));
 			}
 
@@ -634,8 +627,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMMENT_ACTIVITY__COMMENT_ACTIVITY_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CommentActivityCommentActivityAuthorParticipation"),
+						ConsolPlugin.INSTANCE.getString("CommentActivityCommentActivityAuthorParticipation"),
 						new Object[] { commentActivity }));
 			}
 

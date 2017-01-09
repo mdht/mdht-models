@@ -27,6 +27,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -119,8 +120,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProductInstanceProductInstanceTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceTemplateId"),
 						new Object[] { productInstance }));
 			}
 
@@ -183,8 +183,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProductInstanceProductInstanceClassCode"),
+						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceClassCode"),
 						new Object[] { productInstance }));
 			}
 
@@ -247,8 +246,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProductInstanceProductInstanceId"),
+						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceId"),
 						new Object[] { productInstance }));
 			}
 
@@ -311,8 +309,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProductInstanceProductInstanceScopingEntity"),
+						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceScopingEntity"),
 						new Object[] { productInstance }));
 			}
 
@@ -375,8 +372,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProductInstanceProductInstancePlayingDevice"),
+						ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstancePlayingDevice"),
 						new Object[] { productInstance }));
 			}
 
@@ -445,8 +441,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_SCOPING_ENTITY_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProductInstanceProductInstanceScopingEntityId"),
+							ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstanceScopingEntityId"),
 							new Object[] { eObject }));
 				}
 
@@ -516,8 +511,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_PLAYING_DEVICE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProductInstanceProductInstancePlayingDeviceCode"),
+							ConsolPlugin.INSTANCE.getString("ProductInstanceProductInstancePlayingDeviceCode"),
 							new Object[] { eObject }));
 				}
 

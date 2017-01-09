@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -166,7 +167,7 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicationsAdministeredSection2MedicationsAdministeredSectionTemplateId"),
 						new Object[] { medicationsAdministeredSection2 }));
 			}
@@ -233,7 +234,7 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicationsAdministeredSection2MedicationsAdministeredSectionCodeP"),
 						new Object[] { medicationsAdministeredSection2 }));
 			}
@@ -325,7 +326,7 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicationsAdministeredSection2MedicationsAdministeredSectionCode"),
 						new Object[] { medicationsAdministeredSection2 }));
 			}
@@ -392,7 +393,7 @@ public class MedicationsAdministeredSection2Operations extends MedicationsAdmini
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_ADMINISTERED_SECTION2__MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicationsAdministeredSection2MedicationsAdministeredSectionMedicationActivity"),
 						new Object[] { medicationsAdministeredSection2 }));
 			}

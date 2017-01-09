@@ -29,6 +29,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -124,8 +125,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"EntryReferenceEntryReferenceTemplateId"),
+						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceTemplateId"),
 						new Object[] { entryReference }));
 			}
 
@@ -188,8 +188,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"EntryReferenceEntryReferenceClassCode"),
+						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceClassCode"),
 						new Object[] { entryReference }));
 			}
 
@@ -252,8 +251,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"EntryReferenceEntryReferenceMoodCode"),
+						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceMoodCode"),
 						new Object[] { entryReference }));
 			}
 
@@ -316,8 +314,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"EntryReferenceEntryReferenceId"),
+						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceId"),
 						new Object[] { entryReference }));
 			}
 
@@ -380,8 +377,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"EntryReferenceEntryReferenceCode"),
+						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceCode"),
 						new Object[] { entryReference }));
 			}
 
@@ -446,8 +442,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"EntryReferenceEntryReferenceStatusCode"),
+						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceStatusCode"),
 						new Object[] { entryReference }));
 			}
 
@@ -510,8 +505,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"EntryReferenceEntryReferenceStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceStatusCodeP"),
 						new Object[] { entryReference }));
 			}
 
@@ -584,8 +578,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_II_NULL_FLAVOR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"EntryReferenceEntryReferenceIINullFlavor"),
+							ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceIINullFlavor"),
 							new Object[] { eObject }));
 				}
 
@@ -657,8 +650,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_CD_NULL_FLAVOR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"EntryReferenceEntryReferenceCDNullFlavor"),
+							ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceCDNullFlavor"),
 							new Object[] { eObject }));
 				}
 
@@ -728,8 +720,7 @@ public class EntryReferenceOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ENTRY_REFERENCE__ENTRY_REFERENCE_CD_NULL_FLAVOR_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"EntryReferenceEntryReferenceCDNullFlavorP"),
+							ConsolPlugin.INSTANCE.getString("EntryReferenceEntryReferenceCDNullFlavorP"),
 							new Object[] { eObject }));
 				}
 

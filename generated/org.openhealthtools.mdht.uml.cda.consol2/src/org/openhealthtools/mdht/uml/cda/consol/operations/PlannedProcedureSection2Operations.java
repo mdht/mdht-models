@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedureSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -163,8 +164,7 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedProcedureSection2PlannedProcedureSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionTemplateId"),
 						new Object[] { plannedProcedureSection2 }));
 			}
 
@@ -228,8 +228,7 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedProcedureSection2PlannedProcedureSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionCodeP"),
 						new Object[] { plannedProcedureSection2 }));
 			}
 
@@ -316,8 +315,7 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedProcedureSection2PlannedProcedureSectionCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedProcedureSection2PlannedProcedureSectionCode"),
 						new Object[] { plannedProcedureSection2 }));
 			}
 
@@ -383,7 +381,7 @@ public class PlannedProcedureSection2Operations extends PlannedProcedureSectionO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_PROCEDURE_SECTION2__PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PlannedProcedureSection2PlannedProcedureSectionPlanOfCareActivityProcedure"),
 						new Object[] { plannedProcedureSection2 }));
 			}

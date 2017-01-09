@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -122,7 +123,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__FUNCTIONAL_STATUS_ORGANIZER2_SELF_CARE_ACTIVITIES,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusOrganizer2FunctionalStatusOrganizer2SelfCareActivities"),
 						new Object[] { functionalStatusOrganizer2 }));
 			}
@@ -189,7 +190,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__FUNCTIONAL_STATUS_ORGANIZER2_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusOrganizer2FunctionalStatusOrganizer2AuthorParticipation"),
 						new Object[] { functionalStatusOrganizer2 }));
 			}
@@ -353,8 +354,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_CODE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FunctionalStatusOrganizer2ResultOrganizerCodeValue"),
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2ResultOrganizerCodeValue"),
 						new Object[] { functionalStatusOrganizer2 }));
 			}
 
@@ -418,8 +418,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FunctionalStatusOrganizer2ResultOrganizerTemplateId"),
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2ResultOrganizerTemplateId"),
 						new Object[] { functionalStatusOrganizer2 }));
 			}
 
@@ -482,8 +481,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FunctionalStatusOrganizer2ResultOrganizerCode"),
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2ResultOrganizerCode"),
 						new Object[] { functionalStatusOrganizer2 }));
 			}
 
@@ -547,8 +545,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FunctionalStatusOrganizer2ResultOrganizerStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2ResultOrganizerStatusCodeP"),
 						new Object[] { functionalStatusOrganizer2 }));
 			}
 
@@ -634,8 +631,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FunctionalStatusOrganizer2ResultOrganizerStatusCode"),
+						ConsolPlugin.INSTANCE.getString("FunctionalStatusOrganizer2ResultOrganizerStatusCode"),
 						new Object[] { functionalStatusOrganizer2 }));
 			}
 
@@ -701,7 +697,7 @@ public class FunctionalStatusOrganizer2Operations extends FunctionalStatusResult
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_ORGANIZER2__FUNCTIONAL_STATUS_RESULT_ORGANIZER_FUNCTIONAL_STATUS_RESULT_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusOrganizer2FunctionalStatusResultOrganizerFunctionalStatusResultObservation"),
 						new Object[] { functionalStatusOrganizer2 }));
 			}

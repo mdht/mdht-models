@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PlannedEncounter2;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -131,7 +132,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_PARTICIPANT_SERVICE_DELIVERY_LOCATION_TYPE_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PlannedEncounter2PlannedEncounter2ParticipantServiceDeliveryLocationTypeCode"),
 						new Object[] { plannedEncounter2 }));
 			}
@@ -182,8 +183,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedEncounter2PlannedEncounter2Code"),
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2Code"),
 						new Object[] { plannedEncounter2 }));
 			}
 
@@ -269,8 +269,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedEncounter2PlannedEncounter2CodeP"),
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2CodeP"),
 						new Object[] { plannedEncounter2 }));
 			}
 
@@ -347,8 +346,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedEncounter2PlannedEncounter2StatusCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2StatusCode"),
 						new Object[] { plannedEncounter2 }));
 			}
 
@@ -411,8 +409,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedEncounter2PlannedEncounter2StatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2StatusCodeP"),
 						new Object[] { plannedEncounter2 }));
 			}
 
@@ -476,8 +473,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedEncounter2PlannedEncounter2EffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2EffectiveTime"),
 						new Object[] { plannedEncounter2 }));
 			}
 
@@ -540,8 +536,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_PERFORMER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedEncounter2PlannedEncounter2Performer"),
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2Performer"),
 						new Object[] { plannedEncounter2 }));
 			}
 
@@ -606,8 +601,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_SERVICE_DELIVERY_LOCATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedEncounter2PlannedEncounter2ServiceDeliveryLocation"),
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2ServiceDeliveryLocation"),
 						new Object[] { plannedEncounter2 }));
 			}
 
@@ -672,8 +666,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_PRIORITY_PREFERENCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedEncounter2PlannedEncounter2PriorityPreference"),
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2PriorityPreference"),
 						new Object[] { plannedEncounter2 }));
 			}
 
@@ -736,8 +729,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_INDICATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedEncounter2PlannedEncounter2Indication2"),
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2Indication2"),
 						new Object[] { plannedEncounter2 }));
 			}
 
@@ -802,8 +794,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedEncounter2PlannedEncounter2AuthorParticipation"),
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlannedEncounter2AuthorParticipation"),
 						new Object[] { plannedEncounter2 }));
 			}
 
@@ -872,7 +863,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PLANNED_ENCOUNTER2__PLANNED_ENCOUNTER2_PERFORMER_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PlannedEncounter2PlannedEncounter2PerformerAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -1079,8 +1070,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedEncounter2PlanOfCareActivityEncounterTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlanOfCareActivityEncounterTemplateId"),
 						new Object[] { plannedEncounter2 }));
 			}
 
@@ -1147,8 +1137,7 @@ public class PlannedEncounter2Operations extends PlanOfCareActivityEncounterOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ENCOUNTER2__PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedEncounter2PlanOfCareActivityEncounterMoodCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedEncounter2PlanOfCareActivityEncounterMoodCode"),
 						new Object[] { plannedEncounter2 }));
 			}
 

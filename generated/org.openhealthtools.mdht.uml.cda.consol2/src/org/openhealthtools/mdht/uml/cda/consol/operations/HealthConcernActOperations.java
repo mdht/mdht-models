@@ -55,6 +55,7 @@ import org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservati
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -217,8 +218,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActTemplateId"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActTemplateId"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -281,8 +281,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActClassCode"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActClassCode"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -345,8 +344,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActMoodCode"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActMoodCode"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -409,8 +407,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActId"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActId"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -473,8 +470,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActCodeP"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActCodeP"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -560,8 +556,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActCode"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActCode"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -626,8 +621,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActStatusCode"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActStatusCode"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -690,8 +684,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActStatusCodeP"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -754,8 +747,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActEffectiveTime"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -820,8 +812,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_HEALTH_CONCERN_ACT_ER_REFR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActHealthConcernActErRefr"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActHealthConcernActErRefr"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -886,8 +877,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_HEALTH_CONCERN_ACT_ER_COMP,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActHealthConcernActErComp"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActHealthConcernActErComp"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -952,8 +942,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ASSESSMENT_SCALE_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActAssessmentScaleObservation"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActAssessmentScaleObservation"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -1018,8 +1007,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_FAMILY_HISTORY_ORGANIZER2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActFamilyHistoryOrganizer2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActFamilyHistoryOrganizer2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -1084,8 +1072,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_NUTRITION_ASSESSMENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActNutritionAssessment"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActNutritionAssessment"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -1150,8 +1137,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PREGNANCY_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActPregnancyObservation"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActPregnancyObservation"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -1216,8 +1202,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CAREGIVER_CHARACTERISTICS,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActCaregiverCharacteristics"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActCaregiverCharacteristics"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -1282,7 +1267,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CULTURAL_AND_RELIGIOUS_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HealthConcernActHealthConcernActCulturalAndReligiousObservation"),
 						new Object[] { healthConcernAct }));
 			}
@@ -1348,7 +1333,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_CHARACTERISTICS_OF_HOME_ENVIRONMENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HealthConcernActHealthConcernActCharacteristicsOfHomeEnvironment"),
 						new Object[] { healthConcernAct }));
 			}
@@ -1414,8 +1399,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_NUTRITIONAL_STATUS_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActNutritionalStatusObservation"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActNutritionalStatusObservation"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -1480,8 +1464,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ENTRY_REFERENCE_GENERAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActEntryReferenceGeneral"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActEntryReferenceGeneral"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -1546,8 +1529,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActAuthorParticipation"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActAuthorParticipation"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -1612,8 +1594,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_SELF_CARE_ACTIVITIES,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActSelfCareActivities"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActSelfCareActivities"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -1676,8 +1657,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_SENSORY_STATUS,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActSensoryStatus"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActSensoryStatus"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -1742,7 +1722,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_LONGITUDINAL_CARE_WOUND_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HealthConcernActHealthConcernActLongitudinalCareWoundObservation"),
 						new Object[] { healthConcernAct }));
 			}
@@ -1808,8 +1788,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PRIORITY_PREFERENCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActPriorityPreference"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActPriorityPreference"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -1874,8 +1853,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PROBLEM_OBSERVATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActProblemObservation2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActProblemObservation2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -1940,8 +1918,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ALLERGY_OBSERVATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActAllergyObservation2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActAllergyObservation2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2006,8 +1983,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_MENTAL_STATUS_OBSERVATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActMentalStatusObservation2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActMentalStatusObservation2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2072,8 +2048,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_SMOKING_STATUS_MEANINGFUL_USE2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActSmokingStatusMeaningfulUse2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActSmokingStatusMeaningfulUse2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2138,8 +2113,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_ENCOUNTER_DIAGNOSIS2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActEncounterDiagnosis2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActEncounterDiagnosis2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2204,8 +2178,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_FUNCTIONAL_STATUS_OBSERVATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActFunctionalStatusObservation2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActFunctionalStatusObservation2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2270,8 +2243,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_HOSPITAL_ADMISSION_DIAGNOSIS2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActHospitalAdmissionDiagnosis2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActHospitalAdmissionDiagnosis2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2336,8 +2308,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_POSTPROCEDURE_DIAGNOSIS2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActPostprocedureDiagnosis2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActPostprocedureDiagnosis2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2402,8 +2373,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PREOPERATIVE_DIAGNOSIS2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActPreoperativeDiagnosis2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActPreoperativeDiagnosis2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2468,8 +2438,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_REACTION_OBSERVATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActReactionObservation2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActReactionObservation2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2534,8 +2503,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_RESULT_OBSERVATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActResultObservation2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActResultObservation2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2600,8 +2568,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_SOCIAL_HISTORY_OBSERVATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActSocialHistoryObservation2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActSocialHistoryObservation2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2666,7 +2633,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HealthConcernActHealthConcernActSubstanceOrDeviceAllergyObservation2"),
 						new Object[] { healthConcernAct }));
 			}
@@ -2730,8 +2697,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_TOBACCO_USE2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActTobaccoUse2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActTobaccoUse2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2796,8 +2762,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_VITAL_SIGN_OBSERVATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActVitalSignObservation2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActVitalSignObservation2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2862,8 +2827,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PROBLEM_OBSERVATION2_SUPPORT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActProblemObservation2Support"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActProblemObservation2Support"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2928,8 +2892,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_RESULT_ORGANIZER2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActResultOrganizer2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActResultOrganizer2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -2994,8 +2957,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_PROBLEM_CONCERN_ACT2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActProblemConcernAct2"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActProblemConcernAct2"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -3058,8 +3020,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_REFERENCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HealthConcernActHealthConcernActReference"),
+						ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActReference"),
 						new Object[] { healthConcernAct }));
 			}
 
@@ -3128,8 +3089,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_REFERENCE_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"HealthConcernActHealthConcernActReferenceTypeCode"),
+							ConsolPlugin.INSTANCE.getString("HealthConcernActHealthConcernActReferenceTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -3199,7 +3159,7 @@ public class HealthConcernActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.HEALTH_CONCERN_ACT__HEALTH_CONCERN_ACT_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"HealthConcernActHealthConcernActReferenceExternalDocumentReference"),
 							new Object[] { eObject }));
 				}

@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -142,7 +143,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_VALUE_DATATYPE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultObservationCognitiveStatusResultObservationValueDatatype"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
@@ -207,8 +208,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CognitiveStatusResultObservationResultObservationCodeP"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationCodeP"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -287,7 +287,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_AUTHOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultObservationCognitiveStatusResultObservationAuthor"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
@@ -354,7 +354,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultObservationCognitiveStatusResultObservationNonMedicinalSupplyActivity"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
@@ -421,7 +421,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultObservationCognitiveStatusResultObservationCaregiverCharacteristics"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
@@ -488,7 +488,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultObservationCognitiveStatusResultObservationAssessmentScaleObservation"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
@@ -555,7 +555,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultObservationCognitiveStatusResultObservationReferenceRange"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
@@ -626,7 +626,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CognitiveStatusResultObservationCognitiveStatusResultObservationReferenceRangeObservationRangeNoCode"),
 							new Object[] { eObject }));
 				}
@@ -698,7 +698,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__COGNITIVE_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CognitiveStatusResultObservationCognitiveStatusResultObservationReferenceRangeObservationRange"),
 							new Object[] { eObject }));
 				}
@@ -914,7 +914,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT_REFERENCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultObservationResultObservationTextReference"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
@@ -981,7 +981,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT_REFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultObservationResultObservationTextReferenceValue"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
@@ -1047,8 +1047,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CognitiveStatusResultObservationResultObservationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationTemplateId"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1113,8 +1112,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CognitiveStatusResultObservationResultObservationClassCode"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationClassCode"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1179,8 +1177,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CognitiveStatusResultObservationResultObservationMoodCode"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationMoodCode"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1243,8 +1240,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CognitiveStatusResultObservationResultObservationId"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationId"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1319,8 +1315,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CognitiveStatusResultObservationResultObservationCode"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationCode"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1384,8 +1379,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CognitiveStatusResultObservationResultObservationText"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationText"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1450,8 +1444,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CognitiveStatusResultObservationResultObservationStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationStatusCodeP"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1539,8 +1532,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CognitiveStatusResultObservationResultObservationStatusCode"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationStatusCode"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1605,7 +1597,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultObservationResultObservationEffectiveTime"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
@@ -1670,8 +1662,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CognitiveStatusResultObservationResultObservationValue"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationValue"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1737,7 +1728,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_INTERPRETATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultObservationResultObservationInterpretationCode"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
@@ -1803,8 +1794,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_METHOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CognitiveStatusResultObservationResultObservationMethodCode"),
+						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultObservationResultObservationMethodCode"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}
 
@@ -1870,7 +1860,7 @@ public class CognitiveStatusResultObservationOperations extends ResultObservatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TARGET_SITE_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultObservationResultObservationTargetSiteCode"),
 						new Object[] { cognitiveStatusResultObservation }));
 			}

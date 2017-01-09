@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,7 +115,7 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_OBSERVATION__PLAN_OF_CARE_ACTIVITY_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PlanOfCareActivityObservationPlanOfCareActivityObservationTemplateId"),
 						new Object[] { planOfCareActivityObservation }));
 			}
@@ -181,7 +182,7 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_OBSERVATION__PLAN_OF_CARE_ACTIVITY_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PlanOfCareActivityObservationPlanOfCareActivityObservationClassCode"),
 						new Object[] { planOfCareActivityObservation }));
 			}
@@ -250,7 +251,7 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_OBSERVATION__PLAN_OF_CARE_ACTIVITY_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PlanOfCareActivityObservationPlanOfCareActivityObservationMoodCode"),
 						new Object[] { planOfCareActivityObservation }));
 			}
@@ -317,8 +318,7 @@ public class PlanOfCareActivityObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_OBSERVATION__PLAN_OF_CARE_ACTIVITY_OBSERVATION_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlanOfCareActivityObservationPlanOfCareActivityObservationId"),
+						ConsolPlugin.INSTANCE.getString("PlanOfCareActivityObservationPlanOfCareActivityObservationId"),
 						new Object[] { planOfCareActivityObservation }));
 			}
 

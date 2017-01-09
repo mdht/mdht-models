@@ -785,10 +785,10 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #retrieveFunctionalStatusSection(SummaryOfCareRecord) <em>Retrieve
-	 * Functional Status Section</em>}' operation. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * The cached OCL expression body for the
+	 * '{@link #retrieveFunctionalStatusSection(SummaryOfCareRecord)
+	 * <em>Retrieve Functional Status Section</em>}' operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 *
 	 * @see #retrieveFunctionalStatusSection(SummaryOfCareRecord)
 	 * @generated
@@ -797,10 +797,10 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 	protected static final String RETRIEVE_FUNCTIONAL_STATUS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))->asSequence()->any(true).oclAsType(consol::FunctionalStatusSection)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #retrieveFunctionalStatusSection(SummaryOfCareRecord) <em>Retrieve
-	 * Functional Status Section</em>}' query operation. <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * The cached OCL query for the
+	 * '{@link #retrieveFunctionalStatusSection(SummaryOfCareRecord)
+	 * <em>Retrieve Functional Status Section</em>}' query operation. <!--
+	 * begin-user-doc --> <!-- end-user-doc -->
 	 *
 	 * @see #retrieveFunctionalStatusSection(SummaryOfCareRecord)
 	 * @generated
@@ -1190,8 +1190,8 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 	protected static final String GET_SOCIAL_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::SocialHistorySection))->asSequence()->any(true).oclAsType(mu2consol::SocialHistorySection)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getSocialHistorySection(SummaryOfCareRecord) <em>Get Social
+	 * The cached OCL query for the
+	 * '{@link #getSocialHistorySection(SummaryOfCareRecord) <em>Get Social
 	 * History Section</em>}' query operation. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
 	 *
@@ -1353,8 +1353,8 @@ public class SummaryOfCareRecordOperations extends GeneralHeaderConstraintsOpera
 	protected static final String GET_FUNCTIONAL_STATUS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))->asSequence()->any(true).oclAsType(consol::FunctionalStatusSection)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getFunctionalStatusSection(SummaryOfCareRecord) <em>Get
+	 * The cached OCL query for the
+	 * '{@link #getFunctionalStatusSection(SummaryOfCareRecord) <em>Get
 	 * Functional Status Section</em>}' query operation. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 *

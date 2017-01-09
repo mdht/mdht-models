@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedAct2;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -126,8 +127,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_CODE_FROM_LOINC_OR_SNOMED,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedAct2PlannedAct2CodeFromLoincOrSnomed"),
+						ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2CodeFromLoincOrSnomed"),
 						new Object[] { plannedAct2 }));
 			}
 
@@ -190,9 +190,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedAct2PlannedAct2Code"),
-						new Object[] { plannedAct2 }));
+						ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2Code"), new Object[] { plannedAct2 }));
 			}
 
 			return false;
@@ -255,8 +253,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedAct2PlannedAct2StatusCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2StatusCode"),
 						new Object[] { plannedAct2 }));
 			}
 
@@ -319,8 +316,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedAct2PlannedAct2StatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2StatusCodeP"),
 						new Object[] { plannedAct2 }));
 			}
 
@@ -383,8 +379,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedAct2PlannedAct2EffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2EffectiveTime"),
 						new Object[] { plannedAct2 }));
 			}
 
@@ -447,8 +442,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_INDICATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedAct2PlannedAct2Indication2"),
+						ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2Indication2"),
 						new Object[] { plannedAct2 }));
 			}
 
@@ -511,8 +505,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_INSTRUCTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedAct2PlannedAct2Instruction2"),
+						ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2Instruction2"),
 						new Object[] { plannedAct2 }));
 			}
 
@@ -575,8 +568,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedAct2PlannedAct2AuthorParticipation"),
+						ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2AuthorParticipation"),
 						new Object[] { plannedAct2 }));
 			}
 
@@ -639,8 +631,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_PERFORMER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedAct2PlannedAct2Performer"),
+						ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2Performer"),
 						new Object[] { plannedAct2 }));
 			}
 
@@ -703,8 +694,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ACT2__PLANNED_ACT2_PRIORITY_PREFERENCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedAct2PlannedAct2PriorityPreference"),
+						ConsolPlugin.INSTANCE.getString("PlannedAct2PlannedAct2PriorityPreference"),
 						new Object[] { plannedAct2 }));
 			}
 
@@ -906,8 +896,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ACT2__PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedAct2PlanOfCareActivityActTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PlannedAct2PlanOfCareActivityActTemplateId"),
 						new Object[] { plannedAct2 }));
 			}
 
@@ -973,8 +962,7 @@ public class PlannedAct2Operations extends PlanOfCareActivityActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_ACT2__PLAN_OF_CARE_ACTIVITY_ACT_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedAct2PlanOfCareActivityActMoodCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedAct2PlanOfCareActivityActMoodCode"),
 						new Object[] { plannedAct2 }));
 			}
 

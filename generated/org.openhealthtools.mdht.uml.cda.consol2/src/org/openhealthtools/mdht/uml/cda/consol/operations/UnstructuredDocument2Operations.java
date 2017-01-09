@@ -28,6 +28,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -128,8 +129,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_RECORD_TARGET,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"UnstructuredDocument2UnstructuredDocument2RecordTarget"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2RecordTarget"),
 						new Object[] { unstructuredDocument2 }));
 			}
 
@@ -193,8 +193,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_CUSTODIAN,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"UnstructuredDocument2UnstructuredDocument2Custodian"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2Custodian"),
 						new Object[] { unstructuredDocument2 }));
 			}
 
@@ -258,8 +257,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"UnstructuredDocument2UnstructuredDocument2Component"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2UnstructuredDocument2Component"),
 						new Object[] { unstructuredDocument2 }));
 			}
 
@@ -328,7 +326,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocument2UnstructuredDocument2RecordTargetPatientRoleId"),
 							new Object[] { eObject }));
 				}
@@ -399,7 +397,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_RECORD_TARGET_PATIENT_ROLE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocument2UnstructuredDocument2RecordTargetPatientRole"),
 							new Object[] { eObject }));
 				}
@@ -470,7 +468,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocument2UnstructuredDocument2CustodianAssignedCustodianRepresentedCustodianOrganization"),
 							new Object[] { eObject }));
 				}
@@ -541,7 +539,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_CUSTODIAN_ASSIGNED_CUSTODIAN,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocument2UnstructuredDocument2CustodianAssignedCustodian"),
 							new Object[] { eObject }));
 				}
@@ -612,7 +610,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_ED_MEDIA_TYPE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyEDMediaType"),
 							new Object[] { eObject }));
 				}
@@ -683,7 +681,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_HAS_REFERENCE_OR_REPRESENTATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyHasReferenceOrRepresentation"),
 							new Object[] { eObject }));
 				}
@@ -754,7 +752,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_MEDIA_TYPE_FILE_FORMATS,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyMediaTypeFileFormats"),
 							new Object[] { eObject }));
 				}
@@ -825,7 +823,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY_TEXT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBodyText"),
 							new Object[] { eObject }));
 				}
@@ -896,7 +894,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT2__UNSTRUCTURED_DOCUMENT2_COMPONENT_NON_XML_BODY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocument2UnstructuredDocument2ComponentNonXMLBody"),
 							new Object[] { eObject }));
 				}
@@ -963,8 +961,7 @@ public class UnstructuredDocument2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"UnstructuredDocument2GeneralHeaderConstraintsTemplateId"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocument2GeneralHeaderConstraintsTemplateId"),
 						new Object[] { unstructuredDocument2 }));
 			}
 

@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,7 +115,7 @@ public class PlanOfCareActivityProcedureOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_PROCEDURE__PLAN_OF_CARE_ACTIVITY_PROCEDURE_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PlanOfCareActivityProcedurePlanOfCareActivityProcedureTemplateId"),
 						new Object[] { planOfCareActivityProcedure }));
 			}
@@ -181,7 +182,7 @@ public class PlanOfCareActivityProcedureOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_PROCEDURE__PLAN_OF_CARE_ACTIVITY_PROCEDURE_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PlanOfCareActivityProcedurePlanOfCareActivityProcedureClassCode"),
 						new Object[] { planOfCareActivityProcedure }));
 			}
@@ -250,7 +251,7 @@ public class PlanOfCareActivityProcedureOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_PROCEDURE__PLAN_OF_CARE_ACTIVITY_PROCEDURE_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PlanOfCareActivityProcedurePlanOfCareActivityProcedureMoodCode"),
 						new Object[] { planOfCareActivityProcedure }));
 			}
@@ -316,8 +317,7 @@ public class PlanOfCareActivityProcedureOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_PROCEDURE__PLAN_OF_CARE_ACTIVITY_PROCEDURE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlanOfCareActivityProcedurePlanOfCareActivityProcedureId"),
+						ConsolPlugin.INSTANCE.getString("PlanOfCareActivityProcedurePlanOfCareActivityProcedureId"),
 						new Object[] { planOfCareActivityProcedure }));
 			}
 

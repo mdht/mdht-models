@@ -26,6 +26,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleSupportingObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -136,7 +137,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_CODE_CODE_SYSTEM,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AssessmentScaleObservationAssessmentScaleObservationCodeCodeSystem"),
 						new Object[] { assessmentScaleObservation }));
 			}
@@ -203,7 +204,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_INTERPRETATION_CODE_TRANSLATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AssessmentScaleObservationAssessmentScaleObservationInterpretationCodeTranslation"),
 						new Object[] { assessmentScaleObservation }));
 			}
@@ -270,7 +271,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AssessmentScaleObservationAssessmentScaleObservationTemplateId"),
 						new Object[] { assessmentScaleObservation }));
 			}
@@ -337,7 +338,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AssessmentScaleObservationAssessmentScaleObservationClassCode"),
 						new Object[] { assessmentScaleObservation }));
 			}
@@ -404,8 +405,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationAssessmentScaleObservationMoodCode"),
+						ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationAssessmentScaleObservationMoodCode"),
 						new Object[] { assessmentScaleObservation }));
 			}
 
@@ -469,8 +469,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationAssessmentScaleObservationCode"),
+						ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationAssessmentScaleObservationCode"),
 						new Object[] { assessmentScaleObservation }));
 			}
 
@@ -536,7 +535,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_DERIVATION_EXPR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AssessmentScaleObservationAssessmentScaleObservationDerivationExpr"),
 						new Object[] { assessmentScaleObservation }));
 			}
@@ -603,7 +602,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AssessmentScaleObservationAssessmentScaleObservationEffectiveTime"),
 						new Object[] { assessmentScaleObservation }));
 			}
@@ -668,8 +667,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationAssessmentScaleObservationId"),
+						ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationAssessmentScaleObservationId"),
 						new Object[] { assessmentScaleObservation }));
 			}
 
@@ -735,7 +733,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_INTERPRETATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AssessmentScaleObservationAssessmentScaleObservationInterpretationCode"),
 						new Object[] { assessmentScaleObservation }));
 			}
@@ -803,7 +801,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AssessmentScaleObservationAssessmentScaleObservationStatusCode"),
 						new Object[] { assessmentScaleObservation }));
 			}
@@ -870,7 +868,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AssessmentScaleObservationAssessmentScaleObservationStatusCodeP"),
 						new Object[] { assessmentScaleObservation }));
 			}
@@ -936,8 +934,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationAssessmentScaleObservationValue"),
+						ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationAssessmentScaleObservationValue"),
 						new Object[] { assessmentScaleObservation }));
 			}
 
@@ -1003,8 +1000,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_AUTHOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AssessmentScaleObservationAssessmentScaleObservationAuthor"),
+						ConsolPlugin.INSTANCE.getString("AssessmentScaleObservationAssessmentScaleObservationAuthor"),
 						new Object[] { assessmentScaleObservation }));
 			}
 
@@ -1070,7 +1066,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AssessmentScaleObservationAssessmentScaleObservationReferenceRange"),
 						new Object[] { assessmentScaleObservation }));
 			}
@@ -1137,7 +1133,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_ASSESSMENT_SCALE_SUPPORTING_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AssessmentScaleObservationAssessmentScaleObservationAssessmentScaleSupportingObservation"),
 						new Object[] { assessmentScaleObservation }));
 			}
@@ -1208,7 +1204,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT_REFERENCE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AssessmentScaleObservationAssessmentScaleObservationReferenceRangeObservationRangeTextReference"),
 							new Object[] { eObject }));
 				}
@@ -1280,7 +1276,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT_REFERENCE_VALUE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AssessmentScaleObservationAssessmentScaleObservationReferenceRangeObservationRangeTextReferenceValue"),
 							new Object[] { eObject }));
 				}
@@ -1352,7 +1348,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_REFERENCE_VALUE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AssessmentScaleObservationAssessmentScaleObservationReferenceRangeObservationRangeReferenceValue"),
 							new Object[] { eObject }));
 				}
@@ -1424,7 +1420,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_TEXT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AssessmentScaleObservationAssessmentScaleObservationReferenceRangeObservationRangeText"),
 							new Object[] { eObject }));
 				}
@@ -1496,7 +1492,7 @@ public class AssessmentScaleObservationOperations extends ClinicalStatementOpera
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ASSESSMENT_SCALE_OBSERVATION__ASSESSMENT_SCALE_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AssessmentScaleObservationAssessmentScaleObservationReferenceRangeObservationRange"),
 							new Object[] { eObject }));
 				}

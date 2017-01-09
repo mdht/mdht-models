@@ -29,6 +29,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.USRealmHeaderPatientGeneratedDocument;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -183,7 +184,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTarget"),
 						new Object[] { usRealmHeaderPatientGeneratedDocument }));
 			}
@@ -250,7 +251,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthor"),
 						new Object[] { usRealmHeaderPatientGeneratedDocument }));
 			}
@@ -317,7 +318,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDataEnterer"),
 						new Object[] { usRealmHeaderPatientGeneratedDocument }));
 			}
@@ -384,7 +385,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformant"),
 						new Object[] { usRealmHeaderPatientGeneratedDocument }));
 			}
@@ -451,7 +452,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentCustodian"),
 						new Object[] { usRealmHeaderPatientGeneratedDocument }));
 			}
@@ -518,7 +519,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformationRecipient"),
 						new Object[] { usRealmHeaderPatientGeneratedDocument }));
 			}
@@ -585,7 +586,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentLegalAuthenticator"),
 						new Object[] { usRealmHeaderPatientGeneratedDocument }));
 			}
@@ -652,7 +653,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthenticator"),
 						new Object[] { usRealmHeaderPatientGeneratedDocument }));
 			}
@@ -719,7 +720,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentParticipant"),
 						new Object[] { usRealmHeaderPatientGeneratedDocument }));
 			}
@@ -786,7 +787,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInFulfillmentOf"),
 						new Object[] { usRealmHeaderPatientGeneratedDocument }));
 			}
@@ -853,7 +854,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOf"),
 						new Object[] { usRealmHeaderPatientGeneratedDocument }));
 			}
@@ -924,7 +925,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianId"),
 							new Object[] { eObject }));
 				}
@@ -996,7 +997,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCodeP"),
 							new Object[] { eObject }));
 				}
@@ -1094,7 +1095,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardianCode"),
 							new Object[] { eObject }));
 				}
@@ -1166,7 +1167,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PREFERENCE_IND,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd"),
 							new Object[] { eObject }));
 				}
@@ -1238,7 +1239,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_IF_MORE_THAN_ONE_LANG_COMM,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientIfMoreThanOneLangComm"),
 							new Object[] { eObject }));
 				}
@@ -1310,7 +1311,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientGuardian"),
 							new Object[] { eObject }));
 				}
@@ -1382,7 +1383,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatientLanguageCommunication"),
 							new Object[] { eObject }));
 				}
@@ -1454,7 +1455,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleId"),
 							new Object[] { eObject }));
 				}
@@ -1526,7 +1527,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PATIENT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRolePatient"),
 							new Object[] { eObject }));
 				}
@@ -1598,7 +1599,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE_PROVIDER_ORGANIZATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRoleProviderOrganization"),
 							new Object[] { eObject }));
 				}
@@ -1670,7 +1671,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentRecordTargetPatientRole"),
 							new Object[] { eObject }));
 				}
@@ -1742,7 +1743,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE_SYSTEM_AND_TERMINOLOGY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECodeSystemAndTerminology"),
 							new Object[] { eObject }));
 				}
@@ -1814,7 +1815,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCECode"),
 							new Object[] { eObject }));
 				}
@@ -1886,7 +1887,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorId"),
 							new Object[] { eObject }));
 				}
@@ -1958,7 +1959,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthorCode"),
 							new Object[] { eObject }));
 				}
@@ -2030,7 +2031,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthorAssignedAuthor"),
 							new Object[] { eObject }));
 				}
@@ -2102,7 +2103,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -2200,7 +2201,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -2272,7 +2273,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DATA_ENTERER_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDataEntererAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -2344,7 +2345,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -2442,7 +2443,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -2514,7 +2515,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_HAS_RELATED_ENTITY_OR_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformantHasRelatedEntityOrAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -2586,7 +2587,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMANT_RELATED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformantRelatedEntity"),
 							new Object[] { eObject }));
 				}
@@ -2658,7 +2659,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganizationId"),
 							new Object[] { eObject }));
 				}
@@ -2730,7 +2731,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN_REPRESENTED_CUSTODIAN_ORGANIZATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodianRepresentedCustodianOrganization"),
 							new Object[] { eObject }));
 				}
@@ -2802,7 +2803,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentCustodianAssignedCustodian"),
 							new Object[] { eObject }));
 				}
@@ -2874,7 +2875,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_II_ROOT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientIIRoot"),
 							new Object[] { eObject }));
 				}
@@ -2946,7 +2947,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipientId"),
 							new Object[] { eObject }));
 				}
@@ -3018,7 +3019,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_INFORMATION_RECIPIENT_INTENDED_RECIPIENT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInformationRecipientIntendedRecipient"),
 							new Object[] { eObject }));
 				}
@@ -3090,7 +3091,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE_SYSTEM_AND_TERMINOLOGY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECodeSystemAndTerminology"),
 							new Object[] { eObject }));
 				}
@@ -3162,7 +3163,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCECode"),
 							new Object[] { eObject }));
 				}
@@ -3234,7 +3235,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityId"),
 							new Object[] { eObject }));
 				}
@@ -3306,7 +3307,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -3378,7 +3379,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentLegalAuthenticatorAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -3450,7 +3451,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityId"),
 							new Object[] { eObject }));
 				}
@@ -3522,7 +3523,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -3620,7 +3621,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -3692,7 +3693,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_AUTHENTICATOR_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentAuthenticatorAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -3764,7 +3765,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -3862,7 +3863,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -3934,7 +3935,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_IF_TYPE_CODE_IND_THEN_AE_CLASS_CODE_FROM_IND_ROLECLASS_CODES,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentParticipantIfTypeCodeINDThenAEClassCodeFromINDRoleclassCodes"),
 							new Object[] { eObject }));
 				}
@@ -4006,7 +4007,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentParticipantTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -4078,7 +4079,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_PARTICIPANT_ASSOCIATED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentParticipantAssociatedEntity"),
 							new Object[] { eObject }));
 				}
@@ -4150,7 +4151,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF_ORDER_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrderId"),
 							new Object[] { eObject }));
 				}
@@ -4222,7 +4223,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_IN_FULFILLMENT_OF_ORDER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentInFulfillmentOfOrder"),
 							new Object[] { eObject }));
 				}
@@ -4294,7 +4295,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityId"),
 							new Object[] { eObject }));
 				}
@@ -4366,7 +4367,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -4464,7 +4465,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -4536,7 +4537,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCodeP"),
 							new Object[] { eObject }));
 				}
@@ -4634,7 +4635,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerFunctionCode"),
 							new Object[] { eObject }));
 				}
@@ -4706,7 +4707,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformerAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -4778,7 +4779,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventCode"),
 							new Object[] { eObject }));
 				}
@@ -4850,7 +4851,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEventPerformer"),
 							new Object[] { eObject }));
 				}
@@ -4922,7 +4923,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"USRealmHeaderPatientGeneratedDocumentUSRealmHeaderPatientGeneratedDocumentDocumentationOfServiceEvent"),
 							new Object[] { eObject }));
 				}
@@ -4990,7 +4991,7 @@ public class USRealmHeaderPatientGeneratedDocumentOperations extends USRealmHead
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.US_REALM_HEADER_PATIENT_GENERATED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"USRealmHeaderPatientGeneratedDocumentGeneralHeaderConstraintsTemplateId"),
 						new Object[] { usRealmHeaderPatientGeneratedDocument }));
 			}

@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.PolicyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -100,8 +101,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CoverageActivity2CoverageActivityCodeP"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityCodeP"),
 						new Object[] { coverageActivity2 }));
 			}
 
@@ -158,8 +158,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CoverageActivity2CoverageActivity2EntryRelationship"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivity2EntryRelationship"),
 						new Object[] { coverageActivity2 }));
 			}
 
@@ -207,7 +206,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_INT_VALUE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CoverageActivity2CoverageActivity2EntryRelationshipINTValue"),
 							new Object[] { eObject }));
 				}
@@ -257,7 +256,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CoverageActivity2CoverageActivity2EntryRelationshipTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -307,7 +306,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CoverageActivity2CoverageActivity2EntryRelationshipSequenceNumber"),
 							new Object[] { eObject }));
 				}
@@ -357,7 +356,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY2_ENTRY_RELATIONSHIP_POLICY_ACTIVITY2,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CoverageActivity2CoverageActivity2EntryRelationshipPolicyActivity2"),
 							new Object[] { eObject }));
 				}
@@ -430,7 +429,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CoverageActivity2CoverageActivityCoverageActivityRelationshipSequenceNumber"),
 						new Object[] { coverageActivity2 }));
 			}
@@ -661,8 +660,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CoverageActivity2CoverageActivityTemplateId"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityTemplateId"),
 						new Object[] { coverageActivity2 }));
 			}
 
@@ -735,8 +733,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CoverageActivity2CoverageActivityCode"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityCode"),
 						new Object[] { coverageActivity2 }));
 			}
 
@@ -800,8 +797,7 @@ public class CoverageActivity2Operations extends CoverageActivityOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY2__COVERAGE_ACTIVITY_POLICY_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CoverageActivity2CoverageActivityPolicyActivity"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivity2CoverageActivityPolicyActivity"),
 						new Object[] { coverageActivity2 }));
 			}
 

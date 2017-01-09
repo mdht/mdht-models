@@ -27,6 +27,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicianofRecordParticipant;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -124,7 +125,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PhysicianofRecordParticipantPhysicianofRecordParticipantTemplateId"),
 						new Object[] { physicianofRecordParticipant }));
 			}
@@ -191,7 +192,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_TYPE_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PhysicianofRecordParticipantPhysicianofRecordParticipantTypeCode"),
 						new Object[] { physicianofRecordParticipant }));
 			}
@@ -258,7 +259,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntity"),
 						new Object[] { physicianofRecordParticipant }));
 			}
@@ -329,7 +330,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityAssignedPersonName"),
 							new Object[] { eObject }));
 				}
@@ -401,7 +402,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_DICOM_OR_NUCC_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode"),
 							new Object[] { eObject }));
 				}
@@ -473,7 +474,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityHasNationalProviderId"),
 							new Object[] { eObject }));
 				}
@@ -545,7 +546,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -617,7 +618,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityId"),
 							new Object[] { eObject }));
 				}
@@ -689,7 +690,7 @@ public class PhysicianofRecordParticipantOperations extends ParticipationOperati
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PHYSICIANOF_RECORD_PARTICIPANT__PHYSICIANOF_RECORD_PARTICIPANT_ASSIGNED_ENTITY_ASSIGNED_PERSON,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PhysicianofRecordParticipantPhysicianofRecordParticipantAssignedEntityAssignedPerson"),
 							new Object[] { eObject }));
 				}

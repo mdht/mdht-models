@@ -163,8 +163,8 @@ public class ResultsSectionOperations
 	protected static final String GET_MU2CONSOL_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::ResultOrganizer)).oclAsType(mu2consol::ResultOrganizer)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolResultOrganizers(ResultsSection) <em>Get Mu2consol
+	 * The cached OCL query for the
+	 * '{@link #getMu2consolResultOrganizers(ResultsSection) <em>Get Mu2consol
 	 * Result Organizers</em>}' query operation. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
 	 *

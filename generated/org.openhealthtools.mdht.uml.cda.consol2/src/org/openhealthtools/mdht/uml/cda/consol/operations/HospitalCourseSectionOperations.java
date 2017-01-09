@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalCourseSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,8 +115,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_COURSE_SECTION__HOSPITAL_COURSE_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HospitalCourseSectionHospitalCourseSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("HospitalCourseSectionHospitalCourseSectionTemplateId"),
 						new Object[] { hospitalCourseSection }));
 			}
 
@@ -180,8 +180,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_COURSE_SECTION__HOSPITAL_COURSE_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HospitalCourseSectionHospitalCourseSectionCode"),
+						ConsolPlugin.INSTANCE.getString("HospitalCourseSectionHospitalCourseSectionCode"),
 						new Object[] { hospitalCourseSection }));
 			}
 
@@ -245,8 +244,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_COURSE_SECTION__HOSPITAL_COURSE_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HospitalCourseSectionHospitalCourseSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("HospitalCourseSectionHospitalCourseSectionCodeP"),
 						new Object[] { hospitalCourseSection }));
 			}
 
@@ -310,8 +308,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_COURSE_SECTION__HOSPITAL_COURSE_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HospitalCourseSectionHospitalCourseSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("HospitalCourseSectionHospitalCourseSectionTitle"),
 						new Object[] { hospitalCourseSection }));
 			}
 
@@ -374,8 +371,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_COURSE_SECTION__HOSPITAL_COURSE_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HospitalCourseSectionHospitalCourseSectionText"),
+						ConsolPlugin.INSTANCE.getString("HospitalCourseSectionHospitalCourseSectionText"),
 						new Object[] { hospitalCourseSection }));
 			}
 

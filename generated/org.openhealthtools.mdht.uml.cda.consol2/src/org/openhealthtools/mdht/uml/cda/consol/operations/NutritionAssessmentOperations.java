@@ -19,6 +19,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -118,7 +119,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_VALUE_OF_TYPE_CD_IS_FROM_SNOMED,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionAssessmentNutritionAssessmentValueOfTypeCDIsFromSnomed"),
 						new Object[] { nutritionAssessment }));
 			}
@@ -183,8 +184,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionAssessmentNutritionAssessmentTemplateId"),
+						ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentTemplateId"),
 						new Object[] { nutritionAssessment }));
 			}
 
@@ -248,8 +248,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionAssessmentNutritionAssessmentClassCode"),
+						ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentClassCode"),
 						new Object[] { nutritionAssessment }));
 			}
 
@@ -312,8 +311,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionAssessmentNutritionAssessmentMoodCode"),
+						ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentMoodCode"),
 						new Object[] { nutritionAssessment }));
 			}
 
@@ -376,8 +374,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionAssessmentNutritionAssessmentId"),
+						ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentId"),
 						new Object[] { nutritionAssessment }));
 			}
 
@@ -440,8 +437,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionAssessmentNutritionAssessmentCodeP"),
+						ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentCodeP"),
 						new Object[] { nutritionAssessment }));
 			}
 
@@ -527,8 +523,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionAssessmentNutritionAssessmentCode"),
+						ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentCode"),
 						new Object[] { nutritionAssessment }));
 			}
 
@@ -593,8 +588,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionAssessmentNutritionAssessmentStatusCode"),
+						ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentStatusCode"),
 						new Object[] { nutritionAssessment }));
 			}
 
@@ -659,8 +653,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionAssessmentNutritionAssessmentStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentStatusCodeP"),
 						new Object[] { nutritionAssessment }));
 			}
 
@@ -725,8 +718,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionAssessmentNutritionAssessmentEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentEffectiveTime"),
 						new Object[] { nutritionAssessment }));
 			}
 
@@ -789,8 +781,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionAssessmentNutritionAssessmentValue"),
+						ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentValue"),
 						new Object[] { nutritionAssessment }));
 			}
 
@@ -855,8 +846,7 @@ public class NutritionAssessmentOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_ASSESSMENT__NUTRITION_ASSESSMENT_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionAssessmentNutritionAssessmentAuthorParticipation"),
+						ConsolPlugin.INSTANCE.getString("NutritionAssessmentNutritionAssessmentAuthorParticipation"),
 						new Object[] { nutritionAssessment }));
 			}
 

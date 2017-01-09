@@ -18,6 +18,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ObserverContext;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -105,8 +106,7 @@ public class ObserverContextOperations extends AuthorOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OBSERVER_CONTEXT__OBSERVER_CONTEXT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ObserverContextObserverContextTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ObserverContextObserverContextTemplateId"),
 						new Object[] { observerContext }));
 			}
 
@@ -169,8 +169,7 @@ public class ObserverContextOperations extends AuthorOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OBSERVER_CONTEXT__OBSERVER_CONTEXT_ASSIGNED_AUTHOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ObserverContextObserverContextAssignedAuthor"),
+						ConsolPlugin.INSTANCE.getString("ObserverContextObserverContextAssignedAuthor"),
 						new Object[] { observerContext }));
 			}
 

@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -93,8 +94,7 @@ public class PreoperativeDiagnosis2Operations extends PreoperativeDiagnosisOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREOPERATIVE_DIAGNOSIS2__PREOPERATIVE_DIAGNOSIS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PreoperativeDiagnosis2PreoperativeDiagnosisCodeP"),
+						ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosis2PreoperativeDiagnosisCodeP"),
 						new Object[] { preoperativeDiagnosis2 }));
 			}
 
@@ -243,8 +243,7 @@ public class PreoperativeDiagnosis2Operations extends PreoperativeDiagnosisOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREOPERATIVE_DIAGNOSIS2__PREOPERATIVE_DIAGNOSIS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PreoperativeDiagnosis2PreoperativeDiagnosisTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosis2PreoperativeDiagnosisTemplateId"),
 						new Object[] { preoperativeDiagnosis2 }));
 			}
 
@@ -317,8 +316,7 @@ public class PreoperativeDiagnosis2Operations extends PreoperativeDiagnosisOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREOPERATIVE_DIAGNOSIS2__PREOPERATIVE_DIAGNOSIS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PreoperativeDiagnosis2PreoperativeDiagnosisCode"),
+						ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosis2PreoperativeDiagnosisCode"),
 						new Object[] { preoperativeDiagnosis2 }));
 			}
 
@@ -383,7 +381,7 @@ public class PreoperativeDiagnosis2Operations extends PreoperativeDiagnosisOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREOPERATIVE_DIAGNOSIS2__PREOPERATIVE_DIAGNOSIS_PROBLEM_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PreoperativeDiagnosis2PreoperativeDiagnosisProblemObservation"),
 						new Object[] { preoperativeDiagnosis2 }));
 			}

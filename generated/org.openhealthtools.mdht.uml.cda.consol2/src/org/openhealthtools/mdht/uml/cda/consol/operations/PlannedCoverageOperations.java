@@ -24,6 +24,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedCoverage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -128,8 +129,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedCoveragePlannedCoverageTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageTemplateId"),
 						new Object[] { plannedCoverage }));
 			}
 
@@ -192,8 +192,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedCoveragePlannedCoverageClassCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageClassCode"),
 						new Object[] { plannedCoverage }));
 			}
 
@@ -256,8 +255,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedCoveragePlannedCoverageMoodCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageMoodCode"),
 						new Object[] { plannedCoverage }));
 			}
 
@@ -320,8 +318,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedCoveragePlannedCoverageId"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageId"),
 						new Object[] { plannedCoverage }));
 			}
 
@@ -384,8 +381,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedCoveragePlannedCoverageCodeP"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageCodeP"),
 						new Object[] { plannedCoverage }));
 			}
 
@@ -471,8 +467,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedCoveragePlannedCoverageCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageCode"),
 						new Object[] { plannedCoverage }));
 			}
 
@@ -536,8 +531,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedCoveragePlannedCoverageStatusCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageStatusCode"),
 						new Object[] { plannedCoverage }));
 			}
 
@@ -600,8 +594,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedCoveragePlannedCoverageStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageStatusCodeP"),
 						new Object[] { plannedCoverage }));
 			}
 
@@ -666,8 +659,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedCoveragePlannedCoverageEntryRelationship"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationship"),
 						new Object[] { plannedCoverage }));
 			}
 
@@ -732,8 +724,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedCoveragePlannedCoverageAuthorParticipation"),
+						ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageAuthorParticipation"),
 						new Object[] { plannedCoverage }));
 			}
 
@@ -802,7 +793,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PlannedCoveragePlannedCoverageEntryRelationshipActClassCode"),
 							new Object[] { eObject }));
 				}
@@ -873,7 +864,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_MOOD_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PlannedCoveragePlannedCoverageEntryRelationshipActMoodCode"),
 							new Object[] { eObject }));
 				}
@@ -944,8 +935,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PlannedCoveragePlannedCoverageEntryRelationshipActId"),
+							ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActId"),
 							new Object[] { eObject }));
 				}
 
@@ -1015,8 +1005,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PlannedCoveragePlannedCoverageEntryRelationshipActCodeP"),
+							ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActCodeP"),
 							new Object[] { eObject }));
 				}
 
@@ -1111,8 +1100,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PlannedCoveragePlannedCoverageEntryRelationshipActCode"),
+							ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipActCode"),
 							new Object[] { eObject }));
 				}
 
@@ -1183,7 +1171,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PlannedCoveragePlannedCoverageEntryRelationshipActStatusCode"),
 							new Object[] { eObject }));
 				}
@@ -1254,7 +1242,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT_STATUS_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PlannedCoveragePlannedCoverageEntryRelationshipActStatusCodeP"),
 							new Object[] { eObject }));
 				}
@@ -1325,8 +1313,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PlannedCoveragePlannedCoverageEntryRelationshipTypeCode"),
+							ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -1396,8 +1383,7 @@ public class PlannedCoverageOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PLANNED_COVERAGE__PLANNED_COVERAGE_ENTRY_RELATIONSHIP_ACT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PlannedCoveragePlannedCoverageEntryRelationshipAct"),
+							ConsolPlugin.INSTANCE.getString("PlannedCoveragePlannedCoverageEntryRelationshipAct"),
 							new Object[] { eObject }));
 				}
 

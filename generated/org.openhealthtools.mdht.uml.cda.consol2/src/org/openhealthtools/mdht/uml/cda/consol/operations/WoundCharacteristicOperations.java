@@ -15,6 +15,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.WoundCharacteristic;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -112,8 +113,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundCharacteristicWoundCharacteristicTemplateId"),
+						ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicTemplateId"),
 						new Object[] { woundCharacteristic }));
 			}
 
@@ -177,8 +177,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundCharacteristicWoundCharacteristicClassCode"),
+						ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicClassCode"),
 						new Object[] { woundCharacteristic }));
 			}
 
@@ -241,8 +240,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundCharacteristicWoundCharacteristicMoodCode"),
+						ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicMoodCode"),
 						new Object[] { woundCharacteristic }));
 			}
 
@@ -305,8 +303,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundCharacteristicWoundCharacteristicId"),
+						ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicId"),
 						new Object[] { woundCharacteristic }));
 			}
 
@@ -369,8 +366,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundCharacteristicWoundCharacteristicCodeP"),
+						ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicCodeP"),
 						new Object[] { woundCharacteristic }));
 			}
 
@@ -456,8 +452,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundCharacteristicWoundCharacteristicCode"),
+						ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicCode"),
 						new Object[] { woundCharacteristic }));
 			}
 
@@ -522,8 +517,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundCharacteristicWoundCharacteristicStatusCode"),
+						ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicStatusCode"),
 						new Object[] { woundCharacteristic }));
 			}
 
@@ -588,8 +582,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundCharacteristicWoundCharacteristicStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicStatusCodeP"),
 						new Object[] { woundCharacteristic }));
 			}
 
@@ -654,8 +647,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundCharacteristicWoundCharacteristicEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicEffectiveTime"),
 						new Object[] { woundCharacteristic }));
 			}
 
@@ -720,8 +712,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundCharacteristicWoundCharacteristicValue"),
+						ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicValue"),
 						new Object[] { woundCharacteristic }));
 			}
 
@@ -784,8 +775,7 @@ public class WoundCharacteristicOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_CHARACTERISTIC__WOUND_CHARACTERISTIC_VALUE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundCharacteristicWoundCharacteristicValueP"),
+						ConsolPlugin.INSTANCE.getString("WoundCharacteristicWoundCharacteristicValueP"),
 						new Object[] { woundCharacteristic }));
 			}
 

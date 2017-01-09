@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -119,7 +120,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ReferencedFramesObservationReferencedFramesObservationTemplateId"),
 						new Object[] { referencedFramesObservation }));
 			}
@@ -186,7 +187,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ReferencedFramesObservationReferencedFramesObservationClassCode"),
 						new Object[] { referencedFramesObservation }));
 			}
@@ -253,7 +254,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ReferencedFramesObservationReferencedFramesObservationMoodCode"),
 						new Object[] { referencedFramesObservation }));
 			}
@@ -322,8 +323,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferencedFramesObservationReferencedFramesObservationCode"),
+						ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationReferencedFramesObservationCode"),
 						new Object[] { referencedFramesObservation }));
 			}
 
@@ -389,7 +389,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERENCED_FRAMES_OBSERVATION__REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ReferencedFramesObservationReferencedFramesObservationBoundaryObservation"),
 						new Object[] { referencedFramesObservation }));
 			}

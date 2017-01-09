@@ -34,6 +34,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatus;
 import org.openhealthtools.mdht.uml.cda.consol.PrognosisObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -151,8 +152,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR_UNKNOWN,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationValueNullFlavorUnknown"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationValueNullFlavorUnknown"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -195,8 +195,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationStatusCodeP"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -253,8 +252,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION2_PROGNOSIS_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservation2PrognosisObservation"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservation2PrognosisObservation"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -298,8 +296,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION2_PRIORITY_PREFERENCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservation2PriorityPreference"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservation2PriorityPreference"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -343,8 +340,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION2_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservation2AuthorParticipation"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservation2AuthorParticipation"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -392,8 +388,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION2_CD_QUALIFIER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProblemObservation2ProblemObservation2CDQualifier"),
+							ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservation2CDQualifier"),
 							new Object[] { eObject }));
 				}
 
@@ -442,8 +437,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION2_CD_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProblemObservation2ProblemObservation2CDCode"),
+							ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservation2CDCode"),
 							new Object[] { eObject }));
 				}
 
@@ -492,8 +486,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION2_CD_CODE_TRANSLATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProblemObservation2ProblemObservation2CDCodeTranslation"),
+							ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservation2CDCodeTranslation"),
 							new Object[] { eObject }));
 				}
 
@@ -542,8 +535,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION2_CD_CODE_TRANSLATION_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProblemObservation2ProblemObservation2CDCodeTranslationP"),
+							ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservation2CDCodeTranslationP"),
 							new Object[] { eObject }));
 				}
 
@@ -665,8 +657,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationHasTextReference"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationHasTextReference"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -710,8 +701,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_TEXT_REFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationTextReferenceValue"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationTextReferenceValue"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -755,8 +745,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationHasTextReferenceValue"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationHasTextReferenceValue"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -800,8 +789,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_HAS_ONSET_DATE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationHasOnsetDate"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationHasOnsetDate"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -845,8 +833,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationHasResolutionDate"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationHasResolutionDate"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -890,8 +877,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationValueNullFlavor"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationValueNullFlavor"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -960,8 +946,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationTemplateId"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -1004,8 +989,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_NEGATION_IND,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationNegationInd"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationNegationInd"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -1049,8 +1033,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationEffectiveTime"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -1092,8 +1075,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_VALUE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationValueP"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationValueP"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -1156,8 +1138,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationValue"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationValue"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -1199,8 +1180,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationCodeP"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationCodeP"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -1263,8 +1243,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationCode"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationCode"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -1855,8 +1834,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationText"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationText"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -1929,8 +1907,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationStatusCode"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationStatusCode"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -1995,8 +1972,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_HEALTH_STATUS_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationHealthStatusObservation"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationHealthStatusObservation"),
 						new Object[] { problemObservation2 }));
 			}
 
@@ -2061,8 +2037,7 @@ public class ProblemObservation2Operations extends ProblemObservationOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_OBSERVATION2__PROBLEM_OBSERVATION_PROBLEM_STATUS,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProblemObservation2ProblemObservationProblemStatus"),
+						ConsolPlugin.INSTANCE.getString("ProblemObservation2ProblemObservationProblemStatus"),
 						new Object[] { problemObservation2 }));
 			}
 

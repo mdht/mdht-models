@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.OperativeNoteSurgicalProcedureSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,7 +116,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"OperativeNoteSurgicalProcedureSectionOperativeNoteSurgicalProcedureSectionTemplateId"),
 						new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
@@ -184,7 +185,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"OperativeNoteSurgicalProcedureSectionOperativeNoteSurgicalProcedureSectionCode"),
 						new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
@@ -251,7 +252,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"OperativeNoteSurgicalProcedureSectionOperativeNoteSurgicalProcedureSectionCodeP"),
 						new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
@@ -318,7 +319,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"OperativeNoteSurgicalProcedureSectionOperativeNoteSurgicalProcedureSectionText"),
 						new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
@@ -385,7 +386,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION__OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"OperativeNoteSurgicalProcedureSectionOperativeNoteSurgicalProcedureSectionTitle"),
 						new Object[] { operativeNoteSurgicalProcedureSection }));
 			}

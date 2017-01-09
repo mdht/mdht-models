@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -162,8 +163,7 @@ public class EncounterDiagnosis2Operations extends EncounterDiagnosisOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_DIAGNOSIS2__ENCOUNTER_DIAGNOSIS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"EncounterDiagnosis2EncounterDiagnosisTemplateId"),
+						ConsolPlugin.INSTANCE.getString("EncounterDiagnosis2EncounterDiagnosisTemplateId"),
 						new Object[] { encounterDiagnosis2 }));
 			}
 
@@ -226,8 +226,7 @@ public class EncounterDiagnosis2Operations extends EncounterDiagnosisOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_DIAGNOSIS2__ENCOUNTER_DIAGNOSIS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"EncounterDiagnosis2EncounterDiagnosisCodeP"),
+						ConsolPlugin.INSTANCE.getString("EncounterDiagnosis2EncounterDiagnosisCodeP"),
 						new Object[] { encounterDiagnosis2 }));
 			}
 
@@ -313,8 +312,7 @@ public class EncounterDiagnosis2Operations extends EncounterDiagnosisOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_DIAGNOSIS2__ENCOUNTER_DIAGNOSIS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"EncounterDiagnosis2EncounterDiagnosisCode"),
+						ConsolPlugin.INSTANCE.getString("EncounterDiagnosis2EncounterDiagnosisCode"),
 						new Object[] { encounterDiagnosis2 }));
 			}
 
@@ -379,8 +377,7 @@ public class EncounterDiagnosis2Operations extends EncounterDiagnosisOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_DIAGNOSIS2__ENCOUNTER_DIAGNOSIS_PROBLEM_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"EncounterDiagnosis2EncounterDiagnosisProblemObservation"),
+						ConsolPlugin.INSTANCE.getString("EncounterDiagnosis2EncounterDiagnosisProblemObservation"),
 						new Object[] { encounterDiagnosis2 }));
 			}
 

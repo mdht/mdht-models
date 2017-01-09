@@ -19,6 +19,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SubstanceAdministeredAct;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,8 +116,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SubstanceAdministeredActSubstanceAdministeredActTemplateId"),
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActTemplateId"),
 						new Object[] { substanceAdministeredAct }));
 			}
 
@@ -181,8 +181,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SubstanceAdministeredActSubstanceAdministeredActClassCode"),
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActClassCode"),
 						new Object[] { substanceAdministeredAct }));
 			}
 
@@ -247,8 +246,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SubstanceAdministeredActSubstanceAdministeredActMoodCode"),
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActMoodCode"),
 						new Object[] { substanceAdministeredAct }));
 			}
 
@@ -312,8 +310,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SubstanceAdministeredActSubstanceAdministeredActId"),
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActId"),
 						new Object[] { substanceAdministeredAct }));
 			}
 
@@ -377,8 +374,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SubstanceAdministeredActSubstanceAdministeredActCodeP"),
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActCodeP"),
 						new Object[] { substanceAdministeredAct }));
 			}
 
@@ -465,8 +461,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SubstanceAdministeredActSubstanceAdministeredActCode"),
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActCode"),
 						new Object[] { substanceAdministeredAct }));
 			}
 
@@ -532,8 +527,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SubstanceAdministeredActSubstanceAdministeredActStatusCode"),
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActStatusCode"),
 						new Object[] { substanceAdministeredAct }));
 			}
 
@@ -598,8 +592,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SubstanceAdministeredActSubstanceAdministeredActStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("SubstanceAdministeredActSubstanceAdministeredActStatusCodeP"),
 						new Object[] { substanceAdministeredAct }));
 			}
 
@@ -665,7 +658,7 @@ public class SubstanceAdministeredActOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_ADMINISTERED_ACT__SUBSTANCE_ADMINISTERED_ACT_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceAdministeredActSubstanceAdministeredActEffectiveTime"),
 						new Object[] { substanceAdministeredAct }));
 			}

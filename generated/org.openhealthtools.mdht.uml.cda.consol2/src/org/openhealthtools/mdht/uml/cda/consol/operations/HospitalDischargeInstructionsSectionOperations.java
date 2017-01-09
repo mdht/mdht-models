@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,7 +116,7 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalDischargeInstructionsSectionHospitalDischargeInstructionsSectionTemplateId"),
 						new Object[] { hospitalDischargeInstructionsSection }));
 			}
@@ -184,7 +185,7 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalDischargeInstructionsSectionHospitalDischargeInstructionsSectionCode"),
 						new Object[] { hospitalDischargeInstructionsSection }));
 			}
@@ -251,7 +252,7 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalDischargeInstructionsSectionHospitalDischargeInstructionsSectionCodeP"),
 						new Object[] { hospitalDischargeInstructionsSection }));
 			}
@@ -318,7 +319,7 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalDischargeInstructionsSectionHospitalDischargeInstructionsSectionTitle"),
 						new Object[] { hospitalDischargeInstructionsSection }));
 			}
@@ -385,7 +386,7 @@ public class HospitalDischargeInstructionsSectionOperations extends SectionOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION__HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalDischargeInstructionsSectionHospitalDischargeInstructionsSectionText"),
 						new Object[] { hospitalDischargeInstructionsSection }));
 			}

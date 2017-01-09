@@ -145,10 +145,10 @@ public class ResultOrganizerOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolResultObservations(ResultOrganizer) <em>Get Mu2consol
-	 * Result Observations</em>}' operation. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * The cached OCL expression body for the
+	 * '{@link #getMu2consolResultObservations(ResultOrganizer) <em>Get
+	 * Mu2consol Result Observations</em>}' operation. <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 *
 	 * @see #getMu2consolResultObservations(ResultOrganizer)
 	 * @generated
@@ -157,10 +157,10 @@ public class ResultOrganizerOperations
 	protected static final String GET_MU2CONSOL_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::ResultObservation)).oclAsType(mu2consol::ResultObservation)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolResultObservations(ResultOrganizer) <em>Get Mu2consol
-	 * Result Observations</em>}' query operation. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
+	 * The cached OCL query for the
+	 * '{@link #getMu2consolResultObservations(ResultOrganizer) <em>Get
+	 * Mu2consol Result Observations</em>}' query operation. <!-- begin-user-doc
+	 * --> <!-- end-user-doc -->
 	 *
 	 * @see #getMu2consolResultObservations(ResultOrganizer)
 	 * @generated

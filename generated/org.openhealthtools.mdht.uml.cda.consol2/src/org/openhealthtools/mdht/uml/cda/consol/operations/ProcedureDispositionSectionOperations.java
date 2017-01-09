@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureDispositionSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,7 +116,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_DISPOSITION_SECTION__PROCEDURE_DISPOSITION_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureDispositionSectionProcedureDispositionSectionTemplateId"),
 						new Object[] { procedureDispositionSection }));
 			}
@@ -184,8 +185,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_DISPOSITION_SECTION__PROCEDURE_DISPOSITION_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureDispositionSectionProcedureDispositionSectionCode"),
+						ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionProcedureDispositionSectionCode"),
 						new Object[] { procedureDispositionSection }));
 			}
 
@@ -251,8 +251,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_DISPOSITION_SECTION__PROCEDURE_DISPOSITION_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureDispositionSectionProcedureDispositionSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionProcedureDispositionSectionCodeP"),
 						new Object[] { procedureDispositionSection }));
 			}
 
@@ -318,8 +317,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_DISPOSITION_SECTION__PROCEDURE_DISPOSITION_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureDispositionSectionProcedureDispositionSectionText"),
+						ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionProcedureDispositionSectionText"),
 						new Object[] { procedureDispositionSection }));
 			}
 
@@ -385,8 +383,7 @@ public class ProcedureDispositionSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_DISPOSITION_SECTION__PROCEDURE_DISPOSITION_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureDispositionSectionProcedureDispositionSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("ProcedureDispositionSectionProcedureDispositionSectionTitle"),
 						new Object[] { procedureDispositionSection }));
 			}
 

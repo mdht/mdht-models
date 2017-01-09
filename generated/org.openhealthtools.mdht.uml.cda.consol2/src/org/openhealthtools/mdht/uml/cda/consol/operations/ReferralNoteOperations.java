@@ -46,6 +46,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -209,7 +210,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ReferralNoteReferralNoteHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2"),
 						new Object[] { referralNote }));
 			}
@@ -275,7 +276,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ReferralNoteReferralNoteDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"),
 						new Object[] { referralNote }));
 			}
@@ -339,8 +340,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteCodeP"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteCodeP"),
 						new Object[] { referralNote }));
 			}
 
@@ -426,8 +426,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteCode"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteCode"),
 						new Object[] { referralNote }));
 			}
 
@@ -491,8 +490,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteInformationRecipient"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteInformationRecipient"),
 						new Object[] { referralNote }));
 			}
 
@@ -556,8 +554,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteParticipantCaregiver"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiver"),
 						new Object[] { referralNote }));
 			}
 
@@ -622,8 +619,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteParticipantCallbackContact"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCallbackContact"),
 						new Object[] { referralNote }));
 			}
 
@@ -688,8 +684,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PLAN_OF_TREATMENT_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNotePlanOfTreatmentSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNotePlanOfTreatmentSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -754,7 +749,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ReferralNoteReferralNoteAdvanceDirectivesSectionEntriesOptional2"),
 						new Object[] { referralNote }));
 			}
@@ -820,8 +815,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteHistoryOfPresentIllnessSection"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteHistoryOfPresentIllnessSection"),
 						new Object[] { referralNote }));
 			}
 
@@ -885,8 +879,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_IMMUNIZATIONS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteImmunizationsSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteImmunizationsSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -949,8 +942,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PROBLEM_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteProblemSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteProblemSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -1015,8 +1007,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteProceduresSectionEntriesOptional2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteProceduresSectionEntriesOptional2"),
 						new Object[] { referralNote }));
 			}
 
@@ -1079,8 +1070,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_RESULTS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteResultsSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteResultsSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -1145,8 +1135,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_REVIEW_OF_SYSTEMS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteReviewOfSystemsSection"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteReviewOfSystemsSection"),
 						new Object[] { referralNote }));
 			}
 
@@ -1210,8 +1199,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_SOCIAL_HISTORY_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteSocialHistorySection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteSocialHistorySection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -1275,8 +1263,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_VITAL_SIGNS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteVitalSignsSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteVitalSignsSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -1341,8 +1328,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_FUNCTIONAL_STATUS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteFunctionalStatusSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteFunctionalStatusSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -1406,8 +1392,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PHYSICAL_EXAM_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNotePhysicalExamSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNotePhysicalExamSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -1472,7 +1457,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2B,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ReferralNoteReferralNoteAdvanceDirectivesSectionEntriesOptional2b"),
 						new Object[] { referralNote }));
 			}
@@ -1536,8 +1521,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_NUTRITION_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteNutritionSection"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteNutritionSection"),
 						new Object[] { referralNote }));
 			}
 
@@ -1601,8 +1585,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_MENTAL_STATUS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteMentalStatusSection"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteMentalStatusSection"),
 						new Object[] { referralNote }));
 			}
 
@@ -1667,8 +1650,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_MEDICAL_EQUIPMENT_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteMedicalEquipmentSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteMedicalEquipmentSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -1731,8 +1713,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ALLERGIES_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteAllergiesSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAllergiesSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -1795,8 +1776,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ASSESSMENT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteAssessmentSection"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAssessmentSection"),
 						new Object[] { referralNote }));
 			}
 
@@ -1861,8 +1841,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_ASSESSMENT_AND_PLAN_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteAssessmentAndPlanSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteAssessmentAndPlanSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -1927,8 +1906,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteHistoryOfPastIllnessSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteHistoryOfPastIllnessSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -1992,8 +1970,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_GENERAL_STATUS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteGeneralStatusSection"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteGeneralStatusSection"),
 						new Object[] { referralNote }));
 			}
 
@@ -2057,8 +2034,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_MEDICATIONS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteMedicationsSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteMedicationsSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -2123,8 +2099,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_REASON_FOR_REFERRAL_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteReasonForReferralSection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteReasonForReferralSection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -2188,8 +2163,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_FAMILY_HISTORY_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteReferralNoteFamilyHistorySection2"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteFamilyHistorySection2"),
 						new Object[] { referralNote }));
 			}
 
@@ -2258,7 +2232,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_PERSON_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteInformationRecipientIntendedRecipientPersonName"),
 							new Object[] { eObject }));
 				}
@@ -2329,7 +2303,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteInformationRecipientIntendedRecipientAddr"),
 							new Object[] { eObject }));
 				}
@@ -2400,7 +2374,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteInformationRecipientIntendedRecipientTelecom"),
 							new Object[] { eObject }));
 				}
@@ -2471,7 +2445,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteInformationRecipientIntendedRecipientInformationRecipient"),
 							new Object[] { eObject }));
 				}
@@ -2542,7 +2516,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_INFORMATION_RECIPIENT_INTENDED_RECIPIENT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteInformationRecipientIntendedRecipient"),
 							new Object[] { eObject }));
 				}
@@ -2613,7 +2587,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityAssociatedPersonName"),
 							new Object[] { eObject }));
 				}
@@ -2684,7 +2658,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityClassCodeP"),
 							new Object[] { eObject }));
 				}
@@ -2781,7 +2755,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityClassCode"),
 							new Object[] { eObject }));
 				}
@@ -2852,7 +2826,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCaregiverAssociatedEntityAssociatedPerson"),
 							new Object[] { eObject }));
 				}
@@ -2923,8 +2897,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ReferralNoteReferralNoteParticipantCaregiverTypeCode"),
+							ConsolPlugin.INSTANCE.getString("ReferralNoteReferralNoteParticipantCaregiverTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -2994,7 +2967,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCaregiverAssociatedEntity"),
 							new Object[] { eObject }));
 				}
@@ -3065,7 +3038,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPersonName"),
 							new Object[] { eObject }));
 				}
@@ -3136,7 +3109,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityId"),
 							new Object[] { eObject }));
 				}
@@ -3207,7 +3180,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAddr"),
 							new Object[] { eObject }));
 				}
@@ -3278,7 +3251,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityTelecom"),
 							new Object[] { eObject }));
 				}
@@ -3349,7 +3322,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityClassCode"),
 							new Object[] { eObject }));
 				}
@@ -3420,7 +3393,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityAssociatedPerson"),
 							new Object[] { eObject }));
 				}
@@ -3491,7 +3464,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntityScopingOrganization"),
 							new Object[] { eObject }));
 				}
@@ -3562,7 +3535,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCallbackContactTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -3633,7 +3606,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.REFERRAL_NOTE__REFERRAL_NOTE_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ReferralNoteReferralNoteParticipantCallbackContactAssociatedEntity"),
 							new Object[] { eObject }));
 				}
@@ -4789,8 +4762,7 @@ public class ReferralNoteOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REFERRAL_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReferralNoteGeneralHeaderConstraintsTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ReferralNoteGeneralHeaderConstraintsTemplateId"),
 						new Object[] { referralNote }));
 			}
 

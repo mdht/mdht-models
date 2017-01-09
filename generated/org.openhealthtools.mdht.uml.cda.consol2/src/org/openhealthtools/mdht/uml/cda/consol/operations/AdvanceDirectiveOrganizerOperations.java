@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -123,8 +124,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerTemplateId"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerTemplateId"),
 						new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -190,8 +190,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerClassCode"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerClassCode"),
 						new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -256,8 +255,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerMoodCode"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerMoodCode"),
 						new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -321,8 +319,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerId"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerId"),
 						new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -388,8 +385,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCode"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCode"),
 						new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -454,8 +450,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCodeP"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerCodeP"),
 						new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -521,7 +516,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCodeP"),
 						new Object[] { advanceDirectiveOrganizer }));
 			}
@@ -611,8 +606,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCode"),
+						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerStatusCode"),
 						new Object[] { advanceDirectiveOrganizer }));
 			}
 
@@ -678,7 +672,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_ADVANCE_DIRECTIVE_OBSERVATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAdvanceDirectiveObservation2"),
 						new Object[] { advanceDirectiveOrganizer }));
 			}
@@ -745,7 +739,7 @@ public class AdvanceDirectiveOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_ORGANIZER__ADVANCE_DIRECTIVE_ORGANIZER_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveOrganizerAdvanceDirectiveOrganizerAuthorParticipation"),
 						new Object[] { advanceDirectiveOrganizer }));
 			}

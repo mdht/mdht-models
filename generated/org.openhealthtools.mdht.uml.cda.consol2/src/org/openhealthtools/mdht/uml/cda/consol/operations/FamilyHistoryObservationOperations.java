@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -130,7 +131,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION_INVERSION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FamilyHistoryObservationFamilyHistoryObservationAgeObservationInversion"),
 						new Object[] { familyHistoryObservation }));
 			}
@@ -196,8 +197,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryObservationFamilyHistoryObservationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationTemplateId"),
 						new Object[] { familyHistoryObservation }));
 			}
 
@@ -262,8 +262,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryObservationFamilyHistoryObservationClassCode"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationClassCode"),
 						new Object[] { familyHistoryObservation }));
 			}
 
@@ -328,8 +327,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryObservationFamilyHistoryObservationMoodCode"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationMoodCode"),
 						new Object[] { familyHistoryObservation }));
 			}
 
@@ -393,8 +391,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryObservationFamilyHistoryObservationId"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationId"),
 						new Object[] { familyHistoryObservation }));
 			}
 
@@ -458,8 +455,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryObservationFamilyHistoryObservationCodeP"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationCodeP"),
 						new Object[] { familyHistoryObservation }));
 			}
 
@@ -546,8 +542,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryObservationFamilyHistoryObservationCode"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationCode"),
 						new Object[] { familyHistoryObservation }));
 			}
 
@@ -613,8 +608,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryObservationFamilyHistoryObservationStatusCode"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationStatusCode"),
 						new Object[] { familyHistoryObservation }));
 			}
 
@@ -679,8 +673,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryObservationFamilyHistoryObservationStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationStatusCodeP"),
 						new Object[] { familyHistoryObservation }));
 			}
 
@@ -746,7 +739,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FamilyHistoryObservationFamilyHistoryObservationEffectiveTime"),
 						new Object[] { familyHistoryObservation }));
 			}
@@ -813,8 +806,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryObservationFamilyHistoryObservationValue"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationFamilyHistoryObservationValue"),
 						new Object[] { familyHistoryObservation }));
 			}
 
@@ -880,7 +872,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FamilyHistoryObservationFamilyHistoryObservationAgeObservation"),
 						new Object[] { familyHistoryObservation }));
 			}
@@ -947,7 +939,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_FAMILY_HISTORY_DEATH_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FamilyHistoryObservationFamilyHistoryObservationFamilyHistoryDeathObservation"),
 						new Object[] { familyHistoryObservation }));
 			}

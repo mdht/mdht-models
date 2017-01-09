@@ -23,6 +23,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorParticipation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -122,8 +123,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AuthorParticipationAuthorParticipationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("AuthorParticipationAuthorParticipationTemplateId"),
 						new Object[] { authorParticipation }));
 			}
 
@@ -186,8 +186,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AuthorParticipationAuthorParticipationTime"),
+						ConsolPlugin.INSTANCE.getString("AuthorParticipationAuthorParticipationTime"),
 						new Object[] { authorParticipation }));
 			}
 
@@ -252,8 +251,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AuthorParticipationAuthorParticipationAssignedAuthor"),
+						ConsolPlugin.INSTANCE.getString("AuthorParticipationAuthorParticipationAssignedAuthor"),
 						new Object[] { authorParticipation }));
 			}
 
@@ -322,7 +320,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AuthorParticipationAuthorParticipationAssignedAuthorAssignedPersonName"),
 							new Object[] { eObject }));
 				}
@@ -393,7 +391,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AuthorParticipationAuthorParticipationAssignedAuthorRepresentedOrganizationId"),
 							new Object[] { eObject }));
 				}
@@ -464,7 +462,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AuthorParticipationAuthorParticipationAssignedAuthorRepresentedOrganizationName"),
 							new Object[] { eObject }));
 				}
@@ -535,7 +533,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_TELECOM,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AuthorParticipationAuthorParticipationAssignedAuthorRepresentedOrganizationTelecom"),
 							new Object[] { eObject }));
 				}
@@ -606,7 +604,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ADDR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AuthorParticipationAuthorParticipationAssignedAuthorRepresentedOrganizationAddr"),
 							new Object[] { eObject }));
 				}
@@ -677,7 +675,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_CODE_TERMINOLOGY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AuthorParticipationAuthorParticipationAssignedAuthorCodeTerminology"),
 							new Object[] { eObject }));
 				}
@@ -748,8 +746,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"AuthorParticipationAuthorParticipationAssignedAuthorId"),
+							ConsolPlugin.INSTANCE.getString("AuthorParticipationAuthorParticipationAssignedAuthorId"),
 							new Object[] { eObject }));
 				}
 
@@ -819,8 +816,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"AuthorParticipationAuthorParticipationAssignedAuthorCode"),
+							ConsolPlugin.INSTANCE.getString("AuthorParticipationAuthorParticipationAssignedAuthorCode"),
 							new Object[] { eObject }));
 				}
 
@@ -890,7 +886,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_ASSIGNED_PERSON,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AuthorParticipationAuthorParticipationAssignedAuthorAssignedPerson"),
 							new Object[] { eObject }));
 				}
@@ -961,7 +957,7 @@ public class AuthorParticipationOperations extends AuthorOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHOR_PARTICIPATION__AUTHOR_PARTICIPATION_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"AuthorParticipationAuthorParticipationAssignedAuthorRepresentedOrganization"),
 							new Object[] { eObject }));
 				}

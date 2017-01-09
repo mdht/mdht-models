@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralStatusSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,8 +115,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"GeneralStatusSectionGeneralStatusSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("GeneralStatusSectionGeneralStatusSectionTemplateId"),
 						new Object[] { generalStatusSection }));
 			}
 
@@ -180,8 +180,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"GeneralStatusSectionGeneralStatusSectionCode"),
+						ConsolPlugin.INSTANCE.getString("GeneralStatusSectionGeneralStatusSectionCode"),
 						new Object[] { generalStatusSection }));
 			}
 
@@ -244,8 +243,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"GeneralStatusSectionGeneralStatusSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("GeneralStatusSectionGeneralStatusSectionCodeP"),
 						new Object[] { generalStatusSection }));
 			}
 
@@ -308,8 +306,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"GeneralStatusSectionGeneralStatusSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("GeneralStatusSectionGeneralStatusSectionTitle"),
 						new Object[] { generalStatusSection }));
 			}
 
@@ -372,8 +369,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"GeneralStatusSectionGeneralStatusSectionText"),
+						ConsolPlugin.INSTANCE.getString("GeneralStatusSectionGeneralStatusSectionText"),
 						new Object[] { generalStatusSection }));
 			}
 

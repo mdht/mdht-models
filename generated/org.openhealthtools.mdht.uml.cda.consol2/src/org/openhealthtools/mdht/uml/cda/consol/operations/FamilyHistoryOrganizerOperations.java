@@ -30,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -136,8 +137,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryOrganizerFamilyHistoryOrganizerTemplateId"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerTemplateId"),
 						new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -202,8 +202,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryOrganizerFamilyHistoryOrganizerClassCode"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerClassCode"),
 						new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -268,8 +267,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryOrganizerFamilyHistoryOrganizerMoodCode"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerMoodCode"),
 						new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -334,8 +332,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryOrganizerFamilyHistoryOrganizerStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerStatusCodeP"),
 						new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -422,8 +419,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryOrganizerFamilyHistoryOrganizerStatusCode"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerStatusCode"),
 						new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -488,7 +484,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FamilyHistoryOrganizerFamilyHistoryOrganizerFamilyHistoryObservation"),
 						new Object[] { familyHistoryOrganizer }));
 			}
@@ -553,8 +549,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryOrganizerFamilyHistoryOrganizerSubject"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryOrganizerSubject"),
 						new Object[] { familyHistoryOrganizer }));
 			}
 
@@ -625,7 +620,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_ADMINISTRATIVE_GENDER_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode"),
 							new Object[] { eObject }));
 				}
@@ -696,7 +691,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_ADMINISTRATIVE_GENDER_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP"),
 							new Object[] { eObject }));
 				}
@@ -767,7 +762,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_BIRTH_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime"),
 							new Object[] { eObject }));
 				}
@@ -838,7 +833,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_DECEASED_IND,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd"),
 							new Object[] { eObject }));
 				}
@@ -909,7 +904,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_DECEASED_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime"),
 							new Object[] { eObject }));
 				}
@@ -980,7 +975,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT_PERSON_SDTC_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId"),
 							new Object[] { eObject }));
 				}
@@ -1051,7 +1046,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectClassCode"),
 							new Object[] { eObject }));
 				}
@@ -1124,7 +1119,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectCode"),
 							new Object[] { eObject }));
 				}
@@ -1195,7 +1190,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectCodeP"),
 							new Object[] { eObject }));
 				}
@@ -1266,7 +1261,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT_SUBJECT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubjectSubject"),
 							new Object[] { eObject }));
 				}
@@ -1337,7 +1332,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_ORGANIZER__FAMILY_HISTORY_ORGANIZER_SUBJECT_RELATED_SUBJECT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryOrganizerFamilyHistoryOrganizerSubjectRelatedSubject"),
 							new Object[] { eObject }));
 				}

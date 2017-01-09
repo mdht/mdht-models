@@ -23,6 +23,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -127,7 +128,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_VALUE_CODE_SYSTEM,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CaregiverCharacteristicsCaregiverCharacteristicsValueCodeSystem"),
 						new Object[] { caregiverCharacteristics }));
 			}
@@ -193,8 +194,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CaregiverCharacteristicsCaregiverCharacteristicsTemplateId"),
+						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsTemplateId"),
 						new Object[] { caregiverCharacteristics }));
 			}
 
@@ -259,8 +259,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CaregiverCharacteristicsCaregiverCharacteristicsClassCode"),
+						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsClassCode"),
 						new Object[] { caregiverCharacteristics }));
 			}
 
@@ -325,8 +324,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CaregiverCharacteristicsCaregiverCharacteristicsMoodCode"),
+						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsMoodCode"),
 						new Object[] { caregiverCharacteristics }));
 			}
 
@@ -390,8 +388,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CaregiverCharacteristicsCaregiverCharacteristicsId"),
+						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsId"),
 						new Object[] { caregiverCharacteristics }));
 			}
 
@@ -455,8 +452,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CaregiverCharacteristicsCaregiverCharacteristicsCode"),
+						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsCode"),
 						new Object[] { caregiverCharacteristics }));
 			}
 
@@ -522,8 +518,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CaregiverCharacteristicsCaregiverCharacteristicsStatusCode"),
+						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsStatusCode"),
 						new Object[] { caregiverCharacteristics }));
 			}
 
@@ -588,8 +583,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CaregiverCharacteristicsCaregiverCharacteristicsStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsStatusCodeP"),
 						new Object[] { caregiverCharacteristics }));
 			}
 
@@ -653,8 +647,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CaregiverCharacteristicsCaregiverCharacteristicsValue"),
+						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsValue"),
 						new Object[] { caregiverCharacteristics }));
 			}
 
@@ -719,8 +712,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CaregiverCharacteristicsCaregiverCharacteristicsParticipant"),
+						ConsolPlugin.INSTANCE.getString("CaregiverCharacteristicsCaregiverCharacteristicsParticipant"),
 						new Object[] { caregiverCharacteristics }));
 			}
 
@@ -790,7 +782,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CaregiverCharacteristicsCaregiverCharacteristicsParticipantParticipantRoleClassCode"),
 							new Object[] { eObject }));
 				}
@@ -862,7 +854,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_LOW,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CaregiverCharacteristicsCaregiverCharacteristicsParticipantTimeLow"),
 							new Object[] { eObject }));
 				}
@@ -934,7 +926,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME_HIGH,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CaregiverCharacteristicsCaregiverCharacteristicsParticipantTimeHigh"),
 							new Object[] { eObject }));
 				}
@@ -1006,7 +998,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CaregiverCharacteristicsCaregiverCharacteristicsParticipantTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -1078,7 +1070,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CaregiverCharacteristicsCaregiverCharacteristicsParticipantTime"),
 							new Object[] { eObject }));
 				}
@@ -1150,7 +1142,7 @@ public class CaregiverCharacteristicsOperations extends ClinicalStatementOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CAREGIVER_CHARACTERISTICS__CAREGIVER_CHARACTERISTICS_PARTICIPANT_PARTICIPANT_ROLE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CaregiverCharacteristicsCaregiverCharacteristicsParticipantParticipantRole"),
 							new Object[] { eObject }));
 				}

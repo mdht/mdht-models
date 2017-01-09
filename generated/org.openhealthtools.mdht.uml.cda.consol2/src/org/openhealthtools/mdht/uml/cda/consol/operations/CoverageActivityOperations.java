@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.CoverageActivity;
 import org.openhealthtools.mdht.uml.cda.consol.PolicyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -124,7 +125,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CoverageActivityCoverageActivityCoverageActivityRelationshipSequenceNumber"),
 						new Object[] { coverageActivity }));
 			}
@@ -188,8 +189,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CoverageActivityCoverageActivityTemplateId"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityTemplateId"),
 						new Object[] { coverageActivity }));
 			}
 
@@ -252,8 +252,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CoverageActivityCoverageActivityClassCode"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityClassCode"),
 						new Object[] { coverageActivity }));
 			}
 
@@ -295,8 +294,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CoverageActivityCoverageActivityCode"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityCode"),
 						new Object[] { coverageActivity }));
 			}
 
@@ -338,8 +336,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CoverageActivityCoverageActivityId"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityId"),
 						new Object[] { coverageActivity }));
 			}
 
@@ -446,8 +443,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CoverageActivityCoverageActivityMoodCode"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityMoodCode"),
 						new Object[] { coverageActivity }));
 			}
 
@@ -511,8 +507,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CoverageActivityCoverageActivityStatusCode"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityStatusCode"),
 						new Object[] { coverageActivity }));
 			}
 
@@ -575,8 +570,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_POLICY_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CoverageActivityCoverageActivityPolicyActivity"),
+						ConsolPlugin.INSTANCE.getString("CoverageActivityCoverageActivityPolicyActivity"),
 						new Object[] { coverageActivity }));
 			}
 

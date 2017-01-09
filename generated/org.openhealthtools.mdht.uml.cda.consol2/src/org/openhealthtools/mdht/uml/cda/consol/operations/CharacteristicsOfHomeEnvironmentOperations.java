@@ -19,6 +19,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.CharacteristicsOfHomeEnvironment;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,7 +118,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentTemplateId"),
 						new Object[] { characteristicsOfHomeEnvironment }));
 			}
@@ -184,7 +185,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentClassCode"),
 						new Object[] { characteristicsOfHomeEnvironment }));
 			}
@@ -251,7 +252,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentMoodCode"),
 						new Object[] { characteristicsOfHomeEnvironment }));
 			}
@@ -318,7 +319,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentId"),
 						new Object[] { characteristicsOfHomeEnvironment }));
 			}
@@ -385,7 +386,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentCodeP"),
 						new Object[] { characteristicsOfHomeEnvironment }));
 			}
@@ -477,7 +478,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentCode"),
 						new Object[] { characteristicsOfHomeEnvironment }));
 			}
@@ -545,7 +546,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentStatusCode"),
 						new Object[] { characteristicsOfHomeEnvironment }));
 			}
@@ -612,7 +613,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentStatusCodeP"),
 						new Object[] { characteristicsOfHomeEnvironment }));
 			}
@@ -681,7 +682,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentValue"),
 						new Object[] { characteristicsOfHomeEnvironment }));
 			}
@@ -748,7 +749,7 @@ public class CharacteristicsOfHomeEnvironmentOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHARACTERISTICS_OF_HOME_ENVIRONMENT__CHARACTERISTICS_OF_HOME_ENVIRONMENT_VALUE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CharacteristicsOfHomeEnvironmentCharacteristicsOfHomeEnvironmentValueP"),
 						new Object[] { characteristicsOfHomeEnvironment }));
 			}

@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.DICOMObjectCatalogSection;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport;
 import org.openhealthtools.mdht.uml.cda.consol.FindingsSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -152,7 +153,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_USE_DIAGNOSTIC_IMAGING_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DiagnosticImagingReportDiagnosticImagingReportUseDiagnosticImagingCode"),
 						new Object[] { diagnosticImagingReport }));
 			}
@@ -218,7 +219,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_ALL_SECTIONS_HAVE_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DiagnosticImagingReportDiagnosticImagingReportAllSectionsHaveTitle"),
 						new Object[] { diagnosticImagingReport }));
 			}
@@ -284,7 +285,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_SECTIONS_HAVE_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DiagnosticImagingReportDiagnosticImagingReportSectionsHaveText"),
 						new Object[] { diagnosticImagingReport }));
 			}
@@ -349,8 +350,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__GENERAL_HEADER_CONSTRAINTS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DiagnosticImagingReportGeneralHeaderConstraintsCodeP"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportGeneralHeaderConstraintsCodeP"),
 						new Object[] { diagnosticImagingReport }));
 			}
 
@@ -428,8 +428,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_INFORMANT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DiagnosticImagingReportDiagnosticImagingReportInformant"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportInformant"),
 						new Object[] { diagnosticImagingReport }));
 			}
 
@@ -494,7 +493,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_INFORMATION_RECIPIENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DiagnosticImagingReportDiagnosticImagingReportInformationRecipient"),
 						new Object[] { diagnosticImagingReport }));
 			}
@@ -560,8 +559,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT1,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DiagnosticImagingReportDiagnosticImagingReportParticipant1"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportParticipant1"),
 						new Object[] { diagnosticImagingReport }));
 			}
 
@@ -626,7 +624,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_IN_FULFILLMENT_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DiagnosticImagingReportDiagnosticImagingReportInFulfillmentOf"),
 						new Object[] { diagnosticImagingReport }));
 			}
@@ -692,7 +690,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DiagnosticImagingReportDiagnosticImagingReportDocumentationOf"),
 						new Object[] { diagnosticImagingReport }));
 			}
@@ -758,7 +756,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_RELATED_DOCUMENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DiagnosticImagingReportDiagnosticImagingReportRelatedDocument"),
 						new Object[] { diagnosticImagingReport }));
 			}
@@ -824,8 +822,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DiagnosticImagingReportDiagnosticImagingReportComponentOf"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDiagnosticImagingReportComponentOf"),
 						new Object[] { diagnosticImagingReport }));
 			}
 
@@ -890,7 +887,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_FINDINGS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DiagnosticImagingReportDiagnosticImagingReportFindingsSection"),
 						new Object[] { diagnosticImagingReport }));
 			}
@@ -956,7 +953,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DICOM_OBJECT_CATALOG_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DiagnosticImagingReportDiagnosticImagingReportDICOMObjectCatalogSection"),
 						new Object[] { diagnosticImagingReport }));
 			}
@@ -1026,7 +1023,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY_PERSON_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportParticipantAssociatedEntityPersonName"),
 							new Object[] { eObject }));
 				}
@@ -1097,7 +1094,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportParticipantAssociatedEntityAssociatedPerson"),
 							new Object[] { eObject }));
 				}
@@ -1168,7 +1165,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT_ASSOCIATED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportParticipantAssociatedEntity"),
 							new Object[] { eObject }));
 				}
@@ -1239,7 +1236,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportDocumentationOfServiceEvent4ClassCode"),
 							new Object[] { eObject }));
 				}
@@ -1310,7 +1307,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportDocumentationOfServiceEvent4Code"),
 							new Object[] { eObject }));
 				}
@@ -1381,7 +1378,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportDocumentationOfServiceEvent4Id"),
 							new Object[] { eObject }));
 				}
@@ -1452,7 +1449,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT4_PHYSICIAN_READING_STUDY_PERFORMER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportDocumentationOfServiceEvent4PhysicianReadingStudyPerformer"),
 							new Object[] { eObject }));
 				}
@@ -1523,7 +1520,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF_SERVICE_EVENT3,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportDocumentationOfServiceEvent3"),
 							new Object[] { eObject }));
 				}
@@ -1594,7 +1591,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_ASSIGN_PERSON_OR_REPRESENTED_ORGANIZATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntityHasAssignPersonOrRepresentedOrganization"),
 							new Object[] { eObject }));
 				}
@@ -1665,7 +1662,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsiblePartyAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -1736,7 +1733,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PRECISE_TO_THE_DAY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheDay"),
 							new Object[] { eObject }));
 				}
@@ -1807,7 +1804,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PRECISE_TO_THE_MINUTE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheMinute"),
 							new Object[] { eObject }));
 				}
@@ -1878,7 +1875,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PRECISE_TO_THE_SECOND,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7PreciseToTheSecond"),
 							new Object[] { eObject }));
 				}
@@ -1949,7 +1946,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7IfMorePreciseThanDayIncludeTimeZoneOffset"),
 							new Object[] { eObject }));
 				}
@@ -2020,7 +2017,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_EFFECTIVE_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7EffectiveTime"),
 							new Object[] { eObject }));
 				}
@@ -2091,7 +2088,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7Id"),
 							new Object[] { eObject }));
 				}
@@ -2162,7 +2159,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_PHYSICIANOF_RECORD_PARTICIPANT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7PhysicianofRecordParticipant"),
 							new Object[] { eObject }));
 				}
@@ -2233,7 +2230,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER7_RESPONSIBLE_PARTY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty"),
 							new Object[] { eObject }));
 				}
@@ -2304,7 +2301,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DiagnosticImagingReportDiagnosticImagingReportComponentOfEncompassingEncounter"),
 							new Object[] { eObject }));
 				}
@@ -2463,8 +2460,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DiagnosticImagingReportGeneralHeaderConstraintsTemplateId"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportGeneralHeaderConstraintsTemplateId"),
 						new Object[] { diagnosticImagingReport }));
 			}
 
@@ -2538,8 +2534,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__GENERAL_HEADER_CONSTRAINTS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DiagnosticImagingReportGeneralHeaderConstraintsCode"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportGeneralHeaderConstraintsCode"),
 						new Object[] { diagnosticImagingReport }));
 			}
 
@@ -2603,8 +2598,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DIAGNOSTIC_IMAGING_REPORT__GENERAL_HEADER_CONSTRAINTS_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DiagnosticImagingReportGeneralHeaderConstraintsId"),
+						ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportGeneralHeaderConstraintsId"),
 						new Object[] { diagnosticImagingReport }));
 			}
 

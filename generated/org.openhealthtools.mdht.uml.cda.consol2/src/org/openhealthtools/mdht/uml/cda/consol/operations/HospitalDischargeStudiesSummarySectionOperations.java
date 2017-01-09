@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeStudiesSummarySection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,7 +116,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalDischargeStudiesSummarySectionHospitalDischargeStudiesSummarySectionTemplateId"),
 						new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
@@ -184,7 +185,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalDischargeStudiesSummarySectionHospitalDischargeStudiesSummarySectionCode"),
 						new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
@@ -251,7 +252,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalDischargeStudiesSummarySectionHospitalDischargeStudiesSummarySectionCodeP"),
 						new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
@@ -318,7 +319,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalDischargeStudiesSummarySectionHospitalDischargeStudiesSummarySectionTitle"),
 						new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
@@ -385,7 +386,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION__HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalDischargeStudiesSummarySectionHospitalDischargeStudiesSummarySectionText"),
 						new Object[] { hospitalDischargeStudiesSummarySection }));
 			}

@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,7 +118,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE2_CONTAINS_MEDICATION_INFORMATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicationDispense2MedicationDispense2ContainsMedicationInformation2"),
 						new Object[] { medicationDispense2 }));
 			}
@@ -183,7 +184,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicationDispense2MedicationDispense2ContainsImmunizationMedicationInformation2"),
 						new Object[] { medicationDispense2 }));
 			}
@@ -227,8 +228,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationDispense2MedicationDispenseStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseStatusCodeP"),
 						new Object[] { medicationDispense2 }));
 			}
 
@@ -311,7 +311,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_CONTAINS_MEDICATION_OR_IMMUNIZATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicationDispense2MedicationDispenseContainsMedicationOrImmunization"),
 						new Object[] { medicationDispense2 }));
 			}
@@ -438,8 +438,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationDispense2MedicationDispenseTemplateId"),
+						ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseTemplateId"),
 						new Object[] { medicationDispense2 }));
 			}
 
@@ -513,8 +512,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationDispense2MedicationDispenseStatusCode"),
+						ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseStatusCode"),
 						new Object[] { medicationDispense2 }));
 			}
 
@@ -578,8 +576,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_REPEAT_NUMBER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationDispense2MedicationDispenseRepeatNumber"),
+						ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseRepeatNumber"),
 						new Object[] { medicationDispense2 }));
 			}
 
@@ -644,8 +641,7 @@ public class MedicationDispense2Operations extends MedicationDispenseOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_DISPENSE2__MEDICATION_DISPENSE_MEDICATION_SUPPLY_ORDER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationDispense2MedicationDispenseMedicationSupplyOrder"),
+						ConsolPlugin.INSTANCE.getString("MedicationDispense2MedicationDispenseMedicationSupplyOrder"),
 						new Object[] { medicationDispense2 }));
 			}
 

@@ -58,6 +58,7 @@ import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.TransferSummary;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -234,7 +235,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"TransferSummaryTransferSummaryHasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2"),
 						new Object[] { transferSummary }));
 			}
@@ -300,7 +301,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_AND_PLAN_OF_TREATMENT2_ARE_PRESENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"TransferSummaryTransferSummaryDoesNotHaveAssementAndPlanSection2WhenAssementAndPlanOfTreatment2ArePresent"),
 						new Object[] { transferSummary }));
 			}
@@ -364,8 +365,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryCodeP"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryCodeP"),
 						new Object[] { transferSummary }));
 			}
 
@@ -451,8 +451,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryCode"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryCode"),
 						new Object[] { transferSummary }));
 			}
 
@@ -515,8 +514,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryTitle"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryTitle"),
 						new Object[] { transferSummary }));
 			}
 
@@ -581,8 +579,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryParticipantSupport"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupport"),
 						new Object[] { transferSummary }));
 			}
 
@@ -647,8 +644,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryParticipantCallbackContact"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantCallbackContact"),
 						new Object[] { transferSummary }));
 			}
 
@@ -711,8 +707,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryDocumentationOf"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDocumentationOf"),
 						new Object[] { transferSummary }));
 			}
 
@@ -777,8 +772,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ADVANCE_DIRECTIVES_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryAdvanceDirectivesSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAdvanceDirectivesSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -843,8 +837,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ALLERGIES_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryAllergiesSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAllergiesSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -909,8 +902,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PHYSICAL_EXAM_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryPhysicalExamSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryPhysicalExamSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -975,8 +967,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ENCOUNTERS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryEncountersSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryEncountersSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1041,8 +1032,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_FAMILY_HISTORY_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryFamilyHistorySection"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryFamilyHistorySection"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1107,8 +1097,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_FUNCTIONAL_STATUS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryFunctionalStatusSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryFunctionalStatusSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1173,7 +1162,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"TransferSummaryTransferSummaryImmunizationsSectionEntriesOptional2"),
 						new Object[] { transferSummary }));
 			}
@@ -1239,8 +1228,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_MEDICAL_EQUIPMENT_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryMedicalEquipmentSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryMedicalEquipmentSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1305,8 +1293,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_MEDICATIONS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryMedicationsSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryMedicationsSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1369,8 +1356,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PAYERS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryPayersSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryPayersSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1435,8 +1421,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PLAN_OF_TREATMENT_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryPlanOfTreatmentSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryPlanOfTreatmentSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1499,8 +1484,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PROBLEM_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryProblemSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryProblemSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1565,8 +1549,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PROCEDURES_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryProceduresSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryProceduresSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1629,8 +1612,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_RESULTS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryResultsSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryResultsSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1695,8 +1677,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_SOCIAL_HISTORY_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummarySocialHistorySection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummarySocialHistorySection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1761,8 +1742,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_VITAL_SIGNS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryVitalSignsSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryVitalSignsSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1827,8 +1807,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_MENTAL_STATUS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryMentalStatusSection"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryMentalStatusSection"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1893,8 +1872,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_GENERAL_STATUS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryGeneralStatusSection"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryGeneralStatusSection"),
 						new Object[] { transferSummary }));
 			}
 
@@ -1959,8 +1937,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_REVIEW_OF_SYSTEMS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryReviewOfSystemsSection"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryReviewOfSystemsSection"),
 						new Object[] { transferSummary }));
 			}
 
@@ -2024,8 +2001,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_NUTRITION_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryNutritionSection"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryNutritionSection"),
 						new Object[] { transferSummary }));
 			}
 
@@ -2090,8 +2066,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_REASON_FOR_REFERRAL_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryReasonForReferralSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryReasonForReferralSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -2156,8 +2131,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryHistoryOfPastIllnessSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryHistoryOfPastIllnessSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -2222,8 +2196,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryHistoryOfPresentIllnessSection"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryHistoryOfPresentIllnessSection"),
 						new Object[] { transferSummary }));
 			}
 
@@ -2288,8 +2261,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ASSESSMENT_AND_PLAN_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryAssessmentAndPlanSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAssessmentAndPlanSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -2354,8 +2326,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ASSESSMENT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryAssessmentSection"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAssessmentSection"),
 						new Object[] { transferSummary }));
 			}
 
@@ -2420,8 +2391,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryDischargeDiagnosisSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryDischargeDiagnosisSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -2486,7 +2456,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"TransferSummaryTransferSummaryAdmissionMedicationsSectionEntriesOptional2"),
 						new Object[] { transferSummary }));
 			}
@@ -2552,8 +2522,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_ADMISSION_DIAGNOSIS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryAdmissionDiagnosisSection2"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryAdmissionDiagnosisSection2"),
 						new Object[] { transferSummary }));
 			}
 
@@ -2618,8 +2587,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_COURSE_OF_CARE_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryTransferSummaryCourseOfCareSection"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryCourseOfCareSection"),
 						new Object[] { transferSummary }));
 			}
 
@@ -2688,7 +2656,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantSupportAssociatedEntityAssociatedPersonName"),
 							new Object[] { eObject }));
 				}
@@ -2759,7 +2727,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantSupportAssociatedEntityClassCodeP"),
 							new Object[] { eObject }));
 				}
@@ -2856,7 +2824,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantSupportAssociatedEntityClassCode"),
 							new Object[] { eObject }));
 				}
@@ -2927,7 +2895,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantSupportAssociatedEntityAssociatedPerson"),
 							new Object[] { eObject }));
 				}
@@ -2998,8 +2966,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"TransferSummaryTransferSummaryParticipantSupportTypeCode"),
+							ConsolPlugin.INSTANCE.getString("TransferSummaryTransferSummaryParticipantSupportTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -3069,7 +3036,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_SUPPORT_ASSOCIATED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantSupportAssociatedEntity"),
 							new Object[] { eObject }));
 				}
@@ -3140,7 +3107,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPersonName"),
 							new Object[] { eObject }));
 				}
@@ -3211,7 +3178,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityClassCode"),
 							new Object[] { eObject }));
 				}
@@ -3282,7 +3249,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityId"),
 							new Object[] { eObject }));
 				}
@@ -3353,7 +3320,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ADDR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAddr"),
 							new Object[] { eObject }));
 				}
@@ -3424,7 +3391,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_TELECOM,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityTelecom"),
 							new Object[] { eObject }));
 				}
@@ -3495,7 +3462,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityAssociatedPerson"),
 							new Object[] { eObject }));
 				}
@@ -3566,7 +3533,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY_SCOPING_ORGANIZATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntityScopingOrganization"),
 							new Object[] { eObject }));
 				}
@@ -3637,7 +3604,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantCallbackContactTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -3708,7 +3675,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_PARTICIPANT_CALLBACK_CONTACT_ASSOCIATED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryParticipantCallbackContactAssociatedEntity"),
 							new Object[] { eObject }));
 				}
@@ -3779,7 +3746,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -3850,7 +3817,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerFunctionCodeP"),
 							new Object[] { eObject }));
 				}
@@ -3947,7 +3914,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_FUNCTION_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryDocumentationOfServiceEventPerformerFunctionCode"),
 							new Object[] { eObject }));
 				}
@@ -4018,7 +3985,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryDocumentationOfServiceEventClassCode"),
 							new Object[] { eObject }));
 				}
@@ -4089,7 +4056,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryDocumentationOfServiceEventCode"),
 							new Object[] { eObject }));
 				}
@@ -4160,7 +4127,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryDocumentationOfServiceEventPerformer1"),
 							new Object[] { eObject }));
 				}
@@ -4231,7 +4198,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TRANSFER_SUMMARY__TRANSFER_SUMMARY_DOCUMENTATION_OF_SERVICE_EVENT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"TransferSummaryTransferSummaryDocumentationOfServiceEvent"),
 							new Object[] { eObject }));
 				}
@@ -5614,8 +5581,7 @@ public class TransferSummaryOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TRANSFER_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TransferSummaryGeneralHeaderConstraintsTemplateId"),
+						ConsolPlugin.INSTANCE.getString("TransferSummaryGeneralHeaderConstraintsTemplateId"),
 						new Object[] { transferSummary }));
 			}
 

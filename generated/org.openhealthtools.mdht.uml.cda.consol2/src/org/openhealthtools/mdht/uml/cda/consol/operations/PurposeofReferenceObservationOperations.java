@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PurposeofReferenceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -116,7 +117,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PurposeofReferenceObservationPurposeofReferenceObservationCodeCodeSystem"),
 						new Object[] { purposeofReferenceObservation }));
 			}
@@ -183,7 +184,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PurposeofReferenceObservationPurposeofReferenceObservationTemplateId"),
 						new Object[] { purposeofReferenceObservation }));
 			}
@@ -250,7 +251,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PurposeofReferenceObservationPurposeofReferenceObservationClassCode"),
 						new Object[] { purposeofReferenceObservation }));
 			}
@@ -317,7 +318,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PurposeofReferenceObservationPurposeofReferenceObservationCode"),
 						new Object[] { purposeofReferenceObservation }));
 			}
@@ -384,7 +385,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PurposeofReferenceObservationPurposeofReferenceObservationMoodCode"),
 						new Object[] { purposeofReferenceObservation }));
 			}
@@ -453,7 +454,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PurposeofReferenceObservationPurposeofReferenceObservationValue"),
 						new Object[] { purposeofReferenceObservation }));
 			}

@@ -31,6 +31,7 @@ import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -131,8 +132,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistorySectionSocialHistorySectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionTemplateId"),
 						new Object[] { socialHistorySection }));
 			}
 
@@ -197,8 +197,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistorySectionSocialHistorySectionCode"),
+						ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionCode"),
 						new Object[] { socialHistorySection }));
 			}
 
@@ -261,8 +260,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistorySectionSocialHistorySectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionCodeP"),
 						new Object[] { socialHistorySection }));
 			}
 
@@ -325,8 +323,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistorySectionSocialHistorySectionTitle"),
+						ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionTitle"),
 						new Object[] { socialHistorySection }));
 			}
 
@@ -389,8 +386,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistorySectionSocialHistorySectionText"),
+						ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionText"),
 						new Object[] { socialHistorySection }));
 			}
 
@@ -455,7 +451,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SocialHistorySectionSocialHistorySectionSocialHistoryObservation"),
 						new Object[] { socialHistorySection }));
 			}
@@ -521,8 +517,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistorySectionSocialHistorySectionPregnancyObservation"),
+						ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionPregnancyObservation"),
 						new Object[] { socialHistorySection }));
 			}
 
@@ -587,7 +582,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_SMOKING_STATUS_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SocialHistorySectionSocialHistorySectionSmokingStatusObservation"),
 						new Object[] { socialHistorySection }));
 			}
@@ -653,8 +648,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TOBACCO_USE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistorySectionSocialHistorySectionTobaccoUse"),
+						ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistorySectionTobaccoUse"),
 						new Object[] { socialHistorySection }));
 			}
 

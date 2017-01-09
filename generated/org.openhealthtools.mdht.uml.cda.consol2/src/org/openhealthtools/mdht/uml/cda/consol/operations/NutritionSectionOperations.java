@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionSection;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionalStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -116,8 +117,7 @@ public class NutritionSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionSectionNutritionSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionTemplateId"),
 						new Object[] { nutritionSection }));
 			}
 
@@ -182,8 +182,7 @@ public class NutritionSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionSectionNutritionSectionCode"),
+						ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionCode"),
 						new Object[] { nutritionSection }));
 			}
 
@@ -246,8 +245,7 @@ public class NutritionSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionSectionNutritionSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionCodeP"),
 						new Object[] { nutritionSection }));
 			}
 
@@ -310,8 +308,7 @@ public class NutritionSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionSectionNutritionSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionTitle"),
 						new Object[] { nutritionSection }));
 			}
 
@@ -374,8 +371,7 @@ public class NutritionSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionSectionNutritionSectionText"),
+						ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionText"),
 						new Object[] { nutritionSection }));
 			}
 
@@ -440,8 +436,7 @@ public class NutritionSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_SECTION__NUTRITION_SECTION_NUTRITIONAL_STATUS_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionSectionNutritionSectionNutritionalStatusObservation"),
+						ConsolPlugin.INSTANCE.getString("NutritionSectionNutritionSectionNutritionalStatusObservation"),
 						new Object[] { nutritionSection }));
 			}
 

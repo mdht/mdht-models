@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,8 +118,7 @@ public class MedicationsSection2Operations extends MedicationsSectionEntriesOpti
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION2__MEDICATIONS_SECTION2_NULL_FLAVOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationsSection2MedicationsSection2NullFlavor"),
+						ConsolPlugin.INSTANCE.getString("MedicationsSection2MedicationsSection2NullFlavor"),
 						new Object[] { medicationsSection2 }));
 			}
 
@@ -181,8 +181,7 @@ public class MedicationsSection2Operations extends MedicationsSectionEntriesOpti
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION2__MEDICATIONS_SECTION2_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationsSection2MedicationsSection2Title"),
+						ConsolPlugin.INSTANCE.getString("MedicationsSection2MedicationsSection2Title"),
 						new Object[] { medicationsSection2 }));
 			}
 
@@ -245,8 +244,7 @@ public class MedicationsSection2Operations extends MedicationsSectionEntriesOpti
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION2__MEDICATIONS_SECTION2_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationsSection2MedicationsSection2Text"),
+						ConsolPlugin.INSTANCE.getString("MedicationsSection2MedicationsSection2Text"),
 						new Object[] { medicationsSection2 }));
 			}
 
@@ -311,7 +309,7 @@ public class MedicationsSection2Operations extends MedicationsSectionEntriesOpti
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION2__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicationsSection2MedicationsSectionEntriesOptionalTemplateId"),
 						new Object[] { medicationsSection2 }));
 			}
@@ -377,8 +375,7 @@ public class MedicationsSection2Operations extends MedicationsSectionEntriesOpti
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION2__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationsSection2MedicationsSectionEntriesOptionalCodeP"),
+						ConsolPlugin.INSTANCE.getString("MedicationsSection2MedicationsSectionEntriesOptionalCodeP"),
 						new Object[] { medicationsSection2 }));
 			}
 
@@ -467,8 +464,7 @@ public class MedicationsSection2Operations extends MedicationsSectionEntriesOpti
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION2__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationsSection2MedicationsSectionEntriesOptionalCode"),
+						ConsolPlugin.INSTANCE.getString("MedicationsSection2MedicationsSectionEntriesOptionalCode"),
 						new Object[] { medicationsSection2 }));
 			}
 
@@ -533,7 +529,7 @@ public class MedicationsSection2Operations extends MedicationsSectionEntriesOpti
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION2__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_MEDICATION_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicationsSection2MedicationsSectionEntriesOptionalMedicationActivity"),
 						new Object[] { medicationsSection2 }));
 			}

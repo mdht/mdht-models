@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureImplantsSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,8 +115,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_IMPLANTS_SECTION__PROCEDURE_IMPLANTS_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureImplantsSectionProcedureImplantsSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionProcedureImplantsSectionTemplateId"),
 						new Object[] { procedureImplantsSection }));
 			}
 
@@ -181,8 +181,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_IMPLANTS_SECTION__PROCEDURE_IMPLANTS_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureImplantsSectionProcedureImplantsSectionCode"),
+						ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionProcedureImplantsSectionCode"),
 						new Object[] { procedureImplantsSection }));
 			}
 
@@ -246,8 +245,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_IMPLANTS_SECTION__PROCEDURE_IMPLANTS_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureImplantsSectionProcedureImplantsSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionProcedureImplantsSectionCodeP"),
 						new Object[] { procedureImplantsSection }));
 			}
 
@@ -311,8 +309,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_IMPLANTS_SECTION__PROCEDURE_IMPLANTS_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureImplantsSectionProcedureImplantsSectionText"),
+						ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionProcedureImplantsSectionText"),
 						new Object[] { procedureImplantsSection }));
 			}
 
@@ -376,8 +373,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_IMPLANTS_SECTION__PROCEDURE_IMPLANTS_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureImplantsSectionProcedureImplantsSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionProcedureImplantsSectionTitle"),
 						new Object[] { procedureImplantsSection }));
 			}
 

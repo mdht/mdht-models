@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,8 +118,7 @@ public class VitalSignsSection2Operations extends VitalSignsSectionEntriesOption
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGNS_SECTION2__VITAL_SIGNS_SECTION2_NULL_FLAVOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"VitalSignsSection2VitalSignsSection2NullFlavor"),
+						ConsolPlugin.INSTANCE.getString("VitalSignsSection2VitalSignsSection2NullFlavor"),
 						new Object[] { vitalSignsSection2 }));
 			}
 
@@ -181,8 +181,7 @@ public class VitalSignsSection2Operations extends VitalSignsSectionEntriesOption
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGNS_SECTION2__VITAL_SIGNS_SECTION2_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"VitalSignsSection2VitalSignsSection2Title"),
+						ConsolPlugin.INSTANCE.getString("VitalSignsSection2VitalSignsSection2Title"),
 						new Object[] { vitalSignsSection2 }));
 			}
 
@@ -245,8 +244,7 @@ public class VitalSignsSection2Operations extends VitalSignsSectionEntriesOption
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGNS_SECTION2__VITAL_SIGNS_SECTION2_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"VitalSignsSection2VitalSignsSection2Text"),
+						ConsolPlugin.INSTANCE.getString("VitalSignsSection2VitalSignsSection2Text"),
 						new Object[] { vitalSignsSection2 }));
 			}
 
@@ -311,8 +309,7 @@ public class VitalSignsSection2Operations extends VitalSignsSectionEntriesOption
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGNS_SECTION2__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"VitalSignsSection2VitalSignsSectionEntriesOptionalTemplateId"),
+						ConsolPlugin.INSTANCE.getString("VitalSignsSection2VitalSignsSectionEntriesOptionalTemplateId"),
 						new Object[] { vitalSignsSection2 }));
 			}
 
@@ -377,8 +374,7 @@ public class VitalSignsSection2Operations extends VitalSignsSectionEntriesOption
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGNS_SECTION2__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"VitalSignsSection2VitalSignsSectionEntriesOptionalCodeP"),
+						ConsolPlugin.INSTANCE.getString("VitalSignsSection2VitalSignsSectionEntriesOptionalCodeP"),
 						new Object[] { vitalSignsSection2 }));
 			}
 
@@ -467,8 +463,7 @@ public class VitalSignsSection2Operations extends VitalSignsSectionEntriesOption
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGNS_SECTION2__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"VitalSignsSection2VitalSignsSectionEntriesOptionalCode"),
+						ConsolPlugin.INSTANCE.getString("VitalSignsSection2VitalSignsSectionEntriesOptionalCode"),
 						new Object[] { vitalSignsSection2 }));
 			}
 
@@ -533,7 +528,7 @@ public class VitalSignsSection2Operations extends VitalSignsSectionEntriesOption
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGNS_SECTION2__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGNS_ORGANIZER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"VitalSignsSection2VitalSignsSectionEntriesOptionalVitalSignsOrganizer"),
 						new Object[] { vitalSignsSection2 }));
 			}

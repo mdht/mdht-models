@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivitySupply;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -113,8 +114,7 @@ public class PlanOfCareActivitySupplyOperations extends SupplyOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_SUPPLY__PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlanOfCareActivitySupplyPlanOfCareActivitySupplyTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySupplyPlanOfCareActivitySupplyTemplateId"),
 						new Object[] { planOfCareActivitySupply }));
 			}
 
@@ -179,8 +179,7 @@ public class PlanOfCareActivitySupplyOperations extends SupplyOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_SUPPLY__PLAN_OF_CARE_ACTIVITY_SUPPLY_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlanOfCareActivitySupplyPlanOfCareActivitySupplyClassCode"),
+						ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySupplyPlanOfCareActivitySupplyClassCode"),
 						new Object[] { planOfCareActivitySupply }));
 			}
 
@@ -247,8 +246,7 @@ public class PlanOfCareActivitySupplyOperations extends SupplyOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_SUPPLY__PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlanOfCareActivitySupplyPlanOfCareActivitySupplyMoodCode"),
+						ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySupplyPlanOfCareActivitySupplyMoodCode"),
 						new Object[] { planOfCareActivitySupply }));
 			}
 
@@ -312,8 +310,7 @@ public class PlanOfCareActivitySupplyOperations extends SupplyOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_SUPPLY__PLAN_OF_CARE_ACTIVITY_SUPPLY_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlanOfCareActivitySupplyPlanOfCareActivitySupplyId"),
+						ConsolPlugin.INSTANCE.getString("PlanOfCareActivitySupplyPlanOfCareActivitySupplyId"),
 						new Object[] { planOfCareActivitySupply }));
 			}
 

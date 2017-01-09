@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedication;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -121,8 +122,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATION__DISCHARGE_MEDICATION_MEDICATION_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeMedicationDischargeMedicationMedicationActivity"),
+						ConsolPlugin.INSTANCE.getString("DischargeMedicationDischargeMedicationMedicationActivity"),
 						new Object[] { dischargeMedication }));
 			}
 
@@ -186,8 +186,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATION__DISCHARGE_MEDICATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeMedicationDischargeMedicationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("DischargeMedicationDischargeMedicationTemplateId"),
 						new Object[] { dischargeMedication }));
 			}
 
@@ -251,8 +250,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATION__DISCHARGE_MEDICATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeMedicationDischargeMedicationClassCode"),
+						ConsolPlugin.INSTANCE.getString("DischargeMedicationDischargeMedicationClassCode"),
 						new Object[] { dischargeMedication }));
 			}
 
@@ -315,8 +313,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATION__DISCHARGE_MEDICATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeMedicationDischargeMedicationMoodCode"),
+						ConsolPlugin.INSTANCE.getString("DischargeMedicationDischargeMedicationMoodCode"),
 						new Object[] { dischargeMedication }));
 			}
 
@@ -381,8 +378,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATION__DISCHARGE_MEDICATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeMedicationDischargeMedicationCode"),
+						ConsolPlugin.INSTANCE.getString("DischargeMedicationDischargeMedicationCode"),
 						new Object[] { dischargeMedication }));
 			}
 

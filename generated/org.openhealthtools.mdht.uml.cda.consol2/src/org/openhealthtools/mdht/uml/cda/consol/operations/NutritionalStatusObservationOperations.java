@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionAssessment;
 import org.openhealthtools.mdht.uml.cda.consol.NutritionalStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -125,7 +126,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionalStatusObservationNutritionalStatusObservationTemplateId"),
 						new Object[] { nutritionalStatusObservation }));
 			}
@@ -192,7 +193,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionalStatusObservationNutritionalStatusObservationClassCode"),
 						new Object[] { nutritionalStatusObservation }));
 			}
@@ -259,7 +260,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionalStatusObservationNutritionalStatusObservationMoodCode"),
 						new Object[] { nutritionalStatusObservation }));
 			}
@@ -325,8 +326,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionalStatusObservationNutritionalStatusObservationId"),
+						ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationId"),
 						new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -392,7 +392,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionalStatusObservationNutritionalStatusObservationCodeP"),
 						new Object[] { nutritionalStatusObservation }));
 			}
@@ -483,8 +483,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionalStatusObservationNutritionalStatusObservationCode"),
+						ConsolPlugin.INSTANCE.getString("NutritionalStatusObservationNutritionalStatusObservationCode"),
 						new Object[] { nutritionalStatusObservation }));
 			}
 
@@ -551,7 +550,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionalStatusObservationNutritionalStatusObservationStatusCode"),
 						new Object[] { nutritionalStatusObservation }));
 			}
@@ -618,7 +617,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionalStatusObservationNutritionalStatusObservationStatusCodeP"),
 						new Object[] { nutritionalStatusObservation }));
 			}
@@ -685,7 +684,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionalStatusObservationNutritionalStatusObservationEffectiveTime"),
 						new Object[] { nutritionalStatusObservation }));
 			}
@@ -754,7 +753,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionalStatusObservationNutritionalStatusObservationValue"),
 						new Object[] { nutritionalStatusObservation }));
 			}
@@ -821,7 +820,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_VALUE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionalStatusObservationNutritionalStatusObservationValueP"),
 						new Object[] { nutritionalStatusObservation }));
 			}
@@ -888,7 +887,7 @@ public class NutritionalStatusObservationOperations extends ClinicalStatementOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITIONAL_STATUS_OBSERVATION__NUTRITIONAL_STATUS_OBSERVATION_NUTRITION_ASSESSMENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionalStatusObservationNutritionalStatusObservationNutritionAssessment"),
 						new Object[] { nutritionalStatusObservation }));
 			}

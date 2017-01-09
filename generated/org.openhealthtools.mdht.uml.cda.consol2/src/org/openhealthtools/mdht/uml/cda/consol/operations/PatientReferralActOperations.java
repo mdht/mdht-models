@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.PatientReferralAct;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -145,8 +146,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActTemplateId"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -209,8 +209,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActClassCode"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActClassCode"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -274,8 +273,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_MOOD_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActMoodCodeP"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActMoodCodeP"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -361,8 +359,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActMoodCode"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActMoodCode"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -425,8 +422,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActId"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActId"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -489,8 +485,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActCodeP"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActCodeP"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -576,8 +571,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActCode"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActCode"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -642,8 +636,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActStatusCode"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActStatusCode"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -708,8 +701,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActStatusCodeP"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -774,8 +766,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEffectiveTime"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -840,8 +831,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PRIORITY_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActPriorityCode"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActPriorityCode"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -906,8 +896,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActEntryRelationship"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActEntryRelationship"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -972,8 +961,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActAuthorParticipation"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActAuthorParticipation"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -1037,8 +1025,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_INDICATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActIndication2"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActIndication2"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -1102,8 +1089,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PatientReferralActPatientReferralActParticipant"),
+						ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActParticipant"),
 						new Object[] { patientReferralAct }));
 			}
 
@@ -1172,7 +1158,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActEntryRelationshipObservationClassCode"),
 							new Object[] { eObject }));
 				}
@@ -1243,7 +1229,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActEntryRelationshipObservationMoodCode"),
 							new Object[] { eObject }));
 				}
@@ -1314,7 +1300,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActEntryRelationshipObservationCodeP"),
 							new Object[] { eObject }));
 				}
@@ -1411,7 +1397,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActEntryRelationshipObservationCode"),
 							new Object[] { eObject }));
 				}
@@ -1483,7 +1469,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActEntryRelationshipObservationStatusCode"),
 							new Object[] { eObject }));
 				}
@@ -1554,7 +1540,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_STATUS_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActEntryRelationshipObservationStatusCodeP"),
 							new Object[] { eObject }));
 				}
@@ -1625,7 +1611,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActEntryRelationshipObservationPriorityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -1722,7 +1708,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_PRIORITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActEntryRelationshipObservationPriorityCode"),
 							new Object[] { eObject }));
 				}
@@ -1795,7 +1781,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActEntryRelationshipObservationValue"),
 							new Object[] { eObject }));
 				}
@@ -1866,7 +1852,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActEntryRelationshipObservationValueP"),
 							new Object[] { eObject }));
 				}
@@ -1937,7 +1923,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActEntryRelationshipTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -2008,7 +1994,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_ENTRY_RELATIONSHIP_OBSERVATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActEntryRelationshipObservation"),
 							new Object[] { eObject }));
 				}
@@ -2079,7 +2065,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActParticipantParticipantRoleCodeP"),
 							new Object[] { eObject }));
 				}
@@ -2176,7 +2162,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActParticipantParticipantRoleCode"),
 							new Object[] { eObject }));
 				}
@@ -2247,8 +2233,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PatientReferralActPatientReferralActParticipantTypeCode"),
+							ConsolPlugin.INSTANCE.getString("PatientReferralActPatientReferralActParticipantTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -2318,7 +2303,7 @@ public class PatientReferralActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PATIENT_REFERRAL_ACT__PATIENT_REFERRAL_ACT_PARTICIPANT_PARTICIPANT_ROLE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PatientReferralActPatientReferralActParticipantParticipantRole"),
 							new Object[] { eObject }));
 				}

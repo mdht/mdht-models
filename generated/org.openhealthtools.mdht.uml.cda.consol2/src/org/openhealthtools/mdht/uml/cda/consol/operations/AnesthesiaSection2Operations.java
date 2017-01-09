@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -214,8 +215,7 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AnesthesiaSection2AnesthesiaSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionTemplateId"),
 						new Object[] { anesthesiaSection2 }));
 			}
 
@@ -278,8 +278,7 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AnesthesiaSection2AnesthesiaSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionCodeP"),
 						new Object[] { anesthesiaSection2 }));
 			}
 
@@ -365,8 +364,7 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AnesthesiaSection2AnesthesiaSectionCode"),
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionCode"),
 						new Object[] { anesthesiaSection2 }));
 			}
 
@@ -431,7 +429,7 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AnesthesiaSection2AnesthesiaSectionProcedureActivityProcedure"),
 						new Object[] { anesthesiaSection2 }));
 			}
@@ -497,8 +495,7 @@ public class AnesthesiaSection2Operations extends AnesthesiaSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ANESTHESIA_SECTION2__ANESTHESIA_SECTION_MEDICATION_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AnesthesiaSection2AnesthesiaSectionMedicationActivity"),
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSection2AnesthesiaSectionMedicationActivity"),
 						new Object[] { anesthesiaSection2 }));
 			}
 

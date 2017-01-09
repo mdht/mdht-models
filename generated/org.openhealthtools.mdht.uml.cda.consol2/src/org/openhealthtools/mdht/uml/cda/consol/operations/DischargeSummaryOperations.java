@@ -51,6 +51,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -206,7 +207,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
 						new Object[] { dischargeSummary }));
 			}
@@ -270,8 +271,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryCodeP"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryCodeP"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -357,8 +357,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryCode"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryCode"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -423,7 +422,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryHospitalAdmissionMedicationsSectionEntriesOptional"),
 						new Object[] { dischargeSummary }));
 			}
@@ -489,7 +488,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryHospitalAdmissionDiagnosisSection"),
 						new Object[] { dischargeSummary }));
 			}
@@ -555,7 +554,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryHospitalDischargeDiagnosisSection"),
 						new Object[] { dischargeSummary }));
 			}
@@ -621,8 +620,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DISCHARGE_DIET_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryDischargeDietSection"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryDischargeDietSection"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -687,7 +685,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryHospitalDischargeMedicationsSectionEntriesOptional"),
 						new Object[] { dischargeSummary }));
 			}
@@ -753,8 +751,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryFunctionalStatusSection"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryFunctionalStatusSection"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -819,7 +816,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryHistoryOfPresentIllnessSection"),
 						new Object[] { dischargeSummary }));
 			}
@@ -885,8 +882,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryHospitalCourseSection"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalCourseSection"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -951,8 +947,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryPlanOfCareSection"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryPlanOfCareSection"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -1017,8 +1012,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryHistoryOfPastIllnessSection"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHistoryOfPastIllnessSection"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -1081,8 +1075,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryComponentOf"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryComponentOf"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -1147,7 +1140,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryChiefComplaintAndReasonForVisitSection"),
 						new Object[] { dischargeSummary }));
 			}
@@ -1213,8 +1206,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_CHIEF_COMPLAINT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryChiefComplaintSection"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryChiefComplaintSection"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -1279,8 +1271,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_FAMILY_HISTORY_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryFamilyHistorySection"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryFamilyHistorySection"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -1345,8 +1336,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_CONSULTATIONS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryHospitalConsultationsSection"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryHospitalConsultationsSection"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -1411,7 +1401,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryHospitalDischargeInstructionsSection"),
 						new Object[] { dischargeSummary }));
 			}
@@ -1477,7 +1467,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_PHYSICAL_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryHospitalDischargePhysicalSection"),
 						new Object[] { dischargeSummary }));
 			}
@@ -1543,7 +1533,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryHospitalDischargeStudiesSummarySection"),
 						new Object[] { dischargeSummary }));
 			}
@@ -1609,7 +1599,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryImmunizationsSectionEntriesOptional"),
 						new Object[] { dischargeSummary }));
 			}
@@ -1675,7 +1665,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PROBLEM_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryProblemSectionEntriesOptional"),
 						new Object[] { dischargeSummary }));
 			}
@@ -1741,7 +1731,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_PROCEDURES_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryProceduresSectionEntriesOptional"),
 						new Object[] { dischargeSummary }));
 			}
@@ -1807,8 +1797,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_REASON_FOR_VISIT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryReasonForVisitSection"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryReasonForVisitSection"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -1873,8 +1862,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummaryReviewOfSystemsSection"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummaryReviewOfSystemsSection"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -1939,8 +1927,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_SOCIAL_HISTORY_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryDischargeSummarySocialHistorySection"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryDischargeSummarySocialHistorySection"),
 						new Object[] { dischargeSummary }));
 			}
 
@@ -2005,7 +1992,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_ALLERGIES_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryAllergiesSectionEntriesOptional"),
 						new Object[] { dischargeSummary }));
 			}
@@ -2071,7 +2058,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"DischargeSummaryDischargeSummaryVitalSignsSectionEntriesOptional"),
 						new Object[] { dischargeSummary }));
 			}
@@ -2141,7 +2128,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntityHasPersonOrOrganization"),
 							new Object[] { eObject }));
 				}
@@ -2212,7 +2199,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3ResponsiblePartyAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -2283,7 +2270,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_OR_ORGANIZATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntityHasPersonOrOrganization"),
 							new Object[] { eObject }));
 				}
@@ -2354,7 +2341,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipantAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -2425,7 +2412,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_LOW,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeLow"),
 							new Object[] { eObject }));
 				}
@@ -2496,7 +2483,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_ENCOMPASSING_ENCOUNTER_HAS_EFFECTIVE_TIME_HIGH,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3EncompassingEncounterHasEffectiveTimeHigh"),
 							new Object[] { eObject }));
 				}
@@ -2567,7 +2554,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_VALUE_SET,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeValueSet"),
 							new Object[] { eObject }));
 				}
@@ -2638,7 +2625,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE_CODE_SYSTEM,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCodeCodeSystem"),
 							new Object[] { eObject }));
 				}
@@ -2709,7 +2696,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_DISCHARGE_DISPOSITION_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3DischargeDispositionCode"),
 							new Object[] { eObject }));
 				}
@@ -2780,7 +2767,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_EFFECTIVE_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3EffectiveTime"),
 							new Object[] { eObject }));
 				}
@@ -2851,7 +2838,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_RESPONSIBLE_PARTY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3ResponsibleParty"),
 							new Object[] { eObject }));
 				}
@@ -2922,7 +2909,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER3_ENCOUNTER_PARTICIPANT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter3EncounterParticipant"),
 							new Object[] { eObject }));
 				}
@@ -2993,7 +2980,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"DischargeSummaryDischargeSummaryComponentOfEncompassingEncounter"),
 							new Object[] { eObject }));
 				}
@@ -4215,8 +4202,7 @@ public class DischargeSummaryOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_SUMMARY__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeSummaryGeneralHeaderConstraintsTemplateId"),
+						ConsolPlugin.INSTANCE.getString("DischargeSummaryGeneralHeaderConstraintsTemplateId"),
 						new Object[] { dischargeSummary }));
 			}
 

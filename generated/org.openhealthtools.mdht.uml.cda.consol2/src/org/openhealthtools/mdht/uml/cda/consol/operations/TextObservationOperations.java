@@ -29,6 +29,7 @@ import org.openhealthtools.mdht.uml.cda.consol.QuantityMeasurementObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.TextObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -128,8 +129,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEXT_REFERENCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TextObservationTextObservationTextReference"),
+						ConsolPlugin.INSTANCE.getString("TextObservationTextObservationTextReference"),
 						new Object[] { textObservation }));
 			}
 
@@ -194,8 +194,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEXT_REFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TextObservationTextObservationTextReferenceValue"),
+						ConsolPlugin.INSTANCE.getString("TextObservationTextObservationTextReferenceValue"),
 						new Object[] { textObservation }));
 			}
 
@@ -258,8 +257,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_REFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TextObservationTextObservationReferenceValue"),
+						ConsolPlugin.INSTANCE.getString("TextObservationTextObservationReferenceValue"),
 						new Object[] { textObservation }));
 			}
 
@@ -322,8 +320,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TextObservationTextObservationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("TextObservationTextObservationTemplateId"),
 						new Object[] { textObservation }));
 			}
 
@@ -386,8 +383,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TextObservationTextObservationClassCode"),
+						ConsolPlugin.INSTANCE.getString("TextObservationTextObservationClassCode"),
 						new Object[] { textObservation }));
 			}
 
@@ -450,8 +446,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TextObservationTextObservationMoodCode"),
+						ConsolPlugin.INSTANCE.getString("TextObservationTextObservationMoodCode"),
 						new Object[] { textObservation }));
 			}
 
@@ -514,8 +509,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TextObservationTextObservationCode"),
+						ConsolPlugin.INSTANCE.getString("TextObservationTextObservationCode"),
 						new Object[] { textObservation }));
 			}
 
@@ -578,8 +572,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TextObservationTextObservationEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("TextObservationTextObservationEffectiveTime"),
 						new Object[] { textObservation }));
 			}
 
@@ -642,8 +635,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TextObservationTextObservationText"),
+						ConsolPlugin.INSTANCE.getString("TextObservationTextObservationText"),
 						new Object[] { textObservation }));
 			}
 
@@ -706,8 +698,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TextObservationTextObservationValue"),
+						ConsolPlugin.INSTANCE.getString("TextObservationTextObservationValue"),
 						new Object[] { textObservation }));
 			}
 
@@ -772,8 +763,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_SOP_INSTANCE_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TextObservationTextObservationSOPInstanceObservation"),
+						ConsolPlugin.INSTANCE.getString("TextObservationTextObservationSOPInstanceObservation"),
 						new Object[] { textObservation }));
 			}
 
@@ -838,8 +828,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_QUANTITY_MEASUREMENT_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TextObservationTextObservationQuantityMeasurementObservation"),
+						ConsolPlugin.INSTANCE.getString("TextObservationTextObservationQuantityMeasurementObservation"),
 						new Object[] { textObservation }));
 			}
 

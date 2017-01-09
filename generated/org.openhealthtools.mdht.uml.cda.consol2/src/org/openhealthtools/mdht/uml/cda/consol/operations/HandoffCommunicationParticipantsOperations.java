@@ -20,6 +20,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipants;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -126,7 +127,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsTemplateId"),
 						new Object[] { handoffCommunicationParticipants }));
 			}
@@ -193,7 +194,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsClassCode"),
 						new Object[] { handoffCommunicationParticipants }));
 			}
@@ -260,7 +261,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsMoodCode"),
 						new Object[] { handoffCommunicationParticipants }));
 			}
@@ -327,7 +328,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsCodeP"),
 						new Object[] { handoffCommunicationParticipants }));
 			}
@@ -419,7 +420,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsCode"),
 						new Object[] { handoffCommunicationParticipants }));
 			}
@@ -487,7 +488,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsStatusCode"),
 						new Object[] { handoffCommunicationParticipants }));
 			}
@@ -554,7 +555,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsStatusCodeP"),
 						new Object[] { handoffCommunicationParticipants }));
 			}
@@ -621,7 +622,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsEffectiveTime"),
 						new Object[] { handoffCommunicationParticipants }));
 			}
@@ -688,7 +689,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipant"),
 						new Object[] { handoffCommunicationParticipants }));
 			}
@@ -755,7 +756,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HandoffCommunicationParticipantsHandoffCommunicationParticipantsAuthorParticipation"),
 						new Object[] { handoffCommunicationParticipants }));
 			}
@@ -826,7 +827,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntityName"),
 							new Object[] { eObject }));
 				}
@@ -898,7 +899,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleId"),
 							new Object[] { eObject }));
 				}
@@ -970,7 +971,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleCodeP"),
 							new Object[] { eObject }));
 				}
@@ -1068,7 +1069,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleCode"),
 							new Object[] { eObject }));
 				}
@@ -1140,7 +1141,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_ADDR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRoleAddr"),
 							new Object[] { eObject }));
 				}
@@ -1212,7 +1213,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRolePlayingEntity"),
 							new Object[] { eObject }));
 				}
@@ -1284,7 +1285,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -1356,7 +1357,7 @@ public class HandoffCommunicationParticipantsOperations extends ClinicalStatemen
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.HANDOFF_COMMUNICATION_PARTICIPANTS__HANDOFF_COMMUNICATION_PARTICIPANTS_PARTICIPANT_PARTICIPANT_ROLE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"HandoffCommunicationParticipantsHandoffCommunicationParticipantsParticipantParticipantRole"),
 							new Object[] { eObject }));
 				}

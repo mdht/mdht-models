@@ -30,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -152,8 +153,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityStatusCodeP"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -231,7 +231,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY2_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationActivity2ImmunizationActivity2AuthorParticipation"),
 						new Object[] { immunizationActivity2 }));
 			}
@@ -297,7 +297,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY2_ENTRY_RELATIONSHIP_FOR_SUB_ADMIN_ACT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationActivity2ImmunizationActivity2EntryRelationshipForSubAdminAct"),
 						new Object[] { immunizationActivity2 }));
 			}
@@ -367,7 +367,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY2_ENTRY_RELATIONSHIP_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ImmunizationActivity2ImmunizationActivity2EntryRelationshipTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -438,7 +438,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY2_ENTRY_RELATIONSHIP_INVERSION_IND,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ImmunizationActivity2ImmunizationActivity2EntryRelationshipInversionInd"),
 							new Object[] { eObject }));
 				}
@@ -509,7 +509,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY2_ENTRY_RELATIONSHIP_SEQUENCE_NUMBER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ImmunizationActivity2ImmunizationActivity2EntryRelationshipSequenceNumber"),
 							new Object[] { eObject }));
 				}
@@ -580,7 +580,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY2_ENTRY_RELATIONSHIP_SUBSTANCE_ADMINISTERED_ACT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ImmunizationActivity2ImmunizationActivity2EntryRelationshipSubstanceAdministeredAct"),
 							new Object[] { eObject }));
 				}
@@ -924,8 +924,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_TEXT_REFERENCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityTextReference"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityTextReference"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -990,8 +989,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_REFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityReferenceValue"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityReferenceValue"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -1056,8 +1054,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_TEXT_REFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityTextReferenceValue"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityTextReferenceValue"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -1122,7 +1119,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_INSTRUCTION_INVERSION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationActivity2ImmunizationActivityInstructionInversion"),
 						new Object[] { immunizationActivity2 }));
 			}
@@ -1187,8 +1184,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityTemplateId"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -1230,8 +1226,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityCode"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityCode"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -1282,8 +1277,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityStatusCode"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityStatusCode"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -1327,8 +1321,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_REPEAT_NUMBER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityRepeatNumber"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityRepeatNumber"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -1372,7 +1365,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationActivity2ImmunizationActivityAdministrationUnitCodeP"),
 						new Object[] { immunizationActivity2 }));
 			}
@@ -1440,7 +1433,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationActivity2ImmunizationActivityAdministrationUnitCode"),
 						new Object[] { immunizationActivity2 }));
 			}
@@ -1483,8 +1476,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityText"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityText"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -1589,7 +1581,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 	 */
 	protected static final String VALIDATE_IMMUNIZATION_ACTIVITY_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and " +
 			"let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in " +
-			"value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.code = 'OPDROP' or value.code = 'ORDROP' or value.code = 'OTDROP' or value.code = 'PUFF' or value.code = 'SCOOP' or value.code = 'SPRY')";
+			"value.codeSystem = '2.16.840.1.113883.5.85' and (value.code = 'APPFUL' or value.code = 'DROP' or value.code = 'NDROP' or value.code = 'OPDROP' or value.code = 'ORDROP' or value.code = 'OTDROP' or value.code = 'PUFF' or value.code = 'SCOOP' or value.code = 'SPRY'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImmunizationActivityAdministrationUnitCode(ImmunizationActivity2, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Activity Administration Unit Code</em>}' invariant operation.
@@ -1679,8 +1671,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_DRUG_VEHICLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityDrugVehicle"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityDrugVehicle"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -1744,8 +1735,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_INDICATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityIndication"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityIndication"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -1810,7 +1800,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_MEDICATION_SUPPLY_ORDER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationActivity2ImmunizationActivityMedicationSupplyOrder"),
 						new Object[] { immunizationActivity2 }));
 			}
@@ -1876,8 +1866,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_MEDICATION_DISPENSE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityMedicationDispense"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityMedicationDispense"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -1942,8 +1931,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_REACTION_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityReactionObservation"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityReactionObservation"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -2008,8 +1996,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_INSTRUCTIONS,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityInstructions"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityInstructions"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -2073,8 +2060,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_CONSUMABLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityConsumable"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityConsumable"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -2139,8 +2125,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_PRECONDITION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationActivity2ImmunizationActivityPrecondition"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationActivity2ImmunizationActivityPrecondition"),
 						new Object[] { immunizationActivity2 }));
 			}
 
@@ -2209,7 +2194,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_CONSUMABLE_IMMUNIZATION_MEDICATION_INFORMATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ImmunizationActivity2ImmunizationActivityConsumableImmunizationMedicationInformation"),
 							new Object[] { eObject }));
 				}
@@ -2280,7 +2265,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_PRECONDITION_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ImmunizationActivity2ImmunizationActivityPreconditionTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -2351,7 +2336,7 @@ public class ImmunizationActivity2Operations extends ImmunizationActivityOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_ACTIVITY2__IMMUNIZATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ImmunizationActivity2ImmunizationActivityPreconditionPreconditionForSubstanceAdministration"),
 							new Object[] { eObject }));
 				}

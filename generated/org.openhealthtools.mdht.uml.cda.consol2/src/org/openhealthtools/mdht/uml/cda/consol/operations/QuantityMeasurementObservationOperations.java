@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.QuantityMeasurementObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -126,7 +127,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DIR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"QuantityMeasurementObservationQuantityMeasurementObservationCodeCodeSystemDIR"),
 						new Object[] { quantityMeasurementObservation }));
 			}
@@ -193,7 +194,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CODE_CODE_SYSTEM_DICOM,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"QuantityMeasurementObservationQuantityMeasurementObservationCodeCodeSystemDICOM"),
 						new Object[] { quantityMeasurementObservation }));
 			}
@@ -260,7 +261,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"QuantityMeasurementObservationQuantityMeasurementObservationTemplateId"),
 						new Object[] { quantityMeasurementObservation }));
 			}
@@ -327,7 +328,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"QuantityMeasurementObservationQuantityMeasurementObservationClassCode"),
 						new Object[] { quantityMeasurementObservation }));
 			}
@@ -394,7 +395,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"QuantityMeasurementObservationQuantityMeasurementObservationMoodCode"),
 						new Object[] { quantityMeasurementObservation }));
 			}
@@ -461,7 +462,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"QuantityMeasurementObservationQuantityMeasurementObservationCode"),
 						new Object[] { quantityMeasurementObservation }));
 			}
@@ -528,7 +529,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"QuantityMeasurementObservationQuantityMeasurementObservationEffectiveTime"),
 						new Object[] { quantityMeasurementObservation }));
 			}
@@ -595,7 +596,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"QuantityMeasurementObservationQuantityMeasurementObservationValue"),
 						new Object[] { quantityMeasurementObservation }));
 			}
@@ -662,7 +663,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.QUANTITY_MEASUREMENT_OBSERVATION__QUANTITY_MEASUREMENT_OBSERVATION_SOP_INSTANCE_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"QuantityMeasurementObservationQuantityMeasurementObservationSOPInstanceObservation"),
 						new Object[] { quantityMeasurementObservation }));
 			}

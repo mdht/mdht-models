@@ -18,6 +18,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FetusSubjectContext;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -107,8 +108,7 @@ public class FetusSubjectContextOperations extends RoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FETUS_SUBJECT_CONTEXT__FETUS_SUBJECT_CONTEXT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FetusSubjectContextFetusSubjectContextTemplateId"),
+						ConsolPlugin.INSTANCE.getString("FetusSubjectContextFetusSubjectContextTemplateId"),
 						new Object[] { fetusSubjectContext }));
 			}
 
@@ -173,8 +173,7 @@ public class FetusSubjectContextOperations extends RoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FETUS_SUBJECT_CONTEXT__FETUS_SUBJECT_CONTEXT_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FetusSubjectContextFetusSubjectContextCode"),
+						ConsolPlugin.INSTANCE.getString("FetusSubjectContextFetusSubjectContextCode"),
 						new Object[] { fetusSubjectContext }));
 			}
 
@@ -237,8 +236,7 @@ public class FetusSubjectContextOperations extends RoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FETUS_SUBJECT_CONTEXT__FETUS_SUBJECT_CONTEXT_SUBJECT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FetusSubjectContextFetusSubjectContextSubject"),
+						ConsolPlugin.INSTANCE.getString("FetusSubjectContextFetusSubjectContextSubject"),
 						new Object[] { fetusSubjectContext }));
 			}
 

@@ -29,6 +29,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -123,8 +124,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ANESTHESIA_SECTION__ANESTHESIA_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AnesthesiaSectionAnesthesiaSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSectionAnesthesiaSectionTemplateId"),
 						new Object[] { anesthesiaSection }));
 			}
 
@@ -189,8 +189,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ANESTHESIA_SECTION__ANESTHESIA_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AnesthesiaSectionAnesthesiaSectionCode"),
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSectionAnesthesiaSectionCode"),
 						new Object[] { anesthesiaSection }));
 			}
 
@@ -253,8 +252,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ANESTHESIA_SECTION__ANESTHESIA_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AnesthesiaSectionAnesthesiaSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSectionAnesthesiaSectionCodeP"),
 						new Object[] { anesthesiaSection }));
 			}
 
@@ -296,8 +294,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ANESTHESIA_SECTION__ANESTHESIA_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AnesthesiaSectionAnesthesiaSectionText"),
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSectionAnesthesiaSectionText"),
 						new Object[] { anesthesiaSection }));
 			}
 
@@ -381,8 +378,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ANESTHESIA_SECTION__ANESTHESIA_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AnesthesiaSectionAnesthesiaSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSectionAnesthesiaSectionTitle"),
 						new Object[] { anesthesiaSection }));
 			}
 
@@ -447,8 +443,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ANESTHESIA_SECTION__ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AnesthesiaSectionAnesthesiaSectionProcedureActivityProcedure"),
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSectionAnesthesiaSectionProcedureActivityProcedure"),
 						new Object[] { anesthesiaSection }));
 			}
 
@@ -513,8 +508,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ANESTHESIA_SECTION__ANESTHESIA_SECTION_MEDICATION_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AnesthesiaSectionAnesthesiaSectionMedicationActivity"),
+						ConsolPlugin.INSTANCE.getString("AnesthesiaSectionAnesthesiaSectionMedicationActivity"),
 						new Object[] { anesthesiaSection }));
 			}
 

@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedication2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -98,8 +99,7 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATION2__DISCHARGE_MEDICATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeMedication2DischargeMedicationCodeP"),
+						ConsolPlugin.INSTANCE.getString("DischargeMedication2DischargeMedicationCodeP"),
 						new Object[] { dischargeMedication2 }));
 			}
 
@@ -155,8 +155,7 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATION2__DISCHARGE_MEDICATION2_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeMedication2DischargeMedication2StatusCode"),
+						ConsolPlugin.INSTANCE.getString("DischargeMedication2DischargeMedication2StatusCode"),
 						new Object[] { dischargeMedication2 }));
 			}
 
@@ -200,8 +199,7 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATION2__DISCHARGE_MEDICATION2_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeMedication2DischargeMedication2StatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("DischargeMedication2DischargeMedication2StatusCodeP"),
 						new Object[] { dischargeMedication2 }));
 			}
 
@@ -249,8 +247,7 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_MEDICATION2__DISCHARGE_MEDICATION2_CD_TRANSLATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"DischargeMedication2DischargeMedication2CDTranslation"),
+							ConsolPlugin.INSTANCE.getString("DischargeMedication2DischargeMedication2CDTranslation"),
 							new Object[] { eObject }));
 				}
 
@@ -299,8 +296,7 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DISCHARGE_MEDICATION2__DISCHARGE_MEDICATION2_CD_TRANSLATION_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"DischargeMedication2DischargeMedication2CDTranslationP"),
+							ConsolPlugin.INSTANCE.getString("DischargeMedication2DischargeMedication2CDTranslationP"),
 							new Object[] { eObject }));
 				}
 
@@ -521,8 +517,7 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATION2__DISCHARGE_MEDICATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeMedication2DischargeMedicationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("DischargeMedication2DischargeMedicationTemplateId"),
 						new Object[] { dischargeMedication2 }));
 			}
 
@@ -595,8 +590,7 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATION2__DISCHARGE_MEDICATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeMedication2DischargeMedicationCode"),
+						ConsolPlugin.INSTANCE.getString("DischargeMedication2DischargeMedicationCode"),
 						new Object[] { dischargeMedication2 }));
 			}
 
@@ -661,8 +655,7 @@ public class DischargeMedication2Operations extends DischargeMedicationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_MEDICATION2__DISCHARGE_MEDICATION_MEDICATION_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"DischargeMedication2DischargeMedicationMedicationActivity"),
+						ConsolPlugin.INSTANCE.getString("DischargeMedication2DischargeMedicationMedicationActivity"),
 						new Object[] { dischargeMedication2 }));
 			}
 

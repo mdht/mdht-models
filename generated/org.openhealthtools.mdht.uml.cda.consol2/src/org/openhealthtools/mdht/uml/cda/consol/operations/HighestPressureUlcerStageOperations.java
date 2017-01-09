@@ -19,6 +19,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,8 +115,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HighestPressureUlcerStageHighestPressureUlcerStageTemplateId"),
+						ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageTemplateId"),
 						new Object[] { highestPressureUlcerStage }));
 			}
 
@@ -181,8 +181,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HighestPressureUlcerStageHighestPressureUlcerStageClassCode"),
+						ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageClassCode"),
 						new Object[] { highestPressureUlcerStage }));
 			}
 
@@ -247,8 +246,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HighestPressureUlcerStageHighestPressureUlcerStageMoodCode"),
+						ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageMoodCode"),
 						new Object[] { highestPressureUlcerStage }));
 			}
 
@@ -312,8 +310,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HighestPressureUlcerStageHighestPressureUlcerStageId"),
+						ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageId"),
 						new Object[] { highestPressureUlcerStage }));
 			}
 
@@ -378,8 +375,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HighestPressureUlcerStageHighestPressureUlcerStageCodeP"),
+						ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageCodeP"),
 						new Object[] { highestPressureUlcerStage }));
 			}
 
@@ -466,8 +462,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HighestPressureUlcerStageHighestPressureUlcerStageCode"),
+						ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageCode"),
 						new Object[] { highestPressureUlcerStage }));
 			}
 
@@ -532,8 +527,7 @@ public class HighestPressureUlcerStageOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HIGHEST_PRESSURE_ULCER_STAGE__HIGHEST_PRESSURE_ULCER_STAGE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HighestPressureUlcerStageHighestPressureUlcerStageValue"),
+						ConsolPlugin.INSTANCE.getString("HighestPressureUlcerStageHighestPressureUlcerStageValue"),
 						new Object[] { highestPressureUlcerStage }));
 			}
 

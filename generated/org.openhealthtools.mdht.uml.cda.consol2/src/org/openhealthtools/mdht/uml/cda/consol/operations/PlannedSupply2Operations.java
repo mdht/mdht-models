@@ -29,6 +29,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -140,7 +141,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_MED_INFO_XOR_IMMUN_XOR_PRODUCT_INSTANCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PlannedSupply2PlannedSupply2MedInfoXorImmunXorProductInstance"),
 						new Object[] { plannedSupply2 }));
 			}
@@ -205,8 +206,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2StatusCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2StatusCode"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -269,8 +269,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2StatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2StatusCodeP"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -333,8 +332,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2EffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2EffectiveTime"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -397,8 +395,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_REPEAT_NUMBER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2RepeatNumber"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2RepeatNumber"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -461,8 +458,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_QUANTITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2Quantity"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Quantity"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -525,8 +521,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2Product"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Product"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -589,8 +584,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PERFORMER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2Performer"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Performer"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -655,8 +649,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2AuthorParticipation"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2AuthorParticipation"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -719,8 +712,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT_INSTANCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2ProductInstance"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2ProductInstance"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -784,8 +776,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRIORITY_PREFERENCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2PriorityPreference"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2PriorityPreference"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -848,8 +839,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_INDICATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2Indication2"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Indication2"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -912,8 +902,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_INSTRUCTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2Instruction2"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2Instruction2"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -976,8 +965,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PLANNED_COVERAGE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2PlannedCoverage"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2PlannedCoverage"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -1041,8 +1029,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT_RECOMMENDED,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlannedSupply2ProductRecommended"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2ProductRecommended"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -1111,7 +1098,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT_MED_INFO2_XOR_IMMUN_MED_INFO2,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PlannedSupply2PlannedSupply2ProductManufacturedProductMedInfo2XorImmunMedInfo2"),
 							new Object[] { eObject }));
 				}
@@ -1182,8 +1169,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PLANNED_SUPPLY2__PLANNED_SUPPLY2_PRODUCT_MANUFACTURED_PRODUCT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PlannedSupply2PlannedSupply2ProductManufacturedProduct"),
+							ConsolPlugin.INSTANCE.getString("PlannedSupply2PlannedSupply2ProductManufacturedProduct"),
 							new Object[] { eObject }));
 				}
 
@@ -1482,8 +1468,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLAN_OF_CARE_ACTIVITY_SUPPLY_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlanOfCareActivitySupplyTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlanOfCareActivitySupplyTemplateId"),
 						new Object[] { plannedSupply2 }));
 			}
 
@@ -1550,8 +1535,7 @@ public class PlannedSupply2Operations extends PlanOfCareActivitySupplyOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLANNED_SUPPLY2__PLAN_OF_CARE_ACTIVITY_SUPPLY_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlannedSupply2PlanOfCareActivitySupplyMoodCode"),
+						ConsolPlugin.INSTANCE.getString("PlannedSupply2PlanOfCareActivitySupplyMoodCode"),
 						new Object[] { plannedSupply2 }));
 			}
 

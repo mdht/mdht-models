@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,8 +115,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReasonForVisitSectionReasonForVisitSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionReasonForVisitSectionTemplateId"),
 						new Object[] { reasonForVisitSection }));
 			}
 
@@ -181,8 +181,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReasonForVisitSectionReasonForVisitSectionCode"),
+						ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionReasonForVisitSectionCode"),
 						new Object[] { reasonForVisitSection }));
 			}
 
@@ -246,8 +245,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReasonForVisitSectionReasonForVisitSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionReasonForVisitSectionCodeP"),
 						new Object[] { reasonForVisitSection }));
 			}
 
@@ -311,8 +309,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReasonForVisitSectionReasonForVisitSectionText"),
+						ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionReasonForVisitSectionText"),
 						new Object[] { reasonForVisitSection }));
 			}
 
@@ -376,8 +373,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReasonForVisitSectionReasonForVisitSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionReasonForVisitSectionTitle"),
 						new Object[] { reasonForVisitSection }));
 			}
 

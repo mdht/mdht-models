@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -123,7 +124,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION__HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HistoryOfPastIllnessSectionHistoryOfPastIllnessSectionTemplateId"),
 						new Object[] { historyOfPastIllnessSection }));
 			}
@@ -192,8 +193,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION__HISTORY_OF_PAST_ILLNESS_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HistoryOfPastIllnessSectionHistoryOfPastIllnessSectionCode"),
+						ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSectionHistoryOfPastIllnessSectionCode"),
 						new Object[] { historyOfPastIllnessSection }));
 			}
 
@@ -259,8 +259,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION__HISTORY_OF_PAST_ILLNESS_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HistoryOfPastIllnessSectionHistoryOfPastIllnessSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSectionHistoryOfPastIllnessSectionCodeP"),
 						new Object[] { historyOfPastIllnessSection }));
 			}
 
@@ -326,8 +325,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION__HISTORY_OF_PAST_ILLNESS_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HistoryOfPastIllnessSectionHistoryOfPastIllnessSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSectionHistoryOfPastIllnessSectionTitle"),
 						new Object[] { historyOfPastIllnessSection }));
 			}
 
@@ -393,8 +391,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION__HISTORY_OF_PAST_ILLNESS_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HistoryOfPastIllnessSectionHistoryOfPastIllnessSectionText"),
+						ConsolPlugin.INSTANCE.getString("HistoryOfPastIllnessSectionHistoryOfPastIllnessSectionText"),
 						new Object[] { historyOfPastIllnessSection }));
 			}
 
@@ -460,7 +457,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HISTORY_OF_PAST_ILLNESS_SECTION__HISTORY_OF_PAST_ILLNESS_SECTION_PROBLEM_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HistoryOfPastIllnessSectionHistoryOfPastIllnessSectionProblemObservation"),
 						new Object[] { historyOfPastIllnessSection }));
 			}

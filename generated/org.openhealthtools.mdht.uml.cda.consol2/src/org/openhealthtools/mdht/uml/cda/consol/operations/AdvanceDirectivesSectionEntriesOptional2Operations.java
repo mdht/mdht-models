@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -120,7 +121,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Operations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2_ADVANCE_DIRECTIVE_ORGANIZER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectivesSectionEntriesOptional2AdvanceDirectivesSectionEntriesOptional2AdvanceDirectiveOrganizer"),
 						new Object[] { advanceDirectivesSectionEntriesOptional2 }));
 			}
@@ -287,7 +288,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Operations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectivesSectionEntriesOptional2AdvanceDirectivesSectionEntriesOptionalTemplateId"),
 						new Object[] { advanceDirectivesSectionEntriesOptional2 }));
 			}
@@ -354,7 +355,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Operations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectivesSectionEntriesOptional2AdvanceDirectivesSectionEntriesOptionalCodeP"),
 						new Object[] { advanceDirectivesSectionEntriesOptional2 }));
 			}
@@ -447,7 +448,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Operations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectivesSectionEntriesOptional2AdvanceDirectivesSectionEntriesOptionalCode"),
 						new Object[] { advanceDirectivesSectionEntriesOptional2 }));
 			}
@@ -514,7 +515,7 @@ public class AdvanceDirectivesSectionEntriesOptional2Operations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL2__ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_ADVANCE_DIRECTIVE_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectivesSectionEntriesOptional2AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation"),
 						new Object[] { advanceDirectivesSectionEntriesOptional2 }));
 			}

@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureContext;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,8 +116,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_EFFECTIVE_TIME_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureContextProcedureContextEffectiveTimeValue"),
+						ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextEffectiveTimeValue"),
 						new Object[] { procedureContext }));
 			}
 
@@ -179,8 +179,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureContextProcedureContextTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextTemplateId"),
 						new Object[] { procedureContext }));
 			}
 
@@ -243,8 +242,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureContextProcedureContextClassCode"),
+						ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextClassCode"),
 						new Object[] { procedureContext }));
 			}
 
@@ -307,8 +305,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureContextProcedureContextMoodCode"),
+						ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextMoodCode"),
 						new Object[] { procedureContext }));
 			}
 
@@ -371,8 +368,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureContextProcedureContextCode"),
+						ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextCode"),
 						new Object[] { procedureContext }));
 			}
 
@@ -435,8 +431,7 @@ public class ProcedureContextOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_CONTEXT__PROCEDURE_CONTEXT_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureContextProcedureContextEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("ProcedureContextProcedureContextEffectiveTime"),
 						new Object[] { procedureContext }));
 			}
 

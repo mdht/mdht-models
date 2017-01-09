@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.PlannedObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.PlannedSupply2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -133,8 +134,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionRecommendationNutritionRecommendationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationTemplateId"),
 						new Object[] { nutritionRecommendation }));
 			}
 
@@ -199,8 +199,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionRecommendationNutritionRecommendationClassCode"),
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationClassCode"),
 						new Object[] { nutritionRecommendation }));
 			}
 
@@ -265,8 +264,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_MOOD_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionRecommendationNutritionRecommendationMoodCodeP"),
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationMoodCodeP"),
 						new Object[] { nutritionRecommendation }));
 			}
 
@@ -354,8 +352,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionRecommendationNutritionRecommendationMoodCode"),
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationMoodCode"),
 						new Object[] { nutritionRecommendation }));
 			}
 
@@ -419,8 +416,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionRecommendationNutritionRecommendationCodeP"),
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationCodeP"),
 						new Object[] { nutritionRecommendation }));
 			}
 
@@ -507,8 +503,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionRecommendationNutritionRecommendationCode"),
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationCode"),
 						new Object[] { nutritionRecommendation }));
 			}
 
@@ -574,8 +569,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionRecommendationNutritionRecommendationStatusCode"),
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationStatusCode"),
 						new Object[] { nutritionRecommendation }));
 			}
 
@@ -640,8 +634,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionRecommendationNutritionRecommendationStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationStatusCodeP"),
 						new Object[] { nutritionRecommendation }));
 			}
 
@@ -706,8 +699,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionRecommendationNutritionRecommendationEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationEffectiveTime"),
 						new Object[] { nutritionRecommendation }));
 			}
 
@@ -772,7 +764,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_ENCOUNTER2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionRecommendationNutritionRecommendationPlannedEncounter2"),
 						new Object[] { nutritionRecommendation }));
 			}
@@ -838,7 +830,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_MEDICATION_ACTIVITY2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionRecommendationNutritionRecommendationPlannedMedicationActivity2"),
 						new Object[] { nutritionRecommendation }));
 			}
@@ -904,7 +896,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_OBSERVATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionRecommendationNutritionRecommendationPlannedObservation2"),
 						new Object[] { nutritionRecommendation }));
 			}
@@ -970,7 +962,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_PROCEDURE2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NutritionRecommendationNutritionRecommendationPlannedProcedure2"),
 						new Object[] { nutritionRecommendation }));
 			}
@@ -1036,8 +1028,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_SUPPLY2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionRecommendationNutritionRecommendationPlannedSupply2"),
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedSupply2"),
 						new Object[] { nutritionRecommendation }));
 			}
 
@@ -1102,8 +1093,7 @@ public class NutritionRecommendationOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUTRITION_RECOMMENDATION__NUTRITION_RECOMMENDATION_PLANNED_ACT2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"NutritionRecommendationNutritionRecommendationPlannedAct2"),
+						ConsolPlugin.INSTANCE.getString("NutritionRecommendationNutritionRecommendationPlannedAct2"),
 						new Object[] { nutritionRecommendation }));
 			}
 

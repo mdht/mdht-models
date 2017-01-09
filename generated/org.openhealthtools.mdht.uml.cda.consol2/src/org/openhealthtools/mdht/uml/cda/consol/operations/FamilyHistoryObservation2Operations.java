@@ -18,6 +18,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,7 +118,7 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_OBSERVATION2__FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryObservation2FamilyHistoryObservation2CDTranslation"),
 							new Object[] { eObject }));
 				}
@@ -189,7 +190,7 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FAMILY_HISTORY_OBSERVATION2__FAMILY_HISTORY_OBSERVATION2_CD_TRANSLATION_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"FamilyHistoryObservation2FamilyHistoryObservation2CDTranslationP"),
 							new Object[] { eObject }));
 				}
@@ -257,8 +258,7 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION2__FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryObservation2FamilyHistoryObservationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryObservation2FamilyHistoryObservationTemplateId"),
 						new Object[] { familyHistoryObservation2 }));
 			}
 
@@ -322,8 +322,7 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION2__FAMILY_HISTORY_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryObservation2FamilyHistoryObservationCodeP"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryObservation2FamilyHistoryObservationCodeP"),
 						new Object[] { familyHistoryObservation2 }));
 			}
 
@@ -410,8 +409,7 @@ public class FamilyHistoryObservation2Operations extends FamilyHistoryObservatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_OBSERVATION2__FAMILY_HISTORY_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"FamilyHistoryObservation2FamilyHistoryObservationCode"),
+						ConsolPlugin.INSTANCE.getString("FamilyHistoryObservation2FamilyHistoryObservationCode"),
 						new Object[] { familyHistoryObservation2 }));
 			}
 

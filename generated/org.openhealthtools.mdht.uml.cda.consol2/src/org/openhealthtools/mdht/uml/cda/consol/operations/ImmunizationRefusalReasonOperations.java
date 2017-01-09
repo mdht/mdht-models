@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationRefusalReason;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -116,8 +117,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_REFUSAL_REASON__IMMUNIZATION_REFUSAL_REASON_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationRefusalReasonImmunizationRefusalReasonTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonImmunizationRefusalReasonTemplateId"),
 						new Object[] { immunizationRefusalReason }));
 			}
 
@@ -183,8 +183,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_REFUSAL_REASON__IMMUNIZATION_REFUSAL_REASON_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationRefusalReasonImmunizationRefusalReasonClassCode"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonImmunizationRefusalReasonClassCode"),
 						new Object[] { immunizationRefusalReason }));
 			}
 
@@ -250,8 +249,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_REFUSAL_REASON__IMMUNIZATION_REFUSAL_REASON_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationRefusalReasonImmunizationRefusalReasonCode"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonImmunizationRefusalReasonCode"),
 						new Object[] { immunizationRefusalReason }));
 			}
 
@@ -315,8 +313,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_REFUSAL_REASON__IMMUNIZATION_REFUSAL_REASON_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationRefusalReasonImmunizationRefusalReasonId"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonImmunizationRefusalReasonId"),
 						new Object[] { immunizationRefusalReason }));
 			}
 
@@ -381,8 +378,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_REFUSAL_REASON__IMMUNIZATION_REFUSAL_REASON_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationRefusalReasonImmunizationRefusalReasonMoodCode"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonImmunizationRefusalReasonMoodCode"),
 						new Object[] { immunizationRefusalReason }));
 			}
 
@@ -449,8 +445,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_REFUSAL_REASON__IMMUNIZATION_REFUSAL_REASON_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationRefusalReasonImmunizationRefusalReasonStatusCode"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonImmunizationRefusalReasonStatusCode"),
 						new Object[] { immunizationRefusalReason }));
 			}
 

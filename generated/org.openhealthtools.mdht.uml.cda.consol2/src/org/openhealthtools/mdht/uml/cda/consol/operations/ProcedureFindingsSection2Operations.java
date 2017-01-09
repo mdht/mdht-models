@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -166,8 +167,7 @@ public class ProcedureFindingsSection2Operations extends ProcedureFindingsSectio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_FINDINGS_SECTION2__PROCEDURE_FINDINGS_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureFindingsSection2ProcedureFindingsSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ProcedureFindingsSection2ProcedureFindingsSectionTemplateId"),
 						new Object[] { procedureFindingsSection2 }));
 			}
 
@@ -231,8 +231,7 @@ public class ProcedureFindingsSection2Operations extends ProcedureFindingsSectio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_FINDINGS_SECTION2__PROCEDURE_FINDINGS_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureFindingsSection2ProcedureFindingsSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("ProcedureFindingsSection2ProcedureFindingsSectionCodeP"),
 						new Object[] { procedureFindingsSection2 }));
 			}
 
@@ -319,8 +318,7 @@ public class ProcedureFindingsSection2Operations extends ProcedureFindingsSectio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_FINDINGS_SECTION2__PROCEDURE_FINDINGS_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureFindingsSection2ProcedureFindingsSectionCode"),
+						ConsolPlugin.INSTANCE.getString("ProcedureFindingsSection2ProcedureFindingsSectionCode"),
 						new Object[] { procedureFindingsSection2 }));
 			}
 
@@ -386,7 +384,7 @@ public class ProcedureFindingsSection2Operations extends ProcedureFindingsSectio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_FINDINGS_SECTION2__PROCEDURE_FINDINGS_SECTION_PROBLEM_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureFindingsSection2ProcedureFindingsSectionProblemObservation"),
 						new Object[] { procedureFindingsSection2 }));
 			}

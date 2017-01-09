@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.PayersSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -160,8 +161,7 @@ public class PayersSection2Operations extends PayersSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PayersSection2PayersSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionTemplateId"),
 						new Object[] { payersSection2 }));
 			}
 
@@ -224,8 +224,7 @@ public class PayersSection2Operations extends PayersSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PayersSection2PayersSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCodeP"),
 						new Object[] { payersSection2 }));
 			}
 
@@ -311,8 +310,7 @@ public class PayersSection2Operations extends PayersSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PayersSection2PayersSectionCode"),
+						ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCode"),
 						new Object[] { payersSection2 }));
 			}
 
@@ -375,8 +373,7 @@ public class PayersSection2Operations extends PayersSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_COVERAGE_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PayersSection2PayersSectionCoverageActivity"),
+						ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCoverageActivity"),
 						new Object[] { payersSection2 }));
 			}
 

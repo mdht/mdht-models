@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -123,7 +124,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_INDICATIONS_SECTION__PROCEDURE_INDICATIONS_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureIndicationsSectionProcedureIndicationsSectionTemplateId"),
 						new Object[] { procedureIndicationsSection }));
 			}
@@ -192,8 +193,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_INDICATIONS_SECTION__PROCEDURE_INDICATIONS_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureIndicationsSectionProcedureIndicationsSectionCode"),
+						ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionProcedureIndicationsSectionCode"),
 						new Object[] { procedureIndicationsSection }));
 			}
 
@@ -259,8 +259,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_INDICATIONS_SECTION__PROCEDURE_INDICATIONS_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureIndicationsSectionProcedureIndicationsSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionProcedureIndicationsSectionCodeP"),
 						new Object[] { procedureIndicationsSection }));
 			}
 
@@ -305,8 +304,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_INDICATIONS_SECTION__PROCEDURE_INDICATIONS_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureIndicationsSectionProcedureIndicationsSectionText"),
+						ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionProcedureIndicationsSectionText"),
 						new Object[] { procedureIndicationsSection }));
 			}
 
@@ -393,8 +391,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_INDICATIONS_SECTION__PROCEDURE_INDICATIONS_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureIndicationsSectionProcedureIndicationsSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionProcedureIndicationsSectionTitle"),
 						new Object[] { procedureIndicationsSection }));
 			}
 
@@ -460,7 +457,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_INDICATIONS_SECTION__PROCEDURE_INDICATIONS_SECTION_INDICATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureIndicationsSectionProcedureIndicationsSectionIndication"),
 						new Object[] { procedureIndicationsSection }));
 			}

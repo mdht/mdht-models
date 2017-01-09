@@ -33,6 +33,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HealthConcernsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -192,8 +193,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOES_NOT_HAVE_PLAN_OF_TREATMENT_SECTION_V2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanDoesNotHavePlanOfTreatmentSectionV2"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDoesNotHavePlanOfTreatmentSectionV2"),
 						new Object[] { carePlan }));
 			}
 
@@ -256,9 +256,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanCodeP"),
-						new Object[] { carePlan }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanCodeP"), new Object[] { carePlan }));
 			}
 
 			if (context != null) {
@@ -342,9 +340,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.CARE_PLAN__CARE_PLAN_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanCode"),
-						new Object[] { carePlan }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanCode"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -406,9 +402,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_SET_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanSetId"),
-						new Object[] { carePlan }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanSetId"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -470,9 +464,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_VERSION_NUMBER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanVersionNumber"),
-						new Object[] { carePlan }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanVersionNumber"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -534,8 +526,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanInformationRecipient"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipient"),
 						new Object[] { carePlan }));
 			}
 
@@ -598,9 +589,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanAuthenticator"),
-						new Object[] { carePlan }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticator"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -663,8 +652,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanParticipantCarePlanReview"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReview"),
 						new Object[] { carePlan }));
 			}
 
@@ -727,8 +715,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanParticipantCaregiver"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCaregiver"),
 						new Object[] { carePlan }));
 			}
 
@@ -791,9 +778,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanDocumentationOf"),
-						new Object[] { carePlan }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOf"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -855,9 +840,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanRelatedDocument"),
-						new Object[] { carePlan }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanRelatedDocument"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -919,9 +902,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_COMPONENT_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanComponentOf"),
-						new Object[] { carePlan }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanComponentOf"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -983,8 +964,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_HEALTH_CONCERNS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanHealthConcernsSection"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanHealthConcernsSection"),
 						new Object[] { carePlan }));
 			}
 
@@ -1047,9 +1027,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_GOALS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanGoalsSection"),
-						new Object[] { carePlan }));
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanGoalsSection"), new Object[] { carePlan }));
 			}
 
 			return false;
@@ -1113,8 +1091,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_HEALTH_STATUS_EVALUATIONS_OUTCOMES_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanHealthStatusEvaluationsOutcomesSection"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanHealthStatusEvaluationsOutcomesSection"),
 						new Object[] { carePlan }));
 			}
 
@@ -1177,8 +1154,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__CARE_PLAN_INTERVENTIONS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanCarePlanInterventionsSection2"),
+						ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInterventionsSection2"),
 						new Object[] { carePlan }));
 			}
 
@@ -1258,7 +1234,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanInformationRecipientIntendedRecipientInformationRecipientName"),
 							new Object[] { eObject }));
 				}
@@ -1329,7 +1305,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganizationId"),
 							new Object[] { eObject }));
 				}
@@ -1400,7 +1376,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganizationName"),
 							new Object[] { eObject }));
 				}
@@ -1471,7 +1447,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_STANDARD_INDUSTRY_CLASS_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCodeP"),
 							new Object[] { eObject }));
 				}
@@ -1568,7 +1544,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION_STANDARD_INDUSTRY_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganizationStandardIndustryClassCode"),
 							new Object[] { eObject }));
 				}
@@ -1639,8 +1615,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanInformationRecipientIntendedRecipientId"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipientId"),
 							new Object[] { eObject }));
 				}
 
@@ -1710,7 +1685,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_ADDR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanInformationRecipientIntendedRecipientAddr"),
 							new Object[] { eObject }));
 				}
@@ -1781,7 +1756,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_TELECOM,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanInformationRecipientIntendedRecipientTelecom"),
 							new Object[] { eObject }));
 				}
@@ -1852,7 +1827,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_INFORMATION_RECIPIENT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanInformationRecipientIntendedRecipientInformationRecipient"),
 							new Object[] { eObject }));
 				}
@@ -1923,7 +1898,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT_RECEIVED_ORGANIZATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanInformationRecipientIntendedRecipientReceivedOrganization"),
 							new Object[] { eObject }));
 				}
@@ -1994,8 +1969,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_INFORMATION_RECIPIENT_INTENDED_RECIPIENT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanInformationRecipientIntendedRecipient"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanInformationRecipientIntendedRecipient"),
 							new Object[] { eObject }));
 				}
 
@@ -2065,8 +2039,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanAuthenticatorAssignedEntityId"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorAssignedEntityId"),
 							new Object[] { eObject }));
 				}
 
@@ -2138,8 +2111,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanAuthenticatorAssignedEntityCode"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
 
@@ -2209,8 +2181,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanAuthenticatorAssignedEntityCodeP"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorAssignedEntityCodeP"),
 							new Object[] { eObject }));
 				}
 
@@ -2280,8 +2251,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanAuthenticatorTime"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorTime"),
 							new Object[] { eObject }));
 				}
 
@@ -2351,8 +2321,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_SIGNATURE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanAuthenticatorSignatureCode"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorSignatureCode"),
 							new Object[] { eObject }));
 				}
 
@@ -2422,8 +2391,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_SDTC_SIGNATURE_TEXT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanAuthenticatorSDTCSignatureText"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorSDTCSignatureText"),
 							new Object[] { eObject }));
 				}
 
@@ -2493,8 +2461,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_AUTHENTICATOR_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanAuthenticatorAssignedEntity"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanAuthenticatorAssignedEntity"),
 							new Object[] { eObject }));
 				}
 
@@ -2564,7 +2531,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanParticipantCarePlanReviewAssociatedEntityClassCode"),
 							new Object[] { eObject }));
 				}
@@ -2635,7 +2602,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanParticipantCarePlanReviewAssociatedEntityId"),
 							new Object[] { eObject }));
 				}
@@ -2706,7 +2673,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanParticipantCarePlanReviewAssociatedEntityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -2803,7 +2770,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanParticipantCarePlanReviewAssociatedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -2874,8 +2841,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanParticipantCarePlanReviewTypeCode"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -2947,8 +2913,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_FUNCTION_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanParticipantCarePlanReviewFunctionCode"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewFunctionCode"),
 							new Object[] { eObject }));
 				}
 
@@ -3018,8 +2983,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_FUNCTION_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanParticipantCarePlanReviewFunctionCodeP"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewFunctionCodeP"),
 							new Object[] { eObject }));
 				}
 
@@ -3089,8 +3053,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanParticipantCarePlanReviewTime"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCarePlanReviewTime"),
 							new Object[] { eObject }));
 				}
 
@@ -3160,7 +3123,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CARE_PLAN_REVIEW_ASSOCIATED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanParticipantCarePlanReviewAssociatedEntity"),
 							new Object[] { eObject }));
 				}
@@ -3231,7 +3194,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanParticipantCaregiverAssociatedEntityAssociatedPersonName"),
 							new Object[] { eObject }));
 				}
@@ -3302,7 +3265,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanParticipantCaregiverAssociatedEntityClassCodeP"),
 							new Object[] { eObject }));
 				}
@@ -3399,7 +3362,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanParticipantCaregiverAssociatedEntityClassCode"),
 							new Object[] { eObject }));
 				}
@@ -3470,7 +3433,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanParticipantCaregiverAssociatedEntityAssociatedPerson"),
 							new Object[] { eObject }));
 				}
@@ -3541,8 +3504,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanParticipantCaregiverTypeCode"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCaregiverTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -3612,8 +3574,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_PARTICIPANT_CAREGIVER_ASSOCIATED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanParticipantCaregiverAssociatedEntity"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanParticipantCaregiverAssociatedEntity"),
 							new Object[] { eObject }));
 				}
 
@@ -3683,8 +3644,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_LOW,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanDocumentationOfServiceEventIVLTSLow"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventIVLTSLow"),
 							new Object[] { eObject }));
 				}
 
@@ -3754,8 +3714,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_IVLTS_HIGH,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanDocumentationOfServiceEventIVLTSHigh"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventIVLTSHigh"),
 							new Object[] { eObject }));
 				}
 
@@ -3825,7 +3784,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPersonName"),
 							new Object[] { eObject }));
 				}
@@ -3896,7 +3855,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntityId"),
 							new Object[] { eObject }));
 				}
@@ -3967,7 +3926,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -4038,7 +3997,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ASSIGNED_PERSON,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntityAssignedPerson"),
 							new Object[] { eObject }));
 				}
@@ -4109,7 +4068,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanDocumentationOfServiceEventPerformerAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -4180,8 +4139,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanDocumentationOfServiceEventClassCode"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventClassCode"),
 							new Object[] { eObject }));
 				}
 
@@ -4251,8 +4209,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanDocumentationOfServiceEventEffectiveTime"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventEffectiveTime"),
 							new Object[] { eObject }));
 				}
 
@@ -4322,8 +4279,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER1,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanDocumentationOfServiceEventPerformer1"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEventPerformer1"),
 							new Object[] { eObject }));
 				}
 
@@ -4393,8 +4349,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_DOCUMENTATION_OF_SERVICE_EVENT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanDocumentationOfServiceEvent"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanDocumentationOfServiceEvent"),
 							new Object[] { eObject }));
 				}
 
@@ -4464,8 +4419,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT_SET_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanRelatedDocumentParentDocumentSetId"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanRelatedDocumentParentDocumentSetId"),
 							new Object[] { eObject }));
 				}
 
@@ -4535,7 +4489,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT_VERSION_NUMBER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanRelatedDocumentParentDocumentVersionNumber"),
 							new Object[] { eObject }));
 				}
@@ -4606,8 +4560,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanRelatedDocumentTypeCodeP"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanRelatedDocumentTypeCodeP"),
 							new Object[] { eObject }));
 				}
 
@@ -4701,8 +4654,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanRelatedDocumentTypeCode"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanRelatedDocumentTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -4772,8 +4724,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_RELATED_DOCUMENT_PARENT_DOCUMENT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanRelatedDocumentParentDocument"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanRelatedDocumentParentDocument"),
 							new Object[] { eObject }));
 				}
 
@@ -4843,7 +4794,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_EFFECTIVE_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"CarePlanCarePlanComponentOfEncompassingEncounterEffectiveTime"),
 							new Object[] { eObject }));
 				}
@@ -4914,8 +4865,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CARE_PLAN__CARE_PLAN_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"CarePlanCarePlanComponentOfEncompassingEncounter"),
+							ConsolPlugin.INSTANCE.getString("CarePlanCarePlanComponentOfEncompassingEncounter"),
 							new Object[] { eObject }));
 				}
 
@@ -5158,8 +5108,7 @@ public class CarePlanOperations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CARE_PLAN__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"CarePlanGeneralHeaderConstraintsTemplateId"),
+						ConsolPlugin.INSTANCE.getString("CarePlanGeneralHeaderConstraintsTemplateId"),
 						new Object[] { carePlan }));
 			}
 

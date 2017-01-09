@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SubstanceOrDeviceAllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -149,7 +150,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_ALLERGY_STATUS_INVERSION_INDICATOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationAllergyStatusInversionIndicator"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -216,7 +217,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_REACTION_INVERSION_INDICATOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationReactionInversionIndicator"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -283,7 +284,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_INVERSION_INDICATOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationSeverityInversionIndicator"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -350,7 +351,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationTemplateId"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -417,7 +418,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationClassCode"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -484,7 +485,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationMoodCode"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -551,7 +552,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationId"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -618,7 +619,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationCodeP"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -710,7 +711,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationCode"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -778,7 +779,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationStatusCode"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -845,7 +846,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationStatusCodeP"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -912,7 +913,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationEffectiveTime"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -981,7 +982,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationValue"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -1048,7 +1049,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_VALUE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationValueP"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -1115,7 +1116,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_ALLERGY_STATUS_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationAllergyStatusObservation"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -1182,7 +1183,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_REACTION_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationReactionObservation"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -1249,7 +1250,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_SEVERITY_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationSeverityObservation"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -1316,7 +1317,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipant"),
 						new Object[] { substanceOrDeviceAllergyObservation }));
 			}
@@ -1387,7 +1388,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_ORIGINAL_TEXT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCEOriginalText"),
 							new Object[] { eObject }));
 				}
@@ -1459,7 +1460,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CE_TRANSLATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCETranslation"),
 							new Object[] { eObject }));
 				}
@@ -1531,7 +1532,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE_VALUE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReferenceValue"),
 							new Object[] { eObject }));
 				}
@@ -1603,7 +1604,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_REFERENCE_VALUE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityReferenceValue"),
 							new Object[] { eObject }));
 				}
@@ -1675,7 +1676,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_ORIGINAL_TEXT_REFERENCE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityOriginalTextReference"),
 							new Object[] { eObject }));
 				}
@@ -1747,7 +1748,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE_TERMINOLOGY_VALUE_SET_GROUP_SRFI,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCodeTerminologyValueSetGroupSRFI"),
 							new Object[] { eObject }));
 				}
@@ -1819,7 +1820,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityClassCode"),
 							new Object[] { eObject }));
 				}
@@ -1891,7 +1892,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -1963,7 +1964,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipantParticipantRoleClassCode"),
 							new Object[] { eObject }));
 				}
@@ -2035,7 +2036,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipantParticipantRolePlayingEntity"),
 							new Object[] { eObject }));
 				}
@@ -2107,7 +2108,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipantTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -2179,7 +2180,7 @@ public class SubstanceOrDeviceAllergyObservationOperations extends ClinicalState
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION__SUBSTANCE_OR_DEVICE_ALLERGY_OBSERVATION_PARTICIPANT_PARTICIPANT_ROLE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SubstanceOrDeviceAllergyObservationSubstanceOrDeviceAllergyObservationParticipantParticipantRole"),
 							new Object[] { eObject }));
 				}

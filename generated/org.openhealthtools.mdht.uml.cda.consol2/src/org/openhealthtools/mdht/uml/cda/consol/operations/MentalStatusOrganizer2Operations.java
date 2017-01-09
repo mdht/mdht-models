@@ -21,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -116,7 +117,7 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_ORGANIZER2__MENTAL_STATUS_ORGANIZER2_HAS_CODE_OR_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MentalStatusOrganizer2MentalStatusOrganizer2HasCodeOrEffectiveTime"),
 						new Object[] { mentalStatusOrganizer2 }));
 			}
@@ -182,8 +183,7 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_ORGANIZER2__MENTAL_STATUS_ORGANIZER2_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusOrganizer2MentalStatusOrganizer2EffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2MentalStatusOrganizer2EffectiveTime"),
 						new Object[] { mentalStatusOrganizer2 }));
 			}
 
@@ -252,8 +252,7 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MENTAL_STATUS_ORGANIZER2__MENTAL_STATUS_ORGANIZER2_CD_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"MentalStatusOrganizer2MentalStatusOrganizer2CDCode"),
+							ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2MentalStatusOrganizer2CDCode"),
 							new Object[] { eObject }));
 				}
 
@@ -369,7 +368,7 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_ORGANIZER2__COGNITIVE_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MentalStatusOrganizer2CognitiveStatusResultOrganizerCodeCodeSystem"),
 						new Object[] { mentalStatusOrganizer2 }));
 			}
@@ -434,8 +433,7 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusOrganizer2ResultOrganizerTemplateId"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2ResultOrganizerTemplateId"),
 						new Object[] { mentalStatusOrganizer2 }));
 			}
 
@@ -498,8 +496,7 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusOrganizer2ResultOrganizerCode"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2ResultOrganizerCode"),
 						new Object[] { mentalStatusOrganizer2 }));
 			}
 
@@ -564,8 +561,7 @@ public class MentalStatusOrganizer2Operations extends CognitiveStatusResultOrgan
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_ORGANIZER2__RESULT_ORGANIZER_RESULT_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusOrganizer2ResultOrganizerResultObservation"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusOrganizer2ResultOrganizerResultObservation"),
 						new Object[] { mentalStatusOrganizer2 }));
 			}
 

@@ -28,6 +28,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PolicyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -197,8 +198,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PolicyActivityPolicyActivityTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityTemplateId"),
 						new Object[] { policyActivity }));
 			}
 
@@ -261,8 +261,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PolicyActivityPolicyActivityClassCode"),
+						ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityClassCode"),
 						new Object[] { policyActivity }));
 			}
 
@@ -304,8 +303,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PolicyActivityPolicyActivityCodeP"),
+						ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCodeP"),
 						new Object[] { policyActivity }));
 			}
 
@@ -368,8 +366,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PolicyActivityPolicyActivityCode"),
+						ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCode"),
 						new Object[] { policyActivity }));
 			}
 
@@ -411,8 +408,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PolicyActivityPolicyActivityId"),
+						ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityId"),
 						new Object[] { policyActivity }));
 			}
 
@@ -540,8 +536,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PolicyActivityPolicyActivityMoodCode"),
+						ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityMoodCode"),
 						new Object[] { policyActivity }));
 			}
 
@@ -605,8 +600,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PolicyActivityPolicyActivityStatusCode"),
+						ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityStatusCode"),
 						new Object[] { policyActivity }));
 			}
 
@@ -669,8 +663,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PolicyActivityPolicyActivityPayer"),
+						ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityPayer"),
 						new Object[] { policyActivity }));
 			}
 
@@ -733,8 +726,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PolicyActivityPolicyActivityGuarantor"),
+						ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityGuarantor"),
 						new Object[] { policyActivity }));
 			}
 
@@ -797,8 +789,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PolicyActivityPolicyActivityCoverage"),
+						ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoverage"),
 						new Object[] { policyActivity }));
 			}
 
@@ -861,8 +852,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PolicyActivityPolicyActivityHolder"),
+						ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityHolder"),
 						new Object[] { policyActivity }));
 			}
 
@@ -926,8 +916,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ENTRY_RELATIONSHIP,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PolicyActivityPolicyActivityEntryRelationship"),
+						ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityEntryRelationship"),
 						new Object[] { policyActivity }));
 			}
 
@@ -996,7 +985,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet"),
 							new Object[] { eObject }));
 				}
@@ -1046,7 +1035,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP"),
 							new Object[] { eObject }));
 				}
@@ -1140,7 +1129,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse"),
 							new Object[] { eObject }));
 				}
@@ -1211,7 +1200,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry"),
 							new Object[] { eObject }));
 				}
@@ -1282,7 +1271,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressState"),
 							new Object[] { eObject }));
 				}
@@ -1353,7 +1342,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity"),
 							new Object[] { eObject }));
 				}
@@ -1424,7 +1413,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode"),
 							new Object[] { eObject }));
 				}
@@ -1495,7 +1484,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityPayerPayerAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine"),
 							new Object[] { eObject }));
 				}
@@ -1566,7 +1555,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityPayerPayerAssignedEntityPayerOrganizationName"),
 							new Object[] { eObject }));
 				}
@@ -1637,8 +1626,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityPayerPayerAssignedEntityId"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityPayerPayerAssignedEntityId"),
 							new Object[] { eObject }));
 				}
 
@@ -1697,8 +1685,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityPayerPayerAssignedEntityCode"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityPayerPayerAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
 
@@ -1791,7 +1778,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityPayerPayerAssignedEntityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -1876,8 +1863,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_ADDR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityPayerPayerAssignedEntityAddr"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityPayerPayerAssignedEntityAddr"),
 							new Object[] { eObject }));
 				}
 
@@ -1947,7 +1933,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_TELECOM,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityPayerPayerAssignedEntityTelecom"),
 							new Object[] { eObject }));
 				}
@@ -2018,7 +2004,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY_PAYER_ORGANIZATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityPayerPayerAssignedEntityPayerOrganization"),
 							new Object[] { eObject }));
 				}
@@ -2089,8 +2075,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_TEMPLATE_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityPayerTemplateId"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityPayerTemplateId"),
 							new Object[] { eObject }));
 				}
 
@@ -2160,8 +2145,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityPayerTypeCode"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityPayerTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -2231,8 +2215,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_PAYER_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityPayerPayerAssignedEntity"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityPayerPayerAssignedEntity"),
 							new Object[] { eObject }));
 				}
 
@@ -2302,7 +2285,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet"),
 							new Object[] { eObject }));
 				}
@@ -2352,7 +2335,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP"),
 							new Object[] { eObject }));
 				}
@@ -2446,7 +2429,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse"),
 							new Object[] { eObject }));
 				}
@@ -2517,7 +2500,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry"),
 							new Object[] { eObject }));
 				}
@@ -2588,7 +2571,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState"),
 							new Object[] { eObject }));
 				}
@@ -2659,7 +2642,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity"),
 							new Object[] { eObject }));
 				}
@@ -2730,7 +2713,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode"),
 							new Object[] { eObject }));
 				}
@@ -2801,7 +2784,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine"),
 							new Object[] { eObject }));
 				}
@@ -2872,7 +2855,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_PERSON_NAME_AND_OR_ORG_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName"),
 							new Object[] { eObject }));
 				}
@@ -2945,7 +2928,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -3016,7 +2999,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -3087,7 +3070,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_ADDR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityAddr"),
 							new Object[] { eObject }));
 				}
@@ -3158,7 +3141,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_TELECOM,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntityTelecom"),
 							new Object[] { eObject }));
 				}
@@ -3229,8 +3212,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_TEMPLATE_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityGuarantorTemplateId"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityGuarantorTemplateId"),
 							new Object[] { eObject }));
 				}
 
@@ -3300,8 +3282,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityGuarantorTime"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityGuarantorTime"),
 							new Object[] { eObject }));
 				}
 
@@ -3371,8 +3352,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityGuarantorTypeCode"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityGuarantorTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -3442,7 +3422,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityGuarantorGuarantorAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -3513,7 +3493,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet"),
 							new Object[] { eObject }));
 				}
@@ -3563,7 +3543,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressUseP"),
 							new Object[] { eObject }));
 				}
@@ -3657,7 +3637,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressUse"),
 							new Object[] { eObject }));
 				}
@@ -3728,7 +3708,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressCountry"),
 							new Object[] { eObject }));
 				}
@@ -3799,7 +3779,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressState"),
 							new Object[] { eObject }));
 				}
@@ -3870,7 +3850,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressCity"),
 							new Object[] { eObject }));
 				}
@@ -3941,7 +3921,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressPostalCode"),
 							new Object[] { eObject }));
 				}
@@ -4012,7 +3992,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityCoverageCoverageRoleGeneralHeaderConstraintsUSRealmAddressStreetAddressLine"),
 							new Object[] { eObject }));
 				}
@@ -4083,7 +4063,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityCoverageCoverageRoleCoveragePlayingEntityName"),
 							new Object[] { eObject }));
 				}
@@ -4154,8 +4134,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityCoverageCoverageRoleId"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoverageCoverageRoleId"),
 							new Object[] { eObject }));
 				}
 
@@ -4227,8 +4206,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityCoverageCoverageRoleCode"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoverageCoverageRoleCode"),
 							new Object[] { eObject }));
 				}
 
@@ -4298,8 +4276,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityCoverageCoverageRoleCodeP"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoverageCoverageRoleCodeP"),
 							new Object[] { eObject }));
 				}
 
@@ -4369,8 +4346,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_ADDR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityCoverageCoverageRoleAddr"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoverageCoverageRoleAddr"),
 							new Object[] { eObject }));
 				}
 
@@ -4440,7 +4416,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE_COVERAGE_PLAYING_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityCoverageCoverageRoleCoveragePlayingEntity"),
 							new Object[] { eObject }));
 				}
@@ -4511,8 +4487,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_LOW_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityCoverageLowTime"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoverageLowTime"),
 							new Object[] { eObject }));
 				}
 
@@ -4582,8 +4557,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_HIGH_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityCoverageHighTime"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoverageHighTime"),
 							new Object[] { eObject }));
 				}
 
@@ -4653,8 +4627,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_TEMPLATE_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityCoverageTemplateId"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoverageTemplateId"),
 							new Object[] { eObject }));
 				}
 
@@ -4724,8 +4697,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityCoverageTypeCode"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoverageTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -4795,8 +4767,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityCoverageTime"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoverageTime"),
 							new Object[] { eObject }));
 				}
 
@@ -4866,8 +4837,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERAGE_COVERAGE_ROLE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityCoverageCoverageRole"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoverageCoverageRole"),
 							new Object[] { eObject }));
 				}
 
@@ -4937,7 +4907,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_US_REALM_ADDRESS_STREET,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet"),
 							new Object[] { eObject }));
 				}
@@ -4987,7 +4957,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressUseP"),
 							new Object[] { eObject }));
 				}
@@ -5081,7 +5051,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_USE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressUse"),
 							new Object[] { eObject }));
 				}
@@ -5152,7 +5122,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_COUNTRY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressCountry"),
 							new Object[] { eObject }));
 				}
@@ -5223,7 +5193,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STATE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressState"),
 							new Object[] { eObject }));
 				}
@@ -5294,7 +5264,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_CITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressCity"),
 							new Object[] { eObject }));
 				}
@@ -5365,7 +5335,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_POSTAL_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressPostalCode"),
 							new Object[] { eObject }));
 				}
@@ -5436,7 +5406,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_GENERAL_HEADER_CONSTRAINTS_US_REALM_ADDRESS_STREET_ADDRESS_LINE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityHolderHolderRoleGeneralHeaderConstraintsUSRealmAddressStreetAddressLine"),
 							new Object[] { eObject }));
 				}
@@ -5507,8 +5477,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityHolderHolderRoleId"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityHolderHolderRoleId"),
 							new Object[] { eObject }));
 				}
 
@@ -5578,8 +5547,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_HOLDER_ROLE_ADDR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityHolderHolderRoleAddr"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityHolderHolderRoleAddr"),
 							new Object[] { eObject }));
 				}
 
@@ -5649,8 +5617,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_TEMPLATE_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityHolderTemplateId"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityHolderTemplateId"),
 							new Object[] { eObject }));
 				}
 
@@ -5720,8 +5687,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityHolderTypeCode"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityHolderTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -5791,8 +5757,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityHolderTime"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityHolderTime"),
 							new Object[] { eObject }));
 				}
 
@@ -5862,8 +5827,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_HOLDER_HOLDER_ROLE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityHolderHolderRole"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityHolderHolderRole"),
 							new Object[] { eObject }));
 				}
 
@@ -5933,7 +5897,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET_ACT_ACTIVITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityEntryRelationshipTargetActActivity"),
 							new Object[] { eObject }));
 				}
@@ -6004,7 +5968,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ENTRY_RELATIONSHIP_DESCRIPTION_COVERAGE_PLAN,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PolicyActivityPolicyActivityEntryRelationshipDescriptionCoveragePlan"),
 							new Object[] { eObject }));
 				}
@@ -6075,8 +6039,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PolicyActivityPolicyActivityEntryRelationshipTypeCode"),
+							ConsolPlugin.INSTANCE.getString("PolicyActivityPolicyActivityEntryRelationshipTypeCode"),
 							new Object[] { eObject }));
 				}
 

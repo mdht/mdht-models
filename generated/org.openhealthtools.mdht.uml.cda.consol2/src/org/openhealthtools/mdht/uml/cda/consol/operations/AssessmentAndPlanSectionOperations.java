@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -121,8 +122,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AssessmentAndPlanSectionAssessmentAndPlanSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionAssessmentAndPlanSectionTemplateId"),
 						new Object[] { assessmentAndPlanSection }));
 			}
 
@@ -188,8 +188,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AssessmentAndPlanSectionAssessmentAndPlanSectionCode"),
+						ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionAssessmentAndPlanSectionCode"),
 						new Object[] { assessmentAndPlanSection }));
 			}
 
@@ -254,8 +253,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AssessmentAndPlanSectionAssessmentAndPlanSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionAssessmentAndPlanSectionCodeP"),
 						new Object[] { assessmentAndPlanSection }));
 			}
 
@@ -319,8 +317,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AssessmentAndPlanSectionAssessmentAndPlanSectionText"),
+						ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionAssessmentAndPlanSectionText"),
 						new Object[] { assessmentAndPlanSection }));
 			}
 
@@ -386,7 +383,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_AND_PLAN_SECTION__ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AssessmentAndPlanSectionAssessmentAndPlanSectionPlanOfCareActivityAct"),
 						new Object[] { assessmentAndPlanSection }));
 			}

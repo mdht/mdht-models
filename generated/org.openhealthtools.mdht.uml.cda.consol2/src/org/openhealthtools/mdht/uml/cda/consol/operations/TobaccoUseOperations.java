@@ -23,6 +23,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -121,8 +122,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TOBACCO_USE__TOBACCO_USE_EFFECTIVE_TIME_LOW,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TobaccoUseTobaccoUseEffectiveTimeLow"),
+						ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseEffectiveTimeLow"),
 						new Object[] { tobaccoUse }));
 			}
 
@@ -185,8 +185,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TOBACCO_USE__TOBACCO_USE_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TobaccoUseTobaccoUseTemplateId"),
+						ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseTemplateId"),
 						new Object[] { tobaccoUse }));
 			}
 
@@ -249,9 +248,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TOBACCO_USE__TOBACCO_USE_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TobaccoUseTobaccoUseClassCode"),
-						new Object[] { tobaccoUse }));
+						ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseClassCode"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -313,9 +310,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TOBACCO_USE__TOBACCO_USE_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TobaccoUseTobaccoUseMoodCode"),
-						new Object[] { tobaccoUse }));
+						ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseMoodCode"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -377,9 +372,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TOBACCO_USE__TOBACCO_USE_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TobaccoUseTobaccoUseCode"),
-						new Object[] { tobaccoUse }));
+						ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseCode"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -420,8 +413,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TOBACCO_USE__TOBACCO_USE_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TobaccoUseTobaccoUseEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseEffectiveTime"),
 						new Object[] { tobaccoUse }));
 			}
 
@@ -485,8 +477,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TOBACCO_USE__TOBACCO_USE_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TobaccoUseTobaccoUseStatusCode"),
+						ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseStatusCode"),
 						new Object[] { tobaccoUse }));
 			}
 
@@ -570,8 +561,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TOBACCO_USE__TOBACCO_USE_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TobaccoUseTobaccoUseStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseStatusCodeP"),
 						new Object[] { tobaccoUse }));
 			}
 
@@ -636,9 +626,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TOBACCO_USE__TOBACCO_USE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TobaccoUseTobaccoUseValue"),
-						new Object[] { tobaccoUse }));
+						ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseValue"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -700,9 +688,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.TOBACCO_USE__TOBACCO_USE_VALUE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"TobaccoUseTobaccoUseValueP"),
-						new Object[] { tobaccoUse }));
+						ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseValueP"), new Object[] { tobaccoUse }));
 			}
 
 			return false;
@@ -770,8 +756,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TOBACCO_USE__TOBACCO_USE_CD_CODE_TERM_ASSERTION_OR_LOINC,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"TobaccoUseTobaccoUseCDCodeTermAssertionOrLoinc"),
+							ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseCDCodeTermAssertionOrLoinc"),
 							new Object[] { eObject }));
 				}
 
@@ -840,9 +825,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TOBACCO_USE__TOBACCO_USE_CD_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"TobaccoUseTobaccoUseCDCode"),
-							new Object[] { eObject }));
+							ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseCDCode"), new Object[] { eObject }));
 				}
 
 			}
@@ -911,8 +894,7 @@ public class TobaccoUseOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.TOBACCO_USE__TOBACCO_USE_CD_CODE_SYSTEM,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"TobaccoUseTobaccoUseCDCodeSystem"),
+							ConsolPlugin.INSTANCE.getString("TobaccoUseTobaccoUseCDCodeSystem"),
 							new Object[] { eObject }));
 				}
 

@@ -19,6 +19,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProgressTowardGoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,7 +118,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProgressTowardGoalObservationProgressTowardGoalObservationTemplateId"),
 						new Object[] { progressTowardGoalObservation }));
 			}
@@ -184,7 +185,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProgressTowardGoalObservationProgressTowardGoalObservationClassCode"),
 						new Object[] { progressTowardGoalObservation }));
 			}
@@ -251,7 +252,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProgressTowardGoalObservationProgressTowardGoalObservationMoodCode"),
 						new Object[] { progressTowardGoalObservation }));
 			}
@@ -318,8 +319,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressTowardGoalObservationProgressTowardGoalObservationId"),
+						ConsolPlugin.INSTANCE.getString("ProgressTowardGoalObservationProgressTowardGoalObservationId"),
 						new Object[] { progressTowardGoalObservation }));
 			}
 
@@ -385,7 +385,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProgressTowardGoalObservationProgressTowardGoalObservationCodeP"),
 						new Object[] { progressTowardGoalObservation }));
 			}
@@ -477,7 +477,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProgressTowardGoalObservationProgressTowardGoalObservationCode"),
 						new Object[] { progressTowardGoalObservation }));
 			}
@@ -545,7 +545,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProgressTowardGoalObservationProgressTowardGoalObservationStatusCode"),
 						new Object[] { progressTowardGoalObservation }));
 			}
@@ -612,7 +612,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProgressTowardGoalObservationProgressTowardGoalObservationStatusCodeP"),
 						new Object[] { progressTowardGoalObservation }));
 			}
@@ -681,7 +681,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProgressTowardGoalObservationProgressTowardGoalObservationValue"),
 						new Object[] { progressTowardGoalObservation }));
 			}
@@ -748,7 +748,7 @@ public class ProgressTowardGoalObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_TOWARD_GOAL_OBSERVATION__PROGRESS_TOWARD_GOAL_OBSERVATION_VALUE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProgressTowardGoalObservationProgressTowardGoalObservationValueP"),
 						new Object[] { progressTowardGoalObservation }));
 			}

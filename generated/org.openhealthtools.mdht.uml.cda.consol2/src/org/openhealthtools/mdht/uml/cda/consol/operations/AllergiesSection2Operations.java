@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection2;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -116,8 +117,7 @@ public class AllergiesSection2Operations extends AllergiesSectionEntriesOptional
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION2__ALLERGIES_SECTION2_NULL_FLAVOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AllergiesSection2AllergiesSection2NullFlavor"),
+						ConsolPlugin.INSTANCE.getString("AllergiesSection2AllergiesSection2NullFlavor"),
 						new Object[] { allergiesSection2 }));
 			}
 
@@ -180,8 +180,7 @@ public class AllergiesSection2Operations extends AllergiesSectionEntriesOptional
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION2__ALLERGIES_SECTION2_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AllergiesSection2AllergiesSection2Title"),
+						ConsolPlugin.INSTANCE.getString("AllergiesSection2AllergiesSection2Title"),
 						new Object[] { allergiesSection2 }));
 			}
 
@@ -244,8 +243,7 @@ public class AllergiesSection2Operations extends AllergiesSectionEntriesOptional
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION2__ALLERGIES_SECTION2_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AllergiesSection2AllergiesSection2Text"),
+						ConsolPlugin.INSTANCE.getString("AllergiesSection2AllergiesSection2Text"),
 						new Object[] { allergiesSection2 }));
 			}
 
@@ -310,8 +308,7 @@ public class AllergiesSection2Operations extends AllergiesSectionEntriesOptional
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION2__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AllergiesSection2AllergiesSectionEntriesOptionalTemplateId"),
+						ConsolPlugin.INSTANCE.getString("AllergiesSection2AllergiesSectionEntriesOptionalTemplateId"),
 						new Object[] { allergiesSection2 }));
 			}
 
@@ -376,8 +373,7 @@ public class AllergiesSection2Operations extends AllergiesSectionEntriesOptional
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION2__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AllergiesSection2AllergiesSectionEntriesOptionalCodeP"),
+						ConsolPlugin.INSTANCE.getString("AllergiesSection2AllergiesSectionEntriesOptionalCodeP"),
 						new Object[] { allergiesSection2 }));
 			}
 
@@ -466,8 +462,7 @@ public class AllergiesSection2Operations extends AllergiesSectionEntriesOptional
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION2__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AllergiesSection2AllergiesSectionEntriesOptionalCode"),
+						ConsolPlugin.INSTANCE.getString("AllergiesSection2AllergiesSectionEntriesOptionalCode"),
 						new Object[] { allergiesSection2 }));
 			}
 
@@ -532,7 +527,7 @@ public class AllergiesSection2Operations extends AllergiesSectionEntriesOptional
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION2__ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"AllergiesSection2AllergiesSectionEntriesOptionalAllergyProblemAct"),
 						new Object[] { allergiesSection2 }));
 			}

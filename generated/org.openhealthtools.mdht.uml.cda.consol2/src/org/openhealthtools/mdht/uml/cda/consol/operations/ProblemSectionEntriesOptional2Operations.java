@@ -24,6 +24,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -119,7 +120,7 @@ public class ProblemSectionEntriesOptional2Operations extends ProblemSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_SECTION_ENTRIES_OPTIONAL2__PROBLEM_SECTION_ENTRIES_OPTIONAL2_HEALTH_STATUS_OBSERVATION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProblemSectionEntriesOptional2ProblemSectionEntriesOptional2HealthStatusObservation2"),
 						new Object[] { problemSectionEntriesOptional2 }));
 			}
@@ -282,7 +283,7 @@ public class ProblemSectionEntriesOptional2Operations extends ProblemSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_SECTION_ENTRIES_OPTIONAL2__PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProblemSectionEntriesOptional2ProblemSectionEntriesOptionalTemplateId"),
 						new Object[] { problemSectionEntriesOptional2 }));
 			}
@@ -349,7 +350,7 @@ public class ProblemSectionEntriesOptional2Operations extends ProblemSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_SECTION_ENTRIES_OPTIONAL2__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProblemSectionEntriesOptional2ProblemSectionEntriesOptionalCodeP"),
 						new Object[] { problemSectionEntriesOptional2 }));
 			}
@@ -441,7 +442,7 @@ public class ProblemSectionEntriesOptional2Operations extends ProblemSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_SECTION_ENTRIES_OPTIONAL2__PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProblemSectionEntriesOptional2ProblemSectionEntriesOptionalCode"),
 						new Object[] { problemSectionEntriesOptional2 }));
 			}
@@ -508,7 +509,7 @@ public class ProblemSectionEntriesOptional2Operations extends ProblemSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_SECTION_ENTRIES_OPTIONAL2__PROBLEM_SECTION_ENTRIES_OPTIONAL_PROBLEM_CONCERN,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProblemSectionEntriesOptional2ProblemSectionEntriesOptionalProblemConcern"),
 						new Object[] { problemSectionEntriesOptional2 }));
 			}

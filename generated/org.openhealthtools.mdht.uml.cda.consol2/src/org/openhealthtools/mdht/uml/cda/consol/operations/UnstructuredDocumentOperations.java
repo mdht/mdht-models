@@ -26,6 +26,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -129,8 +130,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_RECORD_TARGET,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"UnstructuredDocumentUnstructuredDocumentRecordTarget"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentRecordTarget"),
 						new Object[] { unstructuredDocument }));
 			}
 
@@ -193,8 +193,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_AUTHOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"UnstructuredDocumentUnstructuredDocumentAuthor"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentAuthor"),
 						new Object[] { unstructuredDocument }));
 			}
 
@@ -258,8 +257,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_COMPONENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"UnstructuredDocumentUnstructuredDocumentComponent"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentComponent"),
 						new Object[] { unstructuredDocument }));
 			}
 
@@ -323,8 +321,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"UnstructuredDocumentUnstructuredDocumentCustodian"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentCustodian"),
 						new Object[] { unstructuredDocument }));
 			}
 
@@ -393,7 +390,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocumentUnstructuredDocumentRecordTargetPatientRole2Id"),
 							new Object[] { eObject }));
 				}
@@ -464,7 +461,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_RECORD_TARGET_PATIENT_ROLE2,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocumentUnstructuredDocumentRecordTargetPatientRole2"),
 							new Object[] { eObject }));
 				}
@@ -535,7 +532,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_ADDR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocumentUnstructuredDocumentAuthorAssignedAuthor2Addr"),
 							new Object[] { eObject }));
 				}
@@ -606,7 +603,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2_TELECOM,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocumentUnstructuredDocumentAuthorAssignedAuthor2Telecom"),
 							new Object[] { eObject }));
 				}
@@ -677,7 +674,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR2,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocumentUnstructuredDocumentAuthorAssignedAuthor2"),
 							new Object[] { eObject }));
 				}
@@ -748,7 +745,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ADDR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr"),
 							new Object[] { eObject }));
 				}
@@ -819,7 +816,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId"),
 							new Object[] { eObject }));
 				}
@@ -890,7 +887,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_NAME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName"),
 							new Object[] { eObject }));
 				}
@@ -961,7 +958,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION_TELECOM,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom"),
 							new Object[] { eObject }));
 				}
@@ -1032,7 +1029,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN3_CUSTODIAN_ORGANIZATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganization"),
 							new Object[] { eObject }));
 				}
@@ -1103,7 +1100,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_CUSTODIAN_ASSIGNED_CUSTODIAN2,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"UnstructuredDocumentUnstructuredDocumentCustodianAssignedCustodian2"),
 							new Object[] { eObject }));
 				}
@@ -1170,8 +1167,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"UnstructuredDocumentGeneralHeaderConstraintsTemplateId"),
+						ConsolPlugin.INSTANCE.getString("UnstructuredDocumentGeneralHeaderConstraintsTemplateId"),
 						new Object[] { unstructuredDocument }));
 			}
 

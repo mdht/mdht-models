@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -93,8 +94,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POSTPROCEDURE_DIAGNOSIS2__POSTPROCEDURE_DIAGNOSIS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PostprocedureDiagnosis2PostprocedureDiagnosisCodeP"),
+						ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosis2PostprocedureDiagnosisCodeP"),
 						new Object[] { postprocedureDiagnosis2 }));
 			}
 
@@ -243,8 +243,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POSTPROCEDURE_DIAGNOSIS2__POSTPROCEDURE_DIAGNOSIS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PostprocedureDiagnosis2PostprocedureDiagnosisTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosis2PostprocedureDiagnosisTemplateId"),
 						new Object[] { postprocedureDiagnosis2 }));
 			}
 
@@ -318,8 +317,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POSTPROCEDURE_DIAGNOSIS2__POSTPROCEDURE_DIAGNOSIS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PostprocedureDiagnosis2PostprocedureDiagnosisCode"),
+						ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosis2PostprocedureDiagnosisCode"),
 						new Object[] { postprocedureDiagnosis2 }));
 			}
 
@@ -384,7 +382,7 @@ public class PostprocedureDiagnosis2Operations extends PostprocedureDiagnosisOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POSTPROCEDURE_DIAGNOSIS2__POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PostprocedureDiagnosis2PostprocedureDiagnosisProblemObservation"),
 						new Object[] { postprocedureDiagnosis2 }));
 			}

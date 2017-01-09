@@ -19,6 +19,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PrognosisObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,8 +115,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PrognosisObservationPrognosisObservationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationTemplateId"),
 						new Object[] { prognosisObservation }));
 			}
 
@@ -179,8 +179,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PrognosisObservationPrognosisObservationClassCode"),
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationClassCode"),
 						new Object[] { prognosisObservation }));
 			}
 
@@ -244,8 +243,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PrognosisObservationPrognosisObservationMoodCode"),
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationMoodCode"),
 						new Object[] { prognosisObservation }));
 			}
 
@@ -308,8 +306,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PrognosisObservationPrognosisObservationCodeP"),
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationCodeP"),
 						new Object[] { prognosisObservation }));
 			}
 
@@ -395,8 +392,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PrognosisObservationPrognosisObservationCode"),
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationCode"),
 						new Object[] { prognosisObservation }));
 			}
 
@@ -461,8 +457,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PrognosisObservationPrognosisObservationStatusCode"),
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationStatusCode"),
 						new Object[] { prognosisObservation }));
 			}
 
@@ -527,8 +522,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PrognosisObservationPrognosisObservationStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationStatusCodeP"),
 						new Object[] { prognosisObservation }));
 			}
 
@@ -593,8 +587,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PrognosisObservationPrognosisObservationEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationEffectiveTime"),
 						new Object[] { prognosisObservation }));
 			}
 
@@ -657,8 +650,7 @@ public class PrognosisObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGNOSIS_OBSERVATION__PROGNOSIS_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PrognosisObservationPrognosisObservationValue"),
+						ConsolPlugin.INSTANCE.getString("PrognosisObservationPrognosisObservationValue"),
 						new Object[] { prognosisObservation }));
 			}
 

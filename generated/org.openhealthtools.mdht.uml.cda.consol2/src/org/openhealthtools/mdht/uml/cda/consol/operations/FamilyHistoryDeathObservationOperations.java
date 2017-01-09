@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.FamilyHistoryDeathObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,7 +118,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FamilyHistoryDeathObservationFamilyHistoryDeathObservationTemplateId"),
 						new Object[] { familyHistoryDeathObservation }));
 			}
@@ -184,7 +185,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FamilyHistoryDeathObservationFamilyHistoryDeathObservationClassCode"),
 						new Object[] { familyHistoryDeathObservation }));
 			}
@@ -251,7 +252,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FamilyHistoryDeathObservationFamilyHistoryDeathObservationMoodCode"),
 						new Object[] { familyHistoryDeathObservation }));
 			}
@@ -320,7 +321,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FamilyHistoryDeathObservationFamilyHistoryDeathObservationCode"),
 						new Object[] { familyHistoryDeathObservation }));
 			}
@@ -388,7 +389,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FamilyHistoryDeathObservationFamilyHistoryDeathObservationStatusCode"),
 						new Object[] { familyHistoryDeathObservation }));
 			}
@@ -457,7 +458,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FamilyHistoryDeathObservationFamilyHistoryDeathObservationValue"),
 						new Object[] { familyHistoryDeathObservation }));
 			}
@@ -524,7 +525,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FAMILY_HISTORY_DEATH_OBSERVATION__FAMILY_HISTORY_DEATH_OBSERVATION_VALUE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"FamilyHistoryDeathObservationFamilyHistoryDeathObservationValueP"),
 						new Object[] { familyHistoryDeathObservation }));
 			}

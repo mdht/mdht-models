@@ -19,6 +19,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.CulturalAndReligiousObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,7 +118,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE_OF_TYPE_CD_IS_FROM_SNOMED,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CulturalAndReligiousObservationCulturalAndReligiousObservationValueOfTypeCDIsFromSnomed"),
 						new Object[] { culturalAndReligiousObservation }));
 			}
@@ -184,7 +185,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CulturalAndReligiousObservationCulturalAndReligiousObservationTemplateId"),
 						new Object[] { culturalAndReligiousObservation }));
 			}
@@ -251,7 +252,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CulturalAndReligiousObservationCulturalAndReligiousObservationClassCode"),
 						new Object[] { culturalAndReligiousObservation }));
 			}
@@ -318,7 +319,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CulturalAndReligiousObservationCulturalAndReligiousObservationMoodCode"),
 						new Object[] { culturalAndReligiousObservation }));
 			}
@@ -385,7 +386,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CulturalAndReligiousObservationCulturalAndReligiousObservationId"),
 						new Object[] { culturalAndReligiousObservation }));
 			}
@@ -452,7 +453,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CulturalAndReligiousObservationCulturalAndReligiousObservationCodeP"),
 						new Object[] { culturalAndReligiousObservation }));
 			}
@@ -544,7 +545,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CulturalAndReligiousObservationCulturalAndReligiousObservationCode"),
 						new Object[] { culturalAndReligiousObservation }));
 			}
@@ -612,7 +613,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CulturalAndReligiousObservationCulturalAndReligiousObservationStatusCode"),
 						new Object[] { culturalAndReligiousObservation }));
 			}
@@ -679,7 +680,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CulturalAndReligiousObservationCulturalAndReligiousObservationStatusCodeP"),
 						new Object[] { culturalAndReligiousObservation }));
 			}
@@ -746,7 +747,7 @@ public class CulturalAndReligiousObservationOperations extends ClinicalStatement
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CULTURAL_AND_RELIGIOUS_OBSERVATION__CULTURAL_AND_RELIGIOUS_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"CulturalAndReligiousObservationCulturalAndReligiousObservationValue"),
 						new Object[] { culturalAndReligiousObservation }));
 			}

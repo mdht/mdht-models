@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -123,7 +124,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSectionEntriesOptionalImmunizationsSectionEntriesOptionalTemplateId"),
 						new Object[] { immunizationsSectionEntriesOptional }));
 			}
@@ -192,7 +193,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSectionEntriesOptionalImmunizationsSectionEntriesOptionalCode"),
 						new Object[] { immunizationsSectionEntriesOptional }));
 			}
@@ -259,7 +260,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSectionEntriesOptionalImmunizationsSectionEntriesOptionalCodeP"),
 						new Object[] { immunizationsSectionEntriesOptional }));
 			}
@@ -326,7 +327,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSectionEntriesOptionalImmunizationsSectionEntriesOptionalTitle"),
 						new Object[] { immunizationsSectionEntriesOptional }));
 			}
@@ -393,7 +394,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSectionEntriesOptionalImmunizationsSectionEntriesOptionalText"),
 						new Object[] { immunizationsSectionEntriesOptional }));
 			}
@@ -460,7 +461,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSectionEntriesOptionalImmunizationsSectionEntriesOptionalImmunizationActivity"),
 						new Object[] { immunizationsSectionEntriesOptional }));
 			}

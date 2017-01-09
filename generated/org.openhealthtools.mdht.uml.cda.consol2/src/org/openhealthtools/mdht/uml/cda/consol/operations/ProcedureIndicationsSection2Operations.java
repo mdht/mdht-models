@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -163,7 +164,7 @@ public class ProcedureIndicationsSection2Operations extends ProcedureIndications
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_INDICATIONS_SECTION2__PROCEDURE_INDICATIONS_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureIndicationsSection2ProcedureIndicationsSectionTemplateId"),
 						new Object[] { procedureIndicationsSection2 }));
 			}
@@ -230,8 +231,7 @@ public class ProcedureIndicationsSection2Operations extends ProcedureIndications
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_INDICATIONS_SECTION2__PROCEDURE_INDICATIONS_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureIndicationsSection2ProcedureIndicationsSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSection2ProcedureIndicationsSectionCodeP"),
 						new Object[] { procedureIndicationsSection2 }));
 			}
 
@@ -321,8 +321,7 @@ public class ProcedureIndicationsSection2Operations extends ProcedureIndications
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_INDICATIONS_SECTION2__PROCEDURE_INDICATIONS_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureIndicationsSection2ProcedureIndicationsSectionCode"),
+						ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSection2ProcedureIndicationsSectionCode"),
 						new Object[] { procedureIndicationsSection2 }));
 			}
 
@@ -388,7 +387,7 @@ public class ProcedureIndicationsSection2Operations extends ProcedureIndications
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_INDICATIONS_SECTION2__PROCEDURE_INDICATIONS_SECTION_INDICATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureIndicationsSection2ProcedureIndicationsSectionIndication"),
 						new Object[] { procedureIndicationsSection2 }));
 			}

@@ -22,6 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -127,7 +128,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_VALUE_DATATYPE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MentalStatusObservation2MentalStatusObservation2ValueDatatype"),
 						new Object[] { mentalStatusObservation2 }));
 			}
@@ -193,8 +194,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusObservation2MentalStatusObservation2TemplateId"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservation2MentalStatusObservation2TemplateId"),
 						new Object[] { mentalStatusObservation2 }));
 			}
 
@@ -259,8 +259,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusObservation2MentalStatusObservation2ClassCode"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservation2MentalStatusObservation2ClassCode"),
 						new Object[] { mentalStatusObservation2 }));
 			}
 
@@ -325,8 +324,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusObservation2MentalStatusObservation2MoodCode"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservation2MentalStatusObservation2MoodCode"),
 						new Object[] { mentalStatusObservation2 }));
 			}
 
@@ -390,8 +388,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusObservation2MentalStatusObservation2Id"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservation2MentalStatusObservation2Id"),
 						new Object[] { mentalStatusObservation2 }));
 			}
 
@@ -455,8 +452,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusObservation2MentalStatusObservation2CodeP"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservation2MentalStatusObservation2CodeP"),
 						new Object[] { mentalStatusObservation2 }));
 			}
 
@@ -543,8 +539,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusObservation2MentalStatusObservation2Code"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservation2MentalStatusObservation2Code"),
 						new Object[] { mentalStatusObservation2 }));
 			}
 
@@ -610,8 +605,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusObservation2MentalStatusObservation2StatusCode"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservation2MentalStatusObservation2StatusCode"),
 						new Object[] { mentalStatusObservation2 }));
 			}
 
@@ -676,8 +670,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusObservation2MentalStatusObservation2StatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservation2MentalStatusObservation2StatusCodeP"),
 						new Object[] { mentalStatusObservation2 }));
 			}
 
@@ -743,7 +736,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MentalStatusObservation2MentalStatusObservation2EffectiveTime"),
 						new Object[] { mentalStatusObservation2 }));
 			}
@@ -808,8 +801,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MentalStatusObservation2MentalStatusObservation2Value"),
+						ConsolPlugin.INSTANCE.getString("MentalStatusObservation2MentalStatusObservation2Value"),
 						new Object[] { mentalStatusObservation2 }));
 			}
 
@@ -875,7 +867,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MentalStatusObservation2MentalStatusObservation2AuthorParticipation"),
 						new Object[] { mentalStatusObservation2 }));
 			}
@@ -942,7 +934,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_ASSESSMENT_SCALE_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MentalStatusObservation2MentalStatusObservation2AssessmentScaleObservation"),
 						new Object[] { mentalStatusObservation2 }));
 			}
@@ -1009,7 +1001,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_REFERENCE_RANGE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MentalStatusObservation2MentalStatusObservation2ReferenceRange"),
 						new Object[] { mentalStatusObservation2 }));
 			}
@@ -1082,7 +1074,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_CD_TRANSLATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"MentalStatusObservation2MentalStatusObservation2CDTranslation"),
 							new Object[] { eObject }));
 				}
@@ -1154,7 +1146,7 @@ public class MentalStatusObservation2Operations extends ClinicalStatementOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MENTAL_STATUS_OBSERVATION2__MENTAL_STATUS_OBSERVATION2_CD_TRANSLATION_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"MentalStatusObservation2MentalStatusObservation2CDTranslationP"),
 							new Object[] { eObject }));
 				}

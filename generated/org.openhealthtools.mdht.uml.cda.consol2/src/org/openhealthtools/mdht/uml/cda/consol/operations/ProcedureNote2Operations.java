@@ -47,6 +47,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -236,7 +237,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_HAS_AN_ASSEMENT_AND_PLAN_SECTION2_OR_BOTH_ASSEMENT_SECTION_AND_PLAN_OF_TREATMENT_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureNote2ProcedureNote2HasAnAssementAndPlanSection2OrBothAssementSectionAndPlanOfTreatmentSection2"),
 						new Object[] { procedureNote2 }));
 			}
@@ -302,7 +303,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOES_NOT_HAVE_ASSEMENT_AND_PLAN_SECTION2_WHEN_ASSEMENT_OR_PLAN_OF_TREATMENT2_ARE_PRESENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureNote2ProcedureNote2DoesNotHaveAssementAndPlanSection2WhenAssementOrPlanOfTreatment2ArePresent"),
 						new Object[] { procedureNote2 }));
 			}
@@ -368,7 +369,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOES_NOT_HAVE_CHIEF_COMPLAINT_WITH_CHIEF_COMPLAINT_OR_REASON_FOR_VISIT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureNote2ProcedureNote2DoesNotHaveChiefComplaintWithChiefComplaintOrReasonForVisitSection"),
 						new Object[] { procedureNote2 }));
 			}
@@ -432,8 +433,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2CodeP"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2CodeP"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -519,8 +519,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2Code"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2Code"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -583,8 +582,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PARTICIPANT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2Participant"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2Participant"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -647,8 +645,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2DocumentationOf"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2DocumentationOf"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -711,8 +708,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_AUTHORIZATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2Authorization"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2Authorization"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -775,8 +771,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_COMPONENT_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2ComponentOf"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ComponentOf"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -841,8 +836,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_COMPLICATIONS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2ComplicationsSection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ComplicationsSection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -907,8 +901,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PROCEDURE_DESCRIPTION_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2ProcedureDescriptionSection"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ProcedureDescriptionSection"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -973,8 +966,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PROCEDURE_INDICATIONS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2ProcedureIndicationsSection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ProcedureIndicationsSection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1039,8 +1031,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_POSTPROCEDURE_DIAGNOSIS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2PostprocedureDiagnosisSection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2PostprocedureDiagnosisSection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1104,8 +1095,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_ASSESSMENT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2AssessmentSection"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2AssessmentSection"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1170,8 +1160,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_ASSESSMENT_AND_PLAN_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2AssessmentAndPlanSection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2AssessmentAndPlanSection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1236,8 +1225,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PLAN_OF_TREATMENT_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2PlanOfTreatmentSection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2PlanOfTreatmentSection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1302,8 +1290,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_ALLERGIES_SECTION_ENTRIES_OPTIONAL2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2AllergiesSectionEntriesOptional2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2AllergiesSectionEntriesOptional2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1367,8 +1354,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_ANESTHESIA_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2AnesthesiaSection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2AnesthesiaSection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1433,8 +1419,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_CHIEF_COMPLAINT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2ChiefComplaintSection"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ChiefComplaintSection"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1499,7 +1484,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureNote2ProcedureNote2ChiefComplaintAndReasonForVisitSection"),
 						new Object[] { procedureNote2 }));
 			}
@@ -1565,8 +1550,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_FAMILY_HISTORY_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2FamilyHistorySection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2FamilyHistorySection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1631,8 +1615,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_HISTORY_OF_PAST_ILLNESS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2HistoryOfPastIllnessSection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2HistoryOfPastIllnessSection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1697,8 +1680,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_HISTORY_OF_PRESENT_ILLNESS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2HistoryOfPresentIllnessSection"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2HistoryOfPresentIllnessSection"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1763,8 +1745,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_MEDICAL_HISTORY_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2MedicalHistorySection"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2MedicalHistorySection"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1829,7 +1810,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_MEDICATIONS_SECTION_ENTRIES_OPTIONAL2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureNote2ProcedureNote2MedicationsSectionEntriesOptional2"),
 						new Object[] { procedureNote2 }));
 			}
@@ -1895,8 +1876,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_MEDICATIONS_ADMINISTERED_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2MedicationsAdministeredSection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2MedicationsAdministeredSection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -1961,8 +1941,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PHYSICAL_EXAM_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2PhysicalExamSection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2PhysicalExamSection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -2027,8 +2006,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PLANNED_PROCEDURE_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2PlannedProcedureSection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2PlannedProcedureSection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -2093,8 +2071,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PROCEDURE_DISPOSITION_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2ProcedureDispositionSection"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ProcedureDispositionSection"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -2159,7 +2136,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureNote2ProcedureNote2ProcedureEstimatedBloodLossSection"),
 						new Object[] { procedureNote2 }));
 			}
@@ -2225,8 +2202,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PROCEDURE_FINDINGS_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2ProcedureFindingsSection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ProcedureFindingsSection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -2291,8 +2267,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PROCEDURE_IMPLANTS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2ProcedureImplantsSection"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ProcedureImplantsSection"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -2357,8 +2332,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PROCEDURE_SPECIMENS_TAKEN_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2ProcedureSpecimensTakenSection"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ProcedureSpecimensTakenSection"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -2423,7 +2397,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PROCEDURES_SECTION_ENTRIES_OPTIONAL2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProcedureNote2ProcedureNote2ProceduresSectionEntriesOptional2"),
 						new Object[] { procedureNote2 }));
 			}
@@ -2489,8 +2463,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_REASON_FOR_VISIT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2ReasonForVisitSection"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ReasonForVisitSection"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -2555,8 +2528,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_REVIEW_OF_SYSTEMS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2ReviewOfSystemsSection"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ReviewOfSystemsSection"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -2621,8 +2593,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_SOCIAL_HISTORY_SECTION2,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2ProcedureNote2SocialHistorySection2"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2SocialHistorySection2"),
 						new Object[] { procedureNote2 }));
 			}
 
@@ -2691,7 +2662,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PARTICIPANT_ASSOCIATED_ENTITY_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2ParticipantAssociatedEntityClassCode"),
 							new Object[] { eObject }));
 				}
@@ -2762,7 +2733,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PARTICIPANT_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2ParticipantAssociatedEntityAssociatedPerson"),
 							new Object[] { eObject }));
 				}
@@ -2833,8 +2804,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PARTICIPANT_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProcedureNote2ProcedureNote2ParticipantTypeCode"),
+							ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ParticipantTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -2906,8 +2876,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PARTICIPANT_FUNCTION_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProcedureNote2ProcedureNote2ParticipantFunctionCode"),
+							ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ParticipantFunctionCode"),
 							new Object[] { eObject }));
 				}
 
@@ -2977,8 +2946,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PARTICIPANT_FUNCTION_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProcedureNote2ProcedureNote2ParticipantFunctionCodeP"),
+							ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ParticipantFunctionCodeP"),
 							new Object[] { eObject }));
 				}
 
@@ -3048,8 +3016,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_PARTICIPANT_ASSOCIATED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProcedureNote2ProcedureNote2ParticipantAssociatedEntity"),
+							ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2ParticipantAssociatedEntity"),
 							new Object[] { eObject }));
 				}
 
@@ -3119,7 +3086,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_US_REALM_DATE_AND_TIME_DT_LOW,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventUSRealmDateAndTimeDTLow"),
 							new Object[] { eObject }));
 				}
@@ -3190,7 +3157,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -3287,7 +3254,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -3358,7 +3325,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -3429,7 +3396,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -3500,7 +3467,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -3597,7 +3564,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -3668,7 +3635,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssistantsTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -3739,7 +3706,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssistantsAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -3810,7 +3777,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"),
 							new Object[] { eObject }));
 				}
@@ -3881,7 +3848,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventEffectiveTimeNoHighIfWidth"),
 							new Object[] { eObject }));
 				}
@@ -3952,7 +3919,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventProcedureCodes"),
 							new Object[] { eObject }));
 				}
@@ -4023,7 +3990,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventEffectiveTime"),
 							new Object[] { eObject }));
 				}
@@ -4094,7 +4061,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventCode"),
 							new Object[] { eObject }));
 				}
@@ -4165,7 +4132,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformer"),
 							new Object[] { eObject }));
 				}
@@ -4236,7 +4203,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSISTANTS,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2DocumentationOfServiceEventPerformerAssistants"),
 							new Object[] { eObject }));
 				}
@@ -4307,8 +4274,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_DOCUMENTATION_OF_SERVICE_EVENT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProcedureNote2ProcedureNote2DocumentationOfServiceEvent"),
+							ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2DocumentationOfServiceEvent"),
 							new Object[] { eObject }));
 				}
 
@@ -4378,7 +4344,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_AUTHORIZATION_CONSENT_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2AuthorizationConsentClassCode"),
 							new Object[] { eObject }));
 				}
@@ -4449,8 +4415,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_AUTHORIZATION_CONSENT_MOOD_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProcedureNote2ProcedureNote2AuthorizationConsentMoodCode"),
+							ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2AuthorizationConsentMoodCode"),
 							new Object[] { eObject }));
 				}
 
@@ -4520,7 +4485,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_AUTHORIZATION_CONSENT_STATUS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2AuthorizationConsentStatusCode"),
 							new Object[] { eObject }));
 				}
@@ -4591,8 +4556,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_AUTHORIZATION_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProcedureNote2ProcedureNote2AuthorizationTypeCode"),
+							ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2AuthorizationTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -4662,8 +4626,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_AUTHORIZATION_CONSENT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProcedureNote2ProcedureNote2AuthorizationConsent"),
+							ConsolPlugin.INSTANCE.getString("ProcedureNote2ProcedureNote2AuthorizationConsent"),
 							new Object[] { eObject }));
 				}
 
@@ -4733,7 +4696,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipantTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -4804,7 +4767,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacilityId"),
 							new Object[] { eObject }));
 				}
@@ -4875,7 +4838,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION_HEALTH_CARE_FACILITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterLocationHealthCareFacility"),
 							new Object[] { eObject }));
 				}
@@ -4946,7 +4909,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterId"),
 							new Object[] { eObject }));
 				}
@@ -5017,7 +4980,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterCode"),
 							new Object[] { eObject }));
 				}
@@ -5088,7 +5051,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_ENCOUNTER_PARTICIPANT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterEncounterParticipant"),
 							new Object[] { eObject }));
 				}
@@ -5159,7 +5122,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER_LOCATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounterLocation"),
 							new Object[] { eObject }));
 				}
@@ -5230,7 +5193,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_NOTE2__PROCEDURE_NOTE2_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProcedureNote2ProcedureNote2ComponentOfEncompassingEncounter"),
 							new Object[] { eObject }));
 				}
@@ -6576,8 +6539,7 @@ public class ProcedureNote2Operations extends USRealmHeader2Operations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE2__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProcedureNote2GeneralHeaderConstraintsTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ProcedureNote2GeneralHeaderConstraintsTemplateId"),
 						new Object[] { procedureNote2 }));
 			}
 

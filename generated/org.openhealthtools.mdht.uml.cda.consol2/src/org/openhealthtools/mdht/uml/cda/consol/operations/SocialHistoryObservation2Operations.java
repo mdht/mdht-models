@@ -22,6 +22,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -121,7 +122,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_REFERENCE_ATTRIBUTE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SocialHistoryObservation2SocialHistoryObservation2ReferenceAttribute"),
 						new Object[] { socialHistoryObservation2 }));
 			}
@@ -167,8 +168,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistoryObservation2SocialHistoryObservationStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservationStatusCodeP"),
 						new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -227,7 +227,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SocialHistoryObservation2SocialHistoryObservation2EffectiveTime"),
 						new Object[] { socialHistoryObservation2 }));
 			}
@@ -273,7 +273,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"SocialHistoryObservation2SocialHistoryObservation2AuthorParticipation"),
 						new Object[] { socialHistoryObservation2 }));
 			}
@@ -323,7 +323,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SocialHistoryObservation2SocialHistoryObservation2CDTranslation"),
 							new Object[] { eObject }));
 				}
@@ -374,7 +374,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION2_CD_TRANSLATION_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"SocialHistoryObservation2SocialHistoryObservation2CDTranslationP"),
 							new Object[] { eObject }));
 				}
@@ -421,8 +421,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistoryObservation2SocialHistoryObservationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservationTemplateId"),
 						new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -465,8 +464,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistoryObservation2SocialHistoryObservationValue"),
+						ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservationValue"),
 						new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -509,8 +507,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistoryObservation2SocialHistoryObservationCode"),
+						ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservationCode"),
 						new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -725,8 +722,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistoryObservation2SocialHistoryObservationCodeP"),
+						ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservationCodeP"),
 						new Object[] { socialHistoryObservation2 }));
 			}
 
@@ -822,8 +818,7 @@ public class SocialHistoryObservation2Operations extends SocialHistoryObservatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SOCIAL_HISTORY_OBSERVATION2__SOCIAL_HISTORY_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SocialHistoryObservation2SocialHistoryObservationStatusCode"),
+						ConsolPlugin.INSTANCE.getString("SocialHistoryObservation2SocialHistoryObservationStatusCode"),
 						new Object[] { socialHistoryObservation2 }));
 			}
 

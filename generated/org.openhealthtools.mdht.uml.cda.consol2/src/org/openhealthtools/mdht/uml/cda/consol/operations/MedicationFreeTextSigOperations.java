@@ -29,6 +29,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationFreeTextSig;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -129,8 +130,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_TEXT_REFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationFreeTextSigMedicationFreeTextSigTextReferenceValue"),
+						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigTextReferenceValue"),
 						new Object[] { medicationFreeTextSig }));
 			}
 
@@ -195,8 +195,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationFreeTextSigMedicationFreeTextSigTemplateId"),
+						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigTemplateId"),
 						new Object[] { medicationFreeTextSig }));
 			}
 
@@ -261,8 +260,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationFreeTextSigMedicationFreeTextSigClassCode"),
+						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigClassCode"),
 						new Object[] { medicationFreeTextSig }));
 			}
 
@@ -329,8 +327,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationFreeTextSigMedicationFreeTextSigMoodCode"),
+						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigMoodCode"),
 						new Object[] { medicationFreeTextSig }));
 			}
 
@@ -396,8 +393,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationFreeTextSigMedicationFreeTextSigCode"),
+						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigCode"),
 						new Object[] { medicationFreeTextSig }));
 			}
 
@@ -461,8 +457,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationFreeTextSigMedicationFreeTextSigCodeP"),
+						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigCodeP"),
 						new Object[] { medicationFreeTextSig }));
 			}
 
@@ -526,8 +521,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationFreeTextSigMedicationFreeTextSigText"),
+						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigText"),
 						new Object[] { medicationFreeTextSig }));
 			}
 
@@ -592,8 +586,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CONSUMABLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationFreeTextSigMedicationFreeTextSigConsumable"),
+						ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigConsumable"),
 						new Object[] { medicationFreeTextSig }));
 			}
 
@@ -662,8 +655,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_EDTEL_VALUE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"MedicationFreeTextSigMedicationFreeTextSigEDTELValue"),
+							ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigEDTELValue"),
 							new Object[] { eObject }));
 				}
 
@@ -733,8 +725,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_ED_REFERENCE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"MedicationFreeTextSigMedicationFreeTextSigEDReference"),
+							ConsolPlugin.INSTANCE.getString("MedicationFreeTextSigMedicationFreeTextSigEDReference"),
 							new Object[] { eObject }));
 				}
 
@@ -808,7 +799,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG_NULL_FLAVOR,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"MedicationFreeTextSigMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrugNullFlavor"),
 							new Object[] { eObject }));
 				}
@@ -879,7 +870,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT_MANUFACTURED_LABELED_DRUG,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"MedicationFreeTextSigMedicationFreeTextSigConsumableManufacturedProductManufacturedLabeledDrug"),
 							new Object[] { eObject }));
 				}
@@ -950,7 +941,7 @@ public class MedicationFreeTextSigOperations extends SubstanceAdministrationOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_FREE_TEXT_SIG__MEDICATION_FREE_TEXT_SIG_CONSUMABLE_MANUFACTURED_PRODUCT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"MedicationFreeTextSigMedicationFreeTextSigConsumableManufacturedProduct"),
 							new Object[] { eObject }));
 				}

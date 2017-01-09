@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,8 +115,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHIEF_COMPLAINT_SECTION__CHIEF_COMPLAINT_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ChiefComplaintSectionChiefComplaintSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionChiefComplaintSectionTemplateId"),
 						new Object[] { chiefComplaintSection }));
 			}
 
@@ -180,8 +180,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHIEF_COMPLAINT_SECTION__CHIEF_COMPLAINT_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ChiefComplaintSectionChiefComplaintSectionCode"),
+						ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionChiefComplaintSectionCode"),
 						new Object[] { chiefComplaintSection }));
 			}
 
@@ -245,8 +244,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHIEF_COMPLAINT_SECTION__CHIEF_COMPLAINT_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ChiefComplaintSectionChiefComplaintSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionChiefComplaintSectionCodeP"),
 						new Object[] { chiefComplaintSection }));
 			}
 
@@ -309,8 +307,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHIEF_COMPLAINT_SECTION__CHIEF_COMPLAINT_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ChiefComplaintSectionChiefComplaintSectionText"),
+						ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionChiefComplaintSectionText"),
 						new Object[] { chiefComplaintSection }));
 			}
 
@@ -374,8 +371,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHIEF_COMPLAINT_SECTION__CHIEF_COMPLAINT_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ChiefComplaintSectionChiefComplaintSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionChiefComplaintSectionTitle"),
 						new Object[] { chiefComplaintSection }));
 			}
 

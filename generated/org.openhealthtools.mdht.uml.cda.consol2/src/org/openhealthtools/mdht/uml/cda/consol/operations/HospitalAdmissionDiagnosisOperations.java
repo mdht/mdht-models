@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -122,7 +123,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisTemplateId"),
 						new Object[] { hospitalAdmissionDiagnosis }));
 			}
@@ -189,7 +190,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisClassCode"),
 						new Object[] { hospitalAdmissionDiagnosis }));
 			}
@@ -233,8 +234,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisCode"),
+						ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisCode"),
 						new Object[] { hospitalAdmissionDiagnosis }));
 			}
 
@@ -300,8 +300,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisMoodCode"),
+						ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisMoodCode"),
 						new Object[] { hospitalAdmissionDiagnosis }));
 			}
 
@@ -390,7 +389,7 @@ public class HospitalAdmissionDiagnosisOperations extends ClinicalStatementOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS__HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HospitalAdmissionDiagnosisHospitalAdmissionDiagnosisProblemObservation"),
 						new Object[] { hospitalAdmissionDiagnosis }));
 			}

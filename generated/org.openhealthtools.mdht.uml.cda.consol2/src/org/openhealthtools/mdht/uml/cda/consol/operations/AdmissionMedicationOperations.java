@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -121,8 +122,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADMISSION_MEDICATION__ADMISSION_MEDICATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdmissionMedicationAdmissionMedicationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("AdmissionMedicationAdmissionMedicationTemplateId"),
 						new Object[] { admissionMedication }));
 			}
 
@@ -186,8 +186,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADMISSION_MEDICATION__ADMISSION_MEDICATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdmissionMedicationAdmissionMedicationClassCode"),
+						ConsolPlugin.INSTANCE.getString("AdmissionMedicationAdmissionMedicationClassCode"),
 						new Object[] { admissionMedication }));
 			}
 
@@ -229,8 +228,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADMISSION_MEDICATION__ADMISSION_MEDICATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdmissionMedicationAdmissionMedicationCodeP"),
+						ConsolPlugin.INSTANCE.getString("AdmissionMedicationAdmissionMedicationCodeP"),
 						new Object[] { admissionMedication }));
 			}
 
@@ -293,8 +291,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADMISSION_MEDICATION__ADMISSION_MEDICATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdmissionMedicationAdmissionMedicationCode"),
+						ConsolPlugin.INSTANCE.getString("AdmissionMedicationAdmissionMedicationCode"),
 						new Object[] { admissionMedication }));
 			}
 
@@ -401,8 +398,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADMISSION_MEDICATION__ADMISSION_MEDICATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdmissionMedicationAdmissionMedicationMoodCode"),
+						ConsolPlugin.INSTANCE.getString("AdmissionMedicationAdmissionMedicationMoodCode"),
 						new Object[] { admissionMedication }));
 			}
 
@@ -467,8 +463,7 @@ public class AdmissionMedicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADMISSION_MEDICATION__ADMISSION_MEDICATION_MEDICATION_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"AdmissionMedicationAdmissionMedicationMedicationActivity"),
+						ConsolPlugin.INSTANCE.getString("AdmissionMedicationAdmissionMedicationMedicationActivity"),
 						new Object[] { admissionMedication }));
 			}
 

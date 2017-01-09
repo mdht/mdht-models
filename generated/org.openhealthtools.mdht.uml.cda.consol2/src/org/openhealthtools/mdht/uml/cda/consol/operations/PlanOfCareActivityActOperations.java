@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -113,8 +114,7 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_ACT__PLAN_OF_CARE_ACTIVITY_ACT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlanOfCareActivityActPlanOfCareActivityActTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActPlanOfCareActivityActTemplateId"),
 						new Object[] { planOfCareActivityAct }));
 			}
 
@@ -179,8 +179,7 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_ACT__PLAN_OF_CARE_ACTIVITY_ACT_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlanOfCareActivityActPlanOfCareActivityActClassCode"),
+						ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActPlanOfCareActivityActClassCode"),
 						new Object[] { planOfCareActivityAct }));
 			}
 
@@ -247,8 +246,7 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_ACT__PLAN_OF_CARE_ACTIVITY_ACT_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlanOfCareActivityActPlanOfCareActivityActMoodCode"),
+						ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActPlanOfCareActivityActMoodCode"),
 						new Object[] { planOfCareActivityAct }));
 			}
 
@@ -311,8 +309,7 @@ public class PlanOfCareActivityActOperations extends ClinicalStatementOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_CARE_ACTIVITY_ACT__PLAN_OF_CARE_ACTIVITY_ACT_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PlanOfCareActivityActPlanOfCareActivityActId"),
+						ConsolPlugin.INSTANCE.getString("PlanOfCareActivityActPlanOfCareActivityActId"),
 						new Object[] { planOfCareActivityAct }));
 			}
 

@@ -19,6 +19,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.WoundMeasurementObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -117,7 +118,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"WoundMeasurementObservationWoundMeasurementObservationTemplateId"),
 						new Object[] { woundMeasurementObservation }));
 			}
@@ -184,7 +185,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"WoundMeasurementObservationWoundMeasurementObservationClassCode"),
 						new Object[] { woundMeasurementObservation }));
 			}
@@ -251,7 +252,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"WoundMeasurementObservationWoundMeasurementObservationMoodCode"),
 						new Object[] { woundMeasurementObservation }));
 			}
@@ -316,8 +317,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundMeasurementObservationWoundMeasurementObservationId"),
+						ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationId"),
 						new Object[] { woundMeasurementObservation }));
 			}
 
@@ -383,8 +383,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundMeasurementObservationWoundMeasurementObservationCodeP"),
+						ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationCodeP"),
 						new Object[] { woundMeasurementObservation }));
 			}
 
@@ -473,8 +472,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundMeasurementObservationWoundMeasurementObservationCode"),
+						ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationCode"),
 						new Object[] { woundMeasurementObservation }));
 			}
 
@@ -541,7 +539,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"WoundMeasurementObservationWoundMeasurementObservationStatusCode"),
 						new Object[] { woundMeasurementObservation }));
 			}
@@ -608,7 +606,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"WoundMeasurementObservationWoundMeasurementObservationStatusCodeP"),
 						new Object[] { woundMeasurementObservation }));
 			}
@@ -675,7 +673,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"WoundMeasurementObservationWoundMeasurementObservationEffectiveTime"),
 						new Object[] { woundMeasurementObservation }));
 			}
@@ -742,8 +740,7 @@ public class WoundMeasurementObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.WOUND_MEASUREMENT_OBSERVATION__WOUND_MEASUREMENT_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"WoundMeasurementObservationWoundMeasurementObservationValue"),
+						ConsolPlugin.INSTANCE.getString("WoundMeasurementObservationWoundMeasurementObservationValue"),
 						new Object[] { woundMeasurementObservation }));
 			}
 

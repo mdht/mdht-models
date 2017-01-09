@@ -20,6 +20,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusEvaluationsAndOutcomesSection;
 import org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -116,7 +117,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionTemplateId"),
 						new Object[] { healthStatusEvaluationsAndOutcomesSection }));
 			}
@@ -183,7 +184,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_NULL_FLAVOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionNullFlavor"),
 						new Object[] { healthStatusEvaluationsAndOutcomesSection }));
 			}
@@ -252,7 +253,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionCode"),
 						new Object[] { healthStatusEvaluationsAndOutcomesSection }));
 			}
@@ -319,7 +320,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionCodeP"),
 						new Object[] { healthStatusEvaluationsAndOutcomesSection }));
 			}
@@ -386,7 +387,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionTitle"),
 						new Object[] { healthStatusEvaluationsAndOutcomesSection }));
 			}
@@ -453,7 +454,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionText"),
 						new Object[] { healthStatusEvaluationsAndOutcomesSection }));
 			}
@@ -520,7 +521,7 @@ public class HealthStatusEvaluationsAndOutcomesSectionOperations extends Section
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION__HEALTH_STATUS_EVALUATIONS_AND_OUTCOMES_SECTION_OUTCOME_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"HealthStatusEvaluationsAndOutcomesSectionHealthStatusEvaluationsAndOutcomesSectionOutcomeObservation"),
 						new Object[] { healthStatusEvaluationsAndOutcomesSection }));
 			}

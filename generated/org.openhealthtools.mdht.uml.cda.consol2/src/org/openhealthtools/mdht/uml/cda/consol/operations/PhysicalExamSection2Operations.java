@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation
 import org.openhealthtools.mdht.uml.cda.consol.PhysicalExamSection2;
 import org.openhealthtools.mdht.uml.cda.consol.PressureUlcerObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -132,8 +133,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_WOUND_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PhysicalExamSection2PhysicalExamSection2WoundObservation"),
+						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2WoundObservation"),
 						new Object[] { physicalExamSection2 }));
 			}
 
@@ -197,8 +197,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PhysicalExamSection2PhysicalExamSection2Component"),
+						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2Component"),
 						new Object[] { physicalExamSection2 }));
 			}
 
@@ -269,7 +268,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PhysicalExamSection2PhysicalExamSection2ComponentSectionCode"),
 							new Object[] { eObject }));
 				}
@@ -340,7 +339,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_CODE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PhysicalExamSection2PhysicalExamSection2ComponentSectionCodeP"),
 							new Object[] { eObject }));
 				}
@@ -411,7 +410,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TITLE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PhysicalExamSection2PhysicalExamSection2ComponentSectionTitle"),
 							new Object[] { eObject }));
 				}
@@ -482,7 +481,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION_TEXT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"PhysicalExamSection2PhysicalExamSection2ComponentSectionText"),
 							new Object[] { eObject }));
 				}
@@ -553,8 +552,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION2_COMPONENT_SECTION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"PhysicalExamSection2PhysicalExamSection2ComponentSection"),
+							ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSection2ComponentSection"),
 							new Object[] { eObject }));
 				}
 
@@ -818,8 +816,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PhysicalExamSection2PhysicalExamSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionTemplateId"),
 						new Object[] { physicalExamSection2 }));
 			}
 
@@ -882,8 +879,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PhysicalExamSection2PhysicalExamSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionCodeP"),
 						new Object[] { physicalExamSection2 }));
 			}
 
@@ -969,8 +965,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PhysicalExamSection2PhysicalExamSectionCode"),
+						ConsolPlugin.INSTANCE.getString("PhysicalExamSection2PhysicalExamSectionCode"),
 						new Object[] { physicalExamSection2 }));
 			}
 
@@ -1035,7 +1030,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_PRESSURE_ULCER_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PhysicalExamSection2PhysicalExamSectionPressureUlcerObservation"),
 						new Object[] { physicalExamSection2 }));
 			}
@@ -1101,7 +1096,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_HIGHEST_PRESSURE_ULCER_STAGE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PhysicalExamSection2PhysicalExamSectionHighestPressureUlcerStage"),
 						new Object[] { physicalExamSection2 }));
 			}
@@ -1167,7 +1162,7 @@ public class PhysicalExamSection2Operations extends PhysicalExamSectionOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICAL_EXAM_SECTION2__PHYSICAL_EXAM_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"PhysicalExamSection2PhysicalExamSectionNumberOfPressureUlcersObservation"),
 						new Object[] { physicalExamSection2 }));
 			}

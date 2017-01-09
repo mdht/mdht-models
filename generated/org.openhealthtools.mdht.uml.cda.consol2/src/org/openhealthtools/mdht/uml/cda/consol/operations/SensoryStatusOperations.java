@@ -22,6 +22,7 @@ import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SensoryStatus;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -122,8 +123,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SensoryStatusSensoryStatusTemplateId"),
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusTemplateId"),
 						new Object[] { sensoryStatus }));
 			}
 
@@ -186,8 +186,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SensoryStatusSensoryStatusClassCode"),
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusClassCode"),
 						new Object[] { sensoryStatus }));
 			}
 
@@ -250,8 +249,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SensoryStatusSensoryStatusMoodCode"),
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusMoodCode"),
 						new Object[] { sensoryStatus }));
 			}
 
@@ -314,8 +312,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SensoryStatusSensoryStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusCodeP"),
 						new Object[] { sensoryStatus }));
 			}
 
@@ -401,8 +398,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SensoryStatusSensoryStatusCode"),
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusCode"),
 						new Object[] { sensoryStatus }));
 			}
 
@@ -466,8 +462,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SensoryStatusSensoryStatusStatusCode"),
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusStatusCode"),
 						new Object[] { sensoryStatus }));
 			}
 
@@ -530,8 +525,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SensoryStatusSensoryStatusStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusStatusCodeP"),
 						new Object[] { sensoryStatus }));
 			}
 
@@ -594,8 +588,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SensoryStatusSensoryStatusEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusEffectiveTime"),
 						new Object[] { sensoryStatus }));
 			}
 
@@ -660,8 +653,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SensoryStatusSensoryStatusValue"),
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusValue"),
 						new Object[] { sensoryStatus }));
 			}
 
@@ -724,8 +716,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_VALUE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SensoryStatusSensoryStatusValueP"),
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusValueP"),
 						new Object[] { sensoryStatus }));
 			}
 
@@ -790,8 +781,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_ASSESSMENT_SCALE_OBSERVATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SensoryStatusSensoryStatusAssessmentScaleObservation"),
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusAssessmentScaleObservation"),
 						new Object[] { sensoryStatus }));
 			}
 
@@ -855,8 +845,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SensoryStatusSensoryStatusAuthorParticipation"),
+						ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusAuthorParticipation"),
 						new Object[] { sensoryStatus }));
 			}
 
@@ -925,8 +914,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_IVLTS_LOW,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"SensoryStatusSensoryStatusIVLTSLow"),
+							ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusIVLTSLow"),
 							new Object[] { eObject }));
 				}
 
@@ -996,8 +984,7 @@ public class SensoryStatusOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SENSORY_STATUS__SENSORY_STATUS_IVLTS_HIGH,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"SensoryStatusSensoryStatusIVLTSHigh"),
+							ConsolPlugin.INSTANCE.getString("SensoryStatusSensoryStatusIVLTSHigh"),
 							new Object[] { eObject }));
 				}
 

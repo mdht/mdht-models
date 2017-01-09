@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -165,7 +166,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL2__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ResultsSectionEntriesOptional2ResultsSectionEntriesOptionalTemplateId"),
 						new Object[] { resultsSectionEntriesOptional2 }));
 			}
@@ -232,7 +233,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL2__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ResultsSectionEntriesOptional2ResultsSectionEntriesOptionalCodeP"),
 						new Object[] { resultsSectionEntriesOptional2 }));
 			}
@@ -324,7 +325,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL2__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ResultsSectionEntriesOptional2ResultsSectionEntriesOptionalCode"),
 						new Object[] { resultsSectionEntriesOptional2 }));
 			}
@@ -391,7 +392,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL2__RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ResultsSectionEntriesOptional2ResultsSectionEntriesOptionalResultOrganizer"),
 						new Object[] { resultsSectionEntriesOptional2 }));
 			}

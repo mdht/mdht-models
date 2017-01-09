@@ -23,6 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -118,8 +119,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION2_NULL_FLAVOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationsSection2ImmunizationsSection2NullFlavor"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationsSection2ImmunizationsSection2NullFlavor"),
 						new Object[] { immunizationsSection2 }));
 			}
 
@@ -182,8 +182,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION2_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationsSection2ImmunizationsSection2Title"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationsSection2ImmunizationsSection2Title"),
 						new Object[] { immunizationsSection2 }));
 			}
 
@@ -246,8 +245,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION2_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationsSection2ImmunizationsSection2Text"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationsSection2ImmunizationsSection2Text"),
 						new Object[] { immunizationsSection2 }));
 			}
 
@@ -312,7 +310,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSection2ImmunizationsSectionEntriesOptionalTemplateId"),
 						new Object[] { immunizationsSection2 }));
 			}
@@ -378,7 +376,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSection2ImmunizationsSectionEntriesOptionalCodeP"),
 						new Object[] { immunizationsSection2 }));
 			}
@@ -468,8 +466,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ImmunizationsSection2ImmunizationsSectionEntriesOptionalCode"),
+						ConsolPlugin.INSTANCE.getString("ImmunizationsSection2ImmunizationsSectionEntriesOptionalCode"),
 						new Object[] { immunizationsSection2 }));
 			}
 
@@ -534,7 +531,7 @@ public class ImmunizationsSection2Operations extends ImmunizationsSectionEntries
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSection2ImmunizationsSectionEntriesOptionalImmunizationActivity"),
 						new Object[] { immunizationsSection2 }));
 			}

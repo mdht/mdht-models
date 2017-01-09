@@ -15,6 +15,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.BirthSexObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -110,8 +111,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"BirthSexObservationBirthSexObservationTemplateId"),
+						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationTemplateId"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -175,8 +175,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"BirthSexObservationBirthSexObservationClassCode"),
+						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationClassCode"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -240,8 +239,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"BirthSexObservationBirthSexObservationMoodCode"),
+						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationMoodCode"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -304,8 +302,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"BirthSexObservationBirthSexObservationCodeP"),
+						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationCodeP"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -391,8 +388,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"BirthSexObservationBirthSexObservationCode"),
+						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationCode"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -457,8 +453,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"BirthSexObservationBirthSexObservationStatusCode"),
+						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationStatusCode"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -523,8 +518,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"BirthSexObservationBirthSexObservationStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationStatusCodeP"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -543,7 +537,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
 			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
-			"value.code = 'F' or value.code = 'M'))";
+			"value.codeSystem = '2.16.840.1.113883.5.1' and (value.code = 'F' or value.code = 'M')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBirthSexObservationValue(BirthSexObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Value</em>}' invariant operation.
@@ -589,8 +583,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"BirthSexObservationBirthSexObservationValue"),
+						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationValue"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -653,8 +646,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_VALUE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"BirthSexObservationBirthSexObservationValueP"),
+						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationValueP"),
 						new Object[] { birthSexObservation }));
 			}
 

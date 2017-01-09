@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.OperativeNoteFluidSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,8 +116,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE_FLUID_SECTION__OPERATIVE_NOTE_FLUID_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"OperativeNoteFluidSectionOperativeNoteFluidSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionOperativeNoteFluidSectionTemplateId"),
 						new Object[] { operativeNoteFluidSection }));
 			}
 
@@ -182,8 +182,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE_FLUID_SECTION__OPERATIVE_NOTE_FLUID_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"OperativeNoteFluidSectionOperativeNoteFluidSectionCode"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionOperativeNoteFluidSectionCode"),
 						new Object[] { operativeNoteFluidSection }));
 			}
 
@@ -248,8 +247,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE_FLUID_SECTION__OPERATIVE_NOTE_FLUID_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"OperativeNoteFluidSectionOperativeNoteFluidSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionOperativeNoteFluidSectionCodeP"),
 						new Object[] { operativeNoteFluidSection }));
 			}
 
@@ -313,8 +311,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE_FLUID_SECTION__OPERATIVE_NOTE_FLUID_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"OperativeNoteFluidSectionOperativeNoteFluidSectionText"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionOperativeNoteFluidSectionText"),
 						new Object[] { operativeNoteFluidSection }));
 			}
 
@@ -379,8 +376,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE_FLUID_SECTION__OPERATIVE_NOTE_FLUID_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"OperativeNoteFluidSectionOperativeNoteFluidSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionOperativeNoteFluidSectionTitle"),
 						new Object[] { operativeNoteFluidSection }));
 			}
 

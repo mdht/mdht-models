@@ -19,6 +19,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SelfCareActivities;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -116,8 +117,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SelfCareActivitiesSelfCareActivitiesTemplateId"),
+						ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesTemplateId"),
 						new Object[] { selfCareActivities }));
 			}
 
@@ -180,8 +180,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SelfCareActivitiesSelfCareActivitiesClassCode"),
+						ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesClassCode"),
 						new Object[] { selfCareActivities }));
 			}
 
@@ -244,8 +243,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SelfCareActivitiesSelfCareActivitiesMoodCode"),
+						ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesMoodCode"),
 						new Object[] { selfCareActivities }));
 			}
 
@@ -308,8 +306,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SelfCareActivitiesSelfCareActivitiesCodeP"),
+						ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesCodeP"),
 						new Object[] { selfCareActivities }));
 			}
 
@@ -395,8 +392,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SelfCareActivitiesSelfCareActivitiesCode"),
+						ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesCode"),
 						new Object[] { selfCareActivities }));
 			}
 
@@ -461,8 +457,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SelfCareActivitiesSelfCareActivitiesStatusCode"),
+						ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesStatusCode"),
 						new Object[] { selfCareActivities }));
 			}
 
@@ -527,8 +522,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SelfCareActivitiesSelfCareActivitiesStatusCodeP"),
+						ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesStatusCodeP"),
 						new Object[] { selfCareActivities }));
 			}
 
@@ -593,8 +587,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SelfCareActivitiesSelfCareActivitiesEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesEffectiveTime"),
 						new Object[] { selfCareActivities }));
 			}
 
@@ -659,8 +652,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SelfCareActivitiesSelfCareActivitiesValue"),
+						ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesValue"),
 						new Object[] { selfCareActivities }));
 			}
 
@@ -723,8 +715,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_VALUE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SelfCareActivitiesSelfCareActivitiesValueP"),
+						ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesValueP"),
 						new Object[] { selfCareActivities }));
 			}
 
@@ -789,8 +780,7 @@ public class SelfCareActivitiesOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SELF_CARE_ACTIVITIES__SELF_CARE_ACTIVITIES_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"SelfCareActivitiesSelfCareActivitiesAuthorParticipation"),
+						ConsolPlugin.INSTANCE.getString("SelfCareActivitiesSelfCareActivitiesAuthorParticipation"),
 						new Object[] { selfCareActivities }));
 			}
 

@@ -41,6 +41,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SubjectiveSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -185,7 +186,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProgressNoteProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections"),
 						new Object[] { progressNote }));
 			}
@@ -251,7 +252,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ProgressNoteProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent"),
 						new Object[] { progressNote }));
 			}
@@ -315,8 +316,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteGeneralHeaderConstraintsCodeP"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteGeneralHeaderConstraintsCodeP"),
 						new Object[] { progressNote }));
 			}
 
@@ -392,8 +392,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteDocumentationOf"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteDocumentationOf"),
 						new Object[] { progressNote }));
 			}
 
@@ -456,8 +455,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteComponentOf"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteComponentOf"),
 						new Object[] { progressNote }));
 			}
 
@@ -520,8 +518,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_ASSESSMENT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteAssessmentSection"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteAssessmentSection"),
 						new Object[] { progressNote }));
 			}
 
@@ -585,8 +582,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_PLAN_OF_CARE_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNotePlanOfCareSection"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNotePlanOfCareSection"),
 						new Object[] { progressNote }));
 			}
 
@@ -651,8 +647,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_ASSESSMENT_AND_PLAN_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteAssessmentAndPlanSection"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteAssessmentAndPlanSection"),
 						new Object[] { progressNote }));
 			}
 
@@ -717,8 +712,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteAllergiesSectionEntriesOptional"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteAllergiesSectionEntriesOptional"),
 						new Object[] { progressNote }));
 			}
 
@@ -782,8 +776,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteChiefComplaintSection"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteChiefComplaintSection"),
 						new Object[] { progressNote }));
 			}
 
@@ -847,8 +840,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_INTERVENTIONS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteInterventionsSection"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteInterventionsSection"),
 						new Object[] { progressNote }));
 			}
 
@@ -913,8 +905,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteMedicationsSectionEntriesOptional"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteMedicationsSectionEntriesOptional"),
 						new Object[] { progressNote }));
 			}
 
@@ -977,8 +968,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_OBJECTIVE_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteObjectiveSection"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteObjectiveSection"),
 						new Object[] { progressNote }));
 			}
 
@@ -1042,8 +1032,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_PHYSICAL_EXAM_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNotePhysicalExamSection"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNotePhysicalExamSection"),
 						new Object[] { progressNote }));
 			}
 
@@ -1108,8 +1097,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteProblemSectionEntriesOptional"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteProblemSectionEntriesOptional"),
 						new Object[] { progressNote }));
 			}
 
@@ -1174,8 +1162,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteResultsSectionEntriesOptional"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteResultsSectionEntriesOptional"),
 						new Object[] { progressNote }));
 			}
 
@@ -1240,8 +1227,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_REVIEW_OF_SYSTEMS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteReviewOfSystemsSection"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteReviewOfSystemsSection"),
 						new Object[] { progressNote }));
 			}
 
@@ -1304,8 +1290,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_SUBJECTIVE_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteSubjectiveSection"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteSubjectiveSection"),
 						new Object[] { progressNote }));
 			}
 
@@ -1370,8 +1355,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteVitalSignsSectionEntriesOptional"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteVitalSignsSectionEntriesOptional"),
 						new Object[] { progressNote }));
 			}
 
@@ -1435,8 +1419,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_INSTRUCTIONS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteProgressNoteInstructionsSection"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteInstructionsSection"),
 						new Object[] { progressNote }));
 			}
 
@@ -1505,7 +1488,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME_LOW,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteDocumentationOfServiceEvent2EffectiveTimeLow"),
 							new Object[] { eObject }));
 				}
@@ -1576,7 +1559,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME_HIGH,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteDocumentationOfServiceEvent2EffectiveTimeHigh"),
 							new Object[] { eObject }));
 				}
@@ -1647,7 +1630,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_PRECISE_TO_THE_DAY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteDocumentationOfServiceEvent2PreciseToTheDay"),
 							new Object[] { eObject }));
 				}
@@ -1718,7 +1701,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_PRECISE_TO_THE_MINUTE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteDocumentationOfServiceEvent2PreciseToTheMinute"),
 							new Object[] { eObject }));
 				}
@@ -1789,7 +1772,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_PRECISE_TO_THE_SECOND,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteDocumentationOfServiceEvent2PreciseToTheSecond"),
 							new Object[] { eObject }));
 				}
@@ -1860,7 +1843,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteDocumentationOfServiceEvent2IfMorePreciseThanDayIncludeTimeZoneOffset"),
 							new Object[] { eObject }));
 				}
@@ -1931,7 +1914,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_TEMPLATE_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteDocumentationOfServiceEvent2TemplateId"),
 							new Object[] { eObject }));
 				}
@@ -2002,7 +1985,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteDocumentationOfServiceEvent2ClassCode"),
 							new Object[] { eObject }));
 				}
@@ -2073,7 +2056,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteDocumentationOfServiceEvent2EffectiveTime"),
 							new Object[] { eObject }));
 				}
@@ -2144,8 +2127,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ProgressNoteProgressNoteDocumentationOfServiceEvent2"),
+							ConsolPlugin.INSTANCE.getString("ProgressNoteProgressNoteDocumentationOfServiceEvent2"),
 							new Object[] { eObject }));
 				}
 
@@ -2215,7 +2197,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION_HEALTH_CARE_FACILITY1_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id"),
 							new Object[] { eObject }));
 				}
@@ -2286,7 +2268,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION_HEALTH_CARE_FACILITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility"),
 							new Object[] { eObject }));
 				}
@@ -2357,7 +2339,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_PRECISE_TO_THE_DAY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteComponentOfEncompassingEncounter6PreciseToTheDay"),
 							new Object[] { eObject }));
 				}
@@ -2428,7 +2410,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_PRECISE_TO_THE_MINUTE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteComponentOfEncompassingEncounter6PreciseToTheMinute"),
 							new Object[] { eObject }));
 				}
@@ -2499,7 +2481,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_PRECISE_TO_THE_SECOND,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteComponentOfEncompassingEncounter6PreciseToTheSecond"),
 							new Object[] { eObject }));
 				}
@@ -2570,7 +2552,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteComponentOfEncompassingEncounter6IfMorePreciseThanDayIncludeTimeZoneOffset"),
 							new Object[] { eObject }));
 				}
@@ -2641,7 +2623,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteComponentOfEncompassingEncounter6EffectiveTime"),
 							new Object[] { eObject }));
 				}
@@ -2712,7 +2694,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteComponentOfEncompassingEncounter6Id"),
 							new Object[] { eObject }));
 				}
@@ -2783,7 +2765,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteComponentOfEncompassingEncounter6Location"),
 							new Object[] { eObject }));
 				}
@@ -2854,7 +2836,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ProgressNoteProgressNoteComponentOfEncompassingEncounter6"),
 							new Object[] { eObject }));
 				}
@@ -3602,8 +3584,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteGeneralHeaderConstraintsTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteGeneralHeaderConstraintsTemplateId"),
 						new Object[] { progressNote }));
 			}
 
@@ -3676,8 +3657,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ProgressNoteGeneralHeaderConstraintsCode"),
+						ConsolPlugin.INSTANCE.getString("ProgressNoteGeneralHeaderConstraintsCode"),
 						new Object[] { progressNote }));
 			}
 

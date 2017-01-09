@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.InstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -121,8 +122,7 @@ public class InstructionsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS_SECTION__INSTRUCTIONS_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"InstructionsSectionInstructionsSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructionsSectionTemplateId"),
 						new Object[] { instructionsSection }));
 			}
 
@@ -187,8 +187,7 @@ public class InstructionsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS_SECTION__INSTRUCTIONS_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"InstructionsSectionInstructionsSectionCode"),
+						ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructionsSectionCode"),
 						new Object[] { instructionsSection }));
 			}
 
@@ -251,8 +250,7 @@ public class InstructionsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS_SECTION__INSTRUCTIONS_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"InstructionsSectionInstructionsSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructionsSectionCodeP"),
 						new Object[] { instructionsSection }));
 			}
 
@@ -294,8 +292,7 @@ public class InstructionsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS_SECTION__INSTRUCTIONS_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"InstructionsSectionInstructionsSectionText"),
+						ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructionsSectionText"),
 						new Object[] { instructionsSection }));
 			}
 
@@ -379,8 +376,7 @@ public class InstructionsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS_SECTION__INSTRUCTIONS_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"InstructionsSectionInstructionsSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructionsSectionTitle"),
 						new Object[] { instructionsSection }));
 			}
 
@@ -444,8 +440,7 @@ public class InstructionsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS_SECTION__INSTRUCTIONS_SECTION_INSTRUCTIONS,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"InstructionsSectionInstructionsSectionInstructions"),
+						ConsolPlugin.INSTANCE.getString("InstructionsSectionInstructionsSectionInstructions"),
 						new Object[] { instructionsSection }));
 			}
 

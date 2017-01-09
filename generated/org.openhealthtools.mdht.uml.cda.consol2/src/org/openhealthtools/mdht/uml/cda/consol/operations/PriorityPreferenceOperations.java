@@ -15,6 +15,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -110,8 +111,7 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRIORITY_PREFERENCE__PRIORITY_PREFERENCE_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PriorityPreferencePriorityPreferenceTemplateId"),
+						ConsolPlugin.INSTANCE.getString("PriorityPreferencePriorityPreferenceTemplateId"),
 						new Object[] { priorityPreference }));
 			}
 
@@ -174,8 +174,7 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRIORITY_PREFERENCE__PRIORITY_PREFERENCE_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PriorityPreferencePriorityPreferenceClassCode"),
+						ConsolPlugin.INSTANCE.getString("PriorityPreferencePriorityPreferenceClassCode"),
 						new Object[] { priorityPreference }));
 			}
 
@@ -238,8 +237,7 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRIORITY_PREFERENCE__PRIORITY_PREFERENCE_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PriorityPreferencePriorityPreferenceMoodCode"),
+						ConsolPlugin.INSTANCE.getString("PriorityPreferencePriorityPreferenceMoodCode"),
 						new Object[] { priorityPreference }));
 			}
 
@@ -302,8 +300,7 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRIORITY_PREFERENCE__PRIORITY_PREFERENCE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PriorityPreferencePriorityPreferenceId"),
+						ConsolPlugin.INSTANCE.getString("PriorityPreferencePriorityPreferenceId"),
 						new Object[] { priorityPreference }));
 			}
 
@@ -366,8 +363,7 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRIORITY_PREFERENCE__PRIORITY_PREFERENCE_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PriorityPreferencePriorityPreferenceCodeP"),
+						ConsolPlugin.INSTANCE.getString("PriorityPreferencePriorityPreferenceCodeP"),
 						new Object[] { priorityPreference }));
 			}
 
@@ -453,8 +449,7 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRIORITY_PREFERENCE__PRIORITY_PREFERENCE_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PriorityPreferencePriorityPreferenceCode"),
+						ConsolPlugin.INSTANCE.getString("PriorityPreferencePriorityPreferenceCode"),
 						new Object[] { priorityPreference }));
 			}
 
@@ -519,8 +514,7 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRIORITY_PREFERENCE__PRIORITY_PREFERENCE_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PriorityPreferencePriorityPreferenceEffectiveTime"),
+						ConsolPlugin.INSTANCE.getString("PriorityPreferencePriorityPreferenceEffectiveTime"),
 						new Object[] { priorityPreference }));
 			}
 
@@ -585,8 +579,7 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRIORITY_PREFERENCE__PRIORITY_PREFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PriorityPreferencePriorityPreferenceValue"),
+						ConsolPlugin.INSTANCE.getString("PriorityPreferencePriorityPreferenceValue"),
 						new Object[] { priorityPreference }));
 			}
 
@@ -649,8 +642,7 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRIORITY_PREFERENCE__PRIORITY_PREFERENCE_VALUE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PriorityPreferencePriorityPreferenceValueP"),
+						ConsolPlugin.INSTANCE.getString("PriorityPreferencePriorityPreferenceValueP"),
 						new Object[] { priorityPreference }));
 			}
 
@@ -715,8 +707,7 @@ public class PriorityPreferenceOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRIORITY_PREFERENCE__PRIORITY_PREFERENCE_AUTHOR_PARTICIPATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"PriorityPreferencePriorityPreferenceAuthorParticipation"),
+						ConsolPlugin.INSTANCE.getString("PriorityPreferencePriorityPreferenceAuthorParticipation"),
 						new Object[] { priorityPreference }));
 			}
 

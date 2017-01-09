@@ -27,6 +27,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -120,8 +121,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationsSectionMedicationsSectionCode"),
+						ConsolPlugin.INSTANCE.getString("MedicationsSectionMedicationsSectionCode"),
 						new Object[] { medicationsSection }));
 			}
 
@@ -184,8 +184,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationsSectionMedicationsSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("MedicationsSectionMedicationsSectionTitle"),
 						new Object[] { medicationsSection }));
 			}
 
@@ -248,8 +247,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationsSectionMedicationsSectionText"),
+						ConsolPlugin.INSTANCE.getString("MedicationsSectionMedicationsSectionText"),
 						new Object[] { medicationsSection }));
 			}
 
@@ -312,8 +310,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_MEDICATION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"MedicationsSectionMedicationsSectionMedication"),
+						ConsolPlugin.INSTANCE.getString("MedicationsSectionMedicationsSectionMedication"),
 						new Object[] { medicationsSection }));
 			}
 
@@ -425,7 +422,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"MedicationsSectionMedicationsSectionEntriesOptionalTemplateId"),
 						new Object[] { medicationsSection }));
 			}

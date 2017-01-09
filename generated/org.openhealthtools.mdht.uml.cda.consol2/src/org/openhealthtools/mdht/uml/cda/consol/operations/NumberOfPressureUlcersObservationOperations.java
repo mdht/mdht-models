@@ -23,6 +23,7 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -129,7 +130,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationTemplateId"),
 						new Object[] { numberOfPressureUlcersObservation }));
 			}
@@ -196,7 +197,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationClassCode"),
 						new Object[] { numberOfPressureUlcersObservation }));
 			}
@@ -263,7 +264,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationMoodCode"),
 						new Object[] { numberOfPressureUlcersObservation }));
 			}
@@ -330,7 +331,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationId"),
 						new Object[] { numberOfPressureUlcersObservation }));
 			}
@@ -397,7 +398,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationCodeP"),
 						new Object[] { numberOfPressureUlcersObservation }));
 			}
@@ -489,7 +490,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationCode"),
 						new Object[] { numberOfPressureUlcersObservation }));
 			}
@@ -557,7 +558,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_STATUS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationStatusCode"),
 						new Object[] { numberOfPressureUlcersObservation }));
 			}
@@ -624,7 +625,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_STATUS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationStatusCodeP"),
 						new Object[] { numberOfPressureUlcersObservation }));
 			}
@@ -691,7 +692,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEffectiveTime"),
 						new Object[] { numberOfPressureUlcersObservation }));
 			}
@@ -758,7 +759,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationValue"),
 						new Object[] { numberOfPressureUlcersObservation }));
 			}
@@ -825,7 +826,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_AUTHOR,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationAuthor"),
 						new Object[] { numberOfPressureUlcersObservation }));
 			}
@@ -892,7 +893,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationship"),
 						new Object[] { numberOfPressureUlcersObservation }));
 			}
@@ -963,7 +964,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_CLASS_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservationClassCode"),
 							new Object[] { eObject }));
 				}
@@ -1035,7 +1036,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_MOOD_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservationMoodCode"),
 							new Object[] { eObject }));
 				}
@@ -1109,7 +1110,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_VALUE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservationValue"),
 							new Object[] { eObject }));
 				}
@@ -1181,7 +1182,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION_VALUE_P,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservationValueP"),
 							new Object[] { eObject }));
 				}
@@ -1253,7 +1254,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_TYPE_CODE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -1325,7 +1326,7 @@ public class NumberOfPressureUlcersObservationOperations extends ClinicalStateme
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.NUMBER_OF_PRESSURE_ULCERS_OBSERVATION__NUMBER_OF_PRESSURE_ULCERS_OBSERVATION_ENTRY_RELATIONSHIP_OBSERVATION,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"NumberOfPressureUlcersObservationNumberOfPressureUlcersObservationEntryRelationshipObservation"),
 							new Object[] { eObject }));
 				}

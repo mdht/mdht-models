@@ -47,6 +47,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -200,7 +201,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ConsultationNoteConsultationNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections"),
 						new Object[] { consultationNote }));
 			}
@@ -266,7 +267,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ConsultationNoteConsultationNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent"),
 						new Object[] { consultationNote }));
 			}
@@ -332,7 +333,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ConsultationNoteConsultationNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
 						new Object[] { consultationNote }));
 			}
@@ -398,7 +399,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HAS_REASON_FOR_REFERRAL_OR_REASON_FOR_VISIT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ConsultationNoteConsultationNoteHasReasonForReferralOrReasonForVisit"),
 						new Object[] { consultationNote }));
 			}
@@ -462,8 +463,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteGeneralHeaderConstraintsCodeP"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteGeneralHeaderConstraintsCodeP"),
 						new Object[] { consultationNote }));
 			}
 
@@ -539,8 +539,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteComponentOf"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteComponentOf"),
 						new Object[] { consultationNote }));
 			}
 
@@ -605,8 +604,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteAssessmentSection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteAssessmentSection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -671,8 +669,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ASSESSMENT_AND_PLAN_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteAssessmentAndPlanSection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteAssessmentAndPlanSection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -737,8 +734,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PLAN_OF_CARE_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNotePlanOfCareSection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNotePlanOfCareSection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -803,8 +799,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PRESENT_ILLNESS,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteHistoryOfPresentIllness"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHistoryOfPresentIllness"),
 						new Object[] { consultationNote }));
 			}
 
@@ -869,8 +864,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PHYSICAL_EXAM_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNotePhysicalExamSection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNotePhysicalExamSection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -935,8 +929,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_REFERRAL_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteReasonForReferralSection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteReasonForReferralSection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -1001,8 +994,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REASON_FOR_VISIT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteReasonForVisitSection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteReasonForVisitSection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -1067,8 +1059,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_ALLERGIES_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteAllergiesSection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteAllergiesSection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -1133,8 +1124,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteChiefComplaintSection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteChiefComplaintSection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -1199,7 +1189,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ConsultationNoteConsultationNoteChiefComplaintAndReasonForVisitSection"),
 						new Object[] { consultationNote }));
 			}
@@ -1265,8 +1255,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_FAMILY_HISTORY_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteFamilyHistorySection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteFamilyHistorySection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -1331,8 +1320,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_GENERAL_STATUS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteGeneralStatusSection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteGeneralStatusSection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -1397,8 +1385,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteHistoryOfPastIllnessSection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteHistoryOfPastIllnessSection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -1463,8 +1450,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IMMUNIZATIONS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteImmunizationsSection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteImmunizationsSection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -1529,7 +1515,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ConsultationNoteConsultationNoteMedicationsSectionEntriesOptional"),
 						new Object[] { consultationNote }));
 			}
@@ -1595,7 +1581,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ConsultationNoteConsultationNoteProblemSectionEntriesOptional"),
 						new Object[] { consultationNote }));
 			}
@@ -1661,7 +1647,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ConsultationNoteConsultationNoteProceduresSectionEntriesOptional"),
 						new Object[] { consultationNote }));
 			}
@@ -1727,7 +1713,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ConsultationNoteConsultationNoteResultsSectionEntriesOptional"),
 						new Object[] { consultationNote }));
 			}
@@ -1793,8 +1779,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_REVIEW_OF_SYSTEMS_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteReviewOfSystemsSection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteReviewOfSystemsSection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -1859,8 +1844,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_SOCIAL_HISTORY_SECTION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteSocialHistorySection"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteSocialHistorySection"),
 						new Object[] { consultationNote }));
 			}
 
@@ -1925,7 +1909,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+						ConsolPlugin.INSTANCE.getString(
 							"ConsultationNoteConsultationNoteVitalSignsSectionEntriesOptional"),
 						new Object[] { consultationNote }));
 			}
@@ -1991,8 +1975,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteConsultationNoteInFulfillmentOf"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteInFulfillmentOf"),
 						new Object[] { consultationNote }));
 			}
 
@@ -2061,7 +2044,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntityHasPersonOrganizationOrBoth"),
 							new Object[] { eObject }));
 				}
@@ -2132,7 +2115,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2ResponsiblePartyAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -2203,7 +2186,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY_HAS_PERSON_ORGANIZATION_OR_BOTH,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntityHasPersonOrganizationOrBoth"),
 							new Object[] { eObject }));
 				}
@@ -2274,7 +2257,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT_ASSIGNED_ENTITY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EncounterParticipantAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -2345,7 +2328,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_DAY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2PreciseToTheDay"),
 							new Object[] { eObject }));
 				}
@@ -2416,7 +2399,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_MINUTE,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2PreciseToTheMinute"),
 							new Object[] { eObject }));
 				}
@@ -2487,7 +2470,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_PRECISE_TO_THE_SECOND,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2PreciseToTheSecond"),
 							new Object[] { eObject }));
 				}
@@ -2558,7 +2541,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2IfMorePreciseThanDayIncludeTimeZoneOffset"),
 							new Object[] { eObject }));
 				}
@@ -2629,7 +2612,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_EFFECTIVE_TIME,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EffectiveTime"),
 							new Object[] { eObject }));
 				}
@@ -2700,7 +2683,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2Id"),
 							new Object[] { eObject }));
 				}
@@ -2771,7 +2754,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_RESPONSIBLE_PARTY,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2ResponsibleParty"),
 							new Object[] { eObject }));
 				}
@@ -2842,7 +2825,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER2_ENCOUNTER_PARTICIPANT,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter2EncounterParticipant"),
 							new Object[] { eObject }));
 				}
@@ -2913,7 +2896,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							ConsolPlugin.INSTANCE.getString(
 								"ConsultationNoteConsultationNoteComponentOfEncompassingEncounter"),
 							new Object[] { eObject }));
 				}
@@ -2984,8 +2967,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER_ID,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ConsultationNoteConsultationNoteInFulfillmentOfOrderId"),
+							ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteInFulfillmentOfOrderId"),
 							new Object[] { eObject }));
 				}
 
@@ -3055,8 +3037,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.CONSULTATION_NOTE__CONSULTATION_NOTE_IN_FULFILLMENT_OF_ORDER,
-							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-								"ConsultationNoteConsultationNoteInFulfillmentOfOrder"),
+							ConsolPlugin.INSTANCE.getString("ConsultationNoteConsultationNoteInFulfillmentOfOrder"),
 							new Object[] { eObject }));
 				}
 
@@ -4080,8 +4061,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteGeneralHeaderConstraintsTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteGeneralHeaderConstraintsTemplateId"),
 						new Object[] { consultationNote }));
 			}
 
@@ -4154,8 +4134,7 @@ public class ConsultationNoteOperations extends GeneralHeaderConstraintsOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CONSULTATION_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ConsultationNoteGeneralHeaderConstraintsCode"),
+						ConsolPlugin.INSTANCE.getString("ConsultationNoteGeneralHeaderConstraintsCode"),
 						new Object[] { consultationNote }));
 			}
 

@@ -25,6 +25,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SeriesAct;
 import org.openhealthtools.mdht.uml.cda.consol.StudyAct;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -124,9 +125,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.STUDY_ACT__STUDY_ACT_IDS_HAVE_ROOT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"StudyActStudyActIdsHaveRoot"),
-						new Object[] { studyAct }));
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActIdsHaveRoot"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -188,9 +187,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.STUDY_ACT__STUDY_ACT_NO_ID_EXTENSION,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"StudyActStudyActNoIdExtension"),
-						new Object[] { studyAct }));
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActNoIdExtension"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -252,9 +249,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT_REFERENCE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"StudyActStudyActTextReference"),
-						new Object[] { studyAct }));
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActTextReference"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -316,8 +311,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT_REFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"StudyActStudyActTextReferenceValue"),
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActTextReferenceValue"),
 						new Object[] { studyAct }));
 			}
 
@@ -380,9 +374,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.STUDY_ACT__STUDY_ACT_REFERENCE_VALUE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"StudyActStudyActReferenceValue"),
-						new Object[] { studyAct }));
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActReferenceValue"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -444,9 +436,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.STUDY_ACT__STUDY_ACT_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"StudyActStudyActTemplateId"),
-						new Object[] { studyAct }));
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActTemplateId"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -508,9 +498,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.STUDY_ACT__STUDY_ACT_CLASS_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"StudyActStudyActClassCode"),
-						new Object[] { studyAct }));
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActClassCode"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -572,9 +560,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.STUDY_ACT__STUDY_ACT_MOOD_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"StudyActStudyActMoodCode"),
-						new Object[] { studyAct }));
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActMoodCode"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -634,8 +620,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString("StudyActStudyActId"),
-						new Object[] { studyAct }));
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActId"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -698,9 +683,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"StudyActStudyActCode"),
-						new Object[] { studyAct }));
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActCode"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -762,9 +745,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.STUDY_ACT__STUDY_ACT_EFFECTIVE_TIME,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"StudyActStudyActEffectiveTime"),
-						new Object[] { studyAct }));
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActEffectiveTime"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -825,9 +806,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"StudyActStudyActText"),
-						new Object[] { studyAct }));
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActText"), new Object[] { studyAct }));
 			}
 
 			return false;
@@ -889,9 +868,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.STUDY_ACT__STUDY_ACT_SERIES_ACT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"StudyActStudyActSeriesAct"),
-						new Object[] { studyAct }));
+						ConsolPlugin.INSTANCE.getString("StudyActStudyActSeriesAct"), new Object[] { studyAct }));
 			}
 
 			return false;

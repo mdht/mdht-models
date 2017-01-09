@@ -1746,8 +1746,8 @@ public class ClinicalOfficeVisitSummaryOperations extends GeneralHeaderConstrain
 	protected static final String GET_SOCIAL_HISTORY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(mu2consol::SocialHistorySection))->asSequence()->any(true).oclAsType(mu2consol::SocialHistorySection)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getSocialHistorySection(ClinicalOfficeVisitSummary) <em>Get
+	 * The cached OCL query for the
+	 * '{@link #getSocialHistorySection(ClinicalOfficeVisitSummary) <em>Get
 	 * Social History Section</em>}' query operation. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 *

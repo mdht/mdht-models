@@ -22,6 +22,7 @@ import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
+import org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin;
 
 /**
  * <!-- begin-user-doc -->
@@ -114,8 +115,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REVIEW_OF_SYSTEMS_SECTION__REVIEW_OF_SYSTEMS_SECTION_TEMPLATE_ID,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReviewOfSystemsSectionReviewOfSystemsSectionTemplateId"),
+						ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionReviewOfSystemsSectionTemplateId"),
 						new Object[] { reviewOfSystemsSection }));
 			}
 
@@ -181,8 +181,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REVIEW_OF_SYSTEMS_SECTION__REVIEW_OF_SYSTEMS_SECTION_CODE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReviewOfSystemsSectionReviewOfSystemsSectionCode"),
+						ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionReviewOfSystemsSectionCode"),
 						new Object[] { reviewOfSystemsSection }));
 			}
 
@@ -246,8 +245,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REVIEW_OF_SYSTEMS_SECTION__REVIEW_OF_SYSTEMS_SECTION_CODE_P,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReviewOfSystemsSectionReviewOfSystemsSectionCodeP"),
+						ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionReviewOfSystemsSectionCodeP"),
 						new Object[] { reviewOfSystemsSection }));
 			}
 
@@ -311,8 +309,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REVIEW_OF_SYSTEMS_SECTION__REVIEW_OF_SYSTEMS_SECTION_TITLE,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReviewOfSystemsSectionReviewOfSystemsSectionTitle"),
+						ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionReviewOfSystemsSectionTitle"),
 						new Object[] { reviewOfSystemsSection }));
 			}
 
@@ -376,8 +373,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REVIEW_OF_SYSTEMS_SECTION__REVIEW_OF_SYSTEMS_SECTION_TEXT,
-						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
-							"ReviewOfSystemsSectionReviewOfSystemsSectionText"),
+						ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionReviewOfSystemsSectionText"),
 						new Object[] { reviewOfSystemsSection }));
 			}
 
